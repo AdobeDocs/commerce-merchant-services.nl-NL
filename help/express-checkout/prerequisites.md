@@ -4,8 +4,8 @@ description: Controleer of uw systeem voldoet aan de vereisten voor het gebruik 
 exl-id: fa61aa73-a2b6-4c69-ab42-cede74c15caa
 source-git-commit: 163dd5260908b4ea3a8bfbcfdb834531d1603734
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '153'
+ht-degree: 1%
 
 ---
 
