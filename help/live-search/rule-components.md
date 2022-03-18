@@ -1,0 +1,40 @@
+---
+title: Regelcomponenten
+description: Meer informatie over componenten en operatoren van de regel Live zoeken.
+exl-id: 4065aec3-a8d4-4d55-b939-16ad7b0f33ee
+source-git-commit: 7402e97f53b71e488d860215487f4809572b7e6f
+workflow-type: tm+mt
+source-wordcount: '228'
+ht-degree: 0%
+
+---
+
+# Regelcomponenten
+
+Een regel beschrijft de voorwaarde(n) die vereist zijn om gebeurtenis(sen) te activeren die de zoekresultaten wijzigen die als reactie op de query van een winkelier worden geretourneerd.
+
+## Vereisten
+
+Een eenvoudige regel kan één enkele voorwaarde en één enkele gebeurtenis hebben, terwijl een complexe regel tot tien voorwaarden kan hebben die tot 25 gebeurtenissen teweegbrengen.
+Regels kunnen:
+
+* Tot 10 voorwaarden
+* Tot 25 gebeurtenissen
+
+Zoektekst kan het volgende bevatten:
+
+* Alfanumerieke tekens (letters en cijfers)
+* Hoofdletters of kleine letters
+
+## Logische operatoren
+
+Logische operatoren `AND` en `OR` twee voorwaarden samenvoegen en verschillende resultaten retourneren. Alle logische operatoren die in een regel met meerdere voorwaarden worden gebruikt, zijn hetzelfde. Het is niet mogelijk beide `AND` en `OR` in dezelfde regel.
+
+### Operatoren afstemmen
+
+De operatoren Afstemmen `All` en `Any` Bepaal de logische exploitant die wordt gebruikt om veelvoudige voorwaarden in de regel samen te voegen, en kan worden gebruikt om de bestaande exploitant te veranderen.
+
+* `All` - Gebruikt de `AND` logische operator om meerdere voorwaarden samen te voegen. Een regel die de `All` Identieke operator kan slechts één hebben `Search query is` voorwaarde.
+* `Any` - Gebruikt de `OR` logische operator om meerdere voorwaarden samen te voegen.
+
+Wanneer het samenstellen van een complexe regel, kan het helpen om het met inspringing uit te schrijven om de voorwaarden, bijbehorende gebeurtenissen, en productnamen of SKUs te beschrijven die nodig zijn om de resultaten terug te keren u wilt bereiken. Vervolgens bouwt u de regel en test u het resultaat.

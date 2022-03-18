@@ -1,0 +1,49 @@
+---
+title: Prestaties
+description: Het dashboard Live Search-prestaties biedt inzicht in de zoektermen die kopers gebruiken.
+exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
+source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+workflow-type: tm+mt
+source-wordcount: '465'
+ht-degree: 0%
+
+---
+
+# Prestaties
+
+De [!DNL Live Search] Het prestatiedashboard biedt inzicht in de zoektermen die kopers gebruiken. De informatie kan worden gebruikt om tendensen te identificeren, klik-door te verhogen, en de omzettingspercentage te verbeteren. Het dashboard van Prestaties verstrekt een momentopname van onderzoeksmetriek voor een specifieke datumwaaier en omvat de volgende rapporten:
+
+* Unieke zoekopdrachten
+* Resultaten nul
+* Populaire resultaten
+
+![Prestaties](assets/performance-unique-searches.png)
+
+## Een rapport weergeven
+
+1. Als u de **Datumbereik** klikt u op de kalender (![Kalender](assets/btn-calendar.png)) en voer een van de volgende handelingen uit:
+
+   * Als u één datum wilt opgeven, dubbelklikt u op de datum in de kalender.
+   * Als u een datumbereik wilt opgeven, klikt u op de eerste en laatste datum in de kalender.
+
+   ![Tijdschema voor prestatierapport](assets/performance-calendar.png)
+
+1. Klik op het rapporttabblad dat u wilt weergeven.
+
+   ![Prestatiegelende resultaten](assets/performance-popular-results.png)
+
+## Veldomschrijvingen
+
+| Opnamegegevens | Beschrijving |
+|--- |--- |
+| Unieke zoekopdrachten | Het totale aantal unieke zoekopdrachten voor het opgegeven datumbereik. De veelvoudige onderzoeken door de zelfde verkoopster, zelfs als voor de zelfde vraag, worden beschouwd als uniek als voorgelegd meer dan één uur uit elkaar. |
+| Doorklikfrequentie | Het percentage zoekopdrachten dat wordt afgesloten met het klikken op een product door de verkoper. De doorklikfrequentie is bijvoorbeeld 50% als de winkel op &quot;broek&quot; en &quot;shirt&quot; zoekt en vervolgens op één resultaat klikt in de &quot;shirt&quot;-zoekopdracht. |
+| Omrekeningskoers | Het percentage producten de winkelaankopen tegenover het aantal producten de verkoopster voor de gespecificeerde datumwaaier klikt. De conversiesnelheid van de interactie is bijvoorbeeld 100% als de klant zes producten in de popover weergeeft, op een product klikt en een aankoop doet. <br /><br />De omrekeningskoers wordt niet beïnvloed door het aantal weergaven van een bepaald product. De omrekeningskoers blijft bijvoorbeeld hetzelfde als de gebruiker van de zoekopdracht op een product klikt. |
+| Resultaatsnelheid nul | Het percentage unieke zoekopdrachten dat geen resultaten retourneert voor het opgegeven datumbereik. De nulresultatenfrequentie is bijvoorbeeld 66,67% als de winkel tweemaal zoekt naar &quot;fjjajfjfjf&quot; (zonder resultaten) en naar &quot;broek&quot; (met resultaten). |
+| Gem. klikpositie | De relatieve positie van de gemiddelde doorkliksnelheid op basis van unieke zoekopdrachten voor het opgegeven datumbereik. |
+
+| Rapporten | Beschrijving |
+|--- |--- |
+| Unieke zoekopdrachten | Hiermee geeft u de unieke zoekquery&#39;s weer die worden gebruikt tijdens het opgegeven datumbereik. De rapportgegevens worden op dezelfde manier berekend als de unieke gegevens van de onderzoeksmomentopname. Als een verkoper de zelfde onderzoeksvraag tweemaal, maar meer dan een uur uit elkaar typt, wordt het onderzoek beschouwd als twee unieke onderzoeken. Rapportlimiet: Hoogste 500 termen |
+| Resultaten nul | Maakt een lijst van de onderzoeksvragen die geen resultaten en het aantal tijden terugkeren die tijdens de gespecificeerde datumwaaier worden gebruikt. Rapportlimiet: Hoogste 500 termen |
+| Populaire resultaten | Maakt een lijst van de namen van producten die de meeste meningen tijdens de gespecificeerde datumwaaier ontvingen. De populaire resultaten worden alleen berekend op basis van indrukken en worden niet beïnvloed door het aantal klikken of gegenereerde inkomsten. Rapportlimiet: Hoogste 500 termen |
