@@ -3,20 +3,22 @@ user-guide-title: Handleiding voor live zoeken
 user-guide-description: Deze handleiding bevat gedetailleerde instructies voor het gebruik van Live Search vanuit Adobe Commerce.
 breadcrumb-title: Handleiding voor live zoeken
 hide: true
-source-git-commit: b4310f95a038022e377158bca77f5fa9eaf05078
+source-git-commit: 2e375aac4edb1f5d8e57096d8b399801f3a3e5f3
 workflow-type: tm+mt
-source-wordcount: '82'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # Live zoeken naar handel {#live-search}
 
-- [Handleiding voor live zoeken](overview.md)
-- Aan de slag {#getting-started}
-   - [Installeren](install.md)
-   - [Opmerkingen bij de release](release-notes.md)
-- Live zoekwinkel{#live-search-storefront}
+- [Overzicht van hulplijnen](guide-overview.md)
+- [Inleiding tot Live zoeken](overview.md)
+- [Opmerkingen bij de release](release-notes.md)
+- Live zoeken aan boord {#onboard}
+   - [Onboarding-overzicht](onboarding-overview.md)
+   - [Live zoeken installeren](install.md)
+- Live zoekwinkel {#live-search-storefront}
    - [Snelle rondleiding](quick-tour.md)
    - [Storefront Popover](storefront-popover.md)
    - [Popup-elementen opmaken](storefront-popover-styling.md)

@@ -2,9 +2,9 @@
 title: Storefront Popover
 description: Met de pop-up Live zoeken worden dynamisch voorgestelde producten en miniaturen geretourneerd.
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 7402e97f53b71e488d860215487f4809572b7e6f
+source-git-commit: 10cea4389d685ce0e26b083872b13a1cd19ba2af
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '381'
 ht-degree: 0%
 
 ---
@@ -30,3 +30,15 @@ De volgende kenmerken kunnen altijd worden doorzocht:
 * `categories`
 
 ![popup Live zoeken](assets/storefront-search-as-you-type.png)
+
+## Pop-paginaformaat
+
+De paginagrootte van popover bepaalt hoeveel lijnen autocompleted producten kunnen zijn teruggekeerd. Eerder was het paginaformaat gecodeerd als zes regels. De `page_size` de waarde is nu een het plaatsen die van kan worden gevormd *Beheer*. Tijdens de installatie van Live zoeken worden de `page_size` De waarde verandert in de huidige waarde van de [Catalogus zoeken](https://docs.magento.com/user-guide/configuration/catalog/catalog.html#catalog-search) - `Autocomplete Limit` instellen.
+
+Standaard is de waarde voor Zoeken in catalogus - automatisch aanvullen van limiet ingesteld op acht regels (of rijen). Ga als volgt te werk om het paginaformaat van de pop-up te wijzigen:
+
+1. Op de *Beheer* zijbalk, ga naar **Winkels** > Instellingen > **Configuratie**.
+1. Vouw in het linkerdeelvenster uit **Catalogus** en kiest u **Catalogus** in de lijst met instellingen.
+1. Breid uit *Catalogus zoeken* sectie.
+1. Stel de **Limiet automatisch aanvullen** op het aantal regels dat u wilt toestaan in de pop-up.
+1. Klik op **Config opslaan**.

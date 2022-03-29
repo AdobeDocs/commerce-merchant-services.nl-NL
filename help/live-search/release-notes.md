@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release Live zoeken
 description: De meest recente release-informatie voor Live Search vanuit Adobe Commerce.
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 8fea8145e624b57278b9373246e8c4249472a03d
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '653'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,19 @@ In deze releaseopmerkingen worden de meest recente versies van [!DNL Live Search
 * ![Nieuw](../assets/new.svg) - Nieuwe functies
 * ![Repareren](../assets/fix.svg) - Oplossingen en verbeteringen
 * ![Bug](../assets/bug.svg) - Bekende problemen
+
+## [!DNL Live Search] 2,0
+
+* Compatibel met Adobe Commerce (EE): 2,4 x
+* Compatibel met Adobe Commerce for Cloud (ECE): 2,4 x
+* Stabiliteit: Stabiel
+
+* ![Nieuw](../assets/new.svg) - Het aantal beschikbare regels in de [storefront popover](quick-tour.md) kan van worden gevormd *Beheer*.
+* ![Nieuw](../assets/new.svg) - Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) compatibiliteit voor Live zoeken.
+* ![Nieuw](../assets/new.svg) - Het installatieproces van Live zoeken wordt bijgewerkt met geavanceerde proceswijzigingen.
+* ![Repareren](../assets/fix.svg) - [Geavanceerd zoeken](https://docs.magento.com/user-guide/catalog/search-advanced.html) koppeling verwijderd uit de voettekst van de winkel.
+* ![Bug](../assets/bug.svg) - De volgende productkenmerken worden niet ondersteund door [Magento GraphQL API](https://devdocs.magento.com/guides/v2.4/graphql) bij gebruik in verband met de bètaversie van PWA: `description`, `name`, `short_description`
+* ![Bug](../assets/bug.svg) - De bètaversie van PWA for Live Search biedt geen ondersteuning voor [gebeurtenisafhandeling](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
 
 ## [!DNL Live Search] 1.3.1.
 
@@ -47,7 +60,7 @@ In deze releaseopmerkingen worden de meest recente versies van [!DNL Live Search
 * Stabiliteit: Stabiel
 
 * ![Nieuw](../assets/new.svg) - Storefront [popup](storefront-popover.md) Hiermee geeft u voorgestelde producten en miniatuurafbeeldingen van de zoekresultaten van het hoogste niveau weer als kopers vragen typen in het vak Zoeken.
-* ![Nieuw](../assets/new.svg) - De Admin-sessie van de Handel blijft geopend tijdens lange perioden van inactiviteit op het toetsenbord
+* ![Nieuw](../assets/new.svg) - Handel *Beheer* sessie blijft geopend tijdens lange perioden van inactiviteit op het toetsenbord
 * ![Nieuw](../assets/new.svg) - [!DNL Live Search] wordt automatisch ingeschakeld na het instappen
 * ![Repareren](../assets/fix.svg) - Oorspronkelijke indexeertijd is minder dan een uur
 * ![Repareren](../assets/fix.svg) - Incrementele productupdates bijna realtime (na installatie en installatie)
