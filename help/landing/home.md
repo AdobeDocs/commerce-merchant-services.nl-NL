@@ -3,27 +3,18 @@ title: Services-documentatie
 description: Browse Services for Adobe Commerce productdocumentatie
 seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
+breadcrumb-title: Documentatie
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: 2f64ddf30cb9bcd5d2d05b37fbe601f9bfe8e84b
+source-git-commit: ddfcc8e195b1971b0f431205948faa6c6dd2c49f
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '314'
 ht-degree: 0%
 
 ---
 
-# Services-documentatie {#documentation}
-
-![Services voor Adobe Commerce](./assets/banner-services-home.png)
+# <!-- use banner as heading -->![Services-documentatie](./assets/banner-services-home.png) {#documentation}
 
 Adobe verstrekt een inzameling van de ontvangen diensten om handelaren te helpen zeer belangrijke componenten van hun zaken steunen.
-
-## Verbinding maken met services
-
-De [Commerce Services Connector](https://docs.magento.com/user-guide/system/saas.html) biedt de integratie voor uw Adobe Commerce- of Magento Open Source-instantie met behulp van een API-sleutel en een persoonlijke sleutel. Voor gegevensservices (alleen Adobe Commerce) kunt u ook de gegevensruimte in de configuratie opgeven.
-
-## Catalogus synchroniseren
-
-Voor services die catalogusgegevens gebruiken (Product Recommendations en Live Search), gaat u naar [Catalogus synchroniseren](https://docs.magento.com/user-guide/system/catalog-sync.html) het proces voert productgegevens van de server van de Handel aan de Diensten van de Handel voortdurend uit om de diensten bijgewerkt te houden.
 
 ## Beschikbare services
 
@@ -31,7 +22,7 @@ Voor services die catalogusgegevens gebruiken (Product Recommendations en Live S
 <tr>
    <td valign="top">
        <img alt="[!UICONTROL Product Recommendations]" src="assets/product-recs.png" />
-    <div><a href="https://docs.magento.com/user-guide/recommendations/overview.html">
+    <div><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/overview.html">
     <strong>[!DNL Product Recommendations]</strong></a>
     </div>
     <p>(alleen Adobe Commerce)<br><em>Voeg op AI gebaseerde aanbevelingen toe die op verkoopgedrag, populaire tendensen, productgelijkenis, en meer worden gebaseerd.</em></p>
@@ -65,6 +56,14 @@ Voor services die catalogusgegevens gebruiken (Product Recommendations en Live S
   </td>
 </tr>
 </table>
+
+## Verbinding maken met services
+
+De [Commerce Services Connector](https://docs.magento.com/user-guide/system/saas.html) biedt de integratie voor uw Adobe Commerce- of Magento Open Source-instantie met behulp van een API-sleutel en een persoonlijke sleutel. Voor gegevensservices (alleen Adobe Commerce) kunt u ook de gegevensruimte in de configuratie opgeven.
+
+## Catalogus synchroniseren
+
+Voor services die catalogusgegevens gebruiken (Product Recommendations en Live Search), gaat u naar [Catalogus synchroniseren](https://docs.magento.com/user-guide/system/catalog-sync.html) het proces voert productgegevens van de server van de Handel aan de Diensten van de Handel voortdurend uit om de diensten bijgewerkt te houden.
 
 ## Nieuwe functies
 
