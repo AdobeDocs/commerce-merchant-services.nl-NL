@@ -1,9 +1,9 @@
 ---
 title: Plaatsing en labels
 description: Leer waar u aanbevelingen op verschillende pagina's op uw plaats en suggesties voor vaak gebruikte etiketten voor elk aanbevelingstype kunt plaatsen.
-source-git-commit: 4ec8acf6795cd451df48fbfba12e8635c180bf79
+source-git-commit: b3ac6ab9c5877b5c722cd08cc50d746595386ba9
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '556'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,11 @@ ht-degree: 0%
 
 Met zoveel soorten aanbevelingen waaruit u kunt kiezen, wat moet u op elke pagina gebruiken? Als u niet zeker bent waar te beginnen, probeer het volgende:
 
-|Startpagina|`Recommended for you`| |Productpagina|`Viewed this, viewed that`| |Art.`Bought this, bought that`|
+| Pagina | Type aanbeveling |
+|---|---|
+| Homepage | `Recommended for you` |
+| Productpagina | `Viewed this, viewed that` |
+| Kar | `Bought this, bought that` |
 
 U kunt de [cijfers](workspace.md) en pas indien nodig aan. Denk eraan dat experimenteren de sleutel is.
 

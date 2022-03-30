@@ -1,9 +1,9 @@
 ---
 title: Overzicht
 description: '"[!DNL Product Recommendations] Dit is een krachtig marketinginstrument dat u kunt gebruiken om conversies te verhogen, inkomsten te verhogen en winkelbetrokkenheid te stimuleren."'
-source-git-commit: 4ad607c8595b25d01b5f5020b787fc1d35d4df25
+source-git-commit: b3ac6ab9c5877b5c722cd08cc50d746595386ba9
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
@@ -31,18 +31,3 @@ Aan de hand van productaanbevelingen kunt u:
 - Kies uit negen verschillende soorten intelligente aanbevelingen op basis van de volgende gebieden: op basis van winkels, items, populariteit, trending en op basis van gelijkenis
 - Gebruik gedragsgegevens om aanbevelingen te personaliseren gedurende de hele winkelreis
 - Bepaal de belangrijkste metriek relevant voor elke aanbeveling om u te helpen het effect van uw aanbevelingen begrijpen
-
-- [Onboarding](onboarding.md)
-Voltooi de installatie en configuratie van de productaanbevelingen.
-
-- [Werkruimte](workspace.md)
-Leer hoe u de werkruimte met aanbevelingen omgaat. Aanbevelingen maken en bewerken.
-
-- [Typen](type.md)
-Leer meer over de aanbevelingen die u op verschillende pagina&#39;s op uw site kunt implementeren.
-
-- [Filters](filters.md)
-Bepaal voorwaarden die of producten van worden gebruikt als aanbevelingen omvatten of uitsluiten.
-
-- [Plaatsing en labels](placement.md)
-Leer waar u aanbevelingen op verschillende pagina&#39;s op uw plaats en suggesties voor vaak gebruikte etiketten voor elk aanbevelingstype kunt plaatsen.
