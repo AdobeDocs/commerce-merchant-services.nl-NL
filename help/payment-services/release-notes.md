@@ -2,9 +2,9 @@
 title: '"[!DNL Payment Services] Opmerkingen bij de release"'
 description: Lees de opmerkingen bij de release voor meer informatie over alle [!DNL Payment Services] lozingen.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 5f731eca49b6f59bbeb7190e0026eb05f2d1a99b
+source-git-commit: 93a10d91a2dc92db530074d7fc2dfd4f31a9488d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '569'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ In deze releaseopmerkingen wordt de eerste release van [!DNL Payment Services] e
 
 ![Nieuw](../assets/new.svg)<!-- Issue PAY-2127 --> [[!DNL Payment Services]](https://marketplace.magento.com/magento-payment-services.html) is nu compatibel met Adobe Commerce en Magento Open Source versie 2.4.0 tot en met 2.4.4.
 
-![Nieuw](../assets/new.svg)<!-- Issue PAY-2682 --> De [!DNL Payment Services] Adobe Commerce en Magento Open Source is beschikbaar voor Canadese handelaren. Handelaren kunnen de configuratie van betalingen in of bekijken [Frans](overview.md?lang=fr) of [Engels](overview.md?lang=en).
+![Nieuw](../assets/new.svg)<!-- Issue PAY-2682 --> De [!DNL Payment Services] Adobe Commerce en Magento Open Source is beschikbaar voor Canadese handelaren. Handelaren kunnen de configuratie van betalingen in of bekijken [Frans](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html?lang=fr) of [Engels](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html?lang=en).
 
 ![Nieuw](../assets/new.svg)<!-- Issue PAY-2681 --> [!DNL Payment Services] supports [Canadese dollars (CAD)](overview.md#accepted-credit-cards-and-currencies) met creditcard en PayPal. Klanten kunnen een winkelervaring hebben in hun voorkeurstaal, afhankelijk van de landinstelling van de winkel waar ze winkelen.
 
@@ -51,7 +51,7 @@ In deze releaseopmerkingen wordt de eerste release van [!DNL Payment Services] e
 
 ![Bekend probleem](../assets/bug.svg)<!-- Issue PAY-2475 --> [PayPal-sandboxaccount](https://support.magento.com/hc/en-us/articles/4406954952461) for [!DNL Payment Services] kan niet worden geverifieerd als er een account wordt gemaakt tijdens het instappen.
 
-![Bekend probleem](../assets/bug.svg)<!-- Issue PAY-2842 --> [Kredietkaart testen mislukt](https://support.magento.com/hc/en-us/articles/4406954952461) met PayPal bij het verwerken van betalingen in een Sandbox-omgeving.
+![Bekend probleem](../assets/bug.svg)<!-- Issue PAY-2842 --> [Kredietkaart testen mislukt](https://support.magento.com/hc/en-us/articles/5201041963917) met PayPal bij het verwerken van betalingen in een Sandbox-omgeving.
 
 ## v1.0.0
 
