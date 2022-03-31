@@ -2,9 +2,9 @@
 title: Live zoeken installeren
 description: Leer hoe u Live Search kunt installeren, bijwerken en verwijderen vanuit Adobe Commerce.
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: b6aca1b78fae6d8c43ca47307aa1c63dbdc1c36a
+source-git-commit: c70d08b90d7584559fd69cdeece0220015ae8523
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1199'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ In dit scenario worden storefront-bewerkingen onderbroken terwijl de [!DNL Live 
 
 1. Configureer uw [API-sleutels](#configure-api-keys) en controleer of de catalogusgegevens [gesynchroniseerd](#synchronize-catalog-data) with [!DNL Live Search] diensten.
 
-1. Als u facetten als filters in de winkel beschikbaar wilt maken, voegt u de opdracht [facetten](https://docs.magento.com/user-guide/live-search/facets-add.html) u, volgens [eisen inzake facetten](https://docs.magento.com/user-guide/live-search/facets.html).
+1. Als u facetten als filters in de winkel beschikbaar wilt maken, voegt u de opdracht [facetten](facets-add.md) u, volgens [eisen inzake facetten](facets.md).
 
    U moet facetten kunnen toevoegen na `cron` Hiermee worden de metagegevens van kenmerkfeeds en exportkenmerken uitgevoerd.
 
@@ -123,7 +123,7 @@ In dit scenario: [!DNL Elasticsearch] beheert tijdelijk zoekverzoeken van de win
 
 1. Configureer uw [API-sleutels](#configure-api-keys) en controleer of de catalogusgegevens [gesynchroniseerd](#synchronize-catalog-data) with [!DNL Live Search] diensten.
 
-1. Als u facetten als filters in de winkel beschikbaar wilt maken, voegt u de opdracht [facetten](https://docs.magento.com/user-guide/live-search/facets-add.html) u, volgens [eisen inzake facetten](https://docs.magento.com/user-guide/live-search/facets.html).
+1. Als u facetten als filters in de winkel beschikbaar wilt maken, voegt u de opdracht [facetten](facets-add.md) u, volgens [eisen inzake facetten](facets.md).
 
    U moet facetten kunnen toevoegen na `cron` Hiermee worden de metagegevens van het product en het kenmerk uitgevoerd en geëxporteerd naar [!DNL Live Search] diensten.
 
@@ -177,7 +177,7 @@ Raadpleeg voor meer informatie [[!DNL Live Search] catalogus niet gesynchronisee
 
 ### Toekomstige productupdates
 
-Na de eerste synchronisatie kan het tot 15 minuten duren voordat incrementele productupdates beschikbaar komen voor het zoeken naar winkelinformatie. Ga voor meer informatie naar [Streaming productupdates](https://devdocs.magento.com/live-search/indexing.html).
+Na de eerste synchronisatie kan het tot 15 minuten duren voordat incrementele productupdates beschikbaar komen voor het zoeken naar winkelinformatie. Ga voor meer informatie naar [Streaming productupdates](indexing.md).
 
 ## De verbinding testen {#test-connection}
 

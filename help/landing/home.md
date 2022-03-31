@@ -5,9 +5,9 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
 breadcrumb-title: Documentatie
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: 93f7157135ae3eb1adb880752585565b8bfd9fbb
+source-git-commit: c70d08b90d7584559fd69cdeece0220015ae8523
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '299'
 ht-degree: 0%
 
 ---
@@ -59,11 +59,11 @@ Adobe verstrekt een inzameling van de ontvangen diensten om handelaren te helpen
 
 ## Verbinding maken met services
 
-De [Commerce Services Connector](https://docs.magento.com/user-guide/system/saas.html) biedt de integratie voor uw Adobe Commerce- of Magento Open Source-instantie met behulp van een API-sleutel en een persoonlijke sleutel. Voor gegevensservices (alleen Adobe Commerce) kunt u ook de gegevensruimte in de configuratie opgeven.
+De [Commerce Services Connector](saas.md) biedt de integratie voor uw Adobe Commerce- of Magento Open Source-instantie met behulp van een API-sleutel en een persoonlijke sleutel. Voor gegevensservices (alleen Adobe Commerce) kunt u ook de gegevensruimte in de configuratie opgeven.
 
 ## Catalogus synchroniseren
 
-Voor services die catalogusgegevens gebruiken (Product Recommendations en Live Search), gaat u naar [Catalogus synchroniseren](https://docs.magento.com/user-guide/system/catalog-sync.html) het proces voert productgegevens van de server van de Handel aan de Diensten van de Handel voortdurend uit om de diensten bijgewerkt te houden.
+Voor services die catalogusgegevens gebruiken (Product Recommendations en Live Search), gaat u naar [Catalogus synchroniseren](catalog-sync.md) het proces voert productgegevens van de server van de Handel aan de Diensten van de Handel voortdurend uit om de diensten bijgewerkt te houden.
 
 ## Nieuwe functies
 

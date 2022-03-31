@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release Live zoeken
 description: De meest recente release-informatie voor Live Search vanuit Adobe Commerce.
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 8fea8145e624b57278b9373246e8c4249472a03d
+source-git-commit: c70d08b90d7584559fd69cdeece0220015ae8523
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '648'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ In deze releaseopmerkingen worden de meest recente versies van [!DNL Live Search
 * Compatibel met Adobe Commerce for Cloud (ECE): 2,4 x
 * Stabiliteit: Stabiel
 
-* ![Nieuw](../assets/new.svg) - [Prestaties](https://docs.magento.com/user-guide/live-search/performance.html) het rapporteringsdashboard geeft inzicht in zoektermen die kopers gebruiken.
+* ![Nieuw](../assets/new.svg) - [Prestaties](performance.md) het rapporteringsdashboard geeft inzicht in zoektermen die kopers gebruiken.
 * ![Nieuw](../assets/new.svg) - [!DNL Live Search] [Storefront Events SDK](https://devdocs.magento.com/shared-services/storefront-events-sdk.html) verleent toegang tot een gemeenschappelijke gegevenslaag van gebeurtenis het publiceren en de abonnementendiensten, en metriek.
 * ![Repareren](../assets/fix.svg) - de [Storefront Popover](https://devdocs.magento.com/live-search/storefront-popover.html) heeft een nieuwe `active` klasse voor de `.search-autocomplete` container die de zichtbaarheid bepaalt.
 * ![Repareren](../assets/fix.svg) - In de winkel [Zoekvoorwaarden](https://docs.magento.com/user-guide/marketing/search-terms-popular.html) voettekstkoppeling wordt verwijderd en de bijbehorende cache wordt uitgeschakeld voor [!DNL Live Search] installaties.
