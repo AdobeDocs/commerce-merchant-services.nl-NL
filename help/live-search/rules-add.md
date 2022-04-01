@@ -2,9 +2,9 @@
 title: Regels toevoegen
 description: Leer hoe u regels voor Live zoeken maakt.
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
-source-wordcount: '1283'
+source-wordcount: '1284'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,8 @@ Een regel kan tot 10 voorwaarden hebben. De logische operator die zich bij twee 
    * Alles - Alle logische operatoren in de regel zijn ingesteld op `AND` en de resultaten worden weergegeven in het testvenster.
 
    De *Overeenkomst* value bepaalt de logische operator die wordt gebruikt om meerdere voorwaarden samen te voegen. Het wijzigen van *Overeenkomst* bij het instellen worden alle logische operatoren in de regel gewijzigd. Het is niet mogelijk om `AND` en `OR` in dezelfde regel.
-In dit voorbeeld zijn er twee aparte query&#39;s die zoeken naar &#39;yoga&#39; of &#39;broek&#39; in plaats van naar &#39;yoga-broek&#39; te zoeken. Deze regel is minder specifiek en zal vaker in de storefront dan andere teweeggebracht worden.
+
+   In dit voorbeeld zijn er twee aparte query&#39;s die zoeken naar &#39;yoga&#39; of &#39;broek&#39; in plaats van naar &#39;yoga-broek&#39; te zoeken. Deze regel is minder specifiek en zal vaker in de storefront dan andere teweeggebracht worden.
 
    ![Regels - Overeenkomst](assets/rules-match.png)
 
@@ -74,10 +75,11 @@ In dit voorbeeld zijn er twee aparte query&#39;s die zoeken naar &#39;yoga&#39; 
 
 ## Stap 3: Gebeurtenis(sen) toevoegen
 
-Gebeurtenissen zijn acties die de zoekresultaten wijzigen wanneer aan de voorwaarde(n) wordt voldaan. Eén regel kan tot 25 gebeurtenissen bevatten.
+Gebeurtenissen zijn acties die de zoekresultaten wijzigen wanneer aan de voorwaarde(n) wordt voldaan. Eén regel kan maximaal 25 gebeurtenissen bevatten.
 
 1. Onder *Gebeurtenissen*, kiest u de **Gebeurtenis** plaatsvinden wanneer aan de desbetreffende voorwaarde(n) is voldaan.
-Kies bijvoorbeeld `Pin a product`. Voer vervolgens de naam in van het product dat u wilt vastzetten. Als u hulp nodig hebt, kunt u de naam in de testruit vinden.
+
+   Kies bijvoorbeeld `Pin a product`. Voer vervolgens de naam in van het product dat u wilt vastzetten. Als u hulp nodig hebt, kunt u de naam in de testruit vinden.
 Voer vervolgens de *Positie* waar het vastgezette product moet worden weergegeven. Het product wordt verplaatst naar de nieuwe positie in het testvenster en wordt gemarkeerd met een *Vastgezet* voorvertoningsbadge.
 
    ![Regels - Overeenkomst](assets/rule-event-pin-product.png)
@@ -108,8 +110,11 @@ De hier ingevoerde informatie wordt weergegeven in het dialoogvenster [Regeldeta
 
 ## Stap 6: Opslaan en publiceren
 
-Klik op **Opslaan en publiceren**.
-De regel wordt toegevoegd aan de lijst in de regelwerkruimte. Hoewel de actieve regels onmiddellijk in werking treden, zou het tot 15 minuten voor caching vraagresultaten in de storefront kunnen verfrissen vergen.
+1. Klik op **Opslaan en publiceren**.
+
+   De regel wordt toegevoegd aan de lijst in de regelwerkruimte.
+
+1. Hoewel de actieve regels onmiddellijk in werking treden, zou u tot 15 minuten kunnen moeten wachten op de caching vraagresultaten in de storefront om worden verfrist.
 
 ## Veldomschrijvingen
 

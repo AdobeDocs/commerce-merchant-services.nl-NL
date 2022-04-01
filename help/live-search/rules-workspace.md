@@ -2,9 +2,9 @@
 title: Werkruimte Regels
 description: Leer hoe u de werkruimte met regels voor Live zoeken gebruikt.
 exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '585'
 ht-degree: 0%
 
 ---
@@ -91,7 +91,7 @@ U kunt de volgende handelingen uitvoeren in het deelvenster Details weergeven:
 
 | Control | Beschrijving |
 |--- |--- |
-| Regel toevoegen | Hiermee opent u de [regeleditor]({% koppeling live-search/rules-add.md %}). |
+| Regel toevoegen | Hiermee opent u de [regeleditor](rules-add.md). |
 | Status | Hiermee filtert u de lijst met regels op status. Opties: Alles, Actief, Inactief, Gepland |
 | ![Kolomkiezer](assets/btn-show-hide-columns.png) | Hiermee geeft u de kolommen op die zichtbaar zijn in het raster. Opties: Laatst bijgewerkt, Begindatum, Einddatum, Status |
 | Zoeken | Zoekt naar een regel op volledige naam of gedeeltelijke gelijke. |

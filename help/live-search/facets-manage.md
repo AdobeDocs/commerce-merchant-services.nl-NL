@@ -2,7 +2,7 @@
 title: Facturen beheren
 description: Leer hoe u bestaande facetten van Live zoeken beheert.
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 0%
@@ -56,19 +56,19 @@ De wijzigingen worden pas na publicatie in de winkel weergegeven.
 
 Wanneer op het punt wordt geklikt, verandert de kleur van het punt. Het punt wordt gebruikt om het facet naar een van de *Vastgezette gezichten* of de *Dynamische factoren* sectie.
 
-1. Een facet vastzetten op de bovenkant van het dialoogvenster *Filters* lijst, zoek het facet in *Dynamische factoren* en klik op het grijze punt (![Vastzetten, kiezer](assets/btn-pin-gray.png).
+1. Een facet vastzetten op de bovenkant van het dialoogvenster *Filters* lijst, zoek het facet in *Dynamische factoren* en klik op het grijze punt (![Vastzetten, kiezer](assets/btn-pin-gray.png)).
 De pin wordt blauw en de facet wordt naar de *Vastgezette gezichten* sectie.
-1. Als u een facet wilt losmaken, zoekt u het facet in het dialoogvenster *Vastgezette gezichten* en klik op het blauwe punt (![Vastzetten, kiezer](assets/btn-pin-blue.png).
+1. Als u een facet wilt losmaken, zoekt u het facet in het dialoogvenster *Vastgezette gezichten* en klik op het blauwe punt (![Vastzetten, kiezer](assets/btn-pin-blue.png)).
 De pin wordt grijs en het facet wordt naar de *Dynamische factoren* sectie.
 
    ![Vastgezette en dynamische facetten](assets/facets-pinned-unpinned.png)
 
 ## Vastgezet facet verplaatsen
 
-U kunt de volgorde van vastgezette facetten wijzigen door de rij naar een andere positie te verplaatsen. Vastgezette facetten hebben een *Verplaatsen* icon (![Selector verplaatsen](assets/btn-move.png) aan het begin van de rij. In tegenstelling tot vastgezette facetten kunnen dynamische facetten niet worden verplaatst.
+U kunt de volgorde van vastgezette facetten wijzigen door de rij naar een andere positie te verplaatsen. Vastgezette facetten hebben een *Verplaatsen* icon (![Selector verplaatsen](assets/btn-move.png)) aan het begin van de rij. In tegenstelling tot vastgezette facetten kunnen dynamische facetten niet worden verplaatst.
 
 1. Het facet zoeken in de *Vastgezette gezichten* van de lijst.
-1. Gebruik de **Verplaatsen** (![Selector verplaatsen](assets/btn-move.png) om de rij naar een nieuwe positie in het deelvenster *Vastgezette gezichten* sectie.
+1. Gebruik de **Verplaatsen** (![Selector verplaatsen](assets/btn-move.png)) gebruiken om de rij naar een nieuwe positie in de *Vastgezette gezichten* sectie.
 Nadat de wijzigingen zijn gepubliceerd, worden de opnieuw geordende facetten weergegeven in de winkel *Filters* lijst.
 
 ## Facet verwijderen

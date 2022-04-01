@@ -2,7 +2,7 @@
 title: Snelle rondleiding
 description: Maak een snelle rondleiding door Live zoeken vanuit de winkel.
 exl-id: bcb19506-6617-4c8a-83df-9d961f81e9e8
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
 source-wordcount: '308'
 ht-degree: 0%
@@ -16,6 +16,7 @@ Met de nadruk op snelheid, relevantie en gebruiksgemak, [!DNL Live Search] is ee
 ## Zoeken terwijl u typt
 
 [!DNL Live Search] reageert met voorgestelde producten en een miniatuurafbeelding van de bovenste zoekresultaten in een [popup](storefront-popover.md) als type query&#39;s voor kopers in de [Zoeken](https://docs.magento.com/user-guide/catalog/search-quick.html) doos. De [productdetails](https://docs.magento.com/user-guide/quick-tour/product-page.html) wordt weergegeven wanneer kopers op een voorgesteld of aanbevolen product klikken. A _Alles weergeven_ de koppeling in de voettekst van de pop-up geeft de pagina met zoekresultaten weer.
+
 [!DNL Live Search] retourneert de resultaten &quot;search as you type&quot; voor een query van twee of meer tekens. Voor een gedeeltelijke overeenkomst, is het maximumaantal karakters per woord 20. Het aantal karakters in de vraag is niet configureerbaar. De pop-up bevat de volgende velden: `name`, `sku`, en `category_ids`.
 
 ![Voorbeeld van winkel - zoeken terwijl u typt](assets/storefront-search-as-you-type.png)

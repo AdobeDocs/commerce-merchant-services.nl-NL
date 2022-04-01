@@ -2,7 +2,7 @@
 title: Facetten toevoegen
 description: Leer hoe u filterbare productkenmerken als facetten van Live zoeken toevoegt.
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 0%
@@ -42,7 +42,7 @@ Het facet wordt onder aan het dialoogvenster *Dynamische factoren* en de *Wijzig
 
 ## Stap 2: Eigenschappen van facetten bewerken (optioneel)
 
-1. Klik op **Meer** (![Meer kiezer](assets/btn-more.png) in de kolom uiterst rechts.
+1. Klik op **Meer** (![Meer kiezer](assets/btn-more.png)) in de rechterkolom.
 1. Klik in het menu op **Bewerken**. Pas vervolgens de volgende eigenschappen naar wens aan.
 
    * Label - ([Koploos](facets-type.md) (alleen) Voer het facetlabel in dat u wilt gebruiken.

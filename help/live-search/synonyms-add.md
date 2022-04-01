@@ -2,9 +2,9 @@
 title: Synoniemen toevoegen
 description: Voeg synoniemen voor Live zoeken toe om de reacties op zoekverzoeken te verbeteren.
 exl-id: 6c277d88-cb22-4174-abda-6d6bb65fe3be
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '393'
 ht-degree: 0%
 
 ---
@@ -63,8 +63,8 @@ De reeks synoniemen verschijnt in de lijst met een eenrichtingspijl die van de u
 
 ## Stap 3: Wijzigingen publiceren
 
-Wanneer uw synoniem(en) volledig is (zijn), klikt u op **Wijzigingen publiceren**.
-Het kan tot twee uur duren voordat uw updates beschikbaar zijn in de winkel.
+1. Wanneer uw synoniem(en) volledig is (zijn), klikt u op **Wijzigingen publiceren**.
+1. Wacht maximaal twee uur totdat uw updates beschikbaar zijn in de winkel.
 
 ![Wijzigingen publiceren](assets/synonym-publish.png)
 

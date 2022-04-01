@@ -2,9 +2,9 @@
 title: Live zoeken installeren
 description: Leer hoe u Live Search kunt installeren, bijwerken en verwijderen vanuit Adobe Commerce.
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: c70d08b90d7584559fd69cdeece0220015ae8523
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1211'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Live zoeken wordt als extensie van Adobe Marketplace geïnstalleerd. Na de [!DNL
 
 Dit onderwerp verstrekt instructies om het volgende te doen:
 
-* [Installeren [!DNL Live Search]](#before-you-begin) (Methoden 1 en 2)
+* Installeren [!DNL Live Search] (Methoden 1 en 2)
 * [Bijwerken [!DNL Live Search]](#update)
 * [Verwijderen [!DNL Live Search]](#uninstall)
 
@@ -150,15 +150,15 @@ In dit scenario: [!DNL Elasticsearch] beheert tijdelijk zoekverzoeken van de win
 
 ## API-sleutels configureren {#configure-api-keys}
 
-De Adobe Commerce API-sleutel en de bijbehorende persoonlijke sleutel zijn vereist om verbinding te maken [!DNL Live Search] naar een installatie van Adobe Commerce. De API-sleutel wordt gegenereerd en onderhouden in de account van de [!DNL Commerce] vergunninghouder, die het met de ontwikkelaar of SI kan delen. De ontwikkelaar kan vervolgens de SaaS-gegevensruimten maken en beheren namens de licentiehouder.
+De Adobe Commerce API-sleutel en de bijbehorende persoonlijke sleutel zijn vereist om verbinding te maken [!DNL Live Search] naar een installatie van Adobe Commerce. De API-sleutel wordt gegenereerd en onderhouden in de account van de [!DNL Commerce] vergunninghouder, die het met de ontwikkelaar of SI kan delen. De ontwikkelaar kan vervolgens de SaaS-gegevensruimten maken en beheren namens de licentiehouder.  Als u al een set API-sleutels hebt, hoeft u deze niet opnieuw te genereren.
 
 ### Adobe Commerce-vergunninghouder
 
-Als u een API-sleutel en een persoonlijke sleutel wilt genereren, raadpleegt u [Commerce Services Connector](https://docs.magento.com/user-guide/system/saas.html).
+Als u een API-sleutel en een persoonlijke sleutel wilt genereren, raadpleegt u [Commerce Services Connector](../landing/saas.md).
 
 ### Adobe Commerce-ontwikkelaar of SI
 
-De ontwikkelaar of SI vormt de SaaS gegevensruimte zoals die in de sectie van de Diensten van de Handel van de configuratie wordt beschreven. In de *Beheer*, wordt de Diensten van de Handel beschikbaar in sidebar van de Configuratie wanneer een module SaaS wordt geïnstalleerd.
+De ontwikkelaar of SI vormt de SaaS gegevensruimte zoals die in wordt beschreven *Commerciële diensten* van de configuratie. In de *Beheer*, wordt de Diensten van de Handel beschikbaar in *Configuratie* zijbalk als een SaaS-module is geïnstalleerd.
 
 ## Catalogusgegevens synchroniseren {#synchronize-catalog-data}
 
@@ -177,7 +177,7 @@ Raadpleeg voor meer informatie [[!DNL Live Search] catalogus niet gesynchronisee
 
 ### Toekomstige productupdates
 
-Na de eerste synchronisatie kan het tot 15 minuten duren voordat incrementele productupdates beschikbaar komen voor het zoeken naar winkelinformatie. Ga voor meer informatie naar [Streaming productupdates](indexing.md).
+Na de eerste synchronisatie kan het tot 15 minuten duren voordat incrementele productupdates beschikbaar komen voor het zoeken naar winkelinformatie. Ga voor meer informatie naar [Indexeren - productupdates streaming](indexing.md).
 
 ## De verbinding testen {#test-connection}
 
