@@ -2,9 +2,9 @@
 title: Inschakelen [!DNL Payment Services] voor productie
 description: Voltooi het instapproces door [!DNL Payment Services] voor de productie.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
-source-git-commit: fd818dadbaa2a58efd7313ce888c7dda27d25f14
+source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
 workflow-type: tm+mt
-source-wordcount: '658'
+source-wordcount: '692'
 ht-degree: 1%
 
 ---
@@ -68,7 +68,17 @@ Zie [Betalingsservices configureren](configure-admin.md) voor meer informatie ov
 
 ## Betalingsrechten aanvragen van Adobe
 
-Als u live aan boord wilt gaan, moet u betalingsrechten aanvragen van [Adobe](https://business.adobe.com/resources/payment-services.html).
+Als u live aan boord wilt gaan, moet u betalingsrechten aanvragen bij Adobe:
+
+1. Op de _Beheer_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+1. Klikken **[!UICONTROL Get Live Payments]** in uw [!DNL Payment Services] dashboard.
+
+   ![Aanvraagrechten](assets/request-entitlements.png)
+
+1. Vul het formulier in.
+1. Een lid van het verkoopteam zal contact met u opnemen.
+
+U kunt ook betalingsrechten aanvragen bij Adobe op [business.adobe.com](https://business.adobe.com/resources/payment-services.html).
 
 >[!IMPORTANT]
 >

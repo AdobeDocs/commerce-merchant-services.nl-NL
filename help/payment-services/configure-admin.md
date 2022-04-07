@@ -1,17 +1,17 @@
 ---
-title: Configureren in de beheerder
-description: Na installatie kunt u configureren [!DNL Payment Services] in de Admin.
+title: Configuratie van verouderde betalingsservices
+description: Na installatie kunt u configureren [!DNL Payment Services] in Admin bij de archiefconfiguratie.
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: fd818dadbaa2a58efd7313ce888c7dda27d25f14
+source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '726'
 ht-degree: 1%
 
 ---
 
-# Configureren in de beheerder
+# Configuratie van verouderde betalingsservices
 
 U kunt [!DNL Payment Services] aan uw behoeften met nuttige configuratieopties in Admin.
 
@@ -79,7 +79,7 @@ De [!DNL PayPal Smart Buttons] betaalopties bieden een eenvoudig, snel en veilig
 
 Zie [Betalingsopties](payments-options.md#paypal-smart-buttons) voor meer informatie .
 
-### Slimme PayPal-knoppen configureren
+### Configureren [!DNL PayPal Smart Buttons]
 
 U kunt de betaalopties voor slimme PayPal-knoppen inschakelen en configureren in de beheerfunctie:
 
@@ -93,7 +93,7 @@ U kunt de betaalopties voor slimme PayPal-knoppen inschakelen en configureren in
 1. Selecteer `Yes` voor de **[!UICONTROL Debug Mode]** (`No` schakelt deze uit).
 1. Klik op **[!UICONTROL Save Config]** .
 
-#### Configuratieopties
+### Configuratieopties
 
 | Veld | Toepassingsgebied | Beschrijving |
 |---|---|---|
@@ -106,3 +106,15 @@ U kunt de betaalopties voor slimme PayPal-knoppen inschakelen en configureren in
 | [!UICONTROL Show buttons on product detail page] | winkelweergave | In- of uitschakelen [!DNL PayPal Smart Buttons] op de pagina met productdetails. Opties: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show buttons in mini cart preview] | winkelweergave | In- of uitschakelen [!DNL PayPal Smart Buttons] in de minicart-voorvertoning. Opties: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show buttons on cart page] | winkelweergave | In- of uitschakelen [!DNL PayPal Smart Buttons] op de winkelwagentje. Opties: [!UICONTROL Yes] / [!UICONTROL No] |
+
+### [!DNL PayPal Smart Buttons] Stijlopties
+
+| Veld | [Toepassingsgebied]({% koppeling configuration/scope.md %}) | Beschrijving |
+|--- |--- |--- |
+| [!UICONTROL Layout] | Winkelweergave | Definieer de lay-outstijl voor PayPal Smart Buttons. Opties: [!UICONTROL Vertical] / [!UICONTROL Horizontal] |
+| [!UICONTROL Color] | Winkelweergave | Definieer de kleur van de slimme PayPal-knoppen. Opties: [!UICONTROL Blue] / [!UICONTROL Gold] / [!UICONTROL Silver] / [!UICONTROL White] / [!UICONTROL Black] |
+| [!UICONTROL Shape] | Winkelweergave | Vorm van de PayPal Smart-knoppen definiëren. Opties: [!UICONTROL Rectangular] / [!UICONTROL Pill] |
+| [!UICONTROL Use Default Height] | Winkelweergave | Definieert of slimme PayPal-knoppen een standaardhoogte gebruiken. Opties: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Height] | Winkelweergave | Definieer de hoogte van de slimme PayPal-knoppen. Standaardwaarde: none |
+| [!UICONTROL Label] | Winkelweergave | Definieer het label dat wordt weergegeven in de slimme PayPal-knoppen. Opties: [!UICONTROL PayPal] / [!UICONTROL Checkout] / [!UICONTROL Buynow] / [!UICONTROL Pay] / [!UICONTROL Installment] |
+| [!UICONTROL Tagline] | Winkelweergave | Hiermee schakelt u de taglijn in. Opties: [!UICONTROL Yes] / [!UICONTROL No] |

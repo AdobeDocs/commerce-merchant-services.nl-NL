@@ -3,9 +3,9 @@ user-guide-title: '[!DNL Payment Services] Hulplijn'
 user-guide-description: Deze handleiding bevat gedetailleerde informatie over installeren en configureren [!DNL Payment Services] voor je Adobe Commerce of Magento Open Source-winkel.
 breadcrumb-title: '[!DNL Payment Services] Hulplijn'
 index: true
-source-git-commit: e42f05a8a66c6819cd6c1c07e267854c7c44127d
+source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
 workflow-type: tm+mt
-source-wordcount: '75'
+source-wordcount: '78'
 ht-degree: 1%
 
 ---
@@ -24,8 +24,9 @@ ht-degree: 1%
    - [Testsandbox instellen](sandbox.md)
    - [Productie inschakelen](production.md)
 - Configureren [!DNL Payment Services] {#configure}
-   - [Configureren in de beheerder](configure-admin.md)
+   - [Configureren in het dashboard](configure-dashboard.md)
    - [Configuratie opdrachtregel](configure-cli.md)
+   - [Configuratie van oude betalingen](configure-admin.md)
 - [Testen en valideren](test-validate.md)
 - [Een bestelling maken](create-order.md)
 - Financiële verslaggeving {#reporting}

@@ -2,9 +2,9 @@
 title: '"[!DNL Payment Services] Opmerkingen bij de release"'
 description: Lees de opmerkingen bij de release voor meer informatie over alle [!DNL Payment Services] lozingen.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 93a10d91a2dc92db530074d7fc2dfd4f31a9488d
+source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '555'
 ht-degree: 0%
 
 ---
@@ -42,8 +42,6 @@ In deze releaseopmerkingen wordt de eerste release van [!DNL Payment Services] e
 ![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-2561 --> Eerder verwijderde producten komen niet voor in het winkelwagentje op de _Revisievolgorde_ pagina.
 
 ![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-2456 --> [!DNL Payment Services] verbetert de labels van de betalingsmethode in de beheerder.
-
-![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-2907 --> Verbeterde verzameling van transactiegegevens om zo optimaal mogelijk gebruik te maken van de regels voor fraude en de terugbetalingsbescherming.
 
 ![Bekend probleem](../assets/bug.svg)<!-- Issue PAY-2473 --> Gebruiken [onjuiste componentsleutels](https://support.magento.com/hc/en-us/articles/4406603542541) tijdens de installatie van de extensie voorkomt dat de gebruiker [authenticate](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) correct `MAGEID`.
 
