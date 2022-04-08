@@ -2,9 +2,9 @@
 title: '''[!DNL Express Checkout] voorwaarden "'
 description: Controleer of uw systeem voldoet aan de vereisten voor het gebruik van de [!DNL Express Checkout] voor Adobe Commerce-extensie.
 exl-id: fa61aa73-a2b6-4c69-ab42-cede74c15caa
-source-git-commit: 163dd5260908b4ea3a8bfbcfdb834531d1603734
+source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '151'
 ht-degree: 1%
 
 ---
@@ -34,4 +34,4 @@ De [!DNL Express Checkout] heeft bestaande compatibiliteitsproblemen voor het EA
 | ISPU | [!DNL In-Store Pickup] (ISPU)-functionaliteit wordt niet ondersteund |
 | Multiverzending | Multiverzending wordt niet ondersteund |
 
-Zie de [Beperkingen van de bout](https://help.bolt.com/integrations/adobe-express-checkout/set-up/#limitations) voor meer informatie over compatibiliteitsbeperkingen voor Bolt en de [!DNL Express Checkout] extensie.
+Zie de [[!DNL Bolt] beperkingen](https://help.bolt.com/integrations/adobe-express-checkout/set-up/#limitations) pagina voor meer informatie over compatibiliteitsbeperkingen voor [!DNL Bolt] en de [!DNL Express Checkout] extensie.

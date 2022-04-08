@@ -2,9 +2,9 @@
 title: Het testen van [!DNL Express Checkout] voor Adobe Commerce-extensie
 description: Testen en valideren zorgt ervoor dat de [!DNL Express Checkout] de extensie werkt zoals u had verwacht.
 exl-id: 308f39e1-e2f6-40d8-b876-0f9013effed3
-source-git-commit: d8302d2d652b4e2380cc862183e58cbd2cca831b
+source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '476'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Het testen van [!DNL Express Checkout] in een sandbox-omgeving is een zeer belan
 
 ### Sandboxaccount gebruiken
 
-Wanneer u de sandbox test en valideert, moet u een onecht creditcardnummer en een [sandbox](https://merchant-sandbox.bolt.com/register){target=&quot;_blank&quot;} zakelijke account in Bolt, zodat u geen echte kosten maakt voor een bestaande creditcardaccount.
+Wanneer u de sandbox test en valideert, moet u een onecht creditcardnummer en een [sandbox](https://merchant-sandbox.bolt.com/register){target=&quot;_blank&quot;} zakelijke account in [!DNL Bolt], zodat u geen echte kosten maakt voor een bestaande creditcardrekening.
 
 ## Testen in productie
 
@@ -48,7 +48,7 @@ Voer de volgende stappen uit om een afhandeling uit uw winkel te voltooien:
 
 1. Ga naar je winkel en plaats de gewenste objecten in je winkelwagentje.
 1. Ga door met de kassa.
-1. Voer een e-mailadres in dat aan een Bolt-account is gekoppeld wanneer hierom wordt gevraagd.
+1. Voer een e-mailadres in dat is gekoppeld aan een [!DNL Bolt] Account indien gevraagd.
 1. Voer het eenmalige wachtwoord (OTP) in dat naar het e-mailadres van het account is verzonden.
 1. Selecteer het omgevingsdashboard:
 

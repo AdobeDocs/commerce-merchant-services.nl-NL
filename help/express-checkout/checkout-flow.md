@@ -2,9 +2,9 @@
 title: Afhandelingsstroom
 description: Overzicht van de [!DNL Express Checkout] stroom in Adobe Commerce.
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
-source-git-commit: 163dd5260908b4ea3a8bfbcfdb834531d1603734
+source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '574'
 ht-degree: 0%
 
 ---
@@ -22,11 +22,11 @@ Een geslaagde [!DNL Express Checkout] De stroom bestaat uit de volgende stappen:
 1. Open de winkelruimte en voeg objecten toe aan de winkelwagentje.
 1. Ga door met de kassa.
 
-![Afhandeling](../assets/proceed-checkout.png)
+![Afhandeling](assets/proceed-checkout.png)
 
-1. Voer desgevraagd een e-mailadres in dat is gekoppeld aan een Bolt-account.
-1. Voer het Eenmalige wachtwoord (OTP) in dat naar het e-mailadres of telefoonnummer van dat Bolt-account is verzonden.
-1. Zodra u bent aangemeld met uw Bolt-account, worden de afbetalingsgegevens automatisch ingevuld:
+1. Voer desgevraagd een e-mailadres in dat is gekoppeld aan een [!DNL Bolt] account.
+1. Voer het eenmalige wachtwoord (OTP) in dat naar dat wachtwoord is verzonden [!DNL Bolt] e-mailadres of telefoonnummer van account.
+1. Zodra het programma geopend met uw [!DNL Bolt] account, betalingsgegevens worden automatisch ingevuld in:
 
    - Verzendgegevens
    - Betalingsmethode
@@ -43,20 +43,20 @@ De [!DNL Express Checkout] is compatibel met standaard aanvullende Adobe Commerc
 
 De [!DNL Express Checkout] staat voor veelvoudige gebruiksgevallen tijdens een controlestroom toe:
 
-- Gastgebruiker met een geregistreerde Bolt-account.
-- Gastgebruiker met een nieuwe Bolt-account.
-- Een bestaande Adobe Commerce-gebruiker met of zonder geregistreerde Bolt-account.
+- Gastgebruiker met geregistreerde [!DNL Bolt] account.
+- Gastgebruiker met een nieuwe [!DNL Bolt] account.
+- Een bestaande Adobe Commerce-gebruiker met of zonder geregistreerde [!DNL Bolt] account.
 
 ## Afhandeling door gastgebruiker: Hoe werkt het
 
-De ervaring bij het afrekenen van gasten verschilt van de ervaring bij het aanmelden. Wanneer een winkelier een e-mailadres invoert bij het afrekenen, [!DNL Express Checkout] valideert het om een bestaand Bolt-account te zoeken.
+De ervaring bij het afrekenen van gasten verschilt van de ervaring bij het aanmelden. Wanneer een winkelier een e-mailadres invoert bij het afrekenen, [!DNL Express Checkout] valideert het om een bestaand [!DNL Bolt] account.
 
-### Geregistreerde Bolt-account
+### Geregistreerd [!DNL Bolt] account
 
-Als een Bolt-account wordt gevonden, gaan kopers door met hun [!DNL Express Checkout] naadloze uitcheckervaring:
+Indien een [!DNL Bolt] account is gevonden, kopers gaan verder met hun [!DNL Express Checkout] naadloze uitcheckervaring:
 
-1. Voer het eenmalige wachtwoord (OTP) dat naar het e-mailadres of mobiele adres van dat Bolt-account is verzonden in, afhankelijk van de gebruikersvoorkeuren in het Bolt-account.
-1. Zodra u bent aangemeld met uw Bolt-account, worden automatisch de uitcheckgegevens ingevuld:
+1. Voer het eenmalige wachtwoord (OTP) in dat naar dat wachtwoord is verzonden [!DNL Bolt] e-mailadres van account of mobiel, afhankelijk van de voorkeuren van de gebruiker in het dialoogvenster [!DNL Bolt] account.
+1. Zodra het programma geopend met uw [!DNL Bolt] -account, worden de uitcheckgegevens automatisch ingevuld:
 
    - Verzendgegevens
    - Betalingsmethode
@@ -67,16 +67,16 @@ Als een Bolt-account wordt gevonden, gaan kopers door met hun [!DNL Express Chec
 >
 > Gastgebruiker plaatst de bestelling en kan zich registreren in Adobe Commerce.
 
-### Nieuwe Bolt-account
+### Nieuw [!DNL Bolt] account
 
-Als er geen Bolt-account wordt gevonden, gaan kopers verder met het standaard uitchecken van Adobe Commerce en biedt de winkel alle benodigde gegevens om de bestelling te plaatsen:
+Indien niet [!DNL Bolt] -account is gevonden, kunnen kopers hun standaard buiten-de-box Adobe Commerce-afhandeling voortzetten en kan winkels alle benodigde gegevens verstrekken om de bestelling te plaatsen:
 
 - Informatie over verzending en facturering
 - Verzendmethode
 - Betalingsmethode controleren
-- Er verschijnt een selectievakje om u in Bolt aan te melden voor snellere kassa&#39;s voordat u de bestelling plaatst. Ze kunnen akkoord gaan met de voorwaarden om hun Bolt-account te maken.
+- Er verschijnt een selectievakje om u aan te melden [!DNL Bolt] voor snellere kassa&#39;s voordat u de bestelling plaatst. Ze kunnen akkoord gaan met de voorwaarden om hun [!DNL Bolt] account.
 
-   ![Bolt onthouden](../assets/checked-bolt.png)
+   ![Herinneren [!DNL Bolt]](assets/checked-bolt.png)
 
 - De gastgebruiker plaatst de bestelling en kan zich in Adobe Commerce registreren.
 
@@ -84,11 +84,11 @@ Als er geen Bolt-account wordt gevonden, gaan kopers verder met het standaard ui
 
 Een bestaande gebruiker kan bestaande details selecteren wanneer de gebruiker een orde met [!DNL Express Checkout] voor een snellere afrekenervaring.
 
-Wanneer een winkelier een e-mailadres invoert bij het afrekenen, [!DNL Express Checkout] valideert het om een bestaand Bolt-account te zoeken.
+Wanneer een winkelier een e-mailadres invoert bij het afrekenen, [!DNL Express Checkout] valideert het om een bestaand [!DNL Bolt] account.
 
-### Geregistreerde Bolt-account bij een Adobe Commerce-gebruiker
+### Geregistreerd [!DNL Bolt] account bij een Adobe Commerce-gebruiker
 
-Als er een Bolt-account wordt gevonden, gaan kopers door met het standaard uitchecken van Adobe Commerce en biedt de winkel alle benodigde gegevens en plaatst deze vervolgens de bestelling:
+Indien een [!DNL Bolt] -account wordt gevonden, kunnen kopers hun standaard uitchecken via Adobe Commerce en kan winkelen alle benodigde gegevens verstrekken en vervolgens de bestelling plaatsen:
 
 - Informatie over verzending en facturering
 - Verzendmethode
@@ -98,19 +98,19 @@ Zie de [problemen oplossen](../express-checkout/troubleshooting.md) onderwerp vo
 
 >[!NOTE]
 >
-> Als de gebruiker een Bolt-account heeft en e-mailberichten niet worden weergegeven als geregistreerd in Adobe Commerce, wordt de aanmelding Eenmalig wachtwoord (OTP) geactiveerd. Zie de [ingeschreven Bolt-account](#registered-bolt-account) stroom.
+> Als de gebruiker een [!DNL Bolt] account en e-mail worden niet weergegeven als geregistreerd in Adobe Commerce, maar de aanmelding voor eenmalige wachtwoorden (One-Time Password, OTP) wordt geactiveerd. Zie de [geregistreerd [!DNL Bolt] account](#registered-bolt-account) stroom.
 
-### Nieuwe Bolt-account
+### Nieuw [!DNL Bolt] account
 
-Als er geen Bolt-account wordt gevonden, gaan kopers door met het standaard afrekenen van Adobe Commerce en kiest de winkel alle benodigde gegevens in de opgeslagen gegevens om de bestelling te plaatsen:
+Indien niet [!DNL Bolt] -account is gevonden, kunnen kopers hun standaard afhandeling door Adobe Commerce voortzetten en kan winkeliers alle benodigde gegevens uit hun opgeslagen gegevens selecteren om de bestelling te plaatsen:
 
 - Informatie over verzending en facturering
 - Verzendmethode
 - Betalingsmethode controleren
-- Er verschijnt een selectievakje om u in Bolt aan te melden voor snellere kassa&#39;s voordat u de bestelling plaatst. Ze kunnen akkoord gaan met de voorwaarden om hun Bolt-account te maken.
+- Er verschijnt een selectievakje om u aan te melden [!DNL Bolt] voor snellere kassa&#39;s voordat u de bestelling plaatst. Ze kunnen akkoord gaan met de voorwaarden om hun [!DNL Bolt] account.
 
-   ![Bolt onthouden](../assets/checked-bolt.png)
+   ![Herinneren [!DNL Bolt]](assets/checked-bolt.png)
 
 ## Hulp vragen
 
-Neem contact op met Adobe Commerce Support voor hulp en vragen.
+Neem voor hulp contact op met de Adobe Commerce-ondersteuning.

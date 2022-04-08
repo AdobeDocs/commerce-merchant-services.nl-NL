@@ -2,9 +2,9 @@
 title: Problemen met het oplossen van problemen voor de [!DNL Express Checkout]
 description: Los fouten, bekende kwesties op u terwijl het gebruiken van [!DNL Express Checkout] voor Adobe Commerce-extensie.
 exl-id: a379ff81-360d-4cb9-a123-47e8cbc0cdbd
-source-git-commit: 163dd5260908b4ea3a8bfbcfdb834531d1603734
+source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '488'
 ht-degree: 0%
 
 ---
@@ -95,9 +95,9 @@ Adobe Commerce kan doorgaans worden geconfigureerd voor ondersteuning van maxima
 
 Er is een bekend probleem voor de [!DNL Express Checkout].
 
-Wanneer u de optie `Enable terms and conditions` selectievakje en [aanmelden met een Bolt-account](https://help.bolt.com/shoppers/guides/checkout/log-in/), wordt het selectievakje niet weergegeven.
+Wanneer u de optie `Enable terms and conditions` Schakel het selectievakje in Admin en meld u aan met een [!DNL Bolt] de `Enable terms and conditions` het selectievakje wordt niet weergegeven tijdens het uitchecken. Zie de [aanmelden](https://help.bolt.com/shoppers/account/login-dashboard/) [!DNL Bolt] voor meer informatie.
 
-Zie [voorwaarden](https://docs.magento.com/user-guide/sales/terms-and-conditions.html) voor meer informatie.
+Zie [voorwaarden](https://docs.magento.com/user-guide/sales/terms-and-conditions.html) onderwerp voor meer informatie over de configuratie Admin.
 
 ## Onverwacht gedrag wanneer `Display Billing Address On` is ingesteld op `payment page`
 
@@ -105,7 +105,7 @@ Er is een bekend probleem voor de [!DNL Express Checkout].
 
 Als u de `Display Billing Address On` parameter to `payment page` en [aanmelden met een Bolt-account](https://help.bolt.com/shoppers/guides/checkout/log-in/) wanneer u de `My billing and shipping address are the same` selectievakje:
 
-![Hetzelfde adres](../assets/checked-address.png)
+![Hetzelfde adres](assets/checked-address.png)
 
 Keuzerondje wordt weergegeven `use existing card`.
 
@@ -119,4 +119,4 @@ Zie de [vertalen en lokaliseren](https://devdocs.magento.com/guides/v2.4/fronten
 
 ## Hulp vragen
 
-Neem contact op met Adobe Commerce Support voor meer hulp of vragen.
+Neem voor hulp contact op met de Adobe Commerce-ondersteuning.
