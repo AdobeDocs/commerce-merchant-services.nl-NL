@@ -3,9 +3,9 @@ user-guide-title: '[!DNL Express Checkout] voor Adobe Commerce'
 user-guide-description: Meer informatie over [!DNL Express Checkout] kan ten goede komen aan uw Adobe Commerce-exemplaar en hoe u de extensie met succes aan boord kunt nemen en kunt instellen.
 breadcrumb-title: Handelshulpgids
 hide: true
-source-git-commit: 46d5cae4e55a2983a2dc8c442cf5530803be65af
+source-git-commit: af8c5288e6d6275c40bcc17a0ab809b4663f7535
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '55'
 ht-degree: 0%
 
 ---
@@ -26,4 +26,5 @@ ht-degree: 0%
    - [Afhandelingsstroom](checkout-flow.md)
    - [Verzendgegevens](shipping-details.md)
    - [Betalingsmethoden](payment-methods.md)
+   - [Een bestelling maken in Beheer](create-order-admin.md)
    - [Problemen oplossen [!DNL Express Checkout]](troubleshooting.md)
