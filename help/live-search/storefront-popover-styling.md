@@ -2,14 +2,14 @@
 title: Popup-elementen opmaken
 description: Technische notities over het aanpassen van de pop-up Live zoeken in de winkel.
 exl-id: 033049f2-976e-4299-b026-333ac4b481a3
-source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
+source-git-commit: 479bf3fba776f47942a0ac8419abbae5553339f0
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 0%
 
 ---
 
-# Popover-elementen opmaken
+# Popup-elementen opmaken
 
 De [storefront popover](storefront-popover.md) geeft altijd het product weer `name` en `price`en de selectie van velden kan niet worden geconfigureerd. popover-elementen kunnen echter worden opgemaakt met CSS-klassen. Met de volgende declaraties wijzigt u bijvoorbeeld de achtergrondkleur van de container en de voettekst van de pop-up.
 

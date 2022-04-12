@@ -2,9 +2,9 @@
 title: Technische opmerkingen facet
 description: Technische notities over het gebruik van facetten van Live zoeken.
 exl-id: 37982610-0ff7-48b7-b088-be7d2eff8a57
-source-git-commit: 7402e97f53b71e488d860215487f4809572b7e6f
+source-git-commit: e53fb13b98684757b8081b2e19dd33d925e8ce5d
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '114'
 ht-degree: 0%
 
 ---
@@ -22,13 +22,3 @@ Facetsamenvoeging wordt uitgevoerd als volgt als de winkel drie facetten (catego
 * `categories` aggregatie - aggregaten `categories`, van toepassing `color` en `price` , maar niet de `categories` filter.
 * `color` aggregatie - aggregaten `color`, van toepassing `price` en `categories` , maar niet de `color` filter.
 * `price` aggregatie - aggregaten `price`, van toepassing `color` en `categories` , maar niet de `price` filter.
-
-## Standaardkenmerkwaarden
-
-De volgende productkenmerken hebben enkele [storefront, eigenschappen](https://docs.magento.com/user-guide/stores/attributes-product.html) die standaard zijn ingeschakeld.
-
-| Eigenschap | Storefront, eigenschap | Kenmerk |
-|---|---|---|
-| Sorteerbaar | Wordt gebruikt voor sorteren in de productlijst | `price` |
-| Doorzoekbaar | Gebruiken in Zoeken | `price` <br />`sku`<br />`name` |
-| FilterableInSearch | Gebruik in gelaagde navigatie - Filterbaar (met resultaten) | `price`<br />`visibility`<br />`category_name` |

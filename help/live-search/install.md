@@ -2,9 +2,9 @@
 title: Live zoeken installeren
 description: Leer hoe u Live Search kunt installeren, bijwerken en verwijderen vanuit Adobe Commerce.
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
+source-git-commit: 27adb528c0c805478516dd9669237b971d0efc95
 workflow-type: tm+mt
-source-wordcount: '1211'
+source-wordcount: '1245'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,8 @@ In dit scenario worden storefront-bewerkingen onderbroken terwijl de [!DNL Live 
 1. Voer de volgende opdrachten uit om uit te schakelen [!DNL Elasticsearch] en bijbehorende modules, en installeren [!DNL Live Search]:
 
    ```bash
-   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch
+   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch 
+   Magento_ElasticsearchCatalogPermissionsGraphQl
    ```
 
    ```bash
@@ -139,7 +140,8 @@ In dit scenario: [!DNL Elasticsearch] beheert tijdelijk zoekverzoeken van de win
    ```
 
    ```bash
-   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch
+   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch 
+   Magento_ElasticsearchCatalogPermissionsGraphQl
    ```
 
    ```bash
@@ -200,6 +202,18 @@ composer update magento/live-search --with-dependencies
 ```
 
 Als u wilt bijwerken naar een hoofdversie zoals 1.0.0 tot 2.0.0, bewerkt u de hoofdmap van het project [!DNL Composer] `.json` bestand als volgt:
+
+1. Als uw huidige systeem is geïnstalleerd `magento/live-search` versie is `1.3.1` of lager en u werkt aan een upgrade naar de versie `2.0.0` of hoger, stel het volgende bevel vóór de verbetering in werking:
+
+   ```bash
+   bin/magento module:enable Magento_AdvancedSearch
+   ```
+
+   Voor informatie over de momenteel geïnstalleerde `magento/live-search` versie, voer het volgende bevel in:
+
+   ```bash
+   composer show magento/live-search
+   ```
 
 1. De hoofdmap openen `composer.json` bestand en zoek naar `magento/live-search`.
 
