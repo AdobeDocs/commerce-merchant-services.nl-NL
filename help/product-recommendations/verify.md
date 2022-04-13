@@ -1,9 +1,10 @@
 ---
 title: Gebeurtenisverzameling verifiëren
 description: Leer hoe u kunt controleren of er gedragsgegevens naar Adobe Commerce worden verzonden.
-source-git-commit: 7fe89df32dc5363817f957180e5b75e7217fc14a
+exl-id: c8c34db4-9d87-4012-b8f0-e9b1da214305
+source-git-commit: 7d9cef7a81196921b465ccf2dcd58d98b66d6598
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
@@ -22,6 +23,9 @@ Om ervoor te zorgen dat het JS-bestand van de gebeurtenisverzamelaar op alle sit
 1. Laad de pagina opnieuw.
 1. U moet `ds.js` of `ds.min.js` in de **Naam** kolom.
 
+![JS voor gebeurteniscollector](assets/filter-ds.png)
+_JS van gebeurteniscollector_
+
 Om ervoor te zorgen dat de gebeurtenissen op pagina&#39;s over uw plaats (huis, product, kassa, etc.) worden afgevuurd:
 
 1. Zorg ervoor dat u eventuele advertentieblokkers in uw browser uitschakelt en cookies op de site accepteert.
@@ -29,6 +33,9 @@ Om ervoor te zorgen dat de gebeurtenissen op pagina&#39;s over uw plaats (huis, 
 1. Kies de optie **Netwerk** tab en filter voor `tp2`.
 1. Laad de pagina opnieuw.
 1. U zou vraag onder moeten zien `tp2` in de **Naam** kolom.
+
+![Gebeurtenissen parseren](assets/filter-tp2.png)
+_Controleren of gebeurtenissen worden geactiveerd_
 
 ## Verifiëren met de extensie Snowplow Chrome
 
@@ -46,7 +53,8 @@ Installeer de [De extensie Snowplow Analytics Debugger voor Chrome](https://chro
 
 1. Controleer of de [SaaS Data Space ID](https://docs.magento.com/user-guide/configuration/services/saas.html) correct is ingesteld.
 
-Als u problemen ondervindt bij het controleren of de gebeurtenissen worden verzameld en naar Adobe Commerce worden verzonden, [contactondersteuning](https://support.magento.com/hc/en-us).
+![Sneeuwlaag, filter](assets/snowplow-filter.png)
+_Sneeuwlaag, filter_
 
 >[!NOTE]
 >

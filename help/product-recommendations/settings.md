@@ -1,9 +1,10 @@
 ---
 title: Instellingen
 description: Leer hoe u de bron van uw [!DNL Product Recommendations] gegevens en hoe te om visuele aanbevelingen toe te laten.
-source-git-commit: 8c85d26474e371d30b76499f312553a07e329a80
+exl-id: 8c074e11-e0cb-4d55-b646-30279c79bbc2
+source-git-commit: 6d0c7c749fe90c7c204afe47446f3483d8668b53
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '410'
 ht-degree: 0%
 
 ---
@@ -51,7 +52,7 @@ Als u de bron van de gegevens van uw productaanbevelingen wilt wijzigen, kiest u
 
 1. Klik in de Recommendations-bronsectie op **Configuratie bewerken**.
 
-1. Volg de instructies om een nieuwe te vormen [Commerciële dienst].
+1. Volg de instructies om een nieuwe te vormen [[!DNL Commerce] service](/help/landing/saas.md).
 
 ## Visuele aanbevelingen inschakelen
 

@@ -1,9 +1,10 @@
 ---
 title: Commerce Services Connector
 description: Leer hoe u uw Adobe Commerce- of Magento Open Source-exemplaar integreert met behulp van een API-sleutel en een persoonlijke sleutel.
-source-git-commit: 8789bd21362109325d0d7b23d9b130067390eeae
+exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
+source-git-commit: 6d0c7c749fe90c7c204afe47446f3483d8668b53
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '828'
 ht-degree: 0%
 
 ---
@@ -18,9 +19,9 @@ De volgende lijst bevat de [!DNL Commerce] functies waartoe u toegang hebt via d
 
 | Service | Beschikbaarheid |
 | ---|--- |
-| [!DNL Product Recommendations] aangedreven door Adobe Sensei | Adobe Commerce |
-| [!DNL Live Search] aangedreven door Adobe Sensei | Adobe Commerce |
-| [!DNL Payment Services] | Adobe Commerce en Magento Open Source |
+| [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) aangedreven door Adobe Sensei | Adobe Commerce |
+| [[!DNL Live Search]](/help/live-search/overview.md) aangedreven door Adobe Sensei | Adobe Commerce |
+| [[!DNL Payment Services]](/help/payment-services/overview.md) | Adobe Commerce en Magento Open Source |
 
 ## Architectuur
 
@@ -74,7 +75,7 @@ Voor [!DNL Product Recommendations], bevat de SaaS-gegevensruimte catalogus- en 
 
 >[!NOTE]
 >
-> Als u de **Commerce Services Connector** in de [!DNL Commerce] configuratie, moet u installeren [!DNL Commerce] modules naar wens [!DNL Commerce Service], zoals [!DNL Product Recommendations].
+> Als u de **[!UICONTROL Commerce Services Connector]** in de [!DNL Commerce] configuratie, moet u installeren [!DNL Commerce] modules naar wens [!DNL Commerce] diensten, zoals [[!DNL Product Recommendations]](/help/product-recommendations/install-configure.md).
 
 Om een SaaS- project te selecteren of te creëren, verzoek [!DNL Commerce] API-sleutel uit de [!DNL Commerce] licentiehouder voor uw winkel.
 
