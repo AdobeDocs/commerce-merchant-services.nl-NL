@@ -2,7 +2,7 @@
 title: Live zoeken installeren
 description: Leer hoe u Live Search kunt installeren, bijwerken en verwijderen vanuit Adobe Commerce.
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: 27adb528c0c805478516dd9669237b971d0efc95
+source-git-commit: 26d841f8a47f4b9067974234c94d4441be6733ea
 workflow-type: tm+mt
 source-wordcount: '1245'
 ht-degree: 0%
@@ -48,7 +48,7 @@ In dit scenario worden storefront-bewerkingen onderbroken terwijl de [!DNL Live 
 1. Als u het dialoogvenster `live-search` pakket, voer het volgende uit vanaf de bevellijn:
 
    ```bash
-   composer require magento/DNL live-search
+   composer require magento/live-search
    ```
 
    Raadpleeg de lijst met [!DNL Live Search] [afhankelijkheden](#dependencies) die zijn vastgelegd door [!DNL Composer].
