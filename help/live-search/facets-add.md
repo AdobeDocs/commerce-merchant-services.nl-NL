@@ -2,9 +2,9 @@
 title: Facetten toevoegen
 description: Leer hoe u filterbare productkenmerken als facetten van Live zoeken toevoegt.
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
-source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
+source-git-commit: 966b15e6cb8c839c39575a3ad25a6b460201330b
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '652'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Het facet wordt onder aan het dialoogvenster *Dynamische factoren* en de *Wijzig
    * Label - ([Koploos](facets-type.md) (alleen) Voer het facetlabel in dat u wilt gebruiken.
    * Selecteer tekst - De *Tekst selecteren* gebruikt voor alle [!DNL Commerce] storefronts is `single select`. Voor headless implementaties, `multi-select` type kan worden toegewezen met een logische operator (`or` of `and`) om de reeks geretourneerde producten te bepalen.
    * Type sorteren - Facets worden alfabetisch gesorteerd voor alle [!DNL Commerce] opslagronten. Voor implementaties zonder kop kunnen facetten alfabetisch of op aantal worden gesorteerd. Opties: Alfabetisch, Aantal (alleen zonder kop)
-   * Max. waarde - Voer het maximale aantal facetwaarden in dat in de winkelruimte wordt weergegeven. Geldige vermeldingen: 0 - 10
+   * Max. waarde - Voer het maximale aantal facetwaarden in dat in de winkelruimte wordt weergegeven. Geldige vermeldingen: 0 - 30; Standaard: 8
 
 1. Klik op **Opslaan**.
 
@@ -70,7 +70,7 @@ Als het facet na twee uur niet beschikbaar is, zie [Exporteren verifiëren](inst
 | Label | ([Koploos](facets-type.md) alleen) De [facetlabel](facets-type.md) die zichtbaar is in de winkel, kan worden bewerkt voor consistentie met uw merk. |
 | Tekst selecteren | Hiermee geeft u het dialoogvenster [selectiemethode](facets-type.md) die aan het productkenmerk is gekoppeld. Alle facetten in de [!DNL Commerce] winkeliers zijn `Single select` alleen. Ook ondersteuning voor headless-implementaties `Multi-select` met de logische operatoren `OR` en `AND`. |
 | Sorteertype | De methode die wordt gebruikt om [sorteren](facets-type.md) facetten. Alles [!DNL Commerce] storefronts sorteren alleen alfabetische facetten. Implementaties zonder kop kunnen ook worden gesorteerd op `Count`. Opties:<br />Alfabetisch - Hiermee worden facetten alfabetisch gesorteerd.<br />Tellen - (alleen Koploos) sorteert facetten op basis van het aantal gevonden overeenkomsten. |
-| Max. waarde | Het maximumaantal waarden dat in de opslagruimte voor elk facet kan worden getoond. Facetten die een reeks waarden vertegenwoordigen, worden gelijkmatig verdeeld. Standaard: 8 |
+| Max. waarde | Het maximumaantal waarden dat in de opslagruimte voor elk facet kan worden getoond. Facetten die een reeks waarden vertegenwoordigen, worden gelijkmatig verdeeld. Geldige vermeldingen: 0 - 30; Standaard: 8 |
 
 ### Besturingselementen
 
