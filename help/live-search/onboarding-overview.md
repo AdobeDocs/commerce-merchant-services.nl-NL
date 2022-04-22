@@ -2,9 +2,9 @@
 title: Onboarding-overzicht
 description: Live zoeken in instapkaartstromen, systeemvereisten, grenzen en beperkingen
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: f33f02fa15b6250970bda3302d3403b6fcec5786
+source-git-commit: f2934746c327528d5d52f2ae356afe303ff9b81b
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '337'
 ht-degree: 0%
 
 ---
@@ -45,6 +45,7 @@ Op dit moment wordt [!DNL Live Search] zoek-/Categorie-API heeft de volgende ond
 
 ### PWA bèta-release
 
+* De huidige bèta-PWA-implementatie van Live Search vereist meer verwerkingstijd om zoekresultaten te retourneren dan Live Search met de native Commerce-winkel.
 * De bètaversie van PWA voor [!DNL Live Search] ondersteunt niet [gebeurtenisafhandeling](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
 * De volgende productkenmerken worden niet ondersteund door GraphQL bij gebruik in relatie tot de bètaversie van [PWA](https://developer.adobe.com/commerce/pwa-studio/): `description`, `name`, `short_description`
 
@@ -55,3 +56,5 @@ Op dit moment wordt [!DNL Live Search] zoek-/Categorie-API heeft de volgende ond
 * [Aangepaste prijsgroepen](https://docs.magento.com/user-guide/catalog/product-price-group.html)
 * Meerdere voorraadlocaties zoals gebruikt door [MCOM](https://docs.magento.com/user-guide/mcom.html) of andere OMS-extensies
 * [Geïntegreerde B2B-mogelijkheden](https://business.adobe.com/products/magento/b2b-ecommerce.html)
+* De productprijzen omvatten niet [btw](https://docs.magento.com/user-guide/tax/vat.html) (BTW).
+* Producten buiten de voorraad worden in zoekresultaten weergegeven, ongeacht de [Opties voor voorraad](https://docs.magento.com/user-guide/catalog/inventory-options-global.html) configuratie.

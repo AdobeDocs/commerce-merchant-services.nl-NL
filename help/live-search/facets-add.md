@@ -2,7 +2,7 @@
 title: Facetten toevoegen
 description: Leer hoe u filterbare productkenmerken als facetten van Live zoeken toevoegt.
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
-source-git-commit: 966b15e6cb8c839c39575a3ad25a6b460201330b
+source-git-commit: f31c76404315a9fe142bf0c72ff9999c4a87365d
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 0%
@@ -54,8 +54,8 @@ Het facet wordt onder aan het dialoogvenster *Dynamische factoren* en de *Wijzig
 
    ![Werkruimte naast elkaar](assets/facet-edit.png)
 
-1. Het facet vastzetten op de bovenkant van het *Filters* lijst, klikt u op het grijze drukknop (![Vastzetten, kiezer](assets/btn-pin-gray.png).
-1. Als u de volgorde van het vastgezette facet wilt wijzigen, klikt u op de knop **Verplaatsen** (![Selector verplaatsen](assets/btn-move.png) en sleep de rij naar een nieuwe positie in het deelvenster *Vastgezette gezichten* sectie.
+1. Het facet vastzetten op de bovenkant van het *Filters* lijst, klikt u op het grijze drukknop (![Vastzetten, kiezer](assets/btn-pin-gray.png)).
+1. Als u de volgorde van het vastgezette facet wilt wijzigen, klikt u op de knop **Verplaatsen** (![Selector verplaatsen](assets/btn-move.png)) en sleep de rij naar een nieuwe positie in het deelvenster *Vastgezette gezichten* sectie.
 
 ## Stap 3: Wijzigingen publiceren
 

@@ -2,16 +2,16 @@
 title: Overzicht van Live Search Guide
 description: Live zoeken vanuit Adobe Commerce biedt een bliksemsnelle, superrelevante en intuïtieve zoekervaring.
 exl-id: 11e2ed97-ce80-4826-b914-71688dd29e4b
-source-git-commit: a8943e56cc074a96d3f9e1009b76fa589b76a8a4
+source-git-commit: 9d1637efdfde60f7b94c4fa60b369225b799bc83
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '219'
 ht-degree: 0%
 
 ---
 
 # Overzicht van Live Search Guide
 
-[!DNL Live Search] biedt een bliksemsnelle, superrelevante en intuïtieve zoekervaring van Adobe Commerce en is gratis beschikbaar voor Adobe Commerce. [!DNL Live Search] aangedreven door [Adobe Sensei](https://www.adobe.com/sensei.html) maakt gebruik van kunstmatige intelligentie en computerleeralgoritmen om een diepgaande analyse van de geaggregeerde bezoekersgegevens uit te voeren. Deze gegevens, in combinatie met uw Adobe Commerce-catalogus, leiden tot zeer boeiende, relevante en gepersonaliseerde winkelervaringen. Met de nadruk op snelheid, relevantie en gebruiksgemak, [!DNL Live Search] is een spelwisselaar voor zowel winkeliers als handelaren .
+[!DNL Live Search] van Adobe Commerce biedt een bliksemsnelle, superrelevante en intuïtieve zoekervaring voor Adobe Commerce zonder extra kosten. [!DNL Live Search] aangedreven door [Adobe Sensei](https://www.adobe.com/sensei.html) maakt gebruik van kunstmatige intelligentie en computerleeralgoritmen om een diepgaande analyse van de geaggregeerde bezoekersgegevens uit te voeren. Deze gegevens, in combinatie met uw Adobe Commerce-catalogus, leiden tot zeer boeiende, relevante en gepersonaliseerde winkelervaringen. Met de nadruk op snelheid, relevantie en gebruiksgemak, [!DNL Live Search] is een spelwisselaar voor zowel winkeliers als handelaren .
 
 Live zoeken heeft drie gebieden voor beheerders:
 
