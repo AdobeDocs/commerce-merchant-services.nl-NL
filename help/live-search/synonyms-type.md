@@ -2,9 +2,9 @@
 title: Typen synoniemen
 description: Met de synoniemen One- en two-way Live Search wordt de definitie van trefwoorden uitgebreid.
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
-source-git-commit: 7402e97f53b71e488d860215487f4809572b7e6f
+source-git-commit: c8fd75f68ed0def18f6f89adc777244057c5d79d
 workflow-type: tm+mt
-source-wordcount: '352'
+source-wordcount: '402'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Synoniemen in twee richtingen hebben dezelfde betekenis en retourneren dezelfde 
 
 ## Eenweg
 
-Een eenrichtingssynoniem is een subset van een trefwoord, maar heeft een specifiekere betekenis. Capris en shorts zijn bijvoorbeeld broeken, maar niet alle planten zijn capris of korts. Een zoekopdracht naar broek omvat capris en korte broeken. Een zoekopdracht naar snelheden resulteert echter niet in hoofdletters.
+Een eenrichtingssynoniem is een subset van een trefwoord, maar heeft een specifiekere betekenis. Capris en shorts zijn bijvoorbeeld broeken, maar niet alle planten zijn capris of korts. Een zoekopdracht naar broek omvat capris en korte broeken. Een zoekopdracht naar korte berichten retourneert echter geen capris.
 
 **zweet** ![Eenvoudige kiezer](assets/btn-one-way.png) hooi
 **broek** ![Eenvoudige kiezer](assets/btn-one-way.png) capris ![Meerdere eenrichtingskiezers](assets/btn-multiple-one-way.png) kalfsnuitje ![Meerdere eenrichtingskiezers](assets/btn-multiple-one-way.png) pedaalduwbakken
@@ -31,6 +31,14 @@ Een eenrichtingssynoniem is een subset van een trefwoord, maar heeft een specifi
 
 Houd rekening met de volgende aanbevolen procedures om synoniemen van Live zoeken optimaal te benutten.
 
-Het is niet nodig om zowel enkelvoudig als meervoudig woord als synoniem te definiëren. Als u een combinatie van enkelvoudige en meervoudige termen in uw catalogus hebt, zoekt u naar de juiste set producten. Als u bijvoorbeeld het woord &quot;pant&quot; in de productnaam gebruikt en een winkel zoekt naar &quot;broek&quot;, wordt de juiste set producten geretourneerd en wordt het woord &quot;pant&quot; voorgesteld als suggestie. In de mode-industrie en soms in de detailhandel wordt de term &quot;pant&quot; vaak gebruikt, hoewel de meervorm &quot;broek&quot; in sommige gebieden vaker wordt gebruikt. (Het woord &quot;pant&quot; verwijst technisch naar het deel van een kledingstuk dat één been bedekt. Daarom hebt u een &quot;broek&quot; nodig om beide benen te bedekken.)
+### Trefwoordtoewijzing
+
+Deze techniek gebruikt doorzoekbare productkenmerken in plaats van synoniemen om op trefwoorden gebaseerde koppelingen tussen producten te maken. Als gevolg hiervan kan een toegewezen product in de zoekresultaten van een ander product worden weergegeven. Zie voor meer informatie [Zoekresultaten](https://docs.magento.com/user-guide/catalog/search-results.html).
+
+### Gebruik van enkelvoudig en meervoudig
+
+Het is niet nodig om zowel de enkelvoudige als de meervoudige vorm van een woord als een synoniem te definiëren. Als u een combinatie van enkelvoudige en meervoudige termen in uw catalogus hebt, zoekt u naar de juiste set producten. Als u bijvoorbeeld het woord &quot;pant&quot; in de productnaam gebruikt en een winkel zoekt naar &quot;broek&quot;, wordt de juiste set producten geretourneerd en wordt het woord &quot;pant&quot; voorgesteld als suggestie. In de mode-industrie en soms in de detailhandel wordt de term &quot;pant&quot; vaak gebruikt, hoewel de meervorm &quot;broek&quot; in sommige gebieden vaker wordt gebruikt. (Het woord &quot;pant&quot; verwijst technisch naar het deel van een kledingstuk dat één been bedekt. Daarom hebt u een &quot;broek&quot; nodig om beide benen te bedekken.)
+
+### Consistentie
 
 Zorg ervoor dat de terminologie in de catalogus wordt gebruikt. Houd er rekening mee dat er regionale verschillen in gebruik kunnen zijn, en soms verschillen binnen een bedrijfstak.
