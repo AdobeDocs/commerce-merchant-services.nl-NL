@@ -4,9 +4,9 @@ description: Na installatie kunt u configureren [!DNL Payment Services] in Admin
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
+source-git-commit: bae0eeac349fe3c266d868f8d94c5e033390a661
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '723'
 ht-degree: 1%
 
 ---
@@ -109,7 +109,7 @@ U kunt de betaalopties voor slimme PayPal-knoppen inschakelen en configureren in
 
 ### [!DNL PayPal Smart Buttons] Stijlopties
 
-| Veld | [Toepassingsgebied]({% koppeling configuration/scope.md %}) | Beschrijving |
+| Veld | Toepassingsgebied | Beschrijving |
 |--- |--- |--- |
 | [!UICONTROL Layout] | Winkelweergave | Definieer de lay-outstijl voor PayPal Smart Buttons. Opties: [!UICONTROL Vertical] / [!UICONTROL Horizontal] |
 | [!UICONTROL Color] | Winkelweergave | Definieer de kleur van de slimme PayPal-knoppen. Opties: [!UICONTROL Blue] / [!UICONTROL Gold] / [!UICONTROL Silver] / [!UICONTROL White] / [!UICONTROL Black] |

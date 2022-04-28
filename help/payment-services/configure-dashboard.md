@@ -3,9 +3,10 @@ title: Configureren in het dashboard
 description: Na installatie kunt u configureren [!DNL Payment Services] in het dashboard.
 role: Admin, User
 level: Intermediate
-source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
+exl-id: 015c5c8c-8184-45c1-932a-f4365ddf5a30
+source-git-commit: bae0eeac349fe3c266d868f8d94c5e033390a661
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '548'
 ht-degree: 0%
 
 ---
@@ -97,4 +98,4 @@ U kunt ook de _[!UICONTROL Button style]_opties van de slimme PayPal-knoppen in 
 1. Klik op **[!UICONTROL Save]** rechtsboven op de pagina.
 1. Navigeren naar **[!UICONTROL System]** > **[!UICONTROL Cache Management]** en klik op **[!UICONTROL Flush Cache]** om alle ongeldige caches te vernieuwen.
 
-U kunt configureren [!DNL PayPal Smart Buttons] opmaken in Beheer of het dashboard. Zie [Configureren [!DNL PayPal Smart Buttons style]](configure-admin.md#configure-paypal-smart-button-styling) voor meer informatie .
+U kunt configureren [!DNL PayPal Smart Buttons] opmaken in Beheer of het dashboard. Zie [Stijlgids voor PayPal-knoppen](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) voor meer informatie .
