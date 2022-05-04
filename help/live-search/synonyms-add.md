@@ -2,16 +2,16 @@
 title: Synoniemen toevoegen
 description: Voeg synoniemen voor Live zoeken toe om de reacties op zoekverzoeken te verbeteren.
 exl-id: 6c277d88-cb22-4174-abda-6d6bb65fe3be
-source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
+source-git-commit: 87e0500c623f9492d1722c21a2b47bf43d104829
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
 
 # Synoniemen toevoegen
 
-Voeg uw eigen gekrulde lijst van toe [!DNL Live Search] synoniemen om de reactie op zoekverzoeken te verbeteren en klanten betrokken te houden.
+Verhoog de betrokkenheid van klanten door uw eigen gekrulde lijst met synoniemen voor Live zoeken toe te voegen. [!DNL Live Search] kan maximaal 200 synoniemen per `Data Space ID`.
 
 ![[!DNL Live Search] synoniemen](assets/synonym-workspace.png)
 
