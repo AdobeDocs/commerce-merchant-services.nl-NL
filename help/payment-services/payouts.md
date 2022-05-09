@@ -4,22 +4,22 @@ description: Gebruik het rapport Uitbetalingen voor volledige transparantie met 
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: aff1a43fedab473b84d02068a7d3fbd33b4fe093
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '857'
 ht-degree: 0%
 
 ---
 
 # Uitbetalingsrapport
 
-[!DNL Payment Services] voor Adobe Commerce en Magento Open Source biedt u uitgebreide rapportage zodat u een duidelijk beeld krijgt van de bestellingen en betalingen van uw winkel.
+[!DNL Payment Services] for [!DNL Adobe Commerce] en [!DNL Magento Open Source] biedt u uitgebreide rapportage zodat u een duidelijk beeld krijgt van de bestellingen en betalingen van uw winkel.
 
 ![Financiële verslagen](assets/reports-view.png)
 
 Het uitbetalingsrapport bevat uitgebreide informatie over de uitbetaling in één oogopslag, zodat u volledig transparant kunt zijn over het bedrag van de betaling, het verwerkte volume en gedetailleerde rapportage over het transactieniveau voor financiële afstemming.
 
-U hoeft geen meerdere dashboards of weergaven te openen voor kruisverwijzingsorders en betalingen of rekeningen te combineren. [!DNL Payment Services] voor Adobe Commerce en Magento Open Source kunt u al deze acties uitvoeren vanaf één locatie, via het rapport Uitbetalingen, zodat u uw uitbetalingen efficiënt kunt bekijken en beheren.
+U hoeft geen meerdere weergaven te openen voor kruisverwijzingsopdrachten en betalingen of voor het combineren van accounts. [!DNL Payment Services] for [!DNL Adobe Commerce] en [!DNL Magento Open Source] kunt u al deze acties uitvoeren vanaf één locatie, het rapport Uitbetalingen, zodat u uw uitbetalingen efficiënt kunt bekijken en beheren.
 
 Zie de gekoppelde handelsorder en transactie-id&#39;s, transactiebedragen, betalingsmethode per transactie en meer, allemaal in het betalingsrapport in de beheerder.
 
@@ -45,7 +45,7 @@ Indien _[!UICONTROL Live]_Als de geselecteerde gegevensbron is, kunt u rapportin
 
 Gegevensbronselecties werken als volgt:
 
-* Als u geen opslagruimten hebt die zich in de live modus bevinden, wordt de gegevensbronselectie standaard ingesteld op [!UICONTROL Sandbox]_.
+* Als u geen opslagruimten hebt die zich in de live modus bevinden, wordt de gegevensbronselectie standaard ingesteld op _[!UICONTROL Sandbox]_.
 * Als u opslagruimten (een of meerdere opslagruimten) in de live modus hebt, wordt de gegevensbronselectie standaard ingesteld op _[!UICONTROL Live]_.
 * De uitvoer van het rapport respecteert altijd de gegevensbronselectie.
 

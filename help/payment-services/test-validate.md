@@ -2,16 +2,16 @@
 title: Testen en valideren
 description: Testen en valideren helpen u ervoor te zorgen dat [!DNL Payment Services] functies werken naar behoren en bieden de beste betalingsopties voor uw klanten
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
-source-git-commit: bcb817775fe9cd9ac7096931dd40d5ec0c4a5cfc
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '436'
 ht-degree: 0%
 
 ---
 
 # Testen en valideren
 
-Voordat u [!DNL Payment Services] voor Adobe Commerce en Magento Open Source voor uw kopers is het een goed idee om in uw sandboxomgeving te testen _en_ in productie. Testen en valideren helpen u ervoor te zorgen dat [!DNL Payment Services] -functies werken naar behoren en bieden de beste betalingsopties voor uw winkel en klanten.
+Voordat u [!DNL Payment Services] for [!DNL Adobe Commerce] en [!DNL Magento Open Source] voor uw kopers is het een goed idee om in uw sandboxomgeving te testen _en_ in productie. Testen en valideren helpen u ervoor te zorgen dat [!DNL Payment Services] -functies werken naar behoren en bieden de beste betalingsopties voor uw winkel en klanten.
 
 ## Testen in sandboxomgeving
 

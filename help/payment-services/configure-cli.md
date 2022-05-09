@@ -4,26 +4,26 @@ description: Na installatie kunt u configureren [!DNL Payment Services] het gebr
 role: Admin, Developer
 level: Intermediate
 exl-id: 265ab1be-fe52-41f3-85cb-addbc2ddfb17
-source-git-commit: bcb817775fe9cd9ac7096931dd40d5ec0c4a5cfc
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
 
 # Configuratie van opdrachtregel
 
-Na de installatie [!DNL Payment Services]kunt u het eenvoudig configureren vanuit [binnen de beheerder](configure-admin.md) of via de bevel-lijn Interface (CLI).
+Na de installatie [!DNL Payment Services]kunt u het eenvoudig configureren vanuit [binnen de woning](payments-home.md) of via de bevel-lijn Interface (CLI).
 
 ## Gegevens exporteren configureren
 
-[!DNL Payment Services] combineert uit Magento Open Source en Adobe Commerce geëxporteerde ordergegevens met geaggregeerde betalingsgegevens van betalingsdienstaanbieders om bruikbare rapporten te maken. De [!DNL Payment Services] de uitbreiding gebruikt indexeerders om alle noodzakelijke gegevens voor de rapporten efficiënt te verzamelen.
+[!DNL Payment Services] combineert ordergegevens die zijn geëxporteerd van [!DNL Magento Open Source] en [!DNL Adobe Commerce] met geaggregeerde betalingsgegevens van betalingsdienstaanbieders om nuttige rapporten op te stellen. De [!DNL Payment Services] de uitbreiding gebruikt indexeerders om alle noodzakelijke gegevens voor de rapporten efficiënt te verzamelen.
 
 Meer informatie over de gegevens die worden gebruikt in [!DNL Payment Services] melden, zie [Betalingsstatusrapport bestellen](order-payment-status.md#data-used-in-the-report).
 
-### Uitsnede configureren op Magento Open Source
+### Uitsnede configureren ingeschakeld [!DNL Magento Open Source]
 
-Als u een `BY SCHEDULE` In de indexmodus van Magento Open Source moet u de uitsnede configureren. Zie [Uitsnede configureren en uitvoeren](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html).
+Als u een `BY SCHEDULE` indexmodus ingeschakeld [!DNL Magento Open Source]moet u uitsnijden configureren. Zie [Uitsnede configureren en uitvoeren](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html).
 
 ### Indexeerders instellen
 

@@ -2,9 +2,9 @@
 title: De testsandbox instellen
 description: Een PayPal-sandboxaccount gebruiken [!DNL Payment Services] in de testmodus.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
-source-git-commit: fd818dadbaa2a58efd7313ce888c7dda27d25f14
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '536'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Uw sandboxaccount opnieuw instellen:
 Sandbox aan boord voltooien:
 
 1. Ga naar de [Pagina PayPal Developer-account](https://developer.paypal.com/developer/accounts/).
-1. Klikken **[!UICONTROL Log in to Dashboard]** en meld u met uw bestaande gegevens aan bij het PayPal Developers-account of klik op **Aanmelden** om een account te maken.
+1. Klikken **[!UICONTROL Log in to Home]** en meld u met uw bestaande gegevens aan bij het PayPal Developers-account of klik op **Aanmelden** om een account te maken.
 1. Een PayPal-sandboxaccount maken:
    1. Ga naar _[!UICONTROL SANDBOX]_>**[!UICONTROL Accounts]**.
    1. Klik op **[!UICONTROL Create account]**.
@@ -42,7 +42,7 @@ Sandbox aan boord voltooien:
 
    Deze optie is zichtbaar als u de sandbox voor het instappen nog niet hebt voltooid [!DNL Payment Services].
 
-   Er wordt automatisch een handelings-id voor een sandbox gegenereerd en in de [configuratie](configure-admin.md). Wijzig of wijzig deze id niet.
+   Er wordt automatisch een handelings-id voor een sandbox gegenereerd en in de [instellingen](settings.md). Wijzig of wijzig deze id niet.
 
    Je krijgt een PayPal-venster te zien waarin je een PayPal-rekening verbindt om betalingen te accepteren.
 
@@ -59,7 +59,7 @@ Wanneer uw PayPal-sandbox is goedgekeurd, wordt een melding weergegeven dat uw b
 
 >[!IMPORTANT]
 >
->Als u de toestemming intrekt om [!DNL Payment Services] voor Adobe Commerce en Magento Open Source voor het verwerken van je betalingen (in de instellingen van je PayPal-rekening) kunnen bestellingen in je winkel niet worden verwerkt door [!DNL Payment Services].
+>Als u de toestemming intrekt om [!DNL Payment Services] for [!DNL Adobe Commerce] en [!DNL Magento Open Source] voor het verwerken van je betalingen (in de instellingen van je PayPal-rekening) kunnen bestellingen in je winkel niet worden verwerkt door [!DNL Payment Services].
 
 ## Telefoonnummer van contactpersoon inschakelen
 

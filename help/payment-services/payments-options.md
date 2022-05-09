@@ -2,18 +2,18 @@
 title: Betalingsopties
 description: Stel de betalingsopties in om de beschikbare methoden voor uw winkelklanten aan te passen.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: '923'
 ht-degree: 0%
 
 ---
 
 # Betalingsopties
 
-Met Adobe Commerce en Magento Open Source [!DNL Payment Services], je hebt meerdere betalingsopties beschikbaar. U kunt deze betalingsopties configureren via:
+Met [!DNL Adobe Commerce] en [!DNL Magento Open Source] [!DNL Payment Services], je hebt meerdere betalingsopties beschikbaar. U kunt deze betalingsopties configureren via:
 
-* [Dashboard](configure-dashboard.md)
+* [Home](payments-home.md)
 * [Winkelconfiguratie](configure-admin.md) (aanbevolen voor oudere betalingsopties of een installatie in meerdere winkels)
 
 Er zijn verschillende gedragingen voor elke betalingsmethode, afhankelijk van waar u zich bevindt in het uitbetalingsproces:
@@ -31,13 +31,13 @@ Er zijn verschillende gedragingen voor elke betalingsmethode, afhankelijk van wa
 
 [!UICONTROL Credit Card Fields] een eenvoudige en veilige afhandeling van betalingsmethoden voor creditcard of bankpas aanbieden. Wanneer een winkelier uitcheckt met gebruik van creditcardvelden, voert hij zijn naam, factuuradres en creditcardgegevens in om zijn bestelling te plaatsen. De klantgegevens worden tijdens de aankoopsessie veilig gebruikt om ze naadloos door de afrekenstroom te begeleiden.
 
-U kunt configureren [!UICONTROL Credit Card Fields] in de winkelconfiguratie of het dashboard Betalingsservices. Zie [Configureren [!DNL Payment Services]](configure-dashboard.md#configure-credit-card-fields) voor meer informatie .
+U kunt configureren [!UICONTROL Credit Card Fields] in de winkelconfiguratie of de startpagina van de betalingsservices. Zie [Configureren [!DNL Payment Services]](settings.md#configure-credit-card-fields) voor meer informatie .
 
 ## [!DNL PayPal Smart Buttons]
 
 [!DNL PayPal Smart Buttons], die PayPal gebruiken om een aankoop te voltooien, slaat het verzendadres, het factuuradres en de betalingsgegevens van je winkel op voor later gebruik. Kopers kunnen elke betalingsmethode gebruiken die eerder door PayPal is opgeslagen of aangeboden.
 
-U kunt configureren [!DNL PayPal Smart Buttons] in de winkelconfiguratie of het dashboard Betalingsservices.  Zie [Configureren [!DNL Payment Services]](configure-dashboard.md#configure-paypal-smart-buttons) voor meer informatie .
+U kunt configureren [!DNL PayPal Smart Buttons] in de winkelconfiguratie of de startpagina van de betalingsservices.  Zie [Configureren [!DNL Payment Services]](settings.md#configure-paypal-smart-buttons) voor meer informatie .
 
 ### PayPal-knop
 

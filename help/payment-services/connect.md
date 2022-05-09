@@ -2,9 +2,9 @@
 title: Sluit uw exemplaar aan
 description: Verbind uw instantie van de Handel gebruikend een API sleutel en een privé sleutel, en specificeer de gegevensruimte in de configuratie.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
-source-git-commit: fd818dadbaa2a58efd7313ce888c7dda27d25f14
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '911'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Zie [Commerce Services Connector](https://docs.magento.com/user-guide/system/saa
 
 ## API-referenties verkrijgen
 
-Om een dienst van de Handel te verbruiken SaaS, moet u de API sleutels van uw instantie gebruiken, die in uw worden gecreeerd en beheerd [Het dashboard Mijn account](https://account.magento.com/customer/account/login){target=&quot;_blank&quot;}. Twee verschillende API zeer belangrijke paren kunnen voor een rekening van de Handel-voor zandbak en voor productie (levende betalingen)-hoewel slechts één paar actief kunnen tegelijkertijd worden gebruikt.
+Om een dienst van de Handel te verbruiken SaaS, moet u de API sleutels van uw instantie gebruiken, die in uw worden gecreeerd en beheerd [Mijn accountdashboard](https://account.magento.com/customer/account/login){target=&quot;_blank&quot;}. Twee verschillende API zeer belangrijke paren kunnen voor een rekening van de Handel-voor zandbak en voor productie (levende betalingen)-hoewel slechts één paar actief kunnen tegelijkertijd worden gebruikt.
 
 >[!NOTE]
 >
@@ -33,7 +33,7 @@ Zie voor meer informatie over het genereren van een API-sleutel voor sandbox- of
 
 ### Koophandel-API en persoonlijke sleutel
 
-Sommige eigenschappen van Adobe Commerce en van Magento Open Source worden opgesteld als SaaS (software als dienst) - die als de Diensten van de Handel wordt bekend. Om deze diensten te gebruiken, moet u uw instantie van de Handel met deze diensten verbinden gebruikend een API sleutel en een privé sleutel, en de gewenste gegevensruimte specificeren in [configuratie](https://docs.magento.com/user-guide/configuration/services/saas.html){target=&quot;_blank&quot;}.
+Sommige [!DNL Adobe Commerce] en [!DNL Magento Open Source] de eigenschappen worden opgesteld als SaaS (software als dienst) - gekend als de Diensten van de Handel. Om deze diensten te gebruiken, moet u uw instantie van de Handel met deze diensten verbinden gebruikend een API sleutel en een privé sleutel, en de gewenste gegevensruimte specificeren in [configuratie](https://docs.magento.com/user-guide/configuration/services/saas.html){target=&quot;_blank&quot;}.
 
 Wanneer u een rekening van de Handel creeert, die door een MageID wordt geïdentificeerd, kunt u een sleutel van de Handel API en een privé sleutel produceren. Om de Diensten van de Handel te gebruiken, zoals [!DNL Payment Services], [!DNL Product Recommendations], of [!DNL Live Search]moet de vergunninghouder deze toetsen genereren om voor validatie van machtigingen te kunnen zorgen. Deze sleutels kunnen dan worden overgegaan tot het systeem integrator of ontwikkelingsteam dat de projecten en milieu&#39;s namens de vergunninghouder beheert. Als u een oplossingsintegrator bent, kunt u deze diensten voor uw eigen behoeften ook gebruiken. In dat geval moet de ondertekenaar van het partnercontract voor handel de sleutels genereren.
 
@@ -67,8 +67,8 @@ Dezelfde API-sleutel kan voor alle instanties worden gebruikt, maar elke instant
 
 Wanneer u een project SaaS creeert, produceert de Handel één of meerdere gegevensruimten SaaS afhankelijk van uw vergunning van de Handel:
 
-* Adobe Commerce - Eén productieruimte; twee testgegevensruimten
-* Magento Open Source - Eén productieruimte; geen testgegevensruimten
+* [!DNL Adobe Commerce] - één productieresolutie; twee testgegevensruimten
+* [!DNL Magento Open Source] - één productieresolutie; geen testgegevensruimten
 
 ### SaaS-project configureren
 

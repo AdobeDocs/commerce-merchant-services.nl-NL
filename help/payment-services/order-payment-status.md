@@ -4,22 +4,22 @@ description: Gebruik het rapport Betalingsstatus bestellen om de betalingsstatus
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: cd1c735e9b3be0d75019e0987c84899f9aa66951
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '1184'
+source-wordcount: '1174'
 ht-degree: 0%
 
 ---
 
 # Betalingsstatusrapport bestellen
 
-[!DNL Payment Services] voor Adobe Commerce en Magento Open Source biedt u uitgebreide rapportage zodat u een duidelijk beeld krijgt van de bestellingen en betalingen van uw winkel.
+[!DNL Payment Services] for [!DNL Adobe Commerce] en [!DNL Magento Open Source] biedt u uitgebreide rapportage zodat u een duidelijk beeld krijgt van de bestellingen en betalingen van uw winkel.
 
 ![Financiële verslagen](assets/reports-view.png)
 
 Met het rapport Betalingsstatus bestelling kunt u eenvoudig zien waar een specifieke bestelling zich binnen de bestelling bevindt om de kasstroom te verwerken. Met dit rapport kunt u snel de betalingsstatus van uw bestellingen bekijken en mogelijke problemen identificeren.
 
-U hoeft geen meerdere weergaven te openen om handmatig kruisverwijzingsorders en betalingen te doorlopen. [!DNL Payment Services] voor Adobe Commerce en Magento Open Source kunt u een overzicht krijgen van uw bestellingen en betalingen, allemaal in het rapport Betalingsstatus bestellen.
+U hoeft geen meerdere weergaven te openen om handmatig kruisverwijzingsorders en betalingen te doorlopen. [!DNL Payment Services] for [!DNL Adobe Commerce] en [!DNL Magento Open Source] kunt u een overzicht krijgen van uw bestellingen en betalingen, allemaal in het rapport Betalingsstatus bestellen.
 
 Zie de betalingsstatussen, gefactureerde en verzonden statussen, terugbetalingsstatussen, geschillenstatus en meer in dit rapport in de Admin.
 

@@ -4,9 +4,9 @@ description: Na installatie kunt u configureren [!DNL Payment Services] in Admin
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: bae0eeac349fe3c266d868f8d94c5e033390a661
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '718'
 ht-degree: 1%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 1%
 
 U kunt [!DNL Payment Services] aan uw behoeften met nuttige configuratieopties in Admin.
 
-Wanneer u [!DNL Payment Services] voor Adobe Commerce en Magento Open Source in de Admin zijn deze configuraties alleen van toepassing op de omgeving die is ingesteld in het dialoogvenster [!UICONTROL Method] veld [!UICONTROL General Configuration]. Om het even welke veranderingen u in de configuratiegebieden aanbrengt zijn onafhankelijk van het schakelen van [!UICONTROL Method] selectie—als u van methode verandert, worden de selecties niet opnieuw ingesteld.
+Wanneer u [!DNL Payment Services] for [!DNL Adobe Commerce] en [!DNL Magento Open Source] in Admin, zijn die configuraties van toepassing slechts op het milieu dat in wordt geplaatst _[!UICONTROL Method]_veld_[!UICONTROL General Configuration]_. Om het even welke veranderingen u in de configuratiegebieden aanbrengt zijn onafhankelijk van het schakelen van _[!UICONTROL Method]_selectie—als u van methode verandert, worden de selecties niet opnieuw ingesteld.
 
 Zie de [[!UICONTROL General Configuration] sectie](#general-configuration) voor meer informatie .
 
 ## Algemene configuratie
 
-U kunt [!DNL Payment Services] voor uw winkel en schakel het testen van sandboxen of live betalingen in in de [!UICONTROL General Configuration] sectie.
+U kunt [!DNL Payment Services] voor uw winkel en schakel het testen van sandboxen of live betalingen in in de _[!UICONTROL General Configuration]_sectie.
 
 1. Op de _Beheer_ zijbalk, ga naar **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. Vouw in het linkerdeelvenster uit **[!UICONTROL Sales]** en kiest u **[!UICONTROL Payment Methods]**.
@@ -35,7 +35,7 @@ U kunt [!DNL Payment Services] voor uw winkel en schakel het testen van sandboxe
 
    >[!WARNING]
    >
-   >Uw [!UICONTROL Sandbox Merchant ID] en [!UICONTROL Production Merchant ID] automatisch worden gegenereerd en aanwezig zijn in de betreffende velden als u klaar bent met het aan boord nemen voor de sandbox en/of productie. Verwijder of wijzig deze id&#39;s niet.
+   >Uw _[!UICONTROL Sandbox Merchant ID]_en_[!UICONTROL Production Merchant ID]_ automatisch worden gegenereerd en aanwezig zijn in de betreffende velden als u klaar bent met het aan boord nemen voor de sandbox en/of productie. Verwijder of wijzig deze id&#39;s niet.
 
 1. Klikken **[!UICONTROL Save Config]** om uw wijzigingen op te slaan.
 

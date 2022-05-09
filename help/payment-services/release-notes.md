@@ -2,9 +2,9 @@
 title: '"[!DNL Payment Services] Opmerkingen bij de release"'
 description: Lees de opmerkingen bij de release voor meer informatie over alle [!DNL Payment Services] lozingen.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,9 @@ In deze releaseopmerkingen wordt de eerste release van [!DNL Payment Services] e
 
 ## v1.1.0
 
-![Nieuw](../assets/new.svg)<!-- Issue PAY-2127 --> [[!DNL Payment Services]](https://marketplace.magento.com/magento-payment-services.html) is nu compatibel met Adobe Commerce en Magento Open Source versie 2.4.0 tot en met 2.4.4.
+![Nieuw](../assets/new.svg)<!-- Issue PAY-2127 --> [[!DNL Payment Services]](https://marketplace.magento.com/magento-payment-services.html) is nu compatibel met [!DNL Adobe Commerce] en [!DNL Magento Open Source] versies 2.4.0 tot en met 2.4.4.
 
-![Nieuw](../assets/new.svg)<!-- Issue PAY-2682 --> De [!DNL Payment Services] Adobe Commerce en Magento Open Source is beschikbaar voor Canadese handelaren. Handelaren kunnen de configuratie van betalingen in of bekijken [Frans](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html?lang=fr) of [Engels](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html?lang=en).
+![Nieuw](../assets/new.svg)<!-- Issue PAY-2682 --> De [!DNL Payment Services] verlenging voor [!DNL Adobe Commerce] en [!DNL Magento Open Source] is beschikbaar voor Canadese handelaren. Handelaren kunnen de configuratie van betalingen in of bekijken [Frans](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html?lang=fr) of [Engels](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html?lang=en).
 
 ![Nieuw](../assets/new.svg)<!-- Issue PAY-2681 --> [!DNL Payment Services] supports [Canadese dollars (CAD)](overview.md#accepted-credit-cards-and-currencies) met creditcard en PayPal. Klanten kunnen een winkelervaring hebben in hun voorkeurstaal, afhankelijk van de landinstelling van de winkel waar ze winkelen.
 
@@ -53,13 +53,13 @@ In deze releaseopmerkingen wordt de eerste release van [!DNL Payment Services] e
 
 ## v1.0.0
 
-![Nieuw](../assets/new.svg)<!-- Issue PAY-2127 --> Algemene beschikbaarheidsrelease. [Betalingsdiensten](https://marketplace.magento.com/magento-payment-services.html) is nu compatibel met Adobe Commerce en Magento Open Source versies 2.4.0 tot en met 2.4.3-p1.
+![Nieuw](../assets/new.svg)<!-- Issue PAY-2127 --> Algemene beschikbaarheidsrelease. [Betalingsdiensten](https://marketplace.magento.com/magento-payment-services.html) is nu compatibel met [!DNL Adobe Commerce] en [!DNL Magento Open Source] versies 2.4.0 tot en met 2.4.3-p1.
 
-![Nieuw](../assets/new.svg)<!-- Issue PAY-124 --> De [!DNL Payment Services] extensie voor Adobe Commerce en Magento Open Source kunnen worden geïnstalleerd voor [Adobe Commerce over cloudinfrastructuur](install.md#magento-commerce-cloud) of [In de bedrijfsruimten](install.md#on-premises) instanties. Deze methodes vereisen het gebruik van een Interface van de Lijn van het Bevel.
+![Nieuw](../assets/new.svg)<!-- Issue PAY-124 --> De [!DNL Payment Services] verlenging voor [!DNL Adobe Commerce] en [!DNL Magento Open Source] kan worden geïnstalleerd voor [[!DNL Adobe Commerce] over cloudinfrastructuur](install.md#magento-commerce-cloud) of [In de bedrijfsruimten](install.md#on-premises) instanties. Deze methodes vereisen het gebruik van een Interface van de Lijn van het Bevel.
 
 ![Nieuw](../assets/new.svg)<!-- Issue PAY-1986 --> [!DNL Payment Services] ondersteunt een [sandboxaccount](onboard.md#enable-sandbox-testing) die handelaren in staat stelt de uitbreiding in testmodus te beoordelen.
 
-![Nieuw](../assets/new.svg)<!-- Issue PAY-666 --> Handelaren kunnen [Betalingsservices configureren](configure-admin.md) uitbreiding met elementair betalingsgedrag (zoals Auth-capture samen en schakelen tussen sandbox- of productieomgevingen).
+![Nieuw](../assets/new.svg)<!-- Issue PAY-666 --> Handelaren kunnen [Betalingsservices configureren](settings.md) uitbreiding met elementair betalingsgedrag (zoals Auth-capture samen en schakelen tussen sandbox- of productieomgevingen).
 
 ![Nieuw](../assets/new.svg)<!-- Issue PAY-780 --> Kopers kunnen uitchecken met [!DNL Payment Services] of u kunt de orde over de telefoon nemen en [een volledige volgorde maken](create-order.md) in de Admin voor hen.
 
@@ -67,7 +67,7 @@ In deze releaseopmerkingen wordt de eerste release van [!DNL Payment Services] e
 
 ![Nieuw](../assets/new.svg)<!-- Issue PAY-311 --> [!DNL Payment Services] ondersteunt gedifferentieerde prijzen (gebaseerd op TPV), aangepast aan elke handelaar.
 
-![Nieuw](../assets/new.svg)<!-- Issue PAY-1443 --> Het is mogelijk om het uiterlijk van de PayPal-knoppen en de CC-velden voor de [Betalingsdiensten](https://devdocs.magento.com/payment-services/customize-buttons-messaging.html) extensie.
+![Nieuw](../assets/new.svg)<!-- Issue PAY-1443 --> Het is mogelijk om het uiterlijk van de PayPal-knoppen en de CC-velden voor de [Betalingsdiensten](payments-options.md) extensie.
 
 ![Bekend probleem](../assets/bug.svg)<!-- Issue PAY-2473 --> Gebruiken [onjuiste componentsleutels](https://support.magento.com/hc/en-us/articles/4406603542541) tijdens de installatie van de extensie voorkomt dat de gebruiker [authenticate](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) correct `MAGEID`.
 

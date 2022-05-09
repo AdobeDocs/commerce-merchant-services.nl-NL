@@ -4,16 +4,16 @@ description: Sluit uw exemplaar aan met [!DNL Payment Services] door een paar in
 role: User
 level: Intermediate
 exl-id: 1ee8c660-0941-4378-a1d7-ae45de3de211
-source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
 
 # Aan boord [!DNL Payment Services]
 
-Aan de slag met [!DNL Payment Services] voor Adobe Commerce en Magento Open Source moet u enkele instapkaartstappen uitvoeren om uw exemplaar te verbinden met de betalingsfunctionaliteit.
+Aan de slag met [!DNL Payment Services] for [!DNL Adobe Commerce] en [!DNL Magento Open Source], moet u een paar onboarding stappen voltooien om uw exemplaar met de betalingsfunctionaliteit te verbinden.
 
 ## Stroom aan boord
 
@@ -23,7 +23,7 @@ In dit stroomdiagram wordt het algemene proces voor instapweigering getoond [!DN
 
 Nadat u het instappen voor zandbak of levende betalingen voltooit, is de financiële rapportering toegankelijk van [!DNL Payment Services] in de Admin.
 
-Als zowel sandbox- als live-betalingen zijn ingeschakeld, kunt u gemakkelijk schakelen tussen deze modi vanuit de [!DNL Payment Services] thuis.
+Als zowel sandbox- als live-betalingen zijn ingeschakeld, kunt u gemakkelijk schakelen tussen deze modi vanuit de [!DNL Payment Services] Home.
 
 ## Vereisten
 

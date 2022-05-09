@@ -2,18 +2,18 @@
 title: Een bestelling maken met [!DNL Payment Services]
 description: De beheerder biedt de mogelijkheid om een order uit te voeren met [!DNL Payment Services] rechtstreeks van de Admin door een handelaar voor hun klanten die hulp nodig hebben.
 exl-id: 1542a33f-9c01-4c36-bbce-bfa3107fbeb8
-source-git-commit: bcb817775fe9cd9ac7096931dd40d5ec0c4a5cfc
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '170'
+source-wordcount: '162'
 ht-degree: 1%
 
 ---
 
 # Een bestelling maken met [!DNL Payment Services]
 
-U kunt [!DNL Payment Services] naar wens met behulp van de configuratieopties in Admin.
+U kunt de betalingsservices naar wens aanpassen met [[!DNL Payment Services] instellingen](settings.md).
 
-[!DNL Payment Services] voor Adobe Commerce en Magento Open Source: hiermee kunt u een bestelling rechtstreeks bij de beheerder uitvoeren door een handelaar voor klanten die hulp nodig hebben. De **[!UICONTROL Create New Order]** het formulier bevat alle informatie die nodig is om het normale betalingsproces te voltooien, inclusief de gehoste velden met creditcardgegevens. Zie [Een volgorde maken](https://docs.magento.com/user-guide/customers/customer-account-create-order.html){target=&quot;_blank&quot;} voor meer informatie over de vereiste stappen.
+[!DNL Payment Services] for [!DNL Adobe Commerce] en [!DNL Magento Open Source] staat u toe om een orde direct van Admin door een handelaar voor hun klanten te vervullen die hulp nodig hebben. De **[!UICONTROL Create New Order]** het formulier bevat alle informatie die nodig is om het normale betalingsproces te voltooien, inclusief de gehoste velden met creditcardgegevens. Zie [Een volgorde maken](https://docs.magento.com/user-guide/customers/customer-account-create-order.html){target=&quot;_blank&quot;} voor meer informatie over de vereiste stappen.
 
 ## Gehoste creditcardvelden
 

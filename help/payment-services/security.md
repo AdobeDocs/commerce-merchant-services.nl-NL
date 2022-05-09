@@ -2,9 +2,9 @@
 title: Beveiliging en naleving
 description: Beoordeel de beveiligings- en compatibiliteitsvereisten voor uw site.
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
-source-git-commit: bcb817775fe9cd9ac7096931dd40d5ec0c4a5cfc
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Veiligheid is een van de belangrijkste aandachtspunten in [!DNL Payment Services
 
 ## Handelsbeveiliging
 
-Adobe Commerce en Magento Open Source bieden ondersteuning voor verschillende beveiligingsfuncties.
+[!DNL Adobe Commerce] en [!DNL Magento Open Source] omvat ondersteuning voor verschillende beveiligingsfuncties.
 
 Zie [Beveiliging](https://docs.magento.com/user-guide/stores/security.html){target=&quot;_blank&quot;} in de core user guide om de best practices op het gebied van beveiliging te bekijken en te leren hoe u Admin-sessies en -gegevens beheert, CAPTCHA implementeert en websitebeperkingen beheert.
 
