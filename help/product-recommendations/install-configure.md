@@ -1,16 +1,17 @@
 ---
 title: Installeren en configureren
 description: Leer installeren, bijwerken en verwijderen [!DNL Product Recommendations].
-source-git-commit: 4ad607c8595b25d01b5f5020b787fc1d35d4df25
+exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
+source-git-commit: b06d5000263b7ee09608a4a8510d76e9f4bdb809
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '403'
 ht-degree: 0%
 
 ---
 
 # Installeren en configureren
 
-Implementeren [!DNL Product Recommendations] aan uw opslag en Admin vereist dat u module installeert en de Schakelaar van de Diensten van de Handel vormt. Wanneer updates worden uitgebracht, kunt u de installatie eenvoudig bijwerken met de nieuwste versie.
+Implementeren [!DNL Product Recommendations] aan uw winkel en Admin vereist dat u de module installeert en vormt [Commerce Services Connector](../landing/saas.md). Wanneer updates worden uitgebracht, kunt u de installatie eenvoudig bijwerken met de nieuwste versie.
 
 - [Installeren](#install)
 - [Configureren](#configure)
@@ -47,11 +48,11 @@ composer require magento/module-visual-product-recommendations
 
 ## Configureren [!DNL Product Recommendations] {#configure}
 
-Nadat u de `magento/product-recommendations` module, moet u vormen [Commerce Services Connector](https://docs.magento.com/user-guide/configuration/services/saas.html) door de API-sleutel op te geven en een SaaS-gegevensruimte te selecteren.
+Nadat u de `magento/product-recommendations` module, moet u vormen [Commerce Services Connector](https://docs.magento.com/user-guide/configuration/services/saas.html) door API-sleutels op te geven en een SaaS-gegevensruimte te selecteren.
 
 Om ervoor te zorgen dat de catalogusexport correct wordt uitgevoerd, moet u bevestigen dat de [kraan](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html) de [indexeerders](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html) en de `Product Feed` indexer is ingesteld op `Update by Schedule`.
 
-Wanneer u via de API-sleutel een koppeling naar de Commerce-services hebt gemaakt en de SaaS-gegevensruimte hebt opgegeven, wordt de catalogussynchronisatie gestart en [verifieert](verify.md) dat gedragsgegevens naar uw winkel worden verzonden.
+Wanneer u via de API-sleutels een koppeling naar de Commerce-services hebt gemaakt en de SaaS-gegevensruimte hebt opgegeven, wordt de catalogussynchronisatie gestart. U kunt vervolgens [verifiëren](verify.md) dat gedragsgegevens naar uw winkel worden verzonden.
 
 ## Werk uw [!DNL Product Recommendations] installatie {#update}
 

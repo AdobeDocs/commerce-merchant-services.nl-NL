@@ -2,9 +2,9 @@
 title: Commerce Services Connector
 description: Leer hoe u uw Adobe Commerce- of Magento Open Source-exemplaar integreert met behulp van een API-sleutel en een persoonlijke sleutel.
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
-source-git-commit: 6d0c7c749fe90c7c204afe47446f3483d8668b53
+source-git-commit: 3035edd14ca6d7b29e7fa6f4c6ed2a66401171c1
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -42,10 +42,6 @@ De API-sleutel en de persoonlijke sleutel worden gegenereerd op basis van de [!D
 1. Onder de **Magento** tab, selecteert u **API-portaal** op de zijbalk.
 
 1. Van de _Omgeving_ menu, selecteert u **Productie** of **Sandbox**.
-
-   >[!NOTE]
-   >
-   > Voor [!DNL _Product Recommendations_] en [!DNL _Live zoeken_], selecteert u **Productie**. Met productiesleutels hebt u toegang tot gegevensruimten voor productie en niet-productie. Sandboxsleutels worden niet gebruikt voor deze services.
 
 1. Typ een naam in het dialoogvenster _API-toetsen_ en klik op **Nieuwe toevoegen**.
 
