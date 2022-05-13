@@ -2,16 +2,16 @@
 title: Popup-elementen opmaken
 description: Technische notities over het aanpassen van de pop-up Live zoeken in de winkel.
 exl-id: 033049f2-976e-4299-b026-333ac4b481a3
-source-git-commit: 479bf3fba776f47942a0ac8419abbae5553339f0
+source-git-commit: 65126f10574801f7ea8d0a863e9bb512dca13f39
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '210'
 ht-degree: 0%
 
 ---
 
-# Popup-elementen opmaken
+# Stijlen [!DNL Popover] Elementen
 
-De [storefront popover](storefront-popover.md) geeft altijd het product weer `name` en `price`en de selectie van velden kan niet worden geconfigureerd. popover-elementen kunnen echter worden opgemaakt met CSS-klassen. Met de volgende declaraties wijzigt u bijvoorbeeld de achtergrondkleur van de container en de voettekst van de pop-up.
+De [[!DNL storefront popover]](storefront-popover.md) geeft altijd het product weer `name` en `price`en de selectie van velden kan niet worden geconfigureerd. Maar [!DNL popover] elementen kunnen worden vormgegeven met gebruik van CSS-klassen. Met de volgende declaraties wijzigt u bijvoorbeeld de achtergrondkleur van de [!DNL popover] container en voettekst.
 
 ```css
 .livesearch.popover-container {
@@ -25,7 +25,7 @@ De [storefront popover](storefront-popover.md) geeft altijd het product weer `na
 
 ## Zichtbaarheid container
 
-De bovenliggende component van de component `.livesearch.popover-container` is `.search-autocomplete`.  De `.active` -klasse geeft de zichtbaarheid van de container aan. De `.active` wordt voorwaardelijk toegevoegd wanneer popover open is.
+De bovenliggende component van de component `.livesearch.popover-container` is `.search-autocomplete`.  De `.active` -klasse geeft de zichtbaarheid van de container aan. De `.active` wordt voorwaardelijk toegevoegd wanneer [!DNL popover] is geopend.
 
 ```css
 .search-autocomplete.active   /* visible */
@@ -36,7 +36,7 @@ Raadpleeg voor meer informatie over opmaakelementen voor winkelobjecten de [Casc
 
 ## Klasse-kiezers
 
-De volgende klassenkiezers kunnen worden gebruikt om de container, suggestie en productelementen in de popover op te maken.
+De volgende klassenkiezers kunnen worden gebruikt om de container, suggestie en productelementen in de [!DNL popover].
 
 * `.livesearch.popover-container`
 * `.livesearch.view-all-footer`
@@ -52,7 +52,7 @@ De volgende klassenkiezers kunnen worden gebruikt om de container, suggestie en 
 
 `.livesearch.popover-container`
 
-![Pop-upcontainer](assets/livesearch-popover-container.png)
+![[!DNL Popover] container](assets/livesearch-popover-container.png)
 
 `.livesearch.view-all-footer`
 
@@ -85,7 +85,7 @@ De volgende klassenkiezers kunnen worden gebruikt om de container, suggestie en 
 
 ## Werken met een gewijzigd thema {#working-with-modified-theme}
 
-De storefront popover kan met aangepaste [thema](https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/themes/theme-overview.html) dat de vereiste bestanden overneemt van *Luminantie*. De `top.search` in de `header-wrapper` van de `Magento_Search` mag niet worden gewijzigd.
+De [!DNL storefront popover] kan worden gebruikt met een aangepaste [thema](https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/themes/theme-overview.html) dat de vereiste bestanden overneemt van *Luminantie*. De `top.search` in de `header-wrapper` van de `Magento_Search` mag niet worden gewijzigd.
 
 ```html
 <referenceContainer name="header-wrapper">
@@ -97,9 +97,9 @@ De storefront popover kan met aangepaste [thema](https://devdocs.magento.com/gui
 </referenceContainer>
 ```
 
-## Pop-over uitschakelen
+## Het onbruikbaar maken van [!DNL popover]
 
-De pop-up uitschakelen en de standaard herstellen [Snel zoeken](https://docs.magento.com/user-guide/catalog/search-quick.html) voert u de volgende opdracht in:
+Om het [!DNL popover] en herstel de standaard [Snel zoeken](https://docs.magento.com/user-guide/catalog/search-quick.html) voert u de volgende opdracht in:
 
 ```bash
 bin/magento module:disable Magento_LiveSearchStorefrontPopover

@@ -2,22 +2,22 @@
 title: Storefront Popover
 description: Met de pop-up Live zoeken worden dynamisch voorgestelde producten en miniaturen geretourneerd.
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
+source-git-commit: 65126f10574801f7ea8d0a863e9bb512dca13f39
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---
 
-# Storefront Popover
+# [!DNL Storefront Popover]
 
-Wanneer [!DNL Live Search] is [geïnstalleerd](install.md), wordt een pop-up weergegeven in de winkel wanneer kopers tekst typen in de [Zoeken](https://docs.magento.com/user-guide/catalog/search-quick.html) doos. Als elk teken wordt getypt, wordt de pop-up bijgewerkt met voorgestelde producten en miniatuurafbeeldingen van de bovenste zoekresultaten.
+Wanneer [!DNL Live Search] is [geïnstalleerd](install.md), [!DNL popover] wordt weergegeven in de winkel wanneer kopers tekst typen in het vak [Zoeken](https://docs.magento.com/user-guide/catalog/search-quick.html) doos. Met elk getypt teken, [!DNL popover] wordt bijgewerkt met voorgestelde producten en duimnagelbeelden van de hoogste onderzoeksresultaten.
 
 [!DNL Live Search] retourneert resultaten voor een query van twee tekens of meer. Voor een gedeeltelijke overeenkomst, is het maximumaantal karakters per woord 20. Het aantal karakters in een &quot;onderzoek aangezien u&quot;vraag typt is niet configureerbaar.
 
 >[!NOTE]
 >
->De [!DNL Live Search] popover van de opslag is beschikbaar slechts voor winkels die gebruiken *Luminantie* thema of een aangepast thema dat is gebaseerd op *Luminantie*. De *Luminantie* thema is opgenomen in het [!DNL Commerce] voorbeeldgegevens. De popover biedt geen ondersteuning voor de *Leeg* thema. Zie [Popup-elementen opmaken](storefront-popover-styling.md) voor meer informatie.
+>De [!DNL Live Search] [!DNL storefront popover] is alleen beschikbaar voor winkels die de *Luminantie* thema of een aangepast thema dat is gebaseerd op *Luminantie*. De *Luminantie* thema is opgenomen in het [!DNL Commerce] voorbeeldgegevens. De [!DNL popover] biedt geen ondersteuning voor de *Leeg* thema. Zie [Stijlen [!DNL Popover] Elementen](storefront-popover-styling.md) voor meer informatie.
 
 ## Doorzoekbare kenmerken
 
@@ -29,16 +29,16 @@ De volgende kenmerken kunnen altijd worden doorzocht:
 * `name`
 * `categories`
 
-![popup Live zoeken](assets/storefront-search-as-you-type.png)
+[[!DNL Live Search popover]](assets/storefront-search-as-you-type.png)
 
-## Pop-paginaformaat
+## [!DNL Popover] paginaformaat
 
-De paginagrootte van popover bepaalt hoeveel lijnen autocompleted producten kunnen zijn teruggekeerd. Eerder was het paginaformaat gecodeerd als zes regels. De `page_size` de waarde is nu een het plaatsen die van kan worden gevormd *Beheer*. Tijdens de installatie van Live zoeken worden de `page_size` De waarde verandert in de huidige waarde van de [Catalogus zoeken](https://docs.magento.com/user-guide/configuration/catalog/catalog.html#catalog-search) - `Autocomplete Limit` instellen.
+Het paginaformaat van het dialoogvenster [!DNL popover] bepaalt hoeveel lijnen van autocompleted producten kunnen worden teruggekeerd. Eerder was het paginaformaat gecodeerd als zes regels. De `page_size` de waarde is nu een het plaatsen die van kan worden gevormd *Beheer*. Tijdens de installatie van Live zoeken worden de `page_size` De waarde verandert in de huidige waarde van de [Catalogus zoeken](https://docs.magento.com/user-guide/configuration/catalog/catalog.html#catalog-search) - `Autocomplete Limit` instellen.
 
-Standaard is de waarde voor Zoeken in catalogus - automatisch aanvullen van limiet ingesteld op acht regels (of rijen). Ga als volgt te werk om het paginaformaat van de pop-up te wijzigen:
+Standaard is de waarde voor Zoeken in catalogus - automatisch aanvullen van limiet ingesteld op acht regels (of rijen). Het paginaformaat wijzigen van het dialoogvenster [!DNL popover]Ga als volgt te werk:
 
 1. Op de *Beheer* zijbalk, ga naar **Winkels** > Instellingen > **Configuratie**.
 1. Vouw in het linkerdeelvenster uit **Catalogus** en kiest u **Catalogus** in de lijst met instellingen.
 1. Breid uit *Catalogus zoeken* sectie.
-1. Stel de **Limiet automatisch aanvullen** op het aantal regels dat u wilt toestaan in de pop-up.
+1. Stel de **Limiet automatisch aanvullen** op het aantal regels dat u wilt toestaan in het dialoogvenster [!DNL popover].
 1. Klik op **Config opslaan**.
