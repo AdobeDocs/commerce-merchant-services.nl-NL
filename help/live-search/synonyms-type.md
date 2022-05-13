@@ -2,9 +2,9 @@
 title: Typen synoniemen
 description: Met de synoniemen One- en two-way Live Search wordt de definitie van trefwoorden uitgebreid.
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
-source-git-commit: c8fd75f68ed0def18f6f89adc777244057c5d79d
+source-git-commit: 7c3b7ff9e892521108dfec3f308db795e3ab42f9
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -34,6 +34,10 @@ Houd rekening met de volgende aanbevolen procedures om synoniemen van Live zoeke
 ### Trefwoordtoewijzing
 
 Deze techniek gebruikt doorzoekbare productkenmerken in plaats van synoniemen om op trefwoorden gebaseerde koppelingen tussen producten te maken. Als gevolg hiervan kan een toegewezen product in de zoekresultaten van een ander product worden weergegeven. Zie voor meer informatie [Zoekresultaten](https://docs.magento.com/user-guide/catalog/search-results.html).
+
+### Enkele woorden gebruiken
+
+Als een synoniem term meerdere woorden bevat, worden deze door de witruimte tussen de woorden als een aparte synoniemen behandeld. Als u bijvoorbeeld &quot;tijdstuk&quot; definieert als een synoniem voor &quot;watch&quot;, worden de woorden &quot;time&quot; en &quot;piece&quot; behandeld als afzonderlijke synoniemen.
 
 ### Gebruik van enkelvoudig en meervoudig
 
