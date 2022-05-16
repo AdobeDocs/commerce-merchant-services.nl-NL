@@ -2,9 +2,9 @@
 title: Aan boord van de [!DNL Express Checkout] voor Adobe Commerce-extensie
 description: Meer informatie over [!DNL Express Checkout] kan uw Adobe Commerce-exemplaar ten goede komen en de extensie met succes aan boord installeren en instellen.
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
+source-git-commit: bd9541c5e4810085ab85206b2ecca21e66800a2f
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '621'
 ht-degree: 0%
 
 ---
@@ -102,9 +102,10 @@ Raadpleeg voor meer informatie over de standaardafhandelingsopties van Adobe Com
 Om het [!DNL Express Checkout] voor Adobe Commerce-extensie:
 
 1. Klikken **Config opslaan**.
+1. Navigeren naar **[!UICONTROL System]** > **[!UICONTROL Cache Management]** en klik op **[!UICONTROL Flush Cache]** om alle ongeldige caches te vernieuwen.
 
 ## Hulp vragen
 
-Het instapproces is ontworpen om u door de vereiste stappen te begeleiden voor het instellen en inschakelen van alle [!DNL Express Checkout] functionaliteit. Neem voor hulp contact op met de Adobe Commerce-ondersteuning.
+Het instapproces is ontworpen om u door de vereiste stappen te begeleiden voor het instellen en inschakelen van de [!DNL Express Checkout] functionaliteit. Contact [!DNL Adobe Commerce] technische team door uw toegewezen Slack [Adobe Beta-programma&#39;s, kanaal](http://adobe-beta-programs.slack.com/) voor alle bijstand.
 
 Zie de [testen en valideren](../express-checkout/testing.md) voor meer informatie.

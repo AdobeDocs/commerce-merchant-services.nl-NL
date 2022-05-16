@@ -2,9 +2,9 @@
 title: Afhandelingsstroom
 description: Overzicht van de [!DNL Express Checkout] stroom in Adobe Commerce.
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
-source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
+source-git-commit: bd9541c5e4810085ab85206b2ecca21e66800a2f
 workflow-type: tm+mt
-source-wordcount: '574'
+source-wordcount: '583'
 ht-degree: 0%
 
 ---
@@ -113,4 +113,4 @@ Indien niet [!DNL Bolt] -account is gevonden, kunnen kopers hun standaard afhand
 
 ## Hulp vragen
 
-Neem voor hulp contact op met de Adobe Commerce-ondersteuning.
+Contact [!DNL Adobe Commerce] technische team door uw toegewezen Slack [Adobe Beta-programma&#39;s, kanaal](http://adobe-beta-programs.slack.com/) voor alle bijstand.
