@@ -1,10 +1,10 @@
 ---
-title: Facturen beheren
-description: Leer hoe u bestaande facetten van Live zoeken beheert.
+title: '"Facetten beheren"'
+description: '"Leer hoe u bestaande [!DNL Live Search] facetten."'
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
-source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '440'
 ht-degree: 0%
 
 ---

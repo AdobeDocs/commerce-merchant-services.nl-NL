@@ -1,27 +1,27 @@
 ---
-user-guide-title: Handleiding voor live zoeken
-user-guide-description: Deze handleiding bevat gedetailleerde instructies voor het gebruik van Live Search vanuit Adobe Commerce.
-breadcrumb-title: Handleiding voor live zoeken
-source-git-commit: 93f7157135ae3eb1adb880752585565b8bfd9fbb
+user-guide-title: '"[!DNL Live Search] Hulplijn"'
+user-guide-description: '"Deze handleiding bevat gedetailleerde instructies voor het gebruik van [!DNL Live Search] uit Adobe Commerce."'
+breadcrumb-title: '"[!DNL Live Search] Hulplijn"'
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '90'
+source-wordcount: '72'
 ht-degree: 0%
 
 ---
 
-# Live zoeken naar handel {#live-search}
+# [!DNL Live Search] voor handel {#live-search}
 
 - [Overzicht van hulplijnen](guide-overview.md)
-- [Inleiding tot Live zoeken](overview.md)
+- [Inleiding tot [!DNL Live Search]](overview.md)
 - [Opmerkingen bij de release](release-notes.md)
 - Live zoeken aan boord {#onboard}
    - [Onboarding-overzicht](onboarding-overview.md)
-   - [Live zoeken installeren](install.md)
-- Live zoekwinkel {#live-search-storefront}
+   - [Installeren [!DNL Live Search]](install.md)
+- [!DNL Live Search] Storefront {#live-search-storefront}
    - [Snelle rondleiding](quick-tour.md)
-   - [Storefront Popover](storefront-popover.md)
-   - [Popup-elementen opmaken](storefront-popover-styling.md)
-- Live Search Admin{#live-search-admin}
+   - [Storefront [!DNL Popover]](storefront-popover.md)
+   - [Stijlen [!DNL Popover] Elementen](storefront-popover-styling.md)
+- [!DNL Live Search] Beheer{#live-search-admin}
    - [Werkruimte](workspace.md)
    - [Prestaties](performance.md)
    - Facetten {#facets}

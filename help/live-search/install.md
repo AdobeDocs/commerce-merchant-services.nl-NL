@@ -1,10 +1,10 @@
 ---
-title: Live zoeken installeren
-description: Leer hoe u Live Search kunt installeren, bijwerken en verwijderen vanuit Adobe Commerce.
+title: '"Installeren [!DNL Live Search]"'
+description: '"Meer informatie over het installeren, bijwerken en verwijderen [!DNL Live Search] uit Adobe Commerce."'
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: ec68feaebc911c097bd643aabfc61ec586a7e099
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '1271'
+source-wordcount: '1267'
 ht-degree: 0%
 
 ---
