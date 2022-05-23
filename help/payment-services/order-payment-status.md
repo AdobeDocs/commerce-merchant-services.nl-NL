@@ -4,9 +4,9 @@ description: Gebruik het rapport Betalingsstatus bestellen om de betalingsstatus
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 4fc2b3bdf9f319337939905bca2b9525985702d4
 workflow-type: tm+mt
-source-wordcount: '1174'
+source-wordcount: '1268'
 ht-degree: 0%
 
 ---
@@ -92,6 +92,16 @@ In de weergave van het rapport Betalingsstatus bestellen kunt u de tijdsperiode 
 1. Klik op de knop **[!UICONTROL Order dates]** Kalenderkiezerfilter.
 1. Kies het toepasselijke datumbereik.
 1. Bekijk de betalingsstatussen voor de bestelling voor de opgegeven datums in het raster.
+
+## Kolommen tonen en verbergen
+
+Het rapport Betalingsstatus bestelling toont standaard alle beschikbare kolommen met informatie. U kunt, echter, aanpassen welke kolommen u in uw rapport ziet.
+
+1. Op de _Beheer_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
+1. Klik op de knop _Kolominstellingen_ icon (![pictogram kolominstellingen](assets/column-settings.png)).
+1. Als u wilt aanpassen welke kolommen u in het rapport ziet, schakelt u de kolommen in de lijst in of uit.
+
+   In het rapport Betalingsstatus bestellen worden direct alle wijzigingen weergegeven die u hebt aangebracht in het menu Kolominstellingen. De kolomvoorkeuren worden opgeslagen en blijven van kracht als u niet in de rapportweergave navigeert.
 
 ## Statussen weergeven
 

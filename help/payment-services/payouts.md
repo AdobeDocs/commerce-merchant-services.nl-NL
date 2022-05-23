@@ -4,9 +4,9 @@ description: Gebruik het rapport Uitbetalingen voor volledige transparantie met 
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 4fc2b3bdf9f319337939905bca2b9525985702d4
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '947'
 ht-degree: 0%
 
 ---
@@ -72,6 +72,16 @@ In de weergave Uitbetalingen kunt u het tijdpad voor de uitbetalingstransacties 
 1. Klik op het selectiefilter Transactiedata agenda.
 1. Kies het toepasselijke datumbereik.
 1. Bekijk de uitbetalingsstatussen in het raster voor de opgegeven datums.
+
+## Kolommen tonen en verbergen
+
+Het rapport Uitbetalingen toont standaard de meeste beschikbare kolommen met informatie. U kunt, echter, aanpassen welke kolommen u in uw rapport ziet.
+
+1. Op de _Beheer_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Payouts]**.
+1. Klik op de knop _Kolominstellingen_ icon (![pictogram kolominstellingen](assets/column-settings.png)).
+1. Als u wilt aanpassen welke kolommen u in het rapport ziet, schakelt u de kolommen in de lijst in of uit.
+
+   In het rapport Uitbetalingen worden direct wijzigingen weergegeven die u hebt aangebracht in het menu Kolominstellingen. De kolomvoorkeuren worden opgeslagen en blijven van kracht als u niet in de rapportweergave navigeert.
 
 ## Transacties downloaden
 
