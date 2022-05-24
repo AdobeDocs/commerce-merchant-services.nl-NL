@@ -3,7 +3,7 @@ title: Aan boord "[!DNL Store Fulfillment]"
 description: Verbind uw instantie van de Handel met [!DNL Store Fulfillment Manager] door enkele instapstappen te voltooien.
 role: User, Admin
 level: Intermediate
-source-git-commit: 24639b75d3c629856fbb8fc74e7eb072d4197815
+source-git-commit: f3148d575088fff3b4178f3c03e9d45ce461fbe2
 workflow-type: tm+mt
 source-wordcount: '599'
 ht-degree: 1%
@@ -37,7 +37,7 @@ Nadat u aan boord gaat, vorm en beheer de oplossing van Admin van de Handel
 
 ## Vereisten
 
-* **Informatie over handelsrekeningen**-Downloaden en installeren [!DNL Channel Manager] vereist een [Handelsrekening](https://docs.magento.com/user-guide/magento/magento-account.html){target=&quot;_blank&quot;}. U hebt een account-id en gebruikersgegevens nodig met de toegang tot de [!DNL Adobe Commerce] of [!DNL Magento Open Source] -instantie.
+* **Informatie over handelsrekeningen**-Installeren [!DNL Store Fulfillment by Walmart Technologies] vereist een [Handelsrekening](https://docs.magento.com/user-guide/magento/magento-account.html){target=&quot;_blank&quot;}. U hebt een account-id en gebruikersgegevens nodig met de toegang tot de [!DNL Adobe Commerce] of [!DNL Magento Open Source] -instantie.
 
 * Voor [!DNL Adobe Commerce] in het geval van cloudinfrastructuurprojecten moeten softwareinstallateurs de volgende toegang hebben tot de [!DNL Commerce] instantie:
 
@@ -47,7 +47,7 @@ Nadat u aan boord gaat, vorm en beheer de oplossing van Admin van de Handel
 
       Zie [Gebruikerstoegang beheren](https://devdocs.magento.com/cloud/project/user-admin.html).
 
-* **Toegang tot het archief Opslag van de Opslag door het softwarearchief van de Technologieën van de Opslag om de Opslag oplossing van de Afhandeling op uw instantie van Adobe Commerce te installeren**-Uw vertegenwoordiger van uw klantenaccount kan toegang verlenen tot het installatiebestand van de extensie.
+* **Toegang tot het archief Opslagtegoeden van het softwarearchief van Walmart Technologies (.zip-bestand) om de Opslagoplossing op uw Adobe Commerce-instantie te installeren**-Uw vertegenwoordiger van uw klantenaccount kan toegang verlenen tot het installatiebestand van de extensie.
 
 * **Ervaring met Composer en de[!DNL Commerce CLI]** -Zie [Algemene installatie van CLI](https://devdocs.magento.com/extensions/install/){target=&quot;_blank&quot;} voor informatie over het gebruik van deze gereedschappen voor het installeren en beheren van extensies op [!DNL Adobe Commerce] en [!DNL Magento Open Source] platforms.
 
