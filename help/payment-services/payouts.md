@@ -4,9 +4,9 @@ description: Gebruik het rapport Uitbetalingen voor volledige transparantie met 
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: 4fc2b3bdf9f319337939905bca2b9525985702d4
+source-git-commit: 4554ea65ded73e9552f307ff51e0e7eff64cd2e9
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '975'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,10 @@ ht-degree: 0%
 ![Financiële verslagen](assets/reports-view.png)
 
 Het uitbetalingsrapport bevat uitgebreide informatie over de uitbetaling in één oogopslag, zodat u volledig transparant kunt zijn over het bedrag van de betaling, het verwerkte volume en gedetailleerde rapportage over het transactieniveau voor financiële afstemming.
+
+>[!NOTE]
+>
+>In uitbetalingsrapporten worden alleen orders weergegeven die zijn vastgelegd. Betalingsactie is ingesteld op [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method))—of [gemarkeerd als `Invoiced`](https://docs.magento.com/user-guide/sales/invoice-create.html).
 
 U hoeft geen meerdere weergaven te openen voor kruisverwijzingsopdrachten en betalingen of voor het combineren van accounts. [!DNL Payment Services] for [!DNL Adobe Commerce] en [!DNL Magento Open Source] kunt u al deze acties uitvoeren vanaf één locatie, het rapport Uitbetalingen, zodat u uw uitbetalingen efficiënt kunt bekijken en beheren.
 
@@ -106,7 +110,7 @@ Uitbetalingsrapporten bevatten de volgende informatie.
 | [!UICONTROL Provider] | Betalingsaanbieder |
 | [!UICONTROL Provider trans] | Transactie-id |
 | [!UICONTROL Trans date] | Datum en tijdstip waarop de transactie is gestart |
-| [!UICONTROL Type] | Transactietype—*[!UICONTROL PAYMENT]*, *[!UICONTROL AUTH]*, *[!UICONTROL BONUS]*, *[!UICONTROL CHARGEBACK]*, *[!UICONTROL CORRECTION]*, *[!UICONTROL CURRENCY_CONVERSATION]*, *[!UICONTROL DEPOSIT]*, *[!UICONTROL DISBURSEMENT]*, *[!UICONTROL DISPUTE]*, *[!UICONTROL FEES]*, *[!UICONTROL HOLD]*, *[!UICONTROL HOLD_RELEASE]*, *[!UICONTROL INCENTIVES]*, *[!UICONTROL OTHERS]*, *[!UICONTROL RECOUP]*, *[!UICONTROL REFUND]*, *[!UICONTROL REVERSAL]*, *[!UICONTROL WITHDRAWAL]* <br> <br>Zie [Transactietypen](#transaction-types) voor meer informatie . |
+| [!UICONTROL Type] | Transactietype—*[!UICONTROL PAYMENT]*, *[!UICONTROL BONUS]*, *[!UICONTROL CHARGEBACK]*, *[!UICONTROL CORRECTION]*, *[!UICONTROL CURRENCY_CONVERSATION]*, *[!UICONTROL DEPOSIT]*, *[!UICONTROL DISBURSEMENT]*, *[!UICONTROL DISPUTE]*, *[!UICONTROL FEES]*, *[!UICONTROL HOLD]*, *[!UICONTROL HOLD_RELEASE]*, *[!UICONTROL INCENTIVES]*, *[!UICONTROL OTHERS]*, *[!UICONTROL RECOUP]*, *[!UICONTROL REFUND]*, *[!UICONTROL REVERSAL]*, *[!UICONTROL WITHDRAWAL]* <br> <br>Zie [Transactietypen](#transaction-types) voor meer informatie . |
 | [!UICONTROL Status] | Huidige status van de transactie—*[!UICONTROL SUCCESS]*, *[!UICONTROL DENIED]*, *[!UICONTROL PENDING]* |
 | [!UICONTROL Code] | Transactiecode die een creditering aangeeft (*CR*) of Debet (*DR*) |
 | [!UICONTROL Reference ID] | Oorspronkelijke transactie-id waarvoor deze gebeurtenis verband houdt |
