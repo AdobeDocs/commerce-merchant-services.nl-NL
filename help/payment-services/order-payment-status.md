@@ -4,9 +4,9 @@ description: Gebruik het rapport Betalingsstatus bestellen om de betalingsstatus
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: 4fc2b3bdf9f319337939905bca2b9525985702d4
+source-git-commit: fde5844ad6c602708f9a5ad76ce8c9b5547dba76
 workflow-type: tm+mt
-source-wordcount: '1268'
+source-wordcount: '1359'
 ht-degree: 0%
 
 ---
@@ -122,6 +122,18 @@ U kunt ook handmatig afdwingen dat de gegevens in het rapport Betalingsstatus va
 
    De gegevens van het rapport met de betalingsstatus van de bestelling worden vernieuwd, en *[!UICONTROL Update complete]* de bevestiging verschijnt en de recentste informatie is aanwezig in het net.
 
+## Geschillen bekijken
+
+Je kunt geschillen over bestellingen van je winkel bekijken en naar het PayPal Resolution Center navigeren om actie te ondernemen vanuit het statusrapport voor bestellingen.
+
+1. Op de _Beheer_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
+1. Ga naar de **[!UICONTROL Disputes column]**.
+1. Geschillen voor een bepaalde bestelling bekijken en bekijken [de status van het geschil](#order-payment-status-information).
+1. Klik op de link voor het geschil-ID (beginnen met _PP-D-_) om naar de [PayPal-afwikkelingscentrum](https://www.paypal.com/us/smarthelp/article/what-is-the-resolution-center-faq3327).
+1. Indien nodig passende maatregelen nemen voor het geschil.
+
+   Klik op de kolomkop Geschillen oplossen als u geschillen wilt sorteren op status.
+
 ## Betalingsstatus van bestellingen downloaden
 
 U kunt een CSV-bestand downloaden met alle statussen die zichtbaar zijn in het weergaveraster voor betalingsstatus van bestelling, of u nu de standaardstatus van 30 dagen bekijkt of een aangepast tijdframe.
@@ -171,7 +183,7 @@ Betalingsstatusrapporten voor bestellingen bevatten de volgende informatie.
 | [!UICONTROL Refund Status] | Status van een terugbetaling op een bestelling (zoals informatie uit geretourneerde bedragen, RMA&#39;s en kredietmemo&#39;s)—   *[!UICONTROL Requires refund]*, *[!UICONTROL Refund requested]*, *[!UICONTROL Refunded]*, *[!UICONTROL Refund failed]*, of *[!UICONTROL Voided]* |
 | [!UICONTROL Refund Amount] | Totaal terugbetaald bedrag voor een bestelling |
 | [!UICONTROL Cur] | Valutatype van het bedrag dat voor een order wordt terugbetaald |
-| [!UICONTROL Dispute Status] | Status van een geschil over een bestelling (informatie uit geschillen en terugbetalingen)—*[!UICONTROL New]*, *[!UICONTROL Representment]*, *[!UICONTROL Accepted]*, *[!UICONTROL Pre-arbitration received]*, *[!UICONTROL Arbitration]*, of *[!UICONTROL Arbitration received]* |
+| [!UICONTROL Disputes] | Status van een geschil over een bestelling (informatie uit geschillen en terugbetalingen)—*[!UICONTROL Open]*, *[!UICONTROL Waiting for buyer response]*, *[!UICONTROL Waiting for seller response]*, *[!UICONTROL Under review]*, *[!UICONTROL Resolved]*, of *[!UICONTROL Other]* |
 | [!UICONTROL Payment Method] | Bij de handelstransactie gebruikte betalingsmethode voor een order |
 | [!UICONTROL Website] | Website van waaruit de bestelling is geplaatst |
 | [!UICONTROL Store] | Winkel van waaruit de bestelling is geplaatst |
