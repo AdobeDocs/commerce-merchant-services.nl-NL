@@ -4,9 +4,9 @@ description: '"Meer informatie [!DNL Store Fulfillment for Adobe Commerce by Wal
 role: User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
-source-git-commit: 26d0ddbcbe648b336d527788668caef1f8e688ed
+source-git-commit: 33d8ed57f5a4b8419bd30375a1fb5bec6be37a5e
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '576'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Afhandeling van winkel biedt ook een end-to-end uitvoeringsworkflow die handelar
 
 ## Afhandeling opslaan, extensie
 
-De extensie Store Fulfillment wordt geïntegreerd met Adobe Commerce, zodat u de configuratie voor Adobe Commerce-bewerkingen en klantinterfaces vanuit de beheerfunctie kunt beheren.
+Ondersteunt en verbetert native Adobe Commerce-functies
 
 * Steunt de meeste producttypes-eenvoudig, configureerbaar, gegroepeerd, gebundeld, en virtueel
 
@@ -39,11 +39,11 @@ De extensie Store Fulfillment wordt geïntegreerd met Adobe Commerce, zodat u de
 
 * Integreert met verkooppuntsystemen (POS) zoals ERP, OMS en WMS) voor voorraadbeheer
 
-* Volledig compatibel met het thema Luminantie.
+* Volledig compatibel met het thema Luminantie
 
-* Biedt ondersteuning voor GraphQL voor headless en Venia storefronts.
+* Biedt ondersteuning voor GraphQL voor headless en Venia storefronts
 
-* Ondersteunt de app Store Assist van de Walmart Commerce Technology. Deze app stuurt ophaalopdrachten rechtstreeks naar het handapparaat van uw werknemer in de juiste winkel, zodat de items snel en nauwkeurig kunnen worden opgepakt en aan klanten kunnen worden doorgegeven wanneer ze zich laten ophalen.
+* Ondersteunt de app Store Assist van de Walmart Commerce Technology. Deze app stuurt ophaalopdrachten rechtstreeks naar het handapparaat van uw werknemer in de juiste winkel, zodat de items kunnen worden opgepakt en snel en nauwkeurig kunnen worden opgepakt, gefaseerd en aan de klanten kunnen worden doorgegeven na hun inchecken.
 
 ## App Winkelassistentie
 
@@ -61,7 +61,7 @@ De Store Assist App voor iOS- en Android™-apparaten werken samen met de Walmar
 
 Store Fulfillment verbetert Adobe Commerce door de volgende mogelijkheden toe te voegen voor verbeterde winkelervaringen en gestroomlijnde uitvoeringsworkflows:
 
-* **Winkellocatieselector (SLS)**-Voegt ophaalopties voor de winkel, beschikbaarheid van voorraden en opslagkiezers toe aan Adobe Commerce-producten, -winkelwagentjes en -afhandelingsinterfaces.
+* **Winkellocatieselector (SLS)**-Hiermee wordt de optie Ophalen van de winkel, de beschikbaarheid van de voorraad en de opslagkiezer naast de native afhandeling beschikbaar gesteld op de product- en winkelpagina&#39;s.
 
 * **Beschikbaarheid inventariseren**- Voegt extra product en globale configuratieopties aan Adobe Commerce Inventory management toe om voorraadtoewijzing op archiefniveau te steunen om tijdige lokale vervulling te drijven.
 
