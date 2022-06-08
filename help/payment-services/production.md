@@ -2,9 +2,9 @@
 title: Inschakelen [!DNL Payment Services] voor productie
 description: Voltooi het instapproces door [!DNL Payment Services] voor de productie.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 51722d7045ccb6ccfdc7ab5bd93d5ca46b52cf03
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '709'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ Zie [Betalingsservices configureren](settings.md) voor meer informatie over het 
 
    >[!IMPORTANT]
    >
-   >Als u de toestemming intrekt om [!DNL Payment Services] for [!DNL Adobe Commerce] en [!DNL Magento Open Source] voor het verwerken van je betalingen (in de instellingen van je PayPal-rekening) kunnen bestellingen in je winkel niet worden verwerkt door [!DNL Payment Services].
+   >Als u de toestemming intrekt om [!DNL Payment Services] for [!DNL Adobe Commerce] en [!DNL Magento Open Source] voor het verwerken van je betalingen (in de instellingen van je PayPal-rekening) kunnen bestellingen in je winkel niet worden verwerkt door [!DNL Payment Services]. Op de homepage van Betalingsdiensten verschijnt een waarschuwing over de ingetrokken toestemming.
 
 ## Betalingsrechten aanvragen van Adobe
 
@@ -115,7 +115,7 @@ Zie [Configureren in de beheerder](configure-admin.md) voor opties voor verouder
 
 >[!IMPORTANT]
 >
->Als u de toestemming intrekt om [!DNL Payment Services] voor het verwerken van je betalingen (in de instellingen van je PayPal-rekening) kunnen bestellingen in je winkel niet worden verwerkt door [!DNL Payment Services]. Als je de betalingsverwerking opnieuw wilt inschakelen, moet je het instappen opnieuw voltooien.
+>Als u de toestemming intrekt om [!DNL Payment Services] voor het verwerken van je betalingen (in de instellingen van je PayPal-rekening) kunnen bestellingen in je winkel niet worden verwerkt door [!DNL Payment Services]. Als je de betalingsverwerking opnieuw wilt inschakelen, moet je het instappen opnieuw voltooien. Op de homepage van Betalingsdiensten verschijnt een waarschuwing over de ingetrokken toestemming.
 
 ## Test in productie
 
