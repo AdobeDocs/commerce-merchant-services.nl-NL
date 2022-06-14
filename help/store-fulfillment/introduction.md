@@ -1,12 +1,12 @@
 ---
 title: '"Inleiding tot [!DNL Store Fulfillment]"'
-description: '"Meer informatie [!DNL Store Fulfillment for Adobe Commerce by Walmart Technologies] biedt ondersteuning voor online aankopen, winkelen (BOPIS) voor klanten. Gebruik de mobiele versie van Store Assist om BOPIS-uitvoering en bestellingsverwerking te stroomlijnen voor winkelpartners en klanten van Commerce."'
+description: '"Meer informatie [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] biedt ondersteuning voor online aankopen, winkelen (BOPIS) voor klanten. Gebruik de mobiele versie van Store Assist om BOPIS-uitvoering en bestellingsverwerking te stroomlijnen voor winkelpartners en klanten van Commerce."'
 role: User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
-source-git-commit: 33d8ed57f5a4b8419bd30375a1fb5bec6be37a5e
+source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: '575'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Winkeltegoed voor Adobe Commerce door Walmart Commerce Technologies is een geavanceerde omnichannel oplossing die kan worden geïntegreerd met uw [!DNL Commerce] Opslag om een superieure online aankoop te leveren, neem in-store (BOPIS)-ervaring op.
 
-![De Vervulling van de opslag door de Admin van de Technologieën van het Spoor configuratie](assets/store-fulfillment-admin-home.png)
+![Adobe Admin-configuratie van-beheeroplossing voor opslag](assets/store-fulfillment-admin-home.png)
 
 Afhandeling van winkel biedt ook een end-to-end uitvoeringsworkflow die handelaren helpt kosten te verlagen en tegelijk de conversietarieven, de gemiddelde orderwaarde en de klanttevredenheid te verhogen. Deze workflow biedt:
 

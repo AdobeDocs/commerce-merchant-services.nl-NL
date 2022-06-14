@@ -1,93 +1,58 @@
 ---
-title: Onboarding-overzicht
-description: '"Maak verbinding met uw [!DNL Commerce] aan de [!DNL Store Fulfillment Manager] door een paar instapstappen te voltooien."'
+title: Overzicht van onboarding voor services voor winkeluitvoering
+description: '"[!DNL Live Search] instapkaartstroom, systeemvereisten, grenzen en beperkingen"'
 role: User, Admin
 level: Intermediate
-exl-id: f8e403ac-9bbd-4ea2-b209-9b1a8d1e32a2
-source-git-commit: 26d0ddbcbe648b336d527788668caef1f8e688ed
+source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 1%
+source-wordcount: '363'
+ht-degree: 0%
 
 ---
 
-# Onboarding-overzicht
+# Overzicht aan boord van instapkaarten voor winkeluitvoering
 
-Aan boord van Store Fulfillment door de uitbreiding op uw instantie van de Handel te installeren en de API verbindingen te vormen. Deze verbindingen maken communicatie en gegevenssynchronisatie tussen uw instantie van de Handel, derdesystemen voor voorraadbeheer, en de App van de Hulp van de Opslag mogelijk.
+Aan de slag met [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] door de volgende componenten in te stellen, te configureren en in te schakelen:
 
-Nadat u aan boord gaat, vorm en beheer de oplossing van Admin van de Handel
+- **Afhandeling opslaan, extensie**-Installeer en configureer deze extensie van derden voor uw Adobe Commerce-exemplaar. Na de installatie kunt u de oplossing van de Behandeling van de Opslag van Admin vormen en beheren om te steunen [!DNL buy online, pickup in store] (BOPIS) scenario&#39;s in de Commerce-winkel.
 
-![[!DNL Store Fulfillment Service] configuratie in de beheerweergave](assets/store-fulfillment-admin-home.png)
+   ![[!DNL Store Fulfillment Service] configuratie in de beheerweergave](assets/store-fulfillment-admin-home.png)
 
-## Onboarding-overzicht
+- **Veruitvoeringsaccount opslaan**-Tijdens het inschakelingsproces maakt een accountmanager een account voor de afhandeling van winkels en geeft hij u de accountgegevens en -gegevens. Deze gegevens zijn vereist om de verbinding tussen Adobe Commerce en de Opslagoplossing mogelijk te maken.
 
-1. Installeer de Store Fulfillment door de uitbreiding van de Technologieën van het Spoor voor Adobe Commerce.
+- **App Winkelassistentie**—Biedt winkelassociaties een end-to-end workflow voor het uitvoeren van opslagtaken om BOPIS-orders van mobiele apparaten te beheren. De Vennoten van de opslag kunnen Walmart downloaden en installeren [!DNL Store Assist] voor iOS- en Android-apparaten. Het app onboarding proces wordt beheerd door het Walmart Commerce Technology Client Center als een afzonderlijk proces. Maar [bepaalde instellingen voor toepassingsconfiguratie](user-setup.md) worden voltooid via de Adobe Commerce Admin.
 
-1. Schakel de oplossing en de volledige algemene configuratie voor de integratie, de actieve functies en het inlaatformulier aan boord in vanuit de beheerfunctie om verbinding te maken met uitvoeringsservices.
+   | Store Assist App - weergave Aan de slag | Store Assist App — weergave Modules |
+   |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
+   | ![[!DNL Store Assist App Getting Started] weergave op mobiel apparaat](assets/store-assist-get-started-small.png) | ![[!DNL Store Assist App Orders view] op mobiel apparaat](assets/store-assist-orders-small.png) |
 
-1. Configureer de leveringsmethoden.
 
-1. De bronnen van de opstelling als uw fysieke opslag en vormt producten in uw catalogus.
 
-1. Selecteer en configureer de e-mailsjablonen voor het beheer van de communicatie van de klant voor het online aanschaffen van BOPIS-transacties.
 
-1. Maak gebruikers en rollen voor de app Winkelassistentie.
+## Inrichtingsstappen
 
-1. Vorm de programma&#39;s voor achtergrondprocessen om gegevens aan de uitvoeringsdienst te synchroniseren.
+- **Aanmelden voor[!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies]**-Voltooi het aanmeldingsformulier op [business.adobe.com](https://business.adobe.com/resources/store-fulfillment.html)of neem contact op met uw Adobe Commerce-accountmanager voor hulp.
 
-## Vereisten
+- **Aanvraag voor levering van winkel starten**-Vul het innameformulier in dat door uw accountmanager wordt verstrekt om de informatie te verstrekken die nodig is om het inrichtingsproces te starten.
 
-U moet aan de volgende vereisten voldoen om de oplossing te installeren, op te stellen en te gebruiken.
+- **Geef de gegevens van je account voor Afhandeling van winkel op**-Nadat je account voor Winkelafhandeling voor je is aangemaakt, ontvang je de vereiste gegevens om de oplossing Winkelafhandeling te integreren met Adobe Commerce.
 
-* **Informatie over handelsrekeningen**-Installeren [!DNL Channel Manager] vereist een [Handelsrekening](https://docs.magento.com/user-guide/magento/magento-account.html){target=&quot;_blank&quot;}. U hebt een account-id en gebruikersgegevens nodig met de toegang tot de [!DNL Adobe Commerce] -instantie.
+- **[Download de broncode om de [!DNL Store Fulfillment] extension](install.md)**
 
-* Voor [!DNL Adobe Commerce] bij cloudinfrastructuurprojecten moeten softwareinstallatieprogramma&#39;s beheerderstoegang tot het Cloud-project hebben. Zie [Gebruikerstoegang beheren](https://devdocs.magento.com/cloud/project/user-admin.html).
+## Stappen aan boord
 
-* **Toegang tot het archief Opslag van de Opslag door het softwarearchief van de Technologieën van Walmart (.zip- dossier) om de Oplossing van de Afhandeling van de Opslag te installeren**-Tijdens het instapproces en het inschakelen biedt uw vertegenwoordiger van uw klantenaccount downloadtoegang tot het installatiebestand.
+1. [De extensie Store Fulfillment voor Adobe Commerce installeren](install.md).
 
-* **Ervaring met Composer en de[!DNL Commerce CLI]**—Zie [Algemene installatie van CLI](https://devdocs.magento.com/extensions/install/){target=&quot;_blank&quot;} voor informatie over het gebruik van deze gereedschappen voor het installeren en beheren van extensies op [!DNL Adobe Commerce] en [!DNL Magento Open Source] platforms.
+1. Van de beheerder [de oplossing mogelijk maken](enable-general.md).
 
-* [!DNL Inventory Management] extensie voor Adobe Commerce en Magento Open Source
+1. [De extensie Store Fulfillment configureren vanuit Adobe Commerce Admin](service-config-settings-overview.md).
 
-   De Inventory management-extensie moet zijn geïnstalleerd en ingeschakeld op uw Adobe Commerce- en Magento Open Source-exemplaar. Deze extensie wordt standaard geïnstalleerd en ingeschakeld in Adobe Commerce 2.3.x en hoger. Zie voor meer informatie [Inventory management installeren](https://devdocs.magento.com/extensions/inventory-management/) in de documentatie van Adobe Commerce Developer.
+1. [Verbind de [!DNL Store Fulfillment] de dienst die de geloofsbrieven gebruikt van de Afhandeling van de Opslag die aan u worden verstrekt.](connect-set-up-service.md)
 
-## Platform- en versievereisten
+1. [Gebruikers en rollen maken voor de app Winkelassistentie](user-setup.md)
 
-De [!DNL Store Fulfillment] Adobe Commerce-klanten kunnen op de volgende platforms een oplossing kiezen.
+1. [Walmart&#39;s downloaden [!DNL Store Assist] op het gewenste apparaat toe. De app is beschikbaar in de App Store (iOS) en in de Play Store (Android)](app-setup.md)
 
-* Adobe Commerce over wolkeninfrastructuur (ECE)
-* Adobe Commerce in bedrijven (EE)
+Nadat u met succes hebt geïnstalleerd, gevormd, op instapniveau voltooid en toegang tot hebt [!DNL Store Assist] app, kunt u [beginnen met het maken van bestellingen en testen](test-and-deploy.md).
 
-De oplossing van de Afhandeling van de Opslag is compatibel met de volgende softwareversies.
 
-**Softwarecompatibiliteit**
-
-| **Software** | **Minimumversie** | **Maximale versie** |
-|----------------|---------------------|---------------------|
-| Adobe Commerce | 2.4.0. | 2.4.4. |
-| Composer | 1.x | 2.x |
-| MariaDB | 10,2 | 10,4 |
-| MySQL | 5,7 | 8,0 |
-| PHP | 7,4 | 8,1 |
-
-Raadpleeg de Adobe Commerce voor gedetailleerde vereisten [Systeemvereisten](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) in de documentatie van de Ontwikkelaar.
-
-### Bedrijfsvereisten
-
-Uw bedrijf moet aan de volgende minimumcriteria voldoen om de oplossing van de Afhandeling van de Opslag uit te voeren.
-
-* Alleen in de VS gevestigde ondernemingen
-
-* B2C-detailhandelaren, CPG-fabrikanten die D2C verkopen of distributeurs die D2C verkopen of aan kleine bedrijven
-
-* Ten minste één fysieke opslag of opslagplaats
-
-* Je productvoorraad beheren met Inventory management for Adobe Commerce (was MSI)
-
-* Vermogen om handelsvoorraden te synchroniseren
-
-* Wi-Fi-beschikbaarheid opslaan op alle locaties die ondersteuning bieden voor de oplossing Afhandeling opslaan
-
-* Associateurs van winkels en pakhuizen hebben toegang tot mobiele apparaten van iOS of Android tijdens hun verhuizing, persoonlijk of verstrekt door de handelaar
-
-* Producten die door de oplossing van de Afhandeling van de Opslag worden beheerd moeten productattributen hebben die of SKU of UPC productcode omvatten

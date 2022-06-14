@@ -1,0 +1,43 @@
+---
+title: Configuratie van opslaglocatie en toewijzing
+description: Vorm een afstandsleverancier om de afbeelding van de opslagplaats in storefront UI te steunen.
+role: User, Admin
+level: Intermediate
+source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+workflow-type: tm+mt
+source-wordcount: '152'
+ht-degree: 1%
+
+---
+
+
+# Opslaglocatie en Toewijzing instellen
+
+Schakel de locatie en toewijzingsmogelijkheden van de winkel in voor de uitvoering van de winkel door een [afstandsprovider](https://docs.magento.com/user-guide/catalog/inventory-configure-distance-priority.html) om naar winkellocaties te zoeken.
+
+**Vereisten**
+
+Tijdens het configuratieproces geeft u een Google API-sleutel op voor het Google Maps-platform. Als u er geen hebt, [genereren op het Google Maps-platform](https://docs.magento.com/user-guide/catalog/inventory-configure-distance-priority.html#configure-google-maps).
+
+Om de afstandsleverancier te vormen:
+
+1. Van de [!UICONTROL Stores > General] Voeg in de beheerfunctie de integratie Google Maps toe voor het inhoudstype Kaart.
+
+   - Ga naar **[!UICONTROL Stores > Configuration  > General > Content Management]**.
+
+   - Google API-sleutel toevoegen aan **[!UICONTROL Google Maps API Key]** veld.
+
+1. Van de [!UICONTROL Stores > Inventory] Selecteer in de beheerdersinterface de afstandprovider voor Afhandeling opslaan.
+
+   - Ga naar **[!UICONTROL Stores > Configuration > Catalog > Inventory]**.
+
+   - Vouw de sectie **[!UICONTROL Distance Provider for Distance Based SSA]** uit.
+
+   - Stel de **Provider** tot **Google Map**.
+
+1. Configureer instellingen voor de **[!UICONTROL Google Distance Provider]**.
+
+   - Voeg uw **Google API-sleutel**.
+
+   - Set **[!UICONTROL Computation Mode]** tot `Driving` en **[!UICONTROL Value]** tot `Distance`
+

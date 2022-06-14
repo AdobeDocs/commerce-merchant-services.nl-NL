@@ -1,21 +1,21 @@
 ---
 title: '''[!DNL Store Fulfillment by Walmart Commerce Technologies] Overzicht van hulplijnen'
-description: Uitgebreide informatie over [!DNL Store Fulfillment] voor Adobe Commerce- en Magento Open Source-beheerders, inclusief installatie en instapweigering
+description: Uitgebreide informatie over [!DNL Store Fulfillment] voor Adobe Commerce-beheerders, inclusief installatie en instapsysteem
 seo-title: Adobe Commerce Store Fulfillment Guide
-seo-description: Describes how to use [!DNL Store Fulfillment by Walmart Technologies] services with Adobe Commerce or Magento Open Source.
+seo-description: Describes how to use [!DNL Store Fulfillment by Walmart Commerce Technologies] services with Adobe Commerce.
 exl-id: b4af273c-5176-4a67-a783-e0bb1740b3d8
-source-git-commit: 26d0ddbcbe648b336d527788668caef1f8e688ed
+source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '201'
 ht-degree: 0%
 
 ---
 
 # [!DNL Store Fulfillment] Overzicht van hulplijnen
 
-Deze handleiding is bedoeld voor beheerders van Adobe Commerce en Magento Open Source. Het bevat gedetailleerde informatie over de installatie en het aan boord nemen van [!DNL Store Fulfillment by Walmart Technologies], alsmede configuratie en beheer van de diensten. Het veronderstelt een basisbegrip van de kernconfiguratie en de functionaliteit van de Handel.
+Deze handleiding is bedoeld voor beheerders van Adobe Commerce. Het bevat gedetailleerde informatie over de installatie en het aan boord nemen van [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies], alsmede configuratie en beheer van de diensten. Hierbij wordt uitgegaan van een basiskennis van de basisconfiguratie en -functionaliteit van Adobe Commerce.
 
-[!DNL Store Fulfillment] heeft twee gebieden voor de beheerders van de Handel:
+[!DNL Store Fulfillment] heeft twee gebieden voor Adobe Commerce-beheerders:
 
 * De beheerder: Gebruik dit gebied om tot de configuratie UI toegang te hebben.
 * De opdrachtregelinterface: Gebruik dit gereedschap om installatie- en achtergrondconfiguratietaken uit te voeren.
@@ -23,16 +23,16 @@ Deze handleiding is bedoeld voor beheerders van Adobe Commerce en Magento Open S
 Deze handleiding is van toepassing op:
 
 * Alles [!DNL Store Fulfillment]-specifieke taken die in Admin worden uitgevoerd.
-* Alles [!DNL Store Fulfillment]- specifieke taken die het gebruiken van de het bevellijn van de Handel worden gedaan
+* Alles [!DNL Store Fulfillment]-specifieke taken die worden uitgevoerd via de opdrachtregel van Adobe Commerce
 
-Deze handleiding heeft geen betrekking op de kernmogelijkheden van Adobe Commerce en Magento Open Source.
+Deze handleiding heeft geen betrekking op de kernmogelijkheden van Adobe Commerce.
 
 ## Aanvullende documentatie
 
 | Hulplijn | Beschrijving |
-|-----------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
-| [Adobe Commerce 2.4 Handboek](https://docs.magento.com/user-guide/) | Bedrijfsgerichte documentatie voor zowel Adobe Commerce als Magento Open Source |
-| [Adobe Commerce 2.4-handleiding voor ontwikkelaars](https://devdocs.magento.com/) | Documentatie gericht op ontwikkelaars die wordt gebruikt om Adobe Commerce of Magento Open Source te bouwen en aan te passen |
+|-----------------------------------------------------------------------|----------------------------------------------------------------------------|
+| [Adobe Commerce 2.4 Handboek](https://docs.magento.com/user-guide/) | Bedrijfsgerichte documentatie voor beide Adobe Commerce |
+| [Adobe Commerce 2.4-handleiding voor ontwikkelaars](https://devdocs.magento.com/) | Documentatie gericht op ontwikkelaars die wordt gebruikt om Adobe Commerce te bouwen en aan te passen |
 
 ## Ondersteuning
 

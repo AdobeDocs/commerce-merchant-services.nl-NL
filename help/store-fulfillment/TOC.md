@@ -1,12 +1,12 @@
 ---
 user-guide-title: '"[!DNL Store FulFillment Guide]"'
-user-guide-description: Deze handleiding bevat gedetailleerde informatie over het installeren en configureren van services voor winkelvervulling voor uw Adobe Commerce- of Magento Open Source-winkel.
-breadcrumb-title: De Behandeling van de opslag door de Gids van de Technologieën van de Mara
+user-guide-description: Gedetailleerde informatie over het installeren, configureren en gebruiken van de Store Fulfillment voor Adobe Commerce-winkels
+breadcrumb-title: Winkeltegoed voor Adobe Commerce
 index: false
 hidden: true
-source-git-commit: 26d0ddbcbe648b336d527788668caef1f8e688ed
+source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
 workflow-type: tm+mt
-source-wordcount: '63'
+source-wordcount: '84'
 ht-degree: 0%
 
 ---
@@ -16,15 +16,27 @@ ht-degree: 0%
 
 - [Overzicht van hulplijnen](guide-overview.md)
 - [Inleiding tot [!DNL Store Fulfillment]](introduction.md)
+- [Workflow Winkelassistentie](store-assist-modules.md)
+- [Vereisten](solution-requirements.md)
 - [Opmerkingen bij de release](release-notes.md)
 - Afhandeling aan boord van winkel {#onboarding}
    - [Overzicht van onboarding](onboard.md)
-   - [Installatie](install.md)
-   - [Serviceverbinding en -instellingen](connect-set-up-service.md)
-   - [Testen en implementeren](test-deploy.md)
-- Functieconfiguratie {#configuration}
+   - [De extensie installeren](install.md)
+   - [Afhandeling van Connect Store](connect-set-up-service.md)
+   - [Testen en implementeren](test-and-deploy.md)
+- [Overzicht van configuratie](service-config-settings-overview.md)
+- Winkelconfiguratie {#store-configuration}
    - [Algemene configuratie](enable-general.md)
    - [E-mails over verkopen](sales-emails.md)
+   - [Bron van de winkel](merchant-store-configuration.md)
    - [Productvoorraadbeheer](product-stock.md)
-   - [Winkelbronnen](store-sources.md)
+   - [Inventory management-bronoverdracht](inventory-stock-transfer.md)
+   - [Meerdere websites/bereik](multi-site-and-scope-config.md)
+- Systeemconfiguratie {#system-configuration}
    - [Achtergrondprocessen](background-processes.md)
+   - [Locatie en toewijzing van opslaglocaties instellen](store-location-map-provider-setup.md)
+   - [Inchecken van ervaring instellen](check-in-experience-setup.md)
+   - [Gebruikersinstelling](user-setup.md)
+   - [App-instelling](app-setup.md)
+
+
