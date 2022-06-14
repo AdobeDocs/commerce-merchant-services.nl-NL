@@ -4,9 +4,9 @@ description: Na installatie kunt u configureren [!DNL Payment Services] in het s
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: b30c15ab808be4526424a4a3be19e3d0aedcc662
+source-git-commit: 724abe973094c1aa631ca34bd8096052fa1e9195
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '630'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,7 @@ U kunt [!DNL Payment Services] voor uw website en schakel het testen van sandbox
    >
    >Uw _[!UICONTROL Sandbox Merchant ID]_en_[!UICONTROL Production Merchant ID]_ automatisch worden gegenereerd en aanwezig zijn in de betreffende velden wanneer u klaar bent met het instappen voor de sandbox en/of productie. Verwijder of wijzig deze id&#39;s niet.
 
+1. Selecteer de winkelweergave in het dialoogvenster **[!UICONTROL Scope]** vervolgkeuzemenu waarvoor u een betalingsmethode wilt inschakelen.
 1. Als u de standaardinstellingen voor betalingsfuncties en de weergave van de winkel wilt wijzigen, stelt u de gewenste aanvullende opties in:
 
    - [Creditcardvelden](#credit-card-fields)

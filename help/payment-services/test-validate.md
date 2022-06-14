@@ -2,7 +2,7 @@
 title: Testen en valideren
 description: Testen en valideren helpen u ervoor te zorgen dat [!DNL Payment Services] functies werken naar behoren en bieden de beste betalingsopties voor uw klanten
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 599405b908cc8b770c917a18ad488a1f69be222b
 workflow-type: tm+mt
 source-wordcount: '436'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Voordat u [!DNL Payment Services] for [!DNL Adobe Commerce] en [!DNL Magento Ope
 Testen [!DNL Payment Services] in een sandbox-omgeving is een belangrijke validatiestap, ook al is het een gesimuleerde omgeving die alleen is verbonden met de PayPal-sandbox, niet met echte banken en handelaren.
 
 1. Voltooi een geslaagde afhandeling in je winkel, ofwel met [Creditcardvelden](payments-options.md#credit-card-fields) of [Slimme PayPal-knoppen](payments-options.md#paypal-smart-buttons). Zie [Sandboxmodus gebruiken](#use-sandbox-mode) voor meer informatie over het gebruik van valse creditcards voor het testen.
-1. Vastleggen (wanneer uw betalingsactie is [instellen op `Authorize and Capture`](onboard.md#set-payment-services-as-payment-method)), [teruggave](refunds.md), of [void](voids.md) de zojuist voltooide bestelling. U kunt ook eenvoudig [een factuur maken](https://docs.magento.com/user-guide/sales/invoice-create.html){target=&quot;_blank&quot;} voor een bestelling als uw betalingsactie is ingesteld op `Authorize` in plaats van `Authorize and Capture`.
+1. Vastleggen (wanneer uw betalingsactie is [instellen op `Authorize and Capture`](production.md#set-payment-services-as-payment-method), [teruggave](refunds.md), of [void](voids.md) de zojuist voltooide bestelling. U kunt ook eenvoudig [een factuur maken](https://docs.magento.com/user-guide/sales/invoice-create.html){target=&quot;_blank&quot;} voor een bestelling als uw betalingsactie is ingesteld op `Authorize` in plaats van `Authorize and Capture`.
 1. Bekijk de transactie en andere informatie in de [Uitbetalingsrapport](payouts.md).
 1. Zie de details van de bestelling in de [Betalingsstatusrapport bestellen](order-payment-status.md).
 
