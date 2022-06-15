@@ -1,14 +1,15 @@
 ---
 title: Algemene configuratie
-description: Algemene instellingen configureren om in te schakelen [!DNL Store Fulfillment] voor uw winkel. Configureer algemene extensie-instellingen, systeeminstellingen voor registratie, gegevenssynchronisatie en beveiliging. Belangrijke gegevens leveren om de integratie tussen Adobe Commerce en Store Fulfillment Services mogelijk te maken.
+description: '"Algemene instellingen configureren om in te schakelen [!DNL Store Fulfillment] voor uw winkel. Configureer algemene extensie-instellingen, systeeminstellingen voor registratie, gegevenssynchronisatie en beveiliging. Belangrijke gegevens leveren om de integratie tussen Adobe Commerce en Store Fulfillment Services mogelijk te maken."'
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '2409'
+source-wordcount: '2413'
 ht-degree: 0%
 
 ---
+
 
 # Algemene configuratie
 
@@ -18,27 +19,23 @@ De integratie moet verbonden zijn met de dienst van de Afhandeling van de Opslag
 
 De algemene configuratie voor [!DNL Store Fulfillment] bevat de volgende configuratie-instellingen:
 
-- [De extensie inschakelen](#enable-the-extension)
+- [De oplossing inschakelen](#enable-the-store-fulfillment-solution)
 - [Accountgegevens beheren om verbinding te maken met de service Afhandeling van winkel](#account-credentials)
 - [Logboekregistratie configureren](#configure-logging)
-- [Opties instellen voor het beheer van bewerkingen met [ordersynchronisatie]](#order-synchronization)
+- [Opties instellen voor het beheer van de volgorde en de synchronisatie van fouten](#order-synchronization)
 - [Verzendopties voor winkelvervulling inschakelen](#enable-store-fullment-shipping-options)
 - [Beveiligings- en verificatie-instellingen configureren voor de Store Fulfillment App](#store-fulfillment-app)
 - [Beschikbaarheid en configuratie van leveringsmethode instellen](#in-store-delivery-methods)
 
-
-## De extensie inschakelen
+## De oplossing voor winkelvervulling inschakelen
 
 | **Veld** | **Beschrijving** | **Toepassingsgebied** | **Vereist** |
 |--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
 | **[!UICONTROL Enabled]** | Schakel de oplossing in of uit. Indien deze optie is ingeschakeld, configureert en gebruikt u de mogelijkheden voor het afhandelen van winkels en maakt u een verbinding tussen uw Adobe Commerce-winkel en de services voor het afhandelen van winkels. Als deze optie is uitgeschakeld, zijn alle functies voor het afhandelen van winkels uitgeschakeld en is er geen communicatie tussen Adobe Commerce en de services voor het afhandelen van winkels. Bestelgegevens kunnen niet worden verwerkt of ontvangen. | Algemeen | Ja |
 
-
 Als u deze instelling wilt voltooien, raadpleegt u **Stores → Configuration → Services → Store Fulfillment by Walmart Commerce Technologies**.
 
 ## Accountreferenties toevoegen
-
-
 
 | **Veld** | **Beschrijving** | **Toepassingsgebied** | **Vereist** |
 |----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
@@ -92,7 +89,6 @@ Configureer de verzendopties voor de afhandeling van winkels die de beschikbaarh
 
 ### Verzenden naar winkel
 
-
 | **Veld** | **Beschrijving** | **Toepassingsgebied** | **Vereist** |
 |---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
 | **[!UICONTROL Enable Ship To Store]** | De instelling van het verzendings-naar-archief maakt gebruik van uw bestaande verzendmogelijkheden. Als u Inventory management gebruikt, of als u bestellingen kunt accepteren en uitvoeren op zakelijke locaties zonder voorraad via voorraadoverdrachten van winkel naar winkel, stelt u deze optie in op `Yes`.</br></br>Als u geen ondersteuning kunt bieden voor de optie voor het verzenden van objecten naar een winkel of deze niet wilt aanbieden, kunt u instellen op `No`. Als deze optie is uitgeschakeld, worden items in uw catalogus met een nulvoorraad voor een winkel of items die onder die locatie liggen [!DNL Out of Stock Threshold], worden niet aangeboden met opties voor in-store ophalen.</br></br>Dit is een algemene instelling die per bedrijfslocatie kan worden aangepast. | Algemeen | Nee |
@@ -117,7 +113,6 @@ Configureer de instellingen voor de gebruikersaccount en wachtwoordbeveiliging v
 | **[!UICONTROL Lockout Time (minutes)]** | Aantal minuten om een account te vergrendelen na mislukken van aanmelding. | Algemeen | Nee |
 | **[!UICONTROL Force Password Change]** | Hiermee wordt bepaald of een wijziging van het gebruikerswachtwoord is vereist.</br></br>`Yes`: Vereisen dat de gebruiker zijn wachtwoord wijzigt na het instellen van de account.</br>`No`: raadt de gebruiker aan het wachtwoord te wijzigen na het instellen van de account. | Algemeen | Nee |
 | **Wachtwoordlevensduur** | Het aantal dagen dat een wachtwoord geldig blijft voordat een vereist wachtwoord wordt gewijzigd. Laat leeg om deze optie uit te schakelen. | Algemeen | Nee |
-
 
 ### Twee-factor authentificatie
 
@@ -150,7 +145,6 @@ In-store pickup, says its global setting, but scope is Website.  How do you conf
 | **Ophalen curbside inschakelen** | Schakel de optie Ophalen curven tijdens het uitrekenen in of uit voor klanten die Ophalen van winkel kiezen.</br></br>Deze globale instelling is van toepassing op alle winkellocaties in de detailhandel. Wanneer toegelaten, kunt u het bij de detailhandel plaats selectief onbruikbaar maken. | Website | Nee |
 
 Voor details over het aanpassen van de leveringsmethodes bij geselecteerde detailhandelsopslagplaatsen, zie **Configuratie detailhandel**.
-
 
 #### Configuratie van de titel van de leveringsmethode
 
@@ -262,8 +256,3 @@ Voor details over het aanpassen van de leveringsmethodes bij geselecteerde detai
 <td>Nee</td>
 </tr>
 </tbody></table>
-
-
-
-
-

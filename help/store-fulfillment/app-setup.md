@@ -3,64 +3,64 @@ title: App-instelling
 description: '"Stel de [!DNL Store Assist] app voor het beheer van end-to-end workflows voor de afhandeling van winkels en processen voor het online kopen van orders." '
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '581'
 ht-degree: 0%
 
 ---
 
+
 # App-instelling
 
-Store Assist is een afhandeling-als-dienst (FaaS) platform app aangedreven door de Technologieën van de Handel van de Marm. De app biedt in-store uitvoeringsmogelijkheden voor verwerking [!DNL buy online], [!DNL pick up in store] (BOPIS) orders.
+Store Assist is een afhandeling-als-dienst (FaaS) platform app aangedreven door de Technologieën van de Handel van de Marm. De app biedt in-store uitvoeringsmogelijkheden voor verwerking [!DNL buy online], [!DNL pick up in store] (BOPIS) orders.  Met de Hulp van de Opslag, kunnen de opslagvennoten zien welke punten klanten bestelde, de correcte punten sneller plukken, en opstelling vervulde orden voor de ophaallevering in-store of curbside aan klanten.
 
-De app ontvangt alle bestelling- en klantgegevens, van ordergegevens tot ophaaltijden en stelt de gegevens beschikbaar voor de online opslag van partners via mobiele apparaten. Met de Hulp van de Opslag, kunnen de opslagvennoten zien welke punten klanten bestelde, de correcte punten sneller plukken, en opstelling vervulde orden voor de ophaallevering in-store of curbside aan klanten.
+De app Store Assist ontvangt alle bestelling- en klantgegevens, van bestellingsgegevens tot ophaaltijden en stelt de gegevens beschikbaar voor het online opslaan van partners via mobiele apparaten. De app bevat [!UICONTROL Pick], [!UICONTROL Stage], [!UICONTROL Handoff], en [!UICONTROL Orders] modules om Winkelgeassocieerde leden te helpen bij het uitvoeren van bijvoorbeeld de volgende activiteiten:
 
-Winkelpartners gebruiken Winkelassistentie [!UICONTROL Pick], [!UICONTROL Stage], [!UICONTROL Handoff], en [!UICONTROL Orders] om het volgende te voltooien beheer het levering en afleverproces:
+- Wijs leveringsdatums en -tijden voor bestellingen toe.
+- Ontvang meldingen van klanten wanneer ze aankomen voor het ophalen van bestellingen.
+- Werkgebiedbestellingen voor overdracht aan klanten.
+- De orderstatus van het spoor voor alle orden in hun toegewezen opslagplaatsen.
 
-- Leveringsdatums en -tijden voor bestellingen toewijzen
-- Ontvang meldingen van klanten wanneer ze in de winkel aankomen voor het ophalen van bestellingen
-- Werkgebiedbestellingen voor overdracht aan klanten
-- De orderstatus van het spoor voor alle orden in hun toegewezen opslagplaatsen
-
-Zie [Workflows voor afhandeling van winkelassistentie](store-assist-modules.md) voor meer informatie over de app Winkelassistentie.
-
+>[!NOTE]
+>
+>Zie [Workflows voor afhandeling van winkelassistentie](store-assist-modules.md) voor meer informatie over de app Winkelassistentie.
 
 ## De app Store Assist configureren
 
 Voor de app Store Assist zijn twee soorten configuraties vereist:
 
-- Adobe Commerce Admin-configuratie-instellingen voor [Gebruikersaccounts, gebruikersrollen en bronmachtigingen beheren vanuit de Adobe Commerce Admin-systeeminstellingen](user-setup.md).
+- Adobe Commerce Admin-configuratie-instellingen voor [gebruikersaccounts, gebruikersrollen en resourcemachtigingen beheren vanuit de Adobe Commerce Admin-systeeminstellingen](user-setup.md).
 
 - De configuratie-instellingen aan de voorzijde om de interface van de app Store Assist en andere instellingen aan te passen, zoals:
 
-   - **De app Winkelassistentie plaatsen**—Pas de gebruikersinterface van de app aan met het bedrijfslogo en de kleuren
+   - **De app Winkelassistentie plaatsen**—Pas de gebruikersinterface van de app aan met het bedrijfslogo en de kleuren.
 
-   - **De standaardinstructies bijwerken**—Pas de instructies aan die in Winkel bijstaan interfaces voor de modules van de Keuze, van het Stadium, van de Afhandeling, en van de Orde zodat uw vennoten precies weten wat te doen tijdens elke stap van het uitvoeringsproces.
+   - **De standaardinstructies bijwerken**—Pas de instructies in de interface van de Hulp van de Opslag voor de modules van de Keuze, van het Stadium, Handoff, en van de Orde aan om aan uw bedrijfbeleid en procedures te voldoen, en de Vennoten van de Beeltenis door elke stap van het uitvoeringswerkschema te begeleiden.
 
-   - **Lokalisatie**—Selecteer de beschikbare taal voor de app, kies de datum- en tijdnotatie, selecteer de standaardmaateenheden en selecteer de standaardvaluta
+   - **Lokalisatie**—Selecteer de beschikbare taal voor de app. Kies de datum- en tijdnotatie en selecteer de standaardmaateenheden en de standaardvaluta.
 
-   - **Inactiviteitstijd**—Geef op hoeveel tijd de toepassing inactief moet zijn voordat deze zich afmeldt
+   - **Inactiviteitstijd**—Geef op hoeveel tijd de toepassing inactief moet zijn voordat deze zich afmeldt.
 
    - **Annulering uit de winkel**—Specificeer of de orden van de opslag kunnen worden geannuleerd en welke rollen annuleringstoestemmingen hebben
 
    - **Opschonen van bestellingen, venster**—Specificeer hoe lang voorbij de geplande ophaaltijd dat een geplakte orde in het opvoeren alvorens wordt herbevolkt-bijvoorbeeld, drie dagen blijft.
 
-   - Alles aanpassen in app-instructies (kiezen, opvoeren, afleveren)
+   - Alles aanpassen in app-instructies (kiezen, opvoeren, afleveren).
 
-   - **Pictogrammen**-Setup als u wilt dat pushmeldingen beginnen te kiezen zodra een bestelling is geplaatst
+   - **Pictogrammen**- Specificeer of om een duw bericht te verzenden om het plukken proces te beginnen nadat een klant een orde plaatst.
 
-   - **Meldingen inchecken**-Stel in of u pushmeldingen wilt hebben als een klant heeft aangemeld / wacht op X min of helemaal geen meldingen
+   - **Meldingen inchecken**-Geef op of u een pushmelding wilt verzenden tijdens het inchecken van bestellingen- na inchecken, nadat de wachttijd van de klant een bepaalde periode overschrijdt. Of schakel de melding uit.
 
-   - **Handje uit-proces**—Klanthandtekening inschakelen, een vraag inschakelen om de klant-id te controleren voordat de bestelling wordt afgehandeld
+   - **Handje uit-proces**—Schakel optionele processen in wanneer Store Associate bestelling aan de klant levert, bijvoorbeeld een handtekening van de klant vereisen of de koppeling vragen om de klant-id te controleren.
 
-   - **Afkeuring van item inschakelen bij afbreken**
+   - **Afkeuring van item inschakelen bij afbreken**-Sta klanten toe om orde punten tijdens orde terug te keren of te annuleren handoff.
 
-   Het werk met het team van de Diensten van de Cliënt van de Technologieën van de Handel van de Handel van de Mara om Frontend configuratie voor de Winkel bij App te voltooien.
+   Het werk met het team van de Diensten van de Cliënt van de Technologieën van de Handel van de Handel van de Mara om frontend configuratie voor de Hulp App van de Winkel te voltooien.
 
 ## Downloaden en installeren van apps
 
-Nadat de configuratie van de app Store Assist is voltooid, kunnen Store Associates de app Store Assist downloaden en installeren op hun mobiele apparaten en zich aanmelden.
+Nadat de configuratie van de app Store Assist is voltooid, kunnen Store Associates vanaf hun mobiele apparaten de app Store Assist downloaden, installeren en zich aanmelden bij de app Store Assist.
 
 - Download de app Store Assist vanuit de [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id16092815390) of de Google Play-winkel.
 
@@ -69,5 +69,5 @@ Nadat de configuratie van de app Store Assist is voltooid, kunnen Store Associat
    - De bedrijfsnaam die aan je account voor winkelassistentie is gekoppeld
 
    - Sla accountgegevens voor assistentie op (gebruikersnaam en wachtwoord voor hun account).
-   Een Adobe Commerce-beheerder kan een gebruikersaccount voor Winkelassistentie maken voor opslaglocaties die [Ophalen in winkel](merchant-store-configuration.md#pickup-location-configuration) ingeschakeld in de beheerinstellingen voor winkels.
+   Een Adobe Commerce-beheerder kan een gebruikersaccount maken en machtigingen instellen voor de gebruikersaccounts van de App Store Assist voor opslaglocaties die [Ophalen in winkel](merchant-store-configuration.md#pickup-location-configuration) ingeschakeld in de beheerinstellingen voor winkels.
 

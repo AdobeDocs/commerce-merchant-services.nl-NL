@@ -1,14 +1,15 @@
 ---
 title: Overzicht van configuratie voor winkeluitvoering
-description: Leer over de categorieën van de montages van de Configuratie Admin beschikbaar voor de oplossing van de Behandeling van de Opslag en hoe zij worden gevormd.
+description: Leer over de types van beschikbare montages van de Configuratie Admin om de uitgebreide uitvoeringsmogelijkheden aan te passen die door de Oplossing van de Afhandeling van de Opslag worden verstrekt, en verbinding aan instructies voor de voltooiing van de configuratie.
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '386'
 ht-degree: 0%
 
 ---
+
 
 # Overzicht van configuratie voor winkeluitvoering
 
@@ -26,10 +27,9 @@ In Adobe Commerce Admin, zijn de configuratiemontages voor de Diensten van de Af
 | [Configuratie van meerdere websites/bereik](multi-site-and-scope-config.md) | Configureer voorraden en leveringsmethoden voor meerdere websites/winkelbereiken. | Nee |
 | [Configuratie achtergrondprocessysteem](background-processes.md) | Vorm de programma&#39;s voor achtergrondprocessen die in het synchroniseren van gegevens met de uitvoeringsdiensten worden gebruikt. | Nee |
 | [Opslaglocatie en Toewijzing instellen](store-location-map-provider-setup.md) | Vorm de capaciteit om een afstandsleverancier te gebruiken om naar kleinhandelszaken te zoeken en deze informatie in de kaart van SLS te tonen | Ja |
-| [Inchecken van ervaring instellen](store-location-map-provider-setup.md) | De kleur van de auto en de auto maken opties die tijdens het controleproces beschikbaar zullen zijn | Ja |
+| [Inchecken van ervaring instellen](check-in-experience-setup.md) | De kleur van de auto en de auto maken opties die tijdens het controleproces beschikbaar zullen zijn | Ja |
 | [Gebruikersinstelling](user-setup.md) | Gebruikersaccounts, rollen en machtigingen beheren voor winkelpartners die de app Winkelassistentie gebruiken. bereik. | Ja |
 | [App-instelling](app-setup.md) | Bekijk de beschikbare configuraties voor de Store Assist App die vereist zijn om het instapproces te voltooien. Deze instellingen kunnen niet worden geconfigureerd via de Adobe Commerce-beheerder. | Ja |
-
 
 ## De configuratieverwijzing gebruiken
 

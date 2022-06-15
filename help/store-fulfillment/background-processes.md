@@ -1,15 +1,16 @@
 ---
-title: Achtergrondprocessen
-description: '"Vorm de programma''s voor [!DNL Store Fulfillment] achtergrondprocessen die worden gebruikt voor het synchroniseren van gegevens met de uitvoeringsdiensten"                   '
+title: Configuratie achtergrondproces
+description: '"Vorm de programma''s voor [!DNL Store Fulfillment] achtergrondprocessen die worden gebruikt voor het synchroniseren van gegevens met de uitvoeringsservices."                   '
 role: User, Admin
 level: Intermediate
 exl-id: 742ae59e-77a0-4db6-b156-2992d4403be7
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '134'
+source-wordcount: '135'
 ht-degree: 0%
 
 ---
+
 
 # Configuratie achtergrondproces
 
@@ -19,9 +20,6 @@ Achtergrondprocessen worden beheerd met de standaard Adobe Commerce [Geplande ta
 
 ## Geplande taken beheren voor winkeluitvoering
 
-Ga vanuit de beheerder naar **[!UICONTROL Stores > Configuration > Advanced > System > Cron (Scheduled Tasks)> Cron configuration options for group:store_fulfillment]**.
-
+Ga vanuit de beheerder naar **[!UICONTROL Stores > Configuration > Advanced > System > Cron (Scheduled Tasks) > Cron configuration options for group:store_fulfillment]**.
 
 Controleer de standaardconfiguratie voor de diensten van de Afhandeling van de Opslag. Afhankelijk van het volume van uw ordeverwerking en de beschikbaarheid van bronnen, zou u deze montages kunnen moeten aanpassen.
-
-

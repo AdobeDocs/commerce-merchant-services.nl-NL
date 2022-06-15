@@ -1,25 +1,26 @@
 ---
 title: Installatie
-description: Beschrijving toevoegen
+description: '"Installeer de [!DNL Store Fulfillment solution] voor een Adobe Commerce storefront met Composer for PHP."'
 role: User, Admin
 level: Intermediate
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '649'
 ht-degree: 0%
 
 ---
 
+
 # Installatie
 
-De eerste installatie van de [!DNL Store Fulfillment] extensie in een niet-productieomgeving met een beheer van de wachtrij en caching geconfigureerd om uitzonderingsverwerking toe te staan. Uw omgeving dient andere ontwikkeltools te bevatten voor de beste werkwijzen voor het werken en onderhouden van uw Adobe Commerce-exemplaar.
+Voltooi de eerste installatie van de [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] extensie in een niet-productieomgeving met een beheer van de wachtrij en caching geconfigureerd om uitzonderingsverwerking toe te staan. Zorg ervoor dat uw ontwikkelomgeving ontwikkeltools bevat voor de beste werkwijzen voor het werken en onderhouden van uw Adobe Commerce-instantie.
 
 ## Vereisten
 
 Controleer de [vereisten](solution-requirements.md) voor de Opslagoplossing van de Afhandeling van de Opslag en verzamel vereiste informatie alvorens u installeert [!DNL Store Fulfillment] extensie voor Adobe Commerce.
 
-Als u een pre-release- of bètaversie van de Store Fulfillment for Adobe Commerce-extensie hebt geïnstalleerd, verwijdert u deze voordat u de huidige versie installeert.
+Als u een pre-versie of bètaversie van de Store Fulfillment for Adobe Commerce-extensie hebt geïnstalleerd, gebruikt u de volgende opdracht om deze te verwijderen voordat u de huidige versie installeert.
 
 ```terminal
 rm -rf composer.lock vendor/walmart &&
@@ -38,9 +39,9 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 - **Ervaring met het installeren van extensies van derden op Adobe Commerce**- Raadpleeg de documentatie bij Adobe Commerce ter referentie.
 
-   - [Een extensie installeren voor een Adobe Commerce-instantie in de cloud-infrastructuur](https://devdocs.magento.com/cloud/howtos/install-components.html#install-an-extension)
+   - [Een extensie installeren voor een Adobe Commerce-instantie in de cloud-infrastructuur](https://devdocs.magento.com/cloud/howtos/install-components.html#install-an-extension).
 
-   - [Een extensie installeren voor een Adobe Commerce-exemplaar op locatie](https://devdocs.magento.com/extensions/install/)
+   - [Een extensie installeren voor een Adobe Commerce-exemplaar op locatie](https://devdocs.magento.com/extensions/install/).
 
 ### Stap 1: De extensiebundel downloaden
 
@@ -79,7 +80,7 @@ Gebruik Composer om de bronmap voor de installatie te configureren en de extensi
    composer config repositories.artifacts artifact artifacts/
    ```
 
-1. Voeg de uitbreiding van de Diensten van de Afhandeling van de Opslag toe aan `composer.json`
+1. Voeg de uitbreiding van de Diensten van de Afhandeling van de Opslag toe aan `composer.json`.
 
    ```bash
    composer require walmart/magento-bopis-metapackage:1.0.0
@@ -128,7 +129,7 @@ Verifieer bij de Adobe Commerce-server of de modules voor de extensie Store Fulf
 
 1. Meld u aan bij de server.
 
-   Voor installaties op Adobe Commerce op cloudinfrastructuur gebruikt u SSH om u aan te melden bij de externe omgeving.
+   Voor installaties op Adobe Commerce op cloudinfrastructuur, [gebruik SSH om zich aan te melden bij de verre omgeving](https://devdocs.magento.com/cloud/env/environments-ssh.html#ssh).
 
 1. Verifieer dat de modules van de Diensten van de Afhandeling van de Opslag worden toegelaten.
 
@@ -182,7 +183,7 @@ Verifieer bij de Adobe Commerce-server of de modules voor de extensie Store Fulf
 
 ### Aanvullende stappen
 
-Gebruik indien nodig de [instellen:static-content: inzetten](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-commerce.html#setupstatic-contentdeploy) CLI bevel om statische meningsdossiers aan uw productiemilieu op te stellen.
+Gebruik indien nodig de `[setup:static-content: deploy](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-commerce.html#setupstatic-contentdeploy)` CLI bevel om statische meningsdossiers aan uw productiemilieu op te stellen.
 
 ```terminal
 php bin/magento setup:static-content:deploy -f
@@ -193,4 +194,3 @@ De `-f` is vereist als u een leeg thema gebruikt.
 >[!NOTE]
 >
 >Zie voor meer informatie [Statische inhoud implementeert best practices in Adobe Commerce](https://support.magento.com/hc/en-us/articles/360031624091) in het Adobe Commerce Help Center.
-

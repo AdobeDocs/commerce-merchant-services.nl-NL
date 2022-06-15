@@ -1,15 +1,16 @@
 ---
 title: Inventory management-bronoverdracht
-description: Configureer voorraden voor de afhandeling van winkels door een nieuwe voorraad in te stellen en de voorraad over te dragen van de standaardvoorraad.
+description: '"Configureer bestanden voor de [!DNL Store Fulfillment solution] met Adobe Commerce Inventory management. Stel een nieuwe voorraad- en overdrachtvoorraad in op basis van de standaardvoorraad, zodat u deze kunt toewijzen aan bronnen die zijn geconfigureerd om de opslagcapaciteit die door de oplossing Afhandeling van winkel wordt vereist, in te schakelen."'
 role: User, Admin
 level: Intermediate
 exl-id: 669d4dce-4cac-4bde-acc5-26c70a51f7f1
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '358'
 ht-degree: 0%
 
 ---
+
 
 # Inventory management-bronoverdracht
 
@@ -19,12 +20,11 @@ Deze configuratieveranderingen helpen u drie dingen verwezenlijken:
 
 1. [Inventarisatie naar bron overbrengen](https://docs.magento.com/user-guide/catalog/inventory-bulk-transfer-inventory.html) om de voorraad te verplaatsen van de standaardvoorraad/bron naar de nieuwe voorraad/bron.
 
-2. [Opsommingsteken wijst bronnen toe](https://docs.magento.com/user-guide/catalog/inventory-bulk-assign-sources.html) om de nieuwe bronnen voor al uw producten toe te voegen.
+1. [Bronnen toewijzen met een lamp](https://docs.magento.com/user-guide/catalog/inventory-bulk-assign-sources.html) om de nieuwe bronnen voor al uw producten toe te voegen.
 
-3. [Volledige bulkupdates voor productkenmerken](https://docs.magento.com/user-guide/stores/bulk-product-attribute-update.html) om de `Allow Store Pickup` en `Allow Home Delivery` kenmerken van bestaande producten. Wanneer de oplossing wordt geïnstalleerd, hebben de attributen het optimale *default* waarden. Deze kenmerken worden echter pas op bestaande producten toegepast als u het bulkupdateproces hebt voltooid.
+1. [Volledige bulkupdates voor productkenmerken](https://docs.magento.com/user-guide/stores/bulk-product-attribute-update.html) om de `Allow Store Pickup` en `Allow Home Delivery` kenmerken van bestaande producten. Wanneer de oplossing wordt geïnstalleerd, hebben de attributen het optimale *default* waarden. Deze kenmerken worden echter pas op bestaande producten toegepast als u het bulkupdateproces hebt voltooid.
 
 De voorraad wordt afgetrokken van de geselecteerde bron (detailhandel of e-commerce-entrepot). De bronnen die als e-commerce pakhuizen worden gebruikt moeten aan het zelfde dossier worden toegewezen zoals de opslagbestelplaats en voorrang gegeven vóór de detailhandelsplaatsen. Zie voor meer informatie [Prioritaire bronnen voor een bestand](https://docs.magento.com/user-guide/catalog/inventory-stock-priority.html).
-
 
 Raadpleeg de gebruikersdocumentatie van Adobe Commerce voor meer informatie over het beheer van voorraden, voorraden en bronnen:
 

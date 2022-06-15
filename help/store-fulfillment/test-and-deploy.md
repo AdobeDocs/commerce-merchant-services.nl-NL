@@ -3,7 +3,7 @@ title: Afhandeling van winkel testen en implementeren
 description: Test een plan om de functionaliteit voor winkelvervulling te verifiëren. De tests hebben betrekking op de API voor inventarissynchronisatie, de end-to-end uitvoeringsworkflow voor geannuleerde bestellingen, het gebruikersbeheer van de app voor winkelafhandeling en de ervaring die de klant heeft met het inchecken.
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
 source-wordcount: '2652'
 ht-degree: 0%
@@ -55,9 +55,6 @@ Dit steekproeftestplan bestrijkt de volgende functionele gebieden:
 | Adobe Commerce Frontend | Producttypen | Klant, beheerder |
 | Afhandeling aan voorzijde</br>Formulier inchecken | Inchecken | Klant, beheerder |
 | App Winkelassistentie | Volgorde</br>Selecteren</br>Werkgebied</br>en Handoff | Winkelkoppeling |
-
-
-
 
 ### Inventarisatie-API-synchronisatie
 
@@ -639,8 +636,6 @@ Deze sectie van het testplan behandelt scenario&#39;s voor het testen van orde, 
 </tbody>
 </table>
 
-
-
 ## Implementeren
 
 Nadat u hebt geverifieerd dat de oplossing aan uw specificaties is gevormd en getest, bent u bereid om van het opvoeren aan productie op te stellen.
@@ -650,7 +645,6 @@ De implementatie en het testen zijn afhankelijk van uw infrastructuur en mogelij
 >[!TIP]
 >
 >Raadpleeg voor implementatierichtlijnen, checklists en best practices voor Adobe Commerce over infrastructuurprojecten in de cloud de [Je winkel implementeren](https://devdocs.magento.com/cloud/live/stage-prod-live.html) in de documentatie van Adobe Commerce Developer.
-
 
 
 

@@ -1,27 +1,27 @@
 ---
-title: '"Workflows voor het uitvoeren van winkelhulp"'
-description: '"Meer informatie over de modules Selecteren, Werkgebied, Handje-uit en Bestellingen in de App Winkelassistentie. Deze modules laten de werkschema van de de opslagvervulling van begin tot eind voor BOPIS orden toe. De Vennoten van de opslag gebruiken deze modules om de bestellingen van de winkelbestelwagen aan klanten te beheren en te leveren.'
+title: '"Workflows voor hulp aan winkels"'
+description: '"Meer informatie over de modules Selecteren, Werkgebied, Handje-uit en Bestellingen in de App Winkelassistentie. Deze modules laten de werkschema van de de opslagvervulling van begin tot eind voor BOPIS orden toe. De Vennoten van de opslag gebruiken deze modules om opslagbestellingen aan klanten te beheren en te leveren."'
 role: User
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '790'
+source-wordcount: '791'
 ht-degree: 0%
 
 ---
 
 
-# Workflows voor winkelassistentie
+# Workflows voor hulp aan winkels
 
 De app Store Assist biedt Store Associates vier modules voor het beheer van het afhandeling in de winkel voor online aankopen en het ophalen van bestellingen in de winkel:
 
-**[Selecteren](#pick-module)**—U krijgt volledige zichtbaarheid in alle geordende items en de gereedschappen om ervoor te zorgen dat de juiste items en juiste hoeveelheden worden gekozen. Winkelpartners kunnen een of meerdere bestellingen tegelijk selecteren voor meer efficiëntie
+- **[Selecteren](#pick-module)**—U krijgt volledige zichtbaarheid in alle geordende items en de gereedschappen om ervoor te zorgen dat de juiste items en juiste hoeveelheden worden gekozen. Winkelpartners kunnen een of meerdere bestellingen tegelijk selecteren voor meer efficiëntie.
 
-**[Werkgebied](#stage-module)**—Voer een locatie in waar de bestellingen worden geplaatst terwijl klanten naar de winkel gaan, zodat Store Associates ze gemakkelijk kan vinden voor een bestelling.
+- **[Werkgebied](#stage-module)**—Voer een locatie in waar de bestellingen worden geplaatst terwijl klanten naar de winkel gaan, zodat Store Associates ze gemakkelijk kan vinden voor een bestelling.
 
-**[Handje uit](#hand-off)**—Krijg real-time berichten nadat klanten bij de opslag aankomen om hun wachttijd te minimaliseren en orders naadloos af te handelen
+- **[Handje uit](#hand-off-module)**—Krijg real-time berichten nadat klanten bij de opslag aankomen om hun wachttijd te minimaliseren en orders naadloos af te handelen
 
-**[Orders](#orders-module)**—Bekijk een lijst van alle orden die voor een opslag worden geplaatst zodat iedereen het aantal orden en de status van elke orde kent.
+- **[Orders](#orders-module)**—Bekijk een lijst van alle orden die voor een opslag worden geplaatst zodat iedereen het aantal orden en de status van elke orde kent.
 
 >[!NOTE]
 >

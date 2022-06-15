@@ -1,12 +1,12 @@
 ---
-title: '''[!DNL Store Fulfillment by Walmart Commerce Technologies] Overzicht van hulplijnen'
-description: Uitgebreide informatie over [!DNL Store Fulfillment] voor Adobe Commerce-beheerders, inclusief installatie en instapsysteem
+title: '''[!DNL Store Fulfillment] Overzicht van hulplijnen'
+description: '"Uitgebreide informatie over [!DNL Store Fulfillment] voor Adobe Commerce-beheerders, inclusief installatie en instapweigering."'
 seo-title: Adobe Commerce Store Fulfillment Guide
 seo-description: Describes how to use [!DNL Store Fulfillment by Walmart Commerce Technologies] services with Adobe Commerce.
 exl-id: b4af273c-5176-4a67-a783-e0bb1740b3d8
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '201'
+source-wordcount: '200'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Deze handleiding heeft geen betrekking op de kernmogelijkheden van Adobe Commerc
 
 | Hulplijn | Beschrijving |
 |-----------------------------------------------------------------------|----------------------------------------------------------------------------|
-| [Adobe Commerce 2.4 Handboek](https://docs.magento.com/user-guide/) | Bedrijfsgerichte documentatie voor beide Adobe Commerce |
+| [Adobe Commerce 2.4 Handboek](https://docs.magento.com/user-guide/) | Bedrijfsgerichte documentatie voor Adobe Commerce |
 | [Adobe Commerce 2.4-handleiding voor ontwikkelaars](https://devdocs.magento.com/) | Documentatie gericht op ontwikkelaars die wordt gebruikt om Adobe Commerce te bouwen en aan te passen |
 
 ## Ondersteuning

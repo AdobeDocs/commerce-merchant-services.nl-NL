@@ -1,11 +1,11 @@
 ---
-title: Configuratie van opslaglocatie en toewijzing
-description: Vorm een afstandsleverancier om de afbeelding van de opslagplaats in storefront UI te steunen.
+title: Configuratie van opslaglocatie en toewijzingssysteem
+description: Vorm een afstandsleverancier om de afbeelding van de opslagplaats in storefront UI te steunen. De oplossingen van de Afhandeling van de Opslag vereisen een afstandsleverancier om detailhandel onderzoek en andere afbeelding en het plannen mogelijkheden voor het volledige uitvoeringswerkschema toe te laten.
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '152'
+source-wordcount: '176'
 ht-degree: 1%
 
 ---
@@ -40,4 +40,3 @@ Om de afstandsleverancier te vormen:
    - Voeg uw **Google API-sleutel**.
 
    - Set **[!UICONTROL Computation Mode]** tot `Driving` en **[!UICONTROL Value]** tot `Distance`
-

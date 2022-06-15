@@ -1,9 +1,9 @@
 ---
 title: Overzicht van onboarding voor services voor winkeluitvoering
-description: '"[!DNL Live Search] instapkaartstroom, systeemvereisten, grenzen en beperkingen"'
+description: '"[!DNL Live Search] onboarding flow, systeemvereisten, grenzen en beperkingen."'
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 0%
@@ -26,9 +26,6 @@ Aan de slag met [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce T
    |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
    | ![[!DNL Store Assist App Getting Started] weergave op mobiel apparaat](assets/store-assist-get-started-small.png) | ![[!DNL Store Assist App Orders view] op mobiel apparaat](assets/store-assist-orders-small.png) |
 
-
-
-
 ## Inrichtingsstappen
 
 - **Aanmelden voor[!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies]**-Voltooi het aanmeldingsformulier op [business.adobe.com](https://business.adobe.com/resources/store-fulfillment.html)of neem contact op met uw Adobe Commerce-accountmanager voor hulp.
@@ -47,12 +44,11 @@ Aan de slag met [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce T
 
 1. [De extensie Store Fulfillment configureren vanuit Adobe Commerce Admin](service-config-settings-overview.md).
 
-1. [Verbind de [!DNL Store Fulfillment] de dienst die de geloofsbrieven gebruikt van de Afhandeling van de Opslag die aan u worden verstrekt.](connect-set-up-service.md)
+1. [Verbind de [!DNL Store Fulfillment] de dienst die de geloofsbrieven gebruikt van de Afhandeling van de Opslag die aan u worden verstrekt](connect-set-up-service.md).
 
-1. [Gebruikers en rollen maken voor de app Winkelassistentie](user-setup.md)
+1. [Gebruikers en rollen maken voor de app Winkelassistentie](user-setup.md).
 
-1. [Walmart&#39;s downloaden [!DNL Store Assist] op het gewenste apparaat toe. De app is beschikbaar in de App Store (iOS) en in de Play Store (Android)](app-setup.md)
+1. [Walmart&#39;s downloaden [!DNL Store Assist] op het gewenste apparaat toe. De app is beschikbaar in de App Store (iOS) en in de Play Store (Android)](app-setup.md).
 
 Nadat u met succes hebt geïnstalleerd, gevormd, op instapniveau voltooid en toegang tot hebt [!DNL Store Assist] app, kunt u [beginnen met het maken van bestellingen en testen](test-and-deploy.md).
-
 

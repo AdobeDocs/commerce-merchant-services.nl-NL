@@ -1,17 +1,17 @@
 ---
-title: Servicevereisten
-description: '"Voorschriften voor de levering en het aan boord nemen van de [!DNL Store Fulfillment Manager] service"'
+title: Vereisten voor winkelvervulling
+description: '"Voorschriften voor de levering en het aan boord nemen van de [!DNL Store Fulfillment solution]."'
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '231'
 ht-degree: 3%
 
 ---
 
 
-# Vereisten voor het voldoen aan winkels voor Adobe Commerce
+# Vereisten voor winkelvervulling voor Adobe Commerce
 
 U moet voldoen aan de volgende technische en zakelijke vereisten om de oplossing voor het voldoen van winkels voor Adobe Commerce te installeren en in te schakelen.
 

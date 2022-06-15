@@ -3,9 +3,9 @@ title: De oplossing voor winkelvervulling aansluiten
 description: Bepaal de verbindingen tussen Adobe Commerce en de oplossing van de Afhandeling van de Opslag door een integratie van Adobe Commerce te creëren en te machtigen en de de rekeningsgeloofsbrieven van de Rekening van de Afhandeling van de Opslag toe te voegen aan de de dienstconfiguratie van Adobe Commerce.
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Om Adobe Commerce met de diensten van de Afhandeling van de Opslag te integreren
 
 Nadat u het innameformulier hebt ingevuld, wordt voor u een account gemaakt voor het ophalen van een Walmart-winkel. U ontvangt de volgende referenties wanneer deze beschikbaar zijn:
 
-- [!DNL Merchant I]D
+- [!DNL Merchant ID]
 - [!DNL Consumer ID]
 - [!DNL Consumer Secret]
 - [!DNL API Server URL]
