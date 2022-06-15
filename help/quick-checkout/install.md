@@ -2,7 +2,7 @@
 title: '"Installeer de [!DNL Quick Checkout] voor Adobe Commerce-extensie"'
 description: '"Voer de volgende stappen uit om de [!DNL Quick Checkout] in uw Adobe Commerce-project."'
 exl-id: e1dabc9a-0ab0-4f8d-98d3-7a32abbedcb8
-source-git-commit: 9841db7616c8aa6d5bc5af3e6e92c0abe9a4a1e2
+source-git-commit: c0b1185a53cb84be2335e2e1beb392c9f23070c9
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -102,7 +102,7 @@ Wanneer we een nieuwe versie van de [!DNL Quick Checkout]kunt u uw extensie eenv
 
 Er kunnen fouten optreden bij het installeren van de [!DNL Quick Checkout] extensie.
 
-Zie de [problemen oplossen](../quick-checkout/troubleshooting.md) onderwerp voor meer informatie als u om het even welke kwesties ontmoet wanneer u installeert [!DNL Quick Checkout].
+Als u tijdens het [!DNL Quick Checkout] installatieproces, zie [Problemen met snelle afhandeling oplossen](https://support.magento.com/hc/en-us/articles/6909450342541) in het Adobe Commerce Help Center.
 
 ## Vereisten
 

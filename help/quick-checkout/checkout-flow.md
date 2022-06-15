@@ -2,9 +2,9 @@
 title: '"Afhandelingsstroom"'
 description: '"Overzicht van de [!DNL Quick Checkout] flow in Adobe Commerce."'
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
-source-git-commit: 9841db7616c8aa6d5bc5af3e6e92c0abe9a4a1e2
+source-git-commit: c0b1185a53cb84be2335e2e1beb392c9f23070c9
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '553'
 ht-degree: 0%
 
 ---
@@ -90,7 +90,7 @@ Indien een [!DNL Bolt] -account wordt gevonden, kunnen kopers hun standaard uitc
 - Verzendmethode
 - Betalingsmethode controleren
 
-Zie de [problemen oplossen](../quick-checkout/troubleshooting.md) onderwerp voor meer informatie als u problemen ontmoet wanneer u een orde als bestaande gebruiker van Adobe Commerce plaatst.
+Als er problemen optreden wanneer u een bestelling als bestaande Adobe Commerce-gebruiker plaatst, raadpleegt u de [Problemen met snelle afhandeling oplossen](https://support.magento.com/hc/en-us/articles/6909450342541) artikel in het Adobe Commerce Help Center.
 
 >[!NOTE]
 >
