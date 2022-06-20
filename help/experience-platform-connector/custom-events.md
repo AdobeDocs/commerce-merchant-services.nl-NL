@@ -1,0 +1,107 @@
+---
+title: Aangepaste gebeurtenissen maken
+description: Leer hoe u aangepaste gebeurtenissen maakt, uw Adobe Commerce-gegevens aansluiten op andere Adobe DX-producten.
+source-git-commit: f167002e1aa401d223f0830954ab09b66017476e
+workflow-type: tm+mt
+source-wordcount: '213'
+ht-degree: 0%
+
+---
+
+# Aangepaste gebeurtenissen maken
+
+U kunt de [uitvalplatform](events.md) door uw eigen winkelgebeurtenissen te maken om gegevens te verzamelen die uniek zijn voor uw branche. Wanneer u een douanegebeurtenis creeert en vormt, wordt het verzonden naar [Magento Storefront Event Collector](https://www.npmjs.com/package/@adobe/magento-storefront-event-collector).
+
+## Aangepaste gebeurtenissen verwerken
+
+Aangepaste gebeurtenissen worden alleen ondersteund voor de Adobe Experience Platform. Aangepaste gegevens worden niet doorgestuurd naar Adobe Commerce-dashboards en metrieke trackers.
+
+Voor alle `custom` gebeurtenis, voegt de verzamelaar een `personId` (`ecid`) naar `customContext` en omhult een `xdm` het voorwerp rond het alvorens aan de Rand door:sturen.
+
+Voorbeeld:
+
+Aangepaste gebeurtenis gepubliceerd via MSE SDK:
+
+```javascript
+mse.publish.custom({
+    customContext: { customStrAttr: "cheetah", customNumAttr: 128 },
+});
+```
+
+In Experience Platform rand:
+
+```javascript
+{
+    xdm: {
+        personId: 'ecid1234',
+        customStrAttr: 'cheetah',
+        customNumAttr: 128
+    }
+}
+```
+
+>[!NOTE]
+>
+> Het gebruik van aangepaste gebeurtenissen kan invloed hebben op OOTB Adobe Analytics-rapporten.
+
+## Overschrijvingen van gebeurtenissen afhandelen (aangepaste kenmerken)
+
+Overschrijvingen van kenmerken voor standaardgebeurtenissen worden alleen ondersteund voor het Experience Platform. De gegevens van de douane worden niet doorgestuurd aan de dashboards van de Handel en metrieke Trackers.
+
+Voor elke gebeurtenis met een set `customContext`, overschrijft de verzamelaar `personId` en Adobe Analytics tellers, en door:sturen alle andere eigenschappen die in `customContext`.
+
+Voorbeelden:
+
+De mening van het product met met voeten getreden die door MSE SDK wordt gepubliceerd:
+
+```javascript
+mse.publish.productPageView({
+    customContext: { customCode: "okapi" },
+});
+```
+
+In Experience Platform rand:
+
+```javascript
+{
+    xdm: {
+        eventType: 'commerce.productViews',
+        personId: 'ecid1234',
+        customCode: 'okapi',
+        commerce: {
+            productViews: {
+                value : 1
+            }
+        }
+    }
+}
+```
+
+De mening van het product met de met Adobe Commerce met voeten getreden die door MSE SDK wordt gepubliceerd:
+
+```javascript
+mse.publish.productPageView({
+    customContext: { commerce: { customCode: "mongoose" } },
+});
+```
+
+In Experience Platform rand:
+
+```javascript
+{
+    xdm: {
+        eventType: 'commerce.productViews',
+        personId: 'ecid1234',
+        commerce: {
+            customCode: 'mongoose',
+            productViews: {
+                value : 1
+            }
+        }
+    }
+}
+```
+
+>[!NOTE]
+>
+> Het overschrijven van gebeurtenissen met aangepaste kenmerken kan invloed hebben op OOTB Adobe Analytics-rapporten.
