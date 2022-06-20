@@ -2,9 +2,9 @@
 title: '"Typen synoniemen"'
 description: '"Eenweg en tweeweg [!DNL Live Search] synoniemen breiden de definitie van trefwoorden uit."'
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: cd1b40ffb350a87ea1317be82789f702922881b9
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -31,9 +31,13 @@ Een eenrichtingssynoniem is een subset van een trefwoord, maar heeft een specifi
 
 Houd rekening met de volgende aanbevolen procedures om synoniemen van Live zoeken optimaal te benutten.
 
-### Trefwoordtoewijzing
+### &quot;Stop woorden&quot; vermijden
 
-Deze techniek gebruikt doorzoekbare productkenmerken in plaats van synoniemen om op trefwoorden gebaseerde koppelingen tussen producten te maken. Als gevolg hiervan kan een toegewezen product in de zoekresultaten van een ander product worden weergegeven. Zie voor meer informatie [Zoekresultaten](https://docs.magento.com/user-guide/catalog/search-results.html).
+Met Live zoeken worden algemene &#39;stopwoorden&#39; uit synoniemen uitgefilterd, zoals:
+
+a, an, and, are, as, at, be, but, by, for, if, in, is, it, no, not, of, dusdanig, dat, hun, toen, daar, deze, zij, dit, aan, was,
+
+Stopwoorden maken synoniemen niet zinvoller, maar verhogen de hoeveelheid gegevens die moet worden verwerkt.
 
 ### Enkele woorden gebruiken
 
@@ -46,3 +50,7 @@ Het is niet nodig om zowel de enkelvoudige als de meervoudige vorm van een woord
 ### Consistentie
 
 Zorg ervoor dat de terminologie in de catalogus wordt gebruikt. Houd er rekening mee dat er regionale verschillen in gebruik kunnen zijn, en soms verschillen binnen een bedrijfstak.
+
+### Trefwoordtoewijzing
+
+Deze techniek gebruikt doorzoekbare productkenmerken in plaats van synoniemen om op trefwoorden gebaseerde koppelingen tussen producten te maken. Als gevolg hiervan kan een toegewezen product in de zoekresultaten van een ander product worden weergegeven. Zie voor meer informatie [Zoekresultaten](https://docs.magento.com/user-guide/catalog/search-results.html).
