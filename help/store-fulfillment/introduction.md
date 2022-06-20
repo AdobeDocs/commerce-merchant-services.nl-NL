@@ -4,9 +4,9 @@ description: '"Meer informatie [!DNL Store Fulfillment for Adobe Commerce by Wal
 role: User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 87818d3a0eb8f0cb4bc9fac2aef3c56a2e620aaf
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '603'
 ht-degree: 0%
 
 ---
@@ -74,3 +74,8 @@ Store Fulfillment verbetert Adobe Commerce door de volgende mogelijkheden toe te
 * **Transactionele e-mails**-Breidt de beheerfuncties uit voor [!UICONTROL Sales Emails] als u e-mailsjablonen wilt toevoegen voor online kopen, moet u in-store transacties ophalen. De malplaatjes steunen communicatie in real time tussen klanten en opslagvennoten tijdens het bestelproces.
 
 * **Flexibele uitvoering**-Extends [!DNL Commerce] mogelijkheden ter ondersteuning van scenario&#39;s voor het verwerken van achterstanden, kwantiteitsreducties en gedeeltelijke afhandeling van bestellingen, en het vergemakkelijken van annuleringen en kredietmemo&#39;s die nodig zijn om deze scenario&#39;s te ondersteunen.
+
+>[!TIP]
+>
+> Voor een snelle demo van de oplossing van de Bewaren, zie [Overzicht van winkeluitvoering](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/orders/store-fulfillment.html) beschikbaar in _Adobe Commerce-video&#39;s en -Tutorials_.
+
