@@ -1,9 +1,10 @@
 ---
 title: Opmerkingen bij de release
 description: De meest recente releasegegevens voor [!DNL Product Recommendations] uit Adobe Commerce.
-source-git-commit: 7fe89df32dc5363817f957180e5b75e7217fc14a
+exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
+source-git-commit: 78f469dda853a6f46394d5969f879100cf22f8bb
 workflow-type: tm+mt
-source-wordcount: '888'
+source-wordcount: '945'
 ht-degree: 0%
 
 ---
@@ -25,6 +26,11 @@ De opmerkingen bij de release omvatten:
 Zie de documentatie voor ontwikkelaars [informatie over productcompatibiliteit](https://devdocs.magento.com/release/availability.html).
 
 ## Adobe Commerce 2.3.x en 2.4.x
+
+## 4.0.0 van magento/product-recommendations
+
+* ![Nieuw](../assets/new.svg) - Toegevoegd [gereedheidsindicatoren](create.md) om u te helpen de opleidingsvooruitgang van elk aanbevelingstype visualiseren.
+* ![Nieuw](../assets/new.svg) - Dit is een belangrijke versie. U moet [bewerken](install-configure.md#update) de basis `composer.json` bestand voor uw project. Voor deze release moet u ook twee API-sleutels opgeven bij de installatie en configuratie van Product Recommendations: [een productiesleutel en een sandboxsleutel](../landing/saas.md).
 
 ## 3.3.7 van de aanbevelingen van magento/product
 

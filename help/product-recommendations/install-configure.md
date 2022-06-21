@@ -2,9 +2,9 @@
 title: Installeren en configureren
 description: Leer installeren, bijwerken en verwijderen [!DNL Product Recommendations].
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
-source-git-commit: b06d5000263b7ee09608a4a8510d76e9f4bdb809
+source-git-commit: cfeb8b4f8e2dc1e9d2d4c0be7a7bc522488418bc
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
@@ -62,17 +62,7 @@ Zoals alle Adobe Commerce, [!DNL Product Recommendations] gebruikt Composer voor
 composer update magento/product-recommendations --with-dependencies
 ```
 
-Als u wilt bijwerken naar een hoofdversie, bijvoorbeeld van 2.0 tot 3.0, moet u de hoofdmap van uw project bewerken `composer.json` bestand. (Zie de [releaseopmerkingen](release-notes.md) voor informatie over de meest recente versie.) Laten we bijvoorbeeld de hoofdmap openen `composer.json` en zoek naar `magento/product-recommendations` module:
-
-```json
-"require": {
-    ...
-    "magento/product-recommendations": "^2.0",
-    ...
-}
-```
-
-Laten we de belangrijkste versie van `2.0` tot `3.0`:
+Als u wilt bijwerken naar een hoofdversie, bijvoorbeeld van 3.0 tot 4.0, moet u de hoofdmap bewerken `composer.json` bestand voor uw project. (Zie de [releaseopmerkingen](release-notes.md) voor informatie over de meest recente versie.) Laten we bijvoorbeeld de hoofdmap openen `composer.json` en zoek naar `magento/product-recommendations` module:
 
 ```json
 "require": {
@@ -82,11 +72,25 @@ Laten we de belangrijkste versie van `2.0` tot `3.0`:
 }
 ```
 
+Laten we de belangrijkste versie van `3.0` tot `4.0`:
+
+```json
+"require": {
+    ...
+    "magento/product-recommendations": "^4.0",
+    ...
+}
+```
+
 Sla de `composer.json` bestand en uitvoeren:
 
 ```bash
 composer update magento/product-recommendations --with-dependencies
 ```
+
+>[!NOTE]
+>
+> In versies 3.x.x van Product Recommendations had u slechts één API-sleutel nodig. In versies 4.x.x en hoger moet u openbare en persoonlijke API-sleutels voor productie en openbare en persoonlijke API-sleutels voor sandbox opgeven. Als u geen van beide API-sleutels biedt, hebt u geen toegang tot de functie Product Recommendations in Admin. Het verzamelen van gegevens gaat echter door op uw winkel en de bestaande aanbevelingen blijven aan de kopers worden getoond.
 
 ## Verwijderen [!DNL Product Recommendations] {#uninstall}
 

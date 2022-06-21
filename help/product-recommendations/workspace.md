@@ -1,9 +1,10 @@
 ---
 title: Werkruimte
 description: Leer hoe u de prestaties van productaanbevelingen kunt configureren, beheren en controleren.
-source-git-commit: 4ad607c8595b25d01b5f5020b787fc1d35d4df25
+exl-id: 85a06cc3-91b9-484a-96a9-fc85718e6d70
+source-git-commit: 9f1f05475b2d8401ec33272e3f12e3cc7285478d
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
@@ -101,5 +102,5 @@ Klik op de pagina met informatie over de aanbeveling op **Maken**. Ga voor meer 
 | Ontvangsten | De inkomsten die voortvloeien uit de aanbeveling voor de huidige tijdspanne. |
 | LT-inkomsten | (Levensopbrengsten) De levenslange inkomsten die worden voortgebracht door een aanbeveling. |
 | Zichtbaarheid | Het percentage aanbevolen eenheden dat zich registreert voor de weergave. |
-| Ctr | (Geregistreerd klik Percentage) Het percentage eenheidindrukkingen voor de aanbeveling die een klik registreert. |
-| vCtr | (Zichtbaar geregistreerd klikken Percentage) Het percentage zichtbare indrukken voor de aanbevolen eenheid die een klik registreert. |
+| Ctr | (Doorkliksnelheid) Het percentage eenheidsindrukkingen voor de aanbeveling die een klik registreert. |
+| vCtr | (Zichtbare Doorkliksnelheid) Het percentage zichtbare indrukken voor de aanbevolen eenheid die een klik registreert. |

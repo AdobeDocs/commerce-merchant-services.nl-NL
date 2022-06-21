@@ -1,9 +1,10 @@
 ---
 title: Nieuwe aanbeveling maken
 description: Leer hoe u een product aanbevelingseenheid kunt maken.
-source-git-commit: 4ad607c8595b25d01b5f5020b787fc1d35d4df25
+exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
+source-git-commit: 1d2b4b8d85e5ccea1c4258869fbfd191a2e7987b
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '836'
 ht-degree: 0%
 
 ---
@@ -44,6 +45,14 @@ Als u de aanbevolen eenheid activeert, begint Adobe Commerce [gegevens verzamele
    _Naam en plaatsing van de aanbeveling_
 
 1. In de _Type aanbeveling selecteren_ in, geeft u de [soort aanbeveling](type.md) u wilt op de geselecteerde pagina verschijnen. Voor sommige pagina&#39;s [plaatsing](placement.md) van aanbevelingen is beperkt tot bepaalde soorten.
+
+   Sommige soorten aanbevelingen gebruiken gedragsgegevens van uw kopers naar [leren van machinemodellen](behavioral-data.md) om gepersonaliseerde aanbevelingen te bouwen. Om u te helpen de opleidingsvooruitgang van elk aanbevelingstype visualiseren, toont deze sectie een maat van bereidheid voor elk type. Deze gereedheidsindicatoren worden berekend op basis van een aantal factoren:
+
+   - Voldoende ingestelde resultaatgrootte: Zijn er genoeg resultaten die in de meeste scenario&#39;s worden teruggekeerd vermijden gebruikend [aanbevelingen voor back-up](behavioral-data.md#backuprecs)?
+
+   - Voldoende variëteit van resultaatsets: Zijn de producten die worden geretourneerd een verscheidenheid aan producten uit uw catalogus? Het doel van deze factor is te voorkomen dat een minderheid van producten de enige producten is die op de hele site worden aanbevolen.
+
+   Op basis van de bovenstaande factoren wordt een gereedheidswaarde berekend en weergegeven. Een aanbevelingstype wordt beschouwd als klaar om op te stellen wanneer zijn gereedheidswaarde 75% of hoger is. Een aanbevolen type wordt gedeeltelijk geschikt geacht wanneer het voor minstens 50% gereed is. Tot slot wordt een aanbevelingstype beschouwd niet klaar om op te stellen wanneer zijn gereedheidswaarde minder dan 50% is.
 
 1. In de _Weergavelabel Storefront_ in, voert u de [label](placement.md#recommendation-labels) die zichtbaar is voor kopers, zoals Topverkopers.
 
