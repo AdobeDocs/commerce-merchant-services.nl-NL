@@ -1,9 +1,9 @@
 ---
 title: Overzicht van hulplijnen
 description: Adobe Experience Platform-connector voor Adobe Commerce sluit uw [!DNL Commerce] naar andere Adobe Experience Cloud-producten.
-source-git-commit: 9b5f2da08167e22bbba504009bccc87d0ab02c48
+source-git-commit: dc4bb1ea7d2ffc953cca31637bf5aefba6266241
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '435'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 Met de uitbreiding van de aansluiting van het Experience Platform kunnen Adobe Commerce-handelaren gegevens verzenden naar Adobe Experience Platform edge, zodat andere Adobe Experience Cloud-producten, zoals Adobe Analytics en Adobe Target, kunnen gebruiken dat [!DNL Commerce] gegevens. Door uw [!DNL Commerce] gegevens aan andere producten in Adobe Experience Cloud, kunt u taken uitvoeren, zoals het gebruikersgedrag op uw plaats analyseren, het testen van AB uitvoeren, en gepersonaliseerde campagnes creëren.
 
-Met Storefront-gebeurtenissen worden winkelinteracties vastgelegd, zoals `View Page`, `View Product`, `Add to Cart`, enzovoort. Vastgelegde gegevens bevatten geen persoonlijk identificeerbare informatie (PII). Alle gebruikers-id&#39;s, zoals cookie-id&#39;s en IP-adressen, worden strikt geanonimiseerd. [Meer informatie](https://www.adobe.com/privacy/experience-cloud.html). Zie de volledige lijst met storefront-gebeurtenissen aan het einde van deze pagina.
+Met Storefront-gebeurtenissen worden winkelinteracties vastgelegd, zoals `View Page`, `View Product`, `Add to Cart`, enzovoort. Vastgelegde gegevens bevatten geen persoonlijk identificeerbare informatie (PII). Alle gebruikers-id&#39;s, zoals cookie-id&#39;s en IP-adressen, worden strikt geanonimiseerd. [Meer informatie](https://www.adobe.com/privacy/experience-cloud.html). Zie de volledige lijst met [storefront, gebeurtenissen](events.md).
 
 ## Vereisten voor het gebruik van de aansluiting van het Experience Platform {#prereqs}
 
@@ -43,7 +43,7 @@ Deze handleiding is bedoeld voor de Adobe Commerce-handelaar die zijn Adobe Comm
 Momenteel heeft de aansluiting van het Experience Platform de volgende bekende problemen:
 
 - Zoekgebeurtenissen worden niet ondersteund op een Adobe Commerce Enterprise Edition met de B2B-module geïnstalleerd.
-- De gegevens van de opslag nemen een paar uren om van Handel aan de diverse bestemmingen na het verbinden met de rand van Adobe Experience Platform te krijgen.
+- Het duurt ongeveer een uur om gegevens op te slaan van Adobe Commerce naar de verschillende doelen nadat u verbinding hebt gemaakt met de Adobe Experience Platform-rand.
 
 ## Ondersteuning
 

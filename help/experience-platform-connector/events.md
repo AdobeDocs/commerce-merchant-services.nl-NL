@@ -1,9 +1,9 @@
 ---
 title: Gebeurtenissen
 description: Leer welke gebeurtenissen gegevens vangen en de volledige schemadefinitie zien.
-source-git-commit: 0b349ee75fac305e6ba5ea6eb74a76eb8ce1976a
+source-git-commit: 566abe09b8c1b0837a833b2f8fcfe1e81bb6963d
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '222'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Klik op de naam van de gebeurtenis om de volledige schemadefinitie weer te geven
 | [Pagina weergeven](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/page/viewAEP.ts) | Storefront |
 | [Product weergeven](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/product/viewAEP.ts) | Storefront |
 | [Afhandeling starten](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/shoppingCart/initiateCheckoutAEP.ts) | Storefront |
-| Afhandeling voltooien | Storefront |
+| [Afhandeling voltooien](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/checkout/placeOrderAEP.ts) | Storefront |
 | [Aanmelden](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/signInAEP.ts) | Profiel |
 | [Afmelden](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/signOutAEP.ts) | Profiel |
 | [Account maken](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/createAccountAEP.ts) | Profiel |
