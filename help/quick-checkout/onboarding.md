@@ -2,9 +2,9 @@
 title: '"Aan boord van de [!DNL Quick Checkout] voor Adobe Commerce-extensie"'
 description: '"Leer hoe u [!DNL Quick Checkout] kan uw Adobe Commerce-exemplaar ten goede komen en de extensie met succes aan boord installeren en instellen."'
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: 9841db7616c8aa6d5bc5af3e6e92c0abe9a4a1e2
+source-git-commit: a62c38adeb41812e91089716eb36c375b09595f4
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '570'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,8 @@ Volg de stappen in het dialoogvenster [processorinstelling](https://help.bolt.co
 
 ## Extensie inschakelen
 
-1. Op de _Beheer_ zijbalk, navigeren naar **Winkels** > **Configuratie** > **Afhandeling** voor toegang tot de configuratiepagina voor uitcheckbeheer.
+1. Op de _Beheer_ zijbalk, ga naar **Winkels** > _Instellingen_ > **Configuratie**.
+1. Vouw in het linkerdeelvenster uit **Verkoop** en selecteert u **Afhandeling**.
 
    ![Snelle afhandeling](assets/admin-view.png)
 
