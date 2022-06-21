@@ -1,7 +1,7 @@
 ---
 title: Gebeurtenissen
 description: Leer welke gebeurtenissen gegevens vangen en de volledige schemadefinitie zien.
-source-git-commit: ce1ce5a7e028d1c957a9a36c73c371eedfb1e1e8
+source-git-commit: 0b349ee75fac305e6ba5ea6eb74a76eb8ce1976a
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 0%
@@ -15,7 +15,7 @@ De volgende lijst bevat de [!DNL Commerce] -gebeurtenissen beschikbaar wanneer u
 Klik op de naam van de gebeurtenis om de volledige schemadefinitie weer te geven.
 
 | Gebeurtenis | Type |
-|---|---|---|
+|---|---|
 | [Toevoegen aan winkelwagentje](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/product/addToCartAEP.ts) | Storefront |
 | [Winkelwagentje weergeven](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/shoppingCart/viewAEP.ts) | Storefront |
 | [Pagina weergeven](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/page/viewAEP.ts) | Storefront |

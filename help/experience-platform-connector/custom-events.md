@@ -1,7 +1,7 @@
 ---
 title: Aangepaste gebeurtenissen maken
 description: Leer hoe u aangepaste gebeurtenissen maakt, uw Adobe Commerce-gegevens aansluiten op andere Adobe DX-producten.
-source-git-commit: f167002e1aa401d223f0830954ab09b66017476e
+source-git-commit: 1dd8f94e632bb98666ad252badf8420a014260fb
 workflow-type: tm+mt
 source-wordcount: '213'
 ht-degree: 0%
@@ -42,7 +42,7 @@ In Experience Platform rand:
 
 >[!NOTE]
 >
-> Het gebruik van aangepaste gebeurtenissen kan invloed hebben op OOTB Adobe Analytics-rapporten.
+> Het gebruik van aangepaste gebeurtenissen kan invloed hebben op standaard Adobe Analytics-rapporten.
 
 ## Overschrijvingen van gebeurtenissen afhandelen (aangepaste kenmerken)
 
@@ -104,4 +104,4 @@ In Experience Platform rand:
 
 >[!NOTE]
 >
-> Het overschrijven van gebeurtenissen met aangepaste kenmerken kan invloed hebben op OOTB Adobe Analytics-rapporten.
+> Het overschrijven van gebeurtenissen met aangepaste kenmerken kan van invloed zijn op standaard Adobe Analytics-rapporten.
