@@ -2,7 +2,7 @@
 title: '"Installeer de [!DNL Quick Checkout] voor Adobe Commerce-extensie"'
 description: '"Voer de volgende stappen uit om de [!DNL Quick Checkout] in uw Adobe Commerce-project."'
 exl-id: e1dabc9a-0ab0-4f8d-98d3-7a32abbedcb8
-source-git-commit: c0b1185a53cb84be2335e2e1beb392c9f23070c9
+source-git-commit: dc13c1e38c92341cfd3221a72e6568220b44690a
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -11,13 +11,11 @@ ht-degree: 0%
 
 # Installeer de [!DNL Quick Checkout]
 
-De [!DNL Quick Checkout] voor Adobe Commerce is een naadloze afrekenervaring ontworpen om eenmalige klanten om te zetten in loyale rekeninghouders.
-
-De [!DNL Quick Checkout] extensie voor Adobe Commerce en [!DNL Magento Open Source] kan worden geïnstalleerd met [!DNL Composer keys], die verband houden met de [Magento-id (mageid)](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions){target=&quot;_blank&quot;} opgegeven in het ondertekeningsproces. Composer gebruikt deze toetsen tijdens de eerste installatie van Adobe Commerce of in situaties waarin de [!DNL Composer keys] zijn niet eerder opgeslagen in de `auth.json` bestand.
+De [!DNL Quick Checkout] extensie voor Adobe Commerce en Magento Open Source kunnen worden geïnstalleerd met [!DNL Composer keys], die verband houden met de [Magento-id (mageid)](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions){target=&quot;_blank&quot;} opgegeven in het ondertekeningsproces. Composer gebruikt deze toetsen tijdens de eerste installatie van Adobe Commerce of in situaties waarin de [!DNL Composer keys] zijn niet eerder opgeslagen in de `auth.json` bestand.
 
 Zie [krijg uw verificatietoetsen](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html){target=&quot;_blank&quot;} onderwerp voor meer informatie over het verkrijgen van [!DNL Composer keys].
 
-Er zijn twee manieren om deze extensie te installeren—voor [Adobe Commerce over cloudinfrastructuur](#magento-commerce-cloud) of [ter plaatse](#on-premises) installaties. Deze methodes vereisen u om de Interface van de Lijn van het Bevel (CLI) te gebruiken.
+Er zijn twee manieren om deze extensie te installeren—voor [Adobe Commerce over cloudinfrastructuur](#magento-commerce-cloud) of [ter plaatse](#on-premises) installaties. Deze methodes vereisen u om de bevel-lijn interface (CLI) te gebruiken.
 
 ## Minimale stabiliteit bijwerken
 

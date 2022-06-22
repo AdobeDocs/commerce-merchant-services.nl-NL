@@ -2,9 +2,9 @@
 title: '"Afhandelingspagina"'
 description: '"Overzicht van de afhandelingspagina in Adobe Commerce."'
 exl-id: afe3a93d-8aba-428e-ac9d-0be8d23ceb47
-source-git-commit: 9841db7616c8aa6d5bc5af3e6e92c0abe9a4a1e2
+source-git-commit: dc13c1e38c92341cfd3221a72e6568220b44690a
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '99'
 ht-degree: 0%
 
 ---
@@ -28,4 +28,4 @@ Het uitchecken bestaat uit twee stappen:
 >
 > Nadat de eerste stap is voltooid, worden bij het uitchecken de totalen voor het uitchecken en de bijbehorende gegevens van de zijbalk weergegeven.
 
-Zie de [uitcheckstroom](../quick-checkout/onboarding.md) onderwerp voor meer informatie over [!DNL Quick Checkout] stroom.
+Zie de [uitcheckstroom](../quick-checkout/checkout-flow.md) onderwerp voor meer informatie over [!DNL Quick Checkout] stroom.
