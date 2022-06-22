@@ -2,9 +2,9 @@
 title: Nieuwe aanbeveling maken
 description: Leer hoe u een product aanbevelingseenheid kunt maken.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 1d2b4b8d85e5ccea1c4258869fbfd191a2e7987b
+source-git-commit: 5fa08429a97c9ed59a339a0eca268f99c1023b7e
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -41,8 +41,8 @@ Als u de aanbevolen eenheid activeert, begint Adobe Commerce [gegevens verzamele
 
    U kunt tot vijf actieve adviseringseenheden voor elk paginatype, en tot 25 voor de Bouwer van de Pagina tot stand brengen. Het paginatype wordt grijs weergegeven wanneer de limiet is bereikt.
 
-   ![Naam van aanbeveling](assets/create-recommendation.png)
-   _Naam en plaatsing van de aanbeveling_
+   ![Naam en pagina van aanbeveling](assets/create-recommendation.png)
+   _Naam en plaatsing van aanbevelingen_
 
 1. In de _Type aanbeveling selecteren_ in, geeft u de [soort aanbeveling](type.md) u wilt op de geselecteerde pagina verschijnen. Voor sommige pagina&#39;s [plaatsing](placement.md) van aanbevelingen is beperkt tot bepaalde soorten.
 
@@ -54,10 +54,10 @@ Als u de aanbevolen eenheid activeert, begint Adobe Commerce [gegevens verzamele
 
    Op basis van de bovenstaande factoren wordt een gereedheidswaarde berekend en weergegeven. Een aanbevelingstype wordt beschouwd als klaar om op te stellen wanneer zijn gereedheidswaarde 75% of hoger is. Een aanbevolen type wordt gedeeltelijk geschikt geacht wanneer het voor minstens 50% gereed is. Tot slot wordt een aanbevelingstype beschouwd niet klaar om op te stellen wanneer zijn gereedheidswaarde minder dan 50% is.
 
-1. In de _Weergavelabel Storefront_ in, voert u de [label](placement.md#recommendation-labels) die zichtbaar is voor kopers, zoals Topverkopers.
-
-   ![Naam van aanbeveling](assets/create-recommendation-select-type.png)
+   ![Type aanbeveling](assets/create-recommendation-select-type.png)
    _Type aanbeveling_
+
+1. In de _Weergavelabel Storefront_ in, voert u de [label](placement.md#recommendation-labels) die zichtbaar is voor kopers, zoals Topverkopers.
 
 1. In de _Aantal producten kiezen_ in, gebruikt u de schuifregelaar om op te geven hoeveel producten u wilt weergeven in de aanbevolen eenheid.
 
@@ -72,12 +72,12 @@ Als u de aanbevolen eenheid activeert, begint Adobe Commerce [gegevens verzamele
 
    De _Positie kiezen_ in deze sectie worden alle aanbevelingen weergegeven die (indien van toepassing) zijn gemaakt voor het geselecteerde paginatype.
 
-   ![Naam van aanbeveling](assets/create-recommendation-select-placement.png)
-   _Type aanbeveling_
+   ![Aanbevelingsvolgorde](assets/create-recommendation-select-placement.png)
+   _Volgorde van aanbevelingen op pagina_
 
 1. (Optioneel) In het dialoogvenster _Filters_ deel [filters toepassen](filters.md) om te controleren welke producten in de aanbevolen eenheid worden vermeld.
 
-   ![Naam van aanbeveling](assets/create-recommendation-select-placement.png)
+   ![Aanbevelingsfilters](assets/create-recommendation-filter-products.png)
    _Aanbevelingsproductfilters_
 
 1. Klik op een van de volgende opties als u klaar bent:
