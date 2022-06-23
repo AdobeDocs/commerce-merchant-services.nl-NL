@@ -1,15 +1,15 @@
 ---
 title: Algemene configuratie
-description: '"Algemene instellingen configureren om in te schakelen [!DNL Store Fulfillment] voor uw winkel. Configureer algemene extensie-instellingen, systeeminstellingen voor registratie, gegevenssynchronisatie en beveiliging. Belangrijke gegevens leveren om de integratie tussen Adobe Commerce en Store Fulfillment Services mogelijk te maken."'
+description: Algemene instellingen configureren om in te schakelen [!DNL Store Fulfillment] voor uw winkel. Configureer algemene extensie-instellingen, systeeminstellingen voor registratie, gegevenssynchronisatie en beveiliging. Belangrijke gegevens leveren om de integratie tussen Adobe Commerce en Store Fulfillment Services mogelijk te maken.
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
+source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
 workflow-type: tm+mt
 source-wordcount: '2413'
 ht-degree: 0%
 
 ---
-
 
 # Algemene configuratie
 
@@ -33,7 +33,7 @@ De algemene configuratie voor [!DNL Store Fulfillment] bevat de volgende configu
 |--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
 | **[!UICONTROL Enabled]** | Schakel de oplossing in of uit. Indien deze optie is ingeschakeld, configureert en gebruikt u de mogelijkheden voor het afhandelen van winkels en maakt u een verbinding tussen uw Adobe Commerce-winkel en de services voor het afhandelen van winkels. Als deze optie is uitgeschakeld, zijn alle functies voor het afhandelen van winkels uitgeschakeld en is er geen communicatie tussen Adobe Commerce en de services voor het afhandelen van winkels. Bestelgegevens kunnen niet worden verwerkt of ontvangen. | Algemeen | Ja |
 
-Als u deze instelling wilt voltooien, raadpleegt u **Stores → Configuration → Services → Store Fulfillment by Walmart Commerce Technologies**.
+Als u deze instelling wilt voltooien, raadpleegt u **Opslag > Configuratie > de Diensten > de Verwezenlijking van de Opslag door de Technologieën van de Handel van de Walmart**.
 
 ## Accountreferenties toevoegen
 
@@ -69,7 +69,7 @@ U kunt details over de verrichtingen van de ordesynchronisatie van het dashboard
 
 | **Veld** | **Beschrijving** | **Toepassingsgebied** | **Vereist** |
 |-----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|--------------|
-| **Kritieke fout opnieuw proberen** | Hiermee worden de pogingen voor het opnieuw proberen van een recordsynchronisatiebewerking opgegeven nadat een kritieke fout is opgetreden.</br></br>De kritieke fouten komen voor wanneer de integratie er niet in slaagt een positieve reactie van de uitvoeringsdienst te krijgen. Dit kan voorkomen wanneer de dienst neer is of wanneer er een fout in de ordegegevens die wordt verzonden is.</br></br>Wanneer de drempel voor opnieuw proberen is bereikt, blijft het item in een wachtrij maar wordt het niet opnieuw verwerkt. Alle items weergeven met fouten van **[!UICONTROL System → Tools → Store Fulfillment Queue]** Beheer in de beheerder. Neem contact op met uw accountmanager om problemen op te lossen met onderdelen die op consistente wijze mislukken. | Algemeen | Nee |
+| **Kritieke fout opnieuw proberen** | Hiermee worden de pogingen voor het opnieuw proberen van een recordsynchronisatiebewerking opgegeven nadat een kritieke fout is opgetreden.</br></br>De kritieke fouten komen voor wanneer de integratie er niet in slaagt een positieve reactie van de uitvoeringsdienst te krijgen. Dit kan voorkomen wanneer de dienst neer is of wanneer er een fout in de ordegegevens die wordt verzonden is.</br></br>Wanneer de drempel voor opnieuw proberen is bereikt, blijft het item in een wachtrij maar wordt het niet opnieuw verwerkt. Alle items weergeven met fouten van **[!UICONTROL System > Tools > Store Fulfillment Queue]** Beheer in de beheerder. Neem contact op met uw accountmanager om problemen op te lossen met onderdelen die op consistente wijze mislukken. | Algemeen | Nee |
 | **E-mail met foutmelding inschakelen** | Schakel foutmeldingen in om een e-mailbericht te ontvangen wanneer de [!UICONTROL Retry Critical Error Threshold] wordt bereikt voor een bestelling. Het bericht bevat alle beschikbare gegevens over de fout. | Algemeen | Nee |
 | **Foutmelding verzenden naar** | Een door komma&#39;s gescheiden lijst met e-mailadressen van ontvangers voor foutmeldingen. | Algemeen | Nee |
 | **Exception-e-mailsjabloon bestellen** | Hier geeft u de e-mailsjabloon op die wordt gebruikt om ontvangers op de hoogte te stellen van fouten bij de synchronisatie van bestellingen. Er is een standaardsjabloon beschikbaar. Aanpassing wordt niet ondersteund. | Winkelweergave | Nee |

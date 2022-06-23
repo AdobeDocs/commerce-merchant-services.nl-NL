@@ -3,13 +3,13 @@ title: Afhandeling van winkel testen en implementeren
 description: Test een plan om de functionaliteit voor winkelvervulling te verifiëren. De tests hebben betrekking op de API voor inventarissynchronisatie, de end-to-end uitvoeringsworkflow voor geannuleerde bestellingen, het gebruikersbeheer van de app voor winkelafhandeling en de ervaring die de klant heeft met het inchecken.
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: 77285a66-5161-407b-94cd-b3f412d7949d
+source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
 workflow-type: tm+mt
 source-wordcount: '2652'
 ht-degree: 0%
 
 ---
-
 
 # Afhandeling van winkel testen en implementeren voor Adobe Commerce
 
@@ -136,7 +136,6 @@ Deze sectie van het testplan omvat scenario&#39;s om het werkschema van begin to
 </td>
 <td>
 <ul>
-<td>
 <li>Orderhistorie bijgewerkt met <code>We refunded $X online. Transaction ID: transactionID</code> en <code>Received Cancel acknowledgment from the BOPIS solution.</code></li>
 <li>Status van bestelling is <code>Closed</code>. (We hebben nu een BETALINGSREVISIE ingesteld.)</li>
 <li>Creditnota gemaakt in Adobe Commerce. (Wacht tot het uitsnijden werkt.)</li>
@@ -449,7 +448,7 @@ Deze sectie van het testplan behandelt de Controle-In Ervaring voor de Bestellin
 
 - Afwisselend oppikken contact-verifieer het werkschema voor het toevoegen van een [!UICONTROL Alternate Pickup Contact] en selecteert u een [!UICONTROL Preferred Contact] op bestellingen voor ophaalservice.
 
-- Formulier inchecken - Controleer de workflow voor het indienen van een incheckaanvraag voor bestellingen voor winkelbestellingen.
+- Inchecken formulier—Controleer de workflow voor het indienen van een incheckaanvraag voor bestellingen voor winkelbestellingen.
 
 **Functionele gebieden:** Afhandeling van winkelwagentje, inchecken van formulier voor bestellingen voor het ophalen van winkels</br>
 **Rol:** Beheerder, Klant, Winkelgeassocieerd</br>
@@ -566,7 +565,7 @@ Deze sectie van het testplan behandelt scenario&#39;s voor het testen van orde, 
 </tr>
 <tr>
 <td>
-<strong>Pad met één bestelling voor plukken, ophalen op curbside</strong></td>
+<strong>Ophalen van één bestelling—gelukkig pad, ophalen van rand</strong></td>
 <td>Selecteer objecten van één en meerdere aantallen. Geen nilpicks, en curbside oogst (met het opvoeren).
 </td>
 <td>
@@ -645,22 +644,3 @@ De implementatie en het testen zijn afhankelijk van uw infrastructuur en mogelij
 >[!TIP]
 >
 >Raadpleeg voor implementatierichtlijnen, checklists en best practices voor Adobe Commerce over infrastructuurprojecten in de cloud de [Je winkel implementeren](https://devdocs.magento.com/cloud/live/stage-prod-live.html) in de documentatie van Adobe Commerce Developer.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

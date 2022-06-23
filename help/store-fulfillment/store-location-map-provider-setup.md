@@ -3,13 +3,13 @@ title: Configuratie van opslaglocatie en toewijzingssysteem
 description: Vorm een afstandsleverancier om de afbeelding van de opslagplaats in storefront UI te steunen. De oplossingen van de Afhandeling van de Opslag vereisen een afstandsleverancier om detailhandel onderzoek en andere afbeelding en het plannen mogelijkheden voor het volledige uitvoeringswerkschema toe te laten.
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: d09c4652-e2eb-49dc-8c42-2aa9b6be5d6b
+source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 1%
 
 ---
-
 
 # Opslaglocatie en Toewijzing instellen
 
@@ -21,13 +21,13 @@ Tijdens het configuratieproces geeft u een Google API-sleutel op voor het Google
 
 Om de afstandsleverancier te vormen:
 
-1. Van de [!UICONTROL Stores > General] Voeg in de beheerfunctie de integratie Google Maps toe voor het inhoudstype Kaart.
+1. Van de **[!UICONTROL Stores > General]** Voeg in de beheerfunctie de integratie Google Maps toe voor het inhoudstype Kaart.
 
    - Ga naar **[!UICONTROL Stores > Configuration  > General > Content Management]**.
 
    - Google API-sleutel toevoegen aan **[!UICONTROL Google Maps API Key]** veld.
 
-1. Van de [!UICONTROL Stores > Inventory] Selecteer in de beheerdersinterface de afstandprovider voor Afhandeling opslaan.
+1. Van de **[!UICONTROL Stores > Inventory]** Selecteer in de beheerdersinterface de afstandprovider voor Afhandeling opslaan.
 
    - Ga naar **[!UICONTROL Stores > Configuration > Catalog > Inventory]**.
 

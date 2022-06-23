@@ -4,9 +4,9 @@ description: Configureer de transactionele e-mailsjablonen voor de communicatie 
 role: User, Admin
 level: Intermediate
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1215'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Verkoop-e-mails
 
-Store Fulfillment biedt een uitgebreide reeks transactie-e-mailsjablonen aan ter ondersteuning van workflows voor bestellingen en afhandeling. Zij bieden verenigbare, geautomatiseerde mededeling en overseinen over kanalen aan— het op de hoogte brengen van klant en opslagbeheerders over de veranderingen van de ordestatus, instructies voor in-store bestelorden, en meer.
+Store Fulfillment biedt een uitgebreide reeks transactie-e-mailsjablonen aan ter ondersteuning van workflows voor bestellingen en afhandeling. Zij bieden verenigbare, geautomatiseerde mededeling en overseinen over kanalen-het op de hoogte brengen van klant en opslagbeheerders over de veranderingen van de ordestatus, instructies voor in-store bestelorden, en meer aan.
 
 E-mailsjablonen voor afhandeling van opslagruimte worden geconfigureerd met standaardberichten en -instellingen. Merchant beheerders in Adobe Commerce kunnen configuraties beheren en wijzigen, en de e-mailmalplaatjes selecteren om met klanten in verschillende scenario&#39;s te communiceren. Beheerders kunnen sjablonen ook configureren en aanpassen.
 

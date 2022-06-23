@@ -4,9 +4,9 @@ description: Stel de [!DNL Store Assist] app voor het beheer van end-to-end work
 role: User, Admin
 level: Intermediate
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
-source-git-commit: 421c90f4c8bd687216cd48c72f30301a32115522
+source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
@@ -48,13 +48,13 @@ Voor de app Store Assist zijn twee soorten configuraties vereist:
 
    - Alles aanpassen in app-instructies (kiezen, opvoeren, afleveren).
 
-   - **Pictogrammen**- Specificeer of om een duw bericht te verzenden om het plukken proces te beginnen nadat een klant een orde plaatst.
+   - **Pictogrammen**—Specificeer of om een duw bericht te verzenden om het plukken proces te beginnen nadat een klant een orde plaatst.
 
-   - **Meldingen inchecken**-Geef op of u een pushmelding wilt verzenden tijdens het inchecken van bestellingen- na inchecken, nadat de wachttijd van de klant een bepaalde periode overschrijdt. Of schakel de melding uit.
+   - **Meldingen inchecken**—Geef op of u een pushmelding wilt verzenden tijdens het inchecken van bestellingen- na inchecken, nadat de wachttijd van de klant een bepaalde periode overschrijdt. Of schakel de melding uit.
 
    - **Handje uit-proces**—Schakel optionele processen in wanneer Store Associate bestelling aan de klant levert, bijvoorbeeld een handtekening van de klant vereisen of de koppeling vragen om de klant-id te controleren.
 
-   - **Afkeuring van item inschakelen bij afbreken**-Sta klanten toe om orde punten tijdens orde terug te keren of te annuleren handoff.
+   - **Afkeuring van item inschakelen bij afbreken**—Toestaan dat klanten bestellingen retourneren of annuleren tijdens het afhandelen van bestellingen.
    Het werk met het team van de Diensten van de Cliënt van de Technologieën van de Handel van de Handel van de Mara om frontend configuratie voor de Hulp App van de Winkel te voltooien.
 
 ## Downloaden en installeren van apps
@@ -67,7 +67,7 @@ Nadat de configuratie van de app Store Assist is voltooid, kunnen Store Associat
 
 - Voor het aanmelden bij Store Associates is de volgende informatie vereist:
 
-   - De bedrijfsnaam die aan je account voor winkelassistentie is gekoppeld
+   - **[!UICONTROL Company name]** gekoppeld aan de account Winkelassistentie
 
-   - Sla accountgegevens voor assistentie op (gebruikersnaam en wachtwoord voor hun account).
+   - **Accountgegevens voor Winkelassistentie**—gebruikersnaam en wachtwoord voor hun account.
    Een Adobe Commerce-beheerder kan een gebruikersaccount maken en machtigingen instellen voor de gebruikersaccounts van de App Store Assist voor opslaglocaties die [Ophalen in winkel](merchant-store-configuration.md#pickup-location-configuration) ingeschakeld in de beheerinstellingen voor winkels.
