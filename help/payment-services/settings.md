@@ -4,9 +4,9 @@ description: Na installatie kunt u configureren [!DNL Payment Services] in het s
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 724abe973094c1aa631ca34bd8096052fa1e9195
+source-git-commit: aed9469d6acf638d86389cbf1c178fccd8d42759
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -65,6 +65,9 @@ Zie [Betalingsopties](payments-options.md#paypal-smart-buttons) voor meer inform
 1. Als u de naam wilt wijzigen van de betalingsmethode die tijdens het afrekenen wordt weergegeven, bewerkt u de waarde in het dialoogvenster **[!UICONTROL Checkout title]** veld.
 1. Naar [betalingsactie instellen](production.md#set-payment-services-as-payment-method), schakelen **[!UICONTROL Payment action]** tot `Authorize` of `Authorize and Capture`.
 1. Schakel de optie **[!UICONTROL Debug Mode]** kiezer.
+
+   Als u de foutopsporingsmodus inschakelt, wordt extra informatie over de creditcardbetaling naar de `var/log/payment.log` bestand. Deze informatie kan u meer inzicht in een specifieke betaling geven om bij het oplossen van problemen te helpen.
+
 1. Klik op **[!UICONTROL Save]**.
 
    Als u probeert weg van deze mening te navigeren zonder uw veranderingen op te slaan, verschijnt een modaal die u ertoe aanzet om veranderingen te verwerpen, het uitgeven te houden, of veranderingen te bewaren.
@@ -88,6 +91,9 @@ U kunt de betalingsopties voor slimme PayPal-knoppen inschakelen en configureren
 
 1. Als u het dialoogvenster [Later betalen](payments-options.md#pay-later-button), schakelt u de **[!UICONTROL Display Pay Later message]** optie.
 1. Schakel de optie **[!UICONTROL Debug Mode]** kiezer.
+
+   Wanneer u de foutopsporingsmodus inschakelt, worden extra gegevens over de Paypal-betaling naar de `var/log/payment.log` bestand. Deze informatie kan u meer inzicht in een specifieke betaling geven om bij het oplossen van problemen te helpen.
+
 1. Klik op **[!UICONTROL Save]**.
 
    Als u probeert weg van deze mening te navigeren zonder uw veranderingen op te slaan, verschijnt een modaal die u ertoe aanzet om veranderingen te verwerpen, het uitgeven te houden, of veranderingen te bewaren.
