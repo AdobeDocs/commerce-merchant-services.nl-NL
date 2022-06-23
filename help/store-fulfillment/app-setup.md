@@ -1,15 +1,15 @@
 ---
 title: App-instelling
-description: '"Stel de [!DNL Store Assist] app voor het beheer van end-to-end workflows voor de afhandeling van winkels en processen voor het online kopen van orders." '
+description: Stel de [!DNL Store Assist] app voor het beheer van end-to-end workflows voor de afhandeling van winkels en processen voor het online kopen van orders.
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
+source-git-commit: 421c90f4c8bd687216cd48c72f30301a32115522
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '608'
 ht-degree: 0%
 
 ---
-
 
 # App-instelling
 
@@ -55,14 +55,15 @@ Voor de app Store Assist zijn twee soorten configuraties vereist:
    - **Handje uit-proces**—Schakel optionele processen in wanneer Store Associate bestelling aan de klant levert, bijvoorbeeld een handtekening van de klant vereisen of de koppeling vragen om de klant-id te controleren.
 
    - **Afkeuring van item inschakelen bij afbreken**-Sta klanten toe om orde punten tijdens orde terug te keren of te annuleren handoff.
-
    Het werk met het team van de Diensten van de Cliënt van de Technologieën van de Handel van de Handel van de Mara om frontend configuratie voor de Hulp App van de Winkel te voltooien.
 
 ## Downloaden en installeren van apps
 
 Nadat de configuratie van de app Store Assist is voltooid, kunnen Store Associates vanaf hun mobiele apparaten de app Store Assist downloaden, installeren en zich aanmelden bij de app Store Assist.
 
-- Download de app Store Assist vanuit de [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id16092815390) of de Google Play-winkel.
+- Controleren of het mobiele apparaat voldoet aan de [hardware- en softwarevereisten](solution-requirements.md#store-assist-app-requirements) voor de Oplossing van de Behandeling van de Opslag.
+
+- Download de app Store Assist vanuit de [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id16092815390){target=&quot;_blank&quot;} of de [Google Play-winkel](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target=&quot;_blank&quot;}.
 
 - Voor het aanmelden bij Store Associates is de volgende informatie vereist:
 
@@ -70,4 +71,3 @@ Nadat de configuratie van de app Store Assist is voltooid, kunnen Store Associat
 
    - Sla accountgegevens voor assistentie op (gebruikersnaam en wachtwoord voor hun account).
    Een Adobe Commerce-beheerder kan een gebruikersaccount maken en machtigingen instellen voor de gebruikersaccounts van de App Store Assist voor opslaglocaties die [Ophalen in winkel](merchant-store-configuration.md#pickup-location-configuration) ingeschakeld in de beheerinstellingen voor winkels.
-
