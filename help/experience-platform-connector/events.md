@@ -1,14 +1,15 @@
 ---
 title: Gebeurtenissen
 description: Leer welke gebeurtenissen gegevens vangen en de volledige schemadefinitie zien.
-source-git-commit: 566abe09b8c1b0837a833b2f8fcfe1e81bb6963d
+exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
+source-git-commit: ce437d7a991affd2665c86c9e91bb7f39ec626c0
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '223'
 ht-degree: 0%
 
 ---
 
-# Gebeurtenissen projectbaken
+# Verbindingsgebeurtenissen Experience Platform
 
 De volgende lijst bevat de [!DNL Commerce] -gebeurtenissen beschikbaar wanneer u de verbindingsextensie van het Experience Platform installeert. De gegevens die door deze gebeurtenissen worden verzameld, worden naar de Adobe Experience Platform-rand verzonden. U kunt ook [aangepaste gebeurtenissen](custom-events.md) om aanvullende gegevens te verzamelen die niet uit het vak zijn verstrekt.
 

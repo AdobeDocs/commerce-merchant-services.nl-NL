@@ -1,9 +1,10 @@
 ---
 title: Koploos
 description: Leer hoe u kunt integreren [!DNL Product Recommendations] in een koploze winkel.
-source-git-commit: 7fe89df32dc5363817f957180e5b75e7217fc14a
+exl-id: 316d0b0c-5938-4e2f-9d0d-747746cf6056
+source-git-commit: ce437d7a991affd2665c86c9e91bb7f39ec626c0
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ U kunt beide handelingen uitvoeren met de beschikbare SDK&#39;s, zoals beschreve
 
 1. [Installeren](install-configure.md) de [!DNL Product Recommendations] module.
 
-1. Installeer en gebruik de [Storefront Events SDK](https://devdocs.magento.com/shared-services/storefront-events-sdk.html) om de [gedragsgebeurtenissen](https://devdocs.magento.com/recommendations/events.html).
+1. Installeer en gebruik de [Adobe Commerce Storefront Event SDK](https://devdocs.magento.com/shared-services/storefront-events-sdk.html) om de [gedragsgebeurtenissen](https://devdocs.magento.com/recommendations/events.html).
 
    De minimaal vereiste gebeurtenissen om terug te keren [!DNL Product Recommendations] resultaten:
 
@@ -43,7 +44,7 @@ U kunt beide handelingen uitvoeren met de beschikbare SDK&#39;s, zoals beschreve
    | `rec-click` | aanbeveling-eenheid |
    | `rec-add-to-cart-click` | aanbeveling-eenheid (als een knop Toevoegen aan winkelwagentje aanwezig is in de sjabloon met aanbevelingen) |
 
-1. Wanneer de gebeurtenissen worden geactiveerd, gebruikt u de opdracht [Storefront Events Collector](https://devdocs.magento.com/shared-services/storefront-event-collector.html) om de gebeurtenissen af te handelen en deze naar Adobe Sensei te verzenden.
+1. Wanneer de gebeurtenissen worden geactiveerd, gebruikt u de opdracht [Adobe Commerce Storefront Event Collector](https://devdocs.magento.com/shared-services/storefront-event-collector.html) om de gebeurtenissen af te handelen en deze naar Adobe Sensei te verzenden.
 
 1. Nadat de gedragsgegevens zijn verzameld, kunt u [maken](create.md) [!DNL Product Recommendations] in de Admin.
 

@@ -1,9 +1,10 @@
 ---
 title: Adobe Experience Platform-connector installeren en configureren vanuit Adobe Commerce
 description: Leer hoe u de Adobe Experience Platform-connector van Adobe Commerce installeert, configureert, bijwerkt en verwijdert.
-source-git-commit: 9b5f2da08167e22bbba504009bccc87d0ab02c48
+exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
+source-git-commit: ce437d7a991affd2665c86c9e91bb7f39ec626c0
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '229'
 ht-degree: 0%
 
 ---
@@ -17,29 +18,15 @@ Voordat u de extensie installeert, [de voorwaarden opnieuw bekijken](overview.md
 1. Installeer de metapakket voor de aansluiting van het Experience Platform.
 
    ```bash
-   composer require magento/platform-connector
+   composer require magento/experience-platform-connector
    ```
 
-   Dit metapakket bevat de volgende modules:
+   Dit metapakket bevat de volgende modules en extensies:
 
-   * `module-platform-connector-admin` - Werkt de interface van Admin bij
-   * `module-platform-connector` - Hiermee stelt u de `ImsOrgId` en `datastreamId` in de Magento Storefront Events SDK
-
-1. Installeer de uitbreiding van de Diensten van de Gegevens van de Handel om profiel en controlegebeurtenissen te omvatten.
-
-   ```bash
-   composer require magento/data-services
-   ```
-
-   De uitbreiding van de Diensten van Gegevens van de Handel verstrekt attributencontext voor storefront gebeurtenissen. Wanneer bijvoorbeeld een uitcheckgebeurtenis plaatsvindt, wordt informatie over het aantal items in het winkelwagentje en de productkenmerkgegevens voor die items opgenomen.
-
-1. Installeer de Commerce Service Connector.
-
-   ```bash
-   composer require magento/commerce-services
-   ```
-
-   Met de Commerce Service Connector kunt u uw Adobe Commerce-instantie verbinden met [Adobe Commerce SaaS](../landing/saas.md) en de Adobe Experience Platform.
+   * `module-platform-connector-admin` - Werkt Admin UI bij zodat kunt u identiteitskaart DataStream vormen
+   * `module-platform-connector` - Hiermee stelt u de `ImsOrgId` en `datastreamId` in de Adobe Commerce Storefront Event SDK
+   * `data-services` - Biedt kenmerkcontext voor storefront-gebeurtenissen. Wanneer bijvoorbeeld een uitcheckgebeurtenis plaatsvindt, wordt informatie over het aantal items in het winkelwagentje en de productkenmerkgegevens voor die items opgenomen.
+   * `commerce-services` - Verbindt uw Adobe Commerce-instantie met [Adobe Commerce SaaS](../landing/saas.md) gebruik van sandbox- en productie-API-sleutels en naar de Adobe Experience Platform met behulp van de IMS-organisatie-id.
 
 1. (Optioneel) Opnemen [!DNL Live Search] installeer de [[!DNL Live Search]](../live-search/install.md) extensie.
 
@@ -48,7 +35,7 @@ Voordat u de extensie installeert, [de voorwaarden opnieuw bekijken](overview.md
 Als u de aansluiting van het Experience Platform wilt bijwerken, voert u het volgende uit vanaf de opdrachtregel:
 
 ```bash
-composer update magento/platform-connector --with-dependencies
+composer update magento/experience-platform-connector --with-dependencies
 ```
 
 Als u wilt bijwerken naar een hoofdversie zoals 1.0.0 tot 2.0.0, bewerkt u de hoofdmap van het project [!DNL Composer] `.json` bestand als volgt:
@@ -60,7 +47,7 @@ Als u wilt bijwerken naar een hoofdversie zoals 1.0.0 tot 2.0.0, bewerkt u de ho
    ```json
    "require": {
       ...
-      "magento/platform-connector": "^2.0",
+      "magento/experience-platform-connector": "^2.0",
       ...
     }
    ```
@@ -68,7 +55,7 @@ Als u wilt bijwerken naar een hoofdversie zoals 1.0.0 tot 2.0.0, bewerkt u de ho
 1. **Opslaan** `composer.json`. Voer vervolgens de volgende handelingen uit vanaf de opdrachtregel:
 
    ```bash
-   composer update magento/platform-connector –-with-dependencies
+   composer update magento/experience-platform-connector –-with-dependencies
    ```
 
 ## De aansluiting van het Experience Platform verwijderen {#uninstall}

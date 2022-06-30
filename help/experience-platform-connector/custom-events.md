@@ -1,7 +1,8 @@
 ---
 title: Aangepaste gebeurtenissen maken
 description: Leer hoe u aangepaste gebeurtenissen maakt, uw Adobe Commerce-gegevens aansluiten op andere Adobe DX-producten.
-source-git-commit: 1dd8f94e632bb98666ad252badf8420a014260fb
+exl-id: 5a754106-c66a-4280-9896-6d065df8a841
+source-git-commit: ce437d7a991affd2665c86c9e91bb7f39ec626c0
 workflow-type: tm+mt
 source-wordcount: '213'
 ht-degree: 0%
@@ -10,7 +11,7 @@ ht-degree: 0%
 
 # Aangepaste gebeurtenissen maken
 
-U kunt de [uitvalplatform](events.md) door uw eigen winkelgebeurtenissen te maken om gegevens te verzamelen die uniek zijn voor uw branche. Wanneer u een douanegebeurtenis creeert en vormt, wordt het verzonden naar [Magento Storefront Event Collector](https://www.npmjs.com/package/@adobe/magento-storefront-event-collector).
+U kunt de [uitvalplatform](events.md) door uw eigen winkelgebeurtenissen te maken om gegevens te verzamelen die uniek zijn voor uw branche. Wanneer u een douanegebeurtenis creeert en vormt, wordt het verzonden naar [Adobe Commerce Event Collector](https://www.npmjs.com/package/@adobe/magento-storefront-event-collector).
 
 ## Aangepaste gebeurtenissen verwerken
 
