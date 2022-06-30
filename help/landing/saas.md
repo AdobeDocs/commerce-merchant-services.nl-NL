@@ -2,7 +2,7 @@
 title: Commerce Services Connector
 description: Leer hoe u uw Adobe Commerce- of Magento Open Source-instantie integreert met de API-sleutels voor productie en sandbox.
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
-source-git-commit: 89be4b0aa7b311db10cffe7abf9c16a2becbd3a4
+source-git-commit: e8a63cc24db8a5e37c03c9cd40f0807b0b77b620
 workflow-type: tm+mt
 source-wordcount: '856'
 ht-degree: 0%
@@ -22,8 +22,8 @@ De volgende lijst bevat de [!DNL Commerce] functies waartoe u toegang hebt via d
 | [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) aangedreven door Adobe Sensei | Adobe Commerce |
 | [[!DNL Live Search]](/help/live-search/overview.md) aangedreven door Adobe Sensei | Adobe Commerce |
 | [[!DNL Payment Services]](/help/payment-services/overview.md) | Adobe Commerce en Magento Open Source |
-| [[!DNL Channel Manager]](https://experienceleague.corp.adobe.com/docs/commerce-channels/channel-manager/intro-to-channel-manager/overview.html) | Adobe Commerce en Magento Open Source |
-| [[!DNL Site-Wide Analysis Tool]](https://experienceleague.corp.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html) | Adobe Commerce |
+| [[!DNL Channel Manager]](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/intro-to-channel-manager/overview.html) | Adobe Commerce en Magento Open Source |
+| [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html) | Adobe Commerce |
 
 ## Architectuur
 
