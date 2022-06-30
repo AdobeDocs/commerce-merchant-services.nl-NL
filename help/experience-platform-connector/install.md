@@ -2,7 +2,7 @@
 title: Adobe Experience Platform-connector installeren en configureren vanuit Adobe Commerce
 description: Leer hoe u de Adobe Experience Platform-connector van Adobe Commerce installeert, configureert, bijwerkt en verwijdert.
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
-source-git-commit: ce437d7a991affd2665c86c9e91bb7f39ec626c0
+source-git-commit: b503c369f12696a2a791af77055a7b53000b827f
 workflow-type: tm+mt
 source-wordcount: '229'
 ht-degree: 0%
@@ -23,10 +23,10 @@ Voordat u de extensie installeert, [de voorwaarden opnieuw bekijken](overview.md
 
    Dit metapakket bevat de volgende modules en extensies:
 
-   * `module-platform-connector-admin` - Werkt Admin UI bij zodat kunt u identiteitskaart DataStream vormen
+   * `module-platform-connector-admin` - Werkt de interface van Admin bij zodat u identiteitskaart DataStream kunt vormen
    * `module-platform-connector` - Hiermee stelt u de `ImsOrgId` en `datastreamId` in de Adobe Commerce Storefront Event SDK
    * `data-services` - Biedt kenmerkcontext voor storefront-gebeurtenissen. Wanneer bijvoorbeeld een uitcheckgebeurtenis plaatsvindt, wordt informatie over het aantal items in het winkelwagentje en de productkenmerkgegevens voor die items opgenomen.
-   * `commerce-services` - Verbindt uw Adobe Commerce-instantie met [Adobe Commerce SaaS](../landing/saas.md) gebruik van sandbox- en productie-API-sleutels en naar de Adobe Experience Platform met behulp van de IMS-organisatie-id.
+   * `commerce-services` - Verbindt uw Adobe Commerce-instantie met [Adobe Commerce SaaS](../landing/saas.md) gebruik van sandbox- en productie-API-sleutels en naar de Adobe Experience Platform met behulp van IMS-organisatie-id
 
 1. (Optioneel) Opnemen [!DNL Live Search] installeer de [[!DNL Live Search]](../live-search/install.md) extensie.
 
