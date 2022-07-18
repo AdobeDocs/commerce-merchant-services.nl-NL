@@ -4,9 +4,9 @@ description: Na installatie kunt u configureren [!DNL Payment Services] in het s
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: aed9469d6acf638d86389cbf1c178fccd8d42759
+source-git-commit: 7c02bb8dcb7b5daa68664bd12672ac389f84cfa1
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '688'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ U kunt [!DNL Payment Services] voor uw website en schakel het testen van sandbox
 1. Als u de standaardinstellingen voor betalingsfuncties en de weergave van de winkel wilt wijzigen, stelt u de gewenste aanvullende opties in:
 
    - [Creditcardvelden](#credit-card-fields)
-   - [Slimme PayPal-knoppen](#paypal-smart-buttons)
+   - [Betalingsknoppen](#payment-buttons)
    - [Knopstijl](#button-style)
 
 1. Klik op **[!UICONTROL Save]**.
@@ -74,22 +74,22 @@ Zie [Betalingsopties](payments-options.md#paypal-smart-buttons) voor meer inform
 
 1. Navigeren naar **[!UICONTROL System]** > **[!UICONTROL Cache Management]** en klik op **[!UICONTROL Flush Cache]** om alle ongeldige caches te vernieuwen.
 
-### Slimme PayPal-knoppen
+### Betalingsknoppen
 
 De [!DNL PayPal Smart Buttons] betaalopties bieden een eenvoudig, snel en veilig afhandelingsproces voor uw klant. Zie [Betalingsopties](payments-options.md#paypal-smart-buttons) voor meer informatie .
 
-U kunt de betalingsopties voor slimme PayPal-knoppen inschakelen en configureren:
+U kunt de betalingsknoppen inschakelen en configureren:
 
 1. Als u de naam van de betalingsmethode wilt wijzigen, zoals wordt weergegeven tijdens het afrekenen, bewerkt u de waarde in het dialoogvenster **[!UICONTROL Checkout Title]** veld.
 1. Naar [betalingsactie instellen](production.md#set-payment-services-as-payment-method), schakelen **[!UICONTROL Payment action]** tot `Authorize` of `Authorize and Capture`.
 1. De schakelkiezers gebruiken om in of uit te schakelen [!DNL PayPal smart button] weergavefuncties:
-   - **[!UICONTROL Show buttons on product detail page]**
-   - **[!UICONTROL Show buttons in mini cart preview]**
-   - **[!UICONTROL Show buttons on cart page]**
-   - **[!UICONTROL PayPal Pay Later enabled]**
+   - **[!UICONTROL Show PayPal buttons on product detail page]**
+   - **[!UICONTROL Show PayPal buttons on mini cart preview]**
+   - **[!UICONTROL Show PayPal buttons on cart page]**
+   - **[!UICONTROL Show PayPal Pay Later button]**
    - **[!UICONTROL Show Venmo button]**
 
-1. Als u het dialoogvenster [Later betalen](payments-options.md#pay-later-button), schakelt u de **[!UICONTROL Display Pay Later message]** optie.
+1. Als u het dialoogvenster [Later betalen](payments-options.md#pay-later-button), schakelt u de **[!UICONTROL Show PayPal Pay Later message]** optie.
 1. Schakel de optie **[!UICONTROL Debug Mode]** kiezer.
 
    Wanneer u de foutopsporingsmodus inschakelt, worden extra gegevens over de Paypal-betaling naar de `var/log/payment.log` bestand. Deze informatie kan u meer inzicht in een specifieke betaling geven om bij het oplossen van problemen te helpen.
@@ -102,13 +102,13 @@ U kunt de betalingsopties voor slimme PayPal-knoppen inschakelen en configureren
 
 #### Knopstijl
 
-U kunt ook de _[!UICONTROL Button style]_opties van de slimme PayPal-knoppen:
+U kunt ook de _[!UICONTROL Button style]_opties van de betalingsknoppen:
 
 1. Als u het dialoogvenster **[!UICONTROL Layout]**, selecteert u `Vertical` of `Horizontal`.
 
    >[!NOTE]
    >
-   > Als de knopstijl is geconfigureerd als `Horizontal` en uw winkel is geconfigureerd om meerdere slimme PayPal-knoppen weer te geven, worden mogelijk slechts twee knoppen weergegeven op de productpagina, de afhandelingspagina en de minikaart, en één knop in het winkelwagentje.
+   > Als de knopstijl is geconfigureerd als `Horizontal` en uw winkel is geconfigureerd om meerdere betalingsknoppen weer te geven, worden mogelijk slechts twee knoppen weergegeven op de productpagina, de afhandelingspagina en de minikaart, en één knop in het winkelwagentje.
 
 1. Als u de taglijn in een horizontale lay-out wilt inschakelen, schakelt u het **[!UICONTROL Show tagline]** kiezer.
 1. Als u de **[!UICONTROL Color]** selecteert u de gewenste kleuroptie.
