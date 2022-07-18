@@ -2,14 +2,14 @@
 title: Adobe Experience Platform-connector installeren en configureren vanuit Adobe Commerce
 description: Leer hoe u de Adobe Experience Platform-connector van Adobe Commerce installeert, configureert, bijwerkt en verwijdert.
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
-source-git-commit: b503c369f12696a2a791af77055a7b53000b827f
+source-git-commit: 334ee967ec2379a87acfc5fb427d7ada6fa25ee7
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-# Experience Platform-aansluiting installeren en configureren
+# De aansluiting van het Experience Platform installeren en configureren
 
 Voordat u de extensie installeert, [de voorwaarden opnieuw bekijken](overview.md#prereqs).
 
@@ -23,10 +23,10 @@ Voordat u de extensie installeert, [de voorwaarden opnieuw bekijken](overview.md
 
    Dit metapakket bevat de volgende modules en extensies:
 
-   * `module-platform-connector-admin` - Werkt de interface van Admin bij zodat u identiteitskaart DataStream kunt vormen
+   * `module-platform-connector-admin` - Werkt de Admin UI bij zodat kunt u identiteitskaart DataStream voor een specifiek Adobe Commerce geval selecteren
    * `module-platform-connector` - Hiermee stelt u de `ImsOrgId` en `datastreamId` in de Adobe Commerce Storefront Event SDK
    * `data-services` - Biedt kenmerkcontext voor storefront-gebeurtenissen. Wanneer bijvoorbeeld een uitcheckgebeurtenis plaatsvindt, wordt informatie over het aantal items in het winkelwagentje en de productkenmerkgegevens voor die items opgenomen.
-   * `commerce-services` - Verbindt uw Adobe Commerce-instantie met [Adobe Commerce SaaS](../landing/saas.md) gebruik van sandbox- en productie-API-sleutels en naar de Adobe Experience Platform met behulp van IMS-organisatie-id
+   * `services-id` - Verbindt uw Adobe Commerce-instantie met [Adobe Commerce SaaS](../landing/saas.md) het gebruiken van zandbak en productie API sleutels en aan de Adobe Experience Platform om IMS Organisatie ID terug te winnen
 
 1. (Optioneel) Opnemen [!DNL Live Search] installeer de [[!DNL Live Search]](../live-search/install.md) extensie.
 

@@ -1,9 +1,10 @@
 ---
 title: Overzicht van hulplijnen
 description: Adobe Experience Platform-connector voor Adobe Commerce sluit uw [!DNL Commerce] naar andere Adobe Experience Cloud-producten.
-source-git-commit: dc4bb1ea7d2ffc953cca31637bf5aefba6266241
+exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
+source-git-commit: 334ee967ec2379a87acfc5fb427d7ada6fa25ee7
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -23,10 +24,13 @@ Om de schakelaar van het Experience Platform te gebruiken, moet u eerst:
 Wanneer toegang wordt verleend:
 
 1. [Aanmelden](https://helpx.adobe.com/manage-account/using/access-adobe-id-account.html) naar uw Adobe-account.
-1. Kijk naar je [organisatie](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=en#concept_EA8AEE5B02CF46ACBDAD6A8508646255). De organisatie-id is de id die is gekoppeld aan uw Experience Cloud-bedrijf waarvoor u een provisioning uitvoert. Deze id is een alfanumerieke tekenreeks van 24 tekens, gevolgd door (en moet bevatten) @AdobeOrg.
-1. Toegang tot de werkruimte van de gegevensstroom en [een gegevensstroom maken](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=en).
+1. Kijk naar je [organisatie](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=en#concept_EA8AEE5B02CF46ACBDAD6A8508646255). De organisatie-id is de id die is gekoppeld aan uw Experience Cloud-bedrijf waarvoor u een provisioning uitvoert. Deze id bestaat uit een alfanumerieke tekenreeks van 24 tekens, gevolgd door (en moet worden opgenomen) `@AdobeOrg`.
+1. Maak uw [XDM-schema](update-xdm.md) met specifieke handelsgroepen.
+1. [Een gegevensstroom maken](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=en) en selecteer het XDM-schema dat de handel-specifieke **Veldgroepen**.
 
-De organisatie-id en de gegevensstroom worden gebruikt wanneer u uw Adobe Commerce-instantie verbindt met de Adobe Experience Platform.
+>[!NOTE]
+>
+> De organisatie-id en de gegevensstroom worden gebruikt om uw Adobe Commerce-instantie te verbinden met de Adobe Experience Platform.
 
 ## Volgende stappen
 

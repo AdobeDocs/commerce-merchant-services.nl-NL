@@ -1,9 +1,10 @@
 ---
-title: Opmerkingen bij de release Projectbaken
-description: De meest recente releasegegevens voor Project Beacon uit Adobe Commerce.
-source-git-commit: ce1ce5a7e028d1c957a9a36c73c371eedfb1e1e8
+title: Opmerkingen bij de release
+description: De nieuwste release-informatie voor Adobe Experience Platform-connector vanuit Adobe Commerce.
+exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
+source-git-commit: 3b71b8cd6ba0036d660d078a7f80371e7671ea9f
 workflow-type: tm+mt
-source-wordcount: '78'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -18,8 +19,8 @@ Deze releaseopmerkingen beschrijven de nieuwste versies van de aansluiting van h
 
 ## Aansluiting Experience Platform 1.1.0
 
-* Compatibel met Adobe Commerce (EE): 2,4 x
-* Compatibel met Adobe Commerce for Cloud (ECE): 2,4 x
+* Compatibel met Adobe Commerce (EE): 2.4.4.
+* Compatibel met Adobe Commerce for Cloud (ECE): 2.4.4.
 * Stabiliteit: Stabiel
 
 ## Documentatie
