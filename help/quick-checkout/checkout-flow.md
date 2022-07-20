@@ -2,9 +2,9 @@
 title: '"Afhandelingsstroom"'
 description: '"Overzicht van de [!DNL Quick Checkout] flow in Adobe Commerce."'
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
-source-git-commit: 01bb92d1de1f6a6da1d6326c0190eb7711274045
+source-git-commit: a95d2ed92c69feba03d1b84d44abf08c1d1b4029
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '179'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,9 @@ Een geslaagde [!DNL Quick Checkout] De stroom bestaat uit de volgende stappen:
 
 1. Voer desgevraagd een e-mailadres in dat is gekoppeld aan een [!DNL Bolt] account.
 1. Voer het eenmalige wachtwoord (OTP) in dat naar dat wachtwoord is verzonden [!DNL Bolt] e-mailadres of telefoonnummer van account.
+
+![Pop-up OTP](assets/pop-up.png)
+
 1. Zodra het programma geopend met uw [!DNL Bolt] account, betalingsgegevens worden automatisch ingevuld in:
 
    - Verzendgegevens
@@ -39,7 +42,7 @@ De [!DNL Quick Checkout] is compatibel met standaard aanvullende Adobe Commerce-
 
 De [!DNL Quick Checkout] staat voor veelvoudige gebruiksgevallen tijdens een controlestroom toe:
 
-- [Gastgebruiker](../quick-checkout/checkout-adobe-commerce.md) met een geregistreerde of nieuwe [!DNL Bolt] account.
+- [Gastgebruiker](../quick-checkout/checkout-bolt.md) met een geregistreerde of nieuwe [!DNL Bolt] account.
 - Een bestaande [Adobe Commerce-gebruiker](../quick-checkout/checkout-adobe-commerce.md) met of zonder geregistreerde [!DNL Bolt] account.
 
 ## Hulp vragen
