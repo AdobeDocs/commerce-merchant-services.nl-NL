@@ -2,9 +2,9 @@
 title: '"Aan boord van de [!DNL Quick Checkout] voor Adobe Commerce-extensie"'
 description: '"Leer hoe u [!DNL Quick Checkout] kan uw Adobe Commerce-exemplaar ten goede komen en de extensie met succes aan boord installeren en instellen."'
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: ac55bf6354c8f5569ad83dc0ac2671b34c98d303
+source-git-commit: 0624ddc369ddedaaf9ae741831e0d5c5589ea4c2
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '684'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,12 @@ Ga als volgt te werk om aan de slag te gaan [!DNL Quick Checkout] voor Adobe Com
 
 1. [Extensie ophalen](#get-extension).
 1. [Een Merchant-account voor de productie of sandbox maken met [!DNL Bolt]](#create-account-with-bolt). Geef alle vereiste gegevens op om uw identiteit te verifiëren.
-1. [Geef de unieke [!DNL API Key] en [!DNL Publishable Key] gegenereerd in [!DNL Bolt]](#obtain-api-credentials).
+1. [Geef de unieke [!DNL API Key] en [!DNL Publishable Key]](#obtain-api-credentials) gegenereerd in [!DNL Bolt].
 1. [Een betalingsprovider instellen in het dialoogvenster [!DNL Bolt] account](#configure-payment-providers).
 1. [Stelt vervolgkeuzelijst Inschakelen in op Ja](#enable-extension) om de extensie te activeren.
 1. [Definieer uw servicesinstellingen](#complete-admin-configuration) om het [!DNL Quick Checkout] extensie.
-1. [Klik op de knop Config opslaan](#enable-live-quick-checkout) om extensie in te schakelen.
+1. [Klik op Config opslaan](#enable-live-quick-checkout) om extensie in te schakelen.
+1. Van bereik wisselen naar **Hoofdwebsite** en [klik Configure Callback URL](#check-shopper-valid-account) knop.
 
 >[!NOTE]
 >
@@ -49,12 +50,15 @@ Zie de [testen en valideren](../quick-checkout/testing.md) voor meer informatie.
 
 ## API-referenties verkrijgen
 
-Als u de opdracht [!DNL Quick Checkout] u hebt [!DNL Bolt] unieke toetsen. Verkrijg het volgende [!DNL API keys] door te navigeren naar **Ontwikkelaars** > **API** > **Toetsen** in de **Bolt Merchant Dashboard**.
+Als u de opdracht [!DNL Quick Checkout] u hebt [!DNL Bolt] unieke toetsen en [!DNL signing secret]. Verkrijg het volgende [!DNL API keys] door te navigeren naar **Ontwikkelaars** > **API** > **Toetsen** in de **Bolt Merchant Dashboard**.
 
 - [!DNL API key]: Een persoonlijke sleutel die door uw achterste eind wordt gebruikt om met elkaar in wisselwerking te staan [!DNL Bolt] API&#39;s.
 - [!DNL Publishable key]: Een toets die door uw voorzijde wordt gebruikt om te communiceren met [!DNL Bolt] API&#39;s.
+- [!DNL Signing secret]: Wordt gebruikt voor handtekeningverificatie op aanvragen die zijn ontvangen van [!DNL Bolt].
 
-Zie de [[!DNL Bolt] omgevingsdetails](https://help.bolt.com/developers/references/environment-details/#about-keys)pagina {target=&quot;_blank&quot;} voor meer informatie over API en [!DNL Publishable keys] voor de [!DNL Quick Checkout] extensie.
+![Snelle afhandeling](assets/account-credentials.png)
+
+Zie de [[!DNL Bolt] omgevingsdetails](https://help.bolt.com/developers/references/environment-details/#about-keys){target=&quot;_blank&quot;_page voor meer informatie over sleutels en het ondertekenen van een geheim van [!DNL Bolt] voor de [!DNL Quick Checkout] extensie.
 
 >[!CAUTION]
 >
@@ -68,9 +72,6 @@ Volg de stappen in het dialoogvenster [processorinstelling](https://help.bolt.co
 
 1. Op de _Beheer_ zijbalk, ga naar **Winkels** > _Instellingen_ > **Configuratie**.
 1. Vouw in het linkerdeelvenster uit **Verkoop** en selecteert u **Afhandeling**.
-
-   ![Snelle afhandeling](assets/admin-view.png)
-
 1. In de [!DNL Quick Checkout] weergave, instellen **Inschakelen** tot `Yes`.
 1. Selecteer de methode (Sandbox of Production) die u wilt gebruiken.
 
@@ -79,9 +80,11 @@ Volg de stappen in het dialoogvenster [processorinstelling](https://help.bolt.co
 
 1. Valideer referenties nadat u de unieke API hebt opgegeven en [!DNL Publishable keys].
 
+![Snelle afhandeling](assets/extension-view.png)
+
 >[!CAUTION]
 >
-> U moet een unieke API en [!DNL Publishable keys] voordat de uitbreiding wordt toegestaan, zien klanten anders een betaalformulier en kunnen ze geen bestelling plaatsen.
+> U moet een unieke API en [!DNL Publishable] toetsen voordat de extensie wordt ingeschakeld, anders zien klanten een betaalformulier en kunnen ze geen bestelling plaatsen.
 
 ## Volledige beheerdersconfiguratie
 
@@ -100,6 +103,19 @@ Om het [!DNL Quick Checkout] voor Adobe Commerce-extensie:
 
 1. Controleer of de [!UICONTROL Enable] dropdown is ingesteld op **Ja** om de extensie te activeren.
 1. Klikken **Config opslaan**.
+
+## Winkel controleren op geldig account
+
+Controleren of de koper een [!DNL Bolt] account:
+
+1. Van bereik wisselen naar **Hoofdwebsite**.
+1. Klik op de knop **Callback-URL configureren** knop. Dit maakt [!DNL Bolt] om te bepalen of de koper een account heeft. Als zij, OTP pop-up verschijnen.
+
+>[!CAUTION]
+>
+> Het bereik overschakelen op het **Hoofdwebsite** zorgt ervoor dat de juiste URL is ingesteld. Elke website kan meerdere domeinen hebben.
+
+Zie de [Bereik van site, winkel en weergave](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings){target=&quot;_blank&quot;} voor meer informatie over het bereik in Adobe Commerce.
 
 ## Hulp vragen
 
