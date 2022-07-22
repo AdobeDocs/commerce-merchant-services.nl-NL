@@ -2,9 +2,9 @@
 title: Installeren [!DNL Payment Services]
 description: Installeer de uitbreiding van de Diensten van Betalingen.
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 647848c58213ea7f85d8a2c025146aa065042433
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '435'
 ht-degree: 0%
 
 ---
@@ -20,12 +20,6 @@ De [!DNL Payment Services] verlenging voor [!DNL Adobe Commerce] en [!DNL Magent
 Zie [Uw verificatietoetsen ophalen](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) voor meer informatie over het verkrijgen van Composer-sleutels.
 
 Er zijn twee manieren om deze extensie te installeren—voor [[!DNL Adobe Commerce] over cloudinfrastructuur](install.md#adobe-commerce-on-cloud-infrastructure) of [In de bedrijfsruimten](install.md#on-premises) installaties. Deze methodes vereisen u om de Interface van de Lijn van het Bevel (CLI) te gebruiken.
-
-## Minimale stabiliteit bijwerken
-
-Voordat u de extensie installeert, moet u de `minimum-stability` vereiste `RC` (releasekandidaat) in uw `composer.json` bestand. U kunt winde of uw favoriete tekstredacteur (zoals de Code van Visual Studio of de Tekst van het Sublim) gebruiken.
-
-In uw `composer.json` bestand, wijzigen `"minimum-stability": "stable"` tot `"minimum-stability": "RC"`.
 
 ## De extensie installeren
 
