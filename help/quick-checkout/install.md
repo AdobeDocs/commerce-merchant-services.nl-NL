@@ -2,9 +2,9 @@
 title: '"Installeer de [!DNL Quick Checkout] voor Adobe Commerce-extensie"'
 description: '"Voer de volgende stappen uit om de [!DNL Quick Checkout] in uw Adobe Commerce-project."'
 exl-id: e1dabc9a-0ab0-4f8d-98d3-7a32abbedcb8
-source-git-commit: dc13c1e38c92341cfd3221a72e6568220b44690a
+source-git-commit: d6cb5ae5437f78cacb0208269598896f5d8523d0
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
@@ -19,9 +19,9 @@ Er zijn twee manieren om deze extensie te installeren—voor [Adobe Commerce ove
 
 ## Minimale stabiliteit bijwerken
 
-Voordat u de extensie installeert, kunt u de opdracht `minimum-stability` vereiste `RC` (releasekandidaat) in uw `composer.json` file als u de versie van de versiekandidaat wilt proberen. U kunt winde of uw favoriete tekstredacteur (zoals de Code van Visual Studio of de Tekst van het Sublim) gebruiken.
+Voordat u de extensie installeert, moet u ervoor zorgen dat `minimum-stability` in uw `composer.json` bestand is ingesteld op `"stable"`:
 
-In uw `composer.json` bestand, wijzigen `"minimum-stability": "stable"` tot `"minimum-stability": "RC"`.
+`"minimum-stability": "stable"`
 
 ## De extensie installeren
 
