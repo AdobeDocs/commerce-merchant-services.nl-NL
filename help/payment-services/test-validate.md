@@ -2,9 +2,9 @@
 title: Testen en valideren
 description: Testen en valideren helpen u ervoor te zorgen dat [!DNL Payment Services] functies werken naar behoren en bieden de beste betalingsopties voor uw klanten
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
-source-git-commit: 599405b908cc8b770c917a18ad488a1f69be222b
+source-git-commit: 41d93ffc2f9d518d9d4cf4abf2d53484821c13f2
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '482'
 ht-degree: 0%
 
 ---
@@ -17,16 +17,18 @@ Voordat u [!DNL Payment Services] for [!DNL Adobe Commerce] en [!DNL Magento Ope
 
 Testen [!DNL Payment Services] in een sandbox-omgeving is een belangrijke validatiestap, ook al is het een gesimuleerde omgeving die alleen is verbonden met de PayPal-sandbox, niet met echte banken en handelaren.
 
-1. Voltooi een geslaagde afhandeling in je winkel, ofwel met [Creditcardvelden](payments-options.md#credit-card-fields) of [Slimme PayPal-knoppen](payments-options.md#paypal-smart-buttons). Zie [Sandboxmodus gebruiken](#use-sandbox-mode) voor meer informatie over het gebruik van valse creditcards voor het testen.
-1. Vastleggen (wanneer uw betalingsactie is [instellen op `Authorize and Capture`](production.md#set-payment-services-as-payment-method), [teruggave](refunds.md), of [void](voids.md) de zojuist voltooide bestelling. U kunt ook eenvoudig [een factuur maken](https://docs.magento.com/user-guide/sales/invoice-create.html){target=&quot;_blank&quot;} voor een bestelling als uw betalingsactie is ingesteld op `Authorize` in plaats van `Authorize and Capture`.
+1. Voltooi een geslaagde afhandeling in je winkel, ofwel met [Creditcardvelden](payments-options.md#credit-card-fields) of een van de [Slimme PayPal-knoppen](payments-options.md#paypal-smart-buttons). Zie [Referenties testen](#testing-credentials) voor meer informatie over het gebruik van valse creditcards voor het testen.
+1. Vastleggen (wanneer uw betalingsactie is [instellen op `Authorize and Capture`](onboard.md#set-payment-services-as-payment-method)), [teruggave](refunds.md), of [void](voids.md) de zojuist voltooide bestelling. U kunt ook eenvoudig [een factuur maken](https://docs.magento.com/user-guide/sales/invoice-create.html){target=&quot;_blank&quot;} voor een bestelling als uw betalingsactie is ingesteld op `Authorize` in plaats van `Authorize and Capture`.
 1. Bekijk de transactie en andere informatie in de [Uitbetalingsrapport](payouts.md).
 1. Zie de details van de bestelling in de [Betalingsstatusrapport bestellen](order-payment-status.md).
 
-### Sandboxmodus gebruiken
+### Referenties testen
 
 Bij het testen en valideren van uw sandbox moet u valse creditcardnummers gebruiken, zodat u geen echte kosten maakt voor een bestaande creditcardaccount.
 
 De PayPal-creditcardgenerator gebruiken voor [willekeurige creditcardgegevens genereren](https://www.paypal.com/us/smarthelp/article/where-can-i-find-test-credit-card-numbers-ts2157) voor het testen.
+
+Als u Apple Pay wilt testen in de sandboxmodus, moet u beschikken over een [Apple Developer Account](https://developer.apple.com/programs/enroll/), invullen met valse creditcard- en factureringsgegevens.
 
 >[!NOTE]
 >
@@ -44,3 +46,7 @@ U kunt testen [!DNL Payment Services] bij de productie op twee manieren:
 Voltooi uw productietests met echte creditcards en PayPal-rekeningen en test de volledige levenscyclus van een betaling, inclusief het vastleggen en terugbetalen. Als u het hele afrekenen en de betalingsstroom tijdens de tests uitvoert, krijgt u een duidelijk beeld van hoe uw [!DNL Payment Services] Deze functionaliteit werkt wanneer actieve kopers deze gebruiken.
 
 U moet ook controleren of de gegevens die op de bankafschriften staan voor de betalingsmethoden die u gebruikt bij het testen van de productie juist en verwacht zijn (inclusief de beschrijving van uw bedrijf).
+
+>[!NOTE]
+>
+>Als je het testen van de productie voor Apple Pay wilt voltooien, moet je contact opnemen met de verkoper om Apple Pay voor je productieomgeving in te schakelen.

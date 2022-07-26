@@ -2,9 +2,9 @@
 title: '"[!DNL Payment Services] Opmerkingen bij de release"'
 description: Lees de opmerkingen bij de release voor meer informatie over alle [!DNL Payment Services] lozingen.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 7c02bb8dcb7b5daa68664bd12672ac389f84cfa1
+source-git-commit: 169593cdf069f9ee95be5bcff3783cc8cfc82c3f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '841'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,8 @@ Zie [Beschikbaarheid](https://devdocs.magento.com/release/availability.html) in 
 ## v1.2.0
 
 _29 juni 2022_
+
+![Bekend probleem](../assets/bug.svg)<!-- Issue PAY-x --> Apple Pay is niet compatibel met Safari browser v15.5 op mobiele apparaten en desktops. Als je Safari versie 15.5 gebruikt, kun je het afrekenen met Apple Pay niet voltooien.
 
 ![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-3264 --> Eerder, toen een aangemelde gebruiker een ander facturerings/verzendadres dan het standaardadres voor zijn account selecteerde, mislukte het afrekenen. We hebben dit probleem opgelost en nu wordt het geselecteerde factuuradres/verzendadres verzonden (in plaats van het standaard opgeslagen adres) en wordt het afrekenen voltooid.
 

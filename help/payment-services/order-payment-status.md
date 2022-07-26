@@ -4,9 +4,9 @@ description: Gebruik het rapport Betalingsstatus bestellen om de betalingsstatus
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: fde5844ad6c602708f9a5ad76ce8c9b5547dba76
+source-git-commit: 59cceb1cab1ed2bcfaa7d59c54a40255a38dea29
 workflow-type: tm+mt
-source-wordcount: '1359'
+source-wordcount: '1436'
 ht-degree: 0%
 
 ---
@@ -73,14 +73,14 @@ Indien _[!UICONTROL Live]_is de geselecteerde gegevensbron, kunt u rapportinform
 
 Gegevensbronselecties werken als volgt:
 
-* Als u geen winkels hebt die [!DNL Payment Services] in Live-modus wordt de gegevensbronselectie standaard ingesteld op [!UICONTROL Sandbox]_.
+* Als u geen winkels hebt die [!DNL Payment Services] in Live-modus wordt de gegevensbronselectie standaard ingesteld op _[!UICONTROL Sandbox]_.
 * Als u opslagruimten (één of meerdere) hebt die [!DNL Payment Services] in Live-modus wordt de gegevensbronselectie standaard ingesteld op _[!UICONTROL Live]_.
 * De uitvoer van het rapport respecteert altijd de gegevensbronselectie.
 
 Om de gegevensbron voor uw te selecteren [!UICONTROL Order Payment Status] rapport:
 
 1. Op de _Beheer_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
-1. Klikken **[!UICONTROL Data source]** en selecteert u _[!UICONTROL Live]_of [!UICONTROL Sandbox]_.
+1. Klikken **[!UICONTROL Data source]** en selecteert u _[!UICONTROL Live]_of_[!UICONTROL Sandbox]_.
 
    De rapportresultaten regenereren op basis van de geselecteerde gegevensbron.
 
@@ -105,11 +105,23 @@ Het rapport Betalingsstatus bestelling toont standaard alle beschikbare kolommen
 
 ## Statussen weergeven
 
+De weergave van het rapport Betalingsstatus bestellen toont een uitgebreide transactiestatus en informatie over de betalingsstatus voor elke betalingsopdracht.
+
+### Transactiestatus
+
 Standaard worden de betalingsstatussen van 30 dagen voor bestellingen weergegeven in het raster.
 
 Naar links en rechts schuiven om weer te geven [betalingsstatus bestellen](#column-descriptions), inclusief opdrachtdatum, geoorloofde datum, facturering, verzending, status van betaling en meer.
 
 Het aantal rijen dat wordt geretourneerd in een zoekopdracht of dat wordt weergegeven in de standaardbetalingsstatus van 30 dagen van een bestelling, wordt boven het weergaveraster voor betalingsstatus van bestelling weergegeven naast het filter Kalender voor orderdatums.
+
+### Betaalstatus
+
+In de statuskolom Betalen wordt de huidige status van een betaling weergegeven. A `Capture failed` betaling geeft een status van een rood waarschuwingsbericht en een `Voided` bij betaling wordt een grijze waarschuwingsstatus weergegeven.
+
+### Terugbetalingsstatus
+
+In de statuskolom Restitutie wordt de huidige status voor elke restitutie weergegeven. A `Capture failed` betaling geeft een status van een rood waarschuwingsbericht en een `Voided` bij betaling wordt een grijze waarschuwingsstatus weergegeven.
 
 ## Rapportgegevens bijwerken
 
