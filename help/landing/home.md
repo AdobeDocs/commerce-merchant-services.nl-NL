@@ -5,7 +5,7 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
 breadcrumb-title: Documentatie
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: 688cfa8eb7a871453c7a26a442ceb54ee78b2fd9
+source-git-commit: 39f7725105cb7773fd43f4b65fd9ea0c1c2182df
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 0%
@@ -64,13 +64,13 @@ Adobe verstrekt een inzameling van de ontvangen diensten om handelaren te helpen
     <em>Verhoog de verkoop, bereikt nieuwe klanten, stroomlijnt verkoopverrichtingen, en bespaar tijd door een Adobe Commerce of Magento Open Source te integreren productcatalogus met de Marketplace van het Markeren van het Markeren. Laat opslagbeheerders en verrichtingenpersoneel toe om de verkoop van de Marketplace van de Markt van de Walmart, inventaris, en productprijs foutloos van het milieu van de Handel te beheren.</em>
     </br>
   </td>
-    <td valign="top">
-       <img alt="Afhandeling van winkel" src="assets/store-fulfillment-landing-graphic.png"/>
+  <td valign="top">
+    <img alt="Afhandeling van winkel" src="assets/store-fulfillment-landing-graphic.png"/>
     <div><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html">
     <strong>[!DNL Store Fulfillment]</strong></a>
     </div>
     <p>(alleen Adobe Commerce)<br><em>Lever een superieure aankoop online, haal in-store (BOPIS) klantenervaring op, en maximaliseer de productiviteit van de werknemers van de opslag door een van begin tot eind, naadloze omnichannel uitvoeringsworkflow te verstrekken die door een mobiel apparaat wordt toegelaten.</em></p>
-    <br>
+    </br>
   </td>
 </tr>
 </table>
@@ -94,4 +94,3 @@ De volgende punten zijn recente veranderingen in de documentatie:
 * Extra B2B-ondersteuning in [[!DNL Product Recommendations]](/help/product-recommendations/overview.md).
 * De [[!DNL Channel Manager User Guide]](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html) voor klanten die de verkoop van de Marketplace van de Markt van Walmart willen beheren [!DNL Commerce] -instantie.
 * De [[!DNL Store Fulfillment User Guide]](https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html) voor klanten die hun aankoop online willen verbeteren, de klantenervaring van de klant van de Opslag (BOPIS) oppakken en een mobiel-toegelaten, naadloze omnichannel uitvoeringswerkschema voor in-store en curbside bestelwagen leveren.
-
