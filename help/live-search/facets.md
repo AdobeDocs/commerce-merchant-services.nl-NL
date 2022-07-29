@@ -2,9 +2,9 @@
 title: '"Facets"'
 description: '"[!DNL Live Search] facetten gebruiken meerdere afmetingen van kenmerkwaarden als zoekcriteria."'
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 238ce2f774207f387970d3c833e0a29f0ede6550
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ De categorie- en productkenmerkvereisten voor facetten zijn vergelijkbaar met de
 |--- |--- |
 | [Weergave-instellingen voor categorie](https://docs.magento.com/user-guide/catalog/categories-display-settings.html) | Anker - `Yes` |
 | [Eigenschappen van kenmerk](https://docs.magento.com/user-guide/stores/attribute-product-create.html) | [Invoertype catalogus](https://docs.magento.com/user-guide/stores/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price` |
-| Eigenschappen van kenmerkarchief | Gebruiken in gelaagde navigatie - `Filterable (with results)` |
+| Eigenschappen van kenmerkarchief | Gebruiken in gelaagde navigatie met zoekresultaten - `Yes` |
 
 ## Standaardkenmerkwaarden
 
