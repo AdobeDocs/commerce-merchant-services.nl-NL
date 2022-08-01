@@ -2,9 +2,9 @@
 title: '"[!DNL Live Search] Indexeren"'
 description: '"Meer informatie [!DNL Live Search] indexes product attribute properties."'
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 2835209ad881db388894c5b1da213312436d3550
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '547'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Eigenschappen van productkenmerken (metagegevens) bepalen hoe een kenmerk in de catalogus kan worden gebruikt, hoe dit kenmerk er uitziet en hoe het in de winkel functioneert, en welke gegevens in gegevensoverdrachtsbewerkingen worden opgenomen. Het bereik van kenmerkmetagegevens is `website/store/store view`.
 
-De [!DNL Live Search] API staat een cliënt toe om op om het even welk productattribuut te sorteren dat heeft [storefront, eigenschap](https://docs.magento.com/user-guide/stores/attributes-product.html) `Use in Search` instellen op `Yes` in Adobe Commerce Admin.
+De [!DNL Live Search] API staat een cliënt toe om op om het even welk productattribuut te sorteren dat heeft [storefront, eigenschap](https://docs.magento.com/user-guide/stores/attributes-product.html) `Use in Search` instellen op `Yes` in Adobe Commerce Admin. Indien ingeschakeld, `Search Weight` en `Visible in Advanced Search` kan worden ingesteld voor het kenmerk.
 
 >[!NOTE]
 >
