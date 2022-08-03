@@ -2,9 +2,9 @@
 title: '"Aan boord van de [!DNL Quick Checkout] voor Adobe Commerce-extensie"'
 description: '"Leer hoe u [!DNL Quick Checkout] kan uw Adobe Commerce-exemplaar ten goede komen en de extensie met succes aan boord installeren en instellen."'
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: 0624ddc369ddedaaf9ae741831e0d5c5589ea4c2
+source-git-commit: 70f7772765dd66c8db779d29d4b661edb7d0c64a
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '697'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Als u de opdracht [!DNL Quick Checkout] u hebt [!DNL Bolt] unieke toetsen en [!D
 - [!DNL Publishable key]: Een toets die door uw voorzijde wordt gebruikt om te communiceren met [!DNL Bolt] API&#39;s.
 - [!DNL Signing secret]: Wordt gebruikt voor handtekeningverificatie op aanvragen die zijn ontvangen van [!DNL Bolt].
 
-![Snelle afhandeling](assets/account-credentials.png)
+   ![Snelle afhandeling](assets/account-credentials.png)
 
 Zie de [[!DNL Bolt] omgevingsdetails](https://help.bolt.com/developers/references/environment-details/#about-keys){target=&quot;_blank&quot;_page voor meer informatie over sleutels en het ondertekenen van een geheim van [!DNL Bolt] voor de [!DNL Quick Checkout] extensie.
 
@@ -73,6 +73,13 @@ Volg de stappen in het dialoogvenster [processorinstelling](https://help.bolt.co
 1. Op de _Beheer_ zijbalk, ga naar **Winkels** > _Instellingen_ > **Configuratie**.
 1. Vouw in het linkerdeelvenster uit **Verkoop** en selecteert u **Afhandeling**.
 1. In de [!DNL Quick Checkout] weergave, instellen **Inschakelen** tot `Yes`.
+
+![Snelle afhandeling](assets/quick-checkout-view-no-enable.png)
+
+>[!CAUTION]
+>
+> Velden voor Snelle uitchecken zijn alleen zichtbaar wanneer **Inschakelen** is ingesteld op `Yes`.
+
 1. Selecteer de methode (Sandbox of Production) die u wilt gebruiken.
 
    - Sandbox voor test- en ontwikkelingsdoeleinden
@@ -80,7 +87,7 @@ Volg de stappen in het dialoogvenster [processorinstelling](https://help.bolt.co
 
 1. Valideer referenties nadat u de unieke API hebt opgegeven en [!DNL Publishable keys].
 
-![Snelle afhandeling](assets/extension-view.png)
+![Snelle afhandeling](assets/quick-checkout-main-view.png)
 
 >[!CAUTION]
 >
