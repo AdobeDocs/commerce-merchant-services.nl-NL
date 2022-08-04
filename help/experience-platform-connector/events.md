@@ -2,9 +2,9 @@
 title: Gebeurtenissen
 description: Leer welke gebeurtenissen gegevens vangen en de volledige schemadefinitie zien.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: ce437d7a991affd2665c86c9e91bb7f39ec626c0
+source-git-commit: 15b7a8be65e5063606bb58755d0719b0ca54de37
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '251'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,8 @@ Klik op de naam van de gebeurtenis om de volledige schemadefinitie weer te geven
 | [Afmelden](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/signOutAEP.ts) | Profiel |
 | [Account maken](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/createAccountAEP.ts) | Profiel |
 | [Account bewerken](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/editAccountAEP.ts) | Profiel |
+| [Zoekverzoek verzonden](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/search/searchRequestSentAEP.ts) | Zoeken |
+| [Respons zoeken ontvangen](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/search/searchResponseReceivedAEP.ts) | Zoeken |
 
 >[!NOTE]
 >

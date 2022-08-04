@@ -2,9 +2,9 @@
 title: Overzicht van hulplijnen
 description: Adobe Experience Platform-connector voor Adobe Commerce sluit uw [!DNL Commerce] naar andere Adobe Experience Cloud-producten.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
-source-git-commit: 334ee967ec2379a87acfc5fb427d7ada6fa25ee7
+source-git-commit: 15b7a8be65e5063606bb58755d0719b0ca54de37
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
@@ -37,10 +37,15 @@ Wanneer toegang wordt verleend:
 - Installeer de [Experience Platform connector-extensie](install.md).
 
    De verbindingsuitbreiding van het Experience Platform wordt geïnstalleerd vanaf de bevellijn van de server en verbindt met uw installatie van Adobe Commerce als a [service](../landing/saas.md). Wanneer het proces is voltooid, verschijnt de verbindingslijn van het Experience Platform op **Systeem** menu onder **Services** in de [!DNL Commerce] _Beheer_.
+- [Knopprofielen uploaden](profile.md) aan Adobe Experience Platform, zodat gegevens over de winkel kunnen worden toegeschreven aan specifieke kopers om hun winkelervaring te verbeteren.
 
 ## Publiek
 
 Deze handleiding is bedoeld voor de Adobe Commerce-handelaar die zijn Adobe Commerce-winkelgegevens moet verbinden met andere Adobe DX-producten.
+
+### Ondersteuning voor PWA Studio&#39;s
+
+Zie de [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/) documentatie voor informatie over hoe te om de schakelaar van het Experience Platform in een PWA Studio opslagront te gebruiken.
 
 ## Bekende problemen
 
