@@ -1,9 +1,10 @@
 ---
-title: '"[!DNL Quick Checkout] Opmerkingen bij de release"'
+title: '''[!DNL Quick Checkout] Opmerkingen bij de release'
 description: Lees de opmerkingen bij de release voor meer informatie over alle [!DNL Quick Checkout] lozingen.
-source-git-commit: dc13c1e38c92341cfd3221a72e6568220b44690a
+exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
+source-git-commit: 6162141e1ddf4428126178bd172e8d9bd250c485
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '263'
 ht-degree: 0%
 
 ---
@@ -30,10 +31,14 @@ Zie [Beschikbaarheid](https://devdocs.magento.com/release/availability.html) in 
 
 ![Nieuw](../assets/new.svg)<!-- Issue BOLT-1 --> De [!DNL Quick Checkout] voor Adobe Commerce herkent automatisch elke verkoopster in zijn netwerk voor [aankopen met één klik](checkout-flow.md) rechtstreeks op uw site.
 
+![Nieuw](../assets/new.svg)<!-- Issue BOLT-1 --> De [!DNL Quick Checkout] voor Adobe Commerce is een winkelier tegelijkertijd [zowel Adobe Commerce- als Bolt-netwerken aangemeld](checkout-flow.md/#quick-checkout-use-cases) een betere `one-click checkout` ervaring.
+
 ![Nieuw](../assets/new.svg)<!-- Issue BOLT-218 --> [!DNL Quick Checkout] voor Adobe Commerce ondersteunt een [sandboxaccount](testing.md#testing-in-sandbox) die handelaren in staat stelt de uitbreiding in testmodus te beoordelen.
 
 ![Nieuw](../assets/new.svg)<!-- Issue BOLT-780 --> Je kopers kunnen uitchecken via de [[!DNL Quick Checkout]](checkout-page.md) of via een [handbestelling maken](create-order-admin.md).
 
 ![Nieuw](../assets/new.svg)<!-- Issue BOLT-666 --> Handelaars kunnen de [!DNL Quick Checkout] met basisbetalingsacties, zoals [`Authorize and Capture` of `Authorize` ](onboarding.md#complete-admin-configuration)of schakelen tussen sandbox- en productieomgevingen.
+
+![Nieuw](../assets/new.svg)<!-- Issue BOLT-288 --> Aangepast [gebruikerssessielevensduur](user-session-lifetime.md) for [!DNL Quick Checkout] voor Adobe Commerce.
 
 ![Bekend probleem](../assets/bug.svg)<!-- Issue BOLT-342 --> Gebruiken [onjuiste Composer-sleutels](https://support.magento.com/hc/en-us/articles/6909450342541) tijdens de installatie van de [!DNL Quick Checkout] voorkomt dat de gebruiker [verifiëren](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) met de juiste `MAGEID`.
