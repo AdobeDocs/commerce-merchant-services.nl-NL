@@ -2,9 +2,9 @@
 title: '"Facets"'
 description: '"[!DNL Live Search] facetten gebruiken meerdere afmetingen van kenmerkwaarden als zoekcriteria."'
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 238ce2f774207f387970d3c833e0a29f0ede6550
+source-git-commit: 40e7da1cb71bd3c977acb77714c2cab55b3b7bf8
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '382'
 ht-degree: 0%
 
 ---
@@ -19,8 +19,12 @@ Faceting is een methode voor het filteren van hoge prestaties waarbij meerdere d
 
 De categorie- en productkenmerkvereisten voor facetten zijn vergelijkbaar met de filterbare kenmerken die worden gebruikt voor gelaagde navigatie. De storefront-eigenschappen van elk kenmerk moeten zijn ingesteld op `filterable (with results)`.
 
-* Tot 100 attributen kunnen als facetten met worden gevormd [!DNL Live Search].
-* [!DNL Live Search] indexeert maximaal 300 kenmerken als filterbaar/doorzoekbaar/sorteerbaar en zichtbaar in de zoekopdracht.
+Live zoeken ondersteunt maximaal:
+
+* 100 kenmerken geconfigureerd als facetten
+* 50 sorteerbare kenmerken
+* 200 filterbare kenmerken
+* 200 doorzoekbare kenmerken
 
 | Instelling | Beschrijving |
 |--- |--- |

@@ -2,9 +2,9 @@
 title: '"[!DNL Live Search] Opmerkingen bij de release"'
 description: '"De meest recente releasegegevens voor [!DNL Live Search] uit Adobe Commerce."'
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 097f8af7a1e3e904c69d3a7fe52cb0db5b1b4c23
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '858'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,29 @@ In deze releaseopmerkingen worden de meest recente versies van [!DNL Live Search
 * ![Nieuw](../assets/new.svg) - Nieuwe functies
 * ![Repareren](../assets/fix.svg) - Oplossingen en verbeteringen
 * ![Bug](../assets/bug.svg) - Bekende problemen
+
+## [!DNL Live Search] 2.0.3.
+
+* Compatibel met Adobe Commerce (EE): 2,4 x
+* Compatibel met Adobe Commerce for Cloud (ECE): 2,4 x
+* Stabiliteit: Stabiel
+
+* ![Nieuw](../assets/new.svg) - Live zoeken ondersteunt nu B2B-functies door categorietoestemmingen, gedeelde catalogi en klantspecifieke prijzen te respecteren.
+
+Handelaars moeten de Live Search extensie versie >= 2.0.3 upgraden om toegang te krijgen tot deze functies.
+
+We raden gebruikers aan een upgrade uit te voeren en te testen voordat ze naar de productie gaan. Overweeg om de productieomgeving tijdens niet-piekuren te upgraden nadat de resultaten van de testomgeving zijn gecontroleerd.
+
+>[!NOTE]
+>
+>B2B-ondersteuning wordt geleidelijk toegevoegd vanaf 9 augustus op de back-enddiensten, met een verwachte migratie die eind augustus voltooid zal zijn. Als de extensie Live zoeken niet wordt bijgewerkt, blijft uw winkel normaal werken, maar zonder B2B-functies.
+
+### Bekende beperkingen/bugs:
+
+* ![Bug](../assets/bug.svg) - Suggesties zijn afkomstig van producten die niet zichtbaar zijn voor de klantengroep.
+* ![Bug](../assets/bug.svg) - Producten worden niet weergegeven als ze niet worden toegevoegd aan de &quot;Standaard gedeelde catalogus&quot;.
+* B2B met Live zoeken naar PWA Studio is pas beschikbaar als de PWA Studio er ondersteuning voor heeft toegevoegd.
+* Productoverschrijvingen en productkenmerken hebben mogelijk synchronisatieproblemen die beheerders moeten uitvoeren `bin/magento indexer:reset` en `bin/magento indexer:reindex` om opnieuw te synchroniseren.
 
 ## [!DNL Live Search] 2,0
 
