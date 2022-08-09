@@ -1,9 +1,10 @@
 ---
 title: Connect Commerce-gegevens naar Adobe Experience Platform
 description: Leer hoe u de gegevens van de Handel met de Adobe Experience Platform verbindt.
-source-git-commit: 9b5f2da08167e22bbba504009bccc87d0ab02c48
+exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
+source-git-commit: 2b735c292920bb0e9052d86bf152748e7ce96079
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
@@ -34,7 +35,7 @@ Met de DataStream-id wordt het doorsturen van gebeurtenissen van Adobe Experienc
 | IMS Org (Global) | Id die behoort tot de organisatie die het Adobe DX-product heeft aangeschaft. Deze id koppelt uw Adobe Commerce-exemplaar aan Adobe Experience Platform. |
 | DataStream-id (Storeview) | ID die gegevens om van Adobe Experience Platform aan andere Adobe DX producten toestaat te stromen. Deze id kan worden gekoppeld aan een specifieke storeView binnen uw specifieke Adobe Commerce-exemplaar. |
 
-Wanneer de Experience Platform-connector is geïnstalleerd, is de koppeling tussen Adobe Commerce en Adobe Experience Platform gemaakt en is de DataStream-id opgegeven. [!DNL Commerce] gegevens beginnen naar de Adobe Experience Platform edge en naar andere Adobe DX producten te stromen.
+Als de extensie voor de aansluiting van het Experience Platform is geïnstalleerd, wordt de koppeling tussen Adobe Commerce en Adobe Experience Platform gemaakt en wordt de DataStream-id opgegeven. De gegevens van de handel gaan dan naar de Adobe Experience Platform-rand en naar andere Adobe DX-producten.
 
 ## Commerciële gegevens aan de rand
 

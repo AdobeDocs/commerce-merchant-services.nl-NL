@@ -2,16 +2,16 @@
 title: Aangepaste gebeurtenissen maken
 description: Leer hoe u aangepaste gebeurtenissen maakt, uw Adobe Commerce-gegevens aansluiten op andere Adobe DX-producten.
 exl-id: 5a754106-c66a-4280-9896-6d065df8a841
-source-git-commit: ce437d7a991affd2665c86c9e91bb7f39ec626c0
+source-git-commit: 2b735c292920bb0e9052d86bf152748e7ce96079
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '222'
 ht-degree: 0%
 
 ---
 
 # Aangepaste gebeurtenissen maken
 
-U kunt de [uitvalplatform](events.md) door uw eigen winkelgebeurtenissen te maken om gegevens te verzamelen die uniek zijn voor uw branche. Wanneer u een douanegebeurtenis creeert en vormt, wordt het verzonden naar [Adobe Commerce Event Collector](https://www.npmjs.com/package/@adobe/magento-storefront-event-collector).
+U kunt de [uitvalplatform](events.md) door uw eigen winkelgebeurtenissen te maken om gegevens te verzamelen die uniek zijn voor uw branche. Wanneer u een douanegebeurtenis creeert en vormt, wordt het verzonden naar [Adobe Commerce Events Collector](https://github.com/adobe/commerce-events/tree/main/packages/commerce-events-collectors).
 
 ## Aangepaste gebeurtenissen verwerken
 
@@ -21,7 +21,7 @@ Voor alle `custom` gebeurtenis, voegt de verzamelaar een `personId` (`ecid`) naa
 
 Voorbeeld:
 
-Aangepaste gebeurtenis gepubliceerd via MSE SDK:
+Aangepaste gebeurtenis gepubliceerd via Adobe Commerce Events SDK:
 
 ```javascript
 mse.publish.custom({
@@ -53,7 +53,7 @@ Voor elke gebeurtenis met een set `customContext`, overschrijft de verzamelaar `
 
 Voorbeelden:
 
-De mening van het product met met voeten getreden die door MSE SDK wordt gepubliceerd:
+De mening van het product met met voeten getreden die door Adobe Commerce Events SDK wordt gepubliceerd:
 
 ```javascript
 mse.publish.productPageView({
@@ -78,7 +78,7 @@ In Experience Platform rand:
 }
 ```
 
-De mening van het product met de met Adobe Commerce met voeten getreden die door MSE SDK wordt gepubliceerd:
+Productweergave met Adobe Commerce overschrijft de publicatie via Adobe Commerce Events SDK:
 
 ```javascript
 mse.publish.productPageView({

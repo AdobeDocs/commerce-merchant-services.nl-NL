@@ -2,14 +2,14 @@
 title: Opmerkingen bij de release
 description: De nieuwste release-informatie voor Adobe Experience Platform-connector vanuit Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: 3b71b8cd6ba0036d660d078a7f80371e7671ea9f
+source-git-commit: 1c881bd5783653304d71a7a4a3db9f3471bd0ae3
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '63'
 ht-degree: 0%
 
 ---
 
-# Opmerkingen bij de release Experience Platform-aansluiting
+# Opmerkingen bij de release
 
 Deze releaseopmerkingen beschrijven de nieuwste versies van de aansluiting van het Experience Platform en bevatten:
 
@@ -17,11 +17,9 @@ Deze releaseopmerkingen beschrijven de nieuwste versies van de aansluiting van h
 * ![Repareren](../assets/fix.svg) - Oplossingen en verbeteringen
 * ![Bug](../assets/bug.svg) - Bekende problemen
 
-## Aansluiting Experience Platform 1.1.0
+## Experience Platform connector 1.0.0
 
-* Compatibel met Adobe Commerce (EE): 2.4.4.
-* Compatibel met Adobe Commerce for Cloud (ECE): 2.4.4.
-* Stabiliteit: Stabiel
+* ![Nieuw](../assets/new.svg) - Algemene beschikbaarheidsrelease
 
 ## Documentatie
 

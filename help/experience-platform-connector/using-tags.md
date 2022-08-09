@@ -1,9 +1,10 @@
 ---
 title: Gegevens voor handel verzamelen met Adobe Experience Platform-tags
 description: Leer hoe u gegevens over handel kunt verzamelen met Adobe Experience Platform-tags.
-source-git-commit: 93133019f8004437ef85db32ff336bfd0e8c6fc2
+exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
+source-git-commit: b5fb915f6ffcc24e72310bc79cba4b08a65128e3
 workflow-type: tm+mt
-source-wordcount: '2126'
+source-wordcount: '2138'
 ht-degree: 0%
 
 ---
@@ -21,7 +22,7 @@ In dit onderwerp, zult u leren hoe te om de waarden van de storefront gebeurteni
 
 Gegevens over Commerce-gebeurtenissen verzamelen:
 
-- Installeer de [Adobe Commerce Event SDK](https://www.npmjs.com/package/@adobe/magento-storefront-events-sdk). Voor PHP-winkels raadpleegt u de [installeren](install.md) onderwerp. Voor PWA Studio-winkels raadpleegt u de [Hulplijn PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/).
+- Installeer de [Adobe Commerce Events SDK](https://github.com/adobe/commerce-events/tree/main/packages/commerce-events-sdk). Voor PHP-winkels raadpleegt u de [installeren](install.md) onderwerp. Voor PWA Studio-winkels raadpleegt u de [Hulplijn PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/).
 
    >[!NOTE]
    >
@@ -161,7 +162,7 @@ Maak de volgende gegevenselementen:
    - **Naam**: `Account email`
    - **Extensie**: `Adobe Client Data Layer`
    - **Type gegevenselement**: `Data Layer Computed State`
-   - **[Optioneel] pad**: `accountContext.accountEmail`
+   - **[Optioneel] pad**: `accountContext.emailAddress`
 
 1. Accounttype:
 
@@ -210,7 +211,7 @@ Maak de volgende gegevenselementen:
    - **Naam**: `Account email`
    - **Extensie**: `Adobe Client Data Layer`
    - **Type gegevenselement**: `Data Layer Computed State`
-   - **[Optioneel] pad**: `accountContext.accountEmail`
+   - **[Optioneel] pad**: `accountContext.emailAddress`
 
 1. Accounttype:
 
@@ -259,7 +260,7 @@ Maak de volgende gegevenselementen:
    - **Naam**: `Account email`
    - **Extensie**: `Adobe Client Data Layer`
    - **Type gegevenselement**: `Data Layer Computed State`
-   - **[Optioneel] pad**: `accountContext.accountEmail`
+   - **[Optioneel] pad**: `accountContext.emailAddress`
 
 1. Accounttype:
 
@@ -344,12 +345,23 @@ Maak de volgende gegevenselementen:
    - **Type gegevenselement**: `Data Layer Computed State`
    - **[Optioneel] pad**: `productContext.sku`
 
-1. Valutacode:
+1. Productvaluta:
 
-   - **Naam**: `Currency code`
+   - **Naam**: `Product currency`
    - **Extensie**: `Adobe Client Data Layer`
    - **Type gegevenselement**: `Data Layer Computed State`
    - **[Optioneel] pad**: `productContext.pricing.currencyCode`
+
+1. Valutacode:
+
+   - **Naam**: `Currency code`
+   - **Extensie**: `Core`
+   - **Type gegevenselement**: `Custom Code`
+   - **Editor openen**:
+
+   ```bash
+   return _satellite.getVar('product currency') || _satellite.getVar('storefront').storeViewCurrencyCode
+   ```
 
 1. Speciale prijs:
 
@@ -370,7 +382,11 @@ Maak de volgende gegevenselementen:
    - **Naam**: `Product price`
    - **Extensie**: `Core`
    - **Type gegevenselement**: `Custom Code`
-   - **Editor openen**: `return _satellite.getVar('product regular price') || _satellite.getVar('product special price')`
+   - **Editor openen**:
+
+   ```bash
+   return _satellite.getVar('product regular price') || _satellite.getVar('product special price')
+   ```
 
 1. Productweergave:
 
@@ -414,7 +430,7 @@ Maak de volgende gegevenselementen:
    - **Editor openen**:
 
    ```bash
-   `return _satellite.getVar('search input').phrase;`
+   return _satellite.getVar('search input').phrase;
    ```
 
 1. Invoersortering zoeken
@@ -517,7 +533,7 @@ Maak de volgende gegevenselementen:
    - **Editor openen**:
 
    ```bash
-   return _satellite.getVar('search result').productCount;
+   return _satellite.getVar('search result').products.length;
    ```
 
 1. Producten zoekresultaten:
@@ -712,13 +728,13 @@ Maak de volgende gegevenselementen:
    - **Editor openen**:
 
    ```bash
-   const searchResult = _satellite.getVar('storefront');
+   const storefrontContext = _satellite.getVar('storefront');
    const cart = _satellite.getVar('cart');
    
    const returnList = [];
    cart.items.forEach(item => {
        const selectedOptions = [];
-       item.configurableOptions.forEach(option => {
+       item.configurableOptions?.forEach(option => {
            selectedOptions.push({
                attribute: option.optionLabel,
                value: option.valueLabel,
@@ -898,13 +914,13 @@ Maak de volgende gegevenselementen:
    - **Editor openen**:
 
    ```bash
-   const searchResult = _satellite.getVar('storefront');
+   const storefrontContext = _satellite.getVar('storefront');
    const cart = _satellite.getVar('cart');
    
    const returnList = [];
    cart.items.forEach(item => {
        const selectedOptions = [];
-       item.configurableOptions.forEach(option => {
+       item.configurableOptions?.forEach(option => {
            selectedOptions.push({
                attribute: option.optionLabel,
                value: option.valueLabel,
@@ -1058,13 +1074,13 @@ Maak de volgende gegevenselementen:
    - **Editor openen**:
 
    ```bash
-   const searchResult = _satellite.getVar('storefront');
+   const storefrontContext = _satellite.getVar('storefront');
    const cart = _satellite.getVar('cart');
    
    const returnList = [];
    cart.items.forEach(item => {
        const selectedOptions = [];
-       item.configurableOptions.forEach(option => {
+       item.configurableOptions?.forEach(option => {
            selectedOptions.push({
                attribute: option.optionLabel,
                value: option.valueLabel,

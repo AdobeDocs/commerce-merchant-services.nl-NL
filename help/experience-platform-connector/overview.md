@@ -1,17 +1,17 @@
 ---
 title: Overzicht van hulplijnen
-description: Adobe Experience Platform-connector voor Adobe Commerce sluit uw [!DNL Commerce] naar andere Adobe Experience Cloud-producten.
+description: Adobe Experience Platform-connector voor Adobe Commerce sluit je Commerce-exemplaar aan op andere Adobe Experience Cloud-producten.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
-source-git-commit: 15b7a8be65e5063606bb58755d0719b0ca54de37
+source-git-commit: 2b735c292920bb0e9052d86bf152748e7ce96079
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '528'
 ht-degree: 0%
 
 ---
 
 # Overzicht van de Experience Platform-aansluiting
 
-Met de uitbreiding van de aansluiting van het Experience Platform kunnen Adobe Commerce-handelaren gegevens verzenden naar Adobe Experience Platform edge, zodat andere Adobe Experience Cloud-producten, zoals Adobe Analytics en Adobe Target, kunnen gebruiken dat [!DNL Commerce] gegevens. Door uw [!DNL Commerce] gegevens aan andere producten in Adobe Experience Cloud, kunt u taken uitvoeren, zoals het gebruikersgedrag op uw plaats analyseren, het testen van AB uitvoeren, en gepersonaliseerde campagnes creëren.
+De de schakelaaruitbreiding van het Experience Platform staat de handelaars van Adobe Commerce toe om gegevens naar de rand van Adobe Experience Platform te verzenden zodat kunnen andere producten van Adobe Experience Cloud, zoals Adobe Analytics en Adobe Target, die gegevens van de Handel gebruiken. Door uw gegevens van de Handel met andere producten in Adobe Experience Cloud te verbinden, kunt u taken uitvoeren, zoals gebruikersgedrag op uw plaats analyseren, het testen van AB uitvoeren, en gepersonaliseerde campagnes creëren.
 
 Met Storefront-gebeurtenissen worden winkelinteracties vastgelegd, zoals `View Page`, `View Product`, `Add to Cart`, enzovoort. Vastgelegde gegevens bevatten geen persoonlijk identificeerbare informatie (PII). Alle gebruikers-id&#39;s, zoals cookie-id&#39;s en IP-adressen, worden strikt geanonimiseerd. [Meer informatie](https://www.adobe.com/privacy/experience-cloud.html). Zie de volledige lijst met [storefront, gebeurtenissen](events.md).
 
@@ -36,7 +36,7 @@ Wanneer toegang wordt verleend:
 
 - Installeer de [Experience Platform connector-extensie](install.md).
 
-   De verbindingsuitbreiding van het Experience Platform wordt geïnstalleerd vanaf de bevellijn van de server en verbindt met uw installatie van Adobe Commerce als a [service](../landing/saas.md). Wanneer het proces is voltooid, verschijnt de verbindingslijn van het Experience Platform op **Systeem** menu onder **Services** in de [!DNL Commerce] _Beheer_.
+   De verbindingsuitbreiding van het Experience Platform wordt geïnstalleerd vanaf de bevellijn van de server en verbindt met uw installatie van Adobe Commerce als a [service](../landing/saas.md). Wanneer het proces is voltooid, verschijnt de verbindingslijn van het Experience Platform op **Systeem** menu onder **Services** in de handel _Beheer_.
 - [Knopprofielen uploaden](profile.md) aan Adobe Experience Platform, zodat gegevens over de winkel kunnen worden toegeschreven aan specifieke kopers om hun winkelervaring te verbeteren.
 
 ## Publiek
@@ -54,8 +54,8 @@ Momenteel heeft de aansluiting van het Experience Platform de volgende bekende p
 - Zoekgebeurtenissen worden niet ondersteund op een Adobe Commerce Enterprise Edition met de B2B-module geïnstalleerd.
 - Het duurt ongeveer een uur om gegevens op te slaan van Adobe Commerce naar de verschillende doelen nadat u verbinding hebt gemaakt met de Adobe Experience Platform-rand.
 
-## Ondersteuning
+Gebruik de volgende bronnen als u informatie nodig hebt of vragen hebt die niet in deze handleiding worden behandeld:
 
-Als u informatie nodig hebt of vragen hebt die niet in deze gids worden behandeld, post aan het volgende kanaal van Slack:
-
-- `#beacon-ama`
+- [Help Center](https://support.magento.com/hc/en-us){target=&quot;_blank&quot;}
+- [Ondersteuningstickets](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket){target=&quot;_blank&quot;} - Verstuur een ticket voor extra hulp.
+- Op Slack: `#beacon-ama`

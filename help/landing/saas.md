@@ -2,9 +2,9 @@
 title: Commerce Services Connector
 description: Leer hoe u uw Adobe Commerce- of Magento Open Source-instantie integreert met de API-sleutels voor productie en sandbox.
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
-source-git-commit: e8a63cc24db8a5e37c03c9cd40f0807b0b77b620
+source-git-commit: e7b12a80d6c4ec18ec784fd674363a728ee73a67
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '850'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,7 @@ De volgende lijst bevat de [!DNL Commerce] functies waartoe u toegang hebt via d
 | [[!DNL Payment Services]](/help/payment-services/overview.md) | Adobe Commerce en Magento Open Source |
 | [[!DNL Channel Manager]](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/intro-to-channel-manager/overview.html) | Adobe Commerce en Magento Open Source |
 | [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html) | Adobe Commerce |
+| [Experience Platform Connector](/help/experience-platform-connector/overview.md) | Adobe Commerce |
 
 ## Architectuur
 
@@ -105,7 +106,7 @@ Als u de naam van een SaaS-project of gegevensruimte wilt wijzigen, klikt u op *
 
 ## IMS-organisatie (optioneel) {#organizationid}
 
-(Deze functie is bedoeld voor toekomstige integratie met de Adobe Experience Platform). Als u uw Adobe Commerce-exemplaar wilt verbinden met de Adobe Experience Platform, meldt u zich aan bij uw Adobe-account met uw Adobe ID. Nadat u zich hebt aangemeld, wordt de IMS-organisatie die is gekoppeld aan uw Adobe-account in deze sectie weergegeven.
+Als u uw Adobe Commerce-exemplaar wilt verbinden met de Adobe Experience Platform, meldt u zich aan bij uw Adobe-account met uw Adobe ID. Nadat u zich hebt aangemeld, wordt de IMS-organisatie die is gekoppeld aan uw Adobe-account in deze sectie weergegeven.
 
 ## Catalogus synchroniseren
 
