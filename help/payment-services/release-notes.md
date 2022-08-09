@@ -2,9 +2,9 @@
 title: '"[!DNL Payment Services] Opmerkingen bij de release"'
 description: Lees de opmerkingen bij de release voor meer informatie over alle [!DNL Payment Services] lozingen.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 78f17e82a820a8be73c6abc0ef25d1bb240ea238
+source-git-commit: 2c3211d5a6574f84fa499608f5ef0cb8c6ffcfed
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '924'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,14 @@ Voor eigenschapveranderingen en moeilijke situaties die buiten de regelmatige ve
 Zie [Volgende releases](https://devdocs.magento.com/release/) om over versieschema&#39;s en steun te leren.
 
 Zie [Beschikbaarheid](https://devdocs.magento.com/release/availability.html) in de documentatie voor ontwikkelaars voor meer informatie over productcompatibiliteit.
+
+## v1.3.0
+
+_9 augustus 2022_
+
+![Nieuw](../assets/new.svg)<!-- Issue PAY-XX --> Algemene beschikbaarheidsrelease—[!DNL Payment Services] is nu [compatibel met [!DNL Adobe Commerce] en [!DNL Magento Open Source] versies 2.4.0 tot en met 2.4.5](https://devdocs.magento.com/release/availability.html#compatibility).
+
+![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-x --> Apple Pay is nu compatibel met Safari browser v15.5 op mobiele apparaten en desktops.
 
 ## v1.2.0
 

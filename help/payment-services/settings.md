@@ -4,9 +4,9 @@ description: Na installatie kunt u configureren [!DNL Payment Services] in het s
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 89fa175b70a2b4b37d5999dedc56a7e41ae28b7d
+source-git-commit: 60d04755b29f107a0543bd71e19ca5b2b6997b4d
 workflow-type: tm+mt
-source-wordcount: '1035'
+source-wordcount: '1032'
 ht-degree: 0%
 
 ---
@@ -106,7 +106,7 @@ U kunt de betalingsopties voor slimme PayPal-knoppen inschakelen en configureren
 
       >[!NOTE]
       >
-      > Apple Pay is standaard ingeschakeld voor de sandboxmodus, maar u kunt ook [moet een Apple Developer Account hebben](test-validate.md#test-in-sandbox-environment) (invullen met valse creditcard en factureringsgegevens) om deze te testen. Als je Apple Pay klaar bent voor gebruik in de productiemodus, nadat je een [testen en valideren](test-validate.md)Neem contact op met de verkoper om deze in te schakelen voor je live winkel(s).
+      > Apple Betaal je [moet een Apple Developer Account hebben](test-validate.md#test-in-sandbox-environment) (invullen met valse creditcard en factureringsgegevens) om deze te testen. Als je Apple Pay klaar hebt in de sandbox *of* productiemodus, na het voltooien van [testen en valideren](test-validate.md), neemt u contact op met uw verkoper om deze in te schakelen voor je live winkel(s).
 
 1. Schakel de optie **[!UICONTROL Debug Mode]** kiezer.
 1. Klik op **[!UICONTROL Save]**.
