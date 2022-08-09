@@ -2,8 +2,7 @@
 user-guide-title: '"[!DNL Quick Checkout] voor Adobe Commerce"'
 user-guide-description: '"Leer hoe u [!DNL Quick Checkout] kan ten goede komen aan uw Adobe Commerce-exemplaar en hoe u de extensie met succes aan boord kunt nemen en kunt instellen."'
 breadcrumb-title: Handelshulpgids
-hide: true
-source-git-commit: a95d2ed92c69feba03d1b84d44abf08c1d1b4029
+source-git-commit: 05d967573f645db1e8473798df279712d6d2dfc9
 workflow-type: tm+mt
 source-wordcount: '66'
 ht-degree: 0%
