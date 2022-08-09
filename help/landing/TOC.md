@@ -2,9 +2,9 @@
 user-guide-title: Services voor Adobe Commerce
 user-guide-description: Documentatie en bronnen voor gehoste services die uitgebreide mogelijkheden bieden aan Adobe Commerce en Magento Open Source.
 title: Services voor Adobe Commerce
-source-git-commit: 39456e272b756498186cb267f32a3ac09a548b58
+source-git-commit: 1e85c4daf0967bf6cec538fca55e2a206d15f732
 workflow-type: tm+mt
-source-wordcount: '89'
+source-wordcount: '94'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,7 @@ ht-degree: 0%
 - [[!DNL Store Fulfillment]](https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html)
 - [[!DNL Channel Manager]](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html)
 - [[!DNL Amazon Sales Channel]](https://experienceleague.adobe.com/docs/commerce-channels/amazon/guide-overview.html)
+- [[!DNL Catalog Service]](https://experienceleague.adobe.com/docs/catalog-service/guide-overview.html)
 - [Experience Platform Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/overview.html)
 - [Services Connector](/help/landing/saas.md)
 - [Catalogus synchroniseren](/help/landing/catalog-sync.md)
