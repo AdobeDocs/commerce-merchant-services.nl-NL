@@ -4,16 +4,16 @@ description: Stel de [!DNL Store Assist] app voor het beheer van end-to-end work
 role: User, Admin
 level: Intermediate
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
-source-git-commit: 68e615671f4e465d7fe89794613dbf129ae66dbf
+source-git-commit: 1fb22b4644d41ea5c60aead3fe2c455dfa3382f8
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '604'
 ht-degree: 0%
 
 ---
 
 # App-instelling
 
-Store Assist is een afhandeling-als-dienst (FaaS) platform app aangedreven door de Technologieën van de Handel van de Marm. De app biedt in-store uitvoeringsmogelijkheden voor verwerking [!DNL buy online], [!DNL pick up in store] (BOPIS) orders.  Met de Hulp van de Opslag, kunnen de opslagvennoten zien welke punten klanten bestelde, de correcte punten sneller plukken, en opstelling vervulde orden voor de ophaallevering in-store of curbside aan klanten.
+Store Assist is een afhandeling-als-dienst (FaaS) platform app aangedreven door de Technologieën van de Handel van de Marm. De app biedt in-store uitvoeringsmogelijkheden voor verwerking [!DNL buy online, pick up in store] (BOPIS) orders. Met de Hulp van de Opslag, kunnen de opslagvennoten zien welke punten klanten bestelde, de correcte punten sneller plukken, en opstelling vervulde orden voor de ophaallevering in-store of curbside aan klanten.
 
 De app Store Assist ontvangt alle bestelling- en klantgegevens, van bestellingsgegevens tot ophaaltijden en stelt de gegevens beschikbaar voor het online opslaan van partners via mobiele apparaten. De app bevat [!UICONTROL Pick], [!UICONTROL Stage], [!UICONTROL Handoff], en [!UICONTROL Orders] modules om Winkelgeassocieerde leden te helpen bij het uitvoeren van bijvoorbeeld de volgende activiteiten:
 
@@ -30,13 +30,13 @@ De app Store Assist ontvangt alle bestelling- en klantgegevens, van bestellingsg
 
 Voor de app Store Assist zijn twee soorten configuraties vereist:
 
-- Adobe Commerce Admin-configuratie-instellingen voor [gebruikersaccounts, gebruikersrollen en resourcemachtigingen beheren vanuit de Adobe Commerce Admin-systeeminstellingen](user-setup.md).
+- Adobe Commerce Admin-systeeminstellingen naar [gebruikersaccounts beheren, gebruikersrollen, bronmachtigingen](user-setup.md), en [het maken en modelleren van selecties van auto&#39;s die tijdens het inchecken beschikbaar zijn voor klanten](check-in-experience-setup.md).
 
 - De configuratie-instellingen aan de voorzijde om de interface van de app Store Assist en andere instellingen aan te passen, zoals:
 
    - **De app Winkelassistentie plaatsen**—Pas de gebruikersinterface van de app aan met het bedrijfslogo en de kleuren.
 
-   - **De standaardinstructies bijwerken**—Pas de instructies in de interface van de Hulp van de Opslag voor de modules van de Keuze, van het Stadium, Handoff, en van de Orde aan om aan uw bedrijfbeleid en procedures te voldoen, en de Vennoten van de Beeltenis door elke stap van het uitvoeringswerkschema te begeleiden.
+   - **De standaardinstructies bijwerken**—Pas de instructies in de modules Winkel bijstaan bij keuze, Werkgebied, Afhandeling en Volgorde aan om Winkelgeassocieerde leden door elke stap van de uitvoeringsworkflow voor uw bedrijf te begeleiden.
 
    - **Lokalisatie**—Selecteer de beschikbare taal voor de app. Kies de datum- en tijdnotatie en selecteer de standaardmaateenheden en de standaardvaluta.
 
@@ -59,7 +59,7 @@ Voor de app Store Assist zijn twee soorten configuraties vereist:
 
 ## Downloaden en installeren van apps
 
-Nadat de configuratie van de app Store Assist is voltooid, kunnen Store Associates vanaf hun mobiele apparaten de app Store Assist downloaden, installeren en zich aanmelden bij de app Store Assist.
+Nadat de app Store Assist is ingesteld en geconfigureerd, kunnen Store Associates vanaf hun mobiele apparaten de app Store Assist downloaden, installeren en aanmelden bij de app Store Assist.
 
 - Controleren of het mobiele apparaat voldoet aan de [hardware- en softwarevereisten](solution-requirements.md#store-assist-app-requirements) voor de Oplossing van de Behandeling van de Opslag.
 
@@ -70,4 +70,4 @@ Nadat de configuratie van de app Store Assist is voltooid, kunnen Store Associat
    - **[!UICONTROL Company name]** gekoppeld aan de account Winkelassistentie
 
    - **Accountgegevens voor Winkelassistentie**—gebruikersnaam en wachtwoord voor hun account.
-   Een Adobe Commerce-beheerder kan een gebruikersaccount maken en machtigingen instellen voor de gebruikersaccounts van de App Store Assist voor opslaglocaties die [Ophalen in winkel](merchant-store-configuration.md#pickup-location-configuration) ingeschakeld in de beheerinstellingen voor winkels.
+   Een Adobe Commerce-beheerder kan een gebruikersaccount maken en machtigingen instellen voor de [!DNL Store Assist app] gebruikersaccounts voor opslaglocaties die [Ophalen in winkel](merchant-store-configuration.md#pickup-location-configuration) ingeschakeld in de beheerinstellingen voor winkels.

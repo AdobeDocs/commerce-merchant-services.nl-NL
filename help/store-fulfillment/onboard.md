@@ -1,11 +1,12 @@
 ---
 title: Overzicht van onboarding voor services voor winkeluitvoering
-description: '"[!DNL Live Search] onboarding flow, systeemvereisten, grenzen en beperkingen."'
+description: '''[!DNL Live Search] aan boord gaan, systeemvereisten, grenzen en beperkingen.'''
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: f8e403ac-9bbd-4ea2-b209-9b1a8d1e32a2
+source-git-commit: 1fb22b4644d41ea5c60aead3fe2c455dfa3382f8
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -14,13 +15,13 @@ ht-degree: 0%
 
 Aan de slag met [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] door de volgende componenten in te stellen, te configureren en in te schakelen:
 
-- **Afhandeling opslaan, extensie**-Installeer en configureer deze extensie van derden voor uw Adobe Commerce-exemplaar. Na de installatie kunt u de oplossing van de Behandeling van de Opslag van Admin vormen en beheren om te steunen [!DNL buy online, pickup in store] (BOPIS) scenario&#39;s in de Commerce-winkel.
+- **Afhandeling opslaan, extensie**-Installeer en configureer deze extensie van derden voor uw Adobe Commerce-exemplaar. Na de installatie kunt u de oplossing van de Behandeling van de Opslag van Admin vormen en beheren om te steunen [!DNL buys online, pickup in store] (BOPIS) scenario&#39;s in de Commerce-winkel.
 
    ![[!DNL Store Fulfillment Service] configuratie in de beheerweergave](assets/store-fulfillment-admin-home.png)
 
-- **Veruitvoeringsaccount opslaan**-Tijdens het inschakelingsproces maakt een accountmanager een account voor de afhandeling van winkels en geeft hij u de accountgegevens en -gegevens. Deze gegevens zijn vereist om de verbinding tussen Adobe Commerce en de Opslagoplossing mogelijk te maken.
+- **Veruitvoeringsaccount opslaan**-Tijdens het inschakelingsproces maakt een accountmanager een account voor de afhandeling van winkels en geeft hij u de accountgegevens en -gegevens. Deze gegevens zijn vereist voor het inschakelen van de verbinding tussen Adobe Commerce en de Opslagoplossing.
 
-- **App Winkelassistentie**—Biedt winkelassociaties een end-to-end workflow voor het uitvoeren van opslagtaken om BOPIS-orders van mobiele apparaten te beheren. De Vennoten van de opslag kunnen Walmart downloaden en installeren [!DNL Store Assist] voor iOS- en Android-apparaten. Het app onboarding proces wordt beheerd door het Walmart Commerce Technology Client Center als een afzonderlijk proces. Maar [bepaalde instellingen voor toepassingsconfiguratie](user-setup.md) worden voltooid via de Adobe Commerce Admin.
+- **App Winkelassistentie**—Biedt winkelassociaties een end-to-end workflow voor het uitvoeren van opslagtaken om BOPIS-orders van mobiele apparaten te beheren. De Vennoten van de opslag kunnen Walmart downloaden en installeren [!DNL Store Assist] voor iOS- en Android™-apparaten. Het app onboarding proces wordt beheerd door het Walmart Commerce Technologies Client Center als afzonderlijk proces. Maar [bepaalde instellingen voor toepassingsconfiguratie](user-setup.md) worden voltooid via de Adobe Commerce Admin.
 
    | Store Assist App - weergave Aan de slag | Store Assist App — weergave Modules |
    |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
@@ -48,7 +49,6 @@ Aan de slag met [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce T
 
 1. [Gebruikers en rollen maken voor de app Winkelassistentie](user-setup.md).
 
-1. [Walmart&#39;s downloaden [!DNL Store Assist] op het gewenste apparaat toe. De app is beschikbaar in de App Store (iOS) en in de Play Store (Android)](app-setup.md).
+1. [Walmart&#39;s downloaden [!DNL Store Assist] op het gewenste apparaat toe. De app is zowel beschikbaar in de Apple-app (iOS) als in Google Play (Android™)](app-setup.md) winkels.
 
 Nadat u met succes hebt geïnstalleerd, gevormd, op instapniveau voltooid en toegang tot hebt [!DNL Store Assist] app, kunt u [beginnen met het maken van bestellingen en testen](test-and-deploy.md).
-

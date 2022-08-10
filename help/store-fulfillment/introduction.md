@@ -4,9 +4,9 @@ description: '"Meer informatie [!DNL Store Fulfillment for Adobe Commerce by Wal
 role: User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
-source-git-commit: 87818d3a0eb8f0cb4bc9fac2aef3c56a2e620aaf
+source-git-commit: 1fb22b4644d41ea5c60aead3fe2c455dfa3382f8
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Afhandeling van winkel biedt ook een end-to-end uitvoeringsworkflow die handelar
 
 * **Omnikanaalflexibiliteit**- Sla- en opslagruimten om in ophaalpunten en afhandelingscentra.
 
-* **Handige ophaalopties voor klanten**- Klanten kunnen de beschikbaarheid van producten gemakkelijk zien en een winkel selecteren om items op te halen — zowel in de winkel als in de winkel — terwijl ze online aankopen selecteren.
+* **Handige ophaalopties voor klanten**-Bij het selecteren van online aankopen kunnen klanten eenvoudig de beschikbaarheid van het product zien en een winkel selecteren voor het ophalen in de winkel of op de werkplek.
 
 * **Efficiëntie van implementatie**—Met de mobiele toepassing Winkelassistentie kunnen aan de winkel gekoppelde gebruikers de snelheid en nauwkeurigheid van de bestelling verhogen.
 
@@ -31,47 +31,47 @@ Afhandeling van winkel biedt ook een end-to-end uitvoeringsworkflow die handelar
 
 ## Afhandeling opslaan, extensie
 
-Ondersteunt en verbetert native Adobe Commerce-functies
+De oplossing Store Fulfillment ondersteunt en verbetert native Adobe Commerce-mogelijkheden.
 
 * Steunt de meeste producttypes-eenvoudig, configureerbaar, gegroepeerd, gebundeld, en virtueel
 
 * Integreert met [[!DNL Adobe Commerce] Inventory management](https://docs.magento.com/user-guide/catalog/inventory-learn-more.html)
 
-* Integreert met verkooppuntsystemen (POS) zoals ERP, OMS en WMS) voor voorraadbeheer
+* Integreert met verkooppunten (POS) bedrijfsvoorraadbeheersystemen zoals ERP, OMS en WMS
 
 * Volledig compatibel met het thema Luminantie
 
 * Biedt ondersteuning voor GraphQL voor headless en Venia storefronts
 
-* Ondersteunt de app Store Assist van de Walmart Commerce Technology. Deze app stuurt ophaalopdrachten rechtstreeks naar het handapparaat van uw werknemer in de juiste winkel, zodat de items kunnen worden opgepakt en snel en nauwkeurig kunnen worden opgepakt, gefaseerd en aan de klanten kunnen worden doorgegeven na hun inchecken.
+* Ondersteunt de app Store Assist van Walmart Commerce Technologies. Deze app levert informatie over de ophaalvolgorde rechtstreeks aan het handheldapparaat van uw werknemer op de geselecteerde winkellocatie. Met deze informatie kunnen ze snel en nauwkeurig items selecteren, in het werkgebied plaatsen en aan klanten afleveren wanneer ze bij de winkel aankomen.
 
 ## App Winkelassistentie
 
-De Store Assist App voor iOS- en Android™-apparaten werken samen met de Walmart Commerce-technologie om omnichannel uitvoeringsmogelijkheden te bieden aan uw winkels.
+De Store Assist App voor iOS- en Android™-apparaten communiceert met [!DNL Walmart Commerce Technologies] om de mogelijkheden van omnichannel vervulling aan uw winkels te brengen.
 
-* In-store en curbside ophaalbestellingen rechtstreeks verzenden om de mobiele apparaten van de partners op te slaan
+* In-store en krullende bestelopdrachten rechtstreeks verzenden om mobiele apparaten van geassocieerde deelnemers op te slaan
 
-* Zorg ervoor dat opslagorders snel en nauwkeurig worden opgehaald, gefaseerd en aan klanten worden doorgegeven wanneer ze inchecken voor het ophalen van bestellingen.
+* Zorg ervoor dat de opslagbestellingen snel en nauwkeurig worden opgepakt, gefaseerd worden uitgevoerd en aan klanten worden doorgegeven wanneer ze bij de winkel aankomen voor het ophalen van bestellingen
 
 * Beheer de toegang van de opslag associaties gebruiker, met inbegrip van veiligheidsbeleid, tweefaste authentificatie, en meer
 
-* Automatisch gegevens synchroniseren over winkellocaties en -voorraad met Adobe Commerce
+* Automatisch gegevens synchroniseren over winkellocaties en -voorraad naar Adobe Commerce
 
 ## Verbeterde gebruikerservaring
 
-Store Fulfillment verbetert Adobe Commerce door de volgende mogelijkheden toe te voegen voor verbeterde winkelervaringen en gestroomlijnde uitvoeringsworkflows:
+Door de prestaties van de winkel te verbeteren, verbetert Adobe Commerce door mogelijkheden toe te voegen voor betere winkelervaringen en gestroomlijnde workflows voor afhandeling.
 
-* **Winkellocatieselector (SLS)**-Hiermee wordt de optie Ophalen van de winkel, de beschikbaarheid van de voorraad en de opslagkiezer naast de native afhandeling beschikbaar gesteld op de product- en winkelpagina&#39;s.
+* **Winkellocatieselector (SLS)**- Voegt ophaalopties voor de winkel, beschikbaarheid van voorraden en opslagkiezers toe aan de product- en winkelpagina&#39;s naast de native afhandeling.
 
-* **Beschikbaarheid inventariseren**- Voegt extra product en globale configuratieopties aan Adobe Commerce Inventory management toe om voorraadtoewijzing op archiefniveau te steunen om tijdige lokale vervulling te drijven.
+* **Beschikbaarheid inventariseren**- Voegt extra product en globale configuratieopties aan Adobe Commerce Inventory management toe. Deze opties ondersteunen voorraadtoewijzing op archiefniveau om tijdige lokale uitvoering te stimuleren.
 
-* **Verbeteringen voor winkelwagentjes en afhandeling**- Communiceer de snelste beschikbare ophaaltijden, de plaatsen, en de kosten aan klanten tijdens hun online het winkelen zitting.
+* **Verbeteringen voor winkelwagentjes en afhandeling**- Communiceert de snelst beschikbare ophaaltijden, de plaatsen, en de kosten aan klanten tijdens hun online het winkelen zitting.
 
 * **Inchecken van processtroom**- Voegt interfaces toe om het proces van de klantencontrole en de interactie met opslagvennoten te verbeteren wanneer zij voor in-store of curbside bestelwagen aankomen.
 
 * **Mijn accountgeschiedenis**-Breidt de [!DNL Commerce] de geschiedenis van de account om stappen in de ordergeschiedenis weer te geven.
 
-* **Transactionele e-mails**-Breidt de beheerfuncties uit voor [!UICONTROL Sales Emails] als u e-mailsjablonen wilt toevoegen voor online kopen, moet u in-store transacties ophalen. De malplaatjes steunen communicatie in real time tussen klanten en opslagvennoten tijdens het bestelproces.
+* **Transactionele e-mails**-Breidt de beheerfuncties uit voor [!UICONTROL Sales Emails] Als u e-mailsjablonen wilt toevoegen voor online kopen, neemt u transacties op in de winkel. De malplaatjes steunen communicatie in real time tussen klanten en opslagvennoten tijdens het bestelproces.
 
 * **Flexibele uitvoering**-Extends [!DNL Commerce] mogelijkheden ter ondersteuning van scenario&#39;s voor het verwerken van achterstanden, kwantiteitsreducties en gedeeltelijke afhandeling van bestellingen, en het vergemakkelijken van annuleringen en kredietmemo&#39;s die nodig zijn om deze scenario&#39;s te ondersteunen.
 
