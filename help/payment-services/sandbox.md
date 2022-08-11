@@ -2,9 +2,9 @@
 title: De testsandbox instellen
 description: Een PayPal-sandboxaccount gebruiken [!DNL Payment Services] in de testmodus.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
-source-git-commit: e8d008d9a38cebde7772b7e3d70d2447631414fe
+source-git-commit: ab4a2f4d432f74cb48dc4b92468305c93088593a
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '588'
 ht-degree: 0%
 
 ---
@@ -13,22 +13,20 @@ ht-degree: 0%
 
 Voordat u de sandbox aan boord gaat, moet u zich aanmelden voor een gratis PayPal Developer&#39;s account en zowel zakelijke accounts (voor instaptoegang) als winkelaccounts maken (voor het testen van uw afhandeling). U kunt desgewenst meerdere Developer-accounts maken.
 
-Met een PayPal-sandboxaccount kunt u [!DNL Payment Services] in de testmodus. PayPal vereist dat u een door PayPal Developer Portal gegenereerde Business-sandbox testaccount, e-mail en wachtwoord gebruikt voor het aan boord nemen van sandboxen. Maak geen andere account tijdens het proces van het instappen van de sandbox.
+Met een PayPal-sandboxaccount kunt u [!DNL Payment Services] in de testmodus. PayPal vereist dat u een door PayPal Developer Portal gegenereerde Business-sandbox testaccount, e-mail en wachtwoord gebruikt voor het aan boord nemen van sandboxen. *Maak geen andere account tijdens het proces van het instappen van de sandbox.*
 
-Als u een account hebt gemaakt tijdens het PayPal-instapproces in de sandbox, moet u de instapkaartsandbox opnieuw instellen, omdat of u uw e-mail niet kunt verifiëren.
-
-Uw sandboxaccount opnieuw instellen:
-
-1. Klik op **[!UICONTROL Reset sandbox]**. Zie de [PayPal maakt een zakelijke sandboxaccount](https://developer.paypal.com/docs/api-basics/sandbox/accounts/#create-a-business-sandbox-account) documentatie voor meer informatie.
-1. Klikken **[!UICONTROL Sandbox onboarding]** en voltooi de volgende reeks stappen.
+## Sandbox aan boord
 
 Sandbox aan boord voltooien:
 
 1. Ga naar de [Pagina PayPal Developer-account](https://developer.paypal.com/developer/accounts/).
-1. Klikken **[!UICONTROL Log in to Home]** en meld u met uw bestaande gegevens aan bij het PayPal Developers-account of klik op **Aanmelden** om een account te maken.
+1. Klikken **[!UICONTROL Log in to Home]** en meld u aan met uw bestaande door PayPal Developer Portal gegenereerde Business sandbox-testaccount of klik op **Aanmelden** om een account te maken.
 1. Een PayPal-sandboxaccount maken:
    1. Ga naar _[!UICONTROL SANDBOX]_>**[!UICONTROL Accounts]**.
    1. Klik op **[!UICONTROL Create account]**.
+
+      Als u tijdens het PayPal-instapproces een PayPal-sandboxaccount hebt gemaakt, moet u [de instapsandbox opnieuw instellen](#reset-your-sandbox-account) omdat of omdat je je e-mail niet kunt verifiëren.
+
    1. Selecteren **[!UICONTROL Business]** als het accounttype en klik op **[!UICONTROL Create]**.
    1. In de _[!UICONTROL Sandbox Accounts]_op de drie stippen in de_[!UICONTROL Manage accounts]_ kolom voor de sandboxaccount die u hebt gemaakt.
    1. Klik op **[!UICONTROL View/edit account]**.
@@ -42,11 +40,11 @@ Sandbox aan boord voltooien:
 
    Deze optie is zichtbaar als u de sandbox voor het instappen nog niet hebt voltooid [!DNL Payment Services].
 
-   Er wordt automatisch een handelings-id voor een sandbox gegenereerd en in de [instellingen](settings.md). Wijzig of wijzig deze id niet.
+   Er wordt automatisch een handelings-id voor een sandbox gegenereerd en ingevuld in [instellingen](settings.md). Wijzig of wijzig deze id niet.
 
    Je krijgt een PayPal-venster te zien waarin je een PayPal-rekening verbindt om betalingen te accepteren.
 
-1. Voer de e-mail in van uw zakelijke account en uw land of regio en klik op **[!UICONTROL Next]**.
+1. Voer het e-mailadres in van uw PayPal-zakelijke account (geen PayPal-sandboxaccount) en uw land of regio en klik op **[!UICONTROL Next]**.
 
    ![PayPal - Verbinding maken met PayPal-rekening voor betalingen](assets/paypal-connectacct.png)
 
@@ -60,6 +58,15 @@ Wanneer uw PayPal-sandbox is goedgekeurd, wordt een melding weergegeven dat uw b
 >[!IMPORTANT]
 >
 >Als u de toestemming intrekt om [!DNL Payment Services] for [!DNL Adobe Commerce] en [!DNL Magento Open Source] voor het verwerken van je betalingen (in de instellingen van je PayPal-rekening) kunnen bestellingen in je winkel niet worden verwerkt door [!DNL Payment Services]. Op de homepage van Betalingsdiensten verschijnt een waarschuwing over de ingetrokken toestemming. Klik op **[!UICONTROL Do not show again]**.
+
+### Uw sandboxaccount opnieuw instellen
+
+Als u een Paypal-sandboxaccount hebt gemaakt tijdens het PayPal-instapproces in de sandbox, moet u de instapsandbox opnieuw instellen, omdat of omdat u uw e-mail niet kunt verifiëren.
+
+Uw sandboxaccount opnieuw instellen:
+
+1. Klik op **[!UICONTROL Reset sandbox]**. [Een PayPal-account voor een zakelijke sandbox maken](https://developer.paypal.com/docs/api-basics/sandbox/accounts/#create-a-business-sandbox-account).
+1. Klikken **[!UICONTROL Sandbox onboarding]** en voltooi de volgende reeks stappen.
 
 ## Telefoonnummer van contactpersoon inschakelen
 

@@ -2,7 +2,7 @@
 title: Inschakelen [!DNL Payment Services] voor productie
 description: Voltooi het instapproces door [!DNL Payment Services] voor de productie.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
-source-git-commit: 51722d7045ccb6ccfdc7ab5bd93d5ca46b52cf03
+source-git-commit: a983cf30872544d72bd13c3f04f04a35eebcf85d
 workflow-type: tm+mt
 source-wordcount: '709'
 ht-degree: 0%
@@ -11,7 +11,11 @@ ht-degree: 0%
 
 # Inschakelen [!DNL Payment Services] voor productie
 
-Nadat de uitbreiding Betalingsdiensten is [geïnstalleerd](install.md), uw instantie is [geconfigureerd en verbonden](connect.md)en u hebt [sandbox instellen](sandbox.md) en getest, kunt u de dienst in productie zetten en voltooien [onboarding](onboard.md).
+U kunt de dienst in productie zetten en voltooien [onboarding](onboard.md), volgens de stappen in dit onderwerp, na u:
+
+* [Installeren](install.md) De uitbreiding Betalingsdiensten
+* [Configureren en verbinden](connect.md) uw instantie
+* [Instellen](sandbox.md) en [test](test-validate.md) uw sandbox
 
 ## Set [!DNL Payment Services] als betalingsmethode
 
