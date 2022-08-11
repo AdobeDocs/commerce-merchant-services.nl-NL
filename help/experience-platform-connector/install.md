@@ -2,9 +2,9 @@
 title: Adobe Experience Platform-connector installeren en configureren vanuit Adobe Commerce
 description: Leer hoe u de Adobe Experience Platform-connector van Adobe Commerce installeert, configureert, bijwerkt en verwijdert.
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
-source-git-commit: 334ee967ec2379a87acfc5fb427d7ada6fa25ee7
+source-git-commit: 7f64e9e4b061e2c0f9813d390adefe11ce98ee87
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,9 @@ Voordat u de extensie installeert, [de voorwaarden opnieuw bekijken](overview.md
 
 ## De extensie installeren
 
-1. Installeer de metapakket voor de aansluiting van het Experience Platform.
+De aansluiting van het Experience Platform is geïnstalleerd als een uitbreiding van [Adobe Marketplace](https://marketplace.magento.com/magento-experience-platform-connector.html).
+
+1. Als u het dialoogvenster `experience-platform-connector` pakket, voer het volgende uit vanaf de bevellijn:
 
    ```bash
    composer require magento/experience-platform-connector

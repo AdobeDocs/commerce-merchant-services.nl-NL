@@ -2,9 +2,9 @@
 title: Gegevens voor handel verzamelen met Adobe Experience Platform-tags
 description: Leer hoe u gegevens over handel kunt verzamelen met Adobe Experience Platform-tags.
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: b5fb915f6ffcc24e72310bc79cba4b08a65128e3
+source-git-commit: 4af50842c883d3aef7bf50d6a68b82321b784591
 workflow-type: tm+mt
-source-wordcount: '2138'
+source-wordcount: '2276'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Laten we bijvoorbeeld de Adobe Commerce toevoegen `signOut` -gebeurtenis naar Ad
    ![Nieuw gegevenselement maken](assets/create-new-data-elements.png)
    _Nieuw gegevenselement maken_
 
-1. Set **Naam** tot `Sign out`.
+1. Set **Naam** tot `sign out`.
 
 1. Set **Extensie** tot `Adobe Experience Platform Web SDK`.
 
@@ -76,16 +76,22 @@ Laten we bijvoorbeeld de Adobe Commerce toevoegen `signOut` -gebeurtenis naar Ad
    ![Waarde voor afmelden bijwerken](assets/signout-value.png)
    _Waarde voor afmelden bijwerken_
 
+1. Selecteren **Opslaan**.
+
 1. Een regel maken:
 
    ![Nieuwe regel maken](assets/create-new-rule.png)
    _Nieuwe regel maken_
+
+1. Selecteren **Toevoegen** krachtens **GEBEURTENISSEN**.
 
 1. Set **Extensie** tot `Adobe Client Data Layer`.
 
 1. Set **Type gebeurtenis** tot `Data Pushed`.
 
 1. Selecteren **Specifieke gebeurtenis** en stelt de **Gebeurtenis/sleutel waarvoor u zich wilt registreren** tot `sign-out`.
+
+1. Selecteren **Wijzigingen behouden** om de nieuwe regel op te slaan.
 
 1. Voeg een handeling toe.
 
@@ -159,36 +165,44 @@ Maak de volgende gegevenselementen:
 
 1. E-mailadres account:
 
-   - **Naam**: `Account email`
+   - **Naam**: `account email`
    - **Extensie**: `Adobe Client Data Layer`
    - **Type gegevenselement**: `Data Layer Computed State`
    - **[Optioneel] pad**: `accountContext.emailAddress`
 
 1. Accounttype:
 
-   - **Naam**: `Account type`
+   - **Naam**: `account type`
    - **Extensie**: `Adobe Client Data Layer`
    - **Type gegevenselement**: `Data Layer Computed State`
    - **[Optioneel] pad**: `accountContext.accountType`
 
 1. Account-id:
 
-   - **Naam**: `Account ID`
+   - **Naam**: `account id`
    - **Extensie**: `Adobe Client Data Layer`
    - **Type gegevenselement**: `Data Layer Computed State`
    - **[Optioneel] pad***: `accountContext.accountId`
 
 1. Aanmelden:
 
-   - **Naam**: `Sign in`
+   - **Naam**: `sign in`
    - **Extensie**: `Adobe Experience Platform Web SDK`
    - **Type gegevenselement**: `XDM object`
+   - **Veldgroep**: `person` > `accountID`
+   - **Account-id**: **Waarde** = `%account id%`
+   - **Veldgroep**: `person` > `accountType`
+   - **Accounttype**: **Waarde** = `%account type%`
+   - **Veldgroep**: `person` > `personalEmailID`
+   - **Persoonlijk e-mailadres**: **Waarde** = `%account email%`
+   - **Veldgroep**: `personalEmail` > `address`
+   - **Adres**: **Waarde** = `%account email%`
    - **Veldgroep**: `userAccount` > `login`
    - **Aanmelden bij bezoeker**: **Waarde** = `1`
 
 #### Regels 
 
-- **Naam**: `Sign in`
+- **Naam**: `sign in`
 - **Extensie**: `Adobe Client Data Layer`
 - **Type gebeurtenis**: `Data Pushed`
 - **Specifieke gebeurtenis**: `sign-in`
@@ -198,7 +212,7 @@ Maak de volgende gegevenselementen:
 - **Extensie**: `Adobe Experience Platform Web SDK`
 - **Type handeling**: `Send event`
 - **Type**: `userAccount.login`
-- **XDM-gegevens**: `%sign-in%`
+- **XDM-gegevens**: `%sign in%`
 
 ### createAccount {#createaccount}
 
@@ -208,30 +222,38 @@ Maak de volgende gegevenselementen:
 
 1. E-mailadres account:
 
-   - **Naam**: `Account email`
+   - **Naam**: `account email`
    - **Extensie**: `Adobe Client Data Layer`
    - **Type gegevenselement**: `Data Layer Computed State`
    - **[Optioneel] pad**: `accountContext.emailAddress`
 
 1. Accounttype:
 
-   - **Naam**: `Account type`
+   - **Naam**: `account type`
    - **Extensie**: `Adobe Client Data Layer`
    - **Type gegevenselement**: `Data Layer Computed State`
    - **[Optioneel] pad**: `accountContext.accountType`
 
 1. Account-id:
 
-   - **Naam**: `Account ID`
+   - **Naam**: `account id`
    - **Extensie**: `Adobe Client Data Layer`
    - **Type gegevenselement**: `Data Layer Computed State`
-   - **[Optioneel] pad***: `accountContext.accountId`
+   - **[Optioneel] pad**: `accountContext.accountId`
 
 1. Account maken:
 
    - **Naam**: `Create account`
    - **Extensie**: `Adobe Experience Platform Web SDK`
    - **Type gegevenselement**: `XDM object`
+   - **Veldgroep**: `person` > `accountID`
+   - **Account-id**: **Waarde** = `%account id%`
+   - **Veldgroep**: `person` > `accountType`
+   - **Accounttype**: **Waarde** = `%account type%`
+   - **Veldgroep**: `person` > `personalEmailID`
+   - **Persoonlijk e-mailadres**: **Waarde** = `%account email%`
+   - **Veldgroep**: `personalEmail` > `address`
+   - **Adres**: **Waarde** = `%account email%`
    - **Veldgroep**: `userAccount` > `createProfile`
    - **Accountprofiel maken**: **Waarde** = `1`
 
@@ -257,30 +279,38 @@ Maak de volgende gegevenselementen:
 
 1. E-mailadres account:
 
-   - **Naam**: `Account email`
+   - **Naam**: `account email`
    - **Extensie**: `Adobe Client Data Layer`
    - **Type gegevenselement**: `Data Layer Computed State`
    - **[Optioneel] pad**: `accountContext.emailAddress`
 
 1. Accounttype:
 
-   - **Naam**: `Account type`
+   - **Naam**: `account type`
    - **Extensie**: `Adobe Client Data Layer`
    - **Type gegevenselement**: `Data Layer Computed State`
    - **[Optioneel] pad**: `accountContext.accountType`
 
 1. Account-id:
 
-   - **Naam**: `Account ID`
+   - **Naam**: `account id`
    - **Extensie**: `Adobe Client Data Layer`
    - **Type gegevenselement**: `Data Layer Computed State`
-   - **[Optioneel] pad***: `accountContext.accountId`
+   - **[Optioneel] pad**: `accountContext.accountId`
 
 1. Account bewerken:
 
    - **Naam**: `Edit account`
    - **Extensie**: `Adobe Experience Platform Web SDK`
    - **Type gegevenselement**: `XDM object`
+   - **Veldgroep**: `person` > `accountID`
+   - **Account-id**: **Waarde** = `%account id%`
+   - **Veldgroep**: `person` > `accountType`
+   - **Accounttype**: **Waarde** = `%account type%`
+   - **Veldgroep**: `person` > `personalEmailID`
+   - **Persoonlijk e-mailadres**: **Waarde** = `%account email%`
+   - **Veldgroep**: `personalEmail` > `address`
+   - **Adres**: **Waarde** = `%account email%`
    - **Veldgroep**: `userAccount` > `updateProfile`
    - **Accountprofiel maken**: **Waarde** = `1`
 
@@ -306,17 +336,17 @@ Maak de volgende gegevenselementen:
 
 1. Paginanaam:
 
-   - **Naam**: `Page name`
+   - **Naam**: `page name`
    - **Extensie**: `Adobe Client Data Layer`
    - **Type gegevenselement**: `Data Layer Computed State`
    - **[Optioneel] pad**: `pageContext.pageName`
 
 #### Regels 
 
-- **Naam**: `Page view`
+- **Naam**: `page view`
 - **Extensie**: `Adobe Client Data Layer`
 - **Type gebeurtenis**: `Data Pushed`
-- **Specifieke gebeurtenis**: `Core-Library Loaded`
+- **Specifieke gebeurtenis**: `page-view`
 
 ##### Handelingen
 
@@ -333,28 +363,28 @@ Maak de volgende gegevenselementen:
 
 1. Productnaam:
 
-   - **Naam**: `Product name`
+   - **Naam**: `product name`
    - **Extensie**: `Adobe Client Data Layer`
    - **Type gegevenselement**: `Data Layer Computed State`
    - **[Optioneel] pad**: `productContext.name`
 
 1. Product SKU:
 
-   - **Naam**: `Product sku`
+   - **Naam**: `product sku`
    - **Extensie**: `Adobe Client Data Layer`
    - **Type gegevenselement**: `Data Layer Computed State`
    - **[Optioneel] pad**: `productContext.sku`
 
 1. Productvaluta:
 
-   - **Naam**: `Product currency`
+   - **Naam**: `product currency`
    - **Extensie**: `Adobe Client Data Layer`
    - **Type gegevenselement**: `Data Layer Computed State`
    - **[Optioneel] pad**: `productContext.pricing.currencyCode`
 
 1. Valutacode:
 
-   - **Naam**: `Currency code`
+   - **Naam**: `currency code`
    - **Extensie**: `Core`
    - **Type gegevenselement**: `Custom Code`
    - **Editor openen**:
@@ -365,21 +395,21 @@ Maak de volgende gegevenselementen:
 
 1. Speciale prijs:
 
-   - **Naam**: `Special price`
+   - **Naam**: `special price`
    - **Extensie**: `Adobe Client Data Layer`
    - **Type gegevenselement**: `Data Layer Computed State`
    - **[Optioneel] pad**: `productContext.pricing.specialPrice`
 
 1. Gewone prijs:
 
-   - **Naam**: `Regular price`
+   - **Naam**: `regular price`
    - **Extensie**: `Adobe Client Data Layer`
    - **Type gegevenselement**: `Data Layer Computed State`
    - **[Optioneel] pad**: `productContext.pricing.regularPrice`
 
 1. Productprijs:
 
-   - **Naam**: `Product price`
+   - **Naam**: `product price`
    - **Extensie**: `Core`
    - **Type gegevenselement**: `Custom Code`
    - **Editor openen**:
@@ -390,14 +420,24 @@ Maak de volgende gegevenselementen:
 
 1. Productweergave:
 
-   - **Naam**: `Product view`
+   - **Naam**: `product view`
    - **Extensie**: `Adobe Experience Platform Web SDK`
    - **Type gegevenselement**: `XDM object`
    - **Veldgroep**: `productListItems`. Selecteren **Afzonderlijke items opgeven** en klik op de knop **Item toevoegen** knop. Omdat deze weergave voor een PDP is, kunt u één item vullen.
+   - **Veldgroep**: `productListItems` > `name`
+   - **Naam**: **Waarde** = `%product name%`
+   - **Veldgroep**: `productListItems` > `SKU`
+   - **SKU**: **Waarde** = `%product sku%`
+   - **Veldgroep**: `productListItems` > `priceTotal`
+   - **Prijstotaal**: **Waarde** = `%product price%`
+   - **Veldgroep**: `productListItems` > `currencyCode`
+   - **Valutacode**: **Waarde** = `%currency code%`
+   - **Veldgroep**: `commerce` > `productViews` > `value`
+   - **value**: **Waarde** = `1`
 
 #### Regels 
 
-- **Naam**: `Product view`
+- **Naam**: `product view`
 - **Extensie**: `Adobe Client Data Layer`
 - **Type gebeurtenis**: `Data Pushed`
 - **Specifieke gebeurtenis**: `product-page-view`
@@ -417,14 +457,14 @@ Maak de volgende gegevenselementen:
 
 1. Zoeken in invoer
 
-   - **Naam**: `Search input`
+   - **Naam**: `search input`
    - **Extensie**: `Adobe Client Data Layer`
    - **Type gegevenselement**: `Data Layer Computed State`
    - **[Optioneel] pad**: `searchInputContext.units[0]`
 
 1. Invoeruitdrukking zoeken
 
-   - **Naam**: `Search input phrase`
+   - **Naam**: `search input phrase`
    - **Extensie**: `Core`
    - **Type gegevenselement**: `Custom Code`
    - **Editor openen**:
@@ -435,7 +475,7 @@ Maak de volgende gegevenselementen:
 
 1. Invoersortering zoeken
 
-   - **Naam**: `Search input sort`
+   - **Naam**: `search input sort`
    - **Extensie**: `Core`
    - **Type gegevenselement**: `Custom Code`
    - **Editor openen**:
@@ -454,7 +494,7 @@ Maak de volgende gegevenselementen:
 
 1. Invoerfilters zoeken
 
-   - **Naam**: `Search input filters`
+   - **Naam**: `search input filters`
    - **Extensie**: `Core`
    - **Type gegevenselement**: `Custom Code`
    - **Editor openen**:
@@ -488,7 +528,7 @@ Maak de volgende gegevenselementen:
 
 1. Zoekverzoek:
 
-   - **Naam**: `Search request`
+   - **Naam**: `search request`
    - **Extensie**: `Adobe Experience Platform Web SDK`
    - **Type gegevenselement**: `XDM object`
    - **Veldgroep**: `siteSearch` > `phrase`
@@ -500,7 +540,7 @@ Maak de volgende gegevenselementen:
 
 #### Regels 
 
-- **Naam**: `Search request sent`
+- **Naam**: `search request sent`
 - **Extensie**: `Adobe Client Data Layer`
 - **Type gebeurtenis**: `Data Pushed`
 - **Specifieke gebeurtenis**: `search-request-sent`
@@ -520,14 +560,14 @@ Maak de volgende gegevenselementen:
 
 1. Zoekresultaten:
 
-   - **Naam**: `Search results`
+   - **Naam**: `search results`
    - **Extensie**: `Adobe Client Data Layer`
    - **Type gegevenselement**: `Data Layer Computed State`
    - **[Optioneel] pad**: `searchResultsContext.units[0]`
 
 1. Zoekresultaat aantal producten:
 
-   - **Naam**: `Search result number of products`
+   - **Naam**: `search result number of products`
    - **Extensie**: `Core`
    - **Type gegevenselement**: `Custom Code`
    - **Editor openen**:
@@ -538,7 +578,7 @@ Maak de volgende gegevenselementen:
 
 1. Producten zoekresultaten:
 
-   - **Naam**: `Search result products`
+   - **Naam**: `search result products`
    - **Extensie**: `Core`
    - **Type gegevenselement**: `Custom Code`
    - **Editor openen**:
@@ -556,7 +596,7 @@ Maak de volgende gegevenselementen:
 
 1. Suggesties voor zoekresultaten:
 
-   - **Naam**: `Search result products`
+   - **Naam**: `search result products`
    - **Extensie**: `Core`
    - **Type gegevenselement**: `Custom Code`
    - **Editor openen**:
@@ -570,19 +610,21 @@ Maak de volgende gegevenselementen:
 
 1. Zoeken in reactie:
 
-   - **Naam**: `Search response`
+   - **Naam**: `search response`
    - **Extensie**: `Adobe Experience Platform Web SDK`
    - **Type gegevenselement**: `XDM object`
    - **Veldgroep**: `siteSearch` > `suggestions`. Selecteren **Geheel object opgeven**.
+   - **Gegevenselement**: `%search result suggestions%`
    - **Veldgroep**: `siteSearch` > `numberOfResults`
    - **value**: `%search result number of products%`
    - **Veldgroep**: `productListItems`. Selecteren **Geheel object opgeven**.
+   - **Gegevenselement**: `%search result products%`
    - **Veldgroep**: `searchResponse` > `value`
    - **value**: **Waarde** = `1`
 
 #### Regels 
 
-- **Naam**: `Search Response Received`
+- **Naam**: `search response received`
 - **Extensie**: `Adobe Client Data Layer`
 - **Type gebeurtenis**: `Data Pushed`
 - **Specifieke gebeurtenis**: `search-response-received`
@@ -602,42 +644,42 @@ Maak de volgende gegevenselementen:
 
 1. Productnaam:
 
-   - **Naam**: `Product name`
+   - **Naam**: `product name`
    - **Extensie**: `Adobe Client Data Layer`
    - **Type gegevenselement**: `Data Layer Computed State`
    - **[Optioneel] pad**: `productContext.name`
 
 1. Productsku:
 
-   - **Naam**: `Product sku`
+   - **Naam**: `product sku`
    - **Extensie**: `Adobe Client Data Layer`
    - **Type gegevenselement**: `Data Layer Computed State`
    - **[Optioneel] pad**: `productContext.sku`
 
 1. Valutacode:
 
-   - **Naam**: `Currency code`
+   - **Naam**: `currency code`
    - **Extensie**: `Adobe Client Data Layer`
    - **Type gegevenselement**: `Data Layer Computed State`
    - **[Optioneel] pad**: `productContext.pricing.currencyCode`
 
 1. Speciale prijs product:
 
-   - **Naam**: `Product special price`
+   - **Naam**: `product special price`
    - **Extensie**: `Adobe Client Data Layer`
    - **Type gegevenselement**: `Data Layer Computed State`
    - **[Optioneel] pad**: `productContext.pricing.specialPrice`
 
 1. Gewone prijs product:
 
-   - **Naam**: `Product regular price`
+   - **Naam**: `product regular price`
    - **Extensie**: `Adobe Client Data Layer`
    - **Type gegevenselement**: `Data Layer Computed State`
    - **[Optioneel] pad**: `productContext.pricing.regularPrice`
 
 1. Productprijs:
 
-   - **Naam**: `Product price`
+   - **Naam**: `product price`
    - **Extensie**: `Core`
    - **Type gegevenselement**: `Custom Code`
    - **Editor openen**:
@@ -648,14 +690,14 @@ Maak de volgende gegevenselementen:
 
 1. Winkelwagentje:
 
-   - **Naam**: `Cart`
+   - **Naam**: `cart`
    - **Extensie**: `Adobe Client Data Layer`
    - **Type gegevenselement**: `Data Layer Computed State`
    - **[Optioneel] pad**: `shoppingCartContext`
 
 1. Kart-id:
 
-   - **Naam**: `Cart id`
+   - **Naam**: `cart id`
    - **Extensie**: `Core`
    - **Type gegevenselement**: `Custom Code`
    - **Editor openen**:
@@ -666,18 +708,26 @@ Maak de volgende gegevenselementen:
 
 1. Toevoegen aan winkelwagentje:
 
-   - **Naam**: `Add to cart`
+   - **Naam**: `add to cart`
    - **Extensie**: `Adobe Experience Platform Web SDK`
    - **Type gegevenselement**: `XDM object`
    - **Veldgroep**: `productListItems`. Selecteren **Afzonderlijke items opgeven** en klik op de knop **Item toevoegen** knop. Omdat deze weergave voor een PDP is, kunt u één item vullen.
+   - **Veldgroep**: `productListItems` > `name`
+   - **Naam**: **Waarde** = `%product name%`
+   - **Veldgroep**: `productListItems` > `SKU`
+   - **SKU**: **Waarde** = `%product sku%`
+   - **Veldgroep**: `productListItems` > `priceTotal`
+   - **Prijstotaal**: **Waarde** = `%product price%`
+   - **Veldgroep**: `productListItems` > `currencyCode`
+   - **Valutacode**: **Waarde** = `%currency code%`
    - **Veldgroep**: `commerce` > `cart` > `cartID`
    - **Illustratie-id**: **Waarde** = `%cart id%`
-   - **Veldgroep**: `commerce` > `productListAdds` > `id`
-   - **Unieke id**: **value** = `1`
+   - **Veldgroep**: `commerce` > `productListAdds` > `value`
+   - **value**: **Waarde** = `1`
 
 #### Regels 
 
-- **Naam**: `Add to cart`
+- **Naam**: `add to cart`
 - **Extensie**: `Adobe Client Data Layer`
 - **Type gebeurtenis**: `Data Pushed`
 - **Specifieke gebeurtenis**: `add-to-cart`
@@ -697,21 +747,21 @@ Maak de volgende gegevenselementen:
 
 1. Storefront:
 
-   - **Naam**: `Storefront`
+   - **Naam**: `storefront`
    - **Extensie**: `Adobe Client Data Layer`
    - **Type gegevenselement**: `Data Layer Computed State`
    - **[Optioneel] pad**: `storefrontInstanceContext`
 
 1. Winkelwagentje:
 
-   - **Naam**: `Cart`
+   - **Naam**: `cart`
    - **Extensie**: `Adobe Client Data Layer`
    - **Type gegevenselement**: `Data Layer Computed State`
    - **[Optioneel] pad**: `shoppingCartContext`
 
 1. Kart-id:
 
-   - **Naam**: `Cart id`
+   - **Naam**: `cart id`
    - **Extensie**: `Core`
    - **Type gegevenselement**: `Custom Code`
    - **Editor openen**:
@@ -722,7 +772,7 @@ Maak de volgende gegevenselementen:
 
 1. Objecten in de productlijst:
 
-   - **Naam**: `Product list items:`
+   - **Naam**: `product list items:`
    - **Extensie**: `Core`
    - **Type gegevenselement**: `Custom Code`
    - **Editor openen**:
@@ -757,18 +807,19 @@ Maak de volgende gegevenselementen:
 
 1. Kaart weergeven:
 
-   - **Naam**: `View cart`
+   - **Naam**: `view cart`
    - **Extensie**: `Adobe Experience Platform Web SDK`
    - **Type gegevenselement**: `XDM object`
    - **Veldgroep**: `productListItems`. Voor `productListItems`Er kunnen meerdere vooraf berekende items zijn. Selecteren **productListItems** > **Volledige array vullen**.
+   - **Gegevenselement**: `%product list items%`
    - **Veldgroep**: `commerce` > `cart` > `cartID`
    - **Illustratie-id**: **Waarde** = `%cart id%`
-   - **Veldgroep**: `commerce` > `productListAdds` > `id`
-   - **Unieke id**: **value** = `1`
+   - **Veldgroep**: `commerce` > `productListViews` > `value`
+   - **value**: **Waarde** = `1`
 
 #### Regels 
 
-- **Naam**: `View cart`
+- **Naam**: `view cart`
 - **Extensie**: `Adobe Client Data Layer`
 - **Type gebeurtenis**: `Data Pushed`
 - **Specifieke gebeurtenis**: `shopping-cart-view`
@@ -788,42 +839,42 @@ Maak de volgende gegevenselementen:
 
 1. Productnaam:
 
-   - **Naam**: `Product name`
+   - **Naam**: `product name`
    - **Extensie**: `Adobe Client Data Layer`
    - **Type gegevenselement**: `Data Layer Computed State`
    - **[Optioneel] pad**: `productContext.name`
 
 1. Productsku:
 
-   - **Naam**: `Product sku`
+   - **Naam**: `product sku`
    - **Extensie**: `Adobe Client Data Layer`
    - **Type gegevenselement**: `Data Layer Computed State`
    - **[Optioneel] pad**: `productContext.sku`
 
 1. Valutacode:
 
-   - **Naam**: `Currency code`
+   - **Naam**: `currency code`
    - **Extensie**: `Adobe Client Data Layer`
    - **Type gegevenselement**: `Data Layer Computed State`
    - **[Optioneel] pad**: `productContext.pricing.currencyCode`
 
 1. Speciale prijs product:
 
-   - **Naam**: `Product special price`
+   - **Naam**: `product special price`
    - **Extensie**: `Adobe Client Data Layer`
    - **Type gegevenselement**: `Data Layer Computed State`
    - **[Optioneel] pad**: `productContext.pricing.specialPrice`
 
 1. Gewone prijs product:
 
-   - **Naam**: `Product regular price`
+   - **Naam**: `product regular price`
    - **Extensie**: `Adobe Client Data Layer`
    - **Type gegevenselement**: `Data Layer Computed State`
    - **[Optioneel] pad**: `productContext.pricing.regularPrice`
 
 1. Productprijs:
 
-   - **Naam**: `Product price`
+   - **Naam**: `product price`
    - **Extensie**: `Core`
    - **Type gegevenselement**: `Custom Code`
    - **Editor openen**:
@@ -834,14 +885,14 @@ Maak de volgende gegevenselementen:
 
 1. Winkelwagentje:
 
-   - **Naam**: `Cart`
+   - **Naam**: `cart`
    - **Extensie**: `Adobe Client Data Layer`
    - **Type gegevenselement**: `Data Layer Computed State`
    - **[Optioneel] pad**: `shoppingCartContext`
 
 1. Kart-id:
 
-   - **Naam**: `Cart id`
+   - **Naam**: `cart id`
    - **Extensie**: `Core`
    - **Type gegevenselement**: `Custom Code`
    - **Editor openen**:
@@ -852,18 +903,26 @@ Maak de volgende gegevenselementen:
 
 1. Verwijderen uit winkelwagentje:
 
-   - **Naam**: `Remove from cart`
+   - **Naam**: `remove from cart`
    - **Extensie**: `Adobe Experience Platform Web SDK`
    - **Type gegevenselement**: `XDM object`
    - **Veldgroep**: `productListItems`. Selecteren **Afzonderlijke items opgeven** en klik op de knop **Item toevoegen** knop. Omdat deze weergave voor een PDP is, kunt u één item vullen.
+   - **Veldgroep**: `productListItems` > `name`
+   - **Naam**: **Waarde** = `%product name%`
+   - **Veldgroep**: `productListItems` > `SKU`
+   - **SKU**: **Waarde** = `%product sku%`
+   - **Veldgroep**: `productListItems` > `priceTotal`
+   - **Prijstotaal**: **Waarde** = `%product price%`
+   - **Veldgroep**: `productListItems` > `currencyCode`
+   - **Valutacode**: **Waarde** = `%currency code%`
    - **Veldgroep**: `commerce` > `cart` > `cartID`
    - **Illustratie-id**: **Waarde** = `%cart id%`
-   - **Veldgroep**: `commerce` > `productListRemovals`
-   - **Unieke id**: **value** = `1`
+   - **Veldgroep**: `commerce` > `productListRemovals` > `value`
+   - **value**: **Waarde** = `1`
 
 #### Regels 
 
-- **Naam**: `Remove from cart`
+- **Naam**: `remove from cart`
 - **Extensie**: `Adobe Client Data Layer`
 - **Type gebeurtenis**: `Data Pushed`
 - **Specifieke gebeurtenis**: `remove-from-cart`
@@ -883,21 +942,21 @@ Maak de volgende gegevenselementen:
 
 1. Storefront:
 
-   - **Naam**: `Storefront`
+   - **Naam**: `storefront`
    - **Extensie**: `Adobe Client Data Layer`
    - **Type gegevenselement**: `Data Layer Computed State`
    - **[Optioneel] pad**: `storefrontInstanceContext`
 
 1. Winkelwagentje:
 
-   - **Naam**: `Cart`
+   - **Naam**: `cart`
    - **Extensie**: `Adobe Client Data Layer`
    - **Type gegevenselement**: `Data Layer Computed State`
    - **[Optioneel] pad**: `shoppingCartContext`
 
 1. Kart-id:
 
-   - **Naam**: `Cart id`
+   - **Naam**: `cart id`
    - **Extensie**: `Core`
    - **Type gegevenselement**: `Custom Code`
    - **Editor openen**:
@@ -908,7 +967,7 @@ Maak de volgende gegevenselementen:
 
 1. Objecten in de productlijst:
 
-   - **Naam**: `Product list items`
+   - **Naam**: `product list items`
    - **Extensie**: `Core`
    - **Type gegevenselement**: `Custom Code`
    - **Editor openen**:
@@ -943,18 +1002,19 @@ Maak de volgende gegevenselementen:
 
 1. Afhandeling starten:
 
-   - **Naam**: `Initiate checkout`
+   - **Naam**: `initiate checkout`
    - **Extensie**: `Adobe Experience Platform Web SDK`
    - **Type gegevenselement**: `XDM object`
    - **Veldgroep**: `productListItems`. Voor `productListItems`Er kunnen meerdere vooraf berekende items zijn. Selecteren **productListItems** > **Volledige array vullen**.
+   - **Gegevenselement**: `%product list items%`
    - **Veldgroep**: `commerce` > `cart` > `cartID`
    - **Illustratie-id**: **Waarde** = `%cart id%`
-   - **Veldgroep**: `commerce` > `checkouts`
-   - **Unieke id**: **value** = `1`
+   - **Veldgroep**: `commerce` > `checkouts` > `value`
+   - **value**: **Waarde** = `1`
 
 #### Regels 
 
-- **Naam**: `Initiate checkout`
+- **Naam**: `initiate checkout`
 - **Extensie**: `Adobe Client Data Layer`
 - **Type gebeurtenis**: `Data Pushed`
 - **Specifieke gebeurtenis**: `initiate-checkout`
@@ -974,21 +1034,21 @@ Maak de volgende gegevenselementen:
 
 1. Storefront:
 
-   - **Naam**: `Storefront`
+   - **Naam**: `storefront`
    - **Extensie**: `Adobe Client Data Layer`
    - **Type gegevenselement**: `Data Layer Computed State`
    - **[Optioneel] pad**: `storefrontInstanceContext`
 
 1. Winkelwagentje:
 
-   - **Naam**: `Cart`
+   - **Naam**: `cart`
    - **Extensie**: `Adobe Client Data Layer`
    - **Type gegevenselement**: `Data Layer Computed State`
    - **[Optioneel] pad**: `shoppingCartContext`
 
 1. Kart-id:
 
-   - **Naam**: `Cart id`
+   - **Naam**: `cart id`
    - **Extensie**: `Core`
    - **Type gegevenselement**: `Custom Code`
    - **Editor openen**:
@@ -999,14 +1059,14 @@ Maak de volgende gegevenselementen:
 
 1. Volgorde:
 
-   - **Naam**: `Order`
+   - **Naam**: `order`
    - **Extensie**: `Adobe Client Data Layer`
    - **Type gegevenselement**: `Data Layer Computed State`
    - **[Optioneel] pad**: `orderContext`
 
 1. Handelsorder:
 
-   - **Naam**: `Commerce order`
+   - **Naam**: `commerce order`
    - **Extensie**: `Core`
    - **Type gegevenselement**: `Custom Code`
    - **Editor openen**:
@@ -1042,7 +1102,7 @@ Maak de volgende gegevenselementen:
 
 1. Verzending bestellen:
 
-   - **Naam**: ` Order shipping`
+   - **Naam**: `order shipping`
    - **Extensie**: `Core`
    - **Type gegevenselement**: `Custom Code`
    - **Editor openen**:
@@ -1057,7 +1117,7 @@ Maak de volgende gegevenselementen:
 
 1. Promotie-id:
 
-   - **Naam**: `Promotion id`
+   - **Naam**: `promotion id`
    - **Extensie**: `Core`
    - **Type gegevenselement**: `Custom Code`
    - **Editor openen**:
@@ -1068,7 +1128,7 @@ Maak de volgende gegevenselementen:
 
 1. Objecten in de productlijst:
 
-   - **Naam**: `Product list items`
+   - **Naam**: `product list items`
    - **Extensie**: `Core`
    - **Type gegevenselement**: `Custom Code`
    - **Editor openen**:
@@ -1103,22 +1163,23 @@ Maak de volgende gegevenselementen:
 
 1. Plaatsingsvolgorde:
 
-   - **Naam**: `Place order`
+   - **Naam**: `place order`
    - **Extensie**: `Adobe Experience Platform Web SDK`
    - **Type gegevenselement**: `XDM object`
    - **Veldgroep**: `productListItems`. Voor `productListItems`Er kunnen meerdere vooraf berekende items zijn. Selecteren **productListItems** > **Volledige array vullen**.
+   - **Gegevenselement**: `%product list items%`
    - **Veldgroep**: `commerce` > `order`
    - **Unieke id**: **Waarde** = `%commerce order%`
    - **Veldgroep**: `commerce` > `shipping`
-   - **Unieke id**: **value** = ` %order shipping%`
+   - **Unieke id**: **Waarde** = `%order shipping%`
    - **Veldgroep**: `commerce` > `promotionID`
    - **Promotie-id**: **Waarde** = `%promotion id%`
    - **Veldgroep**: `commerce` > `purchases` > `value`
-   - **Waarde**: **Waarde** = `1`
+   - **value**: **Waarde** = `1`
 
 #### Regels 
 
-- **Naam**: `Place order`
+- **Naam**: `place order`
 - **Extensie**: `Adobe Client Data Layer`
 - **Type gebeurtenis**: `Data Pushed`
 - **Specifieke gebeurtenis**: `place-order`
