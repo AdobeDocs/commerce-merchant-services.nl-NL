@@ -1,13 +1,13 @@
 ---
-title: '"[!DNL Catalog Service] Opmerkingen bij de release"'
-description: '"De meest recente releasegegevens voor [!DNL Catalog Service] voor Adobe Commerce."'
-source-git-commit: 3959cc5d07f9a0da0ba772a4f3bc56adeb3c6bf3
+title: '''[!DNL Catalog Service] Opmerkingen bij de release'
+description: De meest recente releasegegevens voor [!DNL Catalog Service] voor Adobe Commerce.
+exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
+source-git-commit: 72913e0c0b7364e38d37fe1a8279c40a4e849c02
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
-
 
 # [!DNL Catalog Service] Opmerkingen bij de release
 
@@ -32,6 +32,7 @@ In deze releaseopmerkingen worden de meest recente versies van [!DNL Catalog Ser
 
 ## Bekende beperkingen
 
+* Bundel en gegroepeerde producten worden niet ondersteund.
 * De prijzen van de reeks worden niet gesteund.
 * In een array van afbeeldingen bevat alleen de eerste afbeelding rollen.
 * Afbeeldingen voor varianten worden niet opgehaald.
