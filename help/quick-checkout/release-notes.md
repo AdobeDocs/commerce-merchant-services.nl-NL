@@ -2,9 +2,9 @@
 title: '''[!DNL Quick Checkout] Opmerkingen bij de release'
 description: Lees de opmerkingen bij de release voor meer informatie over alle [!DNL Quick Checkout] lozingen.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 6162141e1ddf4428126178bd172e8d9bd250c485
+source-git-commit: 27e91a640999cf83a0f0d6701e616f7ceecde12d
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '320'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,17 @@ Zie [Volgende releases](https://devdocs.magento.com/release/) om over versiesche
 
 Zie [Beschikbaarheid](https://devdocs.magento.com/release/availability.html) in de documentatie voor ontwikkelaars voor meer informatie over productcompatibiliteit.
 
+## v1.1.0
+
+_12 augustus 2022_
+
+![Probleem opgelost](../assets/fix.svg)<!-- Issue BOLT-375 --> Verbeteringen in gebruikerservaring [[!DNL Quick Checkout] Deelvenster Beheer](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) Neem nu alleen de parameters op die zichtbaar en gevalideerd zijn wanneer de extensie is ingeschakeld.
+
+![Probleem opgelost](../assets/fix.svg)<!-- Issue BOLT-349 --> Verbeteringen op gebied van compatibiliteit met bestaande verzendadressen met de Bolt-portemonnee.
+
 ## v1.0.0
+
+_9 augustus 2022_
 
 ![Nieuw](../assets/new.svg)<!-- Issue BOLT-341 --> Algemene beschikbaarheidsrelease—[[!DNL Quick Checkout]](https://marketplace.magento.com/magento-quick-checkout.html) is nu compatibel met Adobe Commerce-versies 2.4.1 tot en met 2.4.4.
 
@@ -41,4 +51,6 @@ Zie [Beschikbaarheid](https://devdocs.magento.com/release/availability.html) in 
 
 ![Nieuw](../assets/new.svg)<!-- Issue BOLT-288 --> Aangepast [gebruikerssessielevensduur](user-session-lifetime.md) for [!DNL Quick Checkout] voor Adobe Commerce.
 
-![Bekend probleem](../assets/bug.svg)<!-- Issue BOLT-342 --> Gebruiken [onjuiste Composer-sleutels](https://support.magento.com/hc/en-us/articles/6909450342541) tijdens de installatie van de [!DNL Quick Checkout] voorkomt dat de gebruiker [verifiëren](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) met de juiste `MAGEID`.
+![Probleem opgelost](../assets/fix.svg)<!-- Issue BOLT-375 --> Verbeteringen in gebruikerservaring [[!DNL Quick Checkout] Deelvenster Beheer](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) staat u toe om uw configuratie te bewaren wanneer alle vereiste parameters worden verstrekt.
+
+![Bekend probleem](../assets/bug.svg)<!-- Issue BOLT-342 --> Vaak [problemen oplossen](https://support.magento.com/hc/en-us/articles/6909450342541) problemen tijdens de installatie van [!DNL Quick Checkout].

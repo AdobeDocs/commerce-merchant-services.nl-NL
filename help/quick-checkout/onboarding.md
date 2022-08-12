@@ -2,9 +2,9 @@
 title: '"Aan boord van de [!DNL Quick Checkout] voor Adobe Commerce-extensie"'
 description: '"Leer hoe u [!DNL Quick Checkout] kan uw Adobe Commerce-exemplaar ten goede komen en de extensie met succes aan boord installeren en instellen."'
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: 05d967573f645db1e8473798df279712d6d2dfc9
+source-git-commit: 27e91a640999cf83a0f0d6701e616f7ceecde12d
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '701'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Zie de [installeren](../quick-checkout/install.md) onderwerp voor gedetailleerde
 
 ## Account maken met [!DNL Bolt]
 
-Voordat u de [!DNL Quick Checkout] in uw Adobe Commerce Admin is het vereist om een [sandbox](https://merchant-sandbox.bolt.com/register){target=&quot;_blank&quot;} en [productie](https://merchant.bolt.com/register){target=&quot;_blank&quot;} zakelijke accounts in [!DNL Bolt]. Geef alle vereiste gegevens op om een account te maken in [!DNL Bolt].
+Voordat u de [!DNL Quick Checkout] in uw Adobe Commerce Admin is het vereist om een [sandbox](https://merchant-sandbox.bolt.com/register?platform=magento2){target=&quot;_blank&quot;} en [productie](https://merchant.bolt.com/register?platform=magento2){target=&quot;_blank&quot;} zakelijke accounts in [!DNL Bolt]. Geef alle vereiste gegevens op om een account te maken in [!DNL Bolt].
 
 Zie de [testen en valideren](../quick-checkout/testing.md) voor meer informatie.
 
