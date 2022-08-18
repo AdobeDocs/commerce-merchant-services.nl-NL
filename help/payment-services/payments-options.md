@@ -2,9 +2,9 @@
 title: Betalingsopties
 description: Stel de betalingsopties in om de beschikbare methoden voor uw winkelklanten aan te passen.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: 26735a191eab529bc3e8e7fc3d64295d345888d6
+source-git-commit: c7afa798096e07409fb36a3d08f7e5b2a5ce40db
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '948'
 ht-degree: 0%
 
 ---
@@ -58,6 +58,10 @@ De [!DNL Venmo] Deze knop is zichtbaar vanaf de pagina met producten, de miniwin
 Klanten kunnen Touch ID op hun apparaten gebruiken [[!DNL Apple Pay]](https://www.apple.com/apple-pay/), die gebruik maakt van betalingsgegevens voor creditcard en bankpas die op hun iOS- of macOS-apparaat zijn opgeslagen.
 
 De [!DNL Apple Pay] Deze knop is zichtbaar vanaf de pagina met producten, de miniwinkelwagentje, de winkelwagentje en de afrekenweergave.
+
+>[!NOTE]
+>
+> Als je Apple wilt gebruiken, neem je contact op met je verkoper om deze in te schakelen voor je live winkel(s).
 
 ### [!DNL Pay Later] knop
 
