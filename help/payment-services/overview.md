@@ -4,9 +4,9 @@ description: Leer installeren en gebruiken [!DNL Payment Services] als een handi
 role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 3f753f6a91c9f2c29def90d323c004a689056e71
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '391'
 ht-degree: 0%
 
 ---
@@ -67,3 +67,9 @@ Aan boord nemen en instellen [!DNL Payment Services] wordt in slechts een paar s
 1. Activeren [!DNL Payment Services] in de live-modus beginnen met de verwerking van rechtstreekse betalingen.
 
 Voor de volledige instructies en het instapproces gaat u naar [Aan boord [!DNL Payment Services]](onboard.md).
+
+## [!DNL Payment Services] demo
+
+Bekijk deze video voor meer informatie over [!DNL Payment Services]:
+
+>[!VIDEO](https://video.tv.adobe.com/v/343990?quality=12)

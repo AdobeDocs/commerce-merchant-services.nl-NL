@@ -1,14 +1,15 @@
 ---
-title: Overzicht
-description: '"[!DNL Product Recommendations] Dit is een krachtig marketinginstrument dat u kunt gebruiken om conversies te verhogen, inkomsten te verhogen en winkelbetrokkenheid te stimuleren."'
-source-git-commit: b3ac6ab9c5877b5c722cd08cc50d746595386ba9
+title: Inleiding tot [!DNL Product Recommendations]
+description: '''[!DNL Product Recommendations] Dit is een krachtig marketinginstrument dat u kunt gebruiken om conversies te verhogen, inkomsten te verhogen en winkelbetrokkenheid te stimuleren.'''
+exl-id: 818ac876-58c9-4c68-975e-53da59ed6b52
+source-git-commit: 3f753f6a91c9f2c29def90d323c004a689056e71
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '360'
 ht-degree: 0%
 
 ---
 
-# Overzicht
+# Inleiding tot [!DNL Product Recommendations]
 
 De aanbevelingen van het product zijn een krachtig marketing hulpmiddel dat u kunt gebruiken om omzettingen te verhogen, opbrengst te verhogen, en winkelbetrokkenheid te stimuleren. Adobe Commerce-productaanbevelingen worden ondersteund door [Adobe Sensei](https://www.adobe.com/sensei.html), die gebruik maakt van kunstmatige intelligentie en computerleeralgoritmen om een diepgaande analyse van de geaggregeerde bezoekersgegevens uit te voeren. Als deze gegevens worden gecombineerd met uw Adobe Commerce-catalogus, resulteert dit in een zeer aantrekkelijke, relevante en persoonlijke ervaring.
 
@@ -31,3 +32,9 @@ Aan de hand van productaanbevelingen kunt u:
 - Kies uit negen verschillende soorten intelligente aanbevelingen op basis van de volgende gebieden: op basis van winkels, items, populariteit, trending en op basis van gelijkenis
 - Gebruik gedragsgegevens om aanbevelingen te personaliseren gedurende de hele winkelreis
 - Bepaal de belangrijkste metriek relevant voor elke aanbeveling om u te helpen het effect van uw aanbevelingen begrijpen
+
+## [!DNL Product Recommendations] demo
+
+Bekijk deze video voor meer informatie over [!DNL Product Recommendations]:
+
+>[!VIDEO](https://video.tv.adobe.com/v/343991?quality=12)
