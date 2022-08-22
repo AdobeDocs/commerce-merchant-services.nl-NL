@@ -2,9 +2,9 @@
 title: Overzicht van hulplijnen
 description: Adobe Experience Platform-connector voor Adobe Commerce sluit je Commerce-exemplaar aan op andere Adobe Experience Cloud-producten.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
-source-git-commit: 7f64e9e4b061e2c0f9813d390adefe11ce98ee87
+source-git-commit: 2fb44e73a76ad4e1433b2abd88be1304e7e10596
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '547'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 De de schakelaaruitbreiding van het Experience Platform staat de handelaars van Adobe Commerce toe om gegevens naar de rand van Adobe Experience Platform te verzenden zodat kunnen andere producten van Adobe Experience Cloud, zoals Adobe Analytics en Adobe Target, die gegevens van de Handel gebruiken. Door uw gegevens van de Handel met andere producten in Adobe Experience Cloud te verbinden, kunt u taken uitvoeren, zoals gebruikersgedrag op uw plaats analyseren, het testen van AB uitvoeren, en gepersonaliseerde campagnes creëren.
 
 Met Storefront-gebeurtenissen worden winkelinteracties vastgelegd, zoals `View Page`, `View Product`, `Add to Cart`, enzovoort. Vastgelegde gegevens bevatten geen persoonlijk identificeerbare informatie (PII). Alle gebruikers-id&#39;s, zoals cookie-id&#39;s en IP-adressen, worden strikt geanonimiseerd. [Meer informatie](https://www.adobe.com/privacy/experience-cloud.html). Zie de volledige lijst met [storefront, gebeurtenissen](events.md).
+
+De verbindingslijn van het Experience Platform verschijnt in Commerce Admin onder **Systeem** > Services > **Experience Platform Connector**.
+
+![Admin-weergave Experience Platform-aansluiting](assets/epc-adminui.png)
 
 ## Vereisten voor het gebruik van de aansluiting van het Experience Platform {#prereqs}
 
