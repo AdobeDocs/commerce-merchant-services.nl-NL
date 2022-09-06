@@ -2,9 +2,9 @@
 title: '"[!DNL Payment Services] Opmerkingen bij de release"'
 description: Lees de opmerkingen bij de release voor meer informatie over alle [!DNL Payment Services] lozingen.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 36eafb5729910440d257ab2d89d16f6b8f01aa68
+source-git-commit: 1f88c66d0c12dcde2c8fdde1dd3b4838ae6d462d
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '986'
 ht-degree: 0%
 
 ---
@@ -48,6 +48,12 @@ _28 juni 2021_
 ![Nieuw](../assets/new.svg)<!-- Issue PAY-2761 --> U kunt nu de gegevens aanpassen die worden weergegeven in het dialoogvenster [Betalingsstatusrapport bestellen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) en de [Uitbetalingsrapport](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) door kolommen te tonen of te verbergen gebruikend de de montagecontrole van de Kolom.
 
 +++
+
+## v1.3.1
+
+_6 september 2022_
+
+![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-3663 --> Wanneer de winkel van een handelaar een bestelling vastlegt die is geautoriseerd met een niet-globale valuta, wordt het vastlegproces voltooid en wordt geen fout weergegeven.
 
 ## v1.3.0
 
