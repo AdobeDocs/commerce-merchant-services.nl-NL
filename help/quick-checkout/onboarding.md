@@ -1,10 +1,10 @@
 ---
-title: '"Aan boord van de [!DNL Quick Checkout] voor Adobe Commerce-extensie"'
-description: '"Leer hoe u [!DNL Quick Checkout] kan uw Adobe Commerce-exemplaar ten goede komen en de extensie met succes aan boord installeren en instellen."'
+title: "Aan boord van de [!DNL Quick Checkout] voor Adobe Commerce-extensie"
+description: "Leer hoe u [!DNL Quick Checkout] kan uw Adobe Commerce-exemplaar ten goede komen en de extensie met succes aan boord installeren en instellen."
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: 27e91a640999cf83a0f0d6701e616f7ceecde12d
+source-git-commit: d4b58b0ee3da866d460cf18d96ec9dd27b195f7a
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '749'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,8 @@ ht-degree: 0%
 # [!DNL Quick Checkout] onboarding
 
 Ga als volgt te werk om aan de slag te gaan [!DNL Quick Checkout] voor Adobe Commerce-extensie moet u een aantal instapkaartstappen uitvoeren om uw exemplaar te verbinden met onze uitcheckfunctionaliteit.
+
+![Snelle afhandeling](assets/overview-admin-panel.png)
 
 1. [Extensie ophalen](#get-extension).
 1. [Een Merchant-account voor de productie of sandbox maken met [!DNL Bolt]](#create-account-with-bolt). Geef alle vereiste gegevens op om uw identiteit te verifiëren.
@@ -21,6 +23,16 @@ Ga als volgt te werk om aan de slag te gaan [!DNL Quick Checkout] voor Adobe Com
 1. [Definieer uw servicesinstellingen](#complete-admin-configuration) om het [!DNL Quick Checkout] extensie.
 1. [Klik op Config opslaan](#enable-live-quick-checkout) om extensie in te schakelen.
 1. Van bereik wisselen naar **Hoofdwebsite** en [klik Configure Callback URL](#check-shopper-valid-account) knop.
+
+Als Gainsight is ingeschakeld, activeert het de **Volg de rondleiding** in uw [!DNL Quick Checkout] Beheer, deelvenster over [!DNL Quick Checkout] voor Adobe Commerce:
+
+1. Op de _Beheer_ zijbalk, ga naar **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > Geavanceerd:
+
+   ![Snelle afhandeling](assets/gainsight-admin.png)
+
+Als Gainsight niet is ingeschakeld, gaat u verder met de instapprocedure.
+
+Zie de [[!DNL Quick Checkout] Deelvenster Beheer](../quick-checkout/admin-panel.md) voor meer informatie.
 
 >[!NOTE]
 >
