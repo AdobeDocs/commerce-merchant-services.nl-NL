@@ -2,9 +2,9 @@
 title: '''[!DNL Quick Checkout] Opmerkingen bij de release'
 description: Lees de opmerkingen bij de release voor meer informatie over alle [!DNL Quick Checkout] lozingen.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 27e91a640999cf83a0f0d6701e616f7ceecde12d
+source-git-commit: 4dd8008901dbdbfaf1de5b1aa166dc70dd02440f
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '531'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,28 @@ In deze releaseopmerkingen wordt de eerste release van [!DNL Quick Checkout] en 
 Zie [Volgende releases](https://devdocs.magento.com/release/) om over versieschema&#39;s en steun te leren.
 
 Zie [Beschikbaarheid](https://devdocs.magento.com/release/availability.html) in de documentatie voor ontwikkelaars voor meer informatie over productcompatibiliteit.
+
+## v1.2.0
+
+_8 september 2022_
+
+![Nieuw](../assets/new.svg)<!-- Issue BOLT-341 --> Algemene beschikbaarheidsrelease—[[!DNL Quick Checkout]](https://marketplace.magento.com/magento-quick-checkout.html) is nu compatibel met Adobe Commerce versie 2.4.5.
+
+![Nieuw](../assets/new.svg)<!-- Issue BOLT-328 --> [!DNL Quick Checkout] voor Adobe Commerce en Magento Open Source biedt een [Weergave van het deelvenster Beheer](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) met alle informatie die nodig is voor het instellen en gebruiken van de extensie.
+
+![Nieuw](../assets/new.svg)<!-- Issue BOLT-364 --> Beheerdergebruiker [kan gebruikersrollen en toestemmingen plaatsen](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/user-roles-setup.html) om andere gebruikers toe te staan de [!DNL Quick Checkout] Het deelvenster Beheer.
+
+![Nieuw](../assets/new.svg)<!-- Issue BOLT-377 --> [!DNL Quick Checkout] Het deelvenster Beheer bevat nu een paginakoptekst die specifieke secties bevat, zoals **Overzicht**, **Rapporten**, en **Instellingen**.
+
+![Nieuw](../assets/new.svg)<!-- Issue BOLT-379 --> [!DNL Quick Checkout] Het deelvenster Beheer voegt een welkomstwidget toe die een functiereis biedt die wordt aangedreven door Gainsight.
+
+![Nieuw](../assets/new.svg)<!-- Issue BOLT-378 --> [!DNL Quick Checkout] [Weergave van het deelvenster Beheer](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) neemt een **Configuratie** stap die wordt weergegeven wanneer de API en de publiceerbare toetsen niet worden vermeld in de [Instellingen](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) weergeven.
+
+![Nieuw](../assets/new.svg)<!-- Issue BOLT-380 --> [!DNL Quick Checkout] [Weergave van het deelvenster Beheer](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) neemt een **Bronnen** die afhankelijk is van het instapniveau.
+
+![Nieuw](../assets/new.svg)<!-- Issue BOLT-381 --> [!DNL Quick Checkout] [Weergave van het deelvenster Beheer](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) omvat een **Help en ondersteuning** sectie.
+
+![Probleem opgelost](../assets/fix.svg)<!-- Issue BOLT-369 --> De [[!DNL Quick Checkout] Deelvenster Beheer](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) geeft nu de extensieversie weer in de voettekst.
 
 ## v1.1.0
 
