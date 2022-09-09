@@ -3,9 +3,9 @@ user-guide-title: '[!DNL Payment Services] Hulplijn'
 user-guide-description: Deze handleiding bevat gedetailleerde informatie over installeren en configureren [!DNL Payment Services] voor uw [!DNL Adobe Commerce] of [!DNL Magento Open Source] opslaan.
 breadcrumb-title: '[!DNL Payment Services] Hulplijn'
 index: true
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 1186b4e52f1d613332a7862c58f482c2591e29a8
 workflow-type: tm+mt
-source-wordcount: '71'
+source-wordcount: '73'
 ht-degree: 1%
 
 ---
@@ -33,6 +33,7 @@ ht-degree: 1%
 - Financiële verslaggeving {#reporting}
    - [Status van betalingsopdracht](order-payment-status.md)
    - [Uitbetalingsrapport](payouts.md)
+   - [Beschikbare gegevens](data.md)
 - Betalingen beheren {#manage}
    - [Restituties](refunds.md)
    - [Void](voids.md)
