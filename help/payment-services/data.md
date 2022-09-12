@@ -3,9 +3,9 @@ title: Beschikbare gegevens
 description: Gebruik gegevens over financiële verslaglegging om rapportage te combineren met systemen voor niet-handel.
 role: User
 level: Intermediate
-source-git-commit: 1186b4e52f1d613332a7862c58f482c2591e29a8
+source-git-commit: ed471f363546f1d337e85568dc5079cae4507840
 workflow-type: tm+mt
-source-wordcount: '152'
+source-wordcount: '172'
 ht-degree: 0%
 
 ---
@@ -18,31 +18,64 @@ U beschikt over bepaalde bestellingen en uitbetalingsgegevens, zodat u de financ
 
 U kunt de financiële rapportage van Adobe Commerce afstemmen op uw ERP-systeem (Enterprise Resource Planning) dat niet van de Adobe is, met de verhogende id die aan een specifieke bestelling is gekoppeld.
 
-Wanneer de betalingsservices de handelsorder naar PayPal verzendt, wordt de verhogingsid opgenomen als de `custom_id`. De `custom_id` is zichtbaar in de detailhandelsactiviteiten voor een uitbetaling en in de PayPal-website.
+Wanneer de betalingsservices de handelsorder naar PayPal verzendt, wordt de verhogingsid opgenomen als de `custom_id` _en_ in de `invoice_id` (die ook een willekeurige tekenreeks na de `increment_id`).
 
-`custom_id` onder aan het detailhandelsbedrijf voor een uitbetaling:
+De id&#39;s zijn gemakkelijk toegankelijk in zowel de zakelijke activiteitengegevens voor een betaling als in de PayPal-website.
 
-![`custom_id` in detail van de handelsactiviteit](assets/merchant-activity.png)
+De `invoice_id` en `custom_id` worden onder aan de detailhandel weergegeven voor een uitbetaling:
 
-`custom_id` in de details op de website van PayPal:
+![`custom_id` in detail van de handelsactiviteit](assets/merchant-activity-ids.png)
+
+`custom_id` en `invoice_id` in de details op de website van PayPal:
 
 ```json
    ...
-   },
-   "seller_protection": {
-   "status": "NOT_ELIGIBLE"
-   },
-   "create_time": "2022-08-28T21:06:53Z",
-   "custom_id": "000000829",
-   "supplementary_data": {
-   "related_ids":
-
-   { "authorization_id": "6WW957787A749904A", "order_id": "3SV13726F9525791J" }
-   },
+   {
+    "id": "4E855005GK253170H",
+    "intent": "AUTHORIZE",
+    "status": "COMPLETED",
+    "payment_source": {
+        ...
+    },
+    "purchase_units": [
+        {
+            ...
+            "custom_id": "000001322",
+            "invoice_id": "000001322-c01bd7c3-920f-4542-a900-738082177e92",
+            ...
+            "payments": {
+                "authorizations": [
+                    {
+                       ...
+                        "invoice_id": "000001322-c01bd7c3-920f-4542-a900-738082177e92",
+                        "custom_id": "000001322",
+                        ...
+                    }
+                ],
+                "captures": [
+                    {
+                        ...
+                        "invoice_id": "000001322-c01bd7c3-920f-4542-a900-738082177e92",
+                        "custom_id": "000001322",
+                        ...
+                    }
+                ]
+            }
+        }
+    ],
+    "payer": {
+        ...
+    },
+    "create_time": "2022-09-12T14:59:01Z",
+    "update_time": "2022-09-12T14:59:45Z",
+    "links": [
+        ...
+    ]
+}
    ...
 ```
 
 Zie de REST APIs-documentatie van PayPal voor meer informatie:
 
-* [`purchase_unit` waarin `custom_id` woonwijken](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit:~:text=Read%20only.-,purchase_unit,-Collapse)
+* [`purchase_unit`, waarin `custom_id` en `invoice_id` woonachtig](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit:~:text=Read%20only.-,purchase_unit,-Collapse)
 * [Bestellingsgegevens tonen](https://developer.paypal.com/docs/api/orders/v2/#orders_get)

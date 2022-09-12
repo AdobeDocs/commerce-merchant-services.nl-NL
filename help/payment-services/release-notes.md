@@ -1,10 +1,10 @@
 ---
-title: '"[!DNL Payment Services] Opmerkingen bij de release"'
+title: "[!DNL Payment Services] Opmerkingen bij de release"
 description: Lees de opmerkingen bij de release voor meer informatie over alle [!DNL Payment Services] lozingen.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 1f88c66d0c12dcde2c8fdde1dd3b4838ae6d462d
+source-git-commit: 4e6bf72033495683491b0c59a544d1474f6c1486
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '1029'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,10 @@ Zie [Beschikbaarheid](https://devdocs.magento.com/release/availability.html) in 
 Deze versienota&#39;s beschrijven eigenschapveranderingen en moeilijke situaties die voorkwamen en buiten de regelmatige versioned eigenschapversies voor de ontvangen dienst werden vrijgegeven.
 
 +++Hosted service-updates
+
+_12 september 2022_
+
+![Nieuw](../assets/new.svg)<!-- Issue PAY-3705 --> De `increment_id` is nu beschikbaar voor gebruik bij het in overeenstemming brengen van uitbetalingen in externe ERP-systemen. Het wordt doorgegeven aan de [`custom_id` _en_ `invoice_id`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/data.html#reconcile-with-erp-system), zichtbaar in zowel de PayPal-website als de zakelijke activiteitengegevens voor een uitbetaling.
 
 _31 augustus 2022_
 
