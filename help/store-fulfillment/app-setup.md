@@ -4,9 +4,9 @@ description: Stel de [!DNL Store Assist] app voor het beheer van end-to-end work
 role: User, Admin
 level: Intermediate
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
-source-git-commit: 1fb22b4644d41ea5c60aead3fe2c455dfa3382f8
+source-git-commit: fda4620f57aa7aa9fb930b10f5717fee98983378
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Voor de app Store Assist zijn twee soorten configuraties vereist:
 
    - **Annulering uit de winkel**—Specificeer of de orden van de opslag kunnen worden geannuleerd en welke rollen annuleringstoestemmingen hebben
 
-   - **Opschonen van bestellingen, venster**—Specificeer hoe lang voorbij de geplande ophaaltijd dat een geplakte orde in het opvoeren alvorens wordt herbevolkt-bijvoorbeeld, drie dagen blijft.
+   - **Opschonen van bestellingen, venster**—Opgeven hoe lang het verleden is [Geschatte levertijd voor afhalen](enable-general.md#delivery-method-title-configuration) dat een geplakte order in ophaling alvorens wordt herbevolkt-bijvoorbeeld, drie dagen blijft. De standaardwaarde is 7 dagen. Als deze configuratie is ingeschakeld, wordt de volgorde automatisch geannuleerd wanneer deze tijd verloopt. De items worden opnieuw opgeslagen en de verkoper ontvangt een annuleringsbericht.
 
    - Alles aanpassen in app-instructies (kiezen, opvoeren, afleveren).
 

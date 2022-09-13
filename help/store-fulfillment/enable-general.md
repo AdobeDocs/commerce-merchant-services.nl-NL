@@ -4,49 +4,140 @@ description: Algemene instellingen configureren om in te schakelen [!DNL Store F
 role: User, Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
+source-git-commit: fda4620f57aa7aa9fb930b10f5717fee98983378
 workflow-type: tm+mt
-source-wordcount: '2413'
+source-wordcount: '2518'
 ht-degree: 0%
 
 ---
 
-# Algemene configuratie
+# Winkelservice en verkoopconfiguratie
 
-In de handel Admin van Adobe, vorm algemene configuratiemontages om toe te laten [!DNL Store Fulfillment] de diensten voor uw opslag, vormen globale uitbreidingsmontages en verstrekken zeer belangrijke gegevens voor de integratie door te vormen [!UICONTROL Account Credentials].
+Configureren[!DNL Store Fulfillment] om de extensie in te schakelen, extensie-instellingen op te geven, de beveiligingsinstellingen voor gebruikers van de app Store Assist te configureren en opties voor leveringsmethoden in te stellen.
 
-De integratie moet verbonden zijn met de dienst van de Afhandeling van de Opslag. Configureer ook de algemene instellingen voor winkelvervulling om de services voor winkelvervulling in te schakelen en aan te passen op basis van de mogelijkheden en operationele vereisten van uw organisatie.
+>[!IMPORTANT]
+>
+>De configuratie van de service Afhandeling opslaan is alleen van toepassing nadat u een verbinding hebt gemaakt met uw Adobe Commerce-instantie en de [!DNL Store Fulfillment] app. Zie [Afhandeling van Connect Store](connect-set-up-service.md).
 
-De algemene configuratie voor [!DNL Store Fulfillment] bevat de volgende configuratie-instellingen:
+Configureer de instellingen voor de services voor winkelvervulling via het menu Configuratie van Admin Store in Adobe Commerce.
 
-- [De oplossing inschakelen](#enable-the-store-fulfillment-solution)
-- [Accountgegevens beheren om verbinding te maken met de service Afhandeling van winkel](#account-credentials)
-- [Logboekregistratie configureren](#configure-logging)
-- [Opties instellen voor het beheer van de volgorde en de synchronisatie van fouten](#order-synchronization)
-- [Verzendopties voor winkelvervulling inschakelen](#enable-store-fullment-shipping-options)
-- [Beveiligings- en verificatie-instellingen configureren voor de Store Fulfillment App](#store-fulfillment-app)
-- [Beschikbaarheid en configuratie van leveringsmethode instellen](#in-store-delivery-methods)
+Open de instellingen om de extensie in te schakelen, globale instellingen te configureren en beveiligingsopties op te geven voor gebruikersverbindingen en accounts van de app Store Assist door **[!UICONTROL Stores > Configuration > Services > Store Fulfillment by Walmart Commerce Technologies]**.
+
+![Configuratie van beheerderswinkelservices voor winkeluitvoering](assets/store-services-admin-sf-config.png)
+
+Heb toegang tot de montages om leveringsmethodes te vormen door te selecteren **[!UICONTROL Store > Configuration > Sales > Delivery Methods > In-Store Pickup]**.
+
+![Verkoopconfiguratie voor winkel beheren voor winkeluitvoering](assets/store-sales-admin-sf-deliver-config.png)
+
+## Basisinstellingen
+
+<table>
+<thead>
+<tr>
+<td><strong>Veld</strong></td>
+<td><strong>Beschrijving</strong></td>
+<td><strong>Toepassingsgebied</strong></td>
+<td><strong>Vereist</strong></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>[!UICONTROL Price]</strong></td>
+<td>De prijs die u de klant in rekening brengt voor het ophalen in de winkel. Heeft als standaardwaarde nul.</td>
+<td>Website</td>
+<td>Nee</td>
+</tr>
+<tr>
+<td><strong>[!UICONTROL Search Radius]</strong></td>
+<td>De straal, in kilometers, die moet worden gebruikt wanneer een verkoopster zoekt naar een locatie voor het ophalen van een winkel in het winkeluitchecken. De zoekresultaten retourneren alleen opslagruimten die zich binnen een opgegeven zoekstraal bevinden.</td>
+<td>Website</td>
+<td>Nee</td>
+</tr>
+<tr>
+<td><strong>[!UICONTROL Displayed error message]</strong></td>
+<td>Een bericht dat wordt weergegeven wanneer een klant in-store oppikken selecteert, maar de leveringsmethode niet beschikbaar is. U kunt de standaardtekst desgewenst aanpassen.
+</td>
+<td>Winkelweergave</td>
+<td>Nee</td>
+</tr>
+</tbody>
+</table>
+
+>[!NOTE]
+>
+>De [!UICONTROL Search Radius] het plaatsen wordt gebruikt slechts als u hebt gevormd [opslaglocatie en toewijzing instellen](store-location-map-provider-setup.md) voor Adobe Commerce.
 
 ## De oplossing voor winkelvervulling inschakelen
 
-| **Veld** | **Beschrijving** | **Toepassingsgebied** | **Vereist** |
-|--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
-| **[!UICONTROL Enabled]** | Schakel de oplossing in of uit. Indien deze optie is ingeschakeld, configureert en gebruikt u de mogelijkheden voor het afhandelen van winkels en maakt u een verbinding tussen uw Adobe Commerce-winkel en de services voor het afhandelen van winkels. Als deze optie is uitgeschakeld, zijn alle functies voor het afhandelen van winkels uitgeschakeld en is er geen communicatie tussen Adobe Commerce en de services voor het afhandelen van winkels. Bestelgegevens kunnen niet worden verwerkt of ontvangen. | Algemeen | Ja |
+De optie [!DNL Store Fulfillment] -oplossing om de mogelijkheden voor in-store en curbside ophalen toe te voegen aan de inkoop- en uitcheckervaringen in uw Adobe Commerce-winkel.
 
-Als u deze instelling wilt voltooien, raadpleegt u **Opslag > Configuratie > de Diensten > de Verwezenlijking van de Opslag door de Technologieën van de Handel van de Walmart**.
+<table>
+<thead>
+<tr>
+<td><strong>Veld</strong></td>
+<td><strong>Beschrijving</strong></td>
+<td><strong>Toepassingsgebied</strong></td>
+<td><strong>Vereist</strong></td>
+</tr>
+ </thead>
+ <tbody>
+<tr>
+<td><strong>[!UICONTROL Enabled]</strong></td>
+<td>Schakel de oplossing in of uit. Indien deze optie is ingeschakeld, configureert en gebruikt u de mogelijkheden voor het afhandelen van winkels en maakt u een verbinding tussen uw Adobe Commerce-winkel en de services voor het afhandelen van winkels. Als deze optie is uitgeschakeld, zijn alle functies voor het afhandelen van winkels uitgeschakeld en is er geen communicatie tussen Adobe Commerce en de services voor het afhandelen van winkels. Bestelgegevens kunnen niet worden verwerkt of ontvangen.</td>
+<td>Algemeen</td>
+<td>Ja</td>
+</tr>
+</tbody>
+</table>
 
 ## Accountreferenties toevoegen
 
-| **Veld** | **Beschrijving** | **Toepassingsgebied** | **Vereist** |
-|----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
-| **[!UICONTROL Environment]** | Kan selecteren *Sandbox* of *Productie*:</br> Sandbox communiceert met de uitvoeringsdiensten in een test.</br>De productie communiceert met een levende milieu. Gebruiken **alleen** in productie.</br>U krijgt een reeks geloofsbrieven voor elke milieu en kunt beide reeksen in de zelfde installatie beheren. </br></br>Sla referenties op voordat u de verbinding valideert. | Algemeen | Ja |
-| **[!UICONTROL API Server URL]** | De URL naar het eindpunt van de Fulfillment API van de Winkel van de Marm. Dit moet volledig-gekwalificeerde URL zijn die aan u tijdens uw aan boord nemend proces wordt verstrekt. Klanten die aan Afhandeling van winkels werken, ontvangen zowel een sandbox- als een productie-URL. Kopieer/plak de volledige URL, inclusief de schuine streep &quot;/&quot;. | Algemeen | Ja |
-| **[!UICONTROL Token Auth Server URL]** | URL aan het eindpunt van de Authentificatie van de Opslag van de Marm. De waarde moet volledig-gekwalificeerde URL zijn die aan u tijdens uw aan boord nemend proces wordt verstrekt. U ontvangt zowel een sandbox als een productie-URL. Kopieer/plak de volledige URL, inclusief slash aan het einde `/`&quot;. | Algemeen | Ja |
-| **[!UICONTROL Merchant Id]** | Uw unieke bedrijfs-id (huurder) die u tijdens het instapproces hebt ontvangen. Uw id wordt gebruikt om uw bestellingen te routeren en zorgt ervoor dat uw winkels deze ontvangen. | Algemeen | Ja |
-| **[!UICONTROL Consumer Id]** | Uw unieke integratie-id. Dit wordt aan u verstrekt tijdens uw aan boord gaan proces. Dat verandert niet. Het wordt gebruikt om al mededeling met de uitvoeringsdiensten voor authentiek te verklaren. | Algemeen | Ja |
-| **[!UICONTROL Consumer Secret]** | Uw unieke integratiesleutel. Dit wordt aan u verstrekt tijdens uw aan boord gaan proces. Het wordt gebruikt om al mededeling met de uitvoeringsdiensten voor authentiek te verklaren. | Algemeen | Ja |
+<table>
+<tr>
+<td><strong>Veld</strong></td>
+<td><strong>Beschrijving</strong></td>
+<td><strong>Toepassingsgebied</strong></td>
+<td><strong>Vereist</strong></td>
+    </tr>
+<tr>
+<td><strong>[!UICONTROL Environment]</strong></td>
+<td>Selecteer <i>Sandbox</i> of <i>Productie</i><br></br> Sandbox communiceert met de uitvoeringsdiensten in een test.De productie communiceert met een levende milieu. Gebruiken <strong>alleen</strong> in productie.<br></br>U krijgt een reeks geloofsbrieven voor elke milieu en kunt beide reeksen in de zelfde installatie beheren. <br></br>Sla referenties op voordat u de verbinding valideert.</td>
+<td>Algemeen</td>
+<td>Ja</td>
+    </tr>
+<tr>
+<td><strong>[!UICONTROL API Server URL]</strong></td>
+<td>De URL naar het eindpunt van de Fulfillment API van de Winkel van de Marm. Dit moet de volledig gekwalificeerde URL zijn die u tijdens uw instapproces wordt verstrekt. Klanten die aan Afhandeling van winkels werken, ontvangen zowel een sandbox- als een productie-URL. Kopieer/plak de volledige URL, inclusief de schuine streep "/".</td>
+<td>Algemeen</td>
+<td>Ja</td>
+    </tr>
+<tr>
+<td><strong>[!UICONTROL Token Auth Server URL]</strong></td>
+<td>URL aan het eindpunt van de Authentificatie van de Opslag van de Marm. De waarde moet volledig - gekwalificeerde URL zijn die aan u tijdens uw aan boord nemend proces wordt verstrekt. U ontvangt zowel een sandbox als een productie-URL. Kopieer/plak de volledige URL, inclusief de schuine streep ‘/`.</td>
+<td>Algemeen</td>
+<td>Ja</td>
+    </tr>
+<tr>
+<td><strong>[!UICONTROL Merchant Id]</strong></td>
+<td>Uw unieke bedrijfs-id (huurder) die u tijdens het instapproces hebt ontvangen. Uw id wordt gebruikt om uw bestellingen te routeren en zorgt ervoor dat uw winkels deze ontvangen.</td>
+<td>Algemeen</td>
+<td>Ja</td>
+    </tr>
+<tr>
+<td><strong>[!UICONTROL Consumer Id]</strong></td>
+<td>Uw unieke integratie-id. Dit wordt aan u verstrekt tijdens uw aan boord gaan proces. Dat verandert niet. Het wordt gebruikt om al mededeling met de uitvoeringsdiensten voor authentiek te verklaren.</td>
+<td>Algemeen</td>
+<td>Ja</td>
+    </tr>
+<tr>
+<td><strong>[!UICONTROL Consumer Secret]</strong></td>
+<td>Uw unieke integratiesleutel. Dit wordt aan u verstrekt tijdens uw aan boord gaan proces. Het wordt gebruikt om al mededeling met de uitvoeringsdiensten voor authentiek te verklaren.</td>
+<td>Algemeen</td>
+<td>Ja</td>
+    </tr>
+</table>
 
-Nadat u de Account Credentials hebt geconfigureerd, selecteert u **[!UICONTROL Validate Credentials]** voor het eerst een verbinding met de uitvoeringswebservice te verifiëren en tot stand te brengen.
+Nadat u de Account Credentials hebt geconfigureerd, selecteert u <strong>[!UICONTROL Validate Credentials]</strong> voor het eerst een verbinding met de uitvoeringswebservice te verifiëren en tot stand te brengen.
 
 ## Logboekregistratie configureren
 
@@ -54,34 +145,99 @@ Wanneer het registreren wordt toegelaten, kan uw logboekdossier snel uitbreiden.
 
 Vraag de systeembeheerder om uw milieu&#39;s te vormen om uitzonderingsbehandeling toe te staan zodat API-verwante uitzonderingen door de firewall of het geheime voorgeheugen kunnen worden gevangen. U kunt ook uw systeembeheerder vragen om logrotatie voor dit bestand in te stellen om de grootte te minimaliseren.
 
-| **Veld** | **Beschrijving** | **Toepassingsgebied** | **Vereist** |
-|----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
-| **Foutopsporingsmodus** | Zuiver Wijze wordt gebruikt om de geregistreerde activiteit binnen de integratie te verhogen. Als deze optie is uitgeschakeld, wordt er geen foutopsporingsinformatie geregistreerd. Wanneer toegelaten, wordt al zuivert informatie geregistreerd.</br> Alle geregistreerde gegevens zijn te vinden in bestand: `var/log/walmart-bopis.log` | Algemeen | Nee |
+<table>
+<thead>
+<tr>
+<td><strong>Veld</strong></td>
+<td><strong>Beschrijving</strong></td>
+<td><strong>Toepassingsgebied</strong></td>
+<td><strong>Vereist</strong></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>[!UICONTROL Debug Mode]</strong></td>
+<td>Zuiver Wijze wordt gebruikt om de geregistreerde activiteit binnen de integratie te verhogen. Als deze optie is uitgeschakeld, wordt er geen foutopsporingsinformatie geregistreerd. Wanneer toegelaten, wordt al zuivert informatie geregistreerd. Alle geregistreerde gegevens zijn te vinden in bestand: ` var/log/walmart-bopis.log`</td>
+<td>Algemeen</td>
+<td>Nee</td>
+</tr>
+</tbody>
+</table>
 
 ## Ordersynchronisatie beheren
 
 Configureer de instellingen voor het beheer van foutafhandeling voor ordersynchronisatie, cataloguskenmerken die moeten worden gebruikt voor het scannen van streepjescodes tijdens het selecteren van bestellingen, en configureer de batchformaten voor de wachtrij met opslagtegoeden.
 
 U kunt details over de verrichtingen van de ordesynchronisatie van het dashboard van het Beheer van de Rij van de Opslag in Admin bekijken (
-**[!UICONTROL System > Tools > Store Fulfillment Queue]**).
+<strong>[!UICONTROL System > Tools > Store Fulfillment Queue]</strong>).
 
 ### Synchronisatie-foutbeheer
 
-| **Veld** | **Beschrijving** | **Toepassingsgebied** | **Vereist** |
-|-----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|--------------|
-| **Kritieke fout opnieuw proberen** | Hiermee worden de pogingen voor het opnieuw proberen van een recordsynchronisatiebewerking opgegeven nadat een kritieke fout is opgetreden.</br></br>De kritieke fouten komen voor wanneer de integratie er niet in slaagt een positieve reactie van de uitvoeringsdienst te krijgen. Dit kan voorkomen wanneer de dienst neer is of wanneer er een fout in de ordegegevens die wordt verzonden is.</br></br>Wanneer de drempel voor opnieuw proberen is bereikt, blijft het item in een wachtrij maar wordt het niet opnieuw verwerkt. Alle items weergeven met fouten van **[!UICONTROL System > Tools > Store Fulfillment Queue]** Beheer in de beheerder. Neem contact op met uw accountmanager om problemen op te lossen met onderdelen die op consistente wijze mislukken. | Algemeen | Nee |
-| **E-mail met foutmelding inschakelen** | Schakel foutmeldingen in om een e-mailbericht te ontvangen wanneer de [!UICONTROL Retry Critical Error Threshold] wordt bereikt voor een bestelling. Het bericht bevat alle beschikbare gegevens over de fout. | Algemeen | Nee |
-| **Foutmelding verzenden naar** | Een door komma&#39;s gescheiden lijst met e-mailadressen van ontvangers voor foutmeldingen. | Algemeen | Nee |
-| **Exception-e-mailsjabloon bestellen** | Hier geeft u de e-mailsjabloon op die wordt gebruikt om ontvangers op de hoogte te stellen van fouten bij de synchronisatie van bestellingen. Er is een standaardsjabloon beschikbaar. Aanpassing wordt niet ondersteund. | Winkelweergave | Nee |
+<table>
+<tr>
+<td><strong>Veld</strong></td>
+<td><strong>Beschrijving</strong></td>
+<td><strong>Toepassingsgebied</strong></td>
+<td><strong>Vereist</strong></td>
+</tr>
+<tr>
+<td><strong>[!UICONTROL Retry Critical Error]</strong></td>
+<td>Hiermee worden de pogingen voor het opnieuw proberen van een recordsynchronisatiebewerking opgegeven nadat een kritieke fout is opgetreden.<br></br>De kritieke fouten komen voor wanneer de integratie er niet in slaagt een positieve reactie van de uitvoeringsdienst te krijgen. Dit kan voorkomen wanneer de dienst neer is of wanneer er een fout in de ordegegevens die wordt verzonden is.<br></br>Wanneer de drempel voor opnieuw proberen is bereikt, blijft het item in een wachtrij maar wordt het niet opnieuw verwerkt. Alle items weergeven met fouten van <strong>[!UICONTROL System > Tools > Store Fulfillment Queue]</strong> Beheer in de beheerder. Neem contact op met uw accountmanager om problemen op te lossen met onderdelen die op consistente wijze mislukken.</td>
+<td>Algemeen</td>
+<td>Nee</td>
+</tr>
+<tr>
+<td><strong>[!UICONTROL Enable Error Notification Email]</strong></td>
+<td>Schakel foutmeldingen in om een e-mailbericht te ontvangen wanneer de [!UICONTROL Retry Critical Error Threshold] wordt bereikt voor een bestelling. Het bericht bevat alle beschikbare gegevens over de fout.</td>
+<td>Algemeen</td>
+<td>Nee</td>
+</tr>
+<tr>
+<td><strong>[!UICONTROL Send Error Notification Email To]</strong></td>
+<td>Een door komma's gescheiden lijst met e-mailadressen van ontvangers voor foutmeldingen.</td>
+<td>Algemeen</td>
+<td>Nee</td>
+</tr>
+<tr>
+<td><strong>[!UICONTROL Order Sync Exception Email Template]</strong></td>
+<td>Hier geeft u de e-mailsjabloon op die wordt gebruikt om ontvangers op de hoogte te stellen van fouten bij de synchronisatie van bestellingen. Er is een standaardsjabloon beschikbaar. Aanpassing wordt niet ondersteund.</td>
+<td>Winkelweergave</td>
+<td>Nee</td>
+</tr>
+</table>
 
 ### Ordersynchronisatie
 
-| **Veld** | **Beschrijving** | **Toepassingsgebied** | **Vereist** |
-|--------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
-| **[!UICONTROL Barcode Source]** | Het cataloguskenmerk dat de scannbare code voor overeenkomende items opslaat op uw bedrijfslocaties.</br></br>Als u slechts één bestaande handelsplaats hebt, is het waarschijnlijk dat u codes UPC gebruikt, terwijl uw e-commercekanaal producten door SKU identificeert. Als dit uw scenario is, selecteer het catalogusattribuut dat de code UPC bevat.</br></br>Deze instelling zorgt ervoor dat orders die naar uw leverancier worden verzonden, lijstitems met de juiste id opslaan, zodat de opslagpartners items tijdens het plukproces nauwkeurig kunnen scannen.</br></br>Als u onzeker bent, controleer met uw uitvoeringsvennoten in de Verzending en het Schoppen afdeling om te bepalen welke attributen zouden moeten worden verzonden. Mogelijk moet u het juiste kenmerk toevoegen aan de set Adobe Commerce-productkenmerken als het kenmerk momenteel niet in de database is opgenomen. | Website | Ja |
-| **[!UICONTROL Barcode Type]** | Het cataloguskenmerk dat de bron van de streepjescode voor overeenkomende items opslaat op uw bedrijfslocaties.</br></br>Deze instelling zorgt ervoor dat orders die naar uw leverancier worden verzonden, lijstitems met de juiste id opslaan, zodat de opslagpartners items tijdens het plukproces op nauwkeurige wijze kunnen scannen. De opties omvatten - SKU, UPC, GTIN, UPCA, EAN13, UPCE0, DISA, UAB, CODABAR, Price Embedded UPC.</br></br>Als u niet zeker weet, selecteert u de optie die het meest lijkt op de waarden in uw [!UICONTROL Barcode Source] kenmerk. Associaten van winkels kunnen nog steeds handmatig overeenkomen met items in hun keuzelijst. | Website | Ja |
-| **[!UICONTROL Max Number of Items]** | Het maximumaantal items dat in één keer uit de wachtrij voor winkelvervulling moet worden verzonden.</br></br>BOPIS-orders worden op regelmatige tijdstippen batchgewijs naar de uitvoeringsdienst verzonden. Met deze instelling kunt u de grootte van de batch bepalen.</br></br>De standaardwaarde is 100 items. Afhankelijk van het volume en de capaciteit van uw bestelling moet u deze waarde mogelijk omhoog of omlaag aanpassen. | Algemeen | Nee |
-
+<table>
+<thead>
+<tr>
+<td><strong>Veld</strong></td>
+<td><strong>Beschrijving</strong></td>
+<td><strong>Toepassingsgebied</strong></td>
+<td><strong>Vereist</strong></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>[!UICONTROL Barcode Source]</strong></td>
+<td>Het cataloguskenmerk dat de scannbare code voor overeenkomende items opslaat op uw bedrijfslocaties.<br></br>Als u slechts één bestaande handelsplaats hebt, is het waarschijnlijk dat u codes UPC gebruikt, terwijl uw e-commercekanaal producten door SKU identificeert. Als dit uw scenario is, selecteer het catalogusattribuut dat de code UPC bevat.<br></br>Deze instelling zorgt ervoor dat bestellingen die naar de items in de winkellijst worden verzonden met de juiste id, zodat de opslagpartners items tijdens het plukproces op nauwkeurige wijze kunnen scannen.<br></br>Als u onzeker bent, controleer met uw uitvoeringsvennoten in de Verzending en het Schoppen afdeling om te bepalen welke attributen zouden moeten worden verzonden. Mogelijk moet u het juiste kenmerk toevoegen aan de set Adobe Commerce-productkenmerken als het kenmerk momenteel niet in de database is opgenomen.</td>
+<td>Website</td>
+<td>Ja</td>
+</tr>
+<tr>
+<td><strong>[!UICONTROL Barcode Type]</strong></td>
+<td>Het cataloguskenmerk dat de bron van de streepjescode voor overeenkomende items opslaat op uw bedrijfslocaties.<br></br>Met deze instelling zorgt u ervoor dat bestellingen die naar de items in de winkellijst met de juiste id worden verzonden, zodat de opslagpartners items tijdens het plukproces op nauwkeurige wijze kunnen scannen. De opties omvatten - SKU, UPC, GTIN, UPCA, EAN13, UPCE0, DISA, UAB, CODABAR, Price Embedded UPC.<br></br>Als u niet zeker weet, selecteert u de optie die het meest lijkt op de waarden in uw [!UICONTROL Barcode Source] kenmerk. Associaten van winkels kunnen nog steeds handmatig overeenkomen met items in hun keuzelijst.</td>
+<td>Website</td>
+<td>Ja</td>
+</tr>
+<tr>
+<td><strong>[!UICONTROL Max Number of Items]</strong></td>
+<td>Het maximumaantal items dat in één keer uit de wachtrij voor winkelvervulling moet worden verzonden.<br></br>BOPIS-orders worden op regelmatige tijdstippen batchgewijs naar de uitvoeringsdienst verzonden. Met deze instelling kunt u de grootte van de batch bepalen.<br></br>De standaardwaarde is 100 items. Afhankelijk van het volume en de capaciteit van uw bestelling moet u deze waarde mogelijk omhoog of omlaag aanpassen.</td>
+<td>Algemeen</td>
+<td>Nee</td>
+</tr>
+</tbody>
+</table>
 
 ## Verzendopties voor winkelvervulling inschakelen
 
@@ -89,15 +245,45 @@ Configureer de verzendopties voor de afhandeling van winkels die de beschikbaarh
 
 ### Verzenden naar winkel
 
-| **Veld** | **Beschrijving** | **Toepassingsgebied** | **Vereist** |
-|---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
-| **[!UICONTROL Enable Ship To Store]** | De instelling van het verzendings-naar-archief maakt gebruik van uw bestaande verzendmogelijkheden. Als u Inventory management gebruikt, of als u bestellingen kunt accepteren en uitvoeren op zakelijke locaties zonder voorraad via voorraadoverdrachten van winkel naar winkel, stelt u deze optie in op `Yes`.</br></br>Als u geen ondersteuning kunt bieden voor de optie voor het verzenden van objecten naar een winkel of deze niet wilt aanbieden, kunt u instellen op `No`. Als deze optie is uitgeschakeld, worden items in uw catalogus met een nulvoorraad voor een winkel of items die onder die locatie liggen [!DNL Out of Stock Threshold], worden niet aangeboden met opties voor in-store ophalen.</br></br>Dit is een algemene instelling die per bedrijfslocatie kan worden aangepast. | Algemeen | Nee |
+<table>
+<thead>
+<tr>
+<td><strong>Veld</strong></td>
+<td><strong>Beschrijving</strong></td>
+<td><strong>Toepassingsgebied</strong></td>
+<td><strong>Vereist</strong></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>[!UICONTROL Enable Ship To Store]</strong></td>
+<td>De instelling voor het naar de winkel verzenden van verzendingen is gebaseerd op uw bestaande verzendmogelijkheden. Als u Inventory management gebruikt, of als u bestellingen kunt accepteren en uitvoeren op zakelijke locaties zonder voorraad via voorraadoverdrachten van winkel naar winkel, stelt u deze optie in op Ja.<br></br>Als u geen ondersteuning kunt bieden voor de optie voor het aan boord brengen van een schip of deze niet wilt aanbieden, stelt u deze in op "Nee". Als deze optie is uitgeschakeld, worden items in uw catalogus met een nulvoorraad voor een winkel of items die onder die locatie liggen [!DNL Out of Stock Threshold], worden niet aangeboden met opties voor in-store ophalen.<br></br>Dit is een algemene instelling die per bedrijfslocatie kan worden aangepast.</td>
+<td>Algemeen</td>
+<td>Nee</td>
+</tr>
+</tbody>
+</table>
 
 ### Verzenden uit winkel
 
-| **Veld** | **Beschrijving** | **Toepassingsgebied** | **Vereist** |
-|-----------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
-| **[!UICONTROL Enable Ship From Store]** | Schakelt de optie Home Delivery in of uit in uw winkels. Als deze optie is ingeschakeld, worden de locaties van uw winkels beschouwd als zijnde geaggregeerd met andere toegewezen bronnen in het bestand dat aan uw website is gekoppeld.</br></br>In de standaard Inventory management-services wordt [!DNL Ship from Store] Deze optie is inherent en kan niet worden uitgeschakeld. Met de Oplossing van de Afhandeling van de Opslag, hebt u de optie om het of uit te zetten.</br></br>Dit is een globale instelling. U kunt deze instelling ook per bedrijfslocatie en product aanpassen. | Algemeen | Nee |
+<table>
+<thead>
+<tr>
+<td><strong>Veld</strong></td>
+<td><strong>Beschrijving</strong></td>
+<td><strong>Toepassingsgebied</strong></td>
+<td><strong>Vereist</strong></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>[!UICONTROL Enable Ship From Store]</strong></td>
+<td>Schakelt de optie Home Delivery in of uit in uw winkels. Als deze optie is ingeschakeld, worden de locaties van uw winkels beschouwd als zijnde geaggregeerd met andere toegewezen bronnen in het bestand dat aan uw website is gekoppeld.<br></br>In de standaard Inventory management-services wordt [!DNL Ship from Store] Deze optie is inherent en kan niet worden uitgeschakeld. Met de oplossing Afhandeling bewaren kunt u deze in- of uitschakelen.<br></br>Dit is een globale instelling. U kunt deze instelling ook per bedrijfslocatie en product aanpassen.</td>
+<td>Algemeen</td>
+<td>Nee</td>
+</tr>
+</tbody>
+</table>
 
 
 ## Gebruik accounts en machtigingen voor winkeluitvoering App beheren
@@ -106,26 +292,86 @@ Configureer de instellingen voor de gebruikersaccount en wachtwoordbeveiliging v
 
 ### Toepassingsbeveiliging
 
-| **Veld** | **Beschrijving** | **Toepassingsgebied** | **Vereist** |
-|------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
-| **[!UICONTROL User Session Lifetime]** | Het tijdframe, in seconden, dat een gebruikerssessie met een aan een winkel gekoppelde gebruiker actief blijft voordat deze automatisch wordt afgemeld. Geldige waarden liggen tussen 60 en 31536000. | Algemeen | Nee |
-| **[!UICONTROL Maximum Login Failures to Lockout Account]** | Hiermee geeft u het aantal mislukte aanmeldpogingen op dat is toegestaan voordat een aan een winkel gerelateerde persoon uit zijn of haar account is vergrendeld.</br></br>Stel de waarde in op 0 als u het afsluiten van een account wilt uitschakelen. | Algemeen | Nee |
-| **[!UICONTROL Lockout Time (minutes)]** | Aantal minuten om een account te vergrendelen na mislukken van aanmelding. | Algemeen | Nee |
-| **[!UICONTROL Force Password Change]** | Hiermee wordt bepaald of een wijziging van het gebruikerswachtwoord is vereist.</br></br>`Yes`: Vereisen dat de gebruiker zijn wachtwoord wijzigt na het instellen van de account.</br>`No`: raadt de gebruiker aan het wachtwoord te wijzigen na het instellen van de account. | Algemeen | Nee |
-| **Wachtwoordlevensduur** | Het aantal dagen dat een wachtwoord geldig blijft voordat een vereist wachtwoord wordt gewijzigd. Laat leeg om deze optie uit te schakelen. | Algemeen | Nee |
+<table>
+<thead>
+<tr>
+<td><strong>Veld</strong></td>
+<td><strong>Beschrijving</strong></td>
+<td><strong>Toepassingsgebied</strong></td>
+<td><strong>Vereist</strong></td>
+</tr>
+ </thead>
+ <tbody>
+<tr>
+<td><strong>[!UICONTROL User Session Lifetime]</strong></td>
+<td>Het tijdframe, in seconden, dat een gebruikerssessie met een aan een winkel gekoppelde gebruiker actief blijft voordat deze automatisch wordt afgemeld. Geldige waarden liggen tussen 60 en 31536000.</td>
+<td>Algemeen</td>
+<td>Nee</td>
+</tr>
+<tr>
+<td><strong>[!UICONTROL Maximum Login Failures to Lockout Account]</strong></td>
+<td>Hiermee geeft u het aantal mislukte aanmeldpogingen op dat is toegestaan voordat een aan een winkel gerelateerde persoon uit zijn of haar account is vergrendeld.<br></br>Stel de waarde in op 0 als u het afsluiten van een account wilt uitschakelen.</td>
+<td>Algemeen</td>
+<td>Nee</td>
+</tr>
+<tr>
+<td><strong>[!UICONTROL Lockout Time (minutes)]</strong></td>
+<td>Aantal minuten om een account te vergrendelen na mislukken van aanmelding.</td>
+<td>Algemeen</td>
+<td>Nee</td>
+</tr>
+<tr>
+<td><strong>[!UICONTROL Force Password Change]</strong></td>
+<td>Hiermee wordt bepaald of een wijziging van het gebruikerswachtwoord is vereist.<br></br>"Ja": Vereisen dat de gebruiker zijn wachtwoord wijzigt na het instellen van de account."Nr.": raadt de gebruiker aan het wachtwoord te wijzigen na het instellen van de account.</td>
+<td>Algemeen</td>
+<td>Nee</td>
+</tr>
+<tr>
+<td><strong>[!UICONTROL Password Lifetime]</strong></td>
+<td>Het aantal dagen dat een wachtwoord geldig blijft voordat een vereist wachtwoord wordt gewijzigd. Laat leeg om deze optie uit te schakelen.</td>
+<td>Algemeen</td>
+<td>Nee</td>
+</tr>
+</tbody>
+</table>
 
 ### Twee-factor authentificatie
 
-| **Veld** | **Beschrijving** | **Toepassingsgebied** | **Vereist** |
-|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
-| **APP-gebruiker 2FA** | Schakel verificatie met twee factoren in of uit voor opslagassociaties. Wanneer toegelaten, wordt de opslagvennoot ertoe aangezet om een eenmalig wachtwoord te verstrekken dat door een authentificatieleverancier wordt geproduceerd. | Algemeen | Nee |
-| **APP 2FA-beleid** | Plaatst het handhavingsbeleid voor tweefelige authentificatie.</br></br>**[!UICONTROL Optional]**: De opslagvennoot kan bifactorauthentificatie overslaan als geen leverancier wordt geplaatst.</br></br>**[!UICONTROL Mandatory]**: De opslagvennoot wordt vereist om twee-factor authentificatie te voltooien. | Algemeen | Nee |
-| **2FA-providers** | Selecteer één of meerdere diensten van de authentificatieleverancier om archiefassociaties aan te bieden. Als u verificatie met twee factoren wilt instellen en verifiëren, moeten de partners van de winkel de verificatie-app installeren van een van de beschikbare providers die op hun mobiele apparaten zijn geïnstalleerd. | Algemeen | Nee |
+<table>
+<thead>
+<tr>
+<td><strong>Veld</strong></td>
+<td><strong>Beschrijving</strong></td>
+<td><strong>Toepassingsgebied</strong></td>
+<td><strong>Vereist</strong></td>
+</tr>
+ </thead>
+ <tbody>
+<tr>
+<td><strong>[!UICONTROL APP User 2FA]</strong></td>
+<td>Schakel verificatie met twee factoren in of uit voor opslagassociaties. Wanneer toegelaten, wordt de opslagvennoot ertoe aangezet om een eenmalig wachtwoord te verstrekken dat door een authentificatieleverancier wordt geproduceerd.</td>
+<td>Algemeen</td>
+<td>Nee</td>
+</tr>
+<tr>
+<td><strong>[!UICONTROL APP 2FA Policy]</strong></td>
+<td>Plaatst het handhavingsbeleid voor tweefelige authentificatie.<br></br><strong>[!UICONTROL Optional]</strong>: De opslagvennoot kan bifactorauthentificatie overslaan als geen leverancier wordt geplaatst.<br></br><strong>[!UICONTROL Mandatory]</strong>: De opslagvennoot wordt vereist om twee-factor authentificatie te voltooien.</td>
+<td>Algemeen</td>
+<td>Nee</td>
+</tr>
+<tr>
+<td><strong>[!UICONTROL 2FA Providers]</strong></td>
+<td>Selecteer één of meerdere diensten van de authentificatieleverancier om archiefassociaties aan te bieden. Als u verificatie met twee factoren wilt instellen en verifiëren, moeten de partners van de winkel de verificatie-app installeren van een van de beschikbare providers die op hun mobiele apparaten zijn geïnstalleerd.</td>
+<td>Algemeen</td>
+<td>Nee</td>
+</tr>
+</tbody>
+</table>
 
-### Leveringsmethoden
+## Leveringsmethoden
 
 Store Fulfillment werkt door de native Adobe Commerce uit te breiden [!DNL In-Store Delivery] mogelijkheden.
-Nadat u de extensie hebt geïnstalleerd, zijn er aanvullende configuratieopties voor Admin beschikbaar voor leveringsmethoden in de winkel. Configureer deze extra opties vanuit de beheerder door **[!UICONTROL Stores > Configuration > Sales > Delivery Methods > In-Store Pickup]**.
+Nadat u de extensie hebt geïnstalleerd, zijn er aanvullende configuratieopties voor Admin beschikbaar voor leveringsmethoden in de winkel. Configureer deze extra opties vanuit de beheerder door <strong>[!UICONTROL Stores > Configuration > Sales > Delivery Methods > In-Store Pickup]</strong>.
 
 In de montages van de Afhandeling van de Opslag, kunt u de volgende leveringsmethodes voor de orden van de Bestelwagen vormen In-Store.
 
@@ -133,20 +379,41 @@ In de montages van de Afhandeling van de Opslag, kunt u de volgende leveringsmet
 
 - **Ophalen krullen**- De opties van de aanbieding voor klanten om bij een opslagplaats te parkeren en hun orde te hebben die aan hen door een archiefvengeassocieerde wordt geleverd.
 
-#### Configuratie van leveringsmethoden
+>[!NOTE]
+>
+>Voor meer informatie over het vormen van in-store leveringsopties, zie [In-Store levering](https://docs.magento.com/user-guide/shipping/shipping-in-store-delivery.html) in de Adobe Commerce-gebruikershandleiding.
 
-<!---
-In-store pickup, says its global setting, but scope is Website.  How do you configure the in-store pickup options at the retail level?
---->
 
-| **Veld** | **Beschrijving** | **Toepassingsgebied** | **Vereist** |
-|-----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
-| **[!UICONTROL Enable In-Store Pickup]** | Schakel de optie Ophalen in de winkel die tijdens het afrekenen beschikbaar is in of uit voor klanten die Ophalen uit de winkel kiezen. Wanneer het ophalen in de winkel is uitgeschakeld, wordt de optie niet weergegeven.</br></br>Deze globale instelling is van toepassing op alle winkellocaties in de detailhandel. Wanneer toegelaten, kunt u het bij de detailhandel plaats selectief onbruikbaar maken. | Website | Nee |
-| **Ophalen curbside inschakelen** | Schakel de optie Ophalen curven tijdens het uitrekenen in of uit voor klanten die Ophalen van winkel kiezen.</br></br>Deze globale instelling is van toepassing op alle winkellocaties in de detailhandel. Wanneer toegelaten, kunt u het bij de detailhandel plaats selectief onbruikbaar maken. | Website | Nee |
+### Configuratie van leveringsmethoden
 
-Voor details over het aanpassen van de leveringsmethodes bij geselecteerde detailhandelsopslagplaatsen, zie **Configuratie detailhandel**.
+Met de in-store leveringsmethode, kan de klant een bron selecteren die als oppiklocatie tijdens het uitrekenen moet worden gebruikt.
 
-#### Configuratie van de titel van de leveringsmethode
+<table>
+<thead>
+<tr>
+<td><strong>Veld</strong></td>
+<td><strong>Beschrijving</strong></td>
+<td><strong>Toepassingsgebied</strong></td>
+<td><strong>Vereist</strong></td>
+</tr>
+ </thead>
+ <tbody>
+<tr>
+<td><strong>[!UICONTROL Enable In-Store Pickup]</strong></td>
+<td>Schakel de optie Ophalen in de winkel die tijdens het uitchecken beschikbaar is in of uit voor klanten die Ophalen uit de winkel kiezen. Wanneer het ophalen in de winkel is uitgeschakeld, wordt de optie niet weergegeven.<br></br>Deze globale instelling is van toepassing op alle winkellocaties in de detailhandel. Wanneer toegelaten, kunt u het bij de detailhandel plaats selectief onbruikbaar maken.</td>
+<td>Website</td>
+<td>Nee</td>
+</tr>
+<tr>
+<td><strong>[!UICONTROL Enable Curbside Pickup]</strong></td>
+<td>Schakel de optie Ophalen curven tijdens het uitrekenen in of uit voor klanten die Ophalen van winkel kiezen.<br></br>Deze globale instelling is van toepassing op alle winkellocaties in de detailhandel. Wanneer toegelaten, kunt u het bij de detailhandel plaats selectief onbruikbaar maken.</td>
+<td>Website</td>
+<td>Nee</td>
+</tr>
+</tbody>
+</table>
+
+### Configuratie van de titel van de leveringsmethode
 
 <table>
 <thead>
@@ -159,7 +426,7 @@ Voor details over het aanpassen van de leveringsmethodes bij geselecteerde detai
 </thead>
 <tbody><tr>
 <td><strong>Titel thuislevering</strong></td>
-<td>Hier geeft u de titel op die u wilt weergeven voor de optie Home Delivery in de producten-, winkelwagentje- en afrekengebieden. De thuislevering heeft betrekking op de standaardverzendmogelijkheden van Adobe Commerce, van een pakhuis, door een vervoerder, rechtstreeks naar het door de klant opgegeven verzendadres.</br></br>Dit label heeft geen invloed op de geselecteerde verzendmaatschappij of op de labels van de verzendmethode.</td>
+<td>Hier geeft u de titel op die u wilt weergeven voor de optie Home Delivery in de producten-, winkelwagentje- en afrekengebieden. De levering van het huis verwijst naar de standaardverzendmogelijkheden van Adobe Commerce-van een pakhuis, door een drager, of direct aan het klant-verstrekte verzendadres.</br></br>Dit label heeft geen invloed op de geselecteerde verzendmaatschappij of op de labels van de verzendmethode.</td>
 <td>Winkelweergave</td>
 <td>Nee</td>
 </tr>
@@ -226,7 +493,7 @@ Voor details over het aanpassen van de leveringsmethodes bij geselecteerde detai
 </tr>
 </tbody></table>
 
-#### Configuratie van de beschikbaarheidstitels van bestanden
+### Configuratie van de beschikbaarheidstitels van bestanden
 
 <table>
 <thead>
@@ -238,8 +505,8 @@ Voor details over het aanpassen van de leveringsmethodes bij geselecteerde detai
 </tr>
 </thead>
 <tbody><tr>
-<td><strong>In voorraad</strong></td>
-<td>Wanneer een klant de lokator van de detailhandel gebruikt, wordt de beschikbaarheid van de voorraad voor het huidige item of de huidige items voor elke locatie weergegeven.</br></br>U kunt het statuslabel 'in voorraad' hier aanpassen.</td>
+<td><strong>n-stock</strong></td>
+<td>Wanneer een klant de detailhandel locator gebruikt, wordt de voorraadbeschikbaarheid voor één tot de meeste huidige punten getoond voor elke plaats.</br></br>U kunt het statuslabel 'in voorraad' hier aanpassen.</td>
 <td>Winkelweergave</td>
 <td>Nee</td>
 </tr>

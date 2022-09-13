@@ -1,15 +1,15 @@
 ---
-title: '"Workflows voor hulp aan winkels"'
-description: '"Meer informatie over de modules Selecteren, Werkgebied, Handje-uit en Bestellingen in de App Winkelassistentie. Deze modules laten de werkschema van de de opslagvervulling van begin tot eind voor BOPIS orden toe. De Vennoten van de opslag gebruiken deze modules om opslagbestellingen aan klanten te beheren en te leveren."'
+title: Workflows voor hulp aan winkels
+description: Leer meer over de modules Selecteren, Werkgebied, Handje-uit en Bestellingen die beschikbaar zijn in de Store Assist App. Deze modules laten de werkschema van de de opslagvervulling van begin tot eind voor BOPIS orden toe. De Vennoten van de opslag gebruiken deze modules om de bestellingen van de winkelbestelwagen aan klanten te beheren en te leveren.
 role: User
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: a8414f19-5489-41e9-84d6-39d2e61c2b08
+source-git-commit: fda4620f57aa7aa9fb930b10f5717fee98983378
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
-
 
 # Workflows voor hulp aan winkels
 
@@ -17,7 +17,7 @@ De app Store Assist biedt Store Associates vier modules voor het beheer van het 
 
 - **[Selecteren](#pick-module)**—U krijgt volledige zichtbaarheid in alle geordende items en de gereedschappen om ervoor te zorgen dat de juiste items en juiste hoeveelheden worden gekozen. Winkelpartners kunnen een of meerdere bestellingen tegelijk selecteren voor meer efficiëntie.
 
-- **[Werkgebied](#stage-module)**—Voer een locatie in waar de bestellingen worden geplaatst terwijl klanten naar de winkel gaan, zodat Store Associates ze gemakkelijk kan vinden voor een bestelling.
+- **[Werkgebied](#stage-module)**—Voer een locatie in waar de bestellingen worden geplaatst terwijl klanten naar de winkel gaan, zodat Store Associates ze gemakkelijk kan vinden voor aflevering van bestellingen.
 
 - **[Handje uit](#hand-off-module)**—Krijg real-time berichten nadat klanten bij de opslag aankomen om hun wachttijd te minimaliseren en orders naadloos af te handelen
 
@@ -65,3 +65,5 @@ Als klanten aankomen zonder in te checken, kunnen uw medewerkers ze handmatig in
 ## De module Bestellingen
 
 In de module Bestellingen worden alle bestaande bestellingen en hun status weergegeven. Wanneer een klant aanroept om op zijn bestelling te controleren, kunnen de Geassocieerde van de Opslag de informatie snel vinden door omhoog het aantal te kijken of van de module van Orden te zoeken.
+
+Store Associates kan ook bestellingen annuleren vanaf de pagina Bestellingen in de app Store Assist.
