@@ -2,9 +2,9 @@
 title: Gegevens voor handel verzamelen met Adobe Experience Platform-tags
 description: Leer hoe u gegevens over handel kunt verzamelen met Adobe Experience Platform-tags.
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: 4af50842c883d3aef7bf50d6a68b82321b784591
+source-git-commit: c7344efead97b0562a146f096123dd84f998fd5e
 workflow-type: tm+mt
-source-wordcount: '2276'
+source-wordcount: '2504'
 ht-degree: 0%
 
 ---
@@ -111,7 +111,7 @@ Laten we bijvoorbeeld de Adobe Commerce toevoegen `signOut` -gebeurtenis naar Ad
 
 Herhaal bovenstaande stappen in tags voor elk van de Adobe Commerce-gebeurtenissen die hieronder worden beschreven.
 
-### Beschikbare gebeurtenissen
+## Beschikbare gebeurtenissen
 
 Wijs voor elk van de volgende gebeurtenissen de Adobe Commerce-gebeurtenissen toe aan uw XDM door de bovenstaande stappen uit te voeren.
 
@@ -130,6 +130,8 @@ Wijs voor elk van de volgende gebeurtenissen de Adobe Commerce-gebeurtenissen to
 - [` placeOrder`](#placeorder)
 
 ### signOut {#signout}
+
+Wordt geactiveerd wanneer een winkelier zich afmeldt.
 
 #### Gegevenselementen
 
@@ -158,6 +160,8 @@ Maak het volgende gegevenselement:
 - **XDM-gegevens**: `%sign-out%`
 
 ### signIn {#signin}
+
+Wordt geactiveerd wanneer een winkelier zich probeert aan te melden.
 
 #### Gegevenselementen
 
@@ -216,6 +220,8 @@ Maak de volgende gegevenselementen:
 
 ### createAccount {#createaccount}
 
+Wordt geactiveerd wanneer een winkelier een account probeert te maken.
+
 #### Gegevenselementen
 
 Maak de volgende gegevenselementen:
@@ -272,6 +278,8 @@ Maak de volgende gegevenselementen:
 - **XDM-gegevens**: `%create account%`
 
 ### editAccount {#editaccount}
+
+Wordt geactiveerd wanneer een gebruiker een account probeert te bewerken.
 
 #### Gegevenselementen
 
@@ -330,6 +338,8 @@ Maak de volgende gegevenselementen:
 
 ### pageView {#pageview}
 
+Wordt geactiveerd wanneer een pagina wordt geladen.
+
 #### Gegevenselementen
 
 Maak de volgende gegevenselementen:
@@ -357,6 +367,8 @@ Maak de volgende gegevenselementen:
 
 ### productView {#productview}
 
+Wordt geactiveerd wanneer een productpagina wordt geladen.
+
 #### Gegevenselementen
 
 Maak de volgende gegevenselementen:
@@ -374,6 +386,13 @@ Maak de volgende gegevenselementen:
    - **Extensie**: `Adobe Client Data Layer`
    - **Type gegevenselement**: `Data Layer Computed State`
    - **[Optioneel] pad**: `productContext.sku`
+
+1. URL afbeelding product:
+
+   - **Naam**: `product image`
+   - **Extensie**: `Adobe Client Data Layer`
+   - **Type gegevenselement**: `Data Layer Computed State`
+   - **[Optioneel] pad**: `productContext.mainImageUrl`
 
 1. Productvaluta:
 
@@ -432,6 +451,8 @@ Maak de volgende gegevenselementen:
    - **Prijstotaal**: **Waarde** = `%product price%`
    - **Veldgroep**: `productListItems` > `currencyCode`
    - **Valutacode**: **Waarde** = `%currency code%`
+   - **Veldgroep**: `productListItems` > `ProductImageUrl`
+   - **ProductImageUrl**: **Waarde** = `%product image%`
    - **Veldgroep**: `commerce` > `productViews` > `value`
    - **value**: **Waarde** = `1`
 
@@ -450,6 +471,8 @@ Maak de volgende gegevenselementen:
 - **XDM-gegevens**: `%product view%`
 
 ### searchRequestSent {#searchrequestsent}
+
+Wordt geactiveerd door gebeurtenissen in het pop-upvenster &quot;Zoeken terwijl u typt&quot; en door gebeurtenissen op pagina&#39;s met zoekresultaten.
 
 #### Gegevenselementen
 
@@ -554,6 +577,8 @@ Maak de volgende gegevenselementen:
 
 ### searchResponseReceived {#searchresponsereceived}
 
+Wordt geactiveerd wanneer Live zoeken resultaten oplevert voor de popover- of zoekresultatenpagina &quot;Zoeken zoals u typt&quot;.
+
 #### Gegevenselementen
 
 Maak de volgende gegevenselementen:
@@ -608,6 +633,13 @@ Maak de volgende gegevenselementen:
    return suggestions;
    ```
 
+1. URL afbeelding product:
+
+   - **Naam**: `product image`
+   - **Extensie**: `Adobe Client Data Layer`
+   - **Type gegevenselement**: `Data Layer Computed State`
+   - **[Optioneel] pad**: `productContext.mainImageUrl`
+
 1. Zoeken in reactie:
 
    - **Naam**: `search response`
@@ -618,6 +650,8 @@ Maak de volgende gegevenselementen:
    - **Veldgroep**: `siteSearch` > `numberOfResults`
    - **value**: `%search result number of products%`
    - **Veldgroep**: `productListItems`. Selecteren **Geheel object opgeven**.
+   - **Veldgroep**: `productListItems` > `ProductImageUrl`
+   - **ProductImageUrl**: **Waarde** = `%product image%`
    - **Gegevenselement**: `%search result products%`
    - **Veldgroep**: `searchResponse` > `value`
    - **value**: **Waarde** = `1`
@@ -637,6 +671,8 @@ Maak de volgende gegevenselementen:
 - **XDM-gegevens**: `%search response%`
 
 ### addToCart {#addtocart}
+
+Wordt geactiveerd wanneer een product aan een kar wordt toegevoegd of telkens wanneer de hoeveelheid van een product in het kar wordt verhoogd.
 
 #### Gegevenselementen
 
@@ -669,6 +705,13 @@ Maak de volgende gegevenselementen:
    - **Extensie**: `Adobe Client Data Layer`
    - **Type gegevenselement**: `Data Layer Computed State`
    - **[Optioneel] pad**: `productContext.pricing.specialPrice`
+
+1. URL afbeelding product:
+
+   - **Naam**: `product image`
+   - **Extensie**: `Adobe Client Data Layer`
+   - **Type gegevenselement**: `Data Layer Computed State`
+   - **[Optioneel] pad**: `productContext.mainImageUrl`
 
 1. Gewone prijs product:
 
@@ -719,6 +762,8 @@ Maak de volgende gegevenselementen:
    - **Veldgroep**: `productListItems` > `priceTotal`
    - **Prijstotaal**: **Waarde** = `%product price%`
    - **Veldgroep**: `productListItems` > `currencyCode`
+   - **Veldgroep**: `productListItems` > `ProductImageUrl`
+   - **ProductImageUrl**: **Waarde** = `%product image%`
    - **Valutacode**: **Waarde** = `%currency code%`
    - **Veldgroep**: `commerce` > `cart` > `cartID`
    - **Illustratie-id**: **Waarde** = `%cart id%`
@@ -741,6 +786,8 @@ Maak de volgende gegevenselementen:
 
 ### viewCart {#viewcart}
 
+Wordt geactiveerd wanneer een winkelwagenpagina wordt geladen.
+
 #### Gegevenselementen
 
 Maak de volgende gegevenselementen:
@@ -752,12 +799,19 @@ Maak de volgende gegevenselementen:
    - **Type gegevenselement**: `Data Layer Computed State`
    - **[Optioneel] pad**: `storefrontInstanceContext`
 
-1. Winkelwagentje:
+1. URL afbeelding product:
 
+   - **Naam**: `product image`
+   - **Extensie**: `Adobe Client Data Layer`
+   - **Type gegevenselement**: `Data Layer Computed State`
+   - **[Optioneel] pad**: `productContext.mainImageUrl`
+   1. Winkelwagentje:
    - **Naam**: `cart`
    - **Extensie**: `Adobe Client Data Layer`
    - **Type gegevenselement**: `Data Layer Computed State`
    - **[Optioneel] pad**: `shoppingCartContext`
+
+
 
 1. Kart-id:
 
@@ -812,12 +866,14 @@ Maak de volgende gegevenselementen:
    - **Type gegevenselement**: `XDM object`
    - **Veldgroep**: `productListItems`. Voor `productListItems`Er kunnen meerdere vooraf berekende items zijn. Selecteren **productListItems** > **Volledige array vullen**.
    - **Gegevenselement**: `%product list items%`
+   - **Veldgroep**: `productListItems` > `ProductImageUrl`
+   - **ProductImageUrl**: **Waarde** = `%product image%`
    - **Veldgroep**: `commerce` > `cart` > `cartID`
    - **Illustratie-id**: **Waarde** = `%cart id%`
    - **Veldgroep**: `commerce` > `productListViews` > `value`
    - **value**: **Waarde** = `1`
 
-#### Regels 
+#### Regels
 
 - **Naam**: `view cart`
 - **Extensie**: `Adobe Client Data Layer`
@@ -832,6 +888,8 @@ Maak de volgende gegevenselementen:
 - **XDM-gegevens**: `%view cart%`
 
 ### removeFromCart {#removefromcart}
+
+Wordt geactiveerd wanneer een product uit een winkelwagentje wordt verwijderd of telkens wanneer de hoeveelheid van een product in het winkelwagentje wordt verlaagd.
 
 #### Gegevenselementen
 
@@ -936,6 +994,8 @@ Maak de volgende gegevenselementen:
 
 ### initikout {#initiatecheckout}
 
+Wordt geactiveerd wanneer de gebruiker op een uitcheckknop klikt.
+
 #### Gegevenselementen
 
 Maak de volgende gegevenselementen:
@@ -946,6 +1006,13 @@ Maak de volgende gegevenselementen:
    - **Extensie**: `Adobe Client Data Layer`
    - **Type gegevenselement**: `Data Layer Computed State`
    - **[Optioneel] pad**: `storefrontInstanceContext`
+
+1. URL afbeelding product:
+
+   - **Naam**: `product image`
+   - **Extensie**: `Adobe Client Data Layer`
+   - **Type gegevenselement**: `Data Layer Computed State`
+   - **[Optioneel] pad**: `productContext.mainImageUrl`
 
 1. Winkelwagentje:
 
@@ -1007,6 +1074,8 @@ Maak de volgende gegevenselementen:
    - **Type gegevenselement**: `XDM object`
    - **Veldgroep**: `productListItems`. Voor `productListItems`Er kunnen meerdere vooraf berekende items zijn. Selecteren **productListItems** > **Volledige array vullen**.
    - **Gegevenselement**: `%product list items%`
+   - **Veldgroep**: `productListItems` > `ProductImageUrl`
+   - **ProductImageUrl**: **Waarde** = `%product image%`
    - **Veldgroep**: `commerce` > `cart` > `cartID`
    - **Illustratie-id**: **Waarde** = `%cart id%`
    - **Veldgroep**: `commerce` > `checkouts` > `value`
@@ -1028,6 +1097,8 @@ Maak de volgende gegevenselementen:
 
 ### placeOrder {#placeorder}
 
+Wordt geactiveerd wanneer de gebruiker een bestelling plaatst.
+
 #### Gegevenselementen
 
 Maak de volgende gegevenselementen:
@@ -1038,6 +1109,13 @@ Maak de volgende gegevenselementen:
    - **Extensie**: `Adobe Client Data Layer`
    - **Type gegevenselement**: `Data Layer Computed State`
    - **[Optioneel] pad**: `storefrontInstanceContext`
+
+1. URL afbeelding product:
+
+   - **Naam**: `product image`
+   - **Extensie**: `Adobe Client Data Layer`
+   - **Type gegevenselement**: `Data Layer Computed State`
+   - **[Optioneel] pad**: `productContext.mainImageUrl`
 
 1. Winkelwagentje:
 
@@ -1168,6 +1246,8 @@ Maak de volgende gegevenselementen:
    - **Type gegevenselement**: `XDM object`
    - **Veldgroep**: `productListItems`. Voor `productListItems`Er kunnen meerdere vooraf berekende items zijn. Selecteren **productListItems** > **Volledige array vullen**.
    - **Gegevenselement**: `%product list items%`
+   - **Veldgroep**: `productListItems` > `ProductImageUrl`
+   - **ProductImageUrl**: **Waarde** = `%product image%`
    - **Veldgroep**: `commerce` > `order`
    - **Unieke id**: **Waarde** = `%commerce order%`
    - **Veldgroep**: `commerce` > `shipping`
