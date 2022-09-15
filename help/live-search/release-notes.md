@@ -1,10 +1,10 @@
 ---
-title: '"[!DNL Live Search] Opmerkingen bij de release"'
-description: '"De meest recente releasegegevens voor [!DNL Live Search] uit Adobe Commerce."'
+title: "[!DNL Live Search] Opmerkingen bij de release"
+description: "De meest recente releasegegevens voor [!DNL Live Search] uit Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 097f8af7a1e3e904c69d3a7fe52cb0db5b1b4c23
+source-git-commit: 07d8a80cc8afe34cd0363a7705465b5565f5c196
 workflow-type: tm+mt
-source-wordcount: '858'
+source-wordcount: '886'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,7 @@ We raden gebruikers aan een upgrade uit te voeren en te testen voordat ze naar d
 * ![Bug](../assets/bug.svg) - Producten worden niet weergegeven als ze niet worden toegevoegd aan de &quot;Standaard gedeelde catalogus&quot;.
 * B2B met Live zoeken naar PWA Studio is pas beschikbaar als de PWA Studio er ondersteuning voor heeft toegevoegd.
 * Productoverschrijvingen en productkenmerken hebben mogelijk synchronisatieproblemen die beheerders moeten uitvoeren `bin/magento indexer:reset` en `bin/magento indexer:reindex` om opnieuw te synchroniseren.
+* Als u de functies Catalogusmachtigingen/Gedeelde catalogus/B2B in- of uitschakelt, `productOverrides` indexeerders worden niet bijgewerkt en onjuist gemarkeerd als &#39;geldig&#39;. Gebruiken `bin/magento saas:resync --feed=productOverrides` om het probleem op te lossen.
 
 ## [!DNL Live Search] 2,0
 

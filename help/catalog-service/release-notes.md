@@ -2,7 +2,7 @@
 title: '''[!DNL Catalog Service] Opmerkingen bij de release'
 description: De meest recente releasegegevens voor [!DNL Catalog Service] voor Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: 72913e0c0b7364e38d37fe1a8279c40a4e849c02
+source-git-commit: 6609060a4ef09f72d579d97383ac487b105c81d6
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -19,18 +19,39 @@ In deze releaseopmerkingen worden de meest recente versies van [!DNL Catalog Ser
 * ![Repareren](../assets/fix.svg) - Oplossingen en verbeteringen
 * ![Bug](../assets/bug.svg) - Bekende problemen
 
+## 0.3 Release - bèta+
+
+Releasedatum: 2022-09-12 Compatibel met Adobe Commerce (EE): 2.4.x Compatibel met Adobe Commerce for Cloud (ECE): 2.4.x Stabiliteit: Beta
+
+![Nieuw](../assets/new.svg) - Ondersteuning voor afbeeldingen voor varianten: productafbeeldingen worden geretourneerd op basis van de geselecteerde opties
+![Nieuw](../assets/new.svg) - Rol voor prijsondersteuning: alleen leden van specifieke klantengroepen de prijs van producten laten zien
+![Repareren](../assets/fix.svg) - Verbeterde stabiliteit en prestaties van de dienst
+![Nieuw](../assets/new.svg) - Updates worden ontvangen wanneer producten uit de catalogus worden verwijderd
+
+### Bekende beperkingen
+
+Deze functies worden nog niet ondersteund:
+
+* Tier-prijsstelling
+* Bundel en gegroepeerde producten
+* Er worden geen updates ontvangen wanneer varianten uit de catalogus worden verwijderd
+* B2B-zichtbaarheidsoverschrijvingen: producten kunnen doorzoekbaar zijn of aan winkelwagentje worden toegevoegd voor specifieke klantengroepen
+
+
 ## Bètaversie
 
-* ![Nieuw](../assets/new.svg) - de `products` en `refineProduct` query&#39;s retourneren de volgende gegevens:
-   * Vooraf gedefinieerde (systeem)productkenmerken.
-   * Dynamische productkenmerken en filter deze op rol (pagina met productweergave/productlijst).
-   * Productopties.
-   * Afbeeldingen van het product en filter hen door rol (PDP/PLP).
-   * Een specifieke prijs voor eenvoudige producten en prijsbereiken voor configureerbare producten.
-   * Prijzen en prijsbereiken van de klantengroep. Ze retourneren een fallback-standaardprijs voor kopers zonder een klantengroep.
-   * Producttypen die gebruikmaken van klantspecifieke B2B-prijzen.
+Releasedatum: 2022-08-09 Compatibel met Adobe Commerce (EE): 2.4.x Compatibel met Adobe Commerce for Cloud (ECE): 2.4.x Stabiliteit: Beta
 
-## Bekende beperkingen
+* ![Nieuw](../assets/new.svg) - de `products` en `refineProduct` query&#39;s retourneren de volgende gegevens:
+* Vooraf gedefinieerde (systeem)productkenmerken.
+* Dynamische productkenmerken en filter deze op rol (pagina met productweergave/productlijst).
+* Productopties.
+* Afbeeldingen van het product en filter hen door rol (PDP/PLP).
+* Een specifieke prijs voor eenvoudige producten en prijsbereiken voor configureerbare producten.
+* Prijzen en prijsbereiken van de klantengroep. Ze retourneren een fallback-standaardprijs voor kopers zonder een klantengroep.
+* Producttypen die gebruikmaken van klantspecifieke B2B-prijzen.
+
+### Bekende beperkingen
 
 * Bundel en gegroepeerde producten worden niet ondersteund.
 * De prijzen van de reeks worden niet gesteund.
