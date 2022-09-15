@@ -1,19 +1,19 @@
 ---
-title: '"Onboarding and Installation"'
-description: '"Leer hoe u kunt installeren [!DNL Catalog Service]"'
-source-git-commit: 7f6955ffc52669ff3b95957642b3a115bf1eb741
+title: Onboarding en installatie
+description: Leer hoe u kunt installeren [!DNL Catalog Service]
+exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
+source-git-commit: 595d7644374b066b7608748cf09df1c41bf0eaee
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '385'
 ht-degree: 0%
 
 ---
-
 
 # Onboarding en installatie
 
 Partners en klanten zijn welkom om te beginnen met het gebruik van de [!DNL Catalog Service] voor Adobe Commerce Beta versie uitgebracht op 9 augustus 2022. Als u wilt deelnemen, moet u onze [Adobe Commerce Beta-programmavoorwaarden](https://experiencecloudpanel.adobe.com/h/s/6eGskQlHvLSHztsNmKCWMy).
 
-Als u de overeenkomst hebt ondertekend, neemt u contact op met ons team via de [#storefront-services](https://magentocommeng.slack.com/archives/C03HVPG8RS4) public Slack channel. Wij zullen alle informatie verstrekken en de volgende stappen nodig om met het [!DNL Catalog Service] Bètaversie.
+Als u de overeenkomst hebt ondertekend, neemt u contact op met ons team over de [#storefront-services](https://magentocommeng.slack.com/archives/C03HVPG8RS4) public Slack channel. Wij zullen alle informatie verstrekken en de volgende stappen nodig om met het [!DNL Catalog Service] Bètaversie.
 
 ## Vereisten
 
@@ -46,19 +46,19 @@ Gebruik deze methode voor het installeren van de [!DNL Catalog Service] extensie
 
    ```json
    "require": {
-     "magento/magento-cloud-metapackage": ">=2.4.3 <2.4.4",
-     "magento/composer-root-update-plugin": "~1.1",
-     "magento/saas-export": "^101.3.1",
-     "magento/commerce-data-export": "^101.2.4",    
-     "magento/commerce-data-export-ee": "^101.2.4",
-     "magento/services-id": "^3.0.0",
-     "magento/services-connector": "1.2.1"
-   }
+    "magento/composer-root-update-plugin": "^2.0.2",
+    "magento/magento-cloud-metapackage": ">=2.4.5 <2.4.6",
+    "magento/saas-export": "^101.4.0",
+    "magento/commerce-data-export": "^101.3.1",
+    "magento/commerce-data-export-ee": "^101.3.1",
+    "magento/services-id": "^3.0.1",
+    "magento/services-connector": "1.2.1"
+    }
    ```
 
    <!-- What if the customer already has other services installed, and some of these lines are already present? Do they need to delete the duplications? What if the version numbers are different? -->
 
-1. Afhankelijkheden bijwerken en de extensie installeren:
+1. Test de nieuwe configuratie plaatselijk en werk gebiedsdelen bij:
 
    ```bash
    composer update
@@ -66,7 +66,7 @@ Gebruik deze methode voor het installeren van de [!DNL Catalog Service] extensie
 
    Het bevel werkt alle gebiedsdelen bij.
 
-1. Leg de wijzigingen vast en duw op deze.
+1. Leg uw wijzigingen vast en duw op `composer.json` en `composer.lock`.
 
 ### In de bedrijfsruimten
 
@@ -110,4 +110,8 @@ Gebruik deze methode voor het installeren van de [!DNL Catalog Service] uitbreid
 
 Na de installatie [!DNL Catalog Service]moet u de [Commerce Services Connector](../landing/saas.md) door API-sleutels op te geven en een SaaS-gegevensruimte te selecteren.
 
-Om ervoor te zorgen dat de catalogusexport correct wordt uitgevoerd, moet u bevestigen dat de [kroonbanen](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) en de [indexeerders](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) worden uitgevoerd en de indexer van de Diervoeders van het Product wordt geplaatst aan Update door Programma.
+Ga als volgt te werk om te controleren of de catalogus correct wordt geëxporteerd:
+
+- Bevestig dat [kroonbanen](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) worden uitgevoerd.
+- Controleer de [indexeerders](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) worden uitgevoerd.
+- Zorg ervoor dat de `Catalog Attributes Feed`, `Product Feed`, `Product Overrides Feed`, en `Product Variant Feed` indexeerders worden ingesteld op `Update by Schedule`.
