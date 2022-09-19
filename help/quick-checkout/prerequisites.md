@@ -1,17 +1,17 @@
 ---
-title: '"[!DNL Quick Checkout] voorwaarden"'
-description: '"Controleer of uw systeem voldoet aan de vereisten voor het gebruik van de [!DNL Quick Checkout] voor Adobe Commerce-extensie."'
+title: "[!DNL Quick Checkout] voorwaarden"
+description: "Controleer of uw systeem voldoet aan de vereisten voor het gebruik van de [!DNL Quick Checkout] voor Adobe Commerce-extensie."
 exl-id: fa61aa73-a2b6-4c69-ab42-cede74c15caa
-source-git-commit: 27e91a640999cf83a0f0d6701e616f7ceecde12d
+source-git-commit: 7b31fe7a71c3c238e6448627b2edfe06bbfbc80e
 workflow-type: tm+mt
-source-wordcount: '113'
+source-wordcount: '110'
 ht-degree: 1%
 
 ---
 
 # [!DNL Quick Checkout] voorwaarden
 
-De [!DNL Quick Checkout] is compatibel met Magento Open Source- en Adobe Commerce-versies `>= 2.4.1-p1`.
+De [!DNL Quick Checkout] is verenigbaar met [!DNL Magento Open Source] en Adobe Commerce-versies `>= 2.4.1-p1`.
 
 Zie de [onboarding](../quick-checkout/onboarding.md) voor meer informatie.
 

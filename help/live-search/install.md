@@ -1,10 +1,10 @@
 ---
-title: '"Installeren [!DNL Live Search]"'
-description: '"Meer informatie over het installeren, bijwerken en verwijderen [!DNL Live Search] uit Adobe Commerce."'
+title: "Installeren [!DNL Live Search]"
+description: "Meer informatie over het installeren, bijwerken en verwijderen [!DNL Live Search] uit Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: a17c9ef193394d86f5439f900ebba3dd68d33b45
 workflow-type: tm+mt
-source-wordcount: '1267'
+source-wordcount: '1266'
 ht-degree: 0%
 
 ---
@@ -179,7 +179,7 @@ Raadpleeg voor meer informatie [[!DNL Live Search] catalogus niet gesynchronisee
 
 ### Toekomstige productupdates
 
-Na de eerste synchronisatie kan het tot 15 minuten duren voordat incrementele productupdates beschikbaar komen voor het zoeken naar winkelinformatie. Ga voor meer informatie naar [Indexeren - productupdates streaming](indexing.md).
+Na de eerste synchronisatie kan het tot 15 minuten duren voordat de incrementele productupdates beschikbaar komen voor het zoeken naar een winkel. Ga voor meer informatie naar [Indexeren - productupdates streaming](indexing.md).
 
 ## De verbinding testen {#test-connection}
 
@@ -209,7 +209,7 @@ Bijwerken [!DNL Live Search], voert u de volgende handelingen uit vanaf de opdra
 composer update magento/live-search --with-dependencies
 ```
 
-Als u wilt bijwerken naar een hoofdversie zoals 1.0.0 tot 2.0.0, bewerkt u de hoofdmap van het project [!DNL Composer] `.json` bestand als volgt:
+Als u een update wilt uitvoeren naar een belangrijke versie, bijvoorbeeld van 1.0.0 tot 2.0.0, bewerkt u de hoofdmap van het project [!DNL Composer] `.json` bestand als volgt:
 
 1. Als uw huidige systeem is geïnstalleerd `magento/live-search` versie is `1.3.1` of lager en u werkt aan een upgrade naar de versie `2.0.0` of hoger, stel het volgende bevel vóór de verbetering in werking:
 

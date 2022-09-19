@@ -1,10 +1,10 @@
 ---
-title: '"Werkruimte Regels"'
-description: '"Leer je weg rond de [!DNL Live Search] regelt de werkruimte."'
+title: "Werkruimte Regels"
+description: "Leer je weg rond de [!DNL Live Search] regelt de werkruimte."
 exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 12fc4e0ee4399a50ad3d2ced2664e41aced7198d
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '582'
 ht-degree: 0%
 
 ---
@@ -102,7 +102,7 @@ U kunt de volgende handelingen uitvoeren in het deelvenster Details weergeven:
 | Veld | Beschrijving |
 |--- |--- |
 | Status | De huidige status van de regel. |
-| Voorwaarden | De zoekquery die de voorwaarde(n) beschrijft die aan de regel is gekoppeld. |
+| Voorwaarden | De onderzoeksvraag die de voorwaarden verbonden aan de regel beschrijft. |
 | Begindatum | De datum waarop de regel van kracht wordt, indien gepland. |
 | Einddatum | De datum de regel verloopt, indien gepland. |
 | Beschrijving | Een korte beschrijving van de regel. |

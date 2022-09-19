@@ -1,17 +1,23 @@
 ---
-title: '"[!DNL Live Search] Indexeren"'
-description: '"Meer informatie [!DNL Live Search] indexes product attribute properties."'
+title: "[!DNL Live Search] Indexeren"
+description: "Meer informatie [!DNL Live Search] indexes product attribute properties."
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 2835209ad881db388894c5b1da213312436d3550
+source-git-commit: 0a1d70465247422db44daee302c67fe1a5a29d32
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '544'
 ht-degree: 0%
 
 ---
 
 # Indexeren
 
-Eigenschappen van productkenmerken (metagegevens) bepalen hoe een kenmerk in de catalogus kan worden gebruikt, hoe dit kenmerk er uitziet en hoe het in de winkel functioneert, en welke gegevens in gegevensoverdrachtsbewerkingen worden opgenomen. Het bereik van kenmerkmetagegevens is `website/store/store view`.
+Eigenschappen van productkenmerken (metagegevens) bepalen:
+
+* Hoe een kenmerk in de catalogus kan worden gebruikt
+* De vormgeving en het gedrag van de winkel
+* De gegevens die zijn opgenomen in gegevensoverdrachtsbewerkingen
+
+Het bereik van kenmerkmetagegevens is `website/store/store view`.
 
 De [!DNL Live Search] API staat een cliënt toe om op om het even welk productattribuut te sorteren dat heeft [storefront, eigenschap](https://docs.magento.com/user-guide/stores/attributes-product.html) `Use in Search` instellen op `Yes` in Adobe Commerce Admin. Indien ingeschakeld, `Search Weight` en `Visible in Advanced Search` kan worden ingesteld voor het kenmerk.
 
@@ -53,7 +59,7 @@ Als u bijvoorbeeld het dialoogvenster `Use in Search` eigendom van de `color` ke
 
 Nadat de eerste index tijdens [onboarding](install.md#synchronize-catalog-data), worden de volgende incrementele productupdates voortdurend gesynchroniseerd en opnieuw geïndexeerd:
 
-* Nieuw(e) product(en) toegevoegd aan catalogus
+* Nieuwe producten toegevoegd aan de catalogus
 * Wijzigingen in productkenmerkwaarden
 
 U kunt bijvoorbeeld een nieuwe staalwaarde toevoegen aan de opdracht `color` -kenmerk wordt afgehandeld als een streaming product-update.
@@ -61,7 +67,7 @@ Workflow voor gestreamde updates:
 
 1. Bijgewerkte producten worden gesynchroniseerd van de Adobe Commerce-instantie naar de catalogusservice.
 1. De indexerende dienst zoekt onophoudelijk productupdates van de catalogusdienst. Bijgewerkte producten worden geïndexeerd wanneer ze in de catalogusservice worden geleverd.
-1. Het kan 15 minuten duren voordat een productupdate beschikbaar is in [!DNL Live Search].
+1. Het kan tot 15 minuten duren voordat een productupdate beschikbaar wordt in [!DNL Live Search].
 
 ## Clientzoekopdracht
 

@@ -1,24 +1,24 @@
 ---
-title: '"Regelcomponenten"'
-description: '"Meer informatie over [!DNL Live Search] regelcomponenten en operatoren."'
+title: "Regelcomponenten"
+description: "Meer informatie over [!DNL Live Search] regelcomponenten en operatoren."
 exl-id: 4065aec3-a8d4-4d55-b939-16ad7b0f33ee
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 0a1d70465247422db44daee302c67fe1a5a29d32
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '224'
 ht-degree: 0%
 
 ---
 
 # Regelcomponenten
 
-Een regel beschrijft de voorwaarde(n) die vereist zijn om gebeurtenis(sen) te activeren die de zoekresultaten wijzigen die als reactie op de query van een winkelier worden geretourneerd.
+Een regel beschrijft de voorwaarden die worden vereist om gebeurtenissen teweeg te brengen die de onderzoeksresultaten veranderen die in antwoord op de vraag van een verkoopster zijn teruggekeerd.
 
 ## Vereisten
 
 Een eenvoudige regel kan één enkele voorwaarde en één enkele gebeurtenis hebben, terwijl een complexe regel tot tien voorwaarden kan hebben die tot 25 gebeurtenissen teweegbrengen.
 Regels kunnen:
 
-* Tot 10 voorwaarden
+* Tot tien voorwaarden
 * Tot 25 gebeurtenissen
 
 Zoektekst kan het volgende bevatten:

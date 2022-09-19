@@ -4,9 +4,9 @@ description: Test een plan om de functionaliteit voor winkelvervulling te verifi
 role: User, Admin
 level: Intermediate
 exl-id: 77285a66-5161-407b-94cd-b3f412d7949d
-source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
+source-git-commit: 0a1d70465247422db44daee302c67fe1a5a29d32
 workflow-type: tm+mt
-source-wordcount: '2652'
+source-wordcount: '2657'
 ht-degree: 0%
 
 ---
@@ -96,12 +96,12 @@ Deze sectie van het testplan behandelt inventaris en ordesynchronisatie om te ve
 <tr>
 <td><strong>Nieuwe order-push, API-synchronisatie—Klantenvolgorde</strong></td>
 <td>De klant dient een bestelling in voor het ophalen van de winkel.</td>
-<td><ul><li>In de weergave Admin-volgorde kunt u een <strong>Adobe Commerce Admin-gebruiker</strong> ziet u dat de status van Order Sync is bijgewerkt naar <code>Sent</code></li><li>Het logboek met de orderdetails bevat het bericht <code>Order was sent to BOPIS solution for sync, it’s not yet acknowledged yet.</code></li></ul></td>
+<td><ul><li>In de weergave Admin-volgorde kunt u een <strong>Adobe Commerce Admin-gebruiker</strong> ziet u dat de status van Order Sync is bijgewerkt naar <code>Sent</code></li><li>Het logboek met de orderdetails bevat het bericht <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
 </tr>
 <tr>
 <td><strong>New Order Push, API Sync—Admin verzendt order</strong></td>
 <td>An Adobe Commerce <strong>Beheer</strong> verzendt een bestelvolgorde.</td>
-<td><ul><li>In de weergave Bestelling beheren wordt de status Synchronisatie van bestellingen bijgewerkt naar <code>Sent</code>.</li><li>Het logboek met de orderdetails bevat het bericht <code>Order was sent to BOPIS solution for sync, it’s not yet acknowledged yet.</code></li></ul></td>
+<td><ul><li>In de weergave Bestelling beheren wordt de status Synchronisatie van bestellingen bijgewerkt naar <code>Sent</code>.</li><li>Het logboek met de orderdetails bevat het bericht <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
 </tr>
 <tr>
 <td><strong>New Order Push, Exception Queue<strong></td>
@@ -161,7 +161,7 @@ Deze sectie van het testplan omvat scenario&#39;s om het werkschema van begin to
 <li>E-mailbericht voor terugbetaling van bestelling: <code>$x amount was refunded</code></li>
 <li>Status van bestelling is <code>Processing</code>.</li>
 <li>Creditnota gemaakt in Adobe Commerce (wacht tot de afbouw werkt).</li>
-<li>Als sommige items niet zijn gekozen, bevestigt u dat de optie [!UICONTROL Ready for Pickup] Het e-mailbericht met de sectie Selecteren of Terugbetalen wordt weergegeven. <code>DISPLAY COMMENT HISTORY</code> shows <code>Order is ready for pickup, but some items not available.</code>.</li>
+<li>Als sommige items niet zijn gekozen, bevestigt u dat de optie [!UICONTROL Ready for Pickup] Het e-mailbericht met de sectie Geen keuze of Terugbetaling wordt weergegeven. <code>DISPLAY COMMENT HISTORY</code> shows <code>Order is ready for pickup, but some items not available.</code>.</li>
 <li><code>CUSTOMER NOTIFIED</code> markering is <code>true</code>.</li>
 </ul>
 </td>
@@ -566,25 +566,25 @@ Deze sectie van het testplan behandelt scenario&#39;s voor het testen van orde, 
 <tr>
 <td>
 <strong>Ophalen van één bestelling—gelukkig pad, ophalen van rand</strong></td>
-<td>Selecteer objecten van één en meerdere aantallen. Geen nilpicks, en curbside oogst (met het opvoeren).
+<td>Selecteer objecten van één en meerdere aantallen. Geen plukken van nul, en krullende ophaling (met het opvoeren).
 </td>
 <td>
 </td>
 </tr>
 <tr>
 <td><strong>Ophalen van meerdere bestellingen—gelukkig pad, ophalen van rand</strong></td>
-<td>Enkelvoudige en meervoudige items. Geen nilpicks en ophaalbewerkingen voor curbside (met ophaling)</td>
+<td>Enkelvoudige en meervoudige items. Geen plukken van nul en ophalen van curbside (met opvoeren)</td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Ophalen via één bestelling—ophalen via een gelukkig pad in de winkel</strong></td>
-<td>Enkelvoudige en meervoudige items. Geen nilpicks en ophaalservice (met ophaling)</td>
+<td>Enkelvoudige en meervoudige items. Geen plukken van nul, en ophalen van instore (met het opvoeren)</td>
 <td>
 </td>
 </tr>
 <tr>
 <td><strong>Ophalen van meerdere bestellingen—gelukkig pad, ophalen in winkel</strong></td>
-<td>Selecteer objecten van één en meerdere aantallen. Geen nilpicks, en curbside oogst (met het opvoeren).</td>
+<td>Selecteer objecten van één en meerdere aantallen. Geen plukken van nul, en krullende ophaling (met het opvoeren).</td>
 <td></td>
 </tr>
 <tr>

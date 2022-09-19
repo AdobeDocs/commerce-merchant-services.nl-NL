@@ -4,7 +4,7 @@ description: Na installatie kunt u configureren [!DNL Payment Services] in Admin
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: 6f13c39f915c382e99c747d9a88e16ed10bebaf3
+source-git-commit: 31ad67d3f3d11c68341de0306eea37f231b2d9b9
 workflow-type: tm+mt
 source-wordcount: '735'
 ht-degree: 1%
@@ -105,7 +105,7 @@ U kunt de betaalopties voor slimme PayPal-knoppen inschakelen en configureren in
 | [!UICONTROL PayPal Pay Later Enabled] | winkelweergave | De weergave van betalingsopties voor latere betalingen in- of uitschakelen wanneer betalingsknoppen worden weergegeven. Opties: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Debug Mode] | website | De foutopsporingsmodus in- of uitschakelen. Opties: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show buttons on product detail page] | winkelweergave | In- of uitschakelen [!DNL PayPal Smart Buttons] op de pagina met productdetails. Opties: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show buttons in mini cart preview] | winkelweergave | In- of uitschakelen [!DNL PayPal Smart Buttons] in de minicart-voorvertoning. Opties: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show buttons in mini-cart preview] | winkelweergave | In- of uitschakelen [!DNL PayPal Smart Buttons] in de voorvertoning van de minicart. Opties: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show buttons on cart page] | winkelweergave | In- of uitschakelen [!DNL PayPal Smart Buttons] op de winkelwagentje. Opties: [!UICONTROL Yes] / [!UICONTROL No] |
 
 ### [!DNL PayPal Smart Buttons] Stijlopties

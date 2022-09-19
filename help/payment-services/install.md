@@ -2,9 +2,9 @@
 title: Installeren [!DNL Payment Services]
 description: Installeer de uitbreiding van de Diensten van Betalingen.
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
-source-git-commit: 43599d041899251f7716e215284b6eff9312943d
+source-git-commit: 7b31fe7a71c3c238e6448627b2edfe06bbfbc80e
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '501'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ U moet de extensie eerst downloaden van [Commerce Marketplace](https://experienc
 
 ## De extensie installeren
 
-U kunt de [!DNL Payment Services] extensie voor beide [!DNL Adobe Commerce] over cloudinfrastructuur en instanties ter plaatse die zijn gekoppeld aan de Magento-id ([mageid](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions)) in het ondertekeningsproces, met Composer-toetsen. [!DNL Magento] De open Bronklanten gebruiken de instructies op-gebouw.
+U kunt de [!DNL Payment Services] extensie voor beide [!DNL Adobe Commerce] op cloudinfrastructuur en op bedrijfslocaties, die zijn gekoppeld aan uw Commerce-account [mageid](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions) die in het ondertekeningsproces worden verstrekt. [!DNL Magento Open Source] de klanten gebruiken de instructies ter plaatse.
 
 Composer gebruikt deze toetsen tijdens de eerste installatie van [!DNL Adobe Commerce]of in situaties waarin de Composer-sleutels niet eerder zijn opgeslagen op de `auth.json` bestand.
 
@@ -57,7 +57,7 @@ Deze methode wordt gebruikt voor het installeren van de [!DNL Payment Services] 
 
 ### Op locatie en andere configuraties
 
-Deze methode wordt gebruikt voor het installeren van de [!DNL Payment Services] verlenging voor een instantie ter plaatse en [!DNL Magento] Open Source-klanten.
+Deze methode wordt gebruikt voor het installeren van de [!DNL Payment Services] verlenging voor een instantie ter plaatse en [!DNL Magento Open Source] klanten.
 
 1. Voer de volgende opdrachten uit om de extensie te verkrijgen:
 
@@ -114,7 +114,7 @@ Als de volgende fout aangeeft dat u onjuiste Composer-toetsen hebt:
 Could not find a matching version of package magento/payment-services. Check the package spelling, your version constraint and that the package is available in a stability which matches your minimum-stability (stable).
 ```
 
-Controleer of uw Composer-sleutels zijn gekoppeld aan de Magento-id die tijdens het [!DNL Payment Services] registratie.
+Controleer of uw Composer-sleutels zijn gekoppeld aan de `MageID` gebruikt tijdens [!DNL Payment Services] registratie.
 
 Om te zien welke Composer sleutels worden gevormd:
 
@@ -130,7 +130,7 @@ Om te zien welke Composer sleutels worden gevormd:
    cat /path/to/auth.json
    ```
 
-1. Zie [welke toetsen aan uw Magento-id zijn gekoppeld](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html).
+1. Zie [welke sleutels aan uw rekening van de Handel worden geassocieerd `MageID`](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html).
 
 ### Onvoldoende geheugen voor PHP
 

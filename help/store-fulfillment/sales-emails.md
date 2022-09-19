@@ -4,9 +4,9 @@ description: Configureer de transactionele e-mailsjablonen voor de communicatie 
 role: User, Admin
 level: Intermediate
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
+source-git-commit: 31ad67d3f3d11c68341de0306eea37f231b2d9b9
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1200'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ Configureer de e-mailsjablonen voor verkoop van de beheerder: **[!UICONTROL Stor
 </tr>
 <tr>
 <td><strong>Send Order Ready for Pickup Email Copy Method</strong></td>
-<td>De methode van e-mail "koolstofkopie" verzendt naar gebruik.</td>
+<td>De methode voor het kopiëren van e-mail (koolstofkopie) die moet worden gebruikt.</td>
 <td>Winkelweergave</td>
 <td>Nee</td>
 </tr>
@@ -136,7 +136,7 @@ Configureer de e-mailsjablonen voor verkoop van de beheerder: **[!UICONTROL Stor
 </tr>
 <tr>
 <td><strong>De methode Verzenden is uitgezocht voor kopiëren via e-mail</strong></td>
-<td>De methode voor het verzenden van e-mailberichten met de naam "carbon copy".</td>
+<td>De methode voor het kopiëren van e-mail (koolstofkopie) die moet worden gebruikt.</td>
 <td>Winkelweergave</td>
 <td>Nee</td>
 </tr>
@@ -185,7 +185,7 @@ Configureer de e-mailsjablonen voor verkoop van de beheerder: **[!UICONTROL Stor
 </tr>
 <tr>
 <td><strong>Verzendvolgorde vertraagde kopieermethode</strong></td>
-<td>De methode voor het verzenden van e-mailberichten met de naam "carbon copy".</td>
+<td>De methode voor het kopiëren van e-mail (koolstofkopie) die moet worden gebruikt.</td>
 <td>Winkelweergave</td>
 <td>Nee</td>
 </tr>
@@ -236,7 +236,7 @@ Configureer de e-mailsjablonen voor verkoop van de beheerder: **[!UICONTROL Stor
 </tr>
 <tr>
 <td><strong>Kopieermethode voor bestelling geannuleerd</strong></td>
-<td>De methode voor het verzenden van e-mailberichten met de naam "carbon copy".</td>
+<td>De methode voor het kopiëren van e-mail (koolstofkopie) die moet worden gebruikt.</td>
 <td>Winkelweergave</td>
 <td>Nee</td>
 </tr>
@@ -292,7 +292,7 @@ Configureer de e-mailsjablonen voor verkoop van de beheerder: **[!UICONTROL Stor
 </tr>
 <tr>
 <td><strong>Gedeeltelijk geannuleerde kopieermethode voor bestelling verzenden</strong></td>
-<td>De methode voor het verzenden van e-mailberichten met de naam "carbon copy".</td>
+<td>De methode voor het kopiëren van e-mail (koolstofkopie) die moet worden gebruikt.</td>
 <td>Winkelweergave</td>
 <td>Nee</td>
 </tr>

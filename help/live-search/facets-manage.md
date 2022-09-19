@@ -1,10 +1,10 @@
 ---
-title: '"Facetten beheren"'
-description: '"Leer hoe u bestaande [!DNL Live Search] facetten."'
+title: "Facetten beheren"
+description: "Leer hoe u bestaande [!DNL Live Search] facetten."
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: a17c9ef193394d86f5439f900ebba3dd68d33b45
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '439'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Zie [Instellingen](settings.md) om prijsafhankelijke intervallen en groepen te v
 
 1. In de **Max. waarde** , stelt u het maximale aantal (van 0 tot 10) waarden voor het facetfilter in dat in de winkel moet worden weergegeven.
 1. Klik op **Opslaan**.
-De wijzigingen worden pas na publicatie in de winkel weergegeven.
+De wijzigingen worden pas na publicatie in de winkelruimte weergegeven.
 
 ## Vastzetten/vastzetten van facet
 
@@ -81,4 +81,4 @@ Het facet wordt verwijderd uit het winkelcentrum nadat de wijzigingen zijn gepub
 ## Wijzigingen publiceren
 
 1. Als u de winkel wilt bijwerken met uw wijzigingen, klikt u op **Wijzigingen publiceren**.
-1. Wacht ongeveer vijftien minuten totdat de updates in uw winkel verschijnen.
+1. Wacht ongeveer 15 minuten totdat de updates in uw winkel worden weergegeven.

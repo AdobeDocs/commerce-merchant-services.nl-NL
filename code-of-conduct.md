@@ -1,7 +1,7 @@
 ---
-source-git-commit: f03ca23f659d08d48715a4bd9d4d32a53c4a3a95
+source-git-commit: bd428fcbd592de91054710a50bfea8d10905f734
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '429'
 ht-degree: 0%
 
 ---
@@ -9,11 +9,11 @@ ht-degree: 0%
 
 ## Onze belofte
 
-Om een open en welkome omgeving te bevorderen, verbinden wij als contribuanten en onderhoudsgerechtigden ons ertoe om van deelname aan ons project en onze gemeenschap een pesterijen-vrije ervaring te maken voor iedereen, ongeacht leeftijd, lichaamsgrootte, handicap, etnische afkomst, genderidentiteit en expressie, niveau van ervaring, nationaliteit, persoonlijke verschijning, ras, godsdienst of seksuele identiteit en geaardheid.
+In het belang van een open en welkomstomgeving, verbinden contribuanten en onderhoudsleiders zich ertoe om van deelname aan ons project en onze gemeenschap een pesterijen-vrije ervaring te maken voor iedereen, ongeacht leeftijd, lichaamsgrootte, handicap, etnische afkomst, genderidentiteit en expressie, niveau van ervaring, nationaliteit, persoonlijk voorkomen, ras, godsdienst of seksuele identiteit en geaardheid.
 
 ## Onze standaarden
 
-Voorbeelden van gedrag dat bijdraagt tot het maken van een positieve omgeving zijn:
+Voorbeelden van gedrag die bijdragen tot het creëren van een positieve omgeving zijn:
 
 * Het gebruiken van verwelkomings en inclusieve taal
 * Naleving van verschillende standpunten en ervaringen
@@ -37,15 +37,15 @@ Projectbeheerders hebben het recht en de verantwoordelijkheid om opmerkingen, ve
 
 ## Toepassingsgebied
 
-Deze gedragscode is zowel van toepassing binnen projectruimten als in openbare ruimten wanneer een individu het project of zijn gemeenschap vertegenwoordigt. Voorbeelden van het vertegenwoordigen van een project of gemeenschap zijn het gebruik van een officieel e-mailadres voor een project, het posten via een officiële sociale-mediaaccount of het optreden als een aangewezen vertegenwoordiger tijdens een online- of offline-evenement. De representatie van een project kan nader worden omschreven en verduidelijkt door projectbeheerders.
+Deze gedragscode is zowel van toepassing binnen projectruimten als in openbare ruimten wanneer een individu het project of zijn gemeenschap vertegenwoordigt. Voorbeelden van het vertegenwoordigen van een project of gemeenschap zijn het gebruik van een officieel e-mailadres voor een project, het posten via een officiële sociale-mediaaccount of het optreden als een aangewezen vertegenwoordiger tijdens een online- of offline-gebeurtenis. De representatie van een project kan nader worden omschreven en verduidelijkt door projectbeheerders.
 
 ## Handhaving
 
-Gevallen van misbruik, pesterijen of anderszins onacceptabel gedrag kunnen worden gemeld door contact op te nemen met het projectteam op Grp-opensourceoffice@adobe.com. Alle klachten zullen worden getoetst en onderzocht en zullen resulteren in een antwoord dat noodzakelijk en passend wordt geacht in verband met de omstandigheden. Het projectteam is verplicht de vertrouwelijkheid ten aanzien van de melder van een incident te handhaven.
+Gevallen van misbruik, pesterijen of anderszins onacceptabel gedrag kunnen worden gemeld door contact op te nemen met het projectteam op Grp-opensourceoffice@adobe.com. Alle klachten worden onderzocht en onderzocht en resulteren in een antwoord dat noodzakelijk en passend wordt geacht in verband met de omstandigheden. Het projectteam is verplicht de vertrouwelijkheid ten aanzien van de melder van een incident te handhaven.
 Nadere bijzonderheden over het specifieke handhavingsbeleid kunnen afzonderlijk worden vermeld.
 
 Projectbeheerders die de gedragscode te goeder trouw niet naleven of handhaven, kunnen tijdelijke of permanente gevolgen ondervinden, zoals bepaald door andere leiders van het project.
 
 ## Attributie
 
-Deze gedragscode is aangepast aan de [Medebijdrageovereenkomst](https://contributor-covenant.org), versie 1.4, beschikbaar op [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)
+Deze gedragscode is aangepast aan de [Medebijdrageovereenkomst](https://www.contributor-covenant.org/), versie 1.4, beschikbaar op [https://www.contributor-covenant.org/it/version/1/4/code-of-conduct/](https://www.contributor-covenant.org/it/version/1/4/code-of-conduct/).

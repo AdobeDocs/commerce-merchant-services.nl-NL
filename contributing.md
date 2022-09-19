@@ -1,8 +1,8 @@
 ---
-source-git-commit: f03ca23f659d08d48715a4bd9d4d32a53c4a3a95
+source-git-commit: 8ddf1e0fd325780c8eb974e801a4c87f49c7ee4b
 workflow-type: tm+mt
-source-wordcount: '296'
-ht-degree: 21%
+source-wordcount: '289'
+ht-degree: 14%
 
 ---
 # Bijdragen
@@ -13,24 +13,24 @@ Hieronder volgt een reeks richtlijnen die moeten worden gevolgd wanneer u een bi
 
 ## Gedragscode
 
-Dit project voldoet aan de Adobe-[gedragscode](code-of-conduct.md). Als u deelneemt, wordt van u verwacht dat u zich aan deze code houdt. Geef een onacceptabel gedrag aan
+Dit project voldoet aan de Adobe-[gedragscode](code-of-conduct.md). Als u deelneemt, wordt van u verwacht dat u zich aan deze code houdt. Onacceptabel gedrag rapporteren aan
 [Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com).
 
 ## Documentatie voor de bijdragegids
 
-Zie de [Handleiding voor contribuanten](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html).
+Zie de [Handleiding voor contribuanten](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
 ## Heb je een vraag?
 
-Begin met het indienen van een probleem. De bestaande comités voor dit project werken aan consensus over de richting van het project en leveren oplossingen aan binnen de thema&#39;s (indien van toepassing).
+Begin met het indienen van een probleem. De bestaande contribuanten aan dit project werken eraan om consensus te bereiken over de richting van het project en waar nodig oplossingen aan te reiken binnen de verschillende thema&#39;s.
 
 ## Licentieovereenkomst voor contribuant
 
-Alle bijdragen van derden aan dit project moeten vergezeld gaan van een ondertekende contributieovereenkomst. Dit geeft Adobe de toestemming om uw bijdragen als deel van het project opnieuw te verdelen. [CLA ondertekenen](http://opensource.adobe.com/cla.html). U hoeft slechts één keer een Adobe CLA in te dienen, dus als u eerder een CLA hebt verzonden, kunt u het beste gaan!
+Alle bijdragen van derden aan dit project moeten vergezeld gaan van een ondertekende contributieovereenkomst. Dit geeft Adobe de toestemming om uw bijdragen als deel van het project opnieuw te verdelen. [CLA ondertekenen](https://opensource.adobe.com/cla.html). U hoeft slechts één keer een Adobe CLA in te dienen. Als je er al een hebt ingediend, ben je goed om te gaan!
 
 ## Codebeoordelingen
 
-Alle inzendingen moeten in de vorm van pull-aanvragen gebeuren en moeten door projectcommitters worden gecontroleerd. Lees de documentatie [over pull-aanvragen van GitHub](https://help.github.com/articles/about-pull-requests/) voor meer informatie over het indienen van pull-aanvragen.
+Alle inzendingen moeten de vorm aannemen van een &quot;pull&quot;-verzoek en moeten door de projectcontribuanten worden herzien. Lees de documentatie [over pull-aanvragen van GitHub](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) voor meer informatie over het indienen van pull-aanvragen.
 
 <!--
 Lastly, please follow the [pull request template](PULL_REQUEST_TEMPLATE.md) when
@@ -39,8 +39,8 @@ submitting a pull request!
 
 ## Van contribuant aan vastleggingen
 
-We houden van bijdragen van onze gemeenschap! Als u een stap verder wilt gaan dan contribuant en een medeplichtige met volledige schrijftoegang en een mening in het project wilt worden, moet u aan het project worden uitgenodigd. De bestaande commissies maken gebruik van een intern benoemingsproces dat een luie consensus moet bereiken (stilte is goedkeuring) voordat uitnodigingen worden gedaan. Als u vindt dat u gekwalificeerd bent en dieper betrokken wilt worden, voelt u vrij om bestaande toezeggingen te bereiken om daarover een gesprek te voeren.
+We houden van bijdragen van onze gemeenschap! Als u een stap verder wilt gaan dan contribuant en een medeplichtige met volledige schrijftoegang en een mening in het project wilt worden, moet u aan het project worden uitgenodigd. De bestaande contribuanten maken gebruik van een intern nominatieproces dat een luie consensus moet bereiken (stilte is goedkeuring) voordat uitnodigingen worden gedaan. Als u vindt dat u gekwalificeerd bent en dieper betrokken wilt worden, voelt u vrij om bestaande contribuanten te bereiken om een gesprek over dat te hebben.
 
 ## Beveiligingsproblemen
 
-Beveiligingsproblemen moeten niet worden gerapporteerd in deze Issue Tracker. In plaats daarvan, [een probleem indienen bij onze beveiligingsexperts](https://helpx.adobe.com/security/alertus.html)
+Een beveiligingsprobleem melden [een probleem indienen bij onze beveiligingsexperts](https://helpx.adobe.com/security/alertus.html).

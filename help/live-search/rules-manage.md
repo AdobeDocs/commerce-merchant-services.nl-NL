@@ -1,10 +1,10 @@
 ---
-title: '"Regels beheren"'
-description: '"Leer hoe u bestaande [!DNL Live Search] regels."'
+title: "Regels beheren"
+description: "Leer hoe u bestaande [!DNL Live Search] regels."
 exl-id: 1a2ca9f9-1cf2-446f-809b-03ca5c798b13
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: a17c9ef193394d86f5439f900ebba3dd68d33b45
 workflow-type: tm+mt
-source-wordcount: '132'
+source-wordcount: '131'
 ht-degree: 0%
 
 ---
