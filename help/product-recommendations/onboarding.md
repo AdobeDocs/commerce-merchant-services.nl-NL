@@ -1,9 +1,10 @@
 ---
 title: Onboarding
 description: Leer de vereisten en ondersteunde platforms op [!DNL Product Recommendations].
-source-git-commit: 4ad607c8595b25d01b5f5020b787fc1d35d4df25
+exl-id: ad47ac39-8f6f-4765-84ad-9e3d104385db
+source-git-commit: 09609fd0b5bd3da9e884115de001bc33832ad792
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -32,6 +33,10 @@ Het instapproces voor [!DNL Product Recommendations] vereist toegang tot de beve
 ### Ondersteuning voor Page Builder
 
 [!DNL Product Recommendations] kan aan een pagina worden toegevoegd als een inhoudstype van de Bouwer van de Pagina. Als u ondersteuning voor Page Builder wilt toevoegen aan Product Recommendations, raadpleegt u [Installeren en configureren](install-configure.md).
+
+>[!NOTE]
+>
+>[!DNL Page Builder] aanbevelingen-eenheden kunnen alleen worden gemaakt voor de standaardwinkelweergave.
 
 ### B2B-ondersteuning {#b2bsupport}
 

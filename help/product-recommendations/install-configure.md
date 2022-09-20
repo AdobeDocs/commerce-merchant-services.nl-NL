@@ -2,9 +2,9 @@
 title: Installeren en configureren
 description: Leer installeren, bijwerken en verwijderen [!DNL Product Recommendations].
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
-source-git-commit: cfeb8b4f8e2dc1e9d2d4c0be7a7bc522488418bc
+source-git-commit: 09609fd0b5bd3da9e884115de001bc33832ad792
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,10 @@ composer require magento/module-page-builder-product-recommendations
 ```
 
 Door [!DNL Product Recommendations] in Page Builder kunt u een bestaande, actieve [aanbeveling-eenheid](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html) op alle inhoud die in Page Builder is gemaakt, zoals pagina&#39;s, blokken en dynamische blokken.
+
+>[!NOTE]
+>
+>[!DNL Page Builder] aanbevelingen-eenheden kunnen alleen worden gemaakt voor de standaardwinkelweergave.
 
 ### Aanbevolen type voor visuele gelijkenis toevoegen {#vissimsupport}
 
