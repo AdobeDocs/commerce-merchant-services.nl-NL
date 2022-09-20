@@ -2,9 +2,9 @@
 title: Onboarding en installatie
 description: Leer hoe u kunt installeren [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 8f7fa990b422e77c1b3c1d801faefac1d0ae8e01
+source-git-commit: 41f42054a495fb815e6dcf0f2ef371bbd2c98701
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
@@ -115,3 +115,9 @@ Ga als volgt te werk om te controleren of de catalogus correct wordt geëxportee
 - Bevestig dat [kroonbanen](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) worden uitgevoerd.
 - Controleer de [indexeerders](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) worden uitgevoerd.
 - Zorg ervoor dat de `Catalog Attributes Feed`, `Product Feed`, `Product Overrides Feed`, en `Product Variant Feed` indexeerders worden ingesteld op `Update by Schedule`.
+
+## [!DNL Catalog Service] demo
+
+Bekijk deze video voor meer informatie over [!DNL Catalog Service] installatie en beproeving:
+
+>[!VIDEO](https://video.tv.adobe.com/v/3409390?quality=12&learn=on)
