@@ -1,17 +1,17 @@
 ---
 title: productSearch query
 description: "A reference guide for the ` productSearch` GraphQL query for Adobe Commerce Catalog Service."
-source-git-commit: 7edfdd71c0900a6bdc7c064a29a6cce405a361ab
+source-git-commit: 49692cf4375ebb975b2cf132d21ac8debe609a90
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
 # productSearch query
 
-De Catalogusservice voor Adobe Commerce `productSearch` De vraag kan LiveSearch gebruiken om details over SKUs terug te keren die als input wordt gespecificeerd. Hoewel deze vraag het zelfde als is [`productSearch` query](https://devdocs.magento.com//live-search/product-search.html), LiveSearch retourneert een `productView` object. Zie de [`productSearch` query](https://devdocs.magento.com//live-search/product-search.html) onderwerp voor verwijzingsinformatie.
+De Catalogusservice voor Adobe Commerce `productSearch` De vraag kan Live Onderzoek gebruiken om details over SKUs terug te keren die als input worden gespecificeerd. Hoewel deze vraag het zelfde als is [`productSearch` query](https://devdocs.magento.com//live-search/product-search.html)Live zoeken geeft een `productView` object. Zie de [`productSearch` query](https://devdocs.magento.com//live-search/product-search.html) onderwerp voor verwijzingsinformatie.
 
 ## Syntaxis
 
@@ -32,7 +32,7 @@ U moet de volgende HTTP-headers opgeven om deze query uit te voeren.
 | Koptekst | Beschrijving |
 |--- | ---|
 | `Magento-Customer-Group` | Voor winkelklanten is deze waarde beschikbaar in de winkel `dataservices_customer_group` cookie. |
-| `Magento-Environment-Id` | Deze waarde wordt weergegeven op **Systeem** > **Commerce Services Connector** > **SaaS-id** > **Data Space ID** of kan worden verkregen door het `bin/magento config:show services_connector/services_id/environment_id` gebruiken. |
+| `Magento-Environment-Id` | Deze waarde kan worden verkregen door het `bin/magento config:show services_connector/services_id/environment_id` gebruiken. Zie het veld &quot;Gegevensruimte&quot; in [Commerciële diensten](https://docs.magento.com/user-guide/configuration/services/saas.html) |
 | `Magento-Store-Code` | De code die aan de opslag wordt toegewezen verbonden aan de actieve opslagmening. Bijvoorbeeld, `main_website_store`. |
 | `Magento-Store-View-Code` | De code die aan de actieve archiefmening wordt toegewezen. Bijvoorbeeld, `default`. |
 | `Magento-Website-Code` | De code die is toegewezen aan de website die is gekoppeld aan de actieve archiefweergave. Bijvoorbeeld, `base`. |
