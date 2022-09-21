@@ -2,9 +2,9 @@
 title: '''[!DNL Catalog Service] Opmerkingen bij de release'
 description: De meest recente releasegegevens voor [!DNL Catalog Service] voor Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: 6609060a4ef09f72d579d97383ac487b105c81d6
+source-git-commit: 372dc1cb567121ab86f606d2ace9f19d8e01170b
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '283'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,6 @@ Deze functies worden nog niet ondersteund:
 * Bundel en gegroepeerde producten
 * Er worden geen updates ontvangen wanneer varianten uit de catalogus worden verwijderd
 * B2B-zichtbaarheidsoverschrijvingen: producten kunnen doorzoekbaar zijn of aan winkelwagentje worden toegevoegd voor specifieke klantengroepen
-
 
 ## Bètaversie
 

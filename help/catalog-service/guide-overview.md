@@ -1,13 +1,13 @@
 ---
-title: '"[!DNL Catalog Service] Overzicht van hulplijnen"'
-description: '"[!DNL Catalog Service for Adobe Commerce] biedt een manier om de inhoud van de pagina''s van de productweergave en de productlijst sneller op te halen dan de native Adobe Commerce GraphQL-query''s."'
-source-git-commit: 7f6955ffc52669ff3b95957642b3a115bf1eb741
+title: '''[!DNL Catalog Service] Overzicht van hulplijnen'
+description: '''[!DNL Catalog Service for Adobe Commerce] biedt een manier om de inhoud van de pagina''s van de productweergave en de productlijst sneller op te halen dan de native Adobe Commerce GraphQL-query''s.'''
+exl-id: d83375b2-0d87-4a0a-baf8-eb7eebe85a80
+source-git-commit: 372dc1cb567121ab86f606d2ace9f19d8e01170b
 workflow-type: tm+mt
-source-wordcount: '192'
+source-wordcount: '176'
 ht-degree: 0%
 
 ---
-
 
 # [!DNL Catalog Service] Overzicht van hulplijnen
 
@@ -20,8 +20,6 @@ Deze handleiding is bedoeld voor beheerders van Adobe [!DNL Commerce]. Het bevat
 * Adobe [!DNL Commerce] systeembeheerders installeren en onderhouden de service. [!DNL Catalog Service] heeft geen Admin UI of eigenschappen voor standaardgebruikers Admin.
 
 * De integrators bouwen vragen GraphQL en integreren hen op een storefront die een frontend cliënt gebruikt.
-
-U vindt gedetailleerde integratiegegevens op [Catalogusservice voor Adobe Commerce](https://devdocs.magento.com/catalog-service/index.html).
 
 ## Aanvullende documentatie
 
