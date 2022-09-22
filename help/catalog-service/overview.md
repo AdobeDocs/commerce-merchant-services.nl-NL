@@ -2,9 +2,9 @@
 title: '[!DNL Catalog Service]'
 description: '''[!DNL Catalog Service] voor Adobe Commerce biedt een manier om de inhoud van de pagina''s met productweergave en de pagina''s met productlijsten veel sneller op te halen dan de native Adobe Commerce GraphQL-query''s.'''
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
-source-git-commit: 372dc1cb567121ab86f606d2ace9f19d8e01170b
+source-git-commit: dfe3d9b8738ea68257831c445f1f0b2c8c8b6859
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '527'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Omdat de dienst directe communicatie met de toepassing overslaat, kan het de lat
 
 >[!NOTE]
 >
->De gateway is voor toekomstige integratie met [!DNL Live Search] en [!DNL Product Recommendations]. In deze release hebt u toegang tot [!DNL Catalog Service] en Live Search vragen van hetzelfde eindpunt, als u een geldige licentiecode voor beide producten hebt. Nochtans, delen de vragen van de twee producten momenteel geen reactiegegevens.
+>De gateway is voor toekomstige integratie met Product Recommendations. In deze release hebt u toegang tot [!DNL Catalog Service] en [!DNL Live Search] de gefederaliseerde vragen van het zelfde eindpunt als u een geldige vergunningssleutel voor beide producten hebt.
 
 De kern en de dienst systemen GraphQL communiceren niet direct met elkaar. U hebt toegang tot elk systeem via een andere URL en voor aanroepen is andere headerinformatie nodig. De twee systemen GraphQL worden ontworpen om samen worden gebruikt. De [!DNL Catalog Service] GraphQL-systeem versterkt het kernsysteem om producten sneller op de markt te brengen.
 
