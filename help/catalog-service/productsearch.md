@@ -1,7 +1,7 @@
 ---
 title: productSearch query
 description: "A reference guide for the ` productSearch` GraphQL query for Adobe Commerce Catalog Service."
-source-git-commit: 49692cf4375ebb975b2cf132d21ac8debe609a90
+source-git-commit: d9b8c89f6d04aa9d569b450af2893b92938119ad
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # productSearch query
 
-De Catalogusservice voor Adobe Commerce `productSearch` De vraag kan Live Onderzoek gebruiken om details over SKUs terug te keren die als input worden gespecificeerd. Hoewel deze vraag het zelfde als is [`productSearch` query](https://devdocs.magento.com//live-search/product-search.html)Live zoeken geeft een `productView` object. Zie de [`productSearch` query](https://devdocs.magento.com//live-search/product-search.html) onderwerp voor verwijzingsinformatie.
+De Catalogusservice voor Adobe Commerce `productSearch` De vraag kan Live Onderzoek gebruiken om details over SKUs terug te keren die als input worden gespecificeerd. Hoewel deze vraag het zelfde als is [`productSearch` query](https://devdocs.magento.com/live-search/product-search.html)Live zoeken geeft een `productView` object. Zie de [`productSearch` query](https://devdocs.magento.com/live-search/product-search.html) onderwerp voor verwijzingsinformatie.
 
 ## Syntaxis
 

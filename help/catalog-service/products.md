@@ -1,9 +1,9 @@
 ---
 title: productquery
 description: "A reference guide for the ` products` GraphQL query for Adobe Commerce Catalog Service."
-source-git-commit: 7edfdd71c0900a6bdc7c064a29a6cce405a361ab
+source-git-commit: d9b8c89f6d04aa9d569b450af2893b92938119ad
 workflow-type: tm+mt
-source-wordcount: '1226'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # productquery
 
-De Catalogusservice voor Adobe Commerce `products` de vraag keert details over SKUs terug die als input wordt gespecificeerd. Hoewel deze query dezelfde naam heeft als de [`products` query](https://devdocs.magento.com//guides/v2.4/graphql/queries/products.html) die met Adobe Commerce en Magento Open Source wordt geleverd, zijn er enkele verschillen.
+De Catalogusservice voor Adobe Commerce `products` de vraag keert details over SKUs terug die als input wordt gespecificeerd. Hoewel deze query dezelfde naam heeft als de [`products` query](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) die met Adobe Commerce en Magento Open Source wordt geleverd, zijn er enkele verschillen.
 
 De vraag van de Dienst van de Catalogus vereist één of meerdere waarden SKU als input. De vraag wordt hoofdzakelijk ontworpen om informatie terug te winnen om de volgende types van inhoud terug te geven:
 
