@@ -4,7 +4,7 @@ description: Gebruik het rapport Uitbetalingen voor volledige transparantie met 
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: 27d280fb9f49715a455ff55279416f7df4ada56d
+source-git-commit: 0bd6137ec7cd5da04ae6a48f06cd5aec254b46ef
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -154,9 +154,9 @@ Uitbetalingsrapporten bevatten de volgende informatie.
 | [!UICONTROL Code] | Transactiecode die een creditering aangeeft (*CR*) of Debet (*DR*) |
 | [!UICONTROL Reference ID] | Oorspronkelijke transactie-id waarvoor deze gebeurtenis verband houdt |
 | [!UICONTROL Invoice] | Factuur-id (één per bestelling) van de transactie |
-| [!UICONTROL Commerce order] | Handelsorder-ID <br> <br>Verwante items weergeven [orderinfo](https://docs.magento.com/user-guide/sales/orders.html), klikt u op de id. |
-| [!UICONTROL Commerce trans] | Transactie-id voor handel |
-| [!UICONTROL Pay method] | Type creditcard—*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL CREDIT_CARD]*—en bijbehorende kaartprovider (zoals *Visa* of *MasterCard*) |
+| [!UICONTROL Commerce order] | Handelsorder-ID <br> <br>Verwante items weergeven [orderinfo](https://docs.magento.com/user-guide/sales/orders.html){target=&quot;_blank&quot;}, klikt u op de id. |
+| [!UICONTROL Commerce trans] | Transactie-id voor handel <br> <br>Verwante items weergeven [transactiegegevens](https://docs.magento.com/user-guide/sales/transactions.html){target=&quot;_blank&quot;}, klikt u op de id. |
+| [!UICONTROL Pay method] | Type creditcard—*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL APPLE_PAY]*, *[!UICONTROL CREDIT_CARD]*—en bijbehorende kaartprovider (zoals *Visa* of *MasterCard*) |
 | [!UICONTROL Trans amt] | Bedrag van de transactie |
 | [!UICONTROL Cur] | Valuta-eenheid voor transactiebedrag |
 | [!UICONTROL Pending] | Nog uit te betalen bedrag |
