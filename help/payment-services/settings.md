@@ -4,9 +4,9 @@ description: Na installatie kunt u configureren [!DNL Payment Services] in het s
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 0bd6137ec7cd5da04ae6a48f06cd5aec254b46ef
+source-git-commit: 65787d91c098e8f5d4ae46cba4d5e226b6301ecc
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1555'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,13 @@ Om te vormen [!DNL Payment Services] for [!DNL Adobe Commerce] en [!DNL Magento 
 >
 > Voor multi-store of erfenisconfiguratie, verwijs naar [Configureren in de beheerder](configure-admin.md) onderwerp.
 
-## Betalingsservices inschakelen
+## Algemene instellingen configureren
 
-U kunt [!DNL Payment Services] voor uw website en schakel het testen van sandboxen of live betalingen in via [!UICONTROL General] sectie.
+De [!UICONTROL General] Met instellingen kunt u betalingsservices in- of uitschakelen als betalingsmethode en informatie toevoegen aan klanttransacties om een website of winkelweergave te markeren of voor te voegen met aangepaste informatie.
+
+### Betalingsservices inschakelen
+
+U kunt [!DNL Payment Services] voor uw website, en laat of zandbak het testen of levende betalingen toe.
 
 1. Op de _Beheer_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 
@@ -33,7 +37,7 @@ U kunt [!DNL Payment Services] voor uw website en schakel het testen van sandbox
 
    De _[!UICONTROL General]_sectie bevat instellingen die worden gebruikt om [!DNL Payment Services] als betalingsmethode.
 
-1. Inschakelen [!DNL Payment Services] als betalingsmethode voor je winkel, in de _[!UICONTROL General]_sectie, schakelen (**[!UICONTROL Enable Payment Services as payment method]**) naar `Yes`.
+1. Inschakelen [!DNL Payment Services] als betalingsmethode voor je winkel, in de _[!UICONTROL General]_sectie, schakelen **[!UICONTROL Enable Payment Services as payment method]**tot `Yes`.
 
 1. Als u nog test [!DNL Payment Services] voor uw winkel, set **Betalingsmodus** tot `Sandbox`. Als u live betalingen wilt inschakelen, stelt u deze in op `Production`.
 
@@ -49,7 +53,31 @@ U kunt [!DNL Payment Services] voor uw website en schakel het testen van sandbox
 
 U kunt nu doorgaan met het wijzigen van de standaardinstellingen voor [betalingsopties](#configure-payment-options) functies en storefront display.
 
-### Algemene configuratieopties
+### soft descriptor toevoegen
+
+U kunt een [!UICONTROL Soft Descriptor] naar de configuratie van uw website(s) of afzonderlijke winkelweergave(en). Zachte beschrijvingen worden weergegeven op bankafschriften van klanttransacties. Als u bijvoorbeeld meerdere winkels/merken/catalogi hebt, kunt u deze eenvoudig van elkaar scheiden door aangepaste tekst toe te voegen aan de [!UICONTROL Soft Descriptor] veld.
+
+1. Op de _Beheer_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+
+   ![Startweergave](assets/payment-services-menu-small.png)
+
+1. Klik op **[!UICONTROL Settings]**. Zie [Inleiding tot [!DNL Payment Services] Home](payments-home.md) voor meer informatie .
+1. Selecteer de website- of opslagweergave in het dialoogvenster **[!UICONTROL Scope]** vervolgkeuzelijst, waarvoor u een elektronische descriptor wilt maken. Voor de eerste setup laat u deze als **[!UICONTROL Default]** om de standaardwaarde in te stellen.
+1. Voeg uw aangepaste tekst (maximaal 22 tekens) toe aan het tekstveld en vervang `Custom descriptor`.
+1. Klik op **[!UICONTROL Save]**.
+1. U kunt als volgt een andere softdescriptor maken dan de geconfigureerde standaardwaarde voor een website- of opslagweergave:
+   1. Selecteer de website- of opslagweergave in het dialoogvenster **[!UICONTROL Scope]** vervolgkeuzelijst, waarvoor u een elektronische descriptor wilt maken.
+   1. Schakelen *uit* **[!UICONTROL Use website]** (of **[!UICONTROL Use default]**, afhankelijk van het bereik dat u hebt geselecteerd).
+   1. Voeg uw aangepaste tekst toe aan het tekstveld.
+   1. Klik op **[!UICONTROL Save]**.
+1. De standaardschermdescriptor inschakelen voor een website of winkel *of* de softwaredescriptor die voor de bovenliggende website wordt gebruikt:
+   1. Selecteer de website- of opslagweergave in het dialoogvenster **[!UICONTROL Scope]** vervolgkeuzelijst, waarvoor u een bestaande elektronische descriptor wilt inschakelen.
+   1. Schakelen *op* **[!UICONTROL Use website]** (of **[!UICONTROL Use default]**, afhankelijk van het bereik dat u hebt geselecteerd).
+   1. Klik op **[!UICONTROL Save]**.
+
+   Als u probeert weg van deze mening te navigeren zonder uw veranderingen op te slaan, verschijnt een modaal die u ertoe aanzet om veranderingen te verwerpen, het uitgeven te houden, of veranderingen te bewaren.
+
+### Configuratieopties
 
 | Veld | Toepassingsgebied | Beschrijving |
 |---|---|---|
@@ -57,6 +85,7 @@ U kunt nu doorgaan met het wijzigen van de standaardinstellingen voor [betalings
 | [!UICONTROL Payment mode] | winkelweergave | Plaats de methode, of het milieu, voor uw opslag. Opties: [!UICONTROL Sandbox] / [!UICONTROL Production] |
 | [!UICONTROL Sandbox Merchant ID] | winkelweergave | De bedrijfs-id van de sandbox, die automatisch wordt gegenereerd tijdens het aan boord nemen van de sandbox. |
 | [!UICONTROL Production Merchant ID] | winkelweergave | Uw bedrijfs-id voor productie, die automatisch wordt gegenereerd tijdens het aan boord nemen van sandboxen. |
+| [!UICONTROL Soft Descriptor] | website- of winkelweergave | Voeg een elektronische beschrijving toe aan uw website(s) en sla de weergave(en) op om informatie toe te voegen aan klanttransacties die merken, winkels of productlijnen afbakenen. De [!UICONTROL Use website] met toggle wordt elke schermdescriptor toegepast die op websiteniveau is toegevoegd. De [!UICONTROL Use default] met toggle wordt elke schermdescriptor toegepast die als standaard is toegevoegd. |
 
 ## Betalingsopties configureren
 
@@ -144,7 +173,7 @@ U kunt ook de _[!UICONTROL Button style]_opties van de slimme PayPal-knoppen:
 
 1. Als u de taglijn in een horizontale lay-out wilt inschakelen, schakelt u het **[!UICONTROL Show tagline]** kiezer.
 1. Als u de **[!UICONTROL Color]** selecteert u de gewenste kleuroptie.
-1. Als u de **[!UICONTROL Shape]**, selecteert u `Pill` of `Rect`.
+1. Als u de **[!UICONTROL Shape]**, selecteert u `Pill` of `Rectangle`.
 1. Schakel de optie **[!UICONTROL Responsive button height]** kiezer.
 1. Als u de **[!UICONTROL Label]** selecteert u de gewenste labeloptie.
 
