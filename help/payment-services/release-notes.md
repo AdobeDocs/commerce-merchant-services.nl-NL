@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] Opmerkingen bij de release"
 description: Lees de opmerkingen bij de release voor meer informatie over alle [!DNL Payment Services] lozingen.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 5d791896f647391993f668a018b3eb9194c4cf3f
+source-git-commit: 39c0140961fa9de5075087bbc3fbec0e14560860
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1166'
 ht-degree: 0%
 
 ---
@@ -57,11 +57,11 @@ _28 juni 2021_
 
 _30 september 2022_
 
-![Nieuw](../assets/new.svg)<!-- Issue PAY-784 --> De betalingsservices bieden nu de mogelijkheid om een zakelijke account in te stellen op [meerdere PayPal-zakelijke accounts gebruiken](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#use-multiple-business-accounts). Hierdoor kan de handelaar in meerdere landen uw winkels bedienen met verschillende valuta&#39;s, of Adobe Commerce gebruiken voor een deel van uw bedrijf.
+![Nieuw](../assets/new.svg)<!-- Issue PAY-784 --> De betalingsservices bieden nu de mogelijkheid om een zakelijke account in te stellen op [meerdere PayPal-zakelijke accounts gebruiken](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#use-multiple-paypal-accounts). Hierdoor kan de handelaar in meerdere landen uw winkels bedienen met verschillende valuta&#39;s, of Adobe Commerce gebruiken voor een deel van uw bedrijf.
 
 ![Nieuw](../assets/new.svg)<!-- Issue PAY-3231 --> Handelaren kunnen [toevoegen [!UICONTROL Soft Descriptor]](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#add-soft-descriptor) op websites of in afzonderlijke winkelweergaven wordt de configuratie weergegeven die op de bankafschriften van klanttransacties wordt getoond om merken, winkels of productlijnen te omlijnen.
 
-![Nieuw](../assets/new.svg)<!-- Issue PAY-3707 --> [Creditcardvelden en slimme PayPal-knoppen in- of uitschakelen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html) voor afhandeling in de instellingen voor Betalingsservices.
+![Nieuw](../assets/new.svg)<!-- Issue PAY-3707 --> [Creditcardvelden en slimme PayPal-knoppen in- of uitschakelen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-payment-options) voor afhandeling in de instellingen voor Betalingsservices.
 
 ![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-3546 --> Wanneer een klant klikt **[!UICONTROL Edit cart]**, wordt de pagina omgeleid naar de winkelwagentje en worden de bijgewerkte items weergegeven in plaats van een leeg winkelwagentje.
 
