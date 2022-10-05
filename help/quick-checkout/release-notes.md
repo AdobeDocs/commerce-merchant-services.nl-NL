@@ -2,9 +2,9 @@
 title: '''[!DNL Quick Checkout] Opmerkingen bij de release'
 description: Lees de opmerkingen bij de release voor meer informatie over alle [!DNL Quick Checkout] lozingen.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 4dd8008901dbdbfaf1de5b1aa166dc70dd02440f
+source-git-commit: 7c99f1aa4bed9878625d855509448494d5547d56
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '644'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,24 @@ In deze releaseopmerkingen wordt de eerste release van [!DNL Quick Checkout] en 
 Zie [Volgende releases](https://devdocs.magento.com/release/) om over versieschema&#39;s en steun te leren.
 
 Zie [Beschikbaarheid](https://devdocs.magento.com/release/availability.html) in de documentatie voor ontwikkelaars voor meer informatie over productcompatibiliteit.
+
+## Updates in het deelvenster Beheer
+
+In deze releaseopmerkingen worden wijzigingen en correcties beschreven die zijn opgetreden en die buiten de reguliere versie van de functiereleases voor het deelvenster Beheer zijn uitgebracht.
+
++++updates van het deelvenster Beheer
+
+_5 oktober 2022_
+
+![Nieuw](../assets/new.svg)<!-- Issue BOLT-379 --> [!DNL Quick Checkout] In het deelvenster Beheer wordt een [feature tour aangedreven door Gainsight](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html).
+
+![Nieuw](../assets/new.svg)<!-- Issue BOLT-377 --> De **Rapporten** in de [!DNL Quick Checkout] Het deelvenster Beheer bevat een overzicht van diagrammen en rapportgegevens die binnenkort beschikbaar zullen zijn.
+
+![Nieuw](../assets/new.svg)<!-- Issue BOLT-377 --> De **Rapporten** in de [!DNL Quick Checkout] In het deelvenster Beheer wordt het datumbereik voor diagrammen en rapportgegevens weergegeven dat binnenkort beschikbaar zal zijn.
+
+![Probleem opgelost](../assets/fix.svg)<!-- Issue BOLT-369 --> [[!DNL Quick Checkout] Deelvenster Beheer](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) geeft nu de versie van de app voor reageren weer in de voettekst.
+
++++
 
 ## v1.2.0
 
