@@ -2,22 +2,40 @@
 title: '''[!DNL Catalog Service] Opmerkingen bij de release'
 description: De meest recente releasegegevens voor [!DNL Catalog Service] voor Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: 372dc1cb567121ab86f606d2ace9f19d8e01170b
+source-git-commit: bb557e130a7dbef96c625d65cbe191a4ccbe26d0
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
 
 # [!DNL Catalog Service] Opmerkingen bij de release
 
-{{catalog-service-beta}}
-
 In deze releaseopmerkingen worden de meest recente versies van [!DNL Catalog Service] en omvatten:
 
 * ![Nieuw](../assets/new.svg) - Nieuwe functies
 * ![Repareren](../assets/fix.svg) - Oplossingen en verbeteringen
 * ![Bug](../assets/bug.svg) - Bekende problemen
+
+## V1.0-release
+
+Releasedatum: 2022-10-04 Compatibel met Adobe Commerce (EE): 2.4.x Compatibel met Adobe Commerce for Cloud (ECE): 2.4.x Stabiliteit: Algemene beschikbaarheid
+
+![Nieuw](../assets/new.svg) - nu gebundelde en gegroepeerde producten ondersteunen.
+![Nieuw](../assets/new.svg) - Extra B2B-zichtbaarheidsoverschrijvingen. De producten zijn nu doorzoekbaar en kunnen aan de kar voor specifieke klantengroepen worden toegevoegd.
+![Repareren](../assets/fix.svg) - De service is nu stabieler en levert betere prestaties.
+
+### Bekende beperkingen
+
+Deze functies worden nog niet ondersteund:
+
+* Tier-prijsstelling
+* Updates worden niet ontvangen wanneer varianten uit de catalogus worden verwijderd
+* Maximale grootte voor de lading van dynamische attributen is &lt;9MB
+* Vaste prijs voor bundelproducten
+* Totale prijs voor gegroepeerde producten
+* Ondersteuning voor producttypen van virtuele, downloadbare en cadeaukaarten
+* Minimale geadverteerde prijs (MAP)
 
 ## 0.3 Release - bèta+
 
