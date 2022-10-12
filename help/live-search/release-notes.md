@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] Opmerkingen bij de release"
 description: "De meest recente releasegegevens voor [!DNL Live Search] uit Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 974c77fb427f85058bb2c59d8e3818cb7c148e04
+source-git-commit: ab7bb72826ff3aee1ce93d30dde0a752ef8069de
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '931'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,8 @@ We raden gebruikers aan een upgrade uit te voeren en te testen voordat ze naar d
 
 * ![Bug](../assets/bug.svg) - Suggesties zijn afkomstig van producten die niet zichtbaar zijn voor de klantengroep.
 * ![Bug](../assets/bug.svg) - Producten worden niet weergegeven als ze niet worden toegevoegd aan de &quot;Standaard gedeelde catalogus&quot;.
+* ![Bug](../assets/bug.svg) - De Adapter van het Onderzoek geeft niet het &quot;Geen&quot;emmertje voor booleaanse productattributen terug alhoewel de producten met de attributen worden gevormd en het &quot;Geen&quot;emmer is teruggekeerd in de reactie.
+* Hoewel sommige producten en vragen niet-Engelse resultaten kunnen retourneren, worden meertalige query&#39;s momenteel niet ondersteund.
 * B2B met Live zoeken naar PWA Studio is pas beschikbaar als de PWA Studio er ondersteuning voor heeft toegevoegd.
 * Productoverschrijvingen en productkenmerken hebben mogelijk synchronisatieproblemen die beheerders moeten uitvoeren `bin/magento indexer:reset` en `bin/magento indexer:reindex` om opnieuw te synchroniseren.
 * Als u de functies Catalogusmachtigingen/Gedeelde catalogus/B2B in- of uitschakelt, `catalog_data_exporter_product_overrides` indexeer wordt niet bijgewerkt en wordt onjuist gemarkeerd als `valid`. Gebruiken `bin/magento saas:resync --feed=productOverrides` om het probleem op te lossen.

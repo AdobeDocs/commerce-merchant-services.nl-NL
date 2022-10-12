@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release
 description: De meest recente releasegegevens voor [!DNL Product Recommendations] uit Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
-source-git-commit: 78f469dda853a6f46394d5969f879100cf22f8bb
+source-git-commit: ab7bb72826ff3aee1ce93d30dde0a752ef8069de
 workflow-type: tm+mt
-source-wordcount: '945'
+source-wordcount: '957'
 ht-degree: 0%
 
 ---
@@ -31,6 +31,10 @@ Zie de documentatie voor ontwikkelaars [informatie over productcompatibiliteit](
 
 * ![Nieuw](../assets/new.svg) - Toegevoegd [gereedheidsindicatoren](create.md) om u te helpen de opleidingsvooruitgang van elk aanbevelingstype visualiseren.
 * ![Nieuw](../assets/new.svg) - Dit is een belangrijke versie. U moet [bewerken](install-configure.md#update) de basis `composer.json` bestand voor uw project. Voor deze release moet u ook twee API-sleutels opgeven bij de installatie en configuratie van Product Recommendations: [een productiesleutel en een sandboxsleutel](../landing/saas.md).
+
+### Bekende beperkingen
+
+* De `websiteCode` value is incorrect teruggekeerd als het een onderstrepingsteken (_) bevat.
 
 ## 3.3.7 van de aanbevelingen van magento/product
 
