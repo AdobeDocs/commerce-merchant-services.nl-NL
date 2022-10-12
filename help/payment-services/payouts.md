@@ -4,7 +4,7 @@ description: Gebruik het rapport Uitbetalingen voor volledige transparantie met 
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: 39c0140961fa9de5075087bbc3fbec0e14560860
+source-git-commit: ddd9fa9b2a709858239c88477f19e8787a0b65c2
 workflow-type: tm+mt
 source-wordcount: '1339'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [!DNL Payment Services] for [!DNL Adobe Commerce] en [!DNL Magento Open Source] biedt u uitgebreide rapportage zodat u een duidelijk beeld krijgt van de bestellingen en betalingen van uw winkel.
 
-![Financiële verslagen](assets/report-view.png)
+![Financiële verslagen](assets/reports-justpayouts.png)
 
 Er zijn twee beschikbare meningen van de het melden van Uitbetalingen om u toe te laten om diepgaande informatie over al uw uitbetalingen te zien:
 
