@@ -1,10 +1,10 @@
 ---
 title: Gebeurtenissen
-description: Leer welke gegevens elke gebeurtenis vangt en de volledige schemadefinitie bekijkt.
+description: Leer welke gegevens elke gebeurtenis vastlegt.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: 589d22f488572411b6632ac37d7bc5b752f72e2d
+source-git-commit: aaaab3d11c15a69856711a41e889a5d0208aedd2
 workflow-type: tm+mt
-source-wordcount: '1818'
+source-wordcount: '1977'
 ht-degree: 0%
 
 ---
@@ -13,15 +13,19 @@ ht-degree: 0%
 
 De volgende lijst maakt een lijst van de gebeurtenissen van de Handel beschikbaar wanneer u de de schakelaaruitbreiding van het Experience Platform installeert. De gegevens die door deze gebeurtenissen worden verzameld, worden naar de Adobe Experience Platform-rand verzonden. U kunt ook [aangepaste gebeurtenissen](custom-events.md) om aanvullende gegevens te verzamelen die niet uit het vak zijn verstrekt.
 
-Naast de gegevens die door de volgende gebeurtenissen worden verzameld, wordt ook [aanvullende gegevens](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) verstrekt door de SDK van het Web van Adobe Experience Platform.
+Naast de gegevens die door de volgende gebeurtenissen worden verzameld, wordt ook [overige gegevens](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) verstrekt door de SDK van het Web van Adobe Experience Platform.
 
 >[!NOTE]
 >
->Alle gebeurtenissen omvatten de `personID` veld, dat een unieke identificatie van de persoon is.
+>Alle storefront-gebeurtenissen omvatten de `personID` veld, dat een unieke identificatie van de persoon is.
 
 ## addToCart
 
-Wordt geactiveerd wanneer een product aan het winkelwagentje wordt toegevoegd of wanneer de hoeveelheid van een product in het winkelwagentje wordt verhoogd. [Volledig schema](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/product/addToCartAEP.ts).
+Wordt geactiveerd wanneer een product aan het winkelwagentje wordt toegevoegd of wanneer de hoeveelheid van een product in het winkelwagentje wordt verhoogd.
+
+### XDM-gebeurtenisnaam
+
+`commerce.productListAdds`
 
 ### Type
 
@@ -34,10 +38,71 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | Veld | Beschrijving |
 |---|---|
 | `productListAdds` | Geeft aan of een product aan een winkelwagentje is toegevoegd. Een waarde van `1` geeft aan dat een product is toegevoegd. |
+| `productListItems` | Een reeks producten die aan het winkelwagentje worden toegevoegd |
 | `SKU` | Stock Keeping Unit. De unieke id voor het product. |
 | `name` | De weergavenaam of leesbare naam van het product |
-| `priceTotal` | Het totaal voor deze bestelling nadat alle kortingen en belastingen zijn toegepast |
-| `quantity` | Het aantal eenheden dat de klant heeft aangegeven van het product te verlangen |
+| `priceTotal` | De totale prijs voor het productlijnitem |
+| `quantity` | Het aantal aan het winkelwagentje toegevoegde producteenheden |
+| `discountAmount` | Geeft de toegepaste korting aan |
+| `currencyCode` | De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valuta voor het product |
+| `productImageUrl` | URL van hoofdafbeelding van het product |
+| `selectedOptions` | Veld voor een configureerbaar product. `attribute` identificeert een attribuut van het configureerbare product, zoals `size` of `color` en `value` identificeert de waarde van het kenmerk, zoals `small` of `black`. |
+| `cartID` | De unieke id die het winkelwagentje van de klant identificeert |
+
+## openCart
+
+Wordt geactiveerd wanneer een nieuw winkelwagentje wordt gemaakt, dat wil zeggen wanneer een product aan een leeg winkelwagentje wordt toegevoegd.
+
+### XDM-gebeurtenisnaam
+
+`commerce.productListOpens`
+
+### Type
+
+Storefront
+
+### Gegevens verzameld
+
+In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zijn verzameld.
+
+| Veld | Beschrijving |
+|---|---|
+| `productListOpens` | Geeft aan of een winkelwagentje is gemaakt. Een waarde van `1` geeft aan dat er een winkelwagentje is gemaakt. |
+| `productListItems` | Een reeks producten die aan het winkelwagentje worden toegevoegd |
+| `SKU` | Stock Keeping Unit. De unieke id voor het product. |
+| `name` | De weergavenaam of leesbare naam van het product |
+| `priceTotal` | De totale prijs voor het productlijnitem |
+| `quantity` | Het aantal aan het winkelwagentje toegevoegde producteenheden |
+| `discountAmount` | Geeft de toegepaste korting aan |
+| `currencyCode` | De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valuta voor het product |
+| `productImageUrl` | URL van hoofdafbeelding van het product |
+| `selectedOptions` | Veld voor een configureerbaar product. `attribute` identificeert een attribuut van het configureerbare product, zoals `size` of `color` en `value` identificeert de waarde van het kenmerk, zoals `small` of `black`. |
+| `cartID` | De unieke id die het winkelwagentje van de klant identificeert |
+
+## removeFromCart
+
+Deze activering wordt telkens uitgevoerd wanneer een product wordt verwijderd of telkens wanneer de hoeveelheid van een product in het winkelwagentje wordt verlaagd.
+
+### XDM-gebeurtenisnaam
+
+`commerce.productListRemovals`
+
+### Type
+
+Storefront
+
+### Gegevens verzameld
+
+In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zijn verzameld.
+
+| Veld | Beschrijving |
+|---|---|
+| `productListRemovals` | Geeft aan of een product uit het winkelwagentje is verwijderd. Een waarde van `1` geeft aan dat een product uit het winkelwagentje is verwijderd. |
+| `productListItems` | Een reeks producten die uit het winkelwagentje zijn verwijderd |
+| `SKU` | Stock Keeping Unit. De unieke id voor het product. |
+| `name` | De weergavenaam of leesbare naam van het product |
+| `priceTotal` | De totale prijs voor het productlijnitem |
+| `quantity` | Het aantal uit het winkelwagentje verwijderde producteenheden |
 | `discountAmount` | Geeft de toegepaste korting aan |
 | `currencyCode` | De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valuta voor het product |
 | `productImageUrl` | URL van hoofdafbeelding van het product |
@@ -46,7 +111,11 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 
 ## shoppingCartView
 
-Wordt geactiveerd wanneer een winkelwagenpagina wordt geladen. [Volledig schema](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/shoppingCart/viewAEP.ts).
+Wordt geactiveerd wanneer een winkelwagenpagina wordt geladen.
+
+### XDM-gebeurtenisnaam
+
+`commerce.productListViews`
 
 ### Type
 
@@ -59,11 +128,11 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | Veld | Beschrijving |
 |---|---|
 | `productListViews` | Geeft aan of een productlijst is weergegeven |
-| `productListItems` | Een reeks producten die aan een winkelwagentje worden toegevoegd |
+| `productListItems` | Een reeks producten in het winkelwagentje |
 | `SKU` | Stock Keeping Unit. De unieke id voor het product. |
 | `name` | De weergavenaam of leesbare naam van het product |
-| `priceTotal` | Het totaal voor deze bestelling nadat alle kortingen en belastingen zijn toegepast |
-| `quantity` | Het aantal eenheden dat de klant heeft aangegeven van het product te verlangen |
+| `priceTotal` | De totale prijs voor het productlijnitem |
+| `quantity` | Het aantal eenheden van het product in het winkelwagentje |
 | `discountAmount` | Geeft de toegepaste korting aan |
 | `currencyCode` | De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valuta voor het product |
 | `productImageUrl` | URL van hoofdafbeelding van het product |
@@ -72,7 +141,11 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 
 ## pageView
 
-Wordt geactiveerd wanneer een pagina wordt geladen. [Volledig schema](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/page/viewAEP.ts).
+Wordt geactiveerd wanneer een pagina wordt geladen.
+
+### XDM-gebeurtenisnaam
+
+`web.webpagedetails.pageViews`
 
 ### Type
 
@@ -88,7 +161,11 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 
 ## productPageView
 
-Wordt geactiveerd wanneer een productpagina wordt geladen. [Volledig schema](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/product/viewAEP.ts).
+Wordt geactiveerd wanneer een productpagina wordt geladen.
+
+### XDM-gebeurtenisnaam
+
+`commerce.productViews`
 
 ### Type
 
@@ -101,10 +178,10 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | Veld | Beschrijving |
 |---|---|
 | `productViews` | Geeft aan of het product is bekeken |
-| `productListItems` | Een reeks producten die aan een winkelwagentje worden toegevoegd |
+| `productListItems` | Een reeks producten in het winkelwagentje |
 | `SKU` | Stock Keeping Unit. De unieke id voor het product. |
 | `name` | De weergavenaam of leesbare naam van het product |
-| `priceTotal` | Het totaal voor deze bestelling nadat alle kortingen en belastingen zijn toegepast |
+| `priceTotal` | De totale prijs voor het productlijnitem |
 | `discountAmount` | Geeft de toegepaste korting aan |
 | `currencyCode` | De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valuta voor het product |
 | `productImageUrl` | URL van hoofdafbeelding van het product |
@@ -112,7 +189,11 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 
 ## startCheckout
 
-Wordt geactiveerd wanneer de gebruiker op een uitcheckknop klikt. [Volledig schema](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/shoppingCart/initiateCheckoutAEP.ts).
+Wordt geactiveerd wanneer de gebruiker op een uitcheckknop klikt.
+
+### XDM-gebeurtenisnaam
+
+`commerce.checkouts`
 
 ### Type
 
@@ -125,11 +206,11 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | Veld | Beschrijving |
 |---|---|
 | `checkouts` | Geeft aan of een actie is uitgevoerd tijdens het uitrekenen |
-| `productListItems` | Een reeks producten die aan een winkelwagentje worden toegevoegd |
+| `productListItems` | Een reeks producten in het winkelwagentje |
 | `SKU` | Stock Keeping Unit. De unieke id voor het product. |
 | `name` | De weergavenaam of leesbare naam van het product |
-| `priceTotal` | Het totaal voor deze bestelling nadat alle kortingen en belastingen zijn toegepast |
-| `quantity` | Het aantal eenheden dat de klant heeft aangegeven van het product te verlangen |
+| `priceTotal` | De totale prijs voor het productlijnitem |
+| `quantity` | Het aantal eenheden van het product in het winkelwagentje |
 | `discountAmount` | Geeft de toegepaste korting aan |
 | `currencyCode` | De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valuta voor het product |
 | `productImageUrl` | URL van hoofdafbeelding van het product |
@@ -138,7 +219,11 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 
 ## completeCheckout
 
-Wordt geactiveerd wanneer de gebruiker een bestelling plaatst. [Volledig schema](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/checkout/placeOrderAEP.ts).
+Wordt geactiveerd wanneer de gebruiker een bestelling plaatst.
+
+### XDM-gebeurtenisnaam
+
+`commerce.order`
 
 ### Type
 
@@ -163,11 +248,11 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `shippingMethod` | De door de klant gekozen verzendmethode, zoals standaardlevering, snelle levering, ophaling in winkel, enzovoort |
 | `shippingAmount` | De totale verzendkosten voor de objecten in het winkelwagentje |
 | `promotionID` | Unieke identificatiecode van de eventuele afzetbevordering |
-| `productListItems` | Een reeks producten die aan een winkelwagentje worden toegevoegd |
+| `productListItems` | Een reeks producten in het winkelwagentje |
 | `SKU` | Stock Keeping Unit. De unieke id voor het product. |
 | `name` | De weergavenaam of leesbare naam van het product |
-| `priceTotal` | Het totaal voor deze bestelling nadat alle kortingen en belastingen zijn toegepast |
-| `quantity` | Het aantal eenheden dat de klant heeft aangegeven van het product te verlangen |
+| `priceTotal` | De totale prijs voor het productlijnitem |
+| `quantity` | Het aantal eenheden van het product in het winkelwagentje |
 | `discountAmount` | Geeft de toegepaste korting aan |
 | `currencyCode` | De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutacode die wordt gebruikt voor de totalen van de bestelling. |
 | `productImageUrl` | URL van hoofdafbeelding van het product |
@@ -175,11 +260,15 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 
 ## signIn
 
-Wordt geactiveerd wanneer een winkelier zich probeert aan te melden. [Volledig schema](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/signInAEP.ts).
+Wordt geactiveerd wanneer een winkelier zich probeert aan te melden.
 
 >[!NOTE]
 >
 > Deze gebeurtenis wordt geactiveerd wanneer de specifieke actie wordt uitgevoerd. Het geeft niet aan dat de actie succesvol was.
+
+### XDM-gebeurtenisnaam
+
+`userAccount.login`
 
 ### Type
 
@@ -201,11 +290,15 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 
 ## signOut
 
-Wordt geactiveerd wanneer een winkelier zich afmeldt. [Volledig schema](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/signOutAEP.ts).
+Wordt geactiveerd wanneer een winkelier zich afmeldt.
 
 >[!NOTE]
 >
 > Deze gebeurtenis wordt geactiveerd wanneer de specifieke actie wordt uitgevoerd. Het geeft niet aan dat de actie succesvol was.
+
+### XDM-gebeurtenisnaam
+
+`userAccount.logout`
 
 ### Type
 
@@ -223,11 +316,15 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 
 ## createAccount
 
-Wordt geactiveerd wanneer een winkelier een account probeert te maken. [Volledig schema](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/createAccountAEP.ts).
+Wordt geactiveerd wanneer een winkelier een account probeert te maken.
 
 >[!NOTE]
 >
 > Deze gebeurtenis wordt geactiveerd wanneer de specifieke actie wordt uitgevoerd. Het geeft niet aan dat de actie succesvol was.
+
+### XDM-gebeurtenisnaam
+
+`userAccount.createProfile`
 
 ### Type
 
@@ -250,11 +347,15 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 
 ## editAccount
 
-Wordt geactiveerd wanneer een gebruiker een account probeert te bewerken. [Volledig schema](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/account/editAccountAEP.ts).
+Wordt geactiveerd wanneer een gebruiker een account probeert te bewerken.
 
 >[!NOTE]
 >
 > Deze gebeurtenis wordt geactiveerd wanneer de specifieke actie wordt uitgevoerd. Het geeft niet aan dat de actie succesvol was.
+
+### XDM-gebeurtenisnaam
+
+`userAccount.updateProfile`
 
 ### Type
 
@@ -293,11 +394,13 @@ Wordt geactiveerd door de volgende gebeurtenissen op pagina&#39;s met zoekresult
 - Naar de vorige pagina navigeren
 - Naar een andere pagina navigeren
 
-[Volledig schema](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/search/searchRequestSentAEP.ts).
-
 >[!NOTE]
 >
 >Zoekgebeurtenissen worden niet ondersteund op een Adobe Commerce Enterprise Edition met de B2B-module geïnstalleerd.
+
+### XDM-gebeurtenisnaam
+
+`searchRequest`
 
 ### Type
 
@@ -323,11 +426,13 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 
 Wordt geactiveerd wanneer Live zoeken resultaten oplevert voor de popover- of zoekresultatenpagina &quot;Zoeken zoals u typt&quot;.
 
-[Volledig schema](https://github.com/adobe/magento-storefront-event-collector/blob/main/src/handlers/search/searchResponseReceivedAEP.ts)
-
 >[!NOTE]
 >
 >Zoekgebeurtenissen worden niet ondersteund op een Adobe Commerce Enterprise Edition met de B2B-module geïnstalleerd.
+
+### XDM-gebeurtenisnaam
+
+`searchResponse`
 
 ### Type
 
@@ -342,4 +447,4 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `searchResponse` | Geeft aan of een zoekreactie is ontvangen |
 | `suggestions` | Een array van tekenreeksen met de namen van producten en categorieën die in de catalogus staan en die vergelijkbaar zijn met de zoekquery |
 | `numberOfResults` | Het aantal geretourneerde producten |
-| `productListItems` | Een reeks producten die aan een winkelwagentje worden toegevoegd. Met de `SKU`(Stock Keeping Unit) en `name` van het product (weergavenaam of leesbare naam). |
+| `productListItems` | Een reeks producten in het winkelwagentje. Met de `SKU`(Stock Keeping Unit) en `name` van het product (weergavenaam of leesbare naam). |

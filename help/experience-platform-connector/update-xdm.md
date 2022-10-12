@@ -1,23 +1,22 @@
 ---
 title: Veldgroepen toevoegen aan XDM-schema
-description: Leer hoe u Adobe Commerce-specifieke veldgroepen aan een XDM-schema toevoegt.
+description: Leer hoe u Adobe Commerce-specifieke veldgroepen toevoegt aan een XDM-schema.
 exl-id: 4401bbe7-1ccc-4349-a998-9e9ee9db590f
-source-git-commit: 2b735c292920bb0e9052d86bf152748e7ce96079
+source-git-commit: f5d1c39fe1b02d2a661b92f971fba5b3e836dd6a
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '266'
 ht-degree: 0%
 
 ---
 
 # Veldgroepen toevoegen aan XDM-schema
 
-Een van de [voorwaarden](overview.md#prereqs) om de verbindingslijn van het Experience Platform te gebruiken moet tot de werkruimte van de gegevensstroom toegang hebben en [een gegevensstroom maken](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=en) dat specifiek is voor Adobe Commerce. Wanneer u die gegevensstroom creeert, moet u ook een schema selecteren XDM dat de gegevens vertegenwoordigt u van plan bent in te voeren. Dit onderwerp voorziet u van de gebiedsgroepen uw schema XDM moet omvatten om de gegevens met succes te verzamelen die door de Adobe Commerce storefront worden verstrekt [gebeurtenissen](events.md).
+Een van de [onboarding stappen](overview.md#onboarding-steps) om de verbindingslijn van het Experience Platform te gebruiken moet tot de werkruimte van de gegevensstroom toegang hebben en [een gegevensstroom maken](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) dat specifiek is voor Adobe Commerce. Wanneer u die gegevensstroom creeert, moet u ook een schema selecteren XDM dat de gegevens vertegenwoordigt u van plan bent in te voeren. Dit onderwerp voorziet u van de gebiedsgroepen uw schema XDM moet omvatten om de gegevens met succes te verzamelen die door de Adobe Commerce storefront worden verstrekt [gebeurtenissen](events.md).
 
-1. Als u nog geen XDM-schema hebt, [maken](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en#create) 1. Anders, [bewerken](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en#edit) uw bestaande XDM-schema in de gebruikersinterface van Adobe Experience Platform.
+1. Als u nog geen XDM-schema hebt, [maken](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#create) 1. Anders, [bewerken](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#edit) uw bestaande XDM-schema in de gebruikersinterface van Adobe Experience Platform.
 
-1. [Toevoegen](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en#add-field-groups) de volgende specifieke handelsgroepen:
+1. [Toevoegen](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#add-field-groups) de volgende specifieke handelsgroepen:
 
-   - Handel
    - Zoeken op site
    - Webpagina bezoeken
    - Aanmeldingsproces gebruiker

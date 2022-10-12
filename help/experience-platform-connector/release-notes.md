@@ -2,10 +2,10 @@
 title: Opmerkingen bij de release
 description: De nieuwste release-informatie voor Adobe Experience Platform-connector vanuit Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: 1c881bd5783653304d71a7a4a3db9f3471bd0ae3
+source-git-commit: b41428a7e86b09bee5273828e58c5db6601e7a09
 workflow-type: tm+mt
-source-wordcount: '63'
-ht-degree: 0%
+source-wordcount: '114'
+ht-degree: 1%
 
 ---
 
@@ -17,7 +17,14 @@ Deze releaseopmerkingen beschrijven de nieuwste versies van de aansluiting van h
 * ![Repareren](../assets/fix.svg) - Oplossingen en verbeteringen
 * ![Bug](../assets/bug.svg) - Bekende problemen
 
-## Experience Platform connector 1.0.0
+## 2.0.0.
+
+* ![Nieuw](../assets/new.svg) - Twee nieuwe [storefront, gebeurtenissen](events.md): `openCart` en `removeFromCart`
+* ![Nieuw](../assets/new.svg) - Toegevoegde ondersteuning voor een [AEM storefront](overview.md#aem-support)
+* ![Nieuw](../assets/new.svg) - Toegevoegde mogelijkheid om uw eigen AEP Web SDK op te geven wanneer [verbinden](connect-data.md) Adobe Commerce-exemplaar naar het Experience Platform
+* ![Repareren](../assets/fix.svg) - Vereisten voor het bijwerken van het bereik van de gegevensstroom, zodat de gegevensstroom-id&#39;s binnen het bereik van de website moeten worden geplaatst in plaats van dat ze moeten worden opgeslagen
+
+## 1.0.0.
 
 * ![Nieuw](../assets/new.svg) - Algemene beschikbaarheidsrelease
 

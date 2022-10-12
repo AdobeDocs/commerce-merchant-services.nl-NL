@@ -2,9 +2,9 @@
 title: Overzicht van hulplijnen
 description: Leer hoe u Adobe Commerce-gegevens met Adobe Experience Platform kunt integreren via de aansluiting van het Experience Platform.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
-source-git-commit: c7344efead97b0562a146f096123dd84f998fd5e
+source-git-commit: f5d1c39fe1b02d2a661b92f971fba5b3e836dd6a
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '442'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,10 @@ Deze handleiding is ontworpen voor de Adobe Commerce-handelaar die zijn Adobe Co
 ### Ondersteuning voor PWA Studio&#39;s
 
 Zie de [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/) documentatie voor informatie over hoe te om de schakelaar van het Experience Platform in een PWA Studio opslagront te gebruiken.
+
+### AEM {#aem-support}
+
+Zie de [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/aep.html) documentatie om te leren hoe te om storefront gebeurtenisgegevens van een AEM-teruggegeven productpagina naar het Experience Platform te verzenden gebruikend CIF - de Schakelaar van het Experience Platform.
 
 Gebruik de volgende bronnen als u informatie nodig hebt of vragen hebt die niet in deze handleiding worden behandeld:
 
