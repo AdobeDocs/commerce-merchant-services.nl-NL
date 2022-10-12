@@ -4,9 +4,9 @@ description: Na installatie kunt u configureren [!DNL Payment Services] in het s
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 785528d5940af28fa8bf6873d636b40d8e7bc05f
+source-git-commit: 6c14f062336926ead7e0ce285fb4251586698240
 workflow-type: tm+mt
-source-wordcount: '1594'
+source-wordcount: '1678'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,9 @@ ht-degree: 0%
 
 U kunt [!DNL Payment Services] naar uw behoeften met nuttige instellingen in de [!DNL Payment Services] Home.
 
-Om te vormen [!DNL Payment Services] for [!DNL Adobe Commerce] en [!DNL Magento Open Source] klikken **[!UICONTROL Settings]**. Deze configuratieopties zijn alleen van toepassing op de omgeving die is ingesteld in het dialoogvenster _[!UICONTROL Payment mode]_veld in_[!UICONTROL Settings]_ > _[!UICONTROL General]_.
+Om te vormen [!DNL Payment Services] for [!DNL Adobe Commerce] en [!DNL Magento Open Source] klikken **[!UICONTROL Settings]**. Deze configuratieopties zijn alleen van toepassing op de omgeving die is ingesteld in het dialoogvenster _[!UICONTROL Payment mode]_van het[_ Algemeen _configuratieopties](#general-configuration-options).
 
->[!IMPORTANT]
->
-> Voor multi-store of erfenisconfiguratie, verwijs naar [Configureren in de beheerder](configure-admin.md) onderwerp.
+Voor multi-store of erfenisconfiguratie zie [Configureren in de beheerder](configure-admin.md).
 
 ## Algemene instellingen configureren
 
@@ -106,7 +104,7 @@ Zie [Betalingsopties](payments-options.md#credit-card-fields) voor meer informat
 
    Als u probeert weg van deze mening te navigeren zonder uw veranderingen op te slaan, verschijnt een modaal die u ertoe aanzet om veranderingen te verwerpen, het uitgeven te houden, of veranderingen te bewaren.
 
-1. Navigeren naar **[!UICONTROL System]** > **[!UICONTROL Cache Management]** en klik op **[!UICONTROL Flush Cache]** om alle ongeldige caches te vernieuwen.
+1. [De cache leegmaken](#flush-the-cache).
 
 #### Configuratieopties
 
@@ -141,13 +139,13 @@ U kunt de betalingsopties voor slimme PayPal-knoppen inschakelen en configureren
       > Apple Betaal je [moet een Apple Developer Account hebben](test-validate.md#test-in-sandbox-environment) (invullen met valse creditcard en factureringsgegevens) om deze te testen. Als je Apple Pay klaar hebt in de sandbox *of* productiemodus, na het voltooien van [testen en valideren](test-validate.md), neemt u contact op met uw verkoper om deze in te schakelen voor je live winkel(s).
 
       Terwijl u de zichtbaarheid van betalingsknoppen of het Later bericht PayPal Pay (PayPal Pay) in- of uitschakelt, wordt onder aan de pagina Settings een visuele voorvertoning van die configuratie weergegeven.
-
+git
 1. Schakel de optie **[!UICONTROL Debug Mode]** kiezer.
 1. Klik op **[!UICONTROL Save]**.
 
    Als u probeert weg van deze mening te navigeren zonder uw veranderingen op te slaan, verschijnt een modaal die u ertoe aanzet om veranderingen te verwerpen, het uitgeven te houden, of veranderingen te bewaren.
 
-1. Navigeren naar **[!UICONTROL System]** > **[!UICONTROL Cache Management]** en klik op **[!UICONTROL Flush Cache]** om alle ongeldige caches te vernieuwen.
+1. [De cache leegmaken](#flush-the-cache).
 
 #### Configuratieopties
 
@@ -187,7 +185,7 @@ U kunt ook de _[!UICONTROL Button style]_opties van de slimme PayPal-knoppen:
 
    Als u probeert weg van deze mening te navigeren zonder uw veranderingen op te slaan, verschijnt een modaal die u ertoe aanzet om veranderingen te verwerpen, het uitgeven te houden, of veranderingen te bewaren.
 
-1. Navigeren naar **[!UICONTROL System]** > **[!UICONTROL Cache Management]** en klik op **[!UICONTROL Flush Cache]** om alle ongeldige caches te vernieuwen.
+1. [De cache leegmaken](#flush-the-cache).
 
 U kunt configureren [!DNL PayPal Smart Buttons] stijl [in de oudere configuratie in de beheerder](configure-admin.md#configure-paypal-smart-buttons) of hier [!DNL Payment Services Home]. Zie [Stijlgids voor PayPal-knoppen](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) voor meer informatie over de opties.
 
@@ -203,6 +201,17 @@ U kunt configureren [!DNL PayPal Smart Buttons] stijl [in de oudere configuratie
 | [!UICONTROL Height] | Winkelweergave | Bepaal hoogte van de betalingsknopen. Standaardwaarde: none |
 | [!UICONTROL Label] | Winkelweergave | Definieer het label dat in de betaalknoppen wordt weergegeven. Opties: [!UICONTROL PayPal] / [!UICONTROL Checkout] / [!UICONTROL Buynow] / [!UICONTROL Pay] / [!UICONTROL Installment] |
 
+## De cache leegmaken
+
+Als u de configuratie wijzigt in _Instellingen_ Als u bijvoorbeeld de PayPal-, Venmo- of PayPal PayPal PayPal PayLater-knoppen in- of uitschakelt, wordt de cache handmatig leeggemaakt, zodat in de winkel de meest recente configuraties worden weergegeven.
+
+1. Op de _Beheer_ zijbalk, ga naar **[!UICONTROL System]** > **[!UICONTROL Cache Management]**.
+1. Klikken **[!UICONTROL Flush Cache]** om alle ongeldige caches te vernieuwen.
+
+Als om het even welk Type van Geheime voorgeheugen in de lijst van het Beheer van het Geheime voorgeheugen een heeft `INVALIDATED` status, wordt de meest recente configuratie voor dat item mogelijk niet weergegeven in uw winkel. Duw het geheime voorgeheugen om uw opslag bij te werken om de recentste configuratie te tonen.
+
+Om ervoor te zorgen dat uw opslag de correcte configuratie toont, periodiek [cachegeheugen leegmaken](https://docs.magento.com/user-guide/system/cache-management.html).
+
 ## Meerdere PayPal-accounts gebruiken
 
 In Betalingsservices kunt u meerdere PayPal-rekeningen gebruiken binnen **één** handelsrekening op het niveau van de website. Als u bijvoorbeeld uw winkel(s) in meerdere landen gebruikt (die verschillende [valuta](https://docs.magento.com/user-guide/stores/currency.html)) of wil Adobe Commerce gebruiken voor bepaalde onderdelen van uw bedrijf, maar niet *alles*, je kunt je zakelijke account zo instellen dat je meerdere PayPal-accounts kunt gebruiken.
@@ -210,3 +219,4 @@ In Betalingsservices kunt u meerdere PayPal-rekeningen gebruiken binnen **één*
 Zie [Bereik van site, winkel en weergave](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) voor meer informatie over de hiërarchie van websites, winkels en opslagweergaven.
 
 Je verkoper kan een nieuwe [bereik](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) voor uw zakelijke account en aan boord van de aanvullende site met PayPal zodat alle PayPal-knoppen die u configureert, op uw site worden weergegeven. Neem contact op met uw verkoper voor hulp bij het gebruik van meerdere PayPal-accounts voor uw websites.
+

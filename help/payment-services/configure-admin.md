@@ -4,9 +4,9 @@ description: Na installatie kunt u configureren [!DNL Payment Services] in Admin
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: 31ad67d3f3d11c68341de0306eea37f231b2d9b9
+source-git-commit: 2e9a611cf94bb83733c9cad1e04f4244f62d4272
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '780'
 ht-degree: 1%
 
 ---
@@ -16,8 +16,6 @@ ht-degree: 1%
 U kunt [!DNL Payment Services] aan uw behoeften met nuttige configuratieopties in Admin.
 
 Wanneer u [!DNL Payment Services] for [!DNL Adobe Commerce] en [!DNL Magento Open Source] in Admin, zijn die configuraties van toepassing slechts op het milieu dat in wordt geplaatst _[!UICONTROL Method]_veld_[!UICONTROL General Configuration]_. Om het even welke veranderingen u in de configuratiegebieden aanbrengt zijn onafhankelijk van het schakelen van _[!UICONTROL Method]_selectie—als u van methode verandert, worden de selecties niet opnieuw ingesteld.
-
-Zie de [[!UICONTROL General Configuration] sectie](#general-configuration) voor meer informatie .
 
 ## Algemene configuratie
 
@@ -38,6 +36,7 @@ U kunt [!DNL Payment Services] voor uw winkel en schakel het testen van sandboxe
    >Uw _[!UICONTROL Sandbox Merchant ID]_en_[!UICONTROL Production Merchant ID]_ automatisch worden gegenereerd en aanwezig zijn in de betreffende velden als u klaar bent met het aan boord nemen voor de sandbox en/of productie. Verwijder of wijzig deze id&#39;s niet.
 
 1. Klikken **[!UICONTROL Save Config]** om uw wijzigingen op te slaan.
+1. Navigeren naar **[!UICONTROL System]** > **[!UICONTROL Cache Management]** en klik vervolgens op **[!UICONTROL Flush Cache]** om alle ongeldige caches te vernieuwen.
 
 ### Configuratieopties
 
@@ -64,6 +63,7 @@ Zie [Betalingsopties](payments-options.md#paypal-smart-buttons) voor meer inform
 1. Naar [betalingsactie instellen](production.md#set-payment-services-as-payment-method), selecteert u **[!UICONTROL Authorize]** of **Autoriseren en vastleggen**.
 1. Voor **Foutopsporingsmodus** kiest u `Yes` om de foutopsporingsmodus in te schakelen (of `No` om deze uit te schakelen).
 1. Klikken **[!UICONTROL Save Config]** om uw wijzigingen op te slaan.
+1. Navigeren naar **[!UICONTROL System]** > **[!UICONTROL Cache Management]** en klik vervolgens op **[!UICONTROL Flush Cache]** om alle ongeldige caches te vernieuwen.
 
 #### Configuratieopties
 
@@ -92,6 +92,7 @@ U kunt de betaalopties voor slimme PayPal-knoppen inschakelen en configureren in
 1. Om het [Later betalen](payments-options.md#pay-later-button) (indien gewenst), selecteert u `No` for **[!UICONTROL Display Pay Later Message]**.
 1. Selecteer `Yes` voor de **[!UICONTROL Debug Mode]** (`No` schakelt deze uit).
 1. Klik op **[!UICONTROL Save Config]** .
+1. Navigeren naar **[!UICONTROL System]** > **[!UICONTROL Cache Management]** en klik vervolgens op **[!UICONTROL Flush Cache]** om alle ongeldige caches te vernieuwen.
 
 ### Configuratieopties
 
@@ -119,3 +120,7 @@ U kunt de betaalopties voor slimme PayPal-knoppen inschakelen en configureren in
 | [!UICONTROL Height] | Winkelweergave | Definieer de hoogte van de slimme PayPal-knoppen. Standaardwaarde: none |
 | [!UICONTROL Label] | Winkelweergave | Definieer het label dat wordt weergegeven in de slimme PayPal-knoppen. Opties: [!UICONTROL PayPal] / [!UICONTROL Checkout] / [!UICONTROL Buynow] / [!UICONTROL Pay] / [!UICONTROL Installment] |
 | [!UICONTROL Tagline] | Winkelweergave | Hiermee schakelt u de taglijn in. Opties: [!UICONTROL Yes] / [!UICONTROL No] |
+
+## De cache leegmaken
+
+Als u de configuratie wijzigt, [de cache handmatig leegmaken](/help/payment-services/settings.md#flush-the-cache) zodat in uw winkel de meest recente configuratie-instellingen worden weergegeven.
