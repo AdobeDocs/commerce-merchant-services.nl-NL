@@ -2,9 +2,9 @@
 user-guide-title: "[!DNL Quick Checkout] voor Adobe Commerce"
 user-guide-description: "Leer hoe u [!DNL Quick Checkout] kan ten goede komen aan uw Adobe Commerce-exemplaar en hoe u de extensie met succes aan boord kunt nemen en kunt instellen."
 breadcrumb-title: Handelshulpgids
-source-git-commit: d4b58b0ee3da866d460cf18d96ec9dd27b195f7a
+source-git-commit: 9f531ce359680e442fe62fe49169ecbb03e56bbc
 workflow-type: tm+mt
-source-wordcount: '72'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
    - [Installeren](install.md)
    - [Onboarding](onboarding.md)
    - [!DNL Quick Checkout] Deelvenster Beheer {#quick-checkout-admin-panel}
-      - [[!DNL Quick Checkout] Deelvenster Beheer](admin-panel.md)
+      - [Deelvenster Beheer configureren](admin-panel.md)
       - [Gebruikersinstelling](user-roles-setup.md)
 - Testen en valideren {#test-validate}
    - [Testen](testing.md)
