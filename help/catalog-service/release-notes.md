@@ -2,9 +2,9 @@
 title: '''[!DNL Catalog Service] Opmerkingen bij de release'
 description: De meest recente releasegegevens voor [!DNL Catalog Service] voor Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: bb557e130a7dbef96c625d65cbe191a4ccbe26d0
+source-git-commit: c0d3d277bd9bb291de6eede811dc6b00255e5412
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -13,17 +13,17 @@ ht-degree: 0%
 
 In deze releaseopmerkingen worden de meest recente versies van [!DNL Catalog Service] en omvatten:
 
-* ![Nieuw](../assets/new.svg) - Nieuwe functies
-* ![Repareren](../assets/fix.svg) - Oplossingen en verbeteringen
-* ![Bug](../assets/bug.svg) - Bekende problemen
+* ![Nieuw](../assets/new.svg) Nieuwe functies
+* ![Repareren](../assets/fix.svg) Oplossingen en verbeteringen
+* ![Bug](../assets/bug.svg) Bekende problemen
 
 ## V1.0-release
 
 Releasedatum: 2022-10-04 Compatibel met Adobe Commerce (EE): 2.4.x Compatibel met Adobe Commerce for Cloud (ECE): 2.4.x Stabiliteit: Algemene beschikbaarheid
 
-![Nieuw](../assets/new.svg) - nu gebundelde en gegroepeerde producten ondersteunen.
-![Nieuw](../assets/new.svg) - Extra B2B-zichtbaarheidsoverschrijvingen. De producten zijn nu doorzoekbaar en kunnen aan de kar voor specifieke klantengroepen worden toegevoegd.
-![Repareren](../assets/fix.svg) - De service is nu stabieler en levert betere prestaties.
+![Nieuw](../assets/new.svg) Ondersteuning voor gebundelde en gegroepeerde producten.
+![Nieuw](../assets/new.svg) Extra B2B-zichtbaarheidsoverschrijvingen. De producten zijn nu doorzoekbaar en kunnen aan de kar voor specifieke klantengroepen worden toegevoegd.
+![Repareren](../assets/fix.svg) De service is nu stabieler en de prestaties zijn verbeterd.
 
 ### Bekende beperkingen
 
@@ -41,10 +41,10 @@ Deze functies worden nog niet ondersteund:
 
 Releasedatum: 2022-09-12 Compatibel met Adobe Commerce (EE): 2.4.x Compatibel met Adobe Commerce for Cloud (ECE): 2.4.x Stabiliteit: Beta
 
-![Nieuw](../assets/new.svg) - Ondersteuning voor afbeeldingen voor varianten: productafbeeldingen worden geretourneerd op basis van de geselecteerde opties
-![Nieuw](../assets/new.svg) - Rol voor prijsondersteuning: alleen leden van specifieke klantengroepen de prijs van producten laten zien
-![Repareren](../assets/fix.svg) - Verbeterde stabiliteit en prestaties van de dienst
-![Nieuw](../assets/new.svg) - Updates worden ontvangen wanneer producten uit de catalogus worden verwijderd
+![Nieuw](../assets/new.svg) Afbeeldingen voor varianten worden ondersteund: productafbeeldingen worden geretourneerd op basis van de geselecteerde opties
+![Nieuw](../assets/new.svg) Rollen voor prijsondersteuning: alleen leden van specifieke klantengroepen de prijs van producten laten zien
+![Repareren](../assets/fix.svg) Verbeterde stabiliteit en prestaties van de dienst
+![Nieuw](../assets/new.svg) Updates worden ontvangen wanneer producten uit de catalogus worden verwijderd
 
 ### Bekende beperkingen
 
@@ -59,7 +59,8 @@ Deze functies worden nog niet ondersteund:
 
 Releasedatum: 2022-08-09 Compatibel met Adobe Commerce (EE): 2.4.x Compatibel met Adobe Commerce for Cloud (ECE): 2.4.x Stabiliteit: Beta
 
-* ![Nieuw](../assets/new.svg) - de `products` en `refineProduct` query&#39;s retourneren de volgende gegevens:
+![Nieuw](../assets/new.svg) De `products` en `refineProduct` query&#39;s retourneren de volgende gegevens:
+
 * Vooraf gedefinieerde (systeem)productkenmerken.
 * Dynamische productkenmerken en filter deze op rol (pagina met productweergave/productlijst).
 * Productopties.
