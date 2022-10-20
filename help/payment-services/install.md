@@ -2,9 +2,9 @@
 title: Installeren [!DNL Payment Services]
 description: Installeer de uitbreiding van de Diensten van Betalingen.
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
-source-git-commit: 7b31fe7a71c3c238e6448627b2edfe06bbfbc80e
+source-git-commit: 4d6c9a3017575e9adbf5dc11cf0717511592dbcf
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -48,10 +48,10 @@ Deze methode wordt gebruikt voor het installeren van de [!DNL Payment Services] 
 1. Afhankelijkheden bijwerken en de extensie installeren:
 
    ```bash
-   composer update
+   composer update magento/payment-services --with-dependencies
    ```
 
-   De `composer update` alle afhankelijkheden worden bijgewerkt. Als u niet alle gebiedsdelen tezelfdertijd wilt bijwerken, gebruik in plaats daarvan dit bevel: `composer require magento/payment-services`.
+   Gebruik de `composer update` gebruiken om alle basisafhankelijkheden bij te werken.
 
 1. Leg de wijzigingen vast en duw op deze.
 
@@ -68,10 +68,10 @@ Deze methode wordt gebruikt voor het installeren van de [!DNL Payment Services] 
 1. Afhankelijkheden bijwerken en de extensie installeren:
 
    ```bash
-   composer update
+   composer update magento/payment-services --with-dependencies
    ```
 
-   De `composer update` alle afhankelijkheden worden bijgewerkt. Als u niet alle gebiedsdelen tezelfdertijd wilt bijwerken, gebruik in plaats daarvan dit bevel: `composer require magento/payment-services`.
+   Gebruik de `composer update` gebruiken om alle basisafhankelijkheden bij te werken.
 
 1. Upgrade uw exemplaar:
 
@@ -95,10 +95,10 @@ Wanneer een nieuwe versie van [!DNL Payment Services] wordt vrijgegeven, kunt u 
 1. De meest recente versie van het pakket ophalen:
 
    ```bash
-   composer update
+   composer update magento/payment-services --with-dependencies
    ```
 
-   De `composer update` alle afhankelijkheden worden bijgewerkt. Als u niet alle gebiedsdelen tezelfdertijd wilt bijwerken, gebruik in plaats daarvan dit bevel: `composer update magento/payment-services`.
+   Gebruik de `composer update` gebruiken om alle basisafhankelijkheden bij te werken.
 
 1. Leg de wijzigingen vast en duw op deze.
 
@@ -114,7 +114,7 @@ Als de volgende fout aangeeft dat u onjuiste Composer-toetsen hebt:
 Could not find a matching version of package magento/payment-services. Check the package spelling, your version constraint and that the package is available in a stability which matches your minimum-stability (stable).
 ```
 
-Controleer of uw Composer-sleutels zijn gekoppeld aan de `MageID` gebruikt tijdens [!DNL Payment Services] registratie.
+Controleer of uw Composer-sleutels geldig zijn en of u toegang hebt tot andere Magento-pakketten.
 
 Om te zien welke Composer sleutels worden gevormd:
 
