@@ -1,10 +1,10 @@
 ---
-title: '"Overzicht aan boord"'
-description: '"[!DNL Live Search] instapkaartstroom, systeemvereisten, grenzen en beperkingen"'
+title: "Overzicht aan boord"
+description: "[!DNL Live Search] instapkaartstroom, systeemvereisten, grenzen en beperkingen"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 5a17c601f84c7e366801c17fad96c1e598b1adfe
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -38,14 +38,20 @@ Op dit moment wordt [!DNL Live Search] zoek-/Categorie-API heeft de volgende ond
 * Alleen producten indexeren uit de Adobe Commerce-database
 * CMS-pagina&#39;s niet indexeren
 
-### Synoniemen
-
-* [!DNL Live Search] kan maximaal 200 synoniemen per `Data Space ID`.
-
 ### Query
 
 * [!DNL Live Search] heeft geen toegang tot de volledige taxonomie van de categorieboom, waardoor sommige gelaagde navigatie onderzoeksscenario&#39;s voorbij zijn bereik maken.
 * [!DNL Live Search] gebruikt een uniek eindpunt GraphQL voor vragen om eigenschappen zoals intelligente facettering en onderzoek-zoals-u-type te steunen. Hoewel vergelijkbaar met de [Magento GraphQL API](https://devdocs.magento.com/guides/v2.4/graphql)Er zijn echter enkele verschillen en sommige gebieden zijn momenteel wellicht niet volledig compatibel.
+
+### Regels
+
+* Het maximum aantal regels per ID gegevensruimte is 50.
+* Het maximum aantal voorwaarden per regel is 10.
+* Het maximum aantal gebeurtenissen per regel is 25.
+
+### Synoniemen
+
+* [!DNL Live Search] kan maximaal 200 synoniemen per `Data Space ID`.
 
 ### PWA bèta-release
 
