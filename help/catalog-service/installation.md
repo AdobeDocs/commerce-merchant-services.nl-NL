@@ -2,18 +2,14 @@
 title: Onboarding en installatie
 description: Leer hoe u kunt installeren [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 41f42054a495fb815e6dcf0f2ef371bbd2c98701
+source-git-commit: 683b599e183f1269cdd6c3772d1b33c43cf1156e
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '320'
 ht-degree: 0%
 
 ---
 
 # Onboarding en installatie
-
-Partners en klanten zijn welkom om te beginnen met het gebruik van de [!DNL Catalog Service] voor Adobe Commerce Beta versie uitgebracht op 9 augustus 2022. Als u wilt deelnemen, moet u onze [Adobe Commerce Beta-programmavoorwaarden](https://experiencecloudpanel.adobe.com/h/s/6eGskQlHvLSHztsNmKCWMy).
-
-Als u de overeenkomst hebt ondertekend, neemt u contact op met ons team over de [#storefront-services](https://magentocommeng.slack.com/archives/C03HVPG8RS4) public Slack channel. Wij zullen alle informatie verstrekken en de volgende stappen nodig om met het [!DNL Catalog Service] Bètaversie.
 
 ## Vereisten
 
@@ -55,8 +51,6 @@ Gebruik deze methode voor het installeren van de [!DNL Catalog Service] extensie
     "magento/services-connector": "1.2.1"
     }
    ```
-
-   <!-- What if the customer already has other services installed, and some of these lines are already present? Do they need to delete the duplications? What if the version numbers are different? -->
 
 1. Test de nieuwe configuratie plaatselijk en werk gebiedsdelen bij:
 

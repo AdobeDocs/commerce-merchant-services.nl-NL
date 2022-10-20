@@ -2,9 +2,9 @@
 title: '[!DNL Catalog Service]'
 description: '''[!DNL Catalog Service] voor Adobe Commerce biedt een manier om de inhoud van de pagina''s met productweergave en de pagina''s met productlijsten veel sneller op te halen dan de native Adobe Commerce GraphQL-query''s.'''
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
-source-git-commit: bb557e130a7dbef96c625d65cbe191a4ccbe26d0
+source-git-commit: fb229136728a8e7a8afa077120dbad388d1e4089
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '890'
 ht-degree: 0%
 
 ---
@@ -42,6 +42,30 @@ Omdat de dienst directe communicatie met de toepassing overslaat, kan het de lat
 De kern en de dienst systemen GraphQL communiceren niet direct met elkaar. U hebt toegang tot elk systeem via een andere URL en voor aanroepen is andere headerinformatie nodig. De twee systemen GraphQL worden ontworpen om samen worden gebruikt. De [!DNL Catalog Service] GraphQL-systeem versterkt het kernsysteem om producten sneller op de markt te brengen.
 
 U kunt optioneel implementeren [API-net voor Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/) om de twee Adobe Commerce GraphQL-systemen te integreren met private en externe API&#39;s en andere softwareinterfaces die Adobe Developer gebruiken. Het netwerk kan worden gevormd om vraag te verzekeren die aan elk eindpunt wordt verpletterd bevat de correcte vergunningsinformatie in de kopballen.
+
+## Architectuurgegevens
+
+De volgende secties beschrijven enkele verschillen tussen de twee systemen GraphQL.
+
+### Schema-beheer
+
+Aangezien de Catalogusdienst als dienst werkt, hoeven integrators zich niet bezorgd te maken over de onderliggende versie van Handel. De syntaxis van de query&#39;s is voor alle versies hetzelfde. Bovendien is het schema verenigbaar voor alle handelaren. Deze consistentie maakt het gemakkelijker om beste praktijken te vestigen, en verhoogt opnieuw gebruik van storefront widgets beduidend.
+
+### Vereenvoudiging van productsoorten
+
+Het schema vermindert de diversiteit van producttypen tot twee gebruiksgevallen:
+
+* Eenvoudige producten zijn producten die worden gedefinieerd met één prijs en hoeveelheid. De Catalogusservice wijst de eenvoudige, virtuele, downloadbare en cadeau-kaartproducttypen toe aan `simpleProductViews`.
+
+* Complexe producten bestaan uit meerdere eenvoudige producten. De componenten eenvoudige producten kunnen verschillende prijzen hebben. Een complex product kan ook worden bepaald zodat de verkoopster de hoeveelheid componenten eenvoudige producten kan specificeren. De Dienst van de Catalogus brengt de configureerbare, bundel, en gegroepeerde producttypes aan in kaart `complexProductViews`.
+
+Complexe productopties worden verenigd en onderscheiden door hun gedrag, niet door type. Elke optiewaarde vertegenwoordigt een eenvoudig product. Deze optie heeft toegang tot de eenvoudige productkenmerken, inclusief prijs. Wanneer de verkoper alle opties voor een complex product selecteert, wijst de combinatie geselecteerde opties naar een specifiek eenvoudig product. Het eenvoudige product blijft dubbelzinnig totdat de gebruiker een waarde voor alle beschikbare opties selecteert.
+
+### Prijzen
+
+Eenvoudige producten vertegenwoordigen de basisverkoopeenheid die een prijs heeft. De Catalogusservice berekent de normale prijs vóór kortingen en de uiteindelijke prijs na kortingen. Prijsberekeningen kunnen vaste productbelastingen bevatten. Ze sluiten gepersonaliseerde promoties uit.
+
+Een complex product heeft geen vaste prijs. In plaats daarvan retourneert de Catalogusservice de prijzen van gekoppelde voorbeelden. Een handelaar kan bijvoorbeeld in eerste instantie dezelfde prijzen toewijzen aan alle varianten van een configureerbaar product. Als bepaalde grootten of kleuren niet populair zijn, kan de handelaar de prijzen van die varianten verlagen. De prijs van het complexe (configureerbare) product vertoont dus eerst een prijsbereik, dat de prijs van zowel standaard- als niet-populaire varianten weerspiegelt. Nadat de winkelier een waarde voor alle beschikbare opties heeft geselecteerd, toont de winkel één enkele prijs.
 
 ## Implementatie
 
