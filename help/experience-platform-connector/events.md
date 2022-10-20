@@ -2,9 +2,9 @@
 title: Gebeurtenissen
 description: Leer welke gegevens elke gebeurtenis vastlegt.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: aaaab3d11c15a69856711a41e889a5d0208aedd2
+source-git-commit: bd1cf8a3b4740594cf6b8678d899d771a886cb2e
 workflow-type: tm+mt
-source-wordcount: '1977'
+source-wordcount: '1987'
 ht-degree: 0%
 
 ---
@@ -447,4 +447,7 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `searchResponse` | Geeft aan of een zoekreactie is ontvangen |
 | `suggestions` | Een array van tekenreeksen met de namen van producten en categorieën die in de catalogus staan en die vergelijkbaar zijn met de zoekquery |
 | `numberOfResults` | Het aantal geretourneerde producten |
-| `productListItems` | Een reeks producten in het winkelwagentje. Met de `SKU`(Stock Keeping Unit) en `name` van het product (weergavenaam of leesbare naam). |
+| `productListItems` | Een reeks producten in het winkelwagentje. |
+| `SKU` | Stock Keeping Unit. De unieke id voor het product. |
+| `name` | De weergavenaam of leesbare naam van het product |
+| `productImageUrl` | URL van hoofdafbeelding van het product |

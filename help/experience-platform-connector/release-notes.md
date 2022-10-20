@@ -2,29 +2,48 @@
 title: Opmerkingen bij de release
 description: De nieuwste release-informatie voor Adobe Experience Platform-connector vanuit Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: b41428a7e86b09bee5273828e58c5db6601e7a09
+source-git-commit: f3c37c9c50c608f9f0ea4582fbcca2b99a3428b5
 workflow-type: tm+mt
-source-wordcount: '114'
+source-wordcount: '194'
 ht-degree: 1%
 
 ---
 
 # Opmerkingen bij de release
 
-Deze releaseopmerkingen beschrijven de nieuwste versies van de aansluiting van het Experience Platform en bevatten:
+Deze releaseopmerkingen bevatten updates van de aansluiting van het Experience Platform en bevatten:
 
 * ![Nieuw](../assets/new.svg) - Nieuwe functies
 * ![Repareren](../assets/fix.svg) - Oplossingen en verbeteringen
 * ![Bug](../assets/bug.svg) - Bekende problemen
 
+Voor functieveranderingen en moeilijke situaties met betrekking tot uitbreidingen die door de schakelaar van het Experience Platform worden gebruikt, zie **Ondersteunde service-updates**.
+
+Zie [Volgende releases](https://experienceleague.adobe.com/docs/commerce-operations/release/schedule.html) om over versieschema&#39;s en steun te leren.
+
+Zie [Beschikbaarheid](https://experienceleague.adobe.com/docs/commerce-operations/release/availability.html) voor meer informatie over productcompatibiliteit.
+
+## Ondersteunde service-updates
+
+Deze versienota&#39;s beschrijven eigenschapveranderingen en moeilijke situaties met betrekking tot uitbreidingen die door de schakelaar van het Experience Platform worden gebruikt.
+
++++Hosted service-updates
+
+_12 oktober 2022_
+
+* ![Nieuw](../assets/new.svg) - Twee toegevoegd [storefront, gebeurtenissen](events.md): `openCart` en `removeFromCart` naar de Adobe Commerce Storefront Events SDK en Collector
+* ![Nieuw](../assets/new.svg) - Toegevoegde ondersteuning voor een [AEM storefront](overview.md#aem-support)
+
 ## 2.0.0.
 
-* ![Nieuw](../assets/new.svg) - Twee nieuwe [storefront, gebeurtenissen](events.md): `openCart` en `removeFromCart`
-* ![Nieuw](../assets/new.svg) - Toegevoegde ondersteuning voor een [AEM storefront](overview.md#aem-support)
+_12 oktober 2022_
+
 * ![Nieuw](../assets/new.svg) - Toegevoegde mogelijkheid om uw eigen AEP Web SDK op te geven wanneer [verbinden](connect-data.md) Adobe Commerce-exemplaar naar het Experience Platform
 * ![Repareren](../assets/fix.svg) - Vereisten voor het bijwerken van het bereik van de gegevensstroom, zodat de gegevensstroom-id&#39;s binnen het bereik van de website moeten worden geplaatst in plaats van dat ze moeten worden opgeslagen
 
 ## 1.0.0.
+
+_9 augustus 2022_
 
 * ![Nieuw](../assets/new.svg) - Algemene beschikbaarheidsrelease
 

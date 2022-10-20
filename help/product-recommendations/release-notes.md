@@ -2,7 +2,7 @@
 title: Opmerkingen bij de release
 description: De meest recente releasegegevens voor [!DNL Product Recommendations] uit Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
-source-git-commit: ab7bb72826ff3aee1ce93d30dde0a752ef8069de
+source-git-commit: bd1cf8a3b4740594cf6b8678d899d771a886cb2e
 workflow-type: tm+mt
 source-wordcount: '957'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Zie de documentatie voor ontwikkelaars [informatie over productcompatibiliteit](
 
 ## Adobe Commerce 2.3.x en 2.4.x
 
-## 4.0.0 van magento/product-recommendations
+### 4.0.0 van magento/product-recommendations
 
 * ![Nieuw](../assets/new.svg) - Toegevoegd [gereedheidsindicatoren](create.md) om u te helpen de opleidingsvooruitgang van elk aanbevelingstype visualiseren.
 * ![Nieuw](../assets/new.svg) - Dit is een belangrijke versie. U moet [bewerken](install-configure.md#update) de basis `composer.json` bestand voor uw project. Voor deze release moet u ook twee API-sleutels opgeven bij de installatie en configuratie van Product Recommendations: [een productiesleutel en een sandboxsleutel](../landing/saas.md).
@@ -36,12 +36,12 @@ Zie de documentatie voor ontwikkelaars [informatie over productcompatibiliteit](
 
 * De `websiteCode` value is incorrect teruggekeerd als het een onderstrepingsteken (_) bevat.
 
-## 3.3.7 van de aanbevelingen van magento/product
+### 3.3.7 van de aanbevelingen van magento/product
 
 * ![Nieuw](../assets/new.svg) - Toegevoegde ondersteuning voor PHP 8.1
 * ![Nieuw](../assets/new.svg) - Verbeterde afbeeldingsgrootte, zodat afbeeldingen van verschillende grootte consistenter worden verwerkt in de referentiesjabloon
 
-## 3.3.6 van de aanbevelingen inzake magento/product
+### 3.3.6 van de aanbevelingen inzake magento/product
 
 * ![Nieuw](../assets/new.svg) - Geoptimaliseerd [!DNL Product Recommendations] metapakket door de gebiedsdelen uitdrukkelijk te vermelden
 

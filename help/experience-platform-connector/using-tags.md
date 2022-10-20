@@ -2,9 +2,9 @@
 title: Gegevens voor handel verzamelen met Adobe Experience Platform-tags
 description: Leer hoe u gegevens over handel kunt verzamelen met Adobe Experience Platform-tags.
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: c7344efead97b0562a146f096123dd84f998fd5e
+source-git-commit: f3c37c9c50c608f9f0ea4582fbcca2b99a3428b5
 workflow-type: tm+mt
-source-wordcount: '2504'
+source-wordcount: '2574'
 ht-degree: 0%
 
 ---
@@ -124,6 +124,7 @@ Wijs voor elk van de volgende gebeurtenissen de Adobe Commerce-gebeurtenissen to
 - [` searchRequestSent`](#searchrequestsent)
 - [` searchResponseReceived`](#searchresponsereceived)
 - [` addToCart`](#addtocart)
+- [` openCart`](#opencart)
 - [` viewCart`](#viewcart)
 - [` removeFromCart`](#removefromcart)
 - [&quot;initilCheckout&quot;](#initiatecheckout)
@@ -783,6 +784,39 @@ Maak de volgende gegevenselementen:
 - **Type handeling**: `Send event`
 - **Type**: `commerce.productListAdds`
 - **XDM-gegevens**: `%add to cart%`
+
+### openCart {#opencart}
+
+Wordt geactiveerd wanneer een nieuw winkelwagentje wordt gemaakt, wat gebeurt wanneer een product aan een leeg winkelwagentje wordt toegevoegd.
+
+#### Gegevenselementen
+
+Maak het volgende gegevenselement:
+
+1. Open kar:
+
+   - **Naam**: `open cart`
+   - **Extensie**: `Adobe Experience Platform Web SDK`
+   - **Type gegevenselement**: `XDM object`
+   - **Veldgroep**: `commerce` > `productListOpens` > `value`
+   - **value**: **Waarde** = `1`
+   - **Veldgroep**: `commerce` > `cart` > `cartID`
+   - **Illustratie-id**: **Waarde** = `%cart id%`
+   - **Veldgroep**: `productListItems`. Voor `productListItems`, meerdere items kunnen vooraf worden berekend. Selecteren **productListItems** > **Volledige array opgeven**.
+
+#### Regels 
+
+- **Naam**: `open cart`
+- **Extensie**: `Adobe Client Data Layer`
+- **Type gebeurtenis**: `Data Pushed`
+- **Specifieke gebeurtenis**: `open-cart`
+
+##### Handelingen
+
+- **Extensie**: `Adobe Experience Platform Web SDK`
+- **Type handeling**: `Send event`
+- **Type**: `commerce.productListOpens`
+- **XDM-gegevens**: `%open cart%`
 
 ### viewCart {#viewcart}
 
