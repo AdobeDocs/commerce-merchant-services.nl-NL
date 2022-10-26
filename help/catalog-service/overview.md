@@ -2,9 +2,9 @@
 title: '[!DNL Catalog Service]'
 description: '''[!DNL Catalog Service] voor Adobe Commerce biedt een manier om de inhoud van de pagina''s met productweergave en de pagina''s met productlijsten veel sneller op te halen dan de native Adobe Commerce GraphQL-query''s.'''
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
-source-git-commit: fb229136728a8e7a8afa077120dbad388d1e4089
+source-git-commit: 7ab545b8e3d9a795be7ff43246e102b366ad94bd
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '891'
 ht-degree: 0%
 
 ---
@@ -32,12 +32,12 @@ Het volgende diagram toont de twee systemen GraphQL:
 
 In het kern systeem GraphQL, verzendt de PWA een verzoek naar de toepassing van de Handel, die elk verzoek ontvangt, het verwerkt, misschien verzendend een verzoek door veelvoudige subsystems, dan keert een antwoord op de storefront terug. Deze ronde trip kan leiden tot een trage laadtijd voor de pagina, wat kan leiden tot lagere conversiesnelheden.
 
-[!DNL Catalog Service] verzendt vragen naar een afzonderlijke gateway GraphQL. De dienst heeft toegang tot een afzonderlijk gegevensbestand dat productdetails en verwante informatie, zoals productattributen, varianten, prijzen, en categorieën bevat. De service houdt de database via indexering synchroon met de Adobe Commerce.
+[!DNL Catalog Service] is een gefederaliseerde GraphicsQL gatewaydienst. De dienst heeft toegang tot een afzonderlijk gegevensbestand dat productdetails en verwante informatie, zoals productattributen, varianten, prijzen, en categorieën bevat. De service houdt de database via indexering synchroon met de Adobe Commerce.
 Omdat de dienst directe communicatie met de toepassing overslaat, kan het de latentie van de verzoek en reactiecyclus verminderen.
 
 >[!NOTE]
 >
->De gateway is voor toekomstige integratie met Product Recommendations. In deze release hebt u toegang tot [!DNL Catalog Service] en [!DNL Live Search] de gefederaliseerde vragen van het zelfde eindpunt als u een geldige vergunningssleutel voor beide producten hebt.
+>De gateway is voor toekomstige integratie met Product Recommendations. In deze release hebt u toegang tot de [!DNL Catalog Service Federated GraphQL] en de [!DNL Live Search] de gefederaliseerde vragen van het zelfde eindpunt als u een geldige vergunningssleutel voor beide producten hebt.
 
 De kern en de dienst systemen GraphQL communiceren niet direct met elkaar. U hebt toegang tot elk systeem via een andere URL en voor aanroepen is andere headerinformatie nodig. De twee systemen GraphQL worden ontworpen om samen worden gebruikt. De [!DNL Catalog Service] GraphQL-systeem versterkt het kernsysteem om producten sneller op de markt te brengen.
 
