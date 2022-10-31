@@ -2,9 +2,9 @@
 user-guide-title: "[!DNL Product Recommendations] Hulplijn"
 user-guide-description: Deze handleiding bevat gedetailleerde instructies voor het gebruik van [!DNL Product Recommendations] uit Adobe Commerce.
 breadcrumb-title: "[!DNL Product Recommendations] Hulplijn"
-source-git-commit: 81ab2e22b0ec81e97d27ee135c88b50731a3986d
+source-git-commit: 1dbb0dcf588c71f916755d1b06b41d3244201b7e
 workflow-type: tm+mt
-source-wordcount: '51'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -33,5 +33,5 @@ ht-degree: 0%
 - [!DNL Product Recommendations] Ontwikkelaar {#developer}
    - [Overzicht](development-overview.md)
    - [Gegevens verzamelen](events.md)
-   - [Bewerken](customize.md)
+   - [Aanpassen](customize.md)
    - [Cookie-beperkingen verwerken](setting-cookie.md)
