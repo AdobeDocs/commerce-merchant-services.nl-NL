@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] Opmerkingen bij de release"
 description: "De meest recente releasegegevens voor [!DNL Live Search] uit Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: ab7bb72826ff3aee1ce93d30dde0a752ef8069de
+source-git-commit: baa2587fc9d048d7a7915b9370b63ac6c2ff93d2
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '1114'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,22 @@ In deze releaseopmerkingen worden de meest recente versies van [!DNL Live Search
 * ![Nieuw](../assets/new.svg) - Nieuwe functies
 * ![Repareren](../assets/fix.svg) - Oplossingen en verbeteringen
 * ![Bug](../assets/bug.svg) - Bekende problemen
+
+## [!DNL Live Search] 2.0.4.
+
+* Compatibel met Adobe Commerce (EE): 2,4 x
+* Compatibel met Adobe Commerce for Cloud (ECE): 2,4 x
+* Stabiliteit: Stabiel
+
+* ![Nieuw](../assets/new.svg) - Live zoeken ondersteunt nu filteren met de instelling &#39;Producten uit voorraad weergeven&#39; in de beheerder. Als &#39;Display Out of Stock Products&#39; is ingesteld op false, `inStock = true` wordt toegevoegd aan het filter.
+* ![Repareren](../assets/fix.svg) - Om de prestaties te verbeteren, is het blok Suggestions verwijderd uit het pop-upmenu Live zoeken. De gegevens worden nog overgegaan door GraphQL, voor het geval u de eigenschap wilt vervangen.
+* ![Repareren](../assets/fix.svg) - `categories` en `categoryPath` vervangen `categoryIds` voor filteren van categorieën. Lees meer in de [productSearch](https://devdocs.magento.com/live-search/product-search.html#filter) onderwerp.
+* ![Repareren](../assets/fix.svg) - Eerder, zou een gebruiker verbonden aan een B2B bedrijf een onjuiste Code van de Groep van de Klant ontvangen wanneer het doen van onderzoeken. Live zoeken retourneert nu de juiste waarde.
+* ![Repareren](../assets/fix.svg) - Als u eerder zoekt naar een term die niet bestaat, retourneert Live zoeken een fout. Die bug is nu opgelost.
+
+Handelaars moeten de Live Search extensie versie >= 2.0.4 upgraden om toegang te krijgen tot deze functies.
+
+We raden gebruikers aan een upgrade uit te voeren en te testen voordat ze naar de productie gaan. Overweeg om de productieomgeving tijdens niet-piekuren te upgraden nadat de resultaten van de testomgeving zijn gecontroleerd.
 
 ## [!DNL Live Search] 2.0.3.
 
