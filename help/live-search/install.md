@@ -2,9 +2,9 @@
 title: "Installeren [!DNL Live Search]"
 description: "Meer informatie over het installeren, bijwerken en verwijderen [!DNL Live Search] uit Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: a17c9ef193394d86f5439f900ebba3dd68d33b45
+source-git-commit: c4039dbf203198ea1218f4e1516a2690fb7c61c4
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -251,7 +251,7 @@ Om te verwijderen [!DNL Live Search], zie [Modules verwijderen](https://devdocs.
 |--- |--- |
 | `module-live-search` | Staat verkopers toe om hun onderzoeksmontages voor faceting, synoniemen, vraagregels, enz. te vormen, en verleent toegang tot read-only playground GraphQL om vragen van te testen *Beheer*. |
 | `module-live-search-adapter` | Routes onderzoeksverzoeken van de storefront aan [!DNL Live Search] en geeft de resultaten weer in de winkel. <br />- Rubriekbrowse - Routaanvragen van de winkel [topnavigatie](https://docs.magento.com/user-guide/catalog/navigation-top.html) aan de zoekdienst.<br />- Globale zoekactie - Routverzoeken van de [snel zoeken](https://docs.magento.com/user-guide/catalog/search-quick.html) in de rechterbovenhoek van de winkel [!DNL Live Search] service. |
-| `module-live-search-storefront-popover` | De pop-up &#39;&#39;Zoeken terwijl u typt&#39;&#39; vervangt de standaard snelle zoekopdracht en retourneert dynamische productsuggesties en miniaturen van de bovenste zoekresultaten. |
+| `module-live-search-storefront-popover` | De pop-up &#39;&#39;Zoeken terwijl u typt&#39;&#39; vervangt de standaard snelle zoekopdracht en retourneert gegevens en miniaturen van de bovenste zoekresultaten. |
 
 ## [!DNL Live Search] afhankelijkheden {#dependencies}
 

@@ -1,10 +1,10 @@
 ---
-title: '"Stijlen [!DNL Popover] Elementen"'
-description: '"Technische opmerkingen over het aanpassen van de [!DNL Live Search storefront popover]"'
+title: "Stijlen [!DNL Popover] Elementen"
+description: "Technische opmerkingen over het aanpassen van de [!DNL Live Search storefront popover]"
 exl-id: 033049f2-976e-4299-b026-333ac4b481a3
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: ba3d983372eb60d5cb42e503c3c26c693668a01e
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -36,13 +36,10 @@ Raadpleeg voor meer informatie over opmaakelementen voor winkelobjecten de [Casc
 
 ## Klasse-kiezers
 
-De volgende klassenkiezers kunnen worden gebruikt om de container, suggestie en productelementen in de [!DNL popover].
+De volgende klassenkiezers kunnen worden gebruikt om de container- en productelementen in de [!DNL popover].
 
 * `.livesearch.popover-container`
 * `.livesearch.view-all-footer`
-* `.livesearch.suggestions-container`
-* `.livesearch.suggestions-header`
-* `.livesearch.suggestion`
 * `.livesearch.products-container`
 * `.livesearch.product-result`
 * `.livesearch.product-name`
@@ -50,37 +47,30 @@ De volgende klassenkiezers kunnen worden gebruikt om de container, suggestie en 
 
 ### Containerklassekiezers
 
-`.livesearch.popover-container`
+#### .livessearch.popover-container
 
 ![[!DNL Popover] container](assets/livesearch-popover-container.png)
 
-`.livesearch.view-all-footer`
+#### .livessearch.view-all-footer
 
 ![Alle voetteksten weergeven](assets/livesearch-view-all-footer.png)
 
-### Kiezers voor de klasse Suggestie
-
-`.livesearch.suggestions-container`
-![Container met suggesties](assets/livesearch-suggestions-container.png)
-
-`.livesearch.suggestions-header`
-![Koptekst van suggesties](assets/livesearch-suggestions-header.png)
-
-`.livesearch.suggestion`
-![Suggestie](assets/livesearch-suggestion.png)
-
 ### Kiezers voor productklassen
 
-`.livesearch.products-container`
+#### .livessearch.products-container
+
 ![Productcontainer](assets/livesearch-product-container.png)
 
-`.livesearch.product-result`
+#### .livessearch.product-result
+
 ![Resultaat van product](assets/livesearch-product-result.png)
 
-`.livesearch.product-name`
+#### .livessearch.product-name
+
 ![Productnaam](assets/livesearch-product-name.png)
 
-`.livesearch.product-price`
+#### .livessearch.product-price
+
 ![Productprijs](assets/livesearch-product-price.png)
 
 ## Werken met een gewijzigd thema {#working-with-modified-theme}
