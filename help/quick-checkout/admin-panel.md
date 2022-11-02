@@ -1,9 +1,9 @@
 ---
 title: "[!DNL Quick Checkout] voor het deelvenster Adobe Commerce Admin"
 description: "Leer hoe u [!DNL Quick Checkout] Het deelvenster Beheer kan u helpen om de extensie met succes aan boord te krijgen, in te stellen en te visualiseren."
-source-git-commit: d4b58b0ee3da866d460cf18d96ec9dd27b195f7a
+source-git-commit: bd02a8083d3f4c9cb0422b27d61bd5462187ffc3
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '201'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Zie de [Onboarding](../quick-checkout/onboarding.md) onderwerp voor meer informa
 | Veld | Beschrijving |
 |---|---|
 | [!UICONTROL Overview] | Het lusje van het Overzicht toont alle middelen voor het gebruiken [!DNL Quick Checkout]. |
-| [!UICONTROL Reports] | Het tabblad Rapporten bevat uitgebreide [!DNL Quick Checkout] rapportage-informatie. |
+| [!UICONTROL Reports] | Het tabblad Rapporten bevat uitgebreide [!DNL Quick Checkout] informatie. |
 
 ## Help en ondersteuning
 

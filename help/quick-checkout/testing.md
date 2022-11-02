@@ -1,10 +1,10 @@
 ---
-title: '"Testen van de [!DNL Quick Checkout] voor Adobe Commerce-extensie"'
-description: '"Testen en valideren zorgt ervoor dat de [!DNL Quick Checkout] de extensie werkt zoals u had verwacht."'
+title: "Testen van de [!DNL Quick Checkout] voor Adobe Commerce-extensie"
+description: "Testen en valideren zorgt ervoor dat de [!DNL Quick Checkout] de extensie werkt zoals u had verwacht."
 exl-id: 308f39e1-e2f6-40d8-b876-0f9013effed3
-source-git-commit: 9841db7616c8aa6d5bc5af3e6e92c0abe9a4a1e2
+source-git-commit: bd02a8083d3f4c9cb0422b27d61bd5462187ffc3
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '437'
 ht-degree: 0%
 
 ---
@@ -44,15 +44,15 @@ U moet ook controleren of de gegevens die op de bankafschriften staan voor de be
 Voltooi een geslaagde afhandeling uit je winkel:
 
 1. Ga naar je winkel en plaats de gewenste objecten in je winkelwagentje.
-2. Ga door met de kassa.
-3. Voer een e-mailadres in dat is gekoppeld aan een [!DNL Bolt] account wanneer hierom wordt gevraagd.
-4. Voer het eenmalige wachtwoord (OTP) in dat naar het e-mailadres van het account is verzonden.
-5. Selecteer het omgevingsdashboard:
+1. Ga door met de kassa.
+1. Voer een e-mailadres in dat is gekoppeld aan een [!DNL Bolt] account wanneer hierom wordt gevraagd.
+1. Voer het eenmalige wachtwoord (OTP) in dat naar het e-mailadres van het account is verzonden.
+1. Selecteer het omgevingsdashboard:
 
    - Sandbox
    - Productie
 
-6. Plaats de bestelling.
+1. Plaats de bestelling.
 
 Zodra een bestelling is geplaatst, kunt u de details van uw bestellingen in uw _Raster voor bestellingen_ weergave:
 

@@ -2,9 +2,9 @@
 title: "Aan boord van de [!DNL Quick Checkout] voor Adobe Commerce-extensie"
 description: "Leer hoe u [!DNL Quick Checkout] kan uw Adobe Commerce-exemplaar ten goede komen en de extensie met succes aan boord installeren en instellen."
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: d4b58b0ee3da866d460cf18d96ec9dd27b195f7a
+source-git-commit: bd02a8083d3f4c9cb0422b27d61bd5462187ffc3
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '767'
 ht-degree: 0%
 
 ---
@@ -99,7 +99,9 @@ Volg de stappen in het dialoogvenster [processorinstelling](https://help.bolt.co
 
 1. Valideer referenties nadat u de unieke API hebt opgegeven en [!DNL Publishable keys].
 
-![Snelle afhandeling](assets/quick-checkout-main-view.png)
+![Snelle afhandeling](assets/quick-checkout-main-view-react.png)
+
+Zie de [Instellingen](../quick-checkout/settings-quick-checkout.md) onderwerp voor meer informatie over de configuratieopties voor [!DNL Quick Checkout] voor Adobe Commerce-extensie.
 
 >[!CAUTION]
 >
