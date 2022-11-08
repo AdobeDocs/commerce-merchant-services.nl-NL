@@ -1,7 +1,8 @@
 ---
 title: Aanpassen
 description: Leer hoe u uw productaanbevelingen kunt aanpassen.
-source-git-commit: 478c5bf7d7830d971c576ce50ff0bf3ffd4fe9e5
+exl-id: b1b8e770-45ec-4403-b79b-4f0a9f7bd959
+source-git-commit: a34c3c8a5caca1bbf611b2df650c562aeeab297b
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 0%
@@ -110,7 +111,7 @@ Ontwikkelaars hebben vaak toegang nodig tot aangepaste productkenmerkwaarden in 
 
 Als uw winkel bijvoorbeeld bepaalde biologische producten verkoopt, hebt u mogelijk een aangepast kenmerk op die producten waarin ze worden aangeduid als `Organic = Yes`. Mogelijk hebt u toegang tot deze kenmerkwaarde op de winkel nodig, zodat u deze producten een speciale visuele behandeling kunt geven wanneer ze in Recommendations worden weergegeven. Op dezelfde manier staat de toegang tot deze waarden van de douaneproductattributen u toe om producten te badge of douanelogica in de presentatielaag van uw plaats te drijven.
 
-![Badge toevoegen](assets/unit.png)
+![Badge toevoegen](assets/unit-custom.png)
 
 Als u er zeker van wilt zijn dat een aangepast productkenmerk beschikbaar is wanneer u de aanbevolen eenheid op de pagina rendert, stelt u de optie `Used in Product Listing` eigenschap aan `Yes` in de [Productkenmerken](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) in Admin.
 
