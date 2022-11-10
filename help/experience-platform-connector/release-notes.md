@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release
 description: De nieuwste release-informatie voor Adobe Experience Platform-connector vanuit Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: b0f729a8035d89a8cd45b583df28dedfb36c19d4
+source-git-commit: f3d35772d75d1d0711d389a00023834720d63bd9
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '219'
 ht-degree: 1%
 
 ---
@@ -35,6 +35,12 @@ _12 oktober 2022_
 * ![Nieuw](../assets/new.svg) - Toegevoegde ondersteuning voor een [AEM storefront](overview.md#aem-support)
 
 +++
+
+## 2.0.1.
+
+_10 november 2022_
+
+* ![Probleem opgelost](../assets/fix.svg) - Nu wordt de Adobe Experience Platform-context alleen ingesteld nadat de Storageront Event Collector en de Storefront Event SDK zijn geladen.
 
 ## 2.0.0.
 
