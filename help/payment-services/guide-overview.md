@@ -1,12 +1,12 @@
 ---
-title: '"[!DNL Payment Services] Overzicht van hulplijnen"'
+title: "[!DNL Payment Services] Overzicht van hulplijnen"
 description: Uitgebreide informatie over [!DNL Payment Services] for [!DNL Adobe Commerce] en [!DNL Magento Open Source] beheerders, inclusief installatie en instapweigering
 seo-title: Adobe Commerce Payments Services Guide
 seo-description: Describes how to use [!DNL Payment Services] with Adobe Commerce or [!DNL Magento Open Source].
 exl-id: 30b23f26-9aac-4a24-a607-2431455fc935
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 834faafdc35280908dfd468b3527b9f6cbe5e024
 workflow-type: tm+mt
-source-wordcount: '198'
+source-wordcount: '205'
 ht-degree: 0%
 
 ---
@@ -40,5 +40,5 @@ Als u informatie nodig hebt of vragen hebt die niet in deze handleiding worden b
 
 ![Help-bronnen](assets/help-resources.png)
 
-* [Help Center](https://support.magento.com/hc/en-us){target=&quot;_blank&quot;}—Zie de [!DNL Payment Services]gerelateerde artikelen voor het oplossen van problemen.
-* [Ondersteuningstickets](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket){target=&quot;_blank&quot;} - Verstuur een ticket voor extra hulp.
+* [Help Center](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html?lang=en)—Zie de [!DNL Payment Services]gerelateerde artikelen voor het oplossen van problemen in de knowledgebase.
+* [Ondersteuningstickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket)—Verstuur een ticket voor extra hulp.
