@@ -2,9 +2,9 @@
 title: '''[!DNL Quick Checkout] Opmerkingen bij de release'
 description: Lees de opmerkingen bij de release voor meer informatie over alle [!DNL Quick Checkout] lozingen.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: dd9131059030f687dfff44b379dc0e8ddbb9f32f
+source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
 workflow-type: tm+mt
-source-wordcount: '888'
+source-wordcount: '891'
 ht-degree: 0%
 
 ---
@@ -115,4 +115,4 @@ _9 augustus 2022_
 
 ![Probleem opgelost](../assets/fix.svg)<!-- Issue BOLT-375 --> Verbeteringen in gebruikerservaring [[!DNL Quick Checkout] Deelvenster Beheer](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) staat u toe om uw configuratie te bewaren wanneer alle vereiste parameters worden verstrekt.
 
-![Bekend probleem](../assets/bug.svg)<!-- Issue BOLT-342 --> Vaak [problemen oplossen](https://support.magento.com/hc/en-us/articles/6909450342541) problemen tijdens de installatie van [!DNL Quick Checkout].
+![Bekend probleem](../assets/bug.svg)<!-- Issue BOLT-342 --> Vaak [problemen oplossen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) problemen tijdens de installatie van [!DNL Quick Checkout].

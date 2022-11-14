@@ -2,7 +2,7 @@
 title: "Afhandelingsstroom in Adobe Commerce"
 description: "Overzicht van de [!DNL Quick Checkout] flow in Adobe Commerce."
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
-source-git-commit: d4b58b0ee3da866d460cf18d96ec9dd27b195f7a
+source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
 workflow-type: tm+mt
 source-wordcount: '194'
 ht-degree: 0%
@@ -47,4 +47,4 @@ De [!DNL Quick Checkout] staat voor veelvoudige gebruiksgevallen tijdens een con
 
 ## Hulp vragen
 
-Neem via de [Adobe Commerce Help Center](https://support.magento.com/hc/en-us/articles/360000913794-Adobe-Commerce-Help-Center-User-Guide) voor alle bijstand.
+Neem via de [Adobe Commerce Help Center](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html) voor alle bijstand.

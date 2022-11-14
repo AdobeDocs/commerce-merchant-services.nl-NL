@@ -2,9 +2,9 @@
 title: "Aan boord van de [!DNL Quick Checkout] voor Adobe Commerce-extensie"
 description: "Leer hoe u [!DNL Quick Checkout] kan uw Adobe Commerce-exemplaar ten goede komen en de extensie met succes aan boord installeren en instellen."
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: bd02a8083d3f4c9cb0422b27d61bd5462187ffc3
+source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '770'
 ht-degree: 0%
 
 ---
@@ -142,6 +142,6 @@ Zie de [Bereik van site, winkel en weergave](https://experienceleague.adobe.com/
 
 Het instapproces is ontworpen om u door de vereiste stappen te begeleiden voor het instellen en inschakelen van de [!DNL Express Checkout] functionaliteit.
 
-Neem via de [Adobe Commerce Help Center](https://support.magento.com/hc/en-us/articles/360000913794-Adobe-Commerce-Help-Center-User-Guide) voor alle bijstand.
+Neem via de [Adobe Commerce Help Center](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en) voor alle bijstand.
 
 Zie de [testen en valideren](../quick-checkout/testing.md) voor meer informatie.
