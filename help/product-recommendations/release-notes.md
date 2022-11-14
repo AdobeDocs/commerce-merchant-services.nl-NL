@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release
 description: De meest recente releasegegevens voor [!DNL Product Recommendations] uit Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
-source-git-commit: bd1cf8a3b4740594cf6b8678d899d771a886cb2e
+source-git-commit: 944576fdacd7dbbb704f74ba06d34f64eac41122
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '967'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,6 @@ ht-degree: 0%
 
 De releaseopmerkingen bevatten updates voor het volgende [!DNL Product Recommendations] modules:
 
-* Vanaf maart 2021 [!DNL Product Recommendations] worden nu ondersteund in [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/) opslagronten.
 * [!DNL Product Recommendations] pakket: `magento/product-recommendations`
 * Ondersteuning voor Page Builder in [!DNL Product Recommendations] (optioneel) module: `magento/module-page-builder-product-recommendations`
 * Visuele steun van het type van gelijkheidsaanbeveling voor [!DNL Product Recommendations] (optioneel) module: `magento/module-visual-product-recommendations`
@@ -26,6 +25,10 @@ De opmerkingen bij de release omvatten:
 Zie de documentatie voor ontwikkelaars [informatie over productcompatibiliteit](https://devdocs.magento.com/release/availability.html).
 
 ## Adobe Commerce 2.3.x en 2.4.x
+
+### 4.0.1 van magento/productaanbevelingen
+
+* ![Repareren](../assets/fix.svg) - Voorheen zou Product Recommendations een fout vertonen wanneer de weergavevaluta werd overgeschakeld op een andere valuta dan de standaardvaluta. Wisselen naar andere valuta werkt nu goed.
 
 ### 4.0.0 van magento/product-recommendations
 
