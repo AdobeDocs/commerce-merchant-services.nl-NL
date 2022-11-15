@@ -2,9 +2,9 @@
 title: "Overzicht aan boord"
 description: "[!DNL Live Search] instapkaartstroom, systeemvereisten, grenzen en beperkingen"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: 5a17c601f84c7e366801c17fad96c1e598b1adfe
+source-git-commit: b4cdbc3b166a3aae5b4219196a86cb681744d435
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -34,9 +34,9 @@ Op dit moment wordt [!DNL Live Search] zoek-/Categorie-API heeft de volgende ond
 
 ### Indexeren
 
-* Indexen tot 300 productkenmerken per winkelweergave
-* Alleen producten indexeren uit de Adobe Commerce-database
-* CMS-pagina&#39;s niet indexeren
+* Indexeert maximaal 300 productkenmerken per winkelweergave.
+* Hiermee indexeert u alleen producten uit de Adobe Commerce-database.
+* CMS-pagina&#39;s worden niet geïndexeerd.
 
 ### Query
 
@@ -45,13 +45,13 @@ Op dit moment wordt [!DNL Live Search] zoek-/Categorie-API heeft de volgende ond
 
 ### Regels
 
-* Het maximum aantal regels per ID gegevensruimte is 50.
+* Het maximumaantal regels per winkelweergave is 50.
 * Het maximum aantal voorwaarden per regel is 10.
 * Het maximum aantal gebeurtenissen per regel is 25.
 
 ### Synoniemen
 
-* [!DNL Live Search] kan maximaal 200 synoniemen per `Data Space ID`.
+* [!DNL Live Search] U kunt maximaal 200 synoniemen per winkelweergave beheren.
 
 ### PWA bèta-release
 
