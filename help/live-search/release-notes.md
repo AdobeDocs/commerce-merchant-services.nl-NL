@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] Opmerkingen bij de release"
 description: "De meest recente releasegegevens voor [!DNL Live Search] uit Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: baa2587fc9d048d7a7915b9370b63ac6c2ff93d2
+source-git-commit: 87b60e28e45466bf4271953c6704a53e6d43d73a
 workflow-type: tm+mt
-source-wordcount: '1114'
+source-wordcount: '1166'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,18 @@ In deze releaseopmerkingen worden de meest recente versies van [!DNL Live Search
 * ![Nieuw](../assets/new.svg) - Nieuwe functies
 * ![Repareren](../assets/fix.svg) - Oplossingen en verbeteringen
 * ![Bug](../assets/bug.svg) - Bekende problemen
+
+## [!DNL Live Search] 2.0.5.
+
+* Compatibel met Adobe Commerce (EE): 2,4 x
+* Compatibel met Adobe Commerce for Cloud (ECE): 2,4 x
+* Stabiliteit: Stabiel
+
+* ![Repareren](../assets/fix.svg) - Live zoeken zou een fout veroorzaken als SDK-bronnen niet beschikbaar waren vanwege netwerkproblemen. Deze bug is nu opgelost.
+
+Handelaars moeten de Live Search extensie versie >= 2.0.5 bevorderen om tot deze eigenschappen toegang te hebben.
+
+U wordt aangeraden een upgrade uit te voeren en te testen voordat u naar de productie gaat. Overweeg om de productieomgeving tijdens niet-piekuren te upgraden nadat de resultaten van de testomgeving zijn gecontroleerd.
 
 ## [!DNL Live Search] 2.0.4.
 
@@ -30,8 +42,6 @@ In deze releaseopmerkingen worden de meest recente versies van [!DNL Live Search
 * ![Repareren](../assets/fix.svg) - Als u eerder zoekt naar een term die niet bestaat, retourneert Live zoeken een fout. Die bug is nu opgelost.
 
 Handelaars moeten de Live Search extensie versie >= 2.0.4 upgraden om toegang te krijgen tot deze functies.
-
-We raden gebruikers aan een upgrade uit te voeren en te testen voordat ze naar de productie gaan. Overweeg om de productieomgeving tijdens niet-piekuren te upgraden nadat de resultaten van de testomgeving zijn gecontroleerd.
 
 ## [!DNL Live Search] 2.0.3.
 
