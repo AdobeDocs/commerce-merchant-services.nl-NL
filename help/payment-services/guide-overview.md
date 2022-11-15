@@ -4,9 +4,9 @@ description: Uitgebreide informatie over [!DNL Payment Services] for [!DNL Adobe
 seo-title: Adobe Commerce Payments Services Guide
 seo-description: Describes how to use [!DNL Payment Services] with Adobe Commerce or [!DNL Magento Open Source].
 exl-id: 30b23f26-9aac-4a24-a607-2431455fc935
-source-git-commit: 834faafdc35280908dfd468b3527b9f6cbe5e024
+source-git-commit: 83040fecfc4f0ffbd3f6b3fc5e098443dadcdb5e
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 # [!DNL Payment Services] Overzicht van hulplijnen
 
 Deze handleiding is bedoeld voor beheerders van [!DNL Adobe Commerce] en [!DNL Magento Open Source]. Het bevat gedetailleerde informatie over de installatie en het aan boord nemen van [!DNL Payment Services], alsmede configuratie en beheer van de diensten. Het veronderstelt een basisbegrip van de kernconfiguratie en de functionaliteit van de Handel.
+
+>[!TIP]
+>
+>Voor hulp bij betalingsservices raadpleegt u [Ondersteuning](#support).
 
 [!DNL Payment Services] heeft twee gebieden voor beheerders:
 
@@ -40,5 +44,5 @@ Als u informatie nodig hebt of vragen hebt die niet in deze handleiding worden b
 
 ![Help-bronnen](assets/help-resources.png)
 
-* [Help Center](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html?lang=en)—Zie de [!DNL Payment Services]gerelateerde artikelen voor het oplossen van problemen in de knowledgebase.
+* [Help Center](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html?lang=en)—Zoeken naar [!DNL Payment Services]gerelateerde artikelen voor het oplossen van problemen in de knowledgebase.
 * [Ondersteuningstickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket)—Verstuur een ticket voor extra hulp.
