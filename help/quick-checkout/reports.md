@@ -1,13 +1,13 @@
 ---
-title: "[!DNL Quick Checkout] rapporteren"
-description: "[!DNL Quick Checkout] biedt uitgebreide rapporteringsgegevens aan."
-source-git-commit: bd02a8083d3f4c9cb0422b27d61bd5462187ffc3
+title: '''[!DNL Quick Checkout] rapporteren'
+description: '''[!DNL Quick Checkout] uitgebreide rapportageinformatie biedt. "'
+exl-id: 91c687f4-9953-4c2f-b240-73430603e6a1
+source-git-commit: dd9eab0d6b88a6c723ec10b882a4bb668d66973f
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '283'
 ht-degree: 0%
 
 ---
-
 
 # Rapporten
 
@@ -28,9 +28,9 @@ De grafieken in de sectie Overzicht bevatten gedetailleerde informatie over de a
 | Diagram | Beschrijving |
 |---|---|
 | [!UICONTROL Checkout abandonment] | Het percentage bezoekers dat het afhandelingsproces verlaat zonder een aankoop te voltooien. |
-| [!UICONTROL Checkout abandonment breakdown] | De afhandeling gedeeld door het type bezoeker. Opties: [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
+| [!UICONTROL Checkout abandonment breakdown] | De afhandeling gedeeld door het type bezoeker. Knopinfo geeft een percentage weer dat verschilt tussen Bolt en Gast. Opties: [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
 | [!UICONTROL Average checkout time] | De gemiddelde tijd die een bezoeker nodig heeft om het afrekenen te voltooien. |
-| [!UICONTROL Average checkout time breakdown] | Gemiddelde afhandelingstijd gedeeld door type bezoeker. Opties: [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
+| [!UICONTROL Average checkout time breakdown] | Gemiddelde afhandelingstijd gedeeld door type bezoeker. Knopinfo geeft een percentage weer dat verschilt tussen Bolt en Gast. Opties: [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
 | [!UICONTROL Orders by account type] | Geplaatste bestellingen gedeeld door het type bezoeker. Opties: [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
 
 ## Trends-rapporten
@@ -55,4 +55,3 @@ U kunt de resultaten filteren die op datum worden weergegeven, of bestaande voor
 |---|---|
 | [!UICONTROL Preset] | Een vervolgkeuzelijst met standaardvoorinstellingen die kunnen worden gebruikt om specifieke gegevensbereiken weer te geven. Standaard: Laatste 30 dagen |
 | [!UICONTROL Date range] | Een vervolgkeuzelijst waarmee u een specifiek gegevensbereik kunt selecteren, afhankelijk van de geselecteerde datums. |
-
