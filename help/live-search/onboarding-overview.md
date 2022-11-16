@@ -2,9 +2,9 @@
 title: "Overzicht aan boord"
 description: "[!DNL Live Search] instapkaartstroom, systeemvereisten, grenzen en beperkingen"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: b4cdbc3b166a3aae5b4219196a86cb681744d435
+source-git-commit: 8e541924d6a69f963e150057b82e682e1e5d3801
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '332'
 ht-degree: 0%
 
 ---
@@ -62,9 +62,6 @@ Op dit moment wordt [!DNL Live Search] zoek-/Categorie-API heeft de volgende ond
 ### Momenteel niet ondersteund
 
 * De [Geavanceerd zoeken](https://docs.magento.com/user-guide/catalog/search-advanced.html) module is uitgeschakeld wanneer [!DNL Live Search] wordt geïnstalleerd en wordt de koppeling Geavanceerd zoeken in de voettekst van de winkel verwijderd.
-* [Klantengroepen](https://docs.magento.com/user-guide/customers/customer-groups.html)
 * [Aangepaste prijsgroepen](https://docs.magento.com/user-guide/catalog/product-price-group.html)
 * Meerdere voorraadlocaties zoals gebruikt door [MCOM](https://docs.magento.com/user-guide/mcom.html) of andere OMS-extensies
-* [Geïntegreerde B2B-mogelijkheden](https://business.adobe.com/products/magento/b2b-ecommerce.html)
 * De productprijzen omvatten niet [btw](https://docs.magento.com/user-guide/tax/vat.html) (BTW).
-* Producten buiten de voorraad worden in zoekresultaten weergegeven, ongeacht de [Opties voor voorraad](https://docs.magento.com/user-guide/catalog/inventory-options-global.html) configuratie.
