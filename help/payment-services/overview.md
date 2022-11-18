@@ -4,9 +4,9 @@ description: Leer installeren en gebruiken [!DNL Payment Services] als een handi
 role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
-source-git-commit: 3f753f6a91c9f2c29def90d323c004a689056e71
+source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,7 @@ Of u nu een kleine onderneming, een medio-markt contant of een grote onderneming
 * [**Betalingsopties**](payments-options.md)—Stel de betalingsopties in om de methoden aan te passen die beschikbaar zijn voor klanten in de winkel (of in meerdere winkels).
 * **Financiële verslaggeving over kasstroombeheer**—Synchroniseren [betalingsgegevens](order-payment-status.md) met bestellingen om volledige transparantie te verkrijgen voor het verwerkte volume, het betalingssaldo en gedetailleerde [rapportage op transactieniveau](payouts.md) voor financiële afstemming.
 * **Transparante prijsstelling**—De prijzen zijn duidelijk en vooraf; Wat je ziet, krijg je.
+* **Efficiënte uitcheckervaring**—Verwijder om het even welke barrières aan een snelle en eenvoudige controle, en creeer loyale klanten, met [kaartvaulatie](https://experienceleague-review.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) en [Direct aanschaffen](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) (standaard ingeschakeld voor Adobe Commerce).
 
 ## Beschikbaarheid
 

@@ -2,9 +2,9 @@
 title: Betalingsopties
 description: Stel de betalingsopties in om de beschikbare methoden voor uw winkelklanten aan te passen.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: c7afa798096e07409fb36a3d08f7e5b2a5ce40db
+source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '1001'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,8 @@ Er zijn verschillende gedragingen voor elke betalingsmethode, afhankelijk van wa
 ## [!UICONTROL Credit Card Fields]
 
 [!UICONTROL Credit Card Fields] een eenvoudige en veilige afhandeling van betalingsmethoden voor creditcard of bankpas aanbieden. Wanneer een winkelier uitcheckt met gebruik van creditcardvelden, voert hij zijn naam, factuuradres en creditcardgegevens in om zijn bestelling te plaatsen. De klantgegevens worden tijdens de aankoopsessie veilig gebruikt om ze naadloos door de afrekenstroom te begeleiden.
+
+Inschakelen [creditcard vauleren](#vaulting) zodat kopers hun creditcardgegevens kunnen bewaren voor een snelle afhandeling later.
 
 U kunt configureren [!UICONTROL Credit Card Fields] in de winkelconfiguratie of de startpagina van de betalingsservices. Zie [Instellingen](settings.md#credit-card-fields) voor meer informatie .
 
@@ -104,6 +106,12 @@ Wanneer een klant rechtstreeks vanaf de productpagina uitcheckt via PayPal of [!
 Als de klant de bestelling annuleert, wordt het item op de huidige productpagina toegevoegd aan het winkelwagentje van de klant en worden andere items in het winkelwagentje samengevoegd. Met deze functie kan de klant snel het object kopen dat hij of zij momenteel bekijkt, terwijl hij of zij ook andere objecten behoudt die hij of zij eerder aan zijn winkelwagentje heeft toegevoegd tijdens het bladeren door producten.
 
 Wanneer een klant de afrekenstroom op de productpagina invoert, wordt de afhandelingspagina vereenvoudigd. In de weergave worden alleen gegevens en opties weergegeven die betrekking hebben op de volgorde.
+
+## Creditcard vaulting
+
+Klanten kunnen hun creditcardgegevens voor toekomstige aankopen op websiteniveau (elke winkel binnen dezelfde zakelijke account) invullen (of &quot;opslaan&quot;).
+
+Zie [Creditcard vaulting](vaulting.md) voor meer informatie .
 
 ## Beveiliging
 

@@ -2,9 +2,9 @@
 title: Beveiliging en naleving
 description: Beoordeel de beveiligings- en compatibiliteitsvereisten voor uw site.
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '369'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,10 @@ Handelaren kunnen een [vragenlijst voor zelfbeoordeling (SAQ)](https://www.pcise
 ### Creditcardvelden
 
 Met de Gebieden van de Kaart, worden geen PCI-Gereglementeerde gegevens overgegaan over uw diensten. U hoeft die gegevens niet op te slaan of te onderhouden, wat de bezorgdheid over PCI-compatibiliteit aanzienlijk vermindert.
+
+### Kaart vauleren
+
+Wanneer een winkelier [vaults—of &quot;save&quot;—hun creditcardgegevens](vaulting.md) voor toekomstige aankopen in uw winkels worden minimale creditcardgegevens gedeeld met de winkel (laatste vier cijfers, vervaldatum van de kaart en het merk kaart). Creditcardgegevens worden opgeslagen bij de betalingsdienstaanbieder. Wanneer een kaart verloopt of wanneer de gegevens niet meer hoeven te worden opgeslagen, kunnen zij die token verwijderen, zodat de informatie niet langer door de betalingsdienstaanbieder wordt opgeslagen.
 
 ### Slimme PayPal-knoppen
 

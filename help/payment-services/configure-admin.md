@@ -4,9 +4,9 @@ description: Na installatie kunt u configureren [!DNL Payment Services] in Admin
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: 2e9a611cf94bb83733c9cad1e04f4244f62d4272
+source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
 workflow-type: tm+mt
-source-wordcount: '780'
+source-wordcount: '802'
 ht-degree: 1%
 
 ---
@@ -61,6 +61,8 @@ Zie [Betalingsopties](payments-options.md#paypal-smart-buttons) voor meer inform
 1. In de _[!UICONTROL Payment Services]_in, vouwt u de_[!UICONTROL Credit Card Fields]_ sectie.
 1. Voor **[!UICONTROL Title]**, voert u (indien nodig) tekst in om de naam van de betalingsmethode te wijzigen zoals deze tijdens het afrekenen wordt weergegeven.
 1. Naar [betalingsactie instellen](production.md#set-payment-services-as-payment-method), selecteert u **[!UICONTROL Authorize]** of **Autoriseren en vastleggen**.
+1. Voor **[!UICONTROL Show on checkout page]** kiest u `Yes` om creditcardvelden op de afhandelingspagina in of uit te schakelen.
+1. Voor **[!UICONTROL Vault Enabled]** kiest u `Yes` om creditcardgegevens beschikbaar te maken voor afhandeling.
 1. Voor **Foutopsporingsmodus** kiest u `Yes` om de foutopsporingsmodus in te schakelen (of `No` om deze uit te schakelen).
 1. Klikken **[!UICONTROL Save Config]** om uw wijzigingen op te slaan.
 1. Navigeren naar **[!UICONTROL System]** > **[!UICONTROL Cache Management]** en klik vervolgens op **[!UICONTROL Flush Cache]** om alle ongeldige caches te vernieuwen.
