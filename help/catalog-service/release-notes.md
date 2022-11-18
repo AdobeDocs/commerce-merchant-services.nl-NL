@@ -2,9 +2,9 @@
 title: '''[!DNL Catalog Service] Opmerkingen bij de release'
 description: De meest recente releasegegevens voor [!DNL Catalog Service] voor Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: c0d3d277bd9bb291de6eede811dc6b00255e5412
+source-git-commit: d84996bc76a44b39aeaee7f8b0ed4973fbe5de37
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '465'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,21 @@ In deze releaseopmerkingen worden de meest recente versies van [!DNL Catalog Ser
 * ![Nieuw](../assets/new.svg) Nieuwe functies
 * ![Repareren](../assets/fix.svg) Oplossingen en verbeteringen
 * ![Bug](../assets/bug.svg) Bekende problemen
+
+## V1.1-release
+
+Releasedatum: 2022-11-18 Compatibel met Adobe Commerce (EE): 2.4.x Compatibel met Adobe Commerce for Cloud (ECE): 2.4.x Stabiliteit: Algemene beschikbaarheid
+
+![Nieuw](../assets/new.svg) Catalogusservice biedt nu ondersteuning voor Adobe [API-net](https://developer.adobe.com/graphql-mesh-gateway/).
+![Repareren](../assets/fix.svg) We hebben de API-schaalbaarheid en algemene prestaties verbeterd.
+
+### Bekende beperkingen
+
+Deze functies worden nog niet ondersteund:
+
+* Tier-prijsstelling
+* Er worden geen updates ontvangen wanneer varianten uit de catalogus worden verwijderd
+* Maximale grootte voor dynamische kenmerklading is 9 MB
 
 ## V1.0-release
 
