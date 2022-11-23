@@ -2,9 +2,9 @@
 title: '''[!DNL Catalog Service] Opmerkingen bij de release'
 description: De meest recente releasegegevens voor [!DNL Catalog Service] voor Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: d84996bc76a44b39aeaee7f8b0ed4973fbe5de37
+source-git-commit: 624c959119958f9fdd15d3d9559092c35d079c2c
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -28,9 +28,20 @@ Releasedatum: 2022-11-18 Compatibel met Adobe Commerce (EE): 2.4.x Compatibel me
 
 Deze functies worden nog niet ondersteund:
 
+* Bundel producten met vaste prijs
+* Er worden geen updates ontvangen wanneer varianten uit de catalogus worden verwijderd.
+* Maximale grootte voor dynamische attributen lading is 9MB.
+* Productprijs per groep. Kan worden berekend met eenvoudige productprijzen.
+* In een afbeeldingsarray bevat alleen de eerste afbeelding rollen.
+* Kleurstalen
+* De pagina met productdetails laden via de URL van het product.
+
+De volgende beperkingen kunnen worden opgelost door de GraphQL API te gebruiken:
+
+* Minimale geadverteerde prijs
 * Tier-prijsstelling
-* Er worden geen updates ontvangen wanneer varianten uit de catalogus worden verwijderd
-* Maximale grootte voor dynamische kenmerklading is 9 MB
+* Downloadbare producten en cadeaukaarten
+* Categorieën (`categories` en `categoryList`)
 
 ## V1.0-release
 
