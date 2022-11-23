@@ -2,7 +2,7 @@
 title: "Installeren [!DNL Live Search]"
 description: "Meer informatie over het installeren, bijwerken en verwijderen [!DNL Live Search] uit Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: c4039dbf203198ea1218f4e1516a2690fb7c61c4
+source-git-commit: 11f961ea7e2e01d5d9efdaf2191f25f3a1dc8878
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -128,7 +128,7 @@ In dit scenario: [!DNL Elasticsearch] beheert tijdelijk zoekverzoeken van de win
 
    U moet facetten kunnen toevoegen na `cron` Hiermee worden de metagegevens van het product en het kenmerk uitgevoerd en geëxporteerd naar [!DNL Live Search] diensten.
 
-1. Wacht minstens een uur tot de gegevens worden geïndexeerd en worden gesynchroniseerd. Gebruik vervolgens de [GraphQL-speelplaats](https://devdocs.magento.com/live-search/graphql-support.html) met de standaardvraag om het volgende te verifiëren:
+1. Wacht minstens een uur tot de gegevens worden geïndexeerd en worden gesynchroniseerd. Gebruik vervolgens de [GraphQL-speelplaats](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) met de standaardvraag om het volgende te verifiëren:
 
    * Het aantal geretourneerde producten ligt dicht bij wat u voor de winkelweergave verwacht.
    * Facet(s) worden geretourneerd.

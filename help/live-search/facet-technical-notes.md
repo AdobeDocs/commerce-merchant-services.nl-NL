@@ -1,10 +1,10 @@
 ---
-title: '"Facet Technical Notes"'
-description: '"Technische opmerkingen over het gebruik [!DNL Live Search] facetten."'
+title: "Facet Technical Notes"
+description: "Technische opmerkingen over het gebruik [!DNL Live Search] facetten."
 exl-id: 37982610-0ff7-48b7-b088-be7d2eff8a57
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 1a55f2fb3d56183e5e73d172ebdc40f340e4d520
 workflow-type: tm+mt
-source-wordcount: '112'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Facetten is een krachtige het filtreren methode die veelvoudige afmetingen van doorzoekbare statische en dynamische attributenwaarden als onderzoekscriteria gebruikt.
 
-[!DNL Live Search] gebruikt de `productSearch` query die faceting en andere gegevens retourneert die specifiek zijn voor [!DNL Live Search]. Zie [`productSearch` query](https://devdocs.magento.com/live-search/product-search.html) voor codevoorbeelden.
+[!DNL Live Search] gebruikt de `productSearch` query die faceting en andere gegevens retourneert die specifiek zijn voor [!DNL Live Search]. Zie [`productSearch` query](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) voor codevoorbeelden.
 
 ## Facetaggregatie
 

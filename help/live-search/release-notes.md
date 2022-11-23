@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] Opmerkingen bij de release"
 description: "De meest recente releasegegevens voor [!DNL Live Search] uit Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 8e541924d6a69f963e150057b82e682e1e5d3801
+source-git-commit: bece7022324da4b38d3cb9b375dc0e391ffb3a88
 workflow-type: tm+mt
-source-wordcount: '1191'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -37,8 +37,8 @@ U wordt aangeraden een upgrade uit te voeren en te testen voordat u naar de prod
 
 * ![Nieuw](../assets/new.svg) - Live zoeken ondersteunt nu filteren met de instelling &#39;Producten uit voorraad weergeven&#39; in de beheerder. Als &#39;Display Out of Stock Products&#39; is ingesteld op false, `inStock = true` wordt toegevoegd aan het filter.
 * ![Repareren](../assets/fix.svg) - Om de prestaties te verbeteren, is het blok Suggestions verwijderd uit het pop-upmenu Live zoeken. De gegevens worden nog overgegaan door GraphQL, voor het geval u de eigenschap wilt vervangen.
-* ![Repareren](../assets/fix.svg) - `categories` en `categoryPath` vervangen `categoryIds` voor filteren van categorieën. Lees meer in de [productSearch](https://devdocs.magento.com/live-search/product-search.html#filter) onderwerp.
-* ![Repareren](../assets/fix.svg) - Eerder, zou een gebruiker verbonden aan een B2B bedrijf een onjuiste Code van de Groep van de Klant ontvangen wanneer het doen van onderzoeken. Live zoeken retourneert nu de juiste waarde.
+* ![Repareren](../assets/fix.svg) - `categories` en `categoryPath` vervangen `categoryIds` voor filteren van categorieën. Lees meer in de [productSearch](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) onderwerp.
+* ![Repareren](../assets/fix.svg) - Eerder zou een gebruiker die aan een B2B-bedrijf gebonden is een onjuiste code van de Groep van de Klant ontvangen wanneer het doen van onderzoeken. Live zoeken retourneert nu de juiste waarde.
 * ![Repareren](../assets/fix.svg) - Als u eerder zoekt naar een term die niet bestaat, retourneert Live zoeken een fout. Die bug is nu opgelost.
 
 Handelaars moeten de Live Search extensie versie >= 2.0.4 upgraden om toegang te krijgen tot deze functies.
@@ -85,7 +85,7 @@ Bestaande [!DNL Live Search] de installaties moeten worden geüpgraded tot [!DNL
 * ![Nieuw](../assets/new.svg) - Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) compatibiliteit voor [!DNL Live Search].
 * ![Nieuw](../assets/new.svg) - de [!DNL Live Search] Het installatieproces wordt bijgewerkt met geavanceerde proceswijzigingen.
 * ![Repareren](../assets/fix.svg) - [Geavanceerd zoeken](https://docs.magento.com/user-guide/catalog/search-advanced.html) koppeling verwijderd uit de voettekst van de winkel.
-* ![Bug](../assets/bug.svg) - De volgende productkenmerken worden niet ondersteund door [Magento GraphQL API](https://devdocs.magento.com/guides/v2.4/graphql) bij gebruik in verband met de bètaversie van PWA: `description`, `name`, `short_description`
+* ![Bug](../assets/bug.svg) - De volgende productkenmerken worden niet ondersteund door [Magento GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/) bij gebruik in verband met de bètaversie van PWA: `description`, `name`, `short_description`
 * ![Bug](../assets/bug.svg) - De bètaversie van PWA voor [!DNL Live Search] ondersteunt niet [gebeurtenisafhandeling](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
 
 ## [!DNL Live Search] 1.3.1. {#131}
@@ -106,7 +106,7 @@ Bestaande [!DNL Live Search] de installaties moeten worden geüpgraded tot [!DNL
 
 * ![Nieuw](../assets/new.svg) - [Prestaties](performance.md) het rapporteringsdashboard geeft inzicht in zoektermen die kopers gebruiken.
 * ![Nieuw](../assets/new.svg) - [!DNL Live Search] [Storefront Events SDK](https://devdocs.magento.com/shared-services/storefront-events-sdk.html) verleent toegang tot een gemeenschappelijke gegevenslaag van gebeurtenis het publiceren en de abonnementendiensten, en metriek.
-* ![Repareren](../assets/fix.svg) - de [[!DNL Storefront Popover]](https://devdocs.magento.com/live-search/storefront-popover.html) heeft een nieuwe `active` klasse voor de `.search-autocomplete` container die de zichtbaarheid bepaalt.
+* ![Repareren](../assets/fix.svg) - de [[!DNL Storefront popover]](storefront-popover.md) heeft een nieuwe `active` klasse voor de `.search-autocomplete` container die de zichtbaarheid bepaalt.
 * ![Repareren](../assets/fix.svg) - In de winkel [Zoekvoorwaarden](https://docs.magento.com/user-guide/marketing/search-terms-popular.html) voettekstkoppeling wordt verwijderd en de bijbehorende cache wordt uitgeschakeld voor [!DNL Live Search] installaties.
 * ![Bug](../assets/bug.svg) - Patch for Search adapter verwerkt dubbele producten.
 * ![Bug](../assets/bug.svg) - [!DNL Live Search] supports [uit één bron](https://docs.magento.com/user-guide/catalog/inventory-sources.html) (fysieke) inventarislocaties met meerdere (virtuele) [voorraden](https://docs.magento.com/user-guide/catalog/inventory-stock.html). Meerdere inventarisbronnen worden momenteel niet ondersteund.
