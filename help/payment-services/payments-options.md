@@ -2,9 +2,9 @@
 title: Betalingsopties
 description: Stel de betalingsopties in om de beschikbare methoden voor uw winkelklanten aan te passen.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
+source-git-commit: e3270098edff3931b02a9803c8db4b3e9c75d636
 workflow-type: tm+mt
-source-wordcount: '1001'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ De [!DNL Apple Pay] Deze knop is zichtbaar vanaf de pagina met producten, de min
 
 >[!NOTE]
 >
-> Als je Apple wilt gebruiken, neem je contact op met je verkoper om deze in te schakelen voor je live winkel(s).
+> Als je Apple Pay wilt gebruiken, moet je contact opnemen met je verkoper of accountmanager om deze in te schakelen voor je live winkels.
 
 ### [!DNL Pay Later] knop
 
