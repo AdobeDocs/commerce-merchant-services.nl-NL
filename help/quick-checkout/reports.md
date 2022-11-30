@@ -2,9 +2,9 @@
 title: '''[!DNL Quick Checkout] rapporteren'
 description: '''[!DNL Quick Checkout] uitgebreide rapportageinformatie biedt. "'
 exl-id: 91c687f4-9953-4c2f-b240-73430603e6a1
-source-git-commit: dd9eab0d6b88a6c723ec10b882a4bb668d66973f
+source-git-commit: bdfac90aa221f39dfc53eee833c473c7dcb0a042
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '294'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
-> U moet [**Afhandeling volgen**](../quick-checkout/settings-quick-checkout.md) in het deelvenster Beheer, zodat Adobe Commerce afrekeninformatie kan delen met Bolt. Deze configuratieoptie is standaard ingesteld op **Ja**. Als deze optie is uitgeschakeld (instellen op **Nee**), wordt de rapportage beïnvloed.
+> Als u wilt toestaan dat Adobe Commerce betalingsgegevens deelt met Bolt, kunt u de optie [**Afhandeling volgen**](../quick-checkout/settings-quick-checkout.md)  Deze instelling moet zijn ingeschakeld in Beheer. Deze configuratieoptie is standaard ingesteld op **Ja**. Als deze optie is ingesteld op **Nee**, wordt de rapportage beïnvloed. Bolt vernieuwt de rapportgegevens eenmaal per dag om 3.00 uur &#39;s ochtends Eastern Standard Time (EST).
 
 ## Overzichtsrapporten
 
