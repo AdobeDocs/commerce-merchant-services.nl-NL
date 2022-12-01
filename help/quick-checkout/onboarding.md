@@ -2,9 +2,9 @@
 title: "Aan boord van de [!DNL Quick Checkout] voor Adobe Commerce-extensie"
 description: "Leer hoe u [!DNL Quick Checkout] kan uw Adobe Commerce-exemplaar ten goede komen en de extensie met succes aan boord installeren en instellen."
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
+source-git-commit: 1f2305df7566cd77a6be161cc9d1265c0291171c
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -132,11 +132,23 @@ Controleren of de koper een [!DNL Bolt] account:
 1. Van bereik wisselen naar **Hoofdwebsite**.
 1. Klik op de knop **Callback-URL configureren** knop. Dit maakt [!DNL Bolt] om te bepalen of de koper een account heeft. Als zij, OTP pop-up verschijnen.
 
->[!CAUTION]
->
-> Het bereik overschakelen op het **Hoofdwebsite** zorgt ervoor dat de juiste URL is ingesteld. Elke website kan meerdere domeinen hebben.
+   >[!CAUTION]
+   >
+   > Het bereik overschakelen op het **Hoofdwebsite** zorgt ervoor dat de juiste URL is ingesteld. Elke website kan meerdere domeinen hebben.
 
 Zie de [Bereik van site, winkel en weergave](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings){target=&quot;_blank&quot;} voor meer informatie over het bereik in Adobe Commerce.
+
+## Service-instellingen configureren
+
+![Snelle afhandeling](assets/service-settings.png)
+
+1. Set **Afhandeling volgen inschakelen** tot `Yes`.
+
+   >[!CAUTION]
+   >
+   > Als u deze optie uitschakelt, is dit van invloed op de rapportage, omdat Adobe Commerce geen gegevens over het bijhouden van betalingen mag delen met Bolt.
+
+1. Selecteer **Volgende werkgebied na aanmelding** optie om de navigatiestroom te wijzigen nadat de klant zich heeft aangemeld. Standaard is deze ingesteld op **Betalingen** pagina.
 
 ## Hulp vragen
 

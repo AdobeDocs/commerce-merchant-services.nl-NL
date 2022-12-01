@@ -2,9 +2,9 @@
 title: "Afhandelingsstroom voor een Adobe Commerce-gebruiker"
 description: "Overzicht van de [!DNL Quick Checkout] voor een Adobe Commerce-gebruiker."
 exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
-source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
+source-git-commit: 1f2305df7566cd77a6be161cc9d1265c0291171c
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Indien een [!DNL Bolt] account is gevonden tijdens afrekenen, kopers kunnen door
 >
 > De pop-up OTP van de Bolt verschijnt slechts wanneer de verkoopster op de checkout pagina is. De winkelier kan zich afmelden bij Bolt door dat pop-upvenster te sluiten.
 
-Als de verkoper vóór het afrekenen is aangemeld bij Adobe Commerce, wordt de [!DNL Bolt] Pop-up OTP zal niet tijdens controle verschijnen.
+Als de verkoper vóór het afrekenen is aangemeld bij Adobe Commerce, wordt de [!DNL Bolt] Het pop-up van OTP zal niet tijdens controle verschijnen, maar een bericht lijkt het voorstellen van de verkoopster om aan login om tot hun Bolt Behang toegang te hebben.
 
 Als er problemen optreden wanneer u een bestelling als bestaande Adobe Commerce-gebruiker plaatst, raadpleegt u de [Problemen met snelle afhandeling oplossen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) artikel in het Adobe Commerce Help Center.
 

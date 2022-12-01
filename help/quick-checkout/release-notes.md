@@ -2,9 +2,9 @@
 title: '''[!DNL Quick Checkout] Opmerkingen bij de release'
 description: Lees de opmerkingen bij de release voor meer informatie over alle [!DNL Quick Checkout] lozingen.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
+source-git-commit: 1f2305df7566cd77a6be161cc9d1265c0291171c
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,14 @@ Zie [Beschikbaarheid](https://devdocs.magento.com/release/availability.html) in 
 In deze releaseopmerkingen worden wijzigingen en correcties beschreven die zijn opgetreden en die buiten de reguliere versie van de functiereleases voor het deelvenster Beheer zijn uitgebracht.
 
 +++updates van het deelvenster Beheer
+
+_30 november 2022_
+
+![Nieuw](../assets/new.svg)<!-- Issue BOLT-502 --> De [rapportage](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html) tab heeft een nieuwe voorinstelling voor &quot;Vorig jaar&quot;.
+
+![Nieuw](../assets/new.svg)<!-- Issue BOLT-471 --> Verbeteringen in de gebruikerservaring in het dialoogvenster [!DNL Quick Checkout] In het deelvenster Beheer wordt meer informatie weergegeven in [Knopinfo](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html).
+
+![Probleem opgelost](../assets/fix.svg)<!-- Issue BOLT-514 --> Verbeteringen in de gebruikerservaring in het dialoogvenster [!DNL Quick Checkout] In het deelvenster Beheer worden de juiste totale volgordenummers, de consistentie in kleuren en de juiste legenda voor alle grafieken weergegeven.
 
 _2 november 2022_
 
@@ -52,6 +60,16 @@ _5 oktober 2022_
 ![Probleem opgelost](../assets/fix.svg)<!-- Issue BOLT-369 --> De [[!DNL Quick Checkout] Deelvenster Beheer](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) geeft de app-versie weer in de voettekst.
 
 +++
+
+## v1.4.0
+
+_30 november 2022_
+
+![Nieuw](../assets/new.svg)<!-- Issue BOLT-513 --> Nu, wanneer een klant van Adobe Commerce in de opslag tijdens het controleproces wordt geregistreerd, en een Bolt rekening heeft, wordt een optie getoond om zich aan te melden bij de rekening van de Bot van de verkoopster.
+
+![Nieuw](../assets/new.svg)<!-- Issue BOLT-512 --> Een nieuwe configuratie ontdekt automatisch als het programma geopende shoppers ook Bolt kunnen worden het programma geopend.
+
+![Nieuw](../assets/new.svg)<!-- Issue BOLT-480 --> Een nieuwe configuratie in de [!DNL Quick Checkout] In het deelvenster Beheer kunt u de standaardnavigatiestroom wijzigen in de **Verzending** pagina één keer dat een klant zich aanmeldt bij Bolt. Door gebrek, wordt het gevormd aan **Betalingen** pagina.
 
 ## v1.3.0
 
