@@ -2,9 +2,9 @@
 title: '''[!DNL Quick Checkout] Opmerkingen bij de release'
 description: Lees de opmerkingen bij de release voor meer informatie over alle [!DNL Quick Checkout] lozingen.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 1f2305df7566cd77a6be161cc9d1265c0291171c
+source-git-commit: 8b915cd0a8f25934675a2ae00ee2694b7facc1bd
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1056'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,10 @@ Zie [Beschikbaarheid](https://devdocs.magento.com/release/availability.html) in 
 In deze releaseopmerkingen worden wijzigingen en correcties beschreven die zijn opgetreden en die buiten de reguliere versie van de functiereleases voor het deelvenster Beheer zijn uitgebracht.
 
 +++updates van het deelvenster Beheer
+
+_14 december 2022_
+
+![Probleem opgelost](../assets/fix.svg)<!-- Issue BOLT-524 --> De [!DNL Quick Checkout] In het deelvenster Beheer worden nu de juiste totale bestellingen en bijgewerkte rapportgegevens weergegeven.
 
 _30 november 2022_
 
