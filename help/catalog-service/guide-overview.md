@@ -1,10 +1,10 @@
 ---
 title: '''[!DNL Catalog Service] Overzicht van hulplijnen'
-description: '''[!DNL Catalog Service for Adobe Commerce] biedt een manier om de inhoud van de pagina''s van de productweergave en de productlijst sneller op te halen dan de native Adobe Commerce GraphQL-query''s.'''
+description: '''[!DNL Catalog Service for Adobe Commerce] biedt een manier om de inhoud van de pagina''s met productweergave en de productlijst sneller op te halen dan de native Adobe Commerce GraphQL-query''s.'''
 exl-id: d83375b2-0d87-4a0a-baf8-eb7eebe85a80
-source-git-commit: bb557e130a7dbef96c625d65cbe191a4ccbe26d0
+source-git-commit: fdc8482b22b11261265af52e3ab0c780a14c3342
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '244'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Deze handleiding is bedoeld voor beheerders van Adobe [!DNL Commerce]. Het bevat
 
 * Adobe [!DNL Commerce] systeembeheerders installeren en onderhouden de service. [!DNL Catalog Service] heeft geen Admin UI of eigenschappen voor standaardgebruikers Admin.
 
-* De integrators bouwen vragen GraphQL en integreren hen op een storefront die een frontend cliënt gebruikt.
+* De integrators bouwen GraphQL vragen en integreren hen op een opslagplaats die een frontend cliënt gebruikt.
 
 ## Aanvullende documentatie
 
@@ -26,6 +26,12 @@ Deze handleiding is bedoeld voor beheerders van Adobe [!DNL Commerce]. Het bevat
 | [Adobe Commerce 2.4 Handboek](https://docs.magento.com/user-guide/) | Bedrijfsgerichte documentatie voor zowel Adobe Commerce als Magento Open Source |
 | [Adobe Commerce 2.4-handleiding voor ontwikkelaars](https://devdocs.magento.com/) | Documentatie gericht op ontwikkelaars die wordt gebruikt om Adobe Commerce of Magento Open Source te bouwen en aan te passen |
 
-## Hulp vragen
+## Ondersteuning
 
-Het instapproces is ontworpen om u door de vereiste stappen te begeleiden voor het instellen en inschakelen van de [!DNL Catalog Service] functionaliteit. Neem contact op met het technische team van Adobe Commerce in het [#storefront-services](https://magentocommeng.slack.com/archives/C03HVPG8RS4) publiek Slack kanaal voor hulp.
+De [onboarding](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/installation.html) is ontworpen om u door de vereiste stappen te begeleiden voor het instellen en inschakelen van de [!DNL Catalog Service] functionaliteit.
+
+Gebruik de volgende bronnen als u informatie nodig hebt of vragen hebt die niet in deze handleiding worden behandeld:
+
+* [Help Center](https://support.magento.com/hc/en-us/search#q=catalog%20service&amp;sort=relevancy) - Raadpleeg de artikelen over het oplossen van problemen met betrekking tot catalogusservices.
+* [Ondersteuningstickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) - Een ticket verzenden voor aanvullende hulp.
+* Word lid van het technische team van Adobe Commerce, en de gebruikers van de SaaS storefront diensten in [#storefront-services](https://magentocommeng.slack.com/archives/C03HVPG8RS4) public Slack channel to be up-to-date.
