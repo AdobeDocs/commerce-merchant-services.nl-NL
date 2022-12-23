@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] Opmerkingen bij de release"
 description: Lees de opmerkingen bij de release voor meer informatie over alle [!DNL Payment Services] lozingen.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 955dc08e6b67acc18380248b2ddf1b8f8c70ec03
+source-git-commit: 6d8ce56d8fd26d8dbfebc87a50512570e9f69b2b
 workflow-type: tm+mt
-source-wordcount: '1334'
+source-wordcount: '1373'
 ht-degree: 0%
 
 ---
@@ -52,6 +52,14 @@ _28 juni 2021_
 ![Nieuw](../assets/new.svg)<!-- Issue PAY-2761 --> U kunt nu de gegevens aanpassen die worden weergegeven in het dialoogvenster [Betalingsstatusrapport bestellen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) en de [Uitbetalingsrapport](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) door kolommen te tonen of te verbergen gebruikend de de montagecontrole van de Kolom.
 
 +++
+
+## v1.5.2
+
+_22 december 2022_
+
+![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-3992 --> Betaaldiensten kunnen beter worden gefactureerd wanneer een betalingsmethode wordt afgewezen.
+
+![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-3999 --> Betalingsservices geeft nu correct PayPal slimme knoppen weer met [Brandcontrole](https://marketplace.magento.com/swissup-firecheckout.html){target=_blank} aangepaste sjabloon voor de uitcheckpagina.
 
 ## v1.5.1
 
