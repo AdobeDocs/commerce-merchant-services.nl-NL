@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] Opmerkingen bij de release"
 description: "De meest recente releasegegevens voor [!DNL Live Search] uit Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: bece7022324da4b38d3cb9b375dc0e391ffb3a88
+source-git-commit: 4566727b4e672033997491bcaf075c48e2a55cc8
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1004'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ In deze releaseopmerkingen worden de meest recente versies van [!DNL Live Search
 * ![Repareren](../assets/fix.svg) - Oplossingen en verbeteringen
 * ![Bug](../assets/bug.svg) - Bekende problemen
 
-## [!DNL Live Search] 2.0.5. {#205}
+## [!DNL Live Search] 2.0.5 {#205}
 
 * Compatibel met Adobe Commerce (EE): 2,4 x
 * Compatibel met Adobe Commerce for Cloud (ECE): 2,4 x
@@ -29,14 +29,14 @@ Handelaars moeten de Live Search extensie versie >= 2.0.5 bevorderen om tot deze
 
 U wordt aangeraden een upgrade uit te voeren en te testen voordat u naar de productie gaat. Overweeg om de productieomgeving tijdens niet-piekuren te upgraden nadat de resultaten van de testomgeving zijn gecontroleerd.
 
-## [!DNL Live Search] 2.0.4. {#204}
+## [!DNL Live Search] 2.0.4 {#204}
 
 * Compatibel met Adobe Commerce (EE): 2,4 x
 * Compatibel met Adobe Commerce for Cloud (ECE): 2,4 x
 * Stabiliteit: Stabiel
 
 * ![Nieuw](../assets/new.svg) - Live zoeken ondersteunt nu filteren met de instelling &#39;Producten uit voorraad weergeven&#39; in de beheerder. Als &#39;Display Out of Stock Products&#39; is ingesteld op false, `inStock = true` wordt toegevoegd aan het filter.
-* ![Repareren](../assets/fix.svg) - Om de prestaties te verbeteren, is het blok Suggestions verwijderd uit het pop-upmenu Live zoeken. De gegevens worden nog overgegaan door GraphQL, voor het geval u de eigenschap wilt vervangen.
+* ![Repareren](../assets/fix.svg) - Om de prestaties te verbeteren, is het blok Suggestions verwijderd uit het pop-upmenu Live zoeken. De gegevens worden nog steeds doorgegeven via GraphQL, voor het geval u de functie wilt vervangen.
 * ![Repareren](../assets/fix.svg) - `categories` en `categoryPath` vervangen `categoryIds` voor filteren van categorieën. Lees meer in de [productSearch](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) onderwerp.
 * ![Repareren](../assets/fix.svg) - Eerder zou een gebruiker die aan een B2B-bedrijf gebonden is een onjuiste code van de Groep van de Klant ontvangen wanneer het doen van onderzoeken. Live zoeken retourneert nu de juiste waarde.
 * ![Repareren](../assets/fix.svg) - Als u eerder zoekt naar een term die niet bestaat, retourneert Live zoeken een fout. Die bug is nu opgelost.
@@ -45,7 +45,7 @@ Handelaars moeten de Live Search extensie versie >= 2.0.4 upgraden om toegang te
 
 We raden gebruikers aan een upgrade uit te voeren en te testen voordat ze naar de productie gaan. Overweeg om de productieomgeving tijdens niet-piekuren te upgraden nadat de resultaten van de testomgeving zijn gecontroleerd.
 
-## [!DNL Live Search] 2.0.3. {#203}
+## [!DNL Live Search] 2.0.3 {#203}
 
 * Compatibel met Adobe Commerce (EE): 2,4 x
 * Compatibel met Adobe Commerce for Cloud (ECE): 2,4 x
@@ -57,21 +57,7 @@ Handelaars moeten de Live Search extensie versie >= 2.0.3 upgraden om toegang te
 
 We raden gebruikers aan een upgrade uit te voeren en te testen voordat ze naar de productie gaan. Overweeg om de productieomgeving tijdens niet-piekuren te upgraden nadat de resultaten van de testomgeving zijn gecontroleerd.
 
->[!NOTE]
->
->B2B-ondersteuning wordt geleidelijk toegevoegd vanaf 9 augustus op de back-enddiensten, met een verwachte migratie die eind augustus voltooid zal zijn. Als de extensie Live zoeken niet wordt bijgewerkt, blijft uw winkel normaal werken, maar zonder B2B-functies.
-
-### Bekende beperkingen/bugs:
-
-* ![Bug](../assets/bug.svg) - Suggesties zijn afkomstig van producten die niet zichtbaar zijn voor de klantengroep.
-* ![Bug](../assets/bug.svg) - Producten worden niet weergegeven als ze niet worden toegevoegd aan de &quot;Standaard gedeelde catalogus&quot;.
-* ![Bug](../assets/bug.svg) - De Adapter van het Onderzoek geeft niet het &quot;Geen&quot;emmertje voor booleaanse productattributen terug alhoewel de producten met de attributen worden gevormd en het &quot;Geen&quot;emmer is teruggekeerd in de reactie.
-* Hoewel sommige producten en vragen niet-Engelse resultaten kunnen retourneren, worden meertalige query&#39;s momenteel niet ondersteund.
-* B2B met Live zoeken naar PWA Studio is pas beschikbaar als de PWA Studio er ondersteuning voor heeft toegevoegd.
-* Productoverschrijvingen en productkenmerken hebben mogelijk synchronisatieproblemen die beheerders moeten uitvoeren `bin/magento indexer:reset` en `bin/magento indexer:reindex` om opnieuw te synchroniseren.
-* Als u de functies Catalogusmachtigingen/Gedeelde catalogus/B2B in- of uitschakelt, `catalog_data_exporter_product_overrides` indexeer wordt niet bijgewerkt en wordt onjuist gemarkeerd als `valid`. Gebruiken `bin/magento saas:resync --feed=productOverrides` om het probleem op te lossen.
-
-## [!DNL Live Search] 2,0 {#20}
+## [!DNL Live Search] 2.0 {#20}
 
 * Compatibel met Adobe Commerce (EE): 2,4 x
 * Compatibel met Adobe Commerce for Cloud (ECE): 2,4 x
@@ -88,7 +74,7 @@ Bestaande [!DNL Live Search] de installaties moeten worden geüpgraded tot [!DNL
 * ![Bug](../assets/bug.svg) - De volgende productkenmerken worden niet ondersteund door [Magento GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/) bij gebruik in verband met de bètaversie van PWA: `description`, `name`, `short_description`
 * ![Bug](../assets/bug.svg) - De bètaversie van PWA voor [!DNL Live Search] ondersteunt niet [gebeurtenisafhandeling](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
 
-## [!DNL Live Search] 1.3.1. {#131}
+## [!DNL Live Search] 1.3.1 {#131}
 
 * Compatibel met Adobe Commerce (EE): 2,4 x
 * Compatibel met Adobe Commerce for Cloud (ECE): 2,4 x
@@ -98,7 +84,7 @@ Bestaande [!DNL Live Search] de installaties moeten worden geüpgraded tot [!DNL
 * ![Repareren](../assets/fix.svg) - Het probleem dat een fout veroorzaakte die er niet was, is opgelost. [valutasymbool](https://docs.magento.com/user-guide/stores/currency-symbols.html) (`data-currency-symbol`) is beschikbaar.
 * ![Repareren](../assets/fix.svg) - [[!DNL Storefront popover]](storefront-popover.md) toont nu [Speciale prijs](https://docs.magento.com/user-guide/catalog/product-price-special.html) (minimumprijs) indien beschikbaar.
 
-## [!DNL Live Search] 1.3.0. {#130}
+## [!DNL Live Search] 1.3.0 {#130}
 
 * Compatibel met Adobe Commerce (EE): 2,4 x
 * Compatibel met Adobe Commerce for Cloud (ECE): 2,4 x
@@ -111,7 +97,7 @@ Bestaande [!DNL Live Search] de installaties moeten worden geüpgraded tot [!DNL
 * ![Bug](../assets/bug.svg) - Patch for Search adapter verwerkt dubbele producten.
 * ![Bug](../assets/bug.svg) - [!DNL Live Search] supports [uit één bron](https://docs.magento.com/user-guide/catalog/inventory-sources.html) (fysieke) inventarislocaties met meerdere (virtuele) [voorraden](https://docs.magento.com/user-guide/catalog/inventory-stock.html). Meerdere inventarisbronnen worden momenteel niet ondersteund.
 
-## [!DNL Live Search] 1.2.0. {#120}
+## [!DNL Live Search] 1.2.0 {#120}
 
 * Compatibel met Adobe Commerce (EE): 2,4 x
 * Compatibel met Adobe Commerce for Cloud (ECE): 2,4 x
@@ -126,7 +112,7 @@ Bestaande [!DNL Live Search] de installaties moeten worden geüpgraded tot [!DNL
 * ![Repareren](../assets/fix.svg) - [!DNL Live Search] genereert niet langer een fout als zoekcriteria een lege sorteervolgordewaarde bevatten
 * ![Repareren](../assets/fix.svg) - Het filteren van het bereik wordt niet langer onderbroken als kenmerkcodes tekenreeksen &quot;aan&quot; of &quot;from&quot; bevatten
 
-## [!DNL Live Search] 1.1.0. {#110}
+## [!DNL Live Search] 1.1.0 {#110}
 
 * Compatibel met Adobe Commerce (EE): 2,4 x
 * Compatibel met Adobe Commerce for Cloud (ECE): 2,4 x
