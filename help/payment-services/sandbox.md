@@ -2,7 +2,7 @@
 title: De testsandbox instellen
 description: Een PayPal-sandboxaccount gebruiken [!DNL Payment Services] in de testmodus.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
-source-git-commit: ab4a2f4d432f74cb48dc4b92468305c93088593a
+source-git-commit: 3596e3e156a834e39da2105e7ac79588d1edd408
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 0%
@@ -20,9 +20,9 @@ Met een PayPal-sandboxaccount kunt u [!DNL Payment Services] in de testmodus. Pa
 Sandbox aan boord voltooien:
 
 1. Ga naar de [Pagina PayPal Developer-account](https://developer.paypal.com/developer/accounts/).
-1. Klikken **[!UICONTROL Log in to Home]** en meld u aan met uw bestaande door PayPal Developer Portal gegenereerde Business sandbox-testaccount of klik op **Aanmelden** om een account te maken.
+1. Klikken **[!UICONTROL Log in to Dashboard]** en meld u aan met uw bestaande door PayPal Developer Portal gegenereerde Business sandbox-testaccount of klik op **Aanmelden** om een account te maken.
 1. Een PayPal-sandboxaccount maken:
-   1. Ga naar _[!UICONTROL SANDBOX]_>**[!UICONTROL Accounts]**.
+   1. Ga naar _[!UICONTROL Testing Tools]_>**[!UICONTROL Sandbox Accounts]**.
    1. Klik op **[!UICONTROL Create account]**.
 
       Als u tijdens het PayPal-instapproces een PayPal-sandboxaccount hebt gemaakt, moet u [de instapsandbox opnieuw instellen](#reset-your-sandbox-account) omdat of omdat je je e-mail niet kunt verifiëren.

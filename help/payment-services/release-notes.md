@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] Opmerkingen bij de release"
 description: Lees de opmerkingen bij de release voor meer informatie over alle [!DNL Payment Services] lozingen.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 6d8ce56d8fd26d8dbfebc87a50512570e9f69b2b
+source-git-commit: c26023b1b63362d42ab351e451168dd50ff962a2
 workflow-type: tm+mt
-source-wordcount: '1373'
+source-wordcount: '1382'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ _22 december 2022_
 
 ![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-3992 --> Betaaldiensten kunnen beter worden gefactureerd wanneer een betalingsmethode wordt afgewezen.
 
-![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-3999 --> Betalingsservices geeft nu correct PayPal slimme knoppen weer met [Brandcontrole](https://marketplace.magento.com/swissup-firecheckout.html){target=_blank} aangepaste sjabloon voor de uitcheckpagina.
+![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-3999 --> Betalingsservices geeft nu correct PayPal slimme knoppen weer voor verkopers die [Brandcontrole](https://marketplace.magento.com/swissup-firecheckout.html){target=_blank} aangepaste sjabloon voor de uitcheckpagina. Eerder werden de knoppen periodiek weergegeven door de minicart.
 
 ## v1.5.1
 
