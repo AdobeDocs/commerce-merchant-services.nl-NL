@@ -2,9 +2,9 @@
 title: "Regels toevoegen"
 description: "Leer hoe u creeert [!DNL Live Search] regels."
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: ed245e440f6db59d8eba66afeddb840420da0cf7
+source-git-commit: 941fdc25f93679593cb3c5db0d29d7a561fcce58
 workflow-type: tm+mt
-source-wordcount: '1276'
+source-wordcount: '1287'
 ht-degree: 0%
 
 ---
@@ -95,7 +95,7 @@ Voer vervolgens de *Positie* waar het vastgezette product moet worden weergegeve
 
 De hier ingevoerde informatie wordt weergegeven in het dialoogvenster [Regeldetails](rules-workspace.md) deelvenster.
 
-1. Onder *Details*, voert u een **Naam** voor de regel.
+1. Onder *Details*, voert u een **Naam** voor de regel. Alle regelnamen moeten uniek zijn.
 1. Voer een korte beschrijving in **Beschrijving** van de regel.
 1. Voer de **Begindatum** en **Einddatum** om de regel actief te maken of de datums in de kalender te kiezen.
 
@@ -154,7 +154,7 @@ De hier ingevoerde informatie wordt weergegeven in het dialoogvenster [Regeldeta
 
 | Veld | Beschrijving |
 |--- |--- |
-| Naam | De naam van de regel. |
+| Naam | De naam van de regel. Regelnamen moeten uniek zijn. |
 | Begindatum | De begindatum van de regel, indien gepland. |
 | Einddatum | De einddatum van de regel, indien gepland. |
 | Beschrijving | Een korte beschrijving van de regel. |

@@ -1,10 +1,10 @@
 ---
-user-guide-title: '"[!DNL Live Search] Hulplijn"'
-user-guide-description: '"Deze handleiding bevat gedetailleerde instructies voor het gebruik van [!DNL Live Search] uit Adobe Commerce."'
-breadcrumb-title: '"[!DNL Live Search] Hulplijn"'
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+user-guide-title: "[!DNL Live Search] Hulplijn"
+user-guide-description: "Deze handleiding bevat gedetailleerde instructies voor het gebruik van [!DNL Live Search] uit Adobe Commerce."
+breadcrumb-title: "[!DNL Live Search] Hulplijn"
+source-git-commit: 941fdc25f93679593cb3c5db0d29d7a561fcce58
 workflow-type: tm+mt
-source-wordcount: '72'
+source-wordcount: '68'
 ht-degree: 0%
 
 ---
@@ -39,10 +39,8 @@ ht-degree: 0%
    - Regels {#rules}
       - [Overzicht](rules.md)
       - [Werkruimte Regels](rules-workspace.md)
-      - [Regelcomponenten](rule-components.md)
       - [Regels toevoegen](rules-add.md)
       - [Regels beheren](rules-manage.md)
-      - [Technische noten](rule-technical-notes.md)
    - [Instellingen](settings.md)
    - [Indexeren](indexing.md)
 - [Feedback](feedback.md)
