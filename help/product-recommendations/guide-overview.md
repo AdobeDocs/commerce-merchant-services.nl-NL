@@ -1,11 +1,12 @@
 ---
-title: '"[!DNL Product Recommendations] Overzicht van hulplijnen"'
+title: '''[!DNL Product Recommendations] Overzicht van hulplijnen'
 description: Uitgebreide informatie over [!DNL Product Recommendations] voor Adobe Commerce-beheerders, inclusief installatie en instapsysteem
 seo-title: Adobe Commerce [!DNL Product Recommendations] Guide
 seo-description: Describes how to use [!DNL Product Recommendations] with Adobe Commerce.
-source-git-commit: 46b27458ec7105692cacfca91a62938fd25c8095
+exl-id: 7f5105ba-e764-4cb5-9b95-75810e934b47
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '216'
 ht-degree: 0%
 
 ---
@@ -30,12 +31,12 @@ Deze handleiding heeft geen betrekking op de kernmogelijkheden van Adobe Commerc
 
 | Hulplijn | Beschrijving |
 |------ | ----------- |
-| [Adobe Commerce 2.4 Handboek](https://docs.magento.com/user-guide/) | Bedrijfsgerichte documentatie voor zowel Adobe Commerce als Magento Open Source |
-| [Adobe Commerce 2.4-handleiding voor ontwikkelaars](https://devdocs.magento.com/) | Documentatie gericht op ontwikkelaars die wordt gebruikt om Adobe Commerce of Magento Open Source te bouwen en aan te passen |
+| [Adobe Commerce 2.4 Handboek](https://experienceleague.adobe.com/docs/commerce.html) | Bedrijfsgerichte documentatie voor zowel Adobe Commerce als Magento Open Source |
+| [Adobe Commerce 2.4-handleiding voor ontwikkelaars](https://developer.adobe.com/commerce/docs) | Documentatie gericht op ontwikkelaars die wordt gebruikt om Adobe Commerce of Magento Open Source te bouwen en aan te passen |
 
 ## Ondersteuning
 
 Gebruik de volgende bronnen als u informatie nodig hebt of vragen hebt die niet in deze handleiding worden behandeld:
 
 * [Help Center](https://support.magento.com/hc/en-us){target=&quot;_blank&quot;}—Zie de [!DNL Product Recommendations]gerelateerde artikelen voor het oplossen van problemen.
-* [Ondersteuningstickets](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket){target=&quot;_blank&quot;} - Verstuur een ticket voor extra hulp.
+* [Ondersteuningstickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket){target=&quot;_blank&quot;} - Verstuur een ticket voor extra hulp.

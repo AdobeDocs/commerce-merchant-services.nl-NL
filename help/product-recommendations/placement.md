@@ -1,9 +1,10 @@
 ---
 title: Plaatsing en labels
 description: Leer waar u aanbevelingen op verschillende pagina's op uw plaats en suggesties voor vaak gebruikte etiketten voor elk aanbevelingstype kunt plaatsen.
-source-git-commit: b3ac6ab9c5877b5c722cd08cc50d746595386ba9
+exl-id: e1025138-49dc-4833-92bb-27e8e415d724
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '557'
 ht-degree: 0%
 
 ---
@@ -58,4 +59,4 @@ De volgende tabel bevat een lijst met de winkelpagina&#39;s waarop u aanbeveling
 | Productgegevens | Onderaan de hoofdinhoud (standaard) | Meest bekeken<br>Meest aangeschaft<br>Meest toegevoegd aan winkelwagentje<br>Bekeken dit, gezien dat<br>Bekijk dit, kocht dat<br>Dit gekocht<br>Meer als dit<br>Trend<br>Visuele gelijkenis |
 | Kar | Onderaan de hoofdinhoud (standaard) | Meest bekeken<br>Meest aangeschaft<br>Meest toegevoegd aan winkelwagentje<br>Bekeken dit, gezien dat<br>Bekijk dit, kocht dat<br>Dit gekocht<br>Meer als dit<br>Trend |
 | Bevestiging | Onderaan de hoofdinhoud (standaard) | Meest bekeken<br>Meest aangeschaft<br>Meest toegevoegd aan winkelwagentje<br>Bekeken dit, gezien dat<br>Bekijk dit, kocht dat<br>Dit gekocht<br>Meer als dit<br>Trend |
-| Page Builder | [Slepen en neerzetten](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html#add-an-existing-recommendation-unit) naar positie van inhoudstype | Meest bekeken<br>Meest aangeschaft<br>Meest toegevoegd aan winkelwagentje<br>Aanbevolen voor u<br>Trend |
+| Page Builder | [Slepen en neerzetten](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) naar positie van inhoudstype | Meest bekeken<br>Meest aangeschaft<br>Meest toegevoegd aan winkelwagentje<br>Aanbevolen voor u<br>Trend |

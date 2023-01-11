@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] Opmerkingen bij de release"
 description: "De meest recente releasegegevens voor [!DNL Live Search] uit Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 4566727b4e672033997491bcaf075c48e2a55cc8
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '1004'
+source-wordcount: '1041'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ U wordt aangeraden een upgrade uit te voeren en te testen voordat u naar de prod
 * Stabiliteit: Stabiel
 
 * ![Nieuw](../assets/new.svg) - Live zoeken ondersteunt nu filteren met de instelling &#39;Producten uit voorraad weergeven&#39; in de beheerder. Als &#39;Display Out of Stock Products&#39; is ingesteld op false, `inStock = true` wordt toegevoegd aan het filter.
-* ![Repareren](../assets/fix.svg) - Om de prestaties te verbeteren, is het blok Suggestions verwijderd uit het pop-upmenu Live zoeken. De gegevens worden nog steeds doorgegeven via GraphQL, voor het geval u de functie wilt vervangen.
+* ![Repareren](../assets/fix.svg) - Om de prestaties te verbeteren, is het blok Suggestions verwijderd uit het pop-upmenu Live zoeken. De gegevens worden nog overgegaan door GraphQL, voor het geval u de eigenschap wilt vervangen.
 * ![Repareren](../assets/fix.svg) - `categories` en `categoryPath` vervangen `categoryIds` voor filteren van categorieën. Lees meer in de [productSearch](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) onderwerp.
 * ![Repareren](../assets/fix.svg) - Eerder zou een gebruiker die aan een B2B-bedrijf gebonden is een onjuiste code van de Groep van de Klant ontvangen wanneer het doen van onderzoeken. Live zoeken retourneert nu de juiste waarde.
 * ![Repareren](../assets/fix.svg) - Als u eerder zoekt naar een term die niet bestaat, retourneert Live zoeken een fout. Die bug is nu opgelost.
@@ -70,9 +70,9 @@ Bestaande [!DNL Live Search] de installaties moeten worden geüpgraded tot [!DNL
 * ![Nieuw](../assets/new.svg) - Het aantal beschikbare regels in de [[!DNL storefront popover]](quick-tour.md) kan van worden gevormd *Beheer*.
 * ![Nieuw](../assets/new.svg) - Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) compatibiliteit voor [!DNL Live Search].
 * ![Nieuw](../assets/new.svg) - de [!DNL Live Search] Het installatieproces wordt bijgewerkt met geavanceerde proceswijzigingen.
-* ![Repareren](../assets/fix.svg) - [Geavanceerd zoeken](https://docs.magento.com/user-guide/catalog/search-advanced.html) koppeling verwijderd uit de voettekst van de winkel.
+* ![Repareren](../assets/fix.svg) - [Geavanceerd zoeken](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) koppeling verwijderd uit de voettekst van de winkel.
 * ![Bug](../assets/bug.svg) - De volgende productkenmerken worden niet ondersteund door [Magento GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/) bij gebruik in verband met de bètaversie van PWA: `description`, `name`, `short_description`
-* ![Bug](../assets/bug.svg) - De bètaversie van PWA voor [!DNL Live Search] ondersteunt niet [gebeurtenisafhandeling](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
+* ![Bug](../assets/bug.svg) - De bètaversie van PWA voor [!DNL Live Search] ondersteunt niet [gebeurtenisafhandeling](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/).
 
 ## [!DNL Live Search] 1.3.1 {#131}
 
@@ -80,9 +80,9 @@ Bestaande [!DNL Live Search] de installaties moeten worden geüpgraded tot [!DNL
 * Compatibel met Adobe Commerce for Cloud (ECE): 2,4 x
 * Stabiliteit: Stabiel
 
-* ![Repareren](../assets/fix.svg) - [Aangepast prijskenmerk](https://docs.magento.com/user-guide/stores/attributes-input-types.html) keert niet meer een fout terug wanneer gevormd als a [facet]({% koppeling live-search/facets-add.md %}).
-* ![Repareren](../assets/fix.svg) - Het probleem dat een fout veroorzaakte die er niet was, is opgelost. [valutasymbool](https://docs.magento.com/user-guide/stores/currency-symbols.html) (`data-currency-symbol`) is beschikbaar.
-* ![Repareren](../assets/fix.svg) - [[!DNL Storefront popover]](storefront-popover.md) toont nu [Speciale prijs](https://docs.magento.com/user-guide/catalog/product-price-special.html) (minimumprijs) indien beschikbaar.
+* ![Repareren](../assets/fix.svg) - [Aangepast prijskenmerk](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) keert niet meer een fout terug wanneer gevormd als a [facet]({% koppeling live-search/facets-add.md %}).
+* ![Repareren](../assets/fix.svg) - Het probleem dat een fout veroorzaakte die er niet was, is opgelost. [valutasymbool](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html#step-5%3A-customize-currency-symbols-(optional)) (`data-currency-symbol`) is beschikbaar.
+* ![Repareren](../assets/fix.svg) - [[!DNL Storefront popover]](storefront-popover.md) toont nu [Speciale prijs](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-special.html) (minimumprijs) indien beschikbaar.
 
 ## [!DNL Live Search] 1.3.0 {#130}
 
@@ -91,11 +91,11 @@ Bestaande [!DNL Live Search] de installaties moeten worden geüpgraded tot [!DNL
 * Stabiliteit: Stabiel
 
 * ![Nieuw](../assets/new.svg) - [Prestaties](performance.md) het rapporteringsdashboard geeft inzicht in zoektermen die kopers gebruiken.
-* ![Nieuw](../assets/new.svg) - [!DNL Live Search] [Storefront Events SDK](https://devdocs.magento.com/shared-services/storefront-events-sdk.html) verleent toegang tot een gemeenschappelijke gegevenslaag van gebeurtenis het publiceren en de abonnementendiensten, en metriek.
+* ![Nieuw](../assets/new.svg) - [!DNL Live Search] [Storefront Events SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) verleent toegang tot een gemeenschappelijke gegevenslaag van gebeurtenis het publiceren en de abonnementendiensten, en metriek.
 * ![Repareren](../assets/fix.svg) - de [[!DNL Storefront popover]](storefront-popover.md) heeft een nieuwe `active` klasse voor de `.search-autocomplete` container die de zichtbaarheid bepaalt.
-* ![Repareren](../assets/fix.svg) - In de winkel [Zoekvoorwaarden](https://docs.magento.com/user-guide/marketing/search-terms-popular.html) voettekstkoppeling wordt verwijderd en de bijbehorende cache wordt uitgeschakeld voor [!DNL Live Search] installaties.
+* ![Repareren](../assets/fix.svg) - In de winkel [Zoekvoorwaarden](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html#popular-search-terms) voettekstkoppeling wordt verwijderd en de bijbehorende cache wordt uitgeschakeld voor [!DNL Live Search] installaties.
 * ![Bug](../assets/bug.svg) - Patch for Search adapter verwerkt dubbele producten.
-* ![Bug](../assets/bug.svg) - [!DNL Live Search] supports [uit één bron](https://docs.magento.com/user-guide/catalog/inventory-sources.html) (fysieke) inventarislocaties met meerdere (virtuele) [voorraden](https://docs.magento.com/user-guide/catalog/inventory-stock.html). Meerdere inventarisbronnen worden momenteel niet ondersteund.
+* ![Bug](../assets/bug.svg) - [!DNL Live Search] supports [uit één bron](https://experienceleague.adobe.com/docs/commerce-admin/inventory/sources/sources-manage.html) (fysieke) inventarislocaties met meerdere (virtuele) [voorraden](https://experienceleague.adobe.com/docs/commerce-admin/inventory/stocks/stocks-manage.html). Meerdere inventarisbronnen worden momenteel niet ondersteund.
 
 ## [!DNL Live Search] 1.2.0 {#120}
 
@@ -118,8 +118,8 @@ Bestaande [!DNL Live Search] de installaties moeten worden geüpgraded tot [!DNL
 * Compatibel met Adobe Commerce for Cloud (ECE): 2,4 x
 * Stabiliteit: Stabiel
 
-* ![Bug](../assets/bug.svg) - de [!DNL Live Search] de dienst steunt slechts de [basisvaluta](https://docs.magento.com/user-guide/stores/currency-configuration.html) van de Adobe Commerce-installatie.
-* ![Bug](../assets/bug.svg) - Als u een facet toevoegt, wordt de feed Productkenmerken niet correct bijgewerkt als deze is ingesteld op `Update on Save`. Ga om dit probleem te voorkomen naar [Indexbeheer](https://docs.magento.com/user-guide/system/index-management.html) en stel Productkenmerken in op Feed `Update by Schedule`.
+* ![Bug](../assets/bug.svg) - de [!DNL Live Search] de dienst steunt slechts de [basisvaluta](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html) van de Adobe Commerce-installatie.
+* ![Bug](../assets/bug.svg) - Als u een facet toevoegt, wordt de feed Productkenmerken niet correct bijgewerkt als deze is ingesteld op `Update on Save`. Ga om dit probleem te voorkomen naar [Indexbeheer](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) en stel Productkenmerken in op Feed `Update by Schedule`.
 * ![Bug](../assets/bug.svg) - [!DNL Live Search] synoniemen worden gedefinieerd per winkelweergave, maar worden momenteel opgeslagen per website en geïdentificeerd met een combinatie van `environmentId` + `storeViewCode`. Dit heeft tot gevolg dat alle websites en winkelweergaven in de Adobe Commerce-installatie dezelfde synoniemenreeks delen. De meest recente reeks synoniemen voor de archiefmening krijgt belangrijkheid.
 * ![Bug](../assets/bug.svg) - Als een synoniem term meerdere woorden bevat, wordt elk woord behandeld als een afzonderlijk synoniem. Als u bijvoorbeeld &#39;tijdstuk&#39; definieert als een synoniem van &#39;watch&#39;, worden zowel &#39;time&#39; als &#39;piece&#39; beschouwd als synoniemen van &#39;watch&#39;.
 
@@ -127,6 +127,6 @@ Bestaande [!DNL Live Search] de installaties moeten worden geüpgraded tot [!DNL
 
 Meer informatie:
 
-* [Adobe Commerce Developer Documentation](https://devdocs.magento.com/)
-* [Adobe Commerce-gebruikershandleiding](https://docs.magento.com/user-guide/)
+* [Adobe Commerce Developer Documentation](https://developer.adobe.com/commerce/docs)
+* [Adobe Commerce-gebruikershandleiding](https://experienceleague.adobe.com/docs/commerce.html)
 * [[!DNL Live Search] op Marketplace](https://marketplace.magento.com/magento-live-search.html)

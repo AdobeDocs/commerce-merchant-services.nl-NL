@@ -2,9 +2,9 @@
 title: "Installeren [!DNL Live Search]"
 description: "Meer informatie over het installeren, bijwerken en verwijderen [!DNL Live Search] uit Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: 11f961ea7e2e01d5d9efdaf2191f25f3a1dc8878
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1279'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Dit onderwerp verstrekt instructies om het volgende te doen:
 
 Ga als volgt te werk:
 
-1. Bevestig dat [kroonbanen](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html) en [indexeerders](https://docs.magento.com/user-guide/system/index-management.html) worden uitgevoerd.
+1. Bevestig dat [kroonbanen](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) en [indexeerders](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) worden uitgevoerd.
 
 1. Kies de instapmethode die aan uw vereisten voldoet en volg de instructies.
 
@@ -68,7 +68,7 @@ In dit scenario worden storefront-bewerkingen onderbroken terwijl de [!DNL Live 
    >
    > Terwijl de gegevens worden geïndexeerd en gesynchroniseerd, zijn de zoek en de categorie doorbladerbewerkingen niet beschikbaar in de winkel. Afhankelijk van de grootte van de catalogus kan het proces minstens een uur duren `cron` wordt uitgevoerd om uw gegevens te synchroniseren naar [!DNL Live Search] diensten.
 
-1. Controleer of het volgende [indexeerders](https://docs.magento.com/user-guide/system/index-management.html) zijn ingesteld op `Update by Schedule`:
+1. Controleer of het volgende [indexeerders](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) zijn ingesteld op `Update by Schedule`:
 
    * Productfeed
    * Diervoeders voor productvarianten
@@ -116,7 +116,7 @@ In dit scenario: [!DNL Elasticsearch] beheert tijdelijk zoekverzoeken van de win
 
    [!DNL Elasticsearch] blijft zoekverzoeken van de winkel beheren terwijl de [!DNL Live Search] De dienst synchroniseert catalogusgegevens en indexeert producten op de achtergrond.
 
-1. Controleer of het volgende [indexeerders](https://docs.magento.com/user-guide/system/index-management.html) zijn ingesteld op `Update by Schedule`:
+1. Controleer of het volgende [indexeerders](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) zijn ingesteld op `Update by Schedule`:
 
    * Productfeed
    * Diervoeders voor productvarianten
@@ -243,14 +243,14 @@ Als u een update wilt uitvoeren naar een belangrijke versie, bijvoorbeeld van 1.
 
 ## Verwijderen [!DNL Live Search] {#uninstall}
 
-Om te verwijderen [!DNL Live Search], zie [Modules verwijderen](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-uninstall-mods.html).
+Om te verwijderen [!DNL Live Search], zie [Modules verwijderen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html).
 
 ## [!DNL Live Search] pakketten {#packages}
 
 | Pakket | Beschrijving |
 |--- |--- |
-| `module-live-search` | Staat verkopers toe om hun onderzoeksmontages voor faceting, synoniemen, vraagregels, enz. te vormen, en verleent toegang tot read-only playground GraphQL om vragen van te testen *Beheer*. |
-| `module-live-search-adapter` | Routes onderzoeksverzoeken van de storefront aan [!DNL Live Search] en geeft de resultaten weer in de winkel. <br />- Rubriekbrowse - Routaanvragen van de winkel [topnavigatie](https://docs.magento.com/user-guide/catalog/navigation-top.html) aan de zoekdienst.<br />- Globale zoekactie - Routverzoeken van de [snel zoeken](https://docs.magento.com/user-guide/catalog/search-quick.html) in de rechterbovenhoek van de winkel [!DNL Live Search] service. |
+| `module-live-search` | Staat verkopers toe om hun onderzoeksinstellingen voor facetten, synoniemen, vraagregels, enz. te vormen, en verleent toegang tot read-only GraphQL playground om vragen van te testen *Beheer*. |
+| `module-live-search-adapter` | Routes onderzoeksverzoeken van de storefront aan [!DNL Live Search] en geeft de resultaten weer in de winkel. <br />- Rubriekbrowse - Routaanvragen van de winkel [topnavigatie](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html) aan de zoekdienst.<br />- Globale zoekactie - Routverzoeken van de [snel zoeken](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) in de rechterbovenhoek van de winkel [!DNL Live Search] service. |
 | `module-live-search-storefront-popover` | De pop-up &#39;&#39;Zoeken terwijl u typt&#39;&#39; vervangt de standaard snelle zoekopdracht en retourneert gegevens en miniaturen van de bovenste zoekresultaten. |
 
 ## [!DNL Live Search] afhankelijkheden {#dependencies}

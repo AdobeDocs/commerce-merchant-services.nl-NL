@@ -2,16 +2,16 @@
 title: Catalogus synchroniseren
 description: Leer hoe u productgegevens exporteert vanuit de [!DNL Commerce] server naar [!DNL Commerce Services] om de diensten voortdurend up-to-date te houden.
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
-source-git-commit: 68e615671f4e465d7fe89794613dbf129ae66dbf
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '864'
 ht-degree: 0%
 
 ---
 
 # Catalogus synchroniseren
 
-Adobe Commerce en Magento Open Source gebruiken indexen om catalogusgegevens in tabellen te compileren. Het proces wordt automatisch geactiveerd door [gebeurtenissen](https://docs.magento.com/user-guide/system/index-management-events.html) zoals een wijziging van de productprijs of het voorraadniveau.
+Adobe Commerce en Magento Open Source gebruiken indexen om catalogusgegevens in tabellen te compileren. Het proces wordt automatisch geactiveerd door [gebeurtenissen](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing) zoals een wijziging van de productprijs of het voorraadniveau.
 
 Het synchronisatieproces van de catalogus wordt om het uur uitgevoerd [!DNL Commerce] services voor het gebruik van catalogusgegevens. Met Catalogussynchronisatie worden productgegevens geëxporteerd uit de [!DNL Commerce] server naar [!DNL Commerce] diensten om de diensten voortdurend up-to-date te houden. Bijvoorbeeld: [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) heeft huidige catalogusinformatie nodig om aanbevelingen met correcte namen, prijs, en beschikbaarheid nauwkeurig terug te keren. U kunt de _Catalogus synchroniseren_ het dashboard om het synchronisatieproces of het [opdrachtregelinterface](#resynccmdline) catalogussynchronisatie en nieuwe productgegevens activeren op [!DNL Commerce] diensten.
 

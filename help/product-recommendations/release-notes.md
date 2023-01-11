@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release
 description: De meest recente releasegegevens voor [!DNL Product Recommendations] uit Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
-source-git-commit: 944576fdacd7dbbb704f74ba06d34f64eac41122
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '967'
+source-wordcount: '978'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ De opmerkingen bij de release omvatten:
 * ![Nieuw](../assets/new.svg) - Nieuwe functies
 * ![Repareren](../assets/fix.svg) - Oplossingen en verbeteringen
 
-Zie de documentatie voor ontwikkelaars [informatie over productcompatibiliteit](https://devdocs.magento.com/release/availability.html).
+Zie de documentatie voor ontwikkelaars [informatie over productcompatibiliteit](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 ## Adobe Commerce 2.3.x en 2.4.x
 
@@ -51,7 +51,7 @@ Zie de documentatie voor ontwikkelaars [informatie over productcompatibiliteit](
 ### 3.3.5 van de aanbevelingen van magento/product
 
 * ![Nieuw](../assets/new.svg) - Toegevoegd [B2B-ondersteuning](onboarding.md#b2bsupport) in Product Recommendations
-* ![Nieuw](../assets/new.svg) - Nieuwe feeds toegevoegd aan [catalogusgegevens synchroniseren](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-catalog-sync.html) aan Commerce Services via de opdrachtregel
+* ![Nieuw](../assets/new.svg) - Nieuwe feeds toegevoegd aan [catalogusgegevens synchroniseren](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) aan Commerce Services via de opdrachtregel
 
 ### 3.3.3 van de aanbevelingen inzake magento/product
 
@@ -79,7 +79,7 @@ Zie de documentatie voor ontwikkelaars [informatie over productcompatibiliteit](
 
 ### 3.2.5 van de aanbevelingen inzake magento/product
 
-* ![Nieuw](../assets/new.svg) - De naam Magento Services wijzigen in [Commerciële diensten](https://docs.magento.com/user-guide/system/saas.html) en verbeterde bruikbaarheid in de beheerder
+* ![Nieuw](../assets/new.svg) - De naam Magento Services wijzigen in [Commerciële diensten](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) en verbeterde bruikbaarheid in de beheerder
 
 ### 3.2.4 van de aanbevelingen inzake magento/product
 
@@ -94,7 +94,7 @@ Zie de documentatie voor ontwikkelaars [informatie over productcompatibiliteit](
 ### 3.2.2. van magento/productaanbevelingen
 
 * ![Nieuw](../assets/new.svg) - De mogelijkheid om [voorvertoning van aanbevelingen](create.md) tijdens het maken. Hiervoor moet u mogelijk de module bijwerken naar de meest recente versie.
-* ![Nieuw](../assets/new.svg) - De mogelijkheid om [bewaken en beheren](https://docs.magento.com/user-guide/system/catalog-sync.html) het synchronisatieproces van de catalogus door de beheerder.
+* ![Nieuw](../assets/new.svg) - De mogelijkheid om [bewaken en beheren](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) het synchronisatieproces van de catalogus door de beheerder.
 * ![Nieuw](../assets/new.svg) - Toegevoegd [filters](filters.md) om te controleren welke producten in aanbevelingen worden getoond.
 * ![Nieuw](../assets/new.svg) - Toegevoegde [Visuele gelijkenis](type.md#visualsim) soort aanbeveling.
 
@@ -104,7 +104,7 @@ Zie de documentatie voor ontwikkelaars [informatie over productcompatibiliteit](
 
 ### 3.1.0 van magento/productaanbevelingen
 
-* ![Nieuw](../assets/new.svg) - De mogelijkheid om [resync](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-catalog-sync.html) uw catalogus naar SaaS-services via de opdrachtregel.
+* ![Nieuw](../assets/new.svg) - De mogelijkheid om [resync](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) uw catalogus naar SaaS-services via de opdrachtregel.
 * ![Nieuw](../assets/new.svg) - Toegevoegde ondersteuning voor voorvoegsels van databasetabellen
 * ![Repareren](../assets/fix.svg) - Verwijderde ondersteuning voor PHP 7.1
 
@@ -153,7 +153,7 @@ Dit is een belangrijke versie. U moet [bewerken](install-configure.md#update) he
 
 ### 1.0.3 van magento/module-page-builder-product-recommendations for Page Builder
 
-* ![Nieuw](../assets/new.svg) - Ondersteuning voor Page Builder. Met de integratie van de Bouwer van de Pagina, kunt u de eenheden van de Aanbeveling van de Aanbeveling in om het even welke willekeurige plaats op de Bouwer van de Pagina-geschreven inhoud nauwkeurig en korrelig plaatsen. U kunt ook zelf de koppen en aanbevelingen opmaken. Ga naar [Page Builder](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html) voor meer informatie .
+* ![Nieuw](../assets/new.svg) - Ondersteuning voor Page Builder. Met de integratie van de Bouwer van de Pagina, kunt u de eenheden van de Aanbeveling van de Aanbeveling in om het even welke willekeurige plaats op de Bouwer van de Pagina-geschreven inhoud nauwkeurig en korrelig plaatsen. U kunt ook zelf de koppen en aanbevelingen opmaken. Ga naar [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) voor meer informatie .
 
 ### 2.0.0 van magento/productaanbevelingen
 
@@ -164,4 +164,4 @@ Dit is een belangrijke versie. U moet [bewerken](install-configure.md#update) he
 Meer informatie over [!DNL Product Recommendations] en [!DNL Product Recommendations] ontwikkeling:
 
 * [Handboek](overview.md)
-* [Documentatie voor ontwikkelaars](https://devdocs.magento.com/recommendations/product-recs.html)
+* [Documentatie voor ontwikkelaars](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/development-overview.html)

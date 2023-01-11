@@ -1,10 +1,10 @@
 ---
 title: '''[!DNL Catalog Service] Overzicht van hulplijnen'
-description: '''[!DNL Catalog Service for Adobe Commerce] biedt een manier om de inhoud van de pagina''s met productweergave en de productlijst sneller op te halen dan de native Adobe Commerce GraphQL-query''s.'''
+description: '''[!DNL Catalog Service for Adobe Commerce] biedt een manier om de inhoud van de pagina''s van de productweergave en de productlijst sneller op te halen dan de native Adobe Commerce GraphQL-query''s.'''
 exl-id: d83375b2-0d87-4a0a-baf8-eb7eebe85a80
-source-git-commit: fdc8482b22b11261265af52e3ab0c780a14c3342
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '247'
 ht-degree: 0%
 
 ---
@@ -23,8 +23,8 @@ Deze handleiding is bedoeld voor beheerders van Adobe [!DNL Commerce]. Het bevat
 
 | Hulplijn | Beschrijving |
 |------ | ----------- |
-| [Adobe Commerce 2.4 Handboek](https://docs.magento.com/user-guide/) | Bedrijfsgerichte documentatie voor zowel Adobe Commerce als Magento Open Source |
-| [Adobe Commerce 2.4-handleiding voor ontwikkelaars](https://devdocs.magento.com/) | Documentatie gericht op ontwikkelaars die wordt gebruikt om Adobe Commerce of Magento Open Source te bouwen en aan te passen |
+| [Adobe Commerce 2.4 Handboek](https://experienceleague.adobe.com/docs/commerce.html) | Bedrijfsgerichte documentatie voor zowel Adobe Commerce als Magento Open Source |
+| [Adobe Commerce 2.4-handleiding voor ontwikkelaars](https://developer.adobe.com/commerce/docs) | Documentatie gericht op ontwikkelaars die wordt gebruikt om Adobe Commerce of Magento Open Source te bouwen en aan te passen |
 
 ## Ondersteuning
 

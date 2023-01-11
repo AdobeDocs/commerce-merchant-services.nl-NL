@@ -2,9 +2,9 @@
 title: "Facetten beheren"
 description: "Leer hoe u bestaande [!DNL Live Search] facetten."
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
-source-git-commit: a17c9ef193394d86f5439f900ebba3dd68d33b45
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Zie [Instellingen](settings.md) om prijsafhankelijke intervallen en groepen te v
 
 1. Voer een van de volgende handelingen uit om het label van het facet te bewerken:
 
-   * Voor een [!DNL Commerce] opslaan, bewerkt u de [kenmerklabel](https://docs.magento.com/user-guide/stores/attributes-product.html).
+   * Voor een [!DNL Commerce] opslaan, bewerkt u de [kenmerklabel](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html).
    * Voor een implementatie zonder kop klikt u op de waarde in de eerste kolom en bewerkt u de tekst naar wens.
 
    ![Label bewerken](assets/facet-edit-label.png)

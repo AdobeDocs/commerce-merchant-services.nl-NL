@@ -2,9 +2,9 @@
 title: Gebeurtenisverzameling verifiëren
 description: Leer hoe u kunt controleren of er gedragsgegevens naar Adobe Commerce worden verzonden.
 exl-id: c8c34db4-9d87-4012-b8f0-e9b1da214305
-source-git-commit: 7d9cef7a81196921b465ccf2dcd58d98b66d6598
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Installeer de [De extensie Snowplow Analytics Debugger voor Chrome](https://chro
 
 1. Omlaag schuiven totdat u ziet **Contextgegevens _n_**. Zoek de storefront-instantie in het dialoogvenster **Schema**.
 
-1. Controleer of de [SaaS Data Space ID](https://docs.magento.com/user-guide/configuration/services/saas.html) correct is ingesteld.
+1. Controleer of de [SaaS Data Space ID](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) correct is ingesteld.
 
 ![Sneeuwlaag, filter](assets/snowplow-filter.png)
 _Sneeuwlaag, filter_
@@ -62,8 +62,8 @@ _Sneeuwlaag, filter_
 
 ## Controleren of gebeurtenissen correct worden geactiveerd
 
-Om te verifiëren dat de gebeurtenissen die voor metriek worden gebruikt correct zijn, zoek naar `impression-render`, `view`, en `rec-click` gebeurtenissen in Foutopsporing voor Snowplow-analyse. Zie de [volledige lijst van gebeurtenissen](https://devdocs.magento.com/recommendations/events.html).
+Om te verifiëren dat de gebeurtenissen die voor metriek worden gebruikt correct zijn, zoek naar `impression-render`, `view`, en `rec-click` gebeurtenissen in Foutopsporing voor Snowplow-analyse. Zie de [volledige lijst van gebeurtenissen](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/events.html).
 
 >[!NOTE]
 >
-> Indien [Modus Cookie-beperking](https://docs.magento.com/user-guide/stores/compliance-cookie-restriction-mode.html) is ingeschakeld, verzamelt Adobe Commerce geen gedragsgegevens tot de klant hiermee instemt. Als de modus Cookie-beperking is uitgeschakeld, worden standaardgedragsgegevens verzameld.
+> Indien [Modus Cookie-beperking](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html) is ingeschakeld, verzamelt Adobe Commerce geen gedragsgegevens tot de klant hiermee instemt. Als de modus Cookie-beperking is uitgeschakeld, worden standaardgedragsgegevens verzameld.

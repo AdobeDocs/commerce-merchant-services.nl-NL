@@ -1,17 +1,17 @@
 ---
-title: '"Facets"'
-description: '"[!DNL Live Search] facetten gebruiken meerdere afmetingen van kenmerkwaarden als zoekcriteria."'
+title: "Facets"
+description: "[!DNL Live Search] facetten gebruiken meerdere afmetingen van kenmerkwaarden als zoekcriteria."
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 40e7da1cb71bd3c977acb77714c2cab55b3b7bf8
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '399'
 ht-degree: 0%
 
 ---
 
 # Facetten
 
-Faceting is een methode voor het filteren van hoge prestaties waarbij meerdere dimensies van kenmerkwaarden worden gebruikt als zoekcriteria. Gefactureerde zoekopdracht is vergelijkbaar, maar aanzienlijk &quot;slimmer&quot; dan de standaard [gelaagde navigatie](https://docs.magento.com/user-guide/catalog/navigation-layered.html). De lijst met beschikbare filters wordt bepaald door de [filterbare kenmerken](https://docs.magento.com/user-guide/catalog/navigation-layered-filterable-attributes.html) van producten die in de zoekresultaten worden geretourneerd.
+Faceting is een methode voor het filteren van hoge prestaties waarbij meerdere dimensies van kenmerkwaarden worden gebruikt als zoekcriteria. Gefactureerde zoekopdracht is vergelijkbaar, maar aanzienlijk &quot;slimmer&quot; dan de standaard [gelaagde navigatie](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html). De lijst met beschikbare filters wordt bepaald door de [filterbare kenmerken](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#filterable-attributes) van producten die in de zoekresultaten worden geretourneerd.
 
 ![Gefilterde zoekresultaten](assets/storefront-search-results-run.png)
 
@@ -28,13 +28,13 @@ Live zoeken ondersteunt maximaal:
 
 | Instelling | Beschrijving |
 |--- |--- |
-| [Weergave-instellingen voor categorie](https://docs.magento.com/user-guide/catalog/categories-display-settings.html) | Anker - `Yes` |
-| [Eigenschappen van kenmerk](https://docs.magento.com/user-guide/stores/attribute-product-create.html) | [Invoertype catalogus](https://docs.magento.com/user-guide/stores/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price` |
+| [Weergave-instellingen voor categorie](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html) | Anker - `Yes` |
+| [Eigenschappen van kenmerk](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) | [Invoertype catalogus](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price` |
 | Eigenschappen van kenmerkarchief | Gebruiken in gelaagde navigatie met zoekresultaten - `Yes` |
 
 ## Standaardkenmerkwaarden
 
-De volgende productkenmerken hebben [storefront, eigenschappen](https://docs.magento.com/user-guide/stores/attributes-product.html) die worden gebruikt door [!DNL Live Search] en standaard ingeschakeld.
+De volgende productkenmerken hebben [storefront, eigenschappen](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) die worden gebruikt door [!DNL Live Search] en standaard ingeschakeld.
 
 | Eigenschap | Storefront, eigenschap | Kenmerk |
 |---|---|---|

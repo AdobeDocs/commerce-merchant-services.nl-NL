@@ -1,9 +1,10 @@
 ---
 title: Testen in testomgeving
 description: Leren gebruiken [!DNL Product Recommendations] vanuit uw productieomgeving in uw testomgeving.
-source-git-commit: 7fe89df32dc5363817f957180e5b75e7217fc14a
+exl-id: 178ff2aa-7821-45f7-85f1-d490d8182817
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '429'
 ht-degree: 0%
 
 ---
@@ -35,7 +36,7 @@ Om aanbevelingen van uw productiemilieu te halen, moet u ervoor zorgen dat:
 
 1. Implementeer de `magento/product-recommendations` in een niet-productieomgeving waar de catalogusgegevens overeenkomen met uw productiecatalogus.
 
-1. Gebruik een van de niet-productie-ID&#39;s voor gegevensruimte [configuratie](https://docs.magento.com/user-guide/configuration/services/saas.html) in de Admin.
+1. Gebruik een van de niet-productie-ID&#39;s voor gegevensruimte [configuratie](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) in de Admin.
 
 1. Genereer de gegevens zelf door rond de winkelpagina te klikken om het gedrag van echte kopers na te bootsen (of een automatiseringsscript te maken). Door het testen genereert u gedragsgebeurtenissen in uw niet-productieomgeving. Deze gebeurtenissen worden gebruikt om de productaffiniteiten te produceren die aanbevelingen van de macht voorzien. Voor het testen [!DNL Commerce] stelt voor dat u met de volgende aanbevelingen werkt:
 

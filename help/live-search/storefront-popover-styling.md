@@ -2,9 +2,9 @@
 title: "Stijlen [!DNL Popover] Elementen"
 description: "Technische opmerkingen over het aanpassen van de [!DNL Live Search storefront popover]"
 exl-id: 033049f2-976e-4299-b026-333ac4b481a3
-source-git-commit: ba3d983372eb60d5cb42e503c3c26c693668a01e
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '203'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ De bovenliggende component van de component `.livesearch.popover-container` is `
 .search-autocomplete          /* not visible */
 ```
 
-Raadpleeg voor meer informatie over opmaakelementen voor winkelobjecten de [Cascading Style Sheets (CSS)](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/css-topics/css-overview.html) in de [Frontend Developer Guide](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/bk-frontend-dev-guide.html).
+Raadpleeg voor meer informatie over opmaakelementen voor winkelobjecten de [Cascading Style Sheets (CSS)](https://developer.adobe.com/commerce/frontend-core/guide/css/) in de [Frontend Developer Guide](https://developer.adobe.com/commerce/frontend-core/guide/).
 
 ## Klasse-kiezers
 
@@ -75,7 +75,7 @@ De volgende klassenkiezers kunnen worden gebruikt om de container- en productele
 
 ## Werken met een gewijzigd thema {#working-with-modified-theme}
 
-De [!DNL storefront popover] kan worden gebruikt met een aangepaste [thema](https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/themes/theme-overview.html) dat de vereiste bestanden overneemt van *Luminantie*. De `top.search` in de `header-wrapper` van de `Magento_Search` mag niet worden gewijzigd.
+De [!DNL storefront popover] kan worden gebruikt met een aangepaste [thema](https://developer.adobe.com/commerce/frontend-core/guide/themes/) dat de vereiste bestanden overneemt van *Luminantie*. De `top.search` in de `header-wrapper` van de `Magento_Search` mag niet worden gewijzigd.
 
 ```html
 <referenceContainer name="header-wrapper">
@@ -89,7 +89,7 @@ De [!DNL storefront popover] kan worden gebruikt met een aangepaste [thema](http
 
 ## Het onbruikbaar maken van [!DNL popover]
 
-Om het [!DNL popover] en herstel de standaard [Snel zoeken](https://docs.magento.com/user-guide/catalog/search-quick.html) voert u de volgende opdracht in:
+Om het [!DNL popover] en herstel de standaard [Snel zoeken](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) voert u de volgende opdracht in:
 
 ```bash
 bin/magento module:disable Magento_LiveSearchStorefrontPopover

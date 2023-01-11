@@ -2,16 +2,16 @@
 title: Instellingen
 description: Leer hoe u de bron van uw [!DNL Product Recommendations] gegevens en hoe te om visuele aanbevelingen toe te laten.
 exl-id: 8c074e11-e0cb-4d55-b646-30279c79bbc2
-source-git-commit: 6d0c7c749fe90c7c204afe47446f3483d8668b53
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '411'
 ht-degree: 0%
 
 ---
 
 # Instellingen
 
-Wanneer u [een SaaS-gegevensruimte configureren](https://docs.magento.com/user-guide/configuration/services/saas.html) voor Recommendations verzamelt de SaaS-gegevensruimte catalogusgegevens en gegevens over storefront-gedrag. [Adobe Sensei](https://www.adobe.com/sensei.html) analyseert dat gegevens en vergelijkt productverenigingen die worden gebruikt om Product Recommendations te bedienen.
+Wanneer u [een SaaS-gegevensruimte configureren](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) voor Recommendations verzamelt de SaaS-gegevensruimte catalogusgegevens en gegevens over storefront-gedrag. [Adobe Sensei](https://www.adobe.com/sensei.html) analyseert dat gegevens en vergelijkt productverenigingen die worden gebruikt om Product Recommendations te bedienen.
 
 Niet-productieomgevingen voor het testen of opvoeren hebben doorgaans niet de hoeveelheid of kwaliteit van gedragsgegevens van de winkel om realistische productaanbevelingen te kunnen doen. Werkelijk winkelgedrag op schaal kan alleen in een productieomgeving worden vastgelegd. Om dit probleem op te lossen, staat Adobe Commerce u toe om productaanbevelingen van uw productiemilieu met andere, niet productieSaaS gegevensruimten te gebruiken. Met werkelijke storefront-gegevens in een niet-productieomgeving kunt u een voorvertoning weergeven van de aanbevelingen die uw klanten zien en experimenteren met verschillende soorten aanbevelingen en plaatsingslocaties. Recommendations vanuit een andere SaaS-gegevensruimte kan door kopers worden voorvertoond, maar er wordt niet op geklikt.
 

@@ -1,10 +1,10 @@
 ---
-title: '"Snelle rondleiding"'
-description: '"Maak een snelle rondleiding door [!DNL Live Search] uit de winkel."'
+title: "Snelle rondleiding"
+description: "Maak een snelle rondleiding door [!DNL Live Search] uit de winkel."
 exl-id: bcb19506-6617-4c8a-83df-9d961f81e9e8
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '313'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Met de nadruk op snelheid, relevantie en gebruiksgemak, [!DNL Live Search] is ee
 
 ## Zoeken terwijl u typt
 
-[!DNL Live Search] reageert met voorgestelde producten en een miniatuurafbeelding van de bovenste zoekresultaten in een [popup](storefront-popover.md) als type query&#39;s voor kopers in de [Zoeken](https://docs.magento.com/user-guide/catalog/search-quick.html) doos. De [productdetails](https://docs.magento.com/user-guide/quick-tour/product-page.html) wordt weergegeven wanneer kopers op een voorgesteld of aanbevolen product klikken. A _Alles weergeven_ de koppeling in de voettekst van de pop-up geeft de pagina met zoekresultaten weer.
+[!DNL Live Search] reageert met voorgestelde producten en een miniatuurafbeelding van de bovenste zoekresultaten in een [popup](storefront-popover.md) als type query&#39;s voor kopers in de [Zoeken](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) doos. De [productdetails](https://experienceleague.adobe.com/docs/commerce-admin/start/storefront/storefront.html#product-page) wordt weergegeven wanneer kopers op een voorgesteld of aanbevolen product klikken. A _Alles weergeven_ de koppeling in de voettekst van de pop-up geeft de pagina met zoekresultaten weer.
 
 [!DNL Live Search] retourneert de resultaten &quot;search as you type&quot; voor een query van twee of meer tekens. Voor een gedeeltelijke overeenkomst, is het maximumaantal karakters per woord 20. Het aantal karakters in de vraag is niet configureerbaar. De pop-up bevat de volgende velden: `name`, `sku`, en `category_ids`.
 

@@ -1,16 +1,17 @@
 ---
 title: Filterproducten
 description: Bepaal voorwaarden die of producten van worden gebruikt als aanbevelingen omvatten of uitsluiten.
-source-git-commit: 7fe89df32dc5363817f957180e5b75e7217fc14a
+exl-id: baab28ff-b529-4cbc-adb7-4fa225e87d4a
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '698'
 ht-degree: 0%
 
 ---
 
 # Filterproducten
 
-Adobe Commerce past automatisch niet-configureerbare standaardfilters op aanbevelingen toe. Als u meerdere aanbevelingen-eenheden op een pagina hebt geïmplementeerd, filtert Adobe Commerce alle producten uit die in de eenheden worden herhaald. Alleen de eerste verwijzing naar een herhaald product wordt gebruikt om ruimte te maken voor andere producten die kunnen worden aanbevolen. Adobe Commerce filtert ook alle eerder aangeschafte producten en producten die zich in de winkelwagen bevinden.
+Adobe Commerce past automatisch niet-configureerbare standaardfilters op aanbeveling-eenheden toe. Als u meerdere aanbevelingen-eenheden op een pagina hebt geïmplementeerd, filtert Adobe Commerce alle producten uit die in de eenheden worden herhaald. Alleen de eerste verwijzing naar een herhaald product wordt gebruikt om ruimte te maken voor andere producten die kunnen worden aanbevolen. Adobe Commerce filtert ook alle eerder aangeschafte producten en producten die zich in de winkelwagen bevinden.
 
 Wanneer u [maken](create.md) een aanbeveling-eenheid, kunt u filters definiëren die bepalen welke producten in aanbevelingen kunnen worden weergegeven. Deze filters zijn gebaseerd op een reeks opname- of uitsluitingsvoorwaarden die u definieert. In aanbevelingen worden alleen producten weergegeven die aan alle inclusiemogelijkheden voldoen. Producten die aan een van de uitsluitingsvoorwaarden voldoen, worden niet aanbevolen.
 
@@ -41,7 +42,7 @@ Logische operatoren `AND` en `OR` worden gebruikt om meerdere voorwaarden samen 
 
 ### Categorie
 
-Filters op basis van de categorie van een product maken gebruik van directe categorietoewijzingen en de bijbehorende subcategorieën. Bijvoorbeeld het toelaten van een uitsluitingsvoorwaarde voor categorie `Gear` exclusief producten die zijn toegewezen aan `Gear` en alle subcategorieën ervan, zoals `Gear/Bags` of `Gear/Fitness Equipment`. Voor B2B-handelaren houdt het filter Categorie zich aan alle [klantspecifieke productcategorieën](https://docs.magento.com/user-guide/catalog/category-permissions.html) u hebt gevormd.
+Filters op basis van de categorie van een product maken gebruik van directe categorietoewijzingen en de bijbehorende subcategorieën. Bijvoorbeeld het toelaten van een uitsluitingsvoorwaarde voor categorie `Gear` exclusief producten die zijn toegewezen aan `Gear` en alle subcategorieën ervan, zoals `Gear/Bags` of `Gear/Fitness Equipment`. Voor B2B-handelaren houdt het filter Categorie zich aan alle [klantspecifieke productcategorieën]https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html) hebt u geconfigureerd.
 
 Adobe Commerce raadt u aan de volgende configuratie voor categoriefilters te gebruiken wanneer u aanbevelingen op uw paginatypen toepast:
 
@@ -67,11 +68,11 @@ Filterproducten die zijn gebaseerd op zichtbaarheid, zoals: _Catalogus_, _Zoeken
 
 ### Prijs
 
-Een filter op basis van de productprijs gebruikt de uiteindelijke prijs om de vergelijking uit te voeren. De uiteindelijke prijs omvat alle kortingen of speciale prijzen die beschikbaar zijn voor anonieme kopers. Voor B2B-handelaren weerspiegelt de weergegeven prijs de [klantspecifieke groepsprijsstelling](https://docs.magento.com/user-guide/catalog/pricing-advanced.html#customer-group-price) u hebt gevormd.
+Een filter op basis van de productprijs gebruikt de uiteindelijke prijs om de vergelijking uit te voeren. De uiteindelijke prijs omvat alle kortingen of speciale prijzen die beschikbaar zijn voor anonieme kopers. Voor B2B-handelaren weerspiegelt de weergegeven prijs de [klantspecifieke groepsprijsstelling](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) u hebt gevormd.
 
 ### Status van voorraad
 
 De volgende uitsluitingsfilters kunnen worden gebruikt om producten te filteren op basis van de voorraadstatus:
 
 - Niet in voorraad - (alleen Uitsluiting) Omvat geen producten die niet in voorraad zijn.
-- Lage voorraad - (Uitsluiting alleen) Omvat geen producten die weinig voorraad hebben. De status van de lage voorraad is gebaseerd op de _Alleen X-linkerdrempel_ waarde in [Inventarisconfiguratie](https://docs.magento.com/user-guide/configuration/catalog/inventory.html).
+- Lage voorraad - (Uitsluiting alleen) Omvat geen producten die weinig voorraad hebben. De status van de lage voorraad is gebaseerd op de _Alleen X-linkerdrempel_ waarde in [Inventarisconfiguratie](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/inventory.html).

@@ -1,9 +1,10 @@
 ---
 title: Implementatieworkflow
 description: Leer de stappen die u met succes wilt implementeren [!DNL Product Recommendations] op je winkel.
-source-git-commit: 4ad607c8595b25d01b5f5020b787fc1d35d4df25
+exl-id: 766e1191-0330-4515-9331-e45318539dc9
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '558'
 ht-degree: 0%
 
 ---
@@ -28,7 +29,7 @@ Wanneer u de `magento/product-recommendations module`, voegt Adobe Sensei de ged
 
    Implementeren [!DNL Product Recommendations] vereist twee hoofdlijnen [gegevensbronnen](type.md): catalogus en gedrag. Omdat productie de enige omgeving is waarin de acties van uw klanten worden vastgelegd en geanalyseerd, is het in uw belang om zo snel mogelijk met gegevensverzameling over productie te beginnen. [Meer informatie](behavioral-data.md) hoe Adobe Sensei modellen leert die leiden tot betere kwaliteit. Als extra voordeel, wanneer u begint gedragsgegevens over productie te verzamelen, kunt u [aanbevelingen ophalen](verify.md) op basis van deze productiegegevens in een niet-productieomgeving. Vervolgens kunt u testen en experimenteren met verschillende aanbevelingen die worden berekend op basis van echte verkoopgegevens die in productie worden verzameld.
 
-   Om gegevensinzameling aan productie op te stellen, moet u [installeren en configureren](install-configure.md) de [!DNL Product Recommendations] door een [API-sleutel](https://docs.magento.com/user-guide/system/saas.html#apikey).
+   Om gegevensinzameling aan productie op te stellen, moet u [installeren en configureren](install-configure.md) de [!DNL Product Recommendations] door een [API-sleutel](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html).
 
    >[!TIP]
    >
@@ -42,7 +43,7 @@ Wanneer u de `magento/product-recommendations module`, voegt Adobe Sensei de ged
    >
    > Door het malplaatje aan te passen, kunt u uw stijlblad specificeren, beschrijven waar een aanbevelingseenheid op een pagina, etc. verschijnt.
 
-   Zie [Aanpassen](https://devdocs.magento.com/recommendations/customize.html) in de ontwikkelaarsdocumentatie leren hoe te om deze stap te voltooien.
+   Zie [Aanpassen](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/customize.html) in de ontwikkelaarsdocumentatie leren hoe te om deze stap te voltooien.
 
 1. **Testaanbevelingen voor uw niet-productieomgeving**
 

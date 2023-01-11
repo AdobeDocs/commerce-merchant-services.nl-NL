@@ -2,9 +2,9 @@
 title: Werkruimte
 description: De werkruimte Live zoeken wordt gebruikt voor het configureren, beheren en controleren van zoekprestaties.
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
-source-git-commit: 1a55f2fb3d56183e5e73d172ebdc40f340e4d520
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '236'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ In de werkruimte kunt u de prestaties van [!DNL Live Search]. Het menu boven bie
 
 ## Bereik instellen
 
-In eerste instantie [bereik](https://docs.magento.com/user-guide/configuration/scope.html) van alle [!DNL Live Search] instellingen zijn ingesteld op `Default Store View`. Als uw [!DNL Commerce] installatie bevat meerdere winkelweergaven, set **Toepassingsgebied** aan de [winkelweergave](https://docs.magento.com/user-guide/stores/websites-stores-views.html) waar uw facetinstellingen van toepassing zijn.
+In eerste instantie [bereik](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) van alle [!DNL Live Search] instellingen zijn ingesteld op `Default Store View`. Als uw [!DNL Commerce] installatie bevat meerdere winkelweergaven, set **Toepassingsgebied** aan de [winkelweergave](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) waar uw facetinstellingen van toepassing zijn.
 
 ## Menuopties
 

@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] Indexeren"
 description: "Meer informatie [!DNL Live Search] indexes product attribute properties."
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 0a1d70465247422db44daee302c67fe1a5a29d32
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '553'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Eigenschappen van productkenmerken (metagegevens) bepalen:
 
 Het bereik van kenmerkmetagegevens is `website/store/store view`.
 
-De [!DNL Live Search] API staat een cliënt toe om op om het even welk productattribuut te sorteren dat heeft [storefront, eigenschap](https://docs.magento.com/user-guide/stores/attributes-product.html) `Use in Search` instellen op `Yes` in Adobe Commerce Admin. Indien ingeschakeld, `Search Weight` en `Visible in Advanced Search` kan worden ingesteld voor het kenmerk.
+De [!DNL Live Search] API staat een cliënt toe om op om het even welk productattribuut te sorteren dat heeft [storefront, eigenschap](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) `Use in Search` instellen op `Yes` in Adobe Commerce Admin. Indien ingeschakeld, `Search Weight` en `Visible in Advanced Search` kan worden ingesteld voor het kenmerk.
 
 >[!NOTE]
 >
@@ -71,7 +71,7 @@ Workflow voor gestreamde updates:
 
 ## Clientzoekopdracht
 
-De [!DNL Live Search] Met API kan een client op elk sorteerbaar productkenmerk sorteren door het instellen van de [storefront, eigenschap](https://docs.magento.com/user-guide/catalog/product-attributes.html), *Wordt gebruikt voor sorteren in productaanbiedingen* tot `Yes`. Afhankelijk van het thema zorgt deze instelling ervoor dat het kenmerk als optie wordt opgenomen in het dialoogvenster [Sorteren op](https://docs.magento.com/user-guide/catalog/navigation.html) Pagineringsbesturingselement op cataloguspagina&#39;s. Tot 300 productkenmerken kunnen worden geïndexeerd door [!DNL Live Search], met [storefront, eigenschappen](https://docs.magento.com/user-guide/stores/attributes-product.html) die doorzoekbaar en filterbaar zijn.
+De [!DNL Live Search] Met API kan een client op elk sorteerbaar productkenmerk sorteren door het instellen van de [storefront, eigenschap](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html), *Wordt gebruikt voor sorteren in productaanbiedingen* tot `Yes`. Afhankelijk van het thema zorgt deze instelling ervoor dat het kenmerk als optie wordt opgenomen in het dialoogvenster [Sorteren op](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation.html) Pagineringsbesturingselement op cataloguspagina&#39;s. Tot 300 productkenmerken kunnen worden geïndexeerd door [!DNL Live Search], met [storefront, eigenschappen](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) die doorzoekbaar en filterbaar zijn.
 De indexmeta-gegevens worden opgeslagen in de indexerende pijpleiding en door de onderzoeksdienst toegankelijk.
 
 ![[!DNL Live Search] API-diagram voor indexmetagegevens](assets/index-metadata-api.svg)

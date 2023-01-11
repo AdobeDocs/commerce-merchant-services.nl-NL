@@ -2,9 +2,9 @@
 title: Nieuwe aanbeveling maken
 description: Leer hoe u een product aanbevelingseenheid kunt maken.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 5fa08429a97c9ed59a339a0eca268f99c1023b7e
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '848'
 ht-degree: 0%
 
 ---
@@ -20,11 +20,11 @@ Als u de aanbevolen eenheid activeert, begint Adobe Commerce [gegevens verzamele
 
 1. Op de _Beheer_ zijbalk, ga naar **Marketing** > _Aanbiedingen_ > **Product Recommendations** om de _Product Recommendations_ werkruimte.
 
-1. Geef de [Winkelweergave](https://docs.magento.com/user-guide/configuration/scope.html) waar u de aanbevelingen wilt tonen.
+1. Geef de [Winkelweergave](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) waar u de aanbevelingen wilt tonen.
 
    >[!NOTE]
    >
-   > De de aanbevelingen van de Bouwer van de pagina kunnen eenheden slechts voor de standaardarchiefmening worden gecreeerd. Meer informatie over het creëren van productaanbevelingen met de Bouwer van de Pagina, zie [Inhoud toevoegen - Product Recommendations](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html).
+   > De de aanbevelingen van de Bouwer van de pagina kunnen eenheden slechts voor de standaardarchiefmening worden gecreeerd. Meer informatie over het creëren van productaanbevelingen met de Bouwer van de Pagina, zie [Inhoud toevoegen - Product Recommendations](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html).
 
 1. Klikken **Aanbeveling maken**.
 
@@ -37,7 +37,7 @@ Als u de aanbevolen eenheid activeert, begint Adobe Commerce [gegevens verzamele
    - Productgegevens
    - Kar
    - Bevestiging
-   - [Page Builder](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html)
+   - [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html)
 
    U kunt tot vijf actieve adviseringseenheden voor elk paginatype, en tot 25 voor de Bouwer van de Pagina tot stand brengen. Het paginatype wordt grijs weergegeven wanneer de limiet is bereikt.
 

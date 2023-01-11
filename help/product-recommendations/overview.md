@@ -1,10 +1,10 @@
 ---
 title: Inleiding tot [!DNL Product Recommendations]
-description: '''[!DNL Product Recommendations] Dit is een krachtig marketinginstrument dat u kunt gebruiken om conversies te verhogen, inkomsten te verhogen en winkelbetrokkenheid te stimuleren.'''
+description: '[!DNL Product Recommendations] Dit is een krachtig marketinginstrument dat u kunt gebruiken om conversies te verhogen, inkomsten te verhogen en winkelbetrokkenheid te stimuleren.'
 exl-id: 818ac876-58c9-4c68-975e-53da59ed6b52
-source-git-commit: 3f753f6a91c9f2c29def90d323c004a689056e71
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Gegevensverzameling ten behoeve van productaanbevelingen omvat geen persoonlijk 
 
 ## Productaanbevelingen versus productrelaties
 
-Gezien de voortdurend veranderende complexiteit van online winkelen, is wat het beste werkt voor uw winkel vaak een combinatie van meerdere sleuteltechnologieën. Beide gebruiken [!DNL Product Recommendations] en [Productrelaties](https://docs.magento.com/user-guide/marketing/product-relationships.html) biedt u meer flexibiliteit bij het promoten van producten. U kunt [!DNL Product Recommendations] door Adobe Sensei worden aangestuurd om uw aanbevelingen op intelligente wijze op grote schaal te automatiseren. Vervolgens kunt u [Regels voor verwante producten](https://docs.magento.com/user-guide/marketing/product-related-rules.html) wanneer u moet manueel tussenkomen en ervoor zorgen dat een specifieke aanbeveling aan een doelverkoopsegment wordt gedaan, of wanneer bepaalde bedrijfsdoelstellingen moeten worden verwezenlijkt.
+Gezien de voortdurend veranderende complexiteit van online winkelen, is wat het beste werkt voor uw winkel vaak een combinatie van meerdere sleuteltechnologieën. Beide gebruiken [!DNL Product Recommendations] en [Productrelaties](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships.html) biedt u meer flexibiliteit bij het promoten van producten. U kunt [!DNL Product Recommendations] door Adobe Sensei worden aangestuurd om uw aanbevelingen op intelligente wijze op grote schaal te automatiseren. Vervolgens kunt u [Regels voor verwante producten](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules.html) wanneer u moet manueel tussenkomen en ervoor zorgen dat een specifieke aanbeveling aan een doelverkoopsegment wordt gedaan, of wanneer bepaalde bedrijfsdoelstellingen moeten worden verwezenlijkt.
 
 Aan de hand van productaanbevelingen kunt u:
 

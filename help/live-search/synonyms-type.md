@@ -1,10 +1,10 @@
 ---
-title: '"Typen synoniemen"'
-description: '"Eenweg en tweeweg [!DNL Live Search] synoniemen breiden de definitie van trefwoorden uit."'
+title: "Typen synoniemen"
+description: "Eenweg en tweeweg [!DNL Live Search] synoniemen breiden de definitie van trefwoorden uit."
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
-source-git-commit: cd1b40ffb350a87ea1317be82789f702922881b9
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '516'
 ht-degree: 0%
 
 ---
@@ -53,4 +53,4 @@ Zorg ervoor dat de terminologie in de catalogus wordt gebruikt. Houd er rekening
 
 ### Trefwoordtoewijzing
 
-Deze techniek gebruikt doorzoekbare productkenmerken in plaats van synoniemen om op trefwoorden gebaseerde koppelingen tussen producten te maken. Als gevolg hiervan kan een toegewezen product in de zoekresultaten van een ander product worden weergegeven. Zie voor meer informatie [Zoekresultaten](https://docs.magento.com/user-guide/catalog/search-results.html).
+Deze techniek gebruikt doorzoekbare productkenmerken in plaats van synoniemen om op trefwoorden gebaseerde koppelingen tussen producten te maken. Als gevolg hiervan kan een toegewezen product in de zoekresultaten van een ander product worden weergegeven. Zie voor meer informatie [Zoekresultaten](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html).

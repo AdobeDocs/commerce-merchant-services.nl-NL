@@ -2,9 +2,9 @@
 title: Werkruimte
 description: Leer hoe u de prestaties van productaanbevelingen kunt configureren, beheren en controleren.
 exl-id: 85a06cc3-91b9-484a-96a9-fc85718e6d70
-source-git-commit: 9f1f05475b2d8401ec33272e3f12e3cc7285478d
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ _Recommendations Workspace_
 
 ## Bereik instellen
 
-In eerste instantie [bereik](https://docs.magento.com/user-guide/stores/websites-stores-views.html) van alle aanbevolen instellingen is ingesteld op `Default Store View`. Als uw installatie van de Handel veelvoudige opslagmeningen omvat, plaats **Toepassingsgebied** aan de [winkelweergave](https://docs.magento.com/user-guide/configuration/scope.html) waar uw aanbevelingen van toepassing zijn.
+In eerste instantie [bereik](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) van alle aanbevolen instellingen is ingesteld op `Default Store View`. Als uw installatie van de Handel veelvoudige opslagmeningen omvat, plaats **Toepassingsgebied** aan de [winkelweergave](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) waar uw aanbevelingen van toepassing zijn.
 
 ## Datumbereik van metrische gegevens instellen
 

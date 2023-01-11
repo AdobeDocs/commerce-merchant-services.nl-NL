@@ -2,9 +2,9 @@
 title: Installeren en configureren
 description: Leer installeren, bijwerken en verwijderen [!DNL Product Recommendations].
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
-source-git-commit: 74176c054f05742bc47e4cf2b4e1ea4e057dcba9
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '505'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ composer require magento/product-recommendations
 composer require magento/module-page-builder-product-recommendations
 ```
 
-Door [!DNL Product Recommendations] in Page Builder kunt u een bestaande, actieve [aanbeveling-eenheid](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html) op alle inhoud die in Page Builder is gemaakt, zoals pagina&#39;s, blokken en dynamische blokken.
+Door [!DNL Product Recommendations] in Page Builder kunt u een bestaande, actieve [aanbeveling-eenheid](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) op alle inhoud die in Page Builder is gemaakt, zoals pagina&#39;s, blokken en dynamische blokken.
 
 >[!NOTE]
 >
@@ -52,9 +52,9 @@ composer require magento/module-visual-product-recommendations
 
 ## Configureren [!DNL Product Recommendations] {#configure}
 
-Nadat u de `magento/product-recommendations` module, moet u vormen [Commerce Services Connector](https://docs.magento.com/user-guide/configuration/services/saas.html) door API-sleutels op te geven en een SaaS-gegevensruimte te selecteren.
+Nadat u de `magento/product-recommendations` module, moet u vormen [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) door API-sleutels op te geven en een SaaS-gegevensruimte te selecteren.
 
-Om ervoor te zorgen dat de catalogusexport correct wordt uitgevoerd, moet u bevestigen dat de [kraan](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html) de [indexeerders](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html) en de `Product Feed` indexer is ingesteld op `Update by Schedule`.
+Om ervoor te zorgen dat de catalogusexport correct wordt uitgevoerd, moet u bevestigen dat de [kraan](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) de [indexeerders](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) en de `Product Feed` indexer is ingesteld op `Update by Schedule`.
 
 Wanneer u via de API-sleutels een koppeling naar de Commerce-services hebt gemaakt en de SaaS-gegevensruimte hebt opgegeven, wordt de catalogussynchronisatie gestart. U kunt vervolgens [verifiëren](verify.md) dat gedragsgegevens naar uw winkel worden verzonden.
 
@@ -104,4 +104,4 @@ composer update --with-dependencies magento/product-recommendations magento/modu
 
 ## Verwijderen [!DNL Product Recommendations] {#uninstall}
 
-Indien nodig kunt u [verwijderen](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-uninstall-mods.html) de productaanbevelingen module.
+Indien nodig kunt u [verwijderen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html) de productaanbevelingen module.
