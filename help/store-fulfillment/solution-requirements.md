@@ -4,9 +4,9 @@ description: Voorschriften voor de levering en het aan boord nemen van de [!DNL 
 role: User, Admin
 level: Intermediate
 exl-id: f9e05049-5904-4f6c-b45d-9f81fbc76b69
-source-git-commit: 421c90f4c8bd687216cd48c72f30301a32115522
+source-git-commit: 842d5b7182d54a1aa5a715662503801816a24c24
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '298'
 ht-degree: 2%
 
 ---
@@ -22,19 +22,19 @@ De [!DNL Store Fulfillment] Adobe Commerce-klanten kunnen op de volgende platfor
 - Adobe Commerce over wolkeninfrastructuur (ECE)
 - Adobe Commerce in bedrijven (EE)
 
-De oplossing van de Afhandeling van de Opslag is compatibel met de volgende softwareversies.
+De oplossing van de Behandeling van de Opslag is compatibel met de softwareversies die in *Softwarecompatibiliteit* tabel.
 
 **Softwarecompatibiliteit**
 
 | **Software** | **Minimumversie** | **Maximale versie** |
 |----------------|---------------------|---------------------|
-| Adobe Commerce | 2.4.0. | 2.4.4. |
+| Adobe Commerce | 2.4.0 | 2.4.5 |
 | Composer | 1.x | 2.x |
-| MariaDB | 10,2 | 10,4 |
-| MySQL | 5,7 | 8,0 |
-| PHP | 7,4 | 8,1 |
+| MariaDB | 10.2 | 10.4 |
+| MySQL | 5.7 | 8.0 |
+| PHP | 7.4 | 8.1 |
 
-Raadpleeg de Adobe Commerce voor gedetailleerde vereisten [Systeemvereisten](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) in de documentatie van de Ontwikkelaar.
+Raadpleeg de Adobe Commerce voor gedetailleerde vereisten [Systeemvereisten](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) in de *Adobe Commerce-installatiehandleiding*.
 
 ## Toepassingsvereisten voor Winkelassistentie
 
@@ -52,7 +52,7 @@ Het volledige proces voor het beheren van bestellingen voor het ophalen van wink
 
 ## Bedrijfsvereisten
 
-Uw bedrijf moet aan de volgende minimumcriteria voldoen om de oplossing van de Afhandeling van de Opslag uit te voeren.
+Uw bedrijf moet aan de volgende minimumcriteria voldoen om de oplossing van de Afhandeling van de Opslag uit te voeren:
 
 - Alleen in de VS gevestigde ondernemingen
 
