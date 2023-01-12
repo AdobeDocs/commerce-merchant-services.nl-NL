@@ -4,30 +4,32 @@ description: Algemene instellingen configureren om in te schakelen [!DNL Store F
 role: User, Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: fda4620f57aa7aa9fb930b10f5717fee98983378
+source-git-commit: 0cf5a99891fb6ec0b6e446aac05e64bc97d70e7c
 workflow-type: tm+mt
-source-wordcount: '2518'
+source-wordcount: '2543'
 ht-degree: 0%
 
 ---
 
 # Winkelservice en verkoopconfiguratie
 
-Configureren[!DNL Store Fulfillment] om de extensie in te schakelen, extensie-instellingen op te geven, de beveiligingsinstellingen voor gebruikers van de app Store Assist te configureren en opties voor leveringsmethoden in te stellen.
+Configureren [!DNL Store Fulfillment] van de [!DNL Commerce] Admin om de extensie in te schakelen, extensie-instellingen op te geven, de beveiligingsinstellingen voor gebruikers van de app Store Assist te configureren en opties voor leveringsmethoden in te stellen.
 
 >[!IMPORTANT]
 >
 >De configuratie van de service Afhandeling opslaan is alleen van toepassing nadat u een verbinding hebt gemaakt met uw Adobe Commerce-instantie en de [!DNL Store Fulfillment] app. Zie [Afhandeling van Connect Store](connect-set-up-service.md).
 
-Configureer de instellingen voor de services voor winkelvervulling via het menu Configuratie van Admin Store in Adobe Commerce.
+## Instellingen voor services voor winkeluitvoering beheren
 
-Open de instellingen om de extensie in te schakelen, globale instellingen te configureren en beveiligingsopties op te geven voor gebruikersverbindingen en accounts van de app Store Assist door **[!UICONTROL Stores > Configuration > Services > Store Fulfillment by Walmart Commerce Technologies]**.
+Instellingen beheren voor services voor winkelvervulling via de [!DNL Commerce Admin Store Configuration] -menu.
 
-![Configuratie van beheerderswinkelservices voor winkeluitvoering](assets/store-services-admin-sf-config.png)
+- Schakel de extensie in, configureer algemene instellingen en geef beveiligingsopties op voor gebruikersverbindingen en accounts van de app Store Assist door **[!UICONTROL Stores > Configuration > Services > Store Fulfillment by Walmart Commerce Technologies]**.
 
-Heb toegang tot de montages om leveringsmethodes te vormen door te selecteren **[!UICONTROL Store > Configuration > Sales > Delivery Methods > In-Store Pickup]**.
+   ![Configuratie van beheerderswinkelservices voor winkeluitvoering](assets/store-services-admin-sf-config.png)
 
-![Verkoopconfiguratie voor winkel beheren voor winkeluitvoering](assets/store-sales-admin-sf-deliver-config.png)
+- Vorm leveringsmethodes door te selecteren **[!UICONTROL Store > Configuration > Sales > Delivery Methods > In-Store Pickup]**.
+
+   ![Verkoopconfiguratie voor winkel beheren voor winkeluitvoering](assets/store-sales-admin-sf-deliver-config.png)
 
 ## Basisinstellingen
 
@@ -49,13 +51,13 @@ Heb toegang tot de montages om leveringsmethodes te vormen door te selecteren **
 </tr>
 <tr>
 <td><strong>[!UICONTROL Search Radius]</strong></td>
-<td>De straal, in kilometers, die moet worden gebruikt wanneer een verkoopster zoekt naar een locatie voor het ophalen van een winkel in het winkeluitchecken. De zoekresultaten retourneren alleen opslagruimten die zich binnen een opgegeven zoekstraal bevinden.</td>
+<td>De straal, in kilometers, die moet worden gebruikt wanneer een verkoopster zoekt naar een locatie voor het ophalen van een winkel in het winkeluitchecken. De zoekresultaten retourneren alleen opslagruimten die zich binnen de opgegeven zoekstraal bevinden.</td>
 <td>Website</td>
 <td>Nee</td>
 </tr>
 <tr>
 <td><strong>[!UICONTROL Displayed error message]</strong></td>
-<td>Een bericht dat wordt weergegeven wanneer een klant in-store oppikken selecteert, maar de leveringsmethode niet beschikbaar is. U kunt de standaardtekst desgewenst aanpassen.
+<td>Bericht dat toont wanneer een klant in-store bestelwagen voor een punt selecteert dat niet beschikbaar voor in-store bestelwagen is. U kunt de standaardtekst desgewenst aanpassen.
 </td>
 <td>Winkelweergave</td>
 <td>Nee</td>
@@ -83,7 +85,7 @@ De optie [!DNL Store Fulfillment] -oplossing om de mogelijkheden voor in-store e
  <tbody>
 <tr>
 <td><strong>[!UICONTROL Enabled]</strong></td>
-<td>Schakel de oplossing in of uit. Indien deze optie is ingeschakeld, configureert en gebruikt u de mogelijkheden voor het afhandelen van winkels en maakt u een verbinding tussen uw Adobe Commerce-winkel en de services voor het afhandelen van winkels. Als deze optie is uitgeschakeld, zijn alle functies voor het afhandelen van winkels uitgeschakeld en is er geen communicatie tussen Adobe Commerce en de services voor het afhandelen van winkels. Bestelgegevens kunnen niet worden verwerkt of ontvangen.</td>
+<td>Schakel de oplossing in of uit. Indien ingeschakeld, configureert en gebruikt u de mogelijkheden van Store Fulfillment en maakt u de verbinding tussen uw Adobe Commerce-winkel en [!DNL Store Fulfillment] diensten. Als deze optie is uitgeschakeld, zijn alle functies voor het afhandelen van winkels uitgeschakeld en is er geen communicatie tussen Adobe Commerce en de services voor het afhandelen van winkels. Bestelgegevens kunnen niet worden verwerkt of ontvangen.</td>
 <td>Algemeen</td>
 <td>Ja</td>
 </tr>
@@ -98,52 +100,58 @@ De optie [!DNL Store Fulfillment] -oplossing om de mogelijkheden voor in-store e
 <td><strong>Beschrijving</strong></td>
 <td><strong>Toepassingsgebied</strong></td>
 <td><strong>Vereist</strong></td>
-    </tr>
+</tr>
 <tr>
 <td><strong>[!UICONTROL Environment]</strong></td>
-<td>Selecteer <i>Sandbox</i> of <i>Productie</i><br></br> Sandbox communiceert met de uitvoeringsdiensten in een test.De productie communiceert met een levende milieu. Gebruiken <strong>alleen</strong> in productie.<br></br>U krijgt een reeks geloofsbrieven voor elke milieu en kunt beide reeksen in de zelfde installatie beheren. <br></br>Sla referenties op voordat u de verbinding valideert.</td>
+<td>Selecteer <i>[!UICONTROL Sandbox]</i> of <i>[!UICONTROL Production]</i><br></br>Selecteren [!UICONTROL Sandbox] maakt communicatie met uitvoeringsdiensten in een testomgeving mogelijk.<br></br>Selecteren [!UICONTROL Production] maakt communicatie met uitvoeringsdiensten in een live omgeving mogelijk.<br></br>U krijgt een reeks geloofsbrieven voor elke milieu en kunt beide reeksen in de zelfde installatie beheren. <br></br>Sla de gegevens op voordat u de verbinding valideert.</td>
 <td>Algemeen</td>
 <td>Ja</td>
-    </tr>
+</tr>
 <tr>
 <td><strong>[!UICONTROL API Server URL]</strong></td>
-<td>De URL naar het eindpunt van de Fulfillment API van de Winkel van de Marm. Dit moet de volledig gekwalificeerde URL zijn die u tijdens uw instapproces wordt verstrekt. Klanten die aan Afhandeling van winkels werken, ontvangen zowel een sandbox- als een productie-URL. Kopieer/plak de volledige URL, inclusief de schuine streep "/".</td>
+<td>De URL naar het eindpunt van de Fulfillment API van de Winkel van de Marm. Dit moet de volledig gekwalificeerde URL zijn die tijdens het instapproces wordt verstrekt. Klanten die aan Afhandeling van winkels werken, ontvangen zowel een sandbox- als een productie-URL. Wanneer u de waarden toevoegt, moet u de volledige URL kopiëren en plakken, inclusief de schuine streep "/".</td>
 <td>Algemeen</td>
 <td>Ja</td>
-    </tr>
+</tr>
 <tr>
 <td><strong>[!UICONTROL Token Auth Server URL]</strong></td>
-<td>URL aan het eindpunt van de Authentificatie van de Opslag van de Marm. De waarde moet volledig - gekwalificeerde URL zijn die aan u tijdens uw aan boord nemend proces wordt verstrekt. U ontvangt zowel een sandbox als een productie-URL. Kopieer/plak de volledige URL, inclusief de schuine streep ‘/`.</td>
+<td>URL aan het eindpunt van de Authentificatie van de Opslag van de Marm. De waarde moet de volledig gekwalificeerde URL zijn die tijdens het instapproces wordt verstrekt. U ontvangt zowel een sandbox als een productie-URL. Wanneer u de waarden toevoegt, moet u de volledige URL kopiëren en plakken, inclusief de schuine streep "/".</td>
 <td>Algemeen</td>
 <td>Ja</td>
-    </tr>
+</tr>
 <tr>
 <td><strong>[!UICONTROL Merchant Id]</strong></td>
-<td>Uw unieke bedrijfs-id (huurder) die u tijdens het instapproces hebt ontvangen. Uw id wordt gebruikt om uw bestellingen te routeren en zorgt ervoor dat uw winkels deze ontvangen.</td>
+<td>Uw unieke bedrijfs-id (huurder) die tijdens het instapproces is opgegeven. Deze identiteitskaart wordt gebruikt aan routeorden om ervoor te zorgen dat uw handelaarsopslag hen ontvangt.</td>
 <td>Algemeen</td>
 <td>Ja</td>
-    </tr>
+</tr>
 <tr>
 <td><strong>[!UICONTROL Consumer Id]</strong></td>
-<td>Uw unieke integratie-id. Dit wordt aan u verstrekt tijdens uw aan boord gaan proces. Dat verandert niet. Het wordt gebruikt om al mededeling met de uitvoeringsdiensten voor authentiek te verklaren.</td>
+<td>De unieke integratie-id die tijdens het instapproces wordt opgegeven. Deze id wordt gebruikt om alle communicatie tussen Adobe Commerce te verifiëren en uitvoeringsservices op te slaan.</td>
 <td>Algemeen</td>
 <td>Ja</td>
-    </tr>
+</tr>
 <tr>
 <td><strong>[!UICONTROL Consumer Secret]</strong></td>
-<td>Uw unieke integratiesleutel. Dit wordt aan u verstrekt tijdens uw aan boord gaan proces. Het wordt gebruikt om al mededeling met de uitvoeringsdiensten voor authentiek te verklaren.</td>
+<td>De unieke integratietoets die tijdens het instapproces wordt geleverd. Deze sleutel wordt gebruikt om alle communicatie tussen Adobe Commerce en de dienst van de opslagvervulling voor authentiek te verklaren.</td>
 <td>Algemeen</td>
 <td>Ja</td>
-    </tr>
+</tr>
 </table>
 
-Nadat u de Account Credentials hebt geconfigureerd, selecteert u <strong>[!UICONTROL Validate Credentials]</strong> voor het eerst een verbinding met de uitvoeringswebservice te verifiëren en tot stand te brengen.
+Nadat u vormt [!UICONTROL Account Credentials], selecteert u <strong>[!UICONTROL Validate Credentials]</strong> om een verbinding aan de dienst van de archiefvervulling voor het eerst te verifiëren en te vestigen.
 
 ## Logboekregistratie configureren
 
-Wanneer het registreren wordt toegelaten, kan uw logboekdossier snel uitbreiden. Om de kwesties van de reactietijd in productiemilieu&#39;s te verhinderen, ben zorgvuldig over het toelaten van registreren, en laat slechts voor een korte tijd toe wanneer nodig.
+Logbestanden voor services voor winkelvervulling zijn beschikbaar in het logbestand `var/log/walmart-bopis.log`.
 
-Vraag de systeembeheerder om uw milieu&#39;s te vormen om uitzonderingsbehandeling toe te staan zodat API-verwante uitzonderingen door de firewall of het geheime voorgeheugen kunnen worden gevangen. U kunt ook uw systeembeheerder vragen om logrotatie voor dit bestand in te stellen om de grootte te minimaliseren.
+Vraag de systeembeheerder om uw milieu&#39;s te vormen om uitzonderingsbehandeling toe te staan zodat API-verwante uitzonderingen door de firewall of het geheime voorgeheugen kunnen worden gevangen.
+
+Omdat het dossier van het toepassingslogboek snel kan groeien, laat registreren voor de toepassing slechts voor een korte tijd toe wanneer nodig-voor voorbeeld wanneer het oplossen van problemen de kwesties van de opslagvervulling voor een [!DNL Commerce] bestelling. Deze configuratie voorkomt problemen met de responstijd in productieomgevingen die worden veroorzaakt door grote logbestanden.
+
+>[!TIP]
+>
+>Voor Adobe Commerce-installaties op locatie vraagt u de systeembeheerder om logrotatie voor de installatie van `var/log/walmart-bopis.log` om de grootte te minimaliseren. Voor Adobe Commerce-installaties ter plaatse gaat u naar [Logrotatie](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html?lang=en#server-settings) in de _Adobe Commerce-installatiehandleiding_. Voor Adobe Commerce over infrastructuurprojecten in de cloud gaat u naar [Logbestanden weergeven en beheren](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html).
 
 <table>
 <thead>
@@ -157,7 +165,7 @@ Vraag de systeembeheerder om uw milieu&#39;s te vormen om uitzonderingsbehandeli
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Debug Mode]</strong></td>
-<td>Zuiver Wijze wordt gebruikt om de geregistreerde activiteit binnen de integratie te verhogen. Als deze optie is uitgeschakeld, wordt er geen foutopsporingsinformatie geregistreerd. Wanneer toegelaten, wordt al zuivert informatie geregistreerd. Alle geregistreerde gegevens zijn te vinden in bestand: ` var/log/walmart-bopis.log`</td>
+<td>Zuiver Wijze wordt gebruikt om de geregistreerde activiteit binnen de integratie te verhogen. Als deze optie is uitgeschakeld, wordt er geen foutopsporingsinformatie geregistreerd. Wanneer toegelaten, wordt al zuivert informatie geregistreerd <br></br>Alle geregistreerde gegevens zijn te vinden in het bestand: <pre>var/log/walmart-bopis.log</pre>
 <td>Algemeen</td>
 <td>Nee</td>
 </tr>
@@ -322,7 +330,7 @@ Configureer de instellingen voor de gebruikersaccount en wachtwoordbeveiliging v
 </tr>
 <tr>
 <td><strong>[!UICONTROL Force Password Change]</strong></td>
-<td>Hiermee wordt bepaald of een wijziging van het gebruikerswachtwoord is vereist.<br></br>"Ja": Vereisen dat de gebruiker zijn wachtwoord wijzigt na het instellen van de account."Nr.": raadt de gebruiker aan het wachtwoord te wijzigen na het instellen van de account.</td>
+<td><em>[!UICONTROL Yes]</em>: Vereisen dat de gebruiker zijn wachtwoord wijzigt na het instellen van de account.<br></br><em>[!UICONTROL No]</em>: raadt de gebruiker aan het wachtwoord te wijzigen na het instellen van de account.</td>
 <td>Algemeen</td>
 <td>Nee</td>
 </tr>
@@ -370,18 +378,17 @@ Configureer de instellingen voor de gebruikersaccount en wachtwoordbeveiliging v
 
 ## Leveringsmethoden
 
-Store Fulfillment werkt door de native Adobe Commerce uit te breiden [!DNL In-Store Delivery] mogelijkheden.
-Nadat u de extensie hebt geïnstalleerd, zijn er aanvullende configuratieopties voor Admin beschikbaar voor leveringsmethoden in de winkel. Configureer deze extra opties vanuit de beheerder door <strong>[!UICONTROL Stores > Configuration > Sales > Delivery Methods > In-Store Pickup]</strong>.
-
-In de montages van de Afhandeling van de Opslag, kunt u de volgende leveringsmethodes voor de orden van de Bestelwagen vormen In-Store.
+Store Fulfillment werkt door de native Adobe Commerce uit te breiden [!DNL In-Store Delivery] mogelijkheden. Nadat u de extensie hebt geïnstalleerd, kunt u in-store leveringsmethoden configureren met behulp van de volgende uitgebreide instellingen die aan Admin worden toegevoegd.
 
 - **Ophalen in de winkel**—De opties van de aanbieding voor in-store levering tijdens het controleproces Dit is het gemeenschappelijkste leveringsscenario voor BOPIS orden.
 
-- **Ophalen krullen**- De opties van de aanbieding voor klanten om bij een opslagplaats te parkeren en hun orde te hebben die aan hen door een archiefvengeassocieerde wordt geleverd.
+- **[!UICONTROL Curbside pick up]**- De opties van de aanbieding voor klanten om bij een opslagplaats te parkeren en hun orde te hebben die aan hen door een archiefvengeassocieerde wordt geleverd.
+
+Configureer deze instellingen vanuit de beheerder door <strong>[!UICONTROL Stores > Configuration > Sales > Delivery Methods > In-Store Pickup]</strong>.
 
 >[!NOTE]
 >
->Voor meer informatie over het vormen van in-store leveringsopties, zie [In-Store levering](https://docs.magento.com/user-guide/shipping/shipping-in-store-delivery.html) in de Adobe Commerce-gebruikershandleiding.
+>Voor meer informatie over het vormen van in-store leveringsopties, zie [In-Store levering](https://docs.magento.com/user-guide/shipping/shipping-in-store-delivery.html) in de _Adobe Commerce-gebruikershandleiding_.
 
 
 ### Configuratie van leveringsmethoden
@@ -426,7 +433,7 @@ Met de in-store leveringsmethode, kan de klant een bron selecteren die als oppik
 </thead>
 <tbody><tr>
 <td><strong>Titel thuislevering</strong></td>
-<td>Hier geeft u de titel op die u wilt weergeven voor de optie Home Delivery in de producten-, winkelwagentje- en afrekengebieden. De levering van het huis verwijst naar de standaardverzendmogelijkheden van Adobe Commerce-van een pakhuis, door een drager, of direct aan het klant-verstrekte verzendadres.</br></br>Dit label heeft geen invloed op de geselecteerde verzendmaatschappij of op de labels van de verzendmethode.</td>
+<td>Hier geeft u de titel op die u wilt weergeven voor de optie Home Delivery in de producten-, winkelwagentje- en afrekengebieden. De levering van het huis verwijst naar de standaardverzendmogelijkheden van Adobe Commerce-van een pakhuis, door een drager, of direct aan het klant-verstrekte verzendadres. </br></br>Dit label heeft geen invloed op de labels van de verzendmethode voor de geselecteerde verzendende vervoerder.</td>
 <td>Winkelweergave</td>
 <td>Nee</td>
 </tr>
@@ -438,7 +445,7 @@ Met de in-store leveringsmethode, kan de klant een bron selecteren die als oppik
 </tr>
 <tr>
 <td><strong>Titel voor ophalen van winkel</strong></td>
-<td>Wanneer een klant leveringsopties wordt voorgesteld en de opname in de winkel beschikbaar is, wordt dit etiket getoond.</br></br>U kunt dit label aanpassen, dat wordt weergegeven in de producten-, winkelwagentje- en afhandelingsgebieden.</td>
+<td>Wanneer een klant leveringsopties wordt voorgesteld en de opname in de winkel beschikbaar is, wordt dit etiket getoond. </br></br>U kunt dit label aanpassen, dat wordt weergegeven in de producten-, winkelwagentje- en afhandelingsgebieden.</td>
 <td>Winkelweergave</td>
 <td>Nee</td>
 </tr>
@@ -462,25 +469,25 @@ Met de in-store leveringsmethode, kan de klant een bron selecteren die als oppik
 </tr>
 <tr>
 <td><strong>Instructies voor het in-store ophalen</strong></td>
-<td>Wanneer een bestelling klaar is om in uw winkels te worden opgehaald, wordt de klant per e-mail op de hoogte gebracht. Als de klant [!DNL In-Store Pickup] tijdens het uitchecken kunt u hier de instructies voor het ophalen aanpassen.</br></br>Dit is een globale instelling die van toepassing is op alle winkellocaties. U kunt de instructies ook aanpassen op het niveau van de detailhandel.</td>
+<td>Wanneer een bestelling klaar is om in uw winkels te worden opgehaald, wordt de klant per e-mail op de hoogte gebracht. Als de klant [!DNL In-Store Pickup] tijdens het uitchecken kunt u hier de instructies voor het ophalen aanpassen. </br></br>Dit is een globale instelling die van toepassing is op alle winkellocaties. U kunt de instructies ook aanpassen op het niveau van de detailhandel.</td>
 <td>Winkelweergave</td>
 <td>Nee</td>
 </tr>
 <tr>
 <td><strong>Instructies voor ophaalcurven</strong></td>
-<td>Hiermee geeft u aangepaste instructies voor het ophalen van bestellingen op die moeten worden opgenomen in e-mailmeldingen van klanten voor bestellingen voor het ophalen van curven.</br></br>Dit is een globale instelling die van toepassing is op alle winkellocaties. U kunt de instructies ook aanpassen op het niveau van de detailhandel.</td>
+<td>Geeft aangepaste instructies voor het ophalen van bestellingen op die moeten worden opgenomen in e-mailmeldingen van klanten voor bestellingen voor het ophalen van bestellingen op de achtergrond. </br></br>Dit is een globale instelling die van toepassing is op alle winkellocaties. U kunt de instructies ook aanpassen op het niveau van de detailhandel.</td>
 <td>Winkelweergave</td>
 <td>Nee</td>
 </tr>
 <tr>
 <td><strong>Geschatte levertijd voor afhalen</strong></td>
-<td>Het aantal minuten dat is vereist voordat een bestelling is ontvangen, uitgevoerd en klaar om te worden opgehaald. Deze informatie wordt aan de klant getoond wanneer het selecteren van een detailhandelplaats voor de leveringsoptie van de Opslag van de Opslag.</br></br>Dit is een globale instelling die van toepassing is op alle winkellocaties. U kunt de aanlooptijd ook aanpassen op het niveau van de detailhandel.</td>
+<td>Het aantal minuten dat is vereist voordat een bestelling is ontvangen, uitgevoerd en klaar om te worden opgehaald. Deze informatie wordt aan de klant getoond wanneer het selecteren van een detailhandelplaats voor de leveringsoptie van de Opslag van de Opslag. Dit is een globale instelling die van toepassing is op alle winkellocaties. U kunt de aanlooptijd ook aanpassen op het niveau van de detailhandel.</td>
 <td>Winkelweergave</td>
 <td>Nee</td>
 </tr>
 <tr>
 <td><strong>Label voor geschatte ophaaltijd</strong></td>
-<td>Hiermee geeft u de geschatte tijd weer tot een bestelling beschikbaar is voor het ophalen door de klant. Deze informatie wordt aan klanten getoond wanneer zij een detailhandelplaats voor de leveringsoptie van de Opslag van de Opslag selecteren.</br></br>Wanneer u dit label aanpast, kunt u de code <code>%1</code> om uw <strong>Geschatte levertijd voor afhalen</strong>.Bijvoorbeeld:</br></br><code>Ready for Pickup in %1 minutes.</code></br></br>Dit is een globale instelling die van toepassing is op alle winkellocaties. U kunt de aanlooptijd ook aanpassen op het niveau van de detailhandel.</br></br><code>Ready for Pickup in %1 minutes.</code></br></br></td>
+<td>Hiermee geeft u de geschatte tijd weer tot een bestelling beschikbaar is voor het ophalen door de klant. Deze informatie wordt aan klanten getoond wanneer zij een detailhandelplaats voor [!DNL In-Store Pickup] leveringsoptie. </br></br>Wanneer u dit label aanpast, kunt u de code <code>%1</code> om uw <strong>Geschatte levertijd voor afhalen</strong>. Bijvoorbeeld:</br></br><code>Ready for Pickup in %1 minutes.</code></br></br>Dit is een globale instelling die van toepassing is op alle winkellocaties. U kunt de aanlooptijd ook aanpassen op het niveau van de detailhandel.</br></br><code>Ready for Pickup in %1 minutes.</code></br></br></td>
 <td>Winkelweergave</td>
 <td>Nee</td>
 <tr>
@@ -505,8 +512,8 @@ Met de in-store leveringsmethode, kan de klant een bron selecteren die als oppik
 </tr>
 </thead>
 <tbody><tr>
-<td><strong>n-stock</strong></td>
-<td>Wanneer een klant de detailhandel locator gebruikt, wordt de voorraadbeschikbaarheid voor één tot de meeste huidige punten getoond voor elke plaats.</br></br>U kunt het statuslabel 'in voorraad' hier aanpassen.</td>
+<td><strong>In voorraad</strong></td>
+<td>Wanneer een klant de detailhandel locator gebruikt, wordt de voorraadbeschikbaarheid voor de huidige punten getoond voor elke plaats. </br></br>U kunt de <em>[!UICONTROL in-stock]</em> status label hier.</br></br></td>
 <td>Winkelweergave</td>
 <td>Nee</td>
 </tr>
@@ -518,7 +525,7 @@ Met de in-store leveringsmethode, kan de klant een bron selecteren die als oppik
 </tr>
 <tr>
 <td><strong>Gedeeltelijk in voorraad</strong></td>
-<td>Wanneer een klant de locator van de detailhandel gebruikt, wordt de voorraadbeschikbaarheid voor om het even welke huidige punten getoond voor elke plaats.</br></br>U kunt het statuslabel "gedeeltelijk in voorraad" hier aanpassen.</td>
+<td>Wanneer een klant de locator van de detailhandel gebruikt, wordt de voorraadbeschikbaarheid voor om het even welke huidige punten getoond voor elke plaats. </br></br>U kunt de <em>[!UICONTROL partially in-stock]</em> status label hier.</br></br></td>
 <td>Winkelweergave</td>
 <td>Nee</td>
 </tr>
