@@ -2,9 +2,9 @@
 title: '''[!DNL Catalog Service] Opmerkingen bij de release'
 description: De meest recente releasegegevens voor [!DNL Catalog Service] voor Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: 624c959119958f9fdd15d3d9559092c35d079c2c
+source-git-commit: cfa0b505b0fb793bbc072f9f837551b7e67e9721
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '658'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,34 @@ In deze releaseopmerkingen worden de meest recente versies van [!DNL Catalog Ser
 * ![Nieuw](../assets/new.svg) Nieuwe functies
 * ![Repareren](../assets/fix.svg) Oplossingen en verbeteringen
 * ![Bug](../assets/bug.svg) Bekende problemen
+
+## V1.3 Release
+
+Releasedatum: 2023-1-17 Compatibel met Adobe Commerce (EE): 2.4.x Compatibel met Adobe Commerce for Cloud (ECE): 2.4.x Stabiliteit: Algemene beschikbaarheid
+
+![Nieuw](../assets/new.svg) Vereenvoudigde en verbeterde ervaring bij het instappen.
+![Nieuw](../assets/new.svg) Er zijn nieuwe eindpunten van de sandbox van de klant beschikbaar voor preproductietests.
+![Nieuw](../assets/new.svg) Ondersteuning toegevoegd voor virtuele producten.
+![Repareren](../assets/fix.svg) Schaalbaarheid van API&#39;s en prestatieverbeteringen.
+
+### Bekende beperkingen
+
+Deze functies worden nog niet ondersteund:
+
+* Bundel producten met vaste prijs
+* Er worden geen updates ontvangen wanneer varianten uit de catalogus worden verwijderd.
+* Maximale grootte voor dynamische attributen lading is 9MB.
+* Productprijs per groep. Kan worden berekend met eenvoudige productprijzen.
+* In een afbeeldingsarray bevat alleen de eerste afbeelding rollen.
+* Kleurstalen
+* De pagina met productdetails laden via de URL van het product.
+
+De volgende beperkingen kunnen worden opgelost met de GraphQL API:
+
+* Minimale geadverteerde prijs
+* Tier-prijsstelling
+* Downloadbare producten en cadeaukaarten
+* Categorieën (`categories` en `categoryList`)
 
 ## V1.1-release
 
@@ -36,7 +64,7 @@ Deze functies worden nog niet ondersteund:
 * Kleurstalen
 * De pagina met productdetails laden via de URL van het product.
 
-De volgende beperkingen kunnen worden opgelost door de GraphQL API te gebruiken:
+De volgende beperkingen kunnen worden opgelost met de GraphQL API:
 
 * Minimale geadverteerde prijs
 * Tier-prijsstelling
