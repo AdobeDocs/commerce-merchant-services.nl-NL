@@ -2,9 +2,9 @@
 title: Onboarding en installatie
 description: Leer hoe u kunt installeren [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: e11b4e86efe3483717cf4484a7fcce6e23015f4c
+source-git-commit: 55c35e7775505ab9f6a61a458b6cd6fa4c7f1702
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '574'
 ht-degree: 0%
 
 ---
@@ -135,7 +135,7 @@ bin/magento cache:clean
 
 ### De service- en gegevensexport configureren
 
-Nadat u de Catalogusdienst installeert, moet u vormen [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/fundamentals/install.html?lang=en) door de API-sleutels op te geven en een SaaS-gegevensruimte te selecteren.
+Nadat u de Catalogusdienst installeert, moet u vormen [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#apikey) door de API-sleutels op te geven en een SaaS-gegevensruimte te selecteren.
 
 Nadat de configuratie SaaS volledig is, voer een eerste gegevenssynchronisatie uit door de gids van de Synchronisatie van de Catalogus te volgen.
 
@@ -153,7 +153,7 @@ De API van de Catalogusservice is toegankelijk gebruikend POST bevelen over HTTP
 
 Om api-sleutel te verkrijgen, ga naar het gebied van de Schakelaar van de Dienst van de Handel in admin en kopieer de openbare API sleutel.
 
-Lees de [GraphQL-documentatie](https://developer.adobe.com/commerce/webapi/graphql/) om te begrijpen hoe te om de kopballen te vragen en te verzenden die voor het produceren van API verzoeken nodig zijn.
+Lees de [documentatie van GraphQL](https://developer.adobe.com/commerce/webapi/graphql/) om te begrijpen hoe te om de kopballen te vragen en te verzenden die voor het produceren van API verzoeken nodig zijn.
 
 ## Catalogusservice en API-net
 
