@@ -2,7 +2,7 @@
 title: "Aan boord van de [!DNL Quick Checkout] voor Adobe Commerce-extensie"
 description: "Leer hoe u [!DNL Quick Checkout] kan uw Adobe Commerce-exemplaar ten goede komen en de extensie met succes aan boord installeren en instellen."
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: 1f2305df7566cd77a6be161cc9d1265c0291171c
+source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -56,7 +56,7 @@ Zie de [installeren](../quick-checkout/install.md) onderwerp voor gedetailleerde
 
 ## Account maken met [!DNL Bolt]
 
-Voordat u de [!DNL Quick Checkout] in uw Adobe Commerce Admin is het vereist om een [sandbox](https://merchant-sandbox.bolt.com/register?platform=magento2){target=&quot;_blank&quot;} en [productie](https://merchant.bolt.com/register?platform=magento2){target=&quot;_blank&quot;} zakelijke accounts in [!DNL Bolt]. Geef alle vereiste gegevens op om een account te maken in [!DNL Bolt].
+Voordat u de [!DNL Quick Checkout] in uw Adobe Commerce Admin is het vereist om een [sandbox](https://merchant-sandbox.bolt.com/register?platform=magento2){target="_blank"} and [production](https://merchant.bolt.com/register?platform=magento2){target="_blank"}  handelsrekeningen [!DNL Bolt]. Geef alle vereiste gegevens op om een account te maken in [!DNL Bolt].
 
 Zie de [testen en valideren](../quick-checkout/testing.md) voor meer informatie.
 
@@ -70,7 +70,7 @@ Als u de opdracht [!DNL Quick Checkout] u hebt [!DNL Bolt] unieke toetsen en [!D
 
    ![Snelle afhandeling](assets/account-credentials.png)
 
-Zie de [[!DNL Bolt] omgevingsdetails](https://help.bolt.com/developers/references/environment-details/#about-keys){target=&quot;_blank&quot;_page voor meer informatie over sleutels en het ondertekenen van een geheim van [!DNL Bolt] voor de [!DNL Quick Checkout] extensie.
+Zie de [[!DNL Bolt] omgevingsdetails](https://help.bolt.com/developers/references/environment-details/#about-keys){target="_blank"} pagina voor meer informatie over sleutels en het ondertekenen van geheim van [!DNL Bolt] voor de [!DNL Quick Checkout] extensie.
 
 >[!CAUTION]
 >
@@ -78,7 +78,7 @@ Zie de [[!DNL Bolt] omgevingsdetails](https://help.bolt.com/developers/reference
 
 ## Betalingsproviders configureren
 
-Volg de stappen in het dialoogvenster [processorinstelling](https://help.bolt.com/integrations/adobe-quick-checkout/set-up/){target=&quot;_blank&quot;} -ontwikkelaar [!DNL Bolt] pagina.
+Volg de stappen in het dialoogvenster [processorinstelling](https://help.bolt.com/integrations/adobe-quick-checkout/set-up/){target="_blank"} ontwikkelaar [!DNL Bolt] pagina.
 
 ## Extensie inschakelen
 
@@ -99,7 +99,7 @@ Volg de stappen in het dialoogvenster [processorinstelling](https://help.bolt.co
 
 1. Valideer referenties nadat u de unieke API hebt opgegeven en [!DNL Publishable keys].
 
-![Snelle afhandeling](assets/quick-checkout-main-view-react.png)
+![Snelle afhandeling](assets/quick-checkout-main-view.png)
 
 Zie de [Instellingen](../quick-checkout/settings-quick-checkout.md) onderwerp voor meer informatie over de configuratieopties voor [!DNL Quick Checkout] voor Adobe Commerce-extensie.
 
@@ -109,7 +109,7 @@ Zie de [Instellingen](../quick-checkout/settings-quick-checkout.md) onderwerp vo
 
 ## Volledige beheerdersconfiguratie
 
-1. Op de _Beheer_ zijbalk, navigeren naar **Winkels** > **Configuratie** > **Afhandeling** om toegang te krijgen tot de algemene configuratiepagina van Admin.
+1. Op de _Beheer_ zijbalk, navigeren naar **Winkels** > **Configuratie** > **Afhandeling** om tot de algemene configuratiepagina van Admin van de Controle toegang te hebben.
 1. In de _Service-instellingen_ alle gegevens opgeven die nodig zijn om de extensie in te schakelen.
 1. Set _Betalingsactie_ naar een van beide opties:
 
@@ -136,7 +136,7 @@ Controleren of de koper een [!DNL Bolt] account:
    >
    > Het bereik overschakelen op het **Hoofdwebsite** zorgt ervoor dat de juiste URL is ingesteld. Elke website kan meerdere domeinen hebben.
 
-Zie de [Bereik van site, winkel en weergave](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings){target=&quot;_blank&quot;} voor meer informatie over het bereik in Adobe Commerce.
+Zie de [Bereik van site, winkel en weergave](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings){target="_blank"} onderwerp voor meer informatie over werkingsgebied in Adobe Commerce.
 
 ## Service-instellingen configureren
 
@@ -149,6 +149,7 @@ Zie de [Bereik van site, winkel en weergave](https://experienceleague.adobe.com/
    > Als u deze optie uitschakelt, is dit van invloed op de rapportage, omdat Adobe Commerce geen gegevens over het bijhouden van betalingen mag delen met Bolt.
 
 1. Selecteer **Volgende werkgebied na aanmelding** optie om de navigatiestroom te wijzigen nadat de klant zich heeft aangemeld. Standaard is deze ingesteld op **Betalingen** pagina.
+1. Definiëren als [!DNL Quick Checkout] stelt de **automatische aanmelding** tijdens het afrekenen. Standaard is het ingeschakeld om zich automatisch aan te melden bij de [!DNL Bolt] netwerk.
 
 ## Hulp vragen
 

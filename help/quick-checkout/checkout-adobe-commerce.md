@@ -2,7 +2,7 @@
 title: "Afhandelingsstroom voor een Adobe Commerce-gebruiker"
 description: "Overzicht van de [!DNL Quick Checkout] voor een Adobe Commerce-gebruiker."
 exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
-source-git-commit: 1f2305df7566cd77a6be161cc9d1265c0291171c
+source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -39,6 +39,19 @@ Indien een [!DNL Bolt] account is gevonden tijdens afrekenen, kopers kunnen door
 Als de verkoper vóór het afrekenen is aangemeld bij Adobe Commerce, wordt de [!DNL Bolt] Het pop-up van OTP zal niet tijdens controle verschijnen, maar een bericht lijkt het voorstellen van de verkoopster om aan login om tot hun Bolt Behang toegang te hebben.
 
 Als er problemen optreden wanneer u een bestelling als bestaande Adobe Commerce-gebruiker plaatst, raadpleegt u de [Problemen met snelle afhandeling oplossen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) artikel in het Adobe Commerce Help Center.
+
+### Automatische aanmelding
+
+Het is mogelijk een automatische aanmelding te configureren voor [!DNL Quick Checkout] gebruikers. U kunt een configuratie inschakelen om een gebruiker tijdens het uitchecken automatisch aan te melden.
+
+1. Op de _Beheer_ zijbalk, navigeren naar **Winkels** > **Configuratie** > **Afhandeling** om tot de algemene configuratiepagina van Admin van de Controle toegang te hebben.
+1. In de _Service-instellingen_ sectie voor [!DNL Quick Checkout], geeft u alle gegevens op die nodig zijn om automatische aanmelding in te stellen.
+
+Zie [[!DNL Quick Checkout] servicemontages configureren](../quick-checkout/onboarding.md#configure-service-settings) voor meer informatie.
+
+>[!NOTE]
+>
+> Eerste aanmelding bij **automatische aanmelding** is ingeschakeld, is toestemming van de gebruiker vereist om de autorisatie te starten door een pop-upvenster te accepteren.
 
 ## Nieuw [!DNL Bolt] account
 

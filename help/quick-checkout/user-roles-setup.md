@@ -1,13 +1,13 @@
 ---
-title: "[!DNL Quick Checkout] gebruikersinstellingen"
-description: "Gebruikersrollen en machtigingen instellen om de [!DNL Quick Checkout] Het deelvenster Beheer."
-source-git-commit: d4b58b0ee3da866d460cf18d96ec9dd27b195f7a
+title: '[!DNL Quick Checkout] gebruikersinstellingen'
+description: Gebruikersrollen en machtigingen instellen om de [!DNL Quick Checkout] Het deelvenster Beheer.
+exl-id: 76393840-8312-41bb-8447-412849815169
+source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
 workflow-type: tm+mt
-source-wordcount: '149'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
-
 
 # [!DNL Quick Checkout] gebruikersinstellingen
 
@@ -25,7 +25,7 @@ Om de gebruiker toegang en zichtbaarheid te geven aan de [!DNL Quick Checkout] I
 
 1. Op de _Beheer_ zijbalk, ga naar **[!UICONTROL System]** > Machtigingen > **[!UICONTROL User Roles]**.
 
-   ![Gebruikersrollen](assets/user-roles.png)
+   ![Gebruikersrollen](assets/user-roles-small.png)
 
 1. In de _Rollen_ weergeven, klikken **Nieuwe rol toevoegen**
 1. Selecteer [!DNL Quick Checkout] bronnen:

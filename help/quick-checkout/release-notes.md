@@ -2,9 +2,9 @@
 title: '''[!DNL Quick Checkout] Opmerkingen bij de release'
 description: Lees de opmerkingen bij de release voor meer informatie over alle [!DNL Quick Checkout] lozingen.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 8b915cd0a8f25934675a2ae00ee2694b7facc1bd
+source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -64,6 +64,20 @@ _5 oktober 2022_
 ![Probleem opgelost](../assets/fix.svg)<!-- Issue BOLT-369 --> De [[!DNL Quick Checkout] Deelvenster Beheer](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) geeft de app-versie weer in de voettekst.
 
 +++
+
+## v1.5.0
+
+_18 januari 2023_
+
+![Nieuw](../assets/new.svg)<!-- Issue BOLT-522 --> Een nieuwe configuratie kan worden toegelaten/onbruikbaar gemaakt om te ontdekken als [winkeliers](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/manage-checkout/checkout-options/checkout-adobe-commerce.html) kan automatisch worden aangemeld.
+
+![Nieuw](../assets/new.svg)<!-- Issue BOLT-523 --> Een nieuwe configuratie kan worden toegelaten/onbruikbaar gemaakt die verkopers toestaat om te specificeren als de kopers automatisch aan beide netwerken, of enkel netwerk van de Bolt kunnen worden het programma geopend.
+
+![Probleem opgelost](../assets/fix.svg)<!-- Issue BOLT-542 --> Verbeteringen in gebruikerservaring wanneer [kaart of adres opslaan naar een Bolt-account](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) wanneer een winkelier e-mail verstrekt.
+
+![Probleem opgelost](../assets/fix.svg)<!-- Issue BOLT-550 --> Verbeteringen in gebruikerservaring [automatische aanmelding](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#configure-service-settings) wanneer een gebruiker van de Bolt e-mail verstrekt.
+
+![Probleem opgelost](../assets/fix.svg)<!-- Issue BOLT-544 --> Compatibiliteitsverbeteringen voor [callback-URL&#39;s](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#check-shopper-valid-account) with [meerdere sites](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-overview.html) in Bolt.
 
 ## v1.4.0
 
