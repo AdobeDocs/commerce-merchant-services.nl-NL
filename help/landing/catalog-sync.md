@@ -2,9 +2,9 @@
 title: Catalogus synchroniseren
 description: Leer hoe u productgegevens exporteert vanuit de [!DNL Commerce] server naar [!DNL Commerce Services] om de diensten voortdurend up-to-date te houden.
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
-source-git-commit: fe5bbceb7f443e7b177ecd4812b981d6e7fd0a6b
+source-git-commit: 853c55fbae3ccfb7abea8ce074127f2871d55688
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '904'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Het synchronisatieproces van de catalogus wordt om het uur uitgevoerd [!DNL Comm
 
 >[!NOTE]
 >
-> De _Catalogus synchroniseren_ dashboard is alleen beschikbaar wanneer de Product Recommendations-service is geïnstalleerd.
+> De _Catalogus synchroniseren_ dashboard is alleen beschikbaar als de _Product Recommendations_ modules worden geïnstalleerd en weerspiegelen alleen gegevensprognoses met betrekking tot dat onderdeel. Ondersteuning van andere handelsdiensten, zoals _Live zoeken_ en _Catalogusservice_ zijn gepland voor de toekomst.
 
 Selecteer **Systeem** > _Gegevensoverdracht_ > **Catalogus synchroniseren**.
 
