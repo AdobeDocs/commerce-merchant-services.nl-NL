@@ -2,16 +2,16 @@
 title: Gegevens voor handel verzamelen met Adobe Experience Platform-tags
 description: Leer hoe u gegevens over handel kunt verzamelen met Adobe Experience Platform-tags.
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: f3c37c9c50c608f9f0ea4582fbcca2b99a3428b5
+source-git-commit: c9b1d7e34632f7a54544bc6944144b1833ecc5a5
 workflow-type: tm+mt
-source-wordcount: '2574'
+source-wordcount: '2522'
 ht-degree: 0%
 
 ---
 
 # Gegevens voor handel verzamelen met Adobe Experience Platform-tags
 
-Terwijl u de schakelaar van het Experience Platform kunt gebruiken om aan storefront gebeurtenissen te publiceren en in te tekenen, zouden sommige handelaren reeds een oplossing van de gegevensinzameling, zoals kunnen gebruiken [Adobe Experience Platform-tags](https://experienceleague.adobe.com/docs/platform-learn/data-collection/tags/create-a-property.html?lang=en). Voor die handelaren biedt Adobe Commerce een alleen-publicatieoptie in de Experience Platform-connector die gebruikmaakt van de Adobe Commerce Event SDK.
+Terwijl u de schakelaar van het Experience Platform kunt gebruiken om aan storefront gebeurtenissen te publiceren en in te tekenen, zouden sommige handelaren reeds een oplossing van de gegevensinzameling, zoals kunnen gebruiken [Adobe Experience Platform-tags](https://experienceleague.adobe.com/docs/platform-learn/data-collection/tags/create-a-property.html). Voor die handelaren biedt Adobe Commerce een alleen-publicatieoptie in de Experience Platform-connector die gebruikmaakt van de Adobe Commerce Event SDK.
 
 ![Gegevensstroom Experience Platform Connector](assets/tags-data-flow.png)
 _Gegevensstroom Experience Platform Connector met tags_
@@ -32,7 +32,7 @@ Gegevens over Commerce-gebeurtenissen verzamelen:
 
 Als u de gegevens van de Commerce-winkel wilt toewijzen aan Adobe Experience Platform, configureert en installeert u het volgende binnen Adobe Experience Platform-tags:
 
-1. [Een eigenschap voor een tag instellen](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html?lang=en) in Adobe Experience Platform Data Collection.
+1. [Een eigenschap voor een tag instellen](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html) in Adobe Experience Platform Data Collection.
 
 1. Onder **Authoring**, selecteert u **Extensies** en installeer en vorm de volgende uitbreidingen:
 
@@ -130,7 +130,7 @@ Wijs voor elk van de volgende gebeurtenissen de Adobe Commerce-gebeurtenissen to
 - [&quot;initilCheckout&quot;](#initiatecheckout)
 - [` placeOrder`](#placeorder)
 
-### signOut {#signout}
+### signOut
 
 Wordt geactiveerd wanneer een winkelier zich afmeldt.
 
@@ -160,7 +160,7 @@ Maak het volgende gegevenselement:
 - **Type**: `userAccount.logout`
 - **XDM-gegevens**: `%sign-out%`
 
-### signIn {#signin}
+### signIn
 
 Wordt geactiveerd wanneer een winkelier zich probeert aan te melden.
 
@@ -219,7 +219,7 @@ Maak de volgende gegevenselementen:
 - **Type**: `userAccount.login`
 - **XDM-gegevens**: `%sign in%`
 
-### createAccount {#createaccount}
+### createAccount
 
 Wordt geactiveerd wanneer een winkelier een account probeert te maken.
 
@@ -278,7 +278,7 @@ Maak de volgende gegevenselementen:
 - **Type**: `userAccount.createProfile`
 - **XDM-gegevens**: `%create account%`
 
-### editAccount {#editaccount}
+### editAccount
 
 Wordt geactiveerd wanneer een gebruiker een account probeert te bewerken.
 
@@ -337,7 +337,7 @@ Maak de volgende gegevenselementen:
 - **Type**: `userAccount.updateProfile`
 - **XDM-gegevens**: `%edit account%`
 
-### pageView {#pageview}
+### pageView
 
 Wordt geactiveerd wanneer een pagina wordt geladen.
 
@@ -366,7 +366,7 @@ Maak de volgende gegevenselementen:
 - **Type**: `web.webPageDetails.pageViews`
 - **XDM-gegevens**: `%page view%`
 
-### productView {#productview}
+### productView
 
 Wordt geactiveerd wanneer een productpagina wordt geladen.
 
@@ -471,7 +471,7 @@ Maak de volgende gegevenselementen:
 - **Type**: `commerce.productViews`
 - **XDM-gegevens**: `%product view%`
 
-### searchRequestSent {#searchrequestsent}
+### searchRequestSent
 
 Wordt geactiveerd door gebeurtenissen in het pop-upvenster &quot;Zoeken terwijl u typt&quot; en door gebeurtenissen op pagina&#39;s met zoekresultaten.
 
@@ -576,7 +576,7 @@ Maak de volgende gegevenselementen:
 - **Type**: `searchRequest`
 - **XDM-gegevens**: `%search request%`
 
-### searchResponseReceived {#searchresponsereceived}
+### searchResponseReceived
 
 Wordt geactiveerd wanneer Live zoeken resultaten oplevert voor de popover- of zoekresultatenpagina &quot;Zoeken zoals u typt&quot;.
 
@@ -671,7 +671,7 @@ Maak de volgende gegevenselementen:
 - **Type**: `searchResponse`
 - **XDM-gegevens**: `%search response%`
 
-### addToCart {#addtocart}
+### addToCart
 
 Wordt geactiveerd wanneer een product aan een kar wordt toegevoegd of telkens wanneer de hoeveelheid van een product in het kar wordt verhoogd.
 
@@ -785,7 +785,7 @@ Maak de volgende gegevenselementen:
 - **Type**: `commerce.productListAdds`
 - **XDM-gegevens**: `%add to cart%`
 
-### openCart {#opencart}
+### openCart
 
 Wordt geactiveerd wanneer een nieuw winkelwagentje wordt gemaakt, wat gebeurt wanneer een product aan een leeg winkelwagentje wordt toegevoegd.
 
@@ -818,7 +818,7 @@ Maak het volgende gegevenselement:
 - **Type**: `commerce.productListOpens`
 - **XDM-gegevens**: `%open cart%`
 
-### viewCart {#viewcart}
+### viewCart
 
 Wordt geactiveerd wanneer een winkelwagenpagina wordt geladen.
 
@@ -921,7 +921,7 @@ Maak de volgende gegevenselementen:
 - **Type**: `commerce.productListViews`
 - **XDM-gegevens**: `%view cart%`
 
-### removeFromCart {#removefromcart}
+### removeFromCart
 
 Wordt geactiveerd wanneer een product uit een winkelwagentje wordt verwijderd of telkens wanneer de hoeveelheid van een product in het winkelwagentje wordt verlaagd.
 
@@ -1026,7 +1026,7 @@ Maak de volgende gegevenselementen:
 - **Type**: `commerce.productListRemovals`
 - **XDM-gegevens**: `%remove from cart%`
 
-### initikout {#initiatecheckout}
+### initikout
 
 Wordt geactiveerd wanneer de gebruiker op een uitcheckknop klikt.
 
@@ -1129,13 +1129,20 @@ Maak de volgende gegevenselementen:
 - **Type**: `commerce.checkouts`
 - **XDM-gegevens**: `%initiate checkout%`
 
-### placeOrder {#placeorder}
+### placeOrder
 
 Wordt geactiveerd wanneer de gebruiker een bestelling plaatst.
 
 #### Gegevenselementen
 
 Maak de volgende gegevenselementen:
+
+1. E-mailadres account:
+
+   - **Naam**: `account email`
+   - **Extensie**: `Adobe Client Data Layer`
+   - **Type gegevenselement**: `Data Layer Computed State`
+   - **[Optioneel] pad**: `accountContext.emailAddress`
 
 1. Storefront:
 
@@ -1290,6 +1297,9 @@ Maak de volgende gegevenselementen:
    - **Promotie-id**: **Waarde** = `%promotion id%`
    - **Veldgroep**: `commerce` > `purchases` > `value`
    - **value**: **Waarde** = `1`
+   - **Persoonlijk e-mailadres**: **Waarde** = `%account email%`
+   - **Veldgroep**: `personalEmail` > `address`
+   - **Adres**: **Waarde** = `%account email%`
 
 #### Regels 
 
@@ -1307,19 +1317,16 @@ Maak de volgende gegevenselementen:
 
 ## Identiteit instellen
 
-De profielen van de de schakelaarschakelaar van het Experience Platform worden aangesloten bij en worden geproduceerd gebaseerd op `personID` en de `personalEmail` identiteitsvelden in XDM Experience-gebeurtenissen. 
+De profielen van de de schakelaarschakelaar van het Experience Platform worden aangesloten bij en worden geproduceerd gebaseerd op `identityMap` en de `personalEmail` identiteitsvelden in XDM Experience-gebeurtenissen. 
 
 Als u een vorige instelling hebt die afhankelijk is van verschillende velden, kunt u deze instellingen blijven gebruiken. Als u identiteitsvelden van verbindingsprofielen voor Experience Platforms wilt instellen, moet u de volgende velden instellen:
 
-- `personalEmail` - Alleen accountgebeurtenissen - volg de bovenstaande stappen voor accountgebeurtenissen
-- `personID` - Alle andere gebeurtenissen:
-
-   - Als u al vastlegt `ECID` in tags kunt u instellen `personID` in al uw Adobe Experience Platform Web SDK-regels op `%ECID%`.
-   - Vastleggen `ECID` in tags, moet u een **Aangepaste code** handeling naar uw verzendgebeurtenisregels volgens de [Documentatie over tags](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/accessing-the-ecid.html). Zie het onderstaande voorbeeld.
+- `personalEmail` - Alleen accountgebeurtenissen - volg de bovenstaande stappen voor [accountgebeurtenissen](#createaccount)
+- `identityMap` - Alle andere gebeurtenissen. Zie het volgende voorbeeld.
 
 ### Voorbeeld
 
-De volgende afbeeldingen laten zien hoe u een `pageView` gebeurtenis met `personID` in Experience Platform-aansluiting:
+De volgende stappen tonen hoe te om een te vormen `pageView` gebeurtenis met `identityMap` in Experience Platform-aansluiting:
 
 1. Gegevenselement configureren met aangepaste code voor ECID:
 
@@ -1328,13 +1335,24 @@ De volgende afbeeldingen laten zien hoe u een `pageView` gebeurtenis met `person
 
 1. Aangepaste ECID-code toevoegen:
 
-   ![Code om ECID in gegevenselement in te stellen](assets/code-to-set-ecid.png)
-   _Code om ECID in gegevenselement in te stellen_
+   ```javascript
+   return alloy("getIdentity").then((result) => {
+       var identityMap = {
+           ECID: [
+           {
+               id: ecid,
+               primary: true
+           }
+           ]
+       };
+     _satelite.setVar("identityMap", identityMap);
+   });
+   ```
 
-1. Werk XDM-schema bij met personID ingesteld als ECID:
+1. XDM-schema bijwerken met `identityMap` ingesteld als ECID:
 
-   ![PersonenID instellen als ECID](assets/set-personid-as-ecid.png)
-   _PersonenID instellen als ECID_
+   ![Identiteitskaart instellen als ECID](assets/identity-map-data-element.png)
+   _Identiteitskaart instellen als ECID_
 
 1. Bepaal regelacties die ECID terugwinnen:
 
@@ -1343,7 +1361,7 @@ De volgende afbeeldingen laten zien hoe u een `pageView` gebeurtenis met `person
 
 ## Vaststelling van de toestemming
 
-De toestemming voor het verzamelen van gegevens van Adobe Commerce- en Experience Platforms-connectors is standaard ingeschakeld. Uitschakelen wordt beheerd via de [`mg_dnt` koekje](https://docs.magento.com/user-guide/stores/cookie-reference.html). U kunt de hier beschreven stappen volgen als u verkiest te gebruiken `mg_dnt` om de toestemming te beheren. De [Adobe Experience Platform Web SDK-documentatie](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html?lang=en) beschikt over verschillende aanvullende opties voor het beheer van de toestemming.
+De toestemming voor het verzamelen van gegevens van Adobe Commerce- en Experience Platforms-connectors is standaard ingeschakeld. Uitschakelen wordt beheerd via de [`mg_dnt` koekje](https://docs.magento.com/user-guide/stores/cookie-reference.html). U kunt de hier beschreven stappen volgen als u verkiest te gebruiken `mg_dnt` om de toestemming te beheren. De [Adobe Experience Platform Web SDK-documentatie](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html) beschikt over verschillende aanvullende opties voor het beheer van de toestemming.
 
 1. Een **Aangepaste kerncode** gegevenselement (`%do not track cookie%`) voor de `mg_dnt` cookie:
 

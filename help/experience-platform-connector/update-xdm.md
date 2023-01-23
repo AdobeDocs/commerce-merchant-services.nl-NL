@@ -2,9 +2,9 @@
 title: Veldgroepen toevoegen aan XDM-schema
 description: Leer hoe u Adobe Commerce-specifieke veldgroepen toevoegt aan een XDM-schema.
 exl-id: 4401bbe7-1ccc-4349-a998-9e9ee9db590f
-source-git-commit: f5d1c39fe1b02d2a661b92f971fba5b3e836dd6a
+source-git-commit: c9b1d7e34632f7a54544bc6944144b1833ecc5a5
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Een van de [onboarding stappen](overview.md#onboarding-steps) om de verbindingsl
    - Persoonlijke contactgegevens
    - Handelsgegevens
    - Adobe Analytics Experience Event Commerce (als u gegevens naar Adobe Analytics wilt verzenden)
-   - Persoon-id
+   - Identiteitskaart
 
    >[!NOTE]
    >
@@ -32,4 +32,10 @@ Een van de [onboarding stappen](overview.md#onboarding-steps) om de verbindingsl
 
    Uw XDM-schema bevat nu Handelsspecifieke veldgroepen, zodat de gegevens die bij de Commerce-winkel worden verzameld [gebeurtenissen](events.md) wordt vertegenwoordigd in XDM.
 
-1. [Een gegevensstroom maken](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) en selecteer het XDM-schema dat de handel-specifieke gebiedsgroepen bevat.
+1. [Een gegevensset maken](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) gebaseerd op het schema dat u hebt gemaakt of bijgewerkt.
+
+   Een dataset is een opslag en beheersconstructie voor een inzameling van gegevens, typisch een lijst, die een schema (kolommen) en gebieden (rijen) bevat. Datasets bevatten ook metagegevens die verschillende aspecten van de gegevens beschrijven die ze opslaan.
+
+1. [Een gegevensstroom maken](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) en selecteer het schema XDM dat de handel-specifieke gebiedsgroepen en de overeenkomstige dataset bevat.
+
+   De gegevensstroom door:sturen de verzamelde gegevens aan de dataset. De gegevens worden vertegenwoordigd in de dataset die op het geselecteerde schema wordt gebaseerd.

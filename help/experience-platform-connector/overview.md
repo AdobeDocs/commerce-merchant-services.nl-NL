@@ -2,9 +2,9 @@
 title: Overzicht van hulplijnen
 description: Leer hoe u Adobe Commerce-gegevens met Adobe Experience Platform kunt integreren via de aansluiting van het Experience Platform.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
-source-git-commit: a316b92f75cb227d0c58af07482f9d37568af7ca
+source-git-commit: c9b1d7e34632f7a54544bc6944144b1833ecc5a5
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
@@ -30,15 +30,16 @@ Als u de aansluiting van het Experience Platform wilt gebruiken, moet u over het
 ## Stappen aan boord
 
 1. [Installeren](install.md) de verbindingsuitbreiding van het Experience Platform.
-1. [Aanmelden](https://helpx.adobe.com/manage-account/using/access-adobe-id-account.html) naar uw Adobe-account en [weergave](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=en#concept_EA8AEE5B02CF46ACBDAD6A8508646255) uw organisatie-id. De organisatie-id is de id die is gekoppeld aan uw Experience Cloud-bedrijf waarvoor u een provisioning uitvoert. Deze id bestaat uit een alfanumerieke tekenreeks van 24 tekens, gevolgd door (en moet worden opgenomen) `@AdobeOrg`.
+1. [Aanmelden](https://helpx.adobe.com/manage-account/using/access-adobe-id-account.html) naar uw Adobe-account en [weergave](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255) uw organisatie-id. De organisatie-id is de id die is gekoppeld aan uw Experience Cloud-bedrijf waarvoor u een provisioning uitvoert. Deze id bestaat uit een alfanumerieke tekenreeks van 24 tekens, gevolgd door (en moet worden opgenomen) `@AdobeOrg`.
 1. [Verbinden](connect-data.md) uw Adobe Commerce-exemplaar naar de Adobe Experience Platform.
 1. [Maken of bijwerken](update-xdm.md) uw schema XDM met handel-specifieke gebiedsgroepen.
-1. [Een gegevensstroom maken](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=en) en selecteer het XDM-schema dat de handel-specifieke gebiedsgroepen bevat.
+1. [Een gegevensset maken](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) gebaseerd op het schema dat u hebt gemaakt of bijgewerkt.
+1. [Een gegevensstroom maken](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) en selecteer het XDM-schema dat de handel-specifieke gebiedsgroepen bevat.
 1. (Optioneel) [Knopprofielen uploaden](profile.md) aan Adobe Experience Platform, zodat gegevens over de winkel kunnen worden toegeschreven aan specifieke kopers om hun winkelervaring te verbeteren.
 
 ## Publiek
 
-Deze handleiding is ontworpen voor de Adobe Commerce-handelaar die zijn Adobe Commerce-winkelgegevens wil koppelen aan andere Adobe DX-producten.
+Deze handleiding is ontworpen voor de Adobe Commerce-handelaar die zijn Adobe Commerce-gegevens wil koppelen aan andere Adobe DX-producten.
 
 ### Ondersteuning voor PWA Studio&#39;s
 
@@ -50,5 +51,5 @@ Zie de [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-se
 
 Gebruik de volgende bronnen als u informatie nodig hebt of vragen hebt die niet in deze handleiding worden behandeld:
 
-- [Help Center](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html){target=&quot;_blank&quot;}
-- [Ondersteuningstickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target=&quot;_blank&quot;} - Verstuur een ticket voor extra hulp.
+- [Help Center](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html){target="_blank"}
+- [Ondersteuningstickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"}—Verstuur een ticket voor extra hulp.

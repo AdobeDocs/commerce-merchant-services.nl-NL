@@ -1,9 +1,10 @@
 ---
 title: Shopper-profielen uploaden naar Adobe Experience Platform
 description: Leer hoe u verkoopprofielen uploadt naar Adobe Experience Platform.
-source-git-commit: 93133019f8004437ef85db32ff336bfd0e8c6fc2
+exl-id: fd0ee7fa-5274-4640-ba00-bcb2ec78f314
+source-git-commit: 9bf28159fdac3a7237956a536f6a522b4e2918fe
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '358'
 ht-degree: 0%
 
 ---
@@ -26,7 +27,7 @@ In dit onderwerp leert u hoe u uw Adobe Commerce-klantprofielen kunt uploaden na
 
 1. Bepaal waar u uw klantgegevens opslaat. Voor sommige handelaren worden deze gegevens opgeslagen in Adobe Commerce en kunnen ze [geëxporteerd](https://docs.magento.com/user-guide/system/data-export.html) als een CSV-bestand. Voor anderen kan het in een afzonderlijk systeem van het de relatiebeheer van de Klant (CRM) zijn.
 
-1. Nadat u hebt bepaald waar u uw klantgegevens opslaat, vindt u de juiste [bronaansluiting](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en) op basis van waar de klantgegevens zijn opgeslagen. Als u geen aangewezen bronschakelaar ziet, dan gebruik [lokaal bestand uploaden](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/local-system/local-file-upload.html) en importeer uw winkelprofielen vanuit een CSV-bestand.
+1. Nadat u hebt bepaald waar u uw klantgegevens opslaat, vindt u de juiste [bronaansluiting](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html) op basis van waar de klantgegevens zijn opgeslagen. Als u geen aangewezen bronschakelaar ziet, dan gebruik [lokaal bestand uploaden](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/local-system/local-file-upload.html) en importeer uw winkelprofielen vanuit een CSV-bestand.
 
    >[!NOTE]
    >

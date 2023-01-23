@@ -2,9 +2,9 @@
 title: Gebeurtenissen
 description: Leer welke gegevens elke gebeurtenis vastlegt.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: bd1cf8a3b4740594cf6b8678d899d771a886cb2e
+source-git-commit: 975854dbdae32e5e51bb57593cf122627d01571f
 workflow-type: tm+mt
-source-wordcount: '1987'
+source-wordcount: '3141'
 ht-degree: 0%
 
 ---
@@ -15,23 +15,21 @@ De volgende lijst maakt een lijst van de gebeurtenissen van de Handel beschikbaa
 
 Naast de gegevens die door de volgende gebeurtenissen worden verzameld, wordt ook [overige gegevens](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) verstrekt door de SDK van het Web van Adobe Experience Platform.
 
+## Gebeurtenissen van Storefront
+
++++ De storefront-gebeurtenissen verzamelen geanonimiseerde gedragsgegevens van uw kopers wanneer ze door uw site bladeren. De gegevens die deze gebeurtenissen verzamelen, kunnen worden gebruikt voor het maken van promoties en campagnes voor een specifieke groep kopers.
+
 >[!NOTE]
 >
->Alle storefront-gebeurtenissen omvatten de `personID` veld, dat een unieke identificatie van de persoon is.
+>Alle storefront-gebeurtenissen omvatten de `identityMap` veld, dat een unieke identificatie van de persoon is.
 
-## addToCart
+### addToCart
 
-Wordt geactiveerd wanneer een product aan het winkelwagentje wordt toegevoegd of wanneer de hoeveelheid van een product in het winkelwagentje wordt verhoogd.
+| Beschrijving | XDM-gebeurtenisnaam |
+|---|---|
+| Wordt geactiveerd wanneer een product aan het winkelwagentje wordt toegevoegd of wanneer de hoeveelheid van een product in het winkelwagentje wordt verhoogd. | `commerce.productListAdds` |
 
-### XDM-gebeurtenisnaam
-
-`commerce.productListAdds`
-
-### Type
-
-Storefront
-
-### Gegevens verzameld
+#### Gegevens verzameld van addToCart
 
 In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zijn verzameld.
 
@@ -49,19 +47,13 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `selectedOptions` | Veld voor een configureerbaar product. `attribute` identificeert een attribuut van het configureerbare product, zoals `size` of `color` en `value` identificeert de waarde van het kenmerk, zoals `small` of `black`. |
 | `cartID` | De unieke id die het winkelwagentje van de klant identificeert |
 
-## openCart
+### openCart
 
-Wordt geactiveerd wanneer een nieuw winkelwagentje wordt gemaakt, dat wil zeggen wanneer een product aan een leeg winkelwagentje wordt toegevoegd.
+| Beschrijving | XDM-gebeurtenisnaam |
+|---|---|
+| Wordt geactiveerd wanneer een nieuw winkelwagentje wordt gemaakt, dat wil zeggen wanneer een product aan een leeg winkelwagentje wordt toegevoegd. | `commerce.productListOpens` |
 
-### XDM-gebeurtenisnaam
-
-`commerce.productListOpens`
-
-### Type
-
-Storefront
-
-### Gegevens verzameld
+#### Gegevens verzameld van openCart
 
 In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zijn verzameld.
 
@@ -79,19 +71,13 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `selectedOptions` | Veld voor een configureerbaar product. `attribute` identificeert een attribuut van het configureerbare product, zoals `size` of `color` en `value` identificeert de waarde van het kenmerk, zoals `small` of `black`. |
 | `cartID` | De unieke id die het winkelwagentje van de klant identificeert |
 
-## removeFromCart
+### removeFromCart
 
-Deze activering wordt telkens uitgevoerd wanneer een product wordt verwijderd of telkens wanneer de hoeveelheid van een product in het winkelwagentje wordt verlaagd.
+| Beschrijving | XDM-gebeurtenisnaam |
+|---|---|
+| Deze activering wordt telkens uitgevoerd wanneer een product wordt verwijderd of telkens wanneer de hoeveelheid van een product in het winkelwagentje wordt verlaagd. | `commerce.productListRemovals` |
 
-### XDM-gebeurtenisnaam
-
-`commerce.productListRemovals`
-
-### Type
-
-Storefront
-
-### Gegevens verzameld
+#### Gegevens verzameld uit removeFromCart
 
 In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zijn verzameld.
 
@@ -109,19 +95,13 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `selectedOptions` | Veld voor een configureerbaar product. `attribute` identificeert een attribuut van het configureerbare product, zoals `size` of `color` en `value` identificeert de waarde van het kenmerk, zoals `small` of `black`. |
 | `cartID` | De unieke id die het winkelwagentje van de klant identificeert |
 
-## shoppingCartView
+### shoppingCartView
 
-Wordt geactiveerd wanneer een winkelwagenpagina wordt geladen.
+| Beschrijving | XDM-gebeurtenisnaam |
+|---|---|
+| Wordt geactiveerd wanneer een winkelwagenpagina wordt geladen. | `commerce.productListViews` |
 
-### XDM-gebeurtenisnaam
-
-`commerce.productListViews`
-
-### Type
-
-Storefront
-
-### Gegevens verzameld
+#### Gegevens verzameld bij shoppingCartView
 
 In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zijn verzameld.
 
@@ -139,19 +119,13 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `selectedOptions` | Veld voor een configureerbaar product. `attribute` identificeert een attribuut van het configureerbare product, zoals `size` of `color` en `value` identificeert de waarde van het kenmerk, zoals `small` of `black`. |
 | `cartID` | De unieke id die het winkelwagentje van de klant identificeert |
 
-## pageView
+### pageView
 
-Wordt geactiveerd wanneer een pagina wordt geladen.
+| Beschrijving | XDM-gebeurtenisnaam |
+|---|---|
+| Wordt geactiveerd wanneer een pagina wordt geladen. | `web.webpagedetails.pageViews` |
 
-### XDM-gebeurtenisnaam
-
-`web.webpagedetails.pageViews`
-
-### Type
-
-Storefront
-
-### Gegevens verzameld
+#### Gegevens verzameld van pageView
 
 In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zijn verzameld.
 
@@ -159,19 +133,13 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 |---|---|
 | `pageViews` | Geeft aan of een pagina is geladen. A `value` van `1` Hiermee wordt aangegeven dat de pagina is geladen. |
 
-## productPageView
+### productPageView
 
-Wordt geactiveerd wanneer een productpagina wordt geladen.
+| Beschrijving | XDM-gebeurtenisnaam |
+|---|---|
+| Wordt geactiveerd wanneer een productpagina wordt geladen. | `commerce.productViews` |
 
-### XDM-gebeurtenisnaam
-
-`commerce.productViews`
-
-### Type
-
-Storefront
-
-### Gegevens verzameld
+#### Gegevens verzameld bij productPageView
 
 In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zijn verzameld.
 
@@ -187,19 +155,13 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `productImageUrl` | URL van hoofdafbeelding van het product |
 | `selectedOptions` | Veld voor een configureerbaar product. `attribute` identificeert een attribuut van het configureerbare product, zoals `size` of `color` en `value` identificeert de waarde van het kenmerk, zoals `small` of `black`. |
 
-## startCheckout
+### startCheckout
 
-Wordt geactiveerd wanneer de gebruiker op een uitcheckknop klikt.
+| Beschrijving | XDM-gebeurtenisnaam |
+|---|---|
+| Wordt geactiveerd wanneer de gebruiker op een uitcheckknop klikt. | `commerce.checkouts` |
 
-### XDM-gebeurtenisnaam
-
-`commerce.checkouts`
-
-### Type
-
-Storefront
-
-### Gegevens verzameld
+#### Gegevens verzameld van startCheckout
 
 In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zijn verzameld.
 
@@ -217,19 +179,13 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `selectedOptions` | Veld voor een configureerbaar product. `attribute` identificeert een attribuut van het configureerbare product, zoals `size` of `color` en `value` identificeert de waarde van het kenmerk, zoals `small` of `black`. |
 | `cartID` | De unieke id die het winkelwagentje van de klant identificeert |
 
-## completeCheckout
+### completeCheckout
 
-Wordt geactiveerd wanneer de gebruiker een bestelling plaatst.
+| Beschrijving | XDM-gebeurtenisnaam |
+|---|---|
+| Wordt geactiveerd wanneer de gebruiker een bestelling plaatst. | `commerce.order` |
 
-### XDM-gebeurtenisnaam
-
-`commerce.order`
-
-### Type
-
-Storefront
-
-### Gegevens verzameld
+#### Gegevens verzameld bij completeCheckout
 
 In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zijn verzameld.
 
@@ -248,6 +204,8 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `shippingMethod` | De door de klant gekozen verzendmethode, zoals standaardlevering, snelle levering, ophaling in winkel, enzovoort |
 | `shippingAmount` | De totale verzendkosten voor de objecten in het winkelwagentje |
 | `promotionID` | Unieke identificatiecode van de eventuele afzetbevordering |
+| `personalEmail` | Hier geeft u het persoonlijke e-mailadres op |
+| `address` | Het technische adres, bijvoorbeeld `name@domain.com` zoals algemeen gedefinieerd in RFC2822 en volgende normen |
 | `productListItems` | Een reeks producten in het winkelwagentje |
 | `SKU` | Stock Keeping Unit. De unieke id voor het product. |
 | `name` | De weergavenaam of leesbare naam van het product |
@@ -257,24 +215,24 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `currencyCode` | De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutacode die wordt gebruikt voor de totalen van de bestelling. |
 | `productImageUrl` | URL van hoofdafbeelding van het product |
 | `selectedOptions` | Veld voor een configureerbaar product. `attribute` identificeert een attribuut van het configureerbare product, zoals `size` of `color` en `value` identificeert de waarde van het kenmerk, zoals `small` of `black`. |
++++
 
-## signIn
+## Profielgebeurtenissen
 
-Wordt geactiveerd wanneer een winkelier zich probeert aan te melden.
++++
+Profielgebeurtenissen bevatten accountgegevens, zoals `signIn`, `signOut`, `createAccount`, en `editAccount`. Deze gegevens worden gebruikt om belangrijke klantendetails te bevolken die nodig zijn om segmenten beter te bepalen of marketing campagnes uit te voeren, zoals als u klanten wilt richten die in New York wonen.
+
+### signIn
+
+| Beschrijving | XDM-gebeurtenisnaam |
+|---|---|
+| Wordt geactiveerd wanneer een winkelier zich probeert aan te melden. | `userAccount.login` |
 
 >[!NOTE]
 >
 > Deze gebeurtenis wordt geactiveerd wanneer de specifieke actie wordt uitgevoerd. Het geeft niet aan dat de actie succesvol was.
 
-### XDM-gebeurtenisnaam
-
-`userAccount.login`
-
-### Type
-
-Profiel
-
-### Gegevens verzameld
+#### Gegevens verzameld van signIn
 
 In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zijn verzameld.
 
@@ -288,23 +246,17 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `userAccount` | Geeft alle gegevens over de loyaliteit, voorkeuren, aanmeldingsprocessen en andere accountvoorkeuren aan |
 | `login` | Geeft aan of een bezoeker zich heeft aangemeld |
 
-## signOut
+### signOut
 
-Wordt geactiveerd wanneer een winkelier zich afmeldt.
+| Beschrijving | XDM-gebeurtenisnaam |
+|---|---|
+| Wordt geactiveerd wanneer een winkelier zich afmeldt. | `userAccount.logout` |
 
 >[!NOTE]
 >
 > Deze gebeurtenis wordt geactiveerd wanneer de specifieke actie wordt uitgevoerd. Het geeft niet aan dat de actie succesvol was.
 
-### XDM-gebeurtenisnaam
-
-`userAccount.logout`
-
-### Type
-
-Profiel
-
-### Gegevens verzameld
+#### Gegevens verzameld uit signOut
 
 In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zijn verzameld.
 
@@ -314,23 +266,17 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `userAccount` | Geeft alle gegevens over de loyaliteit, voorkeuren, aanmeldingsprocessen en andere accountvoorkeuren aan |
 | `logout` | Geeft aan of een bezoeker zich heeft afgemeld |
 
-## createAccount
+### createAccount
 
-Wordt geactiveerd wanneer een winkelier een account probeert te maken.
+| Beschrijving | XDM-gebeurtenisnaam |
+|---|---|
+| Wordt geactiveerd wanneer een winkelier een account probeert te maken. | `userAccount.createProfile` |
 
 >[!NOTE]
 >
 > Deze gebeurtenis wordt geactiveerd wanneer de specifieke actie wordt uitgevoerd. Het geeft niet aan dat de actie succesvol was.
 
-### XDM-gebeurtenisnaam
-
-`userAccount.createProfile`
-
-### Type
-
-Profiel
-
-### Gegevens verzameld
+#### Gegevens verzameld van createAccount
 
 In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zijn verzameld.
 
@@ -345,23 +291,17 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `userAccount` | Geeft alle gegevens over de loyaliteit, voorkeuren, aanmeldingsprocessen en andere accountvoorkeuren aan |
 | `createProfile` | Hiermee wordt aangegeven of een gebruiker een accountprofiel heeft gemaakt |
 
-## editAccount
+### editAccount
 
-Wordt geactiveerd wanneer een gebruiker een account probeert te bewerken.
+| Beschrijving | XDM-gebeurtenisnaam |
+|---|---|
+| Wordt geactiveerd wanneer een gebruiker een account probeert te bewerken. | `userAccount.updateProfile` |
 
 >[!NOTE]
 >
 > Deze gebeurtenis wordt geactiveerd wanneer de specifieke actie wordt uitgevoerd. Het geeft niet aan dat de actie succesvol was.
 
-### XDM-gebeurtenisnaam
-
-`userAccount.updateProfile`
-
-### Type
-
-Profiel
-
-### Gegevens verzameld
+#### Gegevens verzameld van editAccount
 
 In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zijn verzameld.
 
@@ -376,37 +316,23 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `address` | Het technische adres, bijvoorbeeld `name@domain.com` zoals algemeen gedefinieerd in RFC2822 en volgende normen |
 | `userAccount` | Geeft alle gegevens over de loyaliteit, voorkeuren, aanmeldingsprocessen en andere accountvoorkeuren aan |
 | `updateProfile` | Hiermee wordt aangegeven of een gebruiker zijn accountprofiel heeft bijgewerkt |
++++
 
-## searchRequestSent
+## Zoeken in gebeurtenissen
 
-Wordt geactiveerd door de volgende gebeurtenissen in het pop-upvenster &quot;Zoeken terwijl u typt&quot;:
++++ De zoekgebeurtenissen bevatten gegevens die relevant zijn voor de intentie van de klant. Als winkeliers inzien hoe kopers objecten zoeken, waarop ze klikken en die ze uiteindelijk kopen of opgeven, kunnen ze zien hoe kopers objecten zoeken. Een voorbeeld van hoe u deze gegevens kunt gebruiken, is als u bestaande kopers wilt richten die naar uw beste product zoeken, maar nooit het product kopen.
 
-- Druk op Enter
-- Klikken _Alles weergeven_
+### searchRequestSent
 
-Wordt geactiveerd door de volgende gebeurtenissen op pagina&#39;s met zoekresultaten:
-
-- Een filter selecteren
-- De sorteervolgorde wijzigen (_Sorteren op_)
-- De sorteerrichting wijzigen (oplopend of aflopend)
-- Het aantal resultaten per pagina wijzigen (_Aantal per pagina tonen_)
-- Naar de volgende pagina navigeren
-- Naar de vorige pagina navigeren
-- Naar een andere pagina navigeren
+| Beschrijving | XDM-gebeurtenisnaam |
+|---|---|
+| Wordt geactiveerd door de volgende gebeurtenissen in het pop-upvenster &quot;Zoeken terwijl u typt&quot;:<br>Druk op Enter, klik op _Alles weergeven_<br> Wordt geactiveerd door de volgende gebeurtenissen op pagina&#39;s met zoekresultaten:<br>Selecteer een filter, wijzig de sorteervolgorde (_Sorteren op_), wijzigt u de sorteerrichting (oplopend of aflopend), wijzigt u het aantal resultaten per pagina (_Aantal per pagina tonen_), naar de volgende pagina gaan, naar de vorige pagina navigeren, naar een andere pagina navigeren | `searchRequest` |
 
 >[!NOTE]
 >
 >Zoekgebeurtenissen worden niet ondersteund op een Adobe Commerce Enterprise Edition met de B2B-module geïnstalleerd.
 
-### XDM-gebeurtenisnaam
-
-`searchRequest`
-
-### Type
-
-Zoeken
-
-### Gegevens verzameld
+#### Gegevens verzameld van searchRequestSent
 
 In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zijn verzameld.
 
@@ -422,23 +348,17 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `order` | De volgorde waarin de zoekresultaten moeten worden geretourneerd |
 | `query` | De zoektermen |
 
-## searchResponseReceived
+### searchResponseReceived
 
-Wordt geactiveerd wanneer Live zoeken resultaten oplevert voor de popover- of zoekresultatenpagina &quot;Zoeken zoals u typt&quot;.
+| Beschrijving | XDM-gebeurtenisnaam |
+|---|---|
+| Wordt geactiveerd wanneer Live zoeken resultaten oplevert voor de popover- of zoekresultatenpagina &quot;Zoeken zoals u typt&quot;. | `searchResponse` |
 
 >[!NOTE]
 >
 >Zoekgebeurtenissen worden niet ondersteund op een Adobe Commerce Enterprise Edition met de B2B-module geïnstalleerd.
 
-### XDM-gebeurtenisnaam
-
-`searchResponse`
-
-### Type
-
-Zoeken
-
-### Gegevens verzameld
+#### Gegevens verzameld van searchResponseReceived
 
 In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zijn verzameld.
 
@@ -451,3 +371,88 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `SKU` | Stock Keeping Unit. De unieke id voor het product. |
 | `name` | De weergavenaam of leesbare naam van het product |
 | `productImageUrl` | URL van hoofdafbeelding van het product |
+
++++
+
+## (bèta) Back office gebeurtenissen
+
+>[!NOTE]
+>
+>Voor verkopers die reeds in ons achterkantoor bètaprogramma worden ingeschreven, hebt u toegang tot achterkantoorgebeurtenissen. Als u wilt deelnemen aan het bètaprogramma voor het back office kantoor, neemt u contact op met [drios@adobe.com](mailto:drios@adobe.com).
+
++++ De gebeurtenissen van het achterkantoor bevatten informatie over de status van een orde, zoals als een orde werd geplaatst, geannuleerd, terugbetaald, of verscheept. De gegevens die deze server-zijgebeurtenissen verzamelen tonen een 360 mening van de winkelorde. Dit kan handelaren helpen de volledige orderstatus beter te richten of te analyseren wanneer het ontwikkelen van marketing campagnes. U kunt bijvoorbeeld trends waarnemen in bepaalde productcategorieën die goed presteren op verschillende momenten van het jaar. Bijvoorbeeld winterkleding die beter verkoopt tijdens koudere maanden of bepaalde productkleuren waarin consumenten in de loop der jaren geïnteresseerd zijn. Bovendien kunnen de gegevens van de ordestatus u helpen de waarde van de levenklant berekenen door de neiging van een klant te begrijpen om op vorige orden gebaseerd om te zetten.
+
+### orderPlaced
+
+| Beschrijving | XDM-gebeurtenisnaam |
+|---|---|
+| Wordt geactiveerd wanneer een winkelier een bestelling plaatst. | `commerce.orderPlaced` |
+
+#### Gegevens verzameld van orderPlaced
+
+In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zijn verzameld.
+
+| Veld | Beschrijving |
+|---|---|
+| `identityMap` | Bevat het e-mailadres dat de klant identificeert |
+| `address` | Het technische adres, bijvoorbeeld `name@domain.com` zoals algemeen gedefinieerd in RFC2822 en volgende normen |
+| `eventType` | `commerce.orderPlaced` |
+| `productListItems` | Een array van producten in de volgorde |
+| `name` | De weergavenaam of leesbare naam van het product |
+| `SKU` | Stock Keeping Unit. De unieke id voor het product. |
+| `quantity` | Het aantal eenheden van het product in het winkelwagentje |
+| `priceTotal` | De totale prijs voor het productlijnitem |
+| `discountAmount` | Geeft de toegepaste korting aan |
+| `order` | Bevat informatie over de bestelling |
+| `purchaseID` | De unieke id die door de verkoper is toegewezen voor deze aankoop of dit contract. Er is geen garantie dat de id uniek is |
+| `purchaseOrderNumber` | Unieke identificatiecode toegekend door de koper voor deze aankoop of dit contract |
+| `payments` | De lijst met betalingen voor deze bestelling |
+| `paymentType` | De betalingsmethode voor deze bestelling. Opsommende, aangepaste waarden toegestaan. |
+| `currencyCode` | De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutacode gebruikt voor dit betalingsobject |
+| `paymentAmount` | De waarde van de betaling |
+| `shipping` | Verzendgegevens voor een of meer producten |
+| `shippingMethod` | De door de klant gekozen verzendmethode, zoals standaardlevering, snelle levering, ophaling in winkel, enzovoort |
+| `shippingAddress` | Fysiek verzendadres |
+| `street1` | Informatie op straat, appartementnummer, straatnummer en straatnaam |
+| `shippingAmount` | Het bedrag dat de klant voor de verzending moest betalen. |
+| `billingAddress` | Postadres facturering |
+| `street1` | Informatie op straat, appartementnummer, straatnummer en straatnaam |
+| `street2` | Aanvullende gegevens op straatniveau |
+| `city` | De naam van de stad |
+| `state` | De naam van de staat. Dit is een veld met vrije vorm. |
+| `postalCode` | De postcode van de locatie. Postcodes zijn niet voor alle landen beschikbaar. In sommige landen zal dit slechts een deel van de postcode bevatten. |
+| `country` | De naam van het door de overheid bestuurde gebied. andere dan `xdm:countryCode`Dit is een veld met vrije vorm dat de naam van het land in elke taal kan hebben. |
+
+### orderShipped
+
+| Beschrijving | XDM-gebeurtenisnaam |
+|---|---|
+| Wordt geactiveerd wanneer een bestelling wordt verzonden. | `commerce.orderLineItemShipped` |
+
+#### Gegevens verzameld van orderShipped
+
+In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zijn verzameld.
+|Veld|Omschrijving| |—|—| |`identityMap`|Bevat het e-mailadres dat de klant identificeert| |`address`|Het technische adres, bijvoorbeeld `name@domain.com` zoals algemeen gedefinieerd in RFC2822 en volgende normen| |`eventType`|`commerce.orderLineItemShipped`| |`productListItems`|Een reeks producten in de volgorde| |`name`|De weergavenaam of leesbare naam van het product| |`SKU`|Eenheid voorraadbewaring. De unieke id voor het product.| |`quantity`|Aantal eenheden van het product in de kar| |`priceTotal`|De totale prijs voor het product-line artikel| |`discountAmount`|Geeft het toegepaste kortingsbedrag aan| |`order`|Bevat informatie over de bestelling| |`purchaseID`|Unieke identificatiecode toegekend door de verkoper voor deze aankoop of dit contract. Er is geen garantie dat de id uniek is| |`purchaseOrderNumber`|Unieke identificatiecode die door de koper voor deze aankoop of dit contract is toegekend| |`payments`|Lijst van betalingen voor deze bestelling| |`paymentType`|De wijze van betaling van deze bestelling. Opsommende, aangepaste waarden toegestaan.| |`currencyCode`|De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) voor dit betalingsobject gebruikte valutacode| |`paymentAmount`|De waarde van de betaling| |`shipping`|Verzendgegevens voor een of meer producten| |`shippingMethod`|De door de klant gekozen verzendmethode, zoals standaardlevering, versnelde levering, ophaalservice, enzovoort| |`shippingAddress`|Fysiek verzendadres| |`street1`|Informatie op straat, appartementnummer, straatnummer en straatnaam| |`shippingAmount`|Het bedrag dat de klant voor de verzending moest betalen.| |`billingAddress`|Factureringsadres per post | |`street1`|Informatie op straat, appartementnummer, straatnummer en straatnaam| |`street2`|Aanvullend veld voor straatinformatie| |`city`|De naam van de stad| |`state`|De naam van de staat. Dit is een veld met vrije vorm.| |`postalCode`|De postcode van de locatie. Postcodes zijn niet voor alle landen beschikbaar. In sommige landen zal dit slechts een deel van de postcode bevatten.| |`country`|De naam van het door de overheid bestuurde gebied. andere dan `xdm:countryCode`Dit is een veld met vrije vorm dat de naam van het land in elke taal kan hebben.|
+
+### orderCanceled
+
+| Beschrijving | XDM-gebeurtenisnaam |
+|---|---|
+| Wordt geactiveerd wanneer een winkelier een bestelling annuleert. | `commerce.orderCancelled` |
+
+#### Gegevens verzameld van orderCanceled
+
+In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zijn verzameld.
+|Veld|Omschrijving| |—|—| |`identityMap`|Bevat het e-mailadres dat de klant identificeert| |`address`|Het technische adres, bijvoorbeeld `name@domain.com` zoals algemeen gedefinieerd in RFC2822 en volgende normen| |`eventType`|`commerce.orderCancelled`| |`productListItems`|Een reeks producten in de volgorde| |`name`|De weergavenaam of leesbare naam van het product| |`SKU`|Eenheid voorraadbewaring. De unieke id voor het product.| |`quantity`|Aantal eenheden van het product in de kar| |`priceTotal`|De totale prijs voor het product-line artikel| |`discountAmount`|Geeft het toegepaste kortingsbedrag aan| |`order`|Bevat informatie over de bestelling| |`purchaseID`|Unieke identificatiecode toegekend door de verkoper voor deze aankoop of dit contract. Er is geen garantie dat de id uniek is| |`purchaseOrderNumber`|Unieke identificatiecode die door de koper voor deze aankoop of dit contract is toegekend|
+
+### orderRefunded
+
+| Beschrijving | XDM-gebeurtenisnaam |
+|---|---|
+| Wordt geactiveerd wanneer een gebruiker een item in een bestelling retourneert. | `commerce.creditMemoIssued` |
+
+#### Gegevens verzameld van orderRefunded
+
+In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zijn verzameld.
+|Veld|Omschrijving| |—|—| |`identityMap`|Bevat het e-mailadres dat de klant identificeert| |`address`|Het technische adres, bijvoorbeeld `name@domain.com` zoals algemeen gedefinieerd in RFC2822 en volgende normen| |`eventType`|`commerce.creditMemoIssued`| |`productListItems`|Een reeks producten in de volgorde| |`order`|Bevat informatie over de bestelling| |`purchaseID`|Unieke identificatiecode toegekend door de verkoper voor deze aankoop of dit contract. Er is geen garantie dat de id uniek is| |`purchaseOrderNumber`|Unieke identificatiecode die door de koper voor deze aankoop of dit contract is toegekend|
++++
