@@ -2,7 +2,7 @@
 title: Connect Commerce-gegevens naar Adobe Experience Platform
 description: Leer hoe u de gegevens van de Handel met de Adobe Experience Platform verbindt.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
-source-git-commit: 710a18a63c84f0ae0a5aa3b3ad50fdfce0358db6
+source-git-commit: 18edfec6dbc66ef0e94e9f54ca1061386104d90c
 workflow-type: tm+mt
 source-wordcount: '840'
 ht-degree: 0%
@@ -37,9 +37,9 @@ Als u uw Adobe Commerce-instantie wilt verbinden met de Adobe Experience Platfor
 >
 >Voor handelaren die reeds in ons achterkantoor bètaprogramma worden ingeschreven, zult u checkbox zien om achterkantoorgebeurtenissen toe te laten. Als u wilt deelnemen aan het bètaprogramma voor het back office kantoor, neemt u contact op met [drios@adobe.com](mailto:drios@adobe.com).
 
-![Configuratie van de Beta Experience Platform-aansluiting](assets/epc-config-beta.png)
-
 In de **Gegevensverzameling** kunt u opgeven welke typen gegevens u wilt verzamelen en naar de rand van het Experience Platform wilt verzenden. Standaard worden storefront-gebeurtenissen automatisch verzonden zolang de AEP Web SDK en Organisatie-id geldig zijn. Zie het gebeurtenisonderwerp om meer over te leren [storefront](events.md#storefront-events) en [achterkantoor](events.md#beta-order-status-events) gebeurtenissen.
+
+![Configuratie van de Beta Experience Platform-aansluiting](assets/epc-config-beta.png)
 
 >[!NOTE]
 >

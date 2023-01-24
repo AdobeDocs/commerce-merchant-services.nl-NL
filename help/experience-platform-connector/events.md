@@ -2,7 +2,7 @@
 title: Gebeurtenissen
 description: Leer welke gegevens elke gebeurtenis vastlegt.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: 975854dbdae32e5e51bb57593cf122627d01571f
+source-git-commit: 18edfec6dbc66ef0e94e9f54ca1061386104d90c
 workflow-type: tm+mt
 source-wordcount: '3141'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Naast de gegevens die door de volgende gebeurtenissen worden verzameld, wordt oo
 
 ## Gebeurtenissen van Storefront
 
-+++ De storefront-gebeurtenissen verzamelen geanonimiseerde gedragsgegevens van uw kopers wanneer ze door uw site bladeren. De gegevens die deze gebeurtenissen verzamelen, kunnen worden gebruikt voor het maken van promoties en campagnes voor een specifieke groep kopers.
+De storefront-gebeurtenissen verzamelen geanonimiseerde gedragsgegevens van uw kopers wanneer ze door uw site bladeren. De gegevens die deze gebeurtenissen verzamelen, kunnen worden gebruikt voor het maken van promoties en campagnes voor een specifieke groep kopers.
 
 >[!NOTE]
 >
@@ -215,11 +215,10 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `currencyCode` | De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutacode die wordt gebruikt voor de totalen van de bestelling. |
 | `productImageUrl` | URL van hoofdafbeelding van het product |
 | `selectedOptions` | Veld voor een configureerbaar product. `attribute` identificeert een attribuut van het configureerbare product, zoals `size` of `color` en `value` identificeert de waarde van het kenmerk, zoals `small` of `black`. |
-+++
+
 
 ## Profielgebeurtenissen
 
-+++
 Profielgebeurtenissen bevatten accountgegevens, zoals `signIn`, `signOut`, `createAccount`, en `editAccount`. Deze gegevens worden gebruikt om belangrijke klantendetails te bevolken die nodig zijn om segmenten beter te bepalen of marketing campagnes uit te voeren, zoals als u klanten wilt richten die in New York wonen.
 
 ### signIn
@@ -316,17 +315,16 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `address` | Het technische adres, bijvoorbeeld `name@domain.com` zoals algemeen gedefinieerd in RFC2822 en volgende normen |
 | `userAccount` | Geeft alle gegevens over de loyaliteit, voorkeuren, aanmeldingsprocessen en andere accountvoorkeuren aan |
 | `updateProfile` | Hiermee wordt aangegeven of een gebruiker zijn accountprofiel heeft bijgewerkt |
-+++
 
 ## Zoeken in gebeurtenissen
 
-+++ De zoekgebeurtenissen bevatten gegevens die relevant zijn voor de intentie van de klant. Als winkeliers inzien hoe kopers objecten zoeken, waarop ze klikken en die ze uiteindelijk kopen of opgeven, kunnen ze zien hoe kopers objecten zoeken. Een voorbeeld van hoe u deze gegevens kunt gebruiken, is als u bestaande kopers wilt richten die naar uw beste product zoeken, maar nooit het product kopen.
+De zoekgebeurtenissen bevatten gegevens die relevant zijn voor de intentie van de klant. Als winkeliers inzien hoe kopers objecten zoeken, waarop ze klikken en die ze uiteindelijk kopen of opgeven, kunnen ze zien hoe kopers objecten zoeken. Een voorbeeld van hoe u deze gegevens kunt gebruiken, is als u bestaande kopers wilt richten die naar uw beste product zoeken, maar nooit het product kopen.
 
 ### searchRequestSent
 
 | Beschrijving | XDM-gebeurtenisnaam |
 |---|---|
-| Wordt geactiveerd door de volgende gebeurtenissen in het pop-upvenster &quot;Zoeken terwijl u typt&quot;:<br>Druk op Enter, klik op _Alles weergeven_<br> Wordt geactiveerd door de volgende gebeurtenissen op pagina&#39;s met zoekresultaten:<br>Selecteer een filter, wijzig de sorteervolgorde (_Sorteren op_), wijzigt u de sorteerrichting (oplopend of aflopend), wijzigt u het aantal resultaten per pagina (_Aantal per pagina tonen_), naar de volgende pagina gaan, naar de vorige pagina navigeren, naar een andere pagina navigeren | `searchRequest` |
+| Wordt geactiveerd door de volgende gebeurtenissen in het pop-upvenster &quot;Zoeken terwijl u typt&quot;:<br><br>Druk op Enter, klik op _Alles weergeven_<br><br> Wordt geactiveerd door de volgende gebeurtenissen op pagina&#39;s met zoekresultaten:<br><br>Selecteer een filter, wijzig de sorteervolgorde (_Sorteren op_), wijzigt u de sorteerrichting (oplopend of aflopend), wijzigt u het aantal resultaten per pagina (_Aantal per pagina tonen_), naar de volgende pagina gaan, naar de vorige pagina navigeren, naar een andere pagina navigeren | `searchRequest` |
 
 >[!NOTE]
 >
@@ -372,15 +370,13 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `name` | De weergavenaam of leesbare naam van het product |
 | `productImageUrl` | URL van hoofdafbeelding van het product |
 
-+++
-
 ## (bèta) Back office gebeurtenissen
 
 >[!NOTE]
 >
 >Voor verkopers die reeds in ons achterkantoor bètaprogramma worden ingeschreven, hebt u toegang tot achterkantoorgebeurtenissen. Als u wilt deelnemen aan het bètaprogramma voor het back office kantoor, neemt u contact op met [drios@adobe.com](mailto:drios@adobe.com).
 
-+++ De gebeurtenissen van het achterkantoor bevatten informatie over de status van een orde, zoals als een orde werd geplaatst, geannuleerd, terugbetaald, of verscheept. De gegevens die deze server-zijgebeurtenissen verzamelen tonen een 360 mening van de winkelorde. Dit kan handelaren helpen de volledige orderstatus beter te richten of te analyseren wanneer het ontwikkelen van marketing campagnes. U kunt bijvoorbeeld trends waarnemen in bepaalde productcategorieën die goed presteren op verschillende momenten van het jaar. Bijvoorbeeld winterkleding die beter verkoopt tijdens koudere maanden of bepaalde productkleuren waarin consumenten in de loop der jaren geïnteresseerd zijn. Bovendien kunnen de gegevens van de ordestatus u helpen de waarde van de levenklant berekenen door de neiging van een klant te begrijpen om op vorige orden gebaseerd om te zetten.
+De gebeurtenissen van het achterkantoor bevatten informatie over de status van een orde, zoals als een orde werd geplaatst, geannuleerd, terugbetaald, of verscheept. De gegevens die deze server-zijgebeurtenissen verzamelen tonen een 360 mening van de winkelorde. Dit kan handelaren helpen de volledige orderstatus beter te richten of te analyseren wanneer het ontwikkelen van marketing campagnes. U kunt bijvoorbeeld trends waarnemen in bepaalde productcategorieën die goed presteren op verschillende momenten van het jaar. Bijvoorbeeld winterkleding die beter verkoopt tijdens koudere maanden of bepaalde productkleuren waarin consumenten in de loop der jaren geïnteresseerd zijn. Bovendien kunnen de gegevens van de ordestatus u helpen de waarde van de levenklant berekenen door de neiging van een klant te begrijpen om op vorige orden gebaseerd om te zetten.
 
 ### orderPlaced
 
@@ -455,4 +451,3 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 
 In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zijn verzameld.
 |Veld|Omschrijving| |—|—| |`identityMap`|Bevat het e-mailadres dat de klant identificeert| |`address`|Het technische adres, bijvoorbeeld `name@domain.com` zoals algemeen gedefinieerd in RFC2822 en volgende normen| |`eventType`|`commerce.creditMemoIssued`| |`productListItems`|Een reeks producten in de volgorde| |`order`|Bevat informatie over de bestelling| |`purchaseID`|Unieke identificatiecode toegekend door de verkoper voor deze aankoop of dit contract. Er is geen garantie dat de id uniek is| |`purchaseOrderNumber`|Unieke identificatiecode die door de koper voor deze aankoop of dit contract is toegekend|
-+++
