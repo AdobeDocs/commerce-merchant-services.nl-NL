@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] Opmerkingen bij de release"
 description: Lees de opmerkingen bij de release voor meer informatie over alle [!DNL Payment Services] lozingen.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: c26023b1b63362d42ab351e451168dd50ff962a2
+source-git-commit: 1b86831f04250a0a45c09842da0018e20c422e62
 workflow-type: tm+mt
-source-wordcount: '1382'
+source-wordcount: '1445'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,10 @@ Zie [Beschikbaarheid](https://devdocs.magento.com/release/availability.html) in 
 Deze versienota&#39;s beschrijven eigenschapveranderingen en moeilijke situaties die voorkwamen en buiten de regelmatige versioned eigenschapversies voor de ontvangen dienst werden vrijgegeven.
 
 +++Hosted service-updates
+
+_25 januari 2023_
+
+![Bekend probleem](../assets/bug.svg)<!-- Issue PAY-4102 --> De nieuwe installaties van de Diensten van de Betaling kunnen de Diensten van de Handel vormen, die de Diensten van de Betaling onwerkbaar maken. Om dit probleem op te lossen, werkt u de extensie Betalingsservices bij naar versie 1.5.3.
 
 _12 september 2022_
 
@@ -53,13 +57,19 @@ _28 juni 2021_
 
 +++
 
+## v1.5.3
+
+_25 januari 2022_
+
+![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-4102 --> Een oplossing vrijgegeven voor een incompatibel probleem. Deze versie vergrendelt de de uitbreidingsversie van de dienstidentiteitskaart aan de recentste stabiele versie, die nieuwe installaties van de Diensten van de Betaling opnieuw toelaat om de Diensten van de Handel te vormen.
+
 ## v1.5.2
 
 _22 december 2022_
 
 ![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-3992 --> Betaaldiensten kunnen beter worden gefactureerd wanneer een betalingsmethode wordt afgewezen.
 
-![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-3999 --> Betalingsservices geeft nu correct PayPal slimme knoppen weer voor verkopers die [Brandcontrole](https://marketplace.magento.com/swissup-firecheckout.html){target=_blank} aangepaste sjabloon voor de uitcheckpagina. Eerder werden de knoppen periodiek weergegeven door de minicart.
+![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-3999 --> Betalingsservices geeft nu correct PayPal slimme knoppen weer voor verkopers die [Brandcontrole](https://marketplace.magento.com/swissup-firecheckout.html){target=_blank} aangepaste sjabloon voor de afhandelingspagina. Eerder werden de knoppen periodiek weergegeven door de minicart.
 
 ## v1.5.1
 
