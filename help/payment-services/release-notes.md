@@ -2,7 +2,7 @@
 title: "[!DNL Payment Services] Opmerkingen bij de release"
 description: Lees de opmerkingen bij de release voor meer informatie over alle [!DNL Payment Services] lozingen.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 1b86831f04250a0a45c09842da0018e20c422e62
+source-git-commit: 275390c001e5b57ea7545af58643c97c26b98f25
 workflow-type: tm+mt
 source-wordcount: '1445'
 ht-degree: 0%
@@ -59,7 +59,7 @@ _28 juni 2021_
 
 ## v1.5.3
 
-_25 januari 2022_
+_25 januari 2023_
 
 ![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-4102 --> Een oplossing vrijgegeven voor een incompatibel probleem. Deze versie vergrendelt de de uitbreidingsversie van de dienstidentiteitskaart aan de recentste stabiele versie, die nieuwe installaties van de Diensten van de Betaling opnieuw toelaat om de Diensten van de Handel te vormen.
 
