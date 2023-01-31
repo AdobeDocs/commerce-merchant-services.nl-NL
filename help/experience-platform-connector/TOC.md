@@ -2,9 +2,9 @@
 user-guide-title: Adobe Experience Platform Connector voor Adobe Commerce
 user-guide-description: Deze handleiding bevat gedetailleerde instructies voor het gebruik van Adobe Experience Platform Connector voor Adobe Commerce.
 breadcrumb-title: Adobe Experience Platform Connector voor Adobe Commerce
-source-git-commit: 2b735c292920bb0e9052d86bf152748e7ce96079
+source-git-commit: 092f2f4ab9d34466d66fe5b726bfff67a1309c6f
 workflow-type: tm+mt
-source-wordcount: '73'
+source-wordcount: '66'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,6 @@ ht-degree: 0%
    - [De aansluiting voor het Experience Platform installeren](install.md)
    - [De aansluiting voor het Experience Platform configureren](connect-data.md)
    - [Veldgroepen toevoegen aan XDM-schema](update-xdm.md)
-   - [Shopper-profielen uploaden naar Adobe Experience Platform](profile.md)
 - Vastleggegevens {#event-forwarding}
    - [Gebeurtenissen](events.md)
    - [Aangepaste gebeurtenissen](custom-events.md)
