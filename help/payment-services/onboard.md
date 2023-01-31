@@ -4,9 +4,9 @@ description: Sluit uw exemplaar aan met [!DNL Payment Services] door een paar in
 role: User
 level: Intermediate
 exl-id: 1ee8c660-0941-4378-a1d7-ae45de3de211
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: d8be88f47f103c5d632540dae743ede398a9b7ad
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '344'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Ga voor meer informatie over het maken van of toegang krijgen tot uw API-sleutel
 
 ## Problemen oplossen
 
-* [Problemen oplossen [!DNL Payment Services] installatie](https://support.magento.com/hc/en-us/articles/4406603542541)
-* [PayPal-sandboxaccount niet geverifieerd](https://support.magento.com/hc/en-us/articles/4406954952461)
-* [Vertraagd [!DNL Payment Services] rapportgegevens](https://support.magento.com/hc/en-us/articles/4406114741517)
-* [Test de creditcard mislukt met PayPal bij het verwerken van betalingen in een Sandbox-omgeving](https://support.magento.com/hc/en-us/articles/5201041963917)
+* [Problemen oplossen [!DNL Payment Services] installatie](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html?lang=en)
+* [PayPal-sandboxaccount niet geverifieerd](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html)
+* [Vertraagd [!DNL Payment Services] rapportgegevens](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html)
+* [Test de creditcard mislukt met PayPal bij het verwerken van betalingen in een Sandbox-omgeving](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html?lang=en)

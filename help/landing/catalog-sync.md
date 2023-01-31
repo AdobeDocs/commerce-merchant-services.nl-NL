@@ -2,9 +2,9 @@
 title: Catalogus synchroniseren
 description: Leer hoe u productgegevens exporteert vanuit de [!DNL Commerce] server naar [!DNL Commerce Services] om de diensten voortdurend up-to-date te houden.
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
-source-git-commit: 853c55fbae3ccfb7abea8ce074127f2871d55688
+source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '909'
 ht-degree: 0%
 
 ---
@@ -96,11 +96,11 @@ Wanneer u een gegevensresync teweegbrengt, kan het tot een uur voor de gegevens 
 
 ### Synchronisatie wordt niet uitgevoerd
 
-Als de synchronisatie niet volgens een schema wordt uitgevoerd of er niets wordt gesynchroniseerd, raadpleegt u de [KnowledgeBase](https://support.magento.com/hc/en-us/articles/360042224851).
+Als de synchronisatie niet volgens een schema wordt uitgevoerd of er niets wordt gesynchroniseerd, raadpleegt u de [KnowledgeBase](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html).
 
 ### Synchronisatie is mislukt
 
-Als de catalogussync een status heeft van **Mislukt**, een [ondersteuningsticket](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket).
+Als de catalogussync een status heeft van **Mislukt**, een [ondersteuningsticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
 
 ## Opdrachtregelinterface {#resynccmdline}
 

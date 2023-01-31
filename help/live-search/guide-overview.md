@@ -1,10 +1,10 @@
 ---
-title: '"[!DNL Live Search] Overzicht van hulplijnen"'
-description: '"[!DNL Live Search] van Adobe Commerce biedt een bliksemsnelle, superrelevante en intuïtieve zoekervaring."'
+title: "[!DNL Live Search] Overzicht van hulplijnen"
+description: "[!DNL Live Search] van Adobe Commerce biedt een bliksemsnelle, superrelevante en intuïtieve zoekervaring."
 exl-id: 11e2ed97-ce80-4826-b914-71688dd29e4b
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
 workflow-type: tm+mt
-source-wordcount: '236'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
@@ -30,8 +30,8 @@ Live zoeken heeft drie gebieden voor beheerders:
 
 Gebruik de volgende bronnen als u informatie nodig hebt of vragen hebt die niet in deze handleiding worden behandeld:
 
-[Help Center](https://support.magento.com/hc/en-us) - Raadpleeg de artikelen over het oplossen van problemen met Live zoeken.
-[Ondersteuningstickets](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket) - Een ticket verzenden voor aanvullende hulp.
+[Help Center](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) - Raadpleeg de artikelen over het oplossen van problemen met Live zoeken.
+[Ondersteuningstickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) - Een ticket verzenden voor aanvullende hulp.
 
 Voordat u een ondersteuningsticket verzendt, voert u het volgende uit vanaf de opdrachtregel om de versie van Live Search te controleren die momenteel is geïnstalleerd:
 

@@ -4,9 +4,9 @@ description: Algemene instellingen configureren om in te schakelen [!DNL Store F
 role: User, Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: 0cf5a99891fb6ec0b6e446aac05e64bc97d70e7c
+source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
 workflow-type: tm+mt
-source-wordcount: '2543'
+source-wordcount: '2541'
 ht-degree: 0%
 
 ---
@@ -151,7 +151,7 @@ Omdat het dossier van het toepassingslogboek snel kan groeien, laat registreren 
 
 >[!TIP]
 >
->Voor Adobe Commerce-installaties op locatie vraagt u de systeembeheerder om logrotatie voor de installatie van `var/log/walmart-bopis.log` om de grootte te minimaliseren. Voor Adobe Commerce-installaties ter plaatse gaat u naar [Logrotatie](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html?lang=en#server-settings) in de _Adobe Commerce-installatiehandleiding_. Voor Adobe Commerce over infrastructuurprojecten in de cloud gaat u naar [Logbestanden weergeven en beheren](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html).
+>Voor Adobe Commerce-installaties op locatie vraagt u de systeembeheerder om logrotatie voor de installatie van `var/log/walmart-bopis.log` om de grootte te minimaliseren. Voor Adobe Commerce-installaties ter plaatse gaat u naar [Logrotatie](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html#server-settings) in de _Adobe Commerce-installatiehandleiding_. Voor Adobe Commerce over infrastructuurprojecten in de cloud gaat u naar [Logbestanden weergeven en beheren](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html).
 
 <table>
 <thead>

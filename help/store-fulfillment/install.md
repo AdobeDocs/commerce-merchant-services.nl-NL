@@ -1,12 +1,12 @@
 ---
 title: Installatie
-description: '"Installeer de [!DNL Store Fulfillment solution] voor een Adobe Commerce storefront met Composer for PHP."'
+description: "Installeer de [!DNL Store Fulfillment solution] voor een Adobe Commerce storefront met Composer for PHP."
 role: User, Admin
 level: Intermediate
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
+source-git-commit: d8be88f47f103c5d632540dae743ede398a9b7ad
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '656'
 ht-degree: 0%
 
 ---
@@ -31,11 +31,11 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 - **Toegang tot de Opslag die door het softwarearchief van de Technologieën van de Handel van de Marm (ZIP) wordt verstrekt**—Tijdens het instapproces en het inschakelen van uw account werkt u samen met uw accountmanager om toegang te krijgen tot het installatiebestand voor de extensie Store Fulfillment.
 
-- **Adobe Commerce-accountgegevens**-De installatie van de [!DNL Store Fulfillment] oplossing vereist een [[!DNL Commerce] account](https://docs.magento.com/user-guide/magento/magento-account.html){target=&quot;_blank&quot;}. U hebt een account-id en gebruikersgegevens nodig met de toegang tot de [!DNL Adobe Commerce] project.
+- **Adobe Commerce-accountgegevens**-De installatie van de [!DNL Store Fulfillment] oplossing vereist een [[!DNL Commerce] account](https://docs.magento.com/user-guide/magento/magento-account.html){target="_blank"}. U hebt een account-id en gebruikersgegevens nodig met de toegang tot de [!DNL Adobe Commerce] project.
 
 - Voor [!DNL Adobe Commerce] bij cloudinfrastructuurprojecten moeten softwareinstallatieprogramma&#39;s beheerderstoegang tot het Cloud-project hebben. Zie [Gebruikerstoegang beheren](https://devdocs.magento.com/cloud/project/user-admin.html).
 
-- **Ervaring met Composer en de[!DNL Commerce CLI]**—Zie [Algemene installatie van CLI](https://devdocs.magento.com/extensions/install/){target=&quot;_blank&quot;} voor informatie over het gebruik van deze gereedschappen voor het installeren en beheren van extensies op het tabblad [!DNL Adobe Commerce] platform.
+- **Ervaring met Composer en de[!DNL Commerce CLI]**—Zie [Algemene installatie van CLI](https://devdocs.magento.com/extensions/install/){target="_blank"} voor informatie over het gebruik van deze gereedschappen om extensies te installeren en te beheren op de [!DNL Adobe Commerce] platform.
 
 - **Ervaring met het installeren van extensies van derden op Adobe Commerce**—Raadpleeg de documentatie bij Adobe Commerce voor meer informatie.
 
@@ -184,7 +184,7 @@ Verifieer bij de Adobe Commerce-server of de modules voor de extensie Store Fulf
 
 ### Aanvullende stappen
 
-Gebruik indien nodig de [instellen:static-content:inzetten](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-commerce.html#setupstatic-contentdeploy){target=&quot;_blank&quot;} CLI-opdracht om statische weergavebestanden te implementeren in uw productieomgeving.
+Gebruik indien nodig de [instellen:static-content:inzetten](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html){target="_blank"} CLI bevel om statische meningsdossiers aan uw productiemilieu op te stellen.
 
 ```terminal
 php bin/magento setup:static-content:deploy -f
@@ -194,4 +194,4 @@ De `-f` is vereist als u een leeg thema gebruikt.
 
 >[!NOTE]
 >
->Zie voor meer informatie [Statische inhoud implementeert best practices in Adobe Commerce](https://support.magento.com/hc/en-us/articles/360031624091) in het Adobe Commerce Help Center.
+>Zie voor meer informatie [Statische inhoud implementeert best practices in Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/static-content-deployment.html) in het Adobe Commerce Help Center.

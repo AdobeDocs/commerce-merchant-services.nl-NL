@@ -2,16 +2,16 @@
 title: Gebeurtenisverzameling verifiëren
 description: Leer hoe u kunt controleren of er gedragsgegevens naar Adobe Commerce worden verzonden.
 exl-id: c8c34db4-9d87-4012-b8f0-e9b1da214305
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: d8be88f47f103c5d632540dae743ede398a9b7ad
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '451'
 ht-degree: 0%
 
 ---
 
 # Gebeurtenisverzameling verifiëren
 
-Na u [installeren en configureren](install-configure.md) de `magento/product-recommendations` kunt u controleren of de gedragsgegevens naar Adobe Commerce worden verzonden. U kunt de ontwikkelaarsgereedschappen gebruiken die beschikbaar zijn in Chrome, of de extensie Snowplow Chrome installeren. Raadpleeg voor meer informatie [Problemen oplossen [!DNL Product Recommendations] module](https://support.magento.com/hc/en-us/articles/360042224851) in de Support Knowledge Base.
+Na u [installeren en configureren](install-configure.md) de `magento/product-recommendations` kunt u controleren of de gedragsgegevens naar Adobe Commerce worden verzonden. U kunt de ontwikkelaarsgereedschappen gebruiken die beschikbaar zijn in Chrome, of de extensie Snowplow Chrome installeren. Raadpleeg voor meer informatie [Problemen oplossen [!DNL Product Recommendations] module](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html) in de Support Knowledge Base.
 
 ## Verifiëren met ontwikkelaarsgereedschappen in Chrome
 

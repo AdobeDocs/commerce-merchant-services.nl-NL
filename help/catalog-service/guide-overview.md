@@ -1,10 +1,10 @@
 ---
 title: '''[!DNL Catalog Service] Overzicht van hulplijnen'
-description: '''[!DNL Catalog Service for Adobe Commerce] biedt een manier om de inhoud van de pagina''s van de productweergave en de productlijst sneller op te halen dan de native Adobe Commerce GraphQL-query''s.'''
+description: '''[!DNL Catalog Service for Adobe Commerce] biedt een manier om de inhoud van de pagina''s met productweergave en de productlijst sneller op te halen dan de native Adobe Commerce GraphQL-query''s.'''
 exl-id: d83375b2-0d87-4a0a-baf8-eb7eebe85a80
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '238'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,6 @@ De [onboarding](https://experienceleague.adobe.com/docs/commerce-merchant-servic
 
 Gebruik de volgende bronnen als u informatie nodig hebt of vragen hebt die niet in deze handleiding worden behandeld:
 
-* [Help Center](https://support.magento.com/hc/en-us/search#q=catalog%20service&amp;sort=relevancy) - Raadpleeg de artikelen over het oplossen van problemen met betrekking tot catalogusservices.
-* [Ondersteuningstickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) - Een ticket verzenden voor aanvullende hulp.
+* [Help Center](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html) voor de artikelen van het Oplossen van problemen.
+* [Ondersteuningstickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) - Een ticket verzenden voor aanvullende hulp.
 * Word lid van het technische team van Adobe Commerce, en de gebruikers van de SaaS storefront diensten in [#storefront-services](https://magentocommeng.slack.com/archives/C03HVPG8RS4) public Slack channel to be up-to-date.
