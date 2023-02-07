@@ -2,9 +2,9 @@
 title: '''[!DNL Catalog Service] Opmerkingen bij de release'
 description: De meest recente releasegegevens voor [!DNL Catalog Service] voor Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: d377aac8fd42d8c9b1fc0ab6673a6965f50cf452
+source-git-commit: 67f9e5ce69930f3298427a103f9160f925d2ae0d
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '781'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,33 @@ In deze releaseopmerkingen worden de meest recente versies van [!DNL Catalog Ser
 * ![Nieuw](../assets/new.svg) Nieuwe functies
 * ![Repareren](../assets/fix.svg) Oplossingen en verbeteringen
 * ![Bug](../assets/bug.svg) Bekende problemen
+
+## V1.4 Release
+
+Releasedatum: 2023-2-7 Compatibel met Adobe Commerce (EE): 2.4.x Compatibel met Adobe Commerce for Cloud (ECE): 2.4.x Stabiliteit: Algemene beschikbaarheid
+
+![Nieuw](../assets/new.svg) Gepubliceerde metapakket voor catalogusservices om installatiestappen te vereenvoudigen.
+![Repareren](../assets/fix.svg) Schaalbaarheid van API&#39;s en prestatieverbeteringen.
+
+
+### Bekende beperkingen
+
+Deze functies worden nog niet ondersteund:
+
+* Bundel producten met vaste prijs
+* Er worden geen updates ontvangen wanneer varianten uit de catalogus worden verwijderd.
+* Maximale grootte voor dynamische attributen lading is 9MB.
+* Productprijs per groep. Kan worden berekend met eenvoudige productprijzen.
+* In een afbeeldingsarray bevat alleen de eerste afbeelding rollen.
+* Kleurstalen
+* De pagina met productdetails laden via de URL van het product.
+
+De volgende beperkingen kunnen worden opgelost met de Core GraphQL API:
+
+* Minimale geadverteerde prijs
+* Tier-prijsstelling
+* Downloadbare producten en cadeaukaarten
+* Categorieën (`categories` en `categoryList`)
 
 ## V1.3 Release
 
