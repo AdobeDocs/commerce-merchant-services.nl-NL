@@ -2,9 +2,9 @@
 title: Catalogus synchroniseren
 description: Leer hoe u productgegevens exporteert vanuit de [!DNL Commerce] server naar [!DNL Commerce Services] om de diensten voortdurend up-to-date te houden.
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
-source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
+source-git-commit: dd9ba7171cf6a199701b1abb8083a65326e89f5d
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '932'
 ht-degree: 0%
 
 ---
@@ -108,7 +108,7 @@ De `saas:resync` maakt deel uit van de `magento/saas-export` pakket. U kunt dit 
 
 >[!NOTE]
 >
-> Wanneer u een gegevensresync van de bevellijn teweegbrengt, kan het tot een uur voor de gegevens duren om bij te werken.
+> Wanneer u een gegevenssync voor de eerste keer uitvoert, is het belangrijk dat u de opdracht `productattributes` voer eerst, gevolgd door `productoverrides`, voordat u de `products` voer.
 
 Opdrachtopties:
 
@@ -130,6 +130,8 @@ De voedernaam kan één van het volgende zijn:
 - `variants`— Productvariaties van een configureerbaar product, zoals kleur en grootte
 - `productattributes`— Productkenmerken zoals `activity`, `gender`, `tops`, `bottoms`, enzovoort
 - `productoverrides`— Klantspecifieke regels voor prijzen en zichtbaarheid van catalogi, zoals regels die zijn gebaseerd op categorietoestemmingen
+
+Wanneer u een gegevensresync van de bevellijn teweegbrengt, kan het tot een uur voor de gegevens duren om bij te werken.
 
 ### Voorbeelden
 
