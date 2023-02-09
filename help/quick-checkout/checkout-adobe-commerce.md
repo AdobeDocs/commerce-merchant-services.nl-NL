@@ -2,9 +2,9 @@
 title: "Afhandelingsstroom voor een Adobe Commerce-gebruiker"
 description: "Overzicht van de [!DNL Quick Checkout] voor een Adobe Commerce-gebruiker."
 exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
-source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
+source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '443'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,9 @@ Als de verkoper vóór het afrekenen is aangemeld bij Adobe Commerce, wordt de [
 
 Als er problemen optreden wanneer u een bestelling als bestaande Adobe Commerce-gebruiker plaatst, raadpleegt u de [Problemen met snelle afhandeling oplossen](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) artikel in het Adobe Commerce Help Center.
 
-### Automatische aanmelding
+## Automatische aanmelding
+
+De component Automatische aanmelding detecteert wanneer een winkelier een actieve Bolt-sessie heeft en meldt de winkels automatisch aan. Dit slaat de rekeningsopsporing en eenmalige wachtwoordcode (OTP) stappen over omdat de verkoopster hen in een vorige zitting voltooide.
 
 Het is mogelijk een automatische aanmelding te configureren voor [!DNL Quick Checkout] gebruikers. U kunt een configuratie inschakelen om een gebruiker tijdens het uitchecken automatisch aan te melden.
 

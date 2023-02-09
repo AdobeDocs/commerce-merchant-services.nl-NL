@@ -2,9 +2,9 @@
 title: "Aan boord van de [!DNL Quick Checkout] voor Adobe Commerce-extensie"
 description: "Leer hoe u [!DNL Quick Checkout] kan uw Adobe Commerce-exemplaar ten goede komen en de extensie met succes aan boord installeren en instellen."
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
+source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '847'
 ht-degree: 0%
 
 ---
@@ -150,6 +150,10 @@ Zie de [Bereik van site, winkel en weergave](https://experienceleague.adobe.com/
 
 1. Selecteer **Volgende werkgebied na aanmelding** optie om de navigatiestroom te wijzigen nadat de klant zich heeft aangemeld. Standaard is deze ingesteld op **Betalingen** pagina.
 1. Definiëren als [!DNL Quick Checkout] stelt de **automatische aanmelding** tijdens het afrekenen. Standaard is het ingeschakeld om zich automatisch aan te melden bij de [!DNL Bolt] netwerk.
+
+   >[!NOTE]
+   >
+   > Zie [Documentatie voor automatische aanmelding inschakelen van bout](https://help.bolt.com/products/embedded/direct-api/auto-login/) voor meer informatie .
 
 ## Hulp vragen
 

@@ -2,9 +2,9 @@
 title: "Uitchecken van een gebruiker van een bout in Adobe Commerce"
 description: Overzicht van de [!DNL Quick Checkout] stroom voor een gebruiker van de Bolt in Adobe Commerce.
 exl-id: 12f58b7e-1f86-4891-b225-9f4be82c2d5d
-source-git-commit: 7c99f1aa4bed9878625d855509448494d5547d56
+source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '210'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,10 @@ ht-degree: 0%
 # Gastgebruikers
 
 De ervaring bij uitchecken door gasten verschilt van de gebruikerservaring bij Adobe. Wanneer een winkelier een e-mailadres invoert bij het afrekenen, [!DNL Quick Checkout] valideert het en vindt een bestaand [!DNL Bolt] account.
+
+>[!WARNING]
+>
+> De [!DNL In-Store Pickup] (ISPU)-functionaliteit wordt niet ondersteund wanneer de [!DNL Quick Checkout] is ingeschakeld.
 
 ## Geregistreerd [!DNL Bolt] account
 

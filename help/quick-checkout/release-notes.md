@@ -2,9 +2,9 @@
 title: '''[!DNL Quick Checkout] Opmerkingen bij de release'
 description: Lees de opmerkingen bij de release voor meer informatie over alle [!DNL Quick Checkout] lozingen.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
+source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1241'
 ht-degree: 0%
 
 ---
@@ -64,6 +64,14 @@ _5 oktober 2022_
 ![Probleem opgelost](../assets/fix.svg)<!-- Issue BOLT-369 --> De [[!DNL Quick Checkout] Deelvenster Beheer](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) geeft de app-versie weer in de voettekst.
 
 +++
+
+## v1.6.0
+
+_9 februari 2023_
+
+![Probleem opgelost](../assets/fix.svg)<!-- Issue BOLT-567 --> Verbeteringen in gebruikerservaring wanneer [plaatsen](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) met de [Levering in de winkel](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/delivery/basic-methods/shipping-in-store-delivery.html) met de [!DNL Quick Checkout] uitgeschakeld.
+
+![Probleem opgelost](../assets/fix.svg)<!-- Issue BOLT-569 --> Verbeteringen in de logout-functionaliteit waarmee kopers [afmelden bij het Bolt-netwerk](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/user-session-lifetime.html).
 
 ## v1.5.0
 
