@@ -1,12 +1,12 @@
 ---
-title: '"Inleiding tot [!DNL Store Fulfillment]"'
-description: '"Meer informatie [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] biedt ondersteuning voor online aankopen, winkelen (BOPIS) voor klanten. Gebruik de mobiele versie van Store Assist om BOPIS-uitvoering en bestellingsverwerking te stroomlijnen voor winkelpartners en klanten van Commerce."'
+title: "Inleiding tot [!DNL Store Fulfillment]"
+description: "Meer informatie [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] biedt ondersteuning voor online aankopen, winkelen (BOPIS) voor klanten. Gebruik de mobiele versie van Store Assist om BOPIS-uitvoering en bestellingsverwerking te stroomlijnen voor winkelpartners en klanten van Commerce."
 role: User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
-source-git-commit: 1fb22b4644d41ea5c60aead3fe2c455dfa3382f8
+source-git-commit: 1157fe71dbef07f9db835a5a399f9304af550a86
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '605'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ De oplossing Store Fulfillment ondersteunt en verbetert native Adobe Commerce-mo
 
 * Volledig compatibel met het thema Luminantie
 
-* Biedt ondersteuning voor GraphQL voor headless en Venia storefronts
+* Gedeeltelijke compatibiliteit met PWA- en headless-winkels
 
 * Ondersteunt de app Store Assist van Walmart Commerce Technologies. Deze app levert informatie over de ophaalvolgorde rechtstreeks aan het handheldapparaat van uw werknemer op de geselecteerde winkellocatie. Met deze informatie kunnen ze snel en nauwkeurig items selecteren, in het werkgebied plaatsen en aan klanten afleveren wanneer ze bij de winkel aankomen.
 
