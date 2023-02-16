@@ -2,9 +2,9 @@
 title: '''[!DNL Catalog Service] Overzicht van hulplijnen'
 description: '''[!DNL Catalog Service for Adobe Commerce] biedt een manier om de inhoud van de pagina''s met productweergave en de productlijst sneller op te halen dan de native Adobe Commerce GraphQL-query''s.'''
 exl-id: d83375b2-0d87-4a0a-baf8-eb7eebe85a80
-source-git-commit: c1b95c2298f1a1039ede6b43b77097d299a34e12
+source-git-commit: 242060d94700efc018a520d2d680c0f47a0cb915
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '238'
 ht-degree: 0%
 
 ---
@@ -17,18 +17,6 @@ Deze handleiding is bedoeld voor beheerders van Adobe [!DNL Commerce]. Het bevat
 
 * Adobe [!DNL Commerce] systeembeheerders installeren en onderhouden de service. [!DNL Catalog Service] heeft geen Admin UI of eigenschappen voor standaardgebruikers Admin.
 * De integrators bouwen GraphQL vragen en integreren hen op een opslagplaats die een frontend cliënt gebruikt.
-
-## Video&#39;s over aan boord gaan en installeren
-
-Zie een analyse van de Dienst van de Catalogus [aan boord gaan en installeren](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/installation.html) proces.
-
-Deel 1:
-
->[!VIDEO](https://video.tv.adobe.com/v/3415599)
-
-Deel 2:
-
->[!VIDEO](https://video.tv.adobe.com/v/3415600)
 
 ## Aanvullende documentatie
 
