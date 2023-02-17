@@ -2,7 +2,7 @@
 title: Sluit uw exemplaar aan
 description: Verbind uw instantie van de Handel gebruikend een API sleutel en een privé sleutel, en specificeer de gegevensruimte in de configuratie.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
-source-git-commit: a983cf30872544d72bd13c3f04f04a35eebcf85d
+source-git-commit: 5aba246ce2a7802954a90c08c7dac2247a71ff6d
 workflow-type: tm+mt
 source-wordcount: '621'
 ht-degree: 0%
@@ -45,10 +45,10 @@ Dezelfde API-sleutel kan in alle instanties worden gebruikt, maar elke instantie
 Nu u uw geloofsbrieven hebt verkregen, kunt u uw project SaaS en de Ruimte van Gegevens van het Saas vormen.
 
 1. Op de _Beheer_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]**.
-1. Klik op **[!UICONTROL Configure Commerce Services]**.
+1. Klikken **[!UICONTROL Configure Commerce Services]**.
 
    Deze optie is zichtbaar als u nog geen Diensten van de Handel voor uw rekening hebt gevormd.
 
    U wordt geleid aan het configuratiegebied in Admin, **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**>**[!UICONTROL Commerce Services Connector]**, om uw Schakelaar van de Diensten van de Handel te vormen.
 
-1. Om uw Diensten van de Handel te vormen, volg de stappen die in worden beschreven [SaaS-configuratie](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#configure-commerce-services).
+1. Om uw Diensten van de Handel te vormen, volg de stappen die in worden beschreven [SaaS-configuratie](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#saasenv).
