@@ -1,9 +1,10 @@
 ---
 title: Creditcard vaulting
 description: Klanten kunnen hun creditcardgegevens opslaan voor toekomstige aankopen.
-source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
+exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
+source-git-commit: fb0a8295772fc6e23f2910019e1beadd64d7ed70
 workflow-type: tm+mt
-source-wordcount: '165'
+source-wordcount: '304'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,22 @@ Ze kunnen ook gemakkelijk hun gefactureerde creditcards verwijderen van [Opgesla
 
 ## Vulling inschakelen
 
-Je kunt creditcardgegevens voor je winkels inschakelen in Betalingsservices [Instellingen](settings.md#card-vaulting).
+U kunt creditcardarchivering inschakelen—voor klanten _en_ handelaren in de Admin-voor uw winkels in [!DNL Payment Services] [Instellingen](settings.md#card-vaulting).
+
+## Vullingen gebruiken in de Admin
+
+Als een klant een eerder gearchiveerde creditcard heeft, kan een handelaar een volgende bestelling voor die klant in Admin tot stand brengen gebruikend hun gefactureerde betalingsmethodes.
+
+U kunt alleen in Admin gearchiveerde kaarten gebruiken als de klant zowel een bestaande account als een geldige token in het systeem heeft opgeslagen vanaf een eerder uitgevoerde betaling.
+
+U kunt als volgt een bestelling voor een klant maken in de Admin met de gefactureerde creditcard:
+
+1. [Een bestelling maken en producten toevoegen](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html).
+1. In _[!UICONTROL Payment & Shipping Information]_, selecteert u **[!UICONTROL Stored Cards]**als betalingsmethode.
+1. Selecteer de gewenste betalingsmethode voor creditcard.
+1. Na het uitvoeren van alle andere noodzakelijke stappen voor de bestelling, [verzenden](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=en#step-3%3A-submit-the-order).
+
+   ![Gekwalificeerde creditcard gebruiken in Admin voor klant](assets/admin-vaultedcard.png)
 
 ## Beveiliging
 

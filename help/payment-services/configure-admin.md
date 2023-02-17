@@ -4,9 +4,9 @@ description: Na installatie kunt u configureren [!DNL Payment Services] in Admin
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: 17ba23192fed6cd219411420c5d56b42c94af0f5
+source-git-commit: 482182dca95964e68f1637ff1cc7aad84b00e3eb
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '868'
 ht-degree: 0%
 
 ---
@@ -63,6 +63,7 @@ Zie [Betalingsopties](payments-options.md#paypal-smart-buttons) voor meer inform
 1. Naar [betalingsactie instellen](production.md#set-payment-services-as-payment-method), selecteert u **[!UICONTROL Authorize]** of **Autoriseren en vastleggen**.
 1. Voor **[!UICONTROL Show on checkout page]** kiest u `Yes` om creditcardvelden in te schakelen op de afhandelingspagina.
 1. Voor **[!UICONTROL Vault Enabled]** kiest u `Yes` om creditcardgegevens beschikbaar te maken voor afhandeling.
+1. Voor **[!UICONTROL Vault Enabled in Admin]** kiest u `Yes` om de handelaar in staat te stellen orders voor klanten te maken met behulp van hun gefactureerde creditcard.
 1. Voor **[!UICONTROL Debug Mode]** kiest u `Yes` om de foutopsporingsmodus in te schakelen (of `No` om deze uit te schakelen).
 1. Inschakelen **[!UICONTROL 3DS Secure authentication]** (`Off` standaard) kiezen `Always` of `When required`.
 1. Klikken **[!UICONTROL Save Config]** om uw wijzigingen op te slaan.
@@ -73,9 +74,10 @@ Zie [Betalingsopties](payments-options.md#paypal-smart-buttons) voor meer inform
 | Veld | Toepassingsgebied | Beschrijving |
 |---|---|---|
 | [!UICONTROL Title] | winkelweergave | Voeg de tekst die tijdens het afrekenen wordt weergegeven als titel voor deze betalingsoptie toe aan de weergave Betalingsmethode. Opties: [!UICONTROL text field] |
-| [!UICONTROL Payment Action] | website | De [betalingsactie](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} voor de opgegeven betalingsmethode. Opties: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | website | De [betalingsactie](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html) voor de opgegeven betalingsmethode. Opties: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Show on checkout page] | website | Schakel creditcardvelden op de afhandelingspagina in of uit. Opties: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Vault Enabled] | website | Kredietkaartvaulting in- of uitschakelen. Opties: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Vault enabled] | winkelweergave | In- of uitschakelen [creditcard vauleren](vaulting.md). Opties: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Vault enabled in Admin] | winkelweergave | Mogelijkheid in- of uitschakelen voor [handelaar om orden voor klanten in Admin te voltooien](vaulting.md) met behulp van een gefactureerde betalingsmethode. Opties: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL 3DS Secure authentication] | website | In- of uitschakelen [Beveiligde 3DS-verificatie](security.md#3ds). Opties: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Debug Mode] | website | De foutopsporingsmodus in- of uitschakelen. Opties: [!UICONTROL Yes] / [!UICONTROL No] |
 

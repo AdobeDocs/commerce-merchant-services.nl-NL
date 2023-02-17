@@ -4,9 +4,9 @@ description: Na installatie kunt u configureren [!DNL Payment Services] in het s
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 17ba23192fed6cd219411420c5d56b42c94af0f5
+source-git-commit: 482182dca95964e68f1637ff1cc7aad84b00e3eb
 workflow-type: tm+mt
-source-wordcount: '1825'
+source-wordcount: '1892'
 ht-degree: 0%
 
 ---
@@ -112,6 +112,7 @@ Zie [Betalingsopties](payments-options.md#credit-card-fields) voor meer informat
 1. Inschakelen [Beveiligde 3DS-verificatie](security.md#3ds) (`Off` standaard) schakelt u de **[!UICONTROL 3DS Secure authentication]** kiezer naar `Always` of `When required`.
 1. Schakel de optie **[!UICONTROL Show on checkout page]** kiezer.
 1. In- of uitschakelen [kaartvaulatie](#card-vaulting), schakelt u de **[!UICONTROL Vault enabled]** kiezer.
+1. In- of uitschakelen [Betaalmethoden in het beheerprogramma](#card-vaulting) (voor handelaren die orders voor klanten in de Admin voltooien met behulp van hun gefactureerde betalingsmethode) schakelt u de **[!UICONTROL Show vaulted methods in Admin]** kiezer.
 1. Als u de foutopsporingsmodus wilt in- of uitschakelen, schakelt u de optie **[!UICONTROL Debug Mode]** kiezer.
 1. Klikken **[!UICONTROL Save]**.
 
@@ -127,7 +128,8 @@ Zie [Betalingsopties](payments-options.md#credit-card-fields) voor meer informat
 | [!UICONTROL Payment Action] | website | De [betalingsactie](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} voor de opgegeven betalingsmethode. Opties: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL 3DS Secure authentication] | website | In- of uitschakelen [Beveiligde 3DS-verificatie](security.md#3ds). Opties: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Show on checkout page] | website | In- of uitschakelen van creditcardvelden om weer te geven op de afhandelingspagina. Opties: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Vault enabled] | website | In- of uitschakelen [creditcard vauleren](#card-vaulting). Opties: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Vault enabled] | winkelweergave | In- of uitschakelen [creditcard vauleren](vaulting.md). Opties: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show vaulted payment methods in Admin] | winkelweergave | Laat of maak capaciteit voor koopman voor klanten in Admin toe onbruikbaar [met een in kluizen geplaatste betalingsmethode](vaulting.md). Opties: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Debug Mode] | website | De foutopsporingsmodus in- of uitschakelen. Opties: [!UICONTROL Yes] / [!UICONTROL No] |
 
 ### Betalingsknoppen
@@ -230,6 +232,8 @@ Om ervoor te zorgen dat uw opslag de correcte configuratie toont, periodiek [cac
 ## Kaart vauleren
 
 U kunt functionaliteit inschakelen waarmee uw klanten hun creditcardgegevens in hun Mijn account kunnen opslaan en gebruiken voor toekomstige aankopen.
+
+U kunt ook kaartvaulting in Admin gebruiken om verdere orden voor bestaande klanten te voltooien.
 
 Kaarten in- of uitschakelen in het dialoogvenster [Instellingen voor creditcardvelden](#credit-card-fields).
 
