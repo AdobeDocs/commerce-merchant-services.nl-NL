@@ -2,9 +2,9 @@
 title: Beveiliging en naleving
 description: Beoordeel de beveiligings- en compatibiliteitsvereisten voor uw site.
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
-source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
+source-git-commit: 17ba23192fed6cd219411420c5d56b42c94af0f5
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '483'
 ht-degree: 0%
 
 ---
@@ -17,23 +17,37 @@ Veiligheid is een van de belangrijkste aandachtspunten in [!DNL Payment Services
 
 [!DNL Adobe Commerce] en [!DNL Magento Open Source] omvat ondersteuning voor verschillende beveiligingsfuncties.
 
-Zie [Beveiliging](https://docs.magento.com/user-guide/stores/security.html){target=&quot;_blank&quot;} in de core user guide om de best practices op het gebied van beveiliging te bekijken en te leren hoe u Admin-sessies en -gegevens beheert, CAPTCHA implementeert en websitebeperkingen beheert.
+Zie [Beveiliging](https://docs.magento.com/user-guide/stores/security.html){target="_blank"} in de basisgebruikershandleiding voor het controleren van best practices op het gebied van beveiliging en het beheren van Admin-sessies en -gegevens, het implementeren van CAPTCHA en het beheren van websitebeperkingen.
 
 ## PCI-compatibiliteit
 
 De betaalkaartindustrie (PCI) heeft een reeks vereisten vastgesteld voor bedrijven die betalingen via een creditcard via internet accepteren. Naast het handhaven van een veilige omgeving, zijn de handelaren die de informatie van de klantencreditcard behandelen verantwoordelijk voor het voldoen aan sommige standaardrichtlijnen.
 
-Zie [PCI-richtlijnen voor compatibiliteit](https://docs.magento.com/user-guide/stores/compliance-pci.html){target=&quot;_blank&quot;} voor meer informatie.
+Zie [PCI-richtlijnen voor compatibiliteit](https://docs.magento.com/user-guide/stores/compliance-pci.html){target="_blank"} voor meer informatie .
 
-Handelaren kunnen een [vragenlijst voor zelfbeoordeling (SAQ)](https://www.pcisecuritystandards.org/pci_security/completing_self_assessment){target=&quot;_blank&quot;}. Dit is een zelfvalidatieprogramma voor het beoordelen van de beveiliging van gegevens van kaarthouders.
+Handelaren kunnen een [vragenlijst voor zelfbeoordeling (SAQ)](https://www.pcisecuritystandards.org/pci_security/completing_self_assessment){target="_blank"}, een zelfvalideringsinstrument voor het beoordelen van de beveiliging van gegevens van kaarthouders.
 
 ### Creditcardvelden
 
 Met de Gebieden van de Kaart, worden geen PCI-Gereglementeerde gegevens overgegaan over uw diensten. U hoeft die gegevens niet op te slaan of te onderhouden, wat de bezorgdheid over PCI-compatibiliteit aanzienlijk vermindert.
 
+### 3DS
+
+PCI 3-D Secure (3DS) maakt kopersverificatie mogelijk met hun creditcardmaatschappij wanneer ze online aankopen doen op creditcards. Deze extra veiligheidslaag helpt fraude op het internet te voorkomen en is vereist in het kader van de EU-regelgeving inzake naleving.
+
+[!UICONTROL Payment Services] biedt 3DS-functionaliteit om handelaren in staat te stellen te voldoen aan de EU-regelgeving en om klanten en handelaren te beschermen tegen frauduleuze activiteiten in hun winkels.
+
+Als u een handelaar bent binnen de EU of Groot-Brittannië waar 3DS-compatibiliteit vereist is, moet u 3DS handmatig inschakelen (het is `Off` standaard) in [Instellingen](settings.md#credit-card-fields).
+
+Orders die door het bedrijfs-/winkelpersoneel voor de koper worden geplaatst, zijn niet geconfigureerd met 3DS-compatibiliteitsmaatregelen.
+
+Zie [3DS in instellingen](settings.md#3ds) voor meer informatie .
+
 ### Kaart vauleren
 
 Wanneer een winkelier [vaults—of &quot;save&quot;—hun creditcardgegevens](vaulting.md) voor toekomstige aankopen in uw winkels worden minimale creditcardgegevens gedeeld met de winkel (laatste vier cijfers, vervaldatum van de kaart en het merk kaart). Creditcardgegevens worden opgeslagen bij de betalingsdienstaanbieder. Wanneer een kaart verloopt of wanneer de gegevens niet meer hoeven te worden opgeslagen, kunnen zij die token verwijderen, zodat de informatie niet langer door de betalingsdienstaanbieder wordt opgeslagen.
+
+Zie [Creditcard vaulting](vaulting.md) voor meer informatie .
 
 ### Slimme PayPal-knoppen
 

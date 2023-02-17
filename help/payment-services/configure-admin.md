@@ -4,10 +4,10 @@ description: Na installatie kunt u configureren [!DNL Payment Services] in Admin
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
+source-git-commit: 17ba23192fed6cd219411420c5d56b42c94af0f5
 workflow-type: tm+mt
-source-wordcount: '802'
-ht-degree: 1%
+source-wordcount: '828'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +26,7 @@ U kunt [!DNL Payment Services] voor uw winkel en schakel het testen van sandboxe
 
    ![Methoden, weergave](assets/methods-view.png)
 
-1. Vouw de sectie _[!UICONTROL Recommended Solutions]_uit.
+1. Breid uit _[!UICONTROL Recommended Solutions]_sectie.
 1. In de _[!UICONTROL [!DNL Payment Services]]_in, vouwt u de_[!UICONTROL General Configuration]_ sectie.
 1. Voor **Inschakelen**, stelt u deze in op `Yes` om [!DNL Payment Services] voor uw winkel.
 1. Voor **Methode**, stelt u deze in op `Sandbox` als u nog test [!DNL Payment Services] voor uw winkel of `Production` als u bereid bent om levende betalingen toe te laten.
@@ -57,13 +57,14 @@ Zie [Betalingsopties](payments-options.md#paypal-smart-buttons) voor meer inform
 
 1. Op de _Beheer_ zijbalk, ga naar **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. Vouw in het linkerdeelvenster uit **[!UICONTROL Sales]** en kiest u **[!UICONTROL Payment Methods]**.
-1. Vouw de sectie _[!UICONTROL Recommended Solutions]_uit.
+1. Breid uit _[!UICONTROL Recommended Solutions]_sectie.
 1. In de _[!UICONTROL Payment Services]_in, vouwt u de_[!UICONTROL Credit Card Fields]_ sectie.
 1. Voor **[!UICONTROL Title]**, voert u (indien nodig) tekst in om de naam van de betalingsmethode te wijzigen zoals deze tijdens het afrekenen wordt weergegeven.
 1. Naar [betalingsactie instellen](production.md#set-payment-services-as-payment-method), selecteert u **[!UICONTROL Authorize]** of **Autoriseren en vastleggen**.
-1. Voor **[!UICONTROL Show on checkout page]** kiest u `Yes` om creditcardvelden op de afhandelingspagina in of uit te schakelen.
+1. Voor **[!UICONTROL Show on checkout page]** kiest u `Yes` om creditcardvelden in te schakelen op de afhandelingspagina.
 1. Voor **[!UICONTROL Vault Enabled]** kiest u `Yes` om creditcardgegevens beschikbaar te maken voor afhandeling.
-1. Voor **Foutopsporingsmodus** kiest u `Yes` om de foutopsporingsmodus in te schakelen (of `No` om deze uit te schakelen).
+1. Voor **[!UICONTROL Debug Mode]** kiest u `Yes` om de foutopsporingsmodus in te schakelen (of `No` om deze uit te schakelen).
+1. Inschakelen **[!UICONTROL 3DS Secure authentication]** (`Off` standaard) kiezen `Always` of `When required`.
 1. Klikken **[!UICONTROL Save Config]** om uw wijzigingen op te slaan.
 1. Navigeren naar **[!UICONTROL System]** > **[!UICONTROL Cache Management]** en klik vervolgens op **[!UICONTROL Flush Cache]** om alle ongeldige caches te vernieuwen.
 
@@ -72,7 +73,10 @@ Zie [Betalingsopties](payments-options.md#paypal-smart-buttons) voor meer inform
 | Veld | Toepassingsgebied | Beschrijving |
 |---|---|---|
 | [!UICONTROL Title] | winkelweergave | Voeg de tekst die tijdens het afrekenen wordt weergegeven als titel voor deze betalingsoptie toe aan de weergave Betalingsmethode. Opties: [!UICONTROL text field] |
-| [!UICONTROL Payment Action] | website | De [betalingsactie](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target=&quot;_blank&quot;} voor de opgegeven betalingsmethode. Opties: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | website | De [betalingsactie](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} voor de opgegeven betalingsmethode. Opties: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Show on checkout page] | website | Schakel creditcardvelden op de afhandelingspagina in of uit. Opties: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Vault Enabled] | website | Kredietkaartvaulting in- of uitschakelen. Opties: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL 3DS Secure authentication] | website | In- of uitschakelen [Beveiligde 3DS-verificatie](security.md#3ds). Opties: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Debug Mode] | website | De foutopsporingsmodus in- of uitschakelen. Opties: [!UICONTROL Yes] / [!UICONTROL No] |
 
 ## [!DNL PayPal Smart Buttons]
@@ -87,7 +91,7 @@ U kunt de betaalopties voor slimme PayPal-knoppen inschakelen en configureren in
 
 1. Op de _Beheer_ zijbalk, ga naar **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. Vouw in het linkerdeelvenster uit **[!UICONTROL Sales]** en kiest u **[!UICONTROL Payment Methods]**.
-1. Vouw de sectie _[!UICONTROL Recommended Solutions]_uit.
+1. Breid uit _[!UICONTROL Recommended Solutions]_sectie.
 1. In de _[!UICONTROL Payment Services]_in, vouwt u de_[!UICONTROL PayPal Smart Buttons]_ sectie.
 1. Als u de naam van de betalingsmethode wilt wijzigen, zoals wordt weergegeven tijdens het afrekenen, bewerkt u de _[!UICONTROL Title]_veld.
 1. Naar [betalingsactie instellen](production.md#set-payment-services-as-payment-method), selecteert u **[!UICONTROL Authorize]** of **[!UICONTROL Authorize and Capture]**.
@@ -101,7 +105,7 @@ U kunt de betaalopties voor slimme PayPal-knoppen inschakelen en configureren in
 | Veld | Toepassingsgebied | Beschrijving |
 |---|---|---|
 | [!UICONTROL Title] | winkelweergave | Voeg tijdens het afrekenen de tekst toe die als titel voor deze betalingsoptie moet worden weergegeven in de weergave Betalingsmethode. Opties: tekstveld |
-| [!UICONTROL Payment Action] | website | De [betalingsactie](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target=&quot;_blank&quot;} voor de opgegeven betalingsmethode. Opties: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | website | De [betalingsactie](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} voor de opgegeven betalingsmethode. Opties: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Display Pay Later Message] | website | Schakel het bericht Later betalen in of uit in het winkelwagentje, de productpagina, de miniwinkelwagentje en tijdens de afrekenstroom. Opties: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Venmo Enabled] | winkelweergave | Schakel de betalingsoptie van Venmo in of uit waar betalingsknoppen worden weergegeven. Opties: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Apple Pay Enabled] | winkelweergave | Schakel de betalingsoptie Apple Pay in of uit waar de betalingsknoppen worden weergegeven. Opties: [!UICONTROL Yes] / [!UICONTROL No] |
@@ -126,3 +130,4 @@ U kunt de betaalopties voor slimme PayPal-knoppen inschakelen en configureren in
 ## De cache leegmaken
 
 Als u de configuratie wijzigt, [de cache handmatig leegmaken](/help/payment-services/settings.md#flush-the-cache) zodat in uw winkel de meest recente configuratie-instellingen worden weergegeven.
+

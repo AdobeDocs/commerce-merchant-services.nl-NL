@@ -4,9 +4,9 @@ description: Na installatie kunt u configureren [!DNL Payment Services] in het s
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
+source-git-commit: 17ba23192fed6cd219411420c5d56b42c94af0f5
 workflow-type: tm+mt
-source-wordcount: '1778'
+source-wordcount: '1825'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ U kunt [!DNL Payment Services] voor uw website, en laat of zandbak het testen of
 
    ![Startweergave](assets/payment-services-menu-small.png)
 
-1. Klik op **[!UICONTROL Settings]**. Zie [Inleiding tot [!DNL Payment Services] Home](payments-home.md) voor meer informatie .
+1. Klikken **[!UICONTROL Settings]**. Zie [Inleiding tot [!DNL Payment Services] Home](payments-home.md) voor meer informatie .
 
    De _[!UICONTROL General]_sectie bevat instellingen die worden gebruikt om [!DNL Payment Services] als betalingsmethode.
 
@@ -43,7 +43,7 @@ U kunt [!DNL Payment Services] voor uw website, en laat of zandbak het testen of
    >
    >Uw _[!UICONTROL Sandbox Merchant ID]_en_[!UICONTROL Production Merchant ID]_ automatisch worden gegenereerd en aanwezig zijn in de betreffende velden wanneer u klaar bent met het instappen voor de sandbox en/of productie.
 
-1. Klik op **[!UICONTROL Save]**.
+1. Klikken **[!UICONTROL Save]**.
 
    Als u probeert weg van deze mening te navigeren zonder uw veranderingen op te slaan, verschijnt een modaal die u ertoe aanzet om veranderingen te verwerpen, het uitgeven te houden, of veranderingen te bewaren.
 
@@ -59,19 +59,19 @@ U kunt een [!UICONTROL Soft Descriptor] naar de configuratie van uw website(s) o
 
    ![Startweergave](assets/payment-services-menu-small.png)
 
-1. Klik op **[!UICONTROL Settings]**. Zie [Inleiding tot [!DNL Payment Services] Home](payments-home.md) voor meer informatie .
+1. Klikken **[!UICONTROL Settings]**. Zie [Inleiding tot [!DNL Payment Services] Home](payments-home.md) voor meer informatie .
 1. Selecteer de website- of opslagweergave in het dialoogvenster **[!UICONTROL Scope]** vervolgkeuzelijst, waarvoor u een elektronische descriptor wilt maken. Voor de eerste setup laat u deze als **[!UICONTROL Default]** om de standaardwaarde in te stellen.
 1. Voeg uw aangepaste tekst (maximaal 22 tekens) toe aan het tekstveld en vervang `Custom descriptor`.
-1. Klik op **[!UICONTROL Save]**.
+1. Klikken **[!UICONTROL Save]**.
 1. U kunt als volgt een andere softdescriptor maken dan de geconfigureerde standaardwaarde voor een website- of opslagweergave:
    1. Selecteer de website- of opslagweergave in het dialoogvenster **[!UICONTROL Scope]** vervolgkeuzelijst, waarvoor u een elektronische descriptor wilt maken.
    1. Schakelen _uit_ **[!UICONTROL Use website]** (of **[!UICONTROL Use default]**, afhankelijk van het bereik dat u hebt geselecteerd).
    1. Voeg uw aangepaste tekst toe aan het tekstveld.
-   1. Klik op **[!UICONTROL Save]**.
+   1. Klikken **[!UICONTROL Save]**.
 1. De standaardschermdescriptor inschakelen voor een website of winkel _of_ de softwaredescriptor die voor de bovenliggende website wordt gebruikt:
    1. Selecteer de website- of opslagweergave in het dialoogvenster **[!UICONTROL Scope]** vervolgkeuzelijst, waarvoor u een bestaande elektronische descriptor wilt inschakelen.
    1. Schakelen _op_ **[!UICONTROL Use website]** (of **[!UICONTROL Use default]**, afhankelijk van het bereik dat u hebt geselecteerd).
-   1. Klik op **[!UICONTROL Save]**.
+   1. Klikken **[!UICONTROL Save]**.
 
    Als u probeert weg van deze mening te navigeren zonder uw veranderingen op te slaan, verschijnt een modaal die u ertoe aanzet om veranderingen te verwerpen, het uitgeven te houden, of veranderingen te bewaren.
 
@@ -87,13 +87,13 @@ U kunt een [!UICONTROL Soft Descriptor] naar de configuratie van uw website(s) o
 
 ## Betalingsopties configureren
 
-Nu u Betalingsservices voor uw website hebt ingeschakeld, kunt u de standaardinstellingen voor betalingsfuncties en de weergave van winkels wijzigen.
+Nu hebt u deze functie ingeschakeld [!UICONTROL Payment Services] voor uw website kunt u de standaardinstellingen voor betalingsfuncties en de storefront-weergave wijzigen.
 
 1. Op de _Beheer_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 
    ![Startweergave](assets/payment-services-menu-small.png)
 
-1. Klik op **[!UICONTROL Settings]**. Zie [Inleiding tot [!DNL Payment Services] Home](payments-home.md) voor meer informatie .
+1. Klikken **[!UICONTROL Settings]**. Zie [Inleiding tot [!DNL Payment Services] Home](payments-home.md) voor meer informatie .
 1. Betalingsopties configureren voor [creditcards](#credit-card-fields), [betaalknoppen](#payment-buttons), en [knopstijl](#button-style), op de volgende secties.
 
 ### Creditcardvelden
@@ -109,10 +109,11 @@ Zie [Betalingsopties](payments-options.md#credit-card-fields) voor meer informat
 1. Selecteer de winkelweergave in het dialoogvenster **[!UICONTROL Scope]** vervolgkeuzemenu waarvoor u een betalingsmethode wilt inschakelen.
 1. Als u de naam wilt wijzigen van de betalingsmethode die tijdens het afrekenen wordt weergegeven, bewerkt u de waarde in het dialoogvenster **[!UICONTROL Checkout title]** veld.
 1. Naar [betalingsactie instellen](production.md#set-payment-services-as-payment-method), schakelen **[!UICONTROL Payment action]** tot `Authorize` of `Authorize and Capture`.
+1. Inschakelen [Beveiligde 3DS-verificatie](security.md#3ds) (`Off` standaard) schakelt u de **[!UICONTROL 3DS Secure authentication]** kiezer naar `Always` of `When required`.
 1. Schakel de optie **[!UICONTROL Show on checkout page]** kiezer.
 1. In- of uitschakelen [kaartvaulatie](#card-vaulting), schakelt u de **[!UICONTROL Vault enabled]** kiezer.
 1. Als u de foutopsporingsmodus wilt in- of uitschakelen, schakelt u de optie **[!UICONTROL Debug Mode]** kiezer.
-1. Klik op **[!UICONTROL Save]**.
+1. Klikken **[!UICONTROL Save]**.
 
    Als u probeert weg van deze mening te navigeren zonder uw veranderingen op te slaan, verschijnt een modaal die u ertoe aanzet om veranderingen te verwerpen, het uitgeven te houden, of veranderingen te bewaren.
 
@@ -123,9 +124,10 @@ Zie [Betalingsopties](payments-options.md#credit-card-fields) voor meer informat
 | Veld | Toepassingsgebied | Beschrijving |
 |---|---|---|
 | [!UICONTROL Title] | winkelweergave | Voeg de tekst die tijdens het afrekenen wordt weergegeven als titel voor deze betalingsoptie toe aan de weergave Betalingsmethode. Opties: [!UICONTROL text field] |
-| [!UICONTROL Payment Action] | website | De [betalingsactie](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target=&quot;_blank&quot;} voor de opgegeven betalingsmethode. Opties: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | website | De [betalingsactie](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} voor de opgegeven betalingsmethode. Opties: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL 3DS Secure authentication] | website | In- of uitschakelen [Beveiligde 3DS-verificatie](security.md#3ds). Opties: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Show on checkout page] | website | In- of uitschakelen van creditcardvelden om weer te geven op de afhandelingspagina. Opties: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Vault enabled] | website | Kredietkaartvaulting in- of uitschakelen. Opties: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Vault enabled] | website | In- of uitschakelen [creditcard vauleren](#card-vaulting). Opties: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Debug Mode] | website | De foutopsporingsmodus in- of uitschakelen. Opties: [!UICONTROL Yes] / [!UICONTROL No] |
 
 ### Betalingsknoppen
@@ -154,7 +156,7 @@ U kunt de betalingsopties voor slimme PayPal-knoppen inschakelen en configureren
       Terwijl u de zichtbaarheid van betalingsknoppen of het Later bericht PayPal Pay (PayPal Pay) in- of uitschakelt, wordt onder aan de pagina Settings een visuele voorvertoning van die configuratie weergegeven.
 
 1. Schakel de optie **[!UICONTROL Debug Mode]** kiezer.
-1. Klik op **[!UICONTROL Save]**.
+1. Klikken **[!UICONTROL Save]**.
 
    Als u probeert weg van deze mening te navigeren zonder uw veranderingen op te slaan, verschijnt een modaal die u ertoe aanzet om veranderingen te verwerpen, het uitgeven te houden, of veranderingen te bewaren.
 
@@ -165,7 +167,7 @@ U kunt de betalingsopties voor slimme PayPal-knoppen inschakelen en configureren
 | Veld | Toepassingsgebied | Beschrijving |
 |---|---|---|
 | [!UICONTROL Title] | winkelweergave | Voeg tijdens het afrekenen de tekst toe die als titel voor deze betalingsoptie moet worden weergegeven in de weergave Betalingsmethode. Opties: tekstveld |
-| [!UICONTROL Payment Action] | website | De [betalingsactie](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target=&quot;_blank&quot;} voor de opgegeven betalingsmethode. Opties: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | website | De [betalingsactie](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} voor de opgegeven betalingsmethode. Opties: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Show PayPal buttons on checkout page] | winkelweergave | In- of uitschakelen [!DNL PayPal Smart Buttons] op de uitcheckpagina. Opties: [!UICONTROL  Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons on product detail page] | winkelweergave | In- of uitschakelen [!DNL PayPal Smart Buttons] op de pagina met productdetails. Opties: [!UICONTROL  Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons in mini-cart preview] | winkelweergave | In- of uitschakelen [!DNL PayPal Smart Buttons] in de voorvertoning van de minicart. Opties: [!UICONTROL Yes] / [!UICONTROL No] |
@@ -194,7 +196,7 @@ U kunt ook de _[!UICONTROL Button style]_opties van de slimme PayPal-knoppen:
 
    Terwijl u de configuratieopties voor lay-out, kleur, vorm, hoogte en label wijzigt, wordt onder aan de pagina Instellingen een visuele voorvertoning van die configuratie weergegeven.
 
-1. Klik op **[!UICONTROL Save]**.
+1. Klikken **[!UICONTROL Save]**.
 
    Als u probeert weg van deze mening te navigeren zonder uw veranderingen op te slaan, verschijnt een modaal die u ertoe aanzet om veranderingen te verwerpen, het uitgeven te houden, of veranderingen te bewaren.
 
@@ -231,12 +233,21 @@ U kunt functionaliteit inschakelen waarmee uw klanten hun creditcardgegevens in 
 
 Kaarten in- of uitschakelen in het dialoogvenster [Instellingen voor creditcardvelden](#credit-card-fields).
 
-Zie [Creditcard vaulting](vaulting.md) voor meer informatie over vaulting.
+Zie [Creditcard vaulting](vaulting.md) voor meer informatie .
+
+## 3DS
+
+3DS beschermt klanten en handelaren tegen frauduleuze activiteiten in hun winkels en maakt naleving van de EU-normen mogelijk.
+
+3DS in- of uitschakelen in het dialoogvenster [Instellingen voor creditcardvelden](#credit-card-fields).
+
+Zie [3DS in beveiliging](security.md#3ds) voor meer informatie .
 
 ## Meerdere PayPal-accounts gebruiken
 
-In Betalingsservices kunt u meerdere PayPal-rekeningen gebruiken binnen **één** handelsrekening op het niveau van de website. Als u bijvoorbeeld uw winkel(s) in meerdere landen gebruikt (die verschillende [valuta](https://docs.magento.com/user-guide/stores/currency.html)) of wil Adobe Commerce gebruiken voor bepaalde onderdelen van uw bedrijf, maar niet _alles_, je kunt je zakelijke account zo instellen dat je meerdere PayPal-accounts kunt gebruiken.
+In [!UICONTROL Payment Services], je kunt meerdere PayPal-rekeningen gebruiken binnen **één** handelsrekening op het niveau van de website. Als u bijvoorbeeld uw winkel(s) in meerdere landen gebruikt (die verschillende [valuta](https://docs.magento.com/user-guide/stores/currency.html)) of wil Adobe Commerce gebruiken voor bepaalde onderdelen van uw bedrijf, maar niet _alles_, je kunt je zakelijke account zo instellen dat je meerdere PayPal-accounts kunt gebruiken.
 
 Zie [Bereik van site, winkel en weergave](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) voor meer informatie over de hiërarchie van websites, winkels en opslagweergaven.
 
 Je verkoper kan een nieuwe [bereik](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) voor uw zakelijke account en aan boord van de aanvullende site met PayPal zodat alle PayPal-knoppen die u configureert, op uw site worden weergegeven. Neem contact op met uw verkoper voor hulp bij het gebruik van meerdere PayPal-accounts voor uw websites.
+
