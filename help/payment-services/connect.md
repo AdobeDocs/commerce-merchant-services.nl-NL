@@ -1,15 +1,15 @@
 ---
-title: Sluit uw exemplaar aan
+title: Uw instantie verbinden
 description: Verbind uw instantie van de Handel gebruikend een API sleutel en een privé sleutel, en specificeer de gegevensruimte in de configuratie.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
-source-git-commit: 5aba246ce2a7802954a90c08c7dac2247a71ff6d
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
 source-wordcount: '621'
 ht-degree: 0%
 
 ---
 
-# Sluit uw exemplaar aan
+# Uw instantie verbinden
 
 [!DNL Payment Services] wordt aangedreven door de Diensten van de Handel en opgesteld als SaaS (software als dienst). U verbindt uw instantie van de Handel gebruikend een API sleutel en een privé sleutel, en specificeert de gegevensruimte in de configuratie gebruikend [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html). **U stelt deze verbinding slechts eenmaal in.**
 

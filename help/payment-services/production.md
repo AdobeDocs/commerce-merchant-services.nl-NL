@@ -2,9 +2,9 @@
 title: Inschakelen [!DNL Payment Services] voor productie
 description: Voltooi het instapproces door [!DNL Payment Services] voor de productie.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
-source-git-commit: 7b31fe7a71c3c238e6448627b2edfe06bbfbc80e
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '702'
 ht-degree: 0%
 
 ---
@@ -22,11 +22,11 @@ U kunt de dienst in productie zetten en voltooien [onboarding](onboard.md), volg
 Na u [Configureer uw Commerce Services](connect.md#configure-commerce-services) en [sandbox testen](sandbox.md#enable-sandbox-testing) of [rechtstreekse betalingen](#enable-live-payments), moet u instellen [!DNL Payment Services] als betalingsmethode.
 
 1. Op de _Beheer_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-1. Klik op **[!UICONTROL Enable Payment Services]**.
+1. Klikken **[!UICONTROL Enable Payment Services]**.
 
    Deze optie is zichtbaar als u nog niet hebt geconfigureerd [!DNL Payment Services] als betalingsmethode voor een of meer van uw websites.
 
-   U wordt omgeleid naar het instellingengebied in de weergave Home met de relevante opties uitgevouwen (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), waar u de [!DNL Payment Services] opties als uw [betalingsmethode](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target=&quot;_blank&quot;}.
+   U wordt omgeleid naar het instellingengebied in de weergave Home met de relevante opties uitgevouwen (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), waar u de [!DNL Payment Services] opties als uw [betalingsmethode](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target="_blank"}.
 
 1. In _[!UICONTROL General Configuration]_, set **[!UICONTROL Enable]**tot `Yes`.
 1. Set **[!UICONTROL Payment Action]**, voor beide _[!UICONTROL Credit Card Fields]_en_[!UICONTROL PayPal Smart Buttons]_ op een van de volgende wijzen:
@@ -36,9 +36,9 @@ Na u [Configureer uw Commerce Services](connect.md#configure-commerce-services) 
    | `Authorize` | Hiermee geeft u de aankoop goed en houdt u de middelen in de wacht. De hoeveelheid wordt pas opgevraagd wanneer deze door de handelaar wordt &quot;gevangen&quot;. |
    | `Authorize and Capture` | hecht zijn goedkeuring aan de aankoop en de &quot;opname&quot; van de fondsen door de handelaar. |
 
-1. Klik op **[!UICONTROL Save]**.
+1. Klikken **[!UICONTROL Save]**.
 1. Klikken **[!UICONTROL Go to Payment Services]** om terug te keren naar de [!DNL Payment Services] Home.
-1. [Cache wissen](https://docs.magento.com/user-guide/system/cache-management.html){target=&quot;_blank&quot;}.
+1. [Cache wissen](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}.
 
    Het ontruimen zou na elke configuratieverandering moeten worden gedaan.
 
@@ -47,7 +47,7 @@ Zie [Betalingsservices configureren](settings.md) voor meer informatie over het 
 ## Volledige merchant aan boord
 
 1. Op de _Beheer_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-1. Klik op **[!UICONTROL Live onboarding]**.
+1. Klikken **[!UICONTROL Live onboarding]**.
 
    Deze optie is zichtbaar als u nog niet live on boarding hebt voltooid voor [!DNL Payment Services].
 
@@ -106,8 +106,8 @@ Levende betalingen mogelijk maken:
 1. Op de _Beheer_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Klik op Home op **[!UICONTROL Settings]** rechtsboven op de pagina. Zie [Home](payments-home.md) voor meer informatie .
 1. In de _[!UICONTROL General Configuration]_sectieset **[!UICONTROL Payment mode]**tot `Production`.
-1. Klik op **[!UICONTROL Save]**.
-1. [Cache wissen](https://docs.magento.com/user-guide/system/cache-management.html){target=&quot;_blank&quot;}.
+1. Klikken **[!UICONTROL Save]**.
+1. [Cache wissen](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}.
 
    >[!IMPORTANT]
    >

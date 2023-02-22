@@ -1,17 +1,17 @@
 ---
-title: Betalingsstatusrapport bestellen
+title: Betalingsstatusrapport bestelling
 description: Gebruik het rapport Betalingsstatus bestellen om de betalingsstatus van uw bestellingen beter te kunnen bekijken en om eventuele problemen op te sporen.
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: ddd9fa9b2a709858239c88477f19e8787a0b65c2
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
-source-wordcount: '1436'
+source-wordcount: '1416'
 ht-degree: 0%
 
 ---
 
-# Betalingsstatusrapport bestellen
+# Betalingsstatusrapport bestelling
 
 [!DNL Payment Services] for [!DNL Adobe Commerce] en [!DNL Magento Open Source] biedt u uitgebreide rapportage zodat u een duidelijk beeld krijgt van de bestellingen en betalingen van uw winkel.
 
@@ -33,11 +33,11 @@ U kunt betalingstransacties voor bestellingen downloaden in de indeling .csv en 
 
 De [!DNL Payment Services] -module gebruikt bestelgegevens en combineert deze met geaggregeerde betalingsgegevens uit andere bronnen (waaronder PayPal) voor zinvolle en zeer nuttige rapporten.
 
-Bestelgegevens worden geëxporteerd en blijven in de betalingsservice staan. Wanneer u [orderstatussen wijzigen of toevoegen](https://docs.magento.com/user-guide/sales/order-status-custom.html){target=&quot;_blank&quot;} of [een winkelweergave bewerken](https://docs.magento.com/user-guide/stores/stores-all-view-edit.html){target=&quot;_blank&quot;}, [winkel](https://docs.magento.com/user-guide/stores/store-information.html){target=&quot;_blank&quot;}, of de naam van de website, dat de gegevens met betalingsgegevens worden gecombineerd en het rapport Betalingsstatus bestellen wordt gevuld met de gecombineerde informatie.
+Bestelgegevens worden geëxporteerd en blijven in de betalingsservice staan. Wanneer u [orderstatussen wijzigen of toevoegen](https://docs.magento.com/user-guide/sales/order-status-custom.html){target="_blank"} or [edit a store view](https://docs.magento.com/user-guide/stores/stores-all-view-edit.html){target="_blank"}, [store](https://docs.magento.com/user-guide/stores/store-information.html){target="_blank"}, of de naam van de website, die gegevens worden gecombineerd met betalingsgegevens en het rapport over de betalingsstatus van de bestelling wordt gevuld met de gecombineerde informatie.
 
 Er zijn twee stappen in dit proces:
 
-1. De index wordt gewijzigd: `ON SAVE` (telkens wanneer orderinfo of opslaginformatie wordt gewijzigd) of `BY SCHEDULE` (op een vooraf gevormd bouwplan), afhankelijk van hoe het binnen wordt gevormd [Indexbeheer](https://docs.magento.com/user-guide/system/index-management.html){target=&quot;_blank&quot;} in de beheerfunctie.
+1. De index wordt gewijzigd: `ON SAVE` (telkens wanneer orderinfo of opslaginformatie wordt gewijzigd) of `BY SCHEDULE` (op een vooraf gevormd bouwplan), afhankelijk van hoe het binnen wordt gevormd [Indexbeheer](https://docs.magento.com/user-guide/system/index-management.html){target="_blank"} in de Admin.
 
    Standaard wordt gegevensindexering uitgevoerd `ON SAVE`, wat betekent dat wanneer er iets verandert in de volgorde, de orderstatus, de winkelweergave, de winkel of de website, het opnieuw indexeren onmiddellijk plaatsvindt.
 
@@ -53,7 +53,7 @@ De enige gegevens die voor rapportagedoeleinden worden geëxporteerd en gesortee
 
 Alhoewel, door gebrek, gebeurt het opnieuw indexeren binnen `ON SAVE` wordt aanbevolen om te indexeren in `BY SCHEDULE` in. De `BY SCHEDULE` De index wordt uitgevoerd volgens een uitsnijdschema van één minuut en alle gewijzigde gegevens worden weergegeven in het statusrapport van uw bestelling binnen twee minuten na elke gegevenswijziging. Deze geplande herindexering helpt u om het even welke druk op uw opslag te verminderen, vooral als u een groot volume van inkomende orden hebt, omdat het op een programma gebeurt (niet aangezien elke orde wordt geplaatst).
 
-U kunt de indexmodus wijzigen—`ON SAVE` of `BY SCHEDULE`—[in de beheerder](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target=&quot;_blank&quot;}.
+U kunt de indexmodus wijzigen—`ON SAVE` of `BY SCHEDULE`—[in de beheerder](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target="_blank"}.
 
 Om te leren hoe te om de gegevensuitvoer te vormen, zie [Configuratie van opdrachtregel](configure-cli.md#configure-data-export).
 
@@ -181,10 +181,10 @@ Betalingsstatusrapporten voor bestellingen bevatten de volgende informatie.
 
 | Kolom | Beschrijving |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | Handelsorder-ID<br> <br>Verwante items weergeven [orderinfo](https://docs.magento.com/user-guide/sales/orders.html){target=&quot;_blank&quot;}, klikt u op de id. |
+| [!UICONTROL Order ID] | Handelsorder-ID<br> <br>Verwante items weergeven [orderinfo](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}, klikt u op de id. |
 | [!UICONTROL Order Date] | Tijdstempel van besteldatum |
 | [!UICONTROL Authorized Date] | Tijdstempel van betalingsvergunning |
-| [!UICONTROL Order Status] | Huidige handel [orderstatus](https://docs.magento.com/user-guide/sales/order-status.html){target=&quot;_blank&quot;} |
+| [!UICONTROL Order Status] | Huidige handel [orderstatus](https://docs.magento.com/user-guide/sales/order-status.html){target="_blank"} |
 | [!UICONTROL Invoiced] | Factuurstatus van de bestelling—*[!UICONTROL No]*, *[!UICONTROL Partial]*, of *[!UICONTROL Yes]* |
 | [!UICONTROL Shipped] | Verzendstatus van bestelling—*[!UICONTROL No]*, *[!UICONTROL Partial]*, of *[!UICONTROL Yes]* |
 | [!UICONTROL Order Amt] | Totaalbedrag van de beschikking |

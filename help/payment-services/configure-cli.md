@@ -1,17 +1,17 @@
 ---
-title: Configuratie van opdrachtregel
+title: Configuratie opdrachtregel
 description: Na installatie kunt u configureren [!DNL Payment Services] het gebruiken van de bevel-lijn Interface (CLI).
 role: Admin, Developer
 level: Intermediate
 exl-id: 265ab1be-fe52-41f3-85cb-addbc2ddfb17
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '489'
 ht-degree: 0%
 
 ---
 
-# Configuratie van opdrachtregel
+# Configuratie opdrachtregel
 
 Na de installatie [!DNL Payment Services]kunt u het eenvoudig configureren vanuit [binnen de woning](payments-home.md) of via de bevel-lijn Interface (CLI).
 
@@ -47,11 +47,11 @@ bin/magento indexer:set-mode schedule sales_order_data_exporter sales_order_stat
 >
 >Als u geen indexeerders in uw bevel specificeert, worden alle indexeerders bijgewerkt aan de zelfde waarde. Als u een specifieke indexeerder wilt veranderen, moet u het in uw bevel vermelden.
 
-Voor meer informatie over het manueel veranderen van de wijze van een indexeerder, zie [Indexeerders configureren](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#configure-indexers){target=&quot;_blank&quot;} in de ontwikkelaarsdocumentatie. Zie voor meer informatie over het wijzigen van de [Indexbeheer](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target=&quot;_blank&quot;} in de basisgebruikershandleiding.
+Voor meer informatie over het manueel veranderen van de wijze van een indexeerder, zie [Indexeerders configureren](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#configure-indexers){target="_blank"} in the developer documentation. To learn how to change it in the Admin, see [Index management](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target="_blank"} in de basisgebruikershandleiding.
 
 ### Gegevens handmatig opnieuw indexeren
 
-U kunt gegevens handmatig opnieuw indexeren in plaats van te wachten tot dit automatisch gebeurt. Zie [Opnieuw indexeren](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#reindex){target=&quot;_blank&quot;} in [De indexen beheren](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html){target=&quot;_blank&quot;} voor meer informatie.
+U kunt gegevens handmatig opnieuw indexeren in plaats van te wachten tot dit automatisch gebeurt. Zie [Opnieuw indexeren](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#reindex){target="_blank"} in [Manage the Indexers](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html){target="_blank"} voor meer informatie .
 
 Wanneer `BY SCHEDULE` wordt ingesteld, worden entiteiten gewijzigd in de systeemtracks en wordt de index voor deze entiteiten bijgewerkt op basis van een ingestelde planning. Zie [Uitsnijden uitvoeren vanaf de opdrachtregel](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html#config-cli-cron-group-run) in [Uitsnede configureren en uitvoeren](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html)) om te leren hoe u indexatie handmatig kunt activeren met behulp van uitsnijdtaken.
 
