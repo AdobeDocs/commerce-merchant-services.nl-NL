@@ -2,9 +2,9 @@
 title: '''[!DNL Quick Checkout] Opmerkingen bij de release'
 description: Lees de opmerkingen bij de release voor meer informatie over alle [!DNL Quick Checkout] lozingen.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
+source-git-commit: d0d205b394a772ca84ffb561d0695bd79144f2c6
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1276'
 ht-degree: 0%
 
 ---
@@ -64,6 +64,12 @@ _5 oktober 2022_
 ![Probleem opgelost](../assets/fix.svg)<!-- Issue BOLT-369 --> De [[!DNL Quick Checkout] Deelvenster Beheer](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) geeft de app-versie weer in de voettekst.
 
 +++
+
+## v1.7.0
+
+_22 februari 2023_
+
+![Probleem opgelost](../assets/fix.svg)<!-- Issue AC-8002 --> De ervaring van de gebruiker verbetert wanneer het plaatsen van een orde die [Multiverzending](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/multishipping-settings.html) methode. Met deze functie kunnen betalingsmethoden worden weergegeven tijdens het afrekenen wanneer [!DNL Quick Checkout] is ingeschakeld.
 
 ## v1.6.0
 
