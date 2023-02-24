@@ -1,12 +1,12 @@
 ---
 title: Inchecken van ervaring instellen
-description: Configureer de opties voor het maken van de auto en het modelmodel dat beschikbaar is voor klanten die het ophalen van de wagen willen beperken wanneer ze het formulier voor de ophaalvolgorde invullen.
+description: Configureer de selectie van het merk en model van de auto] zodat klanten die de ophaalservice aanvragen, kunnen krullen wanneer ze het formulier voor de ophaalvolgorde invullen.
 role: User, Admin
 level: Intermediate
 exl-id: 341b96cd-bb83-4d07-965c-b09fab24dc81
-source-git-commit: 5e7dcc48c65b2f3f75a33c6e556dcef882a80549
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '170'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---

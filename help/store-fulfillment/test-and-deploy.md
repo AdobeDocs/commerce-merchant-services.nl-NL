@@ -4,9 +4,9 @@ description: Test een plan om de functionaliteit voor winkelvervulling te verifi
 role: User, Admin
 level: Intermediate
 exl-id: 77285a66-5161-407b-94cd-b3f412d7949d
-source-git-commit: 0a1d70465247422db44daee302c67fe1a5a29d32
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '2657'
+source-wordcount: '2660'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ De verbindingsconfiguratie moet worden voltooid alvorens u om het even welke tes
 
 1. Van het opslagnet, verifieer dat de opslag zoals gemerkt wordt `Synced` voordat u testorders maakt.
 
-## Voorbeeldtestplan
+## Monstertestplan
 
 De detailhandelaars bevestigen de basisfunctionaliteit van de oplossing van de Afhandeling van de Opslag tijdens de configuratie en testfasen van een plaatsing. Dit voorbeeldtestplan biedt een beginpunt voor het testen. Voeg extra scenario&#39;s toe die op uw vereisten worden gebaseerd.
 
@@ -47,7 +47,7 @@ De detailhandelaars bevestigen de basisfunctionaliteit van de oplossing van de A
 
 Dit steekproeftestplan bestrijkt de volgende functionele gebieden:
 
-| Functioneel gebied | -functie | Rol |
+| Functioneel gebied | Functie | Rol |
 |-------------------------------------|------------------------------------------|----------------------------------|
 | Synchronisatie van inventarisatie en bestelling | API-inventarisatie | Adobe Commerce Admin |
 | End-to-end | Workflows voor annulering van bestellingen | Klant, Admin, Store Associated |
@@ -56,7 +56,7 @@ Dit steekproeftestplan bestrijkt de volgende functionele gebieden:
 | Afhandeling aan voorzijde</br>Formulier inchecken | Inchecken | Klant, beheerder |
 | App Winkelassistentie | Volgorde</br>Selecteren</br>Werkgebied</br>en Handoff | Winkelkoppeling |
 
-### Inventarisatie-API-synchronisatie
+### API-inventarisatie
 
 Deze sectie van het testplan behandelt inventaris en ordesynchronisatie om te verifiëren dat de updates aan bestelbronnen en de voorraden correct tussen Adobe Commerce en de oplossing van de Behandeling van de Opslag worden gesynchroniseerd.
 
@@ -67,7 +67,7 @@ Deze sectie van het testplan behandelt inventaris en ordesynchronisatie om te ve
 <table>
 <thead>
 <tr>
-<th>-functie</th>
+<th>Functie</th>
 <th>Scenario testen</th>
 <th>Verwachte resultaten</th>
 </tr>
@@ -81,7 +81,7 @@ Deze sectie van het testplan behandelt inventaris en ordesynchronisatie om te ve
 <tr>
 <td><strong>Bestaande bron van opgehaalde bestanden bijwerken</strong></td>
 <td>Sla updates op naar een bestaande bron van ophaalvoorraad.</td>
-<td>De synchronisatie in real time verzendt de details naar het GIF van het Smartard binnen 5 minuten</td>
+<td>De synchrone verrichting in real time verzendt de details naar het GIF van het Smarm binnen 5 minuten</td>
 </tr>
 <tr>
 <td><strong>Ophaalvoorraadbron</br><code>Is Synced</code> status</br><code>Is Synced</code></strong></td>
@@ -121,7 +121,7 @@ Deze sectie van het testplan omvat scenario&#39;s om het werkschema van begin to
 
 <table style="table-layout:fixed">
 <tr>
-<th>-functie</th>
+<th>Functie</th>
 <th>Scenario</th>
 <th>Verwachte resultaten</th>
 </tr>
@@ -277,7 +277,7 @@ Deze sectie van het testplan omvat scenario&#39;s om het werkschema van begin to
 <ol>
 <li>Plaats de bestelling.</li>
 <li>Wacht tot de volgorde is gesynchroniseerd.</li>
-<li>Controleer of de factuur is gemaakt (als u toestemming geeft en vastlegt) en of de factuur per e-mail is ontvangen.</li>
+<li>Als de optie voor autoriseren en vastleggen is geconfigureerd, controleert u of de factuur is gemaakt en of de klant de factuur per e-mail heeft ontvangen.</li>
 <li>Kies alle producten met Postman.</li>
 <li>Inchecken.</li>
 <li>Maak een dispensatie.</li>
@@ -332,7 +332,7 @@ In dit gedeelte van het testplan wordt het accountbeheer voor App Users-gebruike
 
 <table style="table-layout:auto">
 <tr>
-<th>-functie</th>
+<th>Functie</th>
 <th>Scenario</th>
 <th>Verwachte resultaten</th>
 </tr>
@@ -388,7 +388,7 @@ De testscenario&#39;s voor de Types van Product van Adobe Commerce verifiëren d
 
 <table style="table-layout:auto">
 <tr>
-<th>-functie</th>
+<th>Functie</th>
 <th>Scenario</th>
 <th>Opmerkingen</th>
 </tr>
@@ -463,7 +463,7 @@ Deze sectie van het testplan behandelt de Controle-In Ervaring voor de Bestellin
 
 <table style="table-layout:auto">
 <tr>
-<th>-functie</th>
+<th>Functie</th>
 <th>Scenario</th>
 <th>Verwachte resultaten</th>
 </tr>
@@ -520,7 +520,7 @@ Een klant verzendt een bestelling met de optie Ophalen in de winkel. Tijdens het
 
 <table style="table-layout:auto">
 <tr>
-<th>-functie</th>
+<th>Functie</th>
 <th>Scenario</th>
 <th>Verwachte resultaten</th>
 </tr>
@@ -559,46 +559,46 @@ Deze sectie van het testplan behandelt scenario&#39;s voor het testen van orde, 
 
 <table style="table-layout:auto">
 <tr>
-<th>-functie</th>
+<th>Functie</th>
 <th>Scenario</th>
 <th>Verwachte resultaten</th>
 </tr>
 <tr>
 <td>
 <strong>Ophalen van één bestelling—gelukkig pad, ophalen van rand</strong></td>
-<td>Selecteer objecten van één en meerdere aantallen. Geen plukken van nul, en krullende ophaling (met het opvoeren).
+<td>Selecteer objecten van één en meerdere aantallen. Geen gelijke plukken, en curbside oppeling (met het opvoeren).
 </td>
 <td>
 </td>
 </tr>
 <tr>
 <td><strong>Ophalen van meerdere bestellingen—gelukkig pad, ophalen van rand</strong></td>
-<td>Enkelvoudige en meervoudige items. Geen plukken van nul en ophalen van curbside (met opvoeren)</td>
+<td>Enkelvoudige en meervoudige items. Geen gelijke plukken, en curbside oppeling (met het opvoeren)</td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Ophalen via één bestelling—ophalen via een gelukkig pad in de winkel</strong></td>
-<td>Enkelvoudige en meervoudige items. Geen plukken van nul, en ophalen van instore (met het opvoeren)</td>
+<td>Enkelvoudige en meervoudige items. Geen plukken van nul en ophalen in de winkel (met ophaling)</td>
 <td>
 </td>
 </tr>
 <tr>
 <td><strong>Ophalen van meerdere bestellingen—gelukkig pad, ophalen in winkel</strong></td>
-<td>Selecteer objecten van één en meerdere aantallen. Geen plukken van nul, en krullende ophaling (met het opvoeren).</td>
+<td>Selecteer objecten van één en meerdere aantallen. Geen gelijke plukken, en curbside oppeling (met het opvoeren).</td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Eén bestelling kiezen—geen gelukkig pad, in-store ophalen</strong></td>
-<td>Afzonderlijke items en items van meerdere aantallen selecteren met gedeeltelijke items en items in nilkeuze en instorting (met ophaling)</td>
+<td>Afzonderlijke objecten en meerdere objecten kiezen met gedeeltelijk en niloogst en ophaalbewerkingen in de winkel (met ophaling)</td>
 </td>
 <td></td>
 </tr>
 <td><strong>Ophalen van meerdere bestellingen—niet ophalen van padcurbside</strong></td>
-<td>Afzonderlijke items en items van meerdere aantallen selecteren met gedeeltelijke items en items in nilkeuze en instorting (met ophaling)</td>
+<td>Afzonderlijke objecten en meerdere objecten kiezen met gedeeltelijk en niloogst en ophaalbewerkingen in de winkel (met ophaling)</td>
 <td></td>
 </tr>
 <td><strong>Eén bestelling selecteren—geen gelukkig pad, ophalen op de achtergrond</strong></td>
-<td>Enkelvoudige en meervoudige items kiezen met gedeeltelijk en niloogst en curbside oppakken (met ophaling)</strong></td>
+<td>Items van één of meerdere aantallen selecteren met gedeeltelijke en automatische selectie en curbside oppikken (met ophaling)</strong></td>
 </td>
 <td></td>
 </tr>

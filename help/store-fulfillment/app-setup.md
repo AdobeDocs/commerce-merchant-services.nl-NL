@@ -4,14 +4,14 @@ description: Stel de [!DNL Store Assist] app voor het beheer van end-to-end work
 role: User, Admin
 level: Intermediate
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
-source-git-commit: fda4620f57aa7aa9fb930b10f5717fee98983378
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '623'
 ht-degree: 0%
 
 ---
 
-# App-instelling
+# Setup van app
 
 Store Assist is een afhandeling-als-dienst (FaaS) platform app aangedreven door de Technologieën van de Handel van de Marm. De app biedt in-store uitvoeringsmogelijkheden voor verwerking [!DNL buy online, pick up in store] (BOPIS) orders. Met de Hulp van de Opslag, kunnen de opslagvennoten zien welke punten klanten bestelde, de correcte punten sneller plukken, en opstelling vervulde orden voor de ophaallevering in-store of curbside aan klanten.
 
@@ -44,7 +44,7 @@ Voor de app Store Assist zijn twee soorten configuraties vereist:
 
    - **Annulering uit de winkel**—Specificeer of de orden van de opslag kunnen worden geannuleerd en welke rollen annuleringstoestemmingen hebben
 
-   - **Opschonen van bestellingen, venster**—Opgeven hoe lang het verleden is [Geschatte levertijd voor afhalen](enable-general.md#delivery-method-title-configuration) dat een geplakte order in ophaling alvorens wordt herbevolkt-bijvoorbeeld, drie dagen blijft. De standaardwaarde is 7 dagen. Als deze configuratie is ingeschakeld, wordt de volgorde automatisch geannuleerd wanneer deze tijd verloopt. De items worden opnieuw opgeslagen en de verkoper ontvangt een annuleringsbericht.
+   - **Opschonen van bestellingen, venster**—Opgeven hoe lang het verleden is [Geschatte levertijd voor afhalen](enable-general.md#delivery-method-title-configuration) dat een geplakte order in ophaling alvorens wordt herbevolkt-bijvoorbeeld, drie dagen blijft. De standaardwaarde is zeven dagen. Als deze configuratie is ingeschakeld, wordt de volgorde automatisch geannuleerd wanneer deze tijd verloopt. De items worden opnieuw opgeslagen en de verkoper ontvangt een annuleringsbericht.
 
    - Alles aanpassen in app-instructies (kiezen, opvoeren, afleveren).
 
@@ -63,11 +63,11 @@ Nadat de app Store Assist is ingesteld en geconfigureerd, kunnen Store Associate
 
 - Controleren of het mobiele apparaat voldoet aan de [hardware- en softwarevereisten](solution-requirements.md#store-assist-app-requirements) voor de Oplossing van de Behandeling van de Opslag.
 
-- Download de app Store Assist vanuit de [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id1609281539){target=&quot;_blank&quot;} of de [Google Play-winkel](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target=&quot;_blank&quot;}.
+- Download de app Store Assist vanuit de [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id1609281539){target="_blank"} or the [Google Play store](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target="_blank"}.
 
 - Voor het aanmelden bij Store Associates is de volgende informatie vereist:
 
    - **[!UICONTROL Company name]** gekoppeld aan de account Winkelassistentie
 
    - **Accountgegevens voor Winkelassistentie**—gebruikersnaam en wachtwoord voor hun account.
-   Een Adobe Commerce-beheerder kan een gebruikersaccount maken en machtigingen instellen voor de [!DNL Store Assist app] gebruikersaccounts voor opslaglocaties die [Ophalen in winkel](merchant-store-configuration.md#pickup-location-configuration) ingeschakeld in de beheerinstellingen voor winkels.
+   Een Adobe Commerce-beheerder kan [!DNL Store Assist app] gebruikersaccounts voor alle opslaglocaties die [Ophalen in winkel](merchant-store-configuration.md#pickup-location-configuration) ingeschakeld in de beheerinstellingen voor winkels.

@@ -1,12 +1,12 @@
 ---
 title: Configuratie achtergrondproces
-description: '"Vorm de programma''s voor [!DNL Store Fulfillment] achtergrondprocessen die worden gebruikt voor het synchroniseren van gegevens met de uitvoeringsservices."                   '
+description: "Vorm de programma's voor [!DNL Store Fulfillment] achtergrondprocessen die worden gebruikt voor het synchroniseren van gegevens met de uitvoeringsservices."
 role: User, Admin
 level: Intermediate
 exl-id: 742ae59e-77a0-4db6-b156-2992d4403be7
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '135'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---

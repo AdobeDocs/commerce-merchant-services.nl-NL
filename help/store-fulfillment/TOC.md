@@ -1,11 +1,11 @@
 ---
-user-guide-title: '"[!DNL Store FulFillment Guide]"'
+user-guide-title: "[!DNL Store FulFillment Guide]"
 user-guide-description: Gedetailleerde informatie over het installeren, configureren en gebruiken van Store Fulfillment voor Adobe Commerce-winkels.
 breadcrumb-title: Winkeltegoed voor Adobe Commerce
 index: true
-source-git-commit: 27ed666954f445eb99e0bf370d1155924bfb8ad3
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '83'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 - [Overzicht van configuratie](service-config-settings-overview.md)
 - Winkelconfiguratie {#store-configuration}
    - [Algemene configuratie](enable-general.md)
-   - [E-mails over verkopen](sales-emails.md)
+   - [E-mailsjablonen verkopen](sales-emails.md)
    - [Merchant Store (bronnen)](merchant-store-configuration.md)
    - [Productvoorraadbeheer](product-stock.md)
    - [Inventory management-bronoverdracht](inventory-stock-transfer.md)
@@ -37,5 +37,4 @@ ht-degree: 0%
    - [Inchecken van ervaring instellen](check-in-experience-setup.md)
    - [Gebruikersinstelling](user-setup.md)
    - [Setup van app](app-setup.md)
-
 

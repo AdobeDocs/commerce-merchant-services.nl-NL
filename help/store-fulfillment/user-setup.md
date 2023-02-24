@@ -1,15 +1,15 @@
 ---
 title: Gebruikersinstelling
-description: 'Uitgebreide Inventory management-bronnen instellen als winkels ter ondersteuning van de oplossing Winkelafhandeling voor Adobe Commerce. '
+description: Uitgebreide Inventory management-bronnen instellen als winkels ter ondersteuning van de oplossing Winkelafhandeling voor Adobe Commerce.
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: eb735bef-c339-4d0b-b3e7-10328915725b
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
-
 
 # Gebruikersinstelling
 

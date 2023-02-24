@@ -4,16 +4,16 @@ description: Voorschriften voor de levering en het aan boord nemen van de [!DNL 
 role: User, Admin
 level: Intermediate
 exl-id: f9e05049-5904-4f6c-b45d-9f81fbc76b69
-source-git-commit: 842d5b7182d54a1aa5a715662503801816a24c24
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Vereisten voor winkelvervulling voor Adobe Commerce
 
-U moet voldoen aan de volgende technische en zakelijke vereisten om de oplossing voor het voldoen van winkels voor Adobe Commerce te installeren en in te schakelen.
+In de volgende secties worden de technische en zakelijke vereisten beschreven voor het installeren en inschakelen van de Opslagoplossing voor Adobe Commerce.
 
 ## Vereisten voor Platform- en softwareversies
 
@@ -56,7 +56,7 @@ Uw bedrijf moet aan de volgende minimumcriteria voldoen om de oplossing van de A
 
 - Alleen in de VS gevestigde ondernemingen
 
-- B2C-detailhandelaren, CPG-fabrikanten die D2C verkopen of distributeurs die D2C verkopen of aan kleine bedrijven
+- Zakelijk voor consumenten (B2C) detailhandelaren, verbruiksgoederen (CPG) Producenten die rechtstreeks aan consumenten verkopen (D2C), of distributeurs die rechtstreeks aan consumenten of kleine bedrijven verkopen
 
 - Ten minste één fysieke opslag of opslagplaats
 

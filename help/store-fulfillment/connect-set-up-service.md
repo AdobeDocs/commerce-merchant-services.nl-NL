@@ -3,16 +3,17 @@ title: De oplossing voor winkelvervulling aansluiten
 description: Bepaal de verbindingen tussen Adobe Commerce en de oplossing van de Afhandeling van de Opslag door een integratie van Adobe Commerce te creëren en te machtigen en de de rekeningsgeloofsbrieven van de Rekening van de Afhandeling van de Opslag toe te voegen aan de de dienstconfiguratie van Adobe Commerce.
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: 74c71c43-305a-4ea7-84f8-95f3ce0a9482
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # De oplossing voor winkelvervulling aansluiten
 
-Bepaal de verbinding tussen Adobe Commerce en de diensten van de Afhandeling van de Opslag door de vereiste authentificatiegeloofsbrieven en verbindingsgegevens van Admin te vormen.
+Connect Store Fulfillment Services met Adobe Commerce door de vereiste verificatiereferenties en verbindingsgegevens toe te voegen aan Adobe Commerce Admin.
 
 - **[Configureren [!DNL Commerce integration settings]](#create-the-commerce-integration)**- Maak een Adobe Commerce-integratie voor de services van Store Fulfillment en genereer de toegangstokens om binnenkomende aanvragen van de servers van Store Fulfillment te verifiëren.
 
@@ -59,7 +60,7 @@ Deze geloofsbrieven worden vereist om de Afhandeling van de Opslag te vormen en 
 
 >[!NOTE]
 >
->Het maken van een account kan enige tijd duren. Terwijl u op geloofsbrieven wacht, [andere instellingen voor de oplossing Afhandeling opslaan controleren en configureren](service-config-settings-overview.md).
+>Het maken van een account kan enige tijd duren. Terwijl u op geloofsbrieven wacht, [Andere instellingen voor de oplossing Afhandeling opslaan bekijken en configureren](service-config-settings-overview.md).
 
 ### Referenties toevoegen om verbinding te maken met Afhandeling van winkel
 
@@ -76,11 +77,3 @@ Deze geloofsbrieven worden vereist om de Afhandeling van de Opslag te vormen en 
 >[!NOTE]
 >
 >Als de geloofsbrieven ongeldig zijn, verifieer dat u de correcte waarden voor elke milieu inging en revalidate. Neem contact op met uw accountvertegenwoordiger als er nog steeds verbindingsproblemen zijn.
-
-
-
-
-
-
-
-

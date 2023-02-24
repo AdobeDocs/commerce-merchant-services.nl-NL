@@ -1,18 +1,18 @@
 ---
-title: Verkoop-e-mails
+title: E-mailsjablonen voor verkoop
 description: Configureer de transactionele e-mailsjablonen voor de communicatie met klanten en sla beheerders op tijdens het uitvoeringsproces voor ophaalopdrachten van de winkel.
 role: User, Admin
 level: Intermediate
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 31ad67d3f3d11c68341de0306eea37f231b2d9b9
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '1200'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 
-# Verkoop-e-mails
+# E-mailsjablonen voor verkoop
 
 Store Fulfillment biedt een uitgebreide reeks transactie-e-mailsjablonen aan ter ondersteuning van workflows voor bestellingen en afhandeling. Zij bieden verenigbare, geautomatiseerde mededeling en overseinen over kanalen-het op de hoogte brengen van klant en opslagbeheerders over de veranderingen van de ordestatus, instructies voor in-store bestelorden, en meer aan.
 

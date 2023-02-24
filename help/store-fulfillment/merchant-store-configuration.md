@@ -1,11 +1,12 @@
 ---
-title: Bedrijfswinkelconfiguratie
-description: 'Uitgebreide Inventory management-bronnen instellen als winkels. '
+title: Configuratie van Merchant Stores
+description: Uitgebreide Inventory management-bronnen instellen als winkels.
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+exl-id: 7c3444d0-5ecb-4ac1-aa81-e48eea290f5d
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '1209'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -141,10 +142,3 @@ Configuratie Merchant Stores beheren vanuit de beheerder: **[!UICONTROL Stores >
 | **[!UICONTROL Is Car Make a Mandatory Field?]**</br>`Extension Attribute: car_make_mandatory` | Geef tijdens het inchecken aan of identificatie van het voertuig vereist is voor klanten.</br></br>Indien dit mogelijk is, wordt de klant gevraagd het merk van het voertuig bij aankomst aan te geven. Als deze optie is uitgeschakeld, kan de klant deze invoer overslaan. | Algemeen | Nee |
 | **[!UICONTROL Use Additional Information]**</br> `Extension Attribute: use_additional_information` | Specificeer of om inzameling van extra informatie van de klant tijdens Controle-binnen te steunen. | Algemeen | Nee |
 | **[!UICONTROL Is Additional Information a Mandatory Field?]**</br>`Extension Attribute: additional_information_mandatory` | Geef tijdens het inchecken op of er aanvullende informatie nodig is voor klanten. </br></br>Indien ingeschakeld, wordt de klant gevraagd om aanvullende informatie bij aankomst in te voeren. Als deze optie is uitgeschakeld, kan de klant deze invoer overslaan. | Algemeen | Nee |
-
-
-
-
-
-
-

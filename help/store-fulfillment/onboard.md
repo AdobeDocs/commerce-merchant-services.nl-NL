@@ -1,10 +1,10 @@
 ---
-title: Overzicht van onboarding voor services voor winkeluitvoering
-description: '''[!DNL Live Search] aan boord gaan, systeemvereisten, grenzen en beperkingen.'''
+title: Onboarding-overzicht voor services voor winkeluitvoering
+description: '[!DNL Live Search] aan boord gaan, systeemvereisten, grenzen en beperkingen.'
 role: User, Admin
 level: Intermediate
 exl-id: f8e403ac-9bbd-4ea2-b209-9b1a8d1e32a2
-source-git-commit: 1fb22b4644d41ea5c60aead3fe2c455dfa3382f8
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Aan de slag met [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce T
 
 - **Veruitvoeringsaccount opslaan**-Tijdens het inschakelingsproces maakt een accountmanager een account voor de afhandeling van winkels en geeft hij u de accountgegevens en -gegevens. Deze gegevens zijn vereist voor het inschakelen van de verbinding tussen Adobe Commerce en de Opslagoplossing.
 
-- **App Winkelassistentie**—Biedt winkelassociaties een end-to-end workflow voor het uitvoeren van opslagtaken om BOPIS-orders van mobiele apparaten te beheren. De Vennoten van de opslag kunnen Walmart downloaden en installeren [!DNL Store Assist] voor iOS- en Android™-apparaten. Het app onboarding proces wordt beheerd door het Walmart Commerce Technologies Client Center als afzonderlijk proces. Maar [bepaalde instellingen voor toepassingsconfiguratie](user-setup.md) worden voltooid via de Adobe Commerce Admin.
+- **App Winkelassistentie**—Biedt winkelassociaties een end-to-end workflow voor het uitvoeren van opslagtaken om BOPIS-orders van mobiele apparaten te beheren. Store Associates kan Walmart&#39;s downloaden en installeren [!DNL Store Assist] voor iOS- en Android™-apparaten. Het app onboarding proces wordt beheerd door het Walmart Commerce Technologies Client Center als afzonderlijk proces. Maar [bepaalde instellingen voor toepassingsconfiguratie](user-setup.md) worden voltooid via de Adobe Commerce Admin.
 
    | Store Assist App - weergave Aan de slag | Store Assist App — weergave Modules |
    |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|

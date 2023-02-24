@@ -4,16 +4,16 @@ description: Vorm het commerciële voorraadoverseinen en de eigenschappen beschi
 role: User, Admin
 level: Intermediate
 exl-id: 3ac217f7-e823-4578-8416-5ecceb76aa87
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # Productvoorraadbeheer
 
-Als verkoper kun je Adobe Commerce gebruiken [Inventory management](https://docs.magento.com/user-guide/catalog/inventory-management.html) voorraad- en bronopties. Bovendien kunt u andere opties voor voorraadbeschikbaarheid instellen met betrekking tot uw winkelactiviteiten met de Opslagoplossing.
+Als verkoper kun je Adobe Commerce gebruiken [Inventory management](https://docs.magento.com/user-guide/catalog/inventory-management.html) voorraad- en bronopties. U kunt ook de oplossing Afhandeling van winkel gebruiken om andere opties voor de beschikbaarheid van voorraden in te stellen die betrekking hebben op de activiteiten van uw winkel.
 
 - Optie voor thuislevering uit Merchant-winkels
 
@@ -30,9 +30,9 @@ Opties voor productvoorraad configureren van de beheerder: **[!UICONTROL Catalog
 ## **Opties voor productvoorraad**
 
 | **Veld** | **Beschrijving** | **Toepassingsgebied** | **Vereist** |
-|----------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|--------------|
-| **Beschikbaar voor thuislevering** | Hiermee stelt u de beschikbaarheid van Home Delivery (Ship-from-Store) voor het product in. Als deze optie is ingeschakeld, worden alle toegewezen winkellocaties met een beschikbare voorraad voor het product in aanmerking genomen voor de optie Home Delivery. Als het product is uitgeschakeld, komt het nooit in aanmerking voor thuislevering, zelfs niet als een winkel een voorraad heeft.</br></br>In de meeste gevallen is het voldoende deze optie in te stellen op winkelniveau. Er kunnen zich echter unieke gevallen voordoen voor specifieke producten, zoals producten waarvoor een federale scheepvaartbeperking geldt, die niet in aanmerking mogen komen voor thuislevering. | Website | Nee |
-| **[!UICONTROL Available for Store Pickup]** | Stel de beschikbaarheid van de Ophaalservice voor het product in. Als deze optie is ingeschakeld, worden toegewezen winkellocaties met een beschikbare voorraad voor het product in aanmerking genomen voor de optie Ophalen uit winkel. Als het product is uitgeschakeld, komt het nooit in aanmerking voor Ophalen uit de winkel, zelfs niet als een winkel een voorraad heeft.</br></br>Deze optie kan handig zijn in gevallen waarin u de inventaris van winkels bijhoudt in het systeem, maar u wilt deze niet via het e-commercekanaal verkopen. | Website | Nee |
+|----------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|--------------|
+| **Beschikbaar voor thuislevering** | Hiermee stelt u de beschikbaarheid van Home Delivery (Ship-from-Store) voor het product in. Als deze optie is ingeschakeld, worden alle toegewezen winkellocaties met een beschikbare voorraad voor het product in aanmerking genomen voor de optie Home Delivery. Als deze optie is uitgeschakeld, komt het product nooit in aanmerking voor thuislevering.</br></br>In de meeste gevallen is het voldoende deze optie in te stellen op winkelniveau. Er kunnen zich echter unieke gevallen voordoen voor specifieke producten, zoals producten waarvoor een federale scheepvaartbeperking geldt, die niet in aanmerking mogen komen voor thuislevering. | Website | Nee |
+| **[!UICONTROL Available for Store Pickup]** | Stel de beschikbaarheid van de Ophaalservice voor het product in. Als deze optie is ingeschakeld, worden toegewezen winkellocaties met een beschikbare voorraad voor het product in aanmerking genomen voor de optie Ophalen uit winkel. Als het product is uitgeschakeld, komt het nooit in aanmerking voor Ophalen uit winkel.</br></br>Deze optie kan nuttig zijn om winkelvoorraad in het systeem te volgen die u niet van uw e-commerce kanaal wilt verkopen. | Website | Nee |
 | **[!UICONTROL UPC / SKU / Custom Scannable Identifier]** | Dit kenmerk zou al als een productkenmerk moeten bestaan en heeft betrekking op **[!UICONTROL Barcode Source / Barcode Type]** instellen. Dit kenmerk wordt gebruikt om een gescande streepjescode voor uw producten bij te houden. Deze waarde kan worden verzonden wanneer een bestelling voor het selecteren naar uw winkels wordt verzonden. De associaties van de opslag kunnen de waarde met de pluklijst gebruiken om producten op de plank aan te passen gebruikend een streepjescodescanner. | Winkelweergave | Nee |
 
 {style=&quot;table-layout:auto&quot;}

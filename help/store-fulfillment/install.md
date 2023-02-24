@@ -4,9 +4,9 @@ description: "Installeer de [!DNL Store Fulfillment solution] voor een Adobe Com
 role: User, Admin
 level: Intermediate
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: d8be88f47f103c5d632540dae743ede398a9b7ad
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Extraheer het archiefdossier dat de integratiebundel bevat om de uitbreiding van
 
 1. Extraheer het archiefbestand naar de nieuwe map.
 
-1. Controleer of de geëxtraheerde bestanden door de bestandenlijst te bekijken.
+1. Controleer of de bestanden zijn uitgepakt door de bestandenlijst te bekijken.
 
    ```
    ../var/www/html/artifacts]$ ls -a
@@ -194,4 +194,5 @@ De `-f` is vereist als u een leeg thema gebruikt.
 
 >[!NOTE]
 >
->Zie voor meer informatie [Statische inhoud implementeert best practices in Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/static-content-deployment.html) in het Adobe Commerce Help Center.
+>Zie voor meer informatie de [Statische inhoud implementeert best practices in Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/static-content-deployment.html) artikel in het Adobe Commerce Help Center.
+

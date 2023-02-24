@@ -4,9 +4,9 @@ description: Algemene instellingen configureren om in te schakelen [!DNL Store F
 role: User, Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '2541'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -92,7 +92,7 @@ De optie [!DNL Store Fulfillment] -oplossing om de mogelijkheden voor in-store e
 </tbody>
 </table>
 
-## Accountreferenties toevoegen
+## Accountgegevens toevoegen
 
 <table>
 <tr>
@@ -141,7 +141,7 @@ De optie [!DNL Store Fulfillment] -oplossing om de mogelijkheden voor in-store e
 
 Nadat u vormt [!UICONTROL Account Credentials], selecteert u <strong>[!UICONTROL Validate Credentials]</strong> om een verbinding aan de dienst van de archiefvervulling voor het eerst te verifiëren en te vestigen.
 
-## Logboekregistratie configureren
+## Logboek configureren
 
 Logbestanden voor services voor winkelvervulling zijn beschikbaar in het logbestand `var/log/walmart-bopis.log`.
 
@@ -500,7 +500,7 @@ Met de in-store leveringsmethode, kan de klant een bron selecteren die als oppik
 </tr>
 </tbody></table>
 
-### Configuratie van de beschikbaarheidstitels van bestanden
+### Configuratie Beschikbaarheid voorraad
 
 <table>
 <thead>
@@ -530,3 +530,4 @@ Met de in-store leveringsmethode, kan de klant een bron selecteren die als oppik
 <td>Nee</td>
 </tr>
 </tbody></table>
+

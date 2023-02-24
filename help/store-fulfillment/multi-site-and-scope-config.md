@@ -1,17 +1,17 @@
 ---
-title: Meerdere website- en bereikconfiguratie
+title: Configuratie van meerdere websites en bereik
 description: Configureer voorraden en leveringsmethoden voor meerdere websites en sla het bereik op.
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: 8939046e-1c26-4380-83be-ff8e074e591d
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '189'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-
-# Meerdere website- en bereikconfiguratie
+# Configuratie van meerdere websites en bereik
 
 U kunt de [Toepassingsgebied](https://docs.magento.com/user-guide/configuration/scope.html) voor een paar elementen om veelvoudige websites, opslag, en opslagmeningen aan te passen:
 
@@ -27,7 +27,7 @@ Nadat de configuratie met succes is bijgewerkt, kunnen de opties voor het ophale
 
 Schakel de [!UICONTROL In-Store Pickup] opties voor elke website of opslagbereik uit de [Configuraties van leveringsmethoden](enable-general.md#delivery-methods) in de Admin.
 
-1. Ga naar **[!UICONTROL Stores > Configuration]**.
+1. Navigeren naar **[!UICONTROL Stores > Configuration]**.
 
 1. Selecteer het bereik (op te slaan website) dat u wilt configureren.
 
