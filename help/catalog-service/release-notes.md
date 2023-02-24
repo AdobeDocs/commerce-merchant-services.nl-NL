@@ -2,9 +2,9 @@
 title: '''[!DNL Catalog Service] Opmerkingen bij de release'
 description: De meest recente releasegegevens voor [!DNL Catalog Service] voor Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: 67f9e5ce69930f3298427a103f9160f925d2ae0d
+source-git-commit: fd3f71a1b3d958f3aa79f0ba6603d30e16e70507
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '788'
 ht-degree: 0%
 
 ---
@@ -13,19 +13,20 @@ ht-degree: 0%
 
 In deze releaseopmerkingen worden de meest recente versies van [!DNL Catalog Service] en omvatten:
 
-* ![Nieuw](../assets/new.svg) Nieuwe functies
-* ![Repareren](../assets/fix.svg) Oplossingen en verbeteringen
-* ![Bug](../assets/bug.svg) Bekende problemen
+![Nieuw](../assets/new.svg) Nieuwe functies
+![Repareren](../assets/fix.svg) Oplossingen en verbeteringen
+![Bug](../assets/bug.svg) Bekende problemen
 
-## V1.4 Release
+## Primaire versie
+
+### V1.4 Release
 
 Releasedatum: 2023-2-7 Compatibel met Adobe Commerce (EE): 2.4.x Compatibel met Adobe Commerce for Cloud (ECE): 2.4.x Stabiliteit: Algemene beschikbaarheid
 
 ![Nieuw](../assets/new.svg) Gepubliceerde metapakket voor catalogusservices om installatiestappen te vereenvoudigen.
 ![Repareren](../assets/fix.svg) Schaalbaarheid van API&#39;s en prestatieverbeteringen.
 
-
-### Bekende beperkingen
+#### Bekende beperkingen
 
 Deze functies worden nog niet ondersteund:
 
@@ -44,7 +45,7 @@ De volgende beperkingen kunnen worden opgelost met de Core GraphQL API:
 * Downloadbare producten en cadeaukaarten
 * Categorieën (`categories` en `categoryList`)
 
-## V1.3 Release
+### V1.3 Release
 
 Releasedatum: 2023-1-17 Compatibel met Adobe Commerce (EE): 2.4.x Compatibel met Adobe Commerce for Cloud (ECE): 2.4.x Stabiliteit: Algemene beschikbaarheid
 
@@ -53,7 +54,7 @@ Releasedatum: 2023-1-17 Compatibel met Adobe Commerce (EE): 2.4.x Compatibel met
 ![Nieuw](../assets/new.svg) Ondersteuning toegevoegd voor virtuele producten.
 ![Repareren](../assets/fix.svg) Schaalbaarheid van API&#39;s en prestatieverbeteringen.
 
-### Bekende beperkingen
+#### Bekende beperkingen
 
 Deze functies worden nog niet ondersteund:
 
@@ -72,14 +73,14 @@ De volgende beperkingen kunnen worden opgelost met de Core GraphQL API:
 * Downloadbare producten en cadeaukaarten
 * Categorieën (`categories` en `categoryList`)
 
-## V1.1-release
+### V1.1-release
 
 Releasedatum: 2022-11-18 Compatibel met Adobe Commerce (EE): 2.4.x Compatibel met Adobe Commerce for Cloud (ECE): 2.4.x Stabiliteit: Algemene beschikbaarheid
 
 ![Nieuw](../assets/new.svg) Catalogusservice biedt nu ondersteuning voor Adobe [API-net](https://developer.adobe.com/graphql-mesh-gateway/).
 ![Repareren](../assets/fix.svg) We hebben de API-schaalbaarheid en algemene prestaties verbeterd.
 
-### Bekende beperkingen
+#### Bekende beperkingen
 
 Deze functies worden nog niet ondersteund:
 
@@ -98,7 +99,7 @@ De volgende beperkingen kunnen worden opgelost met de GraphQL API:
 * Downloadbare producten en cadeaukaarten
 * Categorieën (`categories` en `categoryList`)
 
-## V1.0-release
+### V1.0-release
 
 Releasedatum: 2022-10-04 Compatibel met Adobe Commerce (EE): 2.4.x Compatibel met Adobe Commerce for Cloud (ECE): 2.4.x Stabiliteit: Algemene beschikbaarheid
 
@@ -106,7 +107,7 @@ Releasedatum: 2022-10-04 Compatibel met Adobe Commerce (EE): 2.4.x Compatibel me
 ![Nieuw](../assets/new.svg) Extra B2B-zichtbaarheidsoverschrijvingen. De producten zijn nu doorzoekbaar en kunnen aan de kar voor specifieke klantengroepen worden toegevoegd.
 ![Repareren](../assets/fix.svg) De service is nu stabieler en de prestaties zijn verbeterd.
 
-### Bekende beperkingen
+#### Bekende beperkingen
 
 Deze functies worden nog niet ondersteund:
 
@@ -118,7 +119,11 @@ Deze functies worden nog niet ondersteund:
 * Ondersteuning voor producttypen van virtuele, downloadbare en cadeaukaarten
 * Minimale geadverteerde prijs (MAP)
 
-## 0.3 Release - bèta+
+## Vorige versies
+
++++bèta-releases
+
+### 0.3 Release - bèta+
 
 Releasedatum: 2022-09-12 Compatibel met Adobe Commerce (EE): 2.4.x Compatibel met Adobe Commerce for Cloud (ECE): 2.4.x Stabiliteit: Beta
 
@@ -127,7 +132,7 @@ Releasedatum: 2022-09-12 Compatibel met Adobe Commerce (EE): 2.4.x Compatibel me
 ![Repareren](../assets/fix.svg) Verbeterde stabiliteit en prestaties van de dienst
 ![Nieuw](../assets/new.svg) Updates worden ontvangen wanneer producten uit de catalogus worden verwijderd
 
-### Bekende beperkingen
+#### Bekende beperkingen
 
 Deze functies worden nog niet ondersteund:
 
@@ -136,7 +141,7 @@ Deze functies worden nog niet ondersteund:
 * Er worden geen updates ontvangen wanneer varianten uit de catalogus worden verwijderd
 * B2B-zichtbaarheidsoverschrijvingen: producten kunnen doorzoekbaar zijn of aan winkelwagentje worden toegevoegd voor specifieke klantengroepen
 
-## Bètaversie
+### Bètaversie
 
 Releasedatum: 2022-08-09 Compatibel met Adobe Commerce (EE): 2.4.x Compatibel met Adobe Commerce for Cloud (ECE): 2.4.x Stabiliteit: Beta
 
@@ -150,10 +155,12 @@ Releasedatum: 2022-08-09 Compatibel met Adobe Commerce (EE): 2.4.x Compatibel me
 * Prijzen en prijsbereiken van de klantengroep. Ze retourneren een fallback-standaardprijs voor kopers zonder een klantengroep.
 * Producttypen die gebruikmaken van klantspecifieke B2B-prijzen.
 
-### Bekende beperkingen
+#### Bekende beperkingen
 
 * Bundel en gegroepeerde producten worden niet ondersteund.
 * De prijzen van de reeks worden niet gesteund.
 * In een array van afbeeldingen bevat alleen de eerste afbeelding rollen.
 * Afbeeldingen voor varianten worden niet opgehaald.
 * Er worden geen updates ontvangen wanneer producten of varianten uit de catalogus worden verwijderd.
+
++++

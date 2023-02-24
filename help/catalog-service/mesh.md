@@ -1,30 +1,30 @@
 ---
 title: '[!DNL Catalog Service and API Mesh]'
 description: '''[!DNL API Mesh] voor Adobe Commerce biedt een manier om meerdere gegevensbronnen te integreren via een gemeenschappelijk GraphQL-eindpunt. "'
-source-git-commit: dd9ba7171cf6a199701b1abb8083a65326e89f5d
+source-git-commit: bdceeeeb1ed58c4ffbc87bee24c1eb3754b1cde9
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---
 
 # [!DNL Catalog Service and API Mesh]
 
-De [API-net voor Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) laat ontwikkelaars toe om privé of derde APIs en andere interfaces met de producten van Adobe te integreren gebruikend Adobe IO.
+De [API-net voor Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) kunnen ontwikkelaars met Adobe I/O Runtime API&#39;s van particulieren of derden en andere interfaces integreren met Adobe-producten.
 
 ![Catalogusarchitectuurdiagram](assets/catalog-service-architecture-mesh.png)
 
 De eerste stap voor het gebruik van het API-net met de Catalogusservice is het verbinden van API-net met uw instantie. Zie gedetailleerde instructies in [Een net maken](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
 
-Als u de installatie wilt voltooien, hebt u de [Adobe IO CLI-pakket](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) geïnstalleerd.
+Installeer de [Adobe Developer CLI-pakket](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
 
-Zodra het Net op Adobe IO wordt gevormd, stel het volgende bevel in werking dat a toevoegt `CommerceCatalogServiceGraph` bron van het net.
+Zodra het Net op Adobe I/O Runtime wordt gevormd, stel het volgende bevel in werking dat toevoegt `CommerceCatalogServiceGraph` bron van het net.
 
 ```bash
 aio api-mesh:source:install "CommerceCatalogServiceGraph" -f variables.json
 ```
 
-waar `variables.json` is een afzonderlijk bestand waarin veelgebruikte waarden voor Adobe IO worden opgeslagen.
+Wanneer `variables.json` is een afzonderlijk bestand waarin veelgebruikte waarden voor Adobe I/O Runtime worden opgeslagen.
 De API-sleutel kan bijvoorbeeld in het bestand worden opgeslagen:
 
 ```json
@@ -40,7 +40,7 @@ Nadat u deze opdracht hebt uitgevoerd, moet de Catalogusservice via het API-net 
 Met het API-net kunnen gebruikers externe gegevensbronnen gebruiken om uw Adobe Commerce-instantie te verbeteren. Het kan ook worden gebruikt om bestaande gegevens van de Handel te vormen om nieuwe functionaliteit toe te laten.
 
 In dit voorbeeld wordt het API-net gebruikt om laagprijzen in Adobe Commerce in te schakelen.
-Vervang de `name `, `endpoint` en `x-api-key` waarden.
+Vervang de `name `, `endpoint`, en `x-api-key` waarden.
 
 ```json
 {

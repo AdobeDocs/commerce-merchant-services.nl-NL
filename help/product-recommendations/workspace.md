@@ -1,15 +1,15 @@
 ---
-title: Werkruimte
+title: '[!DNL Product Recommendations] Werkruimte'
 description: Leer hoe u de prestaties van productaanbevelingen kunt configureren, beheren en controleren.
 exl-id: 85a06cc3-91b9-484a-96a9-fc85718e6d70
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 25d5321b6f29bab5d8cf329170f3644f35100438
 workflow-type: tm+mt
 source-wordcount: '640'
 ht-degree: 0%
 
 ---
 
-# Werkruimte
+# [!DNL Product Recommendations] Werkruimte
 
 De [!DNL Product Recommendations] de werkruimte toont een lijst van eerder gevormde aanbevelingen met metriek die u helpen het succes van elke aanbeveling volgen. De lijst kan worden gevormd om metriek voor de laatste dag, de week, of de maand te berekenen. U kunt de metriek gebruiken om actionable inzichten tot stand te brengen die op hoe vaak een aanbeveling wordt bekeken of geklikt, of te analyseren hoe goed uw aanbevelingen presteren.
 
