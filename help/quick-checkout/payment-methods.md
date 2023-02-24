@@ -1,15 +1,15 @@
 ---
-title: '"Betalingsmethoden"'
-description: '"Overzicht van de compatibele betalingsmethoden met de [!DNL Quick Checkout] voor Adobe Commerce-extensie."'
+title: "Betalingsmethoden"
+description: "Overzicht van de compatibele betalingsmethoden met de [!DNL Quick Checkout] voor Adobe Commerce-extensie."
 exl-id: 7d151477-5932-4ec0-b729-dbda6b49e6da
-source-git-commit: a95d2ed92c69feba03d1b84d44abf08c1d1b4029
+source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
 workflow-type: tm+mt
-source-wordcount: '88'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-# [!DNL Quick Checkout] compatibele betalingsmethoden
+# [!DNL Quick Checkout] Compatibele betalingsmethoden
 
 Zodra de handelaar vormt [!DNL Quick Checkout]:
 

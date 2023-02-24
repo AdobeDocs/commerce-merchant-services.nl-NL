@@ -2,14 +2,14 @@
 title: '[!DNL Quick Checkout] gebruikersinstellingen'
 description: Gebruikersrollen en machtigingen instellen om de [!DNL Quick Checkout] Het deelvenster Beheer.
 exl-id: 76393840-8312-41bb-8447-412849815169
-source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
+source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-# [!DNL Quick Checkout] gebruikersinstellingen
+# [!DNL Quick Checkout] Gebruikersinstelling
 
 [!DNL Quick Checkout] biedt een Admin-paneel met alle benodigde informatie om het instappen te starten, de extensie te gebruiken of bronnen zoals toegang tot documenten op te nemen, [!DNL Bolt] merchant dashboard of release notes.
 

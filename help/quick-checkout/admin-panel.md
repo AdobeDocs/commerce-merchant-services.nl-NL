@@ -1,8 +1,8 @@
 ---
-title: '[!DNL Quick Checkout] voor het deelvenster Adobe Commerce Admin'
+title: '[!DNL Quick Checkout] voor Adobe Commerce Admin Panel'
 description: Meer informatie over [!DNL Quick Checkout] Het deelvenster Beheer kan u helpen om de extensie met succes aan boord te krijgen, in te stellen en te visualiseren.
 exl-id: d91763ed-b4f6-4736-9503-0305edd77e91
-source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
+source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%

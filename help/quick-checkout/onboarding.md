@@ -2,14 +2,14 @@
 title: "Aan boord van de [!DNL Quick Checkout] voor Adobe Commerce-extensie"
 description: "Leer hoe u [!DNL Quick Checkout] kan uw Adobe Commerce-exemplaar ten goede komen en de extensie met succes aan boord installeren en instellen."
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
+source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 0%
 
 ---
 
-# [!DNL Quick Checkout] onboarding
+# [!DNL Quick Checkout] Onboarding
 
 Ga als volgt te werk om aan de slag te gaan [!DNL Quick Checkout] voor Adobe Commerce-extensie moet u een aantal instapkaartstappen uitvoeren om uw exemplaar te verbinden met onze uitcheckfunctionaliteit.
 

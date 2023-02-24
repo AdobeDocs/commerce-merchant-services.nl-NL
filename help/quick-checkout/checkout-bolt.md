@@ -2,7 +2,7 @@
 title: "Uitchecken van een gebruiker van een bout in Adobe Commerce"
 description: Overzicht van de [!DNL Quick Checkout] stroom voor een gebruiker van de Bolt in Adobe Commerce.
 exl-id: 12f58b7e-1f86-4891-b225-9f4be82c2d5d
-source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
+source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
 workflow-type: tm+mt
 source-wordcount: '210'
 ht-degree: 0%
