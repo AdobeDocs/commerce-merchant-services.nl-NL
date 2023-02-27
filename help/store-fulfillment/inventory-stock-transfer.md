@@ -4,9 +4,9 @@ description: "Configureer bestanden voor de [!DNL Store Fulfillment solution] me
 role: User, Admin
 level: Intermediate
 exl-id: 669d4dce-4cac-4bde-acc5-26c70a51f7f1
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: e7493618e00e28e2de5043ae2d7e05a81110d8f1
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 0%
 # Inventory management-bronoverdracht
 
 De [!DNL Store Fulfillment] -oplossing gebruikt native Adobe Commerce Inventory management. Standaard worden de [!DNL Commerce] De configuratie wijst al Webinventaris aan het standaarddossier toe, dat geen extra toegewezen bronnen kan hebben. Omdat aan een website slechts één voorraad kan worden toegewezen, moet een handelaar een nieuwe voorraad vormen en naar keuze hun standaardbroninventaris overbrengen naar een bron die aan het aangewezen werkingsgebied wordt toegewezen. Vervolgens kan de bron worden toegewezen aan het nieuwe bestand.
+
+>[!IMPORTANT]
+>
+>Handelaars moeten de standaardbron voor alle producten handhaven inbegrepen in groep en bundelproducttypes. Deze producten hebben een inventarishoeveelheid nodig die voldoet aan de minimumdrempel voor hoeveelheden in voorraad en die een voorraadstatus bevat van [!UICONTROL In Stock].
 
 Deze configuratieveranderingen helpen u drie dingen verwezenlijken:
 

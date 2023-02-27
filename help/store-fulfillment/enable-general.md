@@ -4,9 +4,9 @@ description: Algemene instellingen configureren om in te schakelen [!DNL Store F
 role: User, Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: 81723645efc5dd1f0179e32ba80bc57fbfc9d799
+source-git-commit: e7493618e00e28e2de5043ae2d7e05a81110d8f1
 workflow-type: tm+mt
-source-wordcount: '2541'
+source-wordcount: '2440'
 ht-degree: 0%
 
 ---
@@ -337,39 +337,6 @@ Configureer de instellingen voor de gebruikersaccount en wachtwoordbeveiliging v
 <tr>
 <td><strong>[!UICONTROL Password Lifetime]</strong></td>
 <td>Het aantal dagen dat een wachtwoord geldig blijft voordat een vereist wachtwoord wordt gewijzigd. Laat leeg om deze optie uit te schakelen.</td>
-<td>Algemeen</td>
-<td>Nee</td>
-</tr>
-</tbody>
-</table>
-
-### Twee-factor authentificatie
-
-<table>
-<thead>
-<tr>
-<td><strong>Veld</strong></td>
-<td><strong>Beschrijving</strong></td>
-<td><strong>Toepassingsgebied</strong></td>
-<td><strong>Vereist</strong></td>
-</tr>
- </thead>
- <tbody>
-<tr>
-<td><strong>[!UICONTROL APP User 2FA]</strong></td>
-<td>Schakel verificatie met twee factoren in of uit voor opslagassociaties. Wanneer toegelaten, wordt de opslagvennoot ertoe aangezet om een eenmalig wachtwoord te verstrekken dat door een authentificatieleverancier wordt geproduceerd.</td>
-<td>Algemeen</td>
-<td>Nee</td>
-</tr>
-<tr>
-<td><strong>[!UICONTROL APP 2FA Policy]</strong></td>
-<td>Plaatst het handhavingsbeleid voor tweefelige authentificatie.<br></br><strong>[!UICONTROL Optional]</strong>: De opslagvennoot kan bifactorauthentificatie overslaan als geen leverancier wordt geplaatst.<br></br><strong>[!UICONTROL Mandatory]</strong>: De opslagvennoot wordt vereist om twee-factor authentificatie te voltooien.</td>
-<td>Algemeen</td>
-<td>Nee</td>
-</tr>
-<tr>
-<td><strong>[!UICONTROL 2FA Providers]</strong></td>
-<td>Selecteer één of meerdere diensten van de authentificatieleverancier om archiefassociaties aan te bieden. Als u verificatie met twee factoren wilt instellen en verifiëren, moeten de partners van de winkel de verificatie-app installeren van een van de beschikbare providers die op hun mobiele apparaten zijn geïnstalleerd.</td>
 <td>Algemeen</td>
 <td>Nee</td>
 </tr>

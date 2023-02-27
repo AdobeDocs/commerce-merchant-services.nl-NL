@@ -4,9 +4,9 @@ description: Bepaal de verbindingen tussen Adobe Commerce en de oplossing van de
 role: User, Admin
 level: Intermediate
 exl-id: 74c71c43-305a-4ea7-84f8-95f3ce0a9482
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: e7493618e00e28e2de5043ae2d7e05a81110d8f1
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '437'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Connect Store Fulfillment Services met Adobe Commerce door de vereiste verificatiereferenties en verbindingsgegevens toe te voegen aan Adobe Commerce Admin.
 
-- **[Configureren [!DNL Commerce integration settings]](#create-the-commerce-integration)**- Maak een Adobe Commerce-integratie voor de services van Store Fulfillment en genereer de toegangstokens om binnenkomende aanvragen van de servers van Store Fulfillment te verifiëren.
+- **[Configureren [!DNL Commerce integration settings]](#create-an-adobe-commerce-integration)**- Maak een Adobe Commerce-integratie voor de services van Store Fulfillment en genereer de toegangstokens om binnenkomende aanvragen van de servers van Store Fulfillment te verifiëren.
 
 - **[Accountgegevens configureren voor services voor winkeluitvoering](#configure-store-fulfillment-account-credentials)**-Voeg je gegevens toe om Adobe Commerce te verbinden met je account voor winkelvervulling.
 
@@ -25,7 +25,7 @@ Connect Store Fulfillment Services met Adobe Commerce door de vereiste verificat
 
 ## Een Adobe Commerce-integratie maken
 
-Om Adobe Commerce met de diensten van de Afhandeling van de Opslag te integreren, creeert u een integratie van de Handel en produceert toegangstokens die kunnen worden gebruikt om verzoeken van de servers van de Afhandeling van de Opslag voor authentiek te verklaren.
+Om Adobe Commerce met de diensten van de Afhandeling van de Opslag te integreren, creeert u een integratie van de Handel en produceert toegangstokens die kunnen worden gebruikt om verzoeken van de servers van de Afhandeling van de Opslag voor authentiek te verklaren. U moet ook de Adobe Commerce bijwerken [!UICONTROL Consumer Settings] opties om te voorkomen `The consumer isn't authorized to access %resources.` Antwoordfouten op verzoeken van Adobe Commerce aan [!DNL Store Fulfillment] diensten.
 
 1. Creëer in de beheerfunctie de integratie voor winkeluitvoering.
 
@@ -41,10 +41,16 @@ Om Adobe Commerce met de diensten van de Afhandeling van de Opslag te integreren
 
 1. Werk samen met uw accountmanager om de configuratie aan de kant van de Store Fulfillment te voltooien en de integratie te autoriseren.
 
+1. Adobe Commerce inschakelen [!UICONTROL Consumer Settings] optie voor [!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens].
 
->[!NOTE]
+   - Ga vanuit de beheerder naar **[!UICONTROL Stores]** >  [!UICONTROL Configuration] > **[!UICONTROL Services]** >  **[!UICONTROL OAuth]** > **[!UICONTROL Consumer Settings]**
+
+   - Stel de [!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens] optie voor **[!UICONTROL Yes]**.
+
+>[!IMPORTANT]
 >
->Zie voor gedetailleerde instructies [Integraties](https://docs.magento.com/user-guide/system/integrations.html) in de _Adobe Commerce-gebruikershandleiding_.
+> Het integratietoken is specifiek voor de omgeving. Als u het gegevensbestand voor een milieu met de brongegevens van een verschillende milieu-voor bijvoorbeeld het herstellen van productiegegevens van een het opvoeren milieu-sluit uit `oauth_token` lijst van de gegevensbestanduitvoer zodat de details van het integratietoken niet tijdens terugzetverrichting worden beschreven.
+
 
 ## Geef de gegevens van de opslagaccount op
 
