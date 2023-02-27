@@ -2,10 +2,10 @@
 title: '''[!DNL Store Fulfillment by Walmart Commerce Technologies] Opmerkingen bij de release'
 description: "Controleer de opmerkingen bij de release voor informatie over alle [!DNL Store Fulfillment by Walmart Commerce Technologies] releases."
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
-source-git-commit: 81723645efc5dd1f0179e32ba80bc57fbfc9d799
+source-git-commit: 258820e9591f3f47e74c4c9497376fd34512334a
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -19,38 +19,30 @@ In deze releaseopmerkingen wordt de eerste release van [!DNL Store Fulfillment S
 
 ## v1.3.0
 
-<!-- Add release notes when version 1.3.0 is released -->
+Releasedatum: 2023-02-27 Compatibel met Adobe Commerce (EE): 2.4.x Compatibel met Adobe Commerce (ECE): 2.4.x Stabiliteit: Algemene beschikbaarheid
+
+Deze release bevat de volgende update:
+
+![Nieuw](../assets/fix.svg)<!-- WMTP-795 --> De mogelijkheid om de Opslagoplossing voor een specifieke site uit te schakelen, is toegevoegd door het standaardbereik voor de instelling Systeemconfiguratie te wijzigen van de website in global.
 
 ## v1.2.0
 
-Compatibel met de volgende versies van de Handel:
+Releasedatum: 2022-09-27 Compatibel met Adobe Commerce (EE): 2.4.x Compatibel met Adobe Commerce (ECE): 2.4.x Stabiliteit: Algemene beschikbaarheid
 
-* Adobe Commerce (EE): 2,4 x
-* Adobe Commerce for Cloud (ECE): 2,4 x
-* Stabiliteit: Stabiel
-
-Deze release bevat de volgende updates:
+Deze release bevat de volgende update:
 
 ![Nieuw](../assets/fix.svg) [!DNL Store Fulfillment] is nu [compatibel met [!DNL Adobe Commerce] 2.4.0 t/m 2.4.5](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 
 ## v1.1.0
 
-Compatibel met de volgende versies van de Handel:
-
-* Adobe Commerce (EE): 2.4.0 - 2.4.4
-* Adobe Commerce for Cloud (ECE): 2.4.0 - 2.4.4
-* Stabiliteit: Stabiel
+Releasedatum: 2022-07-15 Compatibel met Adobe Commerce (EE): 2.4.0 - 2.4.4 Compatibel met Adobe Commerce (ECE): 2.4.0 - 2.4.4 Stabiliteit: Algemene beschikbaarheid
 
 ![Nieuw](../assets/fix.svg)<!-- WMTP-731 --> Vereenvoudigd [Configuratie voor inchecken van ervaringen](check-in-experience-setup.md) voor de app Winkelassistentie door standaardselecties voor auto&#39;s en modellen toe te voegen. In de vorige versie moesten handelaren de selecties van het merk en het model van de auto handmatig configureren.
 
 ## v1.0.0
 
-Eerste versie, compatibel met de volgende versies van de Handel:
-
-* Adobe Commerce (EE): 2,4 x
-* Adobe Commerce for Cloud (ECE): 2,4 x
-* Stabiliteit: Stabiel
+Releasedatum: 2022-03-04 Compatibel met Adobe Commerce (EE): 2.4.0 - 2.4.4 Compatibel met Adobe Commerce (ECE): 2.4.0 - 2.4.4 Stabiliteit: Algemene beschikbaarheid
 
 ## App Winkelassistentie
 
