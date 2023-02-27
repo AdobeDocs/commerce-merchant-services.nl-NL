@@ -2,9 +2,9 @@
 title: Installeren en configureren
 description: Leer installeren, bijwerken en verwijderen [!DNL Product Recommendations].
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: d56fd57281a5b675e128cca75d4057756a0bf4bf
 workflow-type: tm+mt
-source-wordcount: '505'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ composer require magento/product-recommendations
 
 ### Ondersteuning voor Page Builder toevoegen {#pbsupport}
 
-[!DNL Product Recommendations] voor Page Builder zijn optionele modules die afzonderlijk worden geïnstalleerd. Te gebruiken [!DNL Product Recommendations] met de Bouwer van de Pagina, installeer de module door het volgende bevel in werking te stellen:
+[!DNL Product Recommendations] voor Page Builder is een optionele module en wordt apart geïnstalleerd. Te gebruiken [!DNL Product Recommendations] met de Bouwer van de Pagina, installeer de module door het volgende bevel in werking te stellen:
 
 ```bash
 composer require magento/module-page-builder-product-recommendations
@@ -38,9 +38,7 @@ composer require magento/module-page-builder-product-recommendations
 
 Door [!DNL Product Recommendations] in Page Builder kunt u een bestaande, actieve [aanbeveling-eenheid](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) op alle inhoud die in Page Builder is gemaakt, zoals pagina&#39;s, blokken en dynamische blokken.
 
->[!NOTE]
->
->[!DNL Page Builder] aanbevelingen-eenheden kunnen alleen worden gemaakt voor de standaardwinkelweergave.
+Zie [Gebruiken [!DNL Product Recommendations] met Page Builder-inhoud](page-builder.md) voor verdere instructies.
 
 ### Aanbevolen type voor visuele gelijkenis toevoegen {#vissimsupport}
 

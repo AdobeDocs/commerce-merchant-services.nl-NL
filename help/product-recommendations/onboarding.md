@@ -2,9 +2,9 @@
 title: Onboarding
 description: Leer de vereisten en ondersteunde platforms op [!DNL Product Recommendations].
 exl-id: ad47ac39-8f6f-4765-84ad-9e3d104385db
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: d56fd57281a5b675e128cca75d4057756a0bf4bf
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -27,16 +27,14 @@ Het instapproces voor [!DNL Product Recommendations] vereist toegang tot de beve
 
 ### Ondersteunde platforms
 
-- Adobe Commerce on prem (EE) : 2,4 x
+- Adobe Commerce on-premise (EE) : 2,4 x
 - Adobe Commerce on Cloud (ECE) : 2,4 x
 
 ### Ondersteuning voor Page Builder
 
 [!DNL Product Recommendations] kan aan een pagina worden toegevoegd als een inhoudstype van de Bouwer van de Pagina. Als u ondersteuning voor Page Builder wilt toevoegen aan Product Recommendations, raadpleegt u [Installeren en configureren](install-configure.md).
 
->[!NOTE]
->
->[!DNL Page Builder] aanbevelingen-eenheden kunnen alleen worden gemaakt voor de standaardwinkelweergave.
+Zie [[!DNL Page Builder] Integratie](page-builder.md) voor instructies over het toevoegen van [!DNL Product Recommendations] in [!DNL Page Builder] inhoud.
 
 ### B2B-ondersteuning {#b2bsupport}
 

@@ -2,7 +2,7 @@
 user-guide-title: "[!DNL Product Recommendations] Hulplijn"
 user-guide-description: Deze handleiding bevat gedetailleerde instructies voor het gebruik van [!DNL Product Recommendations] uit Adobe Commerce.
 breadcrumb-title: "[!DNL Product Recommendations] Hulplijn"
-source-git-commit: 1dbb0dcf588c71f916755d1b06b41d3244201b7e
+source-git-commit: d56fd57281a5b675e128cca75d4057756a0bf4bf
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -23,6 +23,7 @@ ht-degree: 0%
    - [Instellingen](settings.md)
    - [Verifiëren](verify.md)
    - [Stationele omgeving](staging-environment.md)
+   - [Integratie van Page Builder](page-builder.md)
 - [!DNL Product Recommendations] Beheer {#admin}
    - [Werkruimte](workspace.md)
    - [Maken](create.md)
