@@ -4,9 +4,9 @@ description: Na installatie kunt u configureren [!DNL Payment Services] in het s
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 482182dca95964e68f1637ff1cc7aad84b00e3eb
+source-git-commit: 7bd9212a4c215b4f39051ded0e95b2b7e96fb46f
 workflow-type: tm+mt
-source-wordcount: '1892'
+source-wordcount: '1898'
 ht-degree: 0%
 
 ---
@@ -153,7 +153,7 @@ U kunt de betalingsopties voor slimme PayPal-knoppen inschakelen en configureren
 
       >[!NOTE]
       >
-      > Apple Betaal je [moet een Apple Developer Account hebben](test-validate.md#test-in-sandbox-environment) (invullen met valse creditcard en factureringsgegevens) om deze te testen. Als je Apple Pay klaar hebt in de sandbox _of_ productiemodus, na het voltooien van [testen en valideren](test-validate.md), neemt u contact op met uw verkoper om deze in te schakelen voor je live winkel(s).
+      > Apple Betaal je [moet een Apple-sandbox-testaccount hebben](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account) (invullen met valse creditcard en factureringsgegevens) om deze te testen. Als je Apple Pay klaar hebt in de sandbox _of_ productiemodus, na het voltooien van [testen en valideren](test-validate.md#test-in-sandbox-environment), neemt u contact op met uw verkoper om deze in te schakelen voor je live winkel(s).
 
       Terwijl u de zichtbaarheid van betalingsknoppen of het Later bericht PayPal Pay (PayPal Pay) in- of uitschakelt, wordt onder aan de pagina Settings een visuele voorvertoning van die configuratie weergegeven.
 

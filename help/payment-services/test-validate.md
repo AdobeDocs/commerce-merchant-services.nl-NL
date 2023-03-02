@@ -2,9 +2,9 @@
 title: Testen en valideren
 description: Testen en valideren helpen u ervoor te zorgen dat [!DNL Payment Services] functies werken naar behoren en bieden de beste betalingsopties voor uw klanten
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
-source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
+source-git-commit: 7bd9212a4c215b4f39051ded0e95b2b7e96fb46f
 workflow-type: tm+mt
-source-wordcount: '480'
+source-wordcount: '482'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Bij het testen en valideren van uw sandbox moet u valse creditcardnummers gebrui
 
 De PayPal-creditcardgenerator gebruiken voor [willekeurige creditcardgegevens genereren](https://www.paypal.com/us/smarthelp/article/where-can-i-find-test-credit-card-numbers-ts2157) voor het testen.
 
-Als u Apple Pay wilt testen in de sandboxmodus, moet u beschikken over een [Apple Developer Account](https://developer.apple.com/programs/enroll/), invullen met valse creditcard- en factureringsgegevens.
+Als u Apple Pay wilt testen in de sandboxmodus, moet u beschikken over een [Apple sandbox-testeraccount](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account), invullen met valse creditcard- en factureringsgegevens.
 
 >[!NOTE]
 >
