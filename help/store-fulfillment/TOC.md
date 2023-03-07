@@ -5,7 +5,7 @@ breadcrumb-title: Winkeltegoed voor Adobe Commerce
 index: true
 source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '84'
 ht-degree: 0%
 
 ---

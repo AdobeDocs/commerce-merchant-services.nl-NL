@@ -4,7 +4,7 @@ user-guide-description: Deze handleiding bevat gedetailleerde instructies voor h
 breadcrumb-title: "[!DNL Product Recommendations] Hulplijn"
 source-git-commit: d56fd57281a5b675e128cca75d4057756a0bf4bf
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '54'
 ht-degree: 0%
 
 ---
