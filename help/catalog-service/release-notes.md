@@ -2,9 +2,9 @@
 title: '''[!DNL Catalog Service] Opmerkingen bij de release'
 description: De meest recente releasegegevens voor [!DNL Catalog Service] voor Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: 2767de477e274c1855d21d6e678cc6139ff4faa4
+source-git-commit: 484319fc1df6c29c972b57c13bd0ed711e374e99
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '513'
 ht-degree: 0%
 
 ---
@@ -26,13 +26,6 @@ Releasedatum: 2023-3-6 Compatibel met Adobe Commerce (EE): 2.4.4+ Compatibel met
 ![Nieuw](../assets/new.svg) Toegevoegd [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) GraphQL-functionaliteit.
 ![Repareren](../assets/fix.svg) Verbeterde prestaties en API-schaalbaarheid.
 
-### V1.4 Release
-
-Releasedatum: 2023-2-7 Compatibel met Adobe Commerce (EE): 2.4.x Compatibel met Adobe Commerce for Cloud (ECE): 2.4.x Stabiliteit: Algemene beschikbaarheid
-
-![Nieuw](../assets/new.svg) Gepubliceerde metapakket voor catalogusservices om installatiestappen te vereenvoudigen.
-![Repareren](../assets/fix.svg) Schaalbaarheid van API&#39;s en prestatieverbeteringen.
-
 #### Bekende beperkingen
 
 Deze functies worden nog niet ondersteund:
@@ -50,7 +43,13 @@ De volgende beperkingen kunnen worden opgelost met de Core GraphQL API:
 * Minimale geadverteerde prijs
 * Tier-prijsstelling
 * Downloadbare producten en cadeaukaarten
-* Categorieën (`categories` en `categoryList`)
+
+### V1.4 Release
+
+Releasedatum: 2023-2-7 Compatibel met Adobe Commerce (EE): 2.4.x Compatibel met Adobe Commerce for Cloud (ECE): 2.4.x Stabiliteit: Algemene beschikbaarheid
+
+![Nieuw](../assets/new.svg) Gepubliceerde metapakket voor catalogusservices om installatiestappen te vereenvoudigen.
+![Repareren](../assets/fix.svg) Schaalbaarheid van API&#39;s en prestatieverbeteringen.
 
 ### V1.3 Release
 

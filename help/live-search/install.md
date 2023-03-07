@@ -2,9 +2,9 @@
 title: "Installeren [!DNL Live Search]"
 description: "Meer informatie over het installeren, bijwerken en verwijderen [!DNL Live Search] uit Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: d8be88f47f103c5d632540dae743ede398a9b7ad
+source-git-commit: 484319fc1df6c29c972b57c13bd0ed711e374e99
 workflow-type: tm+mt
-source-wordcount: '1281'
+source-wordcount: '1266'
 ht-degree: 0%
 
 ---
@@ -39,11 +39,11 @@ Deze instapmethode wordt aanbevolen bij de installatie [!DNL Live Search] tot en
 
 In dit scenario worden storefront-bewerkingen onderbroken terwijl de [!DNL Live Search] de dienst indexeert alle producten in de catalogus. Tijdens de installatie [!DNL Live Search] modules worden ingeschakeld en [!DNL Elasticsearch] modules zijn uitgeschakeld.
 
->[!TIP]
+>[!NOTE]
 >
->Als u typefouten wilt voorkomen, houdt u de muisaanwijzer helemaal rechts van het codevak ingedrukt en klikt u op de knop [!UICONTROL **Kopiëren**] en plak deze in de opdrachtregel.
+>Vanaf maart 2023 biedt Live Search alleen ondersteuning voor versie 2.4.4 en hoger.
 
-1. Adobe Commerce 2.4.x installeren zonder [!DNL Live Search].
+1. Adobe Commerce 2.4.4+ installeren zonder [!DNL Live Search].
 
 1. Als u het dialoogvenster `live-search` pakket, voer het volgende uit vanaf de bevellijn:
 

@@ -2,9 +2,9 @@
 title: "Overzicht aan boord"
 description: "[!DNL Live Search] instapkaartstroom, systeemvereisten, grenzen en beperkingen"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 484319fc1df6c29c972b57c13bd0ed711e374e99
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '345'
 ht-degree: 0%
 
 ---
@@ -19,14 +19,14 @@ Aan de slag met [!DNL Live Search] voor Adobe Commerce: voltooi het instapproces
 
 ## Vereisten {#requirements}
 
-* [Adobe Commerce](https://magento.com/products/magento-commerce) 2,4 x
-* PHP 7.3 / 7.4 / 8.1
+* [Adobe Commerce](https://magento.com/products/magento-commerce) 2.4.4+
+* PHP 8.1, 8.2
 * [!DNL Composer]
 
 ### Ondersteunde platforms
 
-* Adobe Commerce on prem (EE) : 2,4 x
-* Adobe Commerce on Cloud (ECE) : 2,4 x
+* Adobe Commerce on prem (EE) : 2.4.4+
+* Adobe Commerce on Cloud (ECE) : 2.4.4+
 
 ## Grenzen en drempels
 
@@ -41,7 +41,7 @@ Op dit moment wordt [!DNL Live Search] zoek-/Categorie-API heeft de volgende ond
 ### Query
 
 * [!DNL Live Search] heeft geen toegang tot de volledige taxonomie van de categorieboom, waardoor sommige gelaagde navigatie onderzoeksscenario&#39;s voorbij zijn bereik maken.
-* [!DNL Live Search] gebruikt een uniek eindpunt GraphQL voor vragen om eigenschappen zoals intelligente facettering en onderzoek-zoals-u-type te steunen. Hoewel vergelijkbaar met de [Magento GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/)Er zijn echter enkele verschillen en sommige gebieden zijn momenteel wellicht niet volledig compatibel.
+* [!DNL Live Search] gebruikt een uniek GraphQL eindpunt voor vragen om eigenschappen zoals intelligente facettering en onderzoek-zoals-u-type te steunen. Hoewel vergelijkbaar met de [Magento GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/)Er zijn echter enkele verschillen en sommige gebieden zijn momenteel wellicht niet volledig compatibel.
 
 ### Regels
 
@@ -57,7 +57,7 @@ Op dit moment wordt [!DNL Live Search] zoek-/Categorie-API heeft de volgende ond
 
 * De huidige bèta-PWA-implementatie van Live Search vereist meer verwerkingstijd om zoekresultaten te retourneren dan Live Search met de native Commerce-winkel.
 * De bètaversie van PWA voor [!DNL Live Search] ondersteunt niet [gebeurtenisafhandeling](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/).
-* De volgende productkenmerken worden niet ondersteund door GraphQL bij gebruik in relatie tot de bètaversie van [PWA](https://developer.adobe.com/commerce/pwa-studio/): `description`, `name`, `short_description`
+* De volgende productkenmerken worden niet door GraphQL ondersteund bij gebruik in verband met de bètaversie van [PWA](https://developer.adobe.com/commerce/pwa-studio/): `description`, `name`, `short_description`
 
 ### Momenteel niet ondersteund
 
