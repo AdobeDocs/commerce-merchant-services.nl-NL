@@ -2,9 +2,9 @@
 title: '''[!DNL Catalog Service] Opmerkingen bij de release'
 description: De meest recente releasegegevens voor [!DNL Catalog Service] voor Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: 484319fc1df6c29c972b57c13bd0ed711e374e99
+source-git-commit: 40cf5c5dc6242b5efe3822b9c574fe5b219cfcd8
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,9 @@ In deze releaseopmerkingen worden de meest recente versies van [!DNL Catalog Ser
 
 ### V1.5-release
 
-Releasedatum: 2023-3-6 Compatibel met Adobe Commerce (EE): 2.4.4+ Compatibel met Adobe Commerce for Cloud (ECE): 2.4.4+ Stabiliteit: Algemene beschikbaarheid
+_6 maart 2023_
+
+[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
 
 ![Nieuw](../assets/new.svg) Toegevoegd [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) GraphQL-functionaliteit.
 ![Repareren](../assets/fix.svg) Verbeterde prestaties en API-schaalbaarheid.
@@ -46,14 +48,18 @@ De volgende beperkingen kunnen worden opgelost met de Core GraphQL API:
 
 ### V1.4 Release
 
-Releasedatum: 2023-2-7 Compatibel met Adobe Commerce (EE): 2.4.x Compatibel met Adobe Commerce for Cloud (ECE): 2.4.x Stabiliteit: Algemene beschikbaarheid
+_7 februari 2023_
+
+[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
 
 ![Nieuw](../assets/new.svg) Gepubliceerde metapakket voor catalogusservices om installatiestappen te vereenvoudigen.
 ![Repareren](../assets/fix.svg) Schaalbaarheid van API&#39;s en prestatieverbeteringen.
 
 ### V1.3 Release
 
-Releasedatum: 2023-1-17 Compatibel met Adobe Commerce (EE): 2.4.x Compatibel met Adobe Commerce for Cloud (ECE): 2.4.x Stabiliteit: Algemene beschikbaarheid
+_17 januari 2023_
+
+[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
 
 ![Nieuw](../assets/new.svg) Vereenvoudigde en verbeterde ervaring bij het instappen.
 ![Nieuw](../assets/new.svg) Er zijn nieuwe eindpunten van de sandbox van de klant beschikbaar voor preproductietests.
@@ -62,14 +68,18 @@ Releasedatum: 2023-1-17 Compatibel met Adobe Commerce (EE): 2.4.x Compatibel met
 
 ### V1.1-release
 
-Releasedatum: 2022-11-18 Compatibel met Adobe Commerce (EE): 2.4.x Compatibel met Adobe Commerce for Cloud (ECE): 2.4.x Stabiliteit: Algemene beschikbaarheid
+_18 november 2022_
+
+[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
 
 ![Nieuw](../assets/new.svg) Catalogusservice biedt nu ondersteuning voor Adobe [API-net](https://developer.adobe.com/graphql-mesh-gateway/).
 ![Repareren](../assets/fix.svg) We hebben de API-schaalbaarheid en algemene prestaties verbeterd.
 
 ### V1.0-release
 
-Releasedatum: 2022-10-04 Compatibel met Adobe Commerce (EE): 2.4.x Compatibel met Adobe Commerce for Cloud (ECE): 2.4.x Stabiliteit: Algemene beschikbaarheid
+_4 oktober 2022_
+
+[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
 
 ![Nieuw](../assets/new.svg) Ondersteuning voor gebundelde en gegroepeerde producten.
 ![Nieuw](../assets/new.svg) Extra B2B-zichtbaarheidsoverschrijvingen. De producten zijn nu doorzoekbaar en kunnen aan de kar voor specifieke klantengroepen worden toegevoegd.
@@ -81,7 +91,9 @@ Releasedatum: 2022-10-04 Compatibel met Adobe Commerce (EE): 2.4.x Compatibel me
 
 ### 0.3 Release - bèta+
 
-Releasedatum: 2022-09-12 Compatibel met Adobe Commerce (EE): 2.4.x Compatibel met Adobe Commerce for Cloud (ECE): 2.4.x Stabiliteit: Beta
+_12 september 2022_
+
+[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
 
 ![Nieuw](../assets/new.svg) Afbeeldingen voor varianten worden ondersteund: productafbeeldingen worden geretourneerd op basis van de geselecteerde opties
 ![Nieuw](../assets/new.svg) Rollen voor prijsondersteuning: alleen leden van specifieke klantengroepen de prijs van producten laten zien
@@ -90,7 +102,9 @@ Releasedatum: 2022-09-12 Compatibel met Adobe Commerce (EE): 2.4.x Compatibel me
 
 ### Bètaversie
 
-Releasedatum: 2022-08-09 Compatibel met Adobe Commerce (EE): 2.4.x Compatibel met Adobe Commerce for Cloud (ECE): 2.4.x Stabiliteit: Beta
+_9 augustus 2022_
+
+[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
 
 ![Nieuw](../assets/new.svg) De `products` en `refineProduct` query&#39;s retourneren de volgende gegevens:
 
