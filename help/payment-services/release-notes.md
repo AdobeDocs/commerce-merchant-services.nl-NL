@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] Opmerkingen bij de release"
 description: Lees de opmerkingen bij de release voor meer informatie over alle [!DNL Payment Services] lozingen.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 61bce569fb2a761ec2956ea240d61b1ad2b3a3e2
+source-git-commit: 39bd0763b7aa6f853d0bff80c8122e899c1c58d8
 workflow-type: tm+mt
-source-wordcount: '1564'
+source-wordcount: '1590'
 ht-degree: 0%
 
 ---
@@ -61,6 +61,8 @@ _28 juni 2021_
 
 _17 februari 2023_
 
+[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+
 ![Nieuw](../assets/new.svg)<!-- Issue PAY-3540 --> Toegevoegd [PGB 3DS-compatibiliteitskenmerk voor handelaren die handelen in de Europese Unie (EU) en Groot-Brittannië](security.md#3ds). Deze extra beveiligingslaag, die vereist dat kopers zich verifiëren bij hun creditcardmaatschappij, helpt internetfraude te voorkomen en is vereist in het kader van de EU-regelgeving inzake naleving.
 
 ![Nieuw](../assets/new.svg)<!-- Issue PAY-3609 --> De mogelijkheid toegevoegd om [kaartvaulatie inschakelen in de beheerder](vaulting.md#use-vaulting-in-the-admin). Op deze manier kunnen handelaren via hun gefactureerde betalingsmethoden een bestelling voor klanten in de beheerder maken.
@@ -69,17 +71,23 @@ _17 februari 2023_
 
 _29 januari 2023_
 
+[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+
 ![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-4110 --> Probleem verholpen waarbij kopers een bestelling niet konden plaatsen met behulp van slimme knoppen op de productpagina, miniwinkelwagentje en winkelwagentje. Kopers kunnen nu bestellingen voltooien.
 
 ## v1.5.3
 
 _25 januari 2023_
 
+[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+
 ![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-4102 --> Een oplossing vrijgegeven voor een incompatibel probleem. Deze versie vergrendelt de de uitbreidingsversie van de dienstidentiteitskaart aan de recentste stabiele versie, die nieuwe installaties van de Diensten van de Betaling opnieuw toelaat om de Diensten van de Handel te vormen.
 
 ## v1.5.2
 
 _22 december 2022_
+
+[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
 
 ![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-3992 --> Betaaldiensten kunnen beter worden gefactureerd wanneer een betalingsmethode wordt afgewezen.
 
@@ -89,6 +97,8 @@ _22 december 2022_
 
 _23 november 2022_
 
+[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+
 ![Nieuw](../assets/new.svg)<!-- Issue PAY-3923 --> De Diensten van de betaling omvat nu het versieaantal in de kopbal van de gebruikersagent voor verzoeken om ongebruikte eindpunten te kunnen volgen, filtreren of verwerpen.
 
 ![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-3968 --> Met Betalingsservices worden nu correct de ordergegevens weergegeven wanneer een bestelling op de productpagina wordt geplaatst met behulp van slimme knoppen.
@@ -96,6 +106,8 @@ _23 november 2022_
 ## v1.5.0
 
 _18 november 2022_
+
+[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
 
 ![Nieuw](../assets/new.svg)<!-- Issue PAY-3880 --> Een winkelier kan nu [hun creditcardgegevens opslaan tijdens het afrekenen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) gebruiken in een latere aankoop voor dezelfde of een andere winkel binnen dezelfde zakelijke account.
 
@@ -105,11 +117,15 @@ _18 november 2022_
 
 _14 oktober 2022_
 
+[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+
 ![Repareren](../assets/fix.svg)<!-- Issue PAY-3766 --> Wanneer de betalingsmethode van een klant wordt afgewezen, is het zichtbare foutbericht beschrijverender. Het adviseert de klant om betalingsinformatie opnieuw in te voeren en opnieuw te proberen, een andere betalingsmethode te proberen, of hun bank over de geweigerde transactie te contacteren.
 
 ## v1.4.0
 
 _30 september 2022_
+
+[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
 
 ![Nieuw](../assets/new.svg)<!-- Issue PAY-784 --> De betalingsservices bieden nu de mogelijkheid om een zakelijke account in te stellen op [meerdere PayPal-zakelijke accounts gebruiken](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#use-multiple-paypal-accounts). Hierdoor kan de handelaar in meerdere landen uw winkels bedienen met verschillende valuta&#39;s, of Adobe Commerce gebruiken voor een deel van uw bedrijf.
 
@@ -123,11 +139,15 @@ _30 september 2022_
 
 _6 september 2022_
 
+[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+
 ![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-3663 --> Wanneer de winkel van een handelaar een bestelling vastlegt die is geautoriseerd met een niet-globale valuta, wordt het vastlegproces voltooid en wordt geen fout weergegeven.
 
 ## v1.3.0
 
 _9 augustus 2022_
+
+[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
 
 ![Nieuw](../assets/new.svg)<!-- Issue PAY-XX --> Algemene beschikbaarheidsrelease—[!DNL Payment Services] is nu [compatibel met [!DNL Adobe Commerce] en [!DNL Magento Open Source] versies 2.4.0 tot en met 2.4.5](https://devdocs.magento.com/release/availability.html#compatibility).
 
@@ -136,6 +156,8 @@ _9 augustus 2022_
 ## v1.2.0
 
 _29 juni 2022_
+
+[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
 
 ![Bekend probleem](../assets/bug.svg)<!-- Issue PAY-x --> Apple Pay is niet compatibel met Safari browser v15.5 op mobiele apparaten en desktops. Als je Safari versie 15.5 gebruikt, kun je het afrekenen met Apple Pay niet voltooien.
 
@@ -152,6 +174,8 @@ _29 juni 2022_
 ## v1.1.0
 
 _31 maart 2022_
+
+[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
 
 ![Nieuw](../assets/new.svg)<!-- Issue PAY-2127 --> Algemene beschikbaarheidsrelease—[!DNL Payment Services] is nu [compatibel met [!DNL Adobe Commerce] en [!DNL Magento Open Source] versies 2.4.0 tot en met 2.4.4](https://devdocs.magento.com/release/availability.html#compatibility).
 
@@ -178,6 +202,8 @@ _31 maart 2022_
 ## v1.0.0
 
 _29 november 2021_
+
+[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
 
 ![Nieuw](../assets/new.svg)<!-- Issue PAY-2127 --> Algemene beschikbaarheidsrelease—[[!DNL Payment Services]](https://marketplace.magento.com/magento-payment-services.html) is nu compatibel met [!DNL Adobe Commerce] en [!DNL Magento Open Source] versies 2.4.0 tot en met 2.4.3-p1.
 
