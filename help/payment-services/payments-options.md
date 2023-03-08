@@ -2,9 +2,9 @@
 title: Betalingsopties
 description: Stel de betalingsopties in om de beschikbare methoden voor uw winkelklanten aan te passen.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
+source-git-commit: 31665f90909ce2364579fc7f9c97087e2376c0a6
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '1003'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ De [!DNL Apple Pay] Deze knop is zichtbaar vanaf de pagina met producten, de min
 
 >[!NOTE]
 >
-> Als je Apple Pay wilt gebruiken, moet je contact opnemen met je verkoper of accountmanager om deze in te schakelen voor je live winkels.
+> Als je Apple Pay wilt gebruiken, moet je contact opnemen met je verkoopvertegenwoordiger of Adobe-accountteam om dit in te schakelen voor je live winkels.
 
 ### [!DNL Pay Later] knop
 
