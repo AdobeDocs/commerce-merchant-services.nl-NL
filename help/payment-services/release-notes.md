@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] Opmerkingen bij de release"
 description: Lees de opmerkingen bij de release voor meer informatie over alle [!DNL Payment Services] lozingen.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 39bd0763b7aa6f853d0bff80c8122e899c1c58d8
+source-git-commit: e076864a117be007eeb8003d9d6a472b704996ba
 workflow-type: tm+mt
-source-wordcount: '1590'
+source-wordcount: '1758'
 ht-degree: 0%
 
 ---
@@ -56,6 +56,26 @@ _28 juni 2021_
 ![Nieuw](../assets/new.svg)<!-- Issue PAY-2761 --> U kunt nu de gegevens aanpassen die worden weergegeven in het dialoogvenster [Betalingsstatusrapport bestellen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) en de [Uitbetalingsrapport](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) door kolommen te tonen of te verbergen gebruikend de de montagecontrole van de Kolom.
 
 +++
+
+## v2.0.0
+
+_10 maart 2023_
+
+[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+
+![Nieuw](../assets/new.svg)<!-- Issue PAY-4152 --> Extra ondersteuning voor PHP 8.2 en Adobe Commerce 2.4.6. Niet compatibel met PHP 7.x.
+
+## v1.6.1
+
+_10 maart 2023_
+
+[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+
+![Repareren](../assets/fix.svg)<!-- Issue PAY-4226 --> Probleem verholpen waardoor nieuwe verkopers van betalingsservices geen afhandeling konden gebruiken in de Admin. De Diensten van de betaling gebruikte eerder de de klantenidentiteitskaart van de Handel, die niet voor nieuwe klanten bestaat.
+
+![Repareren](../assets/fix.svg)<!-- Issue PAY-4205 --> Probleem opgelost waarbij de opgegeven staat van het verzendadres tijdens het afrekenen werd vervangen door de status in de standaard belastinginstellingen via de optie [PayPal-optie](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#paypal-smart-buttons). Nu kunnen klanten hun bestellingen naar een andere staat laten verzenden dan die welke in de belastinginstellingen van de handelaar als standaard is geconfigureerd.
+
+![Repareren](../assets/fix.svg)<!-- Issue PAY-4202 --> Probleem verholpen waarbij werd voorkomen dat klanten met een creditcard een aankoop konden voltooien of een geldige betalingsmethode voor een winkel konden verwijderen. Dit probleem is nu opgelost. [met de `Authorize and Capture` betalingsactie](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method). Eerder werd een fout met betrekking tot de &quot;Provider Vault ID not found&quot; weergegeven toen de klant probeerde de gefactureerde creditcards te gebruiken of te wijzigen.
 
 ## v1.6.0
 
