@@ -2,9 +2,9 @@
 title: '''[!DNL Live Search] Opmerkingen bij de release'
 description: "De meest recente releasegegevens voor [!DNL Live Search] uit Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: a589956b5594283d7ceb620abc76b2c352f8f524
+source-git-commit: 94e5d59061477440e62a8f1eb055090e0179d395
 workflow-type: tm+mt
-source-wordcount: '1147'
+source-wordcount: '1208'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,17 @@ U wordt aangeraden een upgrade uit te voeren en te testen voordat u naar de prod
 
 ## Vorige versies
 
-+++2.0.4 en eerder
++++2.0.5 en eerder
+
+## [!DNL Live Search] 2.0.5 {#205}
+
+[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+
+* ![Repareren](../assets/fix.svg) - Live zoeken zou een fout veroorzaken als SDK-bronnen niet beschikbaar waren vanwege netwerkproblemen. Deze fout is opgelost.
+
+Handelaars moeten de Live Search extensie versie >= 2.0.5 bevorderen om tot deze eigenschappen toegang te hebben.
+
+U wordt aangeraden een upgrade uit te voeren en te testen voordat u naar de productie gaat. Overweeg om de productieomgeving tijdens niet-piekuren te upgraden nadat de resultaten van de testomgeving zijn gecontroleerd.
 
 ### [!DNL Live Search] 2.0.4 {#204}
 
