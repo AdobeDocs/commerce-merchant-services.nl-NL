@@ -2,16 +2,16 @@
 title: "Synoniemen toevoegen"
 description: "Toevoegen [!DNL Live Search] synoniemen om de reactie op zoekverzoeken te verbeteren."
 exl-id: 6c277d88-cb22-4174-abda-6d6bb65fe3be
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: c4bca0c7238be653dd13b051634c662e5891767d
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
 
 # Synoniemen toevoegen
 
-Verhoog de betrokkenheid van klanten door uw eigen gekrulde lijst met synoniemen voor Live zoeken toe te voegen. [!DNL Live Search] kan maximaal 200 synoniemen per `Data Space ID`.
+Verhoog de betrokkenheid van klanten door uw eigen gekrulde lijst met [!DNL Live Search] synoniemen. [!DNL Live Search] kan maximaal 200 synoniemen per `Data Space ID`.
 
 ![[!DNL Live Search] synoniemen](assets/synonym-workspace.png)
 
@@ -50,7 +50,7 @@ De reeks synoniemen verschijnt in de lijst met een tweerichtingspijl tussen elke
 
    ![Eenvoudige synoniem toevoegen](assets/synonym-add-one-way.png)
 
-1. Voer de **Trefwoord** en **Uitbreiding** term(en). Scheid meerdere termen van elkaar met een komma.
+1. Voer de **Trefwoord** en **Uitbreiding** voorwaarden. Scheid meerdere termen van elkaar met een komma.
 
    ![Voorbeeld van eenrichtingssynoniem](assets/synonym-add-one-way-example.png)
 
@@ -63,10 +63,8 @@ De reeks synoniemen verschijnt in de lijst met een eenrichtingspijl die van de u
 
 ## Stap 3: Wijzigingen publiceren
 
-1. Wanneer uw synoniem(en) volledig is (zijn), klikt u op **Wijzigingen publiceren**.
+1. Wanneer uw synoniemen volledig zijn, klik **Wijzigingen publiceren**.
 1. Wacht maximaal twee uur totdat uw updates beschikbaar zijn in de winkel.
-
-![Wijzigingen publiceren](assets/synonym-publish.png)
 
 ## Veldbeschrijvingen
 

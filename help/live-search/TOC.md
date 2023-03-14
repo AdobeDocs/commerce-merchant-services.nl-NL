@@ -2,9 +2,9 @@
 user-guide-title: "[!DNL Live Search] Hulplijn"
 user-guide-description: "Deze handleiding bevat gedetailleerde instructies voor het gebruik van [!DNL Live Search] uit Adobe Commerce."
 breadcrumb-title: "[!DNL Live Search] Hulplijn"
-source-git-commit: 941fdc25f93679593cb3c5db0d29d7a561fcce58
+source-git-commit: e763eb8e283319b30b19dbb13284e9616196ae48
 workflow-type: tm+mt
-source-wordcount: '68'
+source-wordcount: '96'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,7 @@ ht-degree: 0%
    - [Onboarding-overzicht](onboarding-overview.md)
    - [Installeren [!DNL Live Search]](install.md)
 - [!DNL Live Search] Storefront {#live-search-storefront}
+   - [Widget pagina met productaanbiedingen](plp-styling.md)
    - [Snelle rondleiding](quick-tour.md)
    - [Storefront [!DNL Popover]](storefront-popover.md)
    - [Stijlen [!DNL Popover] Elementen](storefront-popover-styling.md)
@@ -41,6 +42,9 @@ ht-degree: 0%
       - [Werkruimte Regels](rules-workspace.md)
       - [Regels toevoegen](rules-add.md)
       - [Regels beheren](rules-manage.md)
+   - [Instellingen voor handelsconfiguratie](configuration.md)
    - [Instellingen](settings.md)
    - [Indexeren](indexing.md)
-- [Feedback](feedback.md)
+- GraphQL-query&#39;s {#graphql}
+   - [attributeMetadata](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/attribute-metadata/)
+   - [productSearch](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/)

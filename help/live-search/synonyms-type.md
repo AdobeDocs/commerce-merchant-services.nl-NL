@@ -2,9 +2,9 @@
 title: "Typen synoniemen"
 description: "Eenweg en tweeweg [!DNL Live Search] synoniemen breiden de definitie van trefwoorden uit."
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '512'
 ht-degree: 0%
 
 ---
@@ -29,11 +29,11 @@ Een eenrichtingssynoniem is een subset van een trefwoord, maar heeft een specifi
 
 ## Aanbevolen procedures
 
-Houd rekening met de volgende aanbevolen procedures om synoniemen van Live zoeken optimaal te benutten.
+Houd rekening met de volgende aanbevolen procedures om optimaal te profiteren van [!DNL Live Search] synoniemen.
 
 ### &quot;Stop woorden&quot; vermijden
 
-Met Live zoeken worden algemene &#39;stopwoorden&#39; uit synoniemen uitgefilterd, zoals:
+[!DNL Live Search] Hiermee worden algemene &#39;stopwoorden&#39; in het Engels gefilterd op synoniemen, zoals:
 
 a, an, and, are, as, at, be, but, by, for, if, in, is, it, no, not, of, dusdanig, dat, hun, toen, daar, deze, zij, dit, aan, was,
 

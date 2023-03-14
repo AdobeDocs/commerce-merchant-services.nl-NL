@@ -1,10 +1,10 @@
 ---
-title: '"[!DNL Live Search] Instellingen"'
-description: '"Prijsfacetbereiken en intervallen configureren voor [!DNL Live Search] facetten."'
+title: "[!DNL Live Search] Instellingen"
+description: "Prijsfacetbereiken en intervallen configureren voor [!DNL Live Search] facetten."
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '240'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ U kunt het aantal groepen voor het prijsbereik opgeven en aangeven hoe de prijsw
 
 ## Prijsfacetgroepen configureren
 
-1. Ga in Beheer naar **Marketing** > *ZOEKEN EN ZOEKEN* > **Live zoeken**.
+1. Ga in Beheer naar **Marketing** > *ZOEKEN EN ZOEKEN* > **[!DNL Live Search]**.
 1. Op de **Instellingen** tab onder *Prijsbeperking* Ga als volgt te werk:
    * Voer de **Aantal selecties**, of prijsgroepen die beschikbaar moeten zijn. Er kunnen maximaal 50 prijsgroepen worden gedefinieerd.
    * Voer de **Interval, waarde**, of prijsbereik voor elke groep. De maximumwaarde is 10.000.

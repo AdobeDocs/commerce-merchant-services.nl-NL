@@ -2,16 +2,16 @@
 title: "Installeren [!DNL Live Search]"
 description: "Meer informatie over het installeren, bijwerken en verwijderen [!DNL Live Search] uit Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: 484319fc1df6c29c972b57c13bd0ed711e374e99
+source-git-commit: a589956b5594283d7ceb620abc76b2c352f8f524
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '1288'
 ht-degree: 0%
 
 ---
 
 # Installeren [!DNL Live Search]
 
-Live zoeken wordt als extensie van Adobe Marketplace geïnstalleerd. Na de [!DNL Live Search] module (met catalogusmodules als afhankelijkheden) is geïnstalleerd en geconfigureerd, [!DNL Commerce] begint onderzoek en catalogusgegevens met de diensten te delen SaaS. Op dit punt *Beheer* gebruikers kunnen zoekfacetten, synoniemen en regels voor het wijzigen van handelsversies instellen, aanpassen en beheren.
+[!DNL Live Search] is geïnstalleerd als extensie van Adobe Marketplace. Na de [!DNL Live Search] module (met catalogusmodules als afhankelijkheden) is geïnstalleerd en geconfigureerd, [!DNL Commerce] begint onderzoek en catalogusgegevens met de diensten te delen SaaS. Op dit punt *Beheer* gebruikers kunnen zoekfacetten, synoniemen en regels voor het wijzigen van handelsversies instellen, aanpassen en beheren.
 
 Dit onderwerp verstrekt instructies om het volgende te doen:
 
@@ -56,8 +56,7 @@ In dit scenario worden storefront-bewerkingen onderbroken terwijl de [!DNL Live 
 1. Voer de volgende opdrachten uit om uit te schakelen [!DNL Elasticsearch] en bijbehorende modules, en installeren [!DNL Live Search]:
 
    ```bash
-   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch 
-   Magento_ElasticsearchCatalogPermissionsGraphQl
+   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch7 Magento_OpenSearch Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch Magento_ElasticsearchCatalogPermissionsGraphQl
    ```
 
    ```bash
@@ -86,15 +85,15 @@ In dit scenario worden storefront-bewerkingen onderbroken terwijl de [!DNL Live 
 
 ## Methode 2: Installeren met Elasticsearch {#method-2}
 
+>[!IMPORTANT]
+>
+>Gezien de Elasticsearch 7 aankondiging van einde-van-steun voor Augustus 2023, wordt geadviseerd dat alle klanten van Adobe Commerce naar OpenSearch 2.x onderzoeksmotor migreren. Voor informatie over het migreren van uw zoekmachine tijdens productverbetering, zie [Migreren naar OpenSearch](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration.html) in de _Upgradehandleiding_.
+
 Deze instapmethode wordt aanbevolen bij de installatie [!DNL Live Search] tot:
 
 * Een bestaande productie [!DNL Commerce] installatie
 
 In dit scenario: [!DNL Elasticsearch] beheert tijdelijk zoekverzoeken van de winkel terwijl de [!DNL Live Search] de dienst indexeert alle producten op de achtergrond, zonder enige onderbreking aan normale opslagverrichtingen. [!DNL Elasticsearch] is uitgeschakeld en [!DNL Live Search] ingeschakeld nadat alle catalogusgegevens zijn geïndexeerd en gesynchroniseerd.
-
->[!TIP]
->
->Als u typefouten wilt voorkomen, houdt u de muisaanwijzer helemaal rechts van het codevak ingedrukt en klikt u op de knop [!UICONTROL **Kopiëren**] en plak deze in de opdrachtregel.
 
 1. Als u het dialoogvenster `live-search` pakket, voer het volgende uit vanaf de bevellijn:
 
@@ -209,9 +208,9 @@ Bijwerken [!DNL Live Search], voert u de volgende handelingen uit vanaf de opdra
 composer update magento/live-search --with-dependencies
 ```
 
-Als u een update wilt uitvoeren naar een belangrijke versie, bijvoorbeeld van 1.0.0 tot 2.0.0, bewerkt u de hoofdmap van het project [!DNL Composer] `.json` bestand als volgt:
+Als u een update wilt uitvoeren naar een belangrijke versie, bijvoorbeeld van 2.0.0 tot 3.0.1, bewerkt u de hoofdmap van het project [!DNL Composer] `.json` bestand als volgt:
 
-1. Als uw huidige systeem is geïnstalleerd `magento/live-search` versie is `1.3.1` of lager en u werkt aan een upgrade naar de versie `2.0.0` of hoger, stel het volgende bevel vóór de verbetering in werking:
+1. Als uw huidige systeem is geïnstalleerd `magento/live-search` versie is `2.0.3` of lager en u werkt aan een upgrade naar de versie `3.0.0` of hoger, stel het volgende bevel vóór de verbetering in werking:
 
    ```bash
    bin/magento module:enable Magento_AdvancedSearch
@@ -230,7 +229,7 @@ Als u een update wilt uitvoeren naar een belangrijke versie, bijvoorbeeld van 1.
    ```json
    "require": {
       ...
-      "magento/live-search": "^2.0",
+      "magento/live-search": "^3.0",
       ...
     }
    ```
@@ -259,6 +258,6 @@ Het volgende [!DNL Live Search] afhankelijkheden worden vastgelegd door [!DNL Co
 
 | Afhankelijkheid | Beschrijving |
 |--- |--- |
-| Exportmodules | In de volgende modules worden catalogusgegevens verzameld en gesynchroniseerd:<br />`saas-export`<br />`module-bundle-product-exporter`<br />`module-catalog-data-exporter`<br />`module-catalog-inventory-data-exporter`<br />`module-catalog-url-rewrite-data-exporter`<br />`module-configurable-product-data-exporter`<br />`module-data-exporter`<br />`module-parent-product-data-exporter` |
-| `services-connector` | Vereist om uw verbinding aan de Diensten van de Handel te vormen. |
-| `module-services-id` | Vereist om uw verbinding aan de Diensten van de Handel te vormen. |
+| Exportmodules | In de volgende modules worden catalogusgegevens verzameld en gesynchroniseerd:<br />`module-sass-catalog`<br />`module-sass-product-override`<br />`module-bundle-product-data-exporter`<br />`module-catalog-data-exporter`<br />`module-catalog-inventory-data-exporter`<br />`module-catalog-url-rewrite-data-exporter`<br />`module-configurable-product-data-exporter`<br />`module-data-exporter`<br />`module-parent-product-data-exporter`<br />`module-product-override-data-exporter` |
+| `data-services` | Vereist om uw verbinding aan de Diensten van de Handel te vormen. |
+| `services-id` | Vereist om uw verbinding aan de Diensten van de Handel te vormen. |

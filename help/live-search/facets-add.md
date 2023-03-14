@@ -1,10 +1,10 @@
 ---
-title: '"Facetten toevoegen"'
-description: '"Leer hoe u filterbare productkenmerken kunt toevoegen als [!DNL Live Search] facetten."'
+title: "Facetten toevoegen"
+description: "Leer hoe u filterbare productkenmerken kunt toevoegen als [!DNL Live Search] facetten."
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 10edbb6127405d45c06d4c8ffc89d92a6ca061c3
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '588'
 ht-degree: 0%
 
 ---
@@ -19,16 +19,13 @@ Elk filtreerbaar productkenmerk kan als facet worden gebruikt. De *Elementen toe
 
 1. Ga in Beheer naar **Marketing** > SEO &amp; Search > **[!DNL Live Search]**.
 1. Op de *Faceting* tabblad, klikt u op **Elementen toevoegen**.
-1. In de *Elementen toevoegen* lijst, heeft elk beschikbaar attribuut een afzonderlijke *Toevoegen* knop. Voer een van de volgende handelingen uit:
-
-   ![Toegevoegd facet](assets/facets-list-add.png)
+1. In de *Elementen toevoegen* lijst, heeft elk beschikbaar attribuut een afzonderlijke ![Knop Toevoegen](assets/btn-add.png). Voer een van de volgende handelingen uit:
 
    * In de *Kenmerken naast elkaar* lijst, kies het productkenmerk dat u als facet wilt gebruiken en klik **Toevoegen**.
    * Als u een specifiek productkenmerk wilt zoeken, voert u de eerste paar tekens van de kenmerknaam in het dialoogvenster *Zoeken* doos. Klik vervolgens op **Toevoegen**.
 
       Als u prijsafhankelijke intervallen en groepen wilt configureren, raadpleegt u [Instellingen](settings.md). Ga voor meer informatie naar [Typen gezichten](facets-type.md).
 Het facet wordt onder aan het dialoogvenster *Dynamische factoren* en de *Wijzigingen publiceren* wordt beschikbaar.
-   ![Toegevoegd facet](assets/facet-added.png)
 
 1. Als het facet dat u wilt toevoegen, niet is gevonden, gaat u naar **Winkels** > Kenmerken > **Product** en verifieer dat het attribuut heeft [vereiste eigenschappen](facets.md) te gebruiken als facet. Werk indien nodig de volgende archiefront-eigenschappen van het kenmerk bij:
 
@@ -46,7 +43,6 @@ Het facet wordt onder aan het dialoogvenster *Dynamische factoren* en de *Wijzig
 1. Klik in het menu op **Bewerken**. Pas vervolgens de volgende eigenschappen naar wens aan.
 
    * Label - ([Koploos](facets-type.md) (alleen) Voer het facetlabel in dat u wilt gebruiken.
-   * Selecteer tekst - De *Tekst selecteren* gebruikt voor alle [!DNL Commerce] storefronts is `single select`. Voor headless implementaties, `multi-select` type kan worden toegewezen met een logische operator (`or` of `and`) om de reeks geretourneerde producten te bepalen.
    * Type sorteren - Facets worden alfabetisch gesorteerd voor alle [!DNL Commerce] opslagronten. Voor implementaties zonder kop kunnen facetten alfabetisch of op aantal worden gesorteerd. Opties: Alfabetisch, Aantal (alleen zonder kop)
    * Max. waarde - Voer het maximale aantal facetwaarden in dat in de winkelruimte wordt weergegeven. Geldige vermeldingen: 0 - 30; Standaard: 8
 
@@ -68,7 +64,6 @@ Als het facet na twee uur niet beschikbaar is, zie [Exporteren verifiëren](inst
 | Veld | Beschrijving |
 |--- |--- |
 | Label | ([Koploos](facets-type.md) alleen) De [facetlabel](facets-type.md) die zichtbaar is in de winkel, kan worden bewerkt voor consistentie met uw merk. |
-| Tekst selecteren | Hiermee geeft u het dialoogvenster [selectiemethode](facets-type.md) die aan het productkenmerk is gekoppeld. Alle facetten in de [!DNL Commerce] winkeliers zijn `Single select` alleen. Ook ondersteuning voor headless-implementaties `Multi-select` met de logische operatoren `OR` en `AND`. |
 | Sorteertype | De methode die wordt gebruikt om [sorteren](facets-type.md) facetten. Alles [!DNL Commerce] storefronts sorteren alleen alfabetische facetten. Implementaties zonder kop kunnen ook worden gesorteerd op `Count`. Opties:<br />Alfabetisch - Hiermee worden facetten alfabetisch gesorteerd.<br />Tellen - (alleen Koploos) sorteert facetten op basis van het aantal gevonden overeenkomsten. |
 | Max. waarde | Het maximumaantal waarden dat in de opslagruimte voor elk facet kan worden getoond. Facetten die een reeks waarden vertegenwoordigen, worden gelijkmatig verdeeld. Geldige vermeldingen: 0 - 30; Standaard: 8 |
 

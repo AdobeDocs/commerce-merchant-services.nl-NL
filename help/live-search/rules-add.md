@@ -2,9 +2,9 @@
 title: "Regels toevoegen"
 description: "Leer hoe u creeert [!DNL Live Search] regels."
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: e763eb8e283319b30b19dbb13284e9616196ae48
 workflow-type: tm+mt
-source-wordcount: '1290'
+source-wordcount: '1390'
 ht-degree: 0%
 
 ---
@@ -13,20 +13,22 @@ ht-degree: 0%
 
 Om een regel te bouwen, moet de eerste stap de regelredacteur gebruiken om de voorwaarden in de vraagtekst van de klant te bepalen die de bijbehorende gebeurtenissen teweegbrengen. Dan, voltooi de regeldetails, test de resultaten, en publiceer de regel.
 
-## Stap 1: Een regel toevoegen
+## Een regel toevoegen
 
-1. Ga in Beheer naar **Marketing** > SEO &amp; Search > **Live zoeken**.
+1. Ga in Beheer naar **Marketing** > SEO &amp; Search > **[!DNL Live Search]**.
 1. Stel de **Toepassingsgebied** om de [winkelweergave](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) wanneer de regel van toepassing is.
 1. Klik op de knop **Regels** tab.
 1. Klikken **Regel toevoegen** om de regeleditor te starten.
 
-   ![De werkruimte Regels](assets/rules-workspace-add-rule.png)
-
-## Stap 2: Beschrijf de voorwaarden
+## Voorwaarden
 
 Voorwaarden zijn de vereisten om een gebeurtenis te activeren. Een regel kan tot tien voorwaarden en 25 gebeurtenissen hebben.
 
 ![Regel - Bouw uw regel](assets/rules-add-workspace.png)
+
+>[!NOTE]
+>
+>Momenteel, is het niet mogelijk om regels aan een specifieke klantengroep te richten.
 
 ### Eén voorwaarde
 
@@ -43,9 +45,6 @@ Voorwaarden zijn de vereisten om een gebeurtenis te activeren. Een regel kan tot
 
 1. Om andere vragen te testen, verander de vraagtekst in *Uw regel testen* zoekvak en drukken op **Return**.
 Aanvankelijk, geeft de testruit de vraag van het de onderzoeksvakje van de Voorwaarden terug. Maar nu geeft het de vraag van de doos van de testvraag terug. De testruit geeft slechts één vraag tegelijkertijd terug.
-
-   ![Regel - updatetest](assets/rule-update-test.png)
-
 1. Als het resultaat u bevalt, werkt u de tekst in het dialoogvenster *Voorwaarden* zoekvak. Klik vervolgens ergens op de pagina om de resultaten in het testvenster bij te werken.
 1. Ga naar Stap 3 om een eenvoudige regel met één voorwaarde te bouwen: [Gebeurtenissen toevoegen](#events).
 
@@ -57,8 +56,6 @@ Een regel kan tot tien voorwaarden hebben. De logische operator die zich bij twe
    ![Regels - Zoekquery bevat](assets/rules-search-query-contains-and.png)
 
 1. Selecteer de tweede voorwaarde en voer de vereiste querytekst in.
-
-   ![Regelvoorwaarden](assets/rules-add-condition.png)
 
 1. Als u de logica van de regel wilt wijzigen, wijzigt u de **Overeenkomst** het plaatsen om te bepalen hoe dicht de het onderzoekscriteria van de klant de vraagvoorwaarde moeten aanpassen. Set **Overeenkomst** op een van de volgende wijzen:
 
@@ -73,25 +70,48 @@ Een regel kan tot tien voorwaarden hebben. De logische operator die zich bij twe
 
 1. Als u nog een voorwaarde wilt toevoegen, klikt u op **Voorwaarde toevoegen** en herhaal het proces.
 
-## Stap 3: Gebeurtenissen toevoegen
+## Type rangschikking
 
-gebeurtenissen zijn acties die de zoekresultaten wijzigen als aan de voorwaarden wordt voldaan. Eén regel kan maximaal 25 gebeurtenissen bevatten.
+Met de classificatie worden gebruikersgedrag en sitestatistieken gecombineerd om de productclassificatie te bepalen.
+Winkeleigenaars kunnen de volgende typen classificatiestrategieën instellen:
 
-1. Onder *Gebeurtenissen*, kiest u de **Gebeurtenis** plaatsvinden wanneer aan de desbetreffende voorwaarden is voldaan.
+![Regels - Overeenkomst](assets/rules-ranking-type.png)
 
-   Kies bijvoorbeeld `Pin a product`. Voer vervolgens de naam in van het product dat u wilt vastzetten. Als u hulp nodig hebt, kunt u de naam in de testruit vinden.
-Voer vervolgens de *Positie* waar het vastgezette product moet worden weergegeven. Het product wordt verplaatst naar de nieuwe positie in het testvenster en wordt gemarkeerd met een *Vastgezet* voorvertoningsbadge.
+* Meest aangeschaft: Dit rangschikt de producten op basis van de totale aankopen per SKU in de afgelopen 7 dagen.
+* Meestal toegevoegd aan winkelwagentjes in volgorde van de totale &quot;Add to Cart&quot;-activiteiten in de afgelopen 7 dagen.
+* Meest bekeken: Hiermee herhaalt u mijn totale weergaven per SKU in de afgelopen 7 dagen.
+* Aanbevolen voor u - Gebruikt de `viewed-viewed` gegevenspunt - Kopers die deze SKU bekeken, keken ook naar deze andere SKU&#39;s
+* Trending: Kijkt terug naar de gebeurtenissen van de paginaweergave in de afgelopen 72 uur voor achtergrondgebeurtenissen en 24 uur voor voorgrondgebeurtenissen
+* Geen: De producten worden bevolen door Relevantie
+
+1. Selecteer het type strategie voor de regel. In het venster Test Your Rule worden de verwachte resultaten weergegeven.
+
+## Gebeurtenissen toevoegen
+
+Gebeurtenissen zijn acties die de zoekresultaten wijzigen als aan bepaalde voorwaarden wordt voldaan. Eén regel kan maximaal 25 gebeurtenissen bevatten.
+
+* Verhogen - Verplaatst een product hoger in de onderzoeksresultaten.
+* Branden - Verplaatst een SKU lager in de zoekresultaten.
+* Een product vastzetten - Het product wordt weergegeven in de geselecteerde positie op de pagina.
+* Een product verbergen - Hiermee sluit u een SKU uit van de zoekresultaten.
+
+De eenvoudigste manier om een product vast te zetten is door te slepen en neer te zetten.
+
+1. Klik en sleep een product in het deelvenster Testen. Sleep de aanwijzer naar de gewenste positie. De velden Product en Positie worden automatisch ingevuld in het deelvenster Gebeurtenissen.
 
    ![Regels - Overeenkomst](assets/rule-event-pin-product.png)
 
+U kunt ook op het speldpictogram klikken om een product op de huidige locatie vast te zetten. Gebruik het contextmenu voor ovalen om &#39;Aan de bovenkant vastzetten&#39; of &#39;Aan de onderkant vastzetten&#39;.
+
+Of gebeurtenissen kunnen handmatig worden ingesteld:
+
+1. Onder *Gebeurtenissen*, kiest u de **Gebeurtenis** plaatsvinden wanneer aan de desbetreffende voorwaarden is voldaan.
+
+   Kies bijvoorbeeld `Hide a product`. Voer vervolgens de naam in van het product dat u wilt verbergen. Producten worden voorgesteld terwijl u typt.
+
 1. Voor meerdere gebeurtenissen kiest u andere gebeurtenissen die u wilt activeren als aan de voorwaarden is voldaan.
 
-   * Verhogen - Selecteer Verhogen. Voer vervolgens de productnaam of SKU in die u hoger wilt verplaatsen in de zoekresultaten. In het testvenster heeft elk geboost product een *Gebost* voorvertoningsbadge.
-   * Branden - Verplaatst een SKU lager in de zoekresultaten. Elke SKU is gemarkeerd met een *begraven* voorvertoningsbadge in het testvenster.
-   * Een product vastzetten - Voer de productnaam of SKU in. Selecteer vervolgens Positie in de zoekresultaten waar het product moet worden weergegeven. Het product is gemerkt met een *Vastgezet* voorvertoningsbadge in het testvenster.
-   * Een product verbergen - Hiermee sluit u een SKU uit van de zoekresultaten.
-
-## Stap 4: De details invullen
+## Aanvullende gegevens
 
 De hier ingevoerde informatie wordt weergegeven in het dialoogvenster [Regeldetails](rules-workspace.md) deelvenster.
 
@@ -103,13 +123,10 @@ De hier ingevoerde informatie wordt weergegeven in het dialoogvenster [Regeldeta
 
    ![Regel - volledig](assets/rule-add-details.png)
 
-## Stap 5: De regel testen
+## De regel voltooien
 
 1. Onderzoek de resultaten van de regel in de testruit.
 1. Als de regel veelvoudige vragen heeft, test elk die door de regel zou kunnen worden beïnvloed.
-
-## Stap 6: Opslaan en publiceren
-
 1. Klik op **Opslaan en publiceren**.
 
    De regel wordt toegevoegd aan de lijst in de regelwerkruimte.

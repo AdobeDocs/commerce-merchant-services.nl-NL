@@ -2,9 +2,9 @@
 title: "Faceting Workspace"
 description: "Leer je weg rond de [!DNL Live Search] facetwerkruimte."
 exl-id: b47b5c19-59bb-41e4-9599-3b90cbc44b70
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: e166c8cb9d715dce573195a188b5335c02d8fd0c
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '224'
 ht-degree: 0%
 
 ---
@@ -28,8 +28,6 @@ Als uw Adobe Commerce-installatie meerdere winkelweergaven bevat, stelt u **Toep
    * Vastgezet
    * Dynamisch
 
-   ![Werkruimte naast elkaar](assets/facets-filter-by.png)
-
 ## Een facet toevoegen
 
 1. Klikken **Elementen toevoegen**.
@@ -40,7 +38,6 @@ Als uw Adobe Commerce-installatie meerdere winkelweergaven bevat, stelt u **Toep
 | Kolom | Beschrijving |
 |--- |--- |
 | (eerste kolom) | Lijsten vastgezet en dynamische facetten door [label](facets-type.md) die zichtbaar is voor de verkoopster. |
-| Tekst selecteren | De [selectiemethode](facets-type.md) die wordt toegewezen aan het overeenkomstige productkenmerk. De `single select` type wordt gebruikt voor alles [!DNL Commerce] opslagronten. Voor headless implementaties, `multi-select` type kan worden toegewezen met een logische operator (`or` of `and`) om de reeks geretourneerde producten te bepalen. |
 | Tekst sorteren | De [sorteervolgorde](facets-type.md) van facetwaarden. Facetten worden alfabetisch gesorteerd voor alle [!DNL Commerce] opslagronten. Voor [koploos] implementaties, kunnen de facetten of alfabetisch of door telling worden gesorteerd. Opties: Alfabetisch, Aantal (alleen zonder kop) |
 | Max. waarde | Het aantal facetwaarden dat in de opslagruimte als filters beschikbaar is, met een maximum van 10. |
 

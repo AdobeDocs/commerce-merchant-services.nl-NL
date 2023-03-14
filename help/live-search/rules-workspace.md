@@ -2,9 +2,9 @@
 title: "Werkruimte Regels"
 description: "Leer je weg rond de [!DNL Live Search] regelt de werkruimte."
 exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 91d0713a3e57a3748609b6b4bcb723c21a461519
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '573'
 ht-degree: 0%
 
 ---
@@ -30,20 +30,14 @@ Als uw Adobe Commerce-installatie meerdere winkelweergaven bevat, stelt u **Toep
 1. Klik in de rechterbovenhoek op **Tonen/verbergen** ![Kolomkiezer](assets/btn-show-hide-columns.png) kolommen.
 De zichtbare kolommen hebben een blauw vinkje in het optiemenu. De regelnaam is de enige kolom die niet kan worden verborgen.
 
-   ![De werkruimte Regels](assets/rules-workspace-show-hide-columns.png)
-
 1. Voer in het menu een van de volgende handelingen uit:
 
    * Als u een verborgen kolom wilt weergeven, klikt u op een kolomnaam zonder vinkje.
    * Als u een zichtbare kolom wilt verbergen, klikt u op een kolomnaam met een vinkje.
 
-   ![De werkruimte Regels](assets/rules-workspace-all-columns.png)
-
 ## Regels filteren op status
 
 1. Als uw winkel veel regels heeft, kunt u de regels filteren op status om de lijst te verkorten. Standaard worden in de lijst Regels alle regels weergegeven.
-
-   ![Regels - filteren op status](assets/rules-workspace-filter-status.png)
 
 1. Als u alleen regels met een specifieke statusinstelling wilt weergeven, stelt u **Status** op een van de volgende wijzen:
 
@@ -51,8 +45,6 @@ De zichtbare kolommen hebben een blauw vinkje in het optiemenu. De regelnaam is 
    * Actief
    * Inactief
    * Gepland
-
-   ![Regels - filteren op status](assets/rules-workspace-filter-status-active.png)
 
 ## Regels zoeken op naam
 

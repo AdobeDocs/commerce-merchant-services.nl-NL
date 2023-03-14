@@ -2,9 +2,9 @@
 title: "Facetten beheren"
 description: "Leer hoe u bestaande [!DNL Live Search] facetten."
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
@@ -64,6 +64,10 @@ De pin wordt grijs en het facet wordt naar de *Dynamische factoren* sectie.
    ![Vastgezette en dynamische facetten](assets/facets-pinned-unpinned.png)
 
 ## Vastgezet facet verplaatsen
+
+>[!NOTE]
+>
+>De volgorde van vastgezette facetten wordt alleen ondersteund in implementaties zonder kop. Als geordende facetten nodig zijn, gebruikt u de [!DNL Live Search] PLP-widget.
 
 U kunt de volgorde van vastgezette facetten wijzigen door de rij naar een andere positie te verplaatsen. Vastgezette facetten hebben een *Verplaatsen* icon (![Selector verplaatsen](assets/btn-move.png)) aan het begin van de rij. In tegenstelling tot vastgezette facetten kunnen dynamische facetten niet worden verplaatst.
 

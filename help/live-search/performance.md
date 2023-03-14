@@ -1,10 +1,10 @@
 ---
-title: '"Prestaties"'
-description: '"De [!DNL Live Search] Het prestatiedashboard biedt inzicht in de zoektermen die kopers gebruiken."'
+title: "Prestaties"
+description: "De [!DNL Live Search] Het prestatiedashboard biedt inzicht in de zoektermen die kopers gebruiken."
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 0b0bf898719338f5dacd55d8e89aaf2c9fa8a3c0
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
@@ -26,11 +26,10 @@ De [!DNL Live Search] Het prestatiedashboard biedt inzicht in de zoektermen die 
    * Als u één datum wilt opgeven, dubbelklikt u op de datum in de kalender.
    * Als u een datumbereik wilt opgeven, klikt u op de eerste en laatste datum in de kalender.
 
-   ![Tijdschema voor prestatierapport](assets/performance-calendar.png)
+>[!NOTE]
+>
+>Het prestatiedashboard wordt elke 12 uur bijgewerkt.
 
-1. Klik op het rapporttabblad dat u wilt weergeven.
-
-   ![Prestatiegelende resultaten](assets/performance-popular-results.png)
 
 ## Veldomschrijvingen
 
@@ -46,4 +45,4 @@ De [!DNL Live Search] Het prestatiedashboard biedt inzicht in de zoektermen die 
 |--- |--- |
 | Unieke zoekopdrachten | Hiermee geeft u de unieke zoekquery&#39;s weer die worden gebruikt tijdens het opgegeven datumbereik. De rapportgegevens worden op dezelfde manier berekend als de unieke gegevens van de onderzoeksmomentopname. Als een verkoper de zelfde onderzoeksvraag tweemaal, maar meer dan een uur uit elkaar typt, wordt het onderzoek beschouwd als twee unieke onderzoeken. Rapportlimiet: Hoogste 500 termen |
 | Resultaten nul | Maakt een lijst van de onderzoeksvragen die geen resultaten en het aantal tijden terugkeren die tijdens de gespecificeerde datumwaaier worden gebruikt. Rapportlimiet: Hoogste 500 termen |
-| Populaire resultaten | Maakt een lijst van de namen van producten die de meeste meningen tijdens de gespecificeerde datumwaaier ontvingen. De populaire resultaten worden alleen berekend op basis van indrukken en worden niet beïnvloed door het aantal klikken of gegenereerde inkomsten. Rapportlimiet: Hoogste 500 termen |
+| Populaire resultaten | Maakt een lijst van de namen van producten die de meeste meningen tijdens de gespecificeerde datumwaaier ontvingen. De populaire resultaten worden berekend gebaseerd op beelden slechts en worden niet beïnvloed door het aantal geklikte of opbrengst. Rapportlimiet: Hoogste 500 termen |
