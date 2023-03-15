@@ -2,9 +2,9 @@
 title: '''[!DNL Quick Checkout] Opmerkingen bij de release'
 description: Lees de opmerkingen bij de release voor meer informatie over alle [!DNL Quick Checkout] lozingen.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: a10b09a5bc2b46f531a7bad298a2976e2d25ec63
+source-git-commit: 90cd508d7eb6033864d66c87fbc90eabd5ea304b
 workflow-type: tm+mt
-source-wordcount: '1347'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -70,6 +70,8 @@ _5 oktober 2022_
 _24 februari 2023_
 
 [!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+
+![Nieuw](../assets/new.svg)<!-- Issue BOLT-520 --> Algemene beschikbaarheidsrelease—[[!DNL Quick Checkout]](https://marketplace.magento.com/magento-quick-checkout.html) is nu vooraf geïnstalleerd in Adobe Commerce Cloud versie 2.4.6 en hoger.
 
 ![Probleem opgelost](../assets/fix.svg)<!-- Issue BOLT-592 --> De ervaring van de gebruiker verbetert wanneer het plaatsen van een orde in [Deelvenster Beheer](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/create-order-admin.html) gebruiken [Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/stored-payment-methods.html) als betalingsmethode. Met deze functie kunnen klanten een bestelling met Braintree als betalingsmethode plaatsen tijdens het afrekenen wanneer [!DNL Quick Checkout] is ingeschakeld.
 
