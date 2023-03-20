@@ -2,7 +2,7 @@
 title: "Installeren [!DNL Live Search]"
 description: "Meer informatie over het installeren, bijwerken en verwijderen [!DNL Live Search] uit Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: a589956b5594283d7ceb620abc76b2c352f8f524
+source-git-commit: cccdcfe28150d929d9ff7de4459bbfef941860a4
 workflow-type: tm+mt
 source-wordcount: '1288'
 ht-degree: 0%
@@ -237,7 +237,7 @@ Als u een update wilt uitvoeren naar een belangrijke versie, bijvoorbeeld van 2.
 1. **Opslaan** `composer.json`. Voer vervolgens de volgende handelingen uit vanaf de opdrachtregel:
 
    ```bash
-   composer update magento/live-search –-with-dependencies
+   composer update magento/live-search --with-dependencies
    ```
 
 ## Verwijderen [!DNL Live Search] {#uninstall}
