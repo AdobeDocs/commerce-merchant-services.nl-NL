@@ -2,7 +2,7 @@
 title: Filterproducten
 description: Bepaal voorwaarden die of producten van worden gebruikt als aanbevelingen omvatten of uitsluiten.
 exl-id: baab28ff-b529-4cbc-adb7-4fa225e87d4a
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
 workflow-type: tm+mt
 source-wordcount: '698'
 ht-degree: 0%
@@ -42,7 +42,7 @@ Logische operatoren `AND` en `OR` worden gebruikt om meerdere voorwaarden samen 
 
 ### Categorie
 
-Filters op basis van de categorie van een product maken gebruik van directe categorietoewijzingen en de bijbehorende subcategorieën. Bijvoorbeeld het toelaten van een uitsluitingsvoorwaarde voor categorie `Gear` exclusief producten die zijn toegewezen aan `Gear` en alle subcategorieën ervan, zoals `Gear/Bags` of `Gear/Fitness Equipment`. Voor B2B-handelaren houdt het filter Categorie zich aan alle [klantspecifieke productcategorieën]https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html) hebt u geconfigureerd.
+Filters op basis van de categorie van een product maken gebruik van directe categorietoewijzingen en de bijbehorende subcategorieën. Bijvoorbeeld het toelaten van een uitsluitingsvoorwaarde voor categorie `Gear` exclusief producten die zijn toegewezen aan `Gear` en alle subcategorieën ervan, zoals `Gear/Bags` of `Gear/Fitness Equipment`. Voor B2B-handelaren houdt het filter Categorie zich aan alle [klantspecifieke productcategorieën](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html) u hebt gevormd.
 
 Adobe Commerce raadt u aan de volgende configuratie voor categoriefilters te gebruiken wanneer u aanbevelingen op uw paginatypen toepast:
 

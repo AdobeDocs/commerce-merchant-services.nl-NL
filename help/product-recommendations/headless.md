@@ -2,7 +2,7 @@
 title: Koploos
 description: Leer hoe u kunt integreren [!DNL Product Recommendations] in een koploze winkel.
 exl-id: 316d0b0c-5938-4e2f-9d0d-747746cf6056
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 0%
@@ -42,7 +42,7 @@ U kunt beide handelingen uitvoeren met de beschikbare SDK&#39;s, zoals beschreve
    | `impression-render` | aanbeveling-eenheid |
    | `view` | aanbeveling-eenheid |
    | `rec-click` | aanbeveling-eenheid |
-   | `rec-add-to-cart-click` | aanbeveling-eenheid (als een knop Toevoegen aan winkelwagentje aanwezig is in de sjabloon met aanbevelingen) |
+   | `rec-add-to-cart-click` | aanbeveling-eenheid (als een knop &quot;Toevoegen aan winkelwagentje&quot; aanwezig is in de sjabloon met aanbevelingen) |
 
 1. Wanneer de gebeurtenissen worden geactiveerd, gebruikt u de opdracht [Adobe Commerce Storefront Event Collector](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) om de gebeurtenissen af te handelen en deze naar Adobe Sensei te verzenden.
 

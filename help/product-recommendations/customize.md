@@ -2,9 +2,9 @@
 title: Aanpassen
 description: Leer hoe u uw productaanbevelingen kunt aanpassen.
 exl-id: b1b8e770-45ec-4403-b79b-4f0a9f7bd959
-source-git-commit: a34c3c8a5caca1bbf611b2df650c562aeeab297b
+source-git-commit: acfaa1d72265e42b973677a7e014ba4b350ec56b
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '638'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Wanneer u [maken](create.md) een aanbeveling, geeft u de [locatie](placement.md)
    >
    >De bestandsnamen in het dialoogvenster `layout` directory kan verschillen als in uw winkel extensies van derden worden gebruikt.
 
-1. Laten we de `catalog_product_view.xml` zodat de aanbevolen eenheid wordt weergegeven na de productafbeelding op de pagina met productdetails. Voordat u dit XML-bestand aanpast, moeten we het bestand bekijken en de secties begrijpen die u moet wijzigen:
+1. De `catalog_product_view.xml` zodat de aanbevolen eenheid wordt weergegeven na de productafbeelding op de pagina met productdetails. Voordat u dit XML-bestand aanpast, bekijkt u het bestand en begrijpt u welke secties u moet wijzigen:
 
    ```xml
    <?xml version="1.0"?>
@@ -81,7 +81,7 @@ Wanneer u [maken](create.md) een aanbeveling, geeft u de [locatie](placement.md)
 
 1. We wijzigen dit bestand door een ander inhoudsblok op te geven.
 
-   U wijzigt het referentieklok `name` van `main.content` tot `product.info.media`.
+   Het verwijzingsblok wijzigen `name` van `main.content` tot `product.info.media`.
 
    ```xml
    <?xml version="1.0"?>
