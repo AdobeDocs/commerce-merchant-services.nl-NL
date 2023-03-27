@@ -2,10 +2,10 @@
 title: '''[!DNL Store Fulfillment by Walmart Commerce Technologies] Opmerkingen bij de release'
 description: "Controleer de opmerkingen bij de release voor informatie over alle [!DNL Store Fulfillment by Walmart Commerce Technologies] releases."
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
-source-git-commit: 258820e9591f3f47e74c4c9497376fd34512334a
+source-git-commit: 9ce6a5443a930d616eeceeb1f9883cfb5496bc3a
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '190'
+ht-degree: 2%
 
 ---
 
@@ -19,7 +19,8 @@ In deze releaseopmerkingen wordt de eerste release van [!DNL Store Fulfillment S
 
 ## v1.3.0
 
-Releasedatum: 2023-02-27 Compatibel met Adobe Commerce (EE): 2.4.x Compatibel met Adobe Commerce (ECE): 2.4.x Stabiliteit: Algemene beschikbaarheid
+*27 februari 2023*
+[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}<br>Adobe Commerce versie 2.4.0 - 2.4.5
 
 Deze release bevat de volgende update:
 
@@ -27,7 +28,8 @@ Deze release bevat de volgende update:
 
 ## v1.2.0
 
-Releasedatum: 2022-09-27 Compatibel met Adobe Commerce (EE): 2.4.x Compatibel met Adobe Commerce (ECE): 2.4.x Stabiliteit: Algemene beschikbaarheid
+*27 september 2022*
+[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}<br>Adobe Commerce versie 2.4.0 - 2.4.5
 
 Deze release bevat de volgende update:
 
@@ -36,13 +38,19 @@ Deze release bevat de volgende update:
 
 ## v1.1.0
 
-Releasedatum: 2022-07-15 Compatibel met Adobe Commerce (EE): 2.4.0 - 2.4.4 Compatibel met Adobe Commerce (ECE): 2.4.0 - 2.4.4 Stabiliteit: Algemene beschikbaarheid
+*15 juli 2022*
+[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}<br>Adobe Commerce versie 2.4.0 - 2.4.4
+
+Stabiliteit: Algemene beschikbaarheid
 
 ![Nieuw](../assets/fix.svg)<!-- WMTP-731 --> Vereenvoudigd [Configuratie voor inchecken van ervaringen](check-in-experience-setup.md) voor de app Winkelassistentie door standaardselecties voor auto&#39;s en modellen toe te voegen. In de vorige versie moesten handelaren de selecties van het merk en het model van de auto handmatig configureren.
 
 ## v1.0.0
 
-Releasedatum: 2022-03-04 Compatibel met Adobe Commerce (EE): 2.4.0 - 2.4.4 Compatibel met Adobe Commerce (ECE): 2.4.0 - 2.4.4 Stabiliteit: Algemene beschikbaarheid
+*4 maart 2022*
+[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}<br>Adobe Commerce versie 2.4.0 - 2.4.4
+
+Stabiliteit: Algemene beschikbaarheid
 
 ## App Winkelassistentie
 
