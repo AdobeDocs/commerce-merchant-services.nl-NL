@@ -2,9 +2,9 @@
 title: '''[!DNL Catalog Service] Opmerkingen bij de release'
 description: De meest recente releasegegevens voor [!DNL Catalog Service] voor Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: 40cf5c5dc6242b5efe3822b9c574fe5b219cfcd8
+source-git-commit: c65717c449793dccfed101e1411b22c69fba308d
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '425'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,32 @@ In deze releaseopmerkingen worden de meest recente versies van [!DNL Catalog Ser
 ![Repareren](../assets/fix.svg) Oplossingen en verbeteringen
 ![Bug](../assets/bug.svg) Bekende problemen
 
-## Primaire versie
+## Huidige hoofdversie
+
+### V1.6-release
+
+_28 maart 2023_
+
+[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+
+![Nieuw](../assets/new.svg) Stalen toegevoegd aan de [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) query.
+![Nieuw](../assets/new.svg) De mogelijkheid om te worden toegevoegd `entityId` gebruiken [API-net](mesh.md).
+
+#### Bekende beperkingen
+
+Deze functies worden nog niet ondersteund:
+
+* Bundel producten met vaste prijs
+* Er worden geen updates ontvangen wanneer varianten uit de catalogus worden verwijderd.
+* Maximale grootte voor dynamische attributen lading is 9 MB.
+* Productprijs per groep. Kan worden berekend met eenvoudige productprijzen.
+* In een afbeeldingsarray bevat alleen de eerste afbeelding rollen.
+
+De volgende beperkingen kunnen worden opgelost met behulp van het API-net en de Core GraphQL API:
+
+* Minimale geadverteerde prijs
+* [Tier-prijsstelling](mesh.md)
+* Downloadbare producten en cadeaukaarten
 
 ### V1.5-release
 
@@ -27,24 +52,6 @@ _6 maart 2023_
 
 ![Nieuw](../assets/new.svg) Toegevoegd [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) GraphQL-functionaliteit.
 ![Repareren](../assets/fix.svg) Verbeterde prestaties en API-schaalbaarheid.
-
-#### Bekende beperkingen
-
-Deze functies worden nog niet ondersteund:
-
-* Bundel producten met vaste prijs
-* Er worden geen updates ontvangen wanneer varianten uit de catalogus worden verwijderd.
-* Maximale grootte voor dynamische attributen lading is 9MB.
-* Productprijs per groep. Kan worden berekend met eenvoudige productprijzen.
-* In een afbeeldingsarray bevat alleen de eerste afbeelding rollen.
-* Kleurstalen
-* De pagina met productdetails laden via de URL van het product.
-
-De volgende beperkingen kunnen worden opgelost met de Core GraphQL API:
-
-* Minimale geadverteerde prijs
-* Tier-prijsstelling
-* Downloadbare producten en cadeaukaarten
 
 ### V1.4 Release
 
@@ -73,7 +80,7 @@ _18 november 2022_
 [!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
 
 ![Nieuw](../assets/new.svg) Catalogusservice biedt nu ondersteuning voor Adobe [API-net](https://developer.adobe.com/graphql-mesh-gateway/).
-![Repareren](../assets/fix.svg) We hebben de API-schaalbaarheid en algemene prestaties verbeterd.
+![Repareren](../assets/fix.svg) Verbeterde API-schaalbaarheid en algemene prestaties.
 
 ### V1.0-release
 
