@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release
 description: De nieuwste release-informatie voor Adobe Experience Platform-connector vanuit Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: 57d0d0604e871a0d8a76bfd2c006250b55f0eeb1
+source-git-commit: 735fd14fad22826b04320644e120d296de19a211
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '391'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Voor functieveranderingen en moeilijke situaties met betrekking tot uitbreidinge
 
 Zie [Volgende releases](https://experienceleague.adobe.com/docs/commerce-operations/release/schedule.html) om over versieschema&#39;s en steun te leren.
 
-Zie [Beschikbaarheid](https://experienceleague.adobe.com/docs/commerce-operations/release/availability.html) voor meer informatie over productcompatibiliteit.
+Zie de documentatie voor ontwikkelaars [informatie over productcompatibiliteit](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 ## Ondersteunde service-updates
 
@@ -29,12 +29,24 @@ Deze versienota&#39;s beschrijven eigenschapveranderingen en moeilijke situaties
 
 +++Ondersteunde service-updates
 
+_30 maart 2023_
+
+* ![Nieuw](../assets/new.svg) - Een nieuwe extensie met de naam `data-services-b2b` die [gebeurtenissen in aanvraaglijst](events.md#b2b-events) voor B2B-handelaren
+* ![Nieuw](../assets/new.svg) - Toegevoegde `uniqueIdentifier` veld naar [zoeken](events.md#search-events) gebeurtenissen. In dit nieuwe veld kunnen verkopers kruisverwijzingen gebruiken naar zoekverzoeken die overeenkomen met de zoekantwoorden.
+
 _12 oktober 2022_
 
 * ![Nieuw](../assets/new.svg) - Twee toegevoegd [storefront, gebeurtenissen](events.md): `openCart` en `removeFromCart` naar de Adobe Commerce Storefront Events SDK en Collector
 * ![Nieuw](../assets/new.svg) - Toegevoegde ondersteuning voor een [AEM storefront](overview.md#aem-support)
 
 +++
+
+## 2.2.0
+
+_30 maart 2023_
+
+* ![Nieuw](../assets/new.svg) - Gebundelde `commerce-data-export` en `saas-export` afhankelijkheden met de `experience-platform-connector` extensie. Eerder, moest u deze gebiedsdelen afzonderlijk installeren. Deze gebiedsdelen, samen met koopvaardijconfiguratie, laten server zijverwerking van toe [back office-gebeurtenissen](events.md#back-office-events).
+* ![Nieuw](../assets/new.svg) - Nieuwe back office-gebeurtenis toegevoegd [`orderShipmentCompleted`](events.md#ordershipmentcompleted).
 
 ## 2.1.1
 
@@ -46,7 +58,7 @@ _28 februari 2023_
 
 _17 januari 2023_
 
-* ![Nieuw](../assets/new.svg) - De [Admin-aansluiting Experience Platform](connect-data.md) zodat kunt u uw eigen AEP Web SDK (legering) specificeren. Voeg ook een optie toe voor handelaren die zijn ingeschreven voor ons bètaprogramma voor back office-kantoren om te verzenden [back office-gebeurtenisgegevens](connect-data.md#data-collection) aan de rand. Deze gebeurtenissen bevatten [statusgegevens van order](events.md#beta-order-status-events) over een bestelling, bijvoorbeeld of een bestelling is geplaatst, geannuleerd, terugbetaald of verzonden. Als u wilt deelnemen aan het bètaprogramma voor het back office kantoor, neemt u contact op met [drios@adobe.com](mailto:drios@adobe.com).
+* ![Nieuw](../assets/new.svg) - De [Admin-aansluiting Experience Platform](connect-data.md) zodat kunt u uw eigen AEP Web SDK (legering) specificeren. Voeg ook een optie toe voor handelaren die zijn ingeschreven voor ons bètaprogramma voor back office-kantoren om te verzenden [back office-gebeurtenisgegevens](connect-data.md#data-collection) aan de rand. Deze gebeurtenissen bevatten [statusgegevens van order](events.md#beta-order-status-events) over een bestelling, bijvoorbeeld of een bestelling is geplaatst, geannuleerd, terugbetaald of verzonden.
 * ![Repareren](../assets/fix.svg) Gewijzigd in gebruik `identityMap` in plaats van `personID` wanneer u de primaire identiteit instelt voor gegevens die naar de rand worden geduwd.
 
 ## 2.0.1

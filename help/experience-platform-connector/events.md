@@ -2,9 +2,9 @@
 title: Gebeurtenissen
 description: Leer welke gegevens elke gebeurtenis vastlegt.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: 18edfec6dbc66ef0e94e9f54ca1061386104d90c
+source-git-commit: 76bc0650f32e99f568c061e67290de6c380f46a4
 workflow-type: tm+mt
-source-wordcount: '3141'
+source-wordcount: '4039'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ De storefront-gebeurtenissen verzamelen geanonimiseerde gedragsgegevens van uw k
 
 >[!NOTE]
 >
->Alle storefront-gebeurtenissen omvatten de `identityMap` veld, dat een unieke identificatie van de persoon is.
+>Alle storefront-gebeurtenissen omvatten de [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) veld, dat het e-mailadres van de verkoper, indien beschikbaar, en de ECID bevat. Als u deze profielgegevens in elke gebeurtenis opneemt, hebt u geen aparte gebruikersaccount-import uit Adobe Commerce nodig.
 
 ### addToCart
 
@@ -216,7 +216,6 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `productImageUrl` | URL van hoofdafbeelding van het product |
 | `selectedOptions` | Veld voor een configureerbaar product. `attribute` identificeert een attribuut van het configureerbare product, zoals `size` of `color` en `value` identificeert de waarde van het kenmerk, zoals `small` of `black`. |
 
-
 ## Profielgebeurtenissen
 
 Profielgebeurtenissen bevatten accountgegevens, zoals `signIn`, `signOut`, `createAccount`, en `editAccount`. Deze gegevens worden gebruikt om belangrijke klantendetails te bevolken die nodig zijn om segmenten beter te bepalen of marketing campagnes uit te voeren, zoals als u klanten wilt richten die in New York wonen.
@@ -318,7 +317,9 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 
 ## Zoeken in gebeurtenissen
 
-De zoekgebeurtenissen bevatten gegevens die relevant zijn voor de intentie van de klant. Als winkeliers inzien hoe kopers objecten zoeken, waarop ze klikken en die ze uiteindelijk kopen of opgeven, kunnen ze zien hoe kopers objecten zoeken. Een voorbeeld van hoe u deze gegevens kunt gebruiken, is als u bestaande kopers wilt richten die naar uw beste product zoeken, maar nooit het product kopen.
+De zoekgebeurtenissen bevatten gegevens die relevant zijn voor de intentie van de klant. Als winkeliers inzien hoe kopers objecten zoeken, waarop ze klikken en die ze uiteindelijk kopen of opgeven, kunnen ze zien hoe kopers objecten zoeken. Een voorbeeld van hoe u deze gegevens kunt gebruiken is als u bestaande kopers wilt richten die naar uw topproduct zoeken, maar nooit het product kopen.
+
+Gebruik de `uniqueIdentifier` veld gevonden in beide `searchRequestSent` en `searchResponseReceived` gebeurtenissen om een zoekverzoek te doorverwijzen naar de corresponderende zoekreactie.
 
 ### searchRequestSent
 
@@ -337,6 +338,7 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | Veld | Beschrijving |
 |---|---|
 | `searchRequest` | Geeft aan of een zoekaanvraag is verzonden |
+| `uniqueIdentifier` | De unieke id voor dit specifieke zoekverzoek |
 | `filter` | Geeft aan of er filters zijn toegepast om de zoekresultaten te beperken |
 | `attribute` (filter) | De facet van een item dat wordt gebruikt om te bepalen of het moet worden opgenomen in zoekresultaten |
 | `value` | Kenmerkwaarden die worden gebruikt om te bepalen welke items worden opgenomen in de zoekresultaten |
@@ -363,6 +365,7 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | Veld | Beschrijving |
 |---|---|
 | `searchResponse` | Geeft aan of een zoekreactie is ontvangen |
+| `uniqueIdentifier` | De unieke id voor deze specifieke zoekreactie |
 | `suggestions` | Een array van tekenreeksen met de namen van producten en categorieën die in de catalogus staan en die vergelijkbaar zijn met de zoekquery |
 | `numberOfResults` | Het aantal geretourneerde producten |
 | `productListItems` | Een reeks producten in het winkelwagentje. |
@@ -370,19 +373,89 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `name` | De weergavenaam of leesbare naam van het product |
 | `productImageUrl` | URL van hoofdafbeelding van het product |
 
-## (bèta) Back office gebeurtenissen
+## B2B-gebeurtenissen
+
+![B2B voor Adobe Commerce](../assets/b2b.svg) Voor B2B-handelaren moet u [installeren](install.md#install-the-b2b-extension) de `experience-platform-connector-b2b` om deze gebeurtenissen in te schakelen.
+
+De B2B-gebeurtenissen bevatten [aanvraaglijst](https://experienceleague.adobe.com/docs/commerce-admin/b2b/requisition-lists/requisition-lists.html) informatie, zoals of een aanvraaglijst werd gecreeerd, toegevoegd aan, of geschrapt van. Door gebeurtenissen te volgen specifiek voor aanvraaglijsten, kunt u zien welke producten uw klanten vaak kopen en campagnes tot stand brengen die op die gegevens worden gebaseerd.
+
+### createRequisitionList
+
+| Beschrijving | XDM-gebeurtenisnaam |
+|---|---|
+| Wordt geactiveerd wanneer een winkelier een nieuwe aanvraaglijst maakt. | `commerce.requisitionListOpens` |
+
+#### Gegevens verzameld uit createRequisitionList
+
+In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zijn verzameld.
+
+| Veld | Beschrijving |
+|---|---|
+| `requisitionListOpens` | Een waarde van `1` geeft aan dat een aanvraaglijst is geopend |
+| `requisitionList` | Bevat een unieke `ID` , `name`, en `description` voor de aanvraaglijst |
+
+### addToRequisitionList
+
+| Beschrijving | XDM-gebeurtenisnaam |
+|---|---|
+| Wordt geactiveerd wanneer een winkelier een product aan een bestaande lijst met vereisten toevoegt of wanneer een nieuwe lijst wordt gemaakt. | `commerce.requisitionListAdds` |
 
 >[!NOTE]
 >
->Voor verkopers die reeds in ons achterkantoor bètaprogramma worden ingeschreven, hebt u toegang tot achterkantoorgebeurtenissen. Als u wilt deelnemen aan het bètaprogramma voor het back office kantoor, neemt u contact op met [drios@adobe.com](mailto:drios@adobe.com).
+>`addToRequisitionList` wordt niet ondersteund op pagina&#39;s van de categorieweergave of voor configureerbare producten. Deze functie wordt ondersteund op pagina&#39;s met productweergave en voor eenvoudige producten.
 
-De gebeurtenissen van het achterkantoor bevatten informatie over de status van een orde, zoals als een orde werd geplaatst, geannuleerd, terugbetaald, of verscheept. De gegevens die deze server-zijgebeurtenissen verzamelen tonen een 360 mening van de winkelorde. Dit kan handelaren helpen de volledige orderstatus beter te richten of te analyseren wanneer het ontwikkelen van marketing campagnes. U kunt bijvoorbeeld trends waarnemen in bepaalde productcategorieën die goed presteren op verschillende momenten van het jaar. Bijvoorbeeld winterkleding die beter verkoopt tijdens koudere maanden of bepaalde productkleuren waarin consumenten in de loop der jaren geïnteresseerd zijn. Bovendien kunnen de gegevens van de ordestatus u helpen de waarde van de levenklant berekenen door de neiging van een klant te begrijpen om op vorige orden gebaseerd om te zetten.
+#### Gegevens verzameld uit addToRequisitionList
+
+In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zijn verzameld.
+
+| Veld | Beschrijving |
+|---|---|
+| `requisitionListAdds` | Een waarde van `1` geeft aan dat een product aan de aanvraaglijst is toegevoegd |
+| `requisitionList` | Bevat een unieke `ID`,  `name`, en `description` voor de aanvraaglijst |
+| `productListItems` | Een array van producten die aan de aanvraaglijst zijn toegevoegd |
+| `name` | De weergavenaam of leesbare naam van het product |
+| `SKU` | Stock Keeping Unit. De unieke id voor het product. |
+| `quantity` | Aantal toegevoegde producteenheden |
+| `priceTotal` | De totale prijs voor het productlijnitem |
+| `discountAmount` | Geeft de toegepaste korting aan |
+| `currencyCode` | De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutacode gebruikt voor dit betalingsobject |
+
+### removeFromRequisitionList
+
+| Beschrijving | XDM-gebeurtenisnaam |
+|---|---|
+| Wordt geactiveerd wanneer een winkelier een product uit een aanvraaglijst verwijdert. | `commerce.requisitionListRemovals` |
+
+#### Gegevens verzameld uit removeFromRequisitionList
+
+In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zijn verzameld.
+
+| Veld | Beschrijving |
+|---|---|
+| `requisitionListRemovals` | Een waarde van `1` geeft aan dat een product uit de aanvraaglijst is verwijderd |
+| `requisitionList` | Bevat een unieke `ID`en `description` voor de aanvraaglijst |
+| `productListItems` | Een array van producten die aan de aanvraaglijst zijn toegevoegd |
+| `name` | De weergavenaam of leesbare naam van het product |
+| `SKU` | Stock Keeping Unit. De unieke id voor het product. |
+| `quantity` | Aantal toegevoegde producteenheden |
+| `priceTotal` | De totale prijs voor het productlijnitem |
+| `discountAmount` | Geeft de toegepaste korting aan |
+| `currencyCode` | De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutacode gebruikt voor dit betalingsobject |
+| `selectedOptions` | Veld voor een configureerbaar product. `attribute` identificeert een attribuut van het configureerbare product, zoals `size` of `color` en `value` identificeert de waarde van het kenmerk, zoals `small` of `black`. |
+
+## Back office evenementen
+
+De back office gebeurtenissen bevatten informatie over de status van een bestelling, zoals of een bestelling is geplaatst, geannuleerd, terugbetaald, verzonden of voltooid. De gegevens die deze server-zijgebeurtenissen verzamelen tonen een 360 mening van de verkooporde. Deze weergave helpt handelaren om bij het ontwikkelen van marketingcampagnes de gehele orderstatus beter te bepalen of te analyseren. U kunt bijvoorbeeld trends waarnemen in bepaalde productcategorieën die goed presteren op verschillende momenten van het jaar. Bijvoorbeeld winterkleding die beter verkoopt tijdens koudere maanden of bepaalde productkleuren waarin consumenten in de loop der jaren geïnteresseerd zijn. Bovendien kunnen de gegevens van de ordestatus u helpen de waarde van de levenklant berekenen door de neiging van een klant te begrijpen om op vorige orden gebaseerd om te zetten.
+
+>[!NOTE]
+>
+>Alle back office gebeurtenissen omvatten [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) veld, dat het e-mailadres van de verkoper bevat. Als u deze profielgegevens in elke gebeurtenis opneemt, hebt u geen aparte gebruikersaccount-import uit Adobe Commerce nodig.
 
 ### orderPlaced
 
 | Beschrijving | XDM-gebeurtenisnaam |
 |---|---|
-| Wordt geactiveerd wanneer een winkelier een bestelling plaatst. | `commerce.orderPlaced` |
+| Wordt geactiveerd wanneer een winkelier een bestelling plaatst. | `commerce.backofficeOrderPlaced` |
 
 #### Gegevens verzameld van orderPlaced
 
@@ -390,9 +463,8 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 
 | Veld | Beschrijving |
 |---|---|
-| `identityMap` | Bevat het e-mailadres dat de klant identificeert |
 | `address` | Het technische adres, bijvoorbeeld `name@domain.com` zoals algemeen gedefinieerd in RFC2822 en volgende normen |
-| `eventType` | `commerce.orderPlaced` |
+| `eventType` | `commerce.backofficeOrderPlaced` |
 | `productListItems` | Een array van producten in de volgorde |
 | `name` | De weergavenaam of leesbare naam van het product |
 | `SKU` | Stock Keeping Unit. De unieke id voor het product. |
@@ -406,6 +478,8 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `paymentType` | De betalingsmethode voor deze bestelling. Opsommende, aangepaste waarden toegestaan. |
 | `currencyCode` | De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutacode gebruikt voor dit betalingsobject |
 | `paymentAmount` | De waarde van de betaling |
+| `taxAmount` | Het belastingbedrag dat door de koper is betaald als onderdeel van de eindbetaling |
+| `createdDate` | De tijd en de datum waarop een nieuwe orde in het handelssysteem wordt gecreeerd. Bijvoorbeeld: `2022-10-15T20:20:39+00:00` |
 | `shipping` | Verzendgegevens voor een of meer producten |
 | `shippingMethod` | De door de klant gekozen verzendmethode, zoals standaardlevering, snelle levering, ophaling in winkel, enzovoort |
 | `shippingAddress` | Fysiek verzendadres |
@@ -419,35 +493,46 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `postalCode` | De postcode van de locatie. Postcodes zijn niet voor alle landen beschikbaar. In sommige landen zal dit slechts een deel van de postcode bevatten. |
 | `country` | De naam van het door de overheid bestuurde gebied. andere dan `xdm:countryCode`Dit is een veld met vrije vorm dat de naam van het land in elke taal kan hebben. |
 
-### orderShipped
+### orderItemsShipped
 
 | Beschrijving | XDM-gebeurtenisnaam |
 |---|---|
-| Wordt geactiveerd wanneer een bestelling wordt verzonden. | `commerce.orderLineItemShipped` |
+| Wordt geactiveerd wanneer een bestelling wordt verzonden. | `commerce.backofficeOrderItemsShipped` |
 
-#### Gegevens verzameld van orderShipped
+#### Gegevens verzameld van orderItemsShipped
 
 In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zijn verzameld.
-|Veld|Omschrijving| |—|—| |`identityMap`|Bevat het e-mailadres dat de klant identificeert| |`address`|Het technische adres, bijvoorbeeld `name@domain.com` zoals algemeen gedefinieerd in RFC2822 en volgende normen| |`eventType`|`commerce.orderLineItemShipped`| |`productListItems`|Een reeks producten in de volgorde| |`name`|De weergavenaam of leesbare naam van het product| |`SKU`|Eenheid voorraadbewaring. De unieke id voor het product.| |`quantity`|Aantal eenheden van het product in de kar| |`priceTotal`|De totale prijs voor het product-line artikel| |`discountAmount`|Geeft het toegepaste kortingsbedrag aan| |`order`|Bevat informatie over de bestelling| |`purchaseID`|Unieke identificatiecode toegekend door de verkoper voor deze aankoop of dit contract. Er is geen garantie dat de id uniek is| |`purchaseOrderNumber`|Unieke identificatiecode die door de koper voor deze aankoop of dit contract is toegekend| |`payments`|Lijst van betalingen voor deze bestelling| |`paymentType`|De wijze van betaling van deze bestelling. Opsommende, aangepaste waarden toegestaan.| |`currencyCode`|De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) voor dit betalingsobject gebruikte valutacode| |`paymentAmount`|De waarde van de betaling| |`shipping`|Verzendgegevens voor een of meer producten| |`shippingMethod`|De door de klant gekozen verzendmethode, zoals standaardlevering, versnelde levering, ophaalservice, enzovoort| |`shippingAddress`|Fysiek verzendadres| |`street1`|Informatie op straat, appartementnummer, straatnummer en straatnaam| |`shippingAmount`|Het bedrag dat de klant voor de verzending moest betalen.| |`billingAddress`|Factureringsadres per post | |`street1`|Informatie op straat, appartementnummer, straatnummer en straatnaam| |`street2`|Aanvullend veld voor straatinformatie| |`city`|De naam van de stad| |`state`|De naam van de staat. Dit is een veld met vrije vorm.| |`postalCode`|De postcode van de locatie. Postcodes zijn niet voor alle landen beschikbaar. In sommige landen zal dit slechts een deel van de postcode bevatten.| |`country`|De naam van het door de overheid bestuurde gebied. andere dan `xdm:countryCode`Dit is een veld met vrije vorm dat de naam van het land in elke taal kan hebben.|
+|Veld|Omschrijving| |—|—| |`address`|Het technische adres, bijvoorbeeld `name@domain.com` zoals algemeen gedefinieerd in RFC2822 en volgende normen| |`eventType`|`commerce.backofficeOrderItemsShipped`| |`productListItems`|Een reeks producten in de volgorde| |`name`|De weergavenaam of leesbare naam van het product| |`SKU`|Eenheid voorraadbewaring. De unieke id voor het product.| |`quantity`|Aantal eenheden van het product in de kar| |`priceTotal`|De totale prijs voor het product-line artikel| |`discountAmount`|Geeft het toegepaste kortingsbedrag aan| |`order`|Bevat informatie over de bestelling| |`purchaseID`|Unieke identificatiecode toegekend door de verkoper voor deze aankoop of dit contract. Er is geen garantie dat de id uniek is| |`purchaseOrderNumber`|Unieke identificatiecode die door de koper voor deze aankoop of dit contract is toegekend| |`payments`|Lijst van betalingen voor deze bestelling| |`paymentType`|De wijze van betaling van deze bestelling. Opsommende, aangepaste waarden toegestaan.| |`currencyCode`|De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) voor dit betalingsobject gebruikte valutacode| |`paymentAmount`|De waarde van de betaling| |`trackingNumber`|Het trackingnummer dat door de verzendende vervoerder is verstrekt voor de verzending van een bestelling| |`trackingURL`|De URL voor het volgen van de verzendstatus van een orderitem| |`lastUpdatedDate`|Het tijdstip waarop een bepaalde orderrecord voor het laatst is bijgewerkt in het handelssysteem| |`shipping`|Verzendgegevens voor een of meer producten| |`shippingMethod`|De door de klant gekozen verzendmethode, zoals standaardlevering, versnelde levering, ophaalservice, enzovoort| |`shippingAddress`|Fysiek verzendadres| |`street1`|Informatie op straat, appartementnummer, straatnummer en straatnaam| |`shippingAmount`|Het bedrag dat de klant voor de verzending moest betalen.| |`billingAddress`|Factureringsadres per post | |`street1`|Informatie op straat, appartementnummer, straatnummer en straatnaam| |`street2`|Aanvullend veld voor straatinformatie| |`city`|De naam van de stad| |`state`|De naam van de staat. Dit is een veld met vrije vorm.| |`postalCode`|De postcode van de locatie. Postcodes zijn niet voor alle landen beschikbaar. In sommige landen zal dit slechts een deel van de postcode bevatten.| |`country`|De naam van het door de overheid bestuurde gebied. andere dan `xdm:countryCode`Dit is een veld met vrije vorm dat de naam van het land in elke taal kan hebben.|
 
 ### orderCanceled
 
 | Beschrijving | XDM-gebeurtenisnaam |
 |---|---|
-| Wordt geactiveerd wanneer een winkelier een bestelling annuleert. | `commerce.orderCancelled` |
+| Wordt geactiveerd wanneer een winkelier een bestelling annuleert. | `commerce.backofficeOrderCancelled` |
 
 #### Gegevens verzameld van orderCanceled
 
 In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zijn verzameld.
-|Veld|Omschrijving| |—|—| |`identityMap`|Bevat het e-mailadres dat de klant identificeert| |`address`|Het technische adres, bijvoorbeeld `name@domain.com` zoals algemeen gedefinieerd in RFC2822 en volgende normen| |`eventType`|`commerce.orderCancelled`| |`productListItems`|Een reeks producten in de volgorde| |`name`|De weergavenaam of leesbare naam van het product| |`SKU`|Eenheid voorraadbewaring. De unieke id voor het product.| |`quantity`|Aantal eenheden van het product in de kar| |`priceTotal`|De totale prijs voor het product-line artikel| |`discountAmount`|Geeft het toegepaste kortingsbedrag aan| |`order`|Bevat informatie over de bestelling| |`purchaseID`|Unieke identificatiecode toegekend door de verkoper voor deze aankoop of dit contract. Er is geen garantie dat de id uniek is| |`purchaseOrderNumber`|Unieke identificatiecode die door de koper voor deze aankoop of dit contract is toegekend|
+|Veld|Omschrijving| |—|—| |`address`|Het technische adres, bijvoorbeeld `name@domain.com` zoals algemeen gedefinieerd in RFC2822 en volgende normen| |`eventType`|`commerce.backofficeOrderCancelled`| |`productListItems`|Een reeks producten in de volgorde| |`name`|De weergavenaam of leesbare naam van het product| |`SKU`|Eenheid voorraadbewaring. De unieke id voor het product.| |`quantity`|Aantal eenheden van het product in de kar| |`priceTotal`|De totale prijs voor het product-line artikel| |`discountAmount`|Geeft het toegepaste kortingsbedrag aan| |`order`|Bevat informatie over de bestelling| |`purchaseID`|Unieke identificatiecode toegekend door de verkoper voor deze aankoop of dit contract. Er is geen garantie dat de id uniek is| |`purchaseOrderNumber`|Unieke identificatiecode die door de koper voor deze aankoop of dit contract is toegekend| |`cancelDate`|De datum en het tijdstip waarop een winkel een bestelling annuleert| |`lastUpdatedDate`|Het tijdstip waarop een bepaalde orderrecord voor het laatst is bijgewerkt in het handelssysteem|
 
-### orderRefunded
+### creditMemoIssued
 
 | Beschrijving | XDM-gebeurtenisnaam |
 |---|---|
-| Wordt geactiveerd wanneer een gebruiker een item in een bestelling retourneert. | `commerce.creditMemoIssued` |
+| Wordt geactiveerd wanneer een gebruiker een item in een bestelling retourneert. | `commerce.backofficeCreditMemoIssued` |
 
-#### Gegevens verzameld van orderRefunded
+#### Gegevens verzameld van creditMemoIssued
 
 In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zijn verzameld.
-|Veld|Omschrijving| |—|—| |`identityMap`|Bevat het e-mailadres dat de klant identificeert| |`address`|Het technische adres, bijvoorbeeld `name@domain.com` zoals algemeen gedefinieerd in RFC2822 en volgende normen| |`eventType`|`commerce.creditMemoIssued`| |`productListItems`|Een reeks producten in de volgorde| |`order`|Bevat informatie over de bestelling| |`purchaseID`|Unieke identificatiecode toegekend door de verkoper voor deze aankoop of dit contract. Er is geen garantie dat de id uniek is| |`purchaseOrderNumber`|Unieke identificatiecode die door de koper voor deze aankoop of dit contract is toegekend|
+|Veld|Omschrijving| |—|—| |`address`|Het technische adres, bijvoorbeeld `name@domain.com` zoals algemeen gedefinieerd in RFC2822 en volgende normen| |`eventType`|`commerce.backofficeCreditMemoIssued`| |`productListItems`|Een reeks producten in de volgorde| |`order`|Bevat informatie over de bestelling| |`purchaseID`|Unieke identificatiecode toegekend door de verkoper voor deze aankoop of dit contract. Er is geen garantie dat de id uniek is| |`purchaseOrderNumber`|Unieke identificatiecode die door de koper voor deze aankoop of dit contract is toegekend| |`lastUpdatedDate`|Het tijdstip waarop een bepaalde orderrecord voor het laatst is bijgewerkt in het handelssysteem|
+
+### orderShipmentCompleted
+
+| Beschrijving | XDM-gebeurtenisnaam |
+|---|---|
+| Wordt geactiveerd wanneer een gebruiker een item in een bestelling retourneert. | `commerce.backofficeOrderShipmentCompleted` |
+
+#### Gegevens verzameld bij orderShipmentCompleted
+
+In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zijn verzameld.
+|Veld|Omschrijving| |—|—| |`address`|Het technische adres, bijvoorbeeld `name@domain.com` zoals algemeen gedefinieerd in RFC2822 en volgende normen| |`eventType`|`commerce.backofficeOrderShipmentCompleted`| |`productListItems`|Een reeks producten in de volgorde| |`name`|De weergavenaam of leesbare naam van het product| |`SKU`|Eenheid voorraadbewaring. De unieke id voor het product.| |`quantity`|Aantal eenheden van het product in de kar| |`priceTotal`|De totale prijs voor het product-line artikel| |`discountAmount`|Geeft het toegepaste kortingsbedrag aan| |`order`|Bevat informatie over de bestelling| |`purchaseID`|Unieke identificatiecode toegekend door de verkoper voor deze aankoop of dit contract. Er is geen garantie dat de id uniek is| |`purchaseOrderNumber`|Unieke identificatiecode die door de koper voor deze aankoop of dit contract is toegekend| |`taxAmount`|Het belastingbedrag dat de koper in het kader van de eindbetaling heeft betaald.| |`createdDate`|Het tijdstip en de datum waarop een nieuwe bestelling in het handelssysteem wordt gecreëerd. Bijvoorbeeld: `2022-10-15T20:20:39+00:00`| |`payments`|Lijst van betalingen voor deze bestelling| |`paymentType`|De wijze van betaling van deze bestelling. Opsommende, aangepaste waarden toegestaan.| |`currencyCode`|De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) voor dit betalingsobject gebruikte valutacode| |`paymentAmount`|De waarde van de betaling| |`shipping`|Verzendgegevens voor een of meer producten| |`shippingMethod`|De door de klant gekozen verzendmethode, zoals standaardlevering, versnelde levering, ophaalservice, enzovoort| |`shippingAddress`|Fysiek verzendadres| |`street1`|Informatie op straat, appartementnummer, straatnummer en straatnaam| |`shippingAmount`|Het bedrag dat de klant voor de verzending moest betalen.| |`personalEmail`|Hier wordt het persoonlijke e-mailadres vermeld| |`address`|Het technische adres, bijvoorbeeld `name@domain.com` zoals algemeen gedefinieerd in RFC2822 en volgende normen| |`billingAddress`|Factureringsadres per post | |`street1`|Informatie op straat, appartementnummer, straatnummer en straatnaam| |`street2`|Aanvullend veld voor straatinformatie| |`city`|De naam van de stad| |`state`|De naam van de staat. Dit is een veld met vrije vorm.| |`postalCode`|De postcode van de locatie. Postcodes zijn niet voor alle landen beschikbaar. In sommige landen bevatten deze gegevens slechts een deel van de postcode.| |`country`|De naam van het door de overheid bestuurde gebied. andere dan `xdm:countryCode`Dit is een veld met vrije vorm dat de naam van het land in elke taal kan hebben.|

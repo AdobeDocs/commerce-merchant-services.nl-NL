@@ -2,9 +2,9 @@
 title: Gegevens voor handel verzamelen met Adobe Experience Platform-tags
 description: Leer hoe u gegevens over handel kunt verzamelen met Adobe Experience Platform-tags.
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: c9b1d7e34632f7a54544bc6944144b1833ecc5a5
+source-git-commit: bd4090c1b1ec417545e041a7c89f46019c07abea
 workflow-type: tm+mt
-source-wordcount: '2522'
+source-wordcount: '2535'
 ht-degree: 0%
 
 ---
@@ -559,6 +559,8 @@ Maak de volgende gegevenselementen:
    - **value**: Nog niet beschikbaar
    - **Veldgroep**: `siteSearch` > `sort`. Selecteren **Geheel object opgeven**.
    - **Veldgroep**: `siteSearch` > `filter`. Selecteren **Geheel object opgeven**.
+   - **Veldgroep**: `searchRequest` > `id`
+   - **Unieke id**: **Waarde** = `%search request ID%`
    - **Veldgroep**: `searchRequest` > `value`
    - **value**: **Waarde** = `1`
 
@@ -654,6 +656,8 @@ Maak de volgende gegevenselementen:
    - **Veldgroep**: `productListItems` > `ProductImageUrl`
    - **ProductImageUrl**: **Waarde** = `%product image%`
    - **Gegevenselement**: `%search result products%`
+   - **Veldgroep**: `searchResponse` > `id`
+   - **Unieke id**: **Waarde** = `%search response ID%`
    - **Veldgroep**: `searchResponse` > `value`
    - **value**: **Waarde** = `1`
 
@@ -1361,7 +1365,7 @@ De volgende stappen tonen hoe te om een te vormen `pageView` gebeurtenis met `id
 
 ## Vaststelling van de toestemming
 
-De toestemming voor het verzamelen van gegevens van Adobe Commerce- en Experience Platforms-connectors is standaard ingeschakeld. Uitschakelen wordt beheerd via de [`mg_dnt` koekje](https://docs.magento.com/user-guide/stores/cookie-reference.html). U kunt de hier beschreven stappen volgen als u verkiest te gebruiken `mg_dnt` om de toestemming te beheren. De [Adobe Experience Platform Web SDK-documentatie](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html) beschikt over verschillende aanvullende opties voor het beheer van de toestemming.
+De toestemming voor het verzamelen van gegevens van Adobe Commerce- en Experience Platforms-connectors is standaard ingeschakeld. Uitschakelen wordt beheerd via de [`mg_dnt` koekje](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html). U kunt de hier beschreven stappen volgen als u verkiest te gebruiken `mg_dnt` om de toestemming te beheren. De [Adobe Experience Platform Web SDK-documentatie](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html) beschikt over verschillende aanvullende opties voor het beheer van de toestemming.
 
 1. Een **Aangepaste kerncode** gegevenselement (`%do not track cookie%`) voor de `mg_dnt` cookie:
 

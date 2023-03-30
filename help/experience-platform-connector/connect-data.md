@@ -2,9 +2,9 @@
 title: Connect Commerce-gegevens naar Adobe Experience Platform
 description: Leer hoe u de gegevens van de Handel met de Adobe Experience Platform verbindt.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
-source-git-commit: 18edfec6dbc66ef0e94e9f54ca1061386104d90c
+source-git-commit: 76bc0650f32e99f568c061e67290de6c380f46a4
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '807'
 ht-degree: 0%
 
 ---
@@ -33,13 +33,9 @@ Als u uw Adobe Commerce-instantie wilt verbinden met de Adobe Experience Platfor
 
 ## Gegevensverzameling
 
->[!NOTE]
->
->Voor handelaren die reeds in ons achterkantoor bètaprogramma worden ingeschreven, zult u checkbox zien om achterkantoorgebeurtenissen toe te laten. Als u wilt deelnemen aan het bètaprogramma voor het back office kantoor, neemt u contact op met [drios@adobe.com](mailto:drios@adobe.com).
+In de **Gegevensverzameling** kunt u opgeven welke typen gegevens u wilt verzamelen en naar de rand van het Experience Platform wilt verzenden. Standaard worden storefront-gebeurtenissen automatisch verzonden zolang de AEP Web SDK en Organisatie-id geldig zijn. Zie het gebeurtenisonderwerp om meer over te leren [storefront](events.md#storefront-events) en [achterkantoor](events.md#back-office-events) gebeurtenissen.
 
-In de **Gegevensverzameling** kunt u opgeven welke typen gegevens u wilt verzamelen en naar de rand van het Experience Platform wilt verzenden. Standaard worden storefront-gebeurtenissen automatisch verzonden zolang de AEP Web SDK en Organisatie-id geldig zijn. Zie het gebeurtenisonderwerp om meer over te leren [storefront](events.md#storefront-events) en [achterkantoor](events.md#beta-order-status-events) gebeurtenissen.
-
-![Configuratie van de Beta Experience Platform-aansluiting](assets/epc-config-beta.png)
+![Configuratie van Experience Platform-aansluiting](assets/epc-config-dc.png)
 
 >[!NOTE]
 >
@@ -64,7 +60,7 @@ In de **Gegevensverzameling** kunt u opgeven welke typen gegevens u wilt verzame
 | Is de AEP Web SDK reeds opgesteld aan uw plaats | Schakel dit selectievakje in als u uw eigen AEP Web SDK aan uw site hebt toegewezen |
 | AEP Web SDK Name (Global) | Als u reeds een Experience Platform Web SDK hebt die aan uw plaats wordt opgesteld, specificeer de naam van die SDK op dit gebied. Dit staat de Collector van de Gebeurtenis Storefront en de Gebeurtenis SDK toe om uw Experience PlatformWeb SDK eerder dan de versie te gebruiken die door de schakelaar van het Experience Platform wordt opgesteld. Als u geen Experience Platform Web SDK hebt die aan uw plaats wordt opgesteld, verlaat dit gebied leeg en de schakelaar van het Experience Platform stelt voor u op. |
 | Gebeurtenissen van Storefront | Wordt standaard ingeschakeld zolang de organisatie-id en de gegevensstroom-id geldig zijn. Met Storefront-gebeurtenissen worden geanonimiseerde gedragsgegevens verzameld bij kopers die door uw site bladeren. |
-| Back Office-gebeurtenissen (bèta) | Als deze optie is ingeschakeld, bevat de gebeurtenislading geanonimiseerde gegevens over de status van de bestelling, zoals of een bestelling is geplaatst, geannuleerd, terugbetaald of verzonden. |
+| Back Office-gebeurtenissen | Als deze optie is ingeschakeld, bevat de gebeurtenislading geanonimiseerde gegevens over de status van de bestelling, zoals of een bestelling is geplaatst, geannuleerd, terugbetaald of verzonden. |
 | DataStream-id (website) | ID die gegevens om van Adobe Experience Platform aan andere Adobe DX producten toestaat te stromen. Deze id moet zijn gekoppeld aan een specifieke website in uw specifieke Adobe Commerce-exemplaar. Als u uw eigen SDK van het Web van het Experience Platform specificeert, specificeer geen gegevensstroom identiteitskaart op dit gebied. De verbindingslijn van het Experience Platform gebruikt gegevensstroom identiteitskaart verbonden aan die SDK en negeert om het even welke gegevensstroom ID die op dit gebied (als om het even welk) wordt gespecificeerd. |
 
 Als de extensie voor de aansluiting van het Experience Platform is geïnstalleerd, wordt de koppeling tussen Adobe Commerce en Adobe Experience Platform gemaakt en wordt de DataStream-id opgegeven. De gegevens van de handel gaan dan naar de Adobe Experience Platform-rand en naar andere Adobe DX-producten.
@@ -73,7 +69,7 @@ Als de extensie voor de aansluiting van het Experience Platform is geïnstalleer
 >
 > De hoeveelheid tijd die nodig is om gegevens van de rand naar andere Adobe DX-producten te laten stromen, kan variëren.
 
-## Commerciële gegevens aan de rand
+## Controleren of gegevens naar Experience Platform worden verzonden
 
 Wanneer de gegevens van de Handel naar de rand van Adobe Experience Platform worden verzonden, kunt u rapporten als het volgende bouwen:
 

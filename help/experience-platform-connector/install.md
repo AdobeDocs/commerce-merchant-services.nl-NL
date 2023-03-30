@@ -2,9 +2,9 @@
 title: Adobe Experience Platform-connector installeren en configureren vanuit Adobe Commerce
 description: Leer hoe u de Adobe Experience Platform-connector van Adobe Commerce installeert, configureert, bijwerkt en verwijdert.
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 76bc0650f32e99f568c061e67290de6c380f46a4
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '365'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,8 @@ De verbindingsuitbreiding van het Experience Platform wordt geïnstalleerd vanaf
 
 De aansluiting van het Experience Platform is geïnstalleerd als een uitbreiding van [Adobe Marketplace](https://marketplace.magento.com/magento-experience-platform-connector.html).
 
+![B2B voor Adobe Commerce](../assets/b2b.svg) Voor B2B-handelaren is er een aparte extensie die u moet installeren. Deze extensie voegt ondersteuning toe voor B2B-specifieke gebeurtenissen. [Meer informatie](#install-the-b2b-extension).
+
 1. Als u het dialoogvenster `experience-platform-connector` pakket, voer het volgende uit vanaf de bevellijn:
 
    ```bash
@@ -27,12 +29,22 @@ De aansluiting van het Experience Platform is geïnstalleerd als een uitbreiding
 
    Dit metapakket bevat de volgende modules en extensies:
 
-   * `module-platform-connector-admin` - Werkt de Admin UI bij zodat kunt u identiteitskaart DataStream voor een specifiek Adobe Commerce geval selecteren
-   * `module-platform-connector` - Hiermee stelt u de `Organization ID` en `datastreamId` in de Storefront Events SDK
+   * `module-experience-connector-admin` - Werkt de Admin UI bij zodat kunt u identiteitskaart DataStream voor een specifiek Adobe Commerce geval selecteren
+   * `module-experience-connector` - Hiermee stelt u de `Organization ID` en `datastreamId` in de Storefront Events SDK
    * `data-services` - Biedt kenmerkcontext voor storefront-gebeurtenissen. Wanneer bijvoorbeeld een uitcheckgebeurtenis plaatsvindt, wordt informatie over het aantal items in het winkelwagentje en de productkenmerkgegevens voor die items opgenomen.
    * `services-id` - Verbindt uw Adobe Commerce-instantie met [Adobe Commerce SaaS](../landing/saas.md) het gebruiken van zandbak en productie API sleutels en aan de Adobe Experience Platform om IMS Organisatie ID terug te winnen
 
 1. (Optioneel) Opnemen [!DNL Live Search] installeer de [[!DNL Live Search]](../live-search/install.md) extensie.
+
+### De B2B-extensie installeren
+
+Installeer voor B2B-handelaren de volgende extensie om deze ook te kunnen gebruiken [aanvraaglijst](events.md#b2b-events) gebeurtenisgegevens.
+
+Download de `magento/experience-platform-connector-b2b` extensie via de opdrachtregel:
+
+```bash
+composer require magento/experience-platform-connector-b2b
+```
 
 ## De aansluiting van het Experience Platform bijwerken {#update}
 
@@ -40,6 +52,12 @@ Als u de aansluiting van het Experience Platform wilt bijwerken, voert u het vol
 
 ```bash
 composer update magento/experience-platform-connector --with-dependencies
+```
+
+of, voor B2B-handelaren:
+
+```bash
+composer update magento/experience-platform-connector-b2b --with-dependencies
 ```
 
 Als u wilt bijwerken naar een hoofdversie zoals 1.0.0 tot 2.0.0, bewerkt u de hoofdmap van het project [!DNL Composer] `.json` bestand als volgt:
@@ -61,6 +79,12 @@ Als u wilt bijwerken naar een hoofdversie zoals 1.0.0 tot 2.0.0, bewerkt u de ho
    ```bash
    composer update magento/experience-platform-connector –-with-dependencies
    ```
+
+of, voor B2B-handelaren:
+
+```bash
+composer update magento/experience-platform-connector-b2b --with-dependencies
+```
 
 ## De aansluiting van het Experience Platform verwijderen {#uninstall}
 
