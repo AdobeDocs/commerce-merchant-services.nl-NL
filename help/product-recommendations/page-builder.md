@@ -1,9 +1,9 @@
 ---
 title: '''[!DNL Page Builder] Integratie'
 description: 'Leer hoe u kunt gebruiken [!DNL Product Recommendations] eenheden in Page Builder.'
-source-git-commit: d56fd57281a5b675e128cca75d4057756a0bf4bf
+source-git-commit: 59ec1a212fbc9ef48658b29cace083e3fb645185
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '162'
 ht-degree: 0%
 
 ---
@@ -11,6 +11,10 @@ ht-degree: 0%
 # [!DNL Page Builder] Integratie
 
 Product Recommendations kan worden geïntegreerd in elke pagina Builder-inhoud die u op uw site implementeert.
+
+>[!NOTE]
+>
+> U kunt maximaal 25 aanbevelingen op een native pagina van de Bouwer van de Pagina hebben. Niet-native pagina&#39;s van de Bouwer van de Pagina kunnen tot 5 aanbevelingen eenheden hebben. Zie [Nieuwe aanbeveling maken](create.md) voor meer informatie .
 
 ## Product Recommendations gebruiken met Page Builder-inhoud
 
