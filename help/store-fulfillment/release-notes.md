@@ -2,9 +2,9 @@
 title: '''[!DNL Store Fulfillment by Walmart Commerce Technologies] Opmerkingen bij de release'
 description: "Controleer de opmerkingen bij de release voor informatie over alle [!DNL Store Fulfillment by Walmart Commerce Technologies] releases."
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
-source-git-commit: 9ce6a5443a930d616eeceeb1f9883cfb5496bc3a
+source-git-commit: 8cc951721b43df393d58bd55338cf026261db752
 workflow-type: tm+mt
-source-wordcount: '190'
+source-wordcount: '178'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,8 @@ In deze releaseopmerkingen wordt de eerste release van [!DNL Store Fulfillment S
 ## v1.3.0
 
 *27 februari 2023*
-[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}<br>Adobe Commerce versie 2.4.0 - 2.4.5
+
+[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
 
 Deze release bevat de volgende update:
 
@@ -29,7 +30,8 @@ Deze release bevat de volgende update:
 ## v1.2.0
 
 *27 september 2022*
-[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}<br>Adobe Commerce versie 2.4.0 - 2.4.5
+
+[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
 
 Deze release bevat de volgende update:
 
@@ -39,7 +41,8 @@ Deze release bevat de volgende update:
 ## v1.1.0
 
 *15 juli 2022*
-[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}<br>Adobe Commerce versie 2.4.0 - 2.4.4
+
+[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
 
 Stabiliteit: Algemene beschikbaarheid
 
@@ -48,7 +51,8 @@ Stabiliteit: Algemene beschikbaarheid
 ## v1.0.0
 
 *4 maart 2022*
-[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}<br>Adobe Commerce versie 2.4.0 - 2.4.4
+
+[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
 
 Stabiliteit: Algemene beschikbaarheid
 
