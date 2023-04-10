@@ -2,9 +2,9 @@
 title: Veldgroepen toevoegen aan XDM-schema
 description: Leer hoe u Adobe Commerce-specifieke veldgroepen toevoegt aan een XDM-schema.
 exl-id: 4401bbe7-1ccc-4349-a998-9e9ee9db590f
-source-git-commit: c9b1d7e34632f7a54544bc6944144b1833ecc5a5
+source-git-commit: 90356cc593653cf4583da86bc29d69112fc948ba
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '346'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Een van de [onboarding stappen](overview.md#onboarding-steps) om de verbindingsl
    - Referentietoetsen
    - Persoonlijke contactgegevens
    - Handelsgegevens
-   - Adobe Analytics Experience Event Commerce (als u gegevens naar Adobe Analytics wilt verzenden)
+   - Adobe Analytics ExperienceEvent Commerce (als u gegevens naar Adobe Analytics wilt verzenden)
    - Identiteitskaart
 
    >[!NOTE]
