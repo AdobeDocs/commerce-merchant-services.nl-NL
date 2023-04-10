@@ -2,9 +2,9 @@
 title: Gebeurtenissen
 description: Leer welke gegevens elke gebeurtenis vastlegt.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: 76bc0650f32e99f568c061e67290de6c380f46a4
+source-git-commit: 8e5fb65363b2fa39f44da86d7ba0cc5459b18768
 workflow-type: tm+mt
-source-wordcount: '4039'
+source-wordcount: '4100'
 ht-degree: 0%
 
 ---
@@ -338,7 +338,7 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | Veld | Beschrijving |
 |---|---|
 | `searchRequest` | Geeft aan of een zoekaanvraag is verzonden |
-| `uniqueIdentifier` | De unieke id voor dit specifieke zoekverzoek |
+| `id` | De unieke id voor dit specifieke zoekverzoek |
 | `filter` | Geeft aan of er filters zijn toegepast om de zoekresultaten te beperken |
 | `attribute` (filter) | De facet van een item dat wordt gebruikt om te bepalen of het moet worden opgenomen in zoekresultaten |
 | `value` | Kenmerkwaarden die worden gebruikt om te bepalen welke items worden opgenomen in de zoekresultaten |
@@ -365,7 +365,7 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | Veld | Beschrijving |
 |---|---|
 | `searchResponse` | Geeft aan of een zoekreactie is ontvangen |
-| `uniqueIdentifier` | De unieke id voor deze specifieke zoekreactie |
+| `id` | De unieke id voor deze specifieke zoekreactie |
 | `suggestions` | Een array van tekenreeksen met de namen van producten en categorieën die in de catalogus staan en die vergelijkbaar zijn met de zoekquery |
 | `numberOfResults` | Het aantal geretourneerde producten |
 | `productListItems` | Een reeks producten in het winkelwagentje. |
@@ -391,8 +391,10 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 
 | Veld | Beschrijving |
 |---|---|
-| `requisitionListOpens` | Een waarde van `1` geeft aan dat een aanvraaglijst is geopend |
-| `requisitionList` | Bevat een unieke `ID` , `name`, en `description` voor de aanvraaglijst |
+| `requisitionList` | De eigenschappen van een aanvraaglijst die door de klant is gemaakt |
+| `ID` | Unieke id van de aanvraaglijst |
+| `name` | Naam van de door de klant opgegeven aanvraaglijst |
+| `description` | Beschrijving van de door de klant gespecificeerde aanvraaglijst |
 
 ### addToRequisitionList
 
@@ -410,8 +412,10 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 
 | Veld | Beschrijving |
 |---|---|
-| `requisitionListAdds` | Een waarde van `1` geeft aan dat een product aan de aanvraaglijst is toegevoegd |
-| `requisitionList` | Bevat een unieke `ID`,  `name`, en `description` voor de aanvraaglijst |
+| `requisitionList` | De eigenschappen van een aanvraaglijst die door de klant is gemaakt |
+| `ID` | Unieke id van de aanvraaglijst |
+| `name` | Naam van de door de klant opgegeven aanvraaglijst |
+| `description` | Beschrijving van de door de klant gespecificeerde aanvraaglijst |
 | `productListItems` | Een array van producten die aan de aanvraaglijst zijn toegevoegd |
 | `name` | De weergavenaam of leesbare naam van het product |
 | `SKU` | Stock Keeping Unit. De unieke id voor het product. |
@@ -419,6 +423,7 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `priceTotal` | De totale prijs voor het productlijnitem |
 | `discountAmount` | Geeft de toegepaste korting aan |
 | `currencyCode` | De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutacode gebruikt voor dit betalingsobject |
+| `selectedOptions` | Veld voor een configureerbaar product. `attribute` identificeert een attribuut van het configureerbare product, zoals `size` of `color` en `value` identificeert de waarde van het kenmerk, zoals `small` of `black`. |
 
 ### removeFromRequisitionList
 
@@ -432,8 +437,10 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 
 | Veld | Beschrijving |
 |---|---|
-| `requisitionListRemovals` | Een waarde van `1` geeft aan dat een product uit de aanvraaglijst is verwijderd |
-| `requisitionList` | Bevat een unieke `ID`en `description` voor de aanvraaglijst |
+| `requisitionList` | De eigenschappen van een aanvraaglijst die door de klant is gemaakt |
+| `ID` | Unieke id van de aanvraaglijst |
+| `name` | Naam van de door de klant opgegeven aanvraaglijst |
+| `description` | Beschrijving van de door de klant gespecificeerde aanvraaglijst |
 | `productListItems` | Een array van producten die aan de aanvraaglijst zijn toegevoegd |
 | `name` | De weergavenaam of leesbare naam van het product |
 | `SKU` | Stock Keeping Unit. De unieke id voor het product. |
