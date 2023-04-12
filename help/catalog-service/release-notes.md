@@ -2,9 +2,9 @@
 title: '''[!DNL Catalog Service] Opmerkingen bij de release'
 description: De meest recente releasegegevens voor [!DNL Catalog Service] voor Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: c65717c449793dccfed101e1411b22c69fba308d
+source-git-commit: 47163a83d3c79abe7718121492970e34ffbf3643
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
@@ -19,21 +19,20 @@ In deze releaseopmerkingen worden de meest recente versies van [!DNL Catalog Ser
 
 ## Huidige hoofdversie
 
-### V1.6-release
+### V1.7-release
 
-_28 maart 2023_
+_12 april 2023_
 
 [!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
 
-![Nieuw](../assets/new.svg) Stalen toegevoegd aan de [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) query.
-![Nieuw](../assets/new.svg) De mogelijkheid om te worden toegevoegd `entityId` gebruiken [API-net](mesh.md).
+![Nieuw](../assets/new.svg) De Catalogusservice schoont verwijderde productvarianten op.
+![Repareren](../assets/fix.svg) Verbeterde schaalbaarheid en prestaties van de infrastructuur.
 
 #### Bekende beperkingen
 
 Deze functies worden nog niet ondersteund:
 
 * Bundel producten met vaste prijs
-* Er worden geen updates ontvangen wanneer varianten uit de catalogus worden verwijderd.
 * Maximale grootte voor dynamische attributen lading is 9 MB.
 * Productprijs per groep. Kan worden berekend met eenvoudige productprijzen.
 * In een afbeeldingsarray bevat alleen de eerste afbeelding rollen.
@@ -43,6 +42,15 @@ De volgende beperkingen kunnen worden opgelost met behulp van het API-net en de 
 * Minimale geadverteerde prijs
 * [Tier-prijsstelling](mesh.md)
 * Downloadbare producten en cadeaukaarten
+
+### V1.6-release
+
+_28 maart 2023_
+
+[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+
+![Nieuw](../assets/new.svg) Stalen toegevoegd aan de [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) query.
+![Nieuw](../assets/new.svg) De mogelijkheid om te worden toegevoegd `entityId` gebruiken [API-net](mesh.md).
 
 ### V1.5-release
 
