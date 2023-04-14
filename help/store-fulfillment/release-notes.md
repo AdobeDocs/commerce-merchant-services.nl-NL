@@ -2,9 +2,9 @@
 title: '''[!DNL Store Fulfillment by Walmart Commerce Technologies] Opmerkingen bij de release'
 description: "Controleer de opmerkingen bij de release voor informatie over alle [!DNL Store Fulfillment by Walmart Commerce Technologies] releases."
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
-source-git-commit: 8cc951721b43df393d58bd55338cf026261db752
+source-git-commit: f506412726449f438ca42dc3f1ef6c7fe08b306a
 workflow-type: tm+mt
-source-wordcount: '178'
+source-wordcount: '194'
 ht-degree: 2%
 
 ---
@@ -16,6 +16,15 @@ In deze releaseopmerkingen wordt de eerste release van [!DNL Store Fulfillment S
 ![Nieuw](../assets/new.svg) Nieuwe functies
 ![Probleem opgelost](../assets/fix.svg) Oplossingen en verbeteringen
 ![Bekend probleem](../assets/bug.svg) Bekende problemen
+
+## v1.4.0
+
+*13 april 2023*
+
+[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+
+![Nieuw](../assets/fix.svg) [!DNL Store Fulfillment] is nu [compatibel met [!DNL Adobe Commerce] 2.4.0 t/m 2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
+
 
 ## v1.3.0
 
