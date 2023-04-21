@@ -2,9 +2,9 @@
 title: Inleiding tot [!DNL Live Search]
 description: "[!DNL Live Search] van Adobe Commerce biedt een bliksemsnelle, superrelevante en intuïtieve zoekervaring."
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
-source-git-commit: d7eca3c8e5ddc967e712cf10c3801cee4af8b10e
+source-git-commit: 126cc4e050d8b37e784d1a5d925374fbd686af55
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '131'
 ht-degree: 0%
 
 ---
@@ -21,4 +21,4 @@ De Adobe Commerce-zijde van de architectuur omvat het hosten van de zoekopdracht
 
 Bekijk deze video voor meer informatie over [!DNL Live Search]:
 
->[!VIDEO](https://video.tv.adobe.com/v/3418679?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/3418679?quality=12&learn=on)
