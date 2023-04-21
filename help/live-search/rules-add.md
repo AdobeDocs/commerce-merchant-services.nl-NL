@@ -2,9 +2,9 @@
 title: "Regels toevoegen"
 description: "Leer hoe u creeert [!DNL Live Search] regels."
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: e763eb8e283319b30b19dbb13284e9616196ae48
+source-git-commit: 2d4c96679b93a97e032fcbb50a27cbd579554795
 workflow-type: tm+mt
-source-wordcount: '1390'
+source-wordcount: '1401'
 ht-degree: 0%
 
 ---
@@ -102,6 +102,10 @@ De eenvoudigste manier om een product vast te zetten is door te slepen en neer t
    ![Regels - Overeenkomst](assets/rule-event-pin-product.png)
 
 U kunt ook op het speldpictogram klikken om een product op de huidige locatie vast te zetten. Gebruik het contextmenu voor ovalen om &#39;Aan de bovenkant vastzetten&#39; of &#39;Aan de onderkant vastzetten&#39;.
+
+>[!NOTE]
+>
+>U kunt alleen producten vastzetten die in de query zijn geretourneerd.
 
 Of gebeurtenissen kunnen handmatig worden ingesteld:
 
