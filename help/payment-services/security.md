@@ -2,9 +2,9 @@
 title: Beveiliging en naleving
 description: Beoordeel de beveiligings- en compatibiliteitsvereisten voor uw site.
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
-source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
+source-git-commit: bfce1cb702d634647022a92669d704dd82fe41e6
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '524'
 ht-degree: 0%
 
 ---
@@ -38,6 +38,10 @@ PCI 3-D Secure (3DS) maakt kopersverificatie mogelijk met hun creditcardmaatscha
 [!UICONTROL Payment Services] biedt 3DS-functionaliteit om handelaren in staat te stellen te voldoen aan de EU-regelgeving en om klanten en handelaren te beschermen tegen frauduleuze activiteiten in hun winkels.
 
 Als u een handelaar bent binnen de EU of Groot-Brittannië waar 3DS-compatibiliteit vereist is, moet u 3DS handmatig inschakelen (het is `Off` standaard) in [Instellingen](settings.md#credit-card-fields).
+
+>[!NOTE]
+>
+>Het 3DS-vereiste is van toepassing op transacties waarbij het bedrijf en de bank van de kaarthouder zich in de [Europese Economische Ruimte](https://www.efta.int/eea) (EER) en Groot-Brittannië. Handelaren in de Verenigde Staten hebben geen 3DS nodig, maar kunnen deze desgewenst inschakelen voor hun transacties.
 
 Orders die door het bedrijfs-/winkelpersoneel voor de koper worden geplaatst, zijn niet geconfigureerd met 3DS-compatibiliteitsmaatregelen.
 

@@ -2,9 +2,9 @@
 title: Betalingsopties
 description: Stel de betalingsopties in om de beschikbare methoden voor uw winkelklanten aan te passen.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: 31665f90909ce2364579fc7f9c97087e2376c0a6
+source-git-commit: fac3efb74cdfdb855a3706d84cdca2dcde959940
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -34,6 +34,8 @@ Er zijn verschillende gedragingen voor elke betalingsmethode, afhankelijk van wa
 Inschakelen [creditcard vauleren](#vaulting) zodat kopers hun creditcardgegevens kunnen bewaren voor een snelle afhandeling later.
 
 U kunt configureren [!UICONTROL Credit Card Fields] in de winkelconfiguratie of de startpagina van de betalingsservices. Zie [Instellingen](settings.md#credit-card-fields) voor meer informatie .
+
+U kunt ook de lay-out, breedte, hoogte en buitenstijl van de creditcardvelden wijzigen. Zie [PayPal-documentatie](https://developer.paypal.com/docs/checkout/advanced/customize/card-field-style/) voor meer informatie .
 
 ## [!DNL PayPal Smart Buttons]
 
