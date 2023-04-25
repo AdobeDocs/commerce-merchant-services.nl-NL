@@ -2,9 +2,9 @@
 title: Gebeurtenissen
 description: Leer welke gegevens elke gebeurtenis vastlegt.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: e31c550416d29f7733c7da7f8895749487965e5d
+source-git-commit: ddacfc053f83be750c63ba376519169b38f7f478
 workflow-type: tm+mt
-source-wordcount: '4592'
+source-wordcount: '4596'
 ht-degree: 0%
 
 ---
@@ -236,10 +236,11 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 
 | Veld | Beschrijving |
 |---|---|
-| `eventType` | Het primaire gebeurtenistype voor deze tijdreeksrecord, zoals: `userAccount.login` |
 | `person` | Een individuele actor, contactpersoon of eigenaar |
 | `accountID` | Hiermee legt u de gebruikersnaam van de gebruikersaccount vast |
-| `personalEmailID` | Hiermee geeft u de unieke id voor de persoonlijke e-mail op |
+| `accountType` | Hiermee legt u het type gebruikersaccount vast, zoals `Personal` of `Company`, indien van toepassing |
+| `personalEmailID` | Het technische adres, bijvoorbeeld `name@domain.com` zoals algemeen gedefinieerd in RFC2822 en volgende normen |
+| `personalEmail` | Hiermee legt u contactgegevens vast - een e-mail en de bijbehorende informatie |
 | `address` | Het technische adres, bijvoorbeeld `name@domain.com` zoals algemeen gedefinieerd in RFC2822 en volgende normen |
 | `userAccount` | Geeft alle gegevens over de loyaliteit, voorkeuren, aanmeldingsprocessen en andere accountvoorkeuren aan |
 | `login` | Geeft aan of een bezoeker zich heeft aangemeld |
@@ -260,7 +261,6 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 
 | Veld | Beschrijving |
 |---|---|
-| `eventType` | Het primaire gebeurtenistype voor deze tijdreeksrecord, zoals: `userAccount.logout` |
 | `userAccount` | Geeft alle gegevens over de loyaliteit, voorkeuren, aanmeldingsprocessen en andere accountvoorkeuren aan |
 | `logout` | Geeft aan of een bezoeker zich heeft afgemeld |
 
@@ -280,11 +280,11 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 
 | Veld | Beschrijving |
 |---|---|
-| `eventType` | Het primaire gebeurtenistype voor deze tijdreeksrecord, zoals: `account.createProfile` |
 | `person` | Een individuele actor, contactpersoon of eigenaar |
 | `accountID` | Hiermee legt u de gebruikersnaam van de gebruikersaccount vast |
 | `accountType` | Hiermee legt u het type gebruikersaccount vast, zoals `Personal` of `Company`, indien van toepassing |
-| `personalEmailID` | Hiermee geeft u de unieke id voor de persoonlijke e-mail op |
+| `personalEmailID` | Het technische adres, bijvoorbeeld `name@domain.com` zoals algemeen gedefinieerd in RFC2822 en volgende normen |
+| `personalEmail` | Hiermee legt u contactgegevens vast - een e-mail en de bijbehorende informatie |
 | `address` | Het technische adres, bijvoorbeeld `name@domain.com` zoals algemeen gedefinieerd in RFC2822 en volgende normen |
 | `userAccount` | Geeft alle gegevens over de loyaliteit, voorkeuren, aanmeldingsprocessen en andere accountvoorkeuren aan |
 | `createProfile` | Hiermee wordt aangegeven of een gebruiker een accountprofiel heeft gemaakt |
@@ -305,12 +305,11 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 
 | Veld | Beschrijving |
 |---|---|
-| `eventType` | Het primaire gebeurtenistype voor deze tijdreeksrecord, zoals: `account.updateProfile` |
 | `person` | Een individuele actor, contactpersoon of eigenaar |
 | `accountID` | Hiermee legt u de gebruikersnaam van de gebruikersaccount vast |
 | `accountType` | Hiermee legt u het type gebruikersaccount vast, zoals `Personal` of `Company`, indien van toepassing |
-| `personalEmailID` | Hiermee geeft u de unieke id voor de persoonlijke e-mail op |
-| `personalEmail` | Hier geeft u het persoonlijke e-mailadres op |
+| `personalEmailID` | Het technische adres, bijvoorbeeld `name@domain.com` zoals algemeen gedefinieerd in RFC2822 en volgende normen |
+| `personalEmail` | Hiermee legt u contactgegevens vast - een e-mail en de bijbehorende informatie |
 | `address` | Het technische adres, bijvoorbeeld `name@domain.com` zoals algemeen gedefinieerd in RFC2822 en volgende normen |
 | `userAccount` | Geeft alle gegevens over de loyaliteit, voorkeuren, aanmeldingsprocessen en andere accountvoorkeuren aan |
 | `updateProfile` | Hiermee wordt aangegeven of een gebruiker zijn accountprofiel heeft bijgewerkt |
