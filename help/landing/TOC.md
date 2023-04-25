@@ -2,7 +2,7 @@
 user-guide-title: Services voor Adobe Commerce
 user-guide-description: Documentatie en bronnen voor gehoste services die uitgebreide mogelijkheden bieden aan Adobe Commerce en Magento Open Source.
 title: Services voor Adobe Commerce
-source-git-commit: cc7636dd6bb5dff0d1223279bd22b50df9758253
+source-git-commit: 2a3bd519eb4bb581d8394bed4e22305ea6878052
 workflow-type: tm+mt
 source-wordcount: '106'
 ht-degree: 0%
@@ -12,6 +12,9 @@ ht-degree: 0%
 # Services voor Adobe Commerce-documentatie {#user-guides}
 
 - [Overzicht](home.md)
+- Gegevens vrijgeven {#release-information}
+   - [Opmerkingen bij de release](/help/landing/release-notes-all.md)
+   - [Nieuwe functies in documenten](/help/landing/whats-new.md)
 - Handel {#commerce-services}
    - [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html)
    - [[!DNL Product Recommendations]](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/guide-overview.html)
@@ -24,8 +27,5 @@ ht-degree: 0%
 - Integratie {#integration-services}
    - [Experience Platform Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/overview.html)
    - [Services Connector](/help/landing/saas.md)
-- Gegevensservices {#data-services}
+- Gegevensdiensten {#data-services}
    - [Catalogus synchroniseren](/help/landing/catalog-sync.md)
-- Gegevens vrijgeven {#release-information}
-   - [Opmerkingen bij de release](/help/landing/release-notes-all.md)
-   - [Nieuwe functies in documenten](/help/landing/whats-new.md)
