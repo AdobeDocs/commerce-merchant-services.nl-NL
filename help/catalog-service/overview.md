@@ -2,9 +2,9 @@
 title: '[!DNL Catalog Service]'
 description: '''[!DNL Catalog Service] voor Adobe Commerce biedt een manier om de inhoud van de pagina''s met productweergaven en de pagina''s met productlijsten veel sneller op te halen dan de GraphQL-zoekopdrachten van de native Adobe Commerce.'''
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
-source-git-commit: dd9ba7171cf6a199701b1abb8083a65326e89f5d
+source-git-commit: 86e6fdb653278f3e70640155d697897a2ea1b674
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '930'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,8 @@ De [!DNL Catalog Service] voor Adobe Commerce-extensie biedt uitgebreide view-mo
 De [!DNL Catalog Service] gebruik [GraphQL](https://graphql.org/) om productgegevens aan te vragen en te ontvangen. GraphQL is een querytaal die een front-end client gebruikt om te communiceren met de API (Application Programming Interface) die op een back-end zoals Adobe Commerce is gedefinieerd. GraphQL is een veelgebruikte communicatiemethode omdat deze lichtgewichtgericht is en een systeemintegrator de inhoud en volgorde van elke reactie kan opgeven.
 
 Adobe Commerce heeft twee GraphQL-systemen. Het kernGraphQL systeem verstrekt een brede waaier van vragen (lees verrichtingen) en mutaties (schrijf verrichtingen) die een verkoopster toestaan om met vele soorten pagina&#39;s, met inbegrip van product, klantenrekening, kar, controle, en meer in wisselwerking te staan. Nochtans, worden de vragen die productinformatie terugkeren niet geoptimaliseerd voor snelheid. Het GraphQL-systeem voor services kan alleen query&#39;s uitvoeren op producten en gerelateerde informatie. Deze query&#39;s leveren meer op dan vergelijkbare core query&#39;s.
+
+Klanten van de Catalogusservice kunnen de nieuwe [SaaS-prijsindexer](../price-index/index.md), die snellere updates van prijswijzigingen en synchronisatietijd biedt.
 
 ## Architectuur
 
@@ -66,6 +68,10 @@ Complexe productopties worden verenigd en onderscheiden door hun gedrag, niet do
 Eenvoudige producten vertegenwoordigen de basisverkoopeenheid die een prijs heeft. De Catalogusservice berekent de normale prijs vóór kortingen en de uiteindelijke prijs na kortingen. Prijsberekeningen kunnen vaste productbelastingen bevatten. Ze sluiten gepersonaliseerde promoties uit.
 
 Een complex product heeft geen vaste prijs. In plaats daarvan retourneert de Catalogusservice de prijzen van gekoppelde voorbeelden. Een handelaar kan bijvoorbeeld in eerste instantie dezelfde prijzen toewijzen aan alle varianten van een configureerbaar product. Als bepaalde grootten of kleuren niet populair zijn, kan de handelaar de prijzen van die varianten verlagen. De prijs van het complexe (configureerbare) product vertoont dus eerst een prijsbereik, dat de prijs van zowel standaard- als niet-populaire varianten weerspiegelt. Nadat de winkelier een waarde voor alle beschikbare opties heeft geselecteerd, toont de winkel één enkele prijs.
+
+>[!NOTE]
+>
+> Koophandel met afnemers [!DNL Catalog Service] kan profiteren van snellere prijswijzigingen en synchronisatietijd op hun websites met de [SaaS-prijsindexer](../price-index/index.md).
 
 ## Implementatie
 

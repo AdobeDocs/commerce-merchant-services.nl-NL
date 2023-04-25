@@ -2,9 +2,9 @@
 title: '''[!DNL Live Search] Opmerkingen bij de release'
 description: "De meest recente releasegegevens voor [!DNL Live Search] uit Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 94e5d59061477440e62a8f1eb055090e0179d395
+source-git-commit: 6371d737ef9591e4ad647650c9c9974dbd8b4555
 workflow-type: tm+mt
-source-wordcount: '1208'
+source-wordcount: '1223'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,11 @@ In deze releaseopmerkingen worden de meest recente versies van [!DNL Live Search
 ![Nieuw](../assets/new.svg) Nieuwe functies
 ![Repareren](../assets/fix.svg) Oplossingen en verbeteringen
 ![Bug](../assets/bug.svg) Bekende problemen
+
+
+_25 april 2023_
+
+![Nieuw](../assets/new.svg) Klanten met Live zoeken kunnen nu profiteren van de nieuwe [SaaS-prijsindexer](../price-index/index.md).
 
 ## [!DNL Live Search] 3.0.1 {#301}
 
@@ -54,8 +59,8 @@ _14 maart 2023_
 * Andere kleine insectenmoeilijke situaties en prestatiesupdates
 
 
-* ![Bug](../assets/bug.svg) - Rangschikken op &quot;Aanbevolen voor u&quot; wordt alleen ondersteund in de widgets Live zoeken. Deze functie wordt niet ondersteund met de standaardzoekfunctionaliteit LUMA en PWA.
-* ![Bug](../assets/bug.svg) - Aangepaste facetten van prijskenmerken worden niet correct weergegeven in LUMA, maar de API filtert er op.
+* ![Bug](../assets/bug.svg) - Rangschikken op &quot;Aanbevolen voor u&quot; wordt alleen ondersteund in de widgets Live zoeken. Deze functie wordt niet ondersteund met de standaardzoekfunctie voor Luma en PWA.
+* ![Bug](../assets/bug.svg) - Aangepaste facetten van prijskenmerken worden niet correct weergegeven in Luma, maar de API filtert er op.
 
 Handelaren moeten de [!DNL Live Search] extensie >= 3.0.1 gebruiken om deze functies te openen.
 

@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] Indexeren"
 description: "Meer informatie [!DNL Live Search] indexes product attribute properties."
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 995f528abc0011c6ae7c4c524982c301072ec2eb
+source-git-commit: f310f840e286859070002ab0e23eda3787c89f36
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '575'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,11 @@ Het bereik van kenmerkmetagegevens is `website/store/store view`.
 
 De [!DNL Live Search] API staat een cliënt toe om op om het even welk productattribuut te sorteren dat heeft [storefront, eigenschap](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) `Use in Search` instellen op `Yes` in Adobe Commerce Admin. Indien ingeschakeld, `Search Weight` en `Visible in Advanced Search` kan worden ingesteld voor het kenmerk.
 
+[!DNL Live Search] geen verwijderde producten indexeert of producten die zijn ingesteld op `Not Visible Individually`.
+
 >[!NOTE]
 >
->[!DNL Live Search] geen verwijderde producten indexeert of producten die zijn ingesteld op `Not Visible Individually`.
+> Koophandel met afnemers [!DNL Live Search] kan profiteren van snellere prijswijzigingen en synchronisatietijd op hun websites met de [SaaS-prijsindexer](../price-index/index.md).
 
 ## Indexeringspijplijn
 

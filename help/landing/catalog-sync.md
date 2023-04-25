@@ -2,9 +2,9 @@
 title: Catalogus synchroniseren
 description: Leer hoe u productgegevens exporteert vanuit de [!DNL Commerce] server naar [!DNL Commerce Services] om de diensten voortdurend up-to-date te houden.
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
-source-git-commit: dd9ba7171cf6a199701b1abb8083a65326e89f5d
+source-git-commit: 3931a8c2e19f0024017682b029451bf1670d94b1
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '947'
 ht-degree: 0%
 
 ---
@@ -67,6 +67,7 @@ Als u een resync van uw catalogus moet in werking stellen alvorens de per uur ge
 1. In de _Gegevens opnieuw synchroniseren_ sectie, klikt u op [!UICONTROL Resync].
 
    [!DNL Commerce] synchroniseert de catalogus tijdens het volgende geplande synchronisatievenster. Afhankelijk van de grootte van de catalogus kan deze bewerking lang duren.
+
 
 ## Gesynchroniseerde catalogusproducten
 
@@ -132,6 +133,14 @@ De voedernaam kan één van het volgende zijn:
 - `productoverrides`— Klantspecifieke regels voor prijzen en zichtbaarheid van catalogi, zoals regels die zijn gebaseerd op categorietoestemmingen
 
 Wanneer u een gegevensresync van de bevellijn teweegbrengt, kan het tot een uur voor de gegevens duren om bij te werken.
+
+Als u [Prijsindexering SaaS](../price-index/index.md) en moet opnieuw synchroniseren, voer het volgende bevel in werking:
+
+```bash
+bin/magento saas:resync --feed=scopesCustomerGroup
+bin/magento saas:resync --feed=scopesWebsite
+bin/magento saas:resync --feed=prices
+```
 
 ### Voorbeelden
 
