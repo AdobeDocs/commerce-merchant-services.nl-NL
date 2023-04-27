@@ -2,10 +2,10 @@
 title: Opmerkingen bij de release
 description: De nieuwste release-informatie voor Adobe Experience Platform-connector vanuit Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: 735fd14fad22826b04320644e120d296de19a211
+source-git-commit: 22823b662eefa953fcca6ae78f6c37ee8abff3d1
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,7 @@ Deze releaseopmerkingen bevatten updates van de aansluiting van het Experience P
 
 Voor functieveranderingen en moeilijke situaties met betrekking tot uitbreidingen die door de schakelaar van het Experience Platform worden gebruikt, zie **Ondersteunde service-updates**.
 
-Zie [Volgende releases](https://experienceleague.adobe.com/docs/commerce-operations/release/schedule.html) om over versieschema&#39;s en steun te leren.
+Zie [Volgende releases](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) om over versieschema&#39;s en steun te leren.
 
 Zie de documentatie voor ontwikkelaars [informatie over productcompatibiliteit](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
@@ -45,6 +45,8 @@ _12 oktober 2022_
 
 _30 maart 2023_
 
+[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+
 * ![Nieuw](../assets/new.svg) - Gebundelde `commerce-data-export` en `saas-export` afhankelijkheden met de `experience-platform-connector` extensie. Eerder, moest u deze gebiedsdelen afzonderlijk installeren. Deze gebiedsdelen, samen met koopvaardijconfiguratie, laten server zijverwerking van toe [back office-gebeurtenissen](events.md#back-office-events).
 * ![Nieuw](../assets/new.svg) - Nieuwe back office-gebeurtenis toegevoegd [`orderShipmentCompleted`](events.md#ordershipmentcompleted).
 
@@ -52,24 +54,32 @@ _30 maart 2023_
 
 _28 februari 2023_
 
+[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+
 * ![Nieuw](../assets/new.svg) - Toegevoegde ondersteuning voor PHP 8.2 voor alle Experience Platform connectormodules
 
 ## 2.1.0
 
 _17 januari 2023_
 
-* ![Nieuw](../assets/new.svg) - De [Admin-aansluiting Experience Platform](connect-data.md) zodat kunt u uw eigen AEP Web SDK (legering) specificeren. Voeg ook een optie toe voor handelaren die zijn ingeschreven voor ons bètaprogramma voor back office-kantoren om te verzenden [back office-gebeurtenisgegevens](connect-data.md#data-collection) aan de rand. Deze gebeurtenissen bevatten [statusgegevens van order](events.md#beta-order-status-events) over een bestelling, bijvoorbeeld of een bestelling is geplaatst, geannuleerd, terugbetaald of verzonden.
+[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+
+* ![Nieuw](../assets/new.svg) - De [Admin-aansluiting Experience Platform](connect-data.md) zodat kunt u uw eigen AEP Web SDK (legering) specificeren.
 * ![Repareren](../assets/fix.svg) Gewijzigd in gebruik `identityMap` in plaats van `personID` wanneer u de primaire identiteit instelt voor gegevens die naar de rand worden geduwd.
 
 ## 2.0.1
 
 _10 november 2022_
 
+[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+
 * ![Probleem opgelost](../assets/fix.svg) - Nu wordt de Adobe Experience Platform-context alleen ingesteld nadat de Storageront Event Collector en de Storefront Event SDK zijn geladen.
 
 ## 2.0.0
 
 _12 oktober 2022_
+
+[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
 
 * ![Nieuw](../assets/new.svg) - Toegevoegde mogelijkheid om uw eigen AEP Web SDK op te geven wanneer [verbinden](connect-data.md) Adobe Commerce-exemplaar naar het Experience Platform
 * ![Repareren](../assets/fix.svg) - Vereisten voor het bijwerken van het bereik van de gegevensstroom, zodat de gegevensstroom-id&#39;s binnen het bereik van de website moeten worden geplaatst in plaats van dat ze moeten worden opgeslagen
@@ -78,11 +88,6 @@ _12 oktober 2022_
 
 _9 augustus 2022_
 
+[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+
 * ![Nieuw](../assets/new.svg) - Algemene beschikbaarheidsrelease
-
-## Documentatie
-
-Meer informatie:
-
-* [Adobe Commerce Developer Documentation](https://devdocs.magento.com/)
-* [Adobe Commerce-gebruikershandleiding](https://docs.magento.com/user-guide/)

@@ -2,9 +2,9 @@
 title: Gegevens voor handel verzamelen met Adobe Experience Platform-tags
 description: Leer hoe u gegevens over handel kunt verzamelen met Adobe Experience Platform-tags.
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: bd4090c1b1ec417545e041a7c89f46019c07abea
+source-git-commit: bdd1378dcbbe806c98e8486a985389b2d0d4f34e
 workflow-type: tm+mt
-source-wordcount: '2535'
+source-wordcount: '2650'
 ht-degree: 0%
 
 ---
@@ -1319,14 +1319,16 @@ Maak de volgende gegevenselementen:
 - **Type**: `commerce.order`
 - **XDM-gegevens**: `%place order%`
 
-## Identiteit instellen
+## Identiteit instellen in storefront-gebeurtenissen
 
-De profielen van de de schakelaarschakelaar van het Experience Platform worden aangesloten bij en worden geproduceerd gebaseerd op `identityMap` en de `personalEmail` identiteitsvelden in XDM Experience-gebeurtenissen. 
+Storefront-gebeurtenissen bevatten profielgegevens op basis van de `personalEmail` (voor accountgebeurtenissen) en `identityMap` (voor alle andere storefront-gebeurtenissen) velden. De verbindingslijn van het Experience Platform sluit zich aan en produceert profielen die op deze twee gebieden worden gebaseerd. Voor elk veld zijn echter verschillende stappen nodig om profielen te maken:
 
-Als u een vorige instelling hebt die afhankelijk is van verschillende velden, kunt u deze instellingen blijven gebruiken. Als u identiteitsvelden van verbindingsprofielen voor Experience Platforms wilt instellen, moet u de volgende velden instellen:
+>[!NOTE]
+>
+>Als u een vorige instelling hebt die afhankelijk is van verschillende velden, kunt u deze instellingen blijven gebruiken.
 
-- `personalEmail` - Alleen accountgebeurtenissen - volg de bovenstaande stappen voor [accountgebeurtenissen](#createaccount)
-- `identityMap` - Alle andere gebeurtenissen. Zie het volgende voorbeeld.
+- `personalEmail` - Alleen van toepassing op accountgebeurtenissen. Volg de stappen, regels en acties die worden beschreven [boven](#createaccount)
+- `identityMap` - Is van toepassing op alle andere storefront-gebeurtenissen. Zie het volgende voorbeeld.
 
 ### Voorbeeld
 
@@ -1337,7 +1339,7 @@ De volgende stappen tonen hoe te om een te vormen `pageView` gebeurtenis met `id
    ![Gegevenselement configureren met aangepaste code](assets/set-custom-code-ecid.png)
    _Gegevenselement configureren met aangepaste code_
 
-1. Aangepaste ECID-code toevoegen:
+1. Selecteren [!UICONTROL Open Editor] en voeg de volgende aangepaste code toe:
 
    ```javascript
    return alloy("getIdentity").then((result) => {
@@ -1346,6 +1348,12 @@ De volgende stappen tonen hoe te om een te vormen `pageView` gebeurtenis met `id
            {
                id: ecid,
                primary: true
+           }
+           ],
+           email: [
+           {
+               id: email,
+               primary: false
            }
            ]
        };
@@ -1362,6 +1370,43 @@ De volgende stappen tonen hoe te om een te vormen `pageView` gebeurtenis met `id
 
    ![ECID ophalen](assets/rule-retrieve-ecid.png)
    _ECID ophalen_
+
+## Identiteit instellen in back office-gebeurtenissen
+
+In tegenstelling tot storefront-gebeurtenissen die ECID gebruiken om profielinformatie te identificeren en te koppelen, zijn de gegevens van de back office gebeurtenis gebaseerd op SaaS en daarom is geen ECID beschikbaar. Voor backoffice-gebeurtenissen moet u e-mail gebruiken om kopers op unieke wijze te identificeren. In deze sectie leert u hoe u via e-mail gegevens van kantoorgebeurtenissen kunt koppelen aan een ECID.
+
+1. Maak een identiteitskaartelement.
+
+   ![Identiteitskaart van het achterkantoor](assets/custom-code-backoffice.png)
+   _Identiteitskaart voor back-office maken_
+
+1. Selecteren [!UICONTROL Open Editor] en voeg de volgende aangepaste code toe:
+
+```javascript
+const IdentityMap = {
+  "ECID": [
+    {
+      id:  _satellite.getVar('ECID'),
+      primary: true,
+    },
+  ],
+};
+ 
+if (_satellite.getVar('account email')) {
+    IdentityMap.email = [
+        {
+            id: _satellite.getVar('account email'),
+            primary: false,
+        },
+    ];
+}
+return IdentityMap;
+```
+
+1. Dit nieuwe element toevoegen aan elk `identityMap` veld.
+
+   ![Elke identityMap bijwerken](assets/add-element-back-office.png)
+   _Elke identityMap bijwerken_
 
 ## Vaststelling van de toestemming
 

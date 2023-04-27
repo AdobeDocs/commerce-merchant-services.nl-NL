@@ -2,9 +2,9 @@
 title: Adobe Experience Platform-connector installeren en configureren vanuit Adobe Commerce
 description: Leer hoe u de Adobe Experience Platform-connector van Adobe Commerce installeert, configureert, bijwerkt en verwijdert.
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
-source-git-commit: 76bc0650f32e99f568c061e67290de6c380f46a4
+source-git-commit: 898d49cbeb4711862a47693a0d608b74730dc845
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,12 @@ Voordat u de extensie installeert, [de voorwaarden opnieuw bekijken](overview.md
 
 ## De extensie installeren
 
-De verbindingsuitbreiding van het Experience Platform wordt geïnstalleerd vanaf de bevellijn van de server en verbindt met uw installatie van Adobe Commerce als a [service](../landing/saas.md). Wanneer het proces is voltooid, **Experience Platform Connector** verschijnt op de **Systeem** menu onder **Services** in de handel _Beheer_.
+De de schakelaaruitbreiding van het Experience Platform is beschikbaar bij [Adobe Marketplace](https://marketplace.magento.com/magento-experience-platform-connector.html). Wanneer u deze extensie installeert vanaf de opdrachtregel van de server, wordt verbinding gemaakt met de Adobe Commerce-installatie als een [service](../landing/saas.md). Wanneer het proces is voltooid, **Experience Platform Connector** en **Commerce Services Connector** op de **Systeem** menu onder **Services** in de handel _Beheer_.
 
-De aansluiting van het Experience Platform is geïnstalleerd als een uitbreiding van [Adobe Marketplace](https://marketplace.magento.com/magento-experience-platform-connector.html).
+>[!NOTE]
+>
+>![B2B voor Adobe Commerce](../assets/b2b.svg) Voor B2B-handelaren is er een aparte extensie die u moet installeren. Deze extensie voegt ondersteuning toe voor B2B-specifieke gebeurtenissen. [Meer informatie](#install-the-b2b-extension).
 
-![B2B voor Adobe Commerce](../assets/b2b.svg) Voor B2B-handelaren is er een aparte extensie die u moet installeren. Deze extensie voegt ondersteuning toe voor B2B-specifieke gebeurtenissen. [Meer informatie](#install-the-b2b-extension).
 
 1. Als u het dialoogvenster `experience-platform-connector` pakket, voer het volgende uit vanaf de bevellijn:
 
@@ -80,11 +81,11 @@ Als u wilt bijwerken naar een hoofdversie zoals 1.0.0 tot 2.0.0, bewerkt u de ho
    composer update magento/experience-platform-connector –-with-dependencies
    ```
 
-of, voor B2B-handelaren:
+   of, voor B2B-handelaren:
 
-```bash
-composer update magento/experience-platform-connector-b2b --with-dependencies
-```
+   ```bash
+   composer update magento/experience-platform-connector-b2b --with-dependencies
+   ```
 
 ## De aansluiting van het Experience Platform verwijderen {#uninstall}
 

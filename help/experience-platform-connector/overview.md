@@ -2,18 +2,18 @@
 title: Overzicht van hulplijnen
 description: Leer hoe u Adobe Commerce-gegevens met Adobe Experience Platform kunt integreren via de aansluiting van het Experience Platform.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
-source-git-commit: 092f2f4ab9d34466d66fe5b726bfff67a1309c6f
+source-git-commit: 22823b662eefa953fcca6ae78f6c37ee8abff3d1
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '487'
 ht-degree: 0%
 
 ---
 
 # Overzicht van de Experience Platform-aansluiting
 
-De de schakelaaruitbreiding van het Experience Platform staat de handelaars van Adobe Commerce toe om gegevens naar de rand van Adobe Experience Platform te verzenden zodat kunnen andere producten van Adobe Experience Cloud, zoals Adobe Analytics en Adobe Target, die gegevens van de Handel gebruiken. Door uw gegevens van de Handel met andere producten in Adobe Experience Cloud te verbinden, kunt u taken uitvoeren, zoals gebruikersgedrag op uw plaats analyseren, het testen van AB uitvoeren, en gepersonaliseerde campagnes creëren.
+Met de uitbreiding van de aansluiting van het Experience Platform kunnen Adobe Commerce-handelaren gegevens verzenden [storefront](events.md#storefront-events) en [achterkantoor](events.md#back-office-events) gegevens aan de Adobe Experience Platform edge zodat andere Adobe Experience Cloud producten, zoals Adobe Analytics en Adobe Target, die gegevens van de Handel kunnen gebruiken. Door uw gegevens van de Handel met andere producten in Adobe Experience Cloud te verbinden, kunt u taken uitvoeren, zoals gebruikersgedrag op uw plaats analyseren, het testen van AB uitvoeren, en gepersonaliseerde campagnes creëren.
 
-[Gebeurtenissen van Storefront](events.md) interacties met opnamesoftware, zoals `View Page`, `View Product`, `Add to Cart`, enzovoort. Vastgelegde gegevens bevatten geen persoonlijk identificeerbare informatie (PII). Alle gebruikers-id&#39;s, zoals cookie-id&#39;s en IP-adressen, worden strikt geanonimiseerd. [Meer informatie](https://www.adobe.com/privacy/experience-cloud.html).
+[Gebeurtenissen van Storefront](events.md#storefront-events) interacties met opnamesoftware, zoals `View Page`, `View Product`, `Add to Cart`, en [aanvraaglijst](events.md#b2b-events) informatie (voor B2B-handelaren). [Back Office](events.md#back-office-events) gebeurtenissen leggen informatie vast over de status van een bestelling, zoals of een bestelling is geplaatst, geannuleerd, terugbetaald, verzonden of voltooid. Vastgelegde gegevens bevatten geen persoonlijk identificeerbare informatie (PII). Alle gebruikers-id&#39;s, zoals cookie-id&#39;s en IP-adressen, worden strikt geanonimiseerd. [Meer informatie](https://www.adobe.com/privacy/experience-cloud.html).
 
 De verbindingslijn van het Experience Platform verschijnt in Commerce Admin onder **Systeem** > Services > **Experience Platform Connector**.
 
@@ -21,10 +21,11 @@ De verbindingslijn van het Experience Platform verschijnt in Commerce Admin onde
 
 ## Vereisten {#prereqs}
 
-Als u de aansluiting van het Experience Platform wilt gebruiken, moet u over het volgende beschikken:
+Om de schakelaar van het Experience Platform te gebruiken, moet u het volgende hebben:
 
 - Adobe Commerce 2.4.3 of hoger
 - Adobe ID- en organisatie-id
+- [Adobe Client Data Layer (ACDL)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html). ACDL is vereist om storefront-gebeurtenisgegevens te verzamelen.
 - Rechten op andere Adobe DX-producten
 
 ## Stappen aan boord
