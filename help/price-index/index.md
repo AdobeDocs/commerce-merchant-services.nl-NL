@@ -4,16 +4,16 @@ description: De SaaS Price Indexing gebruiken om prestaties te verbeteren
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
-source-git-commit: 45999b6499f248ea4138f7de4e910c274e747a04
+source-git-commit: 7b2d90eb809eada732ed5d3ad4e038bd9733c440
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '764'
 ht-degree: 0%
 
 ---
 
 # Prijsindexering SaaS
 
-De prijsindexering van SaaS versnelt de tijd die het voor prijsveranderingen vergt om op de website van een klant te worden weerspiegeld nadat zij zijn voorgelegd. Met deze optionele module kunnen handelaren met grote, complexe catalogi of met meerdere websites of klantgroepen prijswijzigingen sneller en doorlopend verwerken.
+De prijsindexering van SaaS versnelt de tijd die het voor prijsveranderingen vergt om op de website van een klant van SaaS na hen te worden weerspiegeld. Met deze optionele module kunnen handelaren met grote, complexe catalogi of met meerdere websites of klantgroepen prijswijzigingen sneller en doorlopend verwerken.
 
 Het grootste knelpunt van de pijpleiding: computationele zware processen, zoals indexering en prijsberekening, zijn verplaatst van de PHP-kern naar de Cloud-Adobe-infrastructuur. Op deze manier kunnen handelaren snel hun resources vergroten om de indexatietijden te versnellen en de wijzigingen in websites op veel hogere snelheden doorvoeren.
 
@@ -47,8 +47,8 @@ De prijsindexering van SaaS gebruikt een reeks modules om functionaliteit te ver
 Deze modules voegen de nieuwe feeds aan Admin toe. Met deze feeds worden gegevens over de overdracht van prijzen naar de SaaS-index doorgegeven en wordt de PHP-index voor de basisprijs genegeerd.
 
 ```
-magento/module-product-override-price-remover
-magento/module-bundle-product-override-data-exporter
+magento/module-saas-price
+magento/module-saas-scopes
 magento/module-product-override-price-remover
 magento/module-bundle-product-override-data-exporter
 ```

@@ -2,9 +2,9 @@
 title: '''[!DNL Product Recommendations] Opmerkingen bij de release'
 description: De meest recente releasegegevens voor [!DNL Product Recommendations] uit Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
-source-git-commit: 5b6a3c2dc15d41e5245cbf62ed736022f48281fa
+source-git-commit: f955cfc918c19a3c32126d8c9ef8a59b0e0dce0a
 workflow-type: tm+mt
-source-wordcount: '1081'
+source-wordcount: '1102'
 ht-degree: 0%
 
 ---
@@ -17,10 +17,12 @@ De releaseopmerkingen bevatten updates voor het volgende [!DNL Product Recommend
 * Ondersteuning voor Page Builder in [!DNL Product Recommendations] (optioneel) module: `magento/module-page-builder-product-recommendations`
 * Visuele steun van het type van gelijkheidsaanbeveling voor [!DNL Product Recommendations] (optioneel) module: `magento/module-visual-product-recommendations`
 
+Er wordt ondersteuning geboden voor de belangrijkste uitgebrachte versie. Opmerkingen bij de release voor oudere versies worden ter referentie verschaft.
 De opmerkingen bij de release omvatten:
 
 ![Nieuw](../assets/new.svg) Nieuwe functies
 ![Repareren](../assets/fix.svg) Oplossingen en verbeteringen
+![Bug](../assets/bug.svg) Bekende problemen
 
 Zie de documentatie voor ontwikkelaars [informatie over productcompatibiliteit](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 

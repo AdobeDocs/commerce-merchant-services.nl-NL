@@ -2,16 +2,18 @@
 title: '''[!DNL Catalog Service] Opmerkingen bij de release'
 description: De meest recente releasegegevens voor [!DNL Catalog Service] voor Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: f310f840e286859070002ab0e23eda3787c89f36
+source-git-commit: f955cfc918c19a3c32126d8c9ef8a59b0e0dce0a
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '467'
 ht-degree: 0%
 
 ---
 
 # [!DNL Catalog Service] Opmerkingen bij de release
 
-In deze releaseopmerkingen worden de meest recente versies van [!DNL Catalog Service] en omvatten:
+In deze releaseopmerkingen worden de meest recente versies van [!DNL Catalog Service].
+Er wordt ondersteuning geboden voor de belangrijkste uitgebrachte versie. Opmerkingen bij de release voor oudere versies worden ter referentie verschaft.
+Updates zijn:
 
 ![Nieuw](../assets/new.svg) Nieuwe functies
 ![Repareren](../assets/fix.svg) Oplossingen en verbeteringen

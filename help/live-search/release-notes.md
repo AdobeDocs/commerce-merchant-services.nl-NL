@@ -2,16 +2,18 @@
 title: '''[!DNL Live Search] Opmerkingen bij de release'
 description: "De meest recente releasegegevens voor [!DNL Live Search] uit Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 6371d737ef9591e4ad647650c9c9974dbd8b4555
+source-git-commit: f955cfc918c19a3c32126d8c9ef8a59b0e0dce0a
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1241'
 ht-degree: 0%
 
 ---
 
 # [!DNL Live Search] Opmerkingen bij de release
 
-In deze releaseopmerkingen worden de meest recente versies van [!DNL Live Search] en omvatten:
+In deze releaseopmerkingen worden de meest recente versies van [!DNL Live Search].
+Er wordt ondersteuning geboden voor de belangrijkste uitgebrachte versie. Opmerkingen bij de release voor oudere versies worden ter referentie verschaft.
+Updates zijn:
 
 ![Nieuw](../assets/new.svg) Nieuwe functies
 ![Repareren](../assets/fix.svg) Oplossingen en verbeteringen
