@@ -1,9 +1,9 @@
 ---
-user-guide-title: '[!DNL Payment Services] Hulplijn'
-user-guide-description: Deze handleiding bevat gedetailleerde informatie over installeren en configureren [!DNL Payment Services] voor uw [!DNL Adobe Commerce] of [!DNL Magento Open Source] opslaan.
-breadcrumb-title: '[!DNL Payment Services] Hulplijn'
+user-guide-title: "[!DNL Payment Services] Hulplijn"
+user-guide-description: "Deze gids verstrekt gedetailleerde informatie over het installeren en het vormen [!DNL Payment Services] voor uw [!DNL Adobe Commerce] of [!DNL Magento Open Source] store."
+breadcrumb-title: "[!DNL Payment Services] Hulplijn"
 index: true
-source-git-commit: 28bf1a8e9758acbe3415fd270476ad8cc4dcbf17
+source-git-commit: 6976c357ad268d7383306a1ffb407d128b951b30
 workflow-type: tm+mt
 source-wordcount: '78'
 ht-degree: 0%
