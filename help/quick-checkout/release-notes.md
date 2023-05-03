@@ -2,7 +2,7 @@
 title: '''[!DNL Quick Checkout] Opmerkingen bij de release'
 description: Lees de opmerkingen bij de release voor meer informatie over alle [!DNL Quick Checkout] lozingen.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 90cd508d7eb6033864d66c87fbc90eabd5ea304b
+source-git-commit: d58193b622a1851259b2191ea54ac6b59029dd64
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -26,6 +26,14 @@ Zie [Beschikbaarheid](https://devdocs.magento.com/release/availability.html) in 
 In deze releaseopmerkingen worden wijzigingen en correcties beschreven die zijn opgetreden en die buiten de reguliere versie van de functiereleases voor het deelvenster Beheer zijn uitgebracht.
 
 +++updates van het deelvenster Beheer
+
+_25 april 2023_
+
+![Probleem opgelost](../assets/fix.svg)<!-- Issue BOLT-452 --> De [!DNL Quick Checkout] **Een rondleiding maken** op de knop wordt nu een klikbare handje weergegeven wanneer de muisaanwijzer op de knop wordt geplaatst.
+
+_19 april 2023_
+
+![Probleem opgelost](../assets/fix.svg)<!-- Issue BOLT-596 --> De [!DNL Quick Checkout] Op de pagina Rapporten wordt nu correct het diagram Nieuwe accounts weergegeven bij het parseren van datums in de ISO 8601-indeling.
 
 _14 december 2022_
 
