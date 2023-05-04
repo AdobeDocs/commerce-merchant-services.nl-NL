@@ -2,9 +2,9 @@
 title: Koploos
 description: Leer hoe u kunt integreren [!DNL Product Recommendations] in een koploze winkel.
 exl-id: 316d0b0c-5938-4e2f-9d0d-747746cf6056
-source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
+source-git-commit: 521ea4fc2cce809fc12d3958e37089f3e34e1068
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,13 @@ ht-degree: 0%
 
 U kunt [!DNL Product Recommendations] in een koploze winkel met [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) of een aangepaste frontend-technologie, zoals React of Vue JS.
 
+Aangepaste integratoren en ontwikkelaars zonder kop dienen deze Luma- en PWA-instructies te gebruiken als een aanbevolen implementatie. Er zijn vele manieren om Product Recommendations in hoofdloze oplossingen uit te voeren en deze documentatie behandelt niet alle scenario&#39;s. Integratoren moeten gebeurtenissen, ontwerpen en testen voor hun implementaties bestrijken.
+
 [!DNL Product Recommendations] vereisen [gedrags- en catalogusgegevens](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/development-overview.html) om te werken. Het synchronisatieproces van catalogusgegevens blijft ongewijzigd in een headless-implementatie, maar er zijn wijzigingen nodig voor het verzamelen van gedragsgegevens.
+
+>[!NOTE]
+>
+>De instanties zonder kop moeten gebeurtenis uitvoeren om het Recommendations-dashboard van het Product van stroom te voorzien.
 
 Om te integreren [!DNL Product Recommendations] in een koploze winkel moet u:
 

@@ -2,9 +2,9 @@
 title: Gegevens verzamelen
 description: Leer hoe gebeurtenissen gegevens verzamelen voor productaanbevelingen.
 exl-id: b827d88c-327f-4986-8239-8f1921d8383c
-source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
+source-git-commit: e74bc4aeaa154e751f8d986e0426dd19d55d335e
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '411'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,13 @@ De [Adobe Commerce Storefront Event Collector](https://developer.adobe.com/comme
 
 Als uw winkel is geïmplementeerd met PWA Studio, raadpleegt u de [PWA-documentatie](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Als u een aangepaste frontend-technologie gebruikt, zoals React of Vue JS, raadpleegt u de gebruikershandleiding voor meer informatie over de integratie van Product Recommendations in een [koploos](headless.md) milieu.
 
+## Caveats
+
 Als u een advertentie blokkeert en privacy-instellingen hebt, kunt u `magento/product-recommendations` van het vastleggen van gebeurtenissen en kan de betrokkenheid en opbrengst veroorzaken [cijfers](workspace.md) te laag worden gerapporteerd.
+
+Eventing legt niet elke transactie vast die op de locatie van de handelaar plaatsvindt. Uiteindelijk is het bedoeld om de handelaar een algemeen idee te geven van gebeurtenissen die op de plaats gebeuren.
+
+Bij een headless-implementatie moet de gebeurtenis worden geïmplementeerd om het Recommendations-dashboard voor producten van stroom te voorzien.
 
 >[!NOTE]
 >

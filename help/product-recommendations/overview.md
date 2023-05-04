@@ -2,9 +2,9 @@
 title: Inleiding tot [!DNL Product Recommendations]
 description: '[!DNL Product Recommendations] Dit is een krachtig marketinginstrument dat u kunt gebruiken om conversies te verhogen, inkomsten te verhogen en winkelbetrokkenheid te stimuleren.'
 exl-id: 818ac876-58c9-4c68-975e-53da59ed6b52
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 5359c737cc90135ab0db5c32aebcb0bb131d3671
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,11 @@ De aanbevelingen van het product zijn een krachtig marketing hulpmiddel dat u ku
 
 De aanbevelingen van het product worden getoond op de winkel als eenheden met etiketten, zoals &quot;Klanten die dit product ook bekeken&quot;hebben. U kunt rechtstreeks vanuit Adobe Commerce Admin aanbevelingen maken, beheren en implementeren in uw winkelweergaven.
 
+Als uw storefront met PWA Studio wordt uitgevoerd, verwijs naar [PWA-documentatie](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Als u een aangepaste frontend-technologie gebruikt, zoals React of Vue JS, leert u hoe te [integreren](headless.md) [!DNL Product Recommendations] in je eindeloze winkel.
+
 >[!NOTE]
 >
-> Als uw storefront met PWA Studio wordt uitgevoerd, verwijs naar [PWA-documentatie](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Als u een aangepaste frontend-technologie gebruikt, zoals React of Vue JS, leert u hoe te [integreren](headless.md) [!DNL Product Recommendations] in je eindeloze winkel.
+>Er zijn vele manieren om een headless of douaneimplementatie te ontwikkelen. Deze gids beschrijft één manier om dit te doen, gebruikend PWA Studio. Zij heeft geen betrekking op alle scenario&#39;s of gebeurtenissen.
 
 ## Privacy
 

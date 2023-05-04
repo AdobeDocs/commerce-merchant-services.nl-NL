@@ -2,7 +2,7 @@
 title: Onboarding
 description: Leer de vereisten en ondersteunde platforms op [!DNL Product Recommendations].
 exl-id: ad47ac39-8f6f-4765-84ad-9e3d104385db
-source-git-commit: 1bc15171e4e7402d808af3631b8b6d000d4fd3f2
+source-git-commit: e74bc4aeaa154e751f8d986e0426dd19d55d335e
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Het instapproces voor [!DNL Product Recommendations] vereist toegang tot de beve
 
 Zie [[!DNL Page Builder] Integratie](page-builder.md) voor instructies over het toevoegen van [!DNL Product Recommendations] in [!DNL Page Builder] inhoud.
 
-## Prijsindexering SaaS
+### Prijsindexering SaaS
 
 Klanten die productaanbevelingen kunnen gebruiken [Prijsindexering SaaS](../price-index/index.md), die snellere updates van prijswijzigingen en synchronisatietijd biedt.
 
