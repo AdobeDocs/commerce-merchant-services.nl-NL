@@ -2,7 +2,7 @@
 title: "Afhandelingsstroom voor een Adobe Commerce-gebruiker"
 description: "Overzicht van de [!DNL Quick Checkout] voor een Adobe Commerce-gebruiker."
 exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
-source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
+source-git-commit: f790732804e110aad298689c0ddf74547ff17618
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Indien een [!DNL Bolt] account is gevonden tijdens afrekenen, kopers kunnen door
 
 1. Voer het eenmalige wachtwoord (OTP) in dat naar dat wachtwoord is verzonden [!DNL Bolt] e-mailadres van account of mobiel, afhankelijk van [gebruikersvoorkeuren in het dialoogvenster [!DNL Bolt] account](https://help.bolt.com/shoppers/account/account-settings/#how-to-set-preferred-login-method){target=_blank}.
 
-![Pop-up OTP](assets/pop-up.png)
+![Pop-up OTP](assets/new-logo-otp-email.png)
 
 1. Zodra het programma geopend met uw [!DNL Bolt] -account, worden de gegevens automatisch toegevoegd:
 

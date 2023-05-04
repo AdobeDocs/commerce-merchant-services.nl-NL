@@ -2,9 +2,9 @@
 title: Configureer de [!DNL Quick Checkout] voor Adobe Commerce-extensie
 description: Leer de configuratieopties voor de [!DNL Quick Checkout] en hoe u de extensie met succes aan boord kunt instellen.
 exl-id: 892e04dc-17d6-45e9-b2ab-c7a0735a75bc
-source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
+source-git-commit: f790732804e110aad298689c0ddf74547ff17618
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Deze configuratie-instellingen openen:
 1. Op de _Beheer_ zijbalk, ga naar **Winkels** > _Instellingen_ > **Configuratie**.
 1. Vouw in het linkerdeelvenster uit **Verkoop** en selecteert u **Afhandeling**.
 
-   ![Snelle afhandeling](assets/configuration-view.png)
+   ![Snelle afhandeling](assets/config-new-logo-view.png)
 
 Zie de [Onboarding](../quick-checkout/onboarding.md) onderwerp voor meer informatie over hoe te om te vormen [!DNL Quick Checkout] voor Adobe Commerce.
 
@@ -31,7 +31,7 @@ Zie de [Onboarding](../quick-checkout/onboarding.md) onderwerp voor meer informa
 | [!UICONTROL Enable] | website | In- of uitschakelen [!DNL Quick Checkout] voor uw website. Opties: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Method] | website | Stel de methode of omgeving in voor uw [!DNL Quick Checkout]. Opties: [!UICONTROL Sandbox] / [!UICONTROL Production] |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Accountgegevens
 
@@ -43,7 +43,7 @@ Zie de [Onboarding](../quick-checkout/onboarding.md) onderwerp voor meer informa
 | [!UICONTROL Publishable key] | website | Een toets die door uw voorzijde wordt gebruikt om te communiceren met [!DNL Bolt] API&#39;s. |
 | [!UICONTROL Signing secret] | website | Wordt gebruikt voor handtekeningverificatie op aanvragen die zijn ontvangen van [!DNL Bolt]. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Service-instellingen
 
@@ -59,4 +59,4 @@ Zie de [Onboarding](../quick-checkout/onboarding.md) onderwerp voor meer informa
 | [!UICONTROL Automatic Login Enabled] | website | Definiëren als [!DNL Quick Checkout] Hiermee kunt u zich automatisch aanmelden tijdens het afrekenen. Standaard ingeschakeld. Opties: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Automatic Login Network] | website | Selecteer het netwerk waar de klant zich automatisch aanmeldt. Standaard ingeschakeld. Opties: [!UICONTROL Bolt + Merchant] / [!UICONTROL Bolt] |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
