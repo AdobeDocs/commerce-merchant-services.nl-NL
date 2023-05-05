@@ -2,9 +2,9 @@
 title: Onboarding
 description: Leer de vereisten en ondersteunde platforms op [!DNL Product Recommendations].
 exl-id: ad47ac39-8f6f-4765-84ad-9e3d104385db
-source-git-commit: e74bc4aeaa154e751f8d986e0426dd19d55d335e
+source-git-commit: 209bdf9c69ff81481d6df7cb8e8832deef13c9f4
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '283'
 ht-degree: 0%
 
 ---
@@ -43,3 +43,7 @@ Klanten die productaanbevelingen kunnen gebruiken [Prijsindexering SaaS](../pric
 ### B2B-ondersteuning {#b2bsupport}
 
 B2B-winkels vereisen vaak complexe logica die de zichtbaarheid en prijsstelling van het product voor elke winkel of klantengroep bepaalt. [!DNL Product Recommendations] now [ondersteuning](release-notes.md) deze functionaliteit door [categorietoestemmingen](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html), [gedeelde catalogi](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html), en [klantspecifieke prijsstelling](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html). Bijvoorbeeld, als u bepaalde categorieën van uw retailklantensegment hebt verborgen, dan zou een verkoopster in dat segment geen aanbevelingen voor producten in die categorieën worden getoond. Ook, wanneer u een gedeelde catalogus voor specifieke klantengroepen en bedrijven bepaalt, zien die kopers aanbevelingen slechts voor producten zij kunnen toegang hebben. Alle geadviseerde producten weerspiegelen correcte klant groep-specifieke prijs die op de klantengroep van elke klant wordt gebaseerd.
+
+>[!NOTE]
+>
+>Handelaars kunnen widgets of winkelelementen aanpassen en uitbreiden met de [Catalogusservice](../catalog-service/overview.md) Storefront API maar om het even welke aanpassing is buiten werkingsgebied voor Adobe ondersteuningsteam.

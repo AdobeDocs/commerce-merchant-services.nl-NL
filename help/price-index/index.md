@@ -4,9 +4,9 @@ description: De SaaS Price Indexing gebruiken om prestaties te verbeteren
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
-source-git-commit: 3820736a25942b147d6e2c7b8820c360d6a0a535
+source-git-commit: 209bdf9c69ff81481d6df7cb8e8832deef13c9f4
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '744'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,14 @@ ht-degree: 0%
 De prijsindexering van SaaS versnelt de tijd die het voor prijsveranderingen vergt om op de website van een klant van SaaS na hen te worden weerspiegeld. Met deze optionele module kunnen handelaren met grote, complexe catalogi of met meerdere websites of klantgroepen prijswijzigingen sneller en doorlopend verwerken.
 
 Het grootste knelpunt van de pijpleiding: computationele zware processen, zoals indexering en prijsberekening, zijn verplaatst van de PHP-kern naar de Cloud-Adobe-infrastructuur. Op deze manier kunnen handelaren snel hun resources vergroten om de indexatietijden te versnellen en de wijzigingen in websites op veel hogere snelheden doorvoeren.
+
+De de indexerende gegevensstroom van de Kern aan de diensten van SaaS ziet als:
+
+![Standaardgegevensstroom](assets/old_way.png)
+
+Met SaaS-prijsindexering is de stroom:
+
+![Prijsindexeringsgegevensstroom SaaS](assets/new_way.png)
 
 Alle verkopers die aan de vereisten voldoen kunnen van deze verbeteringen profiteren, maar zij die de grootste winst zullen zien zijn klanten met:
 
