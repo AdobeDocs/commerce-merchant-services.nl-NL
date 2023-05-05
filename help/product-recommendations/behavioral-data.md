@@ -2,9 +2,9 @@
 title: Gedragsgegevens
 description: Meer informatie over gedragsgegevens en wanneer u deze kunt gaan gebruiken.
 exl-id: d68a97b9-1497-4603-a72c-4aaaf6e048cb
-source-git-commit: 371ae21c97021912279381b5e32f953fe3b4f0dd
+source-git-commit: 840b091638aedd3f6ac097a010d035eff997ffe2
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -33,11 +33,14 @@ Andere variabelen die van invloed kunnen zijn op de tijd die nodig is om te trai
 
 - Hoger verkeersvolume draagt bij aan sneller leren
 - Sommige aanbevelingen typen trajecten sneller dan andere
-- Adobe Commerce berekent de gedragsgegevens elke vier uur opnieuw. Hoewel u uw aanbevelingen op dat moment technisch kunt implementeren, weet u dat de aanbevelingen nauwkeuriger worden naarmate ze langer op uw site worden gebruikt.
+- Adobe Commerce berekent de gedragsgegevens elke vier uur opnieuw. Recommendations wordt nauwkeuriger naarmate ze langer op uw site worden gebruikt.
 
 Om u te helpen de opleidingsvooruitgang van elk aanbevelingstype visualiseren, [aanbeveling maken](create.md) op de pagina worden gereedheidsindicatoren weergegeven.
 
 Terwijl de gegevens over productie en machine het leren modellen worden verzameld worden getraind, kunt u uitvoeren [resterende taken](implementation-workflow.md) nodig om aanbevelingen aan uw winkel op te stellen. Tegen de tijd dat u klaar bent met het testen en configureren van aanbevelingen, hebben de modellen voor het leren van machines genoeg gegevens verzameld en berekend om relevante aanbevelingen te bouwen, zodat u de aanbevelingen kunt implementeren in uw winkel.
+
+Als er voor de meeste SKU&#39;s onvoldoende verkeer (weergaven, gekochte producten, trending) is, zijn er wellicht onvoldoende gegevens om het leerproces te voltooien. Hierdoor kan de gereedheidsindicator in de Admin er uitzien alsof deze vastzit.
+De gereedheidsindicatoren zijn bedoeld om handelaren een ander gegevenspunt te bieden bij het kiezen van het aanbevolen type voor hun winkel. De getallen zijn een leidraad en mogen nooit 100% bedragen.
 
 ## Aanbevelingen voor back-up {#backuprecs}
 
