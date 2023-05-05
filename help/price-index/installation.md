@@ -3,9 +3,10 @@ title: Prijsindexeringsinstallatie SaaS
 description: SaaS-prijsindexering installeren
 seo-title: SaaS Price Indexing installation
 seo-description: Installing SaaS Price indexing
-source-git-commit: 077be6d893b800b9571a869237501e58accc01e8
+exl-id: a607e852-aa04-4be3-9576-a6bf45f8751f
+source-git-commit: 3820736a25942b147d6e2c7b8820c360d6a0a535
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '254'
 ht-degree: 0%
 
 ---
@@ -67,7 +68,9 @@ Na de upgrade zijn drie nieuwe feeds beschikbaar:
 Voer de bovenstaande indexen indien nodig handmatig uit. Anders worden de gegevens in het standaardsynchronisatieproces vernieuwd. Meer informatie over de [Catalogus synchroniseren](../landing/catalog-sync.md) service.
 
 Gebruikers van Luma en Adobe Commerce Core GraphQL kunnen de `catalog-adapter` die Luminantiemodule en Core GraphQl-compatibiliteit biedt en de PHP core price indexer uitschakelt.
-Als u de opdracht `catalog-adapter` module, [!DNL Live Search] moet eerst worden geïnstalleerd. Volg de [Installeren [!DNL Live Search]](../live-search/install.md) instructies voordat u verdergaat.
+Als u de opdracht `catalog-adapter` module, [!DNL Live Search] en [!DNL Catalog Service] moet eerst worden geïnstalleerd en geconfigureerd. Volg de [Installeren [!DNL Live Search]](../live-search/install.md) en [Installatie van catalogusservice](../catalog-service/installation.md) instructies voordat u verdergaat.
+
+Om Live zoeken en de Adapter van de Catalogus te vormen, volg [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html?lang=en) instructies.
 
 ```bash
 composer require adobe-commerce/catalog-adapter

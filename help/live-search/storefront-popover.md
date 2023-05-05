@@ -2,9 +2,9 @@
 title: "[!DNL Storefront Popover]"
 description: "De [!DNL Live Search storefront popover] Geeft dynamisch voorgestelde producten en miniaturen."
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 92889130fd7482e0b99fb08746e6fd2830b0345e
+source-git-commit: 3820736a25942b147d6e2c7b8820c360d6a0a535
 workflow-type: tm+mt
-source-wordcount: '364'
+source-wordcount: '399'
 ht-degree: 0%
 
 ---
@@ -44,3 +44,4 @@ Standaard is de waarde voor Zoeken in catalogus - automatisch aanvullen van limi
 * De [!DNL Live Search] [!DNL storefront popover] is alleen beschikbaar voor winkels die de *Luminantie* thema of een aangepast thema dat is gebaseerd op *Luminantie*.
 * De [!DNL popover] biedt geen ondersteuning voor de *Leeg* thema. Zie [Stijlen [!DNL Popover] Elementen](storefront-popover-styling.md) voor meer informatie.
 * De [!DNL popover] wordt niet ondersteund op het formulier Snelle volgorde.
+* Handelaars kunnen widgets of winkelelementen aanpassen en uitbreiden (bijvoorbeeld: kleurstalen integreren in de resultaten van Live zoeken) met de opdracht [Catalogusservice](../catalog-service/overview.md) Storefront API is buiten bereik voor Adobe-ondersteuningsteam.

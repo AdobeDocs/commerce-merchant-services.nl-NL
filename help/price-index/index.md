@@ -4,9 +4,9 @@ description: De SaaS Price Indexing gebruiken om prestaties te verbeteren
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
-source-git-commit: 7b2d90eb809eada732ed5d3ad4e038bd9733c440
+source-git-commit: 3820736a25942b147d6e2c7b8820c360d6a0a535
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '719'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ magento/module-product-override-price-remover
 magento/module-bundle-product-override-data-exporter
 ```
 
-Klanten die Luma en Adobe Commerce Core GraphQL gebruiken, kunnen een module installeren die Lumincompatibiliteit biedt en de PHP-indexfunctie voor de basisprijs uitschakelt:
+Klanten die gebruikmaken van Luma en Adobe Commerce Core GraphQL kunnen een module installeren die Luma en Core GraphQL-compatibiliteit biedt en de PHP core price indexer uitschakelt:
 
 ```
 adobe-commerce/catalog-adapter
@@ -67,17 +67,7 @@ De PHP-index voor de basisprijs kan opnieuw worden ingeschakeld als dat nodig is
 Afhankelijk van factoren zoals productsoorten, prijsingewikkeldheid en catalogusgrootte, kan de prijsindexering van SaaS de juiste oplossing voor uw opslag zijn. Lees de volgende beperkingen door en bepaal of dit een goede oplossing voor uw site is.
 
 Momenteel, steunt de prijsindexering van SaaS Eenvoudige, Gegroepeerde, Virtuele, Configurable, en de Dynamische producttypes van Bundel.
-Binnenkort wordt ondersteuning geboden voor de volgende producttypen: Downloadbare kaarten, Cadeaukaarten en Vaste bundel.
-
-De prijsindexering van SaaS ondersteunt basisprijzen:
-
-* Min./Max. normale prijs
-* Min./Max. uiteindelijke prijs
-* Speciale prijzen
-* Prijzen van de klantengroep
-* Regelprijzen voor catalogi
-
-Als u zich hebt aangemeld bij het gebruik van de nieuwe prijsaanduiding, kunt u contact opnemen met [Ondersteuning](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) om u te helpen het ongedaan maken.
+Binnenkort vindt ondersteuning voor Downloadbare, Cadeautjes en Vaste Bundle-producttypen.
 
 Nieuwe feeds moeten handmatig worden gesynchroniseerd met de `resync` [CLI, opdracht](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html#resynccmdline). Anders worden de gegevens in het standaardsynchronisatieproces vernieuwd. Meer informatie over de [Catalogus synchroniseren](../landing/catalog-sync.md) proces.
 
