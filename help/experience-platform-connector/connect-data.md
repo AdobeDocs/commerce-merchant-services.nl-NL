@@ -2,9 +2,9 @@
 title: Connect Commerce-gegevens naar Adobe Experience Platform
 description: Leer hoe u de gegevens van de Handel met de Adobe Experience Platform verbindt.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
-source-git-commit: dead0b8dae69476c196652abd43c4966a38c4141
+source-git-commit: 386d5e4245401695d7123a87b7dfb703f1f849e9
 workflow-type: tm+mt
-source-wordcount: '1074'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Wanneer u de aansluiting voor het Experience Platform installeert, worden twee n
 - Commerce Services Connector
 - Experience Platform Connector
 
-Als u uw Adobe Commerce-instantie wilt verbinden met het Adobe Experience-platform, moet u beide connectors configureren, te beginnen met de Commerce Services-connector en vervolgens voltooien met de Experience Platform-connector.
+Om uw Adobe Commerce instantie aan Adobe Experience Platform aan te sluiten, moet u beide schakelaars vormen, die met de schakelaar van de Diensten van de Handel dan met de schakelaar van het Experience Platform beëindigen beginnen.
 
 ## De schakelaar van de Diensten van de Handel bijwerken
 
@@ -56,7 +56,11 @@ In deze sectie verbindt u uw Adobe Commerce-exemplaar met de Adobe Experience Pl
 
 ## Gegevensverzameling
 
-In de **Gegevensverzameling** selecteert u de gegevens van het archief en/of het achterkantoor die u naar de rand van het Experience Platform wilt verzenden. Om ervoor te zorgen dat uw Adobe Commerce-instantie kan beginnen met het verzamelen van gegevens, raadpleegt u de [voorwaarden](overview.md#prerequisites).
+In deze sectie geeft u het type gegevens op dat u naar de rand van het Experience Platform wilt verzenden. Er zijn twee soorten gegevens: client-kant en server-kant.
+
+Gegevens aan de clientzijde zijn gegevens die worden vastgelegd op de opslagront. Dit omvat winkelinteracties, zoals `View Page`, `View Product`, `Add to Cart`, en [aanvraaglijst](events.md#b2b-events) informatie (voor B2B-handelaren). Gegevens aan de serverzijde of gegevens aan de achterzijde van het kantoor zijn gegevens die zijn vastgelegd in de Commerce-servers. Dit omvat informatie over de status van een bestelling, zoals of een bestelling is geplaatst, geannuleerd, terugbetaald, verzonden of voltooid.
+
+In de **Gegevensverzameling** selecteert u het type gegevens dat u naar de rand van het Experience Platform wilt verzenden. Als u er zeker van wilt zijn dat uw Adobe Commerce-instantie kan beginnen met het verzamelen van gegevens, raadpleegt u de [voorwaarden](overview.md#prerequisites).
 
 Zie het gebeurtenisonderwerp om meer over te leren [storefront](events.md#storefront-events) en [achterkantoor](events.md#back-office-events) gebeurtenissen.
 
@@ -110,11 +114,32 @@ Zie het gebeurtenisonderwerp om meer over te leren [storefront](events.md#storef
 | Back Office-gebeurtenissen | Als deze optie is ingeschakeld, bevat de gebeurtenislading geanonimiseerde gegevens over de status van de bestelling, zoals of een bestelling is geplaatst, geannuleerd, terugbetaald of verzonden. |
 | DataStream-id (website) | ID die gegevens om van Adobe Experience Platform aan andere Adobe DX producten toestaat te stromen. Deze id moet zijn gekoppeld aan een specifieke website in uw specifieke Adobe Commerce-exemplaar. Als u uw eigen SDK van het Web van het Experience Platform specificeert, specificeer geen gegevensstroom identiteitskaart op dit gebied. De verbindingslijn van het Experience Platform gebruikt gegevensstroom identiteitskaart verbonden aan die SDK en negeert om het even welke gegevensstroom ID die op dit gebied (als om het even welk) wordt gespecificeerd. |
 
-## Controleren of gegevens naar Experience Platform worden verzonden
+>[!NOTE]
+>
+>Na het instappen, beginnen de storefrontgegevens aan de rand van het Experience Platform te stromen. Het duurt ongeveer 5 minuten om gegevens op het achterkantoor aan de rand weer te geven. Volgende updates zijn zichtbaar aan de rand op basis van het uitsnijdschema.
 
-Na het instappen, beginnen de storefrontgegevens aan de rand van het Experience Platform te stromen. De gegevens van het achterkantoor nemen ongeveer 5 minuten na het instappen voor aan de rand te verschijnen. Volgende updates zijn zichtbaar aan de rand op basis van het uitsnijdschema.
+## Bevestig dat gebeurtenisgegevens worden verzameld
 
-Wanneer de gegevens van de Handel naar de rand van het Experience Platform worden verzonden, kunt u rapporten als het volgende bouwen:
+Als u wilt bevestigen dat gegevens worden verzameld bij uw winkel voor Handel, gebruikt u de [Adobe Experience Platform debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) om je plaats van de Handel te bekijken. Nadat u hebt bevestigd dat de gegevens worden verzameld, kunt u verifiëren dat uw opslag en de gegevens van de achterkantoorgebeurtenis bij de rand verschijnen door een vraag in werking te stellen die gegevens van terugkeert [gegevensset die u hebt gemaakt](overview.md#prerequisites).
 
-![Commerciële gegevens in Adobe Experience Platform](assets/aem-data-1.png)
-_Commerciële gegevens in Adobe Experience Platform_
+1. Selecteren **Zoekopdrachten** in de linkernavigatie van het Experience Platform en klik [!UICONTROL Create Query].
+
+   ![Query-editor](assets/query-editor.png)
+
+1. Wanneer de Redacteur van de Vraag opent, ga een vraag in die gegevens van de dataset selecteert.
+
+   ![Query maken](assets/create-query.png)
+
+   Uw query ziet er bijvoorbeeld als volgt uit:
+
+   ```sql
+   SELECT * from `your_dataset_name` ORDER by TIMESTAMP DESC
+   ```
+
+1. Nadat de vraag loopt, worden de resultaten getoond in **Resultaten** tab, naast de **Console** tab. Deze mening toont de tabeloutput van uw vraag.
+
+   ![Query-editor](assets/query-results.png)
+
+In dit voorbeeld ziet u gebeurtenisgegevens uit de [`commerce.productListAdds`](events.md#addtocart), [`commerce.productViews`](events.md#productpageview), [`web.webpagedetails.pageViews`](events.md#pageview), enzovoort. In deze weergave kunt u controleren of de gegevens van de Handel aan de rand zijn binnengekomen.
+
+Als de resultaten niet zijn wat u verwacht, open uw dataset en zoek om het even welke ontbroken partijinvoer. Meer informatie over [problemen oplossen bij importeren van batch](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/troubleshooting.html).
