@@ -2,9 +2,9 @@
 title: Testen en valideren
 description: Testen en valideren helpen u ervoor te zorgen dat [!DNL Payment Services] functies werken naar behoren en bieden de beste betalingsopties voor uw klanten
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
-source-git-commit: 7bd9212a4c215b4f39051ded0e95b2b7e96fb46f
+source-git-commit: 0324c2d8e34fee0872d5f52ed3a246094b482aa2
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,10 @@ Bij het testen en valideren van uw sandbox moet u valse creditcardnummers gebrui
 
 De PayPal-creditcardgenerator gebruiken voor [willekeurige creditcardgegevens genereren](https://www.paypal.com/us/smarthelp/article/where-can-i-find-test-credit-card-numbers-ts2157) voor het testen.
 
-Als u Apple Pay wilt testen in de sandboxmodus, moet u beschikken over een [Apple sandbox-testeraccount](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account), invullen met valse creditcard- en factureringsgegevens.
+Apple Pay in sandboxmodus testen:
+
+* Een [Apple sandbox-testeraccount](https://developer.apple.com/apple-pay/sandbox-testing/#create-a-sandbox-tester-account), invullen met valse creditcard- en factureringsgegevens.
+* [Sandboxdomeinen registreren](https://developer.paypal.com/docs/checkout/apm/apple-pay/#link-registeryoursandboxdomains).
 
 >[!NOTE]
 >
@@ -47,6 +50,4 @@ Voltooi uw productietests met echte creditcards en PayPal-rekeningen en test de 
 
 U moet ook controleren of de gegevens die op de bankafschriften staan voor de betalingsmethoden die u gebruikt bij het testen van de productie juist en verwacht zijn (inclusief de beschrijving van uw bedrijf).
 
->[!NOTE]
->
->Als je het testen van de productie voor Apple Pay wilt voltooien, moet je contact opnemen met de verkoper om Apple Pay voor je productieomgeving in te schakelen.
+Als je Apple Pay wilt testen in de productiemodus, moet je [registreer uw productiedomeinen](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain).
