@@ -6,7 +6,7 @@ level: Intermediate
 exl-id: 3ac217f7-e823-4578-8416-5ecceb76aa87
 source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '407'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Opties voor productvoorraad configureren van de beheerder: **[!UICONTROL Catalog
 | **[!UICONTROL Available for Store Pickup]** | Stel de beschikbaarheid van de Ophaalservice voor het product in. Als deze optie is ingeschakeld, worden toegewezen winkellocaties met een beschikbare voorraad voor het product in aanmerking genomen voor de optie Ophalen uit winkel. Als het product is uitgeschakeld, komt het nooit in aanmerking voor Ophalen uit winkel.</br></br>Deze optie kan nuttig zijn om winkelvoorraad in het systeem te volgen die u niet van uw e-commerce kanaal wilt verkopen. | Website | Nee |
 | **[!UICONTROL UPC / SKU / Custom Scannable Identifier]** | Dit kenmerk zou al als een productkenmerk moeten bestaan en heeft betrekking op **[!UICONTROL Barcode Source / Barcode Type]** instellen. Dit kenmerk wordt gebruikt om een gescande streepjescode voor uw producten bij te houden. Deze waarde kan worden verzonden wanneer een bestelling voor het selecteren naar uw winkels wordt verzonden. De associaties van de opslag kunnen de waarde met de pluklijst gebruiken om producten op de plank aan te passen gebruikend een streepjescodescanner. | Winkelweergave | Nee |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Bronnen voor inventarisatie op productniveau
 
@@ -44,5 +44,5 @@ Opties voor productvoorraad configureren van de beheerder: **[!UICONTROL Catalog
 | **[!UICONTROL Out of Stock Threshold]** | Stel de voorraaddrempel voor het item binnen elke bron in. Wanneer de voorraad onder de drempel daalt, wordt deze als niet-voorraad aan de bron beschouwd.</br></br>Als u de globale instelling voor Winkelconfiguratie wilt gebruiken, schakelt u het selectievakje **[!UICONTROL Use Default]** optie. | Algemeen | Nee |
 | **[!UICONTROL Allow Store Pickup]** | Expliciet instellen of het item beschikbaar is voor het ophalen van de winkel, ongeacht de beschikbare voorraad of configuratie van de locatie van de winkel.</br></br> Schakel de optie [!UICONTROL Use Default] en maakt u uw selectie. Anders wordt deze instelling gekozen op basis van de configuratie voor **[!UICONTROL Allow In-Store Pickup]** die op de bron van de voorraad is vastgesteld. | Algemeen | Nee |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 

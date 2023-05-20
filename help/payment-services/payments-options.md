@@ -4,7 +4,7 @@ description: Stel de betalingsopties in om de beschikbare methoden voor uw winke
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 source-git-commit: 9bc392f2ae12269ded6174b830562444d6827f5f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1041'
 ht-degree: 0%
 
 ---

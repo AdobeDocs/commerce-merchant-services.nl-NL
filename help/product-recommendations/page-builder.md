@@ -1,7 +1,8 @@
 ---
 title: '''[!DNL Page Builder] Integratie'
-description: 'Leer hoe u kunt gebruiken [!DNL Product Recommendations] eenheden in Page Builder.'
-source-git-commit: 59ec1a212fbc9ef48658b29cace083e3fb645185
+description: Leren gebruiken [!DNL Product Recommendations] eenheden in Page Builder.
+exl-id: dd972642-1fb4-426a-ac68-f56bb5fa2ecf
+source-git-commit: 368059d50133d8b01be83e1616044a61ab094e3c
 workflow-type: tm+mt
 source-wordcount: '162'
 ht-degree: 0%

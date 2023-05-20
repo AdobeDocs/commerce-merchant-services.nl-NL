@@ -6,7 +6,7 @@ level: Intermediate
 exl-id: 7c3444d0-5ecb-4ac1-aa81-e48eea290f5d
 source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1206'
 ht-degree: 0%
 
 ---
@@ -106,7 +106,7 @@ Configuratie Merchant Stores beheren vanuit de beheerder: **[!UICONTROL Stores >
 | **[!UICONTROL Enable Ship to Store]**</br>`Extension Attribute: [!DNL allow_ship_to_store]` | Vorm schip-aan-opslagmogelijkheden op het bronniveau. Zie voor meer informatie de [Algemene configuratie](enable-general.md) optie, **[!UICONTROL Enable Ship To Store]**. | Algemeen | Nee |
 | **[!UICONTROL Enable Ship From Store]**</br>`Extension Attribute: [!DNL use_as_shipping_source]` | Vorm schip-van-opslag mogelijkheden op het bronniveau. Zie voor meer informatie de [Algemene configuratie](enable-general.md) optie, [!UICONTROL Enable Ship From Store] | Algemeen | Nee |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Configuratie van ophaallocatie
 

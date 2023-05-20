@@ -4,8 +4,8 @@ description: De nieuwste release-informatie voor Adobe Experience Platform-conne
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 source-git-commit: 22823b662eefa953fcca6ae78f6c37ee8abff3d1
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '345'
+ht-degree: 1%
 
 ---
 

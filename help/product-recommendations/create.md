@@ -4,7 +4,7 @@ description: Leer hoe u een product aanbevelingseenheid kunt maken.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
 source-git-commit: d56fd57281a5b675e128cca75d4057756a0bf4bf
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '853'
 ht-degree: 0%
 
 ---

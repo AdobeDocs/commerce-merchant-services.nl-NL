@@ -4,7 +4,7 @@ description: Meer informatie over [!DNL Quick Checkout] Het deelvenster Beheer k
 exl-id: d91763ed-b4f6-4736-9503-0305edd77e91
 source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '198'
 ht-degree: 0%
 
 ---

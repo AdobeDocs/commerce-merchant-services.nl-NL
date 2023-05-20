@@ -4,7 +4,7 @@ description: "Testen en valideren zorgt ervoor dat de [!DNL Quick Checkout] de e
 exl-id: 308f39e1-e2f6-40d8-b876-0f9013effed3
 source-git-commit: bd02a8083d3f4c9cb0422b27d61bd5462187ffc3
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '429'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Voordat u de [!DNL Quick Checkout] voor Adobe Commerce-extensie voor uw klanten wordt aangeraden om te testen in een sandbox-omgeving en in uw productieomgeving. Testen en valideren zorgt ervoor dat de [!DNL Quick Checkout] werkt zoals verwacht en biedt een naadloze afrekenervaring voor uw winkel en klanten.
 
-Voordat u de [!DNL Quick Checkout] in Adobe Commerce Admin is het vereist om  [productie](https://merchant.bolt.com/register){target=&quot;_blank&quot;} en [sandbox](https://merchant-sandbox.bolt.com/register){target=&quot;_blank&quot;} zakelijke accounts in [!DNL Bolt].
+Voordat u de [!DNL Quick Checkout] in Adobe Commerce Admin is het vereist om  [productie](https://merchant.bolt.com/register){target="_blank"} and [sandbox](https://merchant-sandbox.bolt.com/register){target="_blank"} handelsrekeningen [!DNL Bolt].
 
 ## Testen in sandbox
 
@@ -22,7 +22,7 @@ Het testen van [!DNL Quick Checkout] in een sandboxomgeving is een zeer belangri
 
 ### Sandboxaccount gebruiken
 
-Wanneer u de sandbox test en valideert, moet u een onecht creditcardnummer en een [sandbox](https://merchant-sandbox.bolt.com/register){target=&quot;_blank&quot;} zakelijke account in [!DNL Bolt], zodat u geen echte kosten maakt voor een bestaande creditcardrekening.
+Wanneer u de sandbox test en valideert, moet u een onecht creditcardnummer en een [sandbox](https://merchant-sandbox.bolt.com/register){target="_blank"} handelsrekening in [!DNL Bolt], zodat u geen echte kosten maakt voor een bestaande creditcardrekening.
 
 ## Testen in productie
 

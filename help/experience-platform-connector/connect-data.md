@@ -4,7 +4,7 @@ description: Leer hoe u de gegevens van de Handel met de Adobe Experience Platfo
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 source-git-commit: 386d5e4245401695d7123a87b7dfb703f1f849e9
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1307'
 ht-degree: 0%
 
 ---

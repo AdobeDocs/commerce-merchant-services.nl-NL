@@ -4,7 +4,7 @@ description: Installeer de uitbreiding van de Diensten van Betalingen.
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
 source-git-commit: 4d6c9a3017575e9adbf5dc11cf0717511592dbcf
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '462'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ U moet de extensie eerst downloaden van [Commerce Marketplace](https://experienc
 
 1. Ga naar de [De uitbreiding van de Betalingsdiensten in de Commerce Marketplace](https://marketplace.magento.com/magento-payment-services.html).
 1. Schakel **[!UICONTROL Edition]** en **[!UICONTROL Your store version]** naar uw voorkeurskeuzes.
-1. Klik op **[!UICONTROL Add to Cart]**.
+1. Klikken **[!UICONTROL Add to Cart]**.
 1. Uitchecken voltooien en klikken **[!UICONTROL Place Order]**.
 1. Controleer het e-mailadres dat is gekoppeld aan het downloaden van uw Marketplace voor bevestiging van de bestelling en voor meer informatie.
 

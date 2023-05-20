@@ -6,7 +6,7 @@ level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
 source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '432'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Of u nu een kleine onderneming, een medio-markt contant of een grote onderneming
 
 [!DNL Payment Services] is beschikbaar voor [!DNL Adobe Commerce] en [!DNL Magento Open Source]. De [!DNL Payment Services] extensie is nu compatibel met [!DNL Adobe Commerce] versies 2.4.x.
 
-Zie [Levenscyclusbeleid](https://devdocs.magento.com/release/lifecycle-policy.html){target=&quot;_blank&quot;} en de [[!DNL Payment Services] releaseopmerkingen](release-notes.md) pagina&#39;s voor meer release en versiespecifieke informatie.s
+Zie [Levenscyclusbeleid](https://devdocs.magento.com/release/lifecycle-policy.html){target="_blank"} en de [[!DNL Payment Services] releaseopmerkingen](release-notes.md) pagina&#39;s voor meer release en versiespecifieke informatie.s
 
 ## Geaccepteerde kredietkaarten en valuta&#39;s
 

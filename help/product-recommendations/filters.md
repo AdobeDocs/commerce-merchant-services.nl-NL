@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Filterproducten
 
-Adobe Commerce past automatisch niet-configureerbare standaardfilters op aanbeveling-eenheden toe. Als u meerdere aanbevelingen-eenheden op een pagina hebt geïmplementeerd, filtert Adobe Commerce alle producten uit die in de eenheden worden herhaald. Alleen de eerste verwijzing naar een herhaald product wordt gebruikt om ruimte te maken voor andere producten die kunnen worden aanbevolen. Adobe Commerce filtert ook alle eerder aangeschafte producten en producten die zich in de winkelwagen bevinden.
+Adobe Commerce past automatisch niet-configureerbare standaardfilters op aanbevelingen toe. Als u meerdere aanbevelingen-eenheden op een pagina hebt geïmplementeerd, filtert Adobe Commerce alle producten uit die in de eenheden worden herhaald. Alleen de eerste verwijzing naar een herhaald product wordt gebruikt om ruimte te maken voor andere producten die kunnen worden aanbevolen. Adobe Commerce filtert ook alle eerder aangeschafte producten en producten die zich in de winkelwagen bevinden.
 
 Wanneer u [maken](create.md) een aanbeveling-eenheid, kunt u filters definiëren die bepalen welke producten in aanbevelingen kunnen worden weergegeven. Deze filters zijn gebaseerd op een reeks opname- of uitsluitingsvoorwaarden die u definieert. In aanbevelingen worden alleen producten weergegeven die aan alle inclusiemogelijkheden voldoen. Producten die aan een van de uitsluitingsvoorwaarden voldoen, worden niet aanbevolen.
 

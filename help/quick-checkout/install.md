@@ -4,16 +4,16 @@ description: "Voer de volgende stappen uit om te installeren [!DNL Quick Checkou
 exl-id: e1dabc9a-0ab0-4f8d-98d3-7a32abbedcb8
 source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '384'
 ht-degree: 0%
 
 ---
 
 # Installeren [!DNL Quick Checkout]
 
-De [!DNL Quick Checkout] extensie voor Adobe Commerce en [!DNL Magento Open Source] kan worden geïnstalleerd met [!DNL Composer keys], die aan de Commerce-rekening zijn gekoppeld [`mageid`](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions){target=&quot;_blank&quot;} opgegeven in het ondertekeningsproces. Composer gebruikt deze toetsen tijdens de eerste installatie van Adobe Commerce of in situaties waarin de [!DNL Composer keys] zijn niet eerder opgeslagen in de `auth.json` bestand.
+De [!DNL Quick Checkout] extensie voor Adobe Commerce en [!DNL Magento Open Source] kan worden geïnstalleerd met [!DNL Composer keys], die aan de Commerce-rekening zijn gekoppeld [`mageid`](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions){target="_blank"} die in het ondertekeningsproces worden verstrekt. Composer gebruikt deze toetsen tijdens de eerste installatie van Adobe Commerce of in situaties waarin de [!DNL Composer keys] zijn niet eerder opgeslagen in de `auth.json` bestand.
 
-Zie [krijg uw verificatietoetsen](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html){target=&quot;_blank&quot;} onderwerp voor meer informatie over het verkrijgen van [!DNL Composer keys].
+Zie [krijg uw verificatietoetsen](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html){target="_blank"} onderwerp voor meer informatie over het verkrijgen van [!DNL Composer keys].
 
 Er zijn twee manieren om deze extensie te installeren—voor [Adobe Commerce over cloudinfrastructuur](#magento-commerce-cloud) of [ter plaatse](#on-premises) installaties. Deze methodes vereisen u om de bevel-lijn interface (CLI) te gebruiken.
 

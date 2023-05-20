@@ -1,7 +1,8 @@
 ---
-title: "Commerce Configurations Settings en [!DNL Live Search] "
-description: "Beschrijft de de configuratiemontages van Adobe Commerce die [!DNL Live Search] kan lezen."
-source-git-commit: 10edbb6127405d45c06d4c8ffc89d92a6ca061c3
+title: '"Commerce Configurations Settings en [!DNL Live Search] '''
+description: Beschrijft de de configuratiemontages van Adobe Commerce die [!DNL Live Search] kan lezen.
+exl-id: a4e9e2dd-e912-4ced-a44a-091ac5334e50
+source-git-commit: 368059d50133d8b01be83e1616044a61ab094e3c
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 0%

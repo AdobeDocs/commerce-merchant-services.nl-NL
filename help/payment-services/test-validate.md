@@ -4,7 +4,7 @@ description: Testen en valideren helpen u ervoor te zorgen dat [!DNL Payment Ser
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
 source-git-commit: 0324c2d8e34fee0872d5f52ed3a246094b482aa2
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '492'
 ht-degree: 0%
 
 ---

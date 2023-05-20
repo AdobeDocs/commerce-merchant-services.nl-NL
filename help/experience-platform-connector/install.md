@@ -4,7 +4,7 @@ description: Leer hoe u de Adobe Experience Platform-connector van Adobe Commerc
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 source-git-commit: 898d49cbeb4711862a47693a0d608b74730dc845
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
