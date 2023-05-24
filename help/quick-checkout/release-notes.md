@@ -2,9 +2,9 @@
 title: '''[!DNL Quick Checkout] Opmerkingen bij de release'
 description: Lees de opmerkingen bij de release voor meer informatie over alle [!DNL Quick Checkout] lozingen.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: d58193b622a1851259b2191ea54ac6b59029dd64
+source-git-commit: 169b3e365d7f4c0c4cef19fa1941dfa0a95ea58b
 workflow-type: tm+mt
-source-wordcount: '1402'
+source-wordcount: '1422'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,10 @@ Zie [Beschikbaarheid](https://devdocs.magento.com/release/availability.html) in 
 In deze releaseopmerkingen worden wijzigingen en correcties beschreven die zijn opgetreden en die buiten de reguliere versie van de functiereleases voor het deelvenster Beheer zijn uitgebracht.
 
 +++updates van het deelvenster Beheer
+
+23 mei 2023_
+
+![Probleem opgelost](../assets/fix.svg)<!-- Issue BOLT-489 --> De **Nieuwe accounts** in de [!DNL Quick Checkout] rapportagepagina bevat spectrum [Workflowpictogrammen](https://react-spectrum.adobe.com/react-spectrum/workflow-icons.html){target=_blank}.
 
 _25 april 2023_
 
