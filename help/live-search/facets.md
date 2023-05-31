@@ -2,7 +2,7 @@
 title: "Facets"
 description: "[!DNL Live Search] facetten gebruiken meerdere afmetingen van kenmerkwaarden als zoekcriteria."
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: e1a512d2c9738f05bb8dcb929dccc7ad81cf7e3e
+source-git-commit: 6d4317df4f921bdc57faa4a7fbb86fc3a1d9e9b2
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 0%
@@ -21,7 +21,7 @@ De categorie- en productkenmerkvereisten voor facetten zijn vergelijkbaar met de
 
 [!DNL Live Search] ondersteunt maximaal:
 
-* 200 kenmerken geconfigureerd als facetten
+* 100 kenmerken geconfigureerd als facetten
 * 50 sorteerbare kenmerken
 * 200 filterbare kenmerken
 * 200 doorzoekbare kenmerken
