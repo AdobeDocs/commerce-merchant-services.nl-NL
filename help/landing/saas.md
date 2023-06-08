@@ -2,9 +2,9 @@
 title: Commerce Services Connector
 description: Leer hoe u uw Adobe Commerce- of Magento Open Source-instantie integreert met de API-sleutels voor productie en sandbox.
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 506b00e72d65fbafa071476608bb658cb59404b4
 workflow-type: tm+mt
-source-wordcount: '853'
+source-wordcount: '862'
 ht-degree: 0%
 
 ---
@@ -111,4 +111,4 @@ Als u uw Adobe Commerce-exemplaar wilt verbinden met de Adobe Experience Platfor
 
 ## Catalogus synchroniseren
 
-Wanneer uw [!DNL Commerce] instantie maakt verbinding met [!DNL Commerce Services], exporteert het catalogussynchronisatieproces productgegevens uit uw [!DNL Commerce] server naar [!DNL Commerce Services]. [Meer informatie](catalog-sync.md) over het synchronisatieproces van de catalogus.
+Wanneer uw [!DNL Commerce] instantie maakt verbinding met [!DNL Commerce Services], exporteert het catalogussynchronisatieproces productgegevens uit uw [!DNL Commerce] server naar [!DNL Commerce Services]. Momenteel gebruikt alleen Product Recommendations de catalogussynchronisatieservice. [Meer informatie](catalog-sync.md) over het synchronisatieproces van de catalogus.
