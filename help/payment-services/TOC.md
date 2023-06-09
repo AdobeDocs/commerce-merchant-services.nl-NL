@@ -3,9 +3,9 @@ user-guide-title: "[!DNL Payment Services] Hulplijn"
 user-guide-description: "Deze gids verstrekt gedetailleerde informatie over het installeren en het vormen [!DNL Payment Services] voor uw [!DNL Adobe Commerce] of [!DNL Magento Open Source] store."
 breadcrumb-title: "[!DNL Payment Services] Hulplijn"
 index: true
-source-git-commit: 6976c357ad268d7383306a1ffb407d128b951b30
+source-git-commit: c4e14f79e5aae996aff2f4e7fc9f8a82ae6ad93c
 workflow-type: tm+mt
-source-wordcount: '78'
+source-wordcount: '79'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,7 @@ ht-degree: 0%
 - Betalingen en afrekening {#payments-checkout}
    - [Betalingsopties](payments-options.md)
    - [Creditcard vaulting](vaulting.md)
+   - [Afhandeling](checkout.md)
 - Aan boord [!DNL Payment Services] {#get-started}
    - [Overzicht van onboarding](onboard.md)
    - [Installeer de [!DNL Payment Services] extension](install.md)

@@ -4,9 +4,9 @@ description: Gebruik het rapport Uitbetalingen voor volledige transparantie met 
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
+source-git-commit: 8295b7c4ea407f0528d6be69655a8b12f7defe15
 workflow-type: tm+mt
-source-wordcount: '1335'
+source-wordcount: '1326'
 ht-degree: 0%
 
 ---
@@ -14,8 +14,6 @@ ht-degree: 0%
 # Uitbetalingsrapport
 
 [!DNL Payment Services] for [!DNL Adobe Commerce] en [!DNL Magento Open Source] biedt u uitgebreide rapportage zodat u een duidelijk beeld krijgt van de bestellingen en betalingen van uw winkel.
-
-![Financiële verslagen](assets/reports-justpayouts.png)
 
 Er zijn twee beschikbare meningen van de het melden van Uitbetalingen om u toe te laten om diepgaande informatie over al uw uitbetalingen te zien:
 
@@ -34,7 +32,7 @@ De weergave voor de visualisatie van betalingsgegevens is beschikbaar in de star
 
 Op de _Beheer_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** om het gegevensvisualisatieschema van crediteringen tegenover debiteringen en de bewegende gemiddelden in de loop der tijd te zien.
 
-![Visualisatie van uitbetalingsgegevens in Admin](assets/payouts-report.png)
+![Visualisatie van uitbetalingsgegevens in Admin](assets/payouts-report.png){zoomable=yes}
 
 Klikken **[!UICONTROL View Report]** om naar de gedetailleerde tabel te navigeren [Weergave uitbetalingsrapport](#payouts-report-view).
 
@@ -70,13 +68,13 @@ De weergave van het betalingsrapport is beschikbaar in de weergave Uitbetalingen
 
 Op de _Beheer_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]** om de gedetailleerde tabelweergave van het uitbetalingsrapport te bekijken.
 
-![Betalingstransacties in de beheerder](assets/payouts-report-new.png)
+![Betalingstransacties in de beheerder](assets/payouts-report-new.png){zoomable=yes}
 
 U kunt deze mening, per de secties in dit onderwerp vormen, om de gegevens het best voor te stellen u wilt zien.
 
 Zie de gekoppelde handelsorder en transactie-id&#39;s, transactiebedragen, betalingsmethode per transactie en meer, allemaal in het betalingsrapport in de beheerder.
 
-U kunt uitbetalingstransacties downloaden in de .csv-bestandsindeling voor gebruik in bestaande software voor boekhouding of orderbeheer.
+U kunt [uitbetalingstransacties downloaden](#download-transactions) in een .csv-bestandsindeling voor gebruik in bestaande software voor boekhouding of orderbeheer.
 
 >[!NOTE]
 >
@@ -86,9 +84,9 @@ U kunt uitbetalingstransacties downloaden in de .csv-bestandsindeling voor gebru
 
 In de mening van het rapport van Uitbetalingen kunt u de gegevensbron selecteren—_[!UICONTROL Live]_of_[!UICONTROL Sandbox]_—waarvoor u rapportresultaten wilt zien.
 
-![Selectie gegevensbronnen](assets/datasource.png)
+![Selectie gegevensbronnen](assets/datasource.png){width=400px}
 
-Indien _[!UICONTROL Live]_Als de geselecteerde gegevensbron is, kunt u rapportinformatie voor uw levende opslag zien. Indien [!UICONTROL Sandbox]_ is de geselecteerde gegevensbron, kunt u rapportinformatie voor uw milieu zien Sandbox.
+Indien _[!UICONTROL Live]_is de geselecteerde gegevensbron, kunt u rapportinformatie voor opslag op productiemodus zien. Indien_[!UICONTROL Sandbox]_ Als de geselecteerde gegevensbron is, kunt u rapportinformatieopslag op zandbakwijze zien.
 
 Gegevensbronselecties werken als volgt:
 
@@ -154,27 +152,27 @@ Uitbetalingsrapporten bevatten de volgende informatie.
 | [!UICONTROL Code] | Transactiecode die een creditering aangeeft (*CR*) of Debet (*DR*) |
 | [!UICONTROL Reference ID] | Oorspronkelijke transactie-id waarvoor deze gebeurtenis verband houdt |
 | [!UICONTROL Invoice] | Factuur-id (één per bestelling) van de transactie |
-| [!UICONTROL Commerce order] | Handelsorder-ID <br> <br>Verwante items weergeven [orderinfo](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}, klikt u op de id. |
-| [!UICONTROL Commerce trans] | Transactie-id voor handel <br> <br>Verwante items weergeven [transactiegegevens](https://docs.magento.com/user-guide/sales/transactions.html){target="_blank"}, klikt u op de id. |
-| [!UICONTROL Pay method] | Type creditcard—*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL APPLE_PAY]*, *[!UICONTROL CREDIT_CARD]*—en bijbehorende kaartprovider (zoals *Visa* of *MasterCard*) |
-| [!UICONTROL Trans amt] | Bedrag van de transactie |
-| [!UICONTROL Cur] | Valuta-eenheid voor transactiebedrag |
-| [!UICONTROL Pending] | Nog uit te betalen bedrag |
-| [!UICONTROL Cur] | Valuta-eenheid voor het uitstaande bedrag |
-| [!UICONTROL Seller amt] | Bedrag van aan of van een klant overgedragen middelen <br> <br>Bij fondsen die van de verkopersaccount worden afgevoerd, wordt een voorvoegsel voor een streepje (-) weergegeven. |
-| [!UICONTROL Cur] | Valuta-eenheid voor het bedrag van de verkoper |
-| [!UICONTROL Partner fee] | Partner-kosten verbonden aan de transactie <br> <br>Bij fondsen die uit de rekening van de partnervergoeding worden verplaatst, wordt een voorvoegsel voor een streepje (-) weergegeven. |
-| [!UICONTROL Cur] | Valuta-eenheid voor partnergeld |
-| [!UICONTROL Prov fees] | Aan de transactie gekoppelde kosten <br> <br>Bij geldmiddelen die uit de betaalrekening van de aanbieder worden verplaatst, wordt een voorvoegsel voor een streepje (-) weergegeven. |
-| [!UICONTROL Cur] | Valuta-eenheid voor leveranciersvergoeding |
-| [!UICONTROL Fee %] | Percentage van het transactiebedrag dat als vergoeding in rekening wordt gebracht |
-| [!UICONTROL Fixed fee] | Vaste kosten provider |
-| [!UICONTROL Chbk fee] | Restitutievergoeding voor de transactie <br> <br>Een voorvoegsel van het streepje (-) geeft aan dat de terugboekingskosten zijn teruggedraaid. |
-| [!UICONTROL Cur] | Valuta-eenheid voor terugboekingsvergoeding |
-| [!UICONTROL Hold amt] | In de wachtstand gezet of vrijgegeven bedrag <br> <br>Een streepje (-) voorvoegsel geeft aan dat gelden die in het bezit zijn, worden vrijgegeven. |
-| [!UICONTROL Cur] | Valuta-eenheid voor het bedrag van de reserve |
-| [!UICONTROL Recoup amt] | Bedrag teruggeboekt van de terugvorderingsrekening <br> <br>Bij fondsen die uit de terugvorderingsrekening worden verplaatst, wordt een voorvoegsel voor een streepje (-) weergegeven. |
-| [!UICONTROL Cur] | Valuta-eenheid voor het terugvorderingsbedrag |
+| [!UICONTROL Commerce order] | Handelsorder-ID <br> <br>Verwante items weergeven [orderinfo](https://docs.magento.com/user-guide/sales/orders.html), klikt u op de id. |
+| [!UICONTROL Commerce trans] | Transactie-id voor handel |
+| [!UICONTROL Pay method] | Type creditcard—*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL CREDIT_CARD]*—en bijbehorende kaartprovider (zoals *Visa* of *MasterCard*) |
+| [!UICONTROL TRANS AMT] | Bedrag van de transactie |
+| [!UICONTROL CUR] | Valuta-eenheid voor transactiebedrag |
+| [!UICONTROL PENDING] | Nog uit te betalen bedrag |
+| [!UICONTROL CUR] | Valuta-eenheid voor het uitstaande bedrag |
+| [!UICONTROL SELLER AMT] | Bedrag van aan of van een klant overgedragen middelen <br> <br>Bij fondsen die van de verkopersaccount worden afgevoerd, wordt een voorvoegsel voor een streepje (-) weergegeven. |
+| [!UICONTROL CUR] | Valuta-eenheid voor het bedrag van de verkoper |
+| [!UICONTROL PARTNER FEE] | Partner-kosten verbonden aan de transactie <br> <br>Bij fondsen die uit de rekening van de partnervergoeding worden verplaatst, wordt een voorvoegsel voor een streepje (-) weergegeven. |
+| [!UICONTROL CUR] | Valuta-eenheid voor partnergeld |
+| [!UICONTROL PROV FEES] | Aan de transactie gekoppelde kosten <br> <br>Bij geldmiddelen die uit de betaalrekening van de aanbieder worden verplaatst, wordt een voorvoegsel voor een streepje (-) weergegeven. |
+| [!UICONTROL CUR] | Valuta-eenheid voor leveranciersvergoeding |
+| [!UICONTROL FEE %] | Percentage van het transactiebedrag dat als vergoeding in rekening wordt gebracht |
+| [!UICONTROL FIXED FEE] | Vaste kosten provider |
+| [!UICONTROL CHBK FEE] | Restitutievergoeding voor de transactie <br> <br>Een voorvoegsel van het streepje (-) geeft aan dat de terugboekingskosten zijn teruggedraaid. |
+| [!UICONTROL CUR] | Valuta-eenheid voor terugboekingsvergoeding |
+| [!UICONTROL HOLD AMT] | In de wachtstand gezet of vrijgegeven bedrag <br> <br>Een streepje (-) voorvoegsel geeft aan dat gelden die in het bezit zijn, worden vrijgegeven. |
+| [!UICONTROL CUR] | Valuta-eenheid voor het bedrag van de reserve |
+| [!UICONTROL RECOUP AMT] | Bedrag teruggeboekt van de terugvorderingsrekening <br> <br>Bij fondsen die uit de terugvorderingsrekening worden verplaatst, wordt een voorvoegsel voor een streepje (-) weergegeven. |
+| [!UICONTROL CUR] | Valuta-eenheid voor het terugvorderingsbedrag |
 
 ### Transactietypen
 
