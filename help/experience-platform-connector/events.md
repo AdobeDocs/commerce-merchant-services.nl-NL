@@ -2,9 +2,9 @@
 title: Gebeurtenissen
 description: Leer welke gegevens elke gebeurtenis vastlegt.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: ddacfc053f83be750c63ba376519169b38f7f478
+source-git-commit: 7b34b66d5fb199e75b321a7d7ff0f98a3a0dcf8b
 workflow-type: tm+mt
-source-wordcount: '4596'
+source-wordcount: '4605'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Naast de gegevens die door de volgende gebeurtenissen worden verzameld, wordt oo
 
 ## Gebeurtenissen van Storefront
 
-De storefront-gebeurtenissen verzamelen geanonimiseerde gedragsgegevens van uw kopers wanneer ze door uw site bladeren. De gegevens die deze gebeurtenissen verzamelen, kunnen worden gebruikt voor het maken van promoties en campagnes voor een specifieke groep kopers.
+De storefront-gebeurtenissen verzamelen geanonimiseerde gedragsgegevens van uw kopers wanneer ze door uw site bladeren. U kunt de gegevens die deze gebeurtenissen verzamelen gebruiken om promoties en campagnes te maken voor een specifieke groep kopers. De gebeurtenisgegevens van Storefront omvatten eenvoudige en configureerbare slechts producten.
 
 >[!NOTE]
 >

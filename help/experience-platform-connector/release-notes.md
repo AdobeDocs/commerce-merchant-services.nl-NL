@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release
 description: De nieuwste release-informatie voor Adobe Experience Platform-connector vanuit Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: 22823b662eefa953fcca6ae78f6c37ee8abff3d1
+source-git-commit: b48f9eadda233f4996f1e1d806ecc973cfd241c2
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '371'
 ht-degree: 1%
 
 ---
@@ -28,6 +28,11 @@ Zie de documentatie voor ontwikkelaars [informatie over productcompatibiliteit](
 Deze versienota&#39;s beschrijven eigenschapveranderingen en moeilijke situaties met betrekking tot uitbreidingen die door de schakelaar van het Experience Platform worden gebruikt.
 
 +++Ondersteunde service-updates
+
+_10 juni 2023_
+
+* ![Repareren](../assets/fix.svg) - Probleem verholpen waarbij `orderId` niet in de context is doorgegaan vanwege voorvoegsels in de handels-orderidentificatiecode.
+* ![Repareren](../assets/fix.svg) - Bijgewerkte configuraties voor inhoudsbeveiligingsbeleid.
 
 _30 maart 2023_
 
