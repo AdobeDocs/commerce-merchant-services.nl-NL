@@ -2,9 +2,9 @@
 title: '''[!DNL Live Search] Opmerkingen bij de release'
 description: "De meest recente releasegegevens voor [!DNL Live Search] uit Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: f955cfc918c19a3c32126d8c9ef8a59b0e0dce0a
+source-git-commit: d4f22cdae9b4b0a19691465ae87e344847672698
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1277'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,11 @@ Updates zijn:
 ![Repareren](../assets/fix.svg) Oplossingen en verbeteringen
 ![Bug](../assets/bug.svg) Bekende problemen
 
+
+_13 juni 2023_
+
+![Nieuw](../assets/new.svg) Live zoeken biedt nu ondersteuning voor 5 extra [configuratiewaarden](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/configuration.html).
+![Repareren](../assets/fix.svg) Probleem verholpen waarbij bepaalde tekens, zoals aanhalingstekens of apostroffen, klasseringsproblemen veroorzaakten. Deze problemen worden opgelost door opnieuw te indexeren.
 
 _25 april 2023_
 

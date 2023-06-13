@@ -2,9 +2,9 @@
 title: "Facetten beheren"
 description: "Leer hoe u bestaande [!DNL Live Search] facetten."
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
-source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
+source-git-commit: bce69f952e70e2e8dcb892357dea41e18f61e5f6
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '476'
 ht-degree: 0%
 
 ---
@@ -62,6 +62,10 @@ De pin wordt blauw en de facet wordt naar de *Vastgezette gezichten* sectie.
 De pin wordt grijs en het facet wordt naar de *Dynamische factoren* sectie.
 
    ![Vastgezette en dynamische facetten](assets/facets-pinned-unpinned.png)
+
+>[!NOTE]
+>
+>Vastgezette facetvolgorde kan inconsistent zijn als er twee labels met dezelfde naam zijn.
 
 ## Vastgezet facet verplaatsen
 

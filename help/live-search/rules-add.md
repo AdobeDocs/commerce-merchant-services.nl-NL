@@ -2,9 +2,9 @@
 title: "Regels toevoegen"
 description: "Leer hoe u creeert [!DNL Live Search] regels."
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 2d4c96679b93a97e032fcbb50a27cbd579554795
+source-git-commit: 0b0e9a630162c4c98c6a3af969002def03155267
 workflow-type: tm+mt
-source-wordcount: '1401'
+source-wordcount: '1419'
 ht-degree: 0%
 
 ---
@@ -85,6 +85,10 @@ Winkeleigenaars kunnen de volgende typen classificatiestrategieën instellen:
 * Geen: De producten worden bevolen door Relevantie
 
 1. Selecteer het type strategie voor de regel. In het venster Test Your Rule worden de verwachte resultaten weergegeven.
+
+>[!NOTE]
+>
+>Apostroffen en aanhalingstekens in query&#39;s kunnen leiden tot enkele kleine problemen met rangschikking en relevantie in sommige talen.
 
 ## Gebeurtenissen toevoegen
 

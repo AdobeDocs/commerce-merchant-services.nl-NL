@@ -2,9 +2,9 @@
 title: "Overzicht aan boord"
 description: "[!DNL Live Search] instapkaartstroom, systeemvereisten, grenzen en beperkingen"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: 86e6fdb653278f3e70640155d697897a2ea1b674
+source-git-commit: 8f842732334dc8b1f8ebdf76310e16abe4e6b1b6
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '545'
 ht-degree: 0%
 
 ---
@@ -66,11 +66,31 @@ Klanten met Live zoeken kunnen de nieuwe [SaaS-prijsindexer](../price-index/inde
 
 ### PWA-ondersteuning
 
-Ondersteuning voor Live zoeken wordt beschouwd als een bètaversie omdat niet alle PWA is getest met [!DNL Live Search]. De basisfunctionaliteit zoals zoeken en pagina met productlijsten werkt in Venia, maar sommige permutaties van Graphql werken mogelijk niet correct.
+[!DNL Live Search] werkt met PWA Studio, maar de gebruikers kunnen kleine verschillen zien ten opzichte van andere uitvoeringen van de Handel. De basisfunctionaliteit zoals zoeken en pagina met productlijsten werkt in Venia, maar sommige permutaties van Graphql werken mogelijk niet correct. Er kunnen ook prestatieverschillen zijn.
 
-* De huidige bèta-PWA-implementatie van [!DNL Live Search] vereist meer verwerkingstijd om zoekresultaten te retourneren dan [!DNL Live Search] met de native Commerce-winkel.
-* [!DNL Live Search] in PWA ondersteunt niet [gebeurtenisafhandeling](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/).
+* De huidige PWA-uitvoering van [!DNL Live Search] vereist meer verwerkingstijd om zoekresultaten te retourneren dan [!DNL Live Search] met de native Commerce-winkel.
+* [!DNL Live Search] in PWA ondersteunt niet [gebeurtenisafhandeling](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). Intelligente handel werkt hierdoor niet.
 * Rechtstreeks filteren op `description`, `name`, `short_description` wordt niet ondersteund door GraphQL wanneer het wordt gebruikt met [PWA](https://developer.adobe.com/commerce/pwa-studio/), maar ze krijgen een meer algemeen filter.
+
+Te gebruiken [!DNL Live Search] met PWA Studio moeten de integrators ook :
+
+1. Installeren [livessearch-storefront-utils](https://www.npmjs.com/package/@magento/ds-livesearch-storefront-utils).
+1. Stel de `environmentId` in de `storeDetails` object.
+
+   ```javascript
+   const storeDetails: StoreDetailsProps = {
+       environmentId: <Storefront_ID>,
+       websiteCode: "base",
+       storeCode: "main_website_store",
+       storeViewCode: "default",
+       searchUnitId: searchUnitId,
+       config: {
+           minQueryLength: 5,
+           pageSize: 8,
+           currencySymbol: "$",
+           },
+       };
+   ```
 
 ### Momenteel niet ondersteund
 
