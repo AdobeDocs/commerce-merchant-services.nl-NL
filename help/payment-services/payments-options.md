@@ -2,9 +2,9 @@
 title: Betalingsopties
 description: Stel de betalingsopties in om de beschikbare methoden voor uw winkelklanten aan te passen.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: 44d36c530ba95f38c264ac40123ea12ec98c32b3
+source-git-commit: 36dd961d06f279143e90f3a1f5a6114db14e8c1b
 workflow-type: tm+mt
-source-wordcount: '1156'
+source-wordcount: '1171'
 ht-degree: 0%
 
 ---
@@ -107,7 +107,7 @@ Om uw opslag snel in productiemodus te krijgen kunt u _alleen_ PayPal-betalingsk
 
 Zo kunt u:
 
-* Geef uw klanten diverse betalingsopties zonder dat ze via PayPal een aanvraag voor creditcardgoedkeuring hoeven in te dienen.
+* Geef uw klanten diverse betalingsopties, waaronder de betaalknoppen Venmo en PayPal, met de optie om door PayPal gehoste kaartvelden uit te schakelen en een bestaande creditcardprovider te gebruiken.
 * Gebruik de bestaande creditcardprovider voor creditcardbetalingen en gebruik daarbij ook de andere betalingsopties van PayPal.
 * Gebruik de betalingsknoppen van PayPal in een regio waarin PayPal geen creditcards als betalingsoptie ondersteunt.
 

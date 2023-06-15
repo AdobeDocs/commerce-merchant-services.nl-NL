@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] Opmerkingen bij de release"
 description: Lees de opmerkingen bij de release voor meer informatie over alle [!DNL Payment Services] lozingen.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: e9209d7361d0dd6b6f502df9a898a5a35c53ec1a
+source-git-commit: 36dd961d06f279143e90f3a1f5a6114db14e8c1b
 workflow-type: tm+mt
-source-wordcount: '1971'
+source-wordcount: '1989'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Deze versienota&#39;s beschrijven eigenschapveranderingen en moeilijke situaties
 
 _9 juni 2023_
 
-![Nieuw](../assets/new.svg)<!-- Issue PAY-4288 --> Handelaren kunnen [vormen _alleen_ PayPal-betalingsknoppen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#use-only-paypal-payment-buttons)—en _niet_ Met de optie PayPal-creditcardbetaling kunt u allerlei betalingsopties bieden zonder dat u goedkeuring van een PayPal-creditcard hoeft aan te vragen.
+![Nieuw](../assets/new.svg)<!-- Issue PAY-4288 --> Handelaren kunnen [vormen _alleen_ PayPal-betalingsknoppen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#use-only-paypal-payment-buttons)—en _niet_ gebruik de betalingsoptie PayPal-creditcard. Op deze manier kunnen handelaren allerlei betalingsopties aanbieden, zoals de betalingsknoppen Venmo en PayPal, en een bestaande creditcardprovider gebruiken in plaats van de optie PayPal-creditcardbetaling.
 
 ![Nieuw](../assets/new.svg)<!-- Issue PAY-4050 --> Toegevoegde [gegevensvisualisatieweergave](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#order-payment-status-data-visualization-view), die wordt weergegeven op de startpagina van de betalingsservice, voor het rapport over de betalingsstatus van de bestelling.
 
