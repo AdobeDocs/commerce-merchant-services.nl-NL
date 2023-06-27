@@ -2,9 +2,9 @@
 title: '''[!DNL Catalog Service] Opmerkingen bij de release'
 description: De meest recente releasegegevens voor [!DNL Catalog Service] voor Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: f955cfc918c19a3c32126d8c9ef8a59b0e0dce0a
+source-git-commit: f5a7e5ca4d1978e7ee8683c0ff0be8ba554cc9b2
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '471'
 ht-degree: 0%
 
 ---
@@ -21,18 +21,13 @@ Updates zijn:
 
 ## Huidige hoofdversie
 
-_25 april 2023_
+### V1.10 Release
 
-![Nieuw](../assets/new.svg) Klanten van Catalog Service kunnen nu profiteren van de nieuwe [SaaS-prijsindexer](../price-index/index.md).
-
-### V1.7-release
-
-_12 april 2023_
+_27 juni 2023_
 
 [!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
 
-![Nieuw](../assets/new.svg) De Catalogusservice schoont verwijderde productvarianten op.
-![Repareren](../assets/fix.svg) Verbeterde schaalbaarheid en prestaties van de infrastructuur.
+![Nieuw](../assets/new.svg) Catalogusservice kan nu verwante producten weergeven in de widget pagina met productdetails.
 
 #### Bekende beperkingen
 
@@ -48,6 +43,15 @@ De volgende beperkingen kunnen worden opgelost met behulp van het API-net en de 
 * Minimale geadverteerde prijs
 * [Tier-prijsstelling](mesh.md)
 * Downloadbare producten en cadeaukaarten
+
+### V1.7-release
+
+_12 april 2023_
+
+[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+
+![Nieuw](../assets/new.svg) De Catalogusservice schoont verwijderde productvarianten op.
+![Repareren](../assets/fix.svg) Verbeterde schaalbaarheid en prestaties van de infrastructuur.
 
 ### V1.6-release
 
