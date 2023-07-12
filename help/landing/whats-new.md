@@ -4,9 +4,9 @@ description: Verzameling van wijzigingen in de documentatie voor alle diensten o
 seo-title: Adobe Commerce Services documentation changes
 seo-description: See a collated list of all documentation changes for Adobe Commerce Services and integration services.
 exl-id: dcc613e3-955e-4006-9984-bf05289d3bc1
-source-git-commit: e5e8bd93284a301e467daf7697e6a17b58380d11
+source-git-commit: a375f9fd38ef91d67878989f21fb278c402b3a8f
 workflow-type: tm+mt
-source-wordcount: '116'
+source-wordcount: '221'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,12 @@ ht-degree: 0%
 
 De volgende punten zijn recente veranderingen in de documentatie:
 
-| Dienst | Wijziging | Type | | — | — | — | | [**Catalogusservice**](../catalog-service/guide-overview.md) | Entiteits-id-sample toegevoegd aan de [API-net](../catalog-service/mesh.md) onderwerp.| Nieuw onderwerp | | [**Product Recommendations**](../product-recommendations/guide-overview.md) | Versie 5.0 toegevoegd aan Product Recommendations [Opmerkingen bij de release](../product-recommendations/release-notes.md)| Grote update | | [**Catalogusservice**](../catalog-service/guide-overview.md) | Bijgewerkt door de Catalogusservice [Opmerkingen bij de release](../catalog-service/release-notes.md) voor de 6 maart-release | Grote update | | [**Experience Platform Connector**](../experience-platform-connector/overview.md) | Toegevoegde documentatie voor [B2B-gebeurtenissen](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/event-forwarding/events.html#b2b-events) en [Back Office](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/event-forwarding/events.html#back-office-events) gebeurtenissen| Belangrijke update |
+| Service | Wijzigen | Type |
+| -- | -- | -- |
+| [**Betalingsdiensten**](../payment-services/overview.md) | Toegevoegde informatie over de nieuwe weergave voor gegevensvisualisatie voor de [Betalingsstatusrapport bestellen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html). | Primaire update |
+| [**Betalingsdiensten**](../payment-services/overview.md) | Toegevoegde [Uitchecken](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/checkout.html) om informatie over uitchecken en sectie over automatische uitroepopdrachten te sorteren wanneer een fout optreedt tijdens het uitchecken. | Nieuw onderwerp |
+| [**Betalingsdiensten**](../payment-services/overview.md) | Toegevoegd [informatie aan het onderwerp van Montages](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-roles) over het configureren van Admin-rollen met behulp van de bronnen van Betalingsservices om ervoor te zorgen dat Admin-gebruikers orders voor klanten kunnen maken en beheren. | Primaire update |
+| [**Betalingsdiensten**](../payment-services/overview.md) | Hiermee voegt u informatie toe aan de [Betalingsopties](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#debit-or-credit-card-button), [oudere configuratie](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/configure-admin.html#configure-paypal-smart-buttons), en [Instellingen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#payment-buttons) onderwerpen over het inschakelen van de knop Betalingsoptie via creditcard/bankpas. | Primaire update |
+| [**Betalingsdiensten**](../payment-services/overview.md) | Nieuwe sectie toegevoegd aan [Het onderwerp Betalingsopties](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#use-only-paypal-branded-payment-buttons) met informatie over het configureren van Betalingsservices, zodat alleen de betaalknoppen van het merk PayPal worden gebruikt. | Primaire update |
 
 Deze tabel wordt bijgewerkt op de eerste maandag van elke maand.
