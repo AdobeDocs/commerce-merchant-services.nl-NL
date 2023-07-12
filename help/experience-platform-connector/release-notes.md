@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release
 description: De nieuwste release-informatie voor Adobe Experience Platform-connector vanuit Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: 520a05f4cf944261a5f35baae045318e836b4a4b
+source-git-commit: 9dcb5a38f6ec2ed13a07d80b6a9d5a64efcc13ee
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '465'
 ht-degree: 1%
 
 ---
@@ -36,23 +36,35 @@ _10 juni 2023_
 
 _30 maart 2023_
 
-* ![Nieuw](../assets/new.svg) - Een nieuwe extensie met de naam `data-services-b2b` die [gebeurtenissen in aanvraaglijst](events.md#b2b-events) voor B2B-handelaren
+* ![Nieuw](../assets/new.svg) - Een nieuwe extensie met de naam `data-services-b2b` die [gebeurtenissen in aanvraaglijst](events.md#b2b-events) voor B2B-handelaren.
 * ![Nieuw](../assets/new.svg) - Toegevoegde `uniqueIdentifier` veld naar [zoeken](events.md#search-events) gebeurtenissen. In dit nieuwe veld kunnen verkopers kruisverwijzingen gebruiken naar zoekverzoeken die overeenkomen met de zoekantwoorden.
 
 _12 oktober 2022_
 
-* ![Nieuw](../assets/new.svg) - Twee toegevoegd [storefront, gebeurtenissen](events.md): `openCart` en `removeFromCart` naar de Adobe Commerce Storefront Events SDK en Collector
-* ![Nieuw](../assets/new.svg) - Toegevoegde ondersteuning voor een [AEM storefront](overview.md#aem-support)
+* ![Nieuw](../assets/new.svg) - Twee toegevoegd [storefront, gebeurtenissen](events.md): `openCart` en `removeFromCart` naar de Adobe Commerce Storefront Events SDK en Collector.
+* ![Nieuw](../assets/new.svg) - Toegevoegde ondersteuning voor een [AEM storefront](overview.md#aem-support).
 
 +++
 
-## 3.0.0-bèta1
+## 2.3.0
+
+_27 juni 2023_
+
+[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+
+* ![Nieuw](../assets/new.svg) - Toegevoegde mogelijkheden tot [verzenden van storefront-gebeurtenissen uitschakelen](connect-data.md#data-collection) aan het Experience Platform.
+* ![Repareren](../assets/fix.svg) - Bijgewerkte configuraties voor inhoudsbeveiligingsbeleid.
+* ![Repareren](../assets/fix.svg) - Vaste ondersteuning voor back office evenementen op de versie Commerce 2.4.7.
+* ![Nieuw](../assets/new.svg) - Er is een melding toegevoegd over cachevalidatie wanneer u wijzigingen opslaat in het verbindingsformulier van het Experience Platform.
+
+
+## 3.0.0-bèta1 (alleen intern)
 
 _13 juni 2023_
 
 [!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
 
-* ![Nieuw](../assets/new.svg) - (Beta) Toegevoegde mogelijkheid tot [historische order verzenden](connect-data.md#beta-send-historical-order-data) gegevens en status aan het Experience Platform.
+* ![Nieuw](../assets/new.svg) - (Beta) Toegevoegde mogelijkheid tot [historische order verzenden](connect-data.md#beta-send-historical-order-data) gegevens en status aan het Experience Platform. Deze functie is alleen beschikbaar voor bètagebruikers. U kunt deelnemen aan de bètaversie door een e-mail naar het volgende adres te verzenden: [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
 
 ## 2.2.0
 
@@ -69,7 +81,7 @@ _28 februari 2023_
 
 [!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
 
-* ![Nieuw](../assets/new.svg) - Toegevoegde ondersteuning voor PHP 8.2 voor alle Experience Platform connectormodules
+* ![Nieuw](../assets/new.svg) - Toegevoegde ondersteuning voor PHP 8.2 voor alle Experience Platform connectorextensies.
 
 ## 2.1.0
 
@@ -94,8 +106,8 @@ _12 oktober 2022_
 
 [!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
 
-* ![Nieuw](../assets/new.svg) - Toegevoegde mogelijkheid om uw eigen AEP Web SDK op te geven wanneer [verbinden](connect-data.md) Adobe Commerce-exemplaar naar het Experience Platform
-* ![Repareren](../assets/fix.svg) - Vereisten voor het bijwerken van het bereik van de gegevensstroom, zodat de gegevensstroom-id&#39;s binnen het bereik van de website moeten worden geplaatst in plaats van dat ze moeten worden opgeslagen
+* ![Nieuw](../assets/new.svg) - Toegevoegde mogelijkheid om uw eigen AEP Web SDK op te geven wanneer [verbinden](connect-data.md) uw Adobe Commerce-exemplaar naar het Experience Platform.
+* ![Repareren](../assets/fix.svg) - Vereisten voor een bijgewerkt gegevensstroombereik, zodat de gegevensstroom-id&#39;s binnen het bereik van de website moeten worden geplaatst in plaats van dat ze moeten worden opgeslagen.
 
 ## 1.0.0
 
@@ -103,4 +115,4 @@ _9 augustus 2022_
 
 [!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
 
-* ![Nieuw](../assets/new.svg) - Algemene beschikbaarheidsrelease
+* ![Nieuw](../assets/new.svg) - Algemene beschikbaarheidsrelease.

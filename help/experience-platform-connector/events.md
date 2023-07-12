@@ -2,7 +2,7 @@
 title: Gebeurtenissen
 description: Leer welke gegevens elke gebeurtenis vastlegt.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: 7b34b66d5fb199e75b321a7d7ff0f98a3a0dcf8b
+source-git-commit: 1484a465f3ce5b5578a7c5cf3f5f3b7d68d69c41
 workflow-type: tm+mt
 source-wordcount: '4605'
 ht-degree: 0%
@@ -328,7 +328,7 @@ Gebruik de `uniqueIdentifier` veld gevonden in beide `searchRequestSent` en `sea
 
 >[!NOTE]
 >
->Zoekgebeurtenissen worden niet ondersteund op een Adobe Commerce Enterprise Edition met de B2B-module geïnstalleerd.
+>Zoekgebeurtenissen worden niet ondersteund op een Adobe Commerce Enterprise Edition met de B2B-extensie geïnstalleerd.
 
 #### Gegevens verzameld van searchRequestSent
 
@@ -355,7 +355,7 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 
 >[!NOTE]
 >
->Zoekgebeurtenissen worden niet ondersteund op een Adobe Commerce Enterprise Edition met de B2B-module geïnstalleerd.
+>Zoekgebeurtenissen worden niet ondersteund op een Adobe Commerce Enterprise Edition met de B2B-extensie geïnstalleerd.
 
 #### Gegevens verzameld van searchResponseReceived
 

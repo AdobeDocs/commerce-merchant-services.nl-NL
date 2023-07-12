@@ -2,7 +2,7 @@
 title: Connect Commerce-gegevens naar Adobe Experience Platform
 description: Leer hoe u de gegevens van de Handel met de Adobe Experience Platform verbindt.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
-source-git-commit: 8c2f275354eb4deba151ccdd83302e4b2cc5d4c9
+source-git-commit: 1484a465f3ce5b5578a7c5cf3f5f3b7d68d69c41
 workflow-type: tm+mt
 source-wordcount: '1952'
 ht-degree: 0%
@@ -162,7 +162,7 @@ Om de historische inzameling van ordegegevens voor bèta toe te laten, moet u de
 
 ### bèta van historische volgorde configureren
 
-Om ervoor te zorgen dat uw klantenordegeschiedenis naar Experience Platform kan worden verzonden, moet u geloofsbrieven specificeren die uw instantie van de Handel met Experience Platform verbinden. Als u reeds geïnstalleerd en toegelaten hebt [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) hebt u al de benodigde gegevens opgegeven en kunt u deze stap overslaan. Voer de volgende stappen uit als u de Audience Activation-module nog niet hebt geïnstalleerd en ingeschakeld:
+Om ervoor te zorgen dat uw klantenordegeschiedenis naar Experience Platform kan worden verzonden, moet u geloofsbrieven specificeren die uw instantie van de Handel met Experience Platform verbinden. Als u reeds geïnstalleerd en toegelaten hebt [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) hebt opgegeven en kunt u deze stap overslaan. Voer de volgende stappen uit als u de extensie Audience Activation nog niet hebt geïnstalleerd en ingeschakeld:
 
 >[!NOTE]
 >
@@ -225,7 +225,7 @@ In deze sectie, specificeert u de datumwaaier voor de historische orden u naar E
 
    ![Gegevensset-id kopiëren](./assets/retrieve-dataset-id.png){width="700" zoomable="yes"}
 
-1. In de **Van** en **Naar** in de velden wordt het gegevensbereik opgegeven voor de historische ordergegevens die u wilt verzenden. U kunt geen datumbereik selecteren dat langer is dan vijf jaar.
+1. In de **Van** en **Naar** in de velden wordt het gegevensbereik opgegeven voor de historische volgordegegevens die u wilt verzenden. U kunt geen datumbereik selecteren dat langer is dan vijf jaar.
 
 1. Selecteren [!UICONTROL Start Sync] om de synchronisatie te activeren. Historische ordegegevens zijn batchgegevens in tegenstelling tot opslag en achterkantoorgegevens die gegevens stromen. Het duurt ongeveer 45 minuten voordat de gegevens in de batch in Experience Platform zijn ontvangen.
 
