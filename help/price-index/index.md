@@ -4,9 +4,9 @@ description: De SaaS Price Indexing gebruiken om prestaties te verbeteren
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
-source-git-commit: a93ada3230d3d29dd6b79f67a61ede38de7dc250
+source-git-commit: 19c4d3263c22914672b38c5dc5ec9908889bb9b6
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '752'
 ht-degree: 0%
 
 ---
@@ -83,16 +83,16 @@ Nieuwe feeds moeten handmatig worden gesynchroniseerd met de `resync` [CLI, opdr
 
 ### Luminantie zonder extensieafhankelijkheden
 
-* Een Luma of Abode Commerce Core GraphQL-handelaar die een vereiste service heeft geïnstalleerd (Live Search, Product Recommendations, Catalog Service)
+* Een Luma- of Adobe Commerce Core GraphQL-handelaar die een vereiste service heeft geïnstalleerd (Live Search, Product Recommendations, Catalog Service)
 * Geen uitbreidingen van derden die afhankelijk zijn van de PHP-basisprijsindexeerder
 * Eenvoudige, configureerbare, gegroepeerde, virtuele en bundeldynamische producten verkopen
 
 1. Nieuwe feeds inschakelen.
 1. Installeer de catalogusadapter.
 
-### Luma en Abode Commerce Core GraphQl met PHP-afhankelijkheden voor de indexering van de basisprijs
+### Luma en Adobe Commerce Core GraphQl met PHP core price indexer afhankelijkheden
 
-* Een Luma of Abode Commerce Core GraphQL-handelaar die een ondersteunde service heeft geïnstalleerd (Live Search, Product Recommendations, Catalog Service)
+* Een Luma- of Adobe Commerce Core GraphQL-handelaar die een ondersteunde service heeft geïnstalleerd (Live Search, Product Recommendations, Catalog Service)
 * Met een extensie van derden die afhankelijk is van de PHP-basisprijsindexer
 * Eenvoudige, configureerbare, gegroepeerde, virtuele en bundeldynamische producten verkopen
 

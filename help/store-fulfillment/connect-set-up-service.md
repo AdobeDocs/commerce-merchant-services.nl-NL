@@ -4,9 +4,9 @@ description: Bepaal de verbindingen tussen Adobe Commerce en de oplossing van de
 role: User, Admin
 level: Intermediate
 exl-id: 74c71c43-305a-4ea7-84f8-95f3ce0a9482
-source-git-commit: e7493618e00e28e2de5043ae2d7e05a81110d8f1
+source-git-commit: 19c4d3263c22914672b38c5dc5ec9908889bb9b6
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '453'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,10 @@ Om Adobe Commerce met de diensten van de Afhandeling van de Opslag te integreren
    - Voer uw e-mailadres in
    - Wachtwoord voor beheerdersaccount invoeren
 
-1. Configureren [!UICONTROL API Resource Access permissions] voor de integratie—selecteer `[!UICONTROL All]`
+1. Vorm de toestemmingen van de Toegang van het Middel API voor de integratie met het volgende:
+
+   - Verkoop > BOPIS Order-update
+   - Systeem > Toepassingsmachtigingen opslaan
 
 1. Genereer de toegangstokens voor verificatie door de integratie op te slaan en te activeren.
 
