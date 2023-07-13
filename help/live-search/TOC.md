@@ -2,7 +2,9 @@
 user-guide-title: "[!DNL Live Search] Hulplijn"
 user-guide-description: "Deze handleiding bevat gedetailleerde instructies voor het gebruik van [!DNL Live Search] uit Adobe Commerce."
 breadcrumb-title: "[!DNL Live Search] Hulplijn"
-source-git-commit: e763eb8e283319b30b19dbb13284e9616196ae48
+role: Admin
+feature: Services, Search
+source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
 workflow-type: tm+mt
 source-wordcount: '96'
 ht-degree: 0%
