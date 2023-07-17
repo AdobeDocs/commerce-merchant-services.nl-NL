@@ -2,11 +2,11 @@
 title: Financiële verslaggeving
 description: "[!DNL Payment Services] biedt uitgebreide rapportage zodat u een duidelijk overzicht kunt krijgen van de bestellingen en betalingen van uw winkel."
 role: User
-feature: Payments
+feature: Payments, Checkout
 level: Intermediate
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 3f90e508e6cbb8d7a119587dabd86e709c08d508
 workflow-type: tm+mt
-source-wordcount: '78'
+source-wordcount: '79'
 ht-degree: 0%
 
 ---
@@ -17,4 +17,4 @@ ht-degree: 0%
 
 ![Financiële verslagen](assets/reports-view.png)
 
-De rapporten van het beheer van de cashflow—Uitbetalingen en betalingsstatus van bestellingen—synchroniseren betalingsgegevens met ordergegevens om u volledige transparantie te geven van het verwerkte volume, het betalingssaldo en gedetailleerde rapportage op transactieniveau voor financiële afstemming.
+De kasstroombeheerrapporten—Uitbetalingen, Transacties en Betalingsstatus van bestellingen—synchroniseren betalingsgegevens met bestelgegevens om u volledige transparantie te geven van verwerkt volume, betalingssaldo en gedetailleerde rapportage op transactieniveau voor financiële afstemming.
