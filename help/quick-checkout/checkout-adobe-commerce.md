@@ -2,7 +2,8 @@
 title: "Afhandelingsstroom voor een Adobe Commerce-gebruiker"
 description: "Overzicht van de [!DNL Quick Checkout] voor een Adobe Commerce-gebruiker."
 exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
-source-git-commit: f790732804e110aad298689c0ddf74547ff17618
+feature: Checkout, Services, Storefront
+source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 0%
@@ -64,4 +65,4 @@ Indien niet [!DNL Bolt] -account is gevonden, kunnen kopers hun standaard buiten
 - Betalingsmethode controleren
 - De optie om u aan te melden [!DNL Bolt] voor snellere kassa&#39;s voordat de bestelling wordt geplaatst. De winkelier kan akkoord gaan met de voorwaarden om hun [!DNL Bolt] account.
 
-   ![Herinneren [!DNL Bolt]](assets/checkbox-remember-bolt.png)
+  ![Herinneren [!DNL Bolt]](assets/checkbox-remember-bolt.png)

@@ -2,7 +2,8 @@
 title: "[!DNL Quick Checkout] voor Adobe Commerce"
 description: "Leer hoe u [!DNL Quick Checkout] kan uw Adobe Commerce-exemplaar ten goede komen en de extensie met succes aan boord installeren en instellen."
 exl-id: 6f205568-18af-4f2f-827c-b46f04e0a10a
-source-git-commit: 9841db7616c8aa6d5bc5af3e6e92c0abe9a4a1e2
+feature: Checkout, Services
+source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 0%
@@ -11,7 +12,7 @@ ht-degree: 0%
 
 # [!DNL Quick Checkout] voor Adobe Commerce
 
-De [!DNL Quick Checkout] voor Adobe Commerce-extensies is een naadloze afrekenervaring ontworpen om eenmalige gastklanten om te zetten in loyale rekeninghouders. Winkelaars verwachten een snelle winkelervaring. En toch blijft wrijving bij de afrekening een belangrijke reden waarom kopers hun aankoop niet voltooien. Wanneer u het afrekenen stroomlijnt en de conversiesnelheid verbetert, kunt u zich vrijelijk concentreren op werkelijk onbelangrijke zaken.
+De [!DNL Quick Checkout] voor Adobe Commerce-extensies is een naadloze afrekenervaring ontworpen om eenmalige gastklanten om te zetten in loyale rekeninghouders. Winkelaars verwachten een snelle winkelervaring. En toch blijft wrijving in de kassa een belangrijke reden waarom kopers hun aankoop niet voltooien. Wanneer u het afrekenen stroomlijnt en de conversiesnelheid verbetert, kunt u zich vrijelijk concentreren op werkelijk onbelangrijke zaken.
 
 Deze handleiding biedt een overzicht van de gebruikelijke afrekenervaring voor Adobe Commerce en van de manier waarop de [!DNL Quick Checkout] voordelen en beste praktijken om die reis te volgen.
 

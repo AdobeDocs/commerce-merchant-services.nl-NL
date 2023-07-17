@@ -2,7 +2,8 @@
 title: Een bestelling maken met [!DNL Quick Checkout] in Admin
 description: De beheerder biedt de mogelijkheid om een bestelling te plaatsen met [!DNL Quick Checkout] rechtstreeks van de Admin door een handelaar voor hun klanten die hulp nodig hebben.
 exl-id: 52cb8afb-fb23-468d-94b4-9f9142c54ce0
-source-git-commit: 01bb92d1de1f6a6da1d6326c0190eb7711274045
+feature: Checkout, Services
+source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '190'
 ht-degree: 0%

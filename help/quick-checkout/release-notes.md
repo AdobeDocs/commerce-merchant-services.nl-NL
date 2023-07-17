@@ -2,7 +2,8 @@
 title: '''[!DNL Quick Checkout] Opmerkingen bij de release'
 description: Lees de opmerkingen bij de release voor meer informatie over alle [!DNL Quick Checkout] lozingen.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 169b3e365d7f4c0c4cef19fa1941dfa0a95ea58b
+feature: Release Notes, Services, Checkout
+source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '1422'
 ht-degree: 0%
@@ -197,7 +198,7 @@ _9 augustus 2022_
 
 ![Nieuw](../assets/new.svg)<!-- Issue BOLT-780 --> Je kopers kunnen uitchecken via de [[!DNL Quick Checkout]](checkout-page.md) of via een [handbestelling maken](create-order-admin.md).
 
-![Nieuw](../assets/new.svg)<!-- Issue BOLT-666 --> Handelaars kunnen de [!DNL Quick Checkout] met basisbetalingsacties, zoals [`Authorize and Capture` of `Authorize` ](onboarding.md#complete-admin-configuration)of schakelen tussen sandbox- en productieomgevingen.
+![Nieuw](../assets/new.svg)<!-- Issue BOLT-666 --> Handelaars kunnen de [!DNL Quick Checkout] met basisbetalingsacties, zoals [`Authorize and Capture` of `Authorize`](onboarding.md#complete-admin-configuration)of schakelen tussen sandbox- en productieomgevingen.
 
 ![Nieuw](../assets/new.svg)<!-- Issue BOLT-288 --> Aangepast [gebruikerssessielevensduur](user-session-lifetime.md) for [!DNL Quick Checkout] voor Adobe Commerce.
 
