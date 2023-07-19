@@ -2,7 +2,7 @@
 title: "[!DNL Live Search] Indexeren"
 description: "Meer informatie [!DNL Live Search] indexes product attribute properties."
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 9be12e2ce8231dc188e3b79bba3e39d3cff52892
+source-git-commit: 7eece9b341a27637d7ac00216f18b7fad7c50740
 workflow-type: tm+mt
 source-wordcount: '581'
 ht-degree: 0%
@@ -73,7 +73,7 @@ Workflow voor gestreamde updates:
 
 ## Clientzoekopdracht
 
-De [!DNL Live Search] Met API kan een client op elk sorteerbaar productkenmerk sorteren door het instellen van de [storefront, eigenschap](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html), *Wordt gebruikt voor sorteren in productaanbiedingen* tot `Yes`. Afhankelijk van het thema zorgt deze instelling ervoor dat het kenmerk als optie wordt opgenomen in het dialoogvenster [Sorteren op](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation.html) Pagineringsbesturingselement op cataloguspagina&#39;s. Tot 300 productkenmerken kunnen worden geïndexeerd door [!DNL Live Search], met [storefront, eigenschappen](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) die doorzoekbaar en filterbaar zijn.
+De [!DNL Live Search] Met API kan een client op elk sorteerbaar productkenmerk sorteren door het instellen van de [storefront, eigenschap](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html), *Wordt gebruikt voor sorteren in productaanbiedingen* tot `Yes`. Afhankelijk van het thema zorgt deze instelling ervoor dat het kenmerk als optie wordt opgenomen in het dialoogvenster [Sorteren op](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation.html) Pagineringsbesturingselement op cataloguspagina&#39;s. Maximaal 200 productkenmerken kunnen worden geïndexeerd door [!DNL Live Search], met [storefront, eigenschappen](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) die doorzoekbaar en filterbaar zijn.
 De indexmeta-gegevens worden opgeslagen in de indexerende pijpleiding en door de onderzoeksdienst toegankelijk.
 
 ![[!DNL Live Search] API-diagram voor indexmetagegevens](assets/index-metadata-api.svg)

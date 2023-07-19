@@ -3,9 +3,9 @@ title: '''[!DNL Catalog Service] Opmerkingen bij de release'
 description: De meest recente releasegegevens voor [!DNL Catalog Service] voor Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: 7eece9b341a27637d7ac00216f18b7fad7c50740
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '496'
 ht-degree: 0%
 
 ---
@@ -22,13 +22,13 @@ Updates zijn:
 
 ## Huidige hoofdversie
 
-### V1.10 Release
+### V1.11 Release
 
-_27 juni 2023_
+_18 juli 2023_
 
 [!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
 
-![Nieuw](../assets/new.svg) Catalogusservice kan nu verwante producten weergeven in de widget pagina met productdetails.
+![Nieuw](../assets/new.svg) Catalogusservice biedt nu ondersteuning voor de [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) GraphQL-query voor Product Recommendations.
 
 #### Bekende beperkingen
 
@@ -44,6 +44,14 @@ De volgende beperkingen kunnen worden opgelost met behulp van het API-net en de 
 * Minimale geadverteerde prijs
 * [Tier-prijsstelling](mesh.md)
 * Downloadbare producten en cadeaukaarten
+
+### V1.10 Release
+
+_27 juni 2023_
+
+[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+
+![Nieuw](../assets/new.svg) Catalogusservice kan nu verwante producten weergeven in de widget pagina met productdetails.
 
 ### V1.7-release
 
