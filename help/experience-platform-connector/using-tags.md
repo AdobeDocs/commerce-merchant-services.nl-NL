@@ -2,9 +2,11 @@
 title: Gegevens voor handel verzamelen met Adobe Experience Platform-tags
 description: Leer hoe u gegevens over handel kunt verzamelen met Adobe Experience Platform-tags.
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: bdd1378dcbbe806c98e8486a985389b2d0d4f34e
+role: Admin, Developer
+feature: Personalization, Integration
+source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
 workflow-type: tm+mt
-source-wordcount: '2650'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -24,9 +26,9 @@ Gegevens over Commerce-gebeurtenissen verzamelen:
 
 - Installeer de [Adobe Commerce Events SDK](https://github.com/adobe/commerce-events/tree/main/packages/commerce-events-sdk). Voor PHP-winkels raadpleegt u de [installeren](install.md) onderwerp. Voor PWA Studio-winkels raadpleegt u de [Hulplijn PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/).
 
-   >[!NOTE]
-   >
-   > Do **niet** [vormen](connect-data.md) de organisatie-id en de gegevensstroom-id.
+  >[!NOTE]
+  >
+  > Do **niet** [vormen](connect-data.md) de organisatie-id en de gegevensstroom-id.
 
 ## Opslaggegevens voor Handel toewijzen aan Adobe Experience Platform
 
@@ -843,13 +845,13 @@ Maak de volgende gegevenselementen:
    - **Extensie**: `Adobe Client Data Layer`
    - **Type gegevenselement**: `Data Layer Computed State`
    - **[Optioneel] pad**: `productContext.mainImageUrl`
+
    1. Winkelwagentje:
+
    - **Naam**: `cart`
    - **Extensie**: `Adobe Client Data Layer`
    - **Type gegevenselement**: `Data Layer Computed State`
    - **[Optioneel] pad**: `shoppingCartContext`
-
-
 
 1. Kart-id:
 

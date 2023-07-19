@@ -2,9 +2,10 @@
 title: Overzicht van hulplijnen
 description: Leer hoe u Adobe Commerce-gegevens met Adobe Experience Platform kunt integreren via de aansluiting van het Experience Platform.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
-source-git-commit: 0d5bbe7d4e2070173930df66c4f159d65c7383ea
+recommendations: noCatalog
+source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
