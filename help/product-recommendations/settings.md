@@ -2,9 +2,9 @@
 title: Instellingen
 description: Leer hoe u de bron van uw [!DNL Product Recommendations] gegevens en hoe te om visuele aanbevelingen toe te laten.
 exl-id: 8c074e11-e0cb-4d55-b646-30279c79bbc2
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 48e350167611a2737d79bf5decccd7f6f24c714c
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '437'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 Wanneer u [een SaaS-gegevensruimte configureren](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) voor Recommendations verzamelt de SaaS-gegevensruimte catalogusgegevens en gegevens over storefront-gedrag. [Adobe Sensei](https://www.adobe.com/sensei.html) analyseert dat gegevens en vergelijkt productverenigingen die worden gebruikt om Product Recommendations te bedienen.
 
 Niet-productieomgevingen voor het testen of opvoeren hebben doorgaans niet de hoeveelheid of kwaliteit van gedragsgegevens van de winkel om realistische productaanbevelingen te kunnen doen. Werkelijk winkelgedrag op schaal kan alleen in een productieomgeving worden vastgelegd. Om dit probleem op te lossen, staat Adobe Commerce u toe om productaanbevelingen van uw productiemilieu met andere, niet productieSaaS gegevensruimten te gebruiken. Met werkelijke storefront-gegevens in een niet-productieomgeving kunt u een voorvertoning weergeven van de aanbevelingen die uw klanten zien en experimenteren met verschillende soorten aanbevelingen en plaatsingslocaties. Recommendations vanuit een andere SaaS-gegevensruimte kan door kopers worden voorvertoond, maar er wordt niet op geklikt.
+
+>[!NOTE]
+>
+>Als u Product Recommendations via REST gebruikt, wordt `alternateEnvironmentId` De parameter kan worden gebruikt om andere dataspaces te specificeren. Wanneer u Product Recommendations via GraphQL gebruikt, is deze parameter niet beschikbaar.
 
 ## Kies de bron voor aanbevelingen
 
