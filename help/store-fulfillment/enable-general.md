@@ -1,19 +1,19 @@
 ---
 title: Algemene configuratie
 description: Algemene instellingen configureren om in te schakelen [!DNL Store Fulfillment] voor uw winkel. Configureer algemene extensie-instellingen, systeeminstellingen voor registratie, gegevenssynchronisatie en beveiliging. Belangrijke gegevens leveren om de integratie tussen Adobe Commerce en Store Fulfillment Services mogelijk te maken.
-role: User, Admin
+role: Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: e7493618e00e28e2de5043ae2d7e05a81110d8f1
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
-source-wordcount: '2440'
+source-wordcount: '2419'
 ht-degree: 0%
 
 ---
 
 # Winkelservice en verkoopconfiguratie
 
-Configureren [!DNL Store Fulfillment] van de [!DNL Commerce] Admin om de extensie in te schakelen, extensie-instellingen op te geven, de beveiligingsinstellingen voor gebruikers van de app Store Assist te configureren en opties voor leveringsmethoden in te stellen.
+Inschakelen [!DNL Store Fulfillment] van de [!DNL Commerce] Beheer door extensie-instellingen te configureren, de beveiligingsinstellingen voor gebruikers van de app Store Assist en de opties voor de leveringsmethode.
 
 >[!IMPORTANT]
 >
@@ -25,11 +25,11 @@ Instellingen beheren voor services voor winkelvervulling via de [!DNL Commerce A
 
 - Schakel de extensie in, configureer algemene instellingen en geef beveiligingsopties op voor gebruikersverbindingen en accounts van de app Store Assist door **[!UICONTROL Stores > Configuration > Services > Store Fulfillment by Walmart Commerce Technologies]**.
 
-   ![Configuratie van beheerderswinkelservices voor winkeluitvoering](assets/store-services-admin-sf-config.png)
+  ![Configuratie van beheerderswinkelservices voor winkeluitvoering](assets/store-services-admin-sf-config.png)
 
 - Vorm leveringsmethodes door te selecteren **[!UICONTROL Store > Configuration > Sales > Delivery Methods > In-Store Pickup]**.
 
-   ![Verkoopconfiguratie voor winkel beheren voor winkeluitvoering](assets/store-sales-admin-sf-deliver-config.png)
+  ![Verkoopconfiguratie voor winkel beheren voor winkeluitvoering](assets/store-sales-admin-sf-deliver-config.png)
 
 ## Basisinstellingen
 
@@ -109,7 +109,7 @@ De optie [!DNL Store Fulfillment] -oplossing om de mogelijkheden voor in-store e
 </tr>
 <tr>
 <td><strong>[!UICONTROL API Server URL]</strong></td>
-<td>De URL naar het eindpunt van de Fulfillment API van de Winkel van de Marm. Dit moet de volledig gekwalificeerde URL zijn die tijdens het instapproces wordt verstrekt. Klanten die aan Afhandeling van winkels werken, ontvangen zowel een sandbox- als een productie-URL. Wanneer u de waarden toevoegt, moet u de volledige URL kopiëren en plakken, inclusief de schuine streep "/".</td>
+<td>De URL naar het eindpunt van de Fulfillment API van de Winkel van de Marm. De waarde moet de volledig gekwalificeerde URL zijn die tijdens het instapproces wordt verstrekt. Klanten die aan Afhandeling van winkels werken, ontvangen zowel een sandbox- als een productie-URL. Wanneer u de waarden toevoegt, moet u de volledige URL kopiëren en plakken, inclusief de schuine streep "/".</td>
 <td>Algemeen</td>
 <td>Ja</td>
 </tr>
@@ -190,7 +190,7 @@ U kunt details over de verrichtingen van de ordesynchronisatie van het dashboard
 </tr>
 <tr>
 <td><strong>[!UICONTROL Retry Critical Error]</strong></td>
-<td>Hiermee worden de pogingen voor het opnieuw proberen van een recordsynchronisatiebewerking opgegeven nadat een kritieke fout is opgetreden.<br></br>De kritieke fouten komen voor wanneer de integratie er niet in slaagt een positieve reactie van de uitvoeringsdienst te krijgen. Dit kan voorkomen wanneer de dienst neer is of wanneer er een fout in de ordegegevens die wordt verzonden is.<br></br>Wanneer de drempel voor opnieuw proberen is bereikt, blijft het item in een wachtrij maar wordt het niet opnieuw verwerkt. Alle items weergeven met fouten van <strong>[!UICONTROL System > Tools > Store Fulfillment Queue]</strong> Beheer in de beheerder. Neem contact op met uw accountmanager om problemen op te lossen met onderdelen die op consistente wijze mislukken.</td>
+<td>Hiermee worden de pogingen voor het opnieuw proberen van een recordsynchronisatiebewerking opgegeven nadat een kritieke fout is opgetreden.<br></br>De kritieke fouten komen voor wanneer de integratie er niet in slaagt een positieve reactie van de uitvoeringsdienst te krijgen. Deze kwesties komen voor wanneer de dienst neer is, of wanneer er een fout in de ordegegevens is die worden verzonden.<br></br>Wanneer de drempel voor opnieuw proberen is bereikt, blijft het item in een wachtrij maar wordt het niet opnieuw verwerkt. Alle items weergeven met fouten van <strong>[!UICONTROL System > Tools > Store Fulfillment Queue]</strong> Beheer in de beheerder. Neem contact op met uw accountmanager om problemen op te lossen met onderdelen die op consistente wijze mislukken.</td>
 <td>Algemeen</td>
 <td>Nee</td>
 </tr>
@@ -228,7 +228,7 @@ U kunt details over de verrichtingen van de ordesynchronisatie van het dashboard
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Barcode Source]</strong></td>
-<td>Het cataloguskenmerk dat de scannbare code voor overeenkomende items opslaat op uw bedrijfslocaties.<br></br>Als u slechts één bestaande handelsplaats hebt, is het waarschijnlijk dat u codes UPC gebruikt, terwijl uw e-commercekanaal producten door SKU identificeert. Als dit uw scenario is, selecteer het catalogusattribuut dat de code UPC bevat.<br></br>Deze instelling zorgt ervoor dat bestellingen die naar de items in de winkellijst worden verzonden met de juiste id, zodat de opslagpartners items tijdens het plukproces op nauwkeurige wijze kunnen scannen.<br></br>Als u onzeker bent, controleer met uw uitvoeringsvennoten in de Verzending en het Schoppen afdeling om te bepalen welke attributen zouden moeten worden verzonden. Mogelijk moet u het juiste kenmerk toevoegen aan de set Adobe Commerce-productkenmerken als het kenmerk momenteel niet in de database is opgenomen.</td>
+<td>Het cataloguskenmerk dat de scannbare code voor overeenkomende items opslaat op uw bedrijfslocaties.<br></br>Als u slechts één bestaande handelsplaats hebt, is het waarschijnlijk dat u codes UPC gebruikt, terwijl uw e-commercekanaal producten door SKU identificeert. In dit scenario, selecteer het catalogusattribuut dat de code UPC bevat.<br></br>Deze instelling zorgt ervoor dat bestellingen die naar de items in de winkellijst worden verzonden met de juiste id, zodat de opslagpartners items tijdens het plukproces op nauwkeurige wijze kunnen scannen.<br></br>Als u onzeker bent, controleer met uw uitvoeringsvennoten in de Verzending en het Schoppen afdeling om te bepalen welke attributen zouden moeten worden verzonden. Als het kenmerk momenteel niet is opgenomen in de database, kunt u het kenmerk toevoegen aan de set Adobe Commerce-productkenmerken.</td>
 <td>Website</td>
 <td>Ja</td>
 </tr>
@@ -240,7 +240,7 @@ U kunt details over de verrichtingen van de ordesynchronisatie van het dashboard
 </tr>
 <tr>
 <td><strong>[!UICONTROL Max Number of Items]</strong></td>
-<td>Het maximumaantal items dat in één keer uit de wachtrij voor winkelvervulling moet worden verzonden.<br></br>BOPIS-orders worden op regelmatige tijdstippen batchgewijs naar de uitvoeringsdienst verzonden. Met deze instelling kunt u de grootte van de batch bepalen.<br></br>De standaardwaarde is 100 items. Afhankelijk van het volume en de capaciteit van uw bestelling moet u deze waarde mogelijk omhoog of omlaag aanpassen.</td>
+<td>Het maximumaantal items dat in één keer uit de wachtrij voor winkelvervulling moet worden verzonden.<br></br>BOPIS-orders worden op regelmatige tijdstippen batchgewijs naar de uitvoeringsdienst verzonden. Met deze instelling kunt u de grootte van de batch bepalen.<br></br>De standaardwaarde is 100 items. Afhankelijk van het volume en de capaciteit van uw bestelling kunt u de maximale waarde naar boven of naar beneden aanpassen.</td>
 <td>Algemeen</td>
 <td>Nee</td>
 </tr>
@@ -265,7 +265,7 @@ Configureer de verzendopties voor de afhandeling van winkels die de beschikbaarh
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Enable Ship To Store]</strong></td>
-<td>De instelling voor het naar de winkel verzenden van verzendingen is gebaseerd op uw bestaande verzendmogelijkheden. Als u Inventory management gebruikt, of als u bestellingen kunt accepteren en uitvoeren op zakelijke locaties zonder voorraad via voorraadoverdrachten van winkel naar winkel, stelt u deze optie in op Ja.<br></br>Als u geen ondersteuning kunt bieden voor de optie voor het aan boord brengen van een schip of deze niet wilt aanbieden, stelt u deze in op "Nee". Als deze optie is uitgeschakeld, worden items in uw catalogus met een nulvoorraad voor een winkel of items die onder die locatie liggen [!DNL Out of Stock Threshold], worden niet aangeboden met opties voor in-store ophalen.<br></br>Dit is een algemene instelling die per bedrijfslocatie kan worden aangepast.</td>
+<td>De instelling voor het naar de winkel verzenden van verzendingen is gebaseerd op uw bestaande verzendmogelijkheden. Als u Inventory management gebruikt, of als u bestellingen kunt accepteren en uitvoeren op zakelijke locaties zonder voorraad via voorraadoverdrachten van winkel naar winkel, stelt u deze optie in op Ja.<br></br>Als u geen ondersteuning kunt bieden voor de optie voor het aan boord brengen van een schip of deze niet wilt aanbieden, stelt u deze in op "Nee". Als deze optie is uitgeschakeld, worden items in uw catalogus met een nulvoorraad voor een winkel of items die onder de [!DNL Out of Stock Threshold] voor die locatie worden niet aangeboden met opties voor in-store ophalen.<br></br>U kunt de waarde van deze instelling per bedrijfslocatie aanpassen.</td>
 <td>Algemeen</td>
 <td>Nee</td>
 </tr>
@@ -286,7 +286,7 @@ Configureer de verzendopties voor de afhandeling van winkels die de beschikbaarh
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Enable Ship From Store]</strong></td>
-<td>Schakelt de optie Home Delivery in of uit in uw winkels. Als deze optie is ingeschakeld, worden de locaties van uw winkels beschouwd als zijnde geaggregeerd met andere toegewezen bronnen in het bestand dat aan uw website is gekoppeld.<br></br>In de standaard Inventory management-services wordt [!DNL Ship from Store] Deze optie is inherent en kan niet worden uitgeschakeld. Met de oplossing Afhandeling bewaren kunt u deze in- of uitschakelen.<br></br>Dit is een globale instelling. U kunt deze instelling ook per bedrijfslocatie en product aanpassen.</td>
+<td>Schakelt de optie Home Delivery in of uit in uw winkels. Als deze optie is ingeschakeld, worden de locaties van uw winkels beschouwd als zijnde geaggregeerd met andere toegewezen bronnen in het bestand dat aan uw website is gekoppeld.<br></br>In de standaard Inventory management-services wordt [!DNL Ship from Store] Deze optie is inherent en kan niet worden uitgeschakeld. Met de oplossing Afhandeling bewaren kunt u deze in- of uitschakelen.<br></br>U kunt deze instelling per bedrijfslocatie en product aanpassen.</td>
 <td>Algemeen</td>
 <td>Nee</td>
 </tr>
@@ -347,7 +347,7 @@ Configureer de instellingen voor de gebruikersaccount en wachtwoordbeveiliging v
 
 Store Fulfillment werkt door de native Adobe Commerce uit te breiden [!DNL In-Store Delivery] mogelijkheden. Nadat u de extensie hebt geïnstalleerd, kunt u in-store leveringsmethoden configureren met behulp van de volgende uitgebreide instellingen die aan Admin worden toegevoegd.
 
-- **Ophalen in de winkel**—De opties van de aanbieding voor in-store levering tijdens het controleproces Dit is het gemeenschappelijkste leveringsscenario voor BOPIS orden.
+- **Ophalen in de winkel**—De opties van de aanbieding voor in-store levering tijdens het controleproces Deze montages vormen de gemeenschappelijkste leveringsscenario&#39;s voor bevelen BOPIS.
 
 - **[!UICONTROL Curbside pick up]**- De opties van de aanbieding voor klanten om bij een opslagplaats te parkeren en hun orde te hebben die aan hen door een archiefvengeassocieerde wordt geleverd.
 
@@ -436,25 +436,25 @@ Met de in-store leveringsmethode, kan de klant een bron selecteren die als oppik
 </tr>
 <tr>
 <td><strong>Instructies voor het in-store ophalen</strong></td>
-<td>Wanneer een bestelling klaar is om in uw winkels te worden opgehaald, wordt de klant per e-mail op de hoogte gebracht. Als de klant [!DNL In-Store Pickup] tijdens het uitchecken kunt u hier de instructies voor het ophalen aanpassen. </br></br>Dit is een globale instelling die van toepassing is op alle winkellocaties. U kunt de instructies ook aanpassen op het niveau van de detailhandel.</td>
+<td>Wanneer een bestelling klaar is om in uw winkels te worden opgehaald, wordt de klant per e-mail op de hoogte gebracht. Als de klant [!DNL In-Store Pickup] tijdens het uitchecken kunt u hier de instructies voor het ophalen aanpassen. </br></br>Deze instructies worden globaal ingesteld en zijn van toepassing op alle winkellocaties. U kunt de instructies ook aanpassen op het niveau van de detailhandel.</td>
 <td>Winkelweergave</td>
 <td>Nee</td>
 </tr>
 <tr>
 <td><strong>Instructies voor ophaalcurven</strong></td>
-<td>Geeft aangepaste instructies voor het ophalen van bestellingen op die moeten worden opgenomen in e-mailmeldingen van klanten voor bestellingen voor het ophalen van bestellingen op de achtergrond. </br></br>Dit is een globale instelling die van toepassing is op alle winkellocaties. U kunt de instructies ook aanpassen op het niveau van de detailhandel.</td>
+<td>Geeft aangepaste instructies voor het ophalen van bestellingen op die moeten worden opgenomen in e-mailmeldingen van klanten voor bestellingen voor het ophalen van bestellingen op de achtergrond. </br></br>Deze instructies worden globaal ingesteld en zijn van toepassing op alle winkellocaties. U kunt de instructies ook aanpassen op het niveau van de detailhandel.</td>
 <td>Winkelweergave</td>
 <td>Nee</td>
 </tr>
 <tr>
 <td><strong>Geschatte levertijd voor afhalen</strong></td>
-<td>Het aantal minuten dat is vereist voordat een bestelling is ontvangen, uitgevoerd en klaar om te worden opgehaald. Deze informatie wordt aan de klant getoond wanneer het selecteren van een detailhandelplaats voor de leveringsoptie van de Opslag van de Opslag. Dit is een globale instelling die van toepassing is op alle winkellocaties. U kunt de aanlooptijd ook aanpassen op het niveau van de detailhandel.</td>
+<td>Het aantal minuten dat is vereist voordat een bestelling is ontvangen, uitgevoerd en klaar om te worden opgehaald. Deze informatie wordt aan de klant getoond wanneer het selecteren van een detailhandelplaats voor de leveringsoptie van de Opslag van de Opslag. Deze instelling geldt voor alle winkellocaties. U kunt de aanlooptijd ook aanpassen op het niveau van de detailhandel.</td>
 <td>Winkelweergave</td>
 <td>Nee</td>
 </tr>
 <tr>
 <td><strong>Label voor geschatte ophaaltijd</strong></td>
-<td>Hiermee geeft u de geschatte tijd weer tot een bestelling beschikbaar is voor het ophalen door de klant. Deze informatie wordt aan klanten getoond wanneer zij een detailhandelplaats voor [!DNL In-Store Pickup] leveringsoptie. </br></br>Wanneer u dit label aanpast, kunt u de code <code>%1</code> om uw <strong>Geschatte levertijd voor afhalen</strong>. Bijvoorbeeld:</br></br><code>Ready for Pickup in %1 minutes.</code></br></br>Dit is een globale instelling die van toepassing is op alle winkellocaties. U kunt de aanlooptijd ook aanpassen op het niveau van de detailhandel.</br></br><code>Ready for Pickup in %1 minutes.</code></br></br></td>
+<td>Hiermee geeft u de geschatte tijd weer tot een bestelling beschikbaar is voor het ophalen door de klant. Deze informatie wordt aan klanten getoond wanneer zij een detailhandelplaats voor [!DNL In-Store Pickup] leveringsoptie. </br></br>Wanneer u dit label aanpast, kunt u de code <code>%1</code> om uw <strong>Geschatte levertijd voor afhalen</strong>. Bijvoorbeeld:</br></br><code>Ready for Pickup in %1 minutes.</code></br></br>Deze instelling geldt voor alle winkellocaties. U kunt de aanlooptijd ook aanpassen op het niveau van de detailhandel.</td>
 <td>Winkelweergave</td>
 <td>Nee</td>
 <tr>
@@ -480,7 +480,7 @@ Met de in-store leveringsmethode, kan de klant een bron selecteren die als oppik
 </thead>
 <tbody><tr>
 <td><strong>In voorraad</strong></td>
-<td>Wanneer een klant de detailhandel locator gebruikt, wordt de voorraadbeschikbaarheid voor de huidige punten getoond voor elke plaats. </br></br>U kunt de <em>[!UICONTROL in-stock]</em> status label hier.</br></br></td>
+<td>Wanneer een klant de detailhandel locator gebruikt, wordt de voorraadbeschikbaarheid voor de huidige punten getoond voor elke plaats. </br></br>U kunt de <em>[!UICONTROL in-stock]</em> status label hier.</td>
 <td>Winkelweergave</td>
 <td>Nee</td>
 </tr>
@@ -492,7 +492,7 @@ Met de in-store leveringsmethode, kan de klant een bron selecteren die als oppik
 </tr>
 <tr>
 <td><strong>Gedeeltelijk in voorraad</strong></td>
-<td>Wanneer een klant de locator van de detailhandel gebruikt, wordt de voorraadbeschikbaarheid voor om het even welke huidige punten getoond voor elke plaats. </br></br>U kunt de <em>[!UICONTROL partially in-stock]</em> status label hier.</br></br></td>
+<td>Wanneer een klant de locator van de detailhandel gebruikt, wordt de voorraadbeschikbaarheid voor om het even welke huidige punten getoond voor elke plaats. </br></br>U kunt de <em>[!UICONTROL partially in-stock]</em> status label hier.</td>
 <td>Winkelweergave</td>
 <td>Nee</td>
 </tr>

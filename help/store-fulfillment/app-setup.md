@@ -1,12 +1,13 @@
 ---
 title: App-instelling
 description: Stel de [!DNL Store Assist] app voor het beheer van end-to-end workflows voor de afhandeling van winkels en processen voor het online kopen van orders.
-role: User, Admin
 level: Intermediate
+role: Admin
+feature: Shipping/Delivery, Configuration, Tools and External Services
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '625'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ De app Store Assist ontvangt alle bestelling- en klantgegevens, van bestellingsg
 
 >[!NOTE]
 >
->Zie [Workflows voor afhandeling van winkelassistentie](store-assist-modules.md) voor meer informatie over de app Winkelassistentie.
+>Meer informatie over de app Winkelassistentie vindt u in het dialoogvenster [Workflows voor afhandeling van winkelassistentie](store-assist-modules.md) onderwerp.
 
 ## De app Store Assist configureren
 
@@ -42,9 +43,9 @@ Voor de app Store Assist zijn twee soorten configuraties vereist:
 
    - **Inactiviteitstijd**—Geef op hoeveel tijd de toepassing inactief moet zijn voordat deze zich afmeldt.
 
-   - **Annulering uit de winkel**—Specificeer of de orden van de opslag kunnen worden geannuleerd en welke rollen annuleringstoestemmingen hebben
+   - **Annulering uit de winkel**—Specificeer of de orden van de opslag kunnen annuleren en welke rollen annuleringstoestemmingen hebben
 
-   - **Opschonen van bestellingen, venster**—Opgeven hoe lang het verleden is [Geschatte levertijd voor afhalen](enable-general.md#delivery-method-title-configuration) dat een geplakte order in ophaling alvorens wordt herbevolkt-bijvoorbeeld, drie dagen blijft. De standaardwaarde is zeven dagen. Als deze configuratie is ingeschakeld, wordt de volgorde automatisch geannuleerd wanneer deze tijd verloopt. De items worden opnieuw opgeslagen en de verkoper ontvangt een annuleringsbericht.
+   - **Opschonen van bestellingen, venster**—Opgeven hoe lang het verleden is [Geschatte levertijd voor afhalen](enable-general.md#delivery-method-title-configuration) dat een geplakte order in ophaling alvorens wordt herbevolkt-bijvoorbeeld, drie dagen blijft. De standaardwaarde is zeven dagen. Als deze configuratie is ingeschakeld, wordt de bestelling automatisch geannuleerd wanneer deze tijd verloopt. De items worden opnieuw opgeslagen en de verkoper ontvangt een annuleringsbericht.
 
    - Alles aanpassen in app-instructies (kiezen, opvoeren, afleveren).
 
@@ -55,7 +56,8 @@ Voor de app Store Assist zijn twee soorten configuraties vereist:
    - **Handje uit-proces**—Schakel optionele processen in wanneer Store Associate bestelling aan de klant levert, bijvoorbeeld een handtekening van de klant vereisen of de koppeling vragen om de klant-id te controleren.
 
    - **Afkeuring van item inschakelen bij afbreken**—Toestaan dat klanten bestellingen retourneren of annuleren tijdens het afhandelen van bestellingen.
-   Het werk met het team van de Diensten van de Cliënt van de Technologieën van de Handel van de Handel van de Mara om frontend configuratie voor de Hulp App van de Winkel te voltooien.
+
+  Het werk met het team van de Diensten van de Cliënt van de Technologieën van de Handel van de Handel van de Mara om frontend configuratie voor de Hulp App van de Winkel te voltooien.
 
 ## Downloaden en installeren van apps
 
@@ -70,4 +72,5 @@ Nadat de app Store Assist is ingesteld en geconfigureerd, kunnen Store Associate
    - **[!UICONTROL Company name]** gekoppeld aan de account Winkelassistentie
 
    - **Accountgegevens voor Winkelassistentie**—gebruikersnaam en wachtwoord voor hun account.
-   Een Adobe Commerce-beheerder kan [!DNL Store Assist app] gebruikersaccounts voor alle opslaglocaties die [Ophalen in winkel](merchant-store-configuration.md#pickup-location-configuration) ingeschakeld in de beheerinstellingen voor winkels.
+
+  Een Adobe Commerce-beheerder kan [!DNL Store Assist app] gebruikersaccounts voor alle opslaglocaties die [Ophalen in winkel](merchant-store-configuration.md#pickup-location-configuration) ingeschakeld in de beheerinstellingen voor winkels.

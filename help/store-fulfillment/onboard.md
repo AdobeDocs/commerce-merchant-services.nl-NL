@@ -1,10 +1,11 @@
 ---
 title: Onboarding-overzicht voor services voor winkeluitvoering
 description: '[!DNL Live Search] aan boord gaan, systeemvereisten, grenzen en beperkingen.'
-role: User, Admin
+role: Admin, Leader
 level: Intermediate
+feature: Shipping/Delivery, Install
 exl-id: f8e403ac-9bbd-4ea2-b209-9b1a8d1e32a2
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 0%
@@ -17,15 +18,15 @@ Aan de slag met [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce T
 
 - **Afhandeling opslaan, extensie**-Installeer en configureer deze extensie van derden voor uw Adobe Commerce-exemplaar. Na de installatie kunt u de oplossing van de Behandeling van de Opslag van Admin vormen en beheren om te steunen [!DNL buys online, pickup in store] (BOPIS) scenario&#39;s in de Commerce-winkel.
 
-   ![[!DNL Store Fulfillment Service] configuratie in de beheerweergave](assets/store-fulfillment-admin-home.png)
+  ![[!DNL Store Fulfillment Service] configuratie in de beheerweergave](assets/store-fulfillment-admin-home.png)
 
 - **Veruitvoeringsaccount opslaan**-Tijdens het inschakelingsproces maakt een accountmanager een account voor de afhandeling van winkels en geeft hij u de accountgegevens en -gegevens. Deze gegevens zijn vereist voor het inschakelen van de verbinding tussen Adobe Commerce en de Opslagoplossing.
 
 - **App Winkelassistentie**—Biedt winkelassociaties een end-to-end workflow voor het uitvoeren van opslagtaken om BOPIS-orders van mobiele apparaten te beheren. Store Associates kan Walmart&#39;s downloaden en installeren [!DNL Store Assist] voor iOS- en Android™-apparaten. Het app onboarding proces wordt beheerd door het Walmart Commerce Technologies Client Center als afzonderlijk proces. Maar [bepaalde instellingen voor toepassingsconfiguratie](user-setup.md) worden voltooid via de Adobe Commerce Admin.
 
-   | Store Assist App - weergave Aan de slag | Store Assist App — weergave Modules |
-   |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-   | ![[!DNL Store Assist App Getting Started] weergave op mobiel apparaat](assets/store-assist-get-started-small.png) | ![[!DNL Store Assist App Orders view] op mobiel apparaat](assets/store-assist-orders-small.png) |
+  | Store Assist App - weergave Aan de slag | Store Assist App — weergave Modules |
+  |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
+  | ![[!DNL Store Assist App Getting Started] weergave op mobiel apparaat](assets/store-assist-get-started-small.png) | ![[!DNL Store Assist App Orders view] op mobiel apparaat](assets/store-assist-orders-small.png) |
 
 ## Inrichtingsstappen
 

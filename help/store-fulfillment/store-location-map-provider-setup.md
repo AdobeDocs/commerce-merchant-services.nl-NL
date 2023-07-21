@@ -1,10 +1,11 @@
 ---
 title: Configuratie van opslaglocatie en toewijzingssysteem
 description: Vorm een afstandsleverancier om de afbeelding van de opslagplaats in storefront UI te steunen. De oplossingen van de Afhandeling van de Opslag vereisen een afstandsleverancier om detailhandel onderzoek en andere afbeelding en het plannen mogelijkheden voor het volledige uitvoeringswerkschema toe te laten.
-role: User, Admin
+role: Admin
 level: Intermediate
+feature: Shipping/Delivery, Integration, Tools and External Services, Configuration
 exl-id: d09c4652-e2eb-49dc-8c42-2aa9b6be5d6b
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 0%

@@ -1,10 +1,11 @@
 ---
 title: Inventory management-bronoverdracht
 description: "Configureer bestanden voor de [!DNL Store Fulfillment solution] met Adobe Commerce Inventory management. Stel een nieuwe voorraad- en overdrachtvoorraad in op basis van de standaardvoorraad, zodat u deze kunt toewijzen aan bronnen die zijn geconfigureerd om de opslagcapaciteit die door de oplossing Afhandeling van winkel wordt vereist, in te schakelen."
-role: User, Admin
+role: Admin
 level: Intermediate
+feature: Shipping/Delivery, Inventory, Configuration
 exl-id: 669d4dce-4cac-4bde-acc5-26c70a51f7f1
-source-git-commit: e7493618e00e28e2de5043ae2d7e05a81110d8f1
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 0%
@@ -26,7 +27,7 @@ Deze configuratieveranderingen helpen u drie dingen verwezenlijken:
 
 1. [Bronnen toewijzen met een lamp](https://docs.magento.com/user-guide/catalog/inventory-bulk-assign-sources.html) om de nieuwe bronnen voor al uw producten toe te voegen.
 
-1. [Volledige bulkupdates voor productkenmerken](https://docs.magento.com/user-guide/stores/bulk-product-attribute-update.html) om de `Allow Store Pickup` en `Allow Home Delivery` kenmerken van bestaande producten. Wanneer de oplossing wordt geïnstalleerd, hebben de attributen het optimale *default* waarden. Deze kenmerken worden echter pas op bestaande producten toegepast als u het bulkupdateproces hebt voltooid.
+1. [Volledige bulkupdates voor productkenmerken](https://docs.magento.com/user-guide/stores/bulk-product-attribute-update.html) om de `Allow Store Pickup` en `Allow Home Delivery` kenmerken van bestaande producten. Wanneer de oplossing wordt geïnstalleerd, hebben de attributen het optimale *default* waarden. Nochtans, worden deze attributen niet toegepast op bestaande producten tot u het bulk updaContes proces voltooit.
 
 De voorraad wordt afgetrokken van de geselecteerde bron (detailhandel of e-commerce-entrepot). De bronnen die als e-commerce pakhuizen worden gebruikt moeten aan het zelfde dossier worden toegewezen zoals de opslagbestelplaats en voorrang gegeven vóór de detailhandelsplaatsen. Zie voor meer informatie [Prioritaire bronnen voor een bestand](https://docs.magento.com/user-guide/catalog/inventory-stock-priority.html).
 

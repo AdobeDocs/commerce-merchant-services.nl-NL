@@ -1,12 +1,13 @@
 ---
 title: De oplossing voor winkelvervulling aansluiten
-description: Bepaal de verbindingen tussen Adobe Commerce en de oplossing van de Afhandeling van de Opslag door een integratie van Adobe Commerce te creëren en te machtigen en de de rekeningsgeloofsbrieven van de Rekening van de Afhandeling van de Opslag toe te voegen aan de de dienstconfiguratie van Adobe Commerce.
-role: User, Admin
+description: Bepaal de verbindingen tussen Adobe Commerce en de oplossing van de Behandeling van de Opslag. Maak een Adobe Commerce-integratie en autoriseer deze en voeg de gegevens van de opslagtegoedaccount toe aan de Adobe Commerce-serviceconfiguratie.
+role: Admin, Developer
 level: Intermediate
+feature: Shipping/Delivery, Install, Configuration, User Account, Tools and External Services
 exl-id: 74c71c43-305a-4ea7-84f8-95f3ce0a9482
-source-git-commit: 19c4d3263c22914672b38c5dc5ec9908889bb9b6
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '452'
 ht-degree: 0%
 
 ---

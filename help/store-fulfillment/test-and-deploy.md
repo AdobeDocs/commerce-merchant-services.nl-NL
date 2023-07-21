@@ -3,8 +3,9 @@ title: Afhandeling van winkel testen en implementeren
 description: Test een plan om de functionaliteit voor winkelvervulling te verifiëren. De tests hebben betrekking op de API voor inventarissynchronisatie, de end-to-end uitvoeringsworkflow voor geannuleerde bestellingen, het gebruikersbeheer van de app voor winkelafhandeling en de ervaring die de klant heeft met het inchecken.
 role: User, Admin
 level: Intermediate
+feature: Shipping/Delivery, User Account, Roles/Permissions
 exl-id: 77285a66-5161-407b-94cd-b3f412d7949d
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '2660'
 ht-degree: 0%
@@ -84,7 +85,7 @@ Deze sectie van het testplan behandelt inventaris en ordesynchronisatie om te ve
 <td>De synchrone verrichting in real time verzendt de details naar het GIF van het Smarm binnen 5 minuten</td>
 </tr>
 <tr>
-<td><strong>Ophaalvoorraadbron</br><code>Is Synced</code> status</br><code>Is Synced</code></strong></td>
+<td><strong>Ophaalvoorraadbron</br><code>Is Synced</code> status</strong></td>
 <td>Sla updates op naar een bestaande bron van ophaalvoorraad.</td>
 <td>Na een geslaagde bewerking <code>Is Synced</code> kolom van de pagina Bron beheren wordt bijgewerkt vanaf <code>No</code> tot <code>Yes</code>.</td>
 </tr>
@@ -166,7 +167,7 @@ Deze sectie van het testplan omvat scenario&#39;s om het werkschema van begin to
 </ul>
 </td>
 </tr>
-<td><strong>Gereed voor ophalen</br></br>Volledige annulering</br>(alle producten worden ingesteld op 0 qty)</br></strong></td>
+<td><strong>Gereed voor ophalen</br></br>Volledige annulering</br>(alle producten worden ingesteld op 0 qty)</strong></td>
 <td>
 <ol>
 <li>Plaats de bestelling.</li>
@@ -250,7 +251,7 @@ Deze sectie van het testplan omvat scenario&#39;s om het werkschema van begin to
 </tr>
 <tr>
 <td><strong>Verzonden (tijdens dispensatie)</br></br>Gedeeltelijke annulering</br>(Sommige producten worden afgeleverd; sommige zijn verworpen.)</strong>
-</br></td>
+</td>
 <td>
 <ol>
 <li>Plaats de bestelling.</li>
@@ -469,7 +470,7 @@ Deze sectie van het testplan behandelt de Controle-In Ervaring voor de Bestellin
 </tr>
 <tr>
 <td><strong>Contactpersoon voor afhalen alternatief</br>
-Inchecken</br><strong>
+Inchecken<strong>
 </td>
 <td>
 Een klant verzendt een bestelling met de optie Ophalen in de winkel.</td>

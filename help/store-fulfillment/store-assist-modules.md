@@ -1,10 +1,11 @@
 ---
 title: Workflows voor hulp aan winkels
 description: Leer meer over de modules Selecteren, Werkgebied, Handje-uit en Bestellingen die beschikbaar zijn in de Store Assist App. Deze modules laten de werkschema van de de opslagvervulling van begin tot eind voor BOPIS orden toe. De Vennoten van de opslag gebruiken deze modules om de bestellingen van de winkelbestelwagen aan klanten te beheren en te leveren.
-role: User
+role: Leader, Admin, User
 level: Intermediate
+feature: Shipping/Delivery, Tools and External Services, Customer Service
 exl-id: a8414f19-5489-41e9-84d6-39d2e61c2b08
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '806'
 ht-degree: 0%
@@ -19,7 +20,7 @@ De app Store Assist biedt Store Associates vier modules voor het beheer van het 
 
 - **[Werkgebied](#stage-module)**—Voer een locatie in waar de bestellingen worden geplaatst terwijl klanten naar de winkel gaan, zodat Store Associates ze gemakkelijk kan vinden voor aflevering van bestellingen.
 
-- **[Handje uit](#hand-off-module)**—Krijg real-time berichten nadat klanten bij de opslag aankomen om hun wachttijd te minimaliseren en orders naadloos af te handelen
+- **[Handje uit](#hand-off-module)**—Krijg real-time berichten nadat klanten bij de opslag aankomen om hun wachttijd te minimaliseren en bestellingen naadloos af te handelen.
 
 - **[Orders](#orders-module)**—Bekijk een lijst van alle orden die voor een opslag worden geplaatst zodat iedereen het aantal orden en de status van elke orde kent.
 

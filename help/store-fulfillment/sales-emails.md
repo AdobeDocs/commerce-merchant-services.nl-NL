@@ -1,10 +1,11 @@
 ---
 title: E-mailsjablonen voor verkoop
 description: Configureer de transactionele e-mailsjablonen voor de communicatie met klanten en sla beheerders op tijdens het uitvoeringsproces voor ophaalopdrachten van de winkel.
-role: User, Admin
+role: Admin
 level: Intermediate
+feature: Shipping/Delivery, Communications, Configuration
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 0%
@@ -312,7 +313,7 @@ Configureer de e-mailsjablonen voor verkoop van de beheerder: **[!UICONTROL Stor
 <tbody><tr>
 <td><strong>De bestelling is verzonden om e-mailafzender van producten op te slaan</strong></td>
 <td>De e-mail die naar het opgegeven bedrijfspersoneel is verzonden als een geaggregeerd rapport van alle open bestellingen die pas in een handelsportefeuille kunnen worden uitgepakt als hun inventaris beschikbaar is. </br></br> Handelaars kunnen dit rapport gebruiken om voorraadoverdrachten of aanvulling te initiëren en te beheren. </br></br>Deze melding is alleen van toepassing wanneer de [!DNL Ship-to-Store] functies zijn ingeschakeld.
-</br></br>Dit label heeft geen invloed op de geselecteerde verzendmaatschappij of op de labels van de verzendmethode.</br></br></td>
+</br></br>Dit label heeft geen invloed op de geselecteerde verzendmaatschappij of op de labels van de verzendmethode.</td>
 <td>Winkelweergave</td>
 <td>Nee</td>
 </tr>
