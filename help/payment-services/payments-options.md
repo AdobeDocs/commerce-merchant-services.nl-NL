@@ -3,9 +3,9 @@ title: Betalingsopties
 description: Stel de betalingsopties in om de beschikbare methoden voor uw winkelklanten aan te passen.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 27d121f862be99b41f467a00e5f6b9d28a40deab
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1034'
 ht-degree: 0%
 
 ---
@@ -46,6 +46,8 @@ U kunt ook de lay-out, breedte, hoogte en buitenstijl van de creditcardvelden wi
 
 U kunt configureren [!UICONTROL PayPal Smart Buttons] in de winkelconfiguratie of de startpagina van de betalingsservices.  Zie [Instellingen](settings.md#payment-buttons) voor meer informatie .
 
+Zie PayPal&#39;s [Documentatie over betalingsmethoden](https://developer.paypal.com/docs/checkout/payment-methods/) om te leren in welke landen elke betalingsmethode momenteel beschikbaar is.
+
 ### [!DNL PayPal] knop
 
 Klanten kunnen met gemak en vertrouwen uitchecken met de PayPal-knop.
@@ -80,21 +82,11 @@ Met deze optie kun je kopers een betalingsoptie voor PayPal-incasso of creditcar
 
 Bied uw klanten kortetermijnbetalingen, rentevrije betalingen en andere financieringsopties aan, zodat ze nu kunnen kopen en later kunnen betalen met de [!DNL Pay Later] knop.
 
-De [!DNL Pay Later] Deze knop is zichtbaar vanaf de pagina met producten, de miniwinkelwagentje, de winkelwagentje en de afrekenweergave:
+De [!DNL Pay Later] Deze knop is zichtbaar vanaf de pagina met producten, de miniwinkelwagentje, de winkelwagentje en de afrekenweergave.
 
-* **Wanneer een klant een product tussen $30 en $600 selecteert**, berichten via PayPal en [!DNL Pay Later] knoppen geven de klant meer informatie over de [!DNL Pay in 4] betalingsoptie. Klanten kunnen op **Meer informatie** voor meer informatie over &quot;[!DNL Pay in 4]&quot;, optie _of_ Klik op de tekst &quot;Of zie 6 maanden speciale financiering&quot; in het pop-upmenu voor meer informatie over en het aanvragen van de optie PayPal-krediet.
-* **Wanneer een klant een product of producten selecteert die meer bedragen dan $ 98,99**, berichten via PayPal en [!DNL Pay Later] Deze knoppen bieden klanten meer informatie over de optie PayPal Credit. Klanten kunnen op **Meer informatie** voor meer informatie over de optie PayPal Credit en het aanvragen van deze optie, _of_ Klik op de tekst &quot;Of zie Betalen in 4&quot; in de pop-up voor meer informatie over de [!DNL Pay in 4] optie.
-
-  >[!NOTE]
-  >
-  >De hierboven vermelde bedragen kunnen worden gewijzigd.
+Meer informatie over de aanbiedingen voor Later betalen vindt u in [Later PayPal biedt documentatie](https://developer.paypal.com/docs/checkout/pay-later/us/). Gebruik de **Land of regio** vervolgkeuzelijst om een interessegebied te selecteren.
 
 Zie [Instellingen](settings.md#payment-buttons) leren hoe u de [!DNL Pay Later] berichten.
-
-Er zijn twee betalingsopties voor de [!DNL Pay Later] knop:
-
-* **Betalen in 4**—Klanten kunnen hun ordersaldo betalen in vier rentevrije betalingen (elke twee weken) na een eerste aanbetaling. Zie de [Betalen in 4 documentatie](https://www.paypal.com/us/digital-wallet/ways-to-pay/buy-now-pay-later) voor meer informatie .
-* **PayPal-krediet**—Klanten kunnen hun ordersaldo volledig betalen over een periode van zes maanden, zonder rente. Zie de [PayPal-kredietdocumentatie](https://www.paypal.com/us/webapps/mpp/paypal-credit) voor meer informatie .
 
 ### [!DNL Pay Now] knop
 
