@@ -4,9 +4,9 @@ description: Leer hoe u de Adobe Experience Platform-connector van Adobe Commerc
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
-source-git-commit: 64273ad4c1a54b150746a54896caf73ed612c2d1
+source-git-commit: 0c8d9498ea7a30a99f834694ef8a865ad24466ab
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Voordat u de extensie installeert, [de voorwaarden opnieuw bekijken](overview.md
 
 ## De extensie installeren
 
-De de schakelaaruitbreiding van het Experience Platform is beschikbaar bij [Adobe Marketplace](https://marketplace.magento.com/magento-experience-platform-connector.html). Wanneer u deze extensie installeert vanaf de opdrachtregel van de server, wordt verbinding gemaakt met de Adobe Commerce-installatie als een [service](../landing/saas.md). Wanneer het proces is voltooid, **Experience Platform Connector** en **Commerce Services Connector** op de **Systeem** menu onder **Services** in de handel _Beheer_.
+De de schakelaaruitbreiding van het Experience Platform is beschikbaar bij [Adobe Marketplace](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html). Wanneer u deze extensie installeert vanaf de opdrachtregel van de server, wordt verbinding gemaakt met de Adobe Commerce-installatie als een [service](../landing/saas.md). Wanneer het proces is voltooid, **Experience Platform Connector** en **Commerce Services Connector** worden weergegeven op **Systeem** menu onder **Services** in de handel _Beheerder_.
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ De de schakelaaruitbreiding van het Experience Platform is beschikbaar bij [Adob
 
 Installeer voor B2B-handelaren de volgende extensie om deze ook te kunnen gebruiken [aanvraaglijst](events.md#b2b-events) gebeurtenisgegevens.
 
-Download de `magento/experience-platform-connector-b2b` extensie via de opdrachtregel:
+Download de `magento/experience-platform-connector-b2b` extensie door het volgende uit te voeren vanaf de opdrachtregel:
 
 ```bash
 composer require magento/experience-platform-connector-b2b
@@ -63,7 +63,7 @@ of, voor B2B-handelaren:
 composer update magento/experience-platform-connector-b2b --with-dependencies
 ```
 
-Als u een update wilt uitvoeren naar een belangrijke versie, bijvoorbeeld van 1.0.0 tot 2.0.0, bewerkt u de hoofdmap van het project [!DNL Composer] `.json` bestand als volgt:
+Als u een update wilt uitvoeren naar een hoofdversie zoals 1.0.0 tot 2.0.0, bewerkt u de hoofdmap van het project [!DNL Composer] `.json` bestand als volgt:
 
 1. De hoofdmap openen `composer.json` bestand en zoek naar `magento/experience-platform-connector`.
 

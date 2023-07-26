@@ -3,7 +3,7 @@ title: '''[!DNL Quick Checkout] Opmerkingen bij de release'
 description: Lees de opmerkingen bij de release voor meer informatie over alle [!DNL Quick Checkout] lozingen.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
 feature: Release Notes, Services, Checkout
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 0c8d9498ea7a30a99f834694ef8a865ad24466ab
 workflow-type: tm+mt
 source-wordcount: '1422'
 ht-degree: 0%
@@ -30,7 +30,7 @@ In deze releaseopmerkingen worden wijzigingen en correcties beschreven die zijn 
 
 23 mei 2023_
 
-![Probleem opgelost](../assets/fix.svg)<!-- Issue BOLT-489 --> De **Nieuwe accounts** in de [!DNL Quick Checkout] rapportagepagina bevat spectrum [Workflowpictogrammen](https://react-spectrum.adobe.com/react-spectrum/workflow-icons.html){target=_blank}.
+![Probleem opgelost](../assets/fix.svg)<!-- Issue BOLT-489 --> Nu, **Nieuwe accounts** in de [!DNL Quick Checkout] rapportagepagina bevat spectrum [Workflowpictogrammen](https://react-spectrum.adobe.com/react-spectrum/workflow-icons.html){target=_blank}.
 
 _25 april 2023_
 
@@ -46,7 +46,7 @@ _14 december 2022_
 
 _30 november 2022_
 
-![Nieuw](../assets/new.svg)<!-- Issue BOLT-502 --> De [rapportage](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html) tab heeft een nieuwe voorinstelling voor &quot;Vorig jaar&quot;.
+![Nieuw](../assets/new.svg)<!-- Issue BOLT-502 --> Nu, [rapportage](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html) tab heeft een nieuwe voorinstelling voor &quot;Vorig jaar&quot;.
 
 ![Nieuw](../assets/new.svg)<!-- Issue BOLT-471 --> Verbeteringen in de gebruikerservaring in het dialoogvenster [!DNL Quick Checkout] In het deelvenster Beheer wordt meer informatie weergegeven in [Knopinfo](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html).
 
@@ -54,7 +54,7 @@ _30 november 2022_
 
 _2 november 2022_
 
-![Nieuw](../assets/new.svg)<!-- Issue BOLT-293 --> De [rapportage](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html) in de [!DNL Quick Checkout] In het deelvenster Beheer worden grafieken en rapportgegevens van de statistieken over de uitcheckervaring van uw winkel weergegeven.
+![Nieuw](../assets/new.svg)<!-- Issue BOLT-293 --> Nu, [rapportage](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html) in de [!DNL Quick Checkout] In het deelvenster Beheer worden grafieken en rapportgegevens van de statistieken over de uitcheckervaring van uw winkel weergegeven.
 
 ![Nieuw](../assets/new.svg)<!-- Issue BOLT-422 --> De [_Overzicht_](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html#reports-overview) de sectie van het onderwerp van Rapporten toont gedetailleerde informatie over de afrekenprestaties van uw opslag, met inbegrip van de gemiddelde afhandelingstijd, nieuwe rekeningen die tijdens het afrekenen worden gecreeerd, en afhandeling verlaten.
 
@@ -74,7 +74,7 @@ _5 oktober 2022_
 
 ![Nieuw](../assets/new.svg)<!-- Issue BOLT-377 --> De **Rapporten** in de [!DNL Quick Checkout] In het deelvenster Beheer worden het datumbereik en de filtervoorinstellingen voor grafieken en analytische rapporten weergegeven.
 
-![Probleem opgelost](../assets/fix.svg)<!-- Issue BOLT-369 --> De [[!DNL Quick Checkout] Deelvenster Beheer](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) geeft de app-versie weer in de voettekst.
+![Probleem opgelost](../assets/fix.svg)<!-- Issue BOLT-369 --> Nu, [[!DNL Quick Checkout] Deelvenster Beheer](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) geeft de app-versie weer in de voettekst.
 
 +++
 
@@ -84,7 +84,7 @@ _24 februari 2023_
 
 [!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
 
-![Nieuw](../assets/new.svg)<!-- Issue BOLT-520 --> Algemene beschikbaarheidsrelease—[[!DNL Quick Checkout]](https://marketplace.magento.com/magento-quick-checkout.html) is nu vooraf geïnstalleerd in Adobe Commerce Cloud versie 2.4.6 en hoger.
+![Nieuw](../assets/new.svg)<!-- Issue BOLT-520 --> Algemene beschikbaarheidsrelease—[[!DNL Quick Checkout]](https://commercemarketplace.adobe.com/magento-quick-checkout.html) is nu vooraf geïnstalleerd in Adobe Commerce Cloud versie 2.4.6 en hoger.
 
 ![Probleem opgelost](../assets/fix.svg)<!-- Issue BOLT-592 --> De ervaring van de gebruiker verbetert wanneer het plaatsen van een orde in [Deelvenster Beheer](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/create-order-admin.html) gebruiken [Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/stored-payment-methods.html) als betalingsmethode. Met deze functie kunnen klanten een bestelling met Braintree als betalingsmethode plaatsen tijdens het afrekenen wanneer [!DNL Quick Checkout] is ingeschakeld.
 
@@ -112,7 +112,7 @@ _18 januari 2023_
 
 [!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
 
-![Nieuw](../assets/new.svg)<!-- Issue BOLT-522 --> Een nieuwe configuratie kan worden toegelaten/onbruikbaar gemaakt om te ontdekken als [winkeliers](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/manage-checkout/checkout-options/checkout-adobe-commerce.html) kan automatisch worden aangemeld.
+![Nieuw](../assets/new.svg)<!-- Issue BOLT-522 --> Een nieuwe configuratie kan worden toegelaten/onbruikbaar gemaakt om te ontdekken als [koper](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/manage-checkout/checkout-options/checkout-adobe-commerce.html) kan automatisch worden aangemeld.
 
 ![Nieuw](../assets/new.svg)<!-- Issue BOLT-523 --> Een nieuwe configuratie kan worden toegelaten/onbruikbaar gemaakt die verkopers toestaat om te specificeren als de kopers automatisch aan beide netwerken, of enkel netwerk van de Bolt kunnen worden het programma geopend.
 
@@ -150,7 +150,7 @@ _8 september 2022_
 
 [!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
 
-![Nieuw](../assets/new.svg)<!-- Issue BOLT-341 --> Algemene beschikbaarheidsrelease—[[!DNL Quick Checkout]](https://marketplace.magento.com/magento-quick-checkout.html) is nu compatibel met Adobe Commerce versie 2.4.5.
+![Nieuw](../assets/new.svg)<!-- Issue BOLT-341 --> Algemene beschikbaarheidsrelease—[[!DNL Quick Checkout]](https://commercemarketplace.adobe.com/magento-quick-checkout.html) is nu compatibel met Adobe Commerce versie 2.4.5.
 
 ![Nieuw](../assets/new.svg)<!-- Issue BOLT-328 --> [!DNL Quick Checkout] voor Adobe Commerce en Magento Open Source biedt een [Weergave van het deelvenster Beheer](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) met alle informatie die nodig is voor het instellen en gebruiken van de extensie.
 
@@ -162,7 +162,7 @@ _8 september 2022_
 
 ![Nieuw](../assets/new.svg)<!-- Issue BOLT-378 --> [!DNL Quick Checkout] [Weergave van het deelvenster Beheer](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) neemt een **Configuratie** stap die wordt weergegeven wanneer de API en de publiceerbare toetsen niet worden vermeld in de [Instellingen](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) weergeven.
 
-![Nieuw](../assets/new.svg)<!-- Issue BOLT-380 --> [!DNL Quick Checkout] [Weergave van het deelvenster Beheer](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) neemt een **Bronnen** die afhankelijk is van het instapniveau.
+![Nieuw](../assets/new.svg)<!-- Issue BOLT-380 --> [!DNL Quick Checkout] [Weergave van het deelvenster Beheer](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) neemt een **Bronnen** een gedeelte dat verandert afhankelijk van het instapstadium.
 
 ![Nieuw](../assets/new.svg)<!-- Issue BOLT-381 --> [!DNL Quick Checkout] [Weergave van het deelvenster Beheer](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) omvat een **Help en ondersteuning** sectie.
 
@@ -184,7 +184,7 @@ _9 augustus 2022_
 
 [!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
 
-![Nieuw](../assets/new.svg)<!-- Issue BOLT-341 --> Algemene beschikbaarheidsrelease—[[!DNL Quick Checkout]](https://marketplace.magento.com/magento-quick-checkout.html) is nu compatibel met Adobe Commerce-versies 2.4.1 tot en met 2.4.4.
+![Nieuw](../assets/new.svg)<!-- Issue BOLT-341 --> Algemene beschikbaarheidsrelease—[[!DNL Quick Checkout]](https://commercemarketplace.adobe.com/magento-quick-checkout.html) is nu compatibel met Adobe Commerce-versies 2.4.1 tot en met 2.4.4.
 
 ![Nieuw](../assets/new.svg)<!-- Issue BOLT-340 --> De [!DNL Quick Checkout] voor Adobe Commerce kan ofwel voor Adobe Commerce worden geïnstalleerd [over cloudinfrastructuur](install.md#adobe-commerce-on-cloud-infrastructure) of [ter plaatse](install.md#on-premises) instanties. Deze methodes vereisen het gebruik van een bevel-lijn interface.
 

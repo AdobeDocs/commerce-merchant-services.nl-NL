@@ -4,7 +4,7 @@ description: Installeer de uitbreiding van de Diensten van Betalingen.
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
 role: Admin
 feature: Payments, Checkout, Install, Upgrade
-source-git-commit: 30eae4c7d81ab6c2a7f04f4ff22c25e86934380a
+source-git-commit: 0c8d9498ea7a30a99f834694ef8a865ad24466ab
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 0%
@@ -21,8 +21,8 @@ Het downloaden en installeren van [!DNL Payment Services] verlenging voor [!DNL 
 
 U moet de extensie eerst downloaden van [Commerce Marketplace](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/commerce-marketplace.html) voordat u de toepassing installeert.
 
-1. Ga naar de [De uitbreiding van de Betalingsdiensten in de Commerce Marketplace](https://marketplace.magento.com/magento-payment-services.html).
-1. Schakel **[!UICONTROL Edition]** en **[!UICONTROL Your store version]** naar uw voorkeurskeuzes.
+1. Ga naar de [De uitbreiding van de Betalingsdiensten in de Commerce Marketplace](https://commercemarketplace.adobe.com/magento-payment-services.html).
+1. U kiest de editie en versie door te schakelen **[!UICONTROL Edition]** en **[!UICONTROL Your store version]** naar uw voorkeurskeuzes.
 1. Klikken **[!UICONTROL Add to Cart]**.
 1. Uitchecken voltooien en klikken **[!UICONTROL Place Order]**.
 1. Controleer het e-mailadres dat is gekoppeld aan het downloaden van uw Marketplace voor bevestiging van de bestelling en voor meer informatie.
@@ -39,7 +39,7 @@ Zie [Een extensie installeren](https://devdocs.magento.com/guides/v2.4/install-g
 
 ### [!DNL Adobe Commerce] over cloudinfrastructuur
 
-Deze methode wordt gebruikt voor het installeren van de [!DNL Payment Services] extensie voor een Commerce Cloud-instantie.
+Deze methode wordt gebruikt voor het installeren van de [!DNL Payment Services] voor een Commerce Cloud-instantie.
 
 1. Werk uw `composer.json` bestand:
 
@@ -57,7 +57,7 @@ Deze methode wordt gebruikt voor het installeren van de [!DNL Payment Services] 
 
 1. Leg de wijzigingen vast en duw op deze.
 
-### Op locatie en andere configuraties
+### Op het terrein en in andere configuraties
 
 Deze methode wordt gebruikt voor het installeren van de [!DNL Payment Services] verlenging voor een instantie ter plaatse en [!DNL Magento Open Source] klanten.
 
@@ -126,7 +126,7 @@ Om te zien welke Composer sleutels worden gevormd:
    composer config --global home
    ```
 
-1. De weergave van `auth.json` bestand:
+1. De weergave `auth.json` bestand:
 
    ```bash
    cat /path/to/auth.json

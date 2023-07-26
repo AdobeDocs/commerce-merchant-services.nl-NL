@@ -3,7 +3,7 @@ title: '''[!DNL Live Search] Opmerkingen bij de release'
 description: "De meest recente releasegegevens voor [!DNL Live Search] uit Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: 0c8d9498ea7a30a99f834694ef8a865ad24466ab
 workflow-type: tm+mt
 source-wordcount: '1277'
 ht-degree: 0%
@@ -55,15 +55,15 @@ _14 maart 2023_
 * Een bestaande gebeurtenis verwijderen werkt nu de voorvertoning bij
 * Regels zonder gebeurtenissen kunnen worden opgeslagen
 * Selector Type selecteren verwijderen
-* Nieuwe bewerkingsstatus voor niet-opgeslagen regels toegevoegd
+* Nieuwe bewerkingsstatus toegevoegd voor niet-opgeslagen regels
 
 ### Oplossingen
 
-* Fout met vaste server als er een onvoltooide gebeurtenis plaatsvindt tijdens opslaan
+* Fout met vaste server als er een onvoltooide gebeurtenis is opgetreden tijdens opslaan
 * Correcte verwijdering van specifieke gebeurtenis bij meerdere gebeurtenissen opgelost
 * Gebeurtenis met bestaande regel is niet bijgewerkt wanneer een nieuwe gebeurtenis is toegevoegd. Dit probleem is nu opgelost.
 * Correctie voor tweede klik op Bewerken uit details. [!DNL Live Search] pagina die opnieuw moet worden geladen
-* Synoniemen: Probleem verholpen waarbij een gebruiker buiten de invoer klikte en de focus niet naar het veld kon terugzetten.
+* Synoniemen: Probleem verholpen waarbij een gebruiker buiten invoer klikte en de focus niet naar het veld kon terugzetten
 * Andere kleine insectenmoeilijke situaties en prestatiesupdates
 
 
@@ -116,11 +116,11 @@ De gebruikers worden geadviseerd om te bevorderen en te testen alvorens aan prod
 
 [!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
 
-Bestaande [!DNL Live Search] de installaties moeten worden geüpgraded tot [!DNL Live Search] 2.0.0 om voordeel te halen uit de volgende nieuwe eigenschappen, moeilijke situaties, en verbeteringen:
+Bestaande [!DNL Live Search] de installaties moeten worden aangepast aan [!DNL Live Search] 2.0.0 om voordeel te halen uit de volgende nieuwe eigenschappen, moeilijke situaties, en verbeteringen:
 
 ![Nieuw](../assets/new.svg) [!DNL Live Search] ondersteunt nu PHP 8.1 voor installaties met Adobe Commerce 2.4.4.
 ![Nieuw](../assets/new.svg) De `Magento_ElasticsearchCatalogPermissionsGraphQl` wordt toegevoegd aan de lijst met modules die tijdens de installatie zijn uitgeschakeld.
-![Nieuw](../assets/new.svg) Het aantal beschikbare regels in de [[!DNL storefront popover]](quick-tour.md) kan van worden gevormd *Beheer*.
+![Nieuw](../assets/new.svg) Het aantal beschikbare regels in de [[!DNL storefront popover]](quick-tour.md) kan van worden gevormd *Beheerder*.
 ![Nieuw](../assets/new.svg) Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) compatibiliteit voor [!DNL Live Search].
 ![Nieuw](../assets/new.svg) De [!DNL Live Search] Het installatieproces wordt bijgewerkt met geavanceerde proceswijzigingen.
 ![Repareren](../assets/fix.svg) [Geavanceerd zoeken](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) koppeling verwijderd uit de voettekst van de winkel.
@@ -133,7 +133,7 @@ Bestaande [!DNL Live Search] de installaties moeten worden geüpgraded tot [!DNL
 
 ![Repareren](../assets/fix.svg) [Aangepast prijskenmerk](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) keert niet meer een fout terug wanneer gevormd als a [facet]({% koppeling live-search/facets-add.md %}).
 ![Repareren](../assets/fix.svg) Er heeft zich een fout voorgedaan als er geen fout was opgetreden. Dit probleem is nu opgelost. [valutasymbool](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html#step-5%3A-customize-currency-symbols-(optional)) (`data-currency-symbol`) is beschikbaar.
-![Repareren](../assets/fix.svg) [[!DNL Storefront popover]](storefront-popover.md) toont nu [Speciale prijs](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-special.html) (minimumprijs) indien beschikbaar.
+![Repareren](../assets/fix.svg) [[!DNL Storefront popover]](storefront-popover.md) toont nu [Speciale prijs](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-special.html) (minimumverkoopprijs), indien beschikbaar.
 
 ### [!DNL Live Search] 1.3.0 {#130}
 
@@ -151,11 +151,11 @@ Bestaande [!DNL Live Search] de installaties moeten worden geüpgraded tot [!DNL
 [!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
 
 ![Nieuw](../assets/new.svg) [[!DNL Storefront popover]](storefront-popover.md) Hiermee geeft u voorgestelde producten en miniatuurafbeeldingen van de zoekresultaten van het hoogste niveau weer als kopers vragen typen in het vak Zoeken.
-![Nieuw](../assets/new.svg) Handel *Beheer* sessie blijft geopend tijdens lange perioden van inactiviteit op het toetsenbord
+![Nieuw](../assets/new.svg) Handel *Beheerder* sessie blijft geopend tijdens lange perioden van inactiviteit op het toetsenbord
 ![Nieuw](../assets/new.svg) [!DNL Live Search] wordt automatisch ingeschakeld na het instappen
 ![Repareren](../assets/fix.svg) De aanvankelijke indexeertijd is minder dan een uur
 ![Repareren](../assets/fix.svg) Incrementele productupdates bijna realtime (na installatie en installatie)
-![Repareren](../assets/fix.svg) Sorteerbare kolommen in Synonym-editor
+![Repareren](../assets/fix.svg) Sorteerbare kolommen in Synoniemeditor
 ![Repareren](../assets/fix.svg) [!DNL Live Search] genereert niet langer een fout als zoekcriteria een lege sorteervolgordewaarde bevatten
 ![Repareren](../assets/fix.svg) Het filtreren van de waaier breekt niet meer als de attributencodes koorden &quot;aan&quot;of &quot;van&quot;bevatten
 
@@ -176,4 +176,4 @@ Meer informatie:
 
 * [Adobe Commerce Developer Documentation](https://developer.adobe.com/commerce/docs)
 * [Adobe Commerce-gebruikershandleiding](https://experienceleague.adobe.com/docs/commerce.html)
-* [[!DNL Live Search] op Marketplace](https://marketplace.magento.com/magento-live-search.html)
+* [[!DNL Live Search] op Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html)
