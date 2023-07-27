@@ -1,7 +1,7 @@
 ---
 title: Feed Ingestie Service
 description: Meer informatie over de Feed Ingestie Service voor Adobe Commerce
-source-git-commit: b484429a529acfa95f70c5a55b6a5fcdedc887b3
+source-git-commit: 12b1e89924a2eb89494bcb884fc3bc14e87b2b1c
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 0%
@@ -42,4 +42,4 @@ De Feed IngestiService is ontworpen voor:
 * Klanten met grote, complexe catalogi
 * Klanten die de Adobe Commerce Admin niet gebruiken om catalogusgegevens te beheren, gebruiken in plaats daarvan een ERP- of een extern systeem om catalogusgegevens te beheren
 
-Als u geïnteresseerd bent in deelname aan het bètaprogramma, neemt u contact op met het team op XXXXX@adobe.com.
+Als u geïnteresseerd bent in deelname aan het bètaprogramma, neemt u contact op met het team op sagonzal@adobe.com.
