@@ -2,9 +2,9 @@
 title: Onboarding en installatie
 description: Leer hoe u kunt installeren [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 96a5791c5716f612f473540f27bd3f99b1bfe7c8
+source-git-commit: 04b1553e7cc16d142b72553ca2a6bb9d6a6b5eb4
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '639'
 ht-degree: 0%
 
 ---
@@ -29,12 +29,12 @@ Het instapproces voor [!DNL Catalog Service] vereist toegang tot de bevellijn va
 
 - Adobe Commerce 2.4.4+
 - PHP 8.1, 8.2
-- Composer: 2,x
+- Composer: 2.x
 
 ### Ondersteunde platforms
 
 - Adobe Commerce op cloudinfrastructuur: 2.4.4+
-- Adobe Commerce ter plaatse: 2.4.4+
+- Adobe Commerce in bedrijven: 2.4.4+
 
 ## Omgevingen
 
@@ -42,6 +42,8 @@ Catalog Service heeft twee omgevingen die beschikbaar zijn voor instapweigering:
 
 - Sandbox (https://catalog-service-sandbox.adobe.io/graphql) - wordt gebruikt voor tests en validatie voordat u live gaat
 - Productie (https://catalog-service.adobe.io/graphql)-) gebruikt voor het live verkeer voor handelaars en websites
+
+Het testen van de lading zou slechts in het milieu van de Sandbox moeten worden uitgevoerd. Het wordt aanbevolen om [Ondersteuningsticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) worden geopend wanneer het laden het testen zodat het team van de Diensten het extra serververkeer kan voorzien.
 
 ## Installatie en configuratie
 
@@ -103,7 +105,7 @@ composer update
 
 Het bevel werkt alle gebiedsdelen bij.
 
-1. Upgrade uitvoeren voor Adobe Commerce:
+1. Upgrade Adobe Commerce:
 
 ```bash
 bin/magento setup:upgrade
