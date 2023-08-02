@@ -2,9 +2,9 @@
 title: "Snelle rondleiding"
 description: "Maak een snelle rondleiding door [!DNL Live Search] uit de winkel."
 exl-id: bcb19506-6617-4c8a-83df-9d961f81e9e8
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 9cf48f6f900385a5cb772adee8834ec9cfe5ee13
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,8 @@ Als u alle producten wilt weergeven die door de query &quot;search as you type&q
 ## Gefilterde zoekopdracht met facetten
 
 Bij gefilterde zoekopdracht worden meerdere afmetingen van kenmerkwaarden gebruikt, of [facetten](facets.md), als zoekcriteria. De selectie van filters wordt gedefinieerd door de handelaar en verandert afhankelijk van de geretourneerde producten, waarbij de meest gebruikte facetten boven aan de lijst worden vastgezet.
+
+Facetten gebruiken als URL-parameters:`http://yourwebsite.com?color=red`en de resultaten van de filters Live Search op basis van deze kenmerkwaarden.
 
 ## Synoniemen
 

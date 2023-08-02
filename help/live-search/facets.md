@@ -2,9 +2,9 @@
 title: "Facets"
 description: "[!DNL Live Search] facetten gebruiken meerdere afmetingen van kenmerkwaarden als zoekcriteria."
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 6d4317df4f921bdc57faa4a7fbb86fc3a1d9e9b2
+source-git-commit: 9cf48f6f900385a5cb772adee8834ec9cfe5ee13
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '421'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,8 @@ ht-degree: 0%
 Faceting is een methode voor het filteren van hoge prestaties waarbij meerdere dimensies van kenmerkwaarden worden gebruikt als zoekcriteria. Gefactureerde zoekopdracht is vergelijkbaar, maar aanzienlijk &quot;slimmer&quot; dan de standaard [gelaagde navigatie](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html). De lijst met beschikbare filters wordt bepaald door de [filterbare kenmerken](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#filterable-attributes) van producten die in de zoekresultaten worden geretourneerd.
 
 ![Gefilterde zoekresultaten](assets/storefront-search-results-run.png)
+
+Elke gedefinieerde facet kan als een URL-parameter worden gebruikt en de resultaten worden gefilterd op basis van de parameterwaarden: `http://yourstore.com?brand=acme&color=red`.
 
 ## Faciliteitseisen
 
@@ -34,7 +36,7 @@ De categorie- en productkenmerkvereisten voor facetten zijn vergelijkbaar met de
 
 ## Standaardkenmerkwaarden
 
-De volgende productkenmerken hebben [storefront, eigenschappen](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) die worden gebruikt door [!DNL Live Search] en standaard ingeschakeld.
+De volgende productkenmerken hebben [storefront, eigenschappen](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) die door [!DNL Live Search] en standaard ingeschakeld.
 
 | Eigenschap | Storefront, eigenschap | Kenmerk |
 |---|---|---|
@@ -44,7 +46,7 @@ De volgende productkenmerken hebben [storefront, eigenschappen](https://experien
 
 ## Standaardeigenschappen van niet-systeemkenmerken
 
-In de volgende tabel worden de standaardzoekeigenschappen en filterbare eigenschappen van niet-systeemkenmerken weergegeven, inclusief de eigenschappen die specifiek zijn voor de Luminantiemonsteringsgegevens. De instelling *Gebruiken in Zoeken* eigenschap attribute to `Yes` maakt het kenmerk doorzoekbaar in beide [!DNL Live Search] en native Adobe Commerce.
+In de volgende tabel worden de standaardzoekeigenschappen en filterbare eigenschappen van niet-systeemkenmerken weergegeven, inclusief de eigenschappen die specifiek zijn voor de Luminantiemonsteringsgegevens. De instelling van *Gebruiken in Zoeken* eigenschap attribute to `Yes` maakt het kenmerk doorzoekbaar in beide [!DNL Live Search] en native Adobe Commerce.
 
 | Kenmerkcode | Doorzoekbaar | Gebruiken in gelaagde navigatie |
 |--- |--- |--- |
@@ -52,7 +54,7 @@ In de volgende tabel worden de standaardzoekeigenschappen en filterbare eigensch
 | attributes_brand | Ja | Nee |
 | merk | Ja | Nee |
 | klimaat | Ja | Filterbaar (met resultaten) |
-| kraag | Ja | Filterbaar (met resultaten) |
+| halsband | Ja | Filterbaar (met resultaten) |
 | kleur | Ja | Filterbaar (met resultaten) |
 | kosten | Ja | Nee |
 | eco_collection | Ja | Filterbaar (met resultaten) |
