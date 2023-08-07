@@ -3,9 +3,9 @@ title: '''[!DNL Live Search] Opmerkingen bij de release'
 description: "De meest recente releasegegevens voor [!DNL Live Search] uit Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 0c8d9498ea7a30a99f834694ef8a865ad24466ab
+source-git-commit: e7e45863dced36ecbd508931df5141bb6f1d8e64
 workflow-type: tm+mt
-source-wordcount: '1277'
+source-wordcount: '1374'
 ht-degree: 0%
 
 ---
@@ -20,15 +20,49 @@ Updates zijn:
 ![Repareren](../assets/fix.svg) Oplossingen en verbeteringen
 ![Bug](../assets/bug.svg) Bekende problemen
 
+## Gehoste service-updates
+
+Deze nota&#39;s beschrijven updates die buiten een versioned versie of verbeteringen aan de ontvangen dienst werden gepubliceerd.
+
++++Hosted service-updates
 
 _13 juni 2023_
 
-![Nieuw](../assets/new.svg) Live zoeken biedt nu ondersteuning voor 5 extra [configuratiewaarden](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/configuration.html).
 ![Repareren](../assets/fix.svg) Probleem verholpen waarbij bepaalde tekens, zoals aanhalingstekens of apostroffen, klasseringsproblemen veroorzaakten. Deze problemen worden opgelost door opnieuw te indexeren.
 
 _25 april 2023_
 
 ![Nieuw](../assets/new.svg) Klanten met Live zoeken kunnen nu profiteren van de nieuwe [SaaS-prijsindexer](../price-index/index.md).
+
++++
+
+## [!DNL Live Search] 3.0.2 {#302}
+
+_7 augustus 2023_
+
+[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+
+### Nieuwe functies
+
+De volgende waarden zijn toegevoegd aan de `storeDetails` object:
+
+* &quot;Alle producten per pagina toestaan&quot;
+* Valuta
+* &quot;Producten per pagina op raster Toegestane waarden&quot;
+* &quot;Producten per pagina op standaardwaarde van raster&quot;
+* Winkeltaal
+
+### Updates
+
+* De modules van de Dienst van de Catalogus zijn toegevoegd aan het metapakket om geavanceerde gegevensherwinning te steunen.
+
+Handelaren moeten de [!DNL Live Search] extensie versie >= 3.0.2 gebruiken om deze functies te openen.
+
+U wordt aangeraden een upgrade uit te voeren en te testen voordat u naar de productie gaat. Overweeg om de productieomgeving tijdens niet-piekuren te upgraden nadat de resultaten van de testomgeving zijn gecontroleerd.
+
+## Vorige versies
+
++++3.0.1 en eerder
 
 ## [!DNL Live Search] 3.0.1 {#301}
 
@@ -73,10 +107,6 @@ _14 maart 2023_
 Handelaren moeten de [!DNL Live Search] extensie >= 3.0.1 gebruiken om deze functies te openen.
 
 U wordt aangeraden een upgrade uit te voeren en te testen voordat u naar de productie gaat. Overweeg om de productieomgeving tijdens niet-piekuren te upgraden nadat de resultaten van de testomgeving zijn gecontroleerd.
-
-## Vorige versies
-
-+++2.0.5 en eerder
 
 ## [!DNL Live Search] 2.0.5 {#205}
 

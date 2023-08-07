@@ -3,9 +3,9 @@ title: '''[!DNL Product Recommendations] Opmerkingen bij de release'
 description: De meest recente releasegegevens voor [!DNL Product Recommendations] uit Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 7eece9b341a27637d7ac00216f18b7fad7c50740
+source-git-commit: 91ad3b5f1fb9248685fc67071a7191dfbf6c2472
 workflow-type: tm+mt
-source-wordcount: '1120'
+source-wordcount: '1144'
 ht-degree: 0%
 
 ---
@@ -25,9 +25,13 @@ De opmerkingen bij de release omvatten:
 ![Repareren](../assets/fix.svg) Oplossingen en verbeteringen
 ![Bug](../assets/bug.svg) Bekende problemen
 
-Zie de documentatie voor ontwikkelaars [informatie over productcompatibiliteit](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
+Zie de documentatie voor ontwikkelaars op [informatie over productcompatibiliteit](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
-## Huidige hoofdversie
+## Gehoste service-updates
+
+Deze nota&#39;s beschrijven updates die buiten een versioned versie of verbeteringen aan de ontvangen dienst werden gepubliceerd.
+
++++Hosted service-updates
 
 _18 juli 2023_
 
@@ -36,6 +40,10 @@ _18 juli 2023_
 _25 april 2023_
 
 ![Nieuw](../assets/new.svg) Recommendations-klanten van producten kunnen nu profiteren van [Prijsindexering SaaS](../price-index/index.md).
+
++++
+
+## Huidige hoofdversie
 
 ### 5.0.0 van magento/productaanbevelingen
 
@@ -93,7 +101,7 @@ _25 april 2023_
 
 [!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
 
-![Nieuw](../assets/new.svg) Nieuw toegevoegd [typen aanbevelingen](type.md): Conversie (weergave naar winkelwagentje), Conversie (weergave voor aankoop) en Recent bekeken. Deze nieuwe aanbevelingen zijn beschikbaar in het dialoogvenster `magento/product-recommendations` module 3.2.2 en hoger.
+![Nieuw](../assets/new.svg) Nieuw toegevoegd [typen aanbevelingen](type.md): Conversie (weergave naar winkelwagentje), Conversie (weergave voor aankoop) en Recent weergegeven. Deze nieuwe aanbevelingen zijn beschikbaar in het dialoogvenster `magento/product-recommendations` module 3.2.2 en hoger.
 ![Repareren](../assets/fix.svg) Probleem verholpen waarbij Fastly&#39;s Web Application Firewall (WAF) een cookie onjuist blokkeerde
 ![Repareren](../assets/fix.svg) Producten die waren toegewezen aan de niet-standaardwinkelweergave werden niet weergegeven in het dialoogvenster _Recommendations-productvoorvertoning_ wanneer u een aanbeveling voor die specifieke winkelweergave maakt
 ![Repareren](../assets/fix.svg) Bepaalde namen van aanbevelingen in de Page Builder stonden de aanbeveling-eenheid niet in de winkel. Dit probleem is nu opgelost.
@@ -139,7 +147,7 @@ _25 april 2023_
 
 [!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
 
-![Repareren](../assets/fix.svg) Correctie van de fout &#39;&#39;Kan configureerbare gegevens voor productopties niet ophalen&#39;&#39; tijdens het synchroniseren van catalogi.
+![Repareren](../assets/fix.svg) Correctie van de fout &#39;&#39;Kan configureerbare gegevens voor productopties niet ophalen&#39;&#39; tijdens synchroniseren van catalogus.
 ![Repareren](../assets/fix.svg) Probleem verholpen waarbij de opslagcode niet correct werd ingesteld toen u de configuratie &quot;Winkelcode toevoegen aan URL&quot; inschakelde. Dit probleem is nu opgelost.
 ![Repareren](../assets/fix.svg) Verbeterde detectie van wijzigingen in de configuratie van het deelvenster Admin om ervoor te zorgen dat deze wijzigingen worden weerspiegeld in de gegevens van Catalog Sync
 
@@ -170,7 +178,7 @@ _25 april 2023_
 
 [!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
 
-![Repareren](../assets/fix.svg) Probleem verholpen waarbij gebeurtenissen werden verzonden voor gegevensverzameling voordat de module werd geconfigureerd, wat ongeldig verkeer veroorzaakte
+![Repareren](../assets/fix.svg) Probleem verholpen waarbij gebeurtenissen werden verzonden voor gegevensverzameling voordat de module werd geconfigureerd, wat ongeldig verkeer veroorzaakte. Dit probleem is nu opgelost.
 
 ### 3.0.6 van de aanbevelingen inzake magento/product
 
@@ -191,7 +199,7 @@ _25 april 2023_
 ![Repareren](../assets/fix.svg) Correctie van de fout &#39;&#39;Kan gegevens over productopties niet ophalen&#39;&#39; die tijdens het exporteren van de catalogus kon optreden.
 ![Repareren](../assets/fix.svg) Het valutasymbool in het dialoogvenster _Ontvangsten_ kolom op de _Product Recommendations_ het dashboard geeft nu correct de geconfigureerde basisvaluta weer .
 
-### 3.0.4 van magento/productaanbevelingen
+### 3.0.4 van de aanbevelingen inzake magento/product
 
 [!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
 
@@ -201,7 +209,7 @@ _25 april 2023_
 
 [!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
 
-![Repareren](../assets/fix.svg) Verbeterde symboolimplementatie in storefront-sjabloon
+![Repareren](../assets/fix.svg) Verbeterde symboolimplementatie in storefront sjabloon
 
 ### 1.0.4 van magento/module-page-builder-product-recommendations for Page Builder
 
@@ -225,7 +233,7 @@ Dit is een belangrijke versie. [Bewerken](install-configure.md#update) het hoofd
 ![Nieuw](../assets/new.svg) Ophalen [!DNL Product Recommendations] van alternatieve SaaS-gegevensruimten. Hierdoor kunt u productaanbevelingen gebruiken die in uw productomgeving zijn berekend op andere, niet-productieomgevingen. [Schakelen tussen SaaS-gegevensruimten](settings.md) Deze functie wordt verder beschreven.
 
 ![Repareren](../assets/fix.svg) Probleem verholpen waarbij afhandeling werd geblokkeerd voor kopers die de Blokoorsprong gebruikten
-![Repareren](../assets/fix.svg) Probleem verholpen waarbij externe add-to-cart-gebeurtenissen werden verzonden
+![Repareren](../assets/fix.svg) Probleem opgelost waarbij externe add-to-cart-gebeurtenissen werden verzonden
 
 ### 1.0.3 van magento/module-page-builder-product-recommendations for Page Builder
 
