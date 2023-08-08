@@ -3,9 +3,9 @@ title: '''[!DNL Live Search] Opmerkingen bij de release'
 description: "De meest recente releasegegevens voor [!DNL Live Search] uit Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: e7e45863dced36ecbd508931df5141bb6f1d8e64
+source-git-commit: 3edbbc054fdadfeaa710b8c096db63e0d1961d02
 workflow-type: tm+mt
-source-wordcount: '1374'
+source-wordcount: '1390'
 ht-degree: 0%
 
 ---
@@ -55,6 +55,10 @@ De volgende waarden zijn toegevoegd aan de `storeDetails` object:
 ### Updates
 
 * De modules van de Dienst van de Catalogus zijn toegevoegd aan het metapakket om geavanceerde gegevensherwinning te steunen.
+
+### Oplossingen
+
+* De **Mijn account** paginanavigatie verdwijnt niet meer wanneer u de widget pagina met productaanbiedingen gebruikt.
 
 Handelaren moeten de [!DNL Live Search] extensie versie >= 3.0.2 gebruiken om deze functies te openen.
 
