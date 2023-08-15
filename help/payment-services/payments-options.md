@@ -3,9 +3,9 @@ title: Betalingsopties
 description: Stel de betalingsopties in om de beschikbare methoden voor uw winkelklanten aan te passen.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 27d121f862be99b41f467a00e5f6b9d28a40deab
+source-git-commit: 9a52976be16afa707b494f4da3b99192dd73b8f2
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '1035'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Er zijn verschillende gedragingen voor elke betalingsmethode, afhankelijk van wa
 
 Inschakelen [creditcard vauleren](#vaulting) zodat kopers hun creditcardgegevens kunnen bewaren voor een snelle afhandeling later.
 
-U kunt configureren [!UICONTROL Credit Card Fields] in de winkelconfiguratie of de startpagina van de betalingsservices. Zie [Instellingen](settings.md#credit-card-fields) voor meer informatie .
+U kunt [!UICONTROL Credit Card Fields] in de winkelconfiguratie of de startpagina van de betalingsservices. Zie [Instellingen](settings.md#credit-card-fields) voor meer informatie .
 
 U kunt ook de lay-out, breedte, hoogte en buitenstijl van de creditcardvelden wijzigen. Zie [PayPal-documentatie](https://developer.paypal.com/docs/checkout/advanced/customize/card-field-style/) voor meer informatie .
 
@@ -44,7 +44,7 @@ U kunt ook de lay-out, breedte, hoogte en buitenstijl van de creditcardvelden wi
 
 ![[!DNL PayPal Smart Buttons] opties](assets/payment-buttons.png){width="500"}
 
-U kunt configureren [!UICONTROL PayPal Smart Buttons] in de winkelconfiguratie of de startpagina van de betalingsservices.  Zie [Instellingen](settings.md#payment-buttons) voor meer informatie .
+U kunt [!UICONTROL PayPal Smart Buttons] in de winkelconfiguratie of de startpagina van de betalingsservices.  Zie [Instellingen](settings.md#payment-buttons) voor meer informatie .
 
 Zie PayPal&#39;s [Documentatie over betalingsmethoden](https://developer.paypal.com/docs/checkout/payment-methods/) om te leren in welke landen elke betalingsmethode momenteel beschikbaar is.
 
@@ -68,7 +68,7 @@ De [!DNL Apple Pay] Deze knop is zichtbaar vanaf de pagina met producten, de min
 
 >[!NOTE]
 >
-> Te gebruiken [!DNL Apple Pay] voor uw winkels, volledig [zelfregistratie met [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_Uw live domein registreren_ alleen deel) en [configureren voor uw winkels in [!DNL Payment Services]](settings.md#payment-buttons).
+> Te gebruiken [!DNL Apple Pay] voor uw winkels, voltooi [zelfregistratie met [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_Uw live domein registreren_ alleen deel) en [configureren voor uw winkels in [!DNL Payment Services]](settings.md#payment-buttons).
 
 ### PayPal-incasso of creditcard
 
@@ -76,7 +76,7 @@ Klanten kunnen uitchecken via de button PayPal-incasso of creditcard.
 
 De button PayPal Debit of Creditcard is zichtbaar vanaf de betalingspagina.
 
-Met deze optie kun je kopers een betalingsoptie voor PayPal-incasso of creditcard aanbieden als je geen andere creditcardprovider hebt.
+Met deze optie kun je een betalingsoptie voor een debet of creditcard aan kopers aanbieden met een PayPal-gehoste knop als alternatief voor de integratie met een creditcard.
 
 ### [!DNL Pay Later] knop
 
