@@ -30,9 +30,9 @@ Gegevensverzameling ten behoeve van productaanbevelingen omvat geen persoonlijk 
 
 Gezien de voortdurend veranderende complexiteit van online winkelen, is wat het beste werkt voor uw winkel vaak een combinatie van meerdere sleuteltechnologieën. Beide gebruiken [!DNL Product Recommendations] en [Productrelaties](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-relationships.html) biedt u meer flexibiliteit bij het promoten van producten. U kunt [!DNL Product Recommendations] door Adobe Sensei worden aangestuurd om uw aanbevelingen op intelligente wijze op grote schaal te automatiseren. Vervolgens kunt u [Regels voor verwante producten](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/product-relationships/product-related-rules.html) wanneer u moet manueel tussenkomen en ervoor zorgen dat een specifieke aanbeveling aan een doelverkoopsegment wordt gedaan, of wanneer bepaalde bedrijfsdoelstellingen moeten worden verwezenlijkt.
 
-Aan de hand van productaanbevelingen kunt u:
+Met productaanbevelingen kunt u:
 
-- Kies uit negen verschillende soorten intelligente aanbevelingen op basis van de volgende gebieden: op basis van winkels, items, populariteit, trending en op basis van gelijkenis
+- Maak een keuze uit negen verschillende soorten intelligente aanbevelingen op basis van de volgende gebieden: winkelgebaseerd, op items gebaseerd, op populariteit gebaseerd, trending en op gelijkenis gebaseerd
 - Gebruik gedragsgegevens om aanbevelingen te personaliseren gedurende de hele winkelreis
 - Bepaal de belangrijkste metriek relevant voor elke aanbeveling om u te helpen het effect van uw aanbevelingen begrijpen
 

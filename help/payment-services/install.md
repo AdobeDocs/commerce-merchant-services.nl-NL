@@ -21,9 +21,9 @@ Het downloaden en installeren van [!DNL Payment Services] verlenging voor [!DNL 
 
 U moet de extensie eerst downloaden van [Commerce Marketplace](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/commerce-marketplace.html) voordat u de toepassing installeert.
 
-1. Ga naar de [De uitbreiding van de Betalingsdiensten in de Commerce Marketplace](https://commercemarketplace.adobe.com/magento-payment-services.html).
+1. Ga naar de [Uitbreiding betalingsdiensten in de Commerce Marketplace](https://commercemarketplace.adobe.com/magento-payment-services.html).
 1. U kiest de editie en versie door te schakelen **[!UICONTROL Edition]** en **[!UICONTROL Your store version]** naar uw voorkeurskeuzes.
-1. Klikken **[!UICONTROL Add to Cart]**.
+1. Klik op **[!UICONTROL Add to Cart]**.
 1. Uitchecken voltooien en klikken **[!UICONTROL Place Order]**.
 1. Controleer het e-mailadres dat is gekoppeld aan het downloaden van uw Marketplace voor bevestiging van de bestelling en voor meer informatie.
 
@@ -39,7 +39,7 @@ Zie [Een extensie installeren](https://devdocs.magento.com/guides/v2.4/install-g
 
 ### [!DNL Adobe Commerce] over cloudinfrastructuur
 
-Deze methode wordt gebruikt voor het installeren van de [!DNL Payment Services] voor een Commerce Cloud-instantie.
+Deze methode wordt gebruikt voor het installeren van de [!DNL Payment Services] extensie voor een Commerce Cloud-instantie.
 
 1. Werk uw `composer.json` bestand:
 
@@ -116,7 +116,7 @@ Als de volgende fout aangeeft dat u onjuiste Composer-toetsen hebt:
 Could not find a matching version of package magento/payment-services. Check the package spelling, your version constraint and that the package is available in a stability which matches your minimum-stability (stable).
 ```
 
-Controleer of uw Composer-sleutels geldig zijn en of u toegang hebt tot andere Magento-pakketten.
+Controleer of uw Composer-sleutels geldig zijn en of u toegang hebt tot andere Magento&#39;s.
 
 Om te zien welke Composer sleutels worden gevormd:
 

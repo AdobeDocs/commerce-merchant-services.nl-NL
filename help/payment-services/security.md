@@ -24,7 +24,7 @@ Zie [Beveiliging](https://docs.magento.com/user-guide/stores/security.html){targ
 
 De betaalkaartindustrie (PCI) heeft een reeks vereisten vastgesteld voor bedrijven die betalingen via een creditcard via internet accepteren. Naast het handhaven van een veilige omgeving, zijn de handelaren die de informatie van de klantencreditcard behandelen verantwoordelijk voor het voldoen aan sommige standaardrichtlijnen.
 
-Zie [PCI-richtlijnen voor compatibiliteit](https://docs.magento.com/user-guide/stores/compliance-pci.html){target="_blank"} voor meer informatie .
+Zie [PCI-compatibiliteitsrichtlijnen](https://docs.magento.com/user-guide/stores/compliance-pci.html){target="_blank"} voor meer informatie .
 
 Handelaren kunnen een [vragenlijst voor zelfbeoordeling (SAQ)](https://www.pcisecuritystandards.org/pci_security/completing_self_assessment){target="_blank"}, een zelfvalideringsinstrument voor het beoordelen van de beveiliging van gegevens van kaarthouders.
 

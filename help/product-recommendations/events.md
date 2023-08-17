@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Gegevens verzamelen
 
-Als u Adobe Commerce-functies op basis van SaaS installeert en configureert, zoals [Product Recommendations](install-configure.md) of [Live zoeken](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html), zetten de modules gedragsgegevensinzameling aan uw winkelcentrum op. Dit mechanisme verzamelt geanonimiseerde gedragsgegevens van uw kopers en geeft de aanzet tot productaanbevelingen. De `view` wordt gebruikt om de gebeurtenis te berekenen `Viewed this, viewed that` het soort aanbeveling en de `place-order` wordt gebruikt om de gebeurtenis te berekenen `Bought this, bought that` soort aanbeveling.
+Als u Adobe Commerce-functies op basis van SaaS installeert en configureert, zoals [Product Recommendations](install-configure.md) of [Live zoeken](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html), zetten de modules gedragsgegevensinzameling aan uw winkelcentrum op. Dit mechanisme verzamelt geanonimiseerde gedragsgegevens van uw kopers en geeft de aanzet tot productaanbevelingen. Bijvoorbeeld de `view` wordt gebruikt om de gebeurtenis te berekenen `Viewed this, viewed that` het soort aanbeveling en de `place-order` wordt gebruikt om de gebeurtenis te berekenen `Bought this, bought that` soort aanbeveling.
 
 >[!NOTE]
 >
@@ -33,7 +33,7 @@ De [Adobe Commerce Storefront Event Collector](https://developer.adobe.com/comme
 | `rec-click` | De klant klikt op een product in de aanbevolen eenheid. | Ja |
 | `view` | De aanbevolen eenheid kan op de pagina worden weergegeven, bijvoorbeeld door naar de pagina te schuiven. | Ja |
 
-Als uw winkel is geïmplementeerd met PWA Studio, raadpleegt u de [PWA-documentatie](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Als u een aangepaste frontend-technologie gebruikt, zoals React of Vue JS, raadpleegt u de gebruikershandleiding voor meer informatie over de integratie van Product Recommendations in een [koploos](headless.md) milieu.
+Als uw winkel is geïmplementeerd met PWA Studio, raadpleegt u de [PWA-documentatie](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Als u een aangepaste frontend-technologie gebruikt, zoals React of Vue JS, raadpleegt u de gebruikershandleiding voor meer informatie over de integratie van Product Recommendations in een [krankzinnig](headless.md) milieu.
 
 ## Caveats
 

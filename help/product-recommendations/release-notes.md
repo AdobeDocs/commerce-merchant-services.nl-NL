@@ -1,5 +1,5 @@
 ---
-title: '''[!DNL Product Recommendations] Opmerkingen bij de release'
+title: '[!DNL Product Recommendations] Aanvullende informatie'
 description: De meest recente releasegegevens voor [!DNL Product Recommendations] uit Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
@@ -10,7 +10,7 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Product Recommendations] Opmerkingen bij de release
+# [!DNL Product Recommendations] Aanvullende informatie
 
 De releaseopmerkingen bevatten updates voor het volgende [!DNL Product Recommendations] modules:
 
@@ -122,7 +122,7 @@ _25 april 2023_
 
 [!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
 
-![Nieuw](../assets/new.svg) Toegevoegde steun voor de Laag van Gegevens van de Cliënt van Adobe om gedragsgegevensinzameling over eigenschappen en de diensten van Adobe Commerce te standaardiseren. Zie de [readme](https://github.com/adobe/magento-storefront-event-collector/blob/main/README.md) voor meer informatie.
+![Nieuw](../assets/new.svg) Toegevoegde steun voor de Laag van Gegevens van de Cliënt van de Adobe om gedragsgegevensinzameling over eigenschappen en de diensten van Adobe Commerce te standaardiseren. Zie de [readme](https://github.com/adobe/magento-storefront-event-collector/blob/main/README.md) voor meer informatie.
 
 ### 3.2.6 van de aanbevelingen inzake magento/product
 
@@ -135,7 +135,7 @@ _25 april 2023_
 
 [!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
 
-![Nieuw](../assets/new.svg) De naam Magento Services wijzigen in [Commerciële diensten](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) en verbeterde bruikbaarheid in de beheerder
+![Nieuw](../assets/new.svg) De naam van services voor Magento&#39;s wijzigen in [Commerciële diensten](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) en verbeterde bruikbaarheid in de beheerder
 
 ### 3.2.4 van de aanbevelingen inzake magento/product
 
@@ -239,7 +239,7 @@ Dit is een belangrijke versie. [Bewerken](install-configure.md#update) het hoofd
 
 [!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
 
-![Nieuw](../assets/new.svg) Ondersteuning voor Page Builder. Met de integratie van de Bouwer van de Pagina, kunt u de eenheden van de Aanbeveling van de Aanbeveling in om het even welke willekeurige plaats op de Bouwer van de Pagina-geschreven inhoud nauwkeurig en korrelig plaatsen. U kunt ook zelf de koppen en aanbevelingen opmaken. Ga naar [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) voor meer informatie .
+![Nieuw](../assets/new.svg) Ondersteuning voor Page Builder. Met de integratie van de Bouwer van de Pagina, kunt u de eenheden van de Aanbeveling nauwkeurig en korrelig in om het even welke willekeurige plaats op de Bouwer van de Pagina-geschreven inhoud plaatsen. U kunt ook zelf de koppen en aanbevelingen opmaken. Ga naar [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) voor meer informatie .
 
 ### 2.0.0 van magento/productaanbevelingen
 
@@ -253,5 +253,5 @@ Dit is een belangrijke versie. [Bewerken](install-configure.md#update) het hoofd
 
 Meer informatie over [!DNL Product Recommendations] en [!DNL Product Recommendations] ontwikkeling:
 
-* [Handboek](overview.md)
+* [Gebruikershandleiding](overview.md)
 * [Documentatie voor ontwikkelaars](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/development-overview.html)

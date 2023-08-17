@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # [!DNL Catalog Service and API Mesh]
 
-De [API-net voor Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) kunnen ontwikkelaars met Adobe I/O Runtime API&#39;s van particulieren of derden en andere interfaces integreren met Adobe-producten.
+De [API-net voor Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) kunnen ontwikkelaars API&#39;s van particulieren of derden en andere interfaces met Adobe producten integreren met behulp van Adobe I/O Runtime.
 
 ![Catalogusarchitectuurdiagram](assets/catalog-service-architecture-mesh.png)
 
-De eerste stap voor het gebruik van het API-net met de Catalogusservice is het verbinden van API-net met uw instantie. Zie gedetailleerde instructies in [Een net maken](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
+De eerste stap voor het gebruik van het API-net met de Catalogusservice is het aansluiten van het API-net op uw instantie. Zie gedetailleerde instructies in [Een net maken](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
 
-Installeer de [Adobe Developer CLI-pakket](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
+Als u de installatie wilt voltooien, installeert u de [Adobe Developer CLI-pakket](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
 
 Zodra het Net op Adobe I/O Runtime wordt gevormd, stel het volgende bevel in werking dat toevoegt `CommerceCatalogServiceGraph` bron van het net.
 
@@ -160,7 +160,7 @@ query {
 
 ### Entiteits-id ophalen
 
-Dit net voegt toe `entityId` aan de interface ProductView. Vervang de `name `, `endpoint`, en `x-api-key` waarden.
+Met dit net voegt u de `entityId` aan de interface ProductView. Vervang de `name `, `endpoint`, en `x-api-key` waarden.
 
 ```json
 {

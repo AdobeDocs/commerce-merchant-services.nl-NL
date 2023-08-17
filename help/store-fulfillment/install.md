@@ -19,7 +19,7 @@ Voltooi de eerste installatie van de [!DNL Store Fulfillment for Adobe Commerce 
 
 ## Vereisten
 
-Controleer de [vereisten](solution-requirements.md) voor de Opslagoplossing van de Afhandeling van de Opslag en verzamel vereiste informatie alvorens u installeert [!DNL Store Fulfillment] extensie voor Adobe Commerce.
+Controleer de [vereisten](solution-requirements.md) voor de Opslagoplossing en verzamel de vereiste informatie voordat u de [!DNL Store Fulfillment] voor Adobe Commerce.
 
 Als u een pre-versie of bètaversie van de Store Fulfillment for Adobe Commerce-extensie hebt geïnstalleerd, gebruikt u de volgende opdracht om deze te verwijderen voordat u de huidige versie installeert.
 
@@ -44,7 +44,7 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
    - [Een extensie installeren voor een Adobe Commerce-exemplaar op locatie](https://devdocs.magento.com/extensions/install/).
 
-### Stap 1: De extensiebundel downloaden
+### Stap 1: De extensiesbundel downloaden
 
 Volg de instructies van uw accountvertegenwoordigers om het archiefbestand te downloaden dat de Composer-pakketten bevat voor het installeren van de extensie Store Fulfillment Services.
 
@@ -54,7 +54,7 @@ Extraheer het archiefdossier dat de integratiebundel bevat om de uitbreiding van
 
 1. Maak een doelmap voor de geëxtraheerde bestanden.
 
-   - Ga vanaf de opdrachtregel naar de hoofdmap van het document van de webserver.
+   - Ga vanaf de opdrachtregel naar de hoofdmap van het webserverdocument.
 
    - Een `artifacts` directory.
 
@@ -73,7 +73,7 @@ Extraheer het archiefdossier dat de integratiebundel bevat om de uitbreiding van
 
 ### Stap 3: Uw app configureren met Composer
 
-Gebruik Composer om de bronmap voor de installatie te configureren en de extensie Store Fulfillment Services te installeren.
+Gebruik Composer om de bronmap voor de installatie te configureren en de extensie Services voor winkelvervulling te installeren.
 
 1. Configureer de bronopslagplaats voor de Composer-installatie.
 
@@ -91,7 +91,7 @@ Gebruik Composer om de bronmap voor de installatie te configureren en de extensi
 >
 >Voor betere prestaties op Adobe Commerce-exemplaren op locatie kunt u [de configuratie voor automatisch laden bijwerken](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/deployment-flow.html#update-the-autoloader): `composer dump-autoload --optimize`
 
-### Stap 4: Het databaseschema en de gegevens bijwerken
+### Stap 4: Upgrade het databaseschema en de gegevens
 
 Voltooi de installatie met de `bin/magento setup:upgrade` om het gegevensbestandschema en de gegevens met de veranderingen bij te werken om de oplossing van de Afhandeling van de Opslag te steunen.
 
@@ -101,7 +101,7 @@ Voltooi de installatie met de `bin/magento setup:upgrade` om het gegevensbestand
 
 ### Stap 5: De installatie voltooien
 
-1. Registreer de extensie met Adobe Commerce via de `setup:upgrade` Magento CLI-opdracht.
+1. Registreer de extensie met Adobe Commerce via de `setup:upgrade` Magento CLI, opdracht.
 
    ```terminal
    bin/magento setup:upgrade
@@ -129,7 +129,7 @@ Voltooi de installatie met de `bin/magento setup:upgrade` om het gegevensbestand
 
 Verifieer bij de Adobe Commerce-server of de modules voor de extensie Store Fulfillment Services zijn geïnstalleerd en ingeschakeld.
 
-1. Meld u aan bij de server.
+1. Log in bij de server.
 
    Voor installaties op Adobe Commerce op cloudinfrastructuur, [gebruik SSH om zich aan te melden bij de verre omgeving](https://devdocs.magento.com/cloud/env/environments-ssh.html#ssh).
 
@@ -195,5 +195,5 @@ De `-f` is vereist als u een leeg thema gebruikt.
 
 >[!NOTE]
 >
->Zie voor meer informatie de [Statische inhoud implementeert best practices in Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/static-content-deployment.html) artikel in het Adobe Commerce Help Center.
+>Zie de klasse [Statische inhoud implementeert best practices in Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/static-content-deployment.html) artikel in het Adobe Commerce Help Center.
 

@@ -17,7 +17,7 @@ Facetten is een krachtige het filtreren methode die veelvoudige afmetingen van d
 
 ## Facetaggregatie
 
-Facetaggregatie wordt als volgt uitgevoerd: als de winkel drie facetten (categorieën, kleur en prijs) heeft en de verkoopfilters op alle drie (kleur = blauw, de prijs is van $10.00-50.00, categorieën = `promotions`).
+Facetsamenvoeging wordt als volgt uitgevoerd: als de winkel drie facetten (categorieën, kleur en prijs) heeft en de verkoopfilters op alle drie (kleur = blauw, de prijs is van $10.00-50.00, categorieën = `promotions`).
 
 * `categories` aggregatie - aggregaten `categories`past vervolgens de `color` en `price` , maar niet de `categories` filter.
 * `color` aggregatie - aggregaten `color`past vervolgens de`price` en `categories` , maar niet de `color` filter.

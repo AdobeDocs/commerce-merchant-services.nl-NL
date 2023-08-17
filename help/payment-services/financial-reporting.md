@@ -15,6 +15,6 @@ ht-degree: 0%
 
 [!DNL Payment Services] for [!DNL Adobe Commerce] en [!DNL Magento Open Source] biedt u uitgebreide rapportage zodat u een duidelijk beeld krijgt van de bestellingen en betalingen van uw winkel.
 
-![Financiële verslagen](assets/reports-view.png)
+![Overzicht van financiële verslagen](assets/reports-view.png)
 
 De kasstroombeheerrapporten—Uitbetalingen, Transacties en Betalingsstatus van bestellingen—synchroniseren betalingsgegevens met bestelgegevens om u volledige transparantie te geven van verwerkt volume, betalingssaldo en gedetailleerde rapportage op transactieniveau voor financiële afstemming.

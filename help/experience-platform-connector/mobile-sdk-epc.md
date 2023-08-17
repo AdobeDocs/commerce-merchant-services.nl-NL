@@ -68,7 +68,7 @@ Nadat u de configuratie van SDK voor het platform van de Ervaring voltooit, voeg
    Identity.updateIdentities(with: identityMap)
    ```
 
-1. Maak verbinding met de Commerce Cloud-omgeving.
+1. Maak verbinding met de omgeving van de Commerce Cloud.
 
    In de bouwstijlmontages van uw project, voeg URL aan het eindpunt van GraphQL van de Handel toe. Bijvoorbeeld:
 

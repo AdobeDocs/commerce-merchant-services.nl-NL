@@ -34,7 +34,7 @@ Logische operatoren `AND` en `OR` worden gebruikt om meerdere voorwaarden samen 
 
 >[!NOTE]
 >
-> De uitsluitings- en insluitingsfilters vervangen de uitsluitingen van oudere categorieën in versie 3.2.2 en hoger van het dialoogvenster `magento/product-recommendations` module. Zie de [releaseopmerkingen](release-notes.md) voor meer informatie over Adobe Commerce-releases.
+> De uitsluitings- en insluitingsfilters vervangen de uitsluitingen van oudere categorieën in versie 3.2.2 en hoger van het dialoogvenster `magento/product-recommendations` -module. Zie de [releaseopmerkingen](release-notes.md) voor meer informatie over Adobe Commerce-releases.
 
 ## Filtertypen {#filtertypes}
 
@@ -60,7 +60,7 @@ Productfilters geven aan welke specifieke producten in aanmerking komen of niet 
 
 ### Type
 
-Een filter op basis van het producttype omvat of sluit alle producten van een specifiek type uit. Tot de ondersteunde typen behoren _Eenvoudig_, _Configureerbaar_, _Virtueel_, _Downloadbaar_, of _Cadeaukaart_. _Bundel_ en _Gegroepeerd_ producten worden nog niet ondersteund.
+Een filter op basis van het producttype omvat of sluit alle producten van een specifiek type uit. Tot de ondersteunde typen behoren _eenvoudig_, _Configureerbaar_, _Virtueel_, _Downloadbaar_, of _Cadeaukaart_. _Bundel_ en _Gegroepeerd_ producten worden nog niet ondersteund.
 
 ### Zichtbaarheid
 

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Eigenschappen van productkenmerken (metagegevens) bepalen:
 
-* Hoe een kenmerk in de catalogus kan worden gebruikt
+* Hoe een attribuut in de catalogus kan worden gebruikt
 * De vormgeving en het gedrag van de winkel
 * De gegevens die zijn opgenomen in gegevensoverdrachtsbewerkingen
 
@@ -27,9 +27,9 @@ De [!DNL Live Search] API staat een cliënt toe om op om het even welk productat
 >
 > Koophandel met afnemers [!DNL Live Search] kan profiteren van snellere prijswijzigingen en synchronisatietijd op hun websites met de [SaaS-prijsindexer](../price-index/index.md).
 
-## Indexeringspijplijn
+## Indexeringsleiding
 
-De client roept de zoekservice van de storefront aan om (filterbare, sorteerbare) indexmetagegevens op te halen. Alleen doorzoekbare productkenmerken met de *Gebruiken in gelaagde navigatie* eigenschap ingesteld op `Filterable (with results)` en *Gebruiken voor sorteren in productaanbieding* instellen op `Yes` kan door de onderzoeksdienst worden geroepen.
+De client roept de zoekservice van de storefront aan om (filterbare, sorteerbare) indexmetagegevens op te halen. Alleen doorzoekbare productkenmerken met *Gebruiken in gelaagde navigatie* eigenschap ingesteld op `Filterable (with results)` en *Gebruiken voor sorteren in productaanbieding* instellen op `Yes` kan door de onderzoeksdienst worden geroepen.
 Om een dynamische vraag te construeren, moet de onderzoeksdienst weten welke attributen doorzoekbaar en hun gewicht zijn. [!DNL Live Search] geeft Adobe Commerce-zoekgewichten weer (1-10, waarbij 10 de hoogste prioriteit heeft). De lijst met gegevens die met de catalogusservice worden gesynchroniseerd en gedeeld, vindt u in het schema, dat wordt gedefinieerd in:
 
 `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
@@ -57,9 +57,9 @@ Als u bijvoorbeeld het dialoogvenster `Use in Search` eigendom van de `color` ke
 * `sortable`
 * `visibleInSearch`
 
-### Streaming van productupdates
+### Streaming productupdates
 
-Nadat de eerste index tijdens [onboarding](install.md#synchronize-catalog-data), worden de volgende incrementele productupdates voortdurend gesynchroniseerd en opnieuw geïndexeerd:
+Nadat de eerste index is samengesteld tijdens [onboarding](install.md#synchronize-catalog-data), worden de volgende incrementele productupdates voortdurend gesynchroniseerd en opnieuw geïndexeerd:
 
 * Nieuwe producten toegevoegd aan de catalogus
 * Wijzigingen in productkenmerkwaarden
@@ -81,7 +81,7 @@ De indexmeta-gegevens worden opgeslagen in de indexerende pijpleiding en door de
 ### Workflow voor sorteerbare kenmerken
 
 1. Client roept de Dienst van het Onderzoek.
-1. De Dienst van het onderzoek roept de Dienst van Admin van het Onderzoek.
+1. Zoekservice roept Search Admin Service aan.
 1. De Vraag van de Dienst van het onderzoek het Indexeren Pijpleiding.
 
 ## Geïndexeerd voor alle producten

@@ -23,8 +23,8 @@ Deze handleiding is bedoeld voor beheerders van [!DNL Adobe Commerce] en [!DNL M
 
 [!DNL Payment Services] heeft twee gebieden voor beheerders:
 
-* De beheerder: Gebruik dit gebied om tot de configuratie UI en het melden toegang te hebben.
-* De bevel-lijn interface (of CLI): Gebruik dit gereedschap om installatie- en achtergrondconfiguratietaken uit te voeren.
+* Admin: Gebruik dit gebied om tot de configuratie UI en het melden toegang te hebben.
+* De bevel-lijn interface (of CLI): Gebruik dit hulpmiddel om installatie en achtergrondconfiguratietaken uit te voeren.
 
 Deze handleiding is van toepassing op:
 
@@ -35,7 +35,7 @@ Deze handleiding heeft geen betrekking op de kernmogelijkheden van [!DNL Adobe C
 
 ## Aanvullende documentatie
 
-| Hulplijn | Beschrijving |
+| Handleiding | Beschrijving |
 |------ | ----------- |
 | [[!DNL Adobe Commerce] 2.4 Handboek](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html) | Bedrijfsgerichte documentatie voor beide [!DNL Adobe Commerce] en [!DNL Magento Open Source] |
 | [[!DNL Adobe Commerce] 2.4 Handleiding voor ontwikkelaars](https://developer.adobe.com/commerce/docs) | Documentatie gericht op ontwikkelaars die wordt gebruikt om te bouwen en aan te passen [!DNL Adobe Commerce] of [!DNL Magento Open Source] |
@@ -46,5 +46,5 @@ Als u informatie nodig hebt of vragen hebt die niet in deze handleiding worden b
 
 ![Help-bronnen](assets/help-resources.png)
 
-* [Help Center](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html)—Zoeken naar [!DNL Payment Services]gerelateerde artikelen voor het oplossen van problemen in de knowledgebase.
-* [Ondersteuningstickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)—Verstuur een ticket voor extra hulp.
+* [Help Center](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html)—Zoeken naar [!DNL Payment Services]gerelateerde artikelen voor probleemoplossing in de knowledgebase.
+* [Ondersteuningstickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)—Verstuur een ticket om extra hulp te ontvangen.

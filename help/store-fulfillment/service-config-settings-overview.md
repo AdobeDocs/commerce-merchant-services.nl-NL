@@ -22,7 +22,7 @@ In Adobe Commerce Admin, zijn de configuratiemontages voor de Diensten van de Af
 |--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------|
 | [Algemene configuratie](enable-general.md) | Algemene integratie die is ingesteld voor de oplossing Store Fulfillment, de actieve functies en aanmeldingsgegevens om verbinding te maken met uitvoeringsservices. | Nee |
 | [E-mailconfiguratie voor verkoop](sales-emails.md) | Stel aanvullende e-mailsjablonen in voor klantmeldingen die tijdens het inchecken worden verzonden. | Nee |
-| [Bedrijfswinkelconfiguratie](merchant-store-configuration.md) | Uitgebreide Inventory management-bronnen instellen als winkels. | Ja |
+| [Configuratie van Merchant Store](merchant-store-configuration.md) | Uitgebreide Inventory management-bronnen instellen als winkels. | Ja |
 | [Productvoorraadbeheer](product-stock.md) | Vorm het commerciële voorraadoverseinen en de eigenschappen beschikbaar aan klanten. | Ja |
 | [Inventory management-bronoverdracht](inventory-stock-transfer.md) | Stel een nieuwe voorraad in en breng een voorraad over. | Ja |
 | [Configuratie van meerdere websites/bereik](multi-site-and-scope-config.md) | Configureer voorraden en leveringsmethoden voor meerdere websites/winkelbereiken. | Nee |
@@ -34,7 +34,7 @@ In Adobe Commerce Admin, zijn de configuratiemontages voor de Diensten van de Af
 
 ## De configuratieverwijzing gebruiken
 
-Geef de configuratieverwijzing voor elk instellingstype weer door de typenaam te selecteren in het dialoogvenster _Instellingen voor uitvoeringsconfiguratie opslaan op type_ tabel.
+Bekijk de configuratieverwijzing voor elk plaatsingstype door de typenaam in te selecteren _Instellingen voor uitvoeringsconfiguratie opslaan op type_ tabel.
 
 In de configuratieverwijzing voor elk type, worden de configuratiedetails getoond in een lijst met de volgende kolomkopballen:
 

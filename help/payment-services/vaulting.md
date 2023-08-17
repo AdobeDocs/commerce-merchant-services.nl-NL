@@ -45,4 +45,4 @@ U kunt als volgt een bestelling voor een klant maken in de Admin met de gefactur
 
 ## Beveiliging
 
-Minimale creditcardgegevens worden met de klant gedeeld; ze zien alleen de laatste vier cijfers , de vervaldatum en het merk van hun gefactureerde creditcard . Creditcardgegevens worden bij de betalingsaanbieder opgeslagen om te voldoen aan [PCI](security.md#PCI-compliance) nalevingsnormen.
+Minimale creditcardgegevens worden met de klant gedeeld; deze ziet alleen de laatste vier cijfers, de vervaldatum en het merk van de gefactureerde creditcard. Creditcardgegevens worden bij de betalingsaanbieder opgeslagen om te voldoen aan [PCI](security.md#PCI-compliance) nalevingsnormen.

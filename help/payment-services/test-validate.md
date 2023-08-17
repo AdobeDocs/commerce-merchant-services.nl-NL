@@ -40,7 +40,7 @@ Apple Pay in sandboxmodus testen:
 
 ## Test in productie
 
-Het wordt ten zeerste aanbevolen om te testen [!DNL Payment Services] in productie, met echte kredietkaarten en banken, voordat deze functionaliteit aan kopers wordt aangeboden. Zelfs als het testen [!DNL Payment Services] in de sandbox is belangrijk, het testen in productie is de meest misleidende methode om ervoor te zorgen dat [!DNL Payment Services] werkt zoals verwacht.
+U wordt ten zeerste aangeraden om te testen [!DNL Payment Services] in productie, met echte kredietkaarten en banken, voordat deze functionaliteit aan kopers wordt aangeboden. Zelfs als het testen [!DNL Payment Services] in de sandbox is belangrijk, het testen in productie is de meest misleidende methode om ervoor te zorgen dat [!DNL Payment Services] werkt zoals verwacht.
 
 U kunt testen [!DNL Payment Services] bij de productie op twee manieren:
 

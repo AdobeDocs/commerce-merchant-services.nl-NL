@@ -88,7 +88,7 @@ Configureer de e-mailsjablonen voor verkoop van de beheerder: **[!UICONTROL Stor
 </tr>
 <tr>
 <td><strong>Send Order Ready for Pickup Email Copy Method</strong></td>
-<td>De methode voor het kopiëren van e-mail (koolstofkopie) die moet worden gebruikt.</td>
+<td>De methode voor het kopiëren van e-mail (koolstofkopie) voor gebruik.</td>
 <td>Winkelweergave</td>
 <td>Nee</td>
 </tr>
@@ -137,7 +137,7 @@ Configureer de e-mailsjablonen voor verkoop van de beheerder: **[!UICONTROL Stor
 </tr>
 <tr>
 <td><strong>De methode Verzenden is uitgezocht voor kopiëren via e-mail</strong></td>
-<td>De methode voor het kopiëren van e-mail (koolstofkopie) die moet worden gebruikt.</td>
+<td>De methode voor het kopiëren van e-mail (koolstofkopie) voor gebruik.</td>
 <td>Winkelweergave</td>
 <td>Nee</td>
 </tr>
@@ -186,7 +186,7 @@ Configureer de e-mailsjablonen voor verkoop van de beheerder: **[!UICONTROL Stor
 </tr>
 <tr>
 <td><strong>Verzendvolgorde vertraagde kopieermethode</strong></td>
-<td>De methode voor het kopiëren van e-mail (koolstofkopie) die moet worden gebruikt.</td>
+<td>De methode voor het kopiëren van e-mail (koolstofkopie) voor gebruik.</td>
 <td>Winkelweergave</td>
 <td>Nee</td>
 </tr>
@@ -237,7 +237,7 @@ Configureer de e-mailsjablonen voor verkoop van de beheerder: **[!UICONTROL Stor
 </tr>
 <tr>
 <td><strong>Kopieermethode voor bestelling geannuleerd</strong></td>
-<td>De methode voor het kopiëren van e-mail (koolstofkopie) die moet worden gebruikt.</td>
+<td>De methode voor het kopiëren van e-mail (koolstofkopie) voor gebruik.</td>
 <td>Winkelweergave</td>
 <td>Nee</td>
 </tr>
@@ -257,7 +257,7 @@ Configureer de e-mailsjablonen voor verkoop van de beheerder: **[!UICONTROL Stor
 </thead>
 <tbody><tr>
 <td><strong>Ingeschakeld</strong></td>
-<td>Dit e-mailbericht wordt naar de klant verzonden om deze te laten weten dat een deel van zijn bestelling in de winkel is geannuleerd. Instellen op <code>No</code> om de e-mailmelding uit te schakelen. Als de e-mailsjabloon is uitgeschakeld, voorkomt dit niet dat een bestelling gedeeltelijk wordt geannuleerd.</td>
+<td>Dit e-mailbericht wordt naar de klant verzonden om deze te laten weten dat een deel van zijn bestelling in de winkel is geannuleerd. Instellen op <code>No</code> om de e-mailmelding uit te schakelen. Als de e-mailsjabloon is uitgeschakeld, kan een bestelling niet gedeeltelijk worden geannuleerd.</td>
 <td>Winkelweergave</td>
 <td>Nee</td>
 </tr>
@@ -293,7 +293,7 @@ Configureer de e-mailsjablonen voor verkoop van de beheerder: **[!UICONTROL Stor
 </tr>
 <tr>
 <td><strong>Gedeeltelijk geannuleerde kopieermethode voor bestelling verzenden</strong></td>
-<td>De methode voor het kopiëren van e-mail (koolstofkopie) die moet worden gebruikt.</td>
+<td>De methode voor het kopiëren van e-mail (koolstofkopie) voor gebruik.</td>
 <td>Winkelweergave</td>
 <td>Nee</td>
 </tr>
@@ -312,7 +312,7 @@ Configureer de e-mailsjablonen voor verkoop van de beheerder: **[!UICONTROL Stor
 </thead>
 <tbody><tr>
 <td><strong>De bestelling is verzonden om e-mailafzender van producten op te slaan</strong></td>
-<td>De e-mail die naar het opgegeven bedrijfspersoneel is verzonden als een geaggregeerd rapport van alle open bestellingen die pas in een handelsportefeuille kunnen worden uitgepakt als hun inventaris beschikbaar is. </br></br> Handelaars kunnen dit rapport gebruiken om voorraadoverdrachten of aanvulling te initiëren en te beheren. </br></br>Deze melding is alleen van toepassing wanneer de [!DNL Ship-to-Store] functies zijn ingeschakeld.
+<td>De e-mail die naar het opgegeven bedrijfspersoneel is verzonden als een geaggregeerd rapport van alle open bestellingen die pas in een handelswinkel kunnen worden uitgepakt als hun inventaris beschikbaar is. </br></br> Handelaars kunnen dit rapport gebruiken om voorraadoverdrachten of aanvulling te initiëren en te beheren. </br></br>Deze melding is alleen van toepassing wanneer de [!DNL Ship-to-Store] functies zijn ingeschakeld.
 </br></br>Dit label heeft geen invloed op de geselecteerde verzendmaatschappij of op de labels van de verzendmethode.</td>
 <td>Winkelweergave</td>
 <td>Nee</td>

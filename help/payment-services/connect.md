@@ -26,7 +26,7 @@ Om een dienst van SaaS van de Handel te verbruiken, moet u de API sleutels van u
 >
 >Hebt u hulp nodig bij het openen van uw [!UICONTROL My Account] dashboard? Zie [Een Commerce-account maken](https://docs.magento.com/user-guide/magento/magento-account-create.html).
 
-Een openbare API-sleutel is altijd beschikbaar op het dashboard voor Mijn account nadat deze is gemaakt. Het kan worden gekopieerd of worden geschrapt zoals nodig. De persoonlijke API-sleutel wordt zichtbaar wanneer u een openbare API-sleutel maakt voor een sandbox of productie. het is alleen beschikbaar voor kopiëren of opslaan vanuit het dialoogvenster dat verschijnt en kan later niet worden geopend.
+Een openbare API-sleutel is altijd beschikbaar op het dashboard voor Mijn account nadat deze is gemaakt. Het kan worden gekopieerd of worden geschrapt zoals nodig. De persoonlijke API-sleutel wordt zichtbaar wanneer u een openbare API-sleutel maakt voor de sandbox of productie. Deze sleutel kan alleen worden gekopieerd of opgeslagen vanuit het dialoogvenster dat verschijnt en kan later niet worden geopend.
 
 Een bepaald API zeer belangrijk paar is geldig voor alle Diensten van de Handel in een milieu, zodat als u reeds de Diensten van de Handel hebt die voor uw geval worden gevormd, is uw API zeer belangrijk paar reeds aanwezig in de Schakelaar van de Diensten van de Handel.
 
@@ -45,11 +45,11 @@ Dezelfde API-sleutel kan in alle instanties worden gebruikt, maar elke instantie
 
 Nu u uw geloofsbrieven hebt verkregen, kunt u uw project SaaS en de Ruimte van Gegevens van het Saas vormen.
 
-1. Op de _Beheer_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]**.
-1. Klikken **[!UICONTROL Configure Commerce Services]**.
+1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]**.
+1. Klik op **[!UICONTROL Configure Commerce Services]**.
 
-   Deze optie is zichtbaar als u nog geen Diensten van de Handel voor uw rekening hebt gevormd.
+   Deze optie is zichtbaar als u de Diensten van de Handel voor uw rekening nog niet hebt gevormd.
 
    U wordt geleid aan het configuratiegebied in Admin, **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**>**[!UICONTROL Commerce Services Connector]**, om uw Schakelaar van de Diensten van de Handel te vormen.
 
-1. Om uw Diensten van de Handel te vormen, volg de stappen die in worden beschreven [SaaS-configuratie](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#saasenv).
+1. Om uw Diensten van de Handel te vormen, volg de stappen in [SaaS-configuratie](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#saasenv).

@@ -38,7 +38,7 @@ Door de kerntoepassing van de Handel over te slaan en gegevens rechtstreeks naar
 
 De Feed IngestiService is ontworpen voor:
 
-* Klanten uit de middelbare onderneming met headless implementaties
+* Klanten uit de middelste onderneming met headless implementaties
 * Klanten met grote, complexe catalogi
 * Klanten die de Adobe Commerce Admin niet gebruiken om catalogusgegevens te beheren, gebruiken in plaats daarvan een ERP- of een extern systeem om catalogusgegevens te beheren
 

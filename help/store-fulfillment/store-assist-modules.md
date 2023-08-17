@@ -36,7 +36,7 @@ Uw partners kunnen er ook voor kiezen om één bestelling tegelijk te selecteren
 
 Bij het kiezen, zien de opslagvennoten een lijst van alle punten voor elke orde, hun hoeveelheden, prijs, en de productbeschrijving van uw catalogus te selecteren. Er wordt een voortgangsbalk weergegeven om ze te helpen navigeren in de Store Assist terwijl ze orders kiezen.
 
-Zodra uw partners beginnen te kiezen en de te selecteren punten selecteren, worden zij voorgesteld met alle relevante puntinformatie, zoals: grootte, kleur, hoeveelheid, prijs, beschrijving, maat en SKU/UPC. De partners hebben twee acties beschikbaar wanneer het plukken van orden:
+Zodra uw partners beginnen de te selecteren punten te selecteren, worden zij voorgesteld met alle relevante puntinformatie, zoals: grootte, kleur, hoeveelheid, prijs, beschrijving, pas, en SKU/UPC. De partners hebben twee acties beschikbaar wanneer het plukken van orden:
 
 - Geef aan dat het object niet kan worden gevonden en activeer een restitutie.
 - Scan de streepjescode op het item. Het doel van scannen is te controleren of ze het juiste item hebben gekozen. Als de camera de streepjescode niet kan lezen, moeten de opslagpartners handmatig de SKU invoeren van het item dat zij hebben gekozen.
@@ -45,9 +45,9 @@ Als de vennoten een punt niet kunnen vinden, kunnen zij het overslaan en aan het
 
 ## Werkgebiedmodule
 
-In de Stage-module ziet u waar de opgepakte order wordt geplaatst totdat de klant deze ontvangt. Het plaatsen van deze plaats is een zeer belangrijke stap om verloren orden te verhinderen wanneer de opslagvennoten hun dienst beëindigen alvorens de klant aankomt, of als u vele orden hebt. In beide gevallen is dit ontworpen om u te helpen snel de juiste volgorde te vinden met alle relevante informatie erover.
+In de Stage-module ziet u waar de opgepakte bestelling wordt geplaatst totdat de klant de bestelling oppakt. Het plaatsen van deze plaats is een zeer belangrijke stap om verloren orden te verhinderen wanneer de opslagvennoten hun dienst beëindigen alvorens de klant aankomt, of als u vele orden hebt. In beide gevallen is dit ontworpen om u te helpen snel de juiste volgorde te vinden met alle relevante informatie erover.
 
-Met een vrije tekstbalk kunt u aangeven waar de volgorde wordt geplaatst: onder de teller, in de achterkamer, of in plaats B3 - allen gebaseerd op uw verrichtingen.
+U kunt een vrije bar van de vormtekst gebruiken om erop te wijzen waar de orde wordt geplaatst: onder de teller, in de achterkamer, of in plaats B3 - allen gebaseerd op uw verrichtingen.
 
 U kunt de testlocatie in de app ook gemakkelijk bijwerken als uw partners deze op een andere locatie moesten plaatsen.
 

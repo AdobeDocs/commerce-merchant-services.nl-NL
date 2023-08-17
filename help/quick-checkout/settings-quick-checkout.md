@@ -1,5 +1,5 @@
 ---
-title: Configureer de [!DNL Quick Checkout] voor Adobe Commerce-extensie
+title: Vorm [!DNL Quick Checkout] voor Adobe Commerce-extensie
 description: Leer de configuratieopties voor de [!DNL Quick Checkout] en hoe u de extensie met succes aan boord kunt instellen.
 exl-id: 892e04dc-17d6-45e9-b2ab-c7a0735a75bc
 feature: Checkout, Services
@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # [!DNL Quick Checkout] Instellingen
 
-[!DNL Quick Checkout] voor Adobe Commerce en Magento Open Source verstrekt een configuratiemening met alle noodzakelijke informatie aan opstelling de uitbreiding.
+[!DNL Quick Checkout] voor Adobe Commerce en Magento Open Source een configuratieweergave met alle benodigde informatie voor het instellen van de extensie.
 
 Deze configuratie-instellingen openen:
 
-1. Op de _Beheer_ zijbalk, ga naar **Winkels** > _Instellingen_ > **Configuratie**.
+1. Op de _Beheerder_ zijbalk, ga naar **Winkels** > _Instellingen_ > **Configuratie**.
 1. Vouw in het linkerdeelvenster uit **Verkoop** en selecteert u **Afhandeling**.
 
    ![Snelle afhandeling](assets/config-new-logo-view.png)
@@ -40,7 +40,7 @@ Zie de [Onboarding](../quick-checkout/onboarding.md) onderwerp voor meer informa
 
 | Veld | Toepassingsgebied | Beschrijving |
 |---|---|---|
-| [!UICONTROL API key] | website | Een persoonlijke sleutel die door uw achterste eind wordt gebruikt om met elkaar in wisselwerking te staan [!DNL Bolt] API&#39;s. |
+| [!UICONTROL API key] | website | Een persoonlijke sleutel die door uw achterste eind wordt gebruikt om met te communiceren [!DNL Bolt] API&#39;s. |
 | [!UICONTROL Publishable key] | website | Een toets die door uw voorzijde wordt gebruikt om te communiceren met [!DNL Bolt] API&#39;s. |
 | [!UICONTROL Signing secret] | website | Wordt gebruikt voor handtekeningverificatie op aanvragen die zijn ontvangen van [!DNL Bolt]. |
 

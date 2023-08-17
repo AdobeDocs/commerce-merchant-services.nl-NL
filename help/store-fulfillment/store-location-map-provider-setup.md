@@ -8,7 +8,7 @@ exl-id: d09c4652-e2eb-49dc-8c42-2aa9b6be5d6b
 source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '176'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -32,7 +32,7 @@ Om de afstandsleverancier te vormen:
 
    - Ga naar **[!UICONTROL Stores > Configuration > Catalog > Inventory]**.
 
-   - Breid uit **[!UICONTROL Distance Provider for Distance Based SSA]** sectie.
+   - Vouw de sectie **[!UICONTROL Distance Provider for Distance Based SSA]** uit.
 
    - Stel de **Provider** tot **Google Map**.
 

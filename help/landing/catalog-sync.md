@@ -1,6 +1,6 @@
 ---
 title: Catalogus synchroniseren
-description: Leer hoe u productgegevens exporteert vanuit de [!DNL Commerce] server naar [!DNL Commerce Services] om de diensten voortdurend up-to-date te houden.
+description: Leer hoe u productgegevens exporteert vanuit de [!DNL Commerce] server naar [!DNL Commerce Services] om de diensten voortdurend bij te werken.
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
 feature: Catalogs, Data Import/Export, Catalog Service
 source-git-commit: d803cd9c78ac8c5529eadf39f361d7e46045359e
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Adobe Commerce en Magento Open Source gebruiken indexen om catalogusgegevens in tabellen te compileren. Het proces wordt automatisch geactiveerd door [gebeurtenissen](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing) zoals een wijziging van de productprijs of het voorraadniveau.
 
-Het synchronisatieproces van de catalogus wordt om het uur uitgevoerd [!DNL Commerce] services voor het gebruik van catalogusgegevens. Met Catalogussynchronisatie worden productgegevens geëxporteerd uit de [!DNL Commerce] server naar [!DNL Commerce] diensten om de diensten voortdurend up-to-date te houden. Bijvoorbeeld: [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) heeft huidige catalogusinformatie nodig om aanbevelingen met correcte namen, prijs, en beschikbaarheid nauwkeurig terug te keren. U kunt de _Catalogus synchroniseren_ het dashboard om het synchronisatieproces of het [opdrachtregelinterface](#resynccmdline) catalogussynchronisatie en nieuwe productgegevens activeren op [!DNL Commerce] diensten.
+Het synchronisatieproces van de catalogus wordt om het uur uitgevoerd [!DNL Commerce] services voor het gebruik van catalogusgegevens. Met Catalogussynchronisatie worden productgegevens geëxporteerd uit de [!DNL Commerce] server naar [!DNL Commerce] diensten om de diensten voortdurend up-to-date te houden. Bijvoorbeeld: [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) heeft huidige catalogusinformatie nodig om aanbevelingen met correcte namen, prijs, en beschikbaarheid nauwkeurig terug te keren. U kunt de _Catalogus synchroniseren_ het dashboard om het synchronisatieproces of het [opdrachtregelinterface](#resynccmdline) catalogussynchronisatie en herindexering van productgegevens activeren op [!DNL Commerce] diensten.
 
 >[!NOTE]
 >
@@ -28,11 +28,11 @@ Het synchronisatieproces van de catalogus wordt om het uur uitgevoerd [!DNL Comm
 
 Selecteer **Systeem** > _Gegevensoverdracht_ > **Catalogus synchroniseren**.
 
-Met de **Catalogus synchroniseren** dashboard dat u kunt gebruiken:
+Met de **Catalogus synchroniseren** dashboard dat u kunt:
 
 - De synchronisatiestatus weergeven (**In uitvoering**, **Succes**, **Mislukt**)
-- Het totale aantal gesynchroniseerde producten weergeven als dit gelukt is
-- Gesynchroniseerde producten zoeken om hun huidige status te bekijken
+- Het totale aantal gesynchroniseerde producten weergeven als dit lukt
+- Gesynchroniseerde producten zoeken om hun huidige status weer te geven
 - Catalogus zoeken op naam, SKU, enzovoort
 - Gesynchroniseerde productgegevens weergeven in JSON om een synchronisatieverschil te diagnosticeren
 - Het synchronisatieproces opnieuw starten
@@ -41,17 +41,17 @@ Met de **Catalogus synchroniseren** dashboard dat u kunt gebruiken:
 
 Meldt de synchronisatiestatus van:
 
-- **Succes** - Geeft de datum en tijd weer waarop de synchronisatie is gelukt en het aantal producten dat is bijgewerkt
+- **Succes** - Geeft de datum en tijd weer waarop de synchronisatie is gelukt en het aantal bijgewerkte producten
 - **Mislukt** - Geeft de datum en tijd weer waarop de synchronisatie is uitgevoerd
 - **In uitvoering** - Geeft de datum en tijd weer van de laatste geslaagde synchronisatie
 
 >[!NOTE]
 >
-> Het synchronisatieproces van de catalogus wordt automatisch elke uur uitgevoerd. Als u echter geen producten ziet in uw winkel of als de producten geen weerspiegeling zijn van recente wijzigingen die u hebt aangebracht, kunt u deze oplossen [problemen met catalogussynchronisatie](#resolvesync).
+> Het synchronisatieproces van de catalogus wordt automatisch om het uur uitgevoerd. Als u echter geen producten ziet in uw winkel of als de producten geen weerspiegeling zijn van recente wijzigingen die u hebt aangebracht, kunt u deze oplossen [problemen met catalogussynchronisatie](#resolvesync).
 
 ### Gesynchroniseerde producten
 
-Hiermee geeft u het totale aantal producten weer dat via uw [!DNL Commerce] catalogus. Na de eerste synchronisatie moet u verwachten dat alleen gewijzigde producten worden gesynchroniseerd.
+Hiermee geeft u het totale aantal producten weer dat is gesynchroniseerd met uw [!DNL Commerce] catalogus. Na de eerste synchronisatie is het verstandig alleen gewijzigde producten te synchroniseren.
 
 ## Resync {#resync}
 
@@ -65,7 +65,7 @@ Als u een resync van uw catalogus moet in werking stellen alvorens de per uur ge
 
    De _Instellingen voor catalogussynchronisatie_ wordt weergegeven.
 
-1. In de _Gegevens opnieuw synchroniseren_ sectie, klikt u op [!UICONTROL Resync].
+1. In de _Gegevens opnieuw synchroniseren_ sectie, klikken [!UICONTROL Resync].
 
    [!DNL Commerce] synchroniseert de catalogus tijdens het volgende geplande synchronisatievenster. Afhankelijk van de grootte van de catalogus kan deze bewerking lang duren.
 
@@ -81,7 +81,7 @@ De **Gesynchroniseerde catalogusproducten** in de tabel wordt de volgende inform
 | Type | Identificeert het producttype, zoals eenvoudig, configureerbaar, downloadbaar, etc. |
 | Laatst geëxporteerd | De datum waarop het product voor het laatst is geëxporteerd uit uw catalogus |
 | Laatst gewijzigd | Datum waarop het product voor het laatst is gewijzigd in uw catalogus |
-| SKU | Hiermee geeft u de voorraadeenheid voor het product weer |
+| SKU | Geeft de voorraadeenheid voor het product weer |
 | Prijs | Prijs van het product |
 | Zichtbaarheid | De zichtbaarheidsinstelling van een product zoals gedefinieerd in het dialoogvenster [!DNL Commerce] catalogus |
 
@@ -89,12 +89,12 @@ De **Gesynchroniseerde catalogusproducten** in de tabel wordt de volgende inform
 
 Wanneer u een gegevensresync teweegbrengt, kan het tot een uur voor de gegevens duren om bij te werken en in componenten UI, zoals aanbeveling eenheden worden weerspiegeld. Als u echter na een uur nog steeds discrepanties opmerkt tussen uw catalogus en wat er op uw winkel wordt weergegeven, of als de catalogussynchronisatie is mislukt, raadpleegt u het volgende:
 
-### Gegevensdiscrepantie
+### Gegevensafwijking
 
 1. Geef de gedetailleerde weergave van het desbetreffende product weer in de zoekresultaten.
 1. Kopieer de JSON-uitvoer en controleer of de inhoud overeenkomt met de inhoud in het dialoogvenster [!DNL Commerce] catalogus.
 1. Als de inhoud niet overeenkomt, brengt u een kleine wijziging aan in het product in de catalogus, zoals het toevoegen van een spatie of een punt.
-1. Wacht op resync of [handmatig opnieuw synchroniseren](#resync).
+1. Wacht op resync of [een handmatige resync activeren](#resync).
 
 ### Synchronisatie wordt niet uitgevoerd
 
@@ -102,7 +102,7 @@ Als de synchronisatie niet volgens een schema wordt uitgevoerd of er niets wordt
 
 ### Synchronisatie is mislukt
 
-Als de catalogussync een status heeft van **Mislukt**, een [ondersteuningsticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+Als de catalogussync de status **Mislukt**, een [ondersteuningsticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
 
 ## Opdrachtregelinterface {#resynccmdline}
 
@@ -145,7 +145,7 @@ bin/magento saas:resync --feed=prices
 
 ### Voorbeelden
 
-In het volgende voorbeeld worden de productgegevens van de [!DNL Commerce] catalogiseren en opnieuw synchroniseren naar de diensten van de Handel:
+In het volgende voorbeeld worden de productgegevens van het dialoogvenster [!DNL Commerce] catalogiseren en opnieuw synchroniseren naar de diensten van de Handel:
 
 ```bash
 bin/magento saas:resync --feed products

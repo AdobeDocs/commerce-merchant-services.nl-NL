@@ -16,15 +16,15 @@ Sommige soorten aanbevelingen gebruiken gedragsgegevens van uw klanten om machin
 - `More like this`
 - `Visual similarity`
 
-Wanneer kun je aanbevelingen gebruiken die gedragsgegevens gebruiken? Het hangt ervan af. Dit wordt de _Koude start_ probleem.
+Wanneer kun je aanbevelingen gebruiken die gedragsgegevens gebruiken? Het hangt ervan af. Dit wordt bedoeld als _Koude start_ probleem.
 
-De _Koude start_ het probleem is dat wordt gemeten hoeveel tijd een model nodig heeft om te trainen voordat het als een hoge kwaliteit kan worden beschouwd . In de aanbevelingen voor producten wordt gewacht tot Adobe Sensei zijn modellen voor computerleren heeft getraind voordat het aanbevelingen op uw site implementeert. Hoe meer gegevens deze modellen hebben, des te nauwkeuriger en nuttiger de aanbevelingen zijn. Het verzamelen van deze gegevens kost tijd en varieert afhankelijk van het verkeersvolume. Omdat deze gegevens alleen op een productiesite kunnen worden verzameld, is het in uw belang om gegevensverzameling daar zo vroeg mogelijk te implementeren. U kunt dit doen door [installeren en configureren](install-configure.md) de `magento/production-recommendations` module.
+De _Koude start_ het probleem is dat wordt gemeten hoeveel tijd een model nodig heeft om te trainen voordat het als een hoge kwaliteit kan worden beschouwd . In de aanbevelingen voor producten wordt gewacht tot Adobe Sensei zijn modellen voor computerleren heeft getraind voordat het aanbevelingen op uw site implementeert. Hoe meer gegevens deze modellen hebben, des te nauwkeuriger en nuttiger de aanbevelingen zijn. Het verzamelen van deze gegevens kost tijd en varieert op basis van het verkeersvolume. Omdat deze gegevens alleen op een productiesite kunnen worden verzameld, is het in uw belang om gegevensverzameling daar zo vroeg mogelijk te implementeren. U kunt dit doen door [installeren en configureren](install-configure.md) de `magento/production-recommendations` -module.
 
 De volgende tabel bevat een aantal algemene richtlijnen voor de hoeveelheid tijd die nodig is om voldoende gegevens voor elk type aanbeveling te verzamelen:
 
 | Type aanbeveling | Trainingstijd | Notities |
 |---|---|---|
-| Gebaseerd op populariteit (`Most viewed`, `Most purchased`, `Most added to cart`) | Varieert | Afhankelijk van het volume van gebeurtenissen - weergaven komen het meest voor en leren dus sneller; voegt dan aan winkelwagen toe en koopt vervolgens |
+| Gebaseerd op populariteit (`Most viewed`, `Most purchased`, `Most added to cart`) | Varieert | Afhankelijk van het volume van gebeurtenissen - weergaven worden het meest gebruikt en leren dus sneller; voegt dan toe aan winkelwagentje en koopt |
 | `Viewed this, viewed that` | Meer training is vereist | De productweergaven zijn aanzienlijk hoog in volume |
 | `Viewed this, bought that`, `Bought this, bought that` | De meeste training is vereist | Aankoopgebeurtenissen zijn de meest voorkomende gebeurtenissen op de commercesite, met name in vergelijking met de productweergaven |
 | `Trending` | Vereist drie dagen gegevens om een basislijn voor populariteit te bepalen | Trending is een maat voor de recente dynamiek in de populariteit van een product in vergelijking met zijn eigen populariteit. De trending score van een product wordt berekend met behulp van een voorgrondset (recente populariteit in 24 uur) en een achtergrondset (basislijn voor populariteit in 72 uur). Als een item in de afgelopen 24 uur veel populairder is geworden dan de basislijnpopulariteit, krijgt het een hoge trendscore. Elk product heeft deze score, en de hoogste op elk ogenblik omvatten de reeks hoogste trending producten. |
@@ -32,14 +32,14 @@ De volgende tabel bevat een aantal algemene richtlijnen voor de hoeveelheid tijd
 Andere variabelen die van invloed kunnen zijn op de tijd die nodig is om te trainen:
 
 - Hoger verkeersvolume draagt bij aan sneller leren
-- Sommige aanbevelingen typen trajecten sneller dan andere
+- Sommige aanbevelingen typen sneller dan andere
 - Adobe Commerce berekent de gedragsgegevens elke vier uur opnieuw. Recommendations wordt nauwkeuriger naarmate ze langer op uw site worden gebruikt.
 
 Om u te helpen de opleidingsvooruitgang van elk aanbevelingstype visualiseren, [aanbeveling maken](create.md) op de pagina worden gereedheidsindicatoren weergegeven.
 
 Terwijl de gegevens over productie en machine het leren modellen worden verzameld worden getraind, kunt u uitvoeren [resterende taken](implementation-workflow.md) nodig om aanbevelingen aan uw winkel op te stellen. Tegen de tijd dat u klaar bent met het testen en configureren van aanbevelingen, hebben de modellen voor het leren van machines genoeg gegevens verzameld en berekend om relevante aanbevelingen te bouwen, zodat u de aanbevelingen kunt implementeren in uw winkel.
 
-Als er voor de meeste SKU&#39;s onvoldoende verkeer (weergaven, gekochte producten, trending) is, zijn er wellicht onvoldoende gegevens om het leerproces te voltooien. Hierdoor kan de gereedheidsindicator in de Admin er uitzien alsof deze vastzit.
+Als er voor de meeste SKU&#39;s onvoldoende verkeer (weergaven, gekochte producten, trending) is, zijn er wellicht onvoldoende gegevens om het leerproces te voltooien. Dit kan ertoe leiden dat de gereedheidsindicator in de Admin er uitziet alsof deze vastzit.
 De gereedheidsindicatoren zijn bedoeld om handelaren een ander gegevenspunt te bieden bij het kiezen van het aanbevolen type voor hun winkel. De getallen zijn een leidraad en mogen nooit 100% bedragen.
 
 ## Aanbevelingen voor back-up {#backuprecs}

@@ -21,7 +21,7 @@ In eerste instantie [bereik](https://experienceleague.adobe.com/docs/commerce-ad
 
 ## Menuopties
 
-| Option | Beschrijving |
+| Optie | Beschrijving |
 |--- |--- |
 | [Prestaties](performance.md) | Het dashboard biedt inzicht in de zoekprestaties van producten. |
 | [Faceting](facets.md) | Krachtig filteren waarbij meerdere dimensies van kenmerkwaarden worden gebruikt om zoekcriteria te verfijnen. |

@@ -1,6 +1,6 @@
 ---
 title: Testen in testomgeving
-description: Leren gebruiken [!DNL Product Recommendations] vanuit uw productieomgeving in uw testomgeving.
+description: Leren gebruiken [!DNL Product Recommendations] vanuit uw productieomgeving in uw testomgeving voor testdoeleinden.
 exl-id: 178ff2aa-7821-45f7-85f1-d490d8182817
 feature: Services, Recommendations, Staging
 source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307

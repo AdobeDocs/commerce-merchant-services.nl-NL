@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Gebruiksduur gebruikerssessie
 
-De levensduur van een winkelsessie wordt bepaald door verschillende factoren die in uw Adobe Commerce-beheerder kunnen worden geconfigureerd. Zie [De cookielevensduur configureren](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/configure/customer-online-options.html){target=_blank} voor meer informatie .
+De levensduur van een winkelsessie wordt bepaald door verschillende factoren, die kunnen worden geconfigureerd in uw Adobe Commerce-beheerder. Zie [De levensduur van het cookie configureren](https://experienceleague.adobe.com/docs/commerce-admin/customers/customer-accounts/configure/customer-online-options.html){target=_blank} voor meer informatie .
 
 De geconfigureerde levensduur van cookies kan van invloed zijn op uw [!DNL Quick Checkout] if:
 

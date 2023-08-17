@@ -43,14 +43,14 @@ Voorwaarden zijn de vereisten om een gebeurtenis te activeren. Een regel kan tot
 
    ![Regel - eenvoudig](assets/rule-simple-test.png)
 
-1. Om andere vragen te testen, verander de vraagtekst in *Uw regel testen* zoekvak en drukken op **Return**.
+1. Om andere vragen te testen, verander de vraagtekst in *Uw regel testen* zoekvak en drukken op **Retourneren**.
 Aanvankelijk, geeft de testruit de vraag van het de onderzoeksvakje van de Voorwaarden terug. Maar nu geeft het de vraag van de doos van de testvraag terug. De testruit geeft slechts één vraag tegelijkertijd terug.
 1. Als het resultaat u bevalt, werkt u de tekst in het dialoogvenster *Voorwaarden* zoekvak. Klik vervolgens ergens op de pagina om de resultaten in het testvenster bij te werken.
 1. Ga naar Stap 3 om een eenvoudige regel met één voorwaarde te bouwen: [Gebeurtenissen toevoegen](#events).
 
 ### Meerdere voorwaarden
 
-1. Als u een regel met meerdere voorwaarden wilt maken, klikt u op **Voorwaarde toevoegen**.
+1. Om een regel met veelvoudige voorwaarden te bouwen, klik **Voorwaarde toevoegen**.
 Een regel kan tot tien voorwaarden hebben. De logische operator die zich bij twee voorwaarden aansluit, is gebaseerd op de huidige *Overeenkomst* instellen. Standaard, *Overeenkomst* is `All` en de logische operator `AND`.
 
    ![Regels - Zoekquery bevat](assets/rules-search-query-contains-and.png)
@@ -70,19 +70,19 @@ Een regel kan tot tien voorwaarden hebben. De logische operator die zich bij twe
 
 1. Als u nog een voorwaarde wilt toevoegen, klikt u op **Voorwaarde toevoegen** en herhaal het proces.
 
-## Type rangschikking
+## Type classificatie
 
 Met de classificatie worden gebruikersgedrag en sitestatistieken gecombineerd om de productclassificatie te bepalen.
 Winkeleigenaars kunnen de volgende typen classificatiestrategieën instellen:
 
 ![Regels - Overeenkomst](assets/rules-ranking-type.png)
 
-* Meest aangeschaft: Dit rangschikt de producten op basis van de totale aankopen per SKU in de afgelopen 7 dagen.
+* Meest aangeschaft: dit rangschikt de producten op basis van de totale aankopen per SKU in de afgelopen 7 dagen.
 * Meestal toegevoegd aan winkelwagentjes in volgorde van de totale &quot;Add to Cart&quot;-activiteiten in de afgelopen 7 dagen.
-* Meest bekeken: Hiermee herhaalt u mijn totale weergaven per SKU in de afgelopen 7 dagen.
+* Meest bekeken: hiermee wordt mijn totale weergaven per SKU in de afgelopen 7 dagen opnieuw weergegeven.
 * Aanbevolen voor u - Gebruikt de `viewed-viewed` gegevenspunt - Kopers die deze SKU bekeken, keken ook naar deze andere SKU&#39;s
-* Trending: Kijkt terug naar de gebeurtenissen van de paginaweergave in de afgelopen 72 uur voor achtergrondgebeurtenissen en 24 uur voor voorgrondgebeurtenissen
-* Geen: De producten worden bevolen door Relevantie
+* Trending: kijkt terug naar de gebeurtenissen van de paginaweergave in de afgelopen 72 uur voor achtergrondgebeurtenissen en 24 uur voor voorgrondgebeurtenissen
+* Geen: de producten worden bevolen door Relevantie
 
 1. Selecteer het type strategie voor de regel. In het venster Test Your Rule worden de verwachte resultaten weergegeven.
 

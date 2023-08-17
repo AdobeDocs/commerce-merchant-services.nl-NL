@@ -17,7 +17,7 @@ Sommige Adobe Commerce- en Magento Open Source-functies worden aangedreven door 
 
 ## Beschikbare services {#availableservices}
 
-De volgende lijst bevat de [!DNL Commerce] functies waartoe u toegang hebt via de [!DNL Commerce Services Connector]:
+De volgende lijst bevat de [!DNL Commerce] functies die u kunt openen via de [!DNL Commerce Services Connector]:
 
 | Service | Beschikbaarheid |
 | ---|--- |
@@ -43,13 +43,13 @@ De API-sleutels voor productie en sandbox worden gegenereerd op basis van de [!D
 
 ### De API-sleutels voor productie en sandbox genereren {#genapikey}
 
-1. Meld u aan bij uw [!DNL Commerce] account op [https://account.magento.com](https://account.magento.com/){:target=&quot;_blank&quot;}.
+1. Aanmelden bij uw [!DNL Commerce] account op [https://account.magento.com](https://account.magento.com/){:target=&quot;_blank&quot;}.
 
 1. Onder de **Magento** tab, selecteert u **API-portaal** op de zijbalk.
 
 1. Van de _Omgeving_ menu, selecteert u **Productie** of **Sandbox**.
 
-1. Typ een naam in het dialoogvenster _API-toetsen_ en klik op **Nieuwe toevoegen**.
+1. Typ een naam in het dialoogvenster _API-toetsen_ sectie en klik op **Nieuwe toevoegen**.
 
    Hiermee wordt een dialoogvenster geopend waarin u de nieuwe sleutel kunt downloaden.
 
@@ -67,7 +67,7 @@ De API-sleutels voor productie en sandbox worden gegenereerd op basis van de [!D
 
 ## SaaS-configuratie {#saasenv}
 
-[!DNL Commerce] instanties moeten worden geconfigureerd met een SaaS-project en een SaaS-gegevensruimte, zodat [!DNL Commerce Services] kan gegevens naar de juiste locatie verzenden. In een SaaS-project worden alle SaaS-gegevensruimten gegroepeerd. De SaaS-gegevensruimten worden gebruikt voor het verzamelen en opslaan van gegevens die [!DNL Commerce Services] om te werken. Sommige van deze gegevens kunnen worden geëxporteerd uit de [!DNL Commerce] -instantie en sommige kunnen worden opgehaald uit winkelgedrag op de winkelwebsite. Die gegevens blijven vervolgens bewaard om de cloudopslag te beveiligen.
+[!DNL Commerce] instanties moeten worden geconfigureerd met een SaaS-project en een SaaS-gegevensruimte, zodat [!DNL Commerce Services] kan gegevens naar de juiste locatie verzenden. Een SaaS-project groepeert alle SaaS-gegevensruimten. De SaaS-gegevensruimten worden gebruikt voor het verzamelen en opslaan van gegevens die [!DNL Commerce Services] om te werken. Sommige van deze gegevens kunnen worden geëxporteerd uit de [!DNL Commerce] -instantie en sommige kunnen worden opgehaald uit winkelgedrag op de winkelwebsite. Die gegevens blijven vervolgens bewaard om de cloudopslag te beveiligen.
 
 Voor [!DNL Product Recommendations], bevat de SaaS-gegevensruimte catalogus- en gedragsgegevens. U kunt een [!DNL Commerce] instantie aan een SaaS gegevensruimte door [selecteren](https://docs.magento.com/user-guide/configuration/services/saas.html) in de [!DNL Commerce] configuratie.
 
@@ -79,11 +79,11 @@ Voor [!DNL Product Recommendations], bevat de SaaS-gegevensruimte catalogus- en 
 
 >[!NOTE]
 >
-> Als u de **[!UICONTROL Commerce Services Connector]** in de [!DNL Commerce] configuratie, moet u installeren [!DNL Commerce] modules naar wens [[!DNL Commerce] service](#availableservices).
+> Als u het geneesmiddel niet ziet **[!UICONTROL Commerce Services Connector]** in de [!DNL Commerce] configuratie, moet u installeren [!DNL Commerce] modules naar wens [[!DNL Commerce] service](#availableservices).
 
 Om een SaaS- project te selecteren of te creëren, verzoek [!DNL Commerce] API-sleutel uit de [!DNL Commerce] licentiehouder voor uw winkel.
 
-1. Op de _Beheer_ zijbalk, ga naar **Systeem** > Services > **Commerce Services Connector**.
+1. Op de _Beheerder_ zijbalk, ga naar **Systeem** > Services > **Commerce Services Connector**.
 
 1. In de _Sandbox API-sleutels_ en _API-sleutels voor productie_ secties, plakt u de hoofdwaarden.
 
@@ -91,15 +91,15 @@ Om een SaaS- project te selecteren of te creëren, verzoek [!DNL Commerce] API-s
 
 1. Klikken **Opslaan**.
 
-Alle SaaS-projecten die aan uw sleutels zijn gekoppeld, worden weergegeven in de **Project** in het **SaaS-id** sectie.
+Alle SaaS-projecten die aan uw sleutels zijn gekoppeld, worden weergegeven in de **Project** in het veld **SaaS-id** sectie.
 
 1. Als er geen SaaS-projecten bestaan, klikt u op **Project maken**. Dan in **Project** van gebied, ga een naam voor uw project SaaS in.
 
    Wanneer u een project SaaS creeert, [!DNL Commerce] genereert een of meer SaaS-gegevensruimten afhankelijk van uw [!DNL Commerce] licentie:
-   - Adobe Commerce - Eén productieruimte; twee testgegevensruimten
-   - Magento Open Source - Eén productieruimte; geen testgegevensruimten
+   - Adobe Commerce - Eén productiedeswitruimte; twee testgegevensruimten
+   - Magento Open Source - Eén gegevensruimte voor productie; geen gegevensruimten voor tests
 
-1. Selecteer **Gegevensruimte** voor de huidige configuratie van uw [!DNL Commerce] opslaan.
+1. Selecteer de **Gegevensruimte** voor de huidige configuratie van uw [!DNL Commerce] opslaan.
 
 >[!WARNING]
 >

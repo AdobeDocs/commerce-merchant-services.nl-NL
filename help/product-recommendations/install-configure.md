@@ -21,7 +21,7 @@ Implementeren [!DNL Product Recommendations] aan uw winkel en Admin vereist dat 
 
 ## Installeren [!DNL Product Recommendations] {#install}
 
-Omdat [!DNL Product Recommendations] -module is een zelfstandig metapakket. Updates worden vaker uitgebracht dan Adobe Commerce. Als u wilt controleren of u de nieuwste oplossingen en functies voor problemen hebt, raadpleegt u de [releaseopmerkingen](release-notes.md).
+Omdat de [!DNL Product Recommendations] -module is een zelfstandig metapakket. Updates worden vaker uitgebracht dan Adobe Commerce. Als u wilt controleren of u de nieuwste oplossingen en functies voor problemen hebt, raadpleegt u de [releaseopmerkingen](release-notes.md).
 
 Installeer de `magento/product-recommendations` module met Composer:
 
@@ -41,7 +41,7 @@ Door [!DNL Product Recommendations] in Page Builder kunt u een bestaande, actiev
 
 Zie [Gebruiken [!DNL Product Recommendations] met Page Builder-inhoud](page-builder.md) voor verdere instructies.
 
-### Aanbevolen type voor visuele gelijkenis toevoegen {#vissimsupport}
+### Het aanbevolen type Visuele gelijkenis toevoegen {#vissimsupport}
 
 De _Visuele gelijkenis_ het aanbevelingen type staat u toe om een aanbeveling eenheid aan uw productdetailpagina op te stellen die producten toont die [visueel vergelijkbaar](type.md#visualsim) op het product dat wordt bekeken. Dit soort aanbevelingen is vooral handig wanneer afbeeldingen en visuele aspecten van de producten belangrijke onderdelen zijn van de boodschappenervaring. Installeer de _Visuele gelijkenis_ het type van aanbeveling door het volgende bevel in werking te stellen:
 
@@ -53,7 +53,7 @@ composer require magento/module-visual-product-recommendations
 
 Nadat u de `magento/product-recommendations` module, moet u vormen [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) door API-sleutels op te geven en een SaaS-gegevensruimte te selecteren.
 
-Om ervoor te zorgen dat de catalogusexport correct wordt uitgevoerd, moet u bevestigen dat de [kraan](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) de [indexeerders](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) en de `Product Feed` indexer is ingesteld op `Update by Schedule`.
+Om ervoor te zorgen dat de catalogusexport correct wordt uitgevoerd, moet u bevestigen dat de [kraan](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) en de [indexeerders](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) en de `Product Feed` indexer is ingesteld op `Update by Schedule`.
 
 Wanneer u via de API-sleutels een koppeling naar de Commerce-services hebt gemaakt en de SaaS-gegevensruimte hebt opgegeven, wordt de catalogussynchronisatie gestart. U kunt vervolgens [verifiëren](verify.md) dat gedragsgegevens naar uw winkel worden verzonden.
 
@@ -65,7 +65,7 @@ Zoals alle Adobe Commerce, [!DNL Product Recommendations] gebruikt Composer voor
 composer update magento/product-recommendations --with-dependencies
 ```
 
-Als u wilt bijwerken naar een hoofdversie, bijvoorbeeld van 3.0 tot 4.0, moet u de hoofdmap bewerken `composer.json` bestand voor uw project. (Zie de [releaseopmerkingen](release-notes.md) voor informatie over de meest recente versie.) Laten we bijvoorbeeld de hoofdmap openen `composer.json` en zoek naar `magento/product-recommendations` module:
+Als u wilt bijwerken naar een hoofdversie, bijvoorbeeld van 3.0 tot 4.0, moet u de hoofdmap bewerken `composer.json` bestand voor uw project. (Zie de [releaseopmerkingen](release-notes.md) voor informatie over de meest recente versie.) Laten we bijvoorbeeld de hoofdmap openen `composer.json` bestand en zoek naar `magento/product-recommendations` module:
 
 ```json
 "require": {
@@ -101,7 +101,7 @@ composer update --with-dependencies magento/product-recommendations magento/modu
 >
 > In versies 3.x.x van Product Recommendations had u slechts één API-sleutel nodig. In versies 4.x.x en hoger moet u openbare en persoonlijke API-sleutels voor productie en openbare en persoonlijke API-sleutels voor sandbox opgeven. Als u geen van beide API-sleutels biedt, hebt u geen toegang tot de functie Product Recommendations in Admin. Het verzamelen van gegevens gaat echter door op uw winkel en de bestaande aanbevelingen blijven aan de kopers worden getoond.
 
-## Vuurmuren
+## Firewalls
 
 Als u Product Recommendations via een firewall wilt laten gebruiken, voegt u `commerce.adobe.io` aan de lijst van gewenste personen.
 

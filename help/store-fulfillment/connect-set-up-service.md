@@ -26,7 +26,7 @@ Connect Store Fulfillment Services met Adobe Commerce door de vereiste verificat
 
 ## Een Adobe Commerce-integratie maken
 
-Om Adobe Commerce met de diensten van de Afhandeling van de Opslag te integreren, creeert u een integratie van de Handel en produceert toegangstokens die kunnen worden gebruikt om verzoeken van de servers van de Afhandeling van de Opslag voor authentiek te verklaren. U moet ook de Adobe Commerce bijwerken [!UICONTROL Consumer Settings] opties om te voorkomen `The consumer isn't authorized to access %resources.` Antwoordfouten op verzoeken van Adobe Commerce aan [!DNL Store Fulfillment] diensten.
+Om Adobe Commerce met de diensten van de Afhandeling van de Opslag te integreren, creeert u een integratie van de Handel en produceert toegangstokens die kunnen worden gebruikt om verzoeken van de servers van de Afhandeling van de Opslag voor authentiek te verklaren. U moet ook de Adobe Commerce bijwerken [!UICONTROL Consumer Settings] opties om `The consumer isn't authorized to access %resources.` Antwoordfouten op verzoeken van Adobe Commerce aan [!DNL Store Fulfillment] diensten.
 
 1. Creëer in de beheerfunctie de integratie voor winkeluitvoering.
 
@@ -43,7 +43,7 @@ Om Adobe Commerce met de diensten van de Afhandeling van de Opslag te integreren
 
 1. Kopieer en sla de toegangstokens op een veilige, gecodeerde locatie op.
 
-1. Werk samen met uw accountmanager om de configuratie aan de kant van de Store Fulfillment te voltooien en de integratie te autoriseren.
+1. Werk samen met uw accountmanager om de configuratie aan de kant Opslaan van tegoeden te voltooien en de integratie te autoriseren.
 
 1. Adobe Commerce inschakelen [!UICONTROL Consumer Settings] optie voor [!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens].
 
@@ -70,7 +70,7 @@ Deze geloofsbrieven worden vereist om de Afhandeling van de Opslag te vormen en 
 
 >[!NOTE]
 >
->Het maken van een account kan enige tijd duren. Terwijl u op geloofsbrieven wacht, [Andere instellingen voor de oplossing Afhandeling opslaan bekijken en configureren](service-config-settings-overview.md).
+>Het maken van een account kan enige tijd duren. Tijdens het wachten op referenties [Andere instellingen voor de oplossing Afhandeling opslaan bekijken en configureren](service-config-settings-overview.md).
 
 ### Referenties toevoegen om verbinding te maken met Afhandeling van winkel
 

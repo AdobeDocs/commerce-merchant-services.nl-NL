@@ -19,10 +19,10 @@ Gebruik de volgende lijst om versienota&#39;s en belangrijke informatie met betr
 <table>
   <tbody>
     <tr>
-      <td><strong>Handel</strong>
+      <td><strong>Commerciële diensten</strong>
         <p>Meer informatie over de meest recente verbeteringen van innovatieve Commerce-services die beschikbaar zijn als extensies.</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html">Amazon Sales Channel</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html">Amazon-Sales Channel</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html">Catalogusservice</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/release-notes.html">Kanaalbeheer</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html">Live zoeken</a></li>
@@ -32,7 +32,7 @@ Gebruik de volgende lijst om versienota&#39;s en belangrijke informatie met betr
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/release-notes.html">Afhandeling van winkel</a></li>
           </ul>
         </td>
-      <td><strong>Integratie</strong>
+      <td><strong>Integratiediensten</strong>
         <p>Leer over de recentste verbeteringen aan de integratiediensten die onze Diensten van de Handel toelaten om met andere diensten en Adobe uitbreidingen en producten te verbinden.</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/release-notes.html">Experience Platform Connector</a></li>

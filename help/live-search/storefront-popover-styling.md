@@ -63,7 +63,7 @@ De volgende klassenkiezers kunnen worden gebruikt om de container- en productele
 
 #### .livessearch.product-result
 
-![Resultaat van product](assets/livesearch-product-result.png)
+![Product-resultaat](assets/livesearch-product-result.png)
 
 #### .livessearch.product-name
 

@@ -16,7 +16,7 @@ De [!DNL Catalog Service] voor Adobe Commerce-extensie biedt uitgebreide view-mo
 
 * Productdetailpagina&#39;s
 * Productlijst en categoriepagina&#39;s
-* Zoekresultatenpagina&#39;s
+* Resultaatpagina&#39;s zoeken
 * Productcarrousels
 * Productvergelijkingspagina&#39;s
 * Alle andere pagina&#39;s die productgegevens weergeven, zoals pagina&#39;s met een cart-, volgorde- en wenslijst
@@ -42,7 +42,7 @@ Omdat de dienst directe communicatie met de toepassing overslaat, kan het de lat
 >
 >De gateway is voor toekomstige integratie met Product Recommendations. In deze release hebt u toegang tot de [!DNL Catalog Service GraphQL] en de [!DNL Live Search] vragen van het zelfde eindpunt als u een geldige vergunningssleutel voor beide producten hebt.
 
-De kern en de dienstGraphQL systemen communiceren niet direct met elkaar. U hebt toegang tot elk systeem via een andere URL en voor aanroepen is andere headerinformatie nodig. De twee GraphQL-systemen zijn ontworpen voor gezamenlijk gebruik. De [!DNL Catalog Service] Het GraphQL-systeem is een aanvulling op het kernsysteem, zodat producten sneller kunnen worden opgeslagen.
+De kern en de dienstGraphQL systemen communiceren niet direct met elkaar. U hebt toegang tot elk systeem via een andere URL en voor aanroepen is andere headerinformatie nodig. De twee GraphQL-systemen zijn ontworpen om samen te worden gebruikt. De [!DNL Catalog Service] Het GraphQL-systeem is een aanvulling op het kernsysteem, zodat producten sneller kunnen worden opgeslagen.
 
 U kunt optioneel implementeren [API-net voor Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/) de twee Adobe Commerce GraphQL-systemen te integreren met particuliere en externe API&#39;s en andere software-interfaces met Adobe Developer. Het netwerk kan worden gevormd om vraag te verzekeren die aan elk eindpunt wordt verpletterd bevat de correcte vergunningsinformatie in de kopballen.
 
@@ -76,4 +76,4 @@ Een complex product heeft geen vaste prijs. In plaats daarvan retourneert de Cat
 
 ## Implementatie
 
-Voor het installatieproces moet de configuratie van de [Commerce Services Connector](../landing/saas.md). Zodra dat wordt verwezenlijkt, is de volgende stap voor een systeemintegrator om de storefront code bij te werken om op te nemen [!DNL Catalog Service] query&#39;s. Alles [!DNL Catalog Service] query&#39;s worden gerouteerd naar de GraphQL-gateway. De URL wordt tijdens het instapproces opgegeven.
+Voor het installatieproces moet de configuratie van de [Commerce Services Connector](../landing/saas.md). Zodra dat wordt verwezenlijkt, is de volgende stap voor een systeemintegrator om de storefront code bij te werken om op te nemen [!DNL Catalog Service] vragen. Alles [!DNL Catalog Service] query&#39;s worden gerouteerd naar de GraphQL-gateway. De URL wordt tijdens het instapproces opgegeven.

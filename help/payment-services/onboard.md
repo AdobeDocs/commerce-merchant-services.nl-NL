@@ -43,12 +43,12 @@ Ga voor meer informatie over het maken van of toegang krijgen tot uw API-sleutel
 1. [Installeer de [!DNL Payment Services] extension](install.md#get-payment-services).
 1. [API-referenties verkrijgen](connect.md#obtain-api-credentials).
 1. [Sluit uw exemplaar aan](connect.md#configure-commerce-services) aan Commerce Services. Deze verbinding moet slechts eenmaal per instantie van de Handel worden voltooid.
-1. [De sandboxservice instellen](sandbox.md#enable-sandbox-testing) (dan wel [rechtstreekse betalingen mogelijk maken](sandbox.md#enable-live-payments) als u functionaliteit in een andere omgeving hebt getest) met een PayPal-rekening voor betalingsverwerking.
+1. [De sandboxservice instellen](sandbox.md#enable-sandbox-testing) (of, als alternatief, [rechtstreekse betalingen mogelijk maken](sandbox.md#enable-live-payments) als u functionaliteit in een andere omgeving hebt getest) met een PayPal-rekening voor betalingsverwerking.
 1. [Set [!DNL Payment Services] als betalingsmethode](production.md#set-payment-services-as-payment-method)in de sandboxmodus, om testbetalingen te verwerken.
 1. [Betalingsrechten aanvragen](production.md#request-payments-entitlement-from-adobe) om live aan boord te gaan.
 1. [Volledige merchant aan boord](production.md#complete-merchant-onboarding) om rechtstreekse betalingen voor je commerciële websites mogelijk te maken.
 1. [Uw [!DNL Payment Services] Merchant ID](production.md#configure-pricing-tier) en geef het aan Verkoop om de correcte tarifering te vormen.
-1. [Inschakelen [!DNL Payment Services] in actieve modus](production.md#enable-live-payments) beginnen met de verwerking van rechtstreekse betalingen.
+1. [Inschakelen [!DNL Payment Services] in live-modus](production.md#enable-live-payments) beginnen met de verwerking van rechtstreekse betalingen.
 1. Betalingen testen, in beide gevallen [sandbox](sandbox.md#test-in-sandbox-environment) en [productie](production.md#test-in-production) omgevingen.
 
 >[!NOTE]
@@ -59,5 +59,5 @@ Ga voor meer informatie over het maken van of toegang krijgen tot uw API-sleutel
 
 * [Problemen oplossen [!DNL Payment Services] installatie](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html?lang=en)
 * [PayPal-sandboxaccount niet geverifieerd](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html)
-* [Vertraagd [!DNL Payment Services] rapportgegevens](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html)
+* [Uitgesteld [!DNL Payment Services] rapportgegevens](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html)
 * [Test de creditcard mislukt met PayPal bij het verwerken van betalingen in een Sandbox-omgeving](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html?lang=en)

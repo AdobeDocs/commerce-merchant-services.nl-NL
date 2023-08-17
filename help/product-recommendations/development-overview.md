@@ -15,7 +15,7 @@ Product Recommendations is een krachtig marketinginstrument dat u kunt gebruiken
 
 >[!NOTE]
 >
->Als uw storefront met PWA Studio wordt uitgevoerd, verwijs naar [PWA-documentatie](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Als u een aangepaste frontend-technologie gebruikt, zoals React of Vue JS, raadpleegt u de gebruikershandleiding voor meer informatie over de integratie van Product Recommendations in een [koploos](headless.md) milieu. De instanties zonder kop moeten gebeurtenis uitvoeren om de werkruimte van de Aanbeveling van het Product te aandrijven.
+>Als uw storefront met PWA Studio wordt uitgevoerd, verwijs naar [PWA-documentatie](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Als u een aangepaste frontend-technologie gebruikt, zoals React of Vue JS, raadpleegt u de gebruikershandleiding voor meer informatie over de integratie van Product Recommendations in een [krankzinnig](headless.md) milieu. De instanties zonder kop moeten gebeurtenis uitvoeren om de werkruimte van de Aanbeveling van het Product te aandrijven.
 
 ## Overzicht van architectuur
 

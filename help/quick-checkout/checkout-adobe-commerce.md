@@ -10,7 +10,7 @@ ht-degree: 0%
 
 ---
 
-# Een bestaande Adobe Commerce-gebruiker: Hoe werkt het
+# Een bestaande Adobe Commerce-gebruiker: Hoe het werkt
 
 Een bestaande Adobe Commerce-gebruiker kan opgeslagen verzend- en betalingsgegevens selecteren bij het plaatsen van een bestelling bij de [!DNL Quick Checkout] voor een snellere afrekenervaring.
 
@@ -45,9 +45,9 @@ Als er problemen optreden wanneer u een bestelling als bestaande Adobe Commerce-
 
 De component Automatische aanmelding detecteert wanneer een winkelier een actieve Bolt-sessie heeft en meldt de winkels automatisch aan. Dit slaat de rekeningsopsporing en eenmalige wachtwoordcode (OTP) stappen over omdat de verkoopster hen in een vorige zitting voltooide.
 
-Het is mogelijk een automatische aanmelding te configureren voor [!DNL Quick Checkout] gebruikers. U kunt een configuratie inschakelen om een gebruiker tijdens het uitchecken automatisch aan te melden.
+Het is mogelijk om een automatische aanmelding te configureren voor [!DNL Quick Checkout] gebruikers. U kunt een configuratie inschakelen om een gebruiker tijdens het uitchecken automatisch aan te melden.
 
-1. Op de _Beheer_ zijbalk, navigeren naar **Winkels** > **Configuratie** > **Afhandeling** om tot de algemene configuratiepagina van Admin van de Controle toegang te hebben.
+1. Op de _Beheerder_ zijbalk, navigeren naar **Winkels** > **Configuratie** > **Afhandeling** om tot de algemene configuratiepagina van Admin van de Controle toegang te hebben.
 1. In de _Service-instellingen_ sectie voor [!DNL Quick Checkout], geeft u alle gegevens op die nodig zijn om automatische aanmelding in te stellen.
 
 Zie [[!DNL Quick Checkout] servicemontages configureren](../quick-checkout/onboarding.md#configure-service-settings) voor meer informatie.

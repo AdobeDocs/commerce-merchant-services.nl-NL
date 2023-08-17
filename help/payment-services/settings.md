@@ -28,11 +28,11 @@ De [!UICONTROL General] Met instellingen kunt u betalingsservices in- of uitscha
 
 U kunt [!DNL Payment Services] voor uw website, en laat of zandbak het testen of levende betalingen toe.
 
-1. Op de _Beheer_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 
    ![Startweergave](assets/payment-services-menu-small.png)
 
-1. Klikken **[!UICONTROL Settings]**. Zie [Inleiding tot [!DNL Payment Services] Home](payments-home.md) voor meer informatie .
+1. Klik op **[!UICONTROL Settings]**. Zie [Inleiding tot [!DNL Payment Services] Home](payments-home.md) voor meer informatie .
 
    De _[!UICONTROL General]_sectie bevat instellingen die worden gebruikt om [!DNL Payment Services] als betalingsmethode.
 
@@ -44,35 +44,35 @@ U kunt [!DNL Payment Services] voor uw website, en laat of zandbak het testen of
    >
    >Uw _[!UICONTROL Sandbox Merchant ID]_en_[!UICONTROL Production Merchant ID]_ automatisch worden gegenereerd en aanwezig zijn in de betreffende velden wanneer u klaar bent met het instappen voor de sandbox en/of productie.
 
-1. Klikken **[!UICONTROL Save]**.
+1. Klik op **[!UICONTROL Save]**.
 
    Als u probeert weg van deze mening te navigeren zonder uw veranderingen op te slaan, verschijnt een modaal die u ertoe aanzet om veranderingen te verwerpen, het uitgeven te houden, of veranderingen te bewaren.
 
 1. Navigeren naar **[!UICONTROL System]** > **[!UICONTROL Cache Management]** en klik op **[!UICONTROL Flush Cache]** om alle ongeldige caches te vernieuwen.
 
-U kunt nu doorgaan met het wijzigen van de standaardinstellingen voor [betalingsopties](#configure-payment-options) functies en storefront display.
+U kunt nu de standaardinstellingen wijzigen voor [betalingsopties](#configure-payment-options) functies en storefront display.
 
 ### soft descriptor toevoegen
 
 U kunt een [!UICONTROL Soft Descriptor] naar de configuratie van uw website(s) of afzonderlijke winkelweergave(en). Zachte beschrijvingen worden weergegeven op bankafschriften van klanttransacties. Als u bijvoorbeeld meerdere winkels/merken/catalogi hebt, kunt u deze eenvoudig van elkaar scheiden door aangepaste tekst toe te voegen aan de [!UICONTROL Soft Descriptor] veld.
 
-1. Op de _Beheer_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 
    ![Startweergave](assets/payment-services-menu-small.png)
 
-1. Klikken **[!UICONTROL Settings]**. Zie [Inleiding tot [!DNL Payment Services] Home](payments-home.md) voor meer informatie .
-1. Selecteer de website- of opslagweergave in het dialoogvenster **[!UICONTROL Scope]** vervolgkeuzelijst, waarvoor u een elektronische descriptor wilt maken. Voor de eerste setup laat u deze als **[!UICONTROL Default]** om de standaardwaarde in te stellen.
+1. Klik op **[!UICONTROL Settings]**. Zie [Inleiding tot [!DNL Payment Services] Home](payments-home.md) voor meer informatie .
+1. Selecteer de website- of opslagweergave in het dialoogvenster **[!UICONTROL Scope]** vervolgkeuzelijst, waarvoor u een elektronische descriptor wilt maken. Voor de eerste setup laat u deze instelling als **[!UICONTROL Default]** om de standaardwaarde in te stellen.
 1. Voeg uw aangepaste tekst (maximaal 22 tekens) toe aan het tekstveld en vervang `Custom descriptor`.
-1. Klikken **[!UICONTROL Save]**.
+1. Klik op **[!UICONTROL Save]**.
 1. U kunt als volgt een andere softdescriptor maken dan de geconfigureerde standaardwaarde voor een website- of opslagweergave:
    1. Selecteer de website- of opslagweergave in het dialoogvenster **[!UICONTROL Scope]** vervolgkeuzelijst, waarvoor u een elektronische descriptor wilt maken.
    1. Schakelen _uit_ **[!UICONTROL Use website]** (of **[!UICONTROL Use default]**, afhankelijk van het bereik dat u hebt geselecteerd).
    1. Voeg uw aangepaste tekst toe aan het tekstveld.
-   1. Klikken **[!UICONTROL Save]**.
+   1. Klik op **[!UICONTROL Save]**.
 1. De standaardschermdescriptor inschakelen voor een website of winkel _of_ de softwaredescriptor die voor de bovenliggende website wordt gebruikt:
-   1. Selecteer de website- of opslagweergave in het dialoogvenster **[!UICONTROL Scope]** vervolgkeuzelijst, waarvoor u een bestaande elektronische descriptor wilt inschakelen.
+   1. Selecteer de website- of opslagweergave in het dialoogvenster **[!UICONTROL Scope]** vervolgkeuzemenu waarvoor u een bestaande elektronische descriptor wilt inschakelen.
    1. Schakelen _op_ **[!UICONTROL Use website]** (of **[!UICONTROL Use default]**, afhankelijk van het bereik dat u hebt geselecteerd).
-   1. Klikken **[!UICONTROL Save]**.
+   1. Klik op **[!UICONTROL Save]**.
 
    Als u probeert weg van deze mening te navigeren zonder uw veranderingen op te slaan, verschijnt een modaal die u ertoe aanzet om veranderingen te verwerpen, het uitgeven te houden, of veranderingen te bewaren.
 
@@ -90,11 +90,11 @@ U kunt een [!UICONTROL Soft Descriptor] naar de configuratie van uw website(s) o
 
 Nu hebt u deze functie ingeschakeld [!UICONTROL Payment Services] voor uw website kunt u de standaardinstellingen voor betalingsfuncties en de storefront-weergave wijzigen.
 
-1. Op de _Beheer_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 
    ![Startweergave](assets/payment-services-menu-small.png)
 
-1. Klikken **[!UICONTROL Settings]**. Zie [Inleiding tot [!DNL Payment Services] Home](payments-home.md) voor meer informatie .
+1. Klik op **[!UICONTROL Settings]**. Zie [Inleiding tot [!DNL Payment Services] Home](payments-home.md) voor meer informatie .
 1. Betalingsopties configureren voor [creditcards](#credit-card-fields), [betaalknoppen](#payment-buttons), en [knopstijl](#button-style), op de volgende secties.
 
 ### Creditcardvelden
@@ -103,7 +103,7 @@ De _[!UICONTROL Credit Card Fields]_de instellingen bieden een eenvoudige en vei
 
 Zie [Betalingsopties](payments-options.md#credit-card-fields) voor meer informatie .
 
-1. Op de _Beheer_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 
    ![Startweergave](assets/payment-services-menu-small.png)
 
@@ -113,9 +113,9 @@ Zie [Betalingsopties](payments-options.md#credit-card-fields) voor meer informat
 1. Inschakelen [Beveiligde 3DS-verificatie](security.md#3ds) (`Off` standaard) schakelt u de **[!UICONTROL 3DS Secure authentication]** kiezer naar `Always` of `When required`.
 1. Schakel de optie **[!UICONTROL Show on checkout page]** kiezer.
 1. In- of uitschakelen [kaartvaulatie](#card-vaulting), schakelt u de **[!UICONTROL Vault enabled]** kiezer.
-1. In- of uitschakelen [Betaalmethoden in het beheerprogramma](#card-vaulting) (voor handelaren die orders voor klanten in de Admin voltooien met behulp van hun gefactureerde betalingsmethode) schakelt u de **[!UICONTROL Show vaulted methods in Admin]** kiezer.
-1. Als u de foutopsporingsmodus wilt in- of uitschakelen, schakelt u de optie **[!UICONTROL Debug Mode]** kiezer.
-1. Klikken **[!UICONTROL Save]**.
+1. In- of uitschakelen [Betaalmethoden in het beheerprogramma](#card-vaulting) (voor handelaren die orders voor klanten in de Admin voltooien met behulp van hun gefactureerde betalingsmethode), schakelt u de **[!UICONTROL Show vaulted methods in Admin]** kiezer.
+1. Om zuivert wijze in of onbruikbaar te maken, knevel **[!UICONTROL Debug Mode]** kiezer.
+1. Klik op **[!UICONTROL Save]**.
 
    Als u probeert weg van deze mening te navigeren zonder uw veranderingen op te slaan, verschijnt een modaal die u ertoe aanzet om veranderingen te verwerpen, het uitgeven te houden, of veranderingen te bewaren.
 
@@ -128,7 +128,7 @@ Zie [Betalingsopties](payments-options.md#credit-card-fields) voor meer informat
 | [!UICONTROL Title] | winkelweergave | Voeg de tekst die tijdens het afrekenen wordt weergegeven als titel voor deze betalingsoptie toe aan de weergave Betalingsmethode. Opties: [!UICONTROL text field] |
 | [!UICONTROL Payment Action] | website | De [betalingsactie](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} voor de opgegeven betalingsmethode. Opties: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL 3DS Secure authentication] | website | In- of uitschakelen [Beveiligde 3DS-verificatie](security.md#3ds). Opties: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
-| [!UICONTROL Show on checkout page] | website | In- of uitschakelen van creditcardvelden om weer te geven op de afhandelingspagina. Opties: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show on checkout page] | website | In- of uitschakelen van creditcardvelden voor weergave op de afhandelingspagina. Opties: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Vault enabled] | winkelweergave | In- of uitschakelen [creditcard vauleren](vaulting.md). Opties: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show vaulted payment methods in Admin] | winkelweergave | Laat of maak capaciteit voor koopman voor klanten in Admin toe onbruikbaar [met een in kluizen geplaatste betalingsmethode](vaulting.md). Opties: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Debug Mode] | website | De foutopsporingsmodus in- of uitschakelen. Opties: [!UICONTROL Yes] / [!UICONTROL No] |
@@ -160,8 +160,8 @@ U kunt de betalingsopties voor slimme PayPal-knoppen inschakelen en configureren
 
      Terwijl u de zichtbaarheid van betalingsknoppen of het Later bericht PayPal Pay (PayPal Pay) in- of uitschakelt, wordt onder aan de pagina Settings een visuele voorvertoning van die configuratie weergegeven.
 
-1. Schakel de optie **[!UICONTROL Debug Mode]** kiezer.
-1. Klikken **[!UICONTROL Save]**.
+1. Om zuivert wijze toe te laten, knevel **[!UICONTROL Debug Mode]** kiezer.
+1. Klik op **[!UICONTROL Save]**.
 
    Als u probeert weg van deze mening te navigeren zonder uw veranderingen op te slaan, verschijnt een modaal die u ertoe aanzet om veranderingen te verwerpen, het uitgeven te houden, of veranderingen te bewaren.
 
@@ -175,7 +175,7 @@ U kunt de betalingsopties voor slimme PayPal-knoppen inschakelen en configureren
 | [!UICONTROL Payment Action] | website | De [betalingsactie](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} voor de opgegeven betalingsmethode. Opties: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Show PayPal buttons on checkout page] | winkelweergave | In- of uitschakelen [!DNL PayPal Smart Buttons] op de uitcheckpagina. Opties: [!UICONTROL  Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons on product detail page] | winkelweergave | In- of uitschakelen [!DNL PayPal Smart Buttons] op de pagina met productdetails. Opties: [!UICONTROL  Yes] / [!UICONTROL No] |
-| [!UICONTROL Show PayPal buttons in mini-cart preview] | winkelweergave | In- of uitschakelen [!DNL PayPal Smart Buttons] in de voorvertoning van de minicart. Opties: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show PayPal buttons in mini-cart preview] | winkelweergave | In- of uitschakelen [!DNL PayPal Smart Buttons] in de voorvertoning van de mini-cart. Opties: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons on cart page] | winkelweergave | In- of uitschakelen [!DNL PayPal Smart Buttons] op de winkelwagentje. Opties: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal Pay Later button] | winkelweergave | De weergave van betalingsopties voor latere betalingen in- of uitschakelen wanneer betalingsknoppen worden weergegeven. Opties: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal Pay Later Message] | website | Schakel het bericht Later betalen in of uit in het winkelwagentje, de productpagina, de miniwinkelwagentje en tijdens de afrekenstroom. Opties: [!UICONTROL Yes] / [!UICONTROL No] |
@@ -204,13 +204,13 @@ U kunt ook de _[!UICONTROL Button style]_opties van de slimme PayPal-knoppen:
 
    ![[!DNL PayPal Smart Buttons] opties](assets/payment-buttons.png){width="500"}
 
-1. Klikken **[!UICONTROL Save]**.
+1. Klik op **[!UICONTROL Save]**.
 
    Als u probeert weg van deze mening te navigeren zonder uw veranderingen op te slaan, verschijnt een modaal die u ertoe aanzet om veranderingen te verwerpen, het uitgeven te houden, of veranderingen te bewaren.
 
 1. [De cache leegmaken](#flush-the-cache).
 
-U kunt configureren [!DNL PayPal Smart Buttons] stijl [in de oudere configuratie in de beheerder](configure-admin.md#configure-paypal-smart-buttons) of hier [!DNL Payment Services Home]. Zie [Stijlgids voor PayPal-knoppen](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) voor meer informatie over de opties.
+U kunt [!DNL PayPal Smart Buttons] stijl [in de oudere configuratie in de beheerder](configure-admin.md#configure-paypal-smart-buttons) of hier in [!DNL Payment Services Home]. Zie [Stijlgids voor PayPal-knoppen](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) voor meer informatie over de opties.
 
 #### Configuratieopties
 
@@ -221,7 +221,7 @@ U kunt configureren [!DNL PayPal Smart Buttons] stijl [in de oudere configuratie
 | [!UICONTROL Color] | Winkelweergave | Geef de kleur van de betaalknoppen op. Opties: [!UICONTROL Blue] / [!UICONTROL Gold] / [!UICONTROL Silver] / [!UICONTROL White] / [!UICONTROL Black] |
 | [!UICONTROL Shape] | Winkelweergave | Vorm van de betaalknoppen definiëren. Opties: [!UICONTROL Rectangular] / [!UICONTROL Pill] |
 | [!UICONTROL Responsive Button Height] | Winkelweergave | Definieert of voor de betalingsknoppen een standaardhoogte wordt gebruikt. Opties: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Height] | Winkelweergave | Bepaal hoogte van de betalingsknopen. Standaardwaarde: none |
+| [!UICONTROL Height] | Winkelweergave | Geef de hoogte van de betaalknoppen op. Standaardwaarde: geen |
 | [!UICONTROL Label] | Winkelweergave | Definieer het label dat in de betaalknoppen wordt weergegeven. Opties: [!UICONTROL PayPal] / [!UICONTROL Checkout] / [!UICONTROL Buynow] / [!UICONTROL Pay] / [!UICONTROL Installment] |
 
 ## Rollen configureren
@@ -241,10 +241,10 @@ Wanneer u bronnen toewijst aan de rol, moet u het volgende selecteren:
 
 Als u de configuratie wijzigt in _Instellingen_ Als u bijvoorbeeld de PayPal-, Venmo- of PayPal PayPal PayPal PayLater-knoppen in- of uitschakelt, wordt de cache handmatig leeggemaakt, zodat in de winkel de meest recente configuraties worden weergegeven.
 
-1. Op de _Beheer_ zijbalk, ga naar **[!UICONTROL System]** > **[!UICONTROL Cache Management]**.
+1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL System]** > **[!UICONTROL Cache Management]**.
 1. Klikken **[!UICONTROL Flush Cache]** om alle ongeldige caches te vernieuwen.
 
-Als om het even welk Type van Geheime voorgeheugen in de lijst van het Beheer van het Geheime voorgeheugen een heeft `INVALIDATED` status, wordt de meest recente configuratie voor dat item mogelijk niet weergegeven in uw winkel. Duw het geheime voorgeheugen om uw opslag bij te werken om de recentste configuratie te tonen.
+Als om het even welk Type van Geheime voorgeheugen in de lijst van het Beheer van het Geheime voorgeheugen heeft `INVALIDATED` status, wordt de meest recente configuratie voor dat item mogelijk niet weergegeven in uw winkel. Duw het geheime voorgeheugen om uw opslag bij te werken om de recentste configuratie te tonen.
 
 Om ervoor te zorgen dat uw opslag de correcte configuratie toont, periodiek [cachegeheugen leegmaken](https://docs.magento.com/user-guide/system/cache-management.html).
 
@@ -262,7 +262,7 @@ Zie [Creditcard vaulting](vaulting.md) voor meer informatie .
 
 3DS beschermt klanten en handelaren tegen frauduleuze activiteiten in hun winkels en maakt naleving van de EU-normen mogelijk.
 
-3DS in- of uitschakelen in het dialoogvenster [Instellingen voor creditcardvelden](#credit-card-fields).
+3DS in- of uitschakelen in de [Instellingen voor creditcardvelden](#credit-card-fields).
 
 Zie [3DS in beveiliging](security.md#3ds) voor meer informatie .
 

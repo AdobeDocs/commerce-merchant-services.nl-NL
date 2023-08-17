@@ -16,11 +16,11 @@ ht-degree: 0%
 
 [!DNL Payment Services] for [!DNL Adobe Commerce] en [!DNL Magento Open Source] verschaft een weergave Home met alle benodigde informatie om de extensie in te stellen en te gebruiken.
 
-1. Op de _Beheer_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**:
+1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**:
 
    ![Startweergave](assets/home-view.png)
 
-1. In deze weergave Home hebt u toegang tot _Home_ weergave, _Meer informatie_ info [!DNL Payment Services], configureert u de extensie _Instellingen_, of get _Help_.
+1. In deze weergave Home hebt u toegang tot _Home_ weergave, _Meer informatie_ info [!DNL Payment Services], de extensie configureren _Instellingen_, of get _Help_.
 
 ## Home
 

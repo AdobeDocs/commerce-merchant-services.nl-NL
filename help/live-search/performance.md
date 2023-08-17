@@ -21,7 +21,7 @@ De [!DNL Live Search] Het prestatiedashboard biedt inzicht in de zoektermen die 
 
 ## Een rapport weergeven
 
-1. Als u de **Datumbereik** klikt u op de kalender (![Kalender](assets/btn-calendar.png)) en voer een van de volgende handelingen uit:
+1. Als u de **Datumbereik**, klikt u op de kalender (![Kalender](assets/btn-calendar.png)) en voer een van de volgende handelingen uit:
 
    * Als u één datum wilt opgeven, dubbelklikt u op de datum in de kalender.
    * Als u een datumbereik wilt opgeven, klikt u op de eerste en laatste datum in de kalender.
@@ -43,6 +43,6 @@ De [!DNL Live Search] Het prestatiedashboard biedt inzicht in de zoektermen die 
 
 | Rapporten | Beschrijving |
 |--- |--- |
-| Unieke zoekopdrachten | Hiermee geeft u de unieke zoekquery&#39;s weer die worden gebruikt tijdens het opgegeven datumbereik. De rapportgegevens worden op dezelfde manier berekend als de unieke gegevens van de onderzoeksmomentopname. Als een verkoper de zelfde onderzoeksvraag tweemaal, maar meer dan een uur uit elkaar typt, wordt het onderzoek beschouwd als twee unieke onderzoeken. Rapportlimiet: Hoogste 500 termen |
-| Resultaten nul | Maakt een lijst van de onderzoeksvragen die geen resultaten en het aantal tijden terugkeren die tijdens de gespecificeerde datumwaaier worden gebruikt. Rapportlimiet: Hoogste 500 termen |
-| Populaire resultaten | Maakt een lijst van de namen van producten die de meeste meningen tijdens de gespecificeerde datumwaaier ontvingen. De populaire resultaten worden berekend gebaseerd op beelden slechts en worden niet beïnvloed door het aantal geklikte of opbrengst. Rapportlimiet: Hoogste 500 termen |
+| Unieke zoekopdrachten | Hiermee geeft u de unieke zoekquery&#39;s weer die worden gebruikt tijdens het opgegeven datumbereik. De rapportgegevens worden op dezelfde manier berekend als de unieke gegevens van de onderzoeksmomentopname. Als een verkoper de zelfde onderzoeksvraag tweemaal, maar meer dan een uur uit elkaar typt, wordt het onderzoek beschouwd als twee unieke onderzoeken. Rapportlimiet: de hoogste 500 voorwaarden |
+| Resultaten nul | Maakt een lijst van de onderzoeksvragen die geen resultaten en het aantal tijden terugkeren die tijdens de gespecificeerde datumwaaier worden gebruikt. Rapportlimiet: de hoogste 500 voorwaarden |
+| Populaire resultaten | Maakt een lijst van de namen van producten die de meeste meningen tijdens de gespecificeerde datumwaaier ontvingen. De populaire resultaten worden berekend gebaseerd op beelden slechts en worden niet beïnvloed door het aantal geklikte of opbrengst. Rapportlimiet: de hoogste 500 voorwaarden |

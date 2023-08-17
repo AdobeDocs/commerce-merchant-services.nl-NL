@@ -65,7 +65,7 @@ Zie [Uw verificatietoetsen ophalen](https://experienceleague.adobe.com/docs/comm
 
 #### Adobe Commerce over cloudinfrastructuur
 
-Gebruik deze methode voor het installeren van de uitbreiding van de Dienst van de Catalogus voor een instantie van Commerce Cloud.
+Gebruik deze methode voor het installeren van de uitbreiding van de Dienst van de Catalogus voor een instantie van de Commerce Cloud.
 
 1. Open de `<Commerce_root>/composer.json` bestand in een teksteditor en werk de vereiste sectie als volgt bij:
 
@@ -143,6 +143,6 @@ Als u Catalog Service via een firewall wilt toestaan, voegt u `commerce.adobe.io
 
 ## Catalogusservice en API-net
 
-De [API-net voor Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) laat ontwikkelaars toe om privé of derde APIs en andere interfaces met de producten van Adobe te integreren gebruikend Adobe IO.
+De [API-net voor Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) laat ontwikkelaars toe om privé of derde APIs en andere interfaces met Adobe producten te integreren gebruikend Adobe IO.
 
 Zie de  [Catalogusservice en API-net](mesh.md) onderwerp voor installatie en configuratiedetails.

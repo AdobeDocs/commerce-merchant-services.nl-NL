@@ -25,7 +25,7 @@ In de voorvertoning aan de rechterkant van de pagina ziet u hoe de aanbeveling m
 
 ## Een aanbeveling bewerken
 
-1. Op de _Beheer_ zijbalk, ga naar **Marketing** > _Aanbiedingen_ > **Product Recommendations**.
+1. Op de _Beheerder_ zijbalk, ga naar **Marketing** > _Aanbiedingen_ > **Product Recommendations**.
 
 1. Selecteer de aanbeveling die u wilt bewerken.
 
@@ -75,6 +75,6 @@ De _Inclusies_ en _Uitsluitingen_ tabs bevatten de beschikbare filters van elk t
 
 ![Filters bewerken](assets/edit-filters.png)
 
-De filterinstellingen beschrijven de producten die in de aanbevolen eenheid moeten worden opgenomen of uitgesloten. De _Categorie_ Met instellingen voor filteropname wordt het systeem verteld dat alleen producten uit de geselecteerde categorieën moeten worden opgenomen.
+De filterinstellingen beschrijven de producten die in de aanbevolen eenheid moeten worden opgenomen of uitgesloten. Bijvoorbeeld de _Categorie_ Met instellingen voor filteropname wordt het systeem verteld dat alleen producten uit de geselecteerde categorieën moeten worden opgenomen.
 
 ![Categoriefilter bewerken](assets/edit-filter-category.png)

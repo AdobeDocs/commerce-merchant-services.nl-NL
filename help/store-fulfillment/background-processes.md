@@ -18,7 +18,7 @@ De integratie van de Afhandeling van de Opslag gebruikt achtergrondprocessen en 
 
 Achtergrondprocessen worden beheerd met de standaard Adobe Commerce [Geplande taken](https://docs.magento.com/user-guide/system/cron.html) functionaliteit. Deze processen zijn de oorzaak van het synchroniseren van orde en de handelaarconfiguratiegegevens met de Webdiensten van de opslagvervulling.
 
-## Geplande taken beheren voor winkeluitvoering
+## Geplande taken beheren voor het uitvoeren van een winkel
 
 Ga vanuit de beheerder naar **[!UICONTROL Stores > Configuration > Advanced > System > Cron (Scheduled Tasks) > Cron configuration options for group:store_fulfillment]**.
 

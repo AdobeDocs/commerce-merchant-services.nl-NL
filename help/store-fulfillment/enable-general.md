@@ -1,6 +1,6 @@
 ---
 title: Algemene configuratie
-description: Algemene instellingen configureren om in te schakelen [!DNL Store Fulfillment] voor uw winkel. Configureer algemene extensie-instellingen, systeeminstellingen voor registratie, gegevenssynchronisatie en beveiliging. Belangrijke gegevens leveren om de integratie tussen Adobe Commerce en Store Fulfillment Services mogelijk te maken.
+description: Algemene instellingen configureren voor inschakelen [!DNL Store Fulfillment] voor uw winkel. Configureer algemene extensie-instellingen, systeeminstellingen voor registratie, gegevenssynchronisatie en beveiliging. Belangrijke gegevens leveren om de integratie tussen Adobe Commerce en Store Fulfillment Services mogelijk te maken.
 role: Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
@@ -85,7 +85,7 @@ De optie [!DNL Store Fulfillment] -oplossing om de mogelijkheden voor in-store e
  <tbody>
 <tr>
 <td><strong>[!UICONTROL Enabled]</strong></td>
-<td>Schakel de oplossing in of uit. Indien ingeschakeld, configureert en gebruikt u de mogelijkheden van Store Fulfillment en maakt u de verbinding tussen uw Adobe Commerce-winkel en [!DNL Store Fulfillment] diensten. Als deze optie is uitgeschakeld, zijn alle functies voor het afhandelen van winkels uitgeschakeld en is er geen communicatie tussen Adobe Commerce en de services voor het afhandelen van winkels. Bestelgegevens kunnen niet worden verwerkt of ontvangen.</td>
+<td>Schakel de oplossing in of uit. Indien ingeschakeld, configureert en gebruikt u de mogelijkheden van Store Fulfillment en maakt u de verbinding tussen uw Adobe Commerce-winkel en [!DNL Store Fulfillment] diensten. Als deze optie is uitgeschakeld, zijn alle functies van Afhandeling van winkel uitgeschakeld en is er geen communicatie tussen Adobe Commerce en de service Afhandeling van winkel. Bestelgegevens kunnen niet worden verwerkt of ontvangen.</td>
 <td>Website</td>
 <td>Ja</td>
 </tr>
@@ -103,7 +103,7 @@ De optie [!DNL Store Fulfillment] -oplossing om de mogelijkheden voor in-store e
 </tr>
 <tr>
 <td><strong>[!UICONTROL Environment]</strong></td>
-<td>Selecteer <i>[!UICONTROL Sandbox]</i> of <i>[!UICONTROL Production]</i><br></br>Selecteren [!UICONTROL Sandbox] maakt communicatie met uitvoeringsdiensten in een testomgeving mogelijk.<br></br>Selecteren [!UICONTROL Production] maakt communicatie met uitvoeringsdiensten in een live omgeving mogelijk.<br></br>U krijgt een reeks geloofsbrieven voor elke milieu en kunt beide reeksen in de zelfde installatie beheren. <br></br>Sla de gegevens op voordat u de verbinding valideert.</td>
+<td>Selecteer een van beide <i>[!UICONTROL Sandbox]</i> of <i>[!UICONTROL Production]</i><br></br>Selecteren [!UICONTROL Sandbox] maakt communicatie met uitvoeringsdiensten in een testomgeving mogelijk.<br></br>Selecteren [!UICONTROL Production] maakt communicatie met uitvoeringsdiensten in een live omgeving mogelijk.<br></br>U krijgt een reeks geloofsbrieven voor elke milieu en kunt beide reeksen in de zelfde installatie beheren. <br></br>Sla de gegevens op voordat u de verbinding valideert.</td>
 <td>Algemeen</td>
 <td>Ja</td>
 </tr>
@@ -151,7 +151,7 @@ Omdat het dossier van het toepassingslogboek snel kan groeien, laat registreren 
 
 >[!TIP]
 >
->Voor Adobe Commerce-installaties op locatie vraagt u de systeembeheerder om logrotatie voor de installatie van `var/log/walmart-bopis.log` om de grootte te minimaliseren. Voor Adobe Commerce-installaties ter plaatse gaat u naar [Logrotatie](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html#server-settings) in de _Adobe Commerce-installatiehandleiding_. Voor Adobe Commerce over infrastructuurprojecten in de cloud gaat u naar [Logbestanden weergeven en beheren](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html).
+>Voor Adobe Commerce-installaties op locatie vraagt u de systeembeheerder om logrotatie voor de installatie van `var/log/walmart-bopis.log` bestand om de grootte te minimaliseren. Voor Adobe Commerce-installaties ter plaatse gaat u naar [Logrotatie](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html#server-settings) in de _Adobe Commerce-installatiehandleiding_. Voor Adobe Commerce over infrastructuurprojecten in de cloud gaat u naar [Logbestanden weergeven en beheren](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html).
 
 <table>
 <thead>
@@ -265,7 +265,7 @@ Configureer de verzendopties voor de afhandeling van winkels die de beschikbaarh
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Enable Ship To Store]</strong></td>
-<td>De instelling voor het naar de winkel verzenden van verzendingen is gebaseerd op uw bestaande verzendmogelijkheden. Als u Inventory management gebruikt, of als u bestellingen kunt accepteren en uitvoeren op zakelijke locaties zonder voorraad via voorraadoverdrachten van winkel naar winkel, stelt u deze optie in op Ja.<br></br>Als u geen ondersteuning kunt bieden voor de optie voor het aan boord brengen van een schip of deze niet wilt aanbieden, stelt u deze in op "Nee". Als deze optie is uitgeschakeld, worden items in uw catalogus met een nulvoorraad voor een winkel of items die onder de [!DNL Out of Stock Threshold] voor die locatie worden niet aangeboden met opties voor in-store ophalen.<br></br>U kunt de waarde van deze instelling per bedrijfslocatie aanpassen.</td>
+<td>De instelling voor het naar de winkel verzenden van verzendingen is gebaseerd op uw bestaande verzendmogelijkheden. Als u Inventory management gebruikt, of als u bestellingen kunt accepteren en uitvoeren op zakelijke locaties zonder voorraad via voorraadoverdrachten van winkel naar winkel, stelt u deze optie in op Ja.<br></br>Als u geen ondersteuning kunt bieden voor de optie voor het aan boord brengen van een schip of deze niet wilt aanbieden, stelt u deze in op "Nee". Als deze optie is uitgeschakeld, worden items in uw catalogus met een nulvoorraad voor een winkel of items die onder de [!DNL Out of Stock Threshold] voor die locatie, worden niet aangeboden met opties voor in-store ophalen.<br></br>U kunt de waarde van deze instelling per bedrijfslocatie aanpassen.</td>
 <td>Algemeen</td>
 <td>Nee</td>
 </tr>
@@ -330,7 +330,7 @@ Configureer de instellingen voor de gebruikersaccount en wachtwoordbeveiliging v
 </tr>
 <tr>
 <td><strong>[!UICONTROL Force Password Change]</strong></td>
-<td><em>[!UICONTROL Yes]</em>: Vereisen dat de gebruiker zijn wachtwoord wijzigt na het instellen van de account.<br></br><em>[!UICONTROL No]</em>: raadt de gebruiker aan het wachtwoord te wijzigen na het instellen van de account.</td>
+<td><em>[!UICONTROL Yes]</em>: Vereisen dat de gebruiker zijn wachtwoord wijzigt na het instellen van de account.<br></br><em>[!UICONTROL No]</em>: raadt aan dat de gebruiker het wachtwoord wijzigt na het instellen van de account.</td>
 <td>Algemeen</td>
 <td>Nee</td>
 </tr>
@@ -387,7 +387,7 @@ Met de in-store leveringsmethode, kan de klant een bron selecteren die als oppik
 </tbody>
 </table>
 
-### Configuratie van de titel van de leveringsmethode
+### Configuratie van titel leveringsmethode
 
 <table>
 <thead>
@@ -399,7 +399,7 @@ Met de in-store leveringsmethode, kan de klant een bron selecteren die als oppik
 </tr>
 </thead>
 <tbody><tr>
-<td><strong>Titel thuislevering</strong></td>
+<td><strong>Titel van thuislevering</strong></td>
 <td>Hier geeft u de titel op die u wilt weergeven voor de optie Home Delivery in de producten-, winkelwagentje- en afrekengebieden. De levering van het huis verwijst naar de standaardverzendmogelijkheden van Adobe Commerce-van een pakhuis, door een drager, of direct aan het klant-verstrekte verzendadres. </br></br>Dit label heeft geen invloed op de labels van de verzendmethode voor de geselecteerde verzendende vervoerder.</td>
 <td>Winkelweergave</td>
 <td>Nee</td>

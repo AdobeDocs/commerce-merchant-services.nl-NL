@@ -53,7 +53,7 @@ Voor de app Store Assist zijn twee soorten configuraties vereist:
 
    - **Meldingen inchecken**—Geef op of u een pushmelding wilt verzenden tijdens het inchecken van bestellingen- na inchecken, nadat de wachttijd van de klant een bepaalde periode overschrijdt. Of schakel de melding uit.
 
-   - **Handje uit-proces**—Schakel optionele processen in wanneer Store Associate bestelling aan de klant levert, bijvoorbeeld een handtekening van de klant vereisen of de koppeling vragen om de klant-id te controleren.
+   - **Handje-uit-proces**—Schakel optionele processen in wanneer Store Associate bestelling aan de klant levert, bijvoorbeeld een handtekening van de klant vereisen of de koppeling vragen om de klant-id te controleren.
 
    - **Afkeuring van item inschakelen bij afbreken**—Toestaan dat klanten bestellingen retourneren of annuleren tijdens het afhandelen van bestellingen.
 

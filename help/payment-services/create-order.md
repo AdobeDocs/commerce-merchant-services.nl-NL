@@ -6,7 +6,7 @@ feature: Payments, Checkout
 source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
 workflow-type: tm+mt
 source-wordcount: '158'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -20,8 +20,8 @@ U kunt de betalingsservices naar wens aanpassen met [[!DNL Payment Services] ins
 
 [!DNL Payment Services] zijn beschikbaar als een betalingsmethode bij het maken van een bestelling in de beheerder:
 
-1. Op de _Beheer_ zijbalk, uitvouwen **[!UICONTROL Sales]** en kiest u **[!UICONTROL Orders]**.
-1. Klikken **[!UICONTROL Create New Order]**.
+1. Op de _Beheerder_ zijbalk, uitbreiden **[!UICONTROL Sales]** en kiest u **[!UICONTROL Orders]**.
+1. Klik op **[!UICONTROL Create New Order]**.
 1. Volledige secties indien nodig voor de bestelling (zie voor meer informatie [Een volgorde maken](https://docs.magento.com/user-guide/customers/customer-account-create-order.html){target="_blank"}).
 1. In de _[!UICONTROL Payment Method]_in, kunt u uw [!DNL Payment Services] als betalingsmethode.
-1. Klikken **[!UICONTROL Submit Order]**.
+1. Klik op **[!UICONTROL Submit Order]**.

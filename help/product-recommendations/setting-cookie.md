@@ -19,18 +19,18 @@ Dit werkt mogelijk niet met oplossingen voor cookie van derden. Het is de verant
 
 - Naam van de cookie:
 
-   ```text
-   `const DNT_COOKIE = "mg_dnt";`
-   ```
+  ```text
+  `const DNT_COOKIE = "mg_dnt";`
+  ```
 
 - Stel het cookie niet bijhouden in om gegevensverzameling uit te schakelen:
 
-   ```text
-   `$.mage.cookies.set(DNT_COOKIE, true);`
-   ```
+  ```text
+  `$.mage.cookies.set(DNT_COOKIE, true);`
+  ```
 
 - De cookie wissen wanneer de gebruiker cookies heeft geaccepteerd:
 
-   ```text
-   `$.mage.cookies.clear(DNT_COOKIE);`
-   ```
+  ```text
+  `$.mage.cookies.clear(DNT_COOKIE);`
+  ```

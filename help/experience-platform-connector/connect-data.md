@@ -5,14 +5,14 @@ exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
 source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1952'
 ht-degree: 0%
 
 ---
 
 # Connect Commerce-gegevens naar Adobe Experience Platform
 
-Wanneer u de aansluiting voor het Experience Platform installeert, worden twee nieuwe configuratiepagina&#39;s weergegeven in de **Systeem** menu onder **Services** in de handel _Beheer_.
+Wanneer u de aansluiting voor het Experience Platform installeert, worden twee nieuwe configuratiepagina&#39;s weergegeven in de **Systeem** menu onder **Services** in de handel _Beheerder_.
 
 - Commerce Services Connector
 - Experience Platform Connector
@@ -25,7 +25,7 @@ Als u eerder een dienst van Adobe Commerce hebt geïnstalleerd, hebt u waarschij
 
 1. Meld u aan bij uw account voor Handel om [productie- en sandbox-API-sleutels ophalen](../landing/saas.md#credentials).
 1. Selecteer een [SaaS-gegevensruimte](../landing/saas.md#saas-configuration).
-1. Meld u aan bij uw Adobe-account naar [uw organisatie-id ophalen](../landing/saas.md#ims-organization-optional).
+1. Meld u aan bij uw Adobe-account om [uw organisatie-id ophalen](../landing/saas.md#ims-organization-optional).
 
 Nadat u de schakelaar van de Diensten van de Handel vormt, vormt u dan de schakelaar van het Experience Platform.
 
@@ -51,7 +51,7 @@ In deze sectie verbindt u uw Adobe Commerce-exemplaar met de Adobe Experience Pl
 
 ## Gegevensverzameling
 
-In deze sectie geeft u het type gegevens op dat u naar de rand van het Experience Platform wilt verzenden. Er zijn twee soorten gegevens: client-kant en server-kant.
+In deze sectie geeft u het type gegevens op dat u naar de rand van het Experience Platform wilt verzenden. Er zijn twee soorten gegevens: client-side en server-side.
 
 Gegevens aan de clientzijde zijn gegevens die worden vastgelegd op de opslagront. Dit omvat winkelinteracties, zoals `View Page`, `View Product`, `Add to Cart`, en [aanvraaglijst](events.md#b2b-events) informatie (voor B2B-handelaren). Gegevens aan de serverzijde of gegevens aan de achterzijde van het kantoor zijn gegevens die zijn vastgelegd in de Commerce-servers. Dit omvat informatie over de status van een bestelling, zoals of een bestelling is geplaatst, geannuleerd, terugbetaald, verzonden of voltooid.
 
@@ -61,7 +61,7 @@ Zie het gebeurtenisonderwerp om meer over te leren [storefront](events.md#storef
 
 >[!NOTE]
 >
->Alle velden in het dialoogvenster **Gegevensverzameling** van toepassing op **Website** bereik of hoger.
+>Alle velden in het dialoogvenster **Gegevensverzameling** van toepassing **Website** bereik of hoger.
 
 1. Selecteren **Gebeurtenissen van Storefront** als u gedragsgegevens van de storefront wilt verzenden.
 
@@ -77,7 +77,7 @@ Zie het gebeurtenisonderwerp om meer over te leren [storefront](events.md#storef
 
 1. Om de updates van de backoffice gebeurtenisgegevens te verzekeren die op een programma volgens een [kraan](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html) taak, moet u de `Sales Orders Feed` indexeren naar `Update by Schedule`.
 
-   1. Op de _Beheer_ zijbalk, ga naar **[!UICONTROL System]** > _[!UICONTROL Tools]_>**[!UICONTROL Index Management]**.
+   1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL System]** > _[!UICONTROL Tools]_>**[!UICONTROL Index Management]**.
 
    1. Schakel het selectievakje in voor de `Sales Orders Feed` indexeerprogramma.
 
@@ -125,7 +125,7 @@ Terwijl de Handel reeds de historische ordegegevens verzamelt, zijn er verscheid
 
 ### bètaversie van historische volgorde installeren
 
-Om de historische inzameling van ordegegevens voor bèta toe te laten, moet u de wortel van het project bijwerken [!DNL Composer] `.json` bestand als volgt:
+Om historische ordegegevensinzameling voor bèta toe te laten, moet u de wortel van het project bijwerken [!DNL Composer] `.json` bestand als volgt:
 
 1. De hoofdmap openen `composer.json` bestand en zoek naar `magento/experience-platform-connector`.
 
@@ -163,17 +163,17 @@ Om de historische inzameling van ordegegevens voor bèta toe te laten, moet u de
 
 ### bèta van historische volgorde configureren
 
-Om ervoor te zorgen dat uw klantenordegeschiedenis naar Experience Platform kan worden verzonden, moet u geloofsbrieven specificeren die uw instantie van de Handel met Experience Platform verbinden. Als u reeds geïnstalleerd en toegelaten hebt [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) hebt opgegeven en kunt u deze stap overslaan. Voer de volgende stappen uit als u de extensie Audience Activation nog niet hebt geïnstalleerd en ingeschakeld:
+Om ervoor te zorgen dat uw klantenordegeschiedenis naar Experience Platform kan worden verzonden, moet u geloofsbrieven specificeren die uw instantie van de Handel met Experience Platform verbinden. Als u reeds geïnstalleerd en toegelaten hebt [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) hebt opgegeven en kunt u deze stap overslaan. Als u de extensie Audience Activation nog niet hebt geïnstalleerd en ingeschakeld, voert u de volgende stappen uit:
 
 >[!NOTE]
 >
 >In deze sectie, gaat u geloofsbrieven van de ontwikkelaarsconsole in. Zorg ervoor dat uw project van de ontwikkelaarsconsole het correcte heeft [rollen en toestemmingen gevormd](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#assign-api-to-a-role).
 
-1. Op de _Beheer_ zijbalk, ga naar **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
+1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 
 1. Uitbreiden **[!UICONTROL Services]** en selecteert u **[!UICONTROL Experience Platform Connector]**.
 
-1. Voer de configuratiereferenties in die in het dialoogvenster [ontwikkelaarsconsole](https://developer.adobe.com/console/home).
+1. Voer de configuratiereferenties in die in het dialoogvenster [ontwikkelingsconsole](https://developer.adobe.com/console/home).
 
    ![Admin-configuratie Experience Platform Connector](./assets/epc-admin-config.png){width="700" zoomable="yes"}
 
@@ -216,7 +216,7 @@ In deze sectie, specificeert u de datumwaaier voor de historische orden u naar E
 
 1. Ga in Beheer naar **Systeem** > Services > **Experience Platform Connector**.
 
-1. Selecteer **Orderhistorie** tab.
+1. Selecteer de **Orderhistorie** tab.
 
 1. Onder **Synchronisatie van orderhistorie**, voert u de **Dataset-id**. Dit zou de zelfde dataset moeten zijn verbonden aan de datastream u in [gegevensverzameling](#data-collection) hierboven.
 
@@ -252,7 +252,7 @@ Als u wilt bevestigen dat gegevens worden verzameld bij uw winkel voor Handel, g
    SELECT * from `your_dataset_name` ORDER by TIMESTAMP DESC
    ```
 
-1. Nadat de vraag loopt, worden de resultaten getoond in **Resultaten** tab, naast de **Console** tab. Deze mening toont de tabeloutput van uw vraag.
+1. Nadat de vraag loopt, worden de resultaten getoond in **Resultaten** tab, naast de **Console** tab. In deze weergave ziet u de tabeluitvoer van uw query.
 
    ![Query-editor](assets/query-results.png)
 

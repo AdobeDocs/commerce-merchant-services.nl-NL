@@ -22,8 +22,8 @@ U kunt de dienst in productie zetten en voltooien [onboarding](onboard.md), volg
 
 Na u [Configureer uw Commerce Services](connect.md#configure-commerce-services) en [sandbox testen](sandbox.md#enable-sandbox-testing) of [rechtstreekse betalingen](#enable-live-payments), moet u instellen [!DNL Payment Services] als betalingsmethode.
 
-1. Op de _Beheer_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-1. Klikken **[!UICONTROL Enable Payment Services]**.
+1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+1. Klik op **[!UICONTROL Enable Payment Services]**.
 
    Deze optie is zichtbaar als u nog niet hebt geconfigureerd [!DNL Payment Services] als betalingsmethode voor een of meer van uw websites.
 
@@ -37,8 +37,8 @@ Na u [Configureer uw Commerce Services](connect.md#configure-commerce-services) 
    | `Authorize` | Hiermee geeft u de aankoop goed en houdt u de middelen in de wacht. De hoeveelheid wordt pas opgevraagd wanneer deze door de handelaar wordt &quot;gevangen&quot;. |
    | `Authorize and Capture` | hecht zijn goedkeuring aan de aankoop en de &quot;opname&quot; van de fondsen door de handelaar. |
 
-1. Klikken **[!UICONTROL Save]**.
-1. Klikken **[!UICONTROL Go to Payment Services]** om terug te keren naar de [!DNL Payment Services] Home.
+1. Klik op **[!UICONTROL Save]**.
+1. Klikken **[!UICONTROL Go to Payment Services]** die naar de [!DNL Payment Services] Home.
 1. [Cache wissen](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}.
 
    Het ontruimen zou na elke configuratieverandering moeten worden gedaan.
@@ -47,8 +47,8 @@ Zie [Betalingsservices configureren](settings.md) voor meer informatie over het 
 
 ## Volledige merchant aan boord
 
-1. Op de _Beheer_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-1. Klikken **[!UICONTROL Live onboarding]**.
+1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+1. Klik op **[!UICONTROL Live onboarding]**.
 
    Deze optie is zichtbaar als u nog niet live on boarding hebt voltooid voor [!DNL Payment Services].
 
@@ -71,11 +71,11 @@ Zie [Betalingsservices configureren](settings.md) voor meer informatie over het 
    >
    >Als u de toestemming intrekt om [!DNL Payment Services] for [!DNL Adobe Commerce] en [!DNL Magento Open Source] voor het verwerken van je betalingen (in de instellingen van je PayPal-rekening) kunnen bestellingen in je winkel niet worden verwerkt door [!DNL Payment Services]. Op de homepage van Betalingsdiensten verschijnt een waarschuwing over de ingetrokken toestemming.
 
-## Betalingsrechten aanvragen van Adobe
+## Betalingsrechten aanvragen voor Adobe
 
 Als u live aan boord wilt gaan, moet u betalingsrechten aanvragen bij Adobe:
 
-1. Op de _Beheer_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Klikken **[!UICONTROL Get Live Payments]** in uw [!DNL Payment Services] Home.
 
    ![Aanvraagrechten](assets/request-entitlements.png)
@@ -94,7 +94,7 @@ U kunt ook betalingsrechten aanvragen bij Adobe op [business.adobe.com](https://
 Om uw [!DNL Payment Services] _Merchant ID_:
 
 
-1. Op de _Beheer_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Klik in de weergave Home op **[!UICONTROL Settings]**. Zie [Home](payments-home.md) voor meer informatie .
 1. Selecteer de vereiste _Merchant ID_ en dient deze in bij uw verkoper, die de juiste prijsopgave zal configureren.
 
@@ -104,10 +104,10 @@ A _productie-handels-id_ wordt automatisch gegenereerd en wordt gevuld in het di
 
 Levende betalingen mogelijk maken:
 
-1. Op de _Beheer_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Klik op Home op **[!UICONTROL Settings]** rechtsboven op de pagina. Zie [Home](payments-home.md) voor meer informatie .
 1. In de _[!UICONTROL General Configuration]_sectieset **[!UICONTROL Payment mode]**tot `Production`.
-1. Klikken **[!UICONTROL Save]**.
+1. Klik op **[!UICONTROL Save]**.
 1. [Cache wissen](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}.
 
    >[!IMPORTANT]

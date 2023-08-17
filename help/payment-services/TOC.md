@@ -1,7 +1,7 @@
 ---
-user-guide-title: "[!DNL Payment Services] Hulplijn"
+user-guide-title: "[!DNL Payment Services] Handleiding"
 user-guide-description: "Deze gids verstrekt gedetailleerde informatie over het installeren en het vormen [!DNL Payment Services] voor uw [!DNL Adobe Commerce] of [!DNL Magento Open Source] store."
-breadcrumb-title: "[!DNL Payment Services] Hulplijn"
+breadcrumb-title: "[!DNL Payment Services] Handleiding"
 index: true
 role: Admin, Leader, User
 feature: Payments, Checkout
@@ -9,7 +9,7 @@ recommendations: noDisplay
 source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
 workflow-type: tm+mt
 source-wordcount: '79'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 0%
 - Configureren [!DNL Payment Services] {#configure}
    - [[!DNL Payment Services] Home](payments-home.md)
    - [[!DNL Payment Services] Instellingen](settings.md)
-   - [Configuratie opdrachtregel](configure-cli.md)
+   - [Configuratie van opdrachtregel](configure-cli.md)
    - [Oudere configuratie](configure-admin.md)
 - [Testen en valideren](test-validate.md)
 - [Een bestelling maken](create-order.md)

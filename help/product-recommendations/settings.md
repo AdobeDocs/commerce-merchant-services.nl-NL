@@ -28,14 +28,14 @@ Als u de bron van de gegevens van uw productaanbevelingen wilt wijzigen, kiest u
 
 1. Meld u aan bij de beheerder van uw Adobe Commerce-omgeving die niet voor productie is bedoeld.
 
-1. Op de _Beheer_ zijbalk, ga naar **Marketing** > _Aanbiedingen_ > **Product Recommendations**.
+1. Op de _Beheerder_ zijbalk, ga naar **Marketing** > _Aanbiedingen_ > **Product Recommendations**.
 
 1. Klikken **Instellingen**.
 
    ![productaanbevelingen, instellingen](assets/settings.png)
    _Instellingen_
 
-1. In de _Recommendations-bron_ in, schakelt u de **Aanbevelingen ophalen uit een andere SaaS-gegevensruimte** optie. De _Recommendations-bron_ wordt alleen weergegeven in een niet-productieomgeving.
+1. In de _Recommendations-bron_ in, schakelt u de **Aanbevelingen ophalen uit een andere SaaS-gegevensruimte** -optie. De _Recommendations-bron_ wordt alleen weergegeven in een niet-productieomgeving.
 
    Een lijst van _Beschikbare SaaS-gegevensruimten_ wordt weergegeven.
 

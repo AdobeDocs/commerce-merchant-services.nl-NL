@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Winkeltegoed voor Adobe Commerce door Walmart Commerce Technologies is een geavanceerde omnichannel oplossing die kan worden geïntegreerd met uw [!DNL Commerce] Opslag om een superieure online aankoop te leveren, neem in-store (BOPIS)-ervaring op.
 
-![Adobe Admin-configuratie van-beheeroplossing voor opslag](assets/store-fulfillment-admin-home.png)
+![Adobe Admin-configuratie van  voor opslagoplossing](assets/store-fulfillment-admin-home.png)
 
 Afhandeling van winkel biedt ook een end-to-end uitvoeringsworkflow die handelaren helpt kosten te verlagen en tegelijk de conversietarieven, de gemiddelde orderwaarde en de klanttevredenheid te verhogen. Deze workflow biedt:
 
@@ -49,7 +49,7 @@ De oplossing Store Fulfillment ondersteunt en verbetert native Adobe Commerce-mo
 
 De Store Assist App voor iOS- en Android-apparaten communiceert met [!DNL Walmart Commerce Technologies] om de mogelijkheden van omnichannel vervulling aan uw winkels te brengen.
 
-* In-store en krullende bestelopdrachten rechtstreeks verzenden om mobiele apparaten van geassocieerde deelnemers op te slaan
+* In-store en krullende bestelopdrachten rechtstreeks verzenden naar mobiele apparaten van de winkel
 
 * Zorg ervoor dat de opslagbestellingen snel en nauwkeurig worden opgepakt, gefaseerd worden uitgevoerd en aan klanten worden doorgegeven wanneer ze bij de winkel aankomen voor het ophalen van bestellingen
 
@@ -73,7 +73,7 @@ Door de prestaties van de winkel te verbeteren, verbetert Adobe Commerce door mo
 
 * **Transactionele e-mails**-Breidt de beheerfuncties uit voor [!UICONTROL Sales Emails] Als u e-mailsjablonen wilt toevoegen voor online kopen, neemt u transacties op in de winkel. De malplaatjes steunen communicatie in real time tussen klanten en opslagvennoten tijdens het bestelproces.
 
-* **Flexibele uitvoering**-Extends [!DNL Commerce] mogelijkheden ter ondersteuning van scenario&#39;s voor het verwerken van achterstanden, kwantiteitsreducties en gedeeltelijke afhandeling van bestellingen, en het vergemakkelijken van annuleringen en kredietmemo&#39;s die nodig zijn om deze scenario&#39;s te ondersteunen.
+* **Flexibele uitvoering**-Extends [!DNL Commerce] mogelijkheden ter ondersteuning van scenario&#39;s voor het verwerken van achterstanden, kwantiteitsreducties en gedeeltelijke afhandeling van bestellingen, en het faciliteren van annuleringen en kredietmemo&#39;s die nodig zijn om deze scenario&#39;s te ondersteunen.
 
 >[!TIP]
 >

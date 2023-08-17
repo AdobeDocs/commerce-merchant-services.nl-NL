@@ -26,7 +26,7 @@ In Adobe Commerce Admin, zijn de configuratiemontages voor de Diensten van de Af
 
 ## De configuratieverwijzing gebruiken
 
-Geef de configuratieverwijzing voor elk instellingstype weer door de typenaam te selecteren in het dialoogvenster _Instellingen voor uitvoeringsconfiguratie opslaan op type_ tabel.
+Bekijk de configuratieverwijzing voor elk plaatsingstype door de typenaam in te selecteren _Instellingen voor uitvoeringsconfiguratie opslaan op type_ tabel.
 
 In de configuratieverwijzing voor elk type, worden de configuratiedetails getoond in een lijst met de volgende kolomkopballen:
 

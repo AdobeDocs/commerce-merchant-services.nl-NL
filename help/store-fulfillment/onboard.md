@@ -1,5 +1,5 @@
 ---
-title: Onboarding-overzicht voor services voor winkeluitvoering
+title: Overzicht van on-boarding-services voor winkeluitvoering
 description: '[!DNL Live Search] aan boord gaan, systeemvereisten, grenzen en beperkingen.'
 role: Admin, Leader
 level: Intermediate
@@ -22,7 +22,7 @@ Aan de slag met [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce T
 
 - **Veruitvoeringsaccount opslaan**-Tijdens het inschakelingsproces maakt een accountmanager een account voor de afhandeling van winkels en geeft hij u de accountgegevens en -gegevens. Deze gegevens zijn vereist voor het inschakelen van de verbinding tussen Adobe Commerce en de Opslagoplossing.
 
-- **App Winkelassistentie**—Biedt winkelassociaties een end-to-end workflow voor het uitvoeren van opslagtaken om BOPIS-orders van mobiele apparaten te beheren. Store Associates kan Walmart&#39;s downloaden en installeren [!DNL Store Assist] voor iOS- en Android™-apparaten. Het app onboarding proces wordt beheerd door het Walmart Commerce Technologies Client Center als afzonderlijk proces. Maar [bepaalde instellingen voor toepassingsconfiguratie](user-setup.md) worden voltooid via de Adobe Commerce Admin.
+- **App Winkelassistentie**—Biedt winkelassociaties een end-to-end workflow voor het uitvoeren van opslagtaken om BOPIS-orders van mobiele apparaten te beheren. Store Associates kan Walmart&#39;s downloaden en installeren [!DNL Store Assist] voor iOS en Android™ apparaten. Het app onboarding proces wordt beheerd door het Walmart Commerce Technologies Client Center als afzonderlijk proces. Maar [bepaalde instellingen voor toepassingsconfiguratie](user-setup.md) worden voltooid via de Adobe Commerce Admin.
 
   | Store Assist App - weergave Aan de slag | Store Assist App — weergave Modules |
   |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
@@ -42,7 +42,7 @@ Aan de slag met [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce T
 
 1. [De extensie Store Fulfillment voor Adobe Commerce installeren](install.md).
 
-1. Van de beheerder [de oplossing mogelijk maken](enable-general.md).
+1. Van de beheerder, [de oplossing mogelijk maken](enable-general.md).
 
 1. [De extensie Store Fulfillment configureren vanuit Adobe Commerce Admin](service-config-settings-overview.md).
 

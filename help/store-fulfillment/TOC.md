@@ -1,7 +1,7 @@
 ---
 user-guide-title: "[!DNL Store FulFillment Guide]"
 user-guide-description: Gedetailleerde informatie over het installeren, configureren en gebruiken van Store Fulfillment voor Adobe Commerce-winkels.
-breadcrumb-title: Winkeltegoed voor Adobe Commerce
+breadcrumb-title: Store Fulfillment voor Adobe Commerce
 index: true
 feature: Shipping/Delivery
 role: Admin, User
@@ -9,12 +9,12 @@ recommendations: noDisplay
 source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '84'
-ht-degree: 0%
+ht-degree: 10%
 
 ---
 
 
-# Winkeltegoed voor handel {#store-fulfillment}
+# Store Fulfillment voor Commerce {#store-fulfillment}
 
 - [Overzicht van hulplijnen](guide-overview.md)
 - [Inleiding tot [!DNL Store Fulfillment]](introduction.md)

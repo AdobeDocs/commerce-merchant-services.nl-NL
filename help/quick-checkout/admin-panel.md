@@ -12,9 +12,9 @@ ht-degree: 0%
 
 # Inleiding tot de [!DNL Quick Checkout] Deelvenster Beheer
 
-[!DNL Quick Checkout] voor Adobe Commerce en Magento Open Source bevat een weergave van het deelvenster Beheer met alle benodigde informatie voor het instellen en gebruiken van de extensie.
+[!DNL Quick Checkout] voor Adobe Commerce en Magento Open Source wordt in het deelvenster Beheer alle benodigde informatie weergegeven die nodig is om de extensie in te stellen en te gebruiken.
 
-1. Op de _Beheer_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Quick Checkout]**:
+1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Quick Checkout]**:
 1. In deze weergave hebt u toegang tot de _Deelvenster Beheer_ overzicht, _Bronnen_ info [!DNL Quick Checkout], get _Help en ondersteuning_ of configureer de extensie via _Instellingen_.
 
    ![Snel uitchecken van menu](assets/admin-panel-view.png)

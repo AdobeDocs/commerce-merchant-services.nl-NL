@@ -10,7 +10,7 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Live Search] en Adobe Commerce-configuratie-instellingen
+# [!DNL Live Search] en Adobe Commerce Configuration Settings
 
 Er zijn de configuratiemontages van de Handel die [!DNL Live Search] ondersteunt. Dit onderwerp maakt een lijst van deze configuratiewaarden.
 
@@ -19,7 +19,7 @@ Er zijn de configuratiemontages van de Handel die [!DNL Live Search] ondersteunt
 | Configuratie-instelling voor handel | Ondersteund door Popover | Ondersteund door adapter |
 |---|---|---|
 | Winkels > Configuratie > Catalogus > Catalogus > Cataloguszoekopdracht > Alle producten per paginalengte toestaan | Ja. Maximaal 500 producten | Ja. Maximaal 500 producten |
-| Opslag > Configuratie > Catalogus > Catalogus > Catalogus Onderzoek > Minimale Lengte van de Vraag | Ja | Ja |
+| Winkels > Configuratie > Catalogus > Catalogus > Cataloguszoekopdracht > Minimale lengte query | Ja | Ja |
 | Winkels > Configuratie > Catalogus > Catalogus > Cataloguszoekopdracht > Producten per pagina op toegestane rasterwaarden | Ja | Ja |
 | Winkels > Configuratie > Catalogus > Catalogus > Cataloguszoekopdracht > Producten per pagina op standaardrasterwaarde | Ja. Maximaal 500 producten | Ja. Maximaal 500 producten |
 | Winkels > Configuratie > Catalogus > Inventaris > Producten uit voorraad weergeven | Ja met v2.0.4+ | Ja met v2.0.4+ |
@@ -35,5 +35,5 @@ Prijzen in de aanbiedingspagina van het widgetproduct en in de pop-up worden nu 
 | Configuratie-instelling voor handel | Notities |
 |---|---|
 | Storingen > Configuratie > Catalogus > Storefront > Lijstmodus | Rendering is correct, maar gebeurtenissen worden niet verzonden voor bepaalde paginainteracties |
-| Winkels > Configuratie > Catalogus > Catalogus > Cataloguszoekopdracht > Maximale lengte query | Niet geïmplementeerd; Zoekservices accepteert maximaal 255 tekens |
+| Winkels > Configuratie > Catalogus > Catalogus > Cataloguszoekopdracht > Maximale lengte query | Niet geïmplementeerd; zoekservices accepteren maximaal 255 tekens |
 | Configuration > Sales > Tax > Price Display Settings > Display Product Prices in Catalog |  |

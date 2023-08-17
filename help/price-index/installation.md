@@ -27,7 +27,7 @@ Voor het instellen van de SaaS-prijsindexering moeten nieuwe modules worden geï
 
 ## Vereiste modules installeren
 
-Afhankelijk van uw opstelling, zou het installatieproces lichtjes verschillend kunnen zijn.
+Afhankelijk van uw installatie kan het installatieproces iets anders zijn.
 Er zijn extensies die de nieuwe feeds en ondersteunende code toevoegen en er is een extensie die de standaardprijsfeed verwijdert.
 
 1. Voeg de volgende modules aan uw toe `composer.json` bestand:
@@ -48,7 +48,7 @@ Er zijn extensies die de nieuwe feeds en ondersteunende code toevoegen en er is 
 Na de upgrade zijn drie nieuwe feeds beschikbaar:
 
 * `prices` - verantwoordelijk voor het verstrekken van prijsgegevens aan de dienst
-* `scopesCustomerGroup` - verantwoordelijk voor het leveren van Klantengroepen aan de service
+* `scopesCustomerGroup` - is verantwoordelijk voor het leveren van Klantengroepen aan de service
 * `scopesWebsite` - verantwoordelijk voor het leveren van websites, winkelgroepen en winkelweergaven aan de service
 
 

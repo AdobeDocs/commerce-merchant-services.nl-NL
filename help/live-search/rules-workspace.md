@@ -1,6 +1,6 @@
 ---
 title: "Werkruimte Regels"
-description: "Leer je weg rond de [!DNL Live Search] regelt de werkruimte."
+description: "Leer je weg door [!DNL Live Search] regelwerkruimte."
 exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
 source-git-commit: 91d0713a3e57a3748609b6b4bcb723c21a461519
 workflow-type: tm+mt
@@ -23,7 +23,7 @@ De werkruimte van Regels maakt een lijst van de huidige selectie van regels en h
 
 ## Bereik instellen
 
-Als uw Adobe Commerce-installatie meerdere winkelweergaven bevat, stelt u **Toepassingsgebied** aan de [winkelweergave](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) waar uw regels van toepassing zijn.
+Als uw Adobe Commerce-installatie meerdere winkelweergaven bevat, stelt u **Toepassingsgebied** aan de [winkelweergave](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) waar uw regels gelden.
 
 ## Kolommen tonen/verbergen
 
@@ -55,11 +55,11 @@ Met Zoeken zoekt u de overeenkomende regel(s) terwijl u typt. De tekenreeks met 
 
 ## Details weergeven
 
-In het deelvenster Details ziet u de naam, de status, de voorwaarden en gebeurtenissen van de regel, de begin- en einddatum, de beschrijving en de datum die het laatst is bewerkt. Regels kunnen worden ingeschakeld, bewerkt en verwijderd in het deelvenster Details.
+In het deelvenster Details worden de naam, de status, de voorwaarden en gebeurtenissen van de regel, de begin- en einddatum, de beschrijving en de datum die het laatst is bewerkt weergegeven. Regels kunnen worden ingeschakeld, bewerkt en verwijderd in het deelvenster Details.
 
 1. Op de *Regels* tabblad, zoekt u de regel in het raster die u wilt weergeven en klikt u op **Meer** (...).
 1. Klikken **Details weergeven**.
-U kunt de volgende handelingen uitvoeren in het deelvenster Details weergeven:
+U kunt een van de volgende handelingen uitvoeren in het deelvenster Details weergeven:
 
    * Regel bewerken
    * Regel verwijderen
@@ -81,13 +81,13 @@ U kunt de volgende handelingen uitvoeren in het deelvenster Details weergeven:
 
 ## Besturingselementen
 
-| Control | Beschrijving |
+| Besturing | Beschrijving |
 |--- |--- |
 | Regel toevoegen | Hiermee opent u de [regeleditor](rules-add.md). |
-| Status | Hiermee filtert u de lijst met regels op status. Opties: Alles, Actief, Inactief, Gepland |
+| Status | Hiermee filtert u de lijst met regels op status. Opties: Alle, Actief, Inactief, Gepland |
 | ![Kolomkiezer](assets/btn-show-hide-columns.png) | Hiermee geeft u de kolommen op die zichtbaar zijn in het raster. Opties: Laatst bijgewerkt, Begindatum, Einddatum, Status |
 | Zoeken | Zoekt naar een regel op volledige naam of gedeeltelijke gelijke. |
-| ![Meer kiezer](assets/btn-more.png) | Toont een menu van meer acties die op de geselecteerde regel kunnen worden toegepast. Opties: Bewerken, Details weergeven, Verwijderen |
+| ![Meer kiezer](assets/btn-more.png) | Toont een menu van meer acties die op de geselecteerde regel kunnen worden toegepast. Opties: bewerken, details weergeven, verwijderen |
 
 ## Regeldetails
 

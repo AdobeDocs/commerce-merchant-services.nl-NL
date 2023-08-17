@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # Rapporten
 
-[!DNL Quick Checkout] voor Adobe Commerce en Magento Open Source biedt u uitgebreide rapportage zodat u gedetailleerde informatie kunt krijgen over de statistieken van uw uitcheckervaring.
+[!DNL Quick Checkout] voor Adobe Commerce en Magento Open Source biedt uitgebreide rapportage zodat je gedetailleerde informatie kunt krijgen over de statistieken van je winkelervaring.
 
 ![Rapporten, weergave](assets/reports-view-big-checkout.png)
 
 >[!WARNING]
 >
-> Als u wilt toestaan dat Adobe Commerce betalingsgegevens deelt met Bolt, kunt u de optie [**Afhandeling volgen**](../quick-checkout/settings-quick-checkout.md)  Deze instelling moet zijn ingeschakeld in Beheer. Deze configuratieoptie is standaard ingesteld op **Ja**. Als deze optie is ingesteld op **Nee**, wordt de rapportage beïnvloed. Bolt vernieuwt de rapportgegevens eenmaal per dag om 3.00 uur &#39;s ochtends Eastern Standard Time (EST).
+> Als u wilt toestaan dat Adobe Commerce betalingsgegevens deelt met Bolt, kunt u de optie [**Afhandeling volgen**](../quick-checkout/settings-quick-checkout.md)  Deze instelling moet zijn ingeschakeld in Beheer. Deze configuratieoptie is standaard ingesteld op **Ja**. Als deze optie is ingesteld op **Nee**, zal dit gevolgen hebben voor de rapportage. Bolt vernieuwt de rapportgegevens eenmaal per dag om 3.00 uur &#39;s ochtends Eastern Standard Time (EST).
 
 ## Overzichtsrapporten
 

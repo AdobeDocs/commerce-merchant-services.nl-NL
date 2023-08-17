@@ -8,7 +8,7 @@ exl-id: 8939046e-1c26-4380-83be-ff8e074e591d
 source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '189'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -28,7 +28,7 @@ Nadat de configuratie met succes is bijgewerkt, kunnen de opties voor het ophale
 
 Schakel de [!UICONTROL In-Store Pickup] opties voor elke website of opslagbereik uit de [Configuraties van leveringsmethoden](enable-general.md#delivery-methods) in de Admin.
 
-1. Navigeren naar **[!UICONTROL Stores > Configuration]**.
+1. Ga naar **[!UICONTROL Stores > Configuration]**.
 
 1. Selecteer het bereik (op te slaan website) dat u wilt configureren.
 

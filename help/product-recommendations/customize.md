@@ -15,7 +15,7 @@ Wanneer u de Product Recommendations-module installeert, maakt Adobe Commerce de
 
 `<your theme>/Magento_ProductRecommendationsLayout/web/template/recommendations.html`
 
-Voor meer informatie over het wijzigen van malplaatjedossiers, verwijs naar [Sjabloonaanpassing](https://developer.adobe.com/commerce/frontend-core/guide/templates/walkthrough/) in de Frontend Developer Guide.
+Raadpleeg voor meer informatie over het wijzigen van sjabloonbestanden [Sjabloonaanpassing](https://developer.adobe.com/commerce/frontend-core/guide/templates/walkthrough/) in de Frontend Developer Guide.
 
 Als u de `recommendations.html` , moet u de volgende tags in het bestand behouden om ervoor te zorgen dat Adobe Commerce gegevens over aanbevelingen kan verzamelen van uw winkel:
 
@@ -33,9 +33,9 @@ Naast de `recommendations.html` bestand, de `ProductRecommendationsLayout` map b
 | `web/js` | Bevat de JavaScript-bestanden die aanbevelingen voor uw winkel opvragen en weergeven |
 | `web/template` | Bevat de sjabloon voor de `magento/product-recommendations` module |
 
-## Positie van de aanbevolen eenheid
+## Positionering van de aanbevolen eenheid
 
-Wanneer u [maken](create.md) een aanbeveling, geeft u de [locatie](placement.md) waar deze op de pagina wordt weergegeven. Een aanbevolen eenheid kan boven of onder aan de hoofdinhoudscontainer worden geplaatst. U kunt deze plaatsing echter aanpassen. Als u een type van de aanbeveling van de Bouwer van de Pagina adviserende inhoudstype creeert, gebruik de hulpmiddelen van de Bouwer van de Pagina om de aanbeveling op de pagina te plaatsen. Voor alle andere paginatypen bewerkt u de `*.xml` bestanden die worden gegenereerd wanneer de aanbeveling wordt gemaakt.
+Wanneer u [maken](create.md) een aanbeveling, geeft u de [locatie](placement.md) waar deze op de pagina wordt weergegeven. Een aanbevolen eenheid kan boven of onder aan de hoofdinhoudscontainer worden geplaatst. U kunt deze plaatsing echter aanpassen. Als u een type van de aanbeveling van de Bouwer van de Pagina adviserende inhoud creeert, gebruik de hulpmiddelen van de Bouwer van de Pagina om de aanbeveling op de pagina te plaatsen. Voor alle andere paginatypen bewerkt u de `*.xml` bestanden die worden gegenereerd wanneer de aanbeveling wordt gemaakt.
 
 1. Wijzigen in de `layout` map:
 
@@ -57,7 +57,7 @@ Wanneer u [maken](create.md) een aanbeveling, geeft u de [locatie](placement.md)
    >
    >De bestandsnamen in het dialoogvenster `layout` directory kan verschillen als in uw winkel extensies van derden worden gebruikt.
 
-1. De `catalog_product_view.xml` zodat de aanbevolen eenheid wordt weergegeven na de productafbeelding op de pagina met productdetails. Voordat u dit XML-bestand aanpast, bekijkt u het bestand en begrijpt u welke secties u moet wijzigen:
+1. Wijzig de `catalog_product_view.xml` zodat de aanbevolen eenheid wordt weergegeven na de productafbeelding op de pagina met productdetails. Voordat u dit XML-bestand aanpast, bekijkt u het bestand en begrijpt u welke secties u moet wijzigen:
 
    ```xml
    <?xml version="1.0"?>

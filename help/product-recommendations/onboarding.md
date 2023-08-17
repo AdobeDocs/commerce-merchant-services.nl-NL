@@ -27,7 +27,7 @@ Het instapproces voor [!DNL Product Recommendations] vereist toegang tot de beve
 
 ### Ondersteunde platforms
 
-- Adobe Commerce on-premise (EE) : 2.4.4+
+- Adobe Commerce on premise (EE) : 2.4.4+
 - Adobe Commerce on Cloud (ECE) : 2.4.4+
 
 ### Ondersteuning voor Page Builder
@@ -42,8 +42,8 @@ Klanten die productaanbevelingen kunnen gebruiken [Prijsindexering SaaS](../pric
 
 ### B2B-ondersteuning {#b2bsupport}
 
-B2B-winkels vereisen vaak complexe logica die de zichtbaarheid en prijsstelling van het product voor elke winkel of klantengroep bepaalt. [!DNL Product Recommendations] now [ondersteuning](release-notes.md) deze functionaliteit door [categorietoestemmingen](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html), [gedeelde catalogi](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html), en [klantspecifieke prijsstelling](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html). Bijvoorbeeld, als u bepaalde categorieën van uw retailklantensegment hebt verborgen, dan zou een verkoopster in dat segment geen aanbevelingen voor producten in die categorieën worden getoond. Ook, wanneer u een gedeelde catalogus voor specifieke klantengroepen en bedrijven bepaalt, zien die kopers aanbevelingen slechts voor producten zij kunnen toegang hebben. Alle geadviseerde producten weerspiegelen correcte klant groep-specifieke prijs die op de klantengroep van elke klant wordt gebaseerd.
+B2B-winkels vereisen vaak complexe logica die de zichtbaarheid en prijsstelling van het product voor elke winkel of klantengroep bepaalt. [!DNL Product Recommendations] now [ondersteuning](release-notes.md) deze functionaliteit door [categoriemachtigingen](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html), [gedeelde catalogi](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html), en [klantspecifieke prijsstelling](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html). Bijvoorbeeld, als u bepaalde categorieën van uw retailklantensegment hebt verborgen, dan zou een verkoopster in dat segment geen aanbevelingen voor producten in die categorieën worden getoond. Ook, wanneer u een gedeelde catalogus voor specifieke klantengroepen en bedrijven bepaalt, zien die kopers aanbevelingen slechts voor producten zij kunnen toegang hebben. Alle geadviseerde producten weerspiegelen correcte klant groep-specifieke prijs die op de klantengroep van elke klant wordt gebaseerd.
 
 >[!NOTE]
 >
->Handelaars kunnen widgets of winkelelementen aanpassen en uitbreiden met de [Catalogusservice](../catalog-service/overview.md) Storefront API maar om het even welke aanpassing is buiten werkingsgebied voor Adobe ondersteuningsteam.
+>Handelaars kunnen widgets of winkelelementen aanpassen en uitbreiden met de [Catalogusservice](../catalog-service/overview.md) Storefront-API, maar elke aanpassing valt buiten het bereik van het ondersteuningsteam van de Adobe.

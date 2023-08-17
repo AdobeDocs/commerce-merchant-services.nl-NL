@@ -15,11 +15,11 @@ ht-degree: 0%
 
 Voordat u de [!DNL Quick Checkout] voor Adobe Commerce-extensie voor uw klanten wordt aangeraden om te testen in een sandbox-omgeving en in uw productieomgeving. Testen en valideren zorgt ervoor dat de [!DNL Quick Checkout] werkt zoals verwacht en biedt een naadloze afrekenervaring voor uw winkel en klanten.
 
-Voordat u de [!DNL Quick Checkout] in Adobe Commerce Admin is het vereist om  [productie](https://merchant.bolt.com/register){target="_blank"} and [sandbox](https://merchant-sandbox.bolt.com/register){target="_blank"} handelsrekeningen [!DNL Bolt].
+Voordat u de [!DNL Quick Checkout] in uw Adobe Commerce Admin is het vereist om  [productie](https://merchant.bolt.com/register){target="_blank"} and [sandbox](https://merchant-sandbox.bolt.com/register){target="_blank"} handelsrekeningen [!DNL Bolt].
 
 ## Testen in sandbox
 
-Het testen van [!DNL Quick Checkout] in een sandboxomgeving is een zeer belangrijke validatiestap, ook al is het een gesimuleerde omgeving die alleen is verbonden met de [!DNL Bolt] sandboxrekening, niet aan echte banken of handelaren.
+Testen van de [!DNL Quick Checkout] in een sandboxomgeving is een zeer belangrijke validatiestap, ook al is het een gesimuleerde omgeving die alleen is verbonden met de [!DNL Bolt] sandboxrekening, niet aan echte banken of handelaren.
 
 ### Sandboxaccount gebruiken
 

@@ -1,5 +1,5 @@
 ---
-title: '''[!DNL Catalog Service] Opmerkingen bij de release'
+title: '[!DNL Catalog Service] Aanvullende informatie'
 description: De meest recente releasegegevens voor [!DNL Catalog Service] voor Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
@@ -10,7 +10,7 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Catalog Service] Opmerkingen bij de release
+# [!DNL Catalog Service] Aanvullende informatie
 
 In deze releaseopmerkingen worden de meest recente versies van [!DNL Catalog Service].
 Er wordt ondersteuning geboden voor de belangrijkste uitgebrachte versie. Opmerkingen bij de release voor oudere versies worden ter referentie verschaft.
@@ -51,7 +51,7 @@ _27 juni 2023_
 
 [!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
 
-![Nieuw](../assets/new.svg) Catalogusservice kan nu verwante producten weergeven in de widget pagina met productdetails.
+![Nieuw](../assets/new.svg) De Catalogusservice kan nu verwante producten weergeven in de widget pagina met productdetails.
 
 ### V1.7-release
 
@@ -77,7 +77,7 @@ _6 maart 2023_
 
 [!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
 
-![Nieuw](../assets/new.svg) Toegevoegd [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) GraphQL-functionaliteit.
+![Nieuw](../assets/new.svg) Toegevoegd [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) GraphQL-functionaliteit
 ![Repareren](../assets/fix.svg) Verbeterde prestaties en API-schaalbaarheid.
 
 ### V1.4 Release
@@ -106,7 +106,7 @@ _18 november 2022_
 
 [!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
 
-![Nieuw](../assets/new.svg) Catalogusservice biedt nu ondersteuning voor Adobe [API-net](https://developer.adobe.com/graphql-mesh-gateway/).
+![Nieuw](../assets/new.svg) Catalogusservice biedt nu ondersteuning voor de Adobe [API-net](https://developer.adobe.com/graphql-mesh-gateway/).
 ![Repareren](../assets/fix.svg) Verbeterde API-schaalbaarheid en algemene prestaties.
 
 ### V1.0-release
@@ -129,7 +129,7 @@ _12 september 2022_
 
 [!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
 
-![Nieuw](../assets/new.svg) Afbeeldingen voor varianten worden ondersteund: productafbeeldingen worden geretourneerd op basis van de geselecteerde opties
+![Nieuw](../assets/new.svg) Afbeeldingen voor ondersteuning door varianten: productafbeeldingen worden geretourneerd op basis van de geselecteerde opties
 ![Nieuw](../assets/new.svg) Rollen voor prijsondersteuning: alleen leden van specifieke klantengroepen de prijs van producten laten zien
 ![Repareren](../assets/fix.svg) Verbeterde stabiliteit en prestaties van de dienst
 ![Nieuw](../assets/new.svg) Updates worden ontvangen wanneer producten uit de catalogus worden verwijderd
@@ -145,7 +145,7 @@ _9 augustus 2022_
 * Vooraf gedefinieerde (systeem)productkenmerken.
 * Dynamische productkenmerken en filter deze op rol (pagina met productweergave/productlijst).
 * Productopties.
-* Afbeeldingen van het product en filter hen door rol (PDP/PLP).
+* Productafbeeldingen en filteren op rol (PDP/PLP).
 * Een specifieke prijs voor eenvoudige producten en prijsbereiken voor configureerbare producten.
 * Prijzen en prijsbereiken van de klantengroep. Ze retourneren een fallback-standaardprijs voor kopers zonder een klantengroep.
 * Producttypen die gebruikmaken van klantspecifieke B2B-prijzen.

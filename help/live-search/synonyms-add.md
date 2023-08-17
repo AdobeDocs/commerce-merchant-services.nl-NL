@@ -22,19 +22,19 @@ Verhoog de betrokkenheid van klanten door uw eigen gekrulde lijst met [!DNL Live
 1. Klik op de knop **Synoniemen** tab.
 1. Klik op de knop **Synoniemen toevoegen** knop.
 
-## Stap 2: De synoniem definiëren op type
+## Stap 2: De synoniem door type bepalen
 
 Volg de instructies voor de [type synoniem](synonyms-type.md) die u wilt maken.
 
 ### Synoniem in twee richtingen
 
-1. De standaardinstelling accepteren **2-wegs** optie.
+1. De standaardinstelling accepteren **2-wegs** -optie.
 
    ![Synoniem in twee richtingen toevoegen](assets/synonym-add-two-way.png)
 
 
 1. Voer de **Trefwoord** term of uitdrukking die moet worden aangepast.
-1. Voer de **Uitbreiding** term(en) die u als synoniemen voor het trefwoord wilt toevoegen. Scheid meerdere termen van elkaar met een komma.
+1. Voer de **Uitbreiding** term(en) die u als synoniemen voor het trefwoord wilt toevoegen. Scheid meerdere termen met een komma.
 In dit voorbeeld is het trefwoord dat moet overeenkomen &#39;broek&#39; en zijn de uitbreidingstermijnen &#39;lange broek, broek, stapels&#39;.
 
    ![Voorbeeld van synoniem in twee richtingen](assets/synonym-add-two-way-example.png)
@@ -50,7 +50,7 @@ De reeks synoniemen verschijnt in de lijst met een tweerichtingspijl tussen elke
 
    ![Eenvoudige synoniem toevoegen](assets/synonym-add-one-way.png)
 
-1. Voer de **Trefwoord** en **Uitbreiding** voorwaarden. Scheid meerdere termen van elkaar met een komma.
+1. Voer de **Trefwoord** en **Uitbreiding** voorwaarden. Scheid meerdere termen met een komma.
 
    ![Voorbeeld van eenrichtingssynoniem](assets/synonym-add-one-way-example.png)
 

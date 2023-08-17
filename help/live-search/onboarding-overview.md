@@ -31,7 +31,7 @@ Aan de slag met [!DNL Live Search] voor Adobe Commerce: voltooi het instapproces
 
 ## Grenzen en drempels
 
-Op dit moment worden de [!DNL Live Search] zoek-/Categorie-API heeft de volgende ondersteunde limieten en statische grenzen:
+Op dit moment wordt [!DNL Live Search] zoek-/Categorie-API heeft de volgende ondersteunde limieten en statische grenzen:
 
 ### Indexeren
 
@@ -43,7 +43,7 @@ Op dit moment worden de [!DNL Live Search] zoek-/Categorie-API heeft de volgende
 ### Query
 
 * [!DNL Live Search] heeft geen toegang tot de volledige taxonomie van de categorieboom, waardoor sommige gelaagde navigatie onderzoeksscenario&#39;s voorbij zijn bereik maken.
-* [!DNL Live Search] gebruikt een uniek GraphQL eindpunt voor vragen om eigenschappen zoals dynamisch facetten en onderzoek-als-u-type te steunen. Hoewel vergelijkbaar met de [GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/)Er zijn echter enkele verschillen en sommige gebieden zijn mogelijk niet volledig compatibel.
+* [!DNL Live Search] gebruikt een uniek GraphQL eindpunt voor vragen om eigenschappen zoals dynamisch facetten en onderzoek-als-u-type te steunen. Hoewel vergelijkbaar met de [GRAPHQL API](https://developer.adobe.com/commerce/webapi/graphql/)Er zijn echter enkele verschillen en sommige gebieden zijn mogelijk niet volledig compatibel.
 
 Om klantengroepen te beperken die de toestemmingen van de Catalogus gebruiken:
 
@@ -71,7 +71,7 @@ Klanten met Live zoeken kunnen de nieuwe [SaaS-prijsindexer](../price-index/inde
 
 * De huidige PWA-uitvoering van [!DNL Live Search] vereist meer verwerkingstijd om zoekresultaten te retourneren dan [!DNL Live Search] met de native Commerce-winkel.
 * [!DNL Live Search] in PWA ondersteunt niet [gebeurtenisafhandeling](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). Intelligente handel werkt hierdoor niet.
-* Rechtstreeks filteren op `description`, `name`, `short_description` wordt niet ondersteund door GraphQL wanneer het wordt gebruikt met [PWA](https://developer.adobe.com/commerce/pwa-studio/), maar ze krijgen een meer algemeen filter.
+* Rechtstreeks filteren op `description`, `name`, `short_description` wordt niet ondersteund door GraphQL bij gebruik met [PWA](https://developer.adobe.com/commerce/pwa-studio/), maar ze krijgen een meer algemeen filter.
 
 Te gebruiken [!DNL Live Search] met PWA Studio moeten de integrators ook :
 

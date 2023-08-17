@@ -1,5 +1,5 @@
 ---
-title: '''[!DNL Quick Checkout] Opmerkingen bij de release'
+title: '[!DNL Quick Checkout] Aanvullende informatie'
 description: Lees de opmerkingen bij de release voor meer informatie over alle [!DNL Quick Checkout] lozingen.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
 feature: Release Notes, Services, Checkout
@@ -10,7 +10,7 @@ ht-degree: 0%
 
 ---
 
-# Opmerkingen bij de release
+# Aanvullende informatie
 
 In deze releaseopmerkingen wordt de eerste release van [!DNL Quick Checkout] en omvatten:
 
@@ -86,7 +86,7 @@ _24 februari 2023_
 
 ![Nieuw](../assets/new.svg)<!-- Issue BOLT-520 --> Algemene beschikbaarheidsrelease—[[!DNL Quick Checkout]](https://commercemarketplace.adobe.com/magento-quick-checkout.html) is nu vooraf geïnstalleerd in Adobe Commerce Cloud versie 2.4.6 en hoger.
 
-![Probleem opgelost](../assets/fix.svg)<!-- Issue BOLT-592 --> De ervaring van de gebruiker verbetert wanneer het plaatsen van een orde in [Deelvenster Beheer](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/create-order-admin.html) gebruiken [Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/stored-payment-methods.html) als betalingsmethode. Met deze functie kunnen klanten een bestelling met Braintree als betalingsmethode plaatsen tijdens het afrekenen wanneer [!DNL Quick Checkout] is ingeschakeld.
+![Probleem opgelost](../assets/fix.svg)<!-- Issue BOLT-592 --> De ervaring van de gebruiker verbetert wanneer het plaatsen van een orde in [Deelvenster Beheer](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/create-order-admin.html) gebruiken [Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/stored-payment-methods.html) als betalingsmethode. Met deze functionaliteit kunnen klanten een bestelling met Braintree als betalingsmethode plaatsen tijdens het afrekenen wanneer [!DNL Quick Checkout] is ingeschakeld.
 
 ## v1.7.0
 
@@ -152,7 +152,7 @@ _8 september 2022_
 
 ![Nieuw](../assets/new.svg)<!-- Issue BOLT-341 --> Algemene beschikbaarheidsrelease—[[!DNL Quick Checkout]](https://commercemarketplace.adobe.com/magento-quick-checkout.html) is nu compatibel met Adobe Commerce versie 2.4.5.
 
-![Nieuw](../assets/new.svg)<!-- Issue BOLT-328 --> [!DNL Quick Checkout] voor Adobe Commerce en Magento Open Source biedt een [Weergave van het deelvenster Beheer](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) met alle informatie die nodig is voor het instellen en gebruiken van de extensie.
+![Nieuw](../assets/new.svg)<!-- Issue BOLT-328 --> [!DNL Quick Checkout] voor Adobe Commerce en Magento Open Source [Weergave van het deelvenster Beheer](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) met alle informatie die nodig is voor het instellen en gebruiken van de extensie.
 
 ![Nieuw](../assets/new.svg)<!-- Issue BOLT-364 --> Beheerdergebruiker [kan gebruikersrollen en toestemmingen plaatsen](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/user-roles-setup.html) om andere gebruikers toe te staan de [!DNL Quick Checkout] Het deelvenster Beheer.
 

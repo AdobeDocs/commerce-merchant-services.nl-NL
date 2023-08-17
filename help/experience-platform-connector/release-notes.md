@@ -1,16 +1,16 @@
 ---
-title: Opmerkingen bij de release
+title: Aanvullende informatie
 description: De nieuwste release-informatie voor Adobe Experience Platform-connector vanuit Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
 source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '465'
+ht-degree: 2%
 
 ---
 
-# Opmerkingen bij de release
+# Aanvullende informatie
 
 Deze releaseopmerkingen bevatten updates van de aansluiting van het Experience Platform en bevatten:
 
@@ -22,7 +22,7 @@ Voor functieveranderingen en moeilijke situaties met betrekking tot uitbreidinge
 
 Zie [Volgende releases](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) om over versieschema&#39;s en steun te leren.
 
-Zie de documentatie voor ontwikkelaars [informatie over productcompatibiliteit](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
+Zie de documentatie voor ontwikkelaars op [informatie over productcompatibiliteit](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 ## Ondersteunde service-updates
 
@@ -73,7 +73,7 @@ _30 maart 2023_
 
 [!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
 
-* ![Nieuw](../assets/new.svg) - Gebundelde `commerce-data-export` en `saas-export` afhankelijkheden met de `experience-platform-connector` extensie. Eerder, moest u deze gebiedsdelen afzonderlijk installeren. Deze gebiedsdelen, samen met koopvaardijconfiguratie, laten server zijverwerking van toe [back office-gebeurtenissen](events.md#back-office-events).
+* ![Nieuw](../assets/new.svg) - Gebundelde `commerce-data-export` en `saas-export` afhankelijkheid van de `experience-platform-connector` extensie. Eerder, moest u deze gebiedsdelen afzonderlijk installeren. Deze gebiedsdelen, samen met koopvaardijconfiguratie, laten server zijverwerking van toe [back office-gebeurtenissen](events.md#back-office-events).
 * ![Nieuw](../assets/new.svg) - Nieuwe back office-gebeurtenis toegevoegd [`orderShipmentCompleted`](events.md#ordershipmentcompleted).
 
 ## 2.1.1
@@ -91,7 +91,7 @@ _17 januari 2023_
 [!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
 
 * ![Nieuw](../assets/new.svg) - De [Admin-aansluiting Experience Platform](connect-data.md) zodat kunt u uw eigen AEP Web SDK (legering) specificeren.
-* ![Repareren](../assets/fix.svg) Gewijzigd in gebruik `identityMap` in plaats van `personID` wanneer u de primaire identiteit instelt voor gegevens die naar de rand worden geduwd.
+* ![Repareren](../assets/fix.svg) Gewijzigd in gebruik `identityMap` in plaats van `personID` wanneer u de primaire identiteit instelt voor gegevens die naar de rand worden verplaatst.
 
 ## 2.0.1
 

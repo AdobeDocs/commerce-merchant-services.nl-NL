@@ -14,13 +14,13 @@ ht-degree: 0%
 
 De [!DNL Quick Checkout] extensie voor Adobe Commerce en [!DNL Magento Open Source] kan worden geïnstalleerd met [!DNL Composer keys], die aan de Commerce-rekening zijn gekoppeld [`mageid`](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions){target="_blank"} die in het ondertekeningsproces worden verstrekt. Composer gebruikt deze toetsen tijdens de eerste installatie van Adobe Commerce of in situaties waarin de [!DNL Composer keys] zijn niet eerder opgeslagen in de `auth.json` bestand.
 
-Zie [krijg uw verificatietoetsen](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html){target="_blank"} onderwerp voor meer informatie over het verkrijgen van [!DNL Composer keys].
+Zie [krijg uw verificatietoetsen](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html){target="_blank"} onderwerp voor meer informatie over verkrijgen [!DNL Composer keys].
 
 Er zijn twee manieren om deze extensie te installeren—voor [Adobe Commerce over cloudinfrastructuur](#magento-commerce-cloud) of [ter plaatse](#on-premises) installaties. Deze methodes vereisen u om de bevel-lijn interface (CLI) te gebruiken.
 
 ## Minimale stabiliteit bijwerken
 
-Voordat u de extensie installeert, moet u ervoor zorgen dat `minimum-stability` in uw `composer.json` bestand is ingesteld op `"stable"`:
+Voordat u de extensie installeert, moet u ervoor zorgen dat `minimum-stability` veld in uw `composer.json` bestand is ingesteld op `"stable"`:
 
 `"minimum-stability": "stable"`
 
@@ -46,7 +46,7 @@ Deze methode wordt gebruikt voor het installeren van de [!DNL Quick Checkout] ex
    composer update
    ```
 
-   De `composer update` alle afhankelijkheden worden bijgewerkt. Als u niet alle gebiedsdelen tezelfdertijd wilt bijwerken, gebruik in plaats daarvan dit bevel: `composer update magento/quick-checkout`.
+   De `composer update` het bevel werkt alle gebiedsdelen bij. Als u niet alle gebiedsdelen tezelfdertijd wilt bijwerken, gebruik in plaats daarvan dit bevel: `composer update magento/quick-checkout`.
 
 1. Leg de wijzigingen vast en duw op deze.
 
@@ -66,9 +66,9 @@ Deze methode wordt gebruikt voor het installeren van de [!DNL Quick Checkout] ui
    composer update
    ```
 
-   De `composer update` alle afhankelijkheden worden bijgewerkt. Als u niet alle gebiedsdelen tezelfdertijd wilt bijwerken, gebruik in plaats daarvan dit bevel: `composer update magento/quick-checkout`.
+   De `composer update` het bevel werkt alle gebiedsdelen bij. Als u niet alle gebiedsdelen tezelfdertijd wilt bijwerken, gebruik in plaats daarvan dit bevel: `composer update magento/quick-checkout`.
 
-1. Upgrade uitvoeren voor Adobe Commerce:
+1. Upgrade Adobe Commerce:
 
    ```bash
    bin/magento setup:upgrade
@@ -93,7 +93,7 @@ Wanneer we een nieuwe versie van de [!DNL Quick Checkout]kunt u uw extensie eenv
    composer update
    ```
 
-   De `composer update` alle afhankelijkheden worden bijgewerkt. Als u niet alle gebiedsdelen tezelfdertijd wilt bijwerken, gebruik in plaats daarvan dit bevel: `composer update magento/quick-checkout`.
+   De `composer update` het bevel werkt alle gebiedsdelen bij. Als u niet alle gebiedsdelen tezelfdertijd wilt bijwerken, gebruik in plaats daarvan dit bevel: `composer update magento/quick-checkout`.
 
 1. Leg de wijzigingen vast en duw op deze.
 

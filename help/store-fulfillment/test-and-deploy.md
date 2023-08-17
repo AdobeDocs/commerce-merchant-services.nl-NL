@@ -48,11 +48,11 @@ De detailhandelaars bevestigen de basisfunctionaliteit van de oplossing van de A
 
 Dit steekproeftestplan bestrijkt de volgende functionele gebieden:
 
-| Functioneel gebied | Functie | Rol |
+| Functioneel gebied | -functie | Rol |
 |-------------------------------------|------------------------------------------|----------------------------------|
 | Synchronisatie van inventarisatie en bestelling | API-inventarisatie | Adobe Commerce Admin |
 | End-to-end | Workflows voor annulering van bestellingen | Klant, Admin, Store Associated |
-| Beheer | Machtigingen voor App-uitvoering opslaan | Beheer |
+| Beheerder | Machtigingen voor App-uitvoering opslaan | Beheerder |
 | Adobe Commerce Frontend | Producttypen | Klant, beheerder |
 | Afhandeling aan voorzijde</br>Formulier inchecken | Inchecken | Klant, beheerder |
 | App Winkelassistentie | Volgorde</br>Selecteren</br>Werkgebied</br>en Handoff | Winkelkoppeling |
@@ -61,14 +61,14 @@ Dit steekproeftestplan bestrijkt de volgende functionele gebieden:
 
 Deze sectie van het testplan behandelt inventaris en ordesynchronisatie om te verifiëren dat de updates aan bestelbronnen en de voorraden correct tussen Adobe Commerce en de oplossing van de Behandeling van de Opslag worden gesynchroniseerd.
 
-**Functioneel gebied**: Synchronisatie van inventarisatie en bestelling</br>
-**Rol:** Beheer</br>
+**Functioneel gebied**: Overzicht en volgorde synchroniseren</br>
+**Rol:** Beheerder</br>
 **Type test:** Alles positief
 
 <table>
 <thead>
 <tr>
-<th>Functie</th>
+<th>-functie</th>
 <th>Scenario testen</th>
 <th>Verwachte resultaten</th>
 </tr>
@@ -87,7 +87,7 @@ Deze sectie van het testplan behandelt inventaris en ordesynchronisatie om te ve
 <tr>
 <td><strong>Ophaalvoorraadbron</br><code>Is Synced</code> status</strong></td>
 <td>Sla updates op naar een bestaande bron van ophaalvoorraad.</td>
-<td>Na een geslaagde bewerking <code>Is Synced</code> kolom van de pagina Bron beheren wordt bijgewerkt vanaf <code>No</code> tot <code>Yes</code>.</td>
+<td>Na een geslaagde bewerking <code>Is Synced</code> kolom van de pagina Bronupdates beheren vanuit <code>No</code> tot <code>Yes</code>.</td>
 </tr>
 <tr>
 <td><strong>Gewijzigde voorraadreserveringsprocedure</strong></td>
@@ -101,7 +101,7 @@ Deze sectie van het testplan behandelt inventaris en ordesynchronisatie om te ve
 </tr>
 <tr>
 <td><strong>New Order Push, API Sync—Admin verzendt order</strong></td>
-<td>An Adobe Commerce <strong>Beheer</strong> verzendt een bestelvolgorde.</td>
+<td>An Adobe Commerce <strong>Beheerder</strong> verzendt een bestelvolgorde.</td>
 <td><ul><li>In de weergave Bestelling beheren wordt de status Synchronisatie van bestellingen bijgewerkt naar <code>Sent</code>.</li><li>Het logboek met de orderdetails bevat het bericht <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
 </tr>
 <tr>
@@ -122,7 +122,7 @@ Deze sectie van het testplan omvat scenario&#39;s om het werkschema van begin to
 
 <table style="table-layout:fixed">
 <tr>
-<th>Functie</th>
+<th>-functie</th>
 <th>Scenario</th>
 <th>Verwachte resultaten</th>
 </tr>
@@ -250,7 +250,7 @@ Deze sectie van het testplan omvat scenario&#39;s om het werkschema van begin to
 </td>
 </tr>
 <tr>
-<td><strong>Verzonden (tijdens dispensatie)</br></br>Gedeeltelijke annulering</br>(Sommige producten worden afgeleverd; sommige zijn verworpen.)</strong>
+<td><strong>Verzonden (tijdens dispensatie)</br></br>Gedeeltelijke annulering</br>(Sommige producten zijn niet beschikbaar; sommige zijn geweigerd.)</strong>
 </td>
 <td>
 <ol>
@@ -311,7 +311,7 @@ Deze sectie van het testplan omvat scenario&#39;s om het werkschema van begin to
 <ul>
 <li>RMA gemaakt en weergegeven onder de <strong>[!UICONTROL Returns]</strong> in de weergave Volgorde.</li>
 <li>De klant heeft het bevestigingsbericht van RMA ontvangen.</li>
-<li>Na het creëren van RMA, krijg de vergunning RMA: Ga vanuit de beheerder naar <strong>[!UICONTROL Sales > Returns]</strong>. Selecteer de RMA die u hebt gemaakt en autoriseer deze.</li>
+<li>Nadat u RMA hebt gemaakt, krijgt u de RMA-autorisatie: Ga vanuit de beheerder naar <strong>[!UICONTROL Sales > Returns]</strong>. Selecteer de RMA die u hebt gemaakt en autoriseer deze.</li>
 <li>Controleer of de klant het bevestigingsbericht voor de RMA-autorisatie heeft ontvangen.</li>
 <li>Controleer of de restitutie is toegevoegd aan de transacties en de ordergeschiedenis.</li>
 </ul>
@@ -333,7 +333,7 @@ In dit gedeelte van het testplan wordt het accountbeheer voor App Users-gebruike
 
 <table style="table-layout:auto">
 <tr>
-<th>Functie</th>
+<th>-functie</th>
 <th>Scenario</th>
 <th>Verwachte resultaten</th>
 </tr>
@@ -342,14 +342,14 @@ In dit gedeelte van het testplan wordt het accountbeheer voor App Users-gebruike
 </td>
 <td>
 <ol>
-<li><strong>Beheer</strong> — Aanmelden bij de Adobe Commerce Admin</li>
+<li><strong>Beheerder</strong> — Aanmelden bij de Adobe Commerce Admin</li>
 <li>Ga naar <strong>[!UICONTROL System] &gt; Enable Fulfillment App &gt; All Store Fulfillment App Users</strong></li>
 <li><strong>Nieuwe gebruiker toevoegen.</strong></li>
 </ol>
 <td>
 <ul>
 <li>Account is gemaakt.</li>
-<li>Nieuwe gebruikersaccount wordt weergegeven op het tabblad [!UICONTROL Store Fulfillment Users] dashboard.</li>
+<li>Het nieuwe gebruikersaccount wordt weergegeven op het tabblad [!UICONTROL Store Fulfillment Users] dashboard.</li>
 <li><strong>Winkelkoppeling</strong> Meld u aan bij de app Winkelassistentie met een nieuwe gebruikersaccount.</li>
 </ul>
 </td>
@@ -362,7 +362,7 @@ In dit gedeelte van het testplan wordt het accountbeheer voor App Users-gebruike
 <li>Meld u aan bij de Adobe Commerce Admin-gebruikersaccount.</li>
 <li>Ga naar <strong>[!UICONTROL System] &gt; Enable Fulfillment App &gt; All Store Fulfillment App Users</strong>.</li>
 <li>Open in de lijst Gebruikersaccount een bestaande actieve gebruikersaccount door <strong>[!UICONTROL Edit]</strong>.
-<li>Schakel de account uit door <strong>[!UICONTROL Is Active]</strong> tot <strong>Nee</strong>.</li>
+<li>Schakel het account uit door het wijzigen <strong>[!UICONTROL Is Active]</strong> tot <strong>Nee</strong>.</li>
 </ol>
 </td>
 <td>
@@ -389,7 +389,7 @@ De testscenario&#39;s voor de Types van Product van Adobe Commerce verifiëren d
 
 <table style="table-layout:auto">
 <tr>
-<th>Functie</th>
+<th>-functie</th>
 <th>Scenario</th>
 <th>Opmerkingen</th>
 </tr>
@@ -429,7 +429,7 @@ Controleren of virtuele producten de  [!UICONTROL In-store Pickup] leveringsmeth
 </td>
 </tr>
 <tr>
-<td><strong>Bundel</strong>
+<td><strong>Bundelproducten</strong>
 </td>
 <td>
 <ul>
@@ -447,7 +447,7 @@ Controleren of virtuele producten de  [!UICONTROL In-store Pickup] leveringsmeth
 
 Deze sectie van het testplan behandelt de Controle-In Ervaring voor de Bestellingen van de Bestelwagen van de Opslag voor de volgende mogelijkheden:
 
-- Afwisselend oppikken contact-verifieer het werkschema voor het toevoegen van een [!UICONTROL Alternate Pickup Contact] en selecteert u een [!UICONTROL Preferred Contact] op bestellingen voor ophaalservice.
+- Afwisselend oppikken contact-verifieer het werkschema voor het toevoegen van een [!UICONTROL Alternate Pickup Contact] en een [!UICONTROL Preferred Contact] op bestellingen voor ophaalservice van winkel.
 
 - Inchecken formulier—Controleer de workflow voor het indienen van een incheckaanvraag voor bestellingen voor winkelbestellingen.
 
@@ -464,7 +464,7 @@ Deze sectie van het testplan behandelt de Controle-In Ervaring voor de Bestellin
 
 <table style="table-layout:auto">
 <tr>
-<th>Functie</th>
+<th>-functie</th>
 <th>Scenario</th>
 <th>Verwachte resultaten</th>
 </tr>
@@ -478,7 +478,7 @@ Een klant verzendt een bestelling met de optie Ophalen in de winkel.</td>
 </td>
 </tr>
 <tr>
-<td><strong>Alternatieve voorkeurscontactpersoon voor afhalen, inchecken</strong>
+<td><strong>Alternatieve voorkeurscontactpersoon voor afhalen, aanmelden</strong>
 <td>
 Een klant verzendt een bestelling met de optie Ophalen in de winkel. Tijdens het afrekenen voegt de klant een [!UICONTROL Alternate Pickup Contact].</td>
 <td>Tijdens het uitcheckproces ziet de klant [!UICONTROL Preferred Contact] in de verzendstap.</td>
@@ -521,7 +521,7 @@ Een klant verzendt een bestelling met de optie Ophalen in de winkel. Tijdens het
 
 <table style="table-layout:auto">
 <tr>
-<th>Functie</th>
+<th>-functie</th>
 <th>Scenario</th>
 <th>Verwachte resultaten</th>
 </tr>
@@ -533,7 +533,7 @@ Een klant verzendt een bestelling met de optie Ophalen in de winkel. Tijdens het
 </tr>
 <tr>
 <td><strong>Inchecken van handeling—Gegevens verzoek weergeven</strong></td>
-<td>Een klant verzendt een incheckaanvraag.</td>
+<td>Een klant verzendt met succes een verzoek om inchecken.</td>
 <td>De de statusupdates van de orde in het systeem FaaS, en de Vennoot van de Opslag kunnen de controle-binnen verzoekdetails in FaaS zien.
 </td>
 </tr>
@@ -560,7 +560,7 @@ Deze sectie van het testplan behandelt scenario&#39;s voor het testen van orde, 
 
 <table style="table-layout:auto">
 <tr>
-<th>Functie</th>
+<th>-functie</th>
 <th>Scenario</th>
 <th>Verwachte resultaten</th>
 </tr>
@@ -573,7 +573,7 @@ Deze sectie van het testplan behandelt scenario&#39;s voor het testen van orde, 
 </td>
 </tr>
 <tr>
-<td><strong>Ophalen van meerdere bestellingen—gelukkig pad, ophalen van rand</strong></td>
+<td><strong>Ophalen van meerdere bestellingen—gelukkig pad, ophalen van curven</strong></td>
 <td>Enkelvoudige en meervoudige items. Geen gelijke plukken, en curbside oppeling (met het opvoeren)</td>
 <td></td>
 </tr>

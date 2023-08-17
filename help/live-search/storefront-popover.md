@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # [!DNL Storefront Popover]
 
-Wanneer [!DNL Live Search] is [geïnstalleerd](install.md), [!DNL popover] wordt weergegeven in de winkel wanneer kopers tekst typen in het vak [Zoeken](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) doos. Met elk getypt teken, [!DNL popover] wordt bijgewerkt met voorgestelde producten en duimnagelbeelden van de hoogste onderzoeksresultaten.
+Wanneer [!DNL Live Search] is [geïnstalleerd](install.md), [!DNL popover] wordt weergegeven in de winkel wanneer kopers tekst typen in het vak [Zoeken](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) doos. Als elk teken is getypt, wordt het [!DNL popover] wordt bijgewerkt met voorgestelde producten en duimnagelbeelden van de hoogste onderzoeksresultaten.
 
 [!DNL Live Search] retourneert resultaten voor een query van twee tekens of meer. Voor een gedeeltelijke overeenkomst, is het maximumaantal karakters per woord 20. Het aantal karakters in een &quot;onderzoek aangezien u&quot;vraag typt is niet configureerbaar.
 
@@ -29,11 +29,11 @@ De volgende kenmerken kunnen altijd worden doorzocht:
 
 ## [!DNL Popover] paginaformaat
 
-Het paginaformaat van het dialoogvenster [!DNL popover] bepaalt hoeveel lijnen van autocompleted producten kunnen worden teruggekeerd. Eerder was het paginaformaat gecodeerd als zes regels. De `page_size` de waarde is nu een het plaatsen die van kan worden gevormd *Beheer*. Tijdens de installatie van Live zoeken worden de `page_size` De waarde verandert in de huidige waarde van de [Catalogus zoeken](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/catalog.html) - `Autocomplete Limit` instellen.
+De paginagrootte van de [!DNL popover] bepaalt hoeveel lijnen van autocompleted producten kunnen worden teruggekeerd. Eerder was het paginaformaat gecodeerd als zes regels. De `page_size` de waarde is nu een het plaatsen die van kan worden gevormd *Beheerder*. Tijdens de installatie van Live zoeken worden de `page_size` wijzigt de huidige waarde van de [Catalogus zoeken](https://experienceleague.adobe.com/docs/commerce-admin/config/catalog/catalog.html) - `Autocomplete Limit` instellen.
 
 Standaard is de waarde voor Zoeken in catalogus - automatisch aanvullen van limiet ingesteld op acht regels (of rijen). Het paginaformaat wijzigen van het dialoogvenster [!DNL popover]Ga als volgt te werk:
 
-1. Op de *Beheer* zijbalk, ga naar **Winkels** > Instellingen > **Configuratie**.
+1. Op de *Beheerder* zijbalk, ga naar **Winkels** > Instellingen > **Configuratie**.
 1. Vouw in het linkerdeelvenster uit **Catalogus** en kiest u **Catalogus** in de lijst met instellingen.
 1. Breid uit *Catalogus zoeken* sectie.
 1. Stel de **Limiet automatisch aanvullen** op het aantal regels dat u wilt toestaan in het dialoogvenster [!DNL popover].
@@ -47,12 +47,12 @@ De [Catalogusservice voor Adobe Commerce](../catalog-service/overview.md) de uit
 * Uitgebreide kenmerken
 * Andere productinformatie kan worden ingevoerd
 
-Merchants kunnen widgets of winkelelementen aanpassen en uitbreiden door de Dienst van de Catalogus te gebruiken, maar dit is buiten werkingsgebied voor Adobe ondersteuningsteam.
+Merchants kunnen widgets of winkelelementen aanpassen en uitbreiden door de Dienst van de Catalogus te gebruiken, maar dit is buiten werkingsgebied voor het ondersteuningsteam van de Adobe.
 
 ## Beperkingen
 
 * De [!DNL Live Search] [!DNL storefront popover] is alleen beschikbaar voor winkels die de *Luminantie* thema of een aangepast thema dat is gebaseerd op *Luminantie*. Broodkruimels op de pagina met zoekresultaten hebben geen *Lume* stijlen.
-* De [!DNL popover] biedt geen ondersteuning voor de *Leeg* thema. Zie [Stijlen [!DNL Popover] Elementen](storefront-popover-styling.md) voor meer informatie.
+* De [!DNL popover] ondersteunt de *Leeg* thema. Zie [Stijlen [!DNL Popover] Elementen](storefront-popover-styling.md) voor meer informatie.
 * De [!DNL popover] wordt niet ondersteund op het formulier Snelle volgorde.
 * Schijflijsten en productvergelijkingen worden niet ondersteund.
 * Alleen de basisvaluta wordt ondersteund.

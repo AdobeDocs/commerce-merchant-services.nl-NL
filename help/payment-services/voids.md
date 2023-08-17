@@ -20,7 +20,7 @@ Met [!DNL Payment Services], kunt u bestaande Commerce-functionaliteit gebruiken
 
 Als uw winkel [geconfigureerd](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} als u alleen fondsen (zonder opname) wilt toestaan op het verkooppunt, resulteert een aankoop in een bestelling met een `Processing` status in de Commerce Admin.
 
-U kunt ook [een bestelling annuleren](https://docs.magento.com/user-guide/sales/order-update.html#cancel-a-pending-order){target="_blank"} dat niet wordt gefactureerd. Eventuele niet-vastgelegde machtigingen worden ook ingetrokken als onderdeel van dat annuleringsproces.
+U kunt [een bestelling annuleren](https://docs.magento.com/user-guide/sales/order-update.html#cancel-a-pending-order){target="_blank"} dat niet wordt gefactureerd. Eventuele niet-vastgelegde machtigingen worden ook ingetrokken als onderdeel van dat annuleringsproces.
 
 >[!NOTE]
 >

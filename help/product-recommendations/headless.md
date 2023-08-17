@@ -21,7 +21,7 @@ Aangepaste integratoren en ontwikkelaars zonder kop dienen deze Luma- en PWA-ins
 >
 >De instanties zonder kop moeten gebeurtenis uitvoeren om het Recommendations-dashboard van het Product van stroom te voorzien.
 
-Om te integreren [!DNL Product Recommendations] in een koploze winkel moet u:
+Om te integreren [!DNL Product Recommendations] in een koploze winkel, moet u:
 
 1. Verstuur gedragsgegevens naar Adobe Sensei om de resultaten van de productaanbeveling te analyseren en te berekenen. U kunt ook aanvullende gegevens verzenden om productaanbevelingen in te schakelen [metrische rapportage](workspace.md).
 
@@ -29,11 +29,11 @@ Om te integreren [!DNL Product Recommendations] in een koploze winkel moet u:
 
 U kunt beide handelingen uitvoeren met de beschikbare SDK&#39;s, zoals beschreven in de volgende workflow.
 
-1. [Installeren](install-configure.md) de [!DNL Product Recommendations] module.
+1. [Installeren](install-configure.md) de [!DNL Product Recommendations] -module.
 
-1. Installeer en gebruik de [Adobe Commerce Storefront Event SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) om de [gedragsgebeurtenissen](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/events.html).
+1. De [Adobe Commerce Storefront Event SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) om de [gedragsgebeurtenissen](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/events.html).
 
-   De minimaal vereiste gebeurtenissen om terug te keren [!DNL Product Recommendations] resultaten:
+   De minimaal vereiste gebeurtenissen om te retourneren [!DNL Product Recommendations] resultaten:
 
    | Gebeurtenis | Categorie |
    |--- | ---|
@@ -54,4 +54,4 @@ U kunt beide handelingen uitvoeren met de beschikbare SDK&#39;s, zoals beschreve
 
 1. Nadat de gedragsgegevens zijn verzameld, kunt u [maken](create.md) [!DNL Product Recommendations] in de Admin.
 
-1. Gebruik de [Recommendations SDK](https://developer.adobe.com/commerce/services/product-recommendations/) om de aanbevolen eenheden op de winkel te krijgen. De SDK retourneert de benodigde productgegevens voor het weergeven van aanbevolen eenheden op een pagina.
+1. Gebruik de [RECOMMENDATIONS SDK](https://developer.adobe.com/commerce/services/product-recommendations/) om de aanbevolen eenheden op de winkel te krijgen. De SDK retourneert de benodigde productgegevens voor het weergeven van aanbevolen eenheden op een pagina.

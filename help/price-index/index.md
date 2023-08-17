@@ -15,7 +15,7 @@ ht-degree: 0%
 
 De prijsindexering van SaaS versnelt de tijd die het voor prijsveranderingen vergt om op de website van een klant van SaaS na hen te worden weerspiegeld. Met deze optionele module kunnen handelaren met grote, complexe catalogi of met meerdere websites of klantgroepen prijswijzigingen sneller en doorlopend verwerken.
 
-Het grootste knelpunt van de pijpleiding: computationele zware processen, zoals indexering en prijsberekening, zijn verplaatst van de PHP-kern naar de Cloud-Adobe-infrastructuur. Op deze manier kunnen handelaren snel hun resources vergroten om de indexatietijden te versnellen en de wijzigingen in websites op veel hogere snelheden doorvoeren.
+Het grootste knelpunt van de pijpleiding: zware computerprocessen zoals indexering en prijsberekening zijn verplaatst van de PHP-kern naar de Cloud-infrastructuur van de Adobe. Op deze manier kunnen handelaren snel hun resources vergroten om de indexatietijden te versnellen en de wijzigingen in websites op veel hogere snelheden doorvoeren.
 
 De de indexerende gegevensstroom van de Kern aan de diensten van SaaS ziet als:
 
@@ -27,9 +27,9 @@ Met SaaS-prijsindexering is de stroom:
 
 Alle verkopers die aan de vereisten voldoen kunnen van deze verbeteringen profiteren, maar zij die de grootste winst zullen zien zijn klanten met:
 
-* Constante prijswijzigingen: Handelaars die herhaalde veranderingen in hun prijzen vereisen om strategische doelstellingen zoals frequente bevorderingen, seizoenskortingen, of voorraaddalingen te ontmoeten.
-* Meerdere websites en/of klantgroepen: Handelaars met gedeelde productcatalogi voor meerdere websites (domeinen/merken) en/of klantgroepen.
-* Groot aantal unieke prijzen voor websites of klantgroepen: Handelaren met uitgebreide gedeelde productcatalogi die unieke prijzen bevatten voor websites of klantgroepen, zoals B2B-handelaren met vooraf overeengekomen prijzen, merken met verschillende prijsstrategieën.
+* Constante prijswijzigingen: handelaren die herhaalde prijswijzigingen nodig hebben om strategische doelstellingen te bereiken, zoals veelvuldige promoties, seizoenskortingen of voorraadafwaarderingen.
+* Meerdere websites en/of klantgroepen: verkopers met gedeelde productcatalogi op meerdere websites (domeinen/merken) en/of klantgroepen.
+* Groot aantal unieke prijzen voor websites of klantgroepen: verkopers met uitgebreide gedeelde productcatalogi die unieke prijzen bevatten voor websites of klantgroepen, zoals B2B-handelaren met vooraf overeengekomen prijzen, merken met verschillende prijsstrategieën.
 
 Als u toepassingen van derden hebt die afhankelijk zijn van de PHP kern price indexer, lees de documentatie en raadpleeg de provider van de extensie voordat u wijzigingen aanbrengt.
 
@@ -81,7 +81,7 @@ Nieuwe feeds moeten handmatig worden gesynchroniseerd met de `resync` [CLI, opdr
 
 ## Gebruiksscenario&#39;s
 
-### Luminantie zonder extensieafhankelijkheden
+### Luminantie zonder extensieafhankelijkheid
 
 * Een Luma- of Adobe Commerce Core GraphQL-handelaar die een vereiste service heeft geïnstalleerd (Live Search, Product Recommendations, Catalog Service)
 * Geen uitbreidingen van derden die afhankelijk zijn van de PHP-basisprijsindexeerder
@@ -99,7 +99,7 @@ Nieuwe feeds moeten handmatig worden gesynchroniseerd met de `resync` [CLI, opdr
 1. De nieuwe feeds inschakelen
 1. Installeer de catalogusadapter.
 1. Schakel de PHP-index voor de basisprijs opnieuw in.
-1. Nieuwe feeds en de Luminantiecode gebruiken in het dialoogvenster `catalog-adapter` module.
+1. Nieuwe feeds en de Luminantiecode gebruiken in het dialoogvenster `catalog-adapter` -module.
 
 ### Hoofdkoopman
 

@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Installeren [!DNL Live Search]
 
-[!DNL Live Search] is geïnstalleerd als extensie van Adobe Marketplace. Na de [!DNL Live Search] module (met catalogusmodules als afhankelijkheden) is geïnstalleerd en geconfigureerd, [!DNL Commerce] begint onderzoek en catalogusgegevens met de diensten te delen SaaS. Op dit punt *Beheer* gebruikers kunnen zoekfacetten, synoniemen en regels voor het wijzigen van handelsversies instellen, aanpassen en beheren.
+[!DNL Live Search] is geïnstalleerd als extensie van Adobe Marketplace. Na de [!DNL Live Search] module (met catalogusmodules als afhankelijkheden) is geïnstalleerd en geconfigureerd, [!DNL Commerce] begint onderzoek en catalogusgegevens met de diensten te delen SaaS. Op dit punt *Beheerder* gebruikers kunnen zoekfacetten, synoniemen en regels voor het wijzigen van handelsversies instellen, aanpassen en beheren.
 
 Dit onderwerp verstrekt instructies om het volgende te doen:
 
@@ -33,7 +33,7 @@ Ga als volgt te werk:
 
 ## Methode 1: Installeren zonder Elasticsearch {#method-1}
 
-Deze instapmethode wordt aanbevolen bij de installatie [!DNL Live Search] tot en met a:
+Deze instapmethode wordt aanbevolen bij de installatie [!DNL Live Search] aan een
 
 * Nieuw [!DNL Commerce] installatie
 * Stationele omgeving
@@ -76,11 +76,11 @@ In dit scenario worden storefront-bewerkingen onderbroken terwijl de [!DNL Live 
 
 1. Configureer uw [API-sleutels](#configure-api-keys) en controleer of de catalogusgegevens [gesynchroniseerd](#synchronize-catalog-data) with [!DNL Live Search] diensten.
 
-1. Als u facetten als filters in de winkel beschikbaar wilt maken, voegt u de opdracht [facetten](facets-add.md) u, volgens [eisen inzake facetten](facets.md).
+1. Als u facetten als filters in de winkel beschikbaar wilt maken, voegt u de opdracht [facetten](facets-add.md) u, volgens [faciteitsvereisten](facets.md).
 
    U moet facetten kunnen toevoegen na `cron` Hiermee worden de metagegevens van kenmerkfeeds en exportkenmerken uitgevoerd.
 
-1. Wacht minstens een uur na `cron` wordt uitgevoerd om gegevens te synchroniseren. Vervolgens [verifiëren](#verify-export) of de gegevens zijn geëxporteerd.
+1. Wacht minstens een uur na `cron` wordt uitgevoerd om gegevens te synchroniseren. Dan, [verifiëren](#verify-export) of de gegevens zijn geëxporteerd.
 
 1. [Testen](#test-the-connection) de verbinding van de storefront.
 
@@ -88,7 +88,7 @@ In dit scenario worden storefront-bewerkingen onderbroken terwijl de [!DNL Live 
 
 >[!IMPORTANT]
 >
->Gezien de Elasticsearch 7 aankondiging van einde-van-steun voor Augustus 2023, wordt geadviseerd dat alle klanten van Adobe Commerce naar OpenSearch 2.x onderzoeksmotor migreren. Voor informatie over het migreren van uw zoekmachine tijdens productverbetering, zie [Migreren naar OpenSearch](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration.html) in de _Upgradehandleiding_.
+>Gezien de Elasticsearch 7 eindeaankondiging voor augustus 2023, wordt aanbevolen dat alle Adobe Commerce-klanten naar de OpenSearch 2.x zoekmachine migreren. Voor informatie over het migreren van uw zoekmachine tijdens productverbetering, zie [Migreren naar OpenSearch](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration.html) in de _Upgradehandleiding_.
 
 Deze instapmethode wordt aanbevolen bij de installatie [!DNL Live Search] tot:
 
@@ -124,11 +124,11 @@ In dit scenario: [!DNL Elasticsearch] beheert tijdelijk zoekverzoeken van de win
 
 1. Configureer uw [API-sleutels](#configure-api-keys) en controleer of de catalogusgegevens [gesynchroniseerd](#synchronize-catalog-data) with [!DNL Live Search] diensten.
 
-1. Als u facetten als filters in de winkel beschikbaar wilt maken, voegt u de opdracht [facetten](facets-add.md) u, volgens [eisen inzake facetten](facets.md).
+1. Als u facetten als filters in de winkel beschikbaar wilt maken, voegt u de opdracht [facetten](facets-add.md) u, volgens [faciteitsvereisten](facets.md).
 
    U moet facetten kunnen toevoegen na `cron` Hiermee worden de metagegevens van het product en het kenmerk uitgevoerd en geëxporteerd naar [!DNL Live Search] diensten.
 
-1. Wacht minstens een uur tot de gegevens worden geïndexeerd en worden gesynchroniseerd. Gebruik vervolgens de [GraphQL-speelplaats](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) met de standaardvraag om het volgende te verifiëren:
+1. Wacht minstens een uur op de gegevens die moeten worden geïndexeerd en worden gesynchroniseerd. Gebruik vervolgens de [GraphQL-speelplaats](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) met de standaardvraag om het volgende te verifiëren:
 
    * Het aantal geretourneerde producten ligt dicht bij wat u voor de winkelweergave verwacht.
    * Facet(s) worden geretourneerd.
@@ -160,7 +160,7 @@ Als u een API-sleutel en een persoonlijke sleutel wilt genereren, raadpleegt u [
 
 ### Adobe Commerce-ontwikkelaar of SI
 
-De ontwikkelaar of SI vormt de SaaS gegevensruimte zoals die in wordt beschreven *Commerciële diensten* van de configuratie. In de *Beheer*, wordt de Diensten van de Handel beschikbaar in *Configuratie* zijbalk als een SaaS-module is geïnstalleerd.
+De ontwikkelaar of SI vormt de SaaS gegevensruimte zoals die in wordt beschreven *Commerciële diensten* van de configuratie. In de *Beheerder*, wordt de Diensten van de Handel beschikbaar in *Configuratie* zijbalk als een SaaS-module is geïnstalleerd.
 
 ## Catalogusgegevens synchroniseren {#synchronize-catalog-data}
 
@@ -177,7 +177,7 @@ Om te controleren of de catalogusgegevens uit uw Adobe Commerce-exemplaar zijn g
 
 Raadpleeg voor meer informatie [[!DNL Live Search] catalogus niet gesynchroniseerd](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync.html) in de Support Knowledge Base.
 
-### Toekomstige productupdates
+### Updates voor toekomstige producten
 
 Na de eerste synchronisatie kan het tot 15 minuten duren voordat de incrementele productupdates beschikbaar komen voor het zoeken naar een winkel. Ga voor meer informatie naar [Indexeren - productupdates streaming](indexing.md).
 
@@ -251,8 +251,8 @@ Om te verwijderen [!DNL Live Search], zie [Modules verwijderen](https://experien
 
 | Pakket | Beschrijving |
 |--- |--- |
-| `module-live-search` | Staat verkopers toe om hun onderzoeksinstellingen voor facetten, synoniemen, vraagregels, enz. te vormen, en verleent toegang tot read-only GraphQL playground om vragen van te testen *Beheer*. |
-| `module-live-search-adapter` | Routes onderzoeksverzoeken van de storefront aan [!DNL Live Search] en geeft de resultaten weer in de winkel. <br />- Rubriekbrowse - Routaanvragen van de winkel [topnavigatie](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html) aan de zoekdienst.<br />- Globale zoekactie - Routverzoeken van de [snel zoeken](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) in de rechterbovenhoek van de winkel [!DNL Live Search] service. |
+| `module-live-search` | Staat verkopers toe om hun onderzoeksinstellingen voor facetten, synoniemen, vraagregels, enz. te vormen, en verleent toegang tot read-only GraphQL playground om vragen van te testen *Beheerder*. |
+| `module-live-search-adapter` | Routes onderzoeksverzoeken van de winkel aan [!DNL Live Search] en geeft de resultaten weer in de winkel. <br />- Rubriekbrowse - Routaanvragen van de winkel [topnavigatie](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html) aan de zoekdienst.<br />- Globale zoekactie - Routverzoeken van de [snel zoeken](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) in de rechterbovenhoek van de winkel [!DNL Live Search] service. |
 | `module-live-search-storefront-popover` | De pop-up &#39;&#39;Zoeken terwijl u typt&#39;&#39; vervangt de standaard snelle zoekopdracht en retourneert gegevens en miniaturen van de bovenste zoekresultaten. |
 
 ## [!DNL Live Search] afhankelijkheden {#dependencies}

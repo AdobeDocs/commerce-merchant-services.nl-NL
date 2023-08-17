@@ -22,7 +22,7 @@ Als verkoper kun je Adobe Commerce gebruiken [Inventory management](https://docs
 
 - UPC / SKU / Andere unieke product-id&#39;s
 
-- Drempel voor voorraden
+- Drempel voor voorraadverlies
 
 - Het verminderen van Inventaris van specifieke plaatsen op orde
 
@@ -42,8 +42,8 @@ Opties voor productvoorraad configureren van de beheerder: **[!UICONTROL Catalog
 
 | **Veld** | **Beschrijving** | **Toepassingsgebied** | **Vereist** |
 |-----------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
-| **[!UICONTROL Out of Stock Threshold]** | <p>Stel de voorraaddrempel voor het item binnen elke bron in. Wanneer de voorraad onder de drempel daalt, wordt deze als niet-voorraad aan de bron beschouwd.</p><p>Als u de globale instelling voor Winkelconfiguratie wilt gebruiken, schakelt u het selectievakje **[!UICONTROL Use Default]** optie.</p> | Algemeen | Nee |
-| **[!UICONTROL Allow Store Pickup]** | <p>Expliciet instellen of het item beschikbaar is voor het ophalen van de winkel, ongeacht de beschikbare voorraad of configuratie van de locatie van de winkel.</p><p>Schakel de optie [!UICONTROL Use Default] en maakt u uw selectie. Anders wordt deze instelling gekozen op basis van de configuratie voor **[!UICONTROL Allow In-Store Pickup]** die op de bron van de voorraad is vastgesteld.</p> | Algemeen | Nee |
+| **[!UICONTROL Out of Stock Threshold]** | <p>Stel de voorraaddrempel voor het item binnen elke bron in. Wanneer de voorraad onder de drempel daalt, wordt deze als niet-voorraad aan de bron beschouwd.</p><p>Als u de globale instelling voor Winkelconfiguratie wilt gebruiken, schakelt u het selectievakje **[!UICONTROL Use Default]** -optie.</p> | Algemeen | Nee |
+| **[!UICONTROL Allow Store Pickup]** | <p>Expliciet instellen of het item beschikbaar is voor het ophalen van de winkel, ongeacht de beschikbare voorraad of configuratie van de locatie van de winkel.</p><p>Als u de instelling op productniveau wilt gebruiken, schakelt u de optie [!UICONTROL Use Default] en maakt u uw selectie. Anders wordt deze instelling gekozen op basis van de configuratie voor **[!UICONTROL Allow In-Store Pickup]** die op de bron van de voorraad is vastgesteld.</p> | Algemeen | Nee |
 
 {style="table-layout:auto"}
 

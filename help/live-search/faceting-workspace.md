@@ -1,6 +1,6 @@
 ---
 title: "Faceting Workspace"
-description: "Leer je weg rond de [!DNL Live Search] facetwerkruimte."
+description: "Leer je weg door [!DNL Live Search] facetwerkruimte."
 exl-id: b47b5c19-59bb-41e4-9599-3b90cbc44b70
 source-git-commit: e166c8cb9d715dce573195a188b5335c02d8fd0c
 workflow-type: tm+mt
@@ -38,12 +38,12 @@ Als uw Adobe Commerce-installatie meerdere winkelweergaven bevat, stelt u **Toep
 | Kolom | Beschrijving |
 |--- |--- |
 | (eerste kolom) | Lijsten vastgezet en dynamische facetten door [label](facets-type.md) die zichtbaar is voor de verkoopster. |
-| Tekst sorteren | De [sorteervolgorde](facets-type.md) van facetwaarden. Facetten worden alfabetisch gesorteerd voor alle [!DNL Commerce] opslagronten. Voor [koploos] implementaties, kunnen de facetten of alfabetisch of door telling worden gesorteerd. Opties: Alfabetisch, Aantal (alleen zonder kop) |
+| Tekst sorteren | De [sorteervolgorde](facets-type.md) van facetwaarden. Facetten worden alfabetisch gesorteerd voor alle [!DNL Commerce] opslagronten. Voor [krankzinnig] implementaties, kunnen de facetten of alfabetisch of door telling worden gesorteerd. Opties: Alfabetisch, Aantal (alleen zonder kop) |
 | Max. waarde | Het aantal facetwaarden dat in de opslagruimte als filters beschikbaar is, met een maximum van 10. |
 
 ## Besturingselementen
 
-| Control | Beschrijving |
+| Besturing | Beschrijving |
 |--- |--- |
 | Elementen toevoegen | Hiermee opent u de [facetredacteur](facets-add.md). |
-| Filteren op | Hiermee bepaalt u de [type facetten](facets-type.md) die in de lijst worden weergegeven. Opties: Alles, vastgezet, dynamisch |
+| Filteren op | Hiermee bepaalt u de [type facetten](facets-type.md) in de lijst. Opties: Alles, Vastgezet, Dynamisch |

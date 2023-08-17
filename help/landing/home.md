@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Adobe Commerce Services-hulplijnen
 
-Adobe verstrekt een inzameling van Handel, integratie, en gegevensdiensten om handelaren te helpen zeer belangrijke componenten van hun zaken steunen.
+De Adobe verstrekt een inzameling van de Handel, de integratie, en de gegevensdiensten om handelaren te helpen zeer belangrijke componenten van hun zaken steunen.
 
 >[!BEGINSHADEBOX &quot;Release-informatie&quot;]
 
@@ -23,7 +23,7 @@ Zie [nieuwe functies in onze documentatie](whats-new.md) of [releaseopmerkingen]
 
 >[!ENDSHADEBOX]
 
-## Handel
+## Commerciële diensten
 
 <table>
 <tr>
@@ -105,7 +105,7 @@ Zie [nieuwe functies in onze documentatie](whats-new.md) of [releaseopmerkingen]
    </tr>
 </table>
 
-## Integratie
+## Integratiediensten
 
 <table>
 <tr>

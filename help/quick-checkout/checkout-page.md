@@ -1,5 +1,5 @@
 ---
-title: "Afhandelingspagina"
+title: Afhandelingspagina
 description: "Overzicht van de afhandelingspagina in Adobe Commerce."
 exl-id: afe3a93d-8aba-428e-ac9d-0be8d23ceb47
 feature: Checkout, Services, Storefront
@@ -18,7 +18,7 @@ Een voorbeeld van een uitcheckpagina:
 
 ![Afhandelingspagina](assets/checkout-page.png)
 
-Raadpleeg voor meer informatie over de standaardpagina voor afhandeling van Adobe Commerce de [afhandelingspagina](https://docs.magento.com/user-guide/quick-tour/checkout-page.html) onderwerp.
+Raadpleeg voor meer informatie over de standaardpagina voor afhandeling van Adobe Commerce de [uitcheckpagina](https://docs.magento.com/user-guide/quick-tour/checkout-page.html) onderwerp.
 
 Het uitchecken bestaat uit twee stappen:
 

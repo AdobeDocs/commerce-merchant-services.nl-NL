@@ -1,6 +1,6 @@
 ---
 title: Widget pagina met productaanbiedingen
-description: De [!DNL Live Search Product Listing Page Widget]
+description: Het inschakelen en opmaken van de [!DNL Live Search Product Listing Page Widget]
 exl-id: f7346a06-a8c7-4a33-8437-ea4f61d9281f
 source-git-commit: 368059d50133d8b01be83e1616044a61ab094e3c
 workflow-type: tm+mt
@@ -27,7 +27,7 @@ U kunt het uiterlijk van de PLP-widget aanpassen aan uw site met [CSS](https://d
 
 >[!NOTE]
 >
->Elementen met aangepaste klassen binnen een Adobe Commerce-thema worden niet overgeërfd. Deze elementen moeten door hun specifieke klasse worden gericht om de douaneklassen aan te passen; primaire actieklassen werken niet op een widgetknop.
+>Elementen met aangepaste klassen binnen een Adobe Commerce-thema worden niet overgeërfd. Deze elementen moeten door hun specifieke klasse worden gericht om de douaneklassen aan te passen; de primaire actieklassen zullen niet aan een widgetknoop werken.
 >Algemene doelelementen in de CSS worden overgeërfd; `button` wordt toegepast op widgetknoppen.
 
 De gemarkeerde div&#39;s bevatten de doelklasse `ds-sdk-product-item__product-name`.
@@ -48,8 +48,8 @@ Pas de productnaam aan door een regel toe te voegen die in hoofdletters wordt ge
 
 ### Productlijst
 
-* `.ds-sdk-product-list`: Buitenste div
-* `.ds-sdk-product-list__grid`: Binnenste div
+* `.ds-sdk-product-list`: Div buiten
+* `.ds-sdk-product-list__grid`: div binnen
 
 ![Paginering](assets/plp-css-product-list.png)
 
@@ -69,8 +69,8 @@ Pas de productnaam aan door een regel toe te voegen die in hoofdletters wordt ge
 
 ### Widgets
 
-* `.ds-widgets`: Buitenste div
-* `.ds-widgets__actions`: Linkerzijkant, binnenste div
+* `.ds-widgets`: Div buiten
+* `.ds-widgets__actions`: binnenste div aan linkerkant
 * `.ds-widgets__results`: Div aan rechterkant binnenste div
 
 ![Resultaten van widget](assets/plp-css-widgets.png)
@@ -108,12 +108,12 @@ Pas de productnaam aan door een regel toe te voegen die in hoofdletters wordt ge
 * `.ds-plp-facets__header_title`
 * `.ds-plp-facets__header__clear-all`
 
-![Titel koptekst facetten](assets/plp-css-facets-title-clear.png){width="350"}
+![Titel van koptekst met facetten](assets/plp-css-facets-title-clear.png){width="350"}
 
 * `.ds-plp-facets__pills`
 * `.ds-sdk-pill`
 
-![Opvullingen](assets/plp-css-facets-pill.png){width="350"}
+![Vullingen met facetten](assets/plp-css-facets-pill.png){width="350"}
 
 * `.ds-sdk-pill__label`
 * `.ds-sdk-pill__cta`

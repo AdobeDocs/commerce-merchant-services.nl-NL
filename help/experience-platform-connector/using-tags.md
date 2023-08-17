@@ -6,7 +6,7 @@ role: Admin, Developer
 feature: Personalization, Integration
 source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '2650'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Als u de gegevens van de Commerce-winkel wilt toewijzen aan Adobe Experience Pla
 
 1. Onder **Authoring**, selecteert u **Extensies** en installeer en vorm de volgende uitbreidingen:
 
-   - [Gegevenslaag Adobe-client](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/client-data-layer/overview.html)
+   - [Gegevenslaag client-Adobe](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/client-data-layer/overview.html)
 
    - [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html)
 
@@ -54,7 +54,7 @@ Omdat gegevensverzameling met tags verschilt van het gebruik van de Adobe Commer
 |---|---|
 | _gegevenselementen_ | context |
 | _regels_ | event |
-|  | _algemene voorwaarden_ - gebeurtenislisteners (van ACDL)<br><br>_handelingen regel_ - gebeurtenishandlers (verzenden naar Adobe Experience Platform) |
+|  | _algemene voorwaarden_ - gebeurtenislisteners (van ACDL)<br><br>_handelingen voor regel_ - gebeurtenishandlers (verzenden naar Adobe Experience Platform) |
 
 Wanneer u de gegevenselementen en regels in Adobe Experience Platform-tags bijwerkt met Adobe Commerce-specifieke gebeurtenisgegevens, worden een aantal veelvoorkomende stappen uitgevoerd.
 
@@ -71,9 +71,9 @@ Laten we bijvoorbeeld de Adobe Commerce toevoegen `signOut` -gebeurtenis naar Ad
 
 1. Set **Type gegevenselement** tot `XDM object`.
 
-1. Selecteer **Sandbox** en **Schema** die u wilt bijwerken.
+1. Selecteer de **Sandbox** en **Schema** die u wilt bijwerken.
 
-1. Onder **userAccount** > **afmelden** stelt u de **value** in **Afmelden bij bezoeker** tot `1`.
+1. Onder **userAccount** > **afmelden**, stelt u de **value** in **Afmelden bij bezoeker** tot `1`.
 
    ![Waarde voor afmelden bijwerken](assets/signout-value.png)
    _Waarde voor afmelden bijwerken_
@@ -85,7 +85,7 @@ Laten we bijvoorbeeld de Adobe Commerce toevoegen `signOut` -gebeurtenis naar Ad
    ![Nieuwe regel maken](assets/create-new-rule.png)
    _Nieuwe regel maken_
 
-1. Selecteren **Toevoegen** krachtens **GEBEURTENISSEN**.
+1. Selecteren **Toevoegen** krachtens **EVENTS**.
 
 1. Set **Extensie** tot `Adobe Client Data Layer`.
 
@@ -101,7 +101,7 @@ Laten we bijvoorbeeld de Adobe Commerce toevoegen `signOut` -gebeurtenis naar Ad
 
 1. Set **Type handeling** tot `Send Event`.
 
-1. Set **Instance** tot `Alloy`.
+1. Set **Instantie** tot `Alloy`.
 
 1. Set **Type** tot `userAccount.logout`.
 
@@ -164,7 +164,7 @@ Maak het volgende gegevenselement:
 
 ### signIn
 
-Wordt geactiveerd wanneer een winkelier zich probeert aan te melden.
+Wordt geactiveerd wanneer een winkelier zich aanmeldt.
 
 #### Gegevenselementen
 
@@ -390,7 +390,7 @@ Maak de volgende gegevenselementen:
    - **Type gegevenselement**: `Data Layer Computed State`
    - **[Optioneel] pad**: `productContext.sku`
 
-1. URL afbeelding product:
+1. URL van productafbeelding:
 
    - **Naam**: `product image`
    - **Extensie**: `Adobe Client Data Layer`
@@ -404,7 +404,7 @@ Maak de volgende gegevenselementen:
    - **Type gegevenselement**: `Data Layer Computed State`
    - **[Optioneel] pad**: `productContext.pricing.currencyCode`
 
-1. Valutacode:
+1. Valuta:
 
    - **Naam**: `currency code`
    - **Extensie**: `Core`
@@ -638,7 +638,7 @@ Maak de volgende gegevenselementen:
    return suggestions;
    ```
 
-1. URL afbeelding product:
+1. URL van productafbeelding:
 
    - **Naam**: `product image`
    - **Extensie**: `Adobe Client Data Layer`
@@ -679,7 +679,7 @@ Maak de volgende gegevenselementen:
 
 ### addToCart
 
-Wordt geactiveerd wanneer een product aan een kar wordt toegevoegd of telkens wanneer de hoeveelheid van een product in het kar wordt verhoogd.
+Wordt geactiveerd wanneer een product aan een winkelwagen wordt toegevoegd of telkens wanneer de hoeveelheid van een product in het winkelwagentje wordt verhoogd.
 
 #### Gegevenselementen
 
@@ -699,7 +699,7 @@ Maak de volgende gegevenselementen:
    - **Type gegevenselement**: `Data Layer Computed State`
    - **[Optioneel] pad**: `productContext.sku`
 
-1. Valutacode:
+1. Valuta:
 
    - **Naam**: `currency code`
    - **Extensie**: `Adobe Client Data Layer`
@@ -713,7 +713,7 @@ Maak de volgende gegevenselementen:
    - **Type gegevenselement**: `Data Layer Computed State`
    - **[Optioneel] pad**: `productContext.pricing.specialPrice`
 
-1. URL afbeelding product:
+1. URL van productafbeelding:
 
    - **Naam**: `product image`
    - **Extensie**: `Adobe Client Data Layer`
@@ -738,7 +738,7 @@ Maak de volgende gegevenselementen:
    return _satellite.getVar('product regular price') || _satellite.getVar('product special price') 
    ```
 
-1. Winkelwagentje:
+1. Kar:
 
    - **Naam**: `cart`
    - **Extensie**: `Adobe Client Data Layer`
@@ -756,7 +756,7 @@ Maak de volgende gegevenselementen:
    return _satellite.getVar('cart').id
    ```
 
-1. Toevoegen aan winkelwagentje:
+1. Toevoegen aan winkelwagen:
 
    - **Naam**: `add to cart`
    - **Extensie**: `Adobe Experience Platform Web SDK`
@@ -773,7 +773,7 @@ Maak de volgende gegevenselementen:
    - **ProductImageUrl**: **Waarde** = `%product image%`
    - **Valutacode**: **Waarde** = `%currency code%`
    - **Veldgroep**: `commerce` > `cart` > `cartID`
-   - **Illustratie-id**: **Waarde** = `%cart id%`
+   - **Winkelwagentje**: **Waarde** = `%cart id%`
    - **Veldgroep**: `commerce` > `productListAdds` > `value`
    - **value**: **Waarde** = `1`
 
@@ -807,7 +807,7 @@ Maak het volgende gegevenselement:
    - **Veldgroep**: `commerce` > `productListOpens` > `value`
    - **value**: **Waarde** = `1`
    - **Veldgroep**: `commerce` > `cart` > `cartID`
-   - **Illustratie-id**: **Waarde** = `%cart id%`
+   - **Winkelwagentje**: **Waarde** = `%cart id%`
    - **Veldgroep**: `productListItems`. Voor `productListItems`, meerdere items kunnen vooraf worden berekend. Selecteren **productListItems** > **Volledige array opgeven**.
 
 #### Regels 
@@ -839,14 +839,14 @@ Maak de volgende gegevenselementen:
    - **Type gegevenselement**: `Data Layer Computed State`
    - **[Optioneel] pad**: `storefrontInstanceContext`
 
-1. URL afbeelding product:
+1. URL van productafbeelding:
 
    - **Naam**: `product image`
    - **Extensie**: `Adobe Client Data Layer`
    - **Type gegevenselement**: `Data Layer Computed State`
    - **[Optioneel] pad**: `productContext.mainImageUrl`
 
-   1. Winkelwagentje:
+   1. Kar:
 
    - **Naam**: `cart`
    - **Extensie**: `Adobe Client Data Layer`
@@ -909,7 +909,7 @@ Maak de volgende gegevenselementen:
    - **Veldgroep**: `productListItems` > `ProductImageUrl`
    - **ProductImageUrl**: **Waarde** = `%product image%`
    - **Veldgroep**: `commerce` > `cart` > `cartID`
-   - **Illustratie-id**: **Waarde** = `%cart id%`
+   - **Winkelwagentje**: **Waarde** = `%cart id%`
    - **Veldgroep**: `commerce` > `productListViews` > `value`
    - **value**: **Waarde** = `1`
 
@@ -949,7 +949,7 @@ Maak de volgende gegevenselementen:
    - **Type gegevenselement**: `Data Layer Computed State`
    - **[Optioneel] pad**: `productContext.sku`
 
-1. Valutacode:
+1. Valuta:
 
    - **Naam**: `currency code`
    - **Extensie**: `Adobe Client Data Layer`
@@ -981,7 +981,7 @@ Maak de volgende gegevenselementen:
    return _satellite.getVar('product regular price') || _satellite.getVar('product special price') 
    ```
 
-1. Winkelwagentje:
+1. Kar:
 
    - **Naam**: `cart`
    - **Extensie**: `Adobe Client Data Layer`
@@ -999,7 +999,7 @@ Maak de volgende gegevenselementen:
    return _satellite.getVar('cart').id
    ```
 
-1. Verwijderen uit winkelwagentje:
+1. Verwijderen uit winkelwagen:
 
    - **Naam**: `remove from cart`
    - **Extensie**: `Adobe Experience Platform Web SDK`
@@ -1014,7 +1014,7 @@ Maak de volgende gegevenselementen:
    - **Veldgroep**: `productListItems` > `currencyCode`
    - **Valutacode**: **Waarde** = `%currency code%`
    - **Veldgroep**: `commerce` > `cart` > `cartID`
-   - **Illustratie-id**: **Waarde** = `%cart id%`
+   - **Winkelwagentje**: **Waarde** = `%cart id%`
    - **Veldgroep**: `commerce` > `productListRemovals` > `value`
    - **value**: **Waarde** = `1`
 
@@ -1047,14 +1047,14 @@ Maak de volgende gegevenselementen:
    - **Type gegevenselement**: `Data Layer Computed State`
    - **[Optioneel] pad**: `storefrontInstanceContext`
 
-1. URL afbeelding product:
+1. URL van productafbeelding:
 
    - **Naam**: `product image`
    - **Extensie**: `Adobe Client Data Layer`
    - **Type gegevenselement**: `Data Layer Computed State`
    - **[Optioneel] pad**: `productContext.mainImageUrl`
 
-1. Winkelwagentje:
+1. Kar:
 
    - **Naam**: `cart`
    - **Extensie**: `Adobe Client Data Layer`
@@ -1117,7 +1117,7 @@ Maak de volgende gegevenselementen:
    - **Veldgroep**: `productListItems` > `ProductImageUrl`
    - **ProductImageUrl**: **Waarde** = `%product image%`
    - **Veldgroep**: `commerce` > `cart` > `cartID`
-   - **Illustratie-id**: **Waarde** = `%cart id%`
+   - **Winkelwagentje**: **Waarde** = `%cart id%`
    - **Veldgroep**: `commerce` > `checkouts` > `value`
    - **value**: **Waarde** = `1`
 
@@ -1157,14 +1157,14 @@ Maak de volgende gegevenselementen:
    - **Type gegevenselement**: `Data Layer Computed State`
    - **[Optioneel] pad**: `storefrontInstanceContext`
 
-1. URL afbeelding product:
+1. URL van productafbeelding:
 
    - **Naam**: `product image`
    - **Extensie**: `Adobe Client Data Layer`
    - **Type gegevenselement**: `Data Layer Computed State`
    - **[Optioneel] pad**: `productContext.mainImageUrl`
 
-1. Winkelwagentje:
+1. Kar:
 
    - **Naam**: `cart`
    - **Extensie**: `Adobe Client Data Layer`
@@ -1416,8 +1416,8 @@ De toestemming voor het verzamelen van gegevens van Adobe Commerce- en Experienc
 
 1. Een **Aangepaste kerncode** gegevenselement (`%do not track cookie%`) voor de `mg_dnt` cookie:
 
-   ![Maken om gegevenselement niet bij te houden](assets/element-dnt-cookie.png)
-   _Maken om gegevenselement niet bij te houden_
+   ![Maken houdt geen gegevenselement bij](assets/element-dnt-cookie.png)
+   _Maken houdt geen gegevenselement bij_
 
 1. Een **Aangepaste kerncode** gegevenselement (`%consent%`) die wordt geretourneerd `out` als cookie is ingesteld en `in` anders:
 

@@ -1,21 +1,21 @@
 ---
-user-guide-title: "[!DNL Live Search] Hulplijn"
+user-guide-title: "[!DNL Live Search] Handleiding"
 user-guide-description: "Deze handleiding bevat gedetailleerde instructies voor het gebruik van [!DNL Live Search] uit Adobe Commerce."
-breadcrumb-title: "[!DNL Live Search] Hulplijn"
+breadcrumb-title: "[!DNL Live Search] Handleiding"
 role: Admin
 feature: Services, Search
 source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
 workflow-type: tm+mt
 source-wordcount: '96'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 
 # [!DNL Live Search] voor handel {#live-search}
 
-- [Overzicht van hulplijnen](guide-overview.md)
+- [Overzicht van de handleiding](guide-overview.md)
 - [Inleiding tot [!DNL Live Search]](overview.md)
-- [Opmerkingen bij de release](release-notes.md)
+- [Aanvullende informatie](release-notes.md)
 - Live zoeken aan boord {#onboard}
    - [Onboarding-overzicht](onboarding-overview.md)
    - [Installeren [!DNL Live Search]](install.md)
@@ -24,7 +24,7 @@ ht-degree: 0%
    - [Snelle rondleiding](quick-tour.md)
    - [Storefront [!DNL Popover]](storefront-popover.md)
    - [Stijlen [!DNL Popover] Elementen](storefront-popover-styling.md)
-- [!DNL Live Search] Beheer{#live-search-admin}
+- [!DNL Live Search] Beheerder{#live-search-admin}
    - [Werkruimte](workspace.md)
    - [Prestaties](performance.md)
    - Facetten {#facets}

@@ -1,6 +1,6 @@
 ---
 title: Vereisten voor winkelvervulling
-description: Voorschriften voor de levering en het aan boord nemen van de [!DNL Store Fulfillment solution].
+description: Eisen inzake levering en instapweigering [!DNL Store Fulfillment solution].
 role: Leader, Admin, Developer
 level: Intermediate
 feature: Shipping/Delivery, Install
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 In de volgende secties worden de technische en zakelijke vereisten beschreven voor het installeren en inschakelen van de Opslagoplossing voor Adobe Commerce.
 
-## Vereisten voor Platform- en softwareversies
+## Vereisten voor platform- en softwareversies
 
 De [!DNL Store Fulfillment] Adobe Commerce-klanten kunnen op de volgende platforms een oplossing kiezen.
 
@@ -51,7 +51,7 @@ Het volledige proces voor het beheren van bestellingen voor het ophalen van wink
 - 1 GB RAM
 - 600 MB vrije schijfruimte
 
-## Bedrijfsvereisten
+## Zakelijke vereisten
 
 Uw bedrijf moet aan de volgende minimumcriteria voldoen om de oplossing van de Afhandeling van de Opslag uit te voeren:
 
@@ -65,7 +65,7 @@ Uw bedrijf moet aan de volgende minimumcriteria voldoen om de oplossing van de A
 
 - Vermogen om handelsvoorraden te synchroniseren
 
-- Wi-Fi-beschikbaarheid opslaan op alle locaties die ondersteuning bieden voor de oplossing Opslaan: Minimale internetsnelheid van 3 Mbps
+- De beschikbaarheid van WiFi van de opslag bij alle plaatsen die de oplossing van de Afhandeling van de Opslag steunen: minimaal 3 Mbps Internet
 
 - Associateurs van winkels en pakhuizen hebben toegang tot mobiele apparaten van iOS of Android tijdens hun verhuizing, persoonlijk of verstrekt door de handelaar
 

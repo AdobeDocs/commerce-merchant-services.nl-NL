@@ -14,7 +14,7 @@ ht-degree: 0%
 
 U kunt het afrekenen voor Adobe Commerce configureren [!DNL Payment Services] voor optimaal gebruik van de winkels. Functionaliteit zoals [automatisch ongeldig maken bestellen](#order-auto-voided-if-error) en [creditcard vauleren](#credit-card-vaulting) zorgt ervoor dat de gebruikers een vloeiende gebruikerservaring hebben.
 
-## Volgorde automatisch ongeldig maken bij fout
+## Volgorde automatisch ongeldig maken als er een fout optreedt
 
 Als tijdens het uitchecken een fout optreedt, [!DNL Payment Services] Hiermee wordt de bestelling automatisch gewist of geannuleerd.
 
@@ -26,11 +26,11 @@ Een opmerking over de geannuleerde volgorde wordt ook weergegeven in Beheer voor
 
 ![Opmerking voor geannuleerde bestelling in Admin](assets/admin-checkout-error.png "Opmerking voor geannuleerde bestelling in Admin")
 
-Als een klant toestemming voor een bestelling krijgt, maar de bestelling niet is gemaakt en omgezet in een `Capture`De volgorde wordt automatisch ingetrokken. Dit proces zorgt ervoor dat er geen krediet op de creditcard van de winkels wordt gereserveerd en vermijdt de provisie voor de betalingsaanbieder die ontstaat wanneer de machtiging aan het einde van de standaardperiode van 29 dagen wordt ingetrokken.
+Als een klant toestemming voor een bestelling krijgt, maar de bestelling niet is gemaakt en omgezet in een `Capture`, de volgorde is automatisch ongeldig. Dit proces zorgt ervoor dat er geen krediet op de creditcard van de winkels wordt gereserveerd en vermijdt de provisie voor de betalingsaanbieder die ontstaat wanneer de machtiging aan het einde van de standaardperiode van 29 dagen wordt ingetrokken.
 
 >[!NOTE]
 >
->Automatisch intrekken van bestellingen wordt alleen uitgevoerd wanneer de klant een betalingsmethode gebruikt die is ingesteld op `Authorize` modus, niet `Authorize and Capture` in.
+>Automatisch intrekken van bestellingen wordt alleen uitgevoerd wanneer de klant een betalingsmethode gebruikt die is ingesteld op `Authorize` modus, niet `Authorize and Capture` -modus.
 
 ## Afhandeling vanaf productpagina
 

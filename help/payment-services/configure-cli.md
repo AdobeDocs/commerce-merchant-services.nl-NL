@@ -46,7 +46,7 @@ bin/magento indexer:set-mode schedule sales_order_data_exporter sales_order_stat
 
 >[!TIP]
 >
->Als u geen indexeerders in uw bevel specificeert, worden alle indexeerders bijgewerkt aan de zelfde waarde. Als u een specifieke indexeerder wilt veranderen, moet u het in uw bevel vermelden.
+>Als u geen indexeerders in uw bevel specificeert, worden alle indexeerders bijgewerkt aan de zelfde waarde. Als u een specifieke indexeerder wilt veranderen, moet u het in uw bevel een lijst maken.
 
 Voor meer informatie over het manueel veranderen van de wijze van een indexeerder, zie [Indexeerders configureren](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#configure-indexers){target="_blank"} in the developer documentation. To learn how to change it in the Admin, see [Index management](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target="_blank"} in de basisgebruikershandleiding.
 
@@ -82,7 +82,7 @@ De `--feed` kunt u opgeven welke feed u wilt verzenden:
 | `paymentServicesStoresProduction` | Winkels in productiemodus |
 | `paymentServicesStoresSandbox` | Opgeslagen bestanden in de modus Sandbox |
 
-Alle gegevens die nodig zijn voor de rapporten worden verzonden naar [!DNL Payment Services] automatisch als uitsnijden is geconfigureerd en geïnstalleerd. U kunt ook handmatig het verzenden van snijgegevens activeren naar [!DNL Payment Services].
+Alle voor de rapporten benodigde gegevens worden verzonden naar [!DNL Payment Services] automatisch als uitsnijden is geconfigureerd en geïnstalleerd. U kunt ook handmatig het verzenden van snijgegevens activeren naar [!DNL Payment Services].
 
 ```bash
 bin/magento cron:run --group payment_services_data_export

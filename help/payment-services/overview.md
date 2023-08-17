@@ -26,7 +26,7 @@ Of u nu een kleine onderneming, een medio-markt contant of een grote onderneming
 * Ontworpen om uw winst te maximaliseren
 * Veilig en veilig
 * Ontworpen om aan al uw betalingsbehoeften te voldoen
-* Zelfstandig binnen de beheerder
+* Zelfstandig binnen de Admin
 
 ## Functies
 
@@ -39,7 +39,7 @@ Of u nu een kleine onderneming, een medio-markt contant of een grote onderneming
 * [**Onboarding**](onboard.md)—Het proces begeleidt u door commerciële inschrijving, technische configuratie, aanspraken, zandbakomgevingsconfiguratie, en levende betalingsenablement.
 * [**Betalingsopties**](payments-options.md)—Stel de betalingsopties in om de methoden aan te passen die beschikbaar zijn voor klanten in de winkel (of in meerdere winkels).
 * **Financiële verslaggeving over kasstroombeheer**—Synchroniseren [betalingsgegevens](order-payment-status.md) met bestellingen om volledige transparantie te verkrijgen voor het verwerkte volume, het betalingssaldo en gedetailleerde [rapportage op transactieniveau](payouts.md) voor financiële afstemming.
-* **Transparante prijsstelling**—De prijzen zijn duidelijk en vooraf; Wat je ziet, krijg je.
+* **Transparante prijsstelling**—Prijzen zijn duidelijk en op voorhand; wat je ziet is wat je krijgt.
 * **Efficiënte uitcheckervaring**—Verwijder om het even welke barrières aan een snelle en eenvoudige controle, en creeer loyale klanten, met [kaartvaulatie](https://experienceleague-review.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) en [Direct aanschaffen](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) (standaard ingeschakeld voor Adobe Commerce).
 
 ## Beschikbaarheid
@@ -60,7 +60,7 @@ Zie [Levenscyclusbeleid](https://experienceleague.adobe.com/docs/commerce-operat
 
 [!DNL Payment Services] aanvaardt de munteenheden van de landen [waarin het beschikbaar is](#availability).
 
-Zie voor meer informatie over de valuta&#39;s die door PayPal worden ondersteund [Ondersteunde documentatie voor valuta&#39;s](https://developer.paypal.com/docs/reports/reference/paypal-supported-currencies/).
+Zie voor meer informatie over welke valuta PayPal ondersteunt [Ondersteunde documentatie voor valuta&#39;s](https://developer.paypal.com/docs/reports/reference/paypal-supported-currencies/).
 
 Als u wilt weten welke betalingsmethoden door PayPal worden ondersteund, raadpleegt u hun [Documentatie over betalingsmethoden](https://developer.paypal.com/docs/checkout/payment-methods/).
 

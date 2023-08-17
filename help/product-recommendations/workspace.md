@@ -18,7 +18,7 @@ _Recommendations Workspace_
 
 ## Bereik instellen
 
-In eerste instantie [bereik](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) van alle aanbevolen instellingen is ingesteld op `Default Store View`. Als uw installatie van de Handel veelvoudige opslagmeningen omvat, plaats **Toepassingsgebied** aan de [winkelweergave](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) waar uw aanbevelingen van toepassing zijn.
+In eerste instantie [bereik](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) van alle aanbevolen instellingen is ingesteld op `Default Store View`. Als uw installatie van de Handel veelvoudige opslagmeningen omvat, plaats **Toepassingsgebied** aan de [winkelweergave](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) waar uw aanbevelingen gelden.
 
 ## Datumbereik van metrische gegevens instellen
 
@@ -54,7 +54,7 @@ De instellingen bepalen de SaaS-gegevensruimte die de aanbevelingen en gedraggeg
 
 - Om te veranderen waar aanbeveling-gedrag gegevens voortkomt, kies een verschillende gegevensruimte SaaS.
 
-- Als u een nieuwe SaaS-gegevensruimte wilt configureren, klikt u op **Configuratie bewerken**. Zie voor meer informatie [Instellingen](settings.md).
+- Om een nieuwe SaaS gegevensruimte te vormen, klik **Configuratie bewerken**. Zie voor meer informatie [Instellingen](settings.md).
 
 ![Recommendations-instellingen](assets/settings.png)
 _Recommendations-instellingen_
@@ -66,7 +66,7 @@ _Recommendations-instellingen_
    ![Recommendations-werkruimte](assets/recommendation-detail.png)
    _Detail conversiesnelheid startpagina_
 
-1. Als u de status van de aanbeveling wilt wijzigen, klikt u op **Activeren** of **Deactiveren**.
+1. Klik op **Activeren** of **Deactiveren**.
 
 ## Aanbeveling bewerken
 
@@ -78,7 +78,7 @@ Klik op de pagina met informatie over de aanbeveling op **Maken**. Ga voor meer 
 
 ## Besturingselementen werkruimte
 
-| Control | Beschrijving |
+| Besturing | Beschrijving |
 |---|---|
 | ![Kalenderkiezer](assets/icon-calendar.png) | Hiermee bepaalt u het tijdsbereik dat wordt gebruikt voor metrische berekeningen. Opties: 24 uur / 7 dagen / 30 dagen |
 | ![Kolomkiezer](assets/icon-show-hide-columns.png) | Hiermee bepaalt u de kolommen die worden weergegeven in het dialoogvenster [!DNL Product Recommendations] tabel. |
@@ -92,14 +92,14 @@ Klik op de pagina met informatie over de aanbeveling op **Maken**. Ga voor meer 
 | Naam | De naam van de aanbeveling. |
 | Pagina | De pagina waar de aanbeveling wordt weergegeven. |
 | Type | Het type aanbeveling. |
-| Status | De status van de aanbeveling. Opties: Inactief/actief/concept |
+| Status | De adviesstatus. Opties: Inactief/actief/concept |
 | Gemaakt | De datum waarop de aanbeveling is opgesteld. |
 | Laatst bewerkt | De datum waarop de aanbeveling voor het laatst is bewerkt. |
 | Impressies | Het aantal keren dat een aanbevolen eenheid op een pagina wordt geladen en weergegeven. Een aanbeveling-eenheid die onder de voud van de viewport van de browser ligt, wordt op de pagina weergegeven, maar niet door de gebruiker weergegeven. In dit geval wordt de weergegeven eenheid geteld als een indruk, maar een weergave wordt alleen geteld als de gebruiker de eenheid in beeld schuift. |
-| vImpressions | (Zichtbare indrukkingen) Het aantal aanbevelingen dat ten minste één weergave registreert. |
+| vImpressions | (Zichtbare indrukkingen) Het aantal aanbevelingen-eenheden dat ten minste één weergave registreert. |
 | Weergaven | Het aantal aanbevelingen dat wordt weergegeven in de viewport van de browser van de klant. Deze gebeurtenis kan meerdere keren op een pagina worden uitgevoerd. |
-| Klikken | De som van het aantal keren dat een winkelbediende op een item in de aanbevolen eenheid klikt en het aantal keren dat de winkelbediende op de knop klikt **Toevoegen aan winkelwagentje** knop in de aanbevolen eenheid |
-| Ontvangsten | De inkomsten die voortvloeien uit de aanbeveling voor de huidige tijdspanne. |
+| Klikken | De som van het aantal keren dat een winkelbediende op een item in de aanbevolen eenheid klikt en het aantal keren dat de winkelbediende op het **Toevoegen aan winkelwagentje** knop in de aanbevolen eenheid |
+| Ontvangsten | De inkomsten die voortvloeien uit de aanbeveling voor de huidige periode. |
 | LT-inkomsten | (Levensopbrengsten) De levenslange inkomsten die worden voortgebracht door een aanbeveling. |
 | Zichtbaarheid | Het percentage aanbevolen eenheden dat zich registreert voor de weergave. |
 | Ctr | (Doorkliksnelheid) Het percentage eenheidsindrukkingen voor de aanbeveling die een klik registreert. |

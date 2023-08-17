@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # [!DNL Quick Checkout] Onboarding
 
-Ga als volgt te werk om aan de slag te gaan [!DNL Quick Checkout] voor Adobe Commerce-extensie moet u een aantal instapkaartstappen uitvoeren om uw exemplaar te verbinden met onze uitcheckfunctionaliteit.
+Om te beginnen met het gebruik van de [!DNL Quick Checkout] voor Adobe Commerce-extensie moet u een aantal instapkaartstappen uitvoeren om uw exemplaar te verbinden met onze uitcheckfunctionaliteit.
 
 ![Snelle afhandeling](assets/overview-admin-panel.png)
 
@@ -20,14 +20,14 @@ Ga als volgt te werk om aan de slag te gaan [!DNL Quick Checkout] voor Adobe Com
 1. [Een Merchant-account voor de productie of sandbox maken met [!DNL Bolt]](#create-account-with-bolt). Geef alle vereiste gegevens op om uw identiteit te verifiëren.
 1. [Geef de unieke [!DNL API Key] en [!DNL Publishable Key]](#obtain-api-credentials) gegenereerd in [!DNL Bolt].
 1. [Een betalingsprovider instellen in het dialoogvenster [!DNL Bolt] account](#configure-payment-providers).
-1. [Stelt vervolgkeuzelijst Inschakelen in op Ja](#enable-extension) om de extensie te activeren.
+1. [Stelt vervolgkeuzelijst Inschakelen in op Ja](#enable-extension) de extensie activeren.
 1. [Definieer uw servicesinstellingen](#complete-admin-configuration) om het [!DNL Quick Checkout] extensie.
 1. [Klik op Config opslaan](#enable-live-quick-checkout) om extensie in te schakelen.
 1. Van bereik wisselen naar **Hoofdwebsite** en [klik Configure Callback URL](#check-shopper-valid-account) knop.
 
 Als Gainsight is ingeschakeld, activeert het de **Volg de rondleiding** in uw [!DNL Quick Checkout] Beheer, deelvenster over [!DNL Quick Checkout] voor Adobe Commerce:
 
-1. Op de _Beheer_ zijbalk, ga naar **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > Geavanceerd:
+1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > Geavanceerd:
 
    ![Snelle afhandeling](assets/gainsight-admin.png)
 
@@ -63,11 +63,11 @@ Zie de [testen en valideren](../quick-checkout/testing.md) voor meer informatie.
 
 ## API-referenties verkrijgen
 
-Als u de opdracht [!DNL Quick Checkout] u hebt [!DNL Bolt] unieke toetsen en [!DNL signing secret]. Verkrijg het volgende [!DNL API keys] door te navigeren naar **Ontwikkelaars** > **API** > **Toetsen** in de **Bolt Merchant Dashboard**.
+Als u de opdracht [!DNL Quick Checkout] u hebt [!DNL Bolt] unieke toetsen en [!DNL signing secret]. Verkrijg het volgende [!DNL API keys] door naar **Ontwikkelaars** > **API** > **Toetsen** in de **Bolt Merchant Dashboard**.
 
-- [!DNL API key]: Een persoonlijke sleutel die door uw achterste eind wordt gebruikt om met elkaar in wisselwerking te staan [!DNL Bolt] API&#39;s.
-- [!DNL Publishable key]: Een toets die door uw voorzijde wordt gebruikt om te communiceren met [!DNL Bolt] API&#39;s.
-- [!DNL Signing secret]: Wordt gebruikt voor handtekeningverificatie op aanvragen die zijn ontvangen van [!DNL Bolt].
+- [!DNL API key]: Een persoonlijke sleutel die door uw achterste einde wordt gebruikt om te communiceren met [!DNL Bolt] API&#39;s.
+- [!DNL Publishable key]: Een toets die door de voorzijde wordt gebruikt om te communiceren met [!DNL Bolt] API&#39;s.
+- [!DNL Signing secret]: Wordt gebruikt voor handtekeningverificatie op aanvragen ontvangen van [!DNL Bolt].
 
   ![Snelle afhandeling](assets/account-credentials.png)
 
@@ -83,7 +83,7 @@ Volg de stappen in het dialoogvenster [processorinstelling](https://help.bolt.co
 
 ## Extensie inschakelen
 
-1. Op de _Beheer_ zijbalk, ga naar **Winkels** > _Instellingen_ > **Configuratie**.
+1. Op de _Beheerder_ zijbalk, ga naar **Winkels** > _Instellingen_ > **Configuratie**.
 1. Vouw in het linkerdeelvenster uit **Verkoop** en selecteert u **Afhandeling**.
 1. In de [!DNL Quick Checkout] weergave, instellen **Inschakelen** tot `Yes`.
 
@@ -110,12 +110,12 @@ Zie de [Instellingen](../quick-checkout/settings-quick-checkout.md) onderwerp vo
 
 ## Volledige beheerdersconfiguratie
 
-1. Op de _Beheer_ zijbalk, navigeren naar **Winkels** > **Configuratie** > **Afhandeling** om tot de algemene configuratiepagina van Admin van de Controle toegang te hebben.
+1. Op de _Beheerder_ zijbalk, navigeren naar **Winkels** > **Configuratie** > **Afhandeling** om tot de algemene configuratiepagina van Admin van de Controle toegang te hebben.
 1. In de _Service-instellingen_ alle gegevens opgeven die nodig zijn om de extensie in te schakelen.
 1. Set _Betalingsactie_ naar een van beide opties:
 
-   - `Authorize`: Geen transactie automatisch vastleggen na toestemming.
-   - `Authorize and Capture`: Transactie automatisch vastleggen na machtiging.
+   - `Authorize`: Leg transactie niet automatisch vast na autorisatie.
+   - `Authorize and Capture`: Leg de transactie automatisch vast na machtiging.
 
 Raadpleeg voor meer informatie over de standaardafhandelingsopties van Adobe Commerce de [uitchecken](https://docs.magento.com/user-guide/configuration/sales/checkout.html) onderwerp.
 
@@ -123,7 +123,7 @@ Raadpleeg voor meer informatie over de standaardafhandelingsopties van Adobe Com
 
 Om het [!DNL Quick Checkout] voor Adobe Commerce-extensie:
 
-1. Controleer of de [!UICONTROL Enable] dropdown is ingesteld op **Ja** om de extensie te activeren.
+1. Controleer of de [!UICONTROL Enable] dropdown is ingesteld op **Ja** de extensie activeren.
 1. Klikken **Config opslaan**.
 
 ## Winkel controleren op geldig account
@@ -131,7 +131,7 @@ Om het [!DNL Quick Checkout] voor Adobe Commerce-extensie:
 Controleren of de koper een [!DNL Bolt] account:
 
 1. Van bereik wisselen naar **Hoofdwebsite**.
-1. Klik op de knop **Callback-URL configureren** knop. Dit maakt [!DNL Bolt] om te bepalen of de koper een account heeft. Als zij, OTP pop-up verschijnen.
+1. Klik op de knop **Callback-URL configureren** knop. Dit schakelt [!DNL Bolt] om te bepalen of de koper een account heeft. Als zij, OTP pop-up verschijnen.
 
    >[!CAUTION]
    >
@@ -149,7 +149,7 @@ Zie de [Bereik van site, winkel en weergave](https://experienceleague.adobe.com/
    >
    > Als u deze optie uitschakelt, is dit van invloed op de rapportage, omdat Adobe Commerce geen gegevens over het bijhouden van betalingen mag delen met Bolt.
 
-1. Selecteer **Volgende werkgebied na aanmelding** optie om de navigatiestroom te wijzigen nadat de klant zich heeft aangemeld. Standaard is deze ingesteld op **Betalingen** pagina.
+1. Selecteer de **Volgende werkgebied na aanmelding** optie om de navigatiestroom te wijzigen nadat de klant zich heeft aangemeld. Standaard is deze ingesteld op **Betalingen** pagina.
 1. Definiëren als [!DNL Quick Checkout] stelt de **automatische aanmelding** tijdens het afrekenen. Standaard is het ingeschakeld om zich automatisch aan te melden bij de [!DNL Bolt] netwerk.
 
    >[!NOTE]

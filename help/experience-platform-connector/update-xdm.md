@@ -6,14 +6,14 @@ role: Admin, Developer
 feature: Personalization, Integration
 source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '346'
 ht-degree: 0%
 
 ---
 
 # Veldgroepen toevoegen aan XDM-schema
 
-Een van de [onboarding stappen](overview.md#onboarding-steps) om de verbindingslijn van het Experience Platform te gebruiken moet tot de werkruimte van de gegevensstroom toegang hebben en [een gegevensstroom maken](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) dat specifiek is voor Adobe Commerce. Wanneer u die gegevensstroom creeert, moet u ook een schema selecteren XDM dat de gegevens vertegenwoordigt u van plan bent in te voeren. Dit onderwerp voorziet u van de gebiedsgroepen uw schema XDM moet omvatten om de gegevens met succes te verzamelen die door de Adobe Commerce storefront worden verstrekt [gebeurtenissen](events.md).
+Een van de [onboarding stappen](overview.md#onboarding-steps) om de verbindingslijn van het Experience Platform te gebruiken moet tot de werkruimte van de gegevensstroom toegang hebben en [een gegevensstroom maken](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) specifiek voor Adobe Commerce. Wanneer u die gegevensstroom creeert, moet u ook een schema selecteren XDM dat de gegevens vertegenwoordigt u van plan bent in te voeren. Dit onderwerp voorziet u van de gebiedsgroepen uw schema XDM moet omvatten om de gegevens met succes te verzamelen die door de opslag van Adobe Commerce worden verstrekt [gebeurtenissen](events.md).
 
 1. Als u nog geen XDM-schema hebt, [maken](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#create) 1. Anders, [bewerken](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#edit) uw bestaande XDM-schema in de gebruikersinterface van Adobe Experience Platform.
 
@@ -30,7 +30,7 @@ Een van de [onboarding stappen](overview.md#onboarding-steps) om de verbindingsl
 
    >[!NOTE]
    >
-   > Stel geen voor handel specifieke veldgroepen in als `Primary identity`. Hierbij wordt het veld naar wens geïdentificeerd en het Experience Platform verwacht dat veld in elke gebeurtenis. Als dat veld ontbreekt, mislukt het invoeren van gegevens.
+   > Stel geen specifieke handelsgroepen in als `Primary identity`. Hierbij wordt het veld naar wens geïdentificeerd en het Experience Platform verwacht dat veld in elke gebeurtenis. Als dat veld ontbreekt, mislukt het invoeren van gegevens.
 
    Uw XDM-schema bevat nu Handelsspecifieke veldgroepen, zodat de gegevens die bij de Commerce-winkel worden verzameld [gebeurtenissen](events.md) wordt vertegenwoordigd in XDM.
 

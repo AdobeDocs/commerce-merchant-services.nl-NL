@@ -1,5 +1,5 @@
 ---
-title: '''[!DNL Store Fulfillment by Walmart Commerce Technologies] Opmerkingen bij de release'
+title: '[!DNL Store Fulfillment by Walmart Commerce Technologies] Aanvullende informatie'
 description: "Controleer de opmerkingen bij de release voor informatie over alle [!DNL Store Fulfillment by Walmart Commerce Technologies] releases."
 role: Admin, User, Leader
 feature: Shipping/Delivery, Release Notes
@@ -7,11 +7,11 @@ exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
 source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '194'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
-# Opmerkingen bij de release
+# Aanvullende informatie
 
 In deze releaseopmerkingen wordt de eerste release van [!DNL Store Fulfillment Services by Walmart Commerce Technologies] en omvatten:
 
@@ -36,7 +36,7 @@ In deze releaseopmerkingen wordt de eerste release van [!DNL Store Fulfillment S
 
 Deze release bevat de volgende update:
 
-![Nieuw](../assets/fix.svg)<!-- WMTP-795 --> De mogelijkheid om de Opslagoplossing voor een specifieke site uit te schakelen, is toegevoegd door het standaardbereik voor de instelling Systeemconfiguratie te wijzigen van de website in global.
+![Nieuw](../assets/fix.svg)<!-- WMTP-795 --> De mogelijkheid toegevoegd om de oplossing Opslaglimiet voor een specifieke site uit te schakelen door het standaardbereik voor de instelling Systeemconfiguratie te wijzigen van de website in global.
 
 ## v1.2.0
 
@@ -55,7 +55,7 @@ Deze release bevat de volgende update:
 
 [!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
 
-Stabiliteit: Algemene beschikbaarheid
+Stabiliteit: algemene beschikbaarheid
 
 ![Nieuw](../assets/fix.svg)<!-- WMTP-731 --> Vereenvoudigd [Configuratie voor inchecken van ervaringen](check-in-experience-setup.md) voor de app Winkelassistentie door standaardselecties voor auto&#39;s en modellen toe te voegen. In de vorige versie moesten handelaren de selecties van het merk en het model van de auto handmatig configureren.
 
@@ -65,7 +65,7 @@ Stabiliteit: Algemene beschikbaarheid
 
 [!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
 
-Stabiliteit: Algemene beschikbaarheid
+Stabiliteit: algemene beschikbaarheid
 
 ## App Winkelassistentie
 

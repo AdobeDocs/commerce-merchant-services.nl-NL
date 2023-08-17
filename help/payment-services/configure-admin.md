@@ -8,7 +8,7 @@ feature: Payments, Checkout, Configuration
 source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
 workflow-type: tm+mt
 source-wordcount: '954'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -16,19 +16,19 @@ ht-degree: 0%
 
 U kunt [!DNL Payment Services] aan uw behoeften met nuttige configuratieopties in Admin.
 
-Wanneer u [!DNL Payment Services] for [!DNL Adobe Commerce] en [!DNL Magento Open Source] in Admin, zijn die configuraties van toepassing slechts op het milieu dat in wordt geplaatst _[!UICONTROL Method]_veld_[!UICONTROL General Configuration]_. Om het even welke veranderingen u in de configuratiegebieden aanbrengt zijn onafhankelijk van het schakelen van _[!UICONTROL Method]_selectie—als u van methode verandert, worden de selecties niet opnieuw ingesteld.
+Wanneer u [!DNL Payment Services] for [!DNL Adobe Commerce] en [!DNL Magento Open Source] in Admin, zijn die configuraties van toepassing slechts op het milieu dat in wordt geplaatst _[!UICONTROL Method]_veld_[!UICONTROL General Configuration]_. Om het even welke veranderingen u in de configuratiegebieden aanbrengt zijn onafhankelijk van omschakeling _[!UICONTROL Method]_selectie—als u van methode wisselt, worden de selecties niet opnieuw ingesteld.
 
 ## Algemene configuratie
 
 U kunt [!DNL Payment Services] voor uw winkel en schakel het testen van sandboxen of live betalingen in in de _[!UICONTROL General Configuration]_sectie.
 
-1. Op de _Beheer_ zijbalk, ga naar **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
+1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. Vouw in het linkerdeelvenster uit **[!UICONTROL Sales]** en kiest u **[!UICONTROL Payment Methods]**.
 
    ![Methoden, weergave](assets/methods-view.png)
 
-1. Breid uit _[!UICONTROL Recommended Solutions]_sectie.
-1. In de _[!UICONTROL [!DNL Payment Services]]_in, vouwt u de_[!UICONTROL General Configuration]_ sectie.
+1. Vouw de sectie _[!UICONTROL Recommended Solutions]_uit.
+1. In de _[!UICONTROL [!DNL Payment Services]]_sectie, breid de_[!UICONTROL General Configuration]_ sectie.
 1. Voor **Inschakelen**, stelt u deze in op `Yes` om [!DNL Payment Services] voor uw winkel.
 1. Voor **Methode**, stelt u deze in op `Sandbox` als u nog test [!DNL Payment Services] voor uw winkel of `Production` als u bereid bent om levende betalingen toe te laten.
 
@@ -56,16 +56,16 @@ Zie [Betalingsopties](payments-options.md#paypal-smart-buttons) voor meer inform
 
 ### Creditcardvelden configureren
 
-1. Op de _Beheer_ zijbalk, ga naar **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
+1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. Vouw in het linkerdeelvenster uit **[!UICONTROL Sales]** en kiest u **[!UICONTROL Payment Methods]**.
-1. Breid uit _[!UICONTROL Recommended Solutions]_sectie.
-1. In de _[!UICONTROL Payment Services]_in, vouwt u de_[!UICONTROL Credit Card Fields]_ sectie.
+1. Vouw de sectie _[!UICONTROL Recommended Solutions]_uit.
+1. In de _[!UICONTROL Payment Services]_sectie, breid de_[!UICONTROL Credit Card Fields]_ sectie.
 1. Voor **[!UICONTROL Title]**, voert u (indien nodig) tekst in om de naam van de betalingsmethode te wijzigen zoals deze tijdens het afrekenen wordt weergegeven.
 1. Naar [betalingsactie instellen](production.md#set-payment-services-as-payment-method), selecteert u **[!UICONTROL Authorize]** of **Autoriseren en vastleggen**.
-1. Voor **[!UICONTROL Show on checkout page]** kiest u `Yes` om creditcardvelden in te schakelen op de afhandelingspagina.
-1. Voor **[!UICONTROL Vault Enabled]** kiest u `Yes` om creditcardgegevens beschikbaar te maken voor afhandeling.
-1. Voor **[!UICONTROL Vault Enabled in Admin]** kiest u `Yes` om de handelaar in staat te stellen orders voor klanten te maken met behulp van hun gefactureerde creditcard.
-1. Voor **[!UICONTROL Debug Mode]** kiest u `Yes` om de foutopsporingsmodus in te schakelen (of `No` om deze uit te schakelen).
+1. Voor **[!UICONTROL Show on checkout page]**, kiest u `Yes` om creditcardvelden in te schakelen op de afhandelingspagina.
+1. Voor **[!UICONTROL Vault Enabled]**, kiest u `Yes` om creditcardgegevens beschikbaar te maken voor afhandeling.
+1. Voor **[!UICONTROL Vault Enabled in Admin]**, kiest u `Yes` om de handelaar in staat te stellen orders voor klanten te maken met behulp van hun gefactureerde creditcard.
+1. Voor **[!UICONTROL Debug Mode]**, kiest u `Yes` om de foutopsporingsmodus (of `No` om deze uit te schakelen).
 1. Inschakelen **[!UICONTROL 3DS Secure authentication]** (`Off` standaard) kiezen `Always` of `When required`.
 1. Klikken **[!UICONTROL Save Config]** om uw wijzigingen op te slaan.
 1. Navigeren naar **[!UICONTROL System]** > **[!UICONTROL Cache Management]** en klik vervolgens op **[!UICONTROL Flush Cache]** om alle ongeldige caches te vernieuwen.
@@ -76,7 +76,7 @@ Zie [Betalingsopties](payments-options.md#paypal-smart-buttons) voor meer inform
 |---|---|---|
 | [!UICONTROL Title] | winkelweergave | Voeg de tekst die tijdens het afrekenen wordt weergegeven als titel voor deze betalingsoptie toe aan de weergave Betalingsmethode. Opties: [!UICONTROL text field] |
 | [!UICONTROL Payment Action] | website | De [betalingsactie](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html) voor de opgegeven betalingsmethode. Opties: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
-| [!UICONTROL Show on checkout page] | website | Schakel creditcardvelden op de afhandelingspagina in of uit. Opties: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show on checkout page] | website | Schakel creditcardvelden op de afrekenpagina in of uit. Opties: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Vault enabled] | winkelweergave | In- of uitschakelen [creditcard vauleren](vaulting.md). Opties: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Vault enabled in Admin] | winkelweergave | Mogelijkheid in- of uitschakelen voor [handelaar om orden voor klanten in Admin te voltooien](vaulting.md) met behulp van een gefactureerde betalingsmethode. Opties: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL 3DS Secure authentication] | website | In- of uitschakelen [Beveiligde 3DS-verificatie](security.md#3ds). Opties: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
@@ -92,21 +92,21 @@ Zie [Betalingsopties](payments-options.md#paypal-smart-buttons) voor meer inform
 
 U kunt de betaalopties voor slimme PayPal-knoppen inschakelen en configureren in de beheerfunctie:
 
-1. Op de _Beheer_ zijbalk, ga naar **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
+1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. Vouw in het linkerdeelvenster uit **[!UICONTROL Sales]** en kiest u **[!UICONTROL Payment Methods]**.
-1. Breid uit _[!UICONTROL Recommended Solutions]_sectie.
-1. In de _[!UICONTROL Payment Services]_in, vouwt u de_[!UICONTROL PayPal Smart Buttons]_ sectie.
+1. Vouw de sectie _[!UICONTROL Recommended Solutions]_uit.
+1. In de _[!UICONTROL Payment Services]_sectie, breid de_[!UICONTROL PayPal Smart Buttons]_ sectie.
 1. Als u de naam van de betalingsmethode wilt wijzigen, zoals wordt weergegeven tijdens het afrekenen, bewerkt u de _[!UICONTROL Title]_veld.
 1. Naar [betalingsactie instellen](production.md#set-payment-services-as-payment-method), selecteert u **[!UICONTROL Authorize]** of **[!UICONTROL Authorize and Capture]**.
 1. Om het [Later betalen](payments-options.md#pay-later-button), selecteert u `Yes`/`No` for **[!UICONTROL Display Pay Later Message]**.
-1. Selecteer `Yes` voor de **[!UICONTROL Show buttons on checkout page]**.
-1. Selecteer `Yes` for **[!UICONTROL Show buttons in mini cart preview]**.
+1. Als u slimme PayPal-knoppen wilt weergeven op de uitcheckpagina, selecteert u `Yes` voor de **[!UICONTROL Show buttons on checkout page]**.
+1. Als u slimme PayPal-knoppen wilt weergeven in de voorvertoning van de miniwinkelwagentje, selecteert u `Yes` for **[!UICONTROL Show buttons in mini cart preview]**.
 1. Als u Venmo wilt inschakelen als betalingsoptie, selecteert u `Yes` for **[!UICONTROL Venmo Enabled]**.
-1. Selecteer `Yes` for **[!UICONTROL Apple Pay Enabled]**.
+1. Als je Apple Pay als betalingsoptie wilt inschakelen, selecteer je `Yes` for **[!UICONTROL Apple Pay Enabled]**.
 1. Selecteer PayPal Smart om PayPal-creditcards als betalingsoptie in te schakelen `Yes` for **[!UICONTROL PayPal Credit and Debit Card Enabled]**.
-1. Om het [PayPal Betalen later](payments-options.md#pay-later-button) betalingsoptie, selecteer `Yes`/`No` for **[!UICONTROL PayPal Pay Later Enabled]**.
-1. Selecteer `Yes` voor de **[!UICONTROL Debug Mode]** (`No` schakelt deze uit).
-1. Klik op **[!UICONTROL Save Config]** .
+1. Om het [PayPal PayPal Later](payments-options.md#pay-later-button) betalingsoptie, selecteer `Yes`/`No` for **[!UICONTROL PayPal Pay Later Enabled]**.
+1. Als u de foutopsporingsmodus wilt inschakelen, selecteert u `Yes` voor de **[!UICONTROL Debug Mode]** (`No` schakelt deze uit).
+1. Als u de wijzigingen wilt opslaan, klikt u op **[!UICONTROL Save Config]** .
 1. Navigeren naar **[!UICONTROL System]** > **[!UICONTROL Cache Management]** en klik vervolgens op **[!UICONTROL Flush Cache]** om alle ongeldige caches te vernieuwen.
 
 ### Configuratieopties
@@ -118,7 +118,7 @@ U kunt de betaalopties voor slimme PayPal-knoppen inschakelen en configureren in
 | [!UICONTROL Display Pay Later Message] | website | Schakel het bericht Later betalen in of uit in het winkelwagentje, de productpagina, de miniwinkelwagentje en tijdens de afrekenstroom. Opties: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show buttons on checkout page] | winkelweergave | In- of uitschakelen [!DNL PayPal Smart Buttons] op de uitcheckpagina. Opties: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show buttons on product detail page] | winkelweergave | In- of uitschakelen [!DNL PayPal Smart Buttons] op de pagina met productdetails. Opties: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Show buttons in mini-cart preview] | winkelweergave | In- of uitschakelen [!DNL PayPal Smart Buttons] in de voorvertoning van de minicart. Opties: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show buttons in mini-cart preview] | winkelweergave | In- of uitschakelen [!DNL PayPal Smart Buttons] in de voorvertoning van de mini-cart. Opties: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Venmo Enabled] | winkelweergave | Schakel de betalingsoptie van Venmo in of uit waar betalingsknoppen worden weergegeven. Opties: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Apple Pay Enabled] | winkelweergave | Schakel de betalingsoptie Apple Pay in of uit waar de betalingsknoppen worden weergegeven. Opties: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL PayPal Credit and Debit Card Enabled] | winkelweergave | Schakel de opties voor PayPal-creditering en -incasso in of uit waar de betalingsknoppen worden weergegeven. Opties: [!UICONTROL Yes] / [!UICONTROL No] |
@@ -133,7 +133,7 @@ U kunt de betaalopties voor slimme PayPal-knoppen inschakelen en configureren in
 | [!UICONTROL Color] | Winkelweergave | Definieer de kleur van de slimme PayPal-knoppen. Opties: [!UICONTROL Blue] / [!UICONTROL Gold] / [!UICONTROL Silver] / [!UICONTROL White] / [!UICONTROL Black] |
 | [!UICONTROL Shape] | Winkelweergave | Vorm van de PayPal Smart-knoppen definiëren. Opties: [!UICONTROL Rectangular] / [!UICONTROL Pill] |
 | [!UICONTROL Use Default Height] | Winkelweergave | Definieert of slimme PayPal-knoppen een standaardhoogte gebruiken. Opties: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Height] | Winkelweergave | Definieer de hoogte van de slimme PayPal-knoppen. Standaardwaarde: none |
+| [!UICONTROL Height] | Winkelweergave | Bepaal de hoogte van de slimme Knopen van PayPal. Standaardwaarde: geen |
 | [!UICONTROL Label] | Winkelweergave | Definieer het label dat wordt weergegeven in de slimme PayPal-knoppen. Opties: [!UICONTROL PayPal] / [!UICONTROL Checkout] / [!UICONTROL Buynow] / [!UICONTROL Pay] / [!UICONTROL Installment] |
 | [!UICONTROL Tagline] | Winkelweergave | Hiermee schakelt u de taglijn in. Opties: [!UICONTROL Yes] / [!UICONTROL No] |
 

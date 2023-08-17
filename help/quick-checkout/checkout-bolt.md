@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Gastgebruikers
 
-De ervaring bij uitchecken door gasten verschilt van de gebruikerservaring bij Adobe. Wanneer een winkelier een e-mailadres invoert bij het afrekenen, [!DNL Quick Checkout] valideert het en vindt een bestaand [!DNL Bolt] account.
+De ervaring bij uitchecken door gasten verschilt van de gebruikerservaring van de Adobe. Wanneer een winkelier een e-mailadres invoert bij het afrekenen, [!DNL Quick Checkout] valideert het en vindt een bestaand [!DNL Bolt] account.
 
 >[!WARNING]
 >

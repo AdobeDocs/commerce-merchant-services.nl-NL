@@ -1,6 +1,6 @@
 ---
 title: "Typen synoniemen"
-description: "Eenweg en tweeweg [!DNL Live Search] synoniemen breiden de definitie van trefwoorden uit."
+description: "Eenrichtings- en tweerichtingsverkeer [!DNL Live Search] synoniemen breiden de definitie van trefwoorden uit."
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
 source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
 workflow-type: tm+mt
@@ -29,7 +29,7 @@ Een eenrichtingssynoniem is een subset van een trefwoord, maar heeft een specifi
 
 ## Aanbevolen procedures
 
-Houd rekening met de volgende aanbevolen procedures om optimaal te profiteren van [!DNL Live Search] synoniemen.
+Houd rekening met de volgende aanbevolen procedures om optimaal van [!DNL Live Search] synoniemen.
 
 ### &quot;Stop woorden&quot; vermijden
 

@@ -16,7 +16,7 @@ ht-degree: 0%
 
 App-gebruikers voor winkelassistentie worden beheerd in Adobe Commerce. Deze gebruikers communiceren echter niet rechtstreeks met Adobe Commerce. Het gebruikersbeheer is geconfigureerd in Adobe Commerce om veilige verbindingen tussen Adobe Commerce en de app mogelijk te maken.
 
-Het gebruikersmodel van de App van de Afhandeling van de Opslag wordt gescheiden van andere gebruikersmodellen van Adobe Commerce. De toepassing behoudt zijn eigen machtigingsmodel via gebruikersrollen en gebruikers die aan alle of specifieke locaties kunnen worden toegewezen. De volgende machtigingen worden ondersteund: De orde van het schoppen, Verzendvolgorde, en de vermindering van het Aantal van het Punt (en annulering).
+Het gebruikersmodel van de App van de Afhandeling van de Opslag wordt gescheiden van andere gebruikersmodellen van Adobe Commerce. De toepassing behoudt zijn eigen machtigingsmodel via gebruikersrollen en gebruikers die aan alle of specifieke locaties kunnen worden toegewezen. De volgende machtigingen worden ondersteund: Volgorde selecteren, Volgorde verzenden en Kwaliteitsreductie item (en annuleren).
 
 >[!TIP]
 >

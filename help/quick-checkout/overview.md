@@ -18,7 +18,7 @@ Deze handleiding biedt een overzicht van de gebruikelijke afrekenervaring voor A
 
 De [!DNL Quick Checkout] voor Adobe Commerce extension is gericht op verbetering van deze uitcheckervaring. Zie de [onboarding](../quick-checkout/onboarding.md) onderwerp voor meer informatie over hoe te om te vormen [!DNL Quick Checkout] voor Adobe Commerce.
 
-Controleer de [afhandelingspagina](../quick-checkout/checkout-page.md) onderwerp voor meer informatie over hoe te om een orde met te verwerken [!DNL Quick Checkout] voor Adobe Commerce-extensie.
+Controleer de [uitcheckpagina](../quick-checkout/checkout-page.md) onderwerp voor meer informatie over hoe te om een orde met te verwerken [!DNL Quick Checkout] voor Adobe Commerce-extensie.
 
 ## Voor wie is deze gids?
 
@@ -30,7 +30,7 @@ Deze gids helpt klanten in deze rollen begrijpen [!DNL Quick Checkout] de reis, 
 
 ### Operationele en ontwikkelingsteams
 
-Deze gids helpt deze teams om de technische stappen te leren die worden vereist om hun te vormen [!DNL Quick Checkout] voor Adobe Commerce-extensie om het proces eenvoudiger, sneller en betaalbaarder te maken.
+Deze gids helpt deze teams de technische stappen leren die worden vereist om hun te vormen [!DNL Quick Checkout] voor Adobe Commerce-extensie om het proces eenvoudiger, sneller en betaalbaarder te maken.
 
 Adobe Commerce [uitchecken](https://glossary.magento.com/checkout) bestaat uit twee stappen buiten de box:
 

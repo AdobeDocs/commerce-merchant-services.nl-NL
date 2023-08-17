@@ -22,7 +22,7 @@ Zie de [onboarding](../quick-checkout/onboarding.md) voor meer informatie.
 
 | **Probleem** | **Restricties** |
 |----------------|-----------------|
-| Alleen VS | Deze functie is alleen beschikbaar voor klanten in de VS |
+| Alleen VS | Deze functie is alleen beschikbaar voor Amerikaanse klanten |
 | Alleen USD | USD is de enige compatibele valuta |
 | [!DNL Amazon Pay] | [!DNL Quick Checkout] is niet compatibel met [!DNL Amazon Pay] |
 | PWA | Alleen Luma storefront wordt ondersteund |
