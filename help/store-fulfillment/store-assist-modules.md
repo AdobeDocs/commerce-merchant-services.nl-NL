@@ -5,7 +5,7 @@ role: Leader, Admin, User
 level: Intermediate
 feature: Shipping/Delivery, Tools and External Services, Customer Service
 exl-id: a8414f19-5489-41e9-84d6-39d2e61c2b08
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
 workflow-type: tm+mt
 source-wordcount: '806'
 ht-degree: 0%
@@ -18,7 +18,7 @@ De app Store Assist biedt Store Associates vier modules voor het beheer van het 
 
 - **[Selecteren](#pick-module)**—U krijgt volledige zichtbaarheid in alle geordende items en de gereedschappen om ervoor te zorgen dat de juiste items en juiste hoeveelheden worden gekozen. Winkelpartners kunnen een of meerdere bestellingen tegelijk selecteren voor meer efficiëntie.
 
-- **[Werkgebied](#stage-module)**—Voer een locatie in waar de bestellingen worden geplaatst terwijl klanten naar de winkel gaan, zodat Store Associates ze gemakkelijk kan vinden voor aflevering van bestellingen.
+- **[Werkgebied](#stage-module)**—Voer de locatie in waar de bestellingen worden geplaatst terwijl klanten naar de winkel gaan, zodat Store Associates bestellingen sneller kan vinden en afleveren.
 
 - **[Handje uit](#hand-off-module)**—Krijg real-time berichten nadat klanten bij de opslag aankomen om hun wachttijd te minimaliseren en bestellingen naadloos af te handelen.
 

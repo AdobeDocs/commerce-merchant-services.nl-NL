@@ -5,10 +5,10 @@ role: Leader, Admin, Developer
 level: Intermediate
 feature: Shipping/Delivery, Install
 exl-id: f9e05049-5904-4f6c-b45d-9f81fbc76b69
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 2%
+source-wordcount: '315'
+ht-degree: 0%
 
 ---
 
@@ -23,19 +23,14 @@ De [!DNL Store Fulfillment] Adobe Commerce-klanten kunnen op de volgende platfor
 - Adobe Commerce over wolkeninfrastructuur (ECE)
 - Adobe Commerce in bedrijven (EE)
 
-De oplossing van de Behandeling van de Opslag is compatibel met de softwareversies die in *Softwarecompatibiliteit* tabel.
+Voordat u een upgrade uitvoert of installeert, controleert u de opmerkingen bij de release en de Adobe Commerce-systeemvereisten om de meest recente informatie te krijgen over versiecompatibiliteit, updates of wijzigingen die van invloed kunnen zijn op de installatie- of upgradevereisten.
 
-**Softwarecompatibiliteit**
+- [Opmerkingen bij de release Afhandeling opslaan](release-notes.md)
 
-| **Software** | **Minimumversie** | **Maximale versie** |
-|----------------|---------------------|---------------------|
-| Adobe Commerce | 2.4.0 | 2.4.5 |
-| Composer | 1.x | 2.x |
-| MariaDB | 10.2 | 10.4 |
-| MySQL | 5.7 | 8.0 |
-| PHP | 7.4 | 8.1 |
+- [Opmerkingen bij de release van Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html) in de *Adobe Commerce Release-gegevens*.
 
-Raadpleeg de Adobe Commerce voor gedetailleerde vereisten [Systeemvereisten](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) in de *Adobe Commerce-installatiehandleiding*.
+- [Adobe Commerce-systeemvereisten](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) in de *Adobe Commerce-installatiehandleiding*.
+
 
 ## Toepassingsvereisten voor Winkelassistentie
 

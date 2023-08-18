@@ -5,9 +5,9 @@ role: Admin, Developer
 level: Intermediate
 feature: Shipping/Delivery, Install
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
 workflow-type: tm+mt
-source-wordcount: '660'
+source-wordcount: '715'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,13 @@ ht-degree: 0%
 
 Voltooi de eerste installatie van de [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] extensie in een niet-productieomgeving met een beheer van de wachtrij en caching geconfigureerd om uitzonderingsverwerking toe te staan. Zorg ervoor dat uw ontwikkelomgeving ontwikkeltools bevat voor de beste werkwijzen voor het werken en onderhouden van uw Adobe Commerce-instantie.
 
+>[!TIP]
+>
+>Voer een upgrade uit van de extensie Store Fulfillment voor Adobe Commerce op de locatie door het volgende te doen: [upgradeinstructies](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html) in de _Adobe Commerce Upgrade Guide_. Voor Adobe Commerce over cloud-infrastructuur raadpleegt u [Een extensie upgraden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/extensions.html#upgrade-an-extension) in de *Handleiding voor handel in Cloud-infrastructuur*.
+
 ## Vereisten
 
-Controleer de [vereisten](solution-requirements.md) voor de Opslagoplossing en verzamel de vereiste informatie voordat u de [!DNL Store Fulfillment] voor Adobe Commerce.
+Controleer de [vereisten](solution-requirements.md) voor de Opslagoplossing van de Afhandeling van de Opslag en verzamel vereiste informatie alvorens u installeert of bevordert [!DNL Store Fulfillment] voor Adobe Commerce.
 
 Als u een pre-versie of bètaversie van de Store Fulfillment for Adobe Commerce-extensie hebt geïnstalleerd, gebruikt u de volgende opdracht om deze te verwijderen voordat u de huidige versie installeert.
 
@@ -196,4 +200,5 @@ De `-f` is vereist als u een leeg thema gebruikt.
 >[!NOTE]
 >
 >Zie de klasse [Statische inhoud implementeert best practices in Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/static-content-deployment.html) artikel in het Adobe Commerce Help Center.
+
 

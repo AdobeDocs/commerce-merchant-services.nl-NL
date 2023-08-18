@@ -5,9 +5,9 @@ role: Admin
 level: Intermediate
 feature: Shipping/Delivery, Communications, Configuration
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
 workflow-type: tm+mt
-source-wordcount: '1202'
+source-wordcount: '1233'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Configureer de e-mailsjablonen voor verkoop van de beheerder: **[!UICONTROL Stor
 </thead>
 <tbody><tr>
 <td><strong>Asynchroon verzenden</strong></td>
-<td>Schakel deze functie uit. Asynchrone verzending van e-mail wordt niet ondersteund. Voor de snelste communicatie en reactietijd voor Winkelophaalservice stuurt u direct e-mails in plaats van ze in een batchbericht op te nemen. </td>
+<td>Hiermee bepaalt u of e-mails over verkopen asynchroon worden verzonden. Opties: <br/>**" Uitschakelen"* - (Standaard) Verkoop-e-mails worden verzonden wanneer deze door een gebeurtenis worden geactiveerd. Gebruik de standaardinstelling voor de snelste communicatie en reactietijd voor Ophalen. <br/>**'Enable`** - Als u deze optie inschakelt, worden processen die het uitchecken van e-mailmeldingen afhandelen en de verwerking ervan naar de achtergrond verplaatst en worden deze op vooraf bepaalde, regelmatige intervallen verzonden.</td>
 <td>Winkelweergave</td>
 <td>Nee</td>
 </tr>
