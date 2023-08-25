@@ -4,9 +4,9 @@ description: Leer welke gegevens elke gebeurtenis vastlegt.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
+source-git-commit: 0be39c5d46289a12bc2cfa704e942dc594fbded2
 workflow-type: tm+mt
-source-wordcount: '4779'
+source-wordcount: '6126'
 ht-degree: 0%
 
 ---
@@ -44,10 +44,17 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `priceTotal` | De totale prijs voor het productlijnitem |
 | `quantity` | Het aantal aan het winkelwagentje toegevoegde producteenheden |
 | `discountAmount` | Geeft de toegepaste korting aan |
-| `currencyCode` | De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valuta voor het product |
+| `currencyCode` | De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) gebruikte valutacode, zoals `USD` of `EUR` |
 | `productImageUrl` | URL van hoofdafbeelding van het product |
-| `selectedOptions` | Veld voor een configureerbaar product. `attribute` identificeert een attribuut van het configureerbare product, zoals `size` of `color` en `value` identificeert de waarde van het kenmerk, zoals `small` of `black`. |
+| `selectedOptions` | Veld voor een configureerbaar product. |
+| `attribute` | Identificeert een attribuut van het configureerbare product, zoals `size` of `color` |
+| `value` | Hiermee wordt de waarde van het kenmerk geïdentificeerd, zoals `small` of `black`. |
 | `cartID` | De unieke id die het winkelwagentje van de klant identificeert |
+| `commerceScope` | Hiermee geeft u aan waar een gebeurtenis heeft plaatsgevonden (weergave, winkel, website, enzovoort). |
+| `environmentID` | De milieu-id. Een alfanumerieke id van 32 cijfers, gescheiden door afbreekstreepjes. |
+| `storeCode` | De unieke opslagcode. U kunt veel winkels per website hebben. |
+| `storeViewCode` | De unieke code van de archiefmening. U kunt per winkel veel weergaven van uw winkel bekijken. |
+| `websiteCode` | De unieke websitecode. U kunt veel websites in een omgeving hebben. |
 
 ### openCart
 
@@ -68,10 +75,17 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `priceTotal` | De totale prijs voor het productlijnitem |
 | `quantity` | Het aantal aan het winkelwagentje toegevoegde producteenheden |
 | `discountAmount` | Geeft de toegepaste korting aan |
-| `currencyCode` | De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valuta voor het product |
+| `currencyCode` | De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) gebruikte valutacode, zoals `USD` of `EUR` |
 | `productImageUrl` | URL van hoofdafbeelding van het product |
-| `selectedOptions` | Veld voor een configureerbaar product. `attribute` identificeert een attribuut van het configureerbare product, zoals `size` of `color` en `value` identificeert de waarde van het kenmerk, zoals `small` of `black`. |
+| `selectedOptions` | Veld voor een configureerbaar product. |
+| `attribute` | Identificeert een attribuut van het configureerbare product, zoals `size` of `color` |
+| `value` | Hiermee wordt de waarde van het kenmerk geïdentificeerd, zoals `small` of `black`. |
 | `cartID` | De unieke id die het winkelwagentje van de klant identificeert |
+| `commerceScope` | Hiermee geeft u aan waar een gebeurtenis heeft plaatsgevonden (weergave, winkel, website, enzovoort). |
+| `environmentID` | De milieu-id. Een alfanumerieke id van 32 cijfers, gescheiden door afbreekstreepjes. |
+| `storeCode` | De unieke opslagcode. U kunt veel winkels per website hebben. |
+| `storeViewCode` | De unieke code van de archiefmening. U kunt per winkel veel weergaven van uw winkel bekijken. |
+| `websiteCode` | De unieke websitecode. U kunt veel websites in een omgeving hebben. |
 
 ### removeFromCart
 
@@ -92,10 +106,17 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `priceTotal` | De totale prijs voor het productlijnitem |
 | `quantity` | Het aantal uit de kar verwijderde producteenheden |
 | `discountAmount` | Geeft de toegepaste korting aan |
-| `currencyCode` | De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valuta voor het product |
+| `currencyCode` | De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) gebruikte valutacode, zoals `USD` of `EUR` |
 | `productImageUrl` | URL van hoofdafbeelding van het product |
-| `selectedOptions` | Veld voor een configureerbaar product. `attribute` identificeert een attribuut van het configureerbare product, zoals `size` of `color` en `value` identificeert de waarde van het kenmerk, zoals `small` of `black`. |
+| `selectedOptions` | Veld voor een configureerbaar product. |
+| `attribute` | Identificeert een attribuut van het configureerbare product, zoals `size` of `color` |
+| `value` | Hiermee wordt de waarde van het kenmerk geïdentificeerd, zoals `small` of `black`. |
 | `cartID` | De unieke id die het winkelwagentje van de klant identificeert |
+| `commerceScope` | Hiermee geeft u aan waar een gebeurtenis heeft plaatsgevonden (weergave, winkel, website, enzovoort). |
+| `environmentID` | De milieu-id. Een alfanumerieke id van 32 cijfers, gescheiden door afbreekstreepjes. |
+| `storeCode` | De unieke opslagcode. U kunt veel winkels per website hebben. |
+| `storeViewCode` | De unieke code van de archiefmening. U kunt per winkel veel weergaven van uw winkel bekijken. |
+| `websiteCode` | De unieke websitecode. U kunt veel websites in een omgeving hebben. |
 
 ### shoppingCartView
 
@@ -116,10 +137,17 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `priceTotal` | De totale prijs voor het productlijnitem |
 | `quantity` | Het aantal eenheden van het product in de kar |
 | `discountAmount` | Geeft de toegepaste korting aan |
-| `currencyCode` | De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valuta voor het product |
+| `currencyCode` | De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) gebruikte valutacode, zoals `USD` of `EUR` |
 | `productImageUrl` | URL van hoofdafbeelding van het product |
-| `selectedOptions` | Veld voor een configureerbaar product. `attribute` identificeert een attribuut van het configureerbare product, zoals `size` of `color` en `value` identificeert de waarde van het kenmerk, zoals `small` of `black`. |
+| `selectedOptions` | Veld voor een configureerbaar product. |
+| `attribute` | Identificeert een attribuut van het configureerbare product, zoals `size` of `color` |
+| `value` | Hiermee wordt de waarde van het kenmerk geïdentificeerd, zoals `small` of `black`. |
 | `cartID` | De unieke id die het winkelwagentje van de klant identificeert |
+| `commerceScope` | Hiermee geeft u aan waar een gebeurtenis heeft plaatsgevonden (weergave, winkel, website, enzovoort). |
+| `environmentID` | De milieu-id. Een alfanumerieke id van 32 cijfers, gescheiden door afbreekstreepjes. |
+| `storeCode` | De unieke opslagcode. U kunt veel winkels per website hebben. |
+| `storeViewCode` | De unieke code van de archiefmening. U kunt per winkel veel weergaven van uw winkel bekijken. |
+| `websiteCode` | De unieke websitecode. U kunt veel websites in een omgeving hebben. |
 
 ### pageView
 
@@ -134,6 +162,11 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | Veld | Beschrijving |
 |---|---|
 | `pageViews` | Geeft aan of een pagina is geladen. A `value` van `1` Hiermee wordt aangegeven dat de pagina is geladen. |
+| `commerceScope` | Hiermee geeft u aan waar een gebeurtenis heeft plaatsgevonden (weergave, winkel, website, enzovoort). |
+| `environmentID` | De milieu-id. Een alfanumerieke id van 32 cijfers, gescheiden door afbreekstreepjes. |
+| `storeCode` | De unieke opslagcode. U kunt veel winkels per website hebben. |
+| `storeViewCode` | De unieke code van de archiefmening. U kunt per winkel veel weergaven van uw winkel bekijken. |
+| `websiteCode` | De unieke websitecode. U kunt veel websites in een omgeving hebben. |
 
 ### productPageView
 
@@ -153,9 +186,16 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `name` | De weergavenaam of leesbare naam van het product |
 | `priceTotal` | De totale prijs voor het productlijnitem |
 | `discountAmount` | Geeft de toegepaste korting aan |
-| `currencyCode` | De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valuta voor het product |
+| `currencyCode` | De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) gebruikte valutacode, zoals `USD` of `EUR` |
 | `productImageUrl` | URL van hoofdafbeelding van het product |
-| `selectedOptions` | Veld voor een configureerbaar product. `attribute` identificeert een attribuut van het configureerbare product, zoals `size` of `color` en `value` identificeert de waarde van het kenmerk, zoals `small` of `black`. |
+| `selectedOptions` | Veld voor een configureerbaar product. |
+| `attribute` | Identificeert een attribuut van het configureerbare product, zoals `size` of `color` |
+| `value` | Hiermee wordt de waarde van het kenmerk geïdentificeerd, zoals `small` of `black`. |
+| `commerceScope` | Hiermee geeft u aan waar een gebeurtenis heeft plaatsgevonden (weergave, winkel, website, enzovoort). |
+| `environmentID` | De milieu-id. Een alfanumerieke id van 32 cijfers, gescheiden door afbreekstreepjes. |
+| `storeCode` | De unieke opslagcode. U kunt veel winkels per website hebben. |
+| `storeViewCode` | De unieke code van de archiefmening. U kunt per winkel veel weergaven van uw winkel bekijken. |
+| `websiteCode` | De unieke websitecode. U kunt veel websites in een omgeving hebben. |
 
 ### startCheckout
 
@@ -176,10 +216,17 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `priceTotal` | De totale prijs voor het productlijnitem |
 | `quantity` | Het aantal eenheden van het product in de kar |
 | `discountAmount` | Geeft de toegepaste korting aan |
-| `currencyCode` | De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valuta voor het product |
+| `currencyCode` | De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) gebruikte valutacode, zoals `USD` of `EUR` |
 | `productImageUrl` | URL van hoofdafbeelding van het product |
-| `selectedOptions` | Veld voor een configureerbaar product. `attribute` identificeert een attribuut van het configureerbare product, zoals `size` of `color` en `value` identificeert de waarde van het kenmerk, zoals `small` of `black`. |
+| `selectedOptions` | Veld voor een configureerbaar product. |
+| `attribute` | Identificeert een attribuut van het configureerbare product, zoals `size` of `color` |
+| `value` | Hiermee wordt de waarde van het kenmerk geïdentificeerd, zoals `small` of `black`. |
 | `cartID` | De unieke id die het winkelwagentje van de klant identificeert |
+| `commerceScope` | Hiermee geeft u aan waar een gebeurtenis heeft plaatsgevonden (weergave, winkel, website, enzovoort). |
+| `environmentID` | De milieu-id. Een alfanumerieke id van 32 cijfers, gescheiden door afbreekstreepjes. |
+| `storeCode` | De unieke opslagcode. U kunt veel winkels per website hebben. |
+| `storeViewCode` | De unieke code van de archiefmening. U kunt per winkel veel weergaven van uw winkel bekijken. |
+| `websiteCode` | De unieke websitecode. U kunt veel websites in een omgeving hebben. |
 
 ### completeCheckout
 
@@ -198,13 +245,14 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `purchaseID` | De unieke id die door de verkoper is toegewezen voor deze aankoop of dit contract. Er is geen garantie dat de id uniek is. |
 | `orderType` | Geeft het type bestelling aan dat is geplaatst, zoals Afhandeling of Onmiddellijke aankoop |
 | `payments` | De lijst met betalingen voor deze bestelling |
-| `currencyCode` | De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) de valutacode die voor dit betalingsobject wordt gebruikt. Bijvoorbeeld: `USD` of `EUR`. |
+| `currencyCode` | De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) gebruikte valutacode, zoals `USD` of `EUR` |
 | `paymentAmount` | De waarde van de betaling |
 | `paymentType` | De betalingsmethode voor deze bestelling. De opties zijn: `cash`, `credit_card`, `debit_card`, `gift_card`, `check`, `paypal`, `wire_transfer`, `credit_card_reference`, `other` |
 | `transactionID` | De unieke transactie-id voor dit betalingsobject |
 | `shipping` | Verzendgegevens voor een of meer producten. |
 | `shippingMethod` | De door de klant gekozen verzendmethode, zoals standaardlevering, snelle levering, ophaling in winkel, enzovoort |
 | `shippingAmount` | De totale verzendkosten voor de objecten in de winkelwagen |
+| `currencyCode` | De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) gebruikte valutacode, zoals `USD` of `EUR` |
 | `promotionID` | Unieke identificatiecode van de eventuele afzetbevordering |
 | `personalEmail` | Hier geeft u het persoonlijke e-mailadres op |
 | `address` | Het technische adres, bijvoorbeeld `name@domain.com` zoals algemeen gedefinieerd in RFC2822 en volgende normen |
@@ -214,9 +262,16 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `priceTotal` | De totale prijs voor het productlijnitem |
 | `quantity` | Het aantal eenheden van het product in de kar |
 | `discountAmount` | Geeft de toegepaste korting aan |
-| `currencyCode` | De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutacode die wordt gebruikt voor de totalen van de bestelling. |
+| `currencyCode` | De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) gebruikte valutacode, zoals `USD` of `EUR` |
 | `productImageUrl` | URL van hoofdafbeelding van het product |
-| `selectedOptions` | Veld voor een configureerbaar product. `attribute` identificeert een attribuut van het configureerbare product, zoals `size` of `color` en `value` identificeert de waarde van het kenmerk, zoals `small` of `black`. |
+| `selectedOptions` | Veld voor een configureerbaar product. |
+| `attribute` | Identificeert een attribuut van het configureerbare product, zoals `size` of `color` |
+| `value` | Hiermee wordt de waarde van het kenmerk geïdentificeerd, zoals `small` of `black`. |
+| `commerceScope` | Hiermee geeft u aan waar een gebeurtenis heeft plaatsgevonden (weergave, winkel, website, enzovoort). |
+| `environmentID` | De milieu-id. Een alfanumerieke id van 32 cijfers, gescheiden door afbreekstreepjes. |
+| `storeCode` | De unieke opslagcode. U kunt veel winkels per website hebben. |
+| `storeViewCode` | De unieke code van de archiefmening. U kunt per winkel veel weergaven van uw winkel bekijken. |
+| `websiteCode` | De unieke websitecode. U kunt veel websites in een omgeving hebben. |
 
 ## Profielgebeurtenissen
 
@@ -246,6 +301,11 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `address` | Het technische adres, bijvoorbeeld `name@domain.com` zoals algemeen gedefinieerd in RFC2822 en volgende normen |
 | `userAccount` | Geeft alle gegevens over de loyaliteit, voorkeuren, aanmeldingsprocessen en andere accountvoorkeuren aan |
 | `login` | Geeft aan of een bezoeker zich heeft aangemeld |
+| `commerceScope` | Hiermee geeft u aan waar een gebeurtenis heeft plaatsgevonden (weergave, winkel, website, enzovoort). |
+| `environmentID` | De milieu-id. Een alfanumerieke id van 32 cijfers, gescheiden door afbreekstreepjes. |
+| `storeCode` | De unieke opslagcode. U kunt veel winkels per website hebben. |
+| `storeViewCode` | De unieke code van de archiefmening. U kunt per winkel veel weergaven van uw winkel bekijken. |
+| `websiteCode` | De unieke websitecode. U kunt veel websites in een omgeving hebben. |
 
 ### signOut
 
@@ -265,6 +325,11 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 |---|---|
 | `userAccount` | Geeft alle gegevens over de loyaliteit, voorkeuren, aanmeldingsprocessen en andere accountvoorkeuren aan |
 | `logout` | Geeft aan of een bezoeker zich heeft afgemeld |
+| `commerceScope` | Hiermee geeft u aan waar een gebeurtenis heeft plaatsgevonden (weergave, winkel, website, enzovoort). |
+| `environmentID` | De milieu-id. Een alfanumerieke id van 32 cijfers, gescheiden door afbreekstreepjes. |
+| `storeCode` | De unieke opslagcode. U kunt veel winkels per website hebben. |
+| `storeViewCode` | De unieke code van de archiefmening. U kunt per winkel veel weergaven van uw winkel bekijken. |
+| `websiteCode` | De unieke websitecode. U kunt veel websites in een omgeving hebben. |
 
 ### createAccount
 
@@ -290,6 +355,11 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `address` | Het technische adres, bijvoorbeeld `name@domain.com` zoals algemeen gedefinieerd in RFC2822 en volgende normen |
 | `userAccount` | Geeft alle gegevens over de loyaliteit, voorkeuren, aanmeldingsprocessen en andere accountvoorkeuren aan |
 | `createProfile` | Hiermee wordt aangegeven of een gebruiker een accountprofiel heeft gemaakt |
+| `commerceScope` | Hiermee geeft u aan waar een gebeurtenis heeft plaatsgevonden (weergave, winkel, website, enzovoort). |
+| `environmentID` | De milieu-id. Een alfanumerieke id van 32 cijfers, gescheiden door afbreekstreepjes. |
+| `storeCode` | De unieke opslagcode. U kunt veel winkels per website hebben. |
+| `storeViewCode` | De unieke code van de archiefmening. U kunt per winkel veel weergaven van uw winkel bekijken. |
+| `websiteCode` | De unieke websitecode. U kunt veel websites in een omgeving hebben. |
 
 ### editAccount
 
@@ -315,6 +385,11 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `address` | Het technische adres, bijvoorbeeld `name@domain.com` zoals algemeen gedefinieerd in RFC2822 en volgende normen |
 | `userAccount` | Geeft alle gegevens over de loyaliteit, voorkeuren, aanmeldingsprocessen en andere accountvoorkeuren aan |
 | `updateProfile` | Hiermee wordt aangegeven of een gebruiker zijn accountprofiel heeft bijgewerkt |
+| `commerceScope` | Hiermee geeft u aan waar een gebeurtenis heeft plaatsgevonden (weergave, winkel, website, enzovoort). |
+| `environmentID` | De milieu-id. Een alfanumerieke id van 32 cijfers, gescheiden door afbreekstreepjes. |
+| `storeCode` | De unieke opslagcode. U kunt veel winkels per website hebben. |
+| `storeViewCode` | De unieke code van de archiefmening. U kunt per winkel veel weergaven van uw winkel bekijken. |
+| `websiteCode` | De unieke websitecode. U kunt veel websites in een omgeving hebben. |
 
 ## Zoeken in gebeurtenissen
 
@@ -348,6 +423,11 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `attribute` (sorteren) | Een kenmerk dat wordt gebruikt voor het sorteren van items in zoekresultaten |
 | `order` | De volgorde waarin de zoekresultaten moeten worden geretourneerd |
 | `query` | De zoektermen |
+| `commerceScope` | Hiermee geeft u aan waar een gebeurtenis heeft plaatsgevonden (weergave, winkel, website, enzovoort). |
+| `environmentID` | De milieu-id. Een alfanumerieke id van 32 cijfers, gescheiden door afbreekstreepjes. |
+| `storeCode` | De unieke opslagcode. U kunt veel winkels per website hebben. |
+| `storeViewCode` | De unieke code van de archiefmening. U kunt per winkel veel weergaven van uw winkel bekijken. |
+| `websiteCode` | De unieke websitecode. U kunt veel websites in een omgeving hebben. |
 
 ### searchResponseReceived
 
@@ -373,6 +453,11 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `SKU` | Stock Keeping Unit. De unieke id voor het product. |
 | `name` | De weergavenaam of leesbare naam van het product |
 | `productImageUrl` | URL van hoofdafbeelding van het product |
+| `commerceScope` | Hiermee geeft u aan waar een gebeurtenis heeft plaatsgevonden (weergave, winkel, website, enzovoort). |
+| `environmentID` | De milieu-id. Een alfanumerieke id van 32 cijfers, gescheiden door afbreekstreepjes. |
+| `storeCode` | De unieke opslagcode. U kunt veel winkels per website hebben. |
+| `storeViewCode` | De unieke code van de archiefmening. U kunt per winkel veel weergaven van uw winkel bekijken. |
+| `websiteCode` | De unieke websitecode. U kunt veel websites in een omgeving hebben. |
 
 ## B2B-gebeurtenissen
 
@@ -396,6 +481,11 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `ID` | Unieke id van de aanvraaglijst |
 | `name` | Naam van de door de klant opgegeven aanvraaglijst |
 | `description` | Beschrijving van de door de klant gespecificeerde aanvraaglijst |
+| `commerceScope` | Hiermee geeft u aan waar een gebeurtenis heeft plaatsgevonden (weergave, winkel, website, enzovoort). |
+| `environmentID` | De milieu-id. Een alfanumerieke id van 32 cijfers, gescheiden door afbreekstreepjes. |
+| `storeCode` | De unieke opslagcode. U kunt veel winkels per website hebben. |
+| `storeViewCode` | De unieke code van de archiefmening. U kunt per winkel veel weergaven van uw winkel bekijken. |
+| `websiteCode` | De unieke websitecode. U kunt veel websites in een omgeving hebben. |
 
 ### addToRequisitionList
 
@@ -423,8 +513,15 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `quantity` | Aantal toegevoegde producteenheden |
 | `priceTotal` | De totale prijs voor het productlijnitem |
 | `discountAmount` | Geeft de toegepaste korting aan |
-| `currencyCode` | De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutacode gebruikt voor dit betalingsobject |
-| `selectedOptions` | Veld voor een configureerbaar product. `attribute` identificeert een attribuut van het configureerbare product, zoals `size` of `color` en `value` identificeert de waarde van het kenmerk, zoals `small` of `black`. |
+| `currencyCode` | De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) gebruikte valutacode, zoals `USD` of `EUR` |
+| `selectedOptions` | Veld voor een configureerbaar product. |
+| `attribute` | Identificeert een attribuut van het configureerbare product, zoals `size` of `color` |
+| `value` | Hiermee wordt de waarde van het kenmerk geïdentificeerd, zoals `small` of `black`. |
+| `commerceScope` | Hiermee geeft u aan waar een gebeurtenis heeft plaatsgevonden (weergave, winkel, website, enzovoort). |
+| `environmentID` | De milieu-id. Een alfanumerieke id van 32 cijfers, gescheiden door afbreekstreepjes. |
+| `storeCode` | De unieke opslagcode. U kunt veel winkels per website hebben. |
+| `storeViewCode` | De unieke code van de archiefmening. U kunt per winkel veel weergaven van uw winkel bekijken. |
+| `websiteCode` | De unieke websitecode. U kunt veel websites in een omgeving hebben. |
 
 ### removeFromRequisitionList
 
@@ -448,8 +545,15 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `quantity` | Aantal toegevoegde producteenheden |
 | `priceTotal` | De totale prijs voor het productlijnitem |
 | `discountAmount` | Geeft de toegepaste korting aan |
-| `currencyCode` | De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutacode gebruikt voor dit betalingsobject |
-| `selectedOptions` | Veld voor een configureerbaar product. `attribute` identificeert een attribuut van het configureerbare product, zoals `size` of `color` en `value` identificeert de waarde van het kenmerk, zoals `small` of `black`. |
+| `currencyCode` | De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) gebruikte valutacode, zoals `USD` of `EUR` |
+| `selectedOptions` | Veld voor een configureerbaar product. |
+| `attribute` | Identificeert een attribuut van het configureerbare product, zoals `size` of `color` |
+| `value` | Hiermee wordt de waarde van het kenmerk geïdentificeerd, zoals `small` of `black`. |
+| `commerceScope` | Hiermee geeft u aan waar een gebeurtenis heeft plaatsgevonden (weergave, winkel, website, enzovoort). |
+| `environmentID` | De milieu-id. Een alfanumerieke id van 32 cijfers, gescheiden door afbreekstreepjes. |
+| `storeCode` | De unieke opslagcode. U kunt veel winkels per website hebben. |
+| `storeViewCode` | De unieke code van de archiefmening. U kunt per winkel veel weergaven van uw winkel bekijken. |
+| `websiteCode` | De unieke websitecode. U kunt veel websites in een omgeving hebben. |
 
 ## Back office evenementen
 
@@ -478,7 +582,12 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `SKU` | Stock Keeping Unit. De unieke id voor het product. |
 | `quantity` | Het aantal eenheden van het product in de kar |
 | `priceTotal` | De totale prijs voor het productlijnitem |
-| `discountAmount` | Geeft de toegepaste korting aan |
+| `discountAmount` | Geeft de korting aan die op het item wordt toegepast |
+| `currencyCode` | De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) gebruikte valutacode, zoals `USD` of `EUR` |
+| `productImageUrl` | URL van hoofdafbeelding van het product |
+| `selectedOptions` | Veld voor een configureerbaar product. |
+| `attribute` | Identificeert een attribuut van het configureerbare product, zoals `size` of `color` |
+| `value` | Hiermee wordt de waarde van het kenmerk geïdentificeerd, zoals `small` of `black`. |
 | `commerceScope` | Hiermee geeft u aan waar een gebeurtenis heeft plaatsgevonden (weergave, winkel, website, enzovoort). |
 | `environmentID` | De milieu-id. Een alfanumerieke id van 32 cijfers, gescheiden door afbreekstreepjes. |
 | `storeCode` | De unieke opslagcode. U kunt veel winkels per website hebben. |
@@ -487,17 +596,19 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `order` | Bevat informatie over de bestelling |
 | `purchaseID` | De unieke id die door de verkoper is toegewezen voor deze aankoop of dit contract. Er is geen garantie dat de id uniek is |
 | `priceTotal` | De totale prijs van deze bestelling nadat alle kortingen en belastingen zijn toegepast |
-| `currencyCode` | De ISO 4217-valutacode die wordt gebruikt voor de totalen van de orders |
+| `currencyCode` | De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) gebruikte valutacode, zoals `USD` of `EUR` |
 | `purchaseOrderNumber` | Unieke identificatiecode toegekend door de koper voor deze aankoop of dit contract |
 | `payments` | De lijst met betalingen voor deze bestelling |
 | `paymentType` | De betalingsmethode voor deze bestelling. Opsommende, aangepaste waarden toegestaan. |
-| `currencyCode` | De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) valutacode gebruikt voor dit betalingsobject |
+| `currencyCode` | De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) gebruikte valutacode, zoals `USD` of `EUR` |
 | `paymentAmount` | De waarde van de betaling |
 | `taxAmount` | Het belastingbedrag dat door de koper is betaald als onderdeel van de eindbetaling |
+| `discountAmount` | Geeft het kortingsbedrag aan dat op de hele volgorde wordt toegepast |
 | `createdDate` | De tijd en de datum waarop een nieuwe orde in het handelssysteem wordt gecreeerd. Bijvoorbeeld: `2022-10-15T20:20:39+00:00` |
 | `shipping` | Verzendgegevens voor een of meer producten |
 | `shippingMethod` | De door de klant gekozen verzendmethode, zoals standaardlevering, snelle levering, ophaling in winkel, enzovoort |
 | `shippingAmount` | Het bedrag dat de klant voor de verzending moest betalen. |
+| `currencyCode` | De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) gebruikte valutacode, zoals `USD` of `EUR` |
 | `address` | Fysiek verzendadres |
 | `street1` | Informatie op straat, appartementnummer, straatnummer en straatnaam |
 | `street2` | Aanvullende gegevens op straatniveau |
@@ -524,7 +635,7 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 #### Gegevens verzameld van orderItemsShipped
 
 In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zijn verzameld.
-|Veld|Omschrijving| |—|—| |`address`|Het technische adres, bijvoorbeeld `name@domain.com` zoals algemeen gedefinieerd in RFC2822 en volgende normen| |`productListItems`|Een reeks producten in de volgorde| |`id`|De identificatiecode van het regelitem voor dit product-item. Het product zelf wordt via de `product` veld.| |`name`|De weergavenaam of leesbare naam van het product| |`SKU`|Eenheid voorraadbewaring. De unieke id voor het product.| |`quantity`|Aantal eenheden van het product in de kar| |`priceTotal`|De totale prijs voor het product-line artikel| |`discountAmount`|Geeft het toegepaste kortingsbedrag aan| |`commerceScope`|Geeft aan waar een gebeurtenis heeft plaatsgevonden (weergave, winkel, website, enzovoort).| |`environmentID`|De milieu-id. Een alfanumerieke id van 32 cijfers, gescheiden door afbreekstreepjes.| |`storeCode`|De unieke opslagcode. U kunt veel winkels per website hebben.| |`storeViewCode`|De unieke code van de archiefmening. U kunt per winkel veel weergaven van uw winkel bekijken.| |`websiteCode`|De unieke websitecode. U kunt veel websites in een omgeving hebben.| |`order`|Bevat informatie over de bestelling| |`purchaseID`|Unieke identificatiecode toegekend door de verkoper voor deze aankoop of dit contract. Er is geen garantie dat de id uniek is| |`priceTotal`|De totale prijs van deze bestelling na toepassing van alle kortingen en belastingen| |`currencyCode`|De ISO 4217-valutacode die wordt gebruikt voor de totalen van de orders| |`purchaseOrderNumber`|Unieke identificatiecode die door de koper voor deze aankoop of dit contract is toegekend| |`payments`|Lijst van betalingen voor deze bestelling| |`paymentType`|De wijze van betaling van deze bestelling. Opsommende, aangepaste waarden toegestaan.| |`currencyCode`|De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) voor dit betalingsobject gebruikte valutacode| |`paymentAmount`|De waarde van de betaling| |`lastUpdatedDate`|Het tijdstip waarop een bepaalde orderrecord voor het laatst is bijgewerkt in het handelssysteem| |`shipping`|Verzendgegevens voor een of meer producten| |`shippingMethod`|De door de klant gekozen verzendmethode, zoals standaardlevering, versnelde levering, ophaalservice, enzovoort| |`trackingNumber`|Het trackingnummer dat door de verzendende vervoerder is verstrekt voor de verzending van een bestelling| |`trackingURL`|De URL voor het volgen van de verzendstatus van een orderitem| |`shipDate`|De datum waarop een of meer artikelen van een bestelling worden verzonden| |`address`|Fysiek verzendadres| |`street1`|Informatie op straat, appartementnummer, straatnummer en straatnaam| |`street2`|Aanvullend veld voor straatinformatie| |`city`|De naam van de stad| |`state`|De naam van de staat. Dit is een veld met vrije vorm.| |`postalCode`|De postcode van de plaats van vestiging. Postcodes zijn niet voor alle landen beschikbaar. In sommige landen zal dit slechts een deel van de postcode bevatten.| |`country`|De naam van het door de overheid bestuurde gebied. andere dan `xdm:countryCode`Dit is een veld met vrije vorm dat de naam van het land in elke taal kan hebben.| |`shippingAmount`|Het bedrag dat de klant voor de verzending moest betalen.| |`billingAddress`|Factureringsadres per post | |`street1`|Informatie op straat, appartementnummer, straatnummer en straatnaam| |`street2`|Aanvullend veld voor straatinformatie| |`city`|De naam van de stad| |`state`|De naam van de staat. Dit is een veld met vrije vorm.| |`postalCode`|De postcode van de plaats van vestiging. Postcodes zijn niet voor alle landen beschikbaar. In sommige landen zal dit slechts een deel van de postcode bevatten.| |`country`|De naam van het door de overheid bestuurde gebied. andere dan `xdm:countryCode`Dit is een veld met vrije vorm dat de naam van het land in elke taal kan hebben.| |`personalEmail`|Een persoonlijk e-mailadres| |`address`|Het technische adres, bijvoorbeeld &quot;name@domain.com&quot; zoals algemeen gedefinieerd in RFC2822 en latere normen|
+|Veld|Omschrijving| |—|—| |`address`|Het technische adres, bijvoorbeeld `name@domain.com` zoals algemeen gedefinieerd in RFC2822 en volgende normen| |`productListItems`|Een reeks producten in de volgorde| |`id`|De identificatiecode van het regelitem voor dit product-item. Het product zelf wordt via de `product` veld.| |`name`|De weergavenaam of leesbare naam van het product| |`SKU`|Eenheid voorraadbewaring. De unieke id voor het product.| |`quantity`|Aantal eenheden van het product in de kar| |`priceTotal`|De totale prijs voor het product-line artikel| |`discountAmount`|Geeft het toegepaste kortingsbedrag aan| |`currencyCode`|De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) gebruikte valutacode, zoals `USD` of `EUR`| |`productImageUrl`|URL van hoofdafbeelding van het product| |`selectedOptions`|Veld voor een configureerbaar product.| |`attribute`|Identificeert een attribuut van het configureerbare product, zoals `size` of `color`| |`value`|Identificeert de waarde van het kenmerk, zoals `small` of `black`.| |`commerceScope`|Geeft aan waar een gebeurtenis heeft plaatsgevonden (weergave, winkel, website, enzovoort).| |`environmentID`|De milieu-id. Een alfanumerieke id van 32 cijfers, gescheiden door afbreekstreepjes.| |`storeCode`|De unieke opslagcode. U kunt veel winkels per website hebben.| |`storeViewCode`|De unieke code van de archiefmening. U kunt per winkel veel weergaven van uw winkel bekijken.| |`websiteCode`|De unieke websitecode. U kunt veel websites in een omgeving hebben.| |`order`|Bevat informatie over de bestelling| |`purchaseID`|Unieke identificatiecode toegekend door de verkoper voor deze aankoop of dit contract. Er is geen garantie dat de id uniek is| |`priceTotal`|De totale prijs van deze bestelling na toepassing van alle kortingen en belastingen| |`currencyCode`|De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) gebruikte valutacode, zoals `USD` of `EUR`| |`purchaseOrderNumber`|Unieke identificatiecode die door de koper voor deze aankoop of dit contract is toegekend| |`payments`|Lijst van betalingen voor deze bestelling| |`paymentType`|De wijze van betaling van deze bestelling. Opsommende, aangepaste waarden toegestaan.| |`currencyCode`|De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) gebruikte valutacode, zoals `USD` of `EUR`| |`paymentAmount`|De waarde van de betaling| |`lastUpdatedDate`|Het tijdstip waarop een bepaalde orderrecord voor het laatst is bijgewerkt in het handelssysteem| |`shipping`|Verzendgegevens voor een of meer producten| |`shippingMethod`|De door de klant gekozen verzendmethode, zoals standaardlevering, versnelde levering, ophaalservice, enzovoort| |`currencyCode`|De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) gebruikte valutacode, zoals `USD` of `EUR`| |`trackingNumber`|Het trackingnummer dat door de verzendende vervoerder is verstrekt voor de verzending van een bestelling| |`trackingURL`|De URL voor het volgen van de verzendstatus van een orderitem| |`shipDate`|De datum waarop een of meer artikelen van een bestelling worden verzonden| |`address`|Fysiek verzendadres| |`street1`|Informatie op straat, appartementnummer, straatnummer en straatnaam| |`street2`|Aanvullend veld voor straatinformatie| |`city`|De naam van de stad| |`state`|De naam van de staat. Dit is een veld met vrije vorm.| |`postalCode`|De postcode van de plaats van vestiging. Postcodes zijn niet voor alle landen beschikbaar. In sommige landen zal dit slechts een deel van de postcode bevatten.| |`country`|De naam van het door de overheid bestuurde gebied. andere dan `xdm:countryCode`Dit is een veld met vrije vorm dat de naam van het land in elke taal kan hebben.| |`shippingAmount`|Het bedrag dat de klant voor de verzending moest betalen.| |`currencyCode`|De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) gebruikte valutacode, zoals `USD` of `EUR`| |`billingAddress`|Factureringsadres per post | |`street1`|Informatie op straat, appartementnummer, straatnummer en straatnaam| |`street2`|Aanvullend veld voor straatinformatie| |`city`|De naam van de stad| |`state`|De naam van de staat. Dit is een veld met vrije vorm.| |`postalCode`|De postcode van de plaats van vestiging. Postcodes zijn niet voor alle landen beschikbaar. In sommige landen zal dit slechts een deel van de postcode bevatten.| |`country`|De naam van het door de overheid bestuurde gebied. andere dan `xdm:countryCode`Dit is een veld met vrije vorm dat de naam van het land in elke taal kan hebben.| |`personalEmail`|Een persoonlijk e-mailadres| |`address`|Het technische adres, bijvoorbeeld &quot;name@domain.com&quot; zoals algemeen gedefinieerd in RFC2822 en latere normen|
 
 ### orderCanceled
 
@@ -535,7 +646,7 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 #### Gegevens verzameld van orderCanceled
 
 In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zijn verzameld.
-|Veld|Omschrijving| |—|—| |`address`|Het technische adres, bijvoorbeeld `name@domain.com` zoals algemeen gedefinieerd in RFC2822 en volgende normen| |`productListItems`|Een reeks producten in de volgorde| |`id`|De identificatiecode van het regelitem voor dit product-item. Het product zelf wordt via de `product` veld.| |`name`|De weergavenaam of leesbare naam van het product| |`SKU`|Eenheid voorraadbewaring. De unieke id voor het product.| |`quantity`|Aantal eenheden van het product in de kar| |`priceTotal`|De totale prijs voor het product-line artikel| |`discountAmount`|Geeft het toegepaste kortingsbedrag aan| |`commerceScope`|Geeft aan waar een gebeurtenis heeft plaatsgevonden (weergave, winkel, website, enzovoort).| |`environmentID`|De milieu-id. Een alfanumerieke id van 32 cijfers, gescheiden door afbreekstreepjes.| |`storeCode`|De unieke opslagcode. U kunt veel winkels per website hebben.| |`storeViewCode`|De unieke code van de archiefmening. U kunt per winkel veel weergaven van uw winkel bekijken.| |`websiteCode`|De unieke websitecode. U kunt veel websites in een omgeving hebben.| |`order`|Bevat informatie over de bestelling| |`purchaseID`|Unieke identificatiecode toegekend door de verkoper voor deze aankoop of dit contract. Er is geen garantie dat de id uniek is| |`purchaseOrderNumber`|Unieke identificatiecode die door de koper voor deze aankoop of dit contract is toegekend| |`cancelDate`|De datum en het tijdstip waarop een winkelier een bestelling annuleert| |`lastUpdatedDate`|Het tijdstip waarop een bepaalde orderrecord voor het laatst is bijgewerkt in het handelssysteem| |`personalEmail`|Een persoonlijk e-mailadres| |`address`|Het technische adres, bijvoorbeeld &quot;name@domain.com&quot; zoals algemeen gedefinieerd in RFC2822 en latere normen|
+|Veld|Omschrijving| |—|—| |`address`|Het technische adres, bijvoorbeeld `name@domain.com` zoals algemeen gedefinieerd in RFC2822 en volgende normen| |`productListItems`|Een reeks producten in de volgorde| |`id`|De identificatiecode van het regelitem voor dit product-item. Het product zelf wordt via de `product` veld.| |`name`|De weergavenaam of leesbare naam van het product| |`SKU`|Eenheid voorraadbewaring. De unieke id voor het product.| |`quantity`|Aantal eenheden van het product in de kar| |`priceTotal`|De totale prijs voor het product-line artikel| |`discountAmount`|Geeft het toegepaste kortingsbedrag aan| |`currencyCode`|De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) gebruikte valutacode, zoals `USD` of `EUR`| |`productImageUrl`|URL van hoofdafbeelding van het product| |`selectedOptions`|Veld voor een configureerbaar product.| |`attribute`|Identificeert een attribuut van het configureerbare product, zoals `size` of `color`| |`value`|Identificeert de waarde van het kenmerk, zoals `small` of `black`.| |`commerceScope`|Geeft aan waar een gebeurtenis heeft plaatsgevonden (weergave, winkel, website, enzovoort).| |`environmentID`|De milieu-id. Een alfanumerieke id van 32 cijfers, gescheiden door afbreekstreepjes.| |`storeCode`|De unieke opslagcode. U kunt veel winkels per website hebben.| |`storeViewCode`|De unieke code van de archiefmening. U kunt per winkel veel weergaven van uw winkel bekijken.| |`websiteCode`|De unieke websitecode. U kunt veel websites in een omgeving hebben.| |`order`|Bevat informatie over de bestelling| |`purchaseID`|Unieke identificatiecode toegekend door de verkoper voor deze aankoop of dit contract. Er is geen garantie dat de id uniek is| |`purchaseOrderNumber`|Unieke identificatiecode die door de koper voor deze aankoop of dit contract is toegekend| |`cancelDate`|De datum en het tijdstip waarop een winkelier een bestelling annuleert| |`lastUpdatedDate`|Het tijdstip waarop een bepaalde orderrecord voor het laatst is bijgewerkt in het handelssysteem| |`personalEmail`|Een persoonlijk e-mailadres| |`address`|Het technische adres, bijvoorbeeld &quot;name@domain.com&quot; zoals algemeen gedefinieerd in RFC2822 en latere normen|
 
 ### creditMemoIssued
 
@@ -546,7 +657,7 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 #### Gegevens verzameld van creditMemoIssued
 
 In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zijn verzameld.
-|Veld|Omschrijving| |—|—| |`address`|Het technische adres, bijvoorbeeld `name@domain.com` zoals algemeen gedefinieerd in RFC2822 en volgende normen| |`productListItems`|Een reeks producten in de volgorde| |`id`|De identificatiecode van het regelitem voor dit product-item. Het product zelf wordt via de `product` veld.| |`name`|De weergavenaam of leesbare naam van het product| |`SKU`|Eenheid voorraadbewaring. De unieke id voor het product.| |`quantity`|Aantal eenheden van het product in de kar| |`priceTotal`|De totale prijs voor het product-line artikel| |`discountAmount`|Geeft het toegepaste kortingsbedrag aan| |`order`|Bevat informatie over de bestelling| |`purchaseID`|Unieke identificatiecode toegekend door de verkoper voor deze aankoop of dit contract. Er is geen garantie dat de id uniek is| |`purchaseOrderNumber`|Unieke identificatiecode die door de koper voor deze aankoop of dit contract is toegekend| |`lastUpdatedDate`|Het tijdstip waarop een bepaalde orderrecord voor het laatst is bijgewerkt in het handelssysteem| |`personalEmail`|Een persoonlijk e-mailadres| |`address`|Het technische adres, bijvoorbeeld &quot;name@domain.com&quot; zoals algemeen gedefinieerd in RFC2822 en latere normen|
+|Veld|Omschrijving| |—|—| |`address`|Het technische adres, bijvoorbeeld `name@domain.com` zoals algemeen gedefinieerd in RFC2822 en volgende normen| |`productListItems`|Een reeks producten in de volgorde| |`id`|De identificatiecode van het regelitem voor dit product-item. Het product zelf wordt via de `product` veld.| |`name`|De weergavenaam of leesbare naam van het product| |`SKU`|Eenheid voorraadbewaring. De unieke id voor het product.| |`quantity`|Aantal eenheden van het product in de kar| |`priceTotal`|De totale prijs voor het product-line artikel| |`discountAmount`|Geeft het toegepaste kortingsbedrag aan| |`currencyCode`|De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) gebruikte valutacode, zoals `USD` of `EUR`| |`productImageUrl`|URL van hoofdafbeelding van het product| |`selectedOptions`|Veld voor een configureerbaar product.| |`attribute`|Identificeert een attribuut van het configureerbare product, zoals `size` of `color`| |`value`|Identificeert de waarde van het kenmerk, zoals `small` of `black`.| |`order`|Bevat informatie over de bestelling| |`purchaseID`|Unieke identificatiecode toegekend door de verkoper voor deze aankoop of dit contract. Er is geen garantie dat de id uniek is| |`purchaseOrderNumber`|Unieke identificatiecode die door de koper voor deze aankoop of dit contract is toegekend| |`lastUpdatedDate`|Het tijdstip waarop een bepaalde orderrecord voor het laatst is bijgewerkt in het handelssysteem| |`priceTotal`|De totale prijs voor het product-line artikel| |`discountAmount`|Geeft het toegepaste kortingsbedrag aan| |`currencyCode`|De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) gebruikte valutacode, zoals `USD` of `EUR`| |`taxAmount`|Het belastingbedrag dat de koper in het kader van de eindbetaling heeft betaald.| |`refunds`|De lijst van restituties in het kader van deze bestelling| |`refundPaymentType`|De wijze van betaling van deze bestelling. Opsommende, aangepaste waarden toegestaan.| |`refundAmount`|De waarde van de restitutie.| |`currencyCode`|De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) gebruikte valutacode, zoals `USD` of `EUR`| |`personalEmail`|Een persoonlijk e-mailadres| |`address`|Het technische adres, bijvoorbeeld `name@domain.com` zoals algemeen gedefinieerd in RFC2822 en volgende normen|
 
 ### orderShipmentCompleted
 
@@ -557,4 +668,4 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 #### Gegevens verzameld bij orderShipmentCompleted
 
 In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zijn verzameld.
-|Veld|Omschrijving| |—|—| |`address`|Het technische adres, bijvoorbeeld `name@domain.com` zoals algemeen gedefinieerd in RFC2822 en volgende normen| |`productListItems`|Een reeks producten in de volgorde| |`id`|De identificatiecode van het regelitem voor dit product-item. Het product zelf wordt via de `product` veld.| |`name`|De weergavenaam of leesbare naam van het product| |`SKU`|Eenheid voorraadbewaring. De unieke id voor het product.| |`quantity`|Aantal eenheden van het product in de kar| |`priceTotal`|De totale prijs voor het product-line artikel| |`discountAmount`|Geeft het toegepaste kortingsbedrag aan| |`order`|Bevat informatie over de bestelling| |`purchaseID`|Unieke identificatiecode toegekend door de verkoper voor deze aankoop of dit contract. Er is geen garantie dat de id uniek is| |`priceTotal`|De totale prijs van deze bestelling na toepassing van alle kortingen en belastingen| |`currencyCode`|De ISO 4217-valutacode die wordt gebruikt voor de totalen van de orders| |`purchaseOrderNumber`|Unieke identificatiecode die door de koper voor deze aankoop of dit contract is toegekend| |`taxAmount`|Het belastingbedrag dat de koper in het kader van de eindbetaling heeft betaald.| |`createdDate`|Het tijdstip en de datum waarop een nieuwe bestelling in het handelssysteem wordt gecreëerd. Bijvoorbeeld: `2022-10-15T20:20:39+00:00`| |`payments`|Lijst van betalingen voor deze bestelling| |`paymentType`|De wijze van betaling van deze bestelling. Opsommende, aangepaste waarden toegestaan.| |`currencyCode`|De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) voor dit betalingsobject gebruikte valutacode| |`paymentAmount`|De waarde van de betaling| |`shipping`|Verzendgegevens voor een of meer producten| |`shippingMethod`|De door de klant gekozen verzendmethode, zoals standaardlevering, versnelde levering, ophaalservice, enzovoort| |`address`|Fysiek verzendadres| |`street1`|Informatie op straat, appartementnummer, straatnummer en straatnaam| |`street2`|Aanvullend veld voor straatinformatie| |`city`|De naam van de stad| |`state`|De naam van de staat. Dit is een veld met vrije vorm.| |`postalCode`|De postcode van de plaats van vestiging. Postcodes zijn niet voor alle landen beschikbaar. In sommige landen zal dit slechts een deel van de postcode bevatten.| |`country`|De naam van het door de overheid bestuurde gebied. andere dan `xdm:countryCode`Dit is een veld met vrije vorm dat de naam van het land in elke taal kan hebben.| |`shippingAmount`|Het bedrag dat de klant voor de verzending moest betalen.| |`address`|Het technische adres, bijvoorbeeld `name@domain.com` zoals algemeen gedefinieerd in RFC2822 en volgende normen| |`billingAddress`|Factureringsadres per post | |`street1`|Informatie op straat, appartementnummer, straatnummer en straatnaam| |`street2`|Aanvullend veld voor straatinformatie| |`city`|De naam van de stad| |`state`|De naam van de staat. Dit is een veld met vrije vorm.| |`postalCode`|De postcode van de plaats van vestiging. Postcodes zijn niet voor alle landen beschikbaar. In sommige landen bevatten deze gegevens slechts een deel van de postcode.| |`country`|De naam van het door de overheid bestuurde gebied. andere dan `xdm:countryCode`Dit is een veld met vrije vorm dat de naam van het land in elke taal kan hebben.| |`personalEmail`|Een persoonlijk e-mailadres| |`address`|Het technische adres, bijvoorbeeld &quot;name@domain.com&quot; zoals algemeen gedefinieerd in RFC2822 en latere normen|
+|Veld|Omschrijving| |—|—| |`address`|Het technische adres, bijvoorbeeld `name@domain.com` zoals algemeen gedefinieerd in RFC2822 en volgende normen| |`productListItems`|Een reeks producten in de volgorde| |`id`|De identificatiecode van het regelitem voor dit product-item. Het product zelf wordt via de `product` veld.| |`name`|De weergavenaam of leesbare naam van het product| |`SKU`|Eenheid voorraadbewaring. De unieke id voor het product.| |`quantity`|Aantal eenheden van het product in de kar| |`priceTotal`|De totale prijs voor het product-line artikel| |`discountAmount`|Geeft het toegepaste kortingsbedrag aan| |`currencyCode`|De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) gebruikte valutacode, zoals `USD` of `EUR`| |`productImageUrl`|URL van hoofdafbeelding van het product| |`selectedOptions`|Veld voor een configureerbaar product.| |`attribute`|Identificeert een attribuut van het configureerbare product, zoals `size` of `color`| |`value`|Identificeert de waarde van het kenmerk, zoals `small` of `black`.| |`order`|Bevat informatie over de bestelling| |`purchaseID`|Unieke identificatiecode toegekend door de verkoper voor deze aankoop of dit contract. Er is geen garantie dat de id uniek is| |`priceTotal`|De totale prijs van deze bestelling na toepassing van alle kortingen en belastingen| |`currencyCode`|De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) gebruikte valutacode, zoals `USD` of `EUR`| |`purchaseOrderNumber`|Unieke identificatiecode die door de koper voor deze aankoop of dit contract is toegekend| |`taxAmount`|Het belastingbedrag dat de koper in het kader van de eindbetaling heeft betaald.| |`createdDate`|Het tijdstip en de datum waarop een nieuwe bestelling in het handelssysteem wordt gecreëerd. Bijvoorbeeld: `2022-10-15T20:20:39+00:00`| |`payments`|Lijst van betalingen voor deze bestelling| |`paymentType`|De wijze van betaling van deze bestelling. Opsommende, aangepaste waarden toegestaan.| |`currencyCode`|De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) gebruikte valutacode, zoals `USD` of `EUR`| |`paymentAmount`|De waarde van de betaling| |`shipping`|Verzendgegevens voor een of meer producten| |`shippingMethod`|De door de klant gekozen verzendmethode, zoals standaardlevering, versnelde levering, ophaalservice, enzovoort| |`address`|Fysiek verzendadres| |`street1`|Informatie op straat, appartementnummer, straatnummer en straatnaam| |`street2`|Aanvullend veld voor straatinformatie| |`city`|De naam van de stad| |`state`|De naam van de staat. Dit is een veld met vrije vorm.| |`postalCode`|De postcode van de plaats van vestiging. Postcodes zijn niet voor alle landen beschikbaar. In sommige landen zal dit slechts een deel van de postcode bevatten.| |`country`|De naam van het door de overheid bestuurde gebied. andere dan `xdm:countryCode`Dit is een veld met vrije vorm dat de naam van het land in elke taal kan hebben.| |`shippingAmount`|Het bedrag dat de klant voor de verzending moest betalen.| |`currencyCode`|De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) gebruikte valutacode, zoals `USD` of `EUR`| |`address`|Het technische adres, bijvoorbeeld `name@domain.com` zoals algemeen gedefinieerd in RFC2822 en volgende normen| |`billingAddress`|Factureringsadres per post | |`street1`|Informatie op straat, appartementnummer, straatnummer en straatnaam| |`street2`|Aanvullend veld voor straatinformatie| |`city`|De naam van de stad| |`state`|De naam van de staat. Dit is een veld met vrije vorm.| |`postalCode`|De postcode van de plaats van vestiging. Postcodes zijn niet voor alle landen beschikbaar. In sommige landen bevatten deze gegevens slechts een deel van de postcode.| |`country`|De naam van het door de overheid bestuurde gebied. andere dan `xdm:countryCode`Dit is een veld met vrije vorm dat de naam van het land in elke taal kan hebben.| |`personalEmail`|Een persoonlijk e-mailadres| |`address`|Het technische adres, bijvoorbeeld &quot;name@domain.com&quot; zoals algemeen gedefinieerd in RFC2822 en latere normen|

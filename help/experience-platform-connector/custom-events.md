@@ -4,9 +4,9 @@ description: Leer hoe u aangepaste gebeurtenissen maakt om uw Adobe Commerce-geg
 exl-id: 5a754106-c66a-4280-9896-6d065df8a841
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
+source-git-commit: 659dd2d1b298ec2a98bb4365a46b09d7468daaad
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '267'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,11 @@ U kunt de [uitvalplatform](events.md) door uw eigen winkelgebeurtenissen te make
 
 Aangepaste gebeurtenissen worden alleen ondersteund voor de Adobe Experience Platform. Aangepaste gegevens worden niet doorgestuurd naar Adobe Commerce-dashboards en metrieke trackers.
 
-Voor alle `custom` gebeurtenis, voegt de verzamelaar een `personId` (`ecid`) naar `customContext` en omhult een `xdm` het voorwerp rond het alvorens aan de Rand door:sturen.
+Voor alle `custom` gebeurtenis, de verzamelaar:
+
+- Toevoegingen `identityMap` with `ECID` als primaire identiteit
+- Inclusief `email` in `identityMap` als secundaire identiteit _indien_ `personalEmail.address` is ingesteld in de gebeurtenis
+- Hiermee plaatst u de volledige gebeurtenis in een `xdm` object voordat het naar Edge wordt doorgestuurd
 
 Voorbeeld:
 
@@ -27,7 +31,11 @@ Aangepaste gebeurtenis gepubliceerd via Adobe Commerce Events SDK:
 
 ```javascript
 mse.publish.custom({
-    customContext: { customStrAttr: "cheetah", customNumAttr: 128 },
+    commerce: {
+        saveForLaters: {
+            value: 1,
+        },
+    },
 });
 ```
 
@@ -35,11 +43,27 @@ In Experience Platform rand:
 
 ```javascript
 {
-    xdm: {
-        personId: 'ecid1234',
-        customStrAttr: 'cheetah',
-        customNumAttr: 128
+  xdm: {
+    identityMap: {
+      ECID: [
+        {
+          id: 'ecid1234',
+          primary: true
+        }
+      ],
+      email: [
+        {
+          id: "runs@safari.ke",
+          primary: false
+        }
+      ]
+    },
+    commerce: {
+        saveForLaters: {
+            value: 1
+        }
     }
+  }
 }
 ```
 
@@ -51,7 +75,11 @@ In Experience Platform rand:
 
 Overschrijvingen van kenmerken voor standaardgebeurtenissen worden alleen ondersteund voor het Experience Platform. De gegevens van de douane worden niet doorgestuurd aan de dashboards van de Handel en metrieke Trackers.
 
-Voor elke gebeurtenis met een set `customContext`, overschrijft de verzamelaar `personId` en Adobe Analytics tellers, en door:sturen alle andere eigenschappen die in `customContext`.
+Voor elke gebeurtenis met `customContext`, treedt de inzamelaar met voeten treedt treedt verbindingen in de relevante contexten met gebieden in `customContext`. Het gebruik van overschrijvingen is mogelijk wanneer een ontwikkelaar contexten die door andere delen van de pagina zijn ingesteld, opnieuw wil gebruiken en uitbreiden in gebeurtenissen die al worden ondersteund.
+
+>[!NOTE]
+>
+>Wanneer het met voeten treden van douanegebeurtenissen, zou de gebeurtenis die aan Experience Platform door:sturen voor dat gebeurtenistype moeten worden uitgezet om dubbel tellen te vermijden.
 
 Voorbeelden:
 
@@ -59,7 +87,17 @@ De mening van het product met met voeten getreden die door Adobe Commerce Events
 
 ```javascript
 mse.publish.productPageView({
-    customContext: { customCode: "okapi" },
+    productListItems: [
+        {
+            productCategories: [
+                {
+                    categoryID: "cat_15",
+                    categoryName: "summer pants",
+                    categoryPath: "pants/mens/summer",
+                },
+            ],
+        },
+    ],
 });
 ```
 
@@ -67,41 +105,31 @@ In Experience Platform rand:
 
 ```javascript
 {
-    xdm: {
-        eventType: 'commerce.productViews',
-        personId: 'ecid1234',
-        customCode: 'okapi',
-        commerce: {
-            productViews: {
-                value : 1
-            }
+  xdm: {
+    eventType: 'commerce.productViews',
+    identityMap: {
+      ECID: [
+        {
+          id: 'ecid1234',
+          primary: true,
         }
-    }
-}
-```
-
-Productweergave met Adobe Commerce overschrijft de publicatie via Adobe Commerce Events SDK:
-
-```javascript
-mse.publish.productPageView({
-    customContext: { commerce: { customCode: "mongoose" } },
-});
-```
-
-In Experience Platform rand:
-
-```javascript
-{
-    xdm: {
-        eventType: 'commerce.productViews',
-        personId: 'ecid1234',
-        commerce: {
-            customCode: 'mongoose',
-            productViews: {
-                value : 1
-            }
-        }
-    }
+      ]
+    },
+    commerce: {
+      productViews: {
+        value : 1,
+      }
+    },
+    productListItems: [{
+        SKU: "1234",
+        name: "leora summer pants",
+        productCategories: [{
+            categoryID: "cat_15",
+            categoryName: "summer pants",
+            categoryPath: "pants/mens/summer",
+        }],
+    }],
+  }
 }
 ```
 
