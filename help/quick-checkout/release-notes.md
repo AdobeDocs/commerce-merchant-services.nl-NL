@@ -3,9 +3,9 @@ title: '[!DNL Quick Checkout] Aanvullende informatie'
 description: Lees de opmerkingen bij de release voor meer informatie over alle [!DNL Quick Checkout] lozingen.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
 feature: Release Notes, Services, Checkout
-source-git-commit: 0c8d9498ea7a30a99f834694ef8a865ad24466ab
+source-git-commit: b0f9aee6603ecbc0c711190adb52440d05219368
 workflow-type: tm+mt
-source-wordcount: '1422'
+source-wordcount: '1428'
 ht-degree: 0%
 
 ---
@@ -18,9 +18,9 @@ In deze releaseopmerkingen wordt de eerste release van [!DNL Quick Checkout] en 
 ![Probleem opgelost](../assets/fix.svg) Oplossingen en verbeteringen
 ![Bekend probleem](../assets/bug.svg) Bekende problemen
 
-Zie [Volgende releases](https://devdocs.magento.com/release/) om over versieschema&#39;s en steun te leren.
+Zie [Volgende releases](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) om over versieschema&#39;s en steun te leren.
 
-Zie [Beschikbaarheid](https://devdocs.magento.com/release/availability.html) in de documentatie voor ontwikkelaars voor meer informatie over productcompatibiliteit.
+Zie [Beschikbaarheid](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html) in de documentatie voor ontwikkelaars voor meer informatie over productcompatibiliteit.
 
 ## Updates in het deelvenster Beheer
 
@@ -82,7 +82,7 @@ _5 oktober 2022_
 
 _24 februari 2023_
 
-[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
 
 ![Nieuw](../assets/new.svg)<!-- Issue BOLT-520 --> Algemene beschikbaarheidsrelease—[[!DNL Quick Checkout]](https://commercemarketplace.adobe.com/magento-quick-checkout.html) is nu vooraf geïnstalleerd in Adobe Commerce Cloud versie 2.4.6 en hoger.
 
@@ -92,7 +92,7 @@ _24 februari 2023_
 
 _22 februari 2023_
 
-[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
 
 ![Probleem opgelost](../assets/fix.svg)<!-- Issue AC-8002 --> De ervaring van de gebruiker verbetert wanneer het plaatsen van een orde die [Multiverzending](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/multishipping-settings.html) methode. Met deze functie kunnen betalingsmethoden worden weergegeven tijdens het afrekenen wanneer [!DNL Quick Checkout] is ingeschakeld.
 
@@ -100,7 +100,7 @@ _22 februari 2023_
 
 _9 februari 2023_
 
-[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
 
 ![Probleem opgelost](../assets/fix.svg)<!-- Issue BOLT-567 --> Verbeteringen in gebruikerservaring wanneer [plaatsen](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) met de [Levering in de winkel](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/delivery/basic-methods/shipping-in-store-delivery.html) met de [!DNL Quick Checkout] uitgeschakeld.
 
@@ -110,7 +110,7 @@ _9 februari 2023_
 
 _18 januari 2023_
 
-[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
 
 ![Nieuw](../assets/new.svg)<!-- Issue BOLT-522 --> Een nieuwe configuratie kan worden toegelaten/onbruikbaar gemaakt om te ontdekken als [koper](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/manage-checkout/checkout-options/checkout-adobe-commerce.html) kan automatisch worden aangemeld.
 
@@ -126,7 +126,7 @@ _18 januari 2023_
 
 _30 november 2022_
 
-[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
 
 ![Nieuw](../assets/new.svg)<!-- Issue BOLT-513 --> Nu, wanneer een klant van Adobe Commerce in de opslag tijdens het controleproces wordt geregistreerd, en een Bolt rekening heeft, wordt een optie getoond om zich aan te melden bij de rekening van de Bot van de verkoopster.
 
@@ -138,7 +138,7 @@ _30 november 2022_
 
 _2 november 2022_
 
-[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
 
 ![Nieuw](../assets/new.svg)<!-- Issue BOLT-293 --> Nu, [!DNL Quick Checkout] omvat de mogelijkheid om een [afhandeling bijhouden](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/settings-quick-checkout.html#service-settings) instelling waarmee Adobe Commerce rapportagegegevens kan delen met Bolt.
 
@@ -148,7 +148,7 @@ _2 november 2022_
 
 _8 september 2022_
 
-[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
 
 ![Nieuw](../assets/new.svg)<!-- Issue BOLT-341 --> Algemene beschikbaarheidsrelease—[[!DNL Quick Checkout]](https://commercemarketplace.adobe.com/magento-quick-checkout.html) is nu compatibel met Adobe Commerce versie 2.4.5.
 
@@ -172,7 +172,7 @@ _8 september 2022_
 
 _12 augustus 2022_
 
-[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
 
 ![Probleem opgelost](../assets/fix.svg)<!-- Issue BOLT-375 --> Verbeteringen in gebruikerservaring [[!DNL Quick Checkout] Deelvenster Beheer](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) Neem nu alleen de parameters op die zichtbaar en gevalideerd zijn wanneer de extensie is ingeschakeld.
 
@@ -182,7 +182,7 @@ _12 augustus 2022_
 
 _9 augustus 2022_
 
-[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
 
 ![Nieuw](../assets/new.svg)<!-- Issue BOLT-341 --> Algemene beschikbaarheidsrelease—[[!DNL Quick Checkout]](https://commercemarketplace.adobe.com/magento-quick-checkout.html) is nu compatibel met Adobe Commerce-versies 2.4.1 tot en met 2.4.4.
 
