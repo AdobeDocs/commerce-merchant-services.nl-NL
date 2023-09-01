@@ -3,9 +3,9 @@ title: Betalingsopties
 description: Stel de betalingsopties in om de beschikbare methoden voor uw winkelklanten aan te passen.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 9a52976be16afa707b494f4da3b99192dd73b8f2
+source-git-commit: a9045c13d35797ce1a85697b70849d718dbc2e87
 workflow-type: tm+mt
-source-wordcount: '1035'
+source-wordcount: '1048'
 ht-degree: 0%
 
 ---
@@ -38,6 +38,18 @@ U kunt [!UICONTROL Credit Card Fields] in de winkelconfiguratie of de startpagin
 
 U kunt ook de lay-out, breedte, hoogte en buitenstijl van de creditcardvelden wijzigen. Zie [PayPal-documentatie](https://developer.paypal.com/docs/checkout/advanced/customize/card-field-style/) voor meer informatie .
 
+## [!DNL Apple Pay] knop
+
+Klanten kunnen [[!DNL Apple Pay]](https://www.apple.com/apple-pay/), die gebruik maakt van betalingsgegevens van creditcard en bankpas die op een iOS- of macOS-apparaat zijn opgeslagen, voor aankopen.
+
+De [!DNL Apple Pay] Deze knop is zichtbaar vanaf de pagina met producten, de miniwinkelwagentje, de winkelwagentje en de afrekenweergave.
+
+>[!NOTE]
+>
+> Te gebruiken [!DNL Apple Pay] voor uw winkels, voltooi [zelfregistratie met [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_Uw live domein registreren_ alleen deel) en [configureren voor uw winkels in [!DNL Payment Services]](settings.md#payment-buttons).
+
+U kunt [!UICONTROL Apple Pay] in de winkelconfiguratie of de startpagina van de betalingsservices. Zie [Instellingen](settings.md#apple-pay) voor meer informatie .
+
 ## [!DNL PayPal Smart Buttons]
 
 [!DNL PayPal Smart Buttons], die PayPal gebruiken om een aankoop te voltooien, slaat het verzendadres, het factuuradres en de betalingsgegevens van je winkel op voor later gebruik. Kopers kunnen elke betalingsmethode gebruiken die eerder door PayPal is opgeslagen of aangeboden.
@@ -59,16 +71,6 @@ De [!DNL PayPal] Deze knop is zichtbaar vanaf de pagina met producten, de miniwi
 Klanten kunnen uitchecken met de [Venmo](https://venmo.com/) knop.
 
 De [!DNL Venmo] Deze knop is zichtbaar vanaf de pagina met producten, de miniwinkelwagentje, de winkelwagentje en de afrekenweergave.
-
-### [!DNL Apple Pay] knop
-
-Klanten kunnen Touch ID op hun apparaten gebruiken [[!DNL Apple Pay]](https://www.apple.com/apple-pay/), die gebruik maakt van betalingsgegevens voor creditcard en bankpas die op hun iOS- of macOS-apparaat zijn opgeslagen.
-
-De [!DNL Apple Pay] Deze knop is zichtbaar vanaf de pagina met producten, de miniwinkelwagentje, de winkelwagentje en de afrekenweergave.
-
->[!NOTE]
->
-> Te gebruiken [!DNL Apple Pay] voor uw winkels, voltooi [zelfregistratie met [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_Uw live domein registreren_ alleen deel) en [configureren voor uw winkels in [!DNL Payment Services]](settings.md#payment-buttons).
 
 ### PayPal-incasso of creditcard
 

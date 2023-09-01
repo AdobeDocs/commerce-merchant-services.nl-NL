@@ -3,9 +3,10 @@ title: Beveiliging en naleving
 description: Beoordeel de beveiligings- en compatibiliteitsvereisten voor uw site.
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
 feature: Payments, Checkout, Compliance
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+redirect_from: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html
+source-git-commit: fef972355565472f0d0851a2e3cace692fb2db67
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '549'
 ht-degree: 0%
 
 ---
@@ -61,3 +62,10 @@ Met de slimme knoppen van PayPal worden er geen gegevens doorgegeven die door PC
 Om veiligheidsredenen geeft PayPal het factuuradres niet door tijdens het afrekenen. Land, e-mail en naam zijn de enige factuurgegevens die worden gebruikt. U kunt desgewenst het PayPal-afhandeling van uw site inschakelen om het volledige factureringsadres te retourneren door contact op te nemen met PayPal en een controleproces te voltooien.
 
 PayPal heeft ook geïntegreerde fraudebescherming die computerleren gebruikt om fraude te bestrijden. Zie PayPal&#39;s [Documentatie voor kopersbescherming](https://www.paypal.com/us/webapps/mpp/security/seller-protection) voor meer informatie .
+
+## Fraudebescherming
+
+U kunt automatische fraudebescherming voor Betalingsdiensten inschakelen met de [Extensie ondertekenen](https://commercemarketplace.adobe.com/signifyd-module-connect.html).
+
+Zie [Ondertekening van de fraudebescherming](fraud-protection.md) voor meer informatie .
+

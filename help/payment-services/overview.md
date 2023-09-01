@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
 feature: Payments, Checkout
-source-git-commit: b1984085fa5d10c8202d2a982227e183d0b169e8
+source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Of u nu een kleine onderneming, een medio-markt contant of een grote onderneming
 
 * [**Onboarding**](onboard.md)—Het proces begeleidt u door commerciële inschrijving, technische configuratie, aanspraken, zandbakomgevingsconfiguratie, en levende betalingsenablement.
 * [**Betalingsopties**](payments-options.md)—Stel de betalingsopties in om de methoden aan te passen die beschikbaar zijn voor klanten in de winkel (of in meerdere winkels).
-* **Financiële verslaggeving over kasstroombeheer**—Synchroniseren [betalingsgegevens](order-payment-status.md) met bestellingen om volledige transparantie te verkrijgen voor het verwerkte volume, het betalingssaldo en gedetailleerde [rapportage op transactieniveau](payouts.md) voor financiële afstemming.
+* **Financiële verslaggeving over kasstroombeheer**—Synchroniseren [betalingsgegevens](order-payment-status.md) met bestellingen om volledige transparantie te verkrijgen ten aanzien van het verwerkte volume, het betalingssaldo, [uitbetaling](payouts.md)en gedetailleerde [rapportage op transactieniveau](transactions.md) voor financiële afstemming en maximale zichtbaarheid van transacties.
 * **Transparante prijsstelling**—Prijzen zijn duidelijk en op voorhand; wat je ziet is wat je krijgt.
 * **Efficiënte uitcheckervaring**—Verwijder om het even welke barrières aan een snelle en eenvoudige controle, en creeer loyale klanten, met [kaartvaulatie](https://experienceleague-review.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) en [Direct aanschaffen](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) (standaard ingeschakeld voor Adobe Commerce).
 

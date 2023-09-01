@@ -5,16 +5,16 @@ role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 feature: Payments, Checkout
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: '1316'
 ht-degree: 0%
 
 ---
 
 # Uitbetalingsrapport
 
-[!DNL Payment Services] for [!DNL Adobe Commerce] en [!DNL Magento Open Source] biedt u uitgebreide rapportage zodat u een duidelijk beeld krijgt van de bestellingen en betalingen van uw winkel.
+[!DNL Payment Services] for [!DNL Adobe Commerce] en [!DNL Magento Open Source] biedt uitgebreide rapportage zodat u een duidelijk overzicht kunt krijgen van de transacties, bestellingen en betalingen in uw winkel.
 
 Er zijn twee beschikbare meningen van de het rapportering van Uitbetalingen om u toe te laten om diepgaande informatie over al uw uitbetalingen te zien:
 
@@ -22,6 +22,8 @@ Er zijn twee beschikbare meningen van de het rapportering van Uitbetalingen om u
 * **[Weergave uitbetalingsrapport](#payouts-report-view)**—Rapport beschikbaar in Betalingen waarin gedetailleerde uitbetalingsinformatie voor alle transacties wordt weergegeven
 
 In de weergave Uitbetalingen worden uitgebreide uitbetalingsgegevens in één oogopslag weergegeven, zodat u volledig transparant kunt zijn over het bedrag van de betaling, het verwerkte volume en gedetailleerde rapportage over het transactieniveau voor financiële afstemming.
+
+U kunt [uitbetalingstransacties downloaden](#download-transactions) in een .csv-bestandsindeling voor gebruik in bestaande software voor boekhouding of orderbeheer.
 
 >[!NOTE]
 >
@@ -65,15 +67,15 @@ De weergave voor de visualisatie van betalingsgegevens bevat de volgende informa
 
 ## Weergave uitbetalingsrapport
 
-De weergave van het betalingsrapport is beschikbaar in de weergave Uitbetalingen van betalingsservices. Deze bevat alle beschikbare informatie over de betalingen voor je winkel(s). De [Weergave gegevensvisualisatie uitbetaling](#payouts-data-visualization-view) in Payment Services Home is een visuele weergave van de geaggregeerde bedragen per dag in deze meer gedetailleerde rapportweergave.
+De weergave van het betalingsrapport is beschikbaar in de weergave Uitbetalingen van betalingsservices. Deze bevat alle beschikbare informatie over de betalingen voor je winkel(s).
 
-Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]** om de gedetailleerde tabelweergave van het uitbetalingsrapport te bekijken.
+Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**om de gedetailleerde tabelweergave van het uitbetalingsrapport te bekijken.
 
 ![Betalingstransacties in de beheerder](assets/payouts-report-new.png){zoomable=yes}
 
 U kunt deze mening, per de secties in dit onderwerp vormen, om de gegevens het best voor te stellen u wenst te zien.
 
-Zie de gekoppelde handelsorder en transactie-id&#39;s, transactiebedragen, betalingsmethode per transactie en meer, allemaal in het betalingsrapport in de beheerder.
+Zie gekoppelde handelsorder en transactie-id&#39;s, transactiebedragen, betalingsmethode per transactie en meer in dit rapport.
 
 U kunt [uitbetalingstransacties downloaden](#download-transactions) in een .csv-bestandsindeling voor gebruik in bestaande software voor boekhouding of orderbeheer.
 
@@ -83,7 +85,7 @@ U kunt [uitbetalingstransacties downloaden](#download-transactions) in een .csv-
 
 ### Gegevensbron selecteren
 
-In de mening van het rapport van Uitbetalingen kunt u de gegevensbron selecteren—_[!UICONTROL Live]_of_[!UICONTROL Sandbox]_—waarvoor u rapportresultaten wilt zien.
+In de mening van het rapport van Uitbetalingen kunt u de gegevensbron selecteren—**[!UICONTROL Live]** of **[!UICONTROL Sandbox]**—waarvoor u rapportresultaten wilt zien.
 
 ![Selectie gegevensbronnen](assets/datasource.png){width=400px}
 
@@ -97,8 +99,8 @@ Gegevensbronselecties werken als volgt:
 
 U kunt als volgt de gegevensbron selecteren voor het rapport Betalingsstatus bestelling:
 
-1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]**.
-1. Klikken **[!UICONTROL Data source]** en selecteert u _[!UICONTROL Live]_of_[!UICONTROL Sandbox]_.
+1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
+1. Klikken **[!UICONTROL Data source]** en selecteert u **[!UICONTROL Live]** of **[!UICONTROL Sandbox]**.
 
    De rapportresultaten regenereren op basis van de geselecteerde gegevensbron.
 
@@ -114,8 +116,8 @@ Naar links en rechts schuiven om weer te geven [informatie voor elke betalingstr
 
 In de weergave van het rapport Uitbetalingen kunt u het tijdpad voor de uitbetalingstransacties die u wilt bekijken aanpassen door specifieke datums in te voeren of een datumbereik te selecteren in de datumkiezer:
 
-1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]**.
-1. Klik op het selectiefilter Transactiedata voor de kalender.
+1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
+1. Klik op de knop _[!UICONTROL Transaction dates]_Kalenderkiezerfilter.
 1. Kies het toepasselijke datumbereik.
 1. Bekijk de uitbetalingsstatussen in het raster voor de opgegeven datums.
 
@@ -123,7 +125,7 @@ In de weergave van het rapport Uitbetalingen kunt u het tijdpad voor de uitbetal
 
 In de weergave van het rapport Uitbetalingen worden standaard de meeste beschikbare kolommen met informatie weergegeven. U kunt echter aanpassen welke kolommen u in het rapport ziet.
 
-1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Payouts]**.
+1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
 1. Klik op de knop _Kolominstellingen_ icon (![pictogram kolominstellingen](assets/column-settings.png)).
 1. Als u wilt aanpassen welke kolommen u in het rapport ziet, schakelt u de kolommen in de lijst in of uit.
 
@@ -133,7 +135,7 @@ In de weergave van het rapport Uitbetalingen worden standaard de meeste beschikb
 
 U kunt een CSV-bestand downloaden dat alle transacties bevat die zichtbaar zijn in het raster van de weergave Uitbetalingen.
 
-1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]**.
+1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
 1. [Tijdschema datumbereik voor uw transacties aanpassen](#customize-transactions-timeframe).
 1. Klik op de knop _Downloaden_ (![](assets/icon-download.png)).
 

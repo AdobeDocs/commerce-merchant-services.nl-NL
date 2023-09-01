@@ -5,16 +5,16 @@ role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 feature: Payments, Checkout, Orders
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
 workflow-type: tm+mt
-source-wordcount: '1828'
+source-wordcount: '1868'
 ht-degree: 0%
 
 ---
 
 # Betalingsstatusrapport bestelling
 
-[!DNL Payment Services] for [!DNL Adobe Commerce] en [!DNL Magento Open Source] biedt u uitgebreide rapportage zodat u een duidelijk beeld krijgt van de bestellingen en betalingen van uw winkel.
+[!DNL Payment Services] for [!DNL Adobe Commerce] en [!DNL Magento Open Source] biedt uitgebreide rapportage zodat u een duidelijk beeld krijgt van de [transacties](transactions.md), orders en betalingen.
 
 Er zijn twee beschikbare rapportageweergaven voor de betalingsstatus van bestellingen waarmee u snel de betalingsstatus van uw bestellingen kunt bekijken:
 
@@ -23,7 +23,7 @@ Er zijn twee beschikbare rapportageweergaven voor de betalingsstatus van bestell
 
 De weergave van de betalingsstatus van bestellingen helpt u eenvoudig te begrijpen waar een specifieke bestelling zich binnen de bestelling bevindt om de kasstroom te verwerken. Met deze rapporten kunt u snel bestellingen bekijken (op basis van hun betalingsstatus en betalingsdatum) en mogelijke problemen identificeren.
 
-U kunt betalingstransacties voor bestellingen downloaden in de indeling .csv en deze gebruiken in bestaande software voor boekhouding of orderbeheer.
+U kunt [betalingsstatussen voor bestellingen downloaden](#download-order-payment-statuses) in een .csv-bestandsindeling voor gebruik in bestaande software voor boekhouding of orderbeheer.
 
 >[!NOTE]
 >
@@ -33,11 +33,11 @@ U kunt betalingstransacties voor bestellingen downloaden in de indeling .csv en 
 
 De weergave voor de visualisatie van betalingsstatusgegevens voor bestellingen is beschikbaar in de Home Betalingsservices. Het is een visuele weergave van de geaggregeerde betalingsstatussen per dag vanaf de gedetailleerde tabel [Overzicht van betalingsstatus van bestelling](#order-payment-status-report-view).
 
-Op de _Beheerder_ zijbalk, ga naar **Verkoop** > **Betalingsdiensten** om de gegevensvisualisatie te bekijken [overzicht van de betalingsstatussen](#statuses-information).
+Op de _Beheerder_ zijbalk, ga naar **Verkoop** > **Betalingsdiensten** > _Orders_ om de gegevensvisualisatie te bekijken [overzicht van de betalingsstatussen](#statuses-information).
 
 ![Visualisatie van uitbetalingsgegevens in Admin](assets/orderpayment-dataviz.png){zoomable=yes}
 
-Klikken **Rapport weergeven** om naar de gedetailleerde tabel te navigeren [Overzicht van betalingsstatus van bestelling](#order-payment-status-report-view).
+Klikken **[!UICONTROL View Report]** om naar de gedetailleerde tabel te navigeren [Overzicht van betalingsstatus van bestelling](#order-payment-status-report-view).
 
 ### Tijdskader voor statussen aanpassen
 
@@ -45,7 +45,7 @@ Standaard worden betalingsstatussen van 30 dagen weergegeven.
 
 In de weergave Betalingsstatus bestellen kunt u het tijdpad voor de betalingsstatussen die u wilt bekijken aanpassen door een datumbereik te selecteren:
 
-1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**. De weergave voor de visualisatie van de betalingsstatus van bestellingen is zichtbaar in de sectie Betalingsstatus bestellen.
+1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**. De weergave met de betalingsstatusgegevens voor bestellingen is zichtbaar in het dialoogvenster _Orders_ sectie.
 1. Klik op de knop **[!UICONTROL Range]** selectorfilter.
 1. Kies het toepasselijke datumbereik: 30 dagen, 15 dagen of 7 dagen.
 1. Geef de statusinformatie voor de opgegeven datums weer.
@@ -69,9 +69,9 @@ De weergave voor de visualisatie van betalingsstatusgegevens voor bestellingen b
 
 ## Overzicht van betalingsstatus van bestelling
 
-De weergave van het rapport Betalingsstatus bestelling is beschikbaar in de weergave Betalingsstatus bestelling van Betalingsdiensten. Het omvat gedetailleerde statussen - betaling, gefactureerd, verscheept, terugbetaling, geschil, en meer-voor alle transacties. De [Weergave voor visualisatie betalingsstatusgegevens bestellen](#order-payment-status-data-visualization-view) in Payment Services Home is een visuele weergave van de geaggregeerde betalingsstatussen per dag vanuit de weergave van het rapport Betalingsstatus bestellen.
+De weergave van het rapport Betalingsstatus bestellen is beschikbaar in de weergave Home of Payment Services. Het omvat gedetailleerde statussen - betaling, gefactureerd, verscheept, terugbetaling, geschil, en meer-voor alle transacties.
 
-Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Order payment status]** om de gedetailleerde tabel met de betalingsstatusrapporten voor bestellingen weer te geven.
+Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**om de gedetailleerde tabel met de betalingsstatusrapporten voor bestellingen weer te geven.
 
 ![Betalingstransacties bestellen in de beheerder](assets/orders-report-data.png)
 
@@ -87,11 +87,11 @@ U kunt [uitbetalingstransacties downloaden](#download-order-payment-statuses) in
 
 De [!DNL Payment Services] -module gebruikt bestelgegevens en combineert deze met geaggregeerde betalingsgegevens uit andere bronnen (waaronder PayPal) voor zinvolle en zeer nuttige rapporten.
 
-Bestelgegevens worden geëxporteerd en blijven in de betalingsservice staan. Wanneer u [orderstatussen wijzigen of toevoegen](https://docs.magento.com/user-guide/sales/order-status-custom.html){target="_blank"} or [edit a store view](https://docs.magento.com/user-guide/stores/stores-all-view-edit.html){target="_blank"}, [store](https://docs.magento.com/user-guide/stores/store-information.html){target="_blank"}, of de naam van de website, die gegevens worden gecombineerd met betalingsgegevens en het rapport over de betalingsstatus van de bestelling wordt gevuld met de gecombineerde informatie.
+Bestelgegevens worden geëxporteerd en blijven in de betalingsservice staan. Wanneer u [orderstatussen wijzigen of toevoegen](https://docs.magento.com/user-guide/sales/order-status-custom.html) of [een winkelweergave bewerken](https://docs.magento.com/user-guide/stores/stores-all-view-edit.html), [winkel](https://docs.magento.com/user-guide/stores/store-information.html), of de naam van de website, die gegevens worden gecombineerd met betalingsgegevens en het rapport over de betalingsstatus van de bestelling wordt gevuld met de gecombineerde informatie.
 
 Er zijn twee stappen in dit proces:
 
-1. De index wordt gewijzigd: `ON SAVE` (telkens wanneer orderinfo of opslaginformatie wordt gewijzigd) of `BY SCHEDULE` (op een vooraf gevormd bouwplan), afhankelijk van hoe het binnen wordt gevormd [Indexbeheer](https://docs.magento.com/user-guide/system/index-management.html){target="_blank"} in de Admin.
+1. De index wordt gewijzigd: `ON SAVE` (telkens wanneer orderinfo of opslaginformatie wordt gewijzigd) of `BY SCHEDULE` (op een vooraf gevormd bouwplan), afhankelijk van hoe het binnen wordt gevormd [Indexbeheer](https://docs.magento.com/user-guide/system/index-management.html) in de Admin.
 
    Standaard wordt gegevensindexering uitgevoerd `ON SAVE`, wat betekent dat wanneer er iets verandert in de volgorde, de orderstatus, de winkelweergave, de winkel of de website, het opnieuw indexeren onmiddellijk plaatsvindt.
 
@@ -107,13 +107,13 @@ De enige gegevens die voor rapportagedoeleinden worden geëxporteerd en gesortee
 
 Alhoewel, door gebrek, gebeurt het opnieuw indexeren binnen `ON SAVE` wordt aanbevolen om te indexeren in `BY SCHEDULE` -modus. De `BY SCHEDULE` De index wordt uitgevoerd volgens een uitsnijdschema van één minuut en alle gewijzigde gegevens worden weergegeven in het statusrapport van uw bestelling binnen twee minuten na elke gegevenswijziging. Deze geplande herindexering helpt u om het even welke druk op uw opslag te verminderen, vooral als u een groot volume van inkomende orden hebt, omdat het op een programma gebeurt (niet aangezien elke orde wordt geplaatst).
 
-U kunt de indexmodus wijzigen—`ON SAVE` of `BY SCHEDULE`—[in de Admin](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target="_blank"}.
+U kunt de indexmodus wijzigen—`ON SAVE` of `BY SCHEDULE`—[in de Admin](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode).
 
 Om te leren hoe te om de gegevensuitvoer te vormen, zie [Configuratie van opdrachtregel](configure-cli.md#configure-data-export).
 
 ### Gegevensbron selecteren
 
-In de weergave van het rapport Betalingsstatus bestellen kunt u de gegevensbron selecteren—_[!UICONTROL Live]_of_[!UICONTROL Sandbox]_—waarvoor u rapportresultaten wilt zien.
+In de weergave van het rapport Betalingsstatus bestellen kunt u de gegevensbron selecteren—**[!UICONTROL Live]** _ of **[!UICONTROL Sandbox]**—waarvoor u rapportresultaten wilt zien.
 
 ![Selectie gegevensbronnen](assets/datasource.png){width=400px}
 
@@ -127,8 +127,8 @@ Gegevensbronselecties werken als volgt:
 
 Om de gegevensbron voor uw te selecteren [!UICONTROL Order Payment Status] rapport:
 
-1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
-1. Klikken **[!UICONTROL Data source]** en selecteert u _[!UICONTROL Live]_of_[!UICONTROL Sandbox]_.
+1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Orders]** > **[!UICONTROL View Report]**.
+1. Klik op de knop _[!UICONTROL Data source]_selector, filter en selecteer **[!UICONTROL Live]**of **[!UICONTROL Sandbox]**.
 
    De rapportresultaten regenereren op basis van de geselecteerde gegevensbron.
 
@@ -136,16 +136,26 @@ Om de gegevensbron voor uw te selecteren [!UICONTROL Order Payment Status] rappo
 
 In de weergave van het rapport Betalingsstatus bestellen kunt u de tijdsperiode van de statussen die u wilt weergeven aanpassen door specifieke datums te selecteren. Standaard worden de betalingsstatussen van 30 dagen voor bestellingen weergegeven in het raster.
 
-1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
-1. Klik op de knop **[!UICONTROL Order dates]** Kalenderkiezerfilter.
+1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
+1. Klik op de knop _[!UICONTROL Order dates]_Kalenderkiezerfilter.
 1. Kies het toepasselijke datumbereik.
 1. Bekijk de betalingsstatussen voor de bestelling voor de opgegeven datums in het raster.
+
+### Rapportgegevens filteren
+
+In de weergave Betalingsstatusrapport bestellen kunt u de resultaten filteren die u wilt bekijken door filtercriteria te selecteren.
+
+1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
+1. Klik op de knop **[!UICONTROL Filter]** kiezer.
+1. Schakelen tussen _Betalingsstatus_ opties om de rapportresultaten voor slechts geselecteerde status van de ordebetaling te zien.
+1. Voer een _Min. orderbedrag_ of _Max. aantal bestellingen_ om rapportresultaten binnen die waaier van het ordebedrag te zien.
+1. Klikken **[!UICONTROL Hide filters]** om het filter te verbergen.
 
 ### Kolommen tonen en verbergen
 
 Het rapport Betalingsstatus bestelling toont standaard alle beschikbare kolommen met informatie. U kunt, echter, aanpassen welke kolommen u in uw rapport ziet.
 
-1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
+1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. Klik op de knop _Kolominstellingen_ icon (![pictogram kolominstellingen](assets/column-settings.png)).
 1. Als u wilt aanpassen welke kolommen u in het rapport ziet, schakelt u de kolommen in de lijst in of uit.
 
@@ -153,9 +163,7 @@ Het rapport Betalingsstatus bestelling toont standaard alle beschikbare kolommen
 
 ### Statussen weergeven
 
-De weergave van het rapport Betalingsstatus bestellen toont een uitgebreide transactiestatus en informatie over de betalingsstatus voor elke betalingsopdracht.
-
-#### Transactiestatus
+De weergave van het rapport Betalingsstatus bestelling bevat uitgebreide informatie over de betalingsstatus van elke bestelling.
 
 Standaard worden de betalingsstatussen van 30 dagen voor bestellingen weergegeven in het raster.
 
@@ -177,7 +185,7 @@ De weergave van het rapport Betalingsstatus bestelling toont een _[!UICONTROL La
 
 U kunt ook handmatig afdwingen dat de gegevens in het rapport Betalingsstatus van bestelling worden vernieuwd om de meest actuele rapportgegevens te zien.
 
-1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
+1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. Klik op de knop _Vernieuwen_ icon (![vernieuwingspictogram](assets/refresh-button-med.png)).
 
    De gegevens van het rapport met de betalingsstatus van de bestelling worden vernieuwd, en *[!UICONTROL Update complete]* de bevestiging verschijnt en de recentste informatie is aanwezig in het net.
@@ -186,7 +194,7 @@ U kunt ook handmatig afdwingen dat de gegevens in het rapport Betalingsstatus va
 
 Je kunt geschillen over bestellingen van je winkel bekijken en naar het PayPal Resolution Center navigeren om actie te ondernemen vanuit het statusrapport voor bestellingen.
 
-1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
+1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. Ga naar de **[!UICONTROL Disputes column]**.
 1. Geschillen voor een bepaalde bestelling bekijken en bekijken [de status van het geschil](#order-payment-status-information).
 1. Klik op de link voor het geschil-ID (beginnen met _PP-D-_) om naar de [PayPal-afwikkelingscentrum](https://www.paypal.com/us/smarthelp/article/what-is-the-resolution-center-faq3327).
@@ -198,28 +206,13 @@ Je kunt geschillen over bestellingen van je winkel bekijken en naar het PayPal R
 
 U kunt een CSV-bestand downloaden met alle statussen die zichtbaar zijn in het weergaveraster voor betalingsstatus van bestelling, of u nu de standaardstatus van 30 dagen bekijkt of een aangepast tijdframe.
 
-1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
+1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. Als u statussen wilt zien gedurende een ander tijdsbestek dan de laatste 30 dagen, [de tijdlijn voor het datumbereik voor uw statussen aanpassen](#customize-dates-timeframe).
 1. Klik op de knop _Downloaden_ (![downloadpictogram](assets/icon-download.png)).
 
 De betalingsstatus van uw bestelling wordt gedownload in de indeling .csv.
 
-<!-- ## Default order payment status timeframes
-
-These order payment status timeframes are currently available in [!DNL Payment Services].
-
-| Report       | Description          |
-| ------------ | -------------------- |
-| Yesterday | Available from the Order payment status dates selector, this shows information for the prior date. |
-| | Today | Available from the Order payment status dates selector, this shows information for the current day. |
-| Last 7 days | Available from the Order payment status dates selector, this shows information for the last seven days. |
-| Last 30 days | Available from the Order payment status dates selector and by default in the Order payment statuses view, this shows information for the last 30 days. |
-| Last 90 days | Available from the Order payment status dates selector, this shows information for the last 90 days. |
-| Year to date | Available from the Order payment status dates selector, this shows information for the the entire year to date. |
-| Custom range | Available from the Order payment status dates selector, this can be filtered to show a custom date range. |
--->
-
-#### Statusinformatie
+### Kolombeschrijvingen
 
 Betalingsstatusrapporten voor bestellingen bevatten de volgende informatie.
 
