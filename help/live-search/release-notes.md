@@ -3,9 +3,9 @@ title: '[!DNL Live Search] Aanvullende informatie'
 description: "De meest recente releasegegevens voor [!DNL Live Search] uit Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 282c652304ba362fcceca1faa35e1d0c1378041b
+source-git-commit: 74282ba307f22730e1f6bfcb9a590caee87ba073
 workflow-type: tm+mt
-source-wordcount: '1400'
+source-wordcount: '1403'
 ht-degree: 1%
 
 ---
@@ -36,11 +36,25 @@ _25 april 2023_
 
 +++
 
+## [!DNL Live Search] 3.1.0 {#310}
+
+_1 sep. 2023_
+
+[!BADGE Ondersteund]{type="Informatief" tooltip="Ondersteund"}
+
+### Updates
+
+* De widget voor productaanbiedingen is bijgewerkt om de [Catalogusservice-API](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/product-search/).
+
+## Vorige versies
+
++++3.0.2 en eerder
+
 ## [!DNL Live Search] 3.0.2 {#302}
 
 _7 augustus 2023_
 
-[!BADGE Compatibiliteit]{type="Informatief" tooltip="Compatibiliteit"}
+[!BADGE Ondersteund]{type="Informatief" tooltip="Ondersteund"}
 
 ### Nieuwe functies
 
@@ -62,17 +76,11 @@ De volgende waarden zijn toegevoegd aan de `storeDetails` object:
 
 Handelaren moeten de [!DNL Live Search] extensie versie >= 3.0.2 gebruiken om deze functies te openen.
 
-U wordt aangeraden een upgrade uit te voeren en te testen voordat u naar de productie gaat. Overweeg om de productieomgeving tijdens niet-piekuren te upgraden nadat de resultaten van de testomgeving zijn gecontroleerd.
-
-## Vorige versies
-
-+++3.0.1 en eerder
-
 ## [!DNL Live Search] 3.0.1 {#301}
 
 _14 maart 2023_
 
-[!BADGE Compatibiliteit]{type="Informatief" tooltip="Compatibiliteit"}
+[!BADGE Ondersteund]{type="Informatief" tooltip="Ondersteund"}
 
 ### Nieuwe functies
 
@@ -114,7 +122,7 @@ U wordt aangeraden een upgrade uit te voeren en te testen voordat u naar de prod
 
 ## [!DNL Live Search] 2.0.5 {#205}
 
-[!BADGE Compatibiliteit]{type="Informatief" tooltip="Compatibiliteit"}
+[!BADGE Ondersteund]{type="Informatief" tooltip="Ondersteund"}
 
 * ![Repareren](../assets/fix.svg) - Live zoeken zou een fout veroorzaken als SDK-bronnen niet beschikbaar waren vanwege netwerkproblemen. Deze fout is opgelost.
 
@@ -124,7 +132,7 @@ U wordt aangeraden een upgrade uit te voeren en te testen voordat u naar de prod
 
 ### [!DNL Live Search] 2.0.4 {#204}
 
-[!BADGE Compatibiliteit]{type="Informatief" tooltip="Compatibiliteit"}
+[!BADGE Ondersteund]{type="Informatief" tooltip="Ondersteund"}
 
 ![Nieuw](../assets/new.svg) Live zoeken ondersteunt nu filteren met de instelling &#39;Producten uit voorraad weergeven&#39; in de beheerder. Als &#39;Display Out of Stock Products&#39; is ingesteld op false, `inStock = true` wordt toegevoegd aan het filter.
 ![Repareren](../assets/fix.svg) Om de prestaties te verbeteren, is het blok &#39;Suggestions&#39; verwijderd uit het pop-upmenu Live zoeken. De gegevens worden nog steeds doorgegeven via GraphQL, voor het geval u de functie wilt vervangen.
@@ -138,7 +146,7 @@ De gebruikers worden geadviseerd om te bevorderen en te testen alvorens aan prod
 
 ### [!DNL Live Search] 2.0.3 {#203}
 
-[!BADGE Compatibiliteit]{type="Informatief" tooltip="Compatibiliteit"}
+[!BADGE Ondersteund]{type="Informatief" tooltip="Ondersteund"}
 
 ![Nieuw](../assets/new.svg) Live zoeken ondersteunt nu B2B-functies door categorietoestemmingen, gedeelde catalogi en klantspecifieke prijzen te respecteren.
 
@@ -148,14 +156,14 @@ De gebruikers worden geadviseerd om te bevorderen en te testen alvorens aan prod
 
 ### [!DNL Live Search] 2.0 {#20}
 
-[!BADGE Compatibiliteit]{type="Informatief" tooltip="Compatibiliteit"}
+[!BADGE Ondersteund]{type="Informatief" tooltip="Ondersteund"}
 
 Bestaande [!DNL Live Search] de installaties moeten worden aangepast aan [!DNL Live Search] 2.0.0 om voordeel te halen uit de volgende nieuwe eigenschappen, moeilijke situaties, en verbeteringen:
 
 ![Nieuw](../assets/new.svg) [!DNL Live Search] ondersteunt nu PHP 8.1 voor installaties met Adobe Commerce 2.4.4.
 ![Nieuw](../assets/new.svg) De `Magento_ElasticsearchCatalogPermissionsGraphQl` wordt toegevoegd aan de lijst met modules die tijdens de installatie zijn uitgeschakeld.
 ![Nieuw](../assets/new.svg) Het aantal beschikbare regels in de [[!DNL storefront popover]](quick-tour.md) kan van worden gevormd *Beheerder*.
-![Nieuw](../assets/new.svg) Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) compatibiliteit voor [!DNL Live Search].
+![Nieuw](../assets/new.svg) Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) ondersteund voor [!DNL Live Search].
 ![Nieuw](../assets/new.svg) De [!DNL Live Search] Het installatieproces wordt bijgewerkt met geavanceerde proceswijzigingen.
 ![Repareren](../assets/fix.svg) [Geavanceerd zoeken](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) koppeling verwijderd uit de voettekst van de winkel.
 ![Bug](../assets/bug.svg) De volgende productkenmerken worden niet ondersteund door [Commerce GraphQL API](https://developer.adobe.com/commerce/webapi/graphql/) bij gebruik in verband met de bètaversie van PWA: `description`, `name`, `short_description`
@@ -163,7 +171,7 @@ Bestaande [!DNL Live Search] de installaties moeten worden aangepast aan [!DNL L
 
 ### [!DNL Live Search] 1.3.1 {#131}
 
-[!BADGE Compatibiliteit]{type="Informatief" tooltip="Compatibiliteit"}
+[!BADGE Ondersteund]{type="Informatief" tooltip="Ondersteund"}
 
 ![Repareren](../assets/fix.svg) [Aangepast prijskenmerk](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) keert niet meer een fout terug wanneer gevormd als a [facet]({% koppeling live-search/facets-add.md %}).
 ![Repareren](../assets/fix.svg) Er heeft zich een fout voorgedaan als er geen fout was opgetreden. Dit probleem is nu opgelost. [valutasymbool](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html#step-5%3A-customize-currency-symbols-(optional)) (`data-currency-symbol`) is beschikbaar.
@@ -171,7 +179,7 @@ Bestaande [!DNL Live Search] de installaties moeten worden aangepast aan [!DNL L
 
 ### [!DNL Live Search] 1.3.0 {#130}
 
-[!BADGE Compatibiliteit]{type="Informatief" tooltip="Compatibiliteit"}
+[!BADGE Ondersteund]{type="Informatief" tooltip="Ondersteund"}
 
 ![Nieuw](../assets/new.svg) [Prestaties](performance.md) het rapporteringsdashboard geeft inzicht in zoektermen die kopers gebruiken.
 ![Nieuw](../assets/new.svg) [!DNL Live Search] [Storefront Events SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) verleent toegang tot een gemeenschappelijke gegevenslaag van gebeurtenis het publiceren en de abonnementendiensten, en metriek.
@@ -182,7 +190,7 @@ Bestaande [!DNL Live Search] de installaties moeten worden aangepast aan [!DNL L
 
 ### [!DNL Live Search] 1.2.0 {#120}
 
-[!BADGE Compatibiliteit]{type="Informatief" tooltip="Compatibiliteit"}
+[!BADGE Ondersteund]{type="Informatief" tooltip="Ondersteund"}
 
 ![Nieuw](../assets/new.svg) [[!DNL Storefront popover]](storefront-popover.md) Hiermee geeft u voorgestelde producten en miniatuurafbeeldingen van de zoekresultaten van het hoogste niveau weer als kopers vragen typen in het vak Zoeken.
 ![Nieuw](../assets/new.svg) Handel *Beheerder* sessie blijft geopend tijdens lange perioden van inactiviteit op het toetsenbord
@@ -195,7 +203,7 @@ Bestaande [!DNL Live Search] de installaties moeten worden aangepast aan [!DNL L
 
 ### [!DNL Live Search] 1.1.0 {#110}
 
-[!BADGE Compatibiliteit]{type="Informatief" tooltip="Compatibiliteit"}
+[!BADGE Ondersteund]{type="Informatief" tooltip="Ondersteund"}
 
 ![Bug](../assets/bug.svg) De [!DNL Live Search] de dienst steunt slechts de [basisvaluta](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html) van de Adobe Commerce-installatie.
 ![Bug](../assets/bug.svg) Wanneer u een facet toevoegt, wordt de feed Productkenmerken niet correct bijgewerkt wanneer deze is ingesteld op `Update on Save`. Ga om dit probleem te voorkomen naar [Indexbeheer](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) en stel Productkenmerken in op Feed `Update by Schedule`.

@@ -3,7 +3,7 @@ title: '[!DNL Catalog Service] Aanvullende informatie'
 description: De meest recente releasegegevens voor [!DNL Catalog Service] voor Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 7eece9b341a27637d7ac00216f18b7fad7c50740
+source-git-commit: 822108fb92b2cac7cc62d00db035faed81ae9e25
 workflow-type: tm+mt
 source-wordcount: '496'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Updates zijn:
 
 _18 juli 2023_
 
-[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
 
 ![Nieuw](../assets/new.svg) Catalogusservice biedt nu ondersteuning voor de [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) GraphQL-query voor Product Recommendations.
 
@@ -49,7 +49,7 @@ De volgende beperkingen kunnen worden opgelost met behulp van het API-net en de 
 
 _27 juni 2023_
 
-[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
 
 ![Nieuw](../assets/new.svg) De Catalogusservice kan nu verwante producten weergeven in de widget pagina met productdetails.
 
@@ -57,7 +57,7 @@ _27 juni 2023_
 
 _12 april 2023_
 
-[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
 
 ![Nieuw](../assets/new.svg) De Catalogusservice schoont verwijderde productvarianten op.
 ![Repareren](../assets/fix.svg) Verbeterde schaalbaarheid en prestaties van de infrastructuur.
@@ -66,7 +66,7 @@ _12 april 2023_
 
 _28 maart 2023_
 
-[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
 
 ![Nieuw](../assets/new.svg) Stalen toegevoegd aan de [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) query.
 ![Nieuw](../assets/new.svg) De mogelijkheid om te worden toegevoegd `entityId` gebruiken [API-net](mesh.md).
@@ -75,7 +75,7 @@ _28 maart 2023_
 
 _6 maart 2023_
 
-[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
 
 ![Nieuw](../assets/new.svg) Toegevoegd [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) GraphQL-functionaliteit
 ![Repareren](../assets/fix.svg) Verbeterde prestaties en API-schaalbaarheid.
@@ -84,7 +84,7 @@ _6 maart 2023_
 
 _7 februari 2023_
 
-[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
 
 ![Nieuw](../assets/new.svg) Gepubliceerde metapakket voor catalogusservices om installatiestappen te vereenvoudigen.
 ![Repareren](../assets/fix.svg) Schaalbaarheid van API&#39;s en prestatieverbeteringen.
@@ -93,7 +93,7 @@ _7 februari 2023_
 
 _17 januari 2023_
 
-[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
 
 ![Nieuw](../assets/new.svg) Vereenvoudigde en verbeterde ervaring bij het instappen.
 ![Nieuw](../assets/new.svg) Er zijn nieuwe eindpunten van de sandbox van de klant beschikbaar voor preproductietests.
@@ -104,7 +104,7 @@ _17 januari 2023_
 
 _18 november 2022_
 
-[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
 
 ![Nieuw](../assets/new.svg) Catalogusservice biedt nu ondersteuning voor de Adobe [API-net](https://developer.adobe.com/graphql-mesh-gateway/).
 ![Repareren](../assets/fix.svg) Verbeterde API-schaalbaarheid en algemene prestaties.
@@ -113,7 +113,7 @@ _18 november 2022_
 
 _4 oktober 2022_
 
-[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
 
 ![Nieuw](../assets/new.svg) Ondersteuning voor gebundelde en gegroepeerde producten.
 ![Nieuw](../assets/new.svg) Extra B2B-zichtbaarheidsoverschrijvingen. De producten zijn nu doorzoekbaar en kunnen aan de kar voor specifieke klantengroepen worden toegevoegd.
@@ -127,7 +127,7 @@ _4 oktober 2022_
 
 _12 september 2022_
 
-[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
 
 ![Nieuw](../assets/new.svg) Afbeeldingen voor ondersteuning door varianten: productafbeeldingen worden geretourneerd op basis van de geselecteerde opties
 ![Nieuw](../assets/new.svg) Rollen voor prijsondersteuning: alleen leden van specifieke klantengroepen de prijs van producten laten zien
@@ -138,7 +138,7 @@ _12 september 2022_
 
 _9 augustus 2022_
 
-[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
 
 ![Nieuw](../assets/new.svg) De `products` en `refineProduct` query&#39;s retourneren de volgende gegevens:
 
