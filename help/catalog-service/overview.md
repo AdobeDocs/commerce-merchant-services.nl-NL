@@ -3,9 +3,9 @@ title: '[!DNL Catalog Service]'
 description: '''[!DNL Catalog Service] voor Adobe Commerce biedt een manier om de inhoud van de pagina''s met productweergaven en de pagina''s met productlijsten veel sneller op te halen dan de GraphQL-zoekopdrachten van de native Adobe Commerce.'''
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
 recommendations: noCatalog
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: 8e349cb8cfba7c4d828a6f3666a3b27fecfdbd15
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '897'
 ht-degree: 0%
 
 ---
@@ -37,10 +37,6 @@ In het kernGraphQL systeem, verzendt de PWA een verzoek naar de toepassing van d
 
 [!DNL Catalog Service] is een Gateway van de Diensten Storefront. De dienst heeft toegang tot een afzonderlijk gegevensbestand dat productdetails en verwante informatie, zoals productattributen, varianten, prijzen, en categorieën bevat. De service houdt de database via indexering synchroon met de Adobe Commerce.
 Omdat de dienst directe communicatie met de toepassing overslaat, kan het de latentie van de verzoek en reactiecyclus verminderen.
-
->[!NOTE]
->
->De gateway is voor toekomstige integratie met Product Recommendations. In deze release hebt u toegang tot de [!DNL Catalog Service GraphQL] en de [!DNL Live Search] vragen van het zelfde eindpunt als u een geldige vergunningssleutel voor beide producten hebt.
 
 De kern en de dienstGraphQL systemen communiceren niet direct met elkaar. U hebt toegang tot elk systeem via een andere URL en voor aanroepen is andere headerinformatie nodig. De twee GraphQL-systemen zijn ontworpen om samen te worden gebruikt. De [!DNL Catalog Service] Het GraphQL-systeem is een aanvulling op het kernsysteem, zodat producten sneller kunnen worden opgeslagen.
 
