@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
 feature: Payments, Checkout, Configuration
-source-git-commit: 4b70917ed09dcae72c3ec829db2e243fad7b14d3
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
-source-wordcount: '2387'
+source-wordcount: '2381'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ U kunt [!DNL Payment Services] voor uw website, en laat of zandbak het testen of
 
 1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 
-   ![Startweergave](assets/payment-services-menu-small.png)
+   ![Startweergave](assets/payment-services-menu-small.png){width="400" zoomable="yes"}
 
 1. Klik op **[!UICONTROL Settings]**. Zie [Inleiding tot [!DNL Payment Services] Home](payments-home.md) voor meer informatie .
 
@@ -57,9 +57,6 @@ U kunt nu de standaardinstellingen wijzigen voor [betalingsopties](#configure-pa
 U kunt een [!UICONTROL Soft Descriptor] naar de configuratie van uw website(s) of afzonderlijke winkelweergave(en). Zachte beschrijvingen worden weergegeven op bankafschriften van klanttransacties. Als u bijvoorbeeld meerdere winkels/merken/catalogi hebt, kunt u deze eenvoudig van elkaar scheiden door aangepaste tekst toe te voegen aan de [!UICONTROL Soft Descriptor] veld.
 
 1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-
-   ![Startweergave](assets/payment-services-menu-small.png)
-
 1. Klik op **[!UICONTROL Settings]**. Zie [Inleiding tot [!DNL Payment Services] Home](payments-home.md) voor meer informatie .
 1. Selecteer de website- of opslagweergave in het dialoogvenster **[!UICONTROL Scope]** vervolgkeuzelijst, waarvoor u een elektronische descriptor wilt maken. Voor de eerste setup laat u deze instelling als **[!UICONTROL Default]** om de standaardwaarde in te stellen.
 1. Voeg uw aangepaste tekst (maximaal 22 tekens) toe aan het tekstveld en vervang `Custom descriptor`.
@@ -91,9 +88,6 @@ U kunt een [!UICONTROL Soft Descriptor] naar de configuratie van uw website(s) o
 Nu hebt u deze functie ingeschakeld [!UICONTROL Payment Services] voor uw website kunt u de standaardinstellingen voor betalingsfuncties en de storefront-weergave wijzigen.
 
 1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-
-   ![Startweergave](assets/payment-services-menu-small.png)
-
 1. Klik op **[!UICONTROL Settings]**. Zie [Inleiding tot [!DNL Payment Services] Home](payments-home.md) voor meer informatie .
 1. Betalingsopties configureren voor [creditcards](#credit-card-fields), [betaalknoppen](#payment-buttons), en [knopstijl](#button-style), op de volgende secties.
 
@@ -104,9 +98,6 @@ De _[!UICONTROL Credit Card Fields]_de instellingen bieden een eenvoudige en vei
 Zie [Betalingsopties](payments-options.md#credit-card-fields) voor meer informatie .
 
 1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
-
-   ![Startweergave](assets/payment-services-menu-small.png)
-
 1. Selecteer de winkelweergave in het dialoogvenster **[!UICONTROL Scope]** vervolgkeuzemenu waarvoor u een betalingsmethode wilt inschakelen.
 1. In de **[!UICONTROL Credit card fields]** de waarde in de sectie **[!UICONTROL Checkout title]** veld voor het wijzigen van de naam van de betalingsmethode die tijdens het afrekenen wordt weergegeven.
 1. Naar [betalingsactie instellen](production.md#set-payment-services-as-payment-method), schakelen **[!UICONTROL Payment action]** tot `Authorize` of `Authorize and Capture`.
@@ -241,7 +232,7 @@ U kunt ook de _[!UICONTROL Button style]_opties voor de betalingsknoppen:
 
    Terwijl u de configuratieopties voor lay-out, kleur, vorm, hoogte en label wijzigt, wordt onder aan de pagina Instellingen een visuele voorvertoning van die configuratie weergegeven.
 
-   ![[!DNL PayPal Smart Buttons] opties](assets/payment-buttons.png){width="500"}
+   ![[!DNL PayPal Smart Buttons] opties](assets/payment-buttons.png){width="400" zoomable="yes"}
 
 1. Klik op **[!UICONTROL Save]**.
 
@@ -274,7 +265,7 @@ Wanneer u bronnen toewijst aan de rol, moet u het volgende selecteren:
 - **Betalen met[!DNL Payment Services]**—Dit middel zorgt ervoor dat wanneer u een orde in Admin creeert, [!DNL Payment Services] creditcards zijn beschikbaar als betalingsmethode. Als u **Handelingen** bovenliggende bron, wordt deze resource ook geselecteerd.
 - **[!DNL Payment Services]**—Deze bron bevat de **Dashboard** en **SaaS Services Proxy** middelen, die ook moeten worden geselecteerd. Zij zorgen ervoor dat [!DNL Payment Services] in het dialoogvenster _Verkoop_ -menu.
 
-  ![Bronnen voor betalingsservices](assets/roles-payments.png)
+  ![Bronnen voor betalingsservices](assets/roles-payments.png){width="400" zoomable="yes"}
 
 ## De cache leegmaken
 

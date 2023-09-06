@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 feature: Payments, Checkout, Orders
-source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
-source-wordcount: '1868'
+source-wordcount: '1864'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ De weergave voor de visualisatie van betalingsstatusgegevens voor bestellingen i
 
 Op de _Beheerder_ zijbalk, ga naar **Verkoop** > **Betalingsdiensten** > _Orders_ om de gegevensvisualisatie te bekijken [overzicht van de betalingsstatussen](#statuses-information).
 
-![Visualisatie van uitbetalingsgegevens in Admin](assets/orderpayment-dataviz.png){zoomable=yes}
+![Visualisatie van uitbetalingsgegevens in Admin](assets/orderpayment-dataviz.png){width="800" zoomable="yes"}
 
 Klikken **[!UICONTROL View Report]** om naar de gedetailleerde tabel te navigeren [Overzicht van betalingsstatus van bestelling](#order-payment-status-report-view).
 
@@ -73,7 +73,7 @@ De weergave van het rapport Betalingsstatus bestellen is beschikbaar in de weerg
 
 Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**om de gedetailleerde tabel met de betalingsstatusrapporten voor bestellingen weer te geven.
 
-![Betalingstransacties bestellen in de beheerder](assets/orders-report-data.png)
+![Betalingstransacties bestellen in de beheerder](assets/orders-report-data.png){width="800" zoomable="yes"}
 
 U kunt deze mening, per de secties in dit onderwerp vormen, om de gegevens het best voor te stellen u wenst te zien.
 
@@ -115,7 +115,7 @@ Om te leren hoe te om de gegevensuitvoer te vormen, zie [Configuratie van opdrac
 
 In de weergave van het rapport Betalingsstatus bestellen kunt u de gegevensbron selecteren—**[!UICONTROL Live]** _ of **[!UICONTROL Sandbox]**—waarvoor u rapportresultaten wilt zien.
 
-![Selectie gegevensbronnen](assets/datasource.png){width=400px}
+![Selectie gegevensbronnen](assets/datasource.png){width="300" zoomable="yes"}
 
 Indien _[!UICONTROL Live]_is de geselecteerde gegevensbron, kunt u rapportinformatie voor uw opslag zien die gebruikt [!DNL Payment Services] in de productiemodus. Indien_[!UICONTROL Sandbox]_ De geselecteerde gegevensbron is, kunt u rapportinformatie voor zandbakwijze zien.
 
@@ -156,7 +156,7 @@ In de weergave Betalingsstatusrapport bestellen kunt u de resultaten filteren di
 Het rapport Betalingsstatus bestelling toont standaard alle beschikbare kolommen met informatie. U kunt, echter, aanpassen welke kolommen u in uw rapport ziet.
 
 1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
-1. Klik op de knop _Kolominstellingen_ icon (![pictogram kolominstellingen](assets/column-settings.png)).
+1. Klik op de knop _Kolominstellingen_ icon (![pictogram kolominstellingen](assets/column-settings.png){width="20" zoomable="yes"}).
 1. Als u wilt aanpassen welke kolommen u in het rapport ziet, schakelt u de kolommen in de lijst in of uit.
 
    In het rapport Betalingsstatus bestellen worden direct alle wijzigingen weergegeven die u hebt aangebracht in het menu Kolominstellingen. De kolomvoorkeuren worden opgeslagen en blijven van kracht als u niet in de rapportweergave navigeert.
@@ -186,7 +186,7 @@ De weergave van het rapport Betalingsstatus bestelling toont een _[!UICONTROL La
 U kunt ook handmatig afdwingen dat de gegevens in het rapport Betalingsstatus van bestelling worden vernieuwd om de meest actuele rapportgegevens te zien.
 
 1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
-1. Klik op de knop _Vernieuwen_ icon (![vernieuwingspictogram](assets/refresh-button-med.png)).
+1. Klik op de knop _Vernieuwen_ icon (![vernieuwingspictogram](assets/refresh-button-med.png){width="20" zoomable="yes"}).
 
    De gegevens van het rapport met de betalingsstatus van de bestelling worden vernieuwd, en *[!UICONTROL Update complete]* de bevestiging verschijnt en de recentste informatie is aanwezig in het net.
 
@@ -208,7 +208,7 @@ U kunt een CSV-bestand downloaden met alle statussen die zichtbaar zijn in het w
 
 1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. Als u statussen wilt zien gedurende een ander tijdsbestek dan de laatste 30 dagen, [de tijdlijn voor het datumbereik voor uw statussen aanpassen](#customize-dates-timeframe).
-1. Klik op de knop _Downloaden_ (![downloadpictogram](assets/icon-download.png)).
+1. Klik op de knop _Downloaden_ (![downloadpictogram](assets/icon-download.png){width="20" zoomable="yes"}).
 
 De betalingsstatus van uw bestelling wordt gedownload in de indeling .csv.
 

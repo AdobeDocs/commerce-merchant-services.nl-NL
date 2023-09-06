@@ -3,7 +3,7 @@ title: "Aan boord van de [!DNL Quick Checkout] voor Adobe Commerce-extensie"
 description: "Leer hoe u [!DNL Quick Checkout] kan uw Adobe Commerce-exemplaar ten goede komen en de extensie met succes aan boord installeren en instellen."
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
 feature: Checkout, Services
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Om te beginnen met het gebruik van de [!DNL Quick Checkout] voor Adobe Commerce-extensie moet u een aantal instapkaartstappen uitvoeren om uw exemplaar te verbinden met onze uitcheckfunctionaliteit.
 
-![Snelle afhandeling](assets/overview-admin-panel.png)
+![Snelle afhandeling](assets/overview-admin-panel.png){width="800" zoomable="yes"}
 
 1. [Extensie ophalen](#get-extension).
 1. [Een Merchant-account voor de productie of sandbox maken met [!DNL Bolt]](#create-account-with-bolt). Geef alle vereiste gegevens op om uw identiteit te verifiëren.
@@ -29,7 +29,7 @@ Als Gainsight is ingeschakeld, activeert het de **Volg de rondleiding** in uw [!
 
 1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > Geavanceerd:
 
-   ![Snelle afhandeling](assets/gainsight-admin.png)
+   ![Snelle afhandeling](assets/gainsight-admin.png){width="500" zoomable="yes"}
 
 Als Gainsight niet is ingeschakeld, gaat u verder met de instapprocedure.
 
@@ -69,7 +69,7 @@ Als u de opdracht [!DNL Quick Checkout] u hebt [!DNL Bolt] unieke toetsen en [!D
 - [!DNL Publishable key]: Een toets die door de voorzijde wordt gebruikt om te communiceren met [!DNL Bolt] API&#39;s.
 - [!DNL Signing secret]: Wordt gebruikt voor handtekeningverificatie op aanvragen ontvangen van [!DNL Bolt].
 
-  ![Snelle afhandeling](assets/account-credentials.png)
+  ![Snelle afhandeling](assets/account-credentials.png){width="500" zoomable="yes"}
 
 Zie de [[!DNL Bolt] omgevingsdetails](https://help.bolt.com/developers/references/environment-details/#about-keys){target="_blank"} pagina voor meer informatie over sleutels en het ondertekenen van geheim van [!DNL Bolt] voor de [!DNL Quick Checkout] extensie.
 
@@ -87,7 +87,7 @@ Volg de stappen in het dialoogvenster [processorinstelling](https://help.bolt.co
 1. Vouw in het linkerdeelvenster uit **Verkoop** en selecteert u **Afhandeling**.
 1. In de [!DNL Quick Checkout] weergave, instellen **Inschakelen** tot `Yes`.
 
-![Snelle afhandeling](assets/quick-checkout-view-no-enable.png)
+![Snelle afhandeling](assets/quick-checkout-view-no-enable.png){width="500" zoomable="yes"}
 
 >[!CAUTION]
 >
@@ -100,7 +100,7 @@ Volg de stappen in het dialoogvenster [processorinstelling](https://help.bolt.co
 
 1. Valideer referenties nadat u de unieke API hebt opgegeven en [!DNL Publishable keys].
 
-![Snelle afhandeling](assets/quick-checkout-main-view.png)
+![Snelle afhandeling](assets/quick-checkout-main-view.png){width="500" zoomable="yes"}
 
 Zie de [Instellingen](../quick-checkout/settings-quick-checkout.md) onderwerp voor meer informatie over de configuratieopties voor [!DNL Quick Checkout] voor Adobe Commerce-extensie.
 
@@ -141,7 +141,7 @@ Zie de [Bereik van site, winkel en weergave](https://experienceleague.adobe.com/
 
 ## Service-instellingen configureren
 
-![Snelle afhandeling](assets/service-settings.png)
+![Snelle afhandeling](assets/service-settings.png){width="500" zoomable="yes"}
 
 1. Set **Afhandeling volgen inschakelen** tot `Yes`.
 

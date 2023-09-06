@@ -5,7 +5,7 @@ role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 feature: Payments, Checkout, Configuration
-source-git-commit: 366689fccdf3ae93700d458bf9cbcab63e4583a8
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '1407'
 ht-degree: 1%
@@ -25,7 +25,7 @@ U kunt [!DNL Payment Services] voor uw winkel en schakel het testen van sandboxe
 1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. Vouw in het linkerdeelvenster uit **[!UICONTROL Sales]** en kiest u **[!UICONTROL Payment Methods]**.
 
-   ![Methoden, weergave](assets/methods-view.png)
+   ![Methoden, weergave](assets/methods-view.png){width="400" zoomable="yes"}
 
 1. Vouw de sectie _[!UICONTROL Recommended Solutions]_uit.
 1. In de _[!UICONTROL [!DNL Payment Services]]_sectie, breid de_[!UICONTROL General Configuration]_ sectie.

@@ -3,7 +3,7 @@ title: '''[!DNL Quick Checkout] rapporteren'
 description: '''[!DNL Quick Checkout] uitgebreide rapportageinformatie biedt. "'
 exl-id: 91c687f4-9953-4c2f-b240-73430603e6a1
 feature: Checkout, Services
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 [!DNL Quick Checkout] voor Adobe Commerce en Magento Open Source biedt uitgebreide rapportage zodat je gedetailleerde informatie kunt krijgen over de statistieken van je winkelervaring.
 
-![Rapporten, weergave](assets/reports-view-big-checkout.png)
+![Rapporten, weergave](assets/reports-view-big-checkout.png){width="600" zoomable="yes"}
 
 >[!WARNING]
 >
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 De grafieken in de sectie Overzicht bevatten gedetailleerde informatie over de afrekenprestaties van uw winkel, zoals de gemiddelde afhandelingstijd, nieuwe accounts die zijn gemaakt tijdens het afrekenen of afschaffen van de afhandeling.
 
-![Overzicht van rapporten](assets/overview-report-checkout.png)
+![Overzicht van rapporten](assets/overview-report-checkout.png){width="600" zoomable="yes"}
 
 | Diagram | Beschrijving |
 |---|---|
@@ -38,7 +38,7 @@ De grafieken in de sectie Overzicht bevatten gedetailleerde informatie over de a
 
 De grafieken in de sectie van Trends tonen uw tendensen die van de controleervaring door rekeningstype wordt gefilterd, of nieuwe rekeningen tijdens kassa worden gecreeerd.
 
-![Rapporttrends](assets/trends-report-checkout.png)
+![Rapporttrends](assets/trends-report-checkout.png){width="600" zoomable="yes"}
 
 | Diagram | Beschrijving |
 |---|---|
@@ -50,7 +50,7 @@ De grafieken in de sectie van Trends tonen uw tendensen die van de controleervar
 
 U kunt de resultaten filteren die op datum worden weergegeven, of bestaande voorinstellingen, zoals **Laatste 30 dagen**.
 
-![Filterweergave](assets/filter-view.png)
+![Filterweergave](assets/filter-view.png){width="300" zoomable="yes"}
 
 | Veld | Beschrijving |
 |---|---|

@@ -3,7 +3,7 @@ title: "Afhandelingsstroom in Adobe Commerce"
 description: "Overzicht van de [!DNL Quick Checkout] flow in Adobe Commerce."
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
 feature: Checkout, Services, Storefront
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '217'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Een geslaagde [!DNL Quick Checkout] De stroom bestaat uit de volgende stappen:
 1. Open de winkelruimte en voeg objecten toe aan de winkelwagentje.
 1. Ga door met de kassa.
 
-![Afhandeling](assets/proceed-checkout.png)
+![Afhandeling](assets/proceed-checkout.png){width="200" zoomable="yes"}
 
 >[!NOTE]
 >
@@ -28,7 +28,7 @@ Een geslaagde [!DNL Quick Checkout] De stroom bestaat uit de volgende stappen:
 1. Voer desgevraagd een e-mailadres in dat is gekoppeld aan een [!DNL Bolt] account.
 1. Voer het eenmalige wachtwoord (OTP) in dat naar dat wachtwoord is verzonden [!DNL Bolt] e-mailadres of telefoonnummer van account.
 
-![Pop-up OTP](assets/new-logo-otp-email.png)
+![Pop-up OTP](assets/new-logo-otp-email.png){width="300" zoomable="yes"}
 
 1. Zodra het programma geopend met uw [!DNL Bolt] account, betalingsgegevens worden automatisch ingevuld in:
 

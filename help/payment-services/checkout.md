@@ -2,7 +2,7 @@
 title: Afhandeling
 description: Afhandeling aanpassen aan de behoeften van uw klant.
 feature: Payments, Checkout
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%
@@ -20,11 +20,11 @@ Als tijdens het uitchecken een fout optreedt, [!DNL Payment Services] Hiermee wo
 
 Er wordt een foutbericht weergegeven op de uitcheckpagina voor de winkelier. Het bericht kan variëren.
 
-![Fout tijdens controleren](assets/user-checkout-error.png "Fout tijdens uitchecken")
+![Fout tijdens controleren](assets/user-checkout-error.png "Fout tijdens uitchecken"){width="600" zoomable="yes"}
 
 Een opmerking over de geannuleerde volgorde wordt ook weergegeven in Beheer voor een specifieke [bestellen](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/orders.html?lang=en).
 
-![Opmerking voor geannuleerde bestelling in Admin](assets/admin-checkout-error.png "Opmerking voor geannuleerde bestelling in Admin")
+![Opmerking voor geannuleerde bestelling in Admin](assets/admin-checkout-error.png "Opmerking voor geannuleerde bestelling in Admin"){width="600" zoomable="yes"}
 
 Als een klant toestemming voor een bestelling krijgt, maar de bestelling niet is gemaakt en omgezet in een `Capture`, de volgorde is automatisch ongeldig. Dit proces zorgt ervoor dat er geen krediet op de creditcard van de winkels wordt gereserveerd en vermijdt de provisie voor de betalingsaanbieder die ontstaat wanneer de machtiging aan het einde van de standaardperiode van 29 dagen wordt ingetrokken.
 

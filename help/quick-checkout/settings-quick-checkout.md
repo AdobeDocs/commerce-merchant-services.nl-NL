@@ -3,7 +3,7 @@ title: Vorm [!DNL Quick Checkout] voor Adobe Commerce-extensie
 description: Leer de configuratieopties voor de [!DNL Quick Checkout] en hoe u de extensie met succes aan boord kunt instellen.
 exl-id: 892e04dc-17d6-45e9-b2ab-c7a0735a75bc
 feature: Checkout, Services
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 0%
@@ -19,13 +19,13 @@ Deze configuratie-instellingen openen:
 1. Op de _Beheerder_ zijbalk, ga naar **Winkels** > _Instellingen_ > **Configuratie**.
 1. Vouw in het linkerdeelvenster uit **Verkoop** en selecteert u **Afhandeling**.
 
-   ![Snelle afhandeling](assets/config-new-logo-view.png)
+   ![Snelle afhandeling](assets/config-new-logo-view.png){width="800" zoomable="yes"}
 
 Zie de [Onboarding](../quick-checkout/onboarding.md) onderwerp voor meer informatie over hoe te om te vormen [!DNL Quick Checkout] voor Adobe Commerce.
 
 ## Extensie inschakelen
 
-![Snelle afhandeling](assets/enable-method.png)
+![Snelle afhandeling](assets/enable-method.png){width="500" zoomable="yes"}
 
 | Veld | Toepassingsgebied | Beschrijving |
 |---|---|---|
@@ -36,7 +36,7 @@ Zie de [Onboarding](../quick-checkout/onboarding.md) onderwerp voor meer informa
 
 ## Accountgegevens
 
-![Snelle afhandeling](assets/account-creds.png)
+![Snelle afhandeling](assets/account-creds.png){width="500" zoomable="yes"}
 
 | Veld | Toepassingsgebied | Beschrijving |
 |---|---|---|
@@ -48,7 +48,7 @@ Zie de [Onboarding](../quick-checkout/onboarding.md) onderwerp voor meer informa
 
 ## Service-instellingen
 
-![Snelle afhandeling](assets/service-settings.png)
+![Snelle afhandeling](assets/service-settings.png){width="500" zoomable="yes"}
 
 | Veld | Toepassingsgebied | Beschrijving |
 |---|---|---|

@@ -5,7 +5,7 @@ role: User
 level: Intermediate
 exl-id: dbf41ce9-01f9-45d0-b651-e4c499e83822
 feature: Payments, Checkout, Data Import/Export
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 0%
@@ -26,7 +26,7 @@ De id&#39;s zijn gemakkelijk toegankelijk in zowel de zakelijke activiteitengege
 
 De `invoice_id` en `custom_id` worden onder aan de detailhandel weergegeven voor een uitbetaling:
 
-![`custom_id` in detail van de handelsactiviteit](assets/merchant-activity-ids.png)
+![`custom_id` in detail van de handelsactiviteit](assets/merchant-activity-ids.png){width="600" zoomable="yes"}
 
 `custom_id` en `invoice_id` in de details op de website van PayPal:
 

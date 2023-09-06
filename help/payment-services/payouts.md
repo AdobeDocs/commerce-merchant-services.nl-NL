@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 feature: Payments, Checkout
-source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
-source-wordcount: '1316'
+source-wordcount: '1310'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ De weergave voor de visualisatie van betalingsgegevens is beschikbaar in de star
 
 Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** om het gegevensvisualisatieschema van crediteringen tegenover debiteringen en de bewegende gemiddelden in de loop der tijd te zien.
 
-![Visualisatie van uitbetalingsgegevens in Admin](assets/payouts-report.png){zoomable=yes}
+![Visualisatie van uitbetalingsgegevens in Admin](assets/payouts-report.png){width="800" zoomable="yes"}
 
 Klikken **[!UICONTROL View Report]** om naar de gedetailleerde tabel te navigeren [Weergave uitbetalingsrapport](#payouts-report-view).
 
@@ -71,7 +71,7 @@ De weergave van het betalingsrapport is beschikbaar in de weergave Uitbetalingen
 
 Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**om de gedetailleerde tabelweergave van het uitbetalingsrapport te bekijken.
 
-![Betalingstransacties in de beheerder](assets/payouts-report-new.png){zoomable=yes}
+![Betalingstransacties in de beheerder](assets/payouts-report-new.png){width="800" zoomable="yes"}
 
 U kunt deze mening, per de secties in dit onderwerp vormen, om de gegevens het best voor te stellen u wenst te zien.
 
@@ -87,7 +87,7 @@ U kunt [uitbetalingstransacties downloaden](#download-transactions) in een .csv-
 
 In de mening van het rapport van Uitbetalingen kunt u de gegevensbron selecteren—**[!UICONTROL Live]** of **[!UICONTROL Sandbox]**—waarvoor u rapportresultaten wilt zien.
 
-![Selectie gegevensbronnen](assets/datasource.png){width=400px}
+![Selectie gegevensbronnen](assets/datasource.png){width="300" zoomable="yes"}
 
 Indien _[!UICONTROL Live]_is de geselecteerde gegevensbron, kunt u rapportinformatie voor opslag op productiemodus zien. Indien_[!UICONTROL Sandbox]_ Als de geselecteerde gegevensbron is, kunt u rapportinformatieopslag op zandbakwijze zien.
 
@@ -126,7 +126,7 @@ In de weergave van het rapport Uitbetalingen kunt u het tijdpad voor de uitbetal
 In de weergave van het rapport Uitbetalingen worden standaard de meeste beschikbare kolommen met informatie weergegeven. U kunt echter aanpassen welke kolommen u in het rapport ziet.
 
 1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
-1. Klik op de knop _Kolominstellingen_ icon (![pictogram kolominstellingen](assets/column-settings.png)).
+1. Klik op de knop _Kolominstellingen_ icon (![pictogram kolominstellingen](assets/column-settings.png){width="20" zoomable="yes"}).
 1. Als u wilt aanpassen welke kolommen u in het rapport ziet, schakelt u de kolommen in de lijst in of uit.
 
    In de weergave van het rapport Uitbetalingen worden direct alle wijzigingen weergegeven die u hebt aangebracht in het menu Kolominstellingen. De kolomvoorkeuren worden opgeslagen en blijven van kracht als u niet in de rapportweergave navigeert.
@@ -137,7 +137,7 @@ U kunt een CSV-bestand downloaden dat alle transacties bevat die zichtbaar zijn 
 
 1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
 1. [Tijdschema datumbereik voor uw transacties aanpassen](#customize-transactions-timeframe).
-1. Klik op de knop _Downloaden_ (![](assets/icon-download.png)).
+1. Klik op de knop _Downloaden_ (![](assets/icon-download.png){width="20" zoomable="yes"}).
 
 Uw uitbetalingstransacties worden gedownload in de CSV-indeling.
 

@@ -3,7 +3,7 @@ title: "Afhandelingsstroom voor een Adobe Commerce-gebruiker"
 description: "Overzicht van de [!DNL Quick Checkout] voor een Adobe Commerce-gebruiker."
 exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
 feature: Checkout, Services, Storefront
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Indien een [!DNL Bolt] account is gevonden tijdens afrekenen, kopers kunnen door
 
 1. Voer het eenmalige wachtwoord (OTP) in dat naar dat wachtwoord is verzonden [!DNL Bolt] e-mailadres van account of mobiel, afhankelijk van [gebruikersvoorkeuren in het dialoogvenster [!DNL Bolt] account](https://help.bolt.com/shoppers/account/account-settings/#how-to-set-preferred-login-method){target=_blank}.
 
-![Pop-up OTP](assets/new-logo-otp-email.png)
+![Pop-up OTP](assets/new-logo-otp-email.png){width="300" zoomable="yes"}
 
 1. Zodra het programma geopend met uw [!DNL Bolt] -account, worden de gegevens automatisch toegevoegd:
 
@@ -65,4 +65,4 @@ Indien niet [!DNL Bolt] -account is gevonden, kunnen kopers hun standaard buiten
 - Betalingsmethode controleren
 - De optie om u aan te melden [!DNL Bolt] voor snellere kassa&#39;s voordat de bestelling wordt geplaatst. De winkelier kan akkoord gaan met de voorwaarden om hun [!DNL Bolt] account.
 
-  ![Herinneren [!DNL Bolt]](assets/checkbox-remember-bolt.png)
+  ![Herinneren [!DNL Bolt]](assets/checkbox-remember-bolt.png){width="300" zoomable="yes"}

@@ -3,7 +3,7 @@ title: De testsandbox instellen
 description: Een PayPal-sandboxaccount gebruiken [!DNL Payment Services] in de testmodus.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Sandbox aan boord voltooien:
    1. In de _[!UICONTROL Sandbox Accounts]_klikt u op de drie stippen in de_[!UICONTROL Manage accounts]_ kolom voor de sandboxaccount die u hebt gemaakt.
    1. Klik op **[!UICONTROL View/edit account]**.
 
-      ![PayPal - Sandboxaccount bekijken/bewerken](assets/onboarding-viewedit-sandbox.png)
+      ![PayPal - Sandboxaccount bekijken/bewerken](assets/onboarding-viewedit-sandbox.png){width="300" zoomable="yes"}
 
    1. Kopieer en sla de e-mailid en het door het systeem gegenereerde wachtwoord op voor toekomstig gebruik.
 
@@ -48,7 +48,7 @@ Sandbox aan boord voltooien:
 1. Voer het e-mailadres en het wachtwoord in van de Paypal-sandboxaccount die u hebt gegenereerd in stap 3 (niet uw Paypal-zakelijke accountgegevens) en uw land of regio.
 1. Klik op **[!UICONTROL Next]**.
 
-   ![PayPal - Verbinding maken met PayPal-rekening voor betalingen](assets/paypal-connectacct.png)
+   ![PayPal - Verbinding maken met PayPal-rekening voor betalingen](assets/paypal-connectacct.png){width="300" zoomable="yes"}
 
 1. Ga door met het volgen van de PayPal-stroom en gebruik de gegevens van uw eerder opgeslagen sandbox-account.
 1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.

@@ -3,7 +3,7 @@ title: '[!DNL Quick Checkout] voor Adobe Commerce Admin Panel'
 description: Meer informatie over [!DNL Quick Checkout] Het deelvenster Beheer kan u helpen om de extensie met succes aan boord te krijgen, in te stellen en te visualiseren.
 exl-id: d91763ed-b4f6-4736-9503-0305edd77e91
 feature: Checkout, Services
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Quick Checkout]**:
 1. In deze weergave hebt u toegang tot de _Deelvenster Beheer_ overzicht, _Bronnen_ info [!DNL Quick Checkout], get _Help en ondersteuning_ of configureer de extensie via _Instellingen_.
 
-   ![Snel uitchecken van menu](assets/admin-panel-view.png)
+   ![Snel uitchecken van menu](assets/admin-panel-view.png){width="600" zoomable="yes"}
 
 Controleer of de gebruiker de juiste rollen en machtigingen heeft die zijn verleend in volgorde van [!DNL Quick Checkout] Het deelvenster Beheer dat moet worden weergegeven. Zie de [Gebruikersrollen en -machtigingen](../quick-checkout/user-roles-setup.md) voor meer informatie.
 

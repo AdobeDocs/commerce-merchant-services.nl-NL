@@ -3,7 +3,7 @@ title: Afhandelingspagina
 description: "Overzicht van de afhandelingspagina in Adobe Commerce."
 exl-id: afe3a93d-8aba-428e-ac9d-0be8d23ceb47
 feature: Checkout, Services, Storefront
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '99'
 ht-degree: 0%
@@ -16,7 +16,7 @@ Op de afhandelingspagina voeren klanten de vereiste gegevens in om een bestellin
 
 Een voorbeeld van een uitcheckpagina:
 
-![Afhandelingspagina](assets/checkout-page.png)
+![Afhandelingspagina](assets/checkout-page.png){width="600" zoomable="yes"}
 
 Raadpleeg voor meer informatie over de standaardpagina voor afhandeling van Adobe Commerce de [uitcheckpagina](https://docs.magento.com/user-guide/quick-tour/checkout-page.html) onderwerp.
 

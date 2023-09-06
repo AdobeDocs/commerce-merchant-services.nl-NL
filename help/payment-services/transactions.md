@@ -3,7 +3,7 @@ title: Transactierapport
 description: Gebruik het rapport Transacties om de snelheid van de transactievergunning en transactietrends zichtbaar te maken.
 role: User
 level: Intermediate
-source-git-commit: dab47a7dcac5d32f4b10cd8b4ce1f7e5dc7fd6c9
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '1162'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 [!DNL Payment Services] for [!DNL Adobe Commerce] en [!DNL Magento Open Source] biedt uitgebreide rapportage zodat u een duidelijk overzicht kunt krijgen van de transacties, bestellingen en betalingen in uw winkel.
 
-![Transactierapport](assets/transactions-report.png){width="600" zoomable="yes"}
+![Transactierapport](assets/transactions-report.png){width="700" zoomable="yes"}
 
 Het Transactierapport biedt inzicht in transactievergunningpercentages en negatieve transactietrends zodat u de gezondheid van uw opslag effectief kunt controleren en om het even welke transactiekwesties op voorhand kunt identificeren en behandelen.
 
@@ -91,7 +91,7 @@ In de weergave van het Transactierapport kunt u de resultaten filteren die u wil
 Het rapport van Transacties toont alle beschikbare kolommen van informatie door gebrek. U kunt, echter, aanpassen welke kolommen u in uw rapport ziet.
 
 1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
-1. Klik op de knop **[!UICONTROL Column settings]** pictogram ![pictogram kolominstellingen](assets/column-settings.png){width="25"}.
+1. Klik op de knop **[!UICONTROL Column settings]** pictogram ![pictogram kolominstellingen](assets/column-settings.png){width="20" zoomable="yes"}.
 1. Om aan te passen welke kolommen die u in het rapport ziet, controleer of uncheck kolommen in de lijst.
 
    In het rapport Transacties worden direct alle wijzigingen weergegeven die u hebt aangebracht in het menu Kolominstellingen. De kolomvoorkeuren worden opgeslagen en blijven van kracht als u niet in de rapportweergave navigeert.
@@ -103,7 +103,7 @@ De het rapportmening van Transacties toont een _[!UICONTROL Last updated]_timest
 U kunt ook manueel dwingen verfrist zich van de rapportgegevens om de meest bijgewerkte rapportinformatie te zien.
 
 1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
-1. Klik op de knop _Vernieuwen_ icon (![vernieuwingspictogram](assets/refresh-button-med.png)).
+1. Klik op de knop _Vernieuwen_ icon (![vernieuwingspictogram](assets/refresh-button-med.png){width="20" zoomable="yes"}).
 
    De gegevens van het Transactierapport worden vernieuwd, en *[!UICONTROL Update complete]* de bevestiging verschijnt en de recentste informatie is aanwezig in het net.
 
@@ -113,7 +113,7 @@ U kunt een CSV-bestand downloaden met alle transacties die zichtbaar zijn in het
 
 1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Transactions]**.
 1. Als u transacties wilt zien voor een ander tijdsbestek dan de laatste 30 dagen, [de tijdlijn voor het datumbereik voor uw statussen aanpassen](#customize-dates-timeframe).
-1. Klik op de knop _Downloaden_ ![downloadpictogram](assets/icon-download.png){width="25"} pictogram.
+1. Klik op de knop _Downloaden_ ![downloadpictogram](assets/icon-download.png){width="20" zoomable="yes"} pictogram.
 
 Uw transacties worden gedownload in de indeling .csv.
 
