@@ -4,10 +4,10 @@ description: "Controleer de opmerkingen bij de release voor informatie over alle
 role: Admin, User, Leader
 feature: Shipping/Delivery, Release Notes
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
-source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
+source-git-commit: db1d5523f48f5686c2a28c7dfb7b1175238b37cf
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 2%
+source-wordcount: '514'
+ht-degree: 1%
 
 ---
 
@@ -19,11 +19,15 @@ In deze releaseopmerkingen wordt de eerste release van [!DNL Store Fulfillment S
 ![Probleem opgelost](../assets/fix.svg) Oplossingen en verbeteringen
 ![Bekend probleem](../assets/bug.svg) Bekende problemen
 
+Zie [Volgende releases](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) om over versieschema&#39;s en steun te leren.
+
+Zie [Beschikbaarheid van producten](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html) voor meer informatie over de Adobe Commerce-versies die deze extensie ondersteunen.
+
 ## v1.5.0
 
 *3 augustus 2023*
 
-[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}[Adobe Commerce 2.4.4 tot en met 2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html), inclusief de beveiligingspatchreleases 2.4.6-p1, 2.4.5-p3 en 2.4.4-p4.
+[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}[Adobe Commerce 2.4.4 tot en met 2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html), inclusief de beveiligingspatchreleases 2.4.6-p1, 2.4.5-p3 en 2.4.4-p4
 
 Deze release bevat de volgende updates:
 
@@ -63,7 +67,7 @@ Deze release bevat de volgende updates:
 
 *13 april 2023*
 
-[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
 
 ![Nieuw](../assets/fix.svg) [!DNL Store Fulfillment] is nu [compatibel met [!DNL Adobe Commerce] 2.4.4 tot en met 2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
@@ -72,7 +76,7 @@ Deze release bevat de volgende updates:
 
 *27 februari 2023*
 
-[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
 
 Deze release bevat de volgende update:
 
@@ -82,7 +86,7 @@ Deze release bevat de volgende update:
 
 *27 september 2022*
 
-[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
 
 Deze release bevat de volgende update:
 
@@ -93,7 +97,7 @@ Deze release bevat de volgende update:
 
 *15 juli 2022*
 
-[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
 
 Stabiliteit: algemene beschikbaarheid
 
@@ -103,7 +107,7 @@ Stabiliteit: algemene beschikbaarheid
 
 *4 maart 2022*
 
-[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
 
 Stabiliteit: algemene beschikbaarheid
 
