@@ -1,9 +1,9 @@
 ---
 title: Feed Ingestie Service
 description: Meer informatie over de Feed Ingestie Service voor Adobe Commerce
-source-git-commit: 12b1e89924a2eb89494bcb884fc3bc14e87b2b1c
+source-git-commit: b57fc43d23dbbcbcae31743fd0ab9c1b3d1c1084
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '404'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,11 @@ ht-degree: 0%
 >
 >De dienst van de Ingestie van het voer is momenteel in privé bèta. Het is nog niet beschikbaar voor algemeen gebruik.
 
+Met de Feed Ingestieservice kunnen klanten met grote en/of complexe catalogi gegevens rechtstreeks naar Adobe Commerce-services verzenden.
+
 De dienst van de Ingestie van de Diervoeders vermindert de tijd het om productveranderingen (prijsupdates, toevoegend nieuwe attributen) te verwerken door de instantie van Adobe Commerce te mijden en catalogusgegevens van een derde van de Planning van het Middel van de Onderneming (ERP) rechtstreeks aan de diensten van Adobe Commerce te bewegen.
 
-Deze service is bedoeld voor klanten die hun productcatalogus opslaan en beheren in een systeem dat zich niet in de belangrijkste Adobe Commerce-toepassing bevindt.
+Deze service is bedoeld voor klanten die hun productcatalogus opslaan en beheren in een systeem dat zich niet in de belangrijkste Adobe Commerce-toepassing bevindt. Het wordt verstrekt als API, zodat de klanten het in hun bestaande systemen kunnen integreren, die extra flexibiliteit in verstrekken hoe het wordt opgesteld.
 
 Klanten met grote, complexe catalogi of catalogi die regelmatig worden bijgewerkt, maken zich zorgen dat de nieuwe gegevens langer kunnen duren dan u wilt weergeven in de live winkel. Aangezien de Dienst van de Catalogus weet welke gegevens het vereist om deze updates te verwerken, is er geen behoefte om de gegevens door het kernproduct van de Handel te verzenden, slechts aan de Dienst van de Catalogus door:sturen. Als u deze tussenstap verwijdert, worden efficiëntieverbeteringen gevonden.
 

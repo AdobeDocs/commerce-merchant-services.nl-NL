@@ -3,7 +3,7 @@ title: Betalingsopties
 description: Stel de betalingsopties in om de beschikbare methoden voor uw winkelklanten aan te passen.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: c4068d71eba45ea45b1c1eefc324bf830479e0e3
 workflow-type: tm+mt
 source-wordcount: '1048'
 ht-degree: 0%

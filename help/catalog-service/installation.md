@@ -2,9 +2,9 @@
 title: Onboarding en installatie
 description: Leer hoe u kunt installeren [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 04b1553e7cc16d142b72553ca2a6bb9d6a6b5eb4
+source-git-commit: 75ff893bf5867ededa49807835676ddf9b19adc9
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '649'
 ht-degree: 0%
 
 ---
@@ -36,14 +36,16 @@ Het instapproces voor [!DNL Catalog Service] vereist toegang tot de bevellijn va
 - Adobe Commerce op cloudinfrastructuur: 2.4.4+
 - Adobe Commerce in bedrijven: 2.4.4+
 
-## Omgevingen
+## Eindpunten
 
-Catalog Service heeft twee omgevingen die beschikbaar zijn voor instapweigering:
+Catalog Service heeft twee eindpunten die beschikbaar zijn voor instapweigering:
 
 - Sandbox (https://catalog-service-sandbox.adobe.io/graphql) - wordt gebruikt voor tests en validatie voordat u live gaat
 - Productie (https://catalog-service.adobe.io/graphql)-) gebruikt voor het live verkeer voor handelaars en websites
 
-Het testen van de lading zou slechts in het milieu van de Sandbox moeten worden uitgevoerd. Het wordt aanbevolen om [Ondersteuningsticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) worden geopend wanneer het laden het testen zodat het team van de Diensten het extra serververkeer kan voorzien.
+Alle testinstanties van de Handel moeten het eindpunt van Sanbox gebruiken.
+
+Het testen van de lading zou slechts op het zandbakeindpunt moeten worden uitgevoerd. Het wordt aanbevolen om [Ondersteuningsticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) worden geopend wanneer het laden het testen zodat het team van de Diensten het extra serververkeer kan voorzien.
 
 ## Installatie en configuratie
 

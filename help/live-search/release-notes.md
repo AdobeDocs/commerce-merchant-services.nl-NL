@@ -3,9 +3,9 @@ title: '[!DNL Live Search] Aanvullende informatie'
 description: "De meest recente releasegegevens voor [!DNL Live Search] uit Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 74282ba307f22730e1f6bfcb9a590caee87ba073
+source-git-commit: add4d61f1e97bdf889ab0de694f8c3921caaab50
 workflow-type: tm+mt
-source-wordcount: '1403'
+source-wordcount: '1459'
 ht-degree: 1%
 
 ---
@@ -75,6 +75,16 @@ De volgende waarden zijn toegevoegd aan de `storeDetails` object:
 * De **Mijn account** paginanavigatie verdwijnt niet meer wanneer u de widget pagina met productaanbiedingen gebruikt.
 
 Handelaren moeten de [!DNL Live Search] extensie versie >= 3.0.2 gebruiken om deze functies te openen.
+
+U wordt aangeraden een upgrade uit te voeren en te testen voordat u naar de productie gaat. Overweeg om de productieomgeving tijdens niet-piekuren te upgraden nadat de resultaten van de testomgeving zijn gecontroleerd.
+
+### Beperkingen
+
+Als u de widget pagina met aanbiedingen van producten voor live zoeken gebruikt, mislukt Google Tag Manager. Gebruik de standaard Zoekadapter als Google Tagbeheer nodig is.
+
+## Vorige versies
+
++++3.0.1 en eerder
 
 ## [!DNL Live Search] 3.0.1 {#301}
 
