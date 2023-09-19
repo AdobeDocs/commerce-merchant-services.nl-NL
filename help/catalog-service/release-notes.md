@@ -3,7 +3,7 @@ title: '[!DNL Catalog Service] Aanvullende informatie'
 description: De meest recente releasegegevens voor [!DNL Catalog Service] voor Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 232dce5db4a82fcec367dce04fb6fba5826b9733
+source-git-commit: 4e1e50aad831f04c0fee105e4c45a28ff5ca65af
 workflow-type: tm+mt
 source-wordcount: '515'
 ht-degree: 0%
@@ -54,7 +54,7 @@ De volgende beperkingen kunnen worden opgelost met behulp van het API-net en de 
 
 _18 juli 2023_
 
-[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
 
 ![Nieuw](../assets/new.svg) Catalogusservice biedt nu ondersteuning voor de [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) GraphQL-query voor Product Recommendations.
 
