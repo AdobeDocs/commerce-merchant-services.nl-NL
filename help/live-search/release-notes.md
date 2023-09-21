@@ -3,10 +3,10 @@ title: '[!DNL Live Search] Aanvullende informatie'
 description: "De meest recente releasegegevens voor [!DNL Live Search] uit Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: add4d61f1e97bdf889ab0de694f8c3921caaab50
+source-git-commit: 190ff4bd6442f77407675e48850e214e241b392a
 workflow-type: tm+mt
-source-wordcount: '1459'
-ht-degree: 1%
+source-wordcount: '1662'
+ht-degree: 0%
 
 ---
 
@@ -36,6 +36,52 @@ _25 april 2023_
 
 +++
 
+## [!DNL Live Search] 3.1.1 {#311}
+
+_15 sep. 2023_
+
+[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+
+### Nieuwe functies
+
+* Het nieuwe tabblad Categorieomzetting is toegevoegd. Gebruikers kunnen nu intelligente waarderingen en handmatige waarderingen (speld, boost, bury, hide) per categorie toevoegen
+* Gebruikers kunnen één categorieregel toevoegen met een intelligente of handmatige classificatie
+* Gebruikers kunnen nu intelligente volgregels toevoegen aan subcategorieën
+* Gedetailleerde informatie wordt gegeven wanneer het schrappen van subcategorieën met intelligente rangschikking
+* De mogelijkheid toegevoegd om regels voor overgeërfde classificatiestrategieën te verwijderen
+* De mogelijkheid toegevoegd om regels voor één categorie te verwijderen
+* Gebruikers kunnen nu op categorienaam zoeken wanneer zij een regel toevoegen
+* In de weergave Categoriestructuur kunnen gebruikers nu zien welke categorie regels heeft toegepast.
+* In Voorvertoning categorie wordt alleen de geselecteerde categorie weergegeven.
+
+### Updates
+
+* Het tabblad &#39;Regels&#39; krijgt een andere naam dan &#39;Zoekregels&#39;
+* Wanneer u de rangschikking instelt op &#39;trending&#39;, kunt u nu kiezen tussen:
+   * 3 dagen (standaard)
+   * 14 dagen
+   * dertig dagen
+* &#39;Gebeurtenissen&#39; (Boost/Pin/Bury/Hide) is hernoemd naar &#39;Handmatige volgorde&#39;
+* &#39;Type classificatie&#39; is hernoemd naar &#39;Intelligente classificatie&#39;
+
+### Oplossingen
+
+* Kleine oplossingen voor problemen
+
+Handelaren moeten de [!DNL Live Search] extensie versie >= 3.1.1 om toegang te krijgen tot deze functies.
+
+Nadat u versie 3.1.1 hebt geïnstalleerd, moeten de volgende nieuwe indexen zijn ingeschakeld:
+
+* Diervoeders productprijzen
+* Websitegegevensinvoer
+* Scopes klant groepeert gegevenstoevoer
+
+Het wordt aanbevolen een upgrade uit te voeren en te testen in QA of Staging voordat wijzigingen in de productie worden doorgevoerd.
+
+## Vorige versies
+
++++3.1.0 en eerder
+
 ## [!DNL Live Search] 3.1.0 {#310}
 
 _1 sep. 2023_
@@ -45,10 +91,6 @@ _1 sep. 2023_
 ### Updates
 
 * De widget voor productaanbiedingen is bijgewerkt om de [Catalogusservice-API](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/product-search/).
-
-## Vorige versies
-
-+++3.0.2 en eerder
 
 ## [!DNL Live Search] 3.0.2 {#302}
 

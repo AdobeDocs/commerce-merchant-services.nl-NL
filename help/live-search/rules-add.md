@@ -2,9 +2,9 @@
 title: "Regels toevoegen"
 description: "Leer hoe u creeert [!DNL Live Search] regels."
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 0b0e9a630162c4c98c6a3af969002def03155267
+source-git-commit: 8093cf72e9adf846f4c40d302d20c77142368c8e
 workflow-type: tm+mt
-source-wordcount: '1419'
+source-wordcount: '1428'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Om een regel te bouwen, moet de eerste stap de regelredacteur gebruiken om de vo
 
 1. Ga in Beheer naar **Marketing** > SEO &amp; Search > **[!DNL Live Search]**.
 1. Stel de **Toepassingsgebied** om de [winkelweergave](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) wanneer de regel van toepassing is.
-1. Klik op de knop **Regels** tab.
+1. Klik op de knop **Zoekregels** tab.
 1. Klikken **Regel toevoegen** om de regeleditor te starten.
 
 ## Voorwaarden
@@ -70,9 +70,9 @@ Een regel kan tot tien voorwaarden hebben. De logische operator die zich bij twe
 
 1. Als u nog een voorwaarde wilt toevoegen, klikt u op **Voorwaarde toevoegen** en herhaal het proces.
 
-## Type classificatie
+## Intelligente classificatie
 
-Met de classificatie worden gebruikersgedrag en sitestatistieken gecombineerd om de productclassificatie te bepalen.
+De intelligente rangschikking combineert gebruikersgedrag en plaatsstatistieken om productrangschikking te bepalen.
 Winkeleigenaars kunnen de volgende typen classificatiestrategieën instellen:
 
 ![Regels - Overeenkomst](assets/rules-ranking-type.png)
@@ -90,9 +90,9 @@ Winkeleigenaars kunnen de volgende typen classificatiestrategieën instellen:
 >
 >Apostroffen en aanhalingstekens in query&#39;s kunnen leiden tot enkele kleine problemen met rangschikking en relevantie in sommige talen.
 
-## Gebeurtenissen toevoegen
+## Handmatige classificatie
 
-Gebeurtenissen zijn acties die de zoekresultaten wijzigen als aan bepaalde voorwaarden wordt voldaan. Eén regel kan maximaal 25 gebeurtenissen bevatten.
+Handmatige classificatie (voorheen Gebeurtenissen genoemd) zijn handelingen die de zoekresultaten wijzigen wanneer aan bepaalde voorwaarden wordt voldaan. Eén regel kan maximaal 25 gebeurtenissen bevatten.
 
 * Verhogen - Verplaatst een product hoger in de onderzoeksresultaten.
 * Branden - Verplaatst een SKU lager in de zoekresultaten.
@@ -166,7 +166,7 @@ De hier ingevoerde informatie wordt weergegeven in het dialoogvenster [Regeldeta
 | Alle | Hiermee wijzigt u alle logische operatoren in de regel in `OR` en retourneert de set van overeenkomende producten. |
 | Alles | Hiermee wijzigt u alle logische operatoren in de regel in `AND` en retourneert de set van overeenkomende producten. |
 
-### Gebeurtenissen
+### Handmatige classificatie
 
 | Gebeurtenis | Beschrijving |
 |--- |--- |

@@ -3,9 +3,9 @@ title: '[!DNL Product Recommendations] Aanvullende informatie'
 description: De meest recente releasegegevens voor [!DNL Product Recommendations] uit Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 1dc69bf92ce8c9105724dea0ce70c34afa25a091
+source-git-commit: f3e94b20580fcd14b341b2b04a04966afd4be5ce
 workflow-type: tm+mt
-source-wordcount: '1144'
+source-wordcount: '1177'
 ht-degree: 0%
 
 ---
@@ -45,12 +45,12 @@ _25 april 2023_
 
 ## Huidige hoofdversie
 
-### 5.0.0 van magento/productaanbevelingen
+### 5.0.1 van magento/productaanbevelingen
 
 [!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) Bijgewerkt product Recommendations ter ondersteuning van Adobe Commerce 2.4.6.
-![Nieuw](../assets/new.svg) Dit is een belangrijke versie. [Bewerken](install-configure.md#update) de basis `composer.json` bestand voor uw project.
+![Nieuw](../assets/new.svg) Nieuwe modules toegevoegd ter ondersteuning van de [Saas Price Index](../price-index/index.md).
+![Nieuw](../assets/new.svg) Er zijn nieuwe gegevensexportmodules toegevoegd ter ondersteuning van het exporteren van meer producttypen, waaronder gebundelde producten en cadeaukaarten.
 
 #### Bekende beperkingen
 
@@ -58,7 +58,14 @@ _25 april 2023_
 
 ### Vorige versies
 
-+++4.0.1 en eerder
++++5.0.0 en eerder
+
+### 5.0.0 van magento/productaanbevelingen
+
+[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+
+![Nieuw](../assets/new.svg) Bijgewerkt product Recommendations ter ondersteuning van Adobe Commerce 2.4.6.
+![Nieuw](../assets/new.svg) Dit is een belangrijke versie. [Bewerken](install-configure.md#update) de basis `composer.json` bestand voor uw project.
 
 ### 4.0.1 van magento/productaanbevelingen
 

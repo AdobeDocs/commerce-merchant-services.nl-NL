@@ -1,15 +1,15 @@
 ---
-title: "Regels"
+title: "Zoekregels"
 description: "[!DNL Live Search] de regels combineren logica met acties om de het winkelen ervaring te vormen."
 exl-id: d06a3040-6987-4813-90ae-2f7b3ad0b232
-source-git-commit: 7307702a62a6b2c3e6c6083a59f2ac3587b0985e
+source-git-commit: 40bcae7a792660f02390f4d55967767b15c84f38
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '592'
 ht-degree: 0%
 
 ---
 
-# Regels
+# Zoekregels
 
 [!DNL Live Search] de regels combineren logica met acties om de onderzoekservaring van een verkoopster in uw opslag te vormen. U kunt regels gebruiken om producten op te voeren, te begraven, te spelden, of te verbergen om onderzoeksresultaten in echt te kalibreren - tijd om uw bedrijfsdoelstellingen te steunen.
 
@@ -23,7 +23,7 @@ U kunt meerdere voorwaarden en handelingen combineren en een regel voor een peri
 
 ## Vereisten
 
-Een eenvoudige regel kan één enkele voorwaarde en één enkele gebeurtenis hebben, terwijl een complexe regel tot tien voorwaarden kan hebben die tot 25 gebeurtenissen teweegbrengen.
+Een eenvoudige zoekregel kan één voorwaarde en één gebeurtenis hebben, terwijl een complexe regel tot tien voorwaarden kan hebben die tot 25 gebeurtenissen teweegbrengen.
 Regels kunnen:
 
 * Tot tien voorwaarden
@@ -49,7 +49,7 @@ Wanneer het samenstellen van een complexe regel, kan het helpen om het met inspr
 
 ## Volgorde van prioriteit met meerdere regels
 
-Er wordt slechts één regel tegelijk toegepast op een zoekterm.
+Er wordt slechts één zoekregel tegelijk toegepast op een zoekterm.
 Als meerdere regels van toepassing blijken te zijn op een zoekfrase, worden al deze regels toegepast. Als er een botsing is tussen twee regels—`rule 1` dat sku1 versterkt , maar `rule 2` verbergt zelfde SKU-toen de onlangs toegepaste regel (`rule 2`) heeft voorrang.
 
 * Regels worden geordend met de tijdstempel &#39;Laatst gewijzigd&#39;. De regel die het laatst is gewijzigd, wordt eerst toegepast en daarna oudere regels in tijdstempelvolgorde.

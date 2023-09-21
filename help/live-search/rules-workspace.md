@@ -1,17 +1,17 @@
 ---
-title: "Werkruimte Regels"
+title: "Werkruimte voor zoekregels"
 description: "Leer je weg door [!DNL Live Search] regelwerkruimte."
 exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
-source-git-commit: 91d0713a3e57a3748609b6b4bcb723c21a461519
+source-git-commit: 40bcae7a792660f02390f4d55967767b15c84f38
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '578'
 ht-degree: 0%
 
 ---
 
-# Werkruimte Regels
+# Werkruimte Zoeken in regels
 
-De werkruimte van Regels maakt een lijst van de huidige selectie van regels en hun status, en verleent toegang tot hulpmiddelen u regels moet creëren en beheren. Vanuit de werkruimte kunt u:
+De werkruimte Zoekregels bevat een overzicht van de huidige selectie van regels en hun status en biedt toegang tot gereedschappen die u nodig hebt om regels te maken en te beheren. Vanuit de werkruimte kunt u:
 
 * Zoeken naar regels
 * Regeldetails weergeven
@@ -46,7 +46,7 @@ De zichtbare kolommen hebben een blauw vinkje in het optiemenu. De regelnaam is 
    * Inactief
    * Gepland
 
-## Regels zoeken op naam
+## Zoekregels zoeken op naam
 
 Typ de naam van de regel of een willekeurig woord in de regelnaam.
 Met Zoeken zoekt u de overeenkomende regel(s) terwijl u typt. De tekenreeks met overeenkomende tekens wordt gemarkeerd in de naam van elke gevonden regel.
@@ -57,7 +57,7 @@ Met Zoeken zoekt u de overeenkomende regel(s) terwijl u typt. De tekenreeks met 
 
 In het deelvenster Details worden de naam, de status, de voorwaarden en gebeurtenissen van de regel, de begin- en einddatum, de beschrijving en de datum die het laatst is bewerkt weergegeven. Regels kunnen worden ingeschakeld, bewerkt en verwijderd in het deelvenster Details.
 
-1. Op de *Regels* tabblad, zoekt u de regel in het raster die u wilt weergeven en klikt u op **Meer** (...).
+1. Op de *Zoekregels* tabblad, zoekt u de regel in het raster die u wilt weergeven en klikt u op **Meer** (...).
 1. Klikken **Details weergeven**.
 U kunt een van de volgende handelingen uitvoeren in het deelvenster Details weergeven:
 

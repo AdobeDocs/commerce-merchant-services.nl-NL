@@ -3,9 +3,9 @@ title: "Installeren [!DNL Live Search]"
 description: "Meer informatie over het installeren, bijwerken en verwijderen [!DNL Live Search] uit Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 96a5791c5716f612f473540f27bd3f99b1bfe7c8
+source-git-commit: 97a743b1f7162af01930a37db448432acb9f89d5
 workflow-type: tm+mt
-source-wordcount: '1299'
+source-wordcount: '1323'
 ht-degree: 0%
 
 ---
@@ -73,6 +73,9 @@ In dit scenario worden storefront-bewerkingen onderbroken terwijl de [!DNL Live 
    * Productfeed
    * Diervoeders voor productvarianten
    * Feed voor cataloguskenmerken
+   * Diervoeders productprijzen
+   * Scopes Website Data feed
+   * Scopes Klantengroepen Gegevensinvoer
 
 1. Configureer uw [API-sleutels](#configure-api-keys) en controleer of de catalogusgegevens [gesynchroniseerd](#synchronize-catalog-data) with [!DNL Live Search] diensten.
 
@@ -121,6 +124,9 @@ In dit scenario: [!DNL Elasticsearch] beheert tijdelijk zoekverzoeken van de win
    * Productfeed
    * Diervoeders voor productvarianten
    * Feed voor cataloguskenmerken
+   * Diervoeders productprijzen
+   * Websitegegevensinvoer
+   * Scopes klant groepeert gegevenstoevoer
 
 1. Configureer uw [API-sleutels](#configure-api-keys) en controleer of de catalogusgegevens [gesynchroniseerd](#synchronize-catalog-data) with [!DNL Live Search] diensten.
 
@@ -211,7 +217,7 @@ Bijwerken [!DNL Live Search], voert u de volgende handelingen uit vanaf de opdra
 composer update magento/live-search --with-dependencies
 ```
 
-Als u een update wilt uitvoeren naar een belangrijke versie, bijvoorbeeld van 2.0.0 tot 3.0.1, bewerkt u de hoofdmap van het project [!DNL Composer] `.json` bestand als volgt:
+Als u een update wilt uitvoeren naar een belangrijke versie, bijvoorbeeld van 2.0.0 tot 3.1.1, bewerkt u de hoofdmap van het project [!DNL Composer] `.json` bestand als volgt:
 
 1. Als uw huidige systeem is geïnstalleerd `magento/live-search` versie is `2.0.3` of lager en u werkt aan een upgrade naar de versie `3.0.0` of hoger, stel het volgende bevel vóór de verbetering in werking:
 
