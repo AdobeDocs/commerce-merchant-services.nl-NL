@@ -2,7 +2,7 @@
 title: "[!DNL Storefront Popover]"
 description: "De [!DNL Live Search storefront popover] Geeft dynamisch voorgestelde producten en miniaturen."
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 441f8c6c6113ce96c5353dcbde170ca600bb0abb
+source-git-commit: 44c5d3f73d9cf658a978829ffaef6a79c5d90216
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 0%
@@ -55,7 +55,7 @@ Voor gebruikers met een headless-implementatie is het mogelijk om de Live Search
 
 ## Beperkingen
 
-* De [!DNL Live Search] [!DNL storefront popover] is alleen beschikbaar voor winkels die de *Luminantie* thema of een aangepast thema dat is gebaseerd op *Luminantie*. Broodkruimels op de pagina met zoekresultaten hebben geen *Lume* stijlen.
+* De [!DNL Live Search] [!DNL storefront popover] is alleen beschikbaar voor winkels die de *Luminantie* thema of een aangepast thema dat is gebaseerd op *Luminantie*. Broodkruimels op de pagina met zoekresultaten hebben geen *Luminantie* stijlen.
 * De [!DNL popover] ondersteunt de *Leeg* thema. Zie [Stijlen [!DNL Popover] Elementen](storefront-popover-styling.md) voor meer informatie.
 * De [!DNL popover] wordt niet ondersteund op het formulier Snelle volgorde.
 * Schijflijsten en productvergelijkingen worden niet ondersteund.

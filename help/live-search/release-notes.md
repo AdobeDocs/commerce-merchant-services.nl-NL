@@ -3,9 +3,9 @@ title: '[!DNL Live Search] Aanvullende informatie'
 description: "De meest recente releasegegevens voor [!DNL Live Search] uit Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 190ff4bd6442f77407675e48850e214e241b392a
+source-git-commit: 44c5d3f73d9cf658a978829ffaef6a79c5d90216
 workflow-type: tm+mt
-source-wordcount: '1662'
+source-wordcount: '1691'
 ht-degree: 0%
 
 ---
@@ -44,29 +44,23 @@ _15 sep. 2023_
 
 ### Nieuwe functies
 
-* Het nieuwe tabblad Categorieomzetting is toegevoegd. Gebruikers kunnen nu intelligente waarderingen en handmatige waarderingen (speld, boost, bury, hide) per categorie toevoegen
-* Gebruikers kunnen één categorieregel toevoegen met een intelligente of handmatige classificatie
-* Gebruikers kunnen nu intelligente volgregels toevoegen aan subcategorieën
-* Gedetailleerde informatie wordt gegeven wanneer het schrappen van subcategorieën met intelligente rangschikking
-* De mogelijkheid toegevoegd om regels voor overgeërfde classificatiestrategieën te verwijderen
-* De mogelijkheid toegevoegd om regels voor één categorie te verwijderen
-* Gebruikers kunnen nu op categorienaam zoeken wanneer zij een regel toevoegen
-* In de weergave Categoriestructuur kunnen gebruikers nu zien welke categorie regels heeft toegepast.
-* In Voorvertoning categorie wordt alleen de geselecteerde categorie weergegeven.
+![Nieuw](../assets/new.svg) Het nieuwe tabblad Categorieomzetting is toegevoegd. Gebruikers kunnen nu intelligente waarderingen en handmatige waarderingen (speld, boost, bury, hide) per categorie toevoegen
+![Nieuw](../assets/new.svg) Gebruikers kunnen één categorieregel toevoegen met een intelligente of handmatige classificatie
+![Nieuw](../assets/new.svg) Gebruikers kunnen nu intelligente volgregels toevoegen aan subcategorieën
+![Nieuw](../assets/new.svg) Gedetailleerde informatie wordt gegeven wanneer het schrappen van subcategorieën met intelligente rangschikking
+![Nieuw](../assets/new.svg) De mogelijkheid toegevoegd om regels voor overgeërfde classificatiestrategieën te verwijderen
+![Nieuw](../assets/new.svg) De mogelijkheid toegevoegd om regels voor één categorie te verwijderen
+![Nieuw](../assets/new.svg) Gebruikers kunnen nu op categorienaam zoeken wanneer zij een regel toevoegen
+![Nieuw](../assets/new.svg) In de weergave Categoriestructuur kunnen gebruikers nu zien welke categorie regels heeft toegepast.
+![Nieuw](../assets/new.svg) In Voorvertoning categorie wordt alleen de geselecteerde categorie weergegeven.
 
 ### Updates
 
-* Het tabblad &#39;Regels&#39; krijgt een andere naam dan &#39;Zoekregels&#39;
-* Wanneer u de rangschikking instelt op &#39;trending&#39;, kunt u nu kiezen tussen:
-   * 3 dagen (standaard)
-   * 14 dagen
-   * dertig dagen
-* &#39;Gebeurtenissen&#39; (Boost/Pin/Bury/Hide) is hernoemd naar &#39;Handmatige volgorde&#39;
-* &#39;Type classificatie&#39; is hernoemd naar &#39;Intelligente classificatie&#39;
-
-### Oplossingen
-
-* Kleine oplossingen voor problemen
+![Repareren](../assets/fix.svg) Het tabblad &#39;Regels&#39; krijgt een andere naam dan &#39;Zoekregels&#39;
+![Repareren](../assets/fix.svg) Wanneer u op &#39;trending&#39; rangschikt, kunt u nu kiezen tussen: * 3 dagen (standaardwaarde) * 14 dagen * 30 dagen
+![Repareren](../assets/fix.svg) &#39;Gebeurtenissen&#39; (Boost/Pin/Bury/Hide) is hernoemd naar &#39;Handmatige volgorde&#39;
+![Repareren](../assets/fix.svg) &#39;Type classificatie&#39; is hernoemd naar &#39;Intelligente classificatie&#39;
+![Repareren](../assets/fix.svg) Kleine oplossingen voor problemen
 
 Handelaren moeten de [!DNL Live Search] extensie versie >= 3.1.1 om toegang te krijgen tot deze functies.
 
@@ -90,7 +84,7 @@ _1 sep. 2023_
 
 ### Updates
 
-* De widget voor productaanbiedingen is bijgewerkt om de [Catalogusservice-API](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/product-search/).
+![Repareren](../assets/fix.svg) De widget voor productaanbiedingen is bijgewerkt om de [Catalogusservice-API](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/product-search/).
 
 ## [!DNL Live Search] 3.0.2 {#302}
 
@@ -100,7 +94,7 @@ _7 augustus 2023_
 
 ### Nieuwe functies
 
-De volgende waarden zijn toegevoegd aan de `storeDetails` object:
+![Nieuw](../assets/new.svg) De volgende waarden zijn toegevoegd aan de `storeDetails` object:
 
 * &quot;Alle producten per pagina toestaan&quot;
 * Valuta
@@ -110,11 +104,8 @@ De volgende waarden zijn toegevoegd aan de `storeDetails` object:
 
 ### Updates
 
-* De modules van de Dienst van de Catalogus zijn toegevoegd aan het metapakket om geavanceerde gegevensherwinning te steunen.
-
-### Oplossingen
-
-* De **Mijn account** paginanavigatie verdwijnt niet meer wanneer u de widget pagina met productaanbiedingen gebruikt.
+![Repareren](../assets/fix.svg) De modules van de Dienst van de Catalogus zijn toegevoegd aan het metapakket om geavanceerde gegevensherwinning te steunen.
+![Repareren](../assets/fix.svg) De **Mijn account** paginanavigatie verdwijnt niet meer wanneer u de widget pagina met productaanbiedingen gebruikt.
 
 Handelaren moeten de [!DNL Live Search] extensie versie >= 3.0.2 gebruiken om deze functies te openen.
 
@@ -122,11 +113,7 @@ U wordt aangeraden een upgrade uit te voeren en te testen voordat u naar de prod
 
 ### Beperkingen
 
-Als u de widget pagina met aanbiedingen van producten voor live zoeken gebruikt, mislukt Google Tag Manager. Gebruik de standaard Zoekadapter als Google Tagbeheer nodig is.
-
-## Vorige versies
-
-+++3.0.1 en eerder
+Als u de widget pagina met aanbiedingen van producten voor live zoeken gebruikt, mislukt Google Tag Manager. Gebruik de standaardzoekadapter als Google-tagbeheer nodig is.
 
 ## [!DNL Live Search] 3.0.1 {#301}
 
@@ -136,37 +123,33 @@ _14 maart 2023_
 
 ### Nieuwe functies
 
-* Productitemkaart in voorbeeld met regels
-* [Widget pagina met productaanbiedingen](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-storefront/plp-styling.html)
-* [Categoriefilteropties](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#facets)
-* Mogelijkheid toegevoegd om pengebeurtenissen te maken door slepen en neerzetten
-* Nieuwe vastzetacties:
-   * Vastzetten op steun - Knop Vastzetten om met één klik een vastpingebeurtenis te maken
-   * Aan bovenkant vastzetten - Het product wordt op de eerste positie geplaatst
-   * Aan onderzijde vastzetten - Hiermee plaatst u het product onder aan de resultaten
-   * Een gebeurtenis met één klik vrijmaken
-* [Intelligente classificatie voor regels](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add.html#ranking-type)
+![Nieuw](../assets/new.svg) Productitemkaart in voorbeeld met regels
+![Nieuw](../assets/new.svg) [Widget pagina met productaanbiedingen](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-storefront/plp-styling.html)
+![Nieuw](../assets/new.svg) [Categoriefilteropties](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/#facets)
+![Nieuw](../assets/new.svg) Mogelijkheid toegevoegd om pengebeurtenissen te maken door slepen en neerzetten
+![Nieuw](../assets/new.svg) Nieuwe vastzetacties: * Vastzetten op steun - De knop Vastzetten om een vastpingebeurtenis te maken met één klik * Aan de bovenkant vastzetten - Het product wordt op de eerste positie geplaatst * Aan de onderkant vastzetten - Het product wordt onder aan de resultaten geplaatst * Een gebeurtenis vrijmaken met één klik
+![Nieuw](../assets/new.svg) [Intelligente classificatie voor regels](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add.html#ranking-type)
 
 ### Updates
 
-* Regels configureren sorteert posities nu automatisch uniek
-* Een bestaande gebeurtenis verwijderen werkt nu de voorvertoning bij
-* Regels zonder gebeurtenissen kunnen worden opgeslagen
-* Selector Type selecteren verwijderen
-* Nieuwe bewerkingsstatus toegevoegd voor niet-opgeslagen regels
+![Repareren](../assets/fix.svg) Regels configureren sorteert posities nu automatisch uniek
+![Repareren](../assets/fix.svg) Een bestaande gebeurtenis verwijderen werkt nu de voorvertoning bij
+![Repareren](../assets/fix.svg) Regels zonder gebeurtenissen kunnen worden opgeslagen
+![Repareren](../assets/fix.svg) Selector Type selecteren verwijderen
+![Repareren](../assets/fix.svg) Nieuwe bewerkingsstatus toegevoegd voor niet-opgeslagen regels
 
 ### Oplossingen
 
-* Fout met vaste server als er een onvoltooide gebeurtenis is opgetreden tijdens opslaan
-* Correcte verwijdering van specifieke gebeurtenis bij meerdere gebeurtenissen opgelost
-* Gebeurtenis met bestaande regel is niet bijgewerkt wanneer een nieuwe gebeurtenis is toegevoegd. Dit probleem is nu opgelost.
-* Correctie voor tweede klik op Bewerken uit details. [!DNL Live Search] pagina die opnieuw moet worden geladen
-* Synoniemen: Probleem verholpen waarbij een gebruiker buiten invoer klikte en de focus niet naar het veld kon terugzetten
-* Andere kleine insectenmoeilijke situaties en prestatiesupdates
+![Repareren](../assets/fix.svg) Fout met vaste server als er een onvoltooide gebeurtenis is opgetreden tijdens opslaan
+![Repareren](../assets/fix.svg) Correcte verwijdering van specifieke gebeurtenis bij meerdere gebeurtenissen opgelost
+![Repareren](../assets/fix.svg) Gebeurtenis met bestaande regel is niet bijgewerkt wanneer een nieuwe gebeurtenis is toegevoegd. Dit probleem is nu opgelost.
+![Repareren](../assets/fix.svg) Correctie voor tweede klik op Bewerken uit details. [!DNL Live Search] pagina die opnieuw moet worden geladen
+![Repareren](../assets/fix.svg) Synoniemen: Probleem verholpen waarbij een gebruiker buiten invoer klikte en de focus niet naar het veld kon terugzetten
+![Repareren](../assets/fix.svg) Andere kleine insectenmoeilijke situaties en prestatiesupdates
 
 
-* ![Bug](../assets/bug.svg) - Rangschikken op &quot;Aanbevolen voor u&quot; wordt alleen ondersteund in de widgets Live zoeken. Deze functie wordt niet ondersteund met de standaardzoekfunctie voor Luma en PWA.
-* ![Bug](../assets/bug.svg) - Aangepaste facetten van prijskenmerken worden niet correct weergegeven in Luma, maar de API filtert er op.
+![Bug](../assets/bug.svg) - Rangschikken op &quot;Aanbevolen voor u&quot; wordt alleen ondersteund in de widgets Live zoeken. Deze functie wordt niet ondersteund met de standaardzoekfunctie voor Luma en PWA.
+![Bug](../assets/bug.svg) - Aangepaste facetten van prijskenmerken worden niet correct weergegeven in Luma, maar de API filtert er op.
 
 Handelaren moeten de [!DNL Live Search] extensie >= 3.0.1 gebruiken om deze functies te openen.
 
@@ -176,7 +159,7 @@ U wordt aangeraden een upgrade uit te voeren en te testen voordat u naar de prod
 
 [!BADGE Ondersteund]{type="Informatief" tooltip="Ondersteund"}
 
-* ![Repareren](../assets/fix.svg) - Live zoeken zou een fout veroorzaken als SDK-bronnen niet beschikbaar waren vanwege netwerkproblemen. Deze fout is opgelost.
+![Repareren](../assets/fix.svg) - Live zoeken zou een fout veroorzaken als SDK-bronnen niet beschikbaar waren vanwege netwerkproblemen. Deze fout is opgelost.
 
 Handelaars moeten de Live Search extensie versie >= 2.0.5 bevorderen om tot deze eigenschappen toegang te hebben.
 
