@@ -3,9 +3,9 @@ title: "Installeren [!DNL Live Search]"
 description: "Meer informatie over het installeren, bijwerken en verwijderen [!DNL Live Search] uit Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 97a743b1f7162af01930a37db448432acb9f89d5
+source-git-commit: 017299c613cc010d96d90c9b1d88e43304d00e2b
 workflow-type: tm+mt
-source-wordcount: '1323'
+source-wordcount: '1301'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ In dit scenario worden storefront-bewerkingen onderbroken terwijl de [!DNL Live 
    >
    > Terwijl de gegevens worden geïndexeerd en gesynchroniseerd, zijn de zoek en de categorie doorbladerbewerkingen niet beschikbaar in de winkel. Afhankelijk van de grootte van de catalogus kan het proces minstens een uur duren `cron` wordt uitgevoerd om uw gegevens te synchroniseren naar [!DNL Live Search] diensten.
 
-1. Controleer of het volgende [indexeerders](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) zijn ingesteld op `Update by Schedule`:
+1. Controleer of het volgende [indexeerders](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) zijn ingesteld op &quot;Bijwerken via schema&quot;:
 
    * Productfeed
    * Diervoeders voor productvarianten
@@ -119,7 +119,7 @@ In dit scenario: [!DNL Elasticsearch] beheert tijdelijk zoekverzoeken van de win
 
    [!DNL Elasticsearch] blijft zoekverzoeken van de winkel beheren terwijl de [!DNL Live Search] De dienst synchroniseert catalogusgegevens en indexeert producten op de achtergrond.
 
-1. Controleer of het volgende [indexeerders](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) zijn ingesteld op `Update by Schedule`:
+1. Controleer of het volgende [indexeerders](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) zijn ingesteld op &quot;Bijwerken via schema&quot;:
 
    * Productfeed
    * Diervoeders voor productvarianten
@@ -263,10 +263,21 @@ Om te verwijderen [!DNL Live Search], zie [Modules verwijderen](https://experien
 
 ## [!DNL Live Search] afhankelijkheden {#dependencies}
 
-Het volgende [!DNL Live Search] afhankelijkheden worden vastgelegd door [!DNL Composer]:
+Het volgende [!DNL Live Search] afhankelijkheden worden vastgelegd door [!DNL Composer].
 
-| Afhankelijkheid | Beschrijving |
-|--- |--- |
-| Exportmodules | In de volgende modules worden catalogusgegevens verzameld en gesynchroniseerd:<br />`module-sass-catalog`<br />`module-sass-product-override`<br />`module-bundle-product-data-exporter`<br />`module-catalog-data-exporter`<br />`module-catalog-inventory-data-exporter`<br />`module-catalog-url-rewrite-data-exporter`<br />`module-configurable-product-data-exporter`<br />`module-data-exporter`<br />`module-parent-product-data-exporter`<br />`module-product-override-data-exporter` |
-| `data-services` | Vereist om uw verbinding aan de Diensten van de Handel te vormen. |
-| `services-id` | Vereist om uw verbinding aan de Diensten van de Handel te vormen. |
+* `magento/module-saas-catalog`
+* `magento/module-saas-category`
+* `magento/module-saas-category-permissions`
+* `magento/module-saas-product-override`
+* `magento/module-saas-product-variant`
+* `magento/module-saas-price`
+* `magento/module-saas-scopes`
+* `magento/module-bundle-product-data-exporter`
+* `magento/module-catalog-inventory-data-exporter`
+* `magento/module-catalog-url-rewrite-data-exporter`
+* `magento/module-configurable-product-data-exporter`
+* `magento/module-parent-product-data-exporter`
+* `magento/module-gift-card-product-data-exporter`
+* `magento/module-bundle-product-override-data-exporter`
+* `data-services`
+* `services-id`
