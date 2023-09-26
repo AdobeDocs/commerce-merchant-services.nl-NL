@@ -3,9 +3,9 @@ title: "Overzicht aan boord"
 description: "[!DNL Live Search] instapkaartstroom, systeemvereisten, grenzen en beperkingen"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: ee8c37dc5dab9fcbc47d3d66e3ae0f99c9cb82d8
+source-git-commit: 21170ecc66891d803b6c45dd8e2fa2135f0e5de1
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,6 @@ Op dit moment wordt [!DNL Live Search] zoek-/Categorie-API heeft de volgende ond
 
 * Indexeert maximaal 300 productkenmerken per winkelweergave.
 * Hiermee indexeert u alleen producten uit de Adobe Commerce-database.
-* De producten moeten in de Standaard Gedeelde Catalogus zijn.
 * CMS-pagina&#39;s worden niet geïndexeerd.
 
 ### Query
@@ -74,7 +73,7 @@ Klanten met Live zoeken kunnen de nieuwe [SaaS-prijsindexer](../price-index/inde
 [!DNL Live Search] werkt met PWA Studio, maar de gebruikers kunnen kleine verschillen zien ten opzichte van andere uitvoeringen van de Handel. De basisfunctionaliteit zoals zoeken en pagina met productlijsten werkt in Venia, maar sommige permutaties van Graphql werken mogelijk niet correct. Er kunnen ook prestatieverschillen zijn.
 
 * De huidige PWA-uitvoering van [!DNL Live Search] vereist meer verwerkingstijd om zoekresultaten te retourneren dan [!DNL Live Search] met de native Commerce-winkel.
-* [!DNL Live Search] in PWA ondersteunt niet [gebeurtenisafhandeling](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). Intelligente handel werkt hierdoor niet.
+* [!DNL Live Search] in PWA ondersteunt niet [gebeurtenisafhandeling](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). Intelligente handel werkt dus niet.
 * Rechtstreeks filteren op `description`, `name`, `short_description` wordt niet ondersteund door GraphQL bij gebruik met [PWA](https://developer.adobe.com/commerce/pwa-studio/), maar ze krijgen een meer algemeen filter.
 
 Te gebruiken [!DNL Live Search] met PWA Studio moeten de integrators ook :
@@ -100,7 +99,6 @@ Te gebruiken [!DNL Live Search] met PWA Studio moeten de integrators ook :
 ### Momenteel niet ondersteund
 
 * De [Geavanceerd zoeken](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) module is uitgeschakeld wanneer [!DNL Live Search] wordt geïnstalleerd en wordt de koppeling Geavanceerd zoeken in de voettekst van de winkel verwijderd.
-* Meerdere voorraadlocaties zoals gebruikt door [MCOM](https://experienceleague.adobe.com/docs/commerce-admin/systems/integrations/mcom.html) of andere OMS-extensies
 * De productprijzen omvatten niet [btw](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/vat.html) (BTW).
 * [Tier-prijs](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-tier.html) wordt niet ondersteund in de pop-up Live zoeken en de widget pagina met productaanbiedingen.
 
