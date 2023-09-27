@@ -3,9 +3,9 @@ title: "[!DNL Live Search] Aanvullende informatie"
 description: "De meest recente releasegegevens voor [!DNL Live Search] uit Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 21170ecc66891d803b6c45dd8e2fa2135f0e5de1
+source-git-commit: e568609ac1093b36d78250b45e581b63ff35a2ac
 workflow-type: tm+mt
-source-wordcount: '1712'
+source-wordcount: '1725'
 ht-degree: 0%
 
 ---
@@ -129,7 +129,7 @@ _14 maart 2023_
 ![Nieuw](../assets/new.svg) Mogelijkheid toegevoegd om pengebeurtenissen te maken door slepen en neerzetten
 ![Nieuw](../assets/new.svg) Nieuwe vastzetacties: * Vastzetten op steun - De knop Vastzetten om een vastpingebeurtenis te maken met één klik * Aan de bovenkant vastzetten - Het product wordt op de eerste positie geplaatst * Aan de onderkant vastzetten - Het product wordt onder aan de resultaten geplaatst * Een gebeurtenis vrijmaken met één klik
 ![Nieuw](../assets/new.svg) [Intelligente classificatie voor regels](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add.html#ranking-type)
-![Nieuw](../assets/new.svg) [!DNL Live Search] biedt nu ondersteuning voor MSI (Multi-Source Inventory). Als u MSI wilt gebruiken, moet u [installeren](install.md#update) de `commerce-data-export` 102.2.0+ module. Controleer uw versie met de volgende opdracht: `composer update magento/live-search --with-dependencies`.
+![Nieuw](../assets/new.svg) [!DNL Live Search] ondersteunt nu volledig [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html) De mogelijkheden in Handel (vroeger kent als Multisource Inventory, of MSI). Om volledige steun toe te laten, moet u [update](install.md#update) de afhankelijkheidsmodule `commerce-data-export` naar versie 102.2.0+.
 
 ### Updates
 
