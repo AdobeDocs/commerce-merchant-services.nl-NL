@@ -2,16 +2,16 @@
 title: Onboarding en installatie
 description: Leer hoe u kunt installeren [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 44c5d3f73d9cf658a978829ffaef6a79c5d90216
+source-git-commit: f2771983072848e0da4a51d06bec970737ef951a
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '624'
 ht-degree: 0%
 
 ---
 
 # Onboarding en installatie
 
-Zie een analyse van het proces van de Dienst van de Catalogus.
+Bekijk een analyse van de [!DNL Catalog Service] proces.
 
 Deel 1:
 
@@ -38,7 +38,7 @@ Het instapproces voor [!DNL Catalog Service] vereist toegang tot de bevellijn va
 
 ## Eindpunten
 
-Catalog Service heeft twee eindpunten die beschikbaar zijn voor instapweigering:
+[!DNL Catalog Service] beschikt over twee eindpunten voor instapweigering:
 
 - Sandbox (https://catalog-service-sandbox.adobe.io/graphql) - wordt gebruikt voor tests en validatie voordat u live gaat
 - Productie (https://catalog-service.adobe.io/graphql)-) gebruikt voor het live verkeer voor handelaars en websites
@@ -49,7 +49,7 @@ Het testen van de lading zou slechts op het zandbakeindpunt moeten worden uitgev
 
 ## Installatie en configuratie
 
-Als u aan de slag wilt met Catalog Service for Adobe Commerce, moet u de volgende stappen uitvoeren:
+Aan de slag met [!DNL Catalog Service] voor Adobe Commerce zijn de volgende stappen vereist:
 
 - Extensies voor gegevensexport installeren
 - De service- en gegevensexport configureren
@@ -57,23 +57,23 @@ Als u aan de slag wilt met Catalog Service for Adobe Commerce, moet u de volgend
 
 ### Extensies voor gegevensexport installeren
 
-Het instapproces voor de Dienst van de Catalogus vereist toegang tot de bevellijn van de server.
+Het instapproces voor [!DNL Catalog Service] vereist toegang tot de bevellijn van de server.
 
-De extensie Catalog Service kan zowel op Adobe Commerce-cloudinfrastructuur als op locatie worden geïnstalleerd.
+De [!DNL Catalog Service] kan worden geïnstalleerd op de cloudinfrastructuur van Adobe Commerce en op het terrein.
 
-De Catalogusservice wordt geïnstalleerd met Composer-sleutels die zijn gekoppeld aan de Commerce-account [mageid](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-personal/#field-descriptions) verstrekt tijdens het ondertekeningsproces. Composer gebruikt deze toetsen tijdens de eerste installatie van Adobe Commerce of in situaties waarin de Composer-toetsen niet eerder zijn opgeslagen naar een externe toepassing `auth.json` bestand.
+De [!DNL Catalog Service] wordt geïnstalleerd met Composer-sleutels die zijn gekoppeld aan de Commerce-account [mageid](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/) verstrekt tijdens het ondertekeningsproces. Composer gebruikt deze toetsen tijdens de eerste installatie van Adobe Commerce of in situaties waarin de Composer-toetsen niet eerder zijn opgeslagen naar een externe toepassing `auth.json` bestand.
 
 Zie [Uw verificatietoetsen ophalen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html) voor meer informatie over het verkrijgen van Composer-sleutels.
 
 #### Adobe Commerce over cloudinfrastructuur
 
-Gebruik deze methode voor het installeren van de uitbreiding van de Dienst van de Catalogus voor een instantie van de Commerce Cloud.
+Gebruik deze methode voor het installeren van de [!DNL Catalog Service] extensie voor een Commerce Cloud-instantie.
 
 1. Open de `<Commerce_root>/composer.json` bestand in een teksteditor en werk de vereiste sectie als volgt bij:
 
 ```json
 "require": {
-  "magento/catalog-service": "^2.2.0"
+  "magento/catalog-service": "^3.0.0"
 }
 ```
 
@@ -89,13 +89,13 @@ Het bevel werkt alle gebiedsdelen bij.
 
 #### In de bedrijfsruimten
 
-Gebruik deze methode voor het installeren van de uitbreiding van de Dienst van de Catalogus voor een instantie op-gebouw.
+Gebruik deze methode voor het installeren van de [!DNL Catalog Service] uitbreiding voor een instantie ter plaatse.
 
 1. Open de `<Commerce_root>/composer.json` bestand in een teksteditor en werk de vereiste sectie als volgt bij:
 
 ```json
 "require": {
-    "magento/catalog-service": "^2.2.0"
+    "magento/catalog-service": "^3.0.0"
 }
 ```
 
@@ -121,30 +121,30 @@ bin/magento cache:clean
 
 ### De service- en gegevensexport configureren
 
-Nadat u de Catalogusdienst installeert, moet u vormen [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#apikey) door de API-sleutels op te geven en een SaaS-gegevensruimte te selecteren.
+Na de installatie [!DNL Catalog Service]moet u de [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#apikey) door de API-sleutels op te geven en een SaaS-gegevensruimte te selecteren.
 
 Nadat de SaaS-configuratie is voltooid, voert u een eerste gegevenssynchronisatie uit door de [Catalogus synchroniseren](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) hulplijn.
 
 Ga als volgt te werk om te controleren of de catalogus correct wordt geëxporteerd:
 
 - Bevestig dat cron-taken worden uitgevoerd.
-- Controleer of de indexen actief zijn.
+- Controleer of de indexen worden uitgevoerd.
 - Zorg ervoor dat de `Catalog Attributes Feed, Product Feed, Product Overrides Feed`, en `Product Variant Feed` de indexeerders worden geplaatst aan &quot;Update door Programma&quot;.
 
 De eerste synchronisatie kan enkele minuten tot uren duren, afhankelijk van de grootte van de catalogus. Na de eerste synchronisatie exporteert de Catalogus de productgegevens van de Commerce-server voortdurend naar de Commerce-diensten om de diensten up-to-date te houden.
 
 ### Toegang tot de service
 
-De API van de Catalogusservice is toegankelijk gebruikend POST bevelen over HTTPS.
+De [!DNL Catalog Service] API is toegankelijk via POST-opdrachten via HTTPS.
 
 Om api-sleutel te verkrijgen, ga naar het gebied van de Schakelaar van de Dienst van de Handel in admin en kopieer de openbare API sleutel.
 
 Lees de [GraphQL-documentatie](https://developer.adobe.com/commerce/webapi/graphql/) om te begrijpen hoe te om de kopballen te vragen en te verzenden die voor het produceren van API verzoeken nodig zijn.
 
-Als u Catalog Service via een firewall wilt toestaan, voegt u `commerce.adobe.io` aan de lijst van gewenste personen.
+Toestaan [!DNL Catalog Service] via een firewall toevoegen `commerce.adobe.io` op de lijst van gewenste personen.
 
 ## Catalogusservice en API-net
 
 De [API-net voor Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) laat ontwikkelaars toe om privé of derde APIs en andere interfaces met Adobe producten te integreren gebruikend Adobe IO.
 
-Zie de  [Catalogusservice en API-net](mesh.md) onderwerp voor installatie en configuratiedetails.
+Zie de  [[!DNL Catalog Service] en API-net](mesh.md) onderwerp voor installatie en configuratiedetails.
