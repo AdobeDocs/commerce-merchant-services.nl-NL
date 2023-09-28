@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Aanvullende informatie"
 description: Lees de opmerkingen bij de release voor meer informatie over alle [!DNL Payment Services] lozingen.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: eb2d21193ee3bde5e52bddb738564f0265422fe4
+source-git-commit: a5bd06372678512062415702f83e57afb0eeb8da
 workflow-type: tm+mt
-source-wordcount: '2200'
+source-wordcount: '2247'
 ht-degree: 0%
 
 ---
@@ -71,6 +71,14 @@ _28 juni 2021_
 ![Nieuw](../assets/new.svg)<!-- Issue PAY-2761 --> U kunt de gegevens die worden weergegeven in het dialoogvenster [Betalingsstatusrapport bestellen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) en de [Uitbetalingsrapport](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) door kolommen te tonen of te verbergen gebruikend de de montagecontrole van de Kolom.
 
 +++
+
+## v2.2.1
+
+_27 september 2023_
+
+[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+
+![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-4870 --> Probleem verholpen waarbij het nieuwe headerkenmerk onjuist werd ingevuld in Storefront bij het verzenden van de extensie-versie met de laatste release. Voorheen, met de `1.3.0` versie van de schakelaar van de Diensten van de Handel, kon u niet de uitbreiding uitbreiden `User-Agent header` uit de uitbreiding Betalingsdiensten.
 
 ## v2.2.0
 
