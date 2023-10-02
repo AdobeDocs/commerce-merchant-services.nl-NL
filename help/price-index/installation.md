@@ -1,20 +1,21 @@
 ---
-title: Prijsindexeringsinstallatie SaaS
-description: SaaS-prijsindexering installeren
+title: Handmatige installatie van SaaS-prijsindexering
+description: Prijsindexering SaaS voor oudere versie installeren
 seo-title: SaaS Price Indexing installation
 seo-description: Installing SaaS Price indexing
 exl-id: a607e852-aa04-4be3-9576-a6bf45f8751f
 role: Admin, Developer
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: be0b8f4c26f11c31da3e5422bb4f4c4af10f2a00
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '291'
 ht-degree: 0%
 
 ---
 
-# Prijsindexeringsinstallatie SaaS
+# Handmatige installatie van SaaS-prijsindexering
 
-Voor het instellen van de SaaS-prijsindexering moeten nieuwe modules worden geïnstalleerd en moeten CLI-opdrachten worden uitgevoerd. Beheerders hebben opdrachtregeltoegang nodig om deze installatie te voltooien.
+Prijsindexering SaaS is beschikbaar in het vak voor ondersteuning [nieuwste versie](index.md#Requirements) van Commerce Services.
+Gebruik deze minigids als je niet over de nieuwste versie beschikt en de prijsindexering voor SaaS voor je Adobe Commerce-exemplaar wilt inschakelen.
 
 ## Vereisten
 
@@ -33,10 +34,10 @@ Er zijn extensies die de nieuwe feeds en ondersteunende code toevoegen en er is 
 1. Voeg de volgende modules aan uw toe `composer.json` bestand:
 
    ```json
-   "magento/module-saas-price": "102.2.0",
-   "magento/module-saas-scopes": "102.2.0",
-   "magento/module-product-override-price-remover": "102.2.0",
-   "magento/module-bundle-product-override-data-exporter": "102.2.0",
+   "magento/module-saas-price": "^102.2.0",
+   "magento/module-saas-scopes": ^"102.2.0",
+   "magento/module-product-override-price-remover": "^102.2.0",
+   "magento/module-bundle-product-override-data-exporter": "^102.2.0",
    ```
 
 1. Voer de upgrade-opdracht uit:
@@ -68,17 +69,12 @@ Na de upgrade zijn drie nieuwe feeds beschikbaar:
 
 Voer de bovenstaande indexen indien nodig handmatig uit. Anders worden de gegevens in het standaardsynchronisatieproces vernieuwd. Meer informatie over de [Catalogus synchroniseren](../landing/catalog-sync.md) service.
 
-Gebruikers van Luma en Adobe Commerce Core GraphQL kunnen de `catalog-adapter` die Luminantiemodule en Core GraphQl-compatibiliteit biedt en de PHP core price indexer uitschakelt.
-Als u de opdracht `catalog-adapter` module, [!DNL Live Search] en [!DNL Catalog Service] moet eerst worden geïnstalleerd en geconfigureerd. Volg de [Installeren [!DNL Live Search]](../live-search/install.md) en [Installatie van catalogusservice](../catalog-service/installation.md) instructies voordat u verdergaat.
 
-Om Live zoeken en de Adapter van de Catalogus te vormen, volg [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html?lang=en) instructies.
+Gebruikers van Luma en Adobe Commerce Core GraphQL kunnen de [`Catalog Adapter`](catalog-adapter.md) extensie die Luma en Core GraphQl-compatibiliteit biedt en de Adobe Commerce Product Price-index uitschakelt.
 
-```bash
-composer require adobe-commerce/catalog-adapter
-```
+## Caveats
 
-Indien nodig kan de PHP index van de kernprijs opnieuw worden ingeschakeld met de volgende opdracht:
+Voor `103.0.0` versie, SaaS-prijsindexering ondersteund Eenvoudig, Gegroepeerd, Virtueel, Configurable en Bundle Dynamic-producttypen.
+Ondersteuning voor Downloadbare, Cadeautjes en Vaste bundel is beschikbaar vanaf `magento/module-saas-price:103.0.0` versie en beschikbaar uit de doos voor de gesteunde Diensten van de Handel.
 
-```bash
-bin/magento module:disable Magento_PriceIndexerDisabler
-```
+Nieuwe feeds moeten handmatig worden gesynchroniseerd met de `resync` [CLI, opdracht](../landing/catalog-sync.md#resynccmdline). Anders worden de gegevens in het standaardsynchronisatieproces vernieuwd. Meer informatie over de [Catalogus synchroniseren](../landing/catalog-sync.md) proces.

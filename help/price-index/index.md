@@ -4,18 +4,19 @@ description: De SaaS Price Indexing gebruiken om prestaties te verbeteren
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
-source-git-commit: 19c4d3263c22914672b38c5dc5ec9908889bb9b6
+source-git-commit: af57acec1208204128feec6c523e3745a9948d51
 workflow-type: tm+mt
-source-wordcount: '752'
+source-wordcount: '408'
 ht-degree: 0%
 
 ---
 
 # Prijsindexering SaaS
 
-De prijsindexering van SaaS versnelt de tijd die het voor prijsveranderingen vergt om op de website van een klant van SaaS na hen te worden weerspiegeld. Met deze optionele module kunnen handelaren met grote, complexe catalogi of met meerdere websites of klantgroepen prijswijzigingen sneller en doorlopend verwerken.
+SaaS-prijsindexering versnelt de tijd die nodig is om prijswijzigingen door te voeren [Commerciële diensten](../landing/saas.md) nadat zij zijn ingediend. Op deze manier kunnen handelaren met grote, complexe catalogi of met meerdere websites of klantengroepen doorlopend prijswijzigingen verwerken.
+Als u een koploze winkel hebt of de [catalogusadapter](./catalog-adapter.md) klanten kunnen de Adobe Commerce-indexfunctie voor de basisprijs uitschakelen.
 
-Het grootste knelpunt van de pijpleiding: zware computerprocessen zoals indexering en prijsberekening zijn verplaatst van de PHP-kern naar de Cloud-infrastructuur van de Adobe. Op deze manier kunnen handelaren snel hun resources vergroten om de indexatietijden te versnellen en de wijzigingen in websites op veel hogere snelheden doorvoeren.
+Computationele zware processen zoals indexering en prijsberekening zijn verplaatst van de commercescore naar de cloudinfrastructuur van de Adobe. Op deze manier kunnen handelaren snel hun resources vergroten om de indexatietijden van de prijzen te verhogen en deze wijzigingen sneller te laten doorwerken.
 
 De de indexerende gegevensstroom van de Kern aan de diensten van SaaS ziet als:
 
@@ -25,94 +26,70 @@ Met SaaS-prijsindexering is de stroom:
 
 ![Prijsindexeringsgegevensstroom SaaS](assets/new_way.png)
 
-Alle verkopers die aan de vereisten voldoen kunnen van deze verbeteringen profiteren, maar zij die de grootste winst zullen zien zijn klanten met:
+Alle handelaren kunnen van deze verbeteringen profiteren, maar zij die de grootste winst zullen zien zijn klanten met:
 
 * Constante prijswijzigingen: handelaren die herhaalde prijswijzigingen nodig hebben om strategische doelstellingen te bereiken, zoals veelvuldige promoties, seizoenskortingen of voorraadafwaarderingen.
 * Meerdere websites en/of klantgroepen: verkopers met gedeelde productcatalogi op meerdere websites (domeinen/merken) en/of klantgroepen.
-* Groot aantal unieke prijzen voor websites of klantgroepen: verkopers met uitgebreide gedeelde productcatalogi die unieke prijzen bevatten voor websites of klantgroepen, zoals B2B-handelaren met vooraf overeengekomen prijzen, merken met verschillende prijsstrategieën.
+* Groot aantal unieke prijzen voor websites of klantgroepen: verkopers met uitgebreide gedeelde productcatalogi die unieke prijzen bevatten voor websites of klantgroepen, zoals B2B-verkopers met vooraf overeengekomen prijzen, merken met verschillende prijsstrategieën.
 
-Als u toepassingen van derden hebt die afhankelijk zijn van de PHP kern price indexer, lees de documentatie en raadpleeg de provider van de extensie voordat u wijzigingen aanbrengt.
-
-De prijsindexering van SaaS is beschikbaar voor klanten die de diensten van Adobe Commerce gebruiken.
+De prijsindexering van SaaS is gratis beschikbaar voor klanten die de diensten van Adobe Commerce gebruiken en steunt prijsberekening voor alle ingebouwde productsoorten van Adobe Commerce.
 
 In deze minihandleiding wordt beschreven hoe SaaS-prijsindexering werkt en hoe deze kan worden ingeschakeld.
 
-## Systeemvereisten
-
-Als u de prijsindexering van SaaS wilt gebruiken, hebt u het volgende nodig:
+## Vereisten
 
 * Adobe Commerce 2.4.4+
-* Ten minste een van de volgende geïnstalleerde SaaS-services:
+* Minstens één van de volgende Diensten van de Handel met de recentste versie van de uitbreiding van Adobe Commerce:
 
    * [Catalogusservice](../catalog-service/overview.md)
    * [Live zoeken](../live-search/guide-overview.md)
    * [Product Recommendations](../product-recommendations/guide-overview.md)
 
-## Modules
+Gebruikers van Luma en Adobe Commerce Core GraphQL kunnen de [`catalog-adapter`](catalog-adapter.md) extensie die Luma en Core GraphQl-compatibiliteit biedt en de Adobe Commerce Product Price-index uitschakelt.
 
-De prijsindexering van SaaS gebruikt een reeks modules om functionaliteit te verstrekken. De lijst van vereiste modules zou lichtjes kunnen verschillend zijn, afhankelijk van de archiefopstelling.
+## Gebruik
 
-Deze modules voegen de nieuwe feeds aan Admin toe. Met deze feeds worden gegevens over de overdracht van prijzen naar de SaaS-index doorgegeven en wordt de PHP-index voor de basisprijs genegeerd.
+Nadat u uw Adobe Commerce-exemplaar hebt geüpgraded met SaaS-ondersteuning voor prijsindexering, synchroniseert u de nieuwe feeds:
 
-```
-magento/module-saas-price
-magento/module-saas-scopes
-magento/module-product-override-price-remover
-magento/module-bundle-product-override-data-exporter
-```
-
-Klanten die gebruikmaken van Luma en Adobe Commerce Core GraphQL kunnen een module installeren die Luma en Core GraphQL-compatibiliteit biedt en de PHP core price indexer uitschakelt:
-
-```
-adobe-commerce/catalog-adapter
+```bash
+bin/magento saas:resync --feed=scopesCustomerGroup
+bin/magento saas:resync --feed=scopesWebsite
+bin/magento saas:resync --feed=prices
 ```
 
-De `catalog-adapter` alleen compatibel is met 2.4.5. De steun voor 2.4.4 en 2.4.6 zal in de nabije toekomst worden vrijgegeven.
-De PHP-index voor de basisprijs kan opnieuw worden ingeschakeld als dat nodig is door een extensie van een derde of om een andere reden.
+## Prijzen voor aangepaste productsoorten
 
-## Caveats
+Prijsberekeningen worden ondersteund voor aangepaste productsoorten zoals basisprijs, speciale prijs, groepsprijs, catalogusregelprijs enz.
 
-Afhankelijk van factoren zoals productsoorten, prijsingewikkeldheid en catalogusgrootte, kan de prijsindexering van SaaS de juiste oplossing voor uw opslag zijn. Lees de volgende beperkingen door en bepaal of dit een goede oplossing voor uw site is.
+Als u een aangepast producttype hebt dat een specifieke formule gebruikt om de uiteindelijke prijs te berekenen, kunt u het gedrag van de feed van de productprijs uitbreiden.
 
-SaaS-prijsindexering ondersteunt op dit moment de volgende opties: Eenvoudig, Gegroepeerd, Virtueel, Configureerbaar en [Bundle Dynamic](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/types/product-create-bundle.html) productsoorten.
-Binnenkort wordt ondersteuning geboden voor de volgende producttypen: Downloadbare kaarten, Cadeaukaarten en Vaste bundel.
+1. Een plug-in maken op het tabblad `Magento\ProductPriceDataExporter\Model\Provider\ProductPrice` klasse.
 
-Nieuwe feeds moeten handmatig worden gesynchroniseerd met de `resync` [CLI, opdracht](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html#resynccmdline). Anders worden de gegevens in het standaardsynchronisatieproces vernieuwd. Meer informatie over de [Catalogus synchroniseren](../landing/catalog-sync.md) proces.
+   ```xml
+   <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+       <type name="Magento\ProductPriceDataExporter\Model\Provider\ProductPrice">
+           <plugin name="custom_type_price_feed" type="YourModule\CustomProductType\Plugin\UpdatePriceFromFeed" />
+       </type>
+   </config>
+   ```
 
-## Gebruiksscenario&#39;s
+1. Maak een methode met de aangepaste formule:
 
-### Luminantie zonder extensieafhankelijkheid
-
-* Een Luma- of Adobe Commerce Core GraphQL-handelaar die een vereiste service heeft geïnstalleerd (Live Search, Product Recommendations, Catalog Service)
-* Geen uitbreidingen van derden die afhankelijk zijn van de PHP-basisprijsindexeerder
-* Eenvoudige, configureerbare, gegroepeerde, virtuele en bundeldynamische producten verkopen
-
-1. Nieuwe feeds inschakelen.
-1. Installeer de catalogusadapter.
-
-### Luma en Adobe Commerce Core GraphQl met PHP core price indexer afhankelijkheden
-
-* Een Luma- of Adobe Commerce Core GraphQL-handelaar die een ondersteunde service heeft geïnstalleerd (Live Search, Product Recommendations, Catalog Service)
-* Met een extensie van derden die afhankelijk is van de PHP-basisprijsindexer
-* Eenvoudige, configureerbare, gegroepeerde, virtuele en bundeldynamische producten verkopen
-
-1. De nieuwe feeds inschakelen
-1. Installeer de catalogusadapter.
-1. Schakel de PHP-index voor de basisprijs opnieuw in.
-1. Nieuwe feeds en de Luminantiecode gebruiken in het dialoogvenster `catalog-adapter` -module.
-
-### Hoofdkoopman
-
-* Een headless-leverancier die een ondersteunde service heeft geïnstalleerd (Live Search, Product Recommendations, Catalog Service)
-* Geen afhankelijkheid van PHP core price indexer
-* Eenvoudige, configureerbare, gegroepeerde, virtuele en bundeldynamische producten verkopen
-
-1. Nieuwe feeds inschakelen
-1. Installeer de catalogusadapter, waardoor de PHP-indexfunctie voor de basisprijs wordt uitgeschakeld.
-
-### Luma/Core GraphQL/Headless met niet-ondersteunde producttypen
-
-* Luminantietakker
-* Creditcards, downloadbare of gebundelde vaste producten
-
-Wacht op volledige ondersteuning van producttypen terwijl de producttypen momenteel niet worden ondersteund.
+   ```php
+   class UpdatePriceFromFeed
+   {
+       /**
+       * @param ProductPrice $subject
+       * @param array $result
+       * @param array $values
+       *
+       * @return array
+       */
+       public function afterGet(ProductPrice $subject, array $result, array $values) : array
+       {
+           // Override the output $result with your data for the corresponding products (see original method for details) 
+           return $result;
+       }
+   }
+   ```
