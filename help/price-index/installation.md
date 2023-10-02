@@ -5,9 +5,9 @@ seo-title: SaaS Price Indexing installation
 seo-description: Installing SaaS Price indexing
 exl-id: a607e852-aa04-4be3-9576-a6bf45f8751f
 role: Admin, Developer
-source-git-commit: be0b8f4c26f11c31da3e5422bb4f4c4af10f2a00
+source-git-commit: b7989b416f852d2c7164d21e8f0598373662b760
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '276'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Gebruik deze minigids als je niet over de nieuwste versie beschikt en de prijsin
 ## Vereisten
 
 * Adobe Commerce 2.4.4+
-* Ten minste een van de volgende geïnstalleerde SaaS-services:
+* Ten minste een van de volgende SaaS-services is geïnstalleerd:
 
    * [Catalogusservice](../catalog-service/overview.md)
    * [Live zoeken](../live-search/guide-overview.md)
@@ -29,15 +29,15 @@ Gebruik deze minigids als je niet over de nieuwste versie beschikt en de prijsin
 ## Vereiste modules installeren
 
 Afhankelijk van uw installatie kan het installatieproces iets anders zijn.
-Er zijn extensies die de nieuwe feeds en ondersteunende code toevoegen en er is een extensie die de standaardprijsfeed verwijdert.
+Er zijn extensies die de nieuwe feeds en de ondersteunende code toevoegen.
 
 1. Voeg de volgende modules aan uw toe `composer.json` bestand:
 
    ```json
-   "magento/module-saas-price": "^102.2.0",
-   "magento/module-saas-scopes": ^"102.2.0",
-   "magento/module-product-override-price-remover": "^102.2.0",
-   "magento/module-bundle-product-override-data-exporter": "^102.2.0",
+   "magento/module-saas-price": "^103.0",
+   "magento/module-saas-scopes": "^103.0",
+   "magento/module-bundle-product-override-data-exporter": "^103.0",
+   "magento/module-gift-card-product-data-exporter": "^103.0",
    ```
 
 1. Voer de upgrade-opdracht uit:
@@ -70,7 +70,7 @@ Na de upgrade zijn drie nieuwe feeds beschikbaar:
 Voer de bovenstaande indexen indien nodig handmatig uit. Anders worden de gegevens in het standaardsynchronisatieproces vernieuwd. Meer informatie over de [Catalogus synchroniseren](../landing/catalog-sync.md) service.
 
 
-Gebruikers van Luma en Adobe Commerce Core GraphQL kunnen de [`Catalog Adapter`](catalog-adapter.md) extensie die Luma en Core GraphQl-compatibiliteit biedt en de Adobe Commerce Product Price-index uitschakelt.
+Als u Live zoeken en catalogusadapter wilt configureren, volgt u de opdracht [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) instructies.
 
 ## Caveats
 

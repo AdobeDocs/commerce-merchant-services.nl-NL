@@ -2,9 +2,9 @@
 title: Nieuwe aanbeveling maken
 description: Leer hoe u een product aanbevelingseenheid kunt maken.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: d56fd57281a5b675e128cca75d4057756a0bf4bf
+source-git-commit: 2b5ee71618055c48bf4d6a86dbbd4708647b5d7c
 workflow-type: tm+mt
-source-wordcount: '853'
+source-wordcount: '857'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,11 @@ Als u de aanbevolen eenheid activeert, begint Adobe Commerce [gegevens verzamele
 
    - Voldoende variëteit van resultaatsets: vertegenwoordigen de producten die worden geretourneerd een verscheidenheid aan producten uit uw catalogus? Het doel van deze factor is te voorkomen dat een minderheid van producten de enige producten is die op de hele site worden aanbevolen.
 
-   Op basis van de bovenstaande factoren wordt een gereedheidswaarde berekend en weergegeven. Een aanbevelingstype wordt beschouwd als klaar om op te stellen wanneer zijn gereedheidswaarde 75% of hoger is. Een aanbevolen type wordt gedeeltelijk geschikt geacht wanneer het voor minstens 50% gereed is. Tot slot wordt een aanbevelingstype beschouwd niet klaar om op te stellen wanneer zijn gereedheidswaarde minder dan 50% is.
+   Op basis van de bovenstaande factoren wordt een gereedheidswaarde berekend en weergegeven. Een aanbevelingstype wordt beschouwd als klaar om op te stellen wanneer zijn gereedheidswaarde 75% of hoger is. Een aanbevolen type wordt gedeeltelijk geschikt geacht wanneer het voor minstens 50% gereed is. Een aanbevelingstype wordt beschouwd als niet klaar om te worden opgesteld wanneer zijn gereedheidswaarde minder dan 50% is.
+
+   >[!NOTE]
+   >
+   >De indicator mag nooit 100% bedragen.
 
    ![Type aanbeveling](assets/create-recommendation-select-type.png)
    _Type aanbeveling_
