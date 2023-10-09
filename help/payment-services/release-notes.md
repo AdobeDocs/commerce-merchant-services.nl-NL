@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Aanvullende informatie"
 description: Lees de opmerkingen bij de release voor meer informatie over alle [!DNL Payment Services] lozingen.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: a5bd06372678512062415702f83e57afb0eeb8da
+source-git-commit: f61a9c9ed1eedded4b304d2fe3f9e2930d10e027
 workflow-type: tm+mt
-source-wordcount: '2247'
+source-wordcount: '2279'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,10 @@ Zie [Beschikbaarheid van producten](https://experienceleague.adobe.com/docs/comm
 Deze versienota&#39;s beschrijven eigenschapveranderingen en moeilijke situaties die voorkwamen en buiten de regelmatige versioned eigenschapversies voor de ontvangen dienst werden vrijgegeven.
 
 +++Hosted service-updates
+
+_10 oktober 2023_
+
+![Nieuwe uitgave](../assets/fix.svg)<!-- Issue PAY-4888 --> Handelaren kunnen nu creditcardtransacties filteren met de laatste vier cijfers van het kaartnummer in de [Transactierapport](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html).
 
 _12 juli 2023_
 
