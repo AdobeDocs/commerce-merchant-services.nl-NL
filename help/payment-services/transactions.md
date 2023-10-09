@@ -3,9 +3,10 @@ title: Transactierapport
 description: Gebruik het rapport Transacties om de snelheid van de transactievergunning en transactietrends zichtbaar te maken.
 role: User
 level: Intermediate
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
+source-git-commit: ffbc5ca30a092f5ef2642b051f080fe47ce0e815
 workflow-type: tm+mt
-source-wordcount: '1162'
+source-wordcount: '1216'
 ht-degree: 0%
 
 ---
@@ -40,7 +41,7 @@ U kunt deze mening, per de secties in dit onderwerp vormen, om de gegevens het b
 
 Zie gekoppelde orders van de Handel en de identiteitskaart van de leverancierstransactie, transactiebedragen, betalingsmethode per transactie, en meer, allen binnen dit rapport.
 
-Niet alle betalingsmethoden bieden dezelfde mate van informatie. Zo bieden creditcardtransacties in het Transactierapport bijvoorbeeld respons-, AVS- en CCV-codes. Dit geldt niet voor slimme PayPal-knoppen.
+Niet alle betalingsmethoden bieden dezelfde mate van informatie. Met creditcardtransacties worden bijvoorbeeld de respons-, AVS- en CCV-codes en de laatste vier cijfers van de kaart in het Transactierapport weergegeven. Met de slimme PayPal-knoppen gebeurt dit niet.
 
 U kunt [downloadtransacties](#download-transactions) in een .csv-bestandsindeling voor gebruik in bestaande software voor boekhouding of orderbeheer.
 
@@ -84,6 +85,7 @@ In de weergave van het Transactierapport kunt u de resultaten filteren die u wil
 1. Schakelen tussen _[!UICONTROL Payment Method]_opties om de rapportresultaten voor slechts geselecteerde betalingsmethodes te zien.
 1. Voer een _Min. orderbedrag_ of _Max. aantal bestellingen_ om rapportresultaten binnen die waaier van het ordebedrag te zien.
 1. Voer een _[!UICONTROL Order ID]_om naar een specifieke transactie te zoeken.
+1. Voer de _[!UICONTROL Card Last Four Digits]_om te zoeken naar een specifieke creditcard of bankpas.
 1. Klikken **[!UICONTROL Hide filters]** om het filter te verbergen.
 
 ### Kolommen tonen en verbergen
@@ -126,7 +128,8 @@ Transactierapporten bevatten de volgende informatie.
 | [!UICONTROL Order ID] | Handelsorder-id (bevat alleen waarden voor geslaagde transacties en is leeg voor geweigerde transacties)<br> <br>Verwante items weergeven [orderinfo](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}, klikt u op de id. |
 | [!UICONTROL Provider Transaction ID] | Transactie-id verstrekt door de betalingsaanbieder; bevat alleen waarden voor geslaagde transacties en bevat een streepje voor geweigerde transacties. |
 | [!UICONTROL Transaction Date] | Tijdstempel van transactiedatum |
-| [!UICONTROL Payment Method] | Betalingswijze van transactie; beschikbaar voor Betalingsdiensten versie 1.6.0 en hoger |
+| [!UICONTROL Payment Method] | Betalingsmethode van transactie met gedetailleerde informatie over merk en type kaart. Zie [kaarttypen](https://developer.paypal.com/docs/api/orders/v2/#definition-card_type) voor meer informatie; beschikbaar voor Payment Services versie 1.6.0 en hoger |
+| [!UICONTROL Card Last Four Digits] | Laatste vier cijfers van de voor de transactie gebruikte krediet- of debetkaarten |
 | [!UICONTROL Result] | Het resultaat van de transactie—*[!UICONTROL OK]* (geslaagde transactie), *[!UICONTROL Rejected by Payment Provider]* (geweigerd door PayPal), *[!UICONTROL Rejected by Bank]* (geweigerd door bank die kaart heeft uitgegeven) |
 | [!UICONTROL Response Code] | Foutcode die een reden voor afwijzing van een betalingsaanbieder of bank geeft; zie de lijst met mogelijke antwoordcodes en beschrijvingen voor [`Rejected by Bank` status](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) en [`Rejected by Payment Provider` status](https://developer.paypal.com/api/rest/reference/orders/v2/errors/). |
 | [!UICONTROL AVS Code] | Adres Verification Service-code; de responsgegevens van de processor voor betalingsverzoeken. Zie [lijst van mogelijke codes en beschrijvingen](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) voor meer informatie . |
@@ -147,4 +150,3 @@ De _Antwoordcode_ de kolom toont een specifieke fout of succescode met betrekkin
 * `5650`—Transactie is door de geassocieerde bank geweigerd omdat de bank een sterke cliëntautheffing nodig heeft ([3DS](security.md#3ds)).
 
 Gedetailleerde foutresponscodes voor mislukte transacties zijn beschikbaar voor transacties die jonger zijn dan 1 juni 2023. Gedeeltelijke rapportgegevens worden weergegeven voor transacties die vóór 1 juni 2023 hebben plaatsgevonden.
-
