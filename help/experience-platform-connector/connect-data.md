@@ -3,9 +3,9 @@ title: Connect Commerce-gegevens naar Adobe Experience Platform
 description: Leer hoe u de gegevens van de Handel met de Adobe Experience Platform verbindt.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 6044a60c60bf8f29295a14157230d85d0a1b9e07
+source-git-commit: bcee983ee7f40fbe2ea8eb96317b663ce7363ddd
 workflow-type: tm+mt
-source-wordcount: '2232'
+source-wordcount: '2246'
 ht-degree: 0%
 
 ---
@@ -118,9 +118,13 @@ Zie het gebeurtenisonderwerp om meer over te leren [storefront](events.md#storef
 
 ## Gegevens in historische volgorde verzenden
 
-Adobe Commerce verzamelt maximaal vijf jaar [historische ordegegevens en status](events.md#back-office-events). U kunt de schakelaar van het Experience Platform gebruiken om die historische gegevens naar het Experience Platform te verzenden om uw klantenprofielen te verrijken die op die vroegere orden worden gebaseerd. De gegevens worden opgeslagen in een dataset binnen Experience Platform.
+Adobe Commerce verzamelt maximaal vijf jaar [historische ordegegevens en status](events.md#back-office-events). U kunt de schakelaar van het Experience Platform gebruiken om die historische gegevens naar het Experience Platform te verzenden om uw klantenprofielen te verrijken en de klantenervaringen te personaliseren die op die vroegere orden worden gebaseerd. De gegevens worden opgeslagen in een dataset binnen Experience Platform.
 
 Terwijl de Handel reeds de historische ordegegevens verzamelt, zijn er verscheidene stappen u moet voltooien om die gegevens naar Experience Platform te verzenden.
+
+Bekijk deze video om meer over historische orden te leren dan voltooi de volgende stappen om historische ordeverzameling en configuratie uit te voeren.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424672)
 
 ### Stap 1: historische gegevensverzameling voor bestellingen installeren
 
@@ -248,12 +252,6 @@ Geef het datumbereik op voor de historische orders die u naar het Experience Pla
 | Van | Datum vanaf wanneer u wilt beginnen met het verzamelen van gegevens over de ordergeschiedenis. |
 | Naar | Datum vanaf welke u het verzamelen van de gegevens van de ordegeschiedenis wilt beëindigen. |
 | Synchronisatie starten | Begint het proces om de gegevens van de ordegeschiedenis aan de rand van het Experience Platform te synchroniseren. Deze knop is uitgeschakeld als de **[!UICONTROL Dataset ID]** veld is leeg of de id van de gegevensset is ongeldig. |
-
-### Demo van historische orde
-
-Bekijk deze video voor meer informatie over historische bestellingen:
-
->[!VIDEO](https://video.tv.adobe.com/v/3424672)
 
 ## Bevestig dat gebeurtenisgegevens worden verzameld
 
