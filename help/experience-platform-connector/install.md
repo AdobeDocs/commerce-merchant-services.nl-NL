@@ -4,9 +4,9 @@ description: Leer hoe u de Adobe Experience Platform-connector van Adobe Commerc
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
-source-git-commit: 0c8d9498ea7a30a99f834694ef8a865ad24466ab
+source-git-commit: 572df7558e825a7a7c442e47af787c209dbe4ee3
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '465'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,6 @@ De de schakelaaruitbreiding van het Experience Platform is beschikbaar bij [Adob
 >
 >![B2B voor Adobe Commerce](../assets/b2b.svg) Voor B2B-handelaren is er een aparte extensie die u moet installeren. Deze extensie voegt ondersteuning toe voor B2B-specifieke gebeurtenissen. [Meer informatie](#install-the-b2b-extension).
 
-
 1. Als u het dialoogvenster `experience-platform-connector` pakket, voer het volgende uit vanaf de bevellijn:
 
    ```bash
@@ -32,12 +31,45 @@ De de schakelaaruitbreiding van het Experience Platform is beschikbaar bij [Adob
 
    Dit metapakket bevat de volgende modules en extensies:
 
-   * `module-experience-connector-admin` - Werkt de Admin UI bij zodat kunt u identiteitskaart DataStream voor een specifiek Adobe Commerce geval selecteren
-   * `module-experience-connector` - Hiermee stelt u de `Organization ID` en `datastreamId` in de Storefront Events SDK
+   * `module-experience-connector-admin` - Werkt de interface van Admin bij zodat kunt u identiteitskaart DataStream voor een specifieke instantie van Adobe Commerce selecteren.
+   * `module-experience-connector` - Hiermee stelt u de `Organization ID` en `datastreamId` in de Storefront Events SDK.
    * `data-services` - Biedt kenmerkcontext voor storefront-gebeurtenissen. Wanneer bijvoorbeeld een uitcheckgebeurtenis plaatsvindt, wordt informatie over het aantal items in het winkelwagentje en de productkenmerkgegevens voor die items opgenomen.
-   * `services-id` - Verbindt uw Adobe Commerce-instantie met [Adobe Commerce SaaS](../landing/saas.md) het gebruiken van zandbak en productie API sleutels en aan de Adobe Experience Platform om IMS Organisatie ID terug te winnen
+   * `services-id` - Verbindt uw Adobe Commerce-instantie met [Adobe Commerce SaaS](../landing/saas.md) het gebruiken van zandbak en productie API sleutels en aan de Adobe Experience Platform om IMS Organisatie ID terug te winnen.
+   * `orders-connector` - Verbindt de bestelstatusservice met uw Adobe Commerce-exemplaar.
 
-1. (Optioneel) Opnemen [!DNL Live Search] installeer de [[!DNL Live Search]](../live-search/install.md) extensie.
+1. (Optioneel) Opnemen [!DNL Live Search] gegevens, die [zoekgebeurtenissen](events.md#search-events), installeert u de [[!DNL Live Search]](../live-search/install.md) extensie.
+
+### De connector voor bestellingen configureren
+
+Nadat u de `experience-platform-connector`, moet u de installatie van `orders-connector` op basis van het implementatietype: op locatie of Adobe Commerce op Cloud-infrastructuur.
+
+#### In de bedrijfsruimten
+
+In omgevingen waar het bedrijf zich bevindt, moet u handmatig het genereren van code en Adobe Commerce Events inschakelen:
+
+```bash
+bin/magento events:generate:module
+bin/magento module:enable Magento_AdobeCommerceEvents
+bin/magento setup:upgrade
+bin/magento setup:di:compile
+bin/magento config:set adobe_io_events/eventing/enabled 1
+```
+
+#### Cloud-infrastructuur
+
+Schakel in Adobe Commerce op Cloud-infrastructuur de optie `ENABLE_EVENTING` algemene variabele in `.magento.env.yaml`. [Meer informatie](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-global.html#enable_eventing).
+
+```bash
+stage:
+   global:
+      ENABLE_EVENTING: true
+```
+
+Pas bijgewerkte bestanden toe op de cloud-omgeving en druk ze op deze bestanden. Wanneer de plaatsing wordt gebeëindigd, laat het verzenden van gebeurtenissen met het volgende bevel toe:
+
+```bash
+bin/magento config:set adobe_io_events/eventing/enabled 1
+```
 
 ### De B2B-extensie installeren
 

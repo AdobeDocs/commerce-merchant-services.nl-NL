@@ -3,9 +3,9 @@ title: Connect Commerce-gegevens naar Adobe Experience Platform
 description: Leer hoe u de gegevens van de Handel met de Adobe Experience Platform verbindt.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 9717de31ee5545a33462776f3b2bc529ec9e08f2
+source-git-commit: 6044a60c60bf8f29295a14157230d85d0a1b9e07
 workflow-type: tm+mt
-source-wordcount: '1951'
+source-wordcount: '2232'
 ht-degree: 0%
 
 ---
@@ -65,15 +65,21 @@ Zie het gebeurtenisonderwerp om meer over te leren [storefront](events.md#storef
 
 1. Selecteren **Gebeurtenissen van Storefront** als u gedragsgegevens van de storefront wilt verzenden.
 
-   >[!NOTE]
-   >
-   >De **Gebeurtenissen van Storefront** Schakel het selectievakje automatisch in als de AEP Web SDK en de Organisatie-id geldig zijn.
-
 1. Selecteren **Back office evenementen** als u de statusinformatie van een bestelling wilt verzenden, bijvoorbeeld of een bestelling is geplaatst, geannuleerd, terugbetaald of verzonden.
 
    >[!NOTE]
    >
    >Als u **Back office evenementen**, worden alle gegevens van het achterkantoor naar de rand van het Experience Platform verzonden. Als een winkelier ervoor kiest zich af te melden voor gegevensverzameling, moet u de privacyvoorkeur van de winkels expliciet instellen in het Experience Platform. Dit is anders dan storefront-gebeurtenissen waarbij de verzamelaar al toestemming afhandelt op basis van de voorkeuren van de winkels. [Meer informatie](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset.html) over het instellen van de privacyvoorkeur van een winkelier in het Experience Platform.
+
+1. (Sla deze stap over als u uw eigen AEP Web SDK gebruikt.) [Maken](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html#create) een gegevensstroom in de Adobe Experience Platform of selecteer een bestaande gegevensstroom u voor inzameling wilt gebruiken. Voer die gegevensstroom-id in het dialoogvenster **DataStream-id** veld.
+
+1. Voer de **Dataset-id** dat u uw gegevens van de Handel wilt bevatten. De id van de gegevensset zoeken:
+
+   1. Open de interface van het Experience Platform en selecteer **Gegevenssets** in de linkernavigatie om het dialoogvenster **Gegevenssets** dashboard. Het dashboard maakt een lijst van alle beschikbare datasets voor uw organisatie. De details worden getoond voor elke vermelde dataset, met inbegrip van zijn naam, het schema de dataset zich aan, en status van de meest recente versiereeks houdt.
+   1. Open de dataset verbonden aan uw gegevensstroom.
+   1. In de rechterruit, bekijk de details over de dataset. Kopieer de id van de gegevensset.
+
+   ![Gegevensset-id kopiëren](./assets/retrieve-dataset-id.png){width="700" zoomable="yes"}
 
 1. Om de updates van de backoffice gebeurtenisgegevens te verzekeren die op een programma volgens een [kraan](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html) taak, moet u de `Sales Orders Feed` indexeren naar `Update by Schedule`.
 
@@ -93,10 +99,6 @@ Zie het gebeurtenisonderwerp om meer over te leren [storefront](events.md#storef
       bin/magento saas:resync --feed orders
       ```
 
-1. (Sla deze stap over als u uw eigen AEP Web SDK gebruikt.) [Maken](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#create) een gegevensstroom in de Adobe Experience Platform of selecteer een bestaande gegevensstroom u voor inzameling wilt gebruiken.
-
-1. (Sla deze stap over als u uw eigen AEP Web SDK gebruikt.) In de **DataStream-id** veld, plakt u de id van die nieuwe of bestaande gegevensstroom.
-
 ## Veldomschrijvingen
 
 | Veld | Beschrijving |
@@ -104,28 +106,25 @@ Zie het gebeurtenisonderwerp om meer over te leren [storefront](events.md#storef
 | Toepassingsgebied | Specifieke website waarop u de configuratie-instellingen wilt toepassen. |
 | Organisatie-id (wereldwijd) | Id die behoort tot de organisatie die het Adobe DX-product heeft aangeschaft. Deze id koppelt uw Adobe Commerce-exemplaar aan Adobe Experience Platform. |
 | Is de AEP Web SDK reeds opgesteld aan uw plaats | Schakel dit selectievakje in als u uw eigen AEP Web SDK aan uw site hebt toegewezen |
-| AEP Web SDK Name (Global) | Als u reeds een Experience Platform Web SDK hebt die aan uw plaats wordt opgesteld, specificeer de naam van die SDK op dit gebied. Dit staat de Collector van de Gebeurtenis Storefront en de Gebeurtenis SDK toe om uw Experience PlatformWeb SDK eerder dan de versie te gebruiken die door de schakelaar van het Experience Platform wordt opgesteld. Als u geen Experience Platform Web SDK hebt die aan uw plaats wordt opgesteld, verlaat dit gebied leeg en de schakelaar van het Experience Platform stelt voor u op. |
+| AEP Web SDK Name (global) | Als u reeds een Experience Platform Web SDK hebt die aan uw plaats wordt opgesteld, specificeer de naam van die SDK op dit gebied. Dit staat de Collector van de Gebeurtenis Storefront en de Gebeurtenis SDK toe om uw Experience PlatformWeb SDK eerder dan de versie te gebruiken die door de schakelaar van het Experience Platform wordt opgesteld. Als u geen Experience Platform Web SDK hebt die aan uw plaats wordt opgesteld, verlaat dit gebied leeg, en de schakelaar van het Experience Platform stelt één voor u op. |
 | Gebeurtenissen van Storefront | Wordt standaard ingeschakeld zolang de organisatie-id en de gegevensstroom-id geldig zijn. Met Storefront-gebeurtenissen worden geanonimiseerde gedragsgegevens verzameld bij kopers die door uw site bladeren. |
-| Back Office-gebeurtenissen | Als deze optie is ingeschakeld, bevat de gebeurtenislading geanonimiseerde gegevens over de status van de bestelling, zoals of een bestelling is geplaatst, geannuleerd, terugbetaald of verzonden. |
+| Back office evenementen | Als deze optie is ingeschakeld, bevat de gebeurtenislading geanonimiseerde gegevens over de status van de bestelling, zoals of een bestelling is geplaatst, geannuleerd, terugbetaald of verzonden. |
 | DataStream-id (website) | ID die gegevens om van Adobe Experience Platform aan andere Adobe DX producten toestaat te stromen. Deze id moet zijn gekoppeld aan een specifieke website in uw specifieke Adobe Commerce-exemplaar. Als u uw eigen SDK van het Web van het Experience Platform specificeert, specificeer geen gegevensstroom identiteitskaart op dit gebied. De verbindingslijn van het Experience Platform gebruikt gegevensstroom identiteitskaart verbonden aan die SDK en negeert om het even welke gegevensstroom ID die op dit gebied (als om het even welk) wordt gespecificeerd. |
+| Gegevensset-id (website) | Identiteitskaart van de dataset die uw gegevens van de Handel bevat. Dit veld is vereist tenzij u de optie **Gebeurtenissen van Storefront** of **Back office evenementen** selectievakjes. Ook, als u uw eigen SDK van het Web van het Experience Platform gebruikt en daarom geen gegevensstroom identiteitskaart specificeerde, moet u dataset ID nog toevoegen verbonden aan uw gegevensstroom. Anders kunt u dit formulier niet opslaan. |
 
 >[!NOTE]
 >
 >Na het instappen, beginnen de storefrontgegevens aan de rand van het Experience Platform te stromen. Het duurt ongeveer vijf minuten voordat de gegevens op het achterkantoor aan de rand worden weergegeven. Volgende updates zijn zichtbaar aan de rand op basis van het uitsnijdschema.
 
-## (Beta) Gegevens historische bestelling verzenden
+## Gegevens in historische volgorde verzenden
 
->[!NOTE]
->
->Deze functie is alleen beschikbaar voor bètagebruikers. U kunt deelnemen aan de bètaversie door een e-mail naar het volgende adres te verzenden: `dataconnection@adobe.com`.
+Adobe Commerce verzamelt maximaal vijf jaar [historische ordegegevens en status](events.md#back-office-events). U kunt de schakelaar van het Experience Platform gebruiken om die historische gegevens naar het Experience Platform te verzenden om uw klantenprofielen te verrijken die op die vroegere orden worden gebaseerd. De gegevens worden opgeslagen in een dataset binnen Experience Platform.
 
-Adobe Commerce verzamelt tot vijf jaar historische ordergegevens en status. U kunt de schakelaar van het Experience Platform gebruiken om die historische gegevens naar het Experience Platform te verzenden om uw klantenprofielen te verrijken die op die vroegere orden worden gebaseerd. De gegevens worden opgeslagen in een dataset binnen Experience Platform.
+Terwijl de Handel reeds de historische ordegegevens verzamelt, zijn er verscheidene stappen u moet voltooien om die gegevens naar Experience Platform te verzenden.
 
-Terwijl de Handel reeds de historische ordegegevens verzamelt, zijn er verscheidene taken u moet voltooien om die gegevens naar Experience Platform te verzenden. De volgende secties begeleiden u door het proces.
+### Stap 1: historische gegevensverzameling voor bestellingen installeren
 
-### bètaversie van historische volgorde installeren
-
-Om historische ordegegevensinzameling voor bèta toe te laten, moet u de wortel van het project bijwerken [!DNL Composer] `.json` bestand als volgt:
+Om historische ordegegevensinzameling toe te laten, moet u de wortel van het project bijwerken [!DNL Composer] `.json` bestand als volgt:
 
 1. De hoofdmap openen `composer.json` bestand en zoek naar `magento/experience-platform-connector`.
 
@@ -134,7 +133,7 @@ Om historische ordegegevensinzameling voor bèta toe te laten, moet u de wortel 
    ```json
    "require": {
       ...
-      "magento/experience-platform-connector": "^3.0.0-beta1",
+      "magento/experience-platform-connector": "^3.0.0",
       ...
     }
    ```
@@ -144,7 +143,7 @@ Om historische ordegegevensinzameling voor bèta toe te laten, moet u de wortel 
    ```json
    "require": {
      ...
-     "magento/experience-platform-connector-b2b": "^2.0.0-beta1"
+     "magento/experience-platform-connector-b2b": "^2.0.0"
      ...
    }
    ```
@@ -161,31 +160,49 @@ Om historische ordegegevensinzameling voor bèta toe te laten, moet u de wortel 
    composer update magento/experience-platform-connector-b2b --with-dependencies
    ```
 
-### bèta van historische volgorde configureren
-
-Om ervoor te zorgen dat uw klantenordegeschiedenis naar Experience Platform kan worden verzonden, moet u geloofsbrieven specificeren die uw instantie van de Handel met Experience Platform verbinden. Als u reeds geïnstalleerd en toegelaten hebt [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) hebt opgegeven en kunt u deze stap overslaan. Als u de extensie Audience Activation nog niet hebt geïnstalleerd en ingeschakeld, voert u de volgende stappen uit:
+### Stap 2: Een project maken in Adobe Developer Console
 
 >[!NOTE]
 >
->In deze sectie, gaat u geloofsbrieven van de ontwikkelaarsconsole in. Zorg ervoor dat uw project van de ontwikkelaarsconsole het correcte heeft [rollen en toestemmingen gevormd](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#assign-api-to-a-role).
+>Als u reeds geïnstalleerd en toegelaten hebt [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) hebt uitgevoerd, hebt u stap 2 en 3 al uitgevoerd.
 
-1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
+Creeer een project in de Console van Adobe Developer die Handel voor authentiek verklaart zodat kan het Experience Platform API vraag maken.
 
-1. Uitbreiden **[!UICONTROL Services]** en selecteert u **[!UICONTROL Experience Platform Connector]**.
+Volg de stappen in het dialoogvenster [API&#39;s van Experience Platforms verifiëren en openen](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html) zelfstudie.
 
-1. Voer de configuratiereferenties in die in het dialoogvenster [ontwikkelingsconsole](https://developer.adobe.com/console/home).
+Terwijl u de zelfstudie doorloopt, moet u ervoor zorgen dat uw project het volgende heeft:
+
+- Toegang tot het volgende [productprofielen](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#select-product-profiles): **Standaardproductie, alle toegang** en **Alle toegang standaard AEP**.
+- De juiste [rollen en toestemmingen worden gevormd](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#assign-api-to-a-role).
+- Als u hebt besloten JSON Web Tokens (JWT) als uw server-aan-server authentificatiemethode te gebruiken, moet u ook een privé sleutel uploaden.
+
+Het resultaat van deze stap leidt tot een configuratiedossier dat u in de volgende stap gebruikt.
+
+### Stap 3: configuratiebestand downloaden
+
+Download de [workspace-configuratiebestand](https://developer.adobe.com/commerce/extensibility/events/project-setup/#download-the-workspace-configuration-file). De inhoud van dit bestand kopiëren en in het **Servicerekening/Referentiedetails** pagina van de Commerce Admin.
+
+1. Navigeer in Commerce Admin naar **Winkels** > Instellingen > **Configuratie** > **Services** > **Experience Platform Connector**.
+
+1. Selecteer de server-aan-server vergunningsmethode die u van uitvoerde **Type Adobe I/O-autorisatie** -menu. Adobe beveelt het gebruik van OAuth aan. JWT is vervangen. [Meer informatie](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/).
+
+1. (Alleen JWT) Kopieer en plak de inhoud `private.key` in het bestand **Clientgeheim** veld. Gebruik de volgende opdracht om de inhoud te kopiëren.
+
+   ```bash
+   cat config/private.key | pbcopy
+   ```
+
+   Zie [Service Account (JWT)-verificatie](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/) voor meer informatie over de `private.key` bestand.
+
+1. Kopieer de inhoud van het dialoogvenster `<workspace-name>.json` in het bestand **Servicerekening/Referentiedetails** veld.
 
    ![Admin-configuratie Experience Platform Connector](./assets/epc-admin-config.png){width="700" zoomable="yes"}
 
-   >[!NOTE]
-   >
-   >Voor bèta, gebruikt de Handel de geloofsbrieven van JSON Web Tokens (JWT) in de ontwikkelaarsconsole. Post bèta, zal de Handel OAuth 2.0 in de ontwikkelaarsconsole gebruiken.
-
 1. Klikken **Config opslaan**.
 
-### De bestelsynchronisatieservice instellen
+### Stap 4: Opstelling de dienst van de Synchronisatie van de Orde
 
-Nadat u de referenties voor de ontwikkelaar hebt ingevoerd, kunt u de bestelsynchronisatieservice instellen. De bestelsynchronisatieservice gebruikt de [Message Queue Framework](https://developer.adobe.com/commerce/php/development/components/message-queues/) en RabbitMQ. Nadat u deze stappen hebt uitgevoerd, kunnen de statusgegevens van de bestelling worden gesynchroniseerd met SaaS, wat vereist is voordat deze naar het Experience Platform worden verzonden.
+Nadat u de referenties voor ontwikkelaars hebt ingevoerd, stelt u de bestelsynchronisatieservice in. De bestelsynchronisatieservice gebruikt de [Message Queue Framework](https://developer.adobe.com/commerce/php/development/components/message-queues/) en RabbitMQ. Nadat u deze stappen hebt uitgevoerd, kunnen de statusgegevens van de bestelling worden gesynchroniseerd met SaaS, wat vereist is voordat deze naar het Experience Platform worden verzonden.
 
 1. [Inschakelen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq.html) RabbitMQ.
 
@@ -208,9 +225,9 @@ Nadat u de referenties voor de ontwikkelaar hebt ingevoerd, kunt u de bestelsync
 
 Als de bestelsynchronisatieservice ingeschakeld is, kunt u het historische bereik van de ordedatum opgeven op de pagina voor de aansluiting van het Experience Platform.
 
-### Datumbereik van orderhistorie opgeven
+### Stap 5: Geef een datumbereik voor de ordergeschiedenis op
 
-In deze sectie, specificeert u de datumwaaier voor de historische orden u naar Experience Platform wilt verzenden.
+Geef het datumbereik op voor de historische orders die u naar het Experience Platform wilt verzenden.
 
 ![Geschiedenis van volgorde synchroniseren](./assets/order-history.png){width="700" zoomable="yes"}
 
@@ -218,21 +235,25 @@ In deze sectie, specificeert u de datumwaaier voor de historische orden u naar E
 
 1. Selecteer de **Orderhistorie** tab.
 
-1. Onder **Synchronisatie van orderhistorie**, voert u de **Dataset-id**. Dit zou de zelfde dataset moeten zijn verbonden aan de datastream u in [gegevensverzameling](#data-collection) hierboven.
+1. Onder **Synchronisatie van orderhistorie** de **Gegevensset-id kopiëren uit instellingen** selectievakje is al ingeschakeld. Dit verzekert u het zelfde dataset gebruikt die in wordt gespecificeerd **Instellingen** tab.
 
-   1. Om tot dataset identiteitskaart toegang te hebben, open het Experience Platform UI en selecteer **Gegevenssets** in de linkernavigatie om het dialoogvenster **Gegevenssets** dashboard. Het dashboard maakt een lijst van alle beschikbare datasets voor uw organisatie. De details worden getoond voor elke vermelde dataset, met inbegrip van zijn naam, het schema de dataset zich aan, en status van de meest recente versiereeks houdt.
-   1. Open de dataset verbonden aan uw gegevensstroom.
-   1. In de rechterruit, ziet u details over de dataset. Kopieer de id van de gegevensset.
+1. In de **Van** en **Naar** geeft u het datumbereik op voor de historische volgordegegevens die u wilt verzenden. U kunt geen datumbereik selecteren dat langer is dan vijf jaar.
 
-   ![Gegevensset-id kopiëren](./assets/retrieve-dataset-id.png){width="700" zoomable="yes"}
+1. Selecteren **[!UICONTROL Start Sync]** om de synchronisatie te activeren. Historische ordegegevens zijn batchgegevens in tegenstelling tot opslag en achterkantoorgegevens die gegevens stromen. Het duurt ongeveer 45 minuten voordat de gegevens in de batch in Experience Platform zijn ontvangen.
 
-1. In de **Van** en **Naar** in de velden wordt het gegevensbereik opgegeven voor de historische volgordegegevens die u wilt verzenden. U kunt geen datumbereik selecteren dat langer is dan vijf jaar.
+| Veld | Beschrijving |
+|--- |--- |
+| Gegevensset-id kopiëren uit instellingen | Kopieert dataset ID u op ingegaan **Instellingen** tab. |
+| Gegevensset-id (website) | Identiteitskaart van de dataset die uw gegevens van de Handel bevat. Dit veld is vereist tenzij u de optie **Gebeurtenissen van Storefront** of **Back office evenementen** selectievakjes. Ook, als u uw eigen SDK van het Web van het Experience Platform gebruikt en daarom geen gegevensstroom identiteitskaart specificeerde, moet u dataset ID nog toevoegen verbonden aan uw gegevensstroom. Anders kunt u dit formulier niet opslaan. |
+| Van | Datum vanaf wanneer u wilt beginnen met het verzamelen van gegevens over de ordergeschiedenis. |
+| Naar | Datum vanaf welke u het verzamelen van de gegevens van de ordegeschiedenis wilt beëindigen. |
+| Synchronisatie starten | Begint het proces om de gegevens van de ordegeschiedenis aan de rand van het Experience Platform te synchroniseren. Deze knop is uitgeschakeld als de **[!UICONTROL Dataset ID]** veld is leeg of de id van de gegevensset is ongeldig. |
 
-1. Selecteren [!UICONTROL Start Sync] om de synchronisatie te activeren. Historische ordegegevens zijn batchgegevens in tegenstelling tot opslag en achterkantoorgegevens die gegevens stromen. Het duurt ongeveer 45 minuten voordat de gegevens in de batch in Experience Platform zijn ontvangen.
+### Demo van historische orde
 
-   >[!NOTE]
-   >
-   >Voor bèta, als u een synchronisatie veelvoudige tijden op de zelfde of overlappende tijdwaaier teweegbrengt, ziet u dubbele gebeurtenissen in de dataset.
+Bekijk deze video voor meer informatie over historische bestellingen:
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424672)
 
 ## Bevestig dat gebeurtenisgegevens worden verzameld
 
