@@ -4,9 +4,9 @@ user-guide-description: "Deze handleiding bevat gedetailleerde instructies voor 
 breadcrumb-title: "[!DNL Live Search] Handleiding"
 role: Admin
 feature: Services, Search
-source-git-commit: cc921e7e5abe41998497fcd8a6bdcc146dd1acb0
+source-git-commit: bf44c04771069fe6502257b35517c62a5161f81b
 workflow-type: tm+mt
-source-wordcount: '98'
+source-wordcount: '96'
 ht-degree: 6%
 
 ---
@@ -33,7 +33,6 @@ ht-degree: 6%
       - [Typen factoren](facets-type.md)
       - [Facetten toevoegen](facets-add.md)
       - [Facturen beheren](facets-manage.md)
-      - [Technische noten](facet-technical-notes.md)
    - [Indexeren](indexing.md)
    - [Prestaties](performance.md)
    - Regels {#rules}

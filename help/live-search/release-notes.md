@@ -3,9 +3,9 @@ title: "[!DNL Live Search] Aanvullende informatie"
 description: "De meest recente releasegegevens voor [!DNL Live Search] uit Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: e568609ac1093b36d78250b45e581b63ff35a2ac
+source-git-commit: decb478ecf3b0853933afcd35b99ec176d7262b2
 workflow-type: tm+mt
-source-wordcount: '1725'
+source-wordcount: '1747'
 ht-degree: 0%
 
 ---
@@ -56,6 +56,7 @@ _15 sep. 2023_
 
 ### Updates
 
+![Repareren](../assets/fix.svg) De tabelgrootte van de producten en de prijsvoeding is sterk afgenomen. Tabellen `catalog_data_exporter_products` en `catalog_data_exporter_product_prices` moet een aanzienlijke vermindering van de omvang zien.
 ![Repareren](../assets/fix.svg) Het tabblad &#39;Regels&#39; krijgt een andere naam dan &#39;Zoekregels&#39;
 ![Repareren](../assets/fix.svg) Wanneer u op &#39;trending&#39; rangschikt, kunt u nu kiezen tussen: * 3 dagen (standaardwaarde) * 14 dagen * 30 dagen
 ![Repareren](../assets/fix.svg) &#39;Gebeurtenissen&#39; (Boost/Pin/Bury/Hide) is hernoemd naar &#39;Handmatige volgorde&#39;

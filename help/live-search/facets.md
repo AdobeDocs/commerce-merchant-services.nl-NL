@@ -2,9 +2,9 @@
 title: "Facets"
 description: "[!DNL Live Search] facetten gebruiken meerdere afmetingen van kenmerkwaarden als zoekcriteria."
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 9cf48f6f900385a5cb772adee8834ec9cfe5ee13
+source-git-commit: 4eddad715405f35ea063bab3cf4651fec3beeae5
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '517'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,8 @@ ht-degree: 0%
 # Facetten
 
 Faceting is een methode voor het filteren van hoge prestaties waarbij meerdere dimensies van kenmerkwaarden worden gebruikt als zoekcriteria. Gefactureerde zoekopdracht is vergelijkbaar, maar aanzienlijk &quot;slimmer&quot; dan de standaard [gelaagde navigatie](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html). De lijst met beschikbare filters wordt bepaald door de [filterbare kenmerken](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#filterable-attributes) van producten die in de zoekresultaten worden geretourneerd.
+
+[!DNL Live Search] gebruikt de `productSearch` query, die faceting en andere gegevens retourneert die specifiek zijn voor [!DNL Live Search]. Zie [`productSearch` query](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) in de ontwikkelaarsdocumentatie voor codevoorbeelden.
 
 ![Gefilterde zoekresultaten](assets/storefront-search-results-run.png)
 
@@ -33,6 +35,14 @@ De categorie- en productkenmerkvereisten voor facetten zijn vergelijkbaar met de
 | [Weergave-instellingen voor categorie](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html) | Anker - `Yes` |
 | [Eigenschappen van kenmerk](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) | [Invoertype catalogus](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price`, `Visual swatch` (alleen widget), `Text swatch` (alleen widget) |
 | Eigenschappen van kenmerkarchief | Gebruiken in gelaagde navigatie met zoekresultaten - `Yes` |
+
+## Facetaggregatie
+
+Facetsamenvoeging wordt als volgt uitgevoerd: als de winkel drie facetten (categorieën, kleur en prijs) heeft en de verkoopfilters op alle drie (kleur = blauw, de prijs is van $10.00-50.00, categorieën = `promotions`).
+
+* `categories` aggregatie - aggregaten `categories`past vervolgens de `color` en `price` , maar niet de `categories` filter.
+* `color` aggregatie - aggregaten `color`past vervolgens de`price` en `categories` , maar niet de `color` filter.
+* `price` aggregatie - aggregaten `price`past vervolgens de `color` en `categories` , maar niet de `price` filter.
 
 ## Standaardkenmerkwaarden
 

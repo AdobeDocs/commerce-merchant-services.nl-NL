@@ -3,9 +3,9 @@ title: "Installeren [!DNL Live Search]"
 description: "Meer informatie over het installeren, bijwerken en verwijderen [!DNL Live Search] uit Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 017299c613cc010d96d90c9b1d88e43304d00e2b
+source-git-commit: bf44c04771069fe6502257b35517c62a5161f81b
 workflow-type: tm+mt
-source-wordcount: '1301'
+source-wordcount: '1265'
 ht-degree: 0%
 
 ---
@@ -40,10 +40,6 @@ Deze instapmethode wordt aanbevolen bij de installatie [!DNL Live Search] aan ee
 
 In dit scenario worden storefront-bewerkingen onderbroken terwijl de [!DNL Live Search] de dienst indexeert alle producten in de catalogus. Tijdens de installatie [!DNL Live Search] modules worden ingeschakeld en [!DNL Elasticsearch] modules zijn uitgeschakeld.
 
->[!NOTE]
->
->Vanaf maart 2023 biedt Live Search alleen ondersteuning voor versie 2.4.4 en hoger.
-
 1. Adobe Commerce 2.4.4+ installeren zonder [!DNL Live Search].
 
 1. Als u het dialoogvenster `live-search` pakket, voer het volgende uit vanaf de bevellijn:
@@ -51,8 +47,6 @@ In dit scenario worden storefront-bewerkingen onderbroken terwijl de [!DNL Live 
    ```bash
    composer require magento/live-search
    ```
-
-   Raadpleeg de lijst met [!DNL Live Search] [afhankelijkheden](#dependencies) die zijn vastgelegd door [!DNL Composer].
 
 1. Voer de volgende opdrachten uit om uit te schakelen [!DNL Elasticsearch] en bijbehorende modules, en installeren [!DNL Live Search]:
 
@@ -104,8 +98,6 @@ In dit scenario: [!DNL Elasticsearch] beheert tijdelijk zoekverzoeken van de win
    ```bash
    composer require magento/live-search
    ```
-
-   Raadpleeg de lijst met [!DNL Live Search] [afhankelijkheden](#live-search-dependencies) die zijn vastgelegd door [!DNL Composer].
 
 1. Voer de volgende opdracht uit om de opdracht tijdelijk uit te schakelen [!DNL Live Search] modules die zoekresultaten leveren.
 

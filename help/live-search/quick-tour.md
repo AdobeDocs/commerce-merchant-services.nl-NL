@@ -2,9 +2,9 @@
 title: "Snelle rondleiding"
 description: "Maak een snelle rondleiding door [!DNL Live Search] uit de winkel."
 exl-id: bcb19506-6617-4c8a-83df-9d961f81e9e8
-source-git-commit: 9cf48f6f900385a5cb772adee8834ec9cfe5ee13
+source-git-commit: 9f045a049ac775ed4673e807ab5e21b8811cde2d
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -40,3 +40,7 @@ Facetten gebruiken als URL-parameters:`http://yourwebsite.com?color=red`en de re
 ## Handelsregels
 
 Merchandising [regels](rules.md) Vorm de het winkelen ervaring met als-dan verklaringen die logica en gebeurtenissen toevoegen aan onderzoek. U kunt producten eenvoudig verhogen of begraven voor een promotie, seizoen, of een andere periode.
+
+## Ondersteuning voor zoektermen
+
+[!DNL Live Search] supports Commerce [heroriëntering van zoektermen](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html). Gebruikers kunnen bijvoorbeeld zoeken naar een term zoals &quot;Verzendkosten&quot; en deze rechtstreeks doorsturen naar de pagina Verzendkosten.

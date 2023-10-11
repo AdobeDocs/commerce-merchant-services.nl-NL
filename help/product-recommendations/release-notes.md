@@ -3,9 +3,9 @@ title: '[!DNL Product Recommendations] Aanvullende informatie'
 description: De meest recente releasegegevens voor [!DNL Product Recommendations] uit Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 06dfc8fd5dc3619732a1f534e5770b6812eddc07
+source-git-commit: decb478ecf3b0853933afcd35b99ec176d7262b2
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1235'
 ht-degree: 0%
 
 ---
@@ -53,6 +53,7 @@ _15 september 2023_
 
 ![Nieuw](../assets/new.svg) Nieuwe modules toegevoegd ter ondersteuning van de [Saas Price Index](../price-index/index.md).
 ![Nieuw](../assets/new.svg) Er zijn nieuwe gegevensexportmodules toegevoegd ter ondersteuning van het exporteren van meer producttypen, waaronder gebundelde producten en cadeaukaarten.
+![Repareren](../assets/fix.svg) De tabelgrootte van de producten en de prijsvoeding is sterk afgenomen. Tabellen `catalog_data_exporter_products` en `catalog_data_exporter_product_prices` moet een aanzienlijke vermindering van de omvang zien.
 
 #### Bekende beperkingen
 
