@@ -3,9 +3,9 @@ title: Connect Commerce-gegevens naar Adobe Experience Platform
 description: Leer hoe u de gegevens van de Handel met de Adobe Experience Platform verbindt.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: bcee983ee7f40fbe2ea8eb96317b663ce7363ddd
+source-git-commit: f4ed7a485d5962530641203beec79061bfa7e33f
 workflow-type: tm+mt
-source-wordcount: '2246'
+source-wordcount: '2320'
 ht-degree: 0%
 
 ---
@@ -278,3 +278,7 @@ Als u wilt bevestigen dat gegevens worden verzameld bij uw winkel voor Handel, g
 In dit voorbeeld ziet u gebeurtenisgegevens uit de [`commerce.productListAdds`](events.md#addtocart), [`commerce.productViews`](events.md#productpageview), [`web.webpagedetails.pageViews`](events.md#pageview), enzovoort. In deze weergave kunt u controleren of de gegevens van de Handel aan de rand zijn binnengekomen.
 
 Als de resultaten niet zijn wat u verwacht, open uw dataset en zoek om het even welke ontbroken partijinvoer. Meer informatie over [problemen oplossen bij importeren van batch](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/troubleshooting.html).
+
+## Volgende stappen
+
+Wanneer de gegevens van de Handel naar de rand van de Experience Platform worden verzonden, kunnen andere producten van Adobe Experience Cloud, zoals Adobe Journey Optimizer, die gegevens gebruiken. U kunt Journey Optimizer bijvoorbeeld configureren om te luisteren naar bepaalde gebeurtenissen en op basis van die gebeurtenisgegevens een e-mailbericht activeren voor een eerste gebruiker of als er een verlaten winkelwagentje is. Meer weten over het uitbreiden van je handelsplatform via [maken van reizen van klanten](using-ajo.md) in Journey Optimizer.

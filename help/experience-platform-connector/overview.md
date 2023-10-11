@@ -3,16 +3,16 @@ title: Overzicht van de handleiding
 description: Leer hoe u Adobe Commerce-gegevens met Adobe Experience Platform kunt integreren via de aansluiting van het Experience Platform.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
 recommendations: noCatalog
-source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
+source-git-commit: 0b30d78602e6fc033a05178de8454b4dbf197911
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '498'
 ht-degree: 0%
 
 ---
 
 # Overzicht van de Experience Platform-aansluiting
 
-Met de uitbreiding van de aansluiting van het Experience Platform kunnen Adobe Commerce-handelaren gegevens verzenden [storefront](events.md#storefront-events) en [achterkantoor](events.md#back-office-events) gegevens aan de Adobe Experience Platform edge zodat andere Adobe Experience Cloud producten, zoals Adobe Analytics en Adobe Target, die gegevens van de Handel kunnen gebruiken. Door uw gegevens van de Handel met andere producten in Adobe Experience Cloud te verbinden, kunt u taken uitvoeren, zoals gebruikersgedrag op uw plaats analyseren, het testen van AB uitvoeren, en gepersonaliseerde campagnes creëren.
+Met de uitbreiding van de aansluiting van het Experience Platform kunnen Adobe Commerce-handelaren gegevens verzenden [storefront](events.md#storefront-events) en [achterkantoor](events.md#back-office-events) gegevens aan de Adobe Experience Platform edge zodat andere Adobe Experience Cloud producten, zoals Adobe Analytics en Adobe Journey Optimizer, die gegevens van de Handel kunnen gebruiken. Door uw gegevens van de Handel met andere producten in Adobe Experience Cloud te verbinden, kunt u taken uitvoeren, zoals gebruikersgedrag op uw plaats analyseren, het testen van AB uitvoeren, en gepersonaliseerde campagnes creëren.
 
 [Gebeurtenissen van Storefront](events.md#storefront-events) interacties met opnamesoftware, zoals `View Page`, `View Product`, `Add to Cart`, en [aanvraaglijst](events.md#b2b-events) informatie (voor B2B-handelaren). [Back Office](events.md#back-office-events) gebeurtenissen leggen informatie vast over de status van een bestelling, zoals of een bestelling is geplaatst, geannuleerd, terugbetaald, verzonden of voltooid. Vastgelegde gegevens bevatten geen persoonlijk identificeerbare informatie (PII). Alle gebruikers-id&#39;s, zoals cookie-id&#39;s en IP-adressen, worden strikt geanonimiseerd. [Meer informatie](https://www.adobe.com/privacy/experience-cloud.html).
 
