@@ -3,9 +3,9 @@ title: Adobe Journey Optimizer gebruiken om een afgebroken winkelwagentje te ver
 description: Leer hoe u Adobe Journey Optimizer kunt gebruiken om een verlaten winkelwagentje-e-mail te verzenden.
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: ea54638b597f5eaae04780498558a8fd46821b52
+source-git-commit: 261416654773470edfa3cc22058cccf92ef29cdb
 workflow-type: tm+mt
-source-wordcount: '1064'
+source-wordcount: '1049'
 ht-degree: 0%
 
 ---
@@ -58,17 +58,17 @@ In uw zandbakmilieu van de Handel, bekijk productpagina&#39;s, voeg punten aan e
 
    Zoek naar `commerce.checkouts` -gebeurtenis en controleer de payload van de gebeurtenis:
 
-       &quot;json
-       &quot;personID&quot;: &quot;84281643067178465783746543501073369488&quot;,
-       &quot;eventType&quot;: &quot;commerce.checkouts&quot;,
-       &quot;_id&quot;: &quot;4b41703f-e42e-485b-8d63-7001e3580856-0&quot;,
-       &quot;commerce&quot;: {
-       &quot;kar&quot;: {},
-       &quot;checkouts&quot;: {
-       &quot;value&quot;: 1
-       }
-       &quot;
-   
+   ```json
+   "personID": "84281643067178465783746543501073369488", 
+   "eventType": "commerce.checkouts", 
+   "_id": "4b41703f-e42e-485b-8d63-7001e3580856-0", 
+   "commerce": { 
+       "cart": {}, 
+       "checkouts": { 
+           "value": 1 
+       } 
+   ```
+
    Zoals u kunt zien, bevat de volledige gebeurtenislading rijke gebeurtenisgegevens. In de volgende sectie configureert u gebeurtenissen in Journey Optimizer om te luisteren naar en te reageren op de `commerce.checkouts` -gebeurtenis die is gegenereerd door uw winkel Commerce.
 
 ## Stap 3: gebeurtenissen configureren in Journey Optimizer
