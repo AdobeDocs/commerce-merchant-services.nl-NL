@@ -3,9 +3,9 @@ title: Connect Commerce-gegevens naar Adobe Experience Platform
 description: Leer hoe u de gegevens van de Handel met de Adobe Experience Platform verbindt.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: f4ed7a485d5962530641203beec79061bfa7e33f
+source-git-commit: 24494546d6d21cf46e3cb9f0fdd503ec8007daf8
 workflow-type: tm+mt
-source-wordcount: '2320'
+source-wordcount: '2263'
 ht-degree: 0%
 
 ---
@@ -122,53 +122,15 @@ Adobe Commerce verzamelt maximaal vijf jaar [historische ordegegevens en status]
 
 Terwijl de Handel reeds de historische ordegegevens verzamelt, zijn er verscheidene stappen u moet voltooien om die gegevens naar Experience Platform te verzenden.
 
-Bekijk deze video om meer over historische orden te leren dan voltooi de volgende stappen om historische ordeverzameling en configuratie uit te voeren.
+Bekijk deze video om meer over historische orden te leren dan voltooi de volgende stappen om historische ordeverzameling uit te voeren.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424672)
 
-### Stap 1: historische gegevensverzameling voor bestellingen installeren
-
-Om historische ordegegevensinzameling toe te laten, moet u de wortel van het project bijwerken [!DNL Composer] `.json` bestand als volgt:
-
-1. De hoofdmap openen `composer.json` bestand en zoek naar `magento/experience-platform-connector`.
-
-1. In de `require` het versienummer als volgt bijwerken:
-
-   ```json
-   "require": {
-      ...
-      "magento/experience-platform-connector": "^3.0.0",
-      ...
-    }
-   ```
-
-1. Werk voor B2B-handelaren de `.json` bestand als volgt:
-
-   ```json
-   "require": {
-     ...
-     "magento/experience-platform-connector-b2b": "^2.0.0"
-     ...
-   }
-   ```
-
-1. **Opslaan** `composer.json`. Voer vervolgens de volgende handelingen uit vanaf de opdrachtregel:
-
-   ```bash
-   composer update magento/experience-platform-connector –-with-dependencies
-   ```
-
-   of, voor B2B-handelaren:
-
-   ```bash
-   composer update magento/experience-platform-connector-b2b --with-dependencies
-   ```
-
-### Stap 2: Een project maken in Adobe Developer Console
+### Stap 1: Een project maken in Adobe Developer Console
 
 >[!NOTE]
 >
->Als u reeds geïnstalleerd en toegelaten hebt [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) hebt uitgevoerd, hebt u stap 2 en 3 al uitgevoerd.
+>Als u reeds geïnstalleerd en toegelaten hebt [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) hebt voltooid, hebt u stap 1 en 2 al uitgevoerd en kunt u stap 3 overslaan.
 
 Creeer een project in de Console van Adobe Developer die Handel voor authentiek verklaart zodat kan het Experience Platform API vraag maken.
 
@@ -182,7 +144,7 @@ Terwijl u de zelfstudie doorloopt, moet u ervoor zorgen dat uw project het volge
 
 Het resultaat van deze stap leidt tot een configuratiedossier dat u in de volgende stap gebruikt.
 
-### Stap 3: configuratiebestand downloaden
+### Stap 2: configuratiebestand downloaden
 
 Download de [workspace-configuratiebestand](https://developer.adobe.com/commerce/extensibility/events/project-setup/#download-the-workspace-configuration-file). De inhoud van dit bestand kopiëren en in het **Servicerekening/Referentiedetails** pagina van de Commerce Admin.
 
@@ -204,7 +166,7 @@ Download de [workspace-configuratiebestand](https://developer.adobe.com/commerce
 
 1. Klikken **Config opslaan**.
 
-### Stap 4: Opstelling de dienst van de Synchronisatie van de Orde
+### Stap 3: De bestelsynchronisatieservice instellen
 
 Nadat u de referenties voor ontwikkelaars hebt ingevoerd, stelt u de bestelsynchronisatieservice in. De bestelsynchronisatieservice gebruikt de [Message Queue Framework](https://developer.adobe.com/commerce/php/development/components/message-queues/) en RabbitMQ. Nadat u deze stappen hebt uitgevoerd, kunnen de statusgegevens van de bestelling worden gesynchroniseerd met SaaS, wat vereist is voordat deze naar het Experience Platform worden verzonden.
 
@@ -229,7 +191,7 @@ Nadat u de referenties voor ontwikkelaars hebt ingevoerd, stelt u de bestelsynch
 
 Als de bestelsynchronisatieservice ingeschakeld is, kunt u het historische bereik van de ordedatum opgeven op de pagina voor de aansluiting van het Experience Platform.
 
-### Stap 5: Geef een datumbereik voor de ordergeschiedenis op
+### Stap 4: geef een datumbereik voor de ordergeschiedenis op
 
 Geef het datumbereik op voor de historische orders die u naar het Experience Platform wilt verzenden.
 

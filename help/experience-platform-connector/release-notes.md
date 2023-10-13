@@ -3,9 +3,9 @@ title: Aanvullende informatie
 description: De nieuwste release-informatie voor Adobe Experience Platform-connector vanuit Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 5e6cf955080338e00f23eaadeaa0192798126151
+source-git-commit: 24494546d6d21cf46e3cb9f0fdd503ec8007daf8
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '652'
 ht-degree: 1%
 
 ---
@@ -63,6 +63,8 @@ _12 oktober 2022_
 _10 oktober 2023_
 
 [!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+
+Dit is een belangrijke versie. [Bewerken](install.md#update-the-experience-platform-connector) het hoofdbestand composer.json van uw project.
 
 ![Nieuw](../assets/new.svg) - Algemene beschikbaarheid voor [historische order verzenden](connect-data.md#send-historical-order-data) gegevens en status aan het Experience Platform.
 ![Nieuw](../assets/new.svg) - Toegevoegde ondersteuning voor OAuth 2.0 wanneer u [vormen](connect-data.md#connect-commerce-data-to-adobe-experience-platform) de aansluiting van het Experience Platform.

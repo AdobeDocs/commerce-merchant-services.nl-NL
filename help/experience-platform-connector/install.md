@@ -1,17 +1,17 @@
 ---
-title: Adobe Experience Platform-connector installeren en configureren vanuit Adobe Commerce
-description: Leer hoe u de Adobe Experience Platform-connector van Adobe Commerce installeert, configureert, bijwerkt en verwijdert.
+title: Adobe Experience Platform-connector installeren
+description: Leer hoe u de Adobe Experience Platform-connector van Adobe Commerce installeert, bijwerkt en verwijdert.
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
-source-git-commit: 572df7558e825a7a7c442e47af787c209dbe4ee3
+source-git-commit: 24494546d6d21cf46e3cb9f0fdd503ec8007daf8
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
 
-# De aansluiting van het Experience Platform installeren en configureren
+# Adobe Experience Platform-connector installeren
 
 Voordat u de extensie installeert, [de voorwaarden opnieuw bekijken](overview.md#prereqs).
 
@@ -95,7 +95,7 @@ of, voor B2B-handelaren:
 composer update magento/experience-platform-connector-b2b --with-dependencies
 ```
 
-Als u een update wilt uitvoeren naar een hoofdversie zoals 1.0.0 tot 2.0.0, bewerkt u de hoofdmap van het project [!DNL Composer] `.json` bestand als volgt:
+Als u een update wilt uitvoeren naar een belangrijke versie, bijvoorbeeld van 2.0.0 tot 3.0.0, bewerkt u de hoofdmap van het project [!DNL Composer] `.json` bestand als volgt:
 
 1. De hoofdmap openen `composer.json` bestand en zoek naar `magento/experience-platform-connector`.
 
@@ -104,7 +104,7 @@ Als u een update wilt uitvoeren naar een hoofdversie zoals 1.0.0 tot 2.0.0, bewe
    ```json
    "require": {
       ...
-      "magento/experience-platform-connector": "^2.0",
+      "magento/experience-platform-connector": "^3.0",
       ...
     }
    ```
