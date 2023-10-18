@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] Indexeren"
 description: "Meer informatie [!DNL Live Search] indexes product attribute properties."
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 7eece9b341a27637d7ac00216f18b7fad7c50740
+source-git-commit: 5d76d5537c8625296663239195abd26d4ee24db4
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '590'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ De [!DNL Live Search] API staat een cliënt toe om op om het even welk productat
 ## Indexeringsleiding
 
 De client roept de zoekservice van de storefront aan om (filterbare, sorteerbare) indexmetagegevens op te halen. Alleen doorzoekbare productkenmerken met *Gebruiken in gelaagde navigatie* eigenschap ingesteld op `Filterable (with results)` en *Gebruiken voor sorteren in productaanbieding* instellen op `Yes` kan door de onderzoeksdienst worden geroepen.
-Om een dynamische vraag te construeren, moet de onderzoeksdienst weten welke attributen doorzoekbaar en hun gewicht zijn. [!DNL Live Search] geeft Adobe Commerce-zoekgewichten weer (1-10, waarbij 10 de hoogste prioriteit heeft). De lijst met gegevens die met de catalogusservice worden gesynchroniseerd en gedeeld, vindt u in het schema, dat wordt gedefinieerd in:
+Om een dynamische vraag te construeren, moet de onderzoeksdienst weten welke attributen doorzoekbaar zijn en hun [gewicht](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search). [!DNL Live Search] geeft Adobe Commerce-zoekgewichten weer (1-10, waarbij 10 de hoogste prioriteit heeft). De lijst met gegevens die met de catalogusservice worden gesynchroniseerd en gedeeld, vindt u in het schema, dat wordt gedefinieerd in:
 
 `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
 

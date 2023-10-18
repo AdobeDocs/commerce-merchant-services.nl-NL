@@ -1,10 +1,10 @@
 ---
 title: "Regels toevoegen"
-description: "Leer hoe u creeert [!DNL Live Search] regels."
+description: "Leer hoe u regels voor het wijzigen van zoekopdrachten maakt."
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 8093cf72e9adf846f4c40d302d20c77142368c8e
+source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1430'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Om een regel te bouwen, moet de eerste stap de regelredacteur gebruiken om de vo
 
 1. Ga in Beheer naar **Marketing** > SEO &amp; Search > **[!DNL Live Search]**.
 1. Stel de **Toepassingsgebied** om de [winkelweergave](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) wanneer de regel van toepassing is.
-1. Klik op de knop **Zoekregels** tab.
+1. Klik op de knop **Merchandising zoeken** tab.
 1. Klikken **Regel toevoegen** om de regeleditor te starten.
 
 ## Voorwaarden

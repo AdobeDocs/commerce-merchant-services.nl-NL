@@ -2,9 +2,9 @@
 title: "Synoniemen"
 description: "[!DNL Live Search] Met synoniemen worden query's uitgebreid met woorden die afwijken van die in uw catalogus."
 exl-id: f2b7c5fb-f009-4834-baff-06e8ed7be7e5
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt
-source-wordcount: '123'
+source-wordcount: '136'
 ht-degree: 0%
 
 ---
@@ -16,3 +16,5 @@ Met synoniemen wordt de zoekquery uitgebreid en worden mogelijk woorden opgenome
 >[!IMPORTANT]
 >
 >Voor Adobe Commerce-installaties met [!DNL Live Search] geïnstalleerd, [!DNL Live Search] Synoniemen vervangen de standaard Adobe Commerce [Synoniemen zoeken](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html#search-synonyms) functies, hoewel beide in het dialoogvenster *SEO &amp; Search* in het menu Marketing. Als u [!DNL Live Search], volgt u de instructies in deze sectie.
+
+[!DNL Live Search] ook [Herleidingen voor zoektermen](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html).

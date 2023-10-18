@@ -3,16 +3,16 @@ title: "[!DNL Live Search] Overzicht van de handleiding"
 description: "[!DNL Live Search] van Adobe Commerce biedt een bliksemsnelle, superrelevante en intuïtieve zoekervaring."
 exl-id: 11e2ed97-ce80-4826-b914-71688dd29e4b
 recommendations: noCatalog
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '217'
 ht-degree: 2%
 
 ---
 
 # [!DNL Live Search] Overzicht van de handleiding
 
-[!DNL Live Search] van Adobe Commerce biedt een bliksemsnelle, superrelevante en intuïtieve zoekervaring voor Adobe Commerce zonder extra kosten. [!DNL Live Search] aangedreven door [Adobe Sensei](https://www.adobe.com/sensei.html) maakt gebruik van kunstmatige intelligentie en computerleeralgoritmen om een diepgaande analyse van de geaggregeerde bezoekersgegevens uit te voeren. Deze gegevens, in combinatie met uw Adobe Commerce-catalogus, leiden tot zeer boeiende, relevante en gepersonaliseerde winkelervaringen. Met de nadruk op snelheid, relevantie en gebruiksgemak, [!DNL Live Search] is een spelwisselaar voor zowel winkeliers als handelaren .
+[!DNL Live Search] voor Adobe Commerce biedt een snelle, relevante en intuïtieve zoekervaring zonder extra kosten. [!DNL Live Search] aangedreven door [Adobe Sensei](https://www.adobe.com/sensei.html) maakt gebruik van kunstmatige intelligentie en computerleeralgoritmen om een diepgaande analyse van de geaggregeerde bezoekersgegevens uit te voeren. Als deze gegevens in combinatie met uw Adobe Commerce-catalogus worden gebruikt, krijgt u een relevante en gepersonaliseerde winkelervaring.
 
 [!DNL Live Search] heeft drie gebieden voor beheerders:
 
@@ -23,9 +23,9 @@ ht-degree: 2%
 ## Aanvullende documentatie
 
 | Handleiding | Beschrijving |
-|--- |--- |
-| Adobe Commerce 2.4 Handboek | Bedrijfsgerichte documentatie voor zowel Adobe Commerce als Magento Open Source |
-| Adobe Commerce 2.4-handleiding voor ontwikkelaars | Documentatie gericht op ontwikkelaars die wordt gebruikt om Adobe Commerce of Magento Open Source te bouwen en aan te passen |
+|------ | ----------- |
+| [Adobe Commerce 2.4 Handboek](https://experienceleague.adobe.com/docs/commerce.html) | Bedrijfsgerichte documentatie voor zowel Adobe Commerce als Magento Open Source |
+| [Adobe Commerce 2.4-handleiding voor ontwikkelaars](https://developer.adobe.com/commerce/docs) | Documentatie gericht op ontwikkelaars die wordt gebruikt om Adobe Commerce of Magento Open Source te bouwen en aan te passen |
 
 ## Ondersteuning
 

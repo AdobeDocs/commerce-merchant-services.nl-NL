@@ -1,17 +1,17 @@
 ---
-title: "Werkruimte voor zoekregels"
-description: "Leer je weg door [!DNL Live Search] regelwerkruimte."
+title: "Werkruimte voor zoeken en wijzigen"
+description: "Leer je weg rond de werkruimte Zoeken en verwisselen."
 exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
-source-git-commit: 40bcae7a792660f02390f4d55967767b15c84f38
+source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '580'
 ht-degree: 0%
 
 ---
 
-# Werkruimte Zoeken in regels
+# Werkruimte voor zoeken en wijzigen
 
-De werkruimte Zoekregels bevat een overzicht van de huidige selectie van regels en hun status en biedt toegang tot gereedschappen die u nodig hebt om regels te maken en te beheren. Vanuit de werkruimte kunt u:
+In de werkruimte Zoeken/Merchandising worden de huidige selectie van regels en hun status weergegeven en hebt u toegang tot gereedschappen die u nodig hebt om regels te maken en te beheren. Vanuit de werkruimte kunt u:
 
 * Zoeken naar regels
 * Regeldetails weergeven
@@ -19,7 +19,7 @@ De werkruimte Zoekregels bevat een overzicht van de huidige selectie van regels 
 * Regels verwijderen
 * Toegang tot de regeleditor
 
-![De werkruimte Regels](assets/rules-workspace.png)
+![De werkruimte Zoeken/Wijzigen](assets/rules-workspace.png)
 
 ## Bereik instellen
 
@@ -57,7 +57,7 @@ Met Zoeken zoekt u de overeenkomende regel(s) terwijl u typt. De tekenreeks met 
 
 In het deelvenster Details worden de naam, de status, de voorwaarden en gebeurtenissen van de regel, de begin- en einddatum, de beschrijving en de datum die het laatst is bewerkt weergegeven. Regels kunnen worden ingeschakeld, bewerkt en verwijderd in het deelvenster Details.
 
-1. Op de *Zoekregels* tabblad, zoekt u de regel in het raster die u wilt weergeven en klikt u op **Meer** (...).
+1. Op de *Merchandising zoeken* tabblad, zoekt u de regel in het raster die u wilt weergeven en klikt u op **Meer** (...).
 1. Klikken **Details weergeven**.
 U kunt een van de volgende handelingen uitvoeren in het deelvenster Details weergeven:
 

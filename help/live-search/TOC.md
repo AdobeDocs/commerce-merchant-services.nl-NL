@@ -4,9 +4,9 @@ user-guide-description: "Deze handleiding bevat gedetailleerde instructies voor 
 breadcrumb-title: "[!DNL Live Search] Handleiding"
 role: Admin
 feature: Services, Search
-source-git-commit: bf44c04771069fe6502257b35517c62a5161f81b
+source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt
-source-wordcount: '96'
+source-wordcount: '98'
 ht-degree: 6%
 
 ---
@@ -25,7 +25,6 @@ ht-degree: 6%
    - [Storefront [!DNL Popover]](storefront-popover.md)
    - [Stijlen [!DNL Popover] Elementen](storefront-popover-styling.md)
 - [!DNL Live Search] Beheerder{#live-search-admin}
-   - [Categorieverhandeling](category-merch.md)
    - [Instellingen voor handelsconfiguratie](configuration.md)
    - Facetten {#facets}
       - [Overzicht](facets.md)
@@ -35,9 +34,10 @@ ht-degree: 6%
       - [Facturen beheren](facets-manage.md)
    - [Indexeren](indexing.md)
    - [Prestaties](performance.md)
-   - Regels {#rules}
+   - [Categorieverhandeling](category-merch.md)
+   - Merchandising zoeken {#rules}
       - [Overzicht](rules.md)
-      - [Werkruimte Regels](rules-workspace.md)
+      - [Werkruimte voor zoeken en wijzigen](rules-workspace.md)
       - [Regels toevoegen](rules-add.md)
       - [Regels beheren](rules-manage.md)
    - [Instellingen](settings.md)

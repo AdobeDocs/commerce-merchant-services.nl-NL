@@ -1,17 +1,17 @@
 ---
-title: "Zoekregels"
-description: "[!DNL Live Search] de regels combineren logica met acties om de het winkelen ervaring te vormen."
+title: "Search Merchandising"
+description: "[!DNL Live Search] merchandising-regels combineren logica met acties om de winkelervaring vorm te geven."
 exl-id: d06a3040-6987-4813-90ae-2f7b3ad0b232
-source-git-commit: 40bcae7a792660f02390f4d55967767b15c84f38
+source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '608'
 ht-degree: 0%
 
 ---
 
-# Zoekregels
+# Merchandising zoeken
 
-[!DNL Live Search] de regels combineren logica met acties om de onderzoekservaring van een verkoopster in uw opslag te vormen. U kunt regels gebruiken om producten op te voeren, te begraven, te spelden, of te verbergen om onderzoeksresultaten in echt te kalibreren - tijd om uw bedrijfsdoelstellingen te steunen.
+Zoekhandel verwijst naar een set regels die logica combineert met handelingen om de zoekervaring van een klant in uw winkel vorm te geven. U kunt het veranderen van regels gebruiken om producten op te voeren, te begraven, te spelden, of te verbergen om onderzoeksresultaten in echt te kalibreren - tijd om uw bedrijfsdoelstellingen te steunen.
 
 Elke regel heeft drie hoofdcomponenten:
 
@@ -68,7 +68,7 @@ Aanvraag in de beheerder werkt iets anders. Wanneer u een voorvertoning weergeef
 * Als de regel die wordt voorvertoond geen `query is` voorwaarde, en een volgende actieve, passende regel met een `query is` voorwaarde wordt gevonden, de `query is` wordt toegepast.
 * Als de regel die wordt voorvertoond geen `query is` voorwaarde, en geen andere regel met een `query is` wordt gevonden, wordt de regel toegepast die wordt voorvertoond.
 
-## Categorievoorschriften en producttoewijzingen voor categorieën
+## Rubriekhandel en producttoewijzingen van categorieën
 
-[!DNL Live Search] kunt u filteren op Categorieën.
+[!DNL Live Search] kunt u filteren op Categorieën. Zie [Categorieverhandeling](category-merch.md) voor meer informatie .
 In Adobe Commerce kunt u echter een virtuele categorie maken met [Toewijzingen van producten in categorie](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html). Dit type categorie is gemaakt bij uitvoering en komt niet voor in de categoriedatabase. Daarom [!DNL Live Search] kan dit rubriektype niet lezen of gebruiken.

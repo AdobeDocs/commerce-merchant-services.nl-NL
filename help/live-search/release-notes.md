@@ -3,9 +3,9 @@ title: "[!DNL Live Search] Aanvullende informatie"
 description: "De meest recente releasegegevens voor [!DNL Live Search] uit Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: decb478ecf3b0853933afcd35b99ec176d7262b2
+source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt
-source-wordcount: '1747'
+source-wordcount: '1771'
 ht-degree: 0%
 
 ---
@@ -26,13 +26,18 @@ Deze nota&#39;s beschrijven updates die buiten een versioned versie of verbeteri
 
 +++Hosted service-updates
 
+_12 oktober 2023_
+
+![Nieuw](../assets/new.svg) De beheerders van de handel kunnen nu de taal van de index voor specificeren [!DNL Live Search]. Zie [Instellingen](settings.md).
+![Repareren](../assets/fix.svg) Het tabblad Zoekregels is hernoemd naar &#39;Zoeken in wijzigingen&#39;.
+
 _13 juni 2023_
 
 ![Repareren](../assets/fix.svg) Probleem verholpen waarbij bepaalde tekens, zoals aanhalingstekens of apostroffen, klasseringsproblemen veroorzaakten. Deze problemen worden opgelost door opnieuw te indexeren.
 
 _25 april 2023_
 
-![Nieuw](../assets/new.svg) Klanten met Live zoeken kunnen nu profiteren van de nieuwe [SaaS-prijsindexer](../price-index/index.md).
+![Nieuw](../assets/new.svg) [!DNL Live Search] klanten kunnen nu profiteren van de nieuwe [SaaS-prijsindexer](../price-index/index.md).
 
 +++
 

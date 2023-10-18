@@ -3,9 +3,9 @@ title: '"Commerce Configurations Settings en [!DNL Live Search] '''
 description: Beschrijft de de configuratiemontages van Adobe Commerce die [!DNL Live Search] kan lezen.
 exl-id: a4e9e2dd-e912-4ced-a44a-091ac5334e50
 features: Services, Search, Configuration
-source-git-commit: 694a1c91425f246e497de50530d02f09a3093953
+source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,11 @@ Er zijn de configuratiemontages van de Handel die [!DNL Live Search] ondersteunt
 | Stores > Configuration > Currency > Default Display Currency | Ja met 3.1.0+ | Ja met 3.1.0+ |
 | Storingen > Configuratie > Algemeen > Valuta-instelling > Valuta-opties > Basisvaluta | Ja | Ja |
 
-Prijzen in de aanbiedingspagina van het widgetproduct en in de pop-up worden nu geconverteerd naar de standaardweergavemunt met de geconfigureerde valutakoersen
+Prijzen in de aanbiedingspagina van het widgetproduct en in de pop-up worden nu geconverteerd naar de standaardweergavemunt met behulp van de geconfigureerde valutakoersen.
+
+## Zoektermen
+
+[!DNL Live Search] supports [heroriëntering van zoektermen](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html) op implementaties waar Adobe Commerce het verpletteren behandelt: Luma en andere op php-Gebaseerde thema&#39;s.
 
 ## Niet-ondersteunde configuratiewaarden
 
