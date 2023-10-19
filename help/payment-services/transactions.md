@@ -4,9 +4,9 @@ description: Gebruik het rapport Transacties om de snelheid van de transactiever
 role: User
 level: Intermediate
 exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
-source-git-commit: ffbc5ca30a092f5ef2642b051f080fe47ce0e815
+source-git-commit: 91acc6e1dfd142caca77c0dc9ba55da34f75dd60
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1274'
 ht-degree: 0%
 
 ---
@@ -82,6 +82,8 @@ In de weergave van het Transactierapport kunt u de resultaten filteren die u wil
 1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
 1. Klik op de knop **[!UICONTROL Filter]** kiezer.
 1. Schakelen tussen _[!UICONTROL Transaction Result]_opties om rapportresultaten voor slechts geselecteerde ordetransacties te zien.
+1. Selecteer de _[!UICONTROL Card Type]_om de rapportresultaten voor het geselecteerde kaarttype te zien. Er wordt knopinfo met meer informatie weergegeven wanneer de betalingsverwerker het type kaart niet kan identificeren.
+1. Selecteer de _[!UICONTROL Card Brand]_om de rapportresultaten voor het geselecteerde kaartmerk te bekijken. Er wordt knopinfo met meer informatie weergegeven wanneer de betalingsverwerker het kaartmerk niet kan identificeren.
 1. Schakelen tussen _[!UICONTROL Payment Method]_opties om de rapportresultaten voor slechts geselecteerde betalingsmethodes te zien.
 1. Voer een _Min. orderbedrag_ of _Max. aantal bestellingen_ om rapportresultaten binnen die waaier van het ordebedrag te zien.
 1. Voer een _[!UICONTROL Order ID]_om naar een specifieke transactie te zoeken.

@@ -4,13 +4,13 @@ description: Automatische fraudebescherming inschakelen voor [!DNL Payment Servi
 role: Admin, User
 level: Intermediate
 feature: Payments, Checkout, Configuration, Security
-source-git-commit: 400d1f8a384fceebcd13e9496f8e218e694d2752
+exl-id: 440296bb-a6ff-408b-8195-3027916e4f84
+source-git-commit: 480b35fbc57b8528dbc305aa7db52483ba49d98c
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '406'
 ht-degree: 0%
 
 ---
-
 
 # Ondertekening van de fraudebescherming
 
@@ -18,15 +18,9 @@ U kunt automatische fraudebescherming inschakelen voor [!DNL Payment Services] m
 
 Adobe Commerce ondersteunt ondertekenende versies 5.4.0 en hoger. [!DNL Payment Services] ondersteunt pre-auth- en post-auth-Signifyd-stromen.
 
+De handtekening/[!DNL Payment Services] Deze integratie biedt dekking voor creditcards, debetkaarten, kluizen, uitchecken via de betalingsmethoden Admin en PayPal en Apple Pay. Hoewel sommige details van de transacties niet worden gedeeld door Betalingsdiensten en Ondertekenen, biedt Signifyd uitgebreide risicodekking voor alle betalingsmethoden, waardoor een maximale bescherming wordt geboden.
+
 Zie [Ondertekeningsdocumentatie](https://community.signifyd.com/support/s/article/magento-2-extension-install-guide?language=en_US#downloadandinstallingmagento2extension) voor meer informatie over het installeren en configureren van de extensie.
-
-## Integratiebeperkingen
-
-Momenteel gelden de volgende beperkingen voor de integratie tussen Ondertekend en [!DNL Payment Services]:
-
-* De handtekening/[!DNL Payment Services] integratie alleen ondersteunt [creditcardvelden](../payment-services/payments-options.md#credit-card-fields) (geen PayPal-betalingsknoppen of Apple Pay). [!DNL Payment Services] Hiermee worden via PayPal-betalingsknoppen en Apple Pay ontvangen ordergegevens naar Ondertekening verzonden, maar de integratie bevat alleen gegevens voor via creditcardvelden geplaatste opdrachten.
-* Ondertekenen ondersteunt geen bestellingen die door een handelaar voor een winkelbediende in de Admin worden geplaatst.
-* Ondertekenen ondersteunt geen bestellingen die zijn geplaatst met [gefactureerde creditcards](../payment-services/vaulting.md).
 
 ## Onboarding
 
