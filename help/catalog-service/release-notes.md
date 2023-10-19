@@ -3,9 +3,9 @@ title: '[!DNL Catalog Service] Aanvullende informatie'
 description: De meest recente releasegegevens voor [!DNL Catalog Service] voor Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: ec8e37078cf1b5182036192a542fdbabe61e68dd
+source-git-commit: 59de14773849dfd996b6eac115ed821342ccd48d
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '538'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,6 @@ _12 oktober 2023_
 
 ![Nieuw](../assets/new.svg) Catalogusservice ondersteunt de `inStock` markering voor productvarianten.
 ![Nieuw](../assets/new.svg) `urlKey` en `externalId` zijn toegevoegd aan het GraphQL-schema.
-![Nieuw](../assets/new.svg) Catalog Service is nu compatibel met de opschoning-API.
 
 #### Bekende beperkingen
 
