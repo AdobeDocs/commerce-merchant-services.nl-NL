@@ -3,9 +3,9 @@ title: '[!DNL Catalog Service] Aanvullende informatie'
 description: De meest recente releasegegevens voor [!DNL Catalog Service] voor Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 4e1e50aad831f04c0fee105e4c45a28ff5ca65af
+source-git-commit: ec8e37078cf1b5182036192a542fdbabe61e68dd
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -22,14 +22,15 @@ Updates zijn:
 
 ## Huidige hoofdversie
 
-### V1.12 Release
+### V1.13 Release
 
-_19 september 2023_
+_12 oktober 2023_
 
 [!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) Catalogusservice gebruikt nu [Prijsindexering SaaS](../price-index/index.md).
-![Repareren](../assets/fix.svg) Deze versie bevat insectenmoeilijke situaties en verbeteringen aan de de dienstkant.
+![Nieuw](../assets/new.svg) Catalogusservice ondersteunt de `inStock` markering voor productvarianten.
+![Nieuw](../assets/new.svg) `urlKey` en `externalId` zijn toegevoegd aan het GraphQL-schema.
+![Nieuw](../assets/new.svg) Catalog Service is nu compatibel met de opschoning-API.
 
 #### Bekende beperkingen
 
@@ -49,6 +50,15 @@ De volgende beperkingen kunnen worden opgelost met behulp van het API-net en de 
 ## Vorige versies
 
 +++ Vorige versies
+
+### V1.12 Release
+
+_19 september 2023_
+
+[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+
+![Nieuw](../assets/new.svg) Catalogusservice gebruikt nu [Prijsindexering SaaS](../price-index/index.md).
+![Repareren](../assets/fix.svg) Deze versie bevat insectenmoeilijke situaties en verbeteringen aan de de dienstkant.
 
 ### V1.11 Release
 
