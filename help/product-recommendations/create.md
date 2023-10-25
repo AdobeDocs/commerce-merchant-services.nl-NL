@@ -2,9 +2,9 @@
 title: Nieuwe aanbeveling maken
 description: Leer hoe u een product aanbevelingseenheid kunt maken.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 2b5ee71618055c48bf4d6a86dbbd4708647b5d7c
+source-git-commit: 24a930178873535f23331c9c5295c482d5b8e384
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '1007'
 ht-degree: 0%
 
 ---
@@ -32,12 +32,12 @@ Als u de aanbevolen eenheid activeert, begint Adobe Commerce [gegevens verzamele
 
 1. In de _Paginatype selecteren_ selecteert u de pagina waarop u de aanbeveling wilt weergeven in de volgende opties:
 
-   - Startpagina
-   - Categorie
-   - Productgegevens
-   - Kar
-   - Bevestiging
-   - [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html)
+   * Startpagina
+   * Categorie
+   * Productgegevens
+   * Kar
+   * Bevestiging
+   * [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html)
 
    U kunt maximaal vijf actieve aanbevelingen maken voor elk paginatype en maximaal 25 voor Page Builder. Het paginatype wordt grijs weergegeven wanneer de limiet is bereikt.
 
@@ -45,21 +45,6 @@ Als u de aanbevolen eenheid activeert, begint Adobe Commerce [gegevens verzamele
    _Naam en plaatsing van aanbevelingen_
 
 1. In de _Type aanbeveling selecteren_ in, geeft u de [soort aanbeveling](type.md) u wilt op de geselecteerde pagina verschijnen. Voor sommige pagina&#39;s [plaatsing](placement.md) van aanbevelingen is beperkt tot bepaalde soorten.
-
-   Sommige soorten aanbevelingen gebruiken gedragsgegevens van uw kopers naar [leren van machinemodellen](behavioral-data.md) om gepersonaliseerde aanbevelingen te bouwen. Om u te helpen de opleidingsvooruitgang van elk aanbevelingstype visualiseren, toont deze sectie een maat van bereidheid voor elk type. Deze gereedheidsindicatoren worden berekend op basis van een aantal factoren:
-
-   - Voldoende ingestelde resultaatgrootte: zijn er voldoende resultaten die in de meeste scenario&#39;s worden geretourneerd om het gebruik te vermijden [aanbevelingen voor back-up](behavioral-data.md#backuprecs)?
-
-   - Voldoende variëteit van resultaatsets: vertegenwoordigen de producten die worden geretourneerd een verscheidenheid aan producten uit uw catalogus? Het doel van deze factor is te voorkomen dat een minderheid van producten de enige producten is die op de hele site worden aanbevolen.
-
-   Op basis van de bovenstaande factoren wordt een gereedheidswaarde berekend en weergegeven. Een aanbevelingstype wordt beschouwd als klaar om op te stellen wanneer zijn gereedheidswaarde 75% of hoger is. Een aanbevolen type wordt gedeeltelijk geschikt geacht wanneer het voor minstens 50% gereed is. Een aanbevelingstype wordt beschouwd als niet klaar om te worden opgesteld wanneer zijn gereedheidswaarde minder dan 50% is.
-
-   >[!NOTE]
-   >
-   >De indicator mag nooit 100% bedragen.
-
-   ![Type aanbeveling](assets/create-recommendation-select-type.png)
-   _Type aanbeveling_
 
 1. In de _Weergavelabel Storefront_ in, voert u de [label](placement.md#recommendation-labels) die zichtbaar is voor kopers, zoals Topverkopers.
 
@@ -69,8 +54,8 @@ Als u de aanbevolen eenheid activeert, begint Adobe Commerce [gegevens verzamele
 
 1. In de _Plaatsing selecteren_ , geeft u de locatie op waar de aanbevolen eenheid op de pagina moet worden weergegeven.
 
-   - Onderaan de hoofdinhoud
-   - Bovenaan de hoofdinhoud
+   * Onderaan de hoofdinhoud
+   * Bovenaan de hoofdinhoud
 
 1. (Optioneel) Als u de volgorde van de aanbevelingen wilt wijzigen, selecteert u de rijen en verplaatst u deze in het dialoogvenster _Positie kiezen_ tabel.
 
@@ -86,9 +71,50 @@ Als u de aanbevolen eenheid activeert, begint Adobe Commerce [gegevens verzamele
 
 1. Klik op een van de volgende opties als u klaar bent:
 
-   - **Opslaan als concept** om de aanbevolen eenheid later te bewerken. U kunt het paginatype of het aanbevelingen type voor een aanbeveling eenheid in een ontwerpstaat niet wijzigen.
+   * **Opslaan als concept** om de aanbevolen eenheid later te bewerken. U kunt het paginatype of het aanbevelingen type voor een aanbeveling eenheid in een ontwerpstaat niet wijzigen.
 
-   - **Activeren** om de aanbeveling-eenheid in te schakelen op uw winkel.
+   * **Activeren** om de aanbeveling-eenheid in te schakelen op uw winkel.
+
+## Gereedheidsindicatoren
+
+Sommige soorten aanbevelingen gebruiken gedragsgegevens van uw kopers naar [leren van machinemodellen](behavioral-data.md) om gepersonaliseerde aanbevelingen te bouwen.
+
+Alleen catalogusgegevens zijn vereist. Er zijn geen gedragsgegevens nodig voor deze:
+
+* _Meest vergelijkbaar met dit_
+* _Onlangs bekeken_
+* _Visuele gelijkenis_
+
+Gebaseerd op de laatste zes maanden van de gedragsgegevens van de storefront:
+
+* _Bekeken dit, gezien dat_
+* _Bekijk dit, kocht dat_
+* _Dit gekocht_
+* _Aanbevolen voor u_
+
+Op populariteit gebaseerde aanbevelingen gebruiken de laatste zeven dagen van storefront gedragsgegevens:
+
+* Meest bekeken
+* Meest aangekocht
+* Toegevoegd aan winkelwagentje
+* Trend
+
+De waarden van de gereedheidsindicator zullen naar verwachting fluctueren als gevolg van factoren zoals de totale grootte van de catalogus, het volume van productinteractiegebeurtenissen (weergaven, toevoegingen aan winkelwagentje, aankopen) en het percentage skus dat deze gebeurtenissen binnen een bepaald tijdvenster registreert, zoals hierboven vermeld. Zo kunnen de gereedheidsindicatoren tijdens piekvakantieseizoensverkeer hogere waarden laten zien dan in tijden van normaal volume.
+
+Om u te helpen de opleidingsvooruitgang van elk aanbevelingstype visualiseren, _Type aanbeveling selecteren_ wordt voor elk type een mate van gereedheid weergegeven. Deze gereedheidsindicatoren worden berekend op basis van een aantal factoren:
+
+* Voldoende ingestelde resultaatgrootte: zijn er voldoende resultaten die in de meeste scenario&#39;s worden geretourneerd om het gebruik te vermijden [aanbevelingen voor back-up](behavioral-data.md#backuprecs)?
+
+* Voldoende variëteit van resultaatsets: vertegenwoordigen de producten die worden geretourneerd een verscheidenheid aan producten uit uw catalogus? Het doel van deze factor is te voorkomen dat een minderheid van producten de enige producten is die op de hele site worden aanbevolen.
+
+Op basis van de bovenstaande factoren wordt een gereedheidswaarde berekend en weergegeven. Een aanbevelingstype wordt beschouwd als klaar om op te stellen wanneer zijn gereedheidswaarde 75% of hoger is. Een aanbevolen type wordt gedeeltelijk geschikt geacht wanneer het voor minstens 50% gereed is. Een aanbevelingstype wordt beschouwd als niet klaar om te worden opgesteld wanneer zijn gereedheidswaarde minder dan 50% is. Dit zijn algemene richtsnoeren, maar elk individueel geval kan verschillen afhankelijk van de aard van de verzamelde gegevens, zoals hierboven beschreven.
+
+![Type aanbeveling](assets/create-recommendation-select-type.png)
+_Type aanbeveling_
+
+>[!NOTE]
+>
+>Indicatoren mogen nooit 100% bereiken.
 
 ## Voorvertoning Recommendations {#preview}
 
