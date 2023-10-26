@@ -3,9 +3,9 @@ title: Handmatige installatie van SaaS-prijsindexering
 description: Prijsindexering SaaS voor oudere versie installeren
 seo-title: SaaS Price Indexing installation
 seo-description: Installing SaaS Price indexing
-exl-id: a607e852-aa04-4be3-9576-a6bf45f8751f
+exl-id: 4577111a-64a4-4e20-b970-3abfa6758247
 role: Admin, Developer
-source-git-commit: b7989b416f852d2c7164d21e8f0598373662b760
+source-git-commit: 3809d27fc3689519e4a162aa52f481d254aec656
 workflow-type: tm+mt
 source-wordcount: '276'
 ht-degree: 0%
@@ -34,10 +34,10 @@ Er zijn extensies die de nieuwe feeds en de ondersteunende code toevoegen.
 1. Voeg de volgende modules aan uw toe `composer.json` bestand:
 
    ```json
-   "magento/module-saas-price": "^103.0",
-   "magento/module-saas-scopes": "^103.0",
-   "magento/module-bundle-product-override-data-exporter": "^103.0",
-   "magento/module-gift-card-product-data-exporter": "^103.0",
+   "magento/module-saas-price": "^102.2.0",
+   "magento/module-saas-scopes": ^"102.2.0",
+   "magento/module-product-override-price-remover": "^102.2.0",
+   "magento/module-bundle-product-override-data-exporter": "^102.2.0",
    ```
 
 1. Voer de upgrade-opdracht uit:

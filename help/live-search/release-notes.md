@@ -3,9 +3,9 @@ title: "[!DNL Live Search] Aanvullende informatie"
 description: "De meest recente releasegegevens voor [!DNL Live Search] uit Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
+source-git-commit: 67b4f24828dfdda6bd166791d6c36922294b402f
 workflow-type: tm+mt
-source-wordcount: '1771'
+source-wordcount: '1797'
 ht-degree: 0%
 
 ---
@@ -58,6 +58,7 @@ _15 sep. 2023_
 ![Nieuw](../assets/new.svg) Gebruikers kunnen nu op categorienaam zoeken wanneer zij een regel toevoegen
 ![Nieuw](../assets/new.svg) In de weergave Categoriestructuur kunnen gebruikers nu zien welke categorie regels heeft toegepast.
 ![Nieuw](../assets/new.svg) In Voorvertoning categorie wordt alleen de geselecteerde categorie weergegeven.
+![Nieuw](../assets/new.svg) AEM CIF [Pop-overwidget](https://github.com/adobe/aem-cif-guides-venia/pull/319) en [PLP-widget](https://github.com/adobe/aem-cif-guides-venia/pull/320) de componenten staan AEM plaatsen toe om voordeel te halen uit [!DNL Live Search].
 
 ### Updates
 

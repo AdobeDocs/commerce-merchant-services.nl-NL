@@ -3,9 +3,9 @@ title: Inleiding tot [!DNL Live Search]
 description: "[!DNL Live Search] van Adobe Commerce biedt een bliksemsnelle, superrelevante en intuïtieve zoekervaring."
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 4eddad715405f35ea063bab3cf4651fec3beeae5
+source-git-commit: 3352bd1390704646f4c21599ebf204eda2e1488c
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ De Adobe Commerce-zijde van de architectuur bevat hosting van de zoekopdracht *B
 
 * [!DNL Live Search] [popup](storefront-popover.md) Dit is het vak dat wordt geopend onder het zoekveld dat de zoekresultaten bevat.
 * [Widget pagina met productaanbiedingen](plp-styling.md) biedt ondersteuning voor zoekbare productlijsten met facetten en synoniemen.
-* De AEM [CIF](https://github.com/adobe/aem-cif-guides-venia/pull/319) staat AEM plaatsen toe om uit te halen [!DNL Live Search].
+* AEM CIF componenten: [Pop-overwidget](https://github.com/adobe/aem-cif-guides-venia/pull/319) en de [PLP-widget](https://github.com/adobe/aem-cif-guides-venia/pull/320) AEM sites laten profiteren van [!DNL Live Search].
 * [[!DNL Live Search] Beheerder](workspace.md) Hier worden regels, facetten en synoniemen geconfigureerd.
 * De Adapter van het Onderzoek is de standaardimplementatie van [!DNL Live Search].
 
