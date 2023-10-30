@@ -3,9 +3,9 @@ title: "[!DNL Live Search] Aanvullende informatie"
 description: "De meest recente releasegegevens voor [!DNL Live Search] uit Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 67b4f24828dfdda6bd166791d6c36922294b402f
+source-git-commit: a3f89b74f3cafb855e39b410c1ab60e09d789da0
 workflow-type: tm+mt
-source-wordcount: '1797'
+source-wordcount: '1803'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,9 @@ Updates zijn:
 
 Deze nota&#39;s beschrijven updates die buiten een versioned versie of verbeteringen aan de ontvangen dienst werden gepubliceerd.
 
-+++Hosted service-updates
+_27 oktober 2023_
+
+![Nieuw](../assets/new.svg) De [!DNL Live Search] De PLP-widget ondersteunt nu kleurstalen.
 
 _12 oktober 2023_
 
@@ -38,8 +40,6 @@ _13 juni 2023_
 _25 april 2023_
 
 ![Nieuw](../assets/new.svg) [!DNL Live Search] klanten kunnen nu profiteren van de nieuwe [SaaS-prijsindexer](../price-index/index.md).
-
-+++
 
 ## [!DNL Live Search] 3.1.1 {#311}
 
