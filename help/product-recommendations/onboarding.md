@@ -2,9 +2,9 @@
 title: Onboarding
 description: Leer de vereisten en ondersteunde platforms op [!DNL Product Recommendations].
 exl-id: ad47ac39-8f6f-4765-84ad-9e3d104385db
-source-git-commit: 209bdf9c69ff81481d6df7cb8e8832deef13c9f4
+source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,10 @@ Het instapproces voor [!DNL Product Recommendations] vereist toegang tot de beve
 
 - Adobe Commerce on premise (EE) : 2.4.4+
 - Adobe Commerce on Cloud (ECE) : 2.4.4+
+
+## Endpoint
+
+[!DNL Product Recommendations] communiceert door het eindpunt bij `https://catalog-service.adobe.io/graphql`.
 
 ### Ondersteuning voor Page Builder
 
