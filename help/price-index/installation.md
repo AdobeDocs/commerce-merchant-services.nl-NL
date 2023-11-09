@@ -3,11 +3,11 @@ title: Handmatige installatie van SaaS-prijsindexering
 description: Prijsindexering SaaS voor oudere versie installeren
 seo-title: SaaS Price Indexing installation
 seo-description: Installing SaaS Price indexing
-exl-id: 4577111a-64a4-4e20-b970-3abfa6758247
+exl-id: a607e852-aa04-4be3-9576-a6bf45f8751f
 role: Admin, Developer
-source-git-commit: 3809d27fc3689519e4a162aa52f481d254aec656
+source-git-commit: b2ebf26c9a34e5e2e08b7adbabcc780f24363e3c
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '291'
 ht-degree: 0%
 
 ---
@@ -15,12 +15,12 @@ ht-degree: 0%
 # Handmatige installatie van SaaS-prijsindexering
 
 Prijsindexering SaaS is beschikbaar in het vak voor ondersteuning [nieuwste versie](index.md#Requirements) van Commerce Services.
-Gebruik deze minigids als je niet over de nieuwste versie beschikt en de prijsindexering voor SaaS voor je Adobe Commerce-exemplaar wilt inschakelen.
+Gebruik deze handleiding als u niet over de nieuwste versie beschikt en SaaS Price Indexing voor uw Adobe Commerce-exemplaar wilt inschakelen.
 
 ## Vereisten
 
 * Adobe Commerce 2.4.4+
-* Ten minste een van de volgende SaaS-services is geïnstalleerd:
+* Ten minste een van de volgende geïnstalleerde SaaS-services:
 
    * [Catalogusservice](../catalog-service/overview.md)
    * [Live zoeken](../live-search/guide-overview.md)
@@ -29,7 +29,7 @@ Gebruik deze minigids als je niet over de nieuwste versie beschikt en de prijsin
 ## Vereiste modules installeren
 
 Afhankelijk van uw installatie kan het installatieproces iets anders zijn.
-Er zijn extensies die de nieuwe feeds en de ondersteunende code toevoegen.
+Er zijn extensies die de nieuwe feeds en ondersteunende code toevoegen en er is een extensie die de standaardprijsfeed verwijdert.
 
 1. Voeg de volgende modules aan uw toe `composer.json` bestand:
 
@@ -52,7 +52,6 @@ Na de upgrade zijn drie nieuwe feeds beschikbaar:
 * `scopesCustomerGroup` - is verantwoordelijk voor het leveren van Klantengroepen aan de service
 * `scopesWebsite` - verantwoordelijk voor het leveren van websites, winkelgroepen en winkelweergaven aan de service
 
-
 1. Vorm de nieuwe te plaatsen voer aan &quot;Update op de wijze van het Programma&quot;:
 
    ```bash
@@ -69,8 +68,7 @@ Na de upgrade zijn drie nieuwe feeds beschikbaar:
 
 Voer de bovenstaande indexen indien nodig handmatig uit. Anders worden de gegevens in het standaardsynchronisatieproces vernieuwd. Meer informatie over de [Catalogus synchroniseren](../landing/catalog-sync.md) service.
 
-
-Als u Live zoeken en catalogusadapter wilt configureren, volgt u de opdracht [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) instructies.
+Gebruikers van Luma en Adobe Commerce Core GraphQL kunnen de [`Catalog Adapter`](catalog-adapter.md) extensie die Luma en Core GraphQl-compatibiliteit biedt en de Adobe Commerce Product Price-index uitschakelt.
 
 ## Caveats
 

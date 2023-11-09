@@ -3,10 +3,10 @@ title: Prijsindexering SaaS
 description: De SaaS Price Indexing gebruiken om prestaties te verbeteren
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
-exl-id: 5b92d6ea-cfd6-4976-a430-1a3aeaed51fd
-source-git-commit: 3809d27fc3689519e4a162aa52f481d254aec656
+exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
+source-git-commit: 92129633adadd3ed699ae6427c01622dcb6ae3b4
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '406'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Alle handelaren kunnen van deze verbeteringen profiteren, maar zij die de groots
 
 De prijsindexering van SaaS is gratis beschikbaar voor klanten die de diensten van Adobe Commerce gebruiken en steunt prijsberekening voor alle ingebouwde productsoorten van Adobe Commerce.
 
-In deze minihandleiding wordt beschreven hoe SaaS-prijsindexering werkt en hoe deze kan worden ingeschakeld.
+In deze handleiding wordt beschreven hoe SaaS-prijsindexering werkt en hoe deze kan worden ingeschakeld.
 
 ## Vereisten
 
@@ -43,7 +43,6 @@ In deze minihandleiding wordt beschreven hoe SaaS-prijsindexering werkt en hoe d
 
    * [Catalogusservice](../catalog-service/overview.md)
    * [Live zoeken](../live-search/guide-overview.md)
-   * [Product Recommendations](../product-recommendations/guide-overview.md)
 
 Gebruikers van Luma en Adobe Commerce Core GraphQL kunnen de [`catalog-adapter`](catalog-adapter.md) extensie die Luma en Core GraphQl-compatibiliteit biedt en de Adobe Commerce Product Price-index uitschakelt.
 
@@ -51,7 +50,7 @@ Gebruikers van Luma en Adobe Commerce Core GraphQL kunnen de [`catalog-adapter`]
 
 Nadat u uw Adobe Commerce-exemplaar hebt geüpgraded met SaaS-ondersteuning voor prijsindexering, synchroniseert u de nieuwe feeds:
 
-```
+```bash
 bin/magento saas:resync --feed=scopesCustomerGroup
 bin/magento saas:resync --feed=scopesWebsite
 bin/magento saas:resync --feed=prices
@@ -63,109 +62,33 @@ Prijsberekeningen worden ondersteund voor aangepaste productsoorten zoals basisp
 
 Als u een aangepast producttype hebt dat een specifieke formule gebruikt om de uiteindelijke prijs te berekenen, kunt u het gedrag van de feed van de productprijs uitbreiden.
 
-## Gebruik
-
-```xml
-<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-    <type name="Magento\ProductPriceDataExporter\Model\Provider\ProductPrice">
-        <plugin name="custom_type_price_feed" type="YourModule\CustomProductType\Plugin\UpdatePriceFromFeed" />
-    </type>
-</config>
-```
-
-Nieuwe feeds moeten handmatig worden gesynchroniseerd met de `resync` [CLI, opdracht](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html#resynccmdline). Anders worden de gegevens in het standaardsynchronisatieproces vernieuwd. Meer informatie over de [Catalogus synchroniseren](../landing/catalog-sync.md) proces.
-
-## Gebruiksscenario&#39;s
-
-### Luminantie zonder extensieafhankelijkheid
-
-* Een Luma- of Adobe Commerce Core GraphQL-handelaar die een vereiste service heeft geïnstalleerd (Live Search, Product Recommendations, Catalog Service)
-* Geen uitbreidingen van derden die afhankelijk zijn van de PHP-basisprijsindexeerder
-* Eenvoudige, configureerbare, gegroepeerde, virtuele en bundeldynamische producten verkopen
-
-1. Nieuwe feeds inschakelen.
-1. Installeer de catalogusadapter.
-
-### Luma en Adobe Commerce Core GraphQl met PHP core price indexer afhankelijkheden
-
-* Een Luma- of Adobe Commerce Core GraphQL-handelaar die een ondersteunde service heeft geïnstalleerd (Live Search, Product Recommendations, Catalog Service)
-* Met een extensie van derden die afhankelijk is van de PHP-basisprijsindexer
-* Eenvoudige, configureerbare, gegroepeerde, virtuele en bundeldynamische producten verkopen
-
-1. De nieuwe feeds inschakelen
-1. Installeer de catalogusadapter.
-1. Schakel de PHP-index voor de basisprijs opnieuw in.
-1. Nieuwe feeds en de Luminantiecode gebruiken in het dialoogvenster `catalog-adapter` -module.
-
-### Hoofdkoopman
-
-* Een headless-leverancier die een ondersteunde service heeft geïnstalleerd (Live Search, Product Recommendations, Catalog Service)
-* Geen afhankelijkheid van PHP core price indexer
-* Eenvoudige, configureerbare, gegroepeerde, virtuele en bundeldynamische producten verkopen
-
-1. Nieuwe feeds inschakelen
-1. Installeer de catalogusadapter, waardoor de PHP-indexfunctie voor de basisprijs wordt uitgeschakeld.
-
-## Aangepaste prijzen
-
-De SaaS-prijsindexer ondersteunt aangepaste productprijskenmerken die beschikbaar zijn in de Adobe Commerce, zoals speciale prijs, groepsprijs en catalogusregelprijs.
-
-Er is bijvoorbeeld een aangepast producttype  `custom_type` en een product met de SKU &quot;Product van het Type van Douane&quot;.
-
-Standaard verzendt de extensie Commerce Data Export de volgende prijsfeed naar de prijsindexer:
-
-```json
-{
-    "sku": "Custom Type Product",
-    "type": "SIMPLE", // must be "SIMPLE" regardless of the real product type
-    "customerGroupCode": "0",
-    "websiteCode": "base",
-    "regular": 123, // the regular base price found in catalog_product_entity_decimal table
-    "discounts":    // list of discounts: special_price, group, catalog_rule
-    [
-        {
-            "code": "catalog_rule",
-            "price": 102.09
-        }
-    ],
-    "deleted": false,
-    "updatedAt": "2023-07-31T13:07:54+00:00"
-}
-```
-
-Als &quot;Type van Product van de Douane&quot;een unieke formule gebruikt om productprijs te berekenen, kunnen de systeemintegrators de prijs en kortingsgebieden met voeten treden door de uitbreiding van de Uitvoer van Gegevens van de Handel uit te breiden.
-
 1. Een plug-in maken op het tabblad `Magento\ProductPriceDataExporter\Model\Provider\ProductPrice` klasse.
 
-`di.xml` bestand:
-
-```xml
-<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-    <type name="Magento\ProductPriceDataExporter\Model\Provider\ProductPrice">
-        <plugin name="custom_type_price_feed" type="YourModule\CustomProductType\Plugin\UpdatePriceFromFeed" disabled="false" />
-    </type>
-</config>
-```
+   ```xml
+   <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+       <type name="Magento\ProductPriceDataExporter\Model\Provider\ProductPrice">
+           <plugin name="custom_type_price_feed" type="YourModule\CustomProductType\Plugin\UpdatePriceFromFeed" />
+       </type>
+   </config>
+   ```
 
 1. Maak een methode met de aangepaste formule:
 
-```php
-class UpdatePriceFromFeed
-{
-    /**
-    * @param ProductPrice $subject
-    * @param array $result
-    * @param array $values
-    *
-    * @return array
-    */
-    public function afterGet(ProductPrice $subject, array $result, array $values) : array
-    {
-        // Get all custom products, prices and discounts per website and customer groups
-        // Override the output $result with your data for the corresponding products
-        return $result;
-    }
-}
-```
+   ```php
+   class UpdatePriceFromFeed
+   {
+       /**
+       * @param ProductPrice $subject
+       * @param array $result
+       * @param array $values
+       *
+       * @return array
+       */
+       public function afterGet(ProductPrice $subject, array $result, array $values) : array
+       {
+           // Override the output $result with your data for the corresponding products (see original method for details) 
+           return $result;
+       }
+   }
+   ```

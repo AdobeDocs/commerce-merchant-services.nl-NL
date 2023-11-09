@@ -3,9 +3,9 @@ title: Extensie Catalogusadapter
 description: Het gebruiken van de Adapter van de Catalogus om prijzen van de Diensten van de Handel terug te geven
 seo-title: Catalog Adapter Extension
 seo-description: Using Catalog Adapter to render prices from Commerce Services
-source-git-commit: 6b578e7113c278a05a64f2db5e032bccc4a9580a
+source-git-commit: a637ece6e806771dfc6359dacececf8ccf05b983
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '330'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ De Adobe Commerce Product Price-index is uitgeschakeld en kan niet worden ingesc
 ## Vereisten
 
 * Adobe Commerce 2.4.4+
-* Één van de volgende geïnstalleerde Diensten van de Handel:
+* beide volgende handelsdiensten hebben geïnstalleerd:
 
    * [Catalogusservice](../catalog-service/overview.md)
    * [Live zoeken](../live-search/guide-overview.md)
@@ -34,14 +34,14 @@ Zodra die diensten worden geïnstalleerd, stel het volgende bevel in werking:
 composer require adobe-commerce/catalog-adapter
 ```
 
-## De Adobe Commerce-productprijsindex inschakelen
+## De Adobe Commerce-productprijsindex opnieuw inschakelen
 
 Als u toepassingen van derden hebt die zich op de standaardIndex van de Prijs van het Product van Adobe Commerce baseren, kan het met de volgende bevelen opnieuw worden toegelaten:
 
 ```bash
 # re-enable Product Price indexer
 bin/magento module:disable Magento_PriceIndexerDisabler
-# reindex Product Price indexer 
+# re-index Product Price indexer 
 bin/magento index:reindex catalog_product_price
 ```
 
@@ -78,4 +78,4 @@ Hier volgen enkele voorbeelden `Catalog Adapter` scenario&#39;s.
 * Een handelaar met een headless instantie van de Handel met de vereiste geïnstalleerde diensten (Levend Onderzoek, Product Recommendations, de Dienst van de Catalogus)
 * Geen vertrouwen op de standaard Adobe Commerce Product Price Index
 
-1. &quot;Prijsdisabler&quot; installeren uit het pakket voor de catalogusadapter
+1. Installeer de `magento/module-price-indexer-disabler` uit het pakket voor de catalogusadapter.

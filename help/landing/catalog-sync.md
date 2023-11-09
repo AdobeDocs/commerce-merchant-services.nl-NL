@@ -3,9 +3,9 @@ title: Catalogus synchroniseren
 description: Leer hoe u productgegevens exporteert vanuit de [!DNL Commerce] server naar [!DNL Commerce Services].
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
 feature: Catalog Management, Data Import/Export, Catalog Service
-source-git-commit: 151b57d7b31637178c645149d78c0d3670ee1c3e
+source-git-commit: 92129633adadd3ed699ae6427c01622dcb6ae3b4
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1167'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,6 @@ Als u een resync van uw catalogus moet in werking stellen alvorens de per uur ge
 1. In de _Gegevens opnieuw synchroniseren_ sectie, klikken [!UICONTROL Resync].
 
    [!DNL Commerce] synchroniseert de catalogus tijdens het volgende geplande synchronisatievenster. Afhankelijk van de grootte van de catalogus kan deze bewerking lang duren.
-
 
 ## Gesynchroniseerde catalogusproducten
 
@@ -193,7 +192,7 @@ PERSIST_EXPORTED_FEED=1 bin/magento saas:resync --feed=products
 
 #### Profielen
 
-Als het herindexeringsproces van specifieke voer een onredelijke hoeveelheid tijd vergt, stel profiler in werking om extra gegevens te verzamelen die voor het Team van de Steun nuttig zouden kunnen zijn. Om dit te doen, geef `EXPORTER_PROFILER=1`omgevingsvariabele:
+Als het opnieuw indexproces van specifieke voer een onredelijke hoeveelheid tijd vergt, stel profiler in werking om extra gegevens te verzamelen die voor het Team van de Steun nuttig zouden kunnen zijn. Om dit te doen, geef `EXPORTER_PROFILER=1`omgevingsvariabele:
 
 ```bash
 EXPORTER_PROFILER=1 bin/magento indexer:reindex catalog_data_exporter_products
@@ -205,4 +204,4 @@ Profilergegevens worden opgeslagen in `var/log/commerce-data-export.log` met het
 
 #### Een ondersteuningsverzoek indienen
 
-Als u fouten ziet die niet te maken hebben met configuratie of extensies van derden, dient u een [ondersteuningsticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) met zoveel mogelijk informatie.
+Als u fouten ziet die niet gerelateerd zijn aan configuratie of extensies van derden, verzendt u een [ondersteuningsticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) met zoveel mogelijk informatie.
