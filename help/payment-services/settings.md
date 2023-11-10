@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
 feature: Payments, Checkout, Configuration
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: 85f8e158509231fb3b30c778309a9ac0fb468131
 workflow-type: tm+mt
-source-wordcount: '2381'
+source-wordcount: '2410'
 ht-degree: 0%
 
 ---
@@ -130,7 +130,7 @@ Zie [Betalingsopties](payments-options.md#credit-card-fields) voor meer informat
 
 De [!UICONTROL Apple Pay] met de betalingsoptie voor knoppen kunt u een [!UICONTROL Apple Pay] betalingsknop in de afhandeling van je winkel.
 
-Zie [Betalingsopties](payments-options.md#apple-pay-buttob) voor meer informatie .
+Je kunt Apple Pay alleen gebruiken als je het hebt voltooid [Apple Betalen voor zelfregistratie via PayPal](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) en vervolgens [Apple Pay configureren](settings.md/#payment-buttons) voor uw winkels. Zie [Betalingsopties](payments-options.md#apple-pay-button) voor meer informatie .
 
 U kunt de [!UICONTROL Apple Pay] betalingsoptie knop:
 
