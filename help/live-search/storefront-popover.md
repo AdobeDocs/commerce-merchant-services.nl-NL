@@ -2,9 +2,9 @@
 title: "[!DNL Storefront Popover]"
 description: "De [!DNL Live Search storefront popover] Geeft dynamisch voorgestelde producten en miniaturen."
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 5d76d5537c8625296663239195abd26d4ee24db4
+source-git-commit: c77b2f9cb55d3eb339dcc900ce606b94c592f559
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '531'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,6 @@ Standaard is de waarde voor Zoeken in catalogus - automatisch aanvullen van limi
 
 De [Catalogusservice voor Adobe Commerce](../catalog-service/overview.md) de uitbreiding verstrekt rijke mening-model catalogusgegevens om product-gerelateerde storefront ervaringen snel en volledig terug te geven. De Catalog Service kan in combinatie met Live Search worden gebruikt voor functionaliteit die momenteel niet door de native extensie wordt ondersteund:
 
-* Kleurstalen
 * Uitgebreide kenmerken
 * Andere productinformatie kan worden ingevoerd
 

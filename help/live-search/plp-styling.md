@@ -2,9 +2,9 @@
 title: Widget pagina met productaanbiedingen
 description: Het inschakelen en opmaken van de [!DNL Live Search Product Listing Page Widget]
 exl-id: f7346a06-a8c7-4a33-8437-ea4f61d9281f
-source-git-commit: 368059d50133d8b01be83e1616044a61ab094e3c
+source-git-commit: c77b2f9cb55d3eb339dcc900ce606b94c592f559
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '273'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,12 @@ De [!DNL Live Search Product Listing Page Widget] (PLP) gebruikt het platform va
 ## De PLP-widget inschakelen
 
 Wanneer de [!DNL Live Search] de dienst wordt geïnstalleerd, wordt de standaardonderzoeksfunctionaliteit omgezet in [!DNL Live Search] automatisch.
-De PLP-widget moet zijn ingeschakeld in Beheer.
 
-1. Ga naar **Winkels** > Instellingen > **Configuratie** > **[!DNL Live Search]** > **Storefront-functies** en instellen **Widgets productlijst inschakelen** op &quot;Ja&quot;.
+De [!DNL Live Search] PLP-widget is standaard ingeschakeld voor nieuwe installaties. Als u een upgrade uitvoert [!DNL Live Search] en de PLP-widget al is uitgeschakeld, zal dit zo blijven.
+
+De PLP-widget uitschakelen:
+
+1. Ga naar **Winkels** > Instellingen > **Configuratie** > **[!DNL Live Search]** > **Storefront-functies** en instellen **Widgets productlijst inschakelen** naar &quot;Nee&quot;.
 1. Selecteren **Config opslaan** om de instelling op te slaan.
 
 ## Voorbeeld van stijlen
@@ -28,7 +31,7 @@ U kunt het uiterlijk van de PLP-widget aanpassen aan uw site met [CSS](https://d
 >[!NOTE]
 >
 >Elementen met aangepaste klassen binnen een Adobe Commerce-thema worden niet overgeërfd. Deze elementen moeten door hun specifieke klasse worden gericht om de douaneklassen aan te passen; de primaire actieklassen zullen niet aan een widgetknoop werken.
->Algemene doelelementen in de CSS worden overgeërfd; `button` wordt toegepast op widgetknoppen.
+>Algemene doelelementen in de CSS worden overgeërfd; `button` is van toepassing op widgetknoppen.
 
 De gemarkeerde div&#39;s bevatten de doelklasse `ds-sdk-product-item__product-name`.
 
@@ -126,7 +129,8 @@ Pas de productnaam aan door een regel toe te voegen die in hoofdletters wordt ge
 
 * `.ds-sdk-input`
 * `.ds-sdk-input__label`
-* `.ds-sdk-input__options`
+* `.ds-sdk-product-item__product-swatch-group`
+* `ds-sdk-product-item__product-swatch-item`
 * `.ds-sdk-input_fieldset_show-more`
 
 ![Invoer](assets/plp-css-sdk-input.png)

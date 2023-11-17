@@ -3,9 +3,9 @@ title: "Overzicht aan boord"
 description: "[!DNL Live Search] instapkaartstroom, systeemvereisten, grenzen en beperkingen"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: a6d8c259f232ab27d7ed64558d5d193d59d23cad
+source-git-commit: 48f16a0c5ce6c2a3226acf4a61525cfbf4a0f35f
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
@@ -59,6 +59,22 @@ Om klantengroepen te beperken die de toestemmingen van de Catalogus gebruiken:
 ### Synoniemen
 
 * [!DNL Live Search] U kunt maximaal 200 synoniemen per winkelweergave beheren.
+
+## Taalondersteuning
+
+[!DNL Live Search] widgets ondersteunen de volgende talen:
+
+* nl_NL (standaardwaarde)
+* de_DE
+* es_MX
+* fr_FR
+* it_IT
+* ja_JA
+* nl_NL
+* no_NO
+* pt_PT
+
+Als de widget detecteert dat de taalinstelling Commerce Admin (_Winkels_ > Instellingen > _Configuratie_ > _Algemeen_ > Landopties) komt overeen met een ondersteunde taal, de standaardtaal is die taal. Anders worden de widgets standaard ingesteld op Engels.
 
 ## Categorieverhandeling
 

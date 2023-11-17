@@ -2,14 +2,16 @@
 title: "[!DNL Live Search] Indexeren"
 description: "Meer informatie [!DNL Live Search] indexes product attribute properties."
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: a062133d94cb4898149b9cc878351ca2fad3c09e
+source-git-commit: c77b2f9cb55d3eb339dcc900ce606b94c592f559
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
 
 # Indexeren
+
+De [!DNL Live Search] het indexeren proces leest door de catalogus voor productattributen en bouwt een index zodat de producten kunnen worden gezocht, worden gefiltreerd en snel worden voorgesteld.
 
 Eigenschappen van productkenmerken (metagegevens) bepalen:
 

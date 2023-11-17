@@ -3,9 +3,9 @@ title: "[!DNL Live Search] Aanvullende informatie"
 description: "De meest recente releasegegevens voor [!DNL Live Search] uit Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
+source-git-commit: ff7a2549893eab63f552a2a866939adc90de4a78
 workflow-type: tm+mt
-source-wordcount: '1798'
+source-wordcount: '1869'
 ht-degree: 0%
 
 ---
@@ -41,13 +41,47 @@ _25 april 2023_
 
 ![Nieuw](../assets/new.svg) [!DNL Live Search] klanten kunnen nu profiteren van de nieuwe [SaaS-prijsindexer](../price-index/index.md).
 
+## [!DNL Live Search] 4.0.0 {#400}
+
+_13 nov. 2023_
+
+[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+
+### Nieuwe functies
+
+![Nieuw](../assets/new.svg) [!DNL Live Search] ondersteunt nu kleurstalen in de PLP-widget.
+![Nieuw](../assets/new.svg) [!DNL Live Search] geeft nu de categorienaam weer in plaats van de categorie-id.
+![Nieuw](../assets/new.svg) [!DNL Live Search] ondersteunt nu doorhaalprijzen in de PLP-widget.
+![Nieuw](../assets/new.svg) Introduceerde de knop &quot;Filters verbergen&quot; om het deelvenster Filters te verbergen.
+
+
+### Updates
+
+![Repareren](../assets/fix.svg) De [!DNL Live Search] PLP-widget is nu standaard ingeschakeld voor nieuwe installaties.
+![Repareren](../assets/fix.svg) CSS-stijlen opnieuw geconfigureerd om widgetklassen beter te isoleren.
+![Repareren](../assets/fix.svg) Kleine oplossingen voor problemen
+
+Handelaren moeten de [!DNL Live Search] extensie >= 4.0.0 voor toegang tot deze functies.
+
+Nadat u versie 3.1.1 of hoger hebt geïnstalleerd, schakelt u de nieuwe indexen in:
+
+* Diervoeders productprijzen
+* Websitegegevensinvoer
+* Scopes klant groepeert gegevenstoevoer
+
+Na bevordering, test de bijgewerkte configuratie in QA of het Opvoeren alvorens de veranderingen in productie te duwen.
+
+## Vorige versies
+
++++3.1.1 en eerdere versies
+
 ## [!DNL Live Search] 3.1.1 {#311}
 
 _15 sep. 2023_
 
 [!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
 
-### Nieuwe functies
+
 
 ![Nieuw](../assets/new.svg) Het nieuwe tabblad Categorieomzetting is toegevoegd. Gebruikers kunnen nu intelligente waarderingen en handmatige waarderingen (speld, boost, bury, hide) per categorie toevoegen
 ![Nieuw](../assets/new.svg) Gebruikers kunnen één categorieregel toevoegen met een intelligente of handmatige classificatie
@@ -68,20 +102,6 @@ _15 sep. 2023_
 ![Repareren](../assets/fix.svg) &#39;Gebeurtenissen&#39; (Boost/Pin/Bury/Hide) is hernoemd naar &#39;Handmatige volgorde&#39;
 ![Repareren](../assets/fix.svg) &#39;Type classificatie&#39; is hernoemd naar &#39;Intelligente classificatie&#39;
 ![Repareren](../assets/fix.svg) Kleine oplossingen voor problemen
-
-Handelaren moeten de [!DNL Live Search] extensie versie >= 3.1.1 om toegang te krijgen tot deze functies.
-
-Nadat u versie 3.1.1 hebt geïnstalleerd, moeten de volgende nieuwe indexen zijn ingeschakeld:
-
-* Diervoeders productprijzen
-* Websitegegevensinvoer
-* Scopes klant groepeert gegevenstoevoer
-
-Het wordt aanbevolen een upgrade uit te voeren en te testen in QA of Staging voordat wijzigingen in de productie worden doorgevoerd.
-
-## Vorige versies
-
-+++3.1.0 en eerder
 
 ## [!DNL Live Search] 3.1.0 {#310}
 

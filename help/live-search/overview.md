@@ -3,16 +3,16 @@ title: Inleiding tot [!DNL Live Search]
 description: "[!DNL Live Search] van Adobe Commerce biedt een bliksemsnelle, superrelevante en intuïtieve zoekervaring."
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 3352bd1390704646f4c21599ebf204eda2e1488c
+source-git-commit: c77b2f9cb55d3eb339dcc900ce606b94c592f559
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
 
 # Inleiding tot [!DNL Live Search]
 
-[!DNL Live Search] is een service voor Adobe Commerce die de standaardzoekmogelijkheden vervangt. De [!DNL Live Search] wordt geïnstalleerd met Composer en maakt verbinding met uw [!DNL Commerce] installatie aan de [!DNL Live Search] [service](../landing/saas.md). Wanneer het wordt gevormd, wordt het standaardonderzoekstekstgebied vervangen met [!DNL Live Search] tekstveld.
+[!DNL Live Search] is een service voor Adobe Commerce die de standaardzoekmogelijkheden vervangt. De [!DNL Live Search] wordt geïnstalleerd met Composer en maakt verbinding met uw [!DNL Commerce] installatie aan de [!DNL Live Search] [service](../landing/saas.md). Wanneer het wordt gevormd, wordt het standaardonderzoekstekstgebied vervangen met [!DNL Live Search] tekstveld. [!DNL Live Search] Hiermee installeert u ook de widget PLOP (Product Listing Page), die bij het bladeren in zoekresultaten robuuste filtermogelijkheden biedt.
 
 [!DNL Live Search] verschijnt op de *Marketing* menu onder *SEO &amp; Search* in de [!DNL Commerce] *Beheerder*.
 
@@ -26,7 +26,7 @@ De Adobe Commerce-zijde van de architectuur bevat hosting van de zoekopdracht *B
 * [Widget pagina met productaanbiedingen](plp-styling.md) biedt ondersteuning voor zoekbare productlijsten met facetten en synoniemen.
 * AEM CIF componenten: [Pop-overwidget](https://github.com/adobe/aem-cif-guides-venia/pull/319) en de [PLP-widget](https://github.com/adobe/aem-cif-guides-venia/pull/320) AEM sites laten profiteren van [!DNL Live Search].
 * [[!DNL Live Search] Beheerder](workspace.md) Hier worden regels, facetten en synoniemen geconfigureerd.
-* De Adapter van het Onderzoek is de standaardimplementatie van [!DNL Live Search].
+* De Adapter van het Onderzoek is de standaardimplementatie van [!DNL Live Search]. Aanbevolen voor headless- en aangepaste implementaties.
 
 ## [!DNL Live Search] demo
 
