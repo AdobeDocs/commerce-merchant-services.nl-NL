@@ -3,9 +3,9 @@ title: "Overzicht aan boord"
 description: "[!DNL Live Search] instapkaartstroom, systeemvereisten, grenzen en beperkingen"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: 48f16a0c5ce6c2a3226acf4a61525cfbf4a0f35f
+source-git-commit: a98e8abe68b684dcddccbf7287126db159159bab
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '697'
 ht-degree: 0%
 
 ---
@@ -83,6 +83,15 @@ Met Categorie Merchandising kunt u configureren [!DNL Live Search] werken aan he
 Deze video is een inleiding op Categorie Merchandising.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424617)
+
+## Widget-codeopslagplaats
+
+De widget pagina met productlijsten en de widget Pop-over zoeken kunnen beide worden gedownload van hun kleine opslagplaats.
+
+Op deze manier kunnen ontwikkelaars de functionaliteit en opmaak volledig aanpassen. Deze gebruikers ontvangen de code zelf terwijl nog steeds de voordelen van [!DNL Live Search] service.
+
+* [PLP-widget](https://github.com/adobe/storefront-product-listing-page)
+* [Zoekbalk](https://github.com/adobe/storefront-search-as-you-type)
 
 ## Inventory management
 

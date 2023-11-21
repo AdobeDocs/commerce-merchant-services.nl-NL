@@ -2,9 +2,9 @@
 title: "Facets"
 description: "[!DNL Live Search] facetten gebruiken meerdere afmetingen van kenmerkwaarden als zoekcriteria."
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
+source-git-commit: a8643ca9567feb7dde67358eeae321825b0253f2
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '579'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,12 @@ De categorie- en productkenmerkvereisten voor facetten zijn vergelijkbaar met de
 * 50 sorteerbare kenmerken
 * 200 filterbare kenmerken
 * 200 doorzoekbare kenmerken
+
+>[!NOTE]
+>
+> Als er meer dan 200 filterbare bepaalde eigenschappen zijn, is het niet deterministisch welke 200 eigenlijk zal worden geïndexeerd.
+
+Als u een groot aantal kenmerken hebt om mee te werken, kunt u overwegen kenmerken te combineren tot één &#39;meta-kenmerk&#39;. Schoenen hebben doorgaans bijvoorbeeld een numerieke grootte, terwijl overhemden de gebruikelijke grootte &#39;S/M/L/XL&#39; hebben. Deze twee typen grootten kunnen worden gecombineerd in één doorzoekbaar kenmerk.
 
 | Instelling | Beschrijving |
 |--- |--- |
