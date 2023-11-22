@@ -3,9 +3,9 @@ title: Creditcard vauleren
 description: Klanten kunnen hun creditcardgegevens opslaan voor toekomstige aankopen.
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
 feature: Payments, Checkout
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '314'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ Winkelaars gebruiken het opgeslagen token om een toekomstige afhandeling met hun
 Ze kunnen ook gemakkelijk hun gefactureerde creditcards verwijderen van [Opgeslagen betalingsmethoden](https://docs.magento.com/user-guide/customers/account-dashboard-stored-payment-methods.html) in hun Mijn account.
 
 ![Opgeslagen betalingsmethoden in Mijn account](assets/stored-payment-methods.png){width="400" zoomable="yes"}
+
+>[!WARNING]
+>
+>PayPal kan momenteel maximaal vijf in kluizen opslaan.
 
 ## Vulling inschakelen
 

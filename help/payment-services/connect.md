@@ -3,9 +3,9 @@ title: Uw instantie verbinden
 description: Verbind uw instantie van de Handel gebruikend een API sleutel en een privé sleutel, en specificeer de gegevensruimte in de configuratie.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 feature: Payments, Checkout, Configuration, Saas
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
@@ -37,11 +37,16 @@ Zie een [lijst met beschikbare commerciële services die de API gebruiken](https
 Zie voor meer informatie over het genereren van een API-sleutel voor sandbox- of productieomgevingen [Credentials](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html#apikey).
 
 >[!IMPORTANT]
+>
 >Het wordt aanbevolen geen API-sleutelpaar opnieuw te genereren *en* de SaaS-id en/of gegevensruimte wijzigen op een actieve productie-instantie. U verliest gegevens voor uw instantie als deze worden gewijzigd.
 
 ## Commerciële services configureren
 
 Dezelfde API-sleutel kan in alle instanties worden gebruikt, maar elke instantie moet een eigen sleutel hebben [SaaS-gegevensruimte](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html#saasenv).
+
+>[!NOTE]
+>
+>De handelaren moeten de zelfde sleutels gebruiken die voor MageID voor hun toeslagrechten worden geproduceerd.
 
 Nu u uw geloofsbrieven hebt verkregen, kunt u uw project SaaS en de Ruimte van Gegevens van het Saas vormen.
 

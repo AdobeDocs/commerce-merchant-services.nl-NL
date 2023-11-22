@@ -3,9 +3,9 @@ title: Inschakelen [!DNL Payment Services] voor productie
 description: Voltooi het instapproces door [!DNL Payment Services] voor de productie.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '731'
 ht-degree: 0%
 
 ---
@@ -36,6 +36,10 @@ Na u [Configureer uw Commerce Services](connect.md#configure-commerce-services) 
    |---|---|
    | `Authorize` | Hiermee geeft u de aankoop goed en houdt u de middelen in de wacht. De hoeveelheid wordt pas opgevraagd wanneer deze door de handelaar wordt &quot;gevangen&quot;. |
    | `Authorize and Capture` | hecht zijn goedkeuring aan de aankoop en de &quot;opname&quot; van de fondsen door de handelaar. |
+
+   >[!IMPORTANT]
+   >
+   >[!DNL Payment Services] ondersteunt gedeeltelijke vastleggingen. Een handelaar kan delen van een bestelling gedeeltelijk vastleggen (factureren). U kunt bijvoorbeeld elk item afzonderlijk vastleggen of één item nu en de rest later.
 
 1. Klik op **[!UICONTROL Save]**.
 1. Klikken **[!UICONTROL Go to Payment Services]** die naar de [!DNL Payment Services] Home.
