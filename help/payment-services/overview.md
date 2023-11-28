@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
 feature: Payments, Checkout
-source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
+source-git-commit: bc8428c619579fecbb5428ba59c76c7a8306659d
 workflow-type: tm+mt
-source-wordcount: '480'
+source-wordcount: '482'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Of u nu een kleine onderneming, een medio-markt contant of een grote onderneming
 
 [!DNL Payment Services] is beschikbaar voor [!DNL Adobe Commerce] en [!DNL Magento Open Source]. De [!DNL Payment Services] extensie is nu compatibel met [!DNL Adobe Commerce] versies 2.4.x.
 
-Momenteel [!DNL Payment Services] is beschikbaar in de volgende landen:
+Momenteel [!DNL Payment Services] is beschikbaar voor handelaren in de volgende landen:
 
 * Verenigde Staten (VS)
 * Canada (CA)
