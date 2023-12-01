@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
 feature: Payments, Checkout
-source-git-commit: bc8428c619579fecbb5428ba59c76c7a8306659d
+source-git-commit: 03349802fb747028cbd66ed6ce3ca7ad247f4c07
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '475'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Of u nu een kleine onderneming, een medio-markt contant of een grote onderneming
 * [**Betalingsopties**](payments-options.md)—Stel de betalingsopties in om de methoden aan te passen die beschikbaar zijn voor klanten in de winkel (of in meerdere winkels).
 * **Financiële verslaggeving over kasstroombeheer**—Synchroniseren [betalingsgegevens](order-payment-status.md) met bestellingen om volledige transparantie te verkrijgen ten aanzien van het verwerkte volume, het betalingssaldo, [uitbetaling](payouts.md)en gedetailleerde [rapportage op transactieniveau](transactions.md) voor financiële afstemming en maximale zichtbaarheid van transacties.
 * **Transparante prijsstelling**—Prijzen zijn duidelijk en op voorhand; wat je ziet is wat je krijgt.
-* **Efficiënte uitcheckervaring**—Verwijder om het even welke barrières aan een snelle en eenvoudige controle, en creeer loyale klanten, met [kaartvaulatie](https://experienceleague-review.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) en [Direct aanschaffen](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) (standaard ingeschakeld voor Adobe Commerce).
+* **Efficiënte uitcheckervaring**—Verwijder om het even welke barrières aan een snelle en eenvoudige controle, en creeer loyale klanten, met [kaartvaulatie](vaulting.md) en [Direct aanschaffen](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) (standaard ingeschakeld voor Adobe Commerce).
 
 ## Beschikbaarheid
 
