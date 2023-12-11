@@ -1,20 +1,20 @@
 ---
-title: "Categorie Merchandising"
-description: "Gebruik [!DNL Live Search] Categorie Merchandising voor een snellere winkelervaring."
+title: Categorieverhandeling
+description: Gebruiken [!DNL Live Search] Rubriekhandel voor een snellere winkelervaring.
 gourl: ls_catalog_merchandising
-source-git-commit: 97a743b1f7162af01930a37db448432acb9f89d5
+exl-id: 24f159c1-b175-47c1-aca1-8bada118b4b4
+source-git-commit: d5df2a098dbbb2ecfb68c36dd12843c963d46b17
 workflow-type: tm+mt
-source-wordcount: '1044'
+source-wordcount: '1045'
 ht-degree: 0%
 
 ---
-
 
 # Categorieverhandeling
 
 Bij het verhandelen van categorieën kunnen eigenaars van winkels het volgende toepassen: [!DNL Live Search] Intelligente classificatie [regels](rules.md) naar productcategorieën en subcategorieën.
 
-De functie is toegankelijk via de beheerder op **Marketing** > SEO &amp; Search > **[!DNL Live Search]** > **Categorieverhandeling**.
+De functie is toegankelijk via de beheerfunctie op **Marketing** > SEO &amp; Search > **[!DNL Live Search]** > **Categorieverhandeling**.
 
 >[!NOTE]
 >

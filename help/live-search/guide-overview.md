@@ -1,28 +1,28 @@
 ---
-title: "[!DNL Live Search] Overzicht van de handleiding"
+title: "[!DNL Live Search] Overzicht van hulplijnen"
 description: "[!DNL Live Search] van Adobe Commerce biedt een bliksemsnelle, superrelevante en intuïtieve zoekervaring."
 exl-id: 11e2ed97-ce80-4826-b914-71688dd29e4b
 recommendations: noCatalog
-source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
+source-git-commit: 06e06f8d8ee747f4bbe7a064af0dabc01efc31d2
 workflow-type: tm+mt
-source-wordcount: '217'
-ht-degree: 2%
+source-wordcount: '187'
+ht-degree: 0%
 
 ---
 
-# [!DNL Live Search] Overzicht van de handleiding
+# [!DNL Live Search] Overzicht van hulplijnen
 
 [!DNL Live Search] voor Adobe Commerce biedt een snelle, relevante en intuïtieve zoekervaring zonder extra kosten. [!DNL Live Search] aangedreven door [Adobe Sensei](https://www.adobe.com/sensei.html) maakt gebruik van kunstmatige intelligentie en computerleeralgoritmen om een diepgaande analyse van de geaggregeerde bezoekersgegevens uit te voeren. Als deze gegevens in combinatie met uw Adobe Commerce-catalogus worden gebruikt, krijgt u een relevante en gepersonaliseerde winkelervaring.
 
-[!DNL Live Search] heeft drie gebieden voor beheerders:
+## Meer informatie
 
-* Storefront: CSS-opmaak gebruiken om de [!DNL storefront popover].
-* Admin: Gebruik dit gebied om toegang te krijgen tot de configuratie en de installatie.
-* Command-line interface: gebruik dit gereedschap om installatie- en achtergrondconfiguratietaken uit te voeren.
+* Ontdek de basisbeginselen van de [Inleiding tot [!DNL Live Search]](overview.md)
+* Get a [Technisch overzicht](technical-overview.md) van [!DNL Live Search]
+* Lees de [Installatiehandleiding](install.md) om te beginnen met [!DNL Live Search]
 
-## Aanvullende documentatie
+## Handelsdocumentatie
 
-| Handleiding | Beschrijving |
+| Hulplijn | Beschrijving |
 |------ | ----------- |
 | [Adobe Commerce 2.4 Handboek](https://experienceleague.adobe.com/docs/commerce.html) | Bedrijfsgerichte documentatie voor zowel Adobe Commerce als Magento Open Source |
 | [Adobe Commerce 2.4-handleiding voor ontwikkelaars](https://developer.adobe.com/commerce/docs) | Documentatie gericht op ontwikkelaars die wordt gebruikt om Adobe Commerce of Magento Open Source te bouwen en aan te passen |

@@ -4,10 +4,10 @@ user-guide-description: "Deze handleiding bevat gedetailleerde instructies voor 
 breadcrumb-title: "[!DNL Live Search] Handleiding"
 role: Admin
 feature: Services, Search
-source-git-commit: ff7a2549893eab63f552a2a866939adc90de4a78
+source-git-commit: 06e06f8d8ee747f4bbe7a064af0dabc01efc31d2
 workflow-type: tm+mt
-source-wordcount: '96'
-ht-degree: 6%
+source-wordcount: '84'
+ht-degree: 7%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 6%
 - [Inleiding tot [!DNL Live Search]](overview.md)
 - [Aanvullende informatie](release-notes.md)
 - Live zoeken aan boord {#onboard}
-   - [Onboarding-overzicht](onboarding-overview.md)
+   - [Technisch overzicht](technical-overview.md)
    - [Installeren [!DNL Live Search]](install.md)
 - [!DNL Live Search] Storefront {#live-search-storefront}
    - [Widget pagina met productaanbiedingen](plp-styling.md)
