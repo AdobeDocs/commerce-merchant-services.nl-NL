@@ -3,9 +3,9 @@ title: "Installeren [!DNL Live Search]"
 description: "Meer informatie over het installeren, bijwerken en verwijderen [!DNL Live Search] uit Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: ff7a2549893eab63f552a2a866939adc90de4a78
+source-git-commit: 10b9f087da1346734735379846d50b53d36c1562
 workflow-type: tm+mt
-source-wordcount: '1264'
+source-wordcount: '1211'
 ht-degree: 0%
 
 ---
@@ -81,7 +81,21 @@ In dit scenario worden storefront-bewerkingen onderbroken terwijl de [!DNL Live 
 
    U moet facetten kunnen toevoegen na `cron` Hiermee worden de metagegevens van kenmerkfeeds en exportkenmerken uitgevoerd.
 
-1. Wacht minstens een uur na `cron` wordt uitgevoerd om gegevens te synchroniseren. Dan, [verifiëren](#verify-export) of de gegevens zijn geëxporteerd.
+1. Voer de volgende opdracht in deze volgorde uit:
+
+   ```bash
+   bin/magento saas:resync --feed productattributes
+   bin/magento saas:resync --feed products
+   bin/magento saas:resync --feed scopesCustomerGroup
+   bin/magento saas:resync --feed scopesWebsite
+   bin/magento saas:resync --feed prices
+   bin/magento saas:resync --feed productoverrides
+   bin/magento saas:resync --feed variants
+   bin/magento saas:resync --feed categories
+   bin/magento saas:resync --feed categoryPermissions
+   ```
+
+1. [Verifiëren](#verify-export) of de gegevens zijn geëxporteerd.
 
 1. [Testen](#test-the-connection) de verbinding van de storefront.
 
@@ -126,7 +140,21 @@ In dit scenario: [!DNL OpenSearch] beheert tijdelijk zoekverzoeken van de winkel
 
    U moet facetten kunnen toevoegen na `cron` Hiermee worden de metagegevens van het product en het kenmerk uitgevoerd en geëxporteerd naar [!DNL Live Search] diensten.
 
-1. Wacht minstens een uur op de gegevens die moeten worden geïndexeerd en worden gesynchroniseerd. Gebruik vervolgens de [GraphQL-speelplaats](https://developer.adobe.com/commerce/services/graphql/live-search/) met de standaardvraag om het volgende te verifiëren:
+1. Voer de volgende opdracht in deze volgorde uit:
+
+   ```bash
+   bin/magento saas:resync --feed productattributes
+   bin/magento saas:resync --feed products
+   bin/magento saas:resync --feed scopesCustomerGroup
+   bin/magento saas:resync --feed scopesWebsite
+   bin/magento saas:resync --feed prices
+   bin/magento saas:resync --feed productoverrides
+   bin/magento saas:resync --feed variants
+   bin/magento saas:resync --feed categories
+   bin/magento saas:resync --feed categoryPermissions
+   ```
+
+1. Nadat de synchronisatie is voltooid, gebruikt u de [GraphQL-speelplaats](https://developer.adobe.com/commerce/services/graphql/live-search/) met de standaardvraag om het volgende te verifiëren:
 
    * Het aantal geretourneerde producten ligt dicht bij wat u voor de winkelweergave verwacht.
    * Facet(s) worden geretourneerd.

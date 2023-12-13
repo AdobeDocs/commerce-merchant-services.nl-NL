@@ -5,10 +5,10 @@ breadcrumb-title: "[!DNL Catalog Service] Handleiding"
 hide: true
 role: Admin
 feature: Services, Catalog Service
-source-git-commit: 0089d1bba0ebd18b0dbfea123ba8a6e0a33af1b2
+source-git-commit: 9460d7cf2de677557ee3792665c65d2a52a52569
 workflow-type: tm+mt
-source-wordcount: '71'
-ht-degree: 8%
+source-wordcount: '54'
+ht-degree: 11%
 
 ---
 
@@ -18,6 +18,7 @@ ht-degree: 8%
 - [Inleiding tot [!DNL Catalog Service]](overview.md)
 - [Aan boord gaan en installeren](installation.md)
 - [Catalogusservice en API-net](mesh.md)
+- [Met het API-net toegevoegde prijzen weergeven](taxes.md)
 - [Ingestiedienst voor diervoeders (bèta)](feed-ingestion.md)
 - GraphQL-query&#39;s {#graphql}
    - [categoriequery](https://developer.adobe.com/commerce/services/graphql/catalog-service/categories/)
