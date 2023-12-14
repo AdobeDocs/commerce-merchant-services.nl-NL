@@ -2,9 +2,9 @@
 title: Onboarding en installatie
 description: Leer hoe u kunt installeren [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
+source-git-commit: 1bd618435df30772e29e5fc95b0536680c63b482
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '580'
 ht-degree: 0%
 
 ---
@@ -69,15 +69,13 @@ Zie [Uw verificatietoetsen ophalen](https://experienceleague.adobe.com/docs/comm
 
 Gebruik deze methode voor het installeren van de [!DNL Catalog Service] extensie voor een Commerce Cloud-instantie.
 
-1. Open de `<Commerce_root>/composer.json` bestand in een teksteditor en werk de vereiste sectie als volgt bij:
+1. Composer van het gebruik om de module van de Dienst van de Catalogus aan uw project toe te voegen:
 
-```json
-"require": {
-  "magento/catalog-service": "^3.0.1"
-}
+```bash
+composer require "magento/catalog-service" "^3.0.1"
 ```
 
-1. Test de nieuwe configuratie plaatselijk en werk gebiedsdelen bij:
+1. Afhankelijkheden bijwerken door uit te voeren:
 
 ```bash
 composer update
@@ -91,12 +89,10 @@ Het bevel werkt alle gebiedsdelen bij.
 
 Gebruik deze methode voor het installeren van de [!DNL Catalog Service] uitbreiding voor een instantie ter plaatse.
 
-1. Open de `<Commerce_root>/composer.json` bestand in een teksteditor en werk de vereiste sectie als volgt bij:
+1. Composer van het gebruik om de module van de Dienst van de Catalogus aan uw project toe te voegen:
 
-```json
-"require": {
-    "magento/catalog-service": "^3.0.1"
-}
+```bash
+composer require "magento/catalog-service" "^3.0.1"
 ```
 
 1. Afhankelijkheden bijwerken en de extensie installeren:

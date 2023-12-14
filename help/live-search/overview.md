@@ -1,11 +1,11 @@
 ---
 title: Inleiding tot [!DNL Live Search]
-description: "[!DNL Live Search] van Adobe Commerce biedt een bliksemsnelle, superrelevante en intuïtieve zoekervaring."
+description: "[!DNL Live Search] van Adobe Commerce biedt een snelle, relevante en intuïtieve zoekervaring."
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 9460d7cf2de677557ee3792665c65d2a52a52569
+source-git-commit: 12c9fa011662e2e9fd7bb088db97359dcde87915
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '722'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ De meeste winkeleigenaars willen ervoor zorgen dat de [!DNL Live Search] widgets
 De popover- en PLP-widgets kunnen zo nodig worden vormgegeven door aangepaste CSS-regels te definiëren. Zie [Popup-elementen opmaken](storefront-popover-styling.md) en [Widget pagina met productaanbiedingen](plp-styling.md).
 
 Als u de functionaliteit van de widgets wilt uitbreiden, is de broncode voor elke widget beschikbaar in een openbare reactie.
-In dit scenario kunt u het JavaScript aanpassen aan uw eigen behoeften en vervolgens uw aangepaste code hosten op uw site. Dit aangepaste script communiceert met het [!DNL Live Search] De dienst en keert de resultaten als normaal terug, toestaand u om de functionaliteit van widget te controleren.
+In dit scenario, kunt u JavaScript voor uw eigen behoeften aanpassen en dan uw douanecode op uw CDN ontvangen. Dit aangepaste script communiceert met het [!DNL Live Search] De dienst en keert de resultaten als normaal terug, toestaand u om de functionaliteit van widget te controleren.
 
 * [PLP-widgetreactie](https://github.com/adobe/storefront-product-listing-page)
 * [Reactie op zoekbalk](https://github.com/adobe/storefront-search-as-you-type)
@@ -83,4 +83,4 @@ Bekijk deze video voor meer informatie over [!DNL Live Search]:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418679?quality=12&learn=on)
 
-Voor een meer diepgaande video over het gebruiken en vormen van Levend Onderzoek, zie [Volledige demonstratie op [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/marketing/live-search-full-demonstration.html) onderwerp.
+Voor een meer diepgaande video over het gebruiken en vormen van Levend Onderzoek, zie [Volledige demonstratie op [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration.html) onderwerp.
