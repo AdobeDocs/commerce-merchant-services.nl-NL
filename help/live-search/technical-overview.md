@@ -3,9 +3,9 @@ title: "Technisch overzicht"
 description: "[!DNL Live Search] instapkaartstroom, systeemvereisten, grenzen en beperkingen"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: 10b9f087da1346734735379846d50b53d36c1562
+source-git-commit: 9b46ee98d0459b6a4cce2da51ac6308a1102ef30
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '691'
 ht-degree: 0%
 
 ---
@@ -115,7 +115,7 @@ Klanten met Live zoeken kunnen de nieuwe [SaaS-prijsindexer](../price-index/inde
 [!DNL Live Search] werkt met PWA Studio, maar de gebruikers kunnen kleine verschillen zien ten opzichte van andere uitvoeringen van de Handel. De basisfunctionaliteit zoals zoeken en pagina met productlijsten werkt in Venia, maar sommige permutaties van Graphql werken mogelijk niet correct. Er kunnen ook prestatieverschillen zijn.
 
 * De huidige PWA-uitvoering van [!DNL Live Search] vereist meer verwerkingstijd om zoekresultaten te retourneren dan [!DNL Live Search] met de native Commerce-winkel.
-* [!DNL Live Search] in PWA ondersteunt niet [gebeurtenisafhandeling](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). Intelligente handel werkt dus niet.
+* [!DNL Live Search] in PWA ondersteunt niet [gebeurtenisafhandeling](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). Zodoende zullen zoekverslagen en intelligente koophandel werken.
 * Rechtstreeks filteren op `description`, `name`, `short_description` wordt niet ondersteund door GraphQL bij gebruik met [PWA](https://developer.adobe.com/commerce/pwa-studio/), maar ze krijgen een meer algemeen filter.
 
 Te gebruiken [!DNL Live Search] met PWA Studio moeten de integrators ook :
