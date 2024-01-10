@@ -3,7 +3,7 @@ title: "Installeren [!DNL Live Search]"
 description: "Meer informatie over het installeren, bijwerken en verwijderen [!DNL Live Search] uit Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 10b9f087da1346734735379846d50b53d36c1562
+source-git-commit: 460065ecf6478e4313bd31ea848e04c7e8e192a3
 workflow-type: tm+mt
 source-wordcount: '1211'
 ht-degree: 0%
@@ -116,7 +116,7 @@ In dit scenario: [!DNL OpenSearch] beheert tijdelijk zoekverzoeken van de winkel
 1. Voer de volgende opdracht uit om de opdracht tijdelijk uit te schakelen [!DNL Live Search] modules die zoekresultaten leveren.
 
    ```bash
-   bin/magento module:disable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover
+   bin/magento module:disable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover Magento_LiveSearchProductListing 
    ```
 
    ```bash
@@ -162,7 +162,7 @@ In dit scenario: [!DNL OpenSearch] beheert tijdelijk zoekverzoeken van de winkel
 1. Voer de volgende opdrachten uit om [!DNL Live Search] modules, uitschakelen [!DNL OpenSearch]en uitvoeren `setup`.
 
    ```bash
-   bin/magento module:enable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover
+   bin/magento module:enable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover  Magento_LiveSearchProductListing 
    ```
 
    ```bash

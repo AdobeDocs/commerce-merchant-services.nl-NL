@@ -2,9 +2,9 @@
 title: "Facets"
 description: "[!DNL Live Search] facetten gebruiken meerdere afmetingen van kenmerkwaarden als zoekcriteria."
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: a8643ca9567feb7dde67358eeae321825b0253f2
+source-git-commit: 460065ecf6478e4313bd31ea848e04c7e8e192a3
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '539'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Elke gedefinieerde facet kan als een URL-parameter worden gebruikt en de resulta
 
 ## Faciliteitseisen
 
-De categorie- en productkenmerkvereisten voor facetten zijn vergelijkbaar met de filterbare kenmerken die worden gebruikt voor gelaagde navigatie. De storefront-eigenschappen van elk kenmerk moeten zijn ingesteld op `filterable (with results)`.
+De categorie- en productkenmerkvereisten voor facetten zijn vergelijkbaar met de filterbare kenmerken die worden gebruikt voor gelaagde navigatie. Voor elke storefront-eigenschap van een kenmerk moet de waarde &quot;Use in Search Results Layered Navigation&quot; zijn ingesteld op &quot;Yes&quot;.
 
 [!DNL Live Search] ondersteunt maximaal:
 

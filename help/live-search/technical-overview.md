@@ -3,9 +3,9 @@ title: "Technisch overzicht"
 description: "[!DNL Live Search] instapkaartstroom, systeemvereisten, grenzen en beperkingen"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: 9b46ee98d0459b6a4cce2da51ac6308a1102ef30
+source-git-commit: 3d2b63280c2a890d7f84208efe3687c0d99e8e38
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '1007'
 ht-degree: 0%
 
 ---
@@ -29,9 +29,22 @@ In dit onderwerp worden de technische vereisten en tips voor het installeren en 
 
 [!DNL Live Search] communiceert door het eindpunt bij `https://catalog-service.adobe.io/graphql`.
 
->[!NOTE]
->
->Als [!DNL Live Search] geen toegang heeft tot de volledige productdatabase; [!DNL Live Search] GraphQL en Commerce core GraphQL zullen geen volledige pariteit hebben.
+Als [!DNL Live Search] geen toegang heeft tot de volledige productdatabase; [!DNL Live Search] GraphQL en Commerce core GraphQL zullen geen volledige pariteit hebben.
+
+Men adviseert om SaaS API&#39;s direct te roepen - specifiek het eindpunt van de Dienst van de Catalogus.
+
+* De prestaties van de verhoging en vermindert bewerkerlading door het gegevensbestand/het Grahql proces van de Handel over te slaan
+* Profiteer van de [!DNL Catalog Service] federatie [!DNL Live Search], [!DNL Catalog Service], en [!DNL Product Recommendations] vanaf één eindpunt.
+
+In sommige gevallen is het misschien beter om te bellen [!DNL Catalog Service] voor productdetails en soortgelijke gevallen. Zie [refineProduct](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/) voor meer informatie .
+
+Als u een aangepaste implementatie zonder kop hebt, checkt u de [!DNL Live Search] referentie-implementaties:
+
+* [PLP-widget](https://github.com/adobe/storefront-product-listing-page)
+* [Veld Live zoeken](https://github.com/adobe/storefront-search-as-you-type)
+
+Als u niet de standaardcomponenten, zoals de Adapter of widgets van het Onderzoek op Luma, of AEM widgets gebruikt, me ervan bewust ben dat het voorkomen (klikstroomgegevens die Adobe Sensei voor Intelligente Merchandising en prestatiesmetriek) van de doos voorzien niet zal werken en douaneontwikkeling vereist om het voorkomen zonder kop uit te voeren.
+De meest recente versie van [!DNL Live Search] reeds gebruikt [!DNL Catalog Service] en de installaties [!DNL Catalog Service] modules.
 
 ## Grenzen en drempels
 
@@ -69,15 +82,42 @@ Om klantengroepen te beperken die de toestemmingen van de Catalogus gebruiken:
 
 [!DNL Live Search] widgets ondersteunen de volgende talen:
 
-* nl_NL (standaardwaarde)
-* de_DE
-* es_MX
-* fr_FR
-* it_IT
-* ja_JA
-* nl_NL
-* no_NO
-* pt_PT
+|  |  |  |  |
+|--- |--- |--- |--- |
+| Taal | Regio | Taalcode | Landinstelling Magento |
+| Bulgaars | Bulgarije | bg_BG | bg_BG |
+| Catalaans | Spanje | ca_ES | ca_ES |
+| Tsjechisch | Tsjechië | cs_CZ | cs_CZ |
+| Deens | Denemarken | da_DK | da_DK |
+| Duits | Duitsland | de_DE | de_DE |
+| Grieks | Griekenland | el_GR | el_GR |
+| Engels | Verenigd Koninkrijk | en_GB | en_GB |
+| Engels | Verenigde Staten | nl_NL | nl_NL |
+| Spaans | Spanje | es_ES | es_ES |
+| Ests | Estland | et_EE | et_EE |
+| Baskisch | Spanje | eu_ES | eu_ES |
+| Perzisch | Iran | fa_IR | fa_IR |
+| Fins | Finland | fi_FI | fi_FI |
+| Frans | Frankrijk | fr_FR | fr_FR |
+| Galicisch | Spanje | gl_ES | gl_ES |
+| Hindi | India | hi_IN | hi_IN |
+| Hongaars | Hongarije | hu_HU | hu_HU |
+| Indonesische | Indonesië | id_ID | id_ID |
+| Italiaans | Italië | it_IT | it_IT |
+| Koreaans | Zuid-Korea | ko_KR | ko_KR |
+| Litouws | Litouwen | lt_LT | lt_LT |
+| Lets | Letland | lv_LV | lv_LV |
+| Noors | Norway Bokmal | nb_NO | nb_NO |
+| Nederlands | Nederland | nl_NL | nl_NL |
+| Portugees | Brazilië | pt_BR | pt_BR |
+| Portugees | Portugal | pt_PT | pt_PT |
+| Roemeens | Roemenië | ro_RO | ro_RO |
+| Russisch | Rusland | ru_RU | ru_RU |
+| Zweeds | Zweden | sv_SE | sv_SE |
+| Thai | Thailand | th_TH | th_TH |
+| Turks | Turkije | tr_TR | tr_TR |
+| Chinees | China | zh_CN | zh_Hans_CN |
+| Chinees | Taiwan | zh_TW | zh_Hant_TW |
 
 Als de widget detecteert dat de taalinstelling Commerce Admin (_Winkels_ > Instellingen > _Configuratie_ > _Algemeen_ > Landopties) komt overeen met een ondersteunde taal, de standaardtaal is die taal. Anders worden de widgets standaard ingesteld op Engels.
 
@@ -109,6 +149,17 @@ Op deze manier kunnen ontwikkelaars de functionaliteit en opmaak volledig aanpas
 ## Prijsindexering
 
 Klanten met Live zoeken kunnen de nieuwe [SaaS-prijsindexer](../price-index/index.md), die snellere updates van prijswijzigingen en synchronisatietijd biedt.
+
+## Prijsondersteuning
+
+Live zoekwidgets bieden ondersteuning voor de meeste, maar niet voor alle typen prijzen die door Adobe Commerce worden ondersteund.
+
+Momenteel worden de basisprijzen ondersteund. Geavanceerde prijzen die niet worden ondersteund zijn:
+
+* Kosten
+* Minimale geadverteerde prijs
+
+Kijk naar [API-net](../catalog-service/mesh.md) voor complexere prijsberekeningen.
 
 ## PWA-ondersteuning
 
