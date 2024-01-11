@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
 feature: Payments, Checkout, Configuration
-source-git-commit: 85f8e158509231fb3b30c778309a9ac0fb468131
+source-git-commit: a7ad4130745957d596cba38892d77107e977e2e7
 workflow-type: tm+mt
-source-wordcount: '2410'
+source-wordcount: '2364'
 ht-degree: 0%
 
 ---
@@ -128,7 +128,7 @@ Zie [Betalingsopties](payments-options.md#credit-card-fields) voor meer informat
 
 ### Apple Pay
 
-De [!UICONTROL Apple Pay] met de betalingsoptie voor knoppen kunt u een [!UICONTROL Apple Pay] betalingsknop in de afhandeling van je winkel.
+De [!UICONTROL Apple Pay] met de betalingsoptie voor knoppen kunt u een [!UICONTROL Apple Pay] betalingsknop in de afhandeling van je winkel vanuit de Safari-browser.
 
 Je kunt Apple Pay alleen gebruiken als je het hebt voltooid [Apple Betalen voor zelfregistratie via PayPal](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) en vervolgens [Apple Pay configureren](settings.md/#payment-buttons) voor uw winkels. Zie [Betalingsopties](payments-options.md#apple-pay-button) voor meer informatie .
 
@@ -230,7 +230,7 @@ U kunt ook de _[!UICONTROL Button style]_opties voor de betalingsknoppen:
 1. Schakel de optie **[!UICONTROL Responsive button height]** kiezer.
 1. Als u de **[!UICONTROL Label]** selecteert u de gewenste labeloptie.
 
-   Terwijl u de configuratieopties voor lay-out, kleur, vorm, hoogte en label wijzigt, wordt onder aan de pagina Instellingen een visuele voorvertoning van die configuratie weergegeven.
+   Terwijl u de configuratieopties voor lay-out, kleur, vorm, hoogte en label wijzigt, wordt onder aan de pagina Instellingen een visuele voorvertoning van die configuratie weergegeven. In de onderstaande afbeelding worden de **[!UICONTROL Shape]** is ingesteld op _Rechthoek_ en de **[!UICONTROL Label]** is ingesteld op _PayPal (aanbevolen)_.
 
    ![[!DNL PayPal Smart Buttons] opties](assets/payment-buttons.png){width="400" zoomable="yes"}
 

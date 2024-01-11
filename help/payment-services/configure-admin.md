@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 feature: Payments, Checkout, Configuration
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: a7ad4130745957d596cba38892d77107e977e2e7
 workflow-type: tm+mt
-source-wordcount: '1407'
+source-wordcount: '1392'
 ht-degree: 1%
 
 ---
@@ -86,7 +86,7 @@ Zie [Betalingsopties](payments-options.md#paypal-smart-buttons) voor meer inform
 
 ## [!UICONTROL Apple Pay]
 
-De [!UICONTROL Apple Pay] Met deze betalingsoptie kan de verkoper Apple Pay aanbieden aan zijn kopers, die met de Touch ID op hun apparaten aankopen kunnen doen
+De [!UICONTROL Apple Pay] Met deze betalingsoptie kan de verkoper Apple Pay aanbieden aan zijn kopers, die met Touch ID op hun apparaten aankopen kunnen doen via de Safari-browser.
 
 Zie [Betalingsopties](payments-options.md#apple-pay-button) voor meer informatie .
 

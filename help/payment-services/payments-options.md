@@ -3,9 +3,9 @@ title: Betalingsopties
 description: Stel de betalingsopties in om de beschikbare methoden voor uw winkelklanten aan te passen.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: c4068d71eba45ea45b1c1eefc324bf830479e0e3
+source-git-commit: 3276cdac48461cb61c8669e2019b567c70d6f493
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '944'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,8 @@ Er zijn verschillende gedragingen voor elke betalingsmethode, afhankelijk van wa
 
 [!UICONTROL Credit Card Fields] een eenvoudige en veilige afhandeling van betalingsmethoden voor creditcard of bankpas aanbieden. Wanneer een winkelier uitcheckt met gebruik van creditcardvelden, voert hij zijn naam, factuuradres en creditcardgegevens in om zijn bestelling te plaatsen. De klantgegevens worden tijdens de aankoopsessie veilig gebruikt om ze naadloos door de afrekenstroom te begeleiden.
 
+![Creditcardvelden in afhandeling](assets/credit-card-fields.png){width="500" zoomable="yes"}
+
 Inschakelen [creditcard vauleren](#vaulting) zodat kopers hun creditcardgegevens kunnen bewaren voor een snelle afhandeling later.
 
 U kunt [!UICONTROL Credit Card Fields] in de winkelconfiguratie of de startpagina van de betalingsservices. Zie [Instellingen](settings.md#credit-card-fields) voor meer informatie .
@@ -41,6 +43,10 @@ U kunt ook de lay-out, breedte, hoogte en buitenstijl van de creditcardvelden wi
 ## [!DNL Apple Pay] knop
 
 Klanten kunnen [[!DNL Apple Pay]](https://www.apple.com/apple-pay/), die gebruik maakt van betalingsgegevens van creditcard en bankpas die op een iOS- of macOS-apparaat zijn opgeslagen, voor aankopen.
+
+[!DNL Apple Pay] is alleen beschikbaar in de Safari-browser.
+
+![Apple Pay button in minicart](assets/apple-pay-button.png){width="500" zoomable="yes"}
 
 De [!DNL Apple Pay] Deze knop is zichtbaar vanaf de pagina met producten, de miniwinkelwagentje, de winkelwagentje en de afrekenweergave.
 
@@ -54,7 +60,7 @@ U kunt [!UICONTROL Apple Pay] in de winkelconfiguratie of de startpagina van de 
 
 [!DNL PayPal Smart Buttons], die PayPal gebruiken om een aankoop te voltooien, slaat het verzendadres, het factuuradres en de betalingsgegevens van je winkel op voor later gebruik. Kopers kunnen elke betalingsmethode gebruiken die eerder door PayPal is opgeslagen of aangeboden.
 
-![[!DNL PayPal Smart Buttons] opties](assets/payment-buttons.png){width="400" zoomable="yes"}
+![PayPal-knop](assets/paypal-button.png){width="350" zoomable="yes"}
 
 U kunt [!UICONTROL PayPal Smart Buttons] in de winkelconfiguratie of de startpagina van de betalingsservices.  Zie [Instellingen](settings.md#payment-buttons) voor meer informatie .
 
@@ -89,12 +95,6 @@ De [!DNL Pay Later] Deze knop is zichtbaar vanaf de pagina met producten, de min
 Meer informatie over de aanbiedingen voor Later betalen vindt u in [Later PayPal biedt documentatie](https://developer.paypal.com/docs/checkout/pay-later/us/). Gebruik de **Land of regio** vervolgkeuzelijst om een interessegebied te selecteren.
 
 Zie [Instellingen](settings.md#payment-buttons) leren hoe u de [!DNL Pay Later] berichten.
-
-### [!DNL Pay Now] knop
-
-De [!DNL Pay Now] Deze knop is zichtbaar in het pop-upvenster van PayPal wanneer een klant op een betalingsknop op het betalingsscherm klikt.
-
-Als het definitieve orderbedrag nog niet bekend is (bijvoorbeeld wanneer u nog geen adresgegevens voor de verzending hebt) en de klant bezig is zich af te melden bij de productpagina, de miniwinkelwagentje of het winkelwagentje, zoals _Doorgaan_ is in plaats daarvan beschikbaar. Wanneer een klant klikt _Doorgaan_ Nadat ze hun betalingsmethode hebben bevestigd, worden ze doorgestuurd naar een pagina voor het controleren van orders om de benodigde gegevens te verzamelen voordat ze de afhandeling voltooien.
 
 ## Alleen PayPal-betalingsknoppen gebruiken
 
