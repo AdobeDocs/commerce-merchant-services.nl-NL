@@ -5,9 +5,9 @@ seo-title: Adobe Commerce Services documentation changes
 seo-description: See a collated list of all documentation changes for Adobe Commerce Services and integration services.
 exl-id: dcc613e3-955e-4006-9984-bf05289d3bc1
 recommendations: noDisplay
-source-git-commit: 4dd93d38caffa1507a55f2b4f74b63a5aff9229d
+source-git-commit: e666d1293a4dd9224930d2898074869ec048c741
 workflow-type: tm+mt
-source-wordcount: '63'
+source-wordcount: '62'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,6 @@ De volgende punten zijn recente opmerkelijke veranderingen in de documentatie:
 
 | Service | Wijzigen | Type |
 | -- | -- | -- |
-| [**Live zoeken**](../live-search/guide-overview.md) | Live zoeken toegevoegd [Categorieverhandeling](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/category-merch.html) onderwerp. | Nieuw onderwerp |
+| [**Catalogusservice**](../live-search/guide-overview.md) | De [Belastingen weergeven met Catalog Service en API-net](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/taxes.html) onderwerp. | Nieuw onderwerp |
 
 Deze tabel wordt bijgewerkt op de eerste maandag van elke maand.
