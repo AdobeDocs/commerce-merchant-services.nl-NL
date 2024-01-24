@@ -3,10 +3,10 @@ title: Aanvullende informatie
 description: De meest recente releasegegevens voor de [!DNL Data Connection] uit Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 69c1a5c00796f96cafe0169632ad5e1e3c53a297
+source-git-commit: 6378b89e5a077e35213f35e84be9a629c1bdc3ac
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 1%
+source-wordcount: '774'
+ht-degree: 0%
 
 ---
 
@@ -33,6 +33,10 @@ Zie de documentatie voor ontwikkelaars op [leren welke versies van de Handel dez
 In deze releaseopmerkingen worden wijzigingen in functies en correcties beschreven die betrekking hebben op extensies die door de [!DNL Data Connection] extensie.
 
 +++Ondersteunde service-updates
+
+_24 januari 2024_
+
+![Nieuw](../assets/new.svg) - De `data-services-b2b` extensie om een nieuwe aanvraaggebeurtenis op te nemen, genaamd [deleteRequisitionList](events.md#deleterequisitionlist) voor B2B-handelaren.
 
 _16 november 2023_
 
@@ -68,7 +72,7 @@ _12 oktober 2022_
 
 +++
 
-## 3.1.0
+## 3.1.0.
 
 _16 november 2023_
 
@@ -78,7 +82,7 @@ _16 november 2023_
 ![Repareren](../assets/new.svg) - Mogelijkheid toegevoegd om de foutreactie te registreren als Adobe IMS het toegangstoken niet kan genereren.
 ![Repareren](../assets/new.svg) - Er is een meldingsbericht toegevoegd als u probeert Historische bestellingen te synchroniseren, maar geen accountgegevens hebt opgegeven.
 
-## 3.0.0
+## 3.0.0.
 
 _10 oktober 2023_
 
@@ -90,7 +94,7 @@ Dit is een belangrijke versie. [Bewerken](install.md#update-the-data-connection)
 ![Nieuw](../assets/new.svg) - Toegevoegde ondersteuning voor OAuth 2.0 wanneer u [vormen](connect-data.md#connect-commerce-data-to-adobe-experience-platform) de [!DNL Data Connection] extensie.
 ![Nieuw](../assets/new.svg) - Afgelopen ondersteuning voor Adobe Commerce 2.4.3.
 
-## 2.3.0
+## 2.3.0.
 
 _27 juni 2023_
 
@@ -110,7 +114,7 @@ _13 juni 2023_
 
 ![Nieuw](../assets/new.svg) - (Beta) Toegevoegde mogelijkheid tot [historische order verzenden](connect-data.md#beta-send-historical-order-data) gegevens en status aan het Experience Platform. Deze functie is alleen beschikbaar voor bètagebruikers. U kunt deelnemen aan de bètaversie door een e-mail naar het volgende adres te verzenden: `dataconnection@adobe.com`.
 
-## 2.2.0
+## 2.2.0.
 
 _30 maart 2023_
 
@@ -119,7 +123,7 @@ _30 maart 2023_
 ![Nieuw](../assets/new.svg) - Gebundelde `commerce-data-export` en `saas-export` afhankelijkheid van de `experience-platform-connector` extensie. Eerder, moest u deze gebiedsdelen afzonderlijk installeren. Deze gebiedsdelen, samen met bedrijfsmatige configuratie, laten server-zijverwerking van toe [back office-gebeurtenissen](events.md#back-office-events).
 ![Nieuw](../assets/new.svg) - Nieuwe back office-gebeurtenis toegevoegd [`orderShipmentCompleted`](events.md#ordershipmentcompleted).
 
-## 2.1.1
+## 2.1.1.
 
 _28 februari 2023_
 
@@ -127,7 +131,7 @@ _28 februari 2023_
 
 ![Nieuw](../assets/new.svg) - Toegevoegde ondersteuning voor PHP 8.2 voor iedereen [!DNL Data Connection] extensies.
 
-## 2.1.0
+## 2.1.0.
 
 _17 januari 2023_
 
@@ -136,7 +140,7 @@ _17 januari 2023_
 ![Nieuw](../assets/new.svg) - De [[!DNL Data Connection] extensiebeheer](connect-data.md) zodat kunt u uw eigen AEP Web SDK (legering) specificeren.
 ![Repareren](../assets/fix.svg) Gewijzigd in gebruik `identityMap` in plaats van `personID` wanneer u de primaire identiteit instelt voor gegevens die naar de rand worden verplaatst.
 
-## 2.0.1
+## 2.0.1.
 
 _10 november 2022_
 
@@ -144,7 +148,7 @@ _10 november 2022_
 
 ![Repareren](../assets/fix.svg) - Nu wordt de Adobe Experience Platform-context alleen ingesteld nadat de Storageront Event Collector en de Storefront Event SDK zijn geladen.
 
-## 2.0.0
+## 2.0.0.
 
 _12 oktober 2022_
 
@@ -153,7 +157,7 @@ _12 oktober 2022_
 ![Nieuw](../assets/new.svg) - Toegevoegde mogelijkheid om uw eigen AEP Web SDK op te geven wanneer [verbinden](connect-data.md) uw Adobe Commerce-exemplaar naar het Experience Platform.
 ![Repareren](../assets/fix.svg) - Vereisten voor een bijgewerkt gegevensstroombereik, zodat de gegevensstroom-id&#39;s binnen het bereik van de website moeten worden geplaatst in plaats van dat ze moeten worden opgeslagen.
 
-## 1.0.0
+## 1.0.0.
 
 _9 augustus 2022_
 

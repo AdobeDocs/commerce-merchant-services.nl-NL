@@ -4,9 +4,9 @@ description: Leer hoe u de [!DNL Data Connection] uit Adobe Commerce.
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
-source-git-commit: 2392cb4257f6efdcb8fc3e38c007148e03e338fd
+source-git-commit: 688eabddaf4b3faab98c60cf440fe6e9c6772790
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
@@ -41,9 +41,33 @@ De [!DNL Data Connection] de extensie is beschikbaar via de [Adobe Marketplace](
 
 1. (Optioneel) B2B-gegevens op te nemen, die [aanvraaggebeurtenissen](events.md#b2b-events), installeert u de [B2B-extensie](#install-the-b2b-extension).
 
-### De connector voor bestellingen configureren
+### De Adobe I/O-gebeurtenissen installeren
 
-Nadat u de `experience-platform-connector` extensie, moet u de installatie van de `orders-connector` op basis van het implementatietype: op locatie of Adobe Commerce op Cloud-infrastructuur.
+Nadat u de `experience-platform-connector` moet u de Adobe I/O Events for Adobe Commerce installeren.
+
+De volgende stappen zijn van toepassing op zowel Adobe Commerce op cloudinfrastructuur als op installaties ter plaatse.
+
+1. Als u Handel 2.4.4 of 2.4.5 in werking stelt, gebruik het volgende bevel om de gebeurtenismodules te laden:
+
+   ```bash
+   composer require magento/commerce-eventing=^1.0 --no-update
+   ```
+
+   Handel 2.4.6 en later laadt deze modules automatisch.
+
+1. Werk de projectgebiedsdelen bij.
+
+   ```bash
+   composer update
+   ```
+
+1. Schakel de nieuwe modules in:
+
+   ```bash
+   bin/magento module:enable Magento_AdobeCommerceEventsClient Magento_AdobeCommerceEventsGenerator Magento_AdobeIoEventsClient Magento_AdobeCommerceOutOfProcessExtensibility
+   ```
+
+De installatie voltooien op basis van het implementatietype: op locatie of Adobe Commerce op Cloud-infrastructuur.
 
 #### In de bedrijfsruimten
 

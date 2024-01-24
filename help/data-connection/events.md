@@ -4,9 +4,9 @@ description: Leer welke gegevens elke gebeurtenis vastlegt.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: f90ef4d2732a0b0676e0899712f94b41a1c2d85a
+source-git-commit: 136cd11e65674ec6e797aeaabd80750a50324566
 workflow-type: tm+mt
-source-wordcount: '6894'
+source-wordcount: '6957'
 ht-degree: 0%
 
 ---
@@ -236,7 +236,7 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 
 | Beschrijving | XDM-gebeurtenisnaam |
 |---|---|
-| Wordt geactiveerd wanneer de gebruiker een bestelling plaatst. | `commerce.order` |
+| Wordt geactiveerd wanneer de gebruiker een bestelling plaatst. | `commerce.purchases` |
 
 #### Gegevens verzameld bij completeCheckout
 
@@ -254,7 +254,7 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `commerce.order.payments.currencyCode` | De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) gebruikte valutacode, zoals `USD` of `EUR`. |
 | `commerce.order.taxAmount` | Het belastingbedrag dat de koper in het kader van de eindbetaling heeft betaald. |
 | `commerce.order.discountAmount` | Geeft het kortingsbedrag aan dat op de hele volgorde wordt toegepast. |
-| `commerce.order.createdDate` | De tijd en de datum waarop een nieuwe orde in het handelssysteem wordt gecreeerd. Bijvoorbeeld, `2022-10-15T20:20:39+00:00`. |
+| `commerce.order.createdDate` | De tijd en de datum waarop een nieuwe orde in het handelssysteem wordt gecreeerd. Bijvoorbeeld: `2022-10-15T20:20:39+00:00`. |
 | `commerce.shipping` | Verzendgegevens voor een of meer producten. |
 | `commerce.shipping.shippingMethod` | De door de klant gekozen verzendmethode, zoals standaardlevering, versnelde levering, ophaalservice, enzovoort. |
 | `commerce.shipping.shippingAmount` | Het bedrag dat de klant voor de verzending moest betalen. |  | `shipping` | Verzendgegevens voor een of meer producten. |
@@ -485,7 +485,7 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | Veld | Beschrijving |
 |---|---|
 | `commerce.requisitionListOpens` | Geeft initialisatie van een nieuwe aanvraaglijst aan. |
-| `commerce.requisitionList` | De eigenschappen van een aanvraaglijst die door de klant is gemaakt. |
+| `commerce.requisitionList` | De eigenschappen van de aanvraaglijst die door de klant is gemaakt. |
 | `commerce.requisitionList.ID` | Unieke id van de aanvraaglijst. |
 | `commerce.requisitionList.name` | Naam van de aanvraaglijst die door de klant is opgegeven. |
 | `commerce.requisitionList.description` | Beschrijving van de door de klant opgegeven aanvraaglijst. |
@@ -508,7 +508,7 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | Veld | Beschrijving |
 |---|---|
 | `commerce.requisitionListAdds` | Hiermee wordt de toevoeging van een of meer producten aan een aanvraaglijst aangegeven. |
-| `commerce.requisitionList` | De eigenschappen van een aanvraaglijst die door de klant is gemaakt. |
+| `commerce.requisitionList` | De eigenschappen van de aanvraaglijst die door de klant is gemaakt. |
 | `commerce.requisitionList.ID` | Unieke id van de aanvraaglijst. |
 | `commerce.requisitionList.name` | Naam van de aanvraaglijst die door de klant is opgegeven. |
 | `commerce.requisitionList.description` | Beschrijving van de door de klant opgegeven aanvraaglijst. |
@@ -541,7 +541,7 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | Veld | Beschrijving |
 |---|---|
 | `commerce.requsitionListRemovals` | Geeft aan of een of meer producten uit een aanvraaglijst zijn verwijderd. |
-| `commerce.requisitionList` | De eigenschappen van een aanvraaglijst die door de klant is gemaakt. |
+| `commerce.requisitionList` | De eigenschappen van de aanvraaglijst die door de klant is gemaakt. |
 | `commerce.requisitionList.ID` | Unieke id van de aanvraaglijst. |
 | `commerce.requisitionList.name` | Naam van de aanvraaglijst die door de klant is opgegeven. |
 | `commerce.requisitionList.description` | Beschrijving van de door de klant opgegeven aanvraaglijst. |
@@ -560,6 +560,29 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `productListItems.selectedOptions` | Veld voor een configureerbaar product. |
 | `productListItems.selectedOptions.attribute` | Identificeert een attribuut van het configureerbare product, zoals `size` of `color`. |
 | `productListItems.selectedOptions.value` | Hiermee wordt de waarde van het kenmerk geïdentificeerd, zoals `small` of `black`. |
+
+### deleteRequisitionList
+
+| Beschrijving | XDM-gebeurtenisnaam |
+|---|---|
+| Wordt geactiveerd wanneer een winkelier een aanvraaglijst verwijdert. | `commerce.requisitionListDeletes` |
+
+#### Gegevens verzameld uit deleteRequisitionList
+
+In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zijn verzameld.
+
+| Veld | Beschrijving |
+|---|---|
+| `commerce.requisitionListDeletes` | Geeft aan dat een aanvraaglijst is verwijderd. |
+| `commerce.requisitionList` | De eigenschappen van de aanvraaglijst die door de klant is gemaakt. |
+| `commerce.requisitionList.ID` | Unieke id van de aanvraaglijst. |
+| `commerce.requisitionList.name` | Naam van de aanvraaglijst die door de klant is opgegeven. |
+| `commerce.requisitionList.description` | Beschrijving van de door de klant opgegeven aanvraaglijst. |
+| `commerce.commerceScope` | Hiermee geeft u aan waar een gebeurtenis heeft plaatsgevonden (weergave, winkel, website, enzovoort). |
+| `commerce.commerceScope.environmentID` | De milieu-id. Een alfanumerieke id van 32 cijfers, gescheiden door afbreekstreepjes. |
+| `commerce.commerceScope.storeCode` | De unieke opslagcode. U kunt veel winkels per website hebben. |
+| `commerce.commerceScope.storeViewCode` | De unieke code van de archiefmening. U kunt per winkel veel weergaven van uw winkel bekijken. |
+| `commerce.commerceScope.websiteCode` | De unieke websitecode. U kunt veel websites in een omgeving hebben. |
 
 ## Back office evenementen
 
@@ -590,7 +613,7 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `commerce.order.payments.currencyCode` | De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) gebruikte valutacode, zoals `USD` of `EUR`. |
 | `commerce.order.taxAmount` | Het belastingbedrag dat de koper in het kader van de eindbetaling heeft betaald. |
 | `commerce.order.discountAmount` | Geeft het kortingsbedrag aan dat op de hele volgorde wordt toegepast. |
-| `commerce.order.createdDate` | De tijd en de datum waarop een nieuwe orde in het handelssysteem wordt gecreeerd. Bijvoorbeeld, `2022-10-15T20:20:39+00:00`. |
+| `commerce.order.createdDate` | De tijd en de datum waarop een nieuwe orde in het handelssysteem wordt gecreeerd. Bijvoorbeeld: `2022-10-15T20:20:39+00:00`. |
 | `commerce.order.currencyCode` | De ISO 4217-valutacode die wordt gebruikt voor de totalen van de orders. |
 | `commerce.shipping` | Verzendgegevens voor een of meer producten. |
 | `commerce.shipping.shippingMethod` | De door de klant gekozen verzendmethode, zoals standaardlevering, versnelde levering, ophaalservice, enzovoort. |
@@ -908,7 +931,7 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `commerce.order.payments.paymentType` | De betalingsmethode voor deze bestelling. Geladen, aangepaste waarden toegestaan. |
 | `commerce.order.payments.currencyCode` | De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) gebruikte valutacode, zoals `USD` of `EUR`. |
 | `commerce.order.taxAmount` | Het belastingbedrag dat de koper in het kader van de eindbetaling heeft betaald. |
-| `commerce.order.createdDate` | De tijd en de datum waarop een nieuwe orde in het handelssysteem wordt gecreeerd. Bijvoorbeeld, `2022-10-15T20:20:39+00:00`. |
+| `commerce.order.createdDate` | De tijd en de datum waarop een nieuwe orde in het handelssysteem wordt gecreeerd. Bijvoorbeeld: `2022-10-15T20:20:39+00:00`. |
 | `commerce.shipping` | Verzendgegevens voor een of meer producten. |
 | `commerce.shipping.shippingMethod` | De door de klant gekozen verzendmethode, zoals standaardlevering, versnelde levering, ophaalservice, enzovoort. |
 | `commerce.shipping.shippingAmount` | Het bedrag dat de klant voor de verzending moest betalen. |
