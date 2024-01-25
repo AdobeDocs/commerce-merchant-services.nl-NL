@@ -1,47 +1,51 @@
 ---
 title: Onboarding en installatie
-description: Leer hoe u kunt installeren [!DNL Catalog Service]
+description: "Leer hoe u kunt installeren [!DNL Catalog Service]"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 1bd618435df30772e29e5fc95b0536680c63b482
+source-git-commit: d02ffe4028bdf5765fb0f23fd210f398729bee62
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '578'
 ht-degree: 0%
 
 ---
 
 # Onboarding en installatie
 
-Bekijk een analyse van de [!DNL Catalog Service] proces.
+De volgende video&#39;s laten u door de [!DNL Catalog Service] proces.
 
-Deel 1:
+**Deel 1**: Aan boord en installatie
 
 >[!VIDEO](https://video.tv.adobe.com/v/3415599)
 
-Deel 2:
+**Deel 2**: De [!DNL Catalog Service]
 
 >[!VIDEO](https://video.tv.adobe.com/v/3415600)
+
+>[!BEGINSHADEBOX]
 
 ## Vereisten
 
 Het instapproces voor [!DNL Catalog Service] vereist toegang tot de bevellijn van de server. Als u niet bekend bent met het werken vanaf de opdrachtregel, vraagt u een ontwikkelaar of systeemintegrator om hulp.
 
-### Softwarevereisten
+**Softwarevereisten**
 
 - Adobe Commerce 2.4.4+
 - PHP 8.1, 8.2
 - Composer: 2.x
 
-### Ondersteunde platforms
+**Ondersteunde platforms**
 
 - Adobe Commerce op cloudinfrastructuur: 2.4.4+
 - Adobe Commerce in bedrijven: 2.4.4+
+
+>[!ENDSHADEBOX]
 
 ## Eindpunten
 
 [!DNL Catalog Service] beschikt over twee eindpunten voor instapweigering:
 
-- Sandbox (https://catalog-service-sandbox.adobe.io/graphql) - wordt gebruikt voor tests en validatie voordat u live gaat
-- Productie (https://catalog-service.adobe.io/graphql)-) gebruikt voor het live verkeer voor handelaars en websites
+- Sandbox (`https://catalog-service-sandbox.adobe.io/graphql`)—Wordt gebruikt voor testen en valideren voordat u live gaat
+- Productie (`https://catalog-service.adobe.io/graphql`) - gebruikt voor levend verkeer voor handelaars en websites van de Handel
 
 Alle testinstanties van Handel zouden het zandbakeindpunt moeten gebruiken.
 
@@ -61,7 +65,7 @@ Het instapproces voor [!DNL Catalog Service] vereist toegang tot de bevellijn va
 
 De [!DNL Catalog Service] kan worden geïnstalleerd op de cloudinfrastructuur van Adobe Commerce en op het terrein.
 
-De [!DNL Catalog Service] wordt geïnstalleerd met Composer-sleutels die zijn gekoppeld aan de Commerce-account [mageid](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/) verstrekt tijdens het ondertekeningsproces. Composer gebruikt deze toetsen tijdens de eerste installatie van Adobe Commerce of in situaties waarin de Composer-toetsen niet eerder zijn opgeslagen naar een externe toepassing `auth.json` bestand.
+De [!DNL Catalog Service] wordt geïnstalleerd met Composer-sleutels die zijn gekoppeld aan de Commerce-account [`mageid`](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/) verstrekt tijdens het ondertekeningsproces. Composer gebruikt deze toetsen tijdens de eerste installatie van Adobe Commerce of in situaties waarin de Composer-toetsen niet eerder zijn opgeslagen naar een externe toepassing `auth.json` bestand.
 
 Zie [Uw verificatietoetsen ophalen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html) voor meer informatie over het verkrijgen van Composer-sleutels.
 
@@ -69,21 +73,20 @@ Zie [Uw verificatietoetsen ophalen](https://experienceleague.adobe.com/docs/comm
 
 Gebruik deze methode voor het installeren van de [!DNL Catalog Service] extensie voor een Commerce Cloud-instantie.
 
-1. Composer van het gebruik om de module van de Dienst van de Catalogus aan uw project toe te voegen:
+1. Wijzig op uw lokale werkstation de projectmap.
+1. Voeg de module Catalogusservice toe.
 
-```bash
-composer require "magento/catalog-service" "^3.0.1"
-```
+   ```bash
+   composer require "magento/catalog-service" "^3.0.1"
+   ```
 
-1. Afhankelijkheden bijwerken door uit te voeren:
+1. Pakketafhankelijkheden bijwerken.
 
-```bash
-composer update
-```
+   ```bash
+   composer update
+   ```
 
-Het bevel werkt alle gebiedsdelen bij.
-
-1. Leg uw wijzigingen vast en duw op `composer.json` en `composer.lock`.
+1. Wijzigingen in de code vastleggen en doorvoeren voor de `composer.json` en `composer.lock` bestanden.
 
 #### In de bedrijfsruimten
 
@@ -91,29 +94,27 @@ Gebruik deze methode voor het installeren van de [!DNL Catalog Service] uitbreid
 
 1. Composer van het gebruik om de module van de Dienst van de Catalogus aan uw project toe te voegen:
 
-```bash
-composer require "magento/catalog-service" "^3.0.1"
-```
+   ```bash
+   composer require "magento/catalog-service" "^3.0.1"
+   ```
 
 1. Afhankelijkheden bijwerken en de extensie installeren:
 
-```bash
-composer update
-```
-
-Het bevel werkt alle gebiedsdelen bij.
+   ```bash
+   composer update
+   ```
 
 1. Upgrade Adobe Commerce:
 
-```bash
-bin/magento setup:upgrade
-```
+   ```bash
+   bin/magento setup:upgrade
+   ```
 
 1. Cache wissen:
 
-```bash
-bin/magento cache:clean
-```
+   ```bash
+   bin/magento cache:clean
+   ```
 
 ### De service- en gegevensexport configureren
 
@@ -143,4 +144,4 @@ Toestaan [!DNL Catalog Service] via een firewall toevoegen `commerce.adobe.io` o
 
 De [API-net voor Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) laat ontwikkelaars toe om privé of derde APIs en andere interfaces met Adobe producten te integreren gebruikend Adobe IO.
 
-Zie de  [[!DNL Catalog Service] en API-net](mesh.md) onderwerp voor installatie en configuratiedetails.
+Zie de [[!DNL Catalog Service] en API-net](mesh.md) onderwerp voor installatie en configuratiedetails.
