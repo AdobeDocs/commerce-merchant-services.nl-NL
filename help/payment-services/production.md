@@ -3,9 +3,9 @@ title: Inschakelen [!DNL Payment Services] voor productie
 description: Voltooi het instapproces door [!DNL Payment Services] voor de productie.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
+source-git-commit: ff83c83a054e5b14814cc3076744c5517081a80f
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '1006'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Na u [Configureer uw Commerce Services](connect.md#configure-commerce-services) 
 
 1. Klik op **[!UICONTROL Save]**.
 1. Klikken **[!UICONTROL Go to Payment Services]** die naar de [!DNL Payment Services] Home.
-1. [Cache wissen](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}.
+1. [Cache wissen](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cache-management.html).
 
    Het ontruimen zou na elke configuratieverandering moeten worden gedaan.
 
@@ -51,14 +51,58 @@ Zie [Betalingsservices configureren](settings.md) voor meer informatie over het 
 
 ## Volledige merchant aan boord
 
+De volgende stap om je winkels in staat te stellen om live te gaan met betalingsservices is het voltooien van live onboarding.
+
+Betalingsdiensten bieden [**Geavanceerd** (volledig ondersteund) en **Standaard** (Express Checkout) betalingsopties](../payment-services/payments-options.md#standard-vs-advanced-payments-experience) en instapkaartstromen, afhankelijk van het land waar u werkt en uw voorkeursbetalingservaring.
+
 1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Klik op **[!UICONTROL Live onboarding]**.
 
    Deze optie is zichtbaar als u nog niet live on boarding hebt voltooid voor [!DNL Payment Services].
 
-   U krijgt een PayPal-venster te zien.
+1. In de _Selecteer uw land_ modal, selecteert u het land vanwaar u werkt.
 
-1. Ga verder met de PayPal-flow, gebruik de verificatiegegevens van uw PayPal-account (niet de gegevens van uw sandbox-account) of meld u aan voor een nieuwe PayPal-account.
+   Betalingsservices bieden volledige ondersteuning voor alle betalingsopties in [vijf landen](../payment-services/overview.md#availability) momenteel. Betalingsdiensten bieden Express Checkout-mogelijkheden (een subset van betalingsopties) voor alle andere landen die in de landenlijst zijn opgenomen.
+
+   Het land dat u in de lijst kiest, bepaalt de betalingsopties en de instapkaartstroom—[Geavanceerd](#advanced-onboarding) (volledig ondersteund) of [Standaard](#standard-onboarding) (Uitdrukkelijke Afhandeling) - beschikbaar voor u.
+
+>[!TIP]
+>
+> Als u eenmaal een instapkaartoptie hebt gekozen en doorgaat (Standaard of Geavanceerd), moet u het instappen opnieuw voltooien om een upgrade uit te voeren of de oorspronkelijke selectie te verkleinen.
+
+### Geavanceerd instapniveau
+
+Deze instapkaartstroom is beschikbaar voor handelaren in [volledig gesteunde landen](../payment-services/overview.md#availability).
+
+Nadat het land is geselecteerd:
+
+1. Selecteer in het modaal dat wordt weergegeven **Geavanceerd**.
+
+   Voor de **Standaard** , gaat u verder naar de [Standaardinstapsnelheid](#standard-onboarding).
+
+1. Klikken **Doorgaan**.
+1. Ga verder met de PayPal-flow voor de volledig ondersteunde geavanceerde instapmogelijkheden en gebruik daarbij de verificatiegegevens van uw Paypal-account (niet de gegevens van uw sandboxaccount) _of_ Meld u aan voor een nieuw PayPal-account.
+
+>[!IMPORTANT]
+>
+>**Geavanceerd instapniveau** vereist dat verkopers [betalingsrechten aanvragen](#request-payments-entitlement-from-adobe) om live aan boord te gaan.
+
+### Standaard aan boord
+
+Deze standaard inzake instapkaartstromen is beschikbaar voor handelaren in beschikbare landen waarvoor [alleen Express Checkout-ondersteuning](../payment-services/overview.md#availability) wordt opgegeven.
+
+Nadat het land is geselecteerd:
+
+1. In de _Overeenkomst betalingsdiensten_ modal dat wordt weergegeven, klikt u op de knop **Overeenkomst betalingsdiensten** link naar de Adobe Commerce Payment Services-overeenkomst.
+1. In de _Overeenkomst betalingsdiensten_ modal, klik **Ik accepteer**.
+1. Ga verder met de PayPal-flow voor Express Checkout bij het instappen, gebruik uw PayPal-accountgegevens (niet de gegevens van uw sandboxaccount) of meld u aan voor een nieuw PayPal-account.
+
+>[!IMPORTANT]
+>
+>[Apple Betalen en creditcardvelden](../payment-services/payments-options.md) zijn niet beschikbaar voor **Standaard aan boord**.
+
+## E-mailadres bevestigen
+
 1. Ga op de zijbalk Beheerder naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**
 
    De _[!UICONTROL Live onboarding]_de knop is niet meer zichtbaar en u ziet een &quot;[!UICONTROL Live payments pending]&quot; tekstvak.
@@ -77,7 +121,7 @@ Zie [Betalingsservices configureren](settings.md) voor meer informatie over het 
 
 ## Betalingsrechten aanvragen voor Adobe
 
-Als u live aan boord wilt gaan, moet u betalingsrechten aanvragen bij Adobe:
+Als je winkels live wilt gaan, kun je betalingsrechten aanvragen bij Adobe (voor [Alleen geavanceerd instappen](#advanced-onboarding)):
 
 1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Klikken **[!UICONTROL Get Live Payments]** in uw [!DNL Payment Services] Home.
@@ -95,8 +139,7 @@ U kunt ook betalingsrechten aanvragen bij Adobe op [business.adobe.com](https://
 
 ## Prijsniveau configureren
 
-Om uw [!DNL Payment Services] _Merchant ID_:
-
+Uw [!DNL Payment Services] _Merchant ID_:
 
 1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Klik in de weergave Home op **[!UICONTROL Settings]**. Zie [Home](payments-home.md) voor meer informatie .
@@ -106,7 +149,7 @@ Om uw [!DNL Payment Services] _Merchant ID_:
 
 A _productie-handels-id_ wordt automatisch gegenereerd en wordt gevuld in het dialoogvenster [configuratie](configure-admin.md). Wijzig of wijzig deze id niet.
 
-Levende betalingen mogelijk maken:
+Live betalingen inschakelen:
 
 1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Klik op Home op **[!UICONTROL Settings]** rechtsboven op de pagina. Zie [Home](payments-home.md) voor meer informatie .

@@ -3,30 +3,38 @@ title: Betalingsopties
 description: Stel de betalingsopties in om de beschikbare methoden voor uw winkelklanten aan te passen.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 3276cdac48461cb61c8669e2019b567c70d6f493
+source-git-commit: ff83c83a054e5b14814cc3076744c5517081a80f
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '1044'
 ht-degree: 0%
 
 ---
 
 # Betalingsopties
 
-Met [!DNL Adobe Commerce] en [!DNL Magento Open Source] [!DNL Payment Services], je hebt meerdere betalingsopties beschikbaar. U kunt deze betalingsopties configureren via:
+Met [!DNL Adobe Commerce] en [!DNL Magento Open Source] [!DNL Payment Services], je hebt meerdere betalingsopties beschikbaar.
 
-* [Startinstellingen](payments-home.md)
-* [Winkelconfiguratie](configure-admin.md) (aanbevolen voor oudere betalingsopties of een installatie in meerdere winkels)
+U kunt deze betalingsopties configureren in [Startinstellingen](payments-home.md) of [Winkelconfiguratie](configure-admin.md) (aanbevolen voor oudere betalingsopties of een installatie in meerdere opslagruimten).
 
 Er zijn verschillende gedragingen voor elke betalingsmethode, afhankelijk van waar u zich bevindt in het uitbetalingsproces:
 
 * Productpagina—De productpagina voor een item
-* Mini kart - Beschikbaar bij klikken op het pictogram van het karretje wanneer een product aan het karretje is toegevoegd
+* Mini kart - Beschikbaar bij klikken op het pictogram van het karretje wanneer een product aan de winkelwagentjes is toegevoegd
 * Winkelwagentje - beschikbaar na klikken van _Kaart weergeven en bewerken_ van de miniwagen
 * Uitchecken, weergave—Beschikbaar na klikken op _Doorgaan naar Afhandeling_ van minikarretje of winkelwagentje
 
 >[!IMPORTANT]
 >
->Betalingsdiensten aan boord moeten zijn voltooid voordat betalingen kunnen worden verwerkt.
+>[!DNL Payment Services] de boeking moet zijn voltooid voordat de betalingen kunnen worden verwerkt.
+
+## Standaard versus geavanceerde betalingservaring
+
+[!DNL Payment Services] verstrekt **Geavanceerd** (volledig ondersteund) en **Standaard** (Express Checkout) betalingsopties en instapstromen, afhankelijk van het land waarin u werkt.
+
+* **Geavanceerd** - Alle beschikbare [betalingsopties](../payment-services/payments-options.md) zijn beschikbaar voor [volledig gesteunde landen](../payment-services/overview.md#availability). Selecteer tijdens het instappen de optie [Geavanceerde instapoptie](../payment-services/production.md#advanced-onboarding).
+* **Standaard** - Een subset betalingsopties (Express Checkout) - PayPal-krediet- en debetkaarten - is beschikbaar voor andere ondersteunde landen. [Creditcardvelden](#credit-card-fields) en [Apple Pay](#apple-pay-button) niet beschikbaar zijn voor deze instapoptie. Selecteer tijdens het instappen de optie [Standaardinstapoptie](../payment-services/production.md#standard-onboarding).
+
+Zie [Inschakelen [!DNL Payment Services] voor productie](../payment-services/production.md#complete-merchant-onboarding) voor meer informatie over het invullen van Advanced en Standard onboarding.
 
 ## [!UICONTROL Credit Card Fields]
 
@@ -36,7 +44,7 @@ Er zijn verschillende gedragingen voor elke betalingsmethode, afhankelijk van wa
 
 Inschakelen [creditcard vauleren](#vaulting) zodat kopers hun creditcardgegevens kunnen bewaren voor een snelle afhandeling later.
 
-U kunt [!UICONTROL Credit Card Fields] in de winkelconfiguratie of de startpagina van de betalingsservices. Zie [Instellingen](settings.md#credit-card-fields) voor meer informatie .
+U kunt [!UICONTROL Credit Card Fields] in de opslagconfiguratie of de [!DNL Payment Services] Home. Zie [Instellingen](settings.md#credit-card-fields) voor meer informatie .
 
 U kunt ook de lay-out, breedte, hoogte en buitenstijl van de creditcardvelden wijzigen. Zie [PayPal-documentatie](https://developer.paypal.com/docs/checkout/advanced/customize/card-field-style/) voor meer informatie .
 
@@ -62,7 +70,7 @@ U kunt [!UICONTROL Apple Pay] in de winkelconfiguratie of de startpagina van de 
 
 ![PayPal-knop](assets/paypal-button.png){width="350" zoomable="yes"}
 
-U kunt [!UICONTROL PayPal Smart Buttons] in de winkelconfiguratie of de startpagina van de betalingsservices.  Zie [Instellingen](settings.md#payment-buttons) voor meer informatie .
+U kunt [!UICONTROL PayPal Smart Buttons] in de opslagconfiguratie of de [!DNL Payment Services] Home.  Zie [Instellingen](settings.md#payment-buttons) voor meer informatie .
 
 Zie PayPal&#39;s [Documentatie over betalingsmethoden](https://developer.paypal.com/docs/checkout/payment-methods/) om te leren in welke landen elke betalingsmethode momenteel beschikbaar is.
 
