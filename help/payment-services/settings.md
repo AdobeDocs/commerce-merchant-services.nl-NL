@@ -5,7 +5,7 @@ role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
 feature: Payments, Checkout, Configuration
-source-git-commit: a7ad4130745957d596cba38892d77107e977e2e7
+source-git-commit: 7ea19e5c47142e31995c570c5e1efb50850d99b2
 workflow-type: tm+mt
 source-wordcount: '2364'
 ht-degree: 0%
@@ -163,9 +163,9 @@ U kunt de [!UICONTROL Apple Pay] betalingsoptie knop:
 
 ### Betalingsknoppen
 
-De [!DNL PayPal Smart Buttons] betaalopties bieden een eenvoudig, snel en veilig afhandelingsproces voor uw klant. Zie [Betalingsopties](payments-options.md#paypal-smart-buttons) voor meer informatie .
+De [!DNL PayPal payment buttons] betaalopties bieden een eenvoudig, snel en veilig afhandelingsproces voor uw klant. Zie [Betalingsopties](payments-options.md#paypal-smart-buttons) voor meer informatie .
 
-U kunt de betalingsopties voor slimme PayPal-knoppen inschakelen en configureren:
+U kunt de betalingsopties van de PayPal-betalingsknoppen inschakelen en configureren:
 
 1. Selecteer de winkelweergave in het dialoogvenster **[!UICONTROL Scope]** vervolgkeuzemenu waarvoor u een betalingsmethode wilt inschakelen.
 1. Als u de naam van de betalingsmethode wilt wijzigen, zoals wordt weergegeven tijdens het afrekenen, bewerkt u de waarde in het dialoogvenster **[!UICONTROL Checkout Title]** veld.
@@ -203,10 +203,10 @@ U kunt de betalingsopties voor slimme PayPal-knoppen inschakelen en configureren
 | [!UICONTROL Title] | winkelweergave | Voeg tijdens het afrekenen de tekst toe die als titel voor deze betalingsoptie moet worden weergegeven in de weergave Betalingsmethode. Opties: tekstveld |
 | [!UICONTROL Payment Action] | website | De [betalingsactie](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} voor de opgegeven betalingsmethode. Opties: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Sort order] | winkelweergave | De sorteervolgorde voor de opgegeven betalingsmethode op de uitcheckpagina. `Numeric Only` value |
-| [!UICONTROL Show PayPal buttons on checkout page] | winkelweergave | In- of uitschakelen [!DNL PayPal Smart Buttons] op de uitcheckpagina. Opties: [!UICONTROL  Yes] / [!UICONTROL No] |
-| [!UICONTROL Show PayPal buttons on product detail page] | winkelweergave | In- of uitschakelen [!DNL PayPal Smart Buttons] op de pagina met productdetails. Opties: [!UICONTROL  Yes] / [!UICONTROL No] |
-| [!UICONTROL Show PayPal buttons in mini-cart preview] | winkelweergave | In- of uitschakelen [!DNL PayPal Smart Buttons] in de voorvertoning van de mini-cart. Opties: [!UICONTROL Off] / [!UICONTROL On] |
-| [!UICONTROL Show PayPal buttons on cart page] | winkelweergave | In- of uitschakelen [!DNL PayPal Smart Buttons] op de winkelwagentje. Opties: [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show PayPal buttons on checkout page] | winkelweergave | In- of uitschakelen [!DNL PayPal payment buttons] op de uitcheckpagina. Opties: [!UICONTROL  Yes] / [!UICONTROL No] |
+| [!UICONTROL Show PayPal buttons on product detail page] | winkelweergave | In- of uitschakelen [!DNL PayPal payment buttons] op de pagina met productdetails. Opties: [!UICONTROL  Yes] / [!UICONTROL No] |
+| [!UICONTROL Show PayPal buttons in mini-cart preview] | winkelweergave | In- of uitschakelen [!DNL PayPal payment buttons] in de voorvertoning van de mini-cart. Opties: [!UICONTROL Off] / [!UICONTROL On] |
+| [!UICONTROL Show PayPal buttons on cart page] | winkelweergave | In- of uitschakelen [!DNL PayPal payment buttons] op de winkelwagentje. Opties: [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Show PayPal Pay Later button] | winkelweergave | De weergave van betalingsopties voor latere betalingen in- of uitschakelen wanneer betalingsknoppen worden weergegeven. Opties: [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Show PayPal Pay Later Message] | website | Schakel het bericht Later betalen in of uit in het winkelwagentje, de productpagina, de miniwinkelwagentje en tijdens de afrekenstroom. Opties: [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Show Venmo button] | winkelweergave | Schakel de betalingsoptie van Venmo in of uit waar betalingsknoppen worden weergegeven. Opties: [!UICONTROL Off] / [!UICONTROL On] |
@@ -232,7 +232,7 @@ U kunt ook de _[!UICONTROL Button style]_opties voor de betalingsknoppen:
 
    Terwijl u de configuratieopties voor lay-out, kleur, vorm, hoogte en label wijzigt, wordt onder aan de pagina Instellingen een visuele voorvertoning van die configuratie weergegeven. In de onderstaande afbeelding worden de **[!UICONTROL Shape]** is ingesteld op _Rechthoek_ en de **[!UICONTROL Label]** is ingesteld op _PayPal (aanbevolen)_.
 
-   ![[!DNL PayPal Smart Buttons] opties](assets/payment-buttons.png){width="400" zoomable="yes"}
+   ![[!DNL PayPal payment buttons] opties](assets/payment-buttons.png){width="400" zoomable="yes"}
 
 1. Klik op **[!UICONTROL Save]**.
 

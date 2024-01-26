@@ -3,7 +3,7 @@ title: "[!DNL Payment Services] Opmerkingen bij de release"
 description: Lees de opmerkingen bij de release voor meer informatie over alle [!DNL Payment Services] lozingen.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 75dbbe5a1b3bc9a84a5b26ac1b2cb6c0ec639027
+source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
 workflow-type: tm+mt
 source-wordcount: '2132'
 ht-degree: 0%
@@ -168,7 +168,7 @@ _29 januari 2023_
 
 [!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
 
-![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-4110 --> Probleem verholpen waarbij kopers geen bestelling konden plaatsen met behulp van slimme knoppen op de productpagina, mini-winkelwagen en winkelwagentje. Kopers kunnen nu bestellingen voltooien.
+![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-4110 --> Probleem verholpen waarbij kopers een bestelling niet konden plaatsen met behulp van betalingsknoppen op de productpagina, miniwinkelwagentje en winkelwagentje. Kopers kunnen nu bestellingen voltooien.
 
 ## v1.5.3
 
@@ -186,7 +186,7 @@ _22 december 2022_
 
 ![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-3992 --> Betaaldiensten kunnen beter worden gefactureerd wanneer een betalingsmethode wordt afgewezen.
 
-![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-3999 --> Betalingsservices geeft nu correct PayPal slimme knoppen weer voor verkopers die [Brandcontrole](https://commercemarketplace.adobe.com/swissup-firecheckout.html){target=_blank} aangepaste sjabloon voor de uitcheckpagina. Eerder werden de knoppen periodiek weergegeven door de minicart.
+![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-3999 --> Betalingsservices geeft nu correct PayPal-betalingsknoppen weer voor verkopers die [Brandcontrole](https://commercemarketplace.adobe.com/swissup-firecheckout.html){target=_blank} aangepaste sjabloon voor de uitcheckpagina. Eerder werden de knoppen periodiek weergegeven door de minicart.
 
 ## v1.5.1
 
@@ -196,7 +196,7 @@ _23 november 2022_
 
 ![Nieuw](../assets/new.svg)<!-- Issue PAY-3923 --> De Diensten van de betaling omvat nu het versieaantal in de kopbal van de gebruikersagent voor verzoeken om ongebruikte eindpunten te kunnen volgen, filtreren of verwerpen.
 
-![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-3968 --> Met Betalingsservices worden nu correct de ordergegevens weergegeven wanneer een bestelling via de productpagina wordt geplaatst.
+![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-3968 --> Betalingsservices geven nu correct de ordergegevens weer wanneer een bestelling van de productpagina wordt geplaatst met behulp van betaalknoppen.
 
 ## v1.5.0
 
@@ -226,7 +226,7 @@ _30 september 2022_
 
 ![Nieuw](../assets/new.svg)<!-- Issue PAY-3231 --> Handelaren kunnen [toevoegen [!UICONTROL Soft Descriptor]](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#add-soft-descriptor) op websites of in afzonderlijke winkelweergaven wordt de configuratie weergegeven die op de bankafschriften van klanttransacties wordt getoond om merken, winkels of productlijnen te omlijnen.
 
-![Nieuw](../assets/new.svg)<!-- Issue PAY-3707 --> [Creditcardvelden en slimme PayPal-knoppen in- of uitschakelen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-payment-options) voor afhandeling in de instellingen voor Betalingsservices.
+![Nieuw](../assets/new.svg)<!-- Issue PAY-3707 --> [De creditcardvelden en PayPal-betalingsknoppen in- of uitschakelen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-payment-options) voor afhandeling in de instellingen voor Betalingsservices.
 
 ![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-3546 --> Wanneer een klant klikt **[!UICONTROL Edit cart]**, wordt de pagina omgeleid naar de winkelwagentje en worden de bijgewerkte items weergegeven in plaats van dat er een leeg winkelwagentje wordt weergegeven.
 
@@ -258,7 +258,7 @@ _29 juni 2022_
 
 ![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-3264 --> Eerder, toen een aangemelde gebruiker een ander facturerings/verzendadres dan het standaardadres voor zijn account selecteerde, mislukte het afrekenen. We hebben dit probleem opgelost en nu wordt het geselecteerde factuuradres/verzendadres verzonden (in plaats van het standaard opgeslagen adres) en wordt het afrekenen voltooid.
 
-![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-3314 --> Als u de slimme PayPal-knoppen uitschakelt voor afhandeling, worden geen fouten weergegeven.
+![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-3314 --> Als u PayPal-betalingsknoppen uitschakelt voor afhandeling, worden geen fouten weergegeven.
 
 ![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-3330 --> Betalingen mislukken niet meer tijdens het afrekenen wanneer een gastgebruiker een telefoonnummer invoert dat streepjes bevat.
 
@@ -288,7 +288,7 @@ _31 maart 2022_
 
 ![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-2742 --> U kunt nu beschikbare betalingsmethoden, zoals Venmo, in- en uitschakelen op het weergaveniveau van de winkel. Eerder kon u alleen betalingsmethoden per website configureren.
 
-![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-2277 --> U kunt nu selectief [individuele PayPal smart-knoppen in- of uitschakelen](settings.md#payment-buttons).
+![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-2277 --> U kunt nu selectief [afzonderlijke PayPal-betalingsknoppen in- of uitschakelen](settings.md#payment-buttons).
 
 ![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-2561 --> Eerder verwijderde producten komen niet voor in het winkelwagentje op de _Revisievolgorde_ pagina.
 
@@ -314,7 +314,7 @@ _29 november 2021_
 
 ![Nieuw](../assets/new.svg)<!-- Issue PAY-311 --> [!DNL Payment Services] ondersteunt flexibele, gedifferentieerde prijzen, gebaseerd op het totale verwerkingsvolume, aangepast aan elke handelaar.
 
-![Nieuw](../assets/new.svg)<!-- Issue PAY-1443 --> U kunt gemakkelijk [de vormgeving aanpassen](payments-options.md) van PayPal slimme knoppen en creditcardvelden voor de [!DNL Payment Services] extensie.
+![Nieuw](../assets/new.svg)<!-- Issue PAY-1443 --> U kunt gemakkelijk [de vormgeving aanpassen](payments-options.md) van PayPal-betalingsknoppen en creditcardvelden voor de [!DNL Payment Services] extensie.
 
 ![Bekend probleem](../assets/bug.svg)<!-- Issue PAY-2473 --> Gebruiken [onjuiste Composer-sleutels](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html) tijdens de installatie van de extensie voorkomt dat de gebruiker [verifiëren](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) met de juiste `MAGEID`.
 

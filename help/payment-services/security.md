@@ -4,9 +4,9 @@ description: Beoordeel de beveiligings- en compatibiliteitsvereisten voor uw sit
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
 feature: Payments, Checkout, Compliance
 redirect_from: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html
-source-git-commit: fef972355565472f0d0851a2e3cace692fb2db67
+source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
@@ -55,9 +55,9 @@ Wanneer een winkelier [vaults—of &quot;save&quot;—hun creditcardgegevens](va
 
 Zie [Creditcard vaulting](vaulting.md) voor meer informatie .
 
-### Slimme PayPal-knoppen
+### PayPal-betalingsknoppen
 
-Met de slimme knoppen van PayPal worden er geen gegevens doorgegeven die door PCI zijn gereguleerd. U hoeft die gegevens niet op te slaan of te onderhouden, wat de bezorgdheid over PCI-compatibiliteit aanzienlijk vermindert.
+Met PayPal-betalingsknoppen worden er geen gegevens doorgegeven die door een PCI zijn gereguleerd. U hoeft die gegevens niet op te slaan of te onderhouden, wat de bezorgdheid over PCI-compatibiliteit aanzienlijk vermindert.
 
 Om veiligheidsredenen geeft PayPal het factuuradres niet door tijdens het afrekenen. Land, e-mail en naam zijn de enige factuurgegevens die worden gebruikt. U kunt desgewenst het PayPal-afhandeling van uw site inschakelen om het volledige factureringsadres te retourneren door contact op te nemen met PayPal en een controleproces te voltooien.
 

@@ -4,9 +4,9 @@ description: Gebruik het rapport Transacties om de snelheid van de transactiever
 role: User
 level: Intermediate
 exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
-source-git-commit: 91acc6e1dfd142caca77c0dc9ba55da34f75dd60
+source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1240'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ U kunt deze mening, per de secties in dit onderwerp vormen, om de gegevens het b
 
 Zie gekoppelde orders van de Handel en de identiteitskaart van de leverancierstransactie, transactiebedragen, betalingsmethode per transactie, en meer, allen binnen dit rapport.
 
-Niet alle betalingsmethoden bieden dezelfde mate van informatie. Met creditcardtransacties worden bijvoorbeeld de respons-, AVS- en CCV-codes en de laatste vier cijfers van de kaart in het Transactierapport weergegeven. Met de slimme PayPal-knoppen gebeurt dit niet.
+Niet alle betalingsmethoden bieden dezelfde mate van informatie. Met creditcardtransacties worden bijvoorbeeld reacties, AVS- en CCV-codes en de laatste vier cijfers van de kaart in het Transactierapport verschaft. PayPal-betalingsknoppen doen dat niet.
 
 U kunt [downloadtransacties](#download-transactions) in een .csv-bestandsindeling voor gebruik in bestaande software voor boekhouding of orderbeheer.
 

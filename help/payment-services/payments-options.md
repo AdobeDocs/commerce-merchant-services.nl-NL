@@ -3,7 +3,7 @@ title: Betalingsopties
 description: Stel de betalingsopties in om de beschikbare methoden voor uw winkelklanten aan te passen.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: ff83c83a054e5b14814cc3076744c5517081a80f
+source-git-commit: 7ea19e5c47142e31995c570c5e1efb50850d99b2
 workflow-type: tm+mt
 source-wordcount: '1044'
 ht-degree: 0%
@@ -64,13 +64,13 @@ De [!DNL Apple Pay] Deze knop is zichtbaar vanaf de pagina met producten, de min
 
 U kunt [!UICONTROL Apple Pay] in de winkelconfiguratie of de startpagina van de betalingsservices. Zie [Instellingen](settings.md#apple-pay) voor meer informatie .
 
-## [!DNL PayPal Smart Buttons]
+## [!DNL PayPal Payment Buttons]
 
-[!DNL PayPal Smart Buttons], die PayPal gebruiken om een aankoop te voltooien, slaat het verzendadres, het factuuradres en de betalingsgegevens van je winkel op voor later gebruik. Kopers kunnen elke betalingsmethode gebruiken die eerder door PayPal is opgeslagen of aangeboden.
+[!DNL PayPal payment buttons], die PayPal gebruiken om een aankoop te voltooien, slaat het verzendadres, het factuuradres en de betalingsgegevens van je winkel op voor later gebruik. Kopers kunnen elke betalingsmethode gebruiken die eerder door PayPal is opgeslagen of aangeboden.
 
 ![PayPal-knop](assets/paypal-button.png){width="350" zoomable="yes"}
 
-U kunt [!UICONTROL PayPal Smart Buttons] in de opslagconfiguratie of de [!DNL Payment Services] Home.  Zie [Instellingen](settings.md#payment-buttons) voor meer informatie .
+U kunt [!UICONTROL PayPal payment buttons] in de opslagconfiguratie of de [!DNL Payment Services] Home.  Zie [Instellingen](settings.md#payment-buttons) voor meer informatie .
 
 Zie PayPal&#39;s [Documentatie over betalingsmethoden](https://developer.paypal.com/docs/checkout/payment-methods/) om te leren in welke landen elke betalingsmethode momenteel beschikbaar is.
 

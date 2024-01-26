@@ -3,7 +3,7 @@ title: Inschakelen [!DNL Payment Services] voor productie
 description: Voltooi het instapproces door [!DNL Payment Services] voor de productie.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: ff83c83a054e5b14814cc3076744c5517081a80f
+source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
 workflow-type: tm+mt
 source-wordcount: '1006'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Na u [Configureer uw Commerce Services](connect.md#configure-commerce-services) 
    U wordt omgeleid naar het instellingengebied in de weergave Home met de relevante opties uitgevouwen (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), waar u de [!DNL Payment Services] opties als uw [betalingsmethode](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target="_blank"}.
 
 1. In _[!UICONTROL General Configuration]_, set **[!UICONTROL Enable]**tot `Yes`.
-1. Set **[!UICONTROL Payment Action]**, voor beide _[!UICONTROL Credit Card Fields]_en_[!UICONTROL PayPal Smart Buttons]_ op een van de volgende wijzen:
+1. Set **[!UICONTROL Payment Action]**, voor beide _[!UICONTROL Credit Card Fields]_en_[!UICONTROL PayPal payment buttons]_ op een van de volgende wijzen:
 
    | Instelling | Beschrijving |
    |---|---|
@@ -47,7 +47,7 @@ Na u [Configureer uw Commerce Services](connect.md#configure-commerce-services) 
 
    Het ontruimen zou na elke configuratieverandering moeten worden gedaan.
 
-Zie [Betalingsservices configureren](settings.md) voor meer informatie over het configureren van creditcardvelden en slimme PayPal-knoppen.
+Zie [Betalingsservices configureren](settings.md) voor meer informatie over het configureren van creditcardvelden en PayPal-betalingsknoppen.
 
 ## Volledige merchant aan boord
 
