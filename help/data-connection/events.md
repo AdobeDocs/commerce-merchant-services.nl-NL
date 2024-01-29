@@ -4,7 +4,7 @@ description: Leer welke gegevens elke gebeurtenis vastlegt.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: 136cd11e65674ec6e797aeaabd80750a50324566
+source-git-commit: 9001cd24db0941b7c7edcfd5b10464dc90084fd7
 workflow-type: tm+mt
 source-wordcount: '6957'
 ht-degree: 0%
@@ -586,7 +586,7 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 
 ## Back office evenementen
 
-De back office gebeurtenissen bevatten informatie over de status van een bestelling, zoals of een bestelling is geplaatst, geannuleerd, terugbetaald, verzonden of voltooid. De gegevens die deze server-zijgebeurtenissen verzamelen tonen een 360 mening van de verkooporde. Deze weergave helpt handelaren om bij het ontwikkelen van marketingcampagnes de gehele orderstatus beter te bepalen of te analyseren. U kunt bijvoorbeeld trends waarnemen in bepaalde productcategorieën die goed presteren op verschillende momenten van het jaar. Bijvoorbeeld winterkleding die beter verkoopt tijdens koudere maanden of bepaalde productkleuren waarin consumenten in de loop der jaren geïnteresseerd zijn. Bovendien kunnen de gegevens van de ordestatus u helpen de waarde van de levenklant berekenen door de neiging van een klant te begrijpen om op vorige orden gebaseerd om te zetten.
+De gebeurtenissen van het achterkantoor bevatten informatie over de status van een orde, zoals als een orde was [geplaatst](#orderplaced), [geannuleerd](#ordercancelled), [terugbetaald](#orderitemreturncompleted), [verscheept](#ordershipmentcompleted), of [voltooid](#ordershipmentcompleted). De gegevens die deze server-zijgebeurtenissen verzamelen tonen een 360 mening van de verkooporde. Deze weergave helpt handelaren om bij het ontwikkelen van marketingcampagnes de gehele orderstatus beter te bepalen of te analyseren. U kunt bijvoorbeeld trends waarnemen in bepaalde productcategorieën die goed presteren op verschillende momenten van het jaar. Bijvoorbeeld winterkleding die beter verkoopt tijdens koudere maanden of bepaalde productkleuren waarin consumenten in de loop der jaren geïnteresseerd zijn. Bovendien kunnen de gegevens van de ordestatus u helpen de waarde van de levenklant berekenen door de neiging van een klant te begrijpen om op vorige orden gebaseerd om te zetten.
 
 >[!NOTE]
 >

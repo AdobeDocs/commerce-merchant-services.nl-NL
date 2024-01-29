@@ -4,9 +4,9 @@ description: Leer hoe u de [!DNL Data Connection] uit Adobe Commerce.
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
-source-git-commit: 688eabddaf4b3faab98c60cf440fe6e9c6772790
+source-git-commit: 9001cd24db0941b7c7edcfd5b10464dc90084fd7
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '481'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,8 @@ Voordat u de extensie installeert, [de voorwaarden opnieuw bekijken](overview.md
 ## De extensie installeren
 
 De [!DNL Data Connection] de extensie is beschikbaar via de [Adobe Marketplace](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html). Wanneer u deze extensie installeert vanaf de opdrachtregel van de server, wordt verbinding gemaakt met de Adobe Commerce-installatie als een [service](../landing/saas.md). Wanneer het proces is voltooid, **[!DNL Data Connection]** en **Commerce Services Connector** worden weergegeven op **Systeem** menu onder **Services** in de handel _Beheerder_.
+
+![[!DNL Data Connection] extensiebeheerweergave](assets/epc-adminui.png)
 
 >[!IMPORTANT]
 >
