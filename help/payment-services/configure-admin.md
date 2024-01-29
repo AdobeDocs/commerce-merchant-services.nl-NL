@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 feature: Payments, Checkout, Configuration
-source-git-commit: 31c1c9a99e75feae7a2a81faf17921a63a03a526
+source-git-commit: 8dd4f629fa60959588cee4ea22f9fb577f338716
 workflow-type: tm+mt
-source-wordcount: '1392'
+source-wordcount: '1402'
 ht-degree: 1%
 
 ---
@@ -86,7 +86,7 @@ Zie [Betalingsopties](payments-options.md#paypal-smart-buttons) voor meer inform
 
 ## [!UICONTROL Apple Pay]
 
-De [!UICONTROL Apple Pay] Met deze betalingsoptie kan de verkoper Apple Pay aanbieden aan zijn kopers, die met Touch ID op hun apparaten aankopen kunnen doen via de Safari-browser.
+De [!UICONTROL Apple Pay] Met deze betalingsoptie kan de verkoper Apple Pay aanbieden aan zijn kopers, die met Touch ID op hun apparaten aankopen kunnen doen via de Safari-browser. Merchants kunnen maximaal 99 domeinen per zakelijke account toevoegen.
 
 Zie [Betalingsopties](payments-options.md#apple-pay-button) voor meer informatie .
 
