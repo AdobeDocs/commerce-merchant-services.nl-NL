@@ -2,9 +2,10 @@
 title: '[!DNL Live Search] Gebeurtenissen'
 description: Meer informatie over hoe gebeurtenissen gegevens verzamelen voor [!DNL Live Search].
 feature: Services, Eventing
-source-git-commit: c14ba55bee54954ffcfe760e26dc1d69646ecd69
+exl-id: b0c72212-9be0-432d-bb8d-e4c639225df3
+source-git-commit: 8d669cf6042340659574c86a43836a02954f24ce
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '462'
 ht-degree: 0%
 
 ---
@@ -39,17 +40,17 @@ In deze tabel worden de gebeurtenissen beschreven die door [!DNL Live Search] st
 
 ## Vereiste dashboardgebeurtenissen
 
-Sommige gebeurtenissen zijn vereist om de [Het dashboard voor live zoeken](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/performance.html)
+Sommige gebeurtenissen zijn vereist om de [Het dashboard voor live zoeken](performance.md)
 
-| Dashboardgebied | Gebeurtenissen |
-| ----- | ---- | 
-| Unieke zoekopdrachten | `search-request-sent`,`search-response-received` |
-| Zoekopdrachten met nulresultaten | `search-request-sent`,`search-response-received` |
-| Resultaatsnelheid nul | `search-request-sent`,`search-response-received` |
-| Populaire zoekopdrachten | `search-request-sent`,`search-response-received` |
-| Gem. klikpositie | `search-request-sent`,`search-response-received`, `search-results-view`, `search-product-click` |
-| Doorklikfrequentie | `search-request-sent`,`search-response-received`, `search-results-view`, `search-product-click` |
-| Omrekeningskoers | `search-request-sent`,`search-response-received`, `search-results-view`, `search-product-click`,`product-view`,`add-to-cart`,`place-order` |
+| Dashboardgebied | Gebeurtenissen | Veld samenvoegen |
+| ------------------- | ------------- | ---------- |
+| Unieke zoekopdrachten | `page-view`, `search-request-sent`, | searchRequestId |
+| Zoekopdrachten met nulresultaten | `page-view`, `search-request-sent`, | searchRequestId |
+| Resultaatsnelheid nul | `page-view`, `search-request-sent`, | searchRequestId |
+| Populaire zoekopdrachten | `page-view`, `search-request-sent`, | searchRequestId |
+| Gem. klikpositie | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click` | searchRequestId |
+| Doorklikfrequentie | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click` | searchRequestId, sku |
+| Omrekeningskoers | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click`, `product-view`, `add-to-cart`, `place-order` | searchRequestId, sku |
 
 ### Vereiste contexten
 
