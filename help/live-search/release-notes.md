@@ -3,9 +3,9 @@ title: "[!DNL Live Search] Opmerkingen bij de release"
 description: "De meest recente releasegegevens voor [!DNL Live Search] uit Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 2b0ca3f5a68e75ef4b4e71ac7705b17534e16845
+source-git-commit: 033fff8820b5467b5b24b03159e4141ff2e6d725
 workflow-type: tm+mt
-source-wordcount: '1822'
+source-wordcount: '1772'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,10 @@ Updates zijn:
 
 Deze nota&#39;s beschrijven updates die buiten een versioned versie of verbeteringen aan de ontvangen dienst werden gepubliceerd.
 
+_13 februari 2024_
+
+![Nieuw](../assets/new.svg) [!DNL Live Search] ondersteunt nu het instellen van een standaardregel voor [Merchandising zoeken](rules.md).
+
 _27 oktober 2023_
 
 ![Nieuw](../assets/new.svg) De [!DNL Live Search] De PLP-widget ondersteunt nu kleurstalen.
@@ -41,37 +45,26 @@ _25 april 2023_
 
 ![Nieuw](../assets/new.svg) [!DNL Live Search] klanten kunnen nu profiteren van de nieuwe [SaaS-prijsindexer](../price-index/index.md).
 
-## [!DNL Live Search] 4.1.0. {#410}
+<!--## [!DNL Live Search] 4.1.0 {#410}
 
-_13 feb. 2024_
+_Feb 13, 2024_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
 
-### Nieuwe functies
+### New Features
 
-![Nieuw](../assets/new.svg) [!DNL Live Search] ondersteunt nu het instellen van een standaardregel voor [Merchandising zoeken](rules.md).
-![Nieuw](../assets/new.svg) Er zijn meerdere nieuwe functies toegevoegd aan de [PLP-widget](plp-styling.md):
+![New](../assets/new.svg) Multiple new features have been added to the [PLP widget](plp-styling.md):
 
-* Schakelen tussen lijst-/rasterweergave
-* Toevoegen aan winkelwagentjes
-* Staalondersteuning
-* Meerdere afbeeldingen per product
-* Prijsschuifregelaars
-* Taalondersteuning
+* List/grid view toggling
+* Add to Cart buttons
+* Swatch support
+* Multiple images per product
+* Price sliders
+* Language support
 
-Handelaren moeten de [!DNL Live Search] extensie >= 4.1.0 voor toegang tot deze functies.
+Merchants must upgrade the [!DNL Live Search] extension to version >= 4.1.0 to access these features.
 
-Nadat u versie 3.1.1 of hoger hebt geïnstalleerd, schakelt u de nieuwe indexen in:
-
-* Diervoeders productprijzen
-* Websitegegevensinvoer
-* Scopes klant groepeert gegevenstoevoer
-
-Na bevordering, test de bijgewerkte configuratie in QA of het Opvoeren alvorens de veranderingen in productie te duwen.
-
-## Vorige versies
-
-+++4.0.0 en eerder
+--->
 
 ## [!DNL Live Search] 4.0.0. {#400}
 
@@ -92,6 +85,18 @@ _13 nov. 2023_
 ![Repareren](../assets/fix.svg) De [!DNL Live Search] PLP-widget is nu standaard ingeschakeld voor nieuwe installaties.
 ![Repareren](../assets/fix.svg) CSS-stijlen opnieuw geconfigureerd om widgetklassen beter te isoleren.
 ![Repareren](../assets/fix.svg) Kleine oplossingen voor problemen
+
+Nadat u versie 3.1.1 of hoger hebt geïnstalleerd, schakelt u de nieuwe indexen in:
+
+* Diervoeders productprijzen
+* Websitegegevensinvoer
+* Scopes klant groepeert gegevenstoevoer
+
+Na bevordering, test de bijgewerkte configuratie in QA of het Opvoeren alvorens de veranderingen in productie te duwen.
+
+## Vorige versies
+
++++3.1.1 en eerdere versies
 
 ## [!DNL Live Search] 3.1.1 {#311}
 
