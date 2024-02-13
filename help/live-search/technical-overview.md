@@ -3,9 +3,9 @@ title: "Technisch overzicht"
 description: "[!DNL Live Search] instapkaartstroom, systeemvereisten, grenzen en beperkingen"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: 3d2b63280c2a890d7f84208efe3687c0d99e8e38
+source-git-commit: e235073031cae1304eaae4605d2f94332e52284f
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1028'
 ht-degree: 0%
 
 ---
@@ -133,7 +133,7 @@ Deze video is een inleiding op Categorie Merchandising.
 
 ## Widget-codeopslagplaats
 
-De widget pagina met productlijsten en de widget Pop-over zoeken kunnen beide worden gedownload van hun kleine opslagplaats.
+De widget pagina met productlijsten en de widget veld Live zoeken kunnen beide worden gedownload van hun kleine opslagplaats.
 
 Op deze manier kunnen ontwikkelaars de functionaliteit en opmaak volledig aanpassen. Deze gebruikers ontvangen de code zelf terwijl nog steeds de voordelen van [!DNL Live Search] service.
 
@@ -160,6 +160,8 @@ Momenteel worden de basisprijzen ondersteund. Geavanceerde prijzen die niet word
 * Minimale geadverteerde prijs
 
 Kijk naar [API-net](../catalog-service/mesh.md) voor complexere prijsberekeningen.
+
+De prijsindeling ondersteunt de landinstellingsinstelling in de instantie Commerce: *Winkels* > Instellingen > *Configuratie* > Algemeen > *Algemeen* > Lokale opties > Landinstelling.
 
 ## PWA-ondersteuning
 
@@ -192,7 +194,7 @@ Te gebruiken [!DNL Live Search] met PWA Studio moeten de integrators ook :
 ## Momenteel niet ondersteund
 
 * De [Geavanceerd zoeken](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) module is uitgeschakeld wanneer [!DNL Live Search] wordt geïnstalleerd en wordt de koppeling Geavanceerd zoeken in de voettekst van de winkel verwijderd.
-* [Prijsniveau](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-tier.html) en [Speciale prijzen](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-special.html) worden niet ondersteund in de [!DNL Live Search] Widget Pop-over en pagina met productaanbiedingen.
+* [Prijsniveau](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-tier.html) en [Speciale prijzen](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-special.html) worden niet ondersteund in de [!DNL Live Search] veld- en pagina met productaanbiedingen.
 
 ## Cookies
 

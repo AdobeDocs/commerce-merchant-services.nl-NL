@@ -3,9 +3,9 @@ title: '[!DNL Catalog Service]'
 description: '''[!DNL Catalog Service] voor Adobe Commerce biedt een manier om de inhoud van de pagina''s met productweergaven en de pagina''s met productlijsten veel sneller op te halen dan de GraphQL-zoekopdrachten van de native Adobe Commerce.'''
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
 recommendations: noCatalog
-source-git-commit: 8e349cb8cfba7c4d828a6f3666a3b27fecfdbd15
+source-git-commit: d9d9506b2555bc30d6fbec67c65fa220d9a51e91
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '890'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ De [!DNL Catalog Service] gebruik [GraphQL](https://graphql.org/) om productgege
 
 Adobe Commerce heeft twee GraphQL-systemen. Het kernGraphQL systeem verstrekt een brede waaier van vragen (lees verrichtingen) en mutaties (schrijf verrichtingen) die een verkoopster toestaan om met vele soorten pagina&#39;s, met inbegrip van product, klantenrekening, kar, controle, en meer in wisselwerking te staan. Nochtans, worden de vragen die productinformatie terugkeren niet geoptimaliseerd voor snelheid. Het GraphQL-systeem voor services kan alleen query&#39;s uitvoeren op producten en gerelateerde informatie. Deze query&#39;s leveren meer op dan vergelijkbare core query&#39;s.
 
-Klanten van de Catalogusservice kunnen de nieuwe [SaaS-prijsindexer](../price-index/index.md), die snellere updates van prijswijzigingen en synchronisatietijd biedt.
+[!DNL Catalog Service] klanten kunnen de nieuwe [SaaS-prijsindexer](../price-index/index.md), die snellere updates van prijswijzigingen en synchronisatietijd biedt.
 
 ## Architectuur
 
@@ -62,7 +62,7 @@ Complexe productopties worden verenigd en onderscheiden door hun gedrag, niet do
 
 ### Prijzen
 
-Eenvoudige producten vertegenwoordigen de basisverkoopeenheid die een prijs heeft. De Catalogusservice berekent de normale prijs vóór kortingen en de uiteindelijke prijs na kortingen. Prijsberekeningen kunnen vaste productbelastingen bevatten. Ze sluiten gepersonaliseerde promoties uit.
+Eenvoudige producten vertegenwoordigen de basisverkoopeenheid die een prijs heeft. [!DNL Catalog Service] berekent de reguliere prijs vóór kortingen en de uiteindelijke prijs na kortingen. Prijsberekeningen kunnen vaste productbelastingen bevatten. Ze sluiten gepersonaliseerde promoties uit.
 
 Een complex product heeft geen vaste prijs. In plaats daarvan retourneert de Catalogusservice de prijzen van gekoppelde voorbeelden. Een handelaar kan bijvoorbeeld in eerste instantie dezelfde prijzen toewijzen aan alle varianten van een configureerbaar product. Als bepaalde grootten of kleuren niet populair zijn, kan de handelaar de prijzen van die varianten verlagen. De prijs van het complexe (configureerbare) product vertoont dus eerst een prijsbereik, dat de prijs van zowel standaard- als niet-populaire varianten weerspiegelt. Nadat de winkelier een waarde voor alle beschikbare opties heeft geselecteerd, toont de winkel één enkele prijs.
 

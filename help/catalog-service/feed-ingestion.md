@@ -1,23 +1,19 @@
 ---
 title: Feed Ingestie Service
 description: Meer informatie over de Feed Ingestie Service voor Adobe Commerce
-source-git-commit: b57fc43d23dbbcbcae31743fd0ab9c1b3d1c1084
+exl-id: bb5aec74-faca-42ec-9fdb-3261677d451e
+source-git-commit: d3798efa038c35f71bb0bb6874d954a8e66c7467
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '348'
 ht-degree: 0%
 
 ---
 
-
 # Feed Ingestie Service
-
->[!NOTE]
->
->De dienst van de Ingestie van het voer is momenteel in privé bèta. Het is nog niet beschikbaar voor algemeen gebruik.
 
 Met de Feed Ingestieservice kunnen klanten met grote en/of complexe catalogi gegevens rechtstreeks naar Adobe Commerce-services verzenden.
 
-De dienst van de Ingestie van de Diervoeders vermindert de tijd het om productveranderingen (prijsupdates, toevoegend nieuwe attributen) te verwerken door de instantie van Adobe Commerce te mijden en catalogusgegevens van een derde van de Planning van het Middel van de Onderneming (ERP) rechtstreeks aan de diensten van Adobe Commerce te bewegen.
+De dienst van de Ingestie van de Diervoeders vermindert de tijd die het neemt om productveranderingen (prijsupdates, toevoegend nieuwe attributen) te verwerken door de instantie van Adobe Commerce te mijden en catalogusgegevens van een derde van de Planning van het Middel van de Onderneming (ERP) rechtstreeks aan de diensten van Adobe Commerce te bewegen.
 
 Deze service is bedoeld voor klanten die hun productcatalogus opslaan en beheren in een systeem dat zich niet in de belangrijkste Adobe Commerce-toepassing bevindt. Het wordt verstrekt als API, zodat de klanten het in hun bestaande systemen kunnen integreren, die extra flexibiliteit in verstrekken hoe het wordt opgesteld.
 
@@ -36,12 +32,6 @@ Afhankelijk van de Adobe Commerce-configuratie kunnen gegevensopslag en gegevens
 
 Door de kerntoepassing van de Handel over te slaan en gegevens rechtstreeks naar de diensten van de Handel te verplaatsen, worden de productupdates weerspiegeld in de winkel sneller. De catalogusgegevens van de kern, zoals SKUs, worden verzonden naar de belangrijkste toepassing van de Handel voor afzonderlijke verwerking.
 
-## Deelnemen aan de bèta
+## API
 
-De Feed IngestiService is ontworpen voor:
-
-* Klanten uit de middelste onderneming met headless implementaties
-* Klanten met grote, complexe catalogi
-* Klanten die de Adobe Commerce Admin niet gebruiken om catalogusgegevens te beheren, gebruiken in plaats daarvan een ERP- of een extern systeem om catalogusgegevens te beheren
-
-Als u geïnteresseerd bent in deelname aan het bètaprogramma, neemt u contact op met het team op sagonzal@adobe.com.
+De [API-documentatie voor Feed IngestiService](https://developer.adobe.com/commerce/services/feed-ingestion) verstrekt details over hoe te om de dienst uit te voeren.

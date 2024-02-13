@@ -2,9 +2,9 @@
 title: "Search Merchandising"
 description: "[!DNL Live Search] merchandising-regels combineren logica met acties om de winkelervaring vorm te geven."
 exl-id: d06a3040-6987-4813-90ae-2f7b3ad0b232
-source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
+source-git-commit: 2b0ca3f5a68e75ef4b4e71ac7705b17534e16845
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '681'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Elke regel heeft drie hoofdcomponenten:
 * Gebeurtenissen - De acties die plaatsvinden wanneer aan de voorwaarden wordt voldaan.
 * Details - De naam van de regel, en facultatief tijdkader en beschrijving.
 
-U kunt meerdere voorwaarden en handelingen combineren en een regel voor een periode laten activeren.
+U kunt meerdere voorwaarden en handelingen combineren en een regel voor een periode laten activeren. U kunt ook een standaardregel instellen die wordt toegepast, zelfs als er geen zoekterm is ingesteld.
 
 ## Vereisten
 
@@ -46,6 +46,10 @@ De operatoren Afstemmen `All` en `Any` Bepaal de logische exploitant die wordt g
 * `Any` - Gebruikt de `OR` logische operator om meerdere voorwaarden samen te voegen.
 
 Wanneer het samenstellen van een complexe regel, kan het helpen om het met inspringing uit te schrijven om de voorwaarden, bijbehorende gebeurtenissen, en productnamen of SKUs te beschrijven die nodig zijn om de resultaten terug te keren u wilt bereiken. Vervolgens bouwt u de regel en test u het resultaat.
+
+## Standaardregel
+
+U kunt een standaardregel instellen die wordt toegepast wanneer geen zoekterm wordt opgegeven of wanneer geen andere zoekregel kan worden toegepast. Als u de standaardregel op &quot;Meest gekocht&quot;plaatst, dan zullen alle vragen aan dat rangschikkende type in gebreke blijven, tenzij super-ceded door een specifiekere onderzoekstermijn. Er kan geen zoekterm voor de standaardregel worden ingesteld.
 
 ## Volgorde van prioriteit met meerdere regels
 

@@ -1,16 +1,16 @@
 ---
-title: '[!DNL Catalog Service] Aanvullende informatie'
+title: '''[!DNL Catalog Service] Opmerkingen bij de release'
 description: De meest recente releasegegevens voor [!DNL Catalog Service] voor Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 8996772883b001babc09a3ae5a63310b23e58ae0
+source-git-commit: 4ce37b03937cf5a8413831c720d05387031a6094
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '547'
 ht-degree: 0%
 
 ---
 
-# [!DNL Catalog Service] Aanvullende informatie
+# [!DNL Catalog Service] Opmerkingen bij de release
 
 In deze releaseopmerkingen worden de meest recente versies van [!DNL Catalog Service].
 Er wordt ondersteuning geboden voor de belangrijkste uitgebrachte versie. Opmerkingen bij de release voor oudere versies worden ter referentie verschaft.
@@ -22,21 +22,20 @@ Updates zijn:
 
 ## Huidige hoofdversie
 
-### V1.13 Release
+### V1.16 Release
 
-_12 oktober 2023_
+_13 feb. 2023_
 
 [!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) Catalogusservice ondersteunt de `inStock` markering voor productvarianten.
-![Nieuw](../assets/new.svg) `urlKey` en `externalId` zijn toegevoegd aan het GraphQL-schema.
-![Nieuw](../assets/new.svg) Downloadbare producten en cadeaukaarten worden nu ondersteund.
+![Nieuw](../assets/new.svg) Productvideo&#39;s worden nu ondersteund door de API voor catalogusservice.
+![Repareren](../assets/fix.svg) Er wordt nu steun verleend voor bundelproducten met vaste prijzen.
+![Repareren](../assets/fix.svg) Opties buiten de voorraad worden nu weergegeven in de PDP-widget.
 
 #### Bekende beperkingen
 
 Deze functies worden nog niet ondersteund:
 
-* Bundel producten met vaste prijs
 * Maximale grootte voor dynamische attributen lading is 9 MB.
 * Productprijs per groep. Kan worden berekend met eenvoudige productprijzen.
 * In een afbeeldingsarray bevat alleen de eerste afbeelding rollen.
@@ -49,6 +48,16 @@ De volgende beperkingen kunnen worden opgelost met behulp van het API-net en de 
 ## Vorige versies
 
 +++ Vorige versies
+
+### V1.13 Release
+
+_12 oktober 2023_
+
+[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+
+![Nieuw](../assets/new.svg) Catalogusservice ondersteunt de `inStock` markering voor productvarianten.
+![Nieuw](../assets/new.svg) `urlKey` en `externalId` zijn toegevoegd aan het GraphQL-schema.
+![Nieuw](../assets/new.svg) Downloadbare producten en cadeaukaarten worden nu ondersteund.
 
 ### V1.12 Release
 

@@ -2,9 +2,9 @@
 title: Widget pagina met productaanbiedingen
 description: Het inschakelen en opmaken van de [!DNL Live Search Product Listing Page Widget]
 exl-id: f7346a06-a8c7-4a33-8437-ea4f61d9281f
-source-git-commit: c77b2f9cb55d3eb339dcc900ce606b94c592f559
+source-git-commit: 2b0ca3f5a68e75ef4b4e71ac7705b17534e16845
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '304'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,16 @@ De PLP-widget uitschakelen:
 
 1. Ga naar **Winkels** > Instellingen > **Configuratie** > **[!DNL Live Search]** > **Storefront-functies** en instellen **Widgets productlijst inschakelen** naar &quot;Nee&quot;.
 1. Selecteren **Config opslaan** om de instelling op te slaan.
+
+## Widget-functies
+
+De PLP-widget biedt een aantal functies die op een doorzoekbare productpagina worden verwacht. Deze omvatten:
+
+* Filteren op kenmerken.
+* Ondersteuning voor kleurstalen
+* Toevoegen aan winkelwagentje
+* Ondersteuning voor meerdere talen
+* Prijsschuifregelaars
 
 ## Voorbeeld van stijlen
 

@@ -1,15 +1,15 @@
 ---
-title: "Prestaties"
+title: "Prestatiedashboard"
 description: "De [!DNL Live Search] Het prestatiedashboard biedt inzicht in de zoektermen die kopers gebruiken."
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
-source-git-commit: 0b0bf898719338f5dacd55d8e89aaf2c9fa8a3c0
+source-git-commit: d9d9506b2555bc30d6fbec67c65fa220d9a51e91
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '481'
 ht-degree: 0%
 
 ---
 
-# Prestaties
+# Prestatiedashboard
 
 De [!DNL Live Search] Het prestatiedashboard biedt inzicht in de zoektermen die kopers gebruiken. De informatie kan worden gebruikt om tendensen te identificeren, klik-door te verhogen, en de omzettingspercentage te verbeteren. Het dashboard van Prestaties verstrekt een momentopname van onderzoeksmetriek voor een specifieke datumwaaier en omvat de volgende rapporten:
 
@@ -18,6 +18,8 @@ De [!DNL Live Search] Het prestatiedashboard biedt inzicht in de zoektermen die 
 * Populaire resultaten
 
 ![Prestaties](assets/performance-unique-searches.png)
+
+U kunt ook verwijzen naar de [Gegevensbeheerdashboard](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) voor meer gegevens over gegevenssynchronisatie.
 
 ## Een rapport weergeven
 
@@ -29,7 +31,6 @@ De [!DNL Live Search] Het prestatiedashboard biedt inzicht in de zoektermen die 
 >[!NOTE]
 >
 >Het prestatiedashboard wordt elke 12 uur bijgewerkt.
-
 
 ## Veldomschrijvingen
 

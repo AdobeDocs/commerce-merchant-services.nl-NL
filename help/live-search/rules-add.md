@@ -2,9 +2,9 @@
 title: "Regels toevoegen"
 description: "Leer hoe u regels voor het wijzigen van zoekopdrachten maakt."
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
+source-git-commit: 4ce37b03937cf5a8413831c720d05387031a6094
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1536'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,16 @@ Om een regel te bouwen, moet de eerste stap de regelredacteur gebruiken om de vo
 1. Klik op de knop **Merchandising zoeken** tab.
 1. Klikken **Regel toevoegen** om de regeleditor te starten.
 
+## Type regel
+
+Een zoekopdracht is de zoekopdracht waarin u een specifieke zoekterm, voorwaarden en typen beoordelingen definieert.
+
+Een standaardregel kan worden geplaatst die op alle vragen wordt toegepast, tenzij een specifiekere onderzoeksvraag wordt bepaald. Er kan slechts één standaardregel worden ingesteld en deze mag geen voorwaarden bevatten. Als u Standaard selecteert, wordt de interface van Voorwaarden niet getoond.
+Kies het standaard Intelligente classificatietype en eventuele handmatige classificaties die u wilt toepassen op alle standaardzoekopdrachten. Handmatige classificaties worden altijd toegepast.
+
 ## Voorwaarden
 
-Voorwaarden zijn de vereisten om een gebeurtenis te activeren. Een regel kan tot tien voorwaarden en 25 gebeurtenissen hebben.
+Voorwaarden zijn de vereisten om een gebeurtenis te activeren. Een regel kan tot tien voorwaarden en 25 gebeurtenissen hebben. Een standaardregel kan geen voorwaarden hebben.
 
 ![Regel - Bouw uw regel](assets/rules-add-workspace.png)
 
@@ -52,8 +59,6 @@ Aanvankelijk, geeft de testruit de vraag van het de onderzoeksvakje van de Voorw
 
 1. Om een regel met veelvoudige voorwaarden te bouwen, klik **Voorwaarde toevoegen**.
 Een regel kan tot tien voorwaarden hebben. De logische operator die zich bij twee voorwaarden aansluit, is gebaseerd op de huidige *Overeenkomst* instellen. Standaard, *Overeenkomst* is `All` en de logische operator `AND`.
-
-   ![Regels - Zoekquery bevat](assets/rules-search-query-contains-and.png)
 
 1. Selecteer de tweede voorwaarde en voer de vereiste querytekst in.
 
@@ -180,6 +185,7 @@ De hier ingevoerde informatie wordt weergegeven in het dialoogvenster [Regeldeta
 | Veld | Beschrijving |
 |--- |--- |
 | Naam | De naam van de regel. Regelnamen moeten uniek zijn. |
+| Type regel | Standaard of Query. Het gebrek wordt toegepast op alle regels, tenzij een specifiekere regel van de Vraag wordt bepaald. |
 | Begindatum | De begindatum van de regel, indien gepland. |
 | Einddatum | De einddatum van de regel, indien gepland. |
 | Beschrijving | Een korte beschrijving van de regel. |
