@@ -3,9 +3,9 @@ title: Inleiding tot [!DNL Product Recommendations]
 description: '[!DNL Product Recommendations] Dit is een krachtig marketinginstrument dat u kunt gebruiken om conversies te verhogen, inkomsten te verhogen en winkelbetrokkenheid te stimuleren.'
 exl-id: 818ac876-58c9-4c68-975e-53da59ed6b52
 recommendations: noCatalog
-source-git-commit: d9d9506b2555bc30d6fbec67c65fa220d9a51e91
+source-git-commit: a0dded0beac3d45f8944016bd73e4ec1ae3eae22
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---
@@ -25,8 +25,6 @@ Als uw storefront met PWA Studio wordt uitgevoerd, verwijs naar [PWA-documentati
 ## Privacy
 
 Gegevensverzameling ten behoeve van [!DNL Product Recommendations] bevat geen persoonlijk identificeerbare informatie (PII). Ook, zijn alle gebruikers - herkenningstekens zoals koekje IDs en IP adressen strikt geanonimiseerd. Zie voor meer informatie de [Privacybeleid Adobe](https://www.adobe.com/privacy/policy.html).
-
-[!DNL Product Recommendations] gebruikers kunnen naar de [Gegevensbeheerdashboard](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) voor meer gegevens over gegevenssynchronisatie.
 
 ## Productaanbevelingen versus productrelaties
 

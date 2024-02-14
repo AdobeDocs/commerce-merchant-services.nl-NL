@@ -3,9 +3,9 @@ title: Catalogus synchroniseren
 description: Leer hoe u productgegevens exporteert vanuit de [!DNL Commerce] server naar [!DNL Commerce Services].
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
 feature: Catalog Management, Data Import/Export, Catalog Service
-source-git-commit: 6513fd6dce9648407b0878785f5f59f9f39cd5e1
+source-git-commit: 748fb32913f9e7f0dea21f87be20386d9cc0ad17
 workflow-type: tm+mt
-source-wordcount: '1135'
+source-wordcount: '1131'
 ht-degree: 0%
 
 ---
@@ -13,15 +13,19 @@ ht-degree: 0%
 
 # Catalogus synchroniseren
 
->[!NOTE]
->
-> Het dashboard voor catalogussynchronisatie is nu het gegevensbeheerdashboard. Dit vernieuwde dashboard ondersteunt nu [!DNL Product Recommendations], [!DNL Live Search], en [!DNL Catalog Service]. Klanten kunnen het gegevensbeheerdashboard ophalen door de nieuwste versie van een van deze services bij te werken. Lees meer over het onderwerp in de [Gegevensbeheerdashboard](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) documentatie. Dit huidige onderwerp blijft voor die gebruikers die nog moeten bevorderen en nog het dashboard van de Synchronisatie van de Catalogus hebben.
-
 Adobe Commerce gebruikt indexen om catalogusgegevens in tabellen te compileren. Het proces wordt automatisch geactiveerd door [gebeurtenissen](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing) zoals een wijziging van de productprijs of het voorraadniveau.
 
 De dienst van de Synchronisatie van de Catalogus verplaatst productgegevens van een [!DNL Adobe Commerce] aan de [!DNL Commerce Services] de gegevens voortdurend actueel te houden. Bijvoorbeeld: [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) vereist huidige catalogusinformatie om aanbevelingen met correcte namen, prijs, en beschikbaarheid nauwkeurig terug te keren. Gebruik de _Catalogus synchroniseren_ het dashboard om het synchronisatieproces of het [opdrachtregelinterface](#resynccmdline) catalogussynchronisatie activeren en productgegevens opnieuw indexeren voor gebruik door [!DNL Commerce Services].
 
+>[!NOTE]
+>
+> Als u de opdracht _Catalogus synchroniseren_ dashboard of de bevel-lijn interface, moet u hebben [API-sleutel en een SaaS-gegevensruimte geconfigureerd](saas.md).
+
 ## Het dashboard Catalog Sync openen
+
+>[!NOTE]
+>
+> De _Catalogus synchroniseren_ dashboard is alleen beschikbaar als de _Product Recommendations_ modules worden geïnstalleerd en weerspiegelen alleen gegevensprognoses met betrekking tot dat onderdeel. Ondersteuning van andere handelsdiensten, zoals _Live zoeken_ en _Catalogusservice_ zijn gepland voor de toekomst.
 
 Selecteer **Systeem** > _Gegevensoverdracht_ > **Catalogus synchroniseren**.
 
@@ -42,7 +46,7 @@ Meldt de synchronisatiestatus van:
 - **Mislukt** - Geeft de datum en tijd weer waarop de synchronisatie is uitgevoerd
 - **In uitvoering** - Geeft de datum en tijd weer van de laatste geslaagde synchronisatie
 
-Het synchronisatieproces van de catalogus wordt uitgevoerd tijdens het uitsnijdproces. Als u de verwachte producten niet ziet in de winkel of als de producten geen weerspiegeling zijn van recente wijzigingen die u hebt aangebracht, kunt u deze oplossen [problemen met catalogussynchronisatie](#resolvesync).
+Het synchronisatieproces van de catalogus wordt automatisch om het uur uitgevoerd. Als u de verwachte producten niet ziet in de winkel of als de producten geen weerspiegeling zijn van recente wijzigingen die u hebt aangebracht, kunt u deze oplossen [problemen met catalogussynchronisatie](#resolvesync).
 
 ### Gesynchroniseerde producten
 

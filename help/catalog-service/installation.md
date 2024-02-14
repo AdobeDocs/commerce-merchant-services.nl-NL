@@ -2,9 +2,9 @@
 title: Onboarding en installatie
 description: "Leer hoe u kunt installeren [!DNL Catalog Service]"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 82ed90f48067d7daf20c1a9ebde318d428aad864
+source-git-commit: a0dded0beac3d45f8944016bd73e4ec1ae3eae22
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '578'
 ht-degree: 0%
 
 ---
@@ -145,7 +145,3 @@ Toestaan [!DNL Catalog Service] via een firewall toevoegen `commerce.adobe.io` o
 De [API-net voor Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) laat ontwikkelaars toe om privé of derde APIs en andere interfaces met Adobe producten te integreren gebruikend Adobe IO.
 
 Zie de  [[!DNL Catalog Service] en API-net](mesh.md) onderwerp voor installatie en configuratiedetails.
-
-## Gegevensbeheerdashboard
-
-Gebruikers kunnen naar de [Gegevensbeheerdashboard](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) voor meer informatie over [!DNL Catalog Service] gegevenssynchronisatie.
