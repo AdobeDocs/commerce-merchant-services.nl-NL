@@ -3,9 +3,9 @@ title: Connect Commerce-gegevens naar Adobe Experience Platform
 description: Leer hoe u de gegevens van de Handel met de Adobe Experience Platform verbindt.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 4a5877d6e1a5c7d840e36f4913306b0c440bbac5
+source-git-commit: 540c423ecf7e50a36c1137f43a9cf9673658c805
 workflow-type: tm+mt
-source-wordcount: '2213'
+source-wordcount: '2501'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Wanneer u de [!DNL Data Connection] extensie, worden twee nieuwe configuratiepag
 
 Als u uw Adobe Commerce-instantie wilt verbinden met de Adobe Experience Platform, moet u beide connectors configureren, te beginnen met de Commerce Services-connector en vervolgens voltooien met de [!DNL Data Connection] extensie.
 
-## De schakelaar van de Diensten van de Handel bijwerken
+## Vorm de schakelaar van de Diensten van de Handel
 
 Als u eerder een dienst van Adobe Commerce hebt geïnstalleerd, hebt u waarschijnlijk reeds de schakelaar van de Diensten van de Handel gevormd. Indien niet, dan moet u de volgende taken op [Commerce Services-connector](../landing/saas.md) pagina:
 
@@ -29,11 +29,53 @@ Als u eerder een dienst van Adobe Commerce hebt geïnstalleerd, hebt u waarschij
 
 Nadat u de schakelaar van de Diensten van de Handel vormt, vormt u dan [!DNL Data Connection] extensie.
 
-## Werk de [!DNL Data Connection] extension
+## Vorm [!DNL Data Connection] extension
 
-In deze sectie verbindt u uw Adobe Commerce-exemplaar met de Adobe Experience Platform met behulp van uw organisatie-id. Vervolgens kunt u het type gegevens opgeven (winkel en achterkantoor) dat u naar de rand van het Experience Platform wilt verzenden.
+In deze sectie leert u hoe u de [!DNL Data Connection] extensie.
 
-## Algemeen
+### Servicerekening en verificatiegegevens toevoegen
+
+Als u van plan bent om te verzamelen en te verzenden [historische-ordegegevens](#send-historical-order-data) of [(bèta) klantprofielgegevens](#send-customer-profile-data), moet u de dienstrekening en credentiedetails toevoegen. Ook als u het [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) moet u deze stappen uitvoeren.
+
+Als u slechts storefront of achterkantoorgegevens verzamelt en verzendt, kunt u aan overslaan [algemeen](#general) sectie.
+
+#### Stap 1: Een project maken in Adobe Developer Console
+
+Creeer een project in de Console van Adobe Developer die Handel voor authentiek verklaart zodat kan het Experience Platform API vraag maken.
+
+Volg de stappen in het dialoogvenster [API&#39;s van Experience Platforms verifiëren en openen](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html) zelfstudie.
+
+Terwijl u de zelfstudie doorloopt, moet u ervoor zorgen dat uw project het volgende heeft:
+
+- Toegang tot het volgende [productprofielen](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#select-product-profiles): **Standaardproductie, alle toegang** en **Alle toegang standaard AEP**.
+- De juiste [rollen en toestemmingen worden gevormd](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#assign-api-to-a-role).
+- Als u hebt besloten JSON Web Tokens (JWT) als uw server-aan-server authentificatiemethode te gebruiken, moet u ook een privé sleutel uploaden.
+
+Het resultaat van deze stap leidt tot een configuratiedossier dat u in de volgende stap gebruikt.
+
+#### Stap 2: configuratiebestand downloaden
+
+Download de [workspace-configuratiebestand](https://developer.adobe.com/commerce/extensibility/events/project-setup/#download-the-workspace-configuration-file). De inhoud van dit bestand kopiëren en in het **Servicerekening/Referentiedetails** pagina van de Commerce Admin.
+
+1. Navigeer in Commerce Admin naar **Winkels** > Instellingen > **Configuratie** > **Services** > **[!DNL Data Connection]**.
+
+1. Selecteer de server-aan-server vergunningsmethode die u van uitvoerde **Adobe Developer-autorisatietype** -menu. Adobe beveelt het gebruik van OAuth aan. JWT is vervangen. [Meer informatie](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/).
+
+1. (Alleen JWT) Kopieer en plak de inhoud `private.key` in het bestand **Clientgeheim** veld. Gebruik de volgende opdracht om de inhoud te kopiëren.
+
+   ```bash
+   cat config/private.key | pbcopy
+   ```
+
+   Zie [Service Account (JWT)-verificatie](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/) voor meer informatie over de `private.key` bestand.
+
+1. Kopieer de inhoud van het dialoogvenster `<workspace-name>.json` in het bestand **Servicerekening/Referentiedetails** veld.
+
+   ![[!DNL Data Connection] Beheerdersconfiguratie](./assets/epc-admin-config.png){width="700" zoomable="yes"}
+
+1. Klikken **Config opslaan**.
+
+### Algemeen
 
 1. Ga in Beheer naar **Systeem** > Services > **[!DNL Data Connection]**.
 
@@ -47,15 +89,19 @@ In deze sectie verbindt u uw Adobe Commerce-exemplaar met de Adobe Experience Pl
    >
    >Als u uw eigen AEP Web SDK specificeert, [!DNL Data Connection] De extensie gebruikt de gegevensstroom-id die aan die SDK is gekoppeld en niet de gegevensstroom-id die op deze pagina is opgegeven (indien aanwezig).
 
-## Gegevensverzameling
+### Gegevensverzameling
 
-In deze sectie geeft u het type gegevens op dat u naar de rand van het Experience Platform wilt verzenden. Er zijn twee soorten gegevens: client-side en server-side.
+In deze sectie geeft u het type gegevens op dat u wilt verzamelen en naar de rand van het Experience Platform wilt verzenden. Er zijn drie soorten gegevens:
 
-Gegevens aan de clientzijde zijn gegevens die worden vastgelegd op de opslagront. Dit omvat winkelinteracties, zoals `View Page`, `View Product`, `Add to Cart`, en [aanvraaglijst](events.md#b2b-events) informatie (voor B2B-handelaren). Gegevens aan de serverzijde of gegevens aan de achterzijde van het kantoor zijn gegevens die zijn vastgelegd in de Commerce-servers. Dit omvat informatie over de status van een bestelling, zoals of een bestelling is geplaatst, geannuleerd, terugbetaald, verzonden of voltooid.
+- **Gedrag** (client-side gegevens) zijn gegevens die zijn vastgelegd in de opslagomgeving. Dit omvat winkelinteracties, zoals `View Page`, `View Product`, `Add to Cart`, en [aanvraaglijst](events.md#b2b-events) informatie (voor B2B-handelaren).
+
+- **Achterkantoor** (server-side gegevens) zijn gegevens die zijn vastgelegd in de Commerce-servers. Dit omvat informatie over de status van een bestelling, zoals of een bestelling is geplaatst, geannuleerd, terugbetaald, verzonden of voltooid. Het omvat ook [historische-ordegegevens](#send-historical-order-data).
+
+- (**Beta**) **Profiel** Dit zijn gegevens die betrekking hebben op de profielgegevens van je winkel. Meer informatie [meer](#send-customer-profile-data).
 
 Als u er zeker van wilt zijn dat uw Adobe Commerce-instantie kan beginnen met het verzamelen van gegevens, raadpleegt u de [voorwaarden](overview.md#prerequisites).
 
-Zie het gebeurtenisonderwerp om meer over te leren [storefront](events.md#storefront-events) en [achterkantoor](events.md#back-office-events) gebeurtenissen.
+Zie het gebeurtenisonderwerp om meer over te leren [storefront](events.md#storefront-events), [achterkantoor](events.md#back-office-events), en [profiel](events.md#customer-profile-events-server-side) gebeurtenissen.
 
 >[!NOTE]
 >
@@ -67,7 +113,7 @@ Zie het gebeurtenisonderwerp om meer over te leren [storefront](events.md#storef
 
    >[!NOTE]
    >
-   >Als u **Back office evenementen**, worden alle gegevens van het achterkantoor naar de rand van het Experience Platform verzonden. Als een winkelier ervoor kiest zich af te melden voor gegevensverzameling, moet u de privacyvoorkeur van de winkels expliciet instellen in het Experience Platform. Dit is anders dan storefront-gebeurtenissen waarbij de verzamelaar al toestemming afhandelt op basis van de voorkeuren van de winkels. [Meer informatie](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset.html) over het instellen van de privacyvoorkeur van een winkelier in het Experience Platform.
+   >Als u **Back office evenementen**, worden alle gegevens van het achterkantoor naar de rand van het Experience Platform verzonden. Als een winkelier ervoor kiest zich af te melden voor gegevensverzameling, moet u de privacyvoorkeur van de winkels expliciet instellen in het Experience Platform. Dit is anders dan storefront-gebeurtenissen waarbij de verzamelaar al toestemming afhandelt op basis van de voorkeuren van de winkels. Meer informatie [meer](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset.html) over het instellen van de privacyvoorkeur van een winkelier in het Experience Platform.
 
 1. (Sla deze stap over als u uw eigen AEP Web SDK gebruikt.) [Maken](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html#create) een gegevensstroom in de Adobe Experience Platform of selecteer een bestaande gegevensstroom u voor inzameling wilt gebruiken. Voer die gegevensstroom-id in het dialoogvenster **DataStream-id** veld.
 
@@ -95,7 +141,7 @@ Zie het gebeurtenisonderwerp om meer over te leren [storefront](events.md#storef
       bin/magento saas:resync --feed orders
       ```
 
-## Veldomschrijvingen
+#### Veldomschrijvingen
 
 | Veld | Beschrijving |
 |--- |--- |
@@ -108,11 +154,44 @@ Zie het gebeurtenisonderwerp om meer over te leren [storefront](events.md#storef
 | DataStream-id (website) | ID die gegevens om van Adobe Experience Platform aan andere Adobe DX producten toestaat te stromen. Deze id moet zijn gekoppeld aan een specifieke website in uw specifieke Adobe Commerce-exemplaar. Als u uw eigen SDK van het Web van het Experience Platform specificeert, specificeer geen gegevensstroom identiteitskaart op dit gebied. De [!DNL Data Connection] De extensie gebruikt de gegevensstroom-id die aan die SDK is gekoppeld en negeert de gegevensstroom-id die in dit veld is opgegeven (indien aanwezig). |
 | Gegevensset-id (website) | Identiteitskaart van de dataset die uw gegevens van de Handel bevat. Dit veld is vereist tenzij u de optie **Gebeurtenissen van Storefront** of **Back office evenementen** selectievakjes. Ook, als u uw eigen SDK van het Web van het Experience Platform gebruikt en daarom geen gegevensstroom identiteitskaart specificeerde, moet u dataset ID nog toevoegen verbonden aan uw gegevensstroom. Anders kunt u dit formulier niet opslaan. |
 
->[!NOTE]
->
->Na het instappen, beginnen de storefrontgegevens aan de rand van het Experience Platform te stromen. Het duurt ongeveer vijf minuten voordat de gegevens op het achterkantoor aan de rand worden weergegeven. Volgende updates zijn zichtbaar aan de rand op basis van het uitsnijdschema.
+Na het instappen, beginnen de storefrontgegevens aan de rand van het Experience Platform te stromen. Het duurt ongeveer vijf minuten voordat de gegevens op het achterkantoor aan de rand worden weergegeven. Volgende updates zijn zichtbaar aan de rand op basis van het uitsnijdschema.
 
-## Gegevens in historische volgorde verzenden
+### Klantprofielgegevens verzenden
+
+>[!IMPORTANT]
+>
+>Deze functie is in bèta. Als u wilt deelnemen aan het bètaprogramma, verzendt u een aanvraag naar [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
+
+Er zijn twee typen profielgegevens die u naar het Experience Platform kunt verzenden: profielrecords en tijdreeksprofielgebeurtenissen.
+
+Een profielrecord bevat gegevens die worden opgeslagen wanneer een winkelier een profiel maakt in uw instantie Commerce, zoals de naam van de winkelier. Wanneer uw schema en dataset zijn [correct geconfigureerd](profile-data.md), wordt een profielrecord naar het Experience Platform verzonden en doorgestuurd naar de profielbeheer- en segmentatiedienst van de Adobe: [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html).
+
+Profielgebeurtenissen uit een tijdreeks bevatten gegevens over de profielgegevens van uw klant, zoals het maken, bewerken of verwijderen van een account op uw site. Wanneer de gegevens van de profielgebeurtenis naar het Experience Platform worden verzonden, verblijft het in een dataset waar het door andere producten DX kan worden gebruikt.
+
+1. Zorg ervoor dat u [verstrekt](#add-service-account-and-credential-details) serviceaccount en referentiedetails.
+
+1. Zorg ervoor u een schema en dataset hebt die voor wordt gespecificeerd [opnemen van profielrecordgegevens](profile-data.md) en [tijdreeksprofiel voor gebeurtenisgegevens invoeren](update-xdm.md#time-series-profile-event-data).
+
+1. Een vinkje plaatsen in het dialoogvenster **Klantprofielen** Schakel het selectievakje in als u profielgegevens naar het Experience Platform wilt verzenden.
+
+1. Voer de **Profielgegevensset-id**.
+
+   De het verslaggegevens van het profiel moeten een verschillende dataset gebruiken dan wat u momenteel voor gedrags en achterkantoorgebeurtenisgegevens gebruikt.
+
+1. Als u profielgebeurtenissen niet via de zelfde gegevensstroom identiteitskaart wilt stromen die u voor gedrag en achterkantoorgegevens gebruikt, verwijder het controleteken uit **Klantprofielen streamen via dezelfde gegevensstroom-id** en voer in plaats daarvan de gegevensstroom-id in die u wilt gebruiken.
+
+Het kan ongeveer 10 minuten duren voordat een profielrecord beschikbaar is in Real-Time CDP. Profielgebeurtenissen beginnen direct met streamen.
+
+#### Veldomschrijvingen
+
+| Veld | Beschrijving |
+|--- |--- |
+| Klantprofielen | Schakel dit selectievakje in als u records met klantprofielen wilt verzamelen en verzenden. |
+| Profielgegevensset-id | Een profielverslag moet een verschillende dataset gebruiken dan de dataset die voor gedrags en achterkantoorgebeurtenissen wordt gebruikt. |
+| Klantprofielen streamen via dezelfde gegevensstroom-id | Bepaal of u dezelfde gegevensstroom wilt gebruiken die momenteel wordt gebruikt voor uw gedrags- en backoffice-gebeurtenissen. |
+| DataStream voor klantprofielen | Geef de recordspecifieke gegevensstroom voor het klantprofiel op. |
+
+### Gegevens in historische volgorde verzenden
 
 Adobe Commerce verzamelt maximaal vijf jaar [historische ordegegevens en status](events.md#back-office-events). U kunt de [!DNL Data Connection] uitbreiding om die historische gegevens naar het Experience Platform te verzenden om uw klantenprofielen te verrijken en de klantenervaringen te personaliseren die op die vroegere orden worden gebaseerd. De gegevens worden opgeslagen in een dataset binnen Experience Platform.
 
@@ -122,49 +201,11 @@ Bekijk deze video om meer over historische orden te leren dan voltooi de volgend
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424672)
 
-### Stap 1: Een project maken in Adobe Developer Console
+#### De bestelsynchronisatieservice instellen
 
->[!NOTE]
->
->Als u reeds geïnstalleerd en toegelaten hebt [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) hebt voltooid, hebt u stap 1 en 2 al uitgevoerd en kunt u stap 3 overslaan.
+De bestelsynchronisatieservice gebruikt de [Message Queue Framework](https://developer.adobe.com/commerce/php/development/components/message-queues/) en RabbitMQ. Nadat u deze stappen hebt uitgevoerd, kunnen de statusgegevens van de bestelling worden gesynchroniseerd met SaaS, wat vereist is voordat deze naar het Experience Platform worden verzonden.
 
-Creeer een project in de Console van Adobe Developer die Handel voor authentiek verklaart zodat kan het Experience Platform API vraag maken.
-
-Volg de stappen in het dialoogvenster [API&#39;s van Experience Platforms verifiëren en openen](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html) zelfstudie.
-
-Terwijl u de zelfstudie doorloopt, moet u ervoor zorgen dat uw project het volgende heeft:
-
-- Toegang tot het volgende [productprofielen](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#select-product-profiles): **Standaardproductie, alle toegang** en **Alle toegang standaard AEP**.
-- De juiste [rollen en toestemmingen worden gevormd](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html#assign-api-to-a-role).
-- Als u hebt besloten JSON Web Tokens (JWT) als uw server-aan-server authentificatiemethode te gebruiken, moet u ook een privé sleutel uploaden.
-
-Het resultaat van deze stap leidt tot een configuratiedossier dat u in de volgende stap gebruikt.
-
-### Stap 2: configuratiebestand downloaden
-
-Download de [workspace-configuratiebestand](https://developer.adobe.com/commerce/extensibility/events/project-setup/#download-the-workspace-configuration-file). De inhoud van dit bestand kopiëren en in het **Servicerekening/Referentiedetails** pagina van de Commerce Admin.
-
-1. Navigeer in Commerce Admin naar **Winkels** > Instellingen > **Configuratie** > **Services** > **[!DNL Data Connection]**.
-
-1. Selecteer de server-aan-server vergunningsmethode die u van uitvoerde **Adobe Developer-autorisatietype** -menu. Adobe beveelt het gebruik van OAuth aan. JWT is vervangen. [Meer informatie](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/).
-
-1. (Alleen JWT) Kopieer en plak de inhoud `private.key` in het bestand **Clientgeheim** veld. Gebruik de volgende opdracht om de inhoud te kopiëren.
-
-   ```bash
-   cat config/private.key | pbcopy
-   ```
-
-   Zie [Service Account (JWT)-verificatie](https://developer.adobe.com/developer-console/docs/guides/authentication/JWT/) voor meer informatie over de `private.key` bestand.
-
-1. Kopieer de inhoud van het dialoogvenster `<workspace-name>.json` in het bestand **Servicerekening/Referentiedetails** veld.
-
-   ![[!DNL Data Connection] Beheerdersconfiguratie](./assets/epc-admin-config.png){width="700" zoomable="yes"}
-
-1. Klikken **Config opslaan**.
-
-### Stap 3: De bestelsynchronisatieservice instellen
-
-Nadat u de referenties voor ontwikkelaars hebt ingevoerd, stelt u de bestelsynchronisatieservice in. De bestelsynchronisatieservice gebruikt de [Message Queue Framework](https://developer.adobe.com/commerce/php/development/components/message-queues/) en RabbitMQ. Nadat u deze stappen hebt uitgevoerd, kunnen de statusgegevens van de bestelling worden gesynchroniseerd met SaaS, wat vereist is voordat deze naar het Experience Platform worden verzonden.
+1. Zorg ervoor dat u [verstrekt](#add-service-account-and-credential-details) serviceaccount en referentiedetails.
 
 1. [Inschakelen](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/rabbitmq.html) RabbitMQ.
 
@@ -187,7 +228,7 @@ Nadat u de referenties voor ontwikkelaars hebt ingevoerd, stelt u de bestelsynch
 
 Als de bestelsynchronisatieservice ingeschakeld is, kunt u het historische bereik van de orderdatum opgeven in het dialoogvenster **[!UICONTROL [!DNL Data Connection]]** pagina.
 
-### Stap 4: geef een datumbereik voor de ordergeschiedenis op
+#### Datumbereik van orderhistorie opgeven
 
 Geef het datumbereik op voor de historische orders die u naar het Experience Platform wilt verzenden.
 
@@ -200,6 +241,8 @@ Geef het datumbereik op voor de historische orders die u naar het Experience Pla
 1. In de **Van** en **Naar** geeft u het datumbereik op voor de historische volgordegegevens die u wilt verzenden. U kunt geen datumbereik selecteren dat langer is dan vijf jaar.
 
 1. Selecteren **[!UICONTROL Start Sync]** om de synchronisatie te activeren. Historische ordegegevens zijn batchgegevens in tegenstelling tot opslag en achterkantoorgegevens die gegevens stromen. Het duurt ongeveer 45 minuten voordat de gegevens in de batch in Experience Platform zijn ontvangen.
+
+##### Veldomschrijvingen
 
 | Veld | Beschrijving |
 |--- |--- |

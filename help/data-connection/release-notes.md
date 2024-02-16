@@ -3,9 +3,9 @@ title: Aanvullende informatie
 description: De meest recente releasegegevens voor de [!DNL Data Connection] uit Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 6378b89e5a077e35213f35e84be9a629c1bdc3ac
+source-git-commit: d54b7e894df4e6f64607afcfc6754b5a560b91e2
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '818'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ _16 november 2023_
 
 _10 oktober 2023_
 
-![Nieuw](../assets/new.svg) - Toegevoegde statusgebeurtenissen voor nieuwe bestellingen: [Facturering van bestelling](events.md#orderinvoiced), [Terugsturen van bestelling-item gestart](events.md#orderitemsreturninitiated), en [Terugsturen van bestelling van object voltooid](events.md#orderitemreturncompleted).
+![Nieuw](../assets/new.svg) - Toegevoegde statusgebeurtenissen voor nieuwe bestellingen: [Facturering van bestelling](events-backoffice.md#orderinvoiced), [Terugsturen van bestelling-item gestart](events.md#orderitemsreturninitiated), en [Terugsturen van bestelling van object voltooid](events.md#orderitemreturncompleted).
 ![Repareren](../assets/fix.svg) - Probleem verholpen waarbij wijzigingen in de valutaconfiguratie niet werden doorgevoerd in de gebeurtenissen na het vernieuwen van de cache.
 ![Repareren](../assets/fix.svg) - Correctie van fout wanneer het bevestigingsbericht van de orde niet verschijnt als de asynchrone plaatsing van de orde wordt toegelaten.
 ![Nieuw](../assets/new.svg) - Gegevens toegevoegd aan [addToRequisitionList](events.md#addtorequisitionlist) gebeurtenis voor eenvoudige producten op de pagina van de categorieweergave.
@@ -71,6 +71,16 @@ _12 oktober 2022_
 ![Nieuw](../assets/new.svg) - Toegevoegde ondersteuning voor een [AEM storefront](overview.md#aem-support).
 
 +++
+
+## 3.2.0-bèta1
+
+_16 februari 2024_
+
+[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+
+![Nieuw](../assets/new.svg) - Als u deelneemt aan de bètaversie, zorg er dan voor dat u `composer.json` bestand heeft het volgende op hoofdniveau: ` "minimum-stability": "beta"`.
+![Nieuw](../assets/new.svg) - Toegevoegde mogelijkheden tot [Aangepaste kenmerken toevoegen](update-xdm.md#update-schema-with-time-series-behavioral-and-back-office-event-data).
+![Nieuw](../assets/new.svg) - Toegevoegde mogelijkheden tot [profielrecords verzamelen en verzenden](connect-data.md#send-customer-profile-data) en gegevens naar Experience Platform.
 
 ## 3.1.0.
 
@@ -120,8 +130,8 @@ _30 maart 2023_
 
 [!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) - Gebundelde `commerce-data-export` en `saas-export` afhankelijkheid van de `experience-platform-connector` extensie. Eerder, moest u deze gebiedsdelen afzonderlijk installeren. Deze gebiedsdelen, samen met bedrijfsmatige configuratie, laten server-zijverwerking van toe [back office-gebeurtenissen](events.md#back-office-events).
-![Nieuw](../assets/new.svg) - Nieuwe back office-gebeurtenis toegevoegd [`orderShipmentCompleted`](events.md#ordershipmentcompleted).
+![Nieuw](../assets/new.svg) - Gebundelde `commerce-data-export` en `saas-export` afhankelijkheid van de `experience-platform-connector` extensie. Eerder, moest u deze gebiedsdelen afzonderlijk installeren. Deze gebiedsdelen, samen met bedrijfsmatige configuratie, laten server-zijverwerking van toe [back office-gebeurtenissen](events-backoffice.md).
+![Nieuw](../assets/new.svg) - Nieuwe back office-gebeurtenis toegevoegd [`orderShipmentCompleted`](events-backoffice.md#ordershipmentcompleted).
 
 ## 2.1.1.
 
