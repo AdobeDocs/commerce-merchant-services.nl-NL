@@ -3,7 +3,7 @@ title: Connect Commerce-gegevens naar Adobe Experience Platform
 description: Leer hoe u de gegevens van de Handel met de Adobe Experience Platform verbindt.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 540c423ecf7e50a36c1137f43a9cf9673658c805
+source-git-commit: 655b5d18a4fb77232523c9c18a9fb362de93c70a
 workflow-type: tm+mt
 source-wordcount: '2501'
 ht-degree: 0%
@@ -101,7 +101,7 @@ In deze sectie geeft u het type gegevens op dat u wilt verzamelen en naar de ran
 
 Als u er zeker van wilt zijn dat uw Adobe Commerce-instantie kan beginnen met het verzamelen van gegevens, raadpleegt u de [voorwaarden](overview.md#prerequisites).
 
-Zie het gebeurtenisonderwerp om meer over te leren [storefront](events.md#storefront-events), [achterkantoor](events.md#back-office-events), en [profiel](events.md#customer-profile-events-server-side) gebeurtenissen.
+Zie het gebeurtenisonderwerp om meer over te leren [storefront](events.md#storefront-events), [achterkantoor](events-backoffice.md), en [profiel](events-backoffice.md#customer-profile-events-server-side) gebeurtenissen.
 
 >[!NOTE]
 >
@@ -193,7 +193,7 @@ Het kan ongeveer 10 minuten duren voordat een profielrecord beschikbaar is in Re
 
 ### Gegevens in historische volgorde verzenden
 
-Adobe Commerce verzamelt maximaal vijf jaar [historische ordegegevens en status](events.md#back-office-events). U kunt de [!DNL Data Connection] uitbreiding om die historische gegevens naar het Experience Platform te verzenden om uw klantenprofielen te verrijken en de klantenervaringen te personaliseren die op die vroegere orden worden gebaseerd. De gegevens worden opgeslagen in een dataset binnen Experience Platform.
+Adobe Commerce verzamelt maximaal vijf jaar [historische ordegegevens en status](events-backoffice.md#back-office-events). U kunt de [!DNL Data Connection] uitbreiding om die historische gegevens naar het Experience Platform te verzenden om uw klantenprofielen te verrijken en de klantenervaringen te personaliseren die op die vroegere orden worden gebaseerd. De gegevens worden opgeslagen in een dataset binnen Experience Platform.
 
 Terwijl de Handel reeds de historische ordegegevens verzamelt, zijn er verscheidene stappen u moet voltooien om die gegevens naar Experience Platform te verzenden.
 

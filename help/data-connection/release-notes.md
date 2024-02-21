@@ -3,7 +3,7 @@ title: Aanvullende informatie
 description: De meest recente releasegegevens voor de [!DNL Data Connection] uit Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: d54b7e894df4e6f64607afcfc6754b5a560b91e2
+source-git-commit: 655b5d18a4fb77232523c9c18a9fb362de93c70a
 workflow-type: tm+mt
 source-wordcount: '818'
 ht-degree: 0%
@@ -46,7 +46,7 @@ _16 november 2023_
 
 _10 oktober 2023_
 
-![Nieuw](../assets/new.svg) - Toegevoegde statusgebeurtenissen voor nieuwe bestellingen: [Facturering van bestelling](events-backoffice.md#orderinvoiced), [Terugsturen van bestelling-item gestart](events.md#orderitemsreturninitiated), en [Terugsturen van bestelling van object voltooid](events.md#orderitemreturncompleted).
+![Nieuw](../assets/new.svg) - Toegevoegde statusgebeurtenissen voor nieuwe bestellingen: [Facturering van bestelling](events-backoffice.md#orderinvoiced), [Terugsturen van bestelling-item gestart](events-backoffice.md#orderitemsreturninitiated), en [Terugsturen van bestelling van object voltooid](events-backoffice.md#orderitemreturncompleted).
 ![Repareren](../assets/fix.svg) - Probleem verholpen waarbij wijzigingen in de valutaconfiguratie niet werden doorgevoerd in de gebeurtenissen na het vernieuwen van de cache.
 ![Repareren](../assets/fix.svg) - Correctie van fout wanneer het bevestigingsbericht van de orde niet verschijnt als de asynchrone plaatsing van de orde wordt toegelaten.
 ![Nieuw](../assets/new.svg) - Gegevens toegevoegd aan [addToRequisitionList](events.md#addtorequisitionlist) gebeurtenis voor eenvoudige producten op de pagina van de categorieweergave.

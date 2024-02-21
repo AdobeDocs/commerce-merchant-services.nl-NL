@@ -3,9 +3,9 @@ title: Overzicht van de handleiding
 description: Leer hoe u Adobe Commerce-gegevens met Adobe Experience Platform kunt integreren met de [!DNL Data Connection] extensie.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
 recommendations: noCatalog
-source-git-commit: d54b7e894df4e6f64607afcfc6754b5a560b91e2
+source-git-commit: af54529ad037dc99dbc07cf1a6ac270d17f16870
 workflow-type: tm+mt
-source-wordcount: '1708'
+source-wordcount: '1732'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Nadat u opstelling de verbinding tussen Handel aan Experience Platform en Experi
 
 Het delen van gegevens tussen deze twee systemen vereist dat u verschillende concepten begrijpt.
 
-* **Gegevens** - De gegevens die met het Experience Platform worden gedeeld, zijn gegevens die uit browsergebeurtenissen op uw winkelcentrum, en achterkantoorgebeurtenissen op de server worden verzameld. Storefront-gebeurtenissen worden vastgelegd op basis van de interactie van klanten op de site en bevatten gebeurtenissen zoals [`addToCart`](events.md#addtocart), [`pageView`](events.md#pageview), [`createAccount`](events.md#createaccount), [`editAccount`](events.md#editaccount), [`startCheckout`](events.md#startcheckout), [`completeCheckout`](events.md#completecheckout), [`signIn`](events.md#signin), [`signOut`](events.md#signout), enzovoort. Zie [storefront, gebeurtenissen](events.md#storefront-events) voor de volledige lijst van storefront-gebeurtenissen. Server-kant, of achterkantoorgebeurtenissen, omvatten [orderstatus](events.md#back-office-events) informatie, zoals [`orderPlaced`](events.md#orderplaced), [`orderReturned`](events.md#orderitemreturncompleted), [`orderShipped`](events.md#ordershipmentcompleted), [`orderCancelled`](events.md#ordercancelled), enzovoort. Zie [back office-gebeurtenissen](events.md#back-office-events) voor de volledige lijst van achterkantoorgebeurtenissen.
+* **Gegevens** - De gegevens die met het Experience Platform worden gedeeld, zijn gegevens die worden verzameld van browsergebeurtenissen in uw winkelcentrum, back office-gebeurtenissen op de server en profielrecordgegevens. Storefront-gebeurtenissen worden vastgelegd op basis van de interactie van klanten op de site en bevatten gebeurtenissen zoals [`addToCart`](events.md#addtocart), [`pageView`](events.md#pageview), [`createAccount`](events.md#createaccount), [`editAccount`](events.md#editaccount), [`startCheckout`](events.md#startcheckout), [`completeCheckout`](events.md#completecheckout), [`signIn`](events.md#signin), [`signOut`](events.md#signout), enzovoort. Zie [storefront, gebeurtenissen](events.md#storefront-events) voor de volledige lijst van storefront-gebeurtenissen. Server-kant, of achterkantoorgebeurtenissen, omvatten [orderstatus](events-backoffice.md#order-status) informatie, zoals [`orderPlaced`](events-backoffice.md#orderplaced), [`orderReturned`](events-backoffice.md#orderitemreturncompleted), [`orderShipped`](events-backoffice.md#ordershipmentcompleted), [`orderCancelled`](events-backoffice.md#ordercancelled), enzovoort. Zie [back office-gebeurtenissen](events-backoffice.md) voor de volledige lijst van achterkantoorgebeurtenissen. Profielrecordgegevens bevatten informatie wanneer een nieuw profiel wordt gemaakt, bijgewerkt of verwijderd. Zie [profielrecordgegevens](events-profilerecord.md) voor meer informatie.
 
 * **Experience Platform en Edge Network** - Het gegevenspakhuis voor de meeste Adobe DX producten. De gegevens die naar het Experience Platform worden verzonden worden dan verspreid aan de Adobe DX producten door het Netwerk van de Rand van het Experience Platform. U kunt bijvoorbeeld Journey Optimizer starten, de gegevens van uw specifieke Commerce-gebeurtenis van de rand ophalen en een verlaten e-mailbericht over winkelwagentjes maken in Journey Optimizer. Journey Optimizer kan die e-mail vervolgens verzenden als er in je winkel voor Handel winkels geen winkelwagentjes zijn opgegeven. Meer informatie over de [Experience Platform en Edge Network](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html).
 
