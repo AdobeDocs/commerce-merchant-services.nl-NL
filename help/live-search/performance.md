@@ -2,9 +2,9 @@
 title: "Prestatiedashboard"
 description: "De [!DNL Live Search] Het prestatiedashboard biedt inzicht in de zoektermen die kopers gebruiken."
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
-source-git-commit: a0dded0beac3d45f8944016bd73e4ec1ae3eae22
+source-git-commit: 289ac6ac464955f18f3a2448099ad459e6264941
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '481'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,8 @@ De [!DNL Live Search] Het prestatiedashboard biedt inzicht in de zoektermen die 
 * Populaire resultaten
 
 ![Prestaties](assets/performance-unique-searches.png)
+
+U kunt ook verwijzen naar de [Gegevensbeheerdashboard](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) voor meer gegevens over gegevenssynchronisatie.
 
 ## Een rapport weergeven
 

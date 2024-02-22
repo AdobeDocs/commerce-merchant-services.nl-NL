@@ -3,9 +3,9 @@ title: "[!DNL Live Search] Opmerkingen bij de release"
 description: "De meest recente releasegegevens voor [!DNL Live Search] uit Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 033fff8820b5467b5b24b03159e4141ff2e6d725
+source-git-commit: 89f0cd15e7eeb7f8f1f76df7a3612ba3ef02391e
 workflow-type: tm+mt
-source-wordcount: '1772'
+source-wordcount: '1900'
 ht-degree: 0%
 
 ---
@@ -45,26 +45,31 @@ _25 april 2023_
 
 ![Nieuw](../assets/new.svg) [!DNL Live Search] klanten kunnen nu profiteren van de nieuwe [SaaS-prijsindexer](../price-index/index.md).
 
-<!--## [!DNL Live Search] 4.1.0 {#410}
+## [!DNL Live Search] 4.1.0. {#410}
 
-_Feb 13, 2024_
+_22 feb. 2024_
 
-[!BADGE Supported]{type=Informative tooltip="Supported"} Adobe Commerce versions 2.4.4 and newer
+[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
 
-### New Features
+### Nieuwe functies
 
-![New](../assets/new.svg) Multiple new features have been added to the [PLP widget](plp-styling.md):
+![Nieuw](../assets/new.svg) De [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) is nu beschikbaar. Dit vernieuwde dashboard biedt inzichten in gegevensstromen voor [!DNL Product Recommendations], [!DNL Live Search], en [!DNL Catalog Service].
+![Nieuw](../assets/new.svg) Er zijn meerdere nieuwe functies toegevoegd aan de [PLP-widget](plp-styling.md):
 
-* List/grid view toggling
-* Add to Cart buttons
-* Swatch support
-* Multiple images per product
-* Price sliders
-* Language support
+* Schakelen tussen lijst-/rasterweergave
+* Toevoegen aan winkelwagentjes
+* Staalondersteuning
+* Meerdere afbeeldingen per product
+* Prijsschuifregelaars
+* Taalondersteuning
 
-Merchants must upgrade the [!DNL Live Search] extension to version >= 4.1.0 to access these features.
+Handelaren moeten de [!DNL Live Search] extensie >= 4.1.0 voor toegang tot deze functies.
 
---->
+### Updates
+
+![Repareren](../assets/fix.svg) Probleem verholpen waarbij een fout optrad wanneer gastgebruikers producten aan een winkelwagentje toevoegden in niet-standaardwinkelweergaven.
+![Repareren](../assets/fix.svg) Probleem verholpen waarbij het zoekpopover altijd het valutasymbool weergaf vóór de prijswaarde, ongeacht de instellingen voor de landinstelling.
+![Repareren](../assets/fix.svg) Overbodige typedefinities voor uitgeschakelde kernplug-ins zijn verwijderd om compatibiliteitsproblemen bij de installatie te verhelpen.
 
 ## [!DNL Live Search] 4.0.0. {#400}
 

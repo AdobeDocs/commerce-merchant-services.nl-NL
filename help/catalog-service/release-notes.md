@@ -3,9 +3,9 @@ title: '''[!DNL Catalog Service] Opmerkingen bij de release'
 description: De meest recente releasegegevens voor [!DNL Catalog Service] voor Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 4ce37b03937cf5a8413831c720d05387031a6094
+source-git-commit: 358dac1ce083023476022c968bc6a9debfadc119
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '570'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,18 @@ Updates zijn:
 ![Bug](../assets/bug.svg) Bekende problemen
 
 ## Huidige hoofdversie
+
+### V1.17 Release
+
+_22 feb. 2023_
+
+[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+
+![Nieuw](../assets/new.svg) De [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) is nu beschikbaar. Dit vernieuwde dashboard biedt inzichten in gegevensstromen voor [!DNL Product Recommendations], [!DNL Live Search], en [!DNL Catalog Service].
+
+## Vorige versies
+
++++ Vorige versies
 
 ### V1.16 Release
 
@@ -44,10 +56,6 @@ De volgende beperkingen kunnen worden opgelost met behulp van het API-net en de 
 
 * Minimale geadverteerde prijs
 * [Tier-prijsstelling](mesh.md)
-
-## Vorige versies
-
-+++ Vorige versies
 
 ### V1.13 Release
 

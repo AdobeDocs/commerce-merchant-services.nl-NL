@@ -2,7 +2,7 @@
 title: Widget pagina met productaanbiedingen
 description: Het inschakelen en opmaken van de [!DNL Live Search Product Listing Page Widget]
 exl-id: f7346a06-a8c7-4a33-8437-ea4f61d9281f
-source-git-commit: 2b0ca3f5a68e75ef4b4e71ac7705b17534e16845
+source-git-commit: 4c4facab0368bdeef70a5fd2925072e73d765707
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 0%
@@ -28,7 +28,7 @@ De PLP-widget uitschakelen:
 
 De PLP-widget biedt een aantal functies die op een doorzoekbare productpagina worden verwacht. Deze omvatten:
 
-* Filteren op kenmerken.
+* Filteren op kenmerken
 * Ondersteuning voor kleurstalen
 * Toevoegen aan winkelwagentje
 * Ondersteuning voor meerdere talen

@@ -2,9 +2,9 @@
 title: Onboarding en installatie
 description: "Leer hoe u kunt installeren [!DNL Catalog Service]"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: a0dded0beac3d45f8944016bd73e4ec1ae3eae22
+source-git-commit: 6a7efbe0424e35cdec9cb00275d9a953feccaa5b
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '607'
 ht-degree: 0%
 
 ---
@@ -128,7 +128,7 @@ Ga als volgt te werk om te controleren of de catalogus correct wordt geëxportee
 - Controleer of de indexen worden uitgevoerd.
 - Zorg ervoor dat de `Catalog Attributes Feed, Product Feed, Product Overrides Feed`, en `Product Variant Feed` de indexeerders worden geplaatst aan &quot;Update door Programma&quot;.
 
-De eerste synchronisatie kan enkele minuten tot uren duren, afhankelijk van de grootte van de catalogus. Na de eerste synchronisatie exporteert de Catalogus de productgegevens van de Commerce-server voortdurend naar de Commerce-diensten om de diensten up-to-date te houden.
+De eerste synchronisatie kan enkele minuten tot uren duren, afhankelijk van de grootte van de catalogus. Na de eerste synchronisatie exporteert de Catalogus de productgegevens van de Commerce-server voortdurend naar de Commerce-diensten om de diensten up-to-date te houden. Als u de status van de synchronisatie wilt controleren, raadpleegt u de [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html).
 
 ### Toegang tot de service
 
@@ -145,3 +145,7 @@ Toestaan [!DNL Catalog Service] via een firewall toevoegen `commerce.adobe.io` o
 De [API-net voor Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) laat ontwikkelaars toe om privé of derde APIs en andere interfaces met Adobe producten te integreren gebruikend Adobe IO.
 
 Zie de  [[!DNL Catalog Service] en API-net](mesh.md) onderwerp voor installatie en configuratiedetails.
+
+## Gegevensbeheerdashboard
+
+Gebruikers kunnen naar de [Gegevensbeheerdashboard](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) voor meer informatie over [!DNL Catalog Service] gegevenssynchronisatie.

@@ -1,16 +1,16 @@
 ---
-title: '[!DNL Product Recommendations] Aanvullende informatie'
+title: '''[!DNL Product Recommendations] Opmerkingen bij de release'
 description: De meest recente releasegegevens voor [!DNL Product Recommendations] uit Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
+source-git-commit: bf7dc316f7b7b702836441b35770403d75be6cfd
 workflow-type: tm+mt
-source-wordcount: '1233'
+source-wordcount: '1281'
 ht-degree: 0%
 
 ---
 
-# [!DNL Product Recommendations] Aanvullende informatie
+# [!DNL Product Recommendations] Opmerkingen bij de release
 
 De releaseopmerkingen bevatten updates voor het volgende [!DNL Product Recommendations] modules:
 
@@ -45,6 +45,19 @@ _25 april 2023_
 
 ## Huidige hoofdversie
 
+### 6.0.0 van magento/product-recommendations
+
+_22 februari 2024_
+
+[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+
+![Nieuw](../assets/new.svg) De [!DNL Catalog Sync Dashboard] is nu [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html). Dit vernieuwde dashboard biedt inzichten in gegevensstromen voor [!DNL Product Recommendations], [!DNL Live Search], en [!DNL Catalog Service].
+![Repareren](../assets/fix.svg) Probleem verholpen waarbij een betalingsfout voor Product Recommendations is opgetreden.
+
+### Vorige versies
+
++++5.0.0 en eerder
+
 ### 5.0.1 van magento/productaanbevelingen
 
 _15 september 2023_
@@ -58,10 +71,6 @@ _15 september 2023_
 #### Bekende beperkingen
 
 * De `websiteCode` value is incorrect teruggekeerd als het een onderstrepingsteken (_) bevat.
-
-### Vorige versies
-
-+++5.0.0 en eerder
 
 ### 5.0.0 van magento/productaanbevelingen
 
