@@ -3,7 +3,7 @@ title: Inleiding tot [!DNL Live Search]
 description: "[!DNL Live Search] van Adobe Commerce biedt een snelle, relevante en intuïtieve zoekervaring."
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 12c9fa011662e2e9fd7bb088db97359dcde87915
+source-git-commit: 51ff52eba117fe438d592ca886dbca25304a0d15
 workflow-type: tm+mt
 source-wordcount: '722'
 ht-degree: 0%
@@ -57,7 +57,7 @@ Elk van deze kenmerken kan worden gedefinieerd als [&quot;doorzoekbaar&quot;](ht
 
 ## [!DNL Live Search] werkruimte
 
-De [!DNL Live Search] [werkruimte](workspace.md) is het gebied in de Min waar u vormt [!DNL Live Search] functies zoals synoniemen, facetten en Categorie Merchandising.
+De [!DNL Live Search] [werkruimte](workspace.md) is het gebied in Admin waar u vormt [!DNL Live Search] functies zoals synoniemen, facetten en Categorie Merchandising.
 
 ## Gebeurtenissen
 

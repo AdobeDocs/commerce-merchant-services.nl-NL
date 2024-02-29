@@ -2,9 +2,9 @@
 title: Nieuwe aanbeveling maken
 description: Leer hoe u een product aanbevelingseenheid kunt maken.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 24a930178873535f23331c9c5295c482d5b8e384
+source-git-commit: 51ff52eba117fe438d592ca886dbca25304a0d15
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1022'
 ht-degree: 0%
 
 ---
@@ -31,6 +31,10 @@ Als u de aanbevolen eenheid activeert, begint Adobe Commerce [gegevens verzamele
 1. In de _Geef uw aanbeveling een naam_ in, voert u een beschrijvende naam in voor interne referentie, zoals `Home page most popular`.
 
 1. In de _Paginatype selecteren_ selecteert u de pagina waarop u de aanbeveling wilt weergeven in de volgende opties:
+
+   >[!NOTE]
+   >
+   > Het product Recommendations wordt niet ondersteund op de pagina Winkelwagentje als je winkel is geconfigureerd voor [de winkelwagenpagina direct weergeven nadat een product aan de wagen is toegevoegd](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration.html#redirect-to-cart).
 
    * Startpagina
    * Categorie
