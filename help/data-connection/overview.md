@@ -3,9 +3,9 @@ title: Overzicht van de handleiding
 description: Leer hoe u Adobe Commerce-gegevens met Adobe Experience Platform kunt integreren met de [!DNL Data Connection] extensie.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
 recommendations: noCatalog
-source-git-commit: af54529ad037dc99dbc07cf1a6ac270d17f16870
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '1732'
+source-wordcount: '1731'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ In de bovenstaande afbeelding worden uw gedrags-, back office- en klantprofielge
 
 ## Gegevens van Experience Platform terugbrengen in de handel
 
-Verstuur uw gegevens van de Handel naar het Experience Platform gebruikend [!DNL Data Connection] de uitbreiding is één kant van de mogelijkheden van de Handel om gegevens te delen. De andere zijde, die een facultatieve uitbreiding is, wordt genoemd [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html). Met deze extensie kunt u een publiek opbouwen in Real-Time CDP en dat publiek distribueren naar uw winkel voor handel om de regels voor de winkels voor winkelwagenprijzen, verwante producten (bèta) en dynamische blokken te informeren.
+Verstuur uw gegevens van de Handel naar het Experience Platform gebruikend [!DNL Data Connection] de uitbreiding is één kant van de mogelijkheden van de Handel om gegevens te delen. De andere zijde, die een facultatieve uitbreiding is, wordt genoemd [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html). Met deze extensie kunt u een publiek opbouwen in Real-Time CDP en dat publiek distribueren naar uw winkel voor Handel om de regels voor de winkelprijzen, verwante producten en dynamische blokken te informeren.
 
 Op een hoog niveau, ziet de stroom van gegevens van uw opslag van de Handel aan het Experience Platform en terug door de uitbreiding van het Audience Activation als het volgende:
 

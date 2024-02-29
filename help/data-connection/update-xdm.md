@@ -4,9 +4,9 @@ description: Leer hoe te om een schema, dataset, en gegevensstroom tot stand te 
 exl-id: 4401bbe7-1ccc-4349-a998-9e9ee9db590f
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: d5824e11b4961b518e35fcf56ff2c7ee00480617
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '978'
 ht-degree: 0%
 
 ---
@@ -76,10 +76,6 @@ Met de schema&#39;s, datasets, en gegevensstromen die voor gedrags en achterkant
 Raadpleeg de volgende sectie voor meer informatie over het profiel van uw klant.
 
 ## Gebeurtenisgegevens tijdreeksprofiel
-
->[!NOTE]
->
->Deze functie is in bèta. Als u wilt deelnemen aan het bètaprogramma, verzendt u een aanvraag naar [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
 
 De gebeurtenisgegevens van het tijdreeksprofiel worden gegenereerd uit de volgende gebeurtenissen:
 

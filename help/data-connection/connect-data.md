@@ -3,9 +3,9 @@ title: Connect Commerce-gegevens naar Adobe Experience Platform
 description: Leer hoe u de gegevens van de Handel met de Adobe Experience Platform verbindt.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 655b5d18a4fb77232523c9c18a9fb362de93c70a
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '2501'
+source-wordcount: '2480'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ In deze sectie leert u hoe u de [!DNL Data Connection] extensie.
 
 ### Servicerekening en verificatiegegevens toevoegen
 
-Als u van plan bent om te verzamelen en te verzenden [historische-ordegegevens](#send-historical-order-data) of [(bèta) klantprofielgegevens](#send-customer-profile-data), moet u de dienstrekening en credentiedetails toevoegen. Ook als u het [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) moet u deze stappen uitvoeren.
+Als u van plan bent om te verzamelen en te verzenden [historische-ordegegevens](#send-historical-order-data) of [klantprofielgegevens](#send-customer-profile-data), moet u de dienstrekening en credentiedetails toevoegen. Ook als u het [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) moet u deze stappen uitvoeren.
 
 Als u slechts storefront of achterkantoorgegevens verzamelt en verzendt, kunt u aan overslaan [algemeen](#general) sectie.
 
@@ -97,7 +97,7 @@ In deze sectie geeft u het type gegevens op dat u wilt verzamelen en naar de ran
 
 - **Achterkantoor** (server-side gegevens) zijn gegevens die zijn vastgelegd in de Commerce-servers. Dit omvat informatie over de status van een bestelling, zoals of een bestelling is geplaatst, geannuleerd, terugbetaald, verzonden of voltooid. Het omvat ook [historische-ordegegevens](#send-historical-order-data).
 
-- (**Beta**) **Profiel** Dit zijn gegevens die betrekking hebben op de profielgegevens van je winkel. Meer informatie [meer](#send-customer-profile-data).
+- **Profiel** Dit zijn gegevens die betrekking hebben op de profielgegevens van je winkel. Meer informatie [meer](#send-customer-profile-data).
 
 Als u er zeker van wilt zijn dat uw Adobe Commerce-instantie kan beginnen met het verzamelen van gegevens, raadpleegt u de [voorwaarden](overview.md#prerequisites).
 
@@ -157,10 +157,6 @@ Zie het gebeurtenisonderwerp om meer over te leren [storefront](events.md#storef
 Na het instappen, beginnen de storefrontgegevens aan de rand van het Experience Platform te stromen. Het duurt ongeveer vijf minuten voordat de gegevens op het achterkantoor aan de rand worden weergegeven. Volgende updates zijn zichtbaar aan de rand op basis van het uitsnijdschema.
 
 ### Klantprofielgegevens verzenden
-
->[!IMPORTANT]
->
->Deze functie is in bèta. Als u wilt deelnemen aan het bètaprogramma, verzendt u een aanvraag naar [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
 
 Er zijn twee typen profielgegevens die u naar het Experience Platform kunt verzenden: profielrecords en tijdreeksprofielgebeurtenissen.
 

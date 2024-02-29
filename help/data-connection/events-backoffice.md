@@ -3,9 +3,9 @@ title: Back Office-gebeurtenissen
 description: Leer welke gegevens elke achterkantoorgebeurtenis vangt.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: d5824e11b4961b518e35fcf56ff2c7ee00480617
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '3599'
+source-wordcount: '3573'
 ht-degree: 0%
 
 ---
@@ -402,10 +402,6 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `productListItems.categories.path` | Het pad naar de categorie. |
 
 ## Klantprofielgebeurtenissen (back-office)
-
->[!NOTE]
->
->**Beta** Profielgebeurtenissen die op de server worden gegenereerd, zijn beschikbaar voor bètadeelnemers. Als u wilt deelnemen aan het bètaprogramma, verzendt u een aanvraag naar [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
 
 Profielgebeurtenissen die vanaf de server zijn vastgelegd, bevatten accountgegevens, zoals `accountCreated`, `accountUpdated`, en `accountDeleted`. Deze gegevens worden gebruikt om belangrijke klantendetails te bevolken die nodig zijn om segmenten beter te bepalen of marketing campagnes, zoals het verzenden van aanbiedingen van de inschrijvingskorting, bevestigingen van de rekeningsverandering, etc. uitvoeren. Er zijn vergelijkbare profielgebeurtenissen vastgelegd van de [storefront](#customer-profile-events-storefront).
 

@@ -3,9 +3,9 @@ title: Soorten handelsgegevens
 description: Leer de typen gegevens die u kunt verzamelen en naar het Experience Platform verzenden.
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: d5824e11b4961b518e35fcf56ff2c7ee00480617
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '312'
 ht-degree: 0%
 
 ---
@@ -29,10 +29,6 @@ Zie [gedragsgebeurtenissen](events.md) en [back office-gebeurtenissen](events-ba
 Leer hoe u [een schema maken](update-xdm.md) die gedrags- en back-office tijdreeksgebeurtenisgegevens kunnen invoeren.
 
 ## Gegevens opnemen
-
->[!NOTE]
->
->Deze functie is in bèta. Als u wilt deelnemen aan het bètaprogramma, verzendt u een aanvraag naar [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
 
 De gegevens van het verslag verstrekken informatie over de attributen van een onderwerp. Een onderwerp kan een organisatie of een individu zijn. Een winkelier op uw site maakt bijvoorbeeld een account en genereert recordgegevens. Dit gegeven wordt opgenomen in het Experience Platform gebruikend een schema dat de klasse heeft die aan wordt geplaatst **Individueel profiel**. U kunt die recordgegevens naar de profielbeheer en segmentatieservice van de Adobe verzenden: [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html).
 

@@ -3,18 +3,14 @@ title: Profielrecordschema bijwerken voor gegevensinsluiting voor handel
 description: Leer hoe te om een schema, dataset, en gegevensstroom tot stand te brengen om de gegevens van het het profielverslag van de Handel te verzamelen en te verzenden naar het Experience Platform.
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: 8456f9b81812cf8ace55b7406d8b4fe50332c17a
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
 
 # Profielrecordschema bijwerken voor gegevensinsluiting voor handel
-
->[!NOTE]
->
->Deze functie is in bèta. Als u wilt deelnemen aan het bètaprogramma, verzendt u een aanvraag naar [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
 
 Wanneer uw kopers een profiel maken op uw Commerce-site, wordt een profielrecord gemaakt en worden gegevens vastgelegd. U moet een schema en een dataset tot stand brengen specifiek voor dat profielverslag alvorens u die profielgegevens aan het Experience Platform kunt stromen.
 

@@ -3,9 +3,9 @@ title: Aanvullende informatie
 description: De meest recente releasegegevens voor de [!DNL Data Connection] uit Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 655b5d18a4fb77232523c9c18a9fb362de93c70a
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '797'
 ht-degree: 0%
 
 ---
@@ -122,7 +122,7 @@ _13 juni 2023_
 
 [!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) - (Beta) Toegevoegde mogelijkheid tot [historische order verzenden](connect-data.md#beta-send-historical-order-data) gegevens en status aan het Experience Platform. Deze functie is alleen beschikbaar voor bètagebruikers. U kunt deelnemen aan de bètaversie door een e-mail naar het volgende adres te verzenden: `dataconnection@adobe.com`.
+![Nieuw](../assets/new.svg) - (Beta) Toegevoegde mogelijkheid tot [historische order verzenden](connect-data.md#beta-send-historical-order-data) gegevens en status aan het Experience Platform.
 
 ## 2.2.0.
 

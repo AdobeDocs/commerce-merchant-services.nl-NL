@@ -3,18 +3,14 @@ title: Profielrecords
 description: Leer welke gegevens een profielrecord vastlegt.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: 655b5d18a4fb77232523c9c18a9fb362de93c70a
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '212'
 ht-degree: 0%
 
 ---
 
-# [!DNL Data Connection] Profielrecords (bèta)
-
->[!NOTE]
->
->Deze functie is in bèta. Als u wilt deelnemen aan het bètaprogramma, verzendt u een aanvraag naar [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
+# [!DNL Data Connection] Profielrecords
 
 Hieronder worden de recordgegevens van het Commerce-profiel beschreven die beschikbaar zijn wanneer u de [!DNL Data Connection] extensie. De gegevens in profielrecords worden naar de Adobe Experience Platform verzonden.
 
