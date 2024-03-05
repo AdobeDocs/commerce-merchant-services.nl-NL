@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Opmerkingen bij de release"
 description: Lees de opmerkingen bij de release voor meer informatie over alle [!DNL Payment Services] lozingen.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 57b140463d457404b57dd23d33c72e48b4c3ac89
+source-git-commit: bcb111a409ee901a231d0bb4475b0c9ec728c95c
 workflow-type: tm+mt
-source-wordcount: '2209'
+source-wordcount: '2229'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,10 @@ Zie [Beschikbaarheid van producten](https://experienceleague.adobe.com/docs/comm
 Deze versienota&#39;s beschrijven eigenschapveranderingen en moeilijke situaties die voorkwamen en buiten de regelmatige versioned eigenschapversies voor de ontvangen dienst werden vrijgegeven.
 
 +++Hosted service-updates
+
+_5 maart 2024_
+
+![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-5252 --> Handelaars kunnen nu gegevens uit de dashboardrasters kopiëren door de inhoud van één cel te selecteren.
 
 _10 oktober 2023_
 
