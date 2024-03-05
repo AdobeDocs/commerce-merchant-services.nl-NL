@@ -3,9 +3,9 @@ title: Uw instantie verbinden
 description: Verbind uw instantie van de Handel gebruikend een API sleutel en een privé sleutel, en specificeer de gegevensruimte in de configuratie.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 feature: Payments, Checkout, Configuration, Saas
-source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
+source-git-commit: 57b140463d457404b57dd23d33c72e48b4c3ac89
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '590'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,10 @@ ht-degree: 0%
 * Als u *heeft uw instantie al aangesloten*, door uw API geloofsbrieven te verkrijgen en te gebruiken en de Diensten van de Handel te vormen, kunt u te werk gaan [testsandbox instellen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/sandbox.html).
 * Als u nog *moet uw instantie verbinden*, zie de informatie in dit onderwerp over [verkrijgen van API-referenties](#obtain-api-credentials) en [configureren van Commerce Services](#configure-commerce-services).
 * Als u *onzeker of uw instantie wordt aangesloten*, navigeer naar **Systeem** > Services > **Commerce Services Connector** en bekijk de waarden voor de openbare en persoonlijke API-sleutel in het dialoogvenster [!UICONTROL Sandbox Keys] en [!UICONTROL Production Keys] en de *Project* en *Gegevensruimte* in de [!UICONTROL SaaS Identifier] sectie. Als deze waarden aanwezig zijn, wordt de instantie verbonden.
+
+>[!NOTE]
+>
+>Alle handelaren die recht hebben op Betalingsdiensten, kunnen gebruik maken van één ruimte voor productiegegevens en twee ruimten voor testgegevens.
 
 ## API-referenties verkrijgen
 
