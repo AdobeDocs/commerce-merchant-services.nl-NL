@@ -2,9 +2,9 @@
 title: "Synoniemen toevoegen"
 description: "Toevoegen [!DNL Live Search] synoniemen om de reactie op zoekverzoeken te verbeteren."
 exl-id: 6c277d88-cb22-4174-abda-6d6bb65fe3be
-source-git-commit: c4bca0c7238be653dd13b051634c662e5891767d
+source-git-commit: 63318e2eb75bc5fb0a243b6430751b076e541b72
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '383'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Volg de instructies voor de [type synoniem](synonyms-type.md) die u wilt maken.
 
 1. Voer de **Trefwoord** term of uitdrukking die moet worden aangepast.
 1. Voer de **Uitbreiding** term(en) die u als synoniemen voor het trefwoord wilt toevoegen. Scheid meerdere termen met een komma.
-In dit voorbeeld is het trefwoord dat moet overeenkomen &#39;broek&#39; en zijn de uitbreidingstermijnen &#39;lange broek, broek, stapels&#39;.
+In dit voorbeeld is het trefwoord dat moet overeenkomen &#39;broek&#39; en zijn de uitbreidingstermijnen &#39;brousers, slacks&#39;.
 
    ![Voorbeeld van synoniem in twee richtingen](assets/synonym-add-two-way-example.png)
 
@@ -54,7 +54,7 @@ De reeks synoniemen verschijnt in de lijst met een tweerichtingspijl tussen elke
 
    ![Voorbeeld van eenrichtingssynoniem](assets/synonym-add-one-way-example.png)
 
-   In dit voorbeeld is het trefwoord &quot;broek&quot; en de eenrichtingexpansietermen &quot;capris, kalfsleefbroek, pedaaldrukkers&quot; zijn elk een subset van &quot;broek&quot;, maar met een specifieke betekenis.
+   In dit voorbeeld is het trefwoord &#39;broek&#39; en zijn de eenmalige uitbreidingstermen &#39;capris, peddle-push&#39; elk een subset van &#39;broek&#39;, maar met een specifieke betekenis.
 
 1. Klik op **Opslaan**.
 De reeks synoniemen verschijnt in de lijst met een eenrichtingspijl die van de uitbreidingstermijnen aan het sleutelwoord richt om erop te wijzen de termijnen subsets van het sleutelwoord zijn. Een plusteken scheidt elke uitbreidingstermijn.
