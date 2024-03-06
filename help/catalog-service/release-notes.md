@@ -3,7 +3,7 @@ title: '''[!DNL Catalog Service] Opmerkingen bij de release'
 description: De meest recente releasegegevens voor [!DNL Catalog Service] voor Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 358dac1ce083023476022c968bc6a9debfadc119
+source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
 workflow-type: tm+mt
 source-wordcount: '570'
 ht-degree: 0%
@@ -73,7 +73,7 @@ _19 september 2023_
 
 [!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) Catalogusservice gebruikt nu [Prijsindexering SaaS](../price-index/index.md).
+![Nieuw](../assets/new.svg) Catalogusservice gebruikt nu [Prijsindexering SaaS](../price-index/price-indexing.md).
 ![Repareren](../assets/fix.svg) Deze versie bevat insectenmoeilijke situaties en verbeteringen aan de de dienstkant.
 
 ### V1.11 Release

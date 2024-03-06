@@ -5,7 +5,7 @@ breadcrumb-title: "Saas price indexer Guide"
 hide: true
 role: Admin
 feature: Services, Price Indexer
-source-git-commit: b478d920a07a2498266e11664c04dae12280db4a
+source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
 workflow-type: tm+mt
 source-wordcount: '26'
 ht-degree: 7%
@@ -14,6 +14,6 @@ ht-degree: 7%
 
 # Saas Price Index {#price-indexer}
 
-- [Overzicht van de handleiding](index.md)
+- [Overzicht van de handleiding](price-indexing.md)
 - [Catalogusadapter](catalog-adapter.md)
 

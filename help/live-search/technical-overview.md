@@ -3,7 +3,7 @@ title: "Technisch overzicht"
 description: "[!DNL Live Search] instapkaartstroom, systeemvereisten, grenzen en beperkingen"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: e235073031cae1304eaae4605d2f94332e52284f
+source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
 workflow-type: tm+mt
 source-wordcount: '1028'
 ht-degree: 0%
@@ -148,7 +148,7 @@ Op deze manier kunnen ontwikkelaars de functionaliteit en opmaak volledig aanpas
 
 ## Prijsindexering
 
-Klanten met Live zoeken kunnen de nieuwe [SaaS-prijsindexer](../price-index/index.md), die snellere updates van prijswijzigingen en synchronisatietijd biedt.
+Klanten met Live zoeken kunnen de nieuwe [SaaS-prijsindexer](../price-index/price-indexing.md), die snellere updates van prijswijzigingen en synchronisatietijd biedt.
 
 ## Prijsondersteuning
 
