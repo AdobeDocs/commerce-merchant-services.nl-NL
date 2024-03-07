@@ -4,9 +4,9 @@ description: Leer welke gegevens elke gedraggebeurtenis vastlegt.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: 540c423ecf7e50a36c1137f43a9cf9673658c805
+source-git-commit: a433d970e83792a9f53b2a09afd84c335d980024
 workflow-type: tm+mt
-source-wordcount: '4497'
+source-wordcount: '4496'
 ht-degree: 0%
 
 ---
@@ -303,9 +303,9 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `productListItems.selectedOptions.attribute` | Identificeert een attribuut van het configureerbare product, zoals `size` of `color`. |
 | `productListItems.selectedOptions.value` | Hiermee wordt de waarde van het kenmerk geïdentificeerd, zoals `small` of `black`. |
 
-## Klantprofielgebeurtenissen (gedrag)
+## Klantprofielgebeurtenissen
 
-Profielgebeurtenissen die zijn vastgelegd vanuit de opslagruimte, bevatten accountgegevens, zoals `signIn`, `signOut`, `createAccount`, en `editAccount`. Deze gegevens worden gebruikt om belangrijke klantendetails te bevolken die nodig zijn om segmenten beter te bepalen of marketing campagnes, zoals het verzenden van aanbiedingen van de inschrijvingskorting, bevestigingen van de rekeningsverandering, etc. uitvoeren. Er zijn vergelijkbare profielgebeurtenissen vastgelegd van de [server-kant](events-backoffice.md#customer-profile-events-back-office).
+Profielgebeurtenissen die zijn vastgelegd vanuit de opslagruimte, bevatten accountgegevens, zoals `signIn`, `signOut`, `createAccount`, en `editAccount`. Deze gegevens worden gebruikt om belangrijke klantendetails te bevolken die nodig zijn om segmenten beter te bepalen of marketing campagnes, zoals het verzenden van aanbiedingen van de inschrijvingskorting, bevestigingen van de rekeningsverandering, etc. uitvoeren. Er zijn vergelijkbare profielgebeurtenissen vastgelegd van de [server-kant](events-backoffice.md#customer-profile-events).
 
 ### signIn
 

@@ -3,9 +3,10 @@ title: Back Office-gebeurtenissen
 description: Leer welke gegevens elke achterkantoorgebeurtenis vangt.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
+exl-id: a5a4f04b-89ac-4020-95ce-984f9f2d8385
+source-git-commit: 0ab1b4b23d25bee722b35fbc8b9717ad6d1c299e
 workflow-type: tm+mt
-source-wordcount: '3573'
+source-wordcount: '3571'
 ht-degree: 0%
 
 ---
@@ -16,7 +17,7 @@ De volgende lijst maakt een lijst van de Van de Handel achterkantoor beschikbare
 
 Naast de gegevens die door de volgende gebeurtenissen worden verzameld, wordt ook [overige gegevens](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) verstrekt door de Adobe Experience Platform Web SDK.
 
-De gebeurtenissen van het achterkantoor bevatten server-zijgegevens. Deze gegevens omvatten [orderstatus](#order-status) informatie zoals of een bestelling is geplaatst, geannuleerd, terugbetaald, verzonden of voltooid. Gegevens aan de serverzijde worden ook opgenomen [klantprofielgebeurtenissen](#customer-profile-events-back-office) gegevens, zoals of een account is gemaakt, bijgewerkt of verwijderd.
+De gebeurtenissen van het achterkantoor bevatten server-zijgegevens. Deze gegevens omvatten [orderstatus](#order-status) informatie zoals of een bestelling is geplaatst, geannuleerd, terugbetaald, verzonden of voltooid. Gegevens aan de serverzijde worden ook opgenomen [klantprofielgebeurtenissen](#customer-profile-events) gegevens, zoals of een account is gemaakt, bijgewerkt of verwijderd.
 
 >[!NOTE]
 >
@@ -401,9 +402,9 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `productListItems.categories.name` | De naam van de categorie. |
 | `productListItems.categories.path` | Het pad naar de categorie. |
 
-## Klantprofielgebeurtenissen (back-office)
+## Klantprofielgebeurtenissen
 
-Profielgebeurtenissen die vanaf de server zijn vastgelegd, bevatten accountgegevens, zoals `accountCreated`, `accountUpdated`, en `accountDeleted`. Deze gegevens worden gebruikt om belangrijke klantendetails te bevolken die nodig zijn om segmenten beter te bepalen of marketing campagnes, zoals het verzenden van aanbiedingen van de inschrijvingskorting, bevestigingen van de rekeningsverandering, etc. uitvoeren. Er zijn vergelijkbare profielgebeurtenissen vastgelegd van de [storefront](#customer-profile-events-storefront).
+Profielgebeurtenissen die vanaf de server zijn vastgelegd, bevatten accountgegevens, zoals `accountCreated`, `accountUpdated`, en `accountDeleted`. Deze gegevens worden gebruikt om belangrijke klantendetails te bevolken die nodig zijn om segmenten beter te bepalen of marketing campagnes, zoals het verzenden van aanbiedingen van de inschrijvingskorting, bevestigingen van de rekeningsverandering, etc. uitvoeren. Er zijn vergelijkbare profielgebeurtenissen vastgelegd van de [storefront](events.md#customer-profile-events).
 
 ### accountCreated
 

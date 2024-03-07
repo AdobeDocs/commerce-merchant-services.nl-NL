@@ -2,9 +2,9 @@
 title: Recommendations-beheerprogramma voor producten
 description: Een overzicht van de architectuur en de ontwikkelfuncties van Product Recommendations.
 exl-id: caef5e0c-dd69-4846-8f85-b1c5e1c6a28f
-source-git-commit: e74bc4aeaa154e751f8d986e0426dd19d55d335e
+source-git-commit: a433d970e83792a9f53b2a09afd84c335d980024
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '426'
 ht-degree: 0%
 
 ---
@@ -34,6 +34,10 @@ Voor product Recommendations zijn de volgende gegevens vereist:
 - **Catalogus** - Productmetagegevens, zoals naam, prijs, beschikbaarheid, enzovoort.
 
 Wanneer u de `magento/product-recommendations` Adobe Sensei aggregeert de gedrags- en catalogusgegevens en maakt Product Recommendations voor elk aanbevolen type. De dienst van Recommendations van het Product stelt dan die aanbevelingen aan uw winkel op.
+
+>[!NOTE]
+>
+>Voor configureerbare producten gebruikt Product Recommendations de afbeelding van het bovenliggende product in de aanbevolen eenheid. Als voor het configureerbare product geen afbeelding is opgegeven, is de aanbevolen eenheid leeg voor dat specifieke product.
 
 ## Volgende stappen
 
