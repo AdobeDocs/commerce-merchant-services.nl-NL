@@ -2,9 +2,9 @@
 title: "Typen synoniemen"
 description: "Eenrichtings- en tweerichtingsverkeer [!DNL Live Search] synoniemen breiden de definitie van trefwoorden uit."
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
-source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
+source-git-commit: cb5db979828eb0b678d19c926de2823829717c02
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,3 @@ Het is niet nodig om zowel de enkelvoudige als de meervoudige vorm van een woord
 ### Consistentie
 
 Zorg ervoor dat de terminologie in de catalogus wordt gebruikt. Houd er rekening mee dat er regionale verschillen in gebruik kunnen zijn, en soms verschillen binnen een bedrijfstak.
-
-### Trefwoordtoewijzing
-
-Deze techniek gebruikt doorzoekbare productkenmerken in plaats van synoniemen om op trefwoorden gebaseerde koppelingen tussen producten te maken. Als gevolg hiervan kan een toegewezen product in de zoekresultaten van een ander product worden weergegeven. Zie voor meer informatie [Zoekresultaten](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html).
