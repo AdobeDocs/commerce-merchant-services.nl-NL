@@ -4,9 +4,9 @@ description: Leer welke gegevens elke gedraggebeurtenis vastlegt.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: a433d970e83792a9f53b2a09afd84c335d980024
+source-git-commit: ace61fa579404962a9ca3eb97f61ed50bc43db52
 workflow-type: tm+mt
-source-wordcount: '4496'
+source-wordcount: '4516'
 ht-degree: 0%
 
 ---
@@ -151,6 +151,8 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `commerce.commerceScope.storeCode` | De unieke opslagcode. U kunt veel winkels per website hebben. |
 | `commerce.commerceScope.storeViewCode` | De unieke code van de archiefmening. U kunt per winkel veel weergaven van uw winkel bekijken. |
 | `commerce.commerceScope.websiteCode` | De unieke websitecode. U kunt veel websites in een omgeving hebben. |
+| `commerce.order` | Bevat informatie over de in behandeling zijnde orde voor één of meerdere producten. |
+| `commerce.order.discountAmount` | Geeft het kortingsbedrag aan dat op de hele volgorde wordt toegepast. |
 | `productListItems` | Een reeks producten die aan het winkelwagentje zijn toegevoegd. |
 | `productListItems.SKU` | Stock Keeping Unit. De unieke id voor het product. |
 | `productListItems.name` | De weergavenaam of leesbare naam van het product. |

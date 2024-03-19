@@ -2,7 +2,7 @@
 title: "[!DNL Live Search] Indexeren"
 description: "Meer informatie [!DNL Live Search] indexes product attribute properties."
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
+source-git-commit: 17b9383ad84c47f2b0314feccbabb33d7dd8fc11
 workflow-type: tm+mt
 source-wordcount: '587'
 ht-degree: 0%
@@ -45,7 +45,7 @@ Om een dynamische vraag te construeren, moet de onderzoeksdienst weten welke att
 
 ### Volledige index
 
-Wanneer [!DNL Live Search] is geconfigureerd en gesynchroniseerd tijdens het instappen, kan het tot 30 minuten duren om de eerste index te genereren. De index van grote catalogi kan langer duren. Het proces begint na `cron` verzendt het diervoeder en eindigt het lopen.
+Wanneer [!DNL Live Search] is geconfigureerd en gesynchroniseerd tijdens het instappen, kan het tot 60 minuten duren om de eerste index te genereren. De index van grote catalogi kan langer duren. Het proces begint na `cron` verzendt het diervoeder en eindigt het lopen.
 
 De volgende gebeurtenissen activeren een volledige synchronisatie en de opbouw van de index:
 

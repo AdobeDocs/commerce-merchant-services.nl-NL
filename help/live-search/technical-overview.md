@@ -3,9 +3,9 @@ title: "Technisch overzicht"
 description: "[!DNL Live Search] instapkaartstroom, systeemvereisten, grenzen en beperkingen"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
+source-git-commit: e8d4215b1f16f1cb34783674cabc046dec135729
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '1023'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ In dit onderwerp worden de technische vereisten en tips voor het installeren en 
 
 Als [!DNL Live Search] geen toegang heeft tot de volledige productdatabase; [!DNL Live Search] GraphQL en Commerce core GraphQL zullen geen volledige pariteit hebben.
 
-Men adviseert om SaaS API&#39;s direct te roepen - specifiek het eindpunt van de Dienst van de Catalogus.
+Het wordt geadviseerd om SaaS APIs direct te roepen - specifiek het eindpunt van de Dienst van de Catalogus.
 
 * De prestaties van de verhoging en vermindert bewerkerlading door het gegevensbestand/het Grahql proces van de Handel over te slaan
 * Profiteer van de [!DNL Catalog Service] federatie [!DNL Live Search], [!DNL Catalog Service], en [!DNL Product Recommendations] vanaf één eindpunt.
@@ -43,8 +43,8 @@ Als u een aangepaste implementatie zonder kop hebt, checkt u de [!DNL Live Searc
 * [PLP-widget](https://github.com/adobe/storefront-product-listing-page)
 * [Veld Live zoeken](https://github.com/adobe/storefront-search-as-you-type)
 
-Als u niet de standaardcomponenten, zoals de Adapter of widgets van het Onderzoek op Luma, of AEM widgets gebruikt, me ervan bewust ben dat het voorkomen (klikstroomgegevens die Adobe Sensei voor Intelligente Merchandising en prestatiesmetriek) van de doos voorzien niet zal werken en douaneontwikkeling vereist om het voorkomen zonder kop uit te voeren.
-De meest recente versie van [!DNL Live Search] reeds gebruikt [!DNL Catalog Service] en de installaties [!DNL Catalog Service] modules.
+Als u niet de standaardcomponenten, zoals de Adapter of widgets van het Onderzoek op Luma, of AEM widgets gebruikt, zal de gebeurtenis (klikstroomgegevens die Adobe Sensei voor Intelligente Merchandising en prestatiesmetriek van de voer voorzien) niet uit de doos werken en zal de douaneontwikkeling vereisen om hoofdloze gebeurtenis uit te voeren.
+De meest recente versie van [!DNL Live Search] reeds gebruikt [!DNL Catalog Service].
 
 ## Grenzen en drempels
 
@@ -109,6 +109,7 @@ Om klantengroepen te beperken die de toestemmingen van de Catalogus gebruiken:
 | Lets | Letland | lv_LV | lv_LV |
 | Noors | Norway Bokmal | nb_NO | nb_NO |
 | Nederlands | Nederland | nl_NL | nl_NL |
+| Pools | Polen | pl_PL | pl_PL |
 | Portugees | Brazilië | pt_BR | pt_BR |
 | Portugees | Portugal | pt_PT | pt_PT |
 | Roemeens | Roemenië | ro_RO | ro_RO |
@@ -142,7 +143,7 @@ Op deze manier kunnen ontwikkelaars de functionaliteit en opmaak volledig aanpas
 
 ## Inventory management
 
-[!DNL Live Search] supports [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html) De mogelijkheden in Handel (vroeger kent als Multisource Inventory, of MSI). Om volledige steun toe te laten, moet u [update](install.md#update) de afhankelijkheidsmodule `commerce-data-export` naar versie 102.2.0+.
+[!DNL Live Search] supports [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) De mogelijkheden in Handel (vroeger kent als Multisource Inventory, of MSI). Om volledige steun toe te laten, moet u [update](install.md#update) de afhankelijkheidsmodule `commerce-data-export` naar versie 102.2.0+.
 
 [!DNL Live Search] Geeft een Booleaanse waarde die aangeeft of een product beschikbaar is in Inventory management, maar geen informatie bevat over de bron van de voorraad.
 
@@ -193,9 +194,9 @@ Te gebruiken [!DNL Live Search] met PWA Studio moeten de integrators ook :
 
 ## Momenteel niet ondersteund
 
-* De [Geavanceerd zoeken](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) module is uitgeschakeld wanneer [!DNL Live Search] wordt geïnstalleerd en wordt de koppeling Geavanceerd zoeken in de voettekst van de winkel verwijderd.
-* [Prijsniveau](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-tier.html) en [Speciale prijzen](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-special.html) worden niet ondersteund in de [!DNL Live Search] veld- en pagina met productaanbiedingen.
+* De [Geavanceerd zoeken](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) module is uitgeschakeld wanneer [!DNL Live Search] wordt geïnstalleerd en wordt de koppeling Geavanceerd zoeken in de voettekst van de winkel verwijderd.
+* [Prijsniveau](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier) en [Speciale prijzen](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) worden niet ondersteund in de [!DNL Live Search] veld- en pagina met productaanbiedingen.
 
 ## Cookies
 
-[!DNL Live Search] verzamelt gegevens over gebruikersinteractie als onderdeel van de basisfunctionaliteit en cookies worden gebruikt om deze gegevens op te slaan. Wanneer de gebruiker om het even welke gebruikersinformatie verzamelt, moet de gebruiker ermee instemmen om koekjes op te slaan. [!DNL Live Search] en [!DNL Product Recommendations] delen de gegevensstroom en daarom het zelfde koekjesmechanisme. Meer informatie hierover vindt u in [Cookie-beperkingen verwerken](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/setting-cookie.html).
+[!DNL Live Search] verzamelt gegevens over gebruikersinteractie als onderdeel van de basisfunctionaliteit en cookies worden gebruikt om deze gegevens op te slaan. Wanneer de gebruiker om het even welke gebruikersinformatie verzamelt, moet de gebruiker ermee instemmen om koekjes op te slaan. [!DNL Live Search] en [!DNL Product Recommendations] delen de gegevensstroom en daarom het zelfde koekjesmechanisme. Meer informatie hierover vindt u in [Cookie-beperkingen verwerken](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/developer/setting-cookie).

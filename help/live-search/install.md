@@ -3,9 +3,9 @@ title: "Installeren [!DNL Live Search]"
 description: "Meer informatie over het installeren, bijwerken en verwijderen [!DNL Live Search] uit Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 460065ecf6478e4313bd31ea848e04c7e8e192a3
+source-git-commit: e8d4215b1f16f1cb34783674cabc046dec135729
 workflow-type: tm+mt
-source-wordcount: '1211'
+source-wordcount: '1217'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Dit onderwerp verstrekt instructies om het volgende te doen:
 
 Ga als volgt te werk:
 
-1. Bevestig dat [kroonbanen](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) en [indexeerders](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) worden uitgevoerd.
+1. Bevestig dat [kroonbanen](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) en [indexeerders](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) worden uitgevoerd.
 
 1. Kies de instapmethode die aan uw vereisten voldoet en volg de instructies.
 
@@ -33,7 +33,7 @@ Ga als volgt te werk:
 
 >[!IMPORTANT]
 >
->Gezien de Elasticsearch 7 eindeaankondiging voor augustus 2023, wordt aanbevolen dat alle Adobe Commerce-klanten naar de OpenSearch 2.x zoekmachine migreren. Voor informatie over het migreren van uw zoekmachine tijdens productverbetering, zie [Migreren naar OpenSearch](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration.html) in de _Upgradehandleiding_.
+>Gezien de Elasticsearch 7 eindeaankondiging voor augustus 2023, wordt aanbevolen dat alle Adobe Commerce-klanten naar de OpenSearch 2.x zoekmachine migreren. Voor informatie over het migreren van uw zoekmachine tijdens productverbetering, zie [Migreren naar OpenSearch](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration) in de _Upgradehandleiding_.
 
 ## Methode 1: Installeren zonder OpenSearch {#method-1}
 
@@ -66,7 +66,7 @@ In dit scenario worden storefront-bewerkingen onderbroken terwijl de [!DNL Live 
    >
    > Terwijl de gegevens worden geïndexeerd en gesynchroniseerd, zijn de zoek en de categorie doorbladerbewerkingen niet beschikbaar in de winkel. Afhankelijk van de grootte van de catalogus kan het proces minstens een uur duren `cron` wordt uitgevoerd om uw gegevens te synchroniseren naar [!DNL Live Search] diensten.
 
-1. Controleer of het volgende [indexeerders](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) zijn ingesteld op &quot;Bijwerken via schema&quot;:
+1. Controleer of het volgende [indexeerders](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) zijn ingesteld op &quot;Bijwerken via schema&quot;:
 
    * Productfeed
    * Diervoeders voor productvarianten
@@ -74,6 +74,8 @@ In dit scenario worden storefront-bewerkingen onderbroken terwijl de [!DNL Live 
    * Diervoeders productprijzen
    * Scopes Website Data feed
    * Scopes Klantengroepen Gegevensinvoer
+   * Diervoeders voor categorieën
+   * Diervoeders voor categorierechten
 
 1. Configureer uw [API-sleutels](#configure-api-keys) en controleer of de catalogusgegevens [gesynchroniseerd](#synchronize-catalog-data) with [!DNL Live Search] diensten.
 
@@ -125,7 +127,7 @@ In dit scenario: [!DNL OpenSearch] beheert tijdelijk zoekverzoeken van de winkel
 
    [!DNL Elasticsearch] blijft zoekverzoeken van de winkel beheren terwijl de [!DNL Live Search] De dienst synchroniseert catalogusgegevens en indexeert producten op de achtergrond.
 
-1. Controleer of het volgende [indexeerders](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) zijn ingesteld op &quot;Bijwerken via schema&quot;:
+1. Controleer of het volgende [indexeerders](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) zijn ingesteld op &quot;Bijwerken via schema&quot;:
 
    * Productfeed
    * Diervoeders voor productvarianten
@@ -201,7 +203,7 @@ Om te controleren of de catalogusgegevens uit uw Adobe Commerce-exemplaar zijn g
 * `catalog_data_exporter_products`
 * `catalog_data_exporter_product_attributes`
 
-Raadpleeg voor meer informatie [[!DNL Live Search] catalogus niet gesynchroniseerd](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync.html) in de Support Knowledge Base.
+Raadpleeg voor meer informatie [[!DNL Live Search] catalogus niet gesynchroniseerd](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync) in de Support Knowledge Base.
 
 ### Updates voor toekomstige producten
 
@@ -223,7 +225,7 @@ Als u Live zoeken via een firewall wilt toestaan, voegt u `commerce.adobe.io` aa
 
 ## De geïnstalleerde versie controleren
 
-Voer voordat u Live zoeken bijwerkt de volgende handelingen uit vanaf de opdrachtregel om de versie van Live Search te controleren die op dat moment is geïnstalleerd:
+Voer voordat u Live zoeken bijwerkt de volgende handelingen uit vanaf de opdrachtregel om de geïnstalleerde versie van Live Search te controleren:
 
 ```bash
 composer show magento/module-live-search | grep version
@@ -271,14 +273,14 @@ Als u wilt bijwerken naar een belangrijke versie zoals 3.1.1 en 4.0.0, bewerkt u
 
 ## Verwijderen [!DNL Live Search] {#uninstall}
 
-Om te verwijderen [!DNL Live Search], zie [Modules verwijderen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html).
+Om te verwijderen [!DNL Live Search], zie [Modules verwijderen](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules).
 
 ## [!DNL Live Search] pakketten {#packages}
 
 | Pakket | Beschrijving |
 |--- |--- |
-| `module-live-search` | Staat verkopers toe om hun onderzoeksinstellingen voor facetten, synoniemen, vraagregels, enz. te vormen, en verleent toegang tot read-only GraphQL playground om vragen van te testen *Beheerder*. |
-| `module-live-search-adapter` | Routes onderzoeksverzoeken van de winkel aan [!DNL Live Search] en geeft de resultaten weer in de winkel. <br />- Rubriekbrowse - Routaanvragen van de winkel [topnavigatie](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html) aan de zoekdienst.<br />- Globale zoekactie - Routverzoeken van de [snel zoeken](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) in de rechterbovenhoek van de winkel [!DNL Live Search] service. |
+| `module-live-search` | Staat handelaars toe om hun onderzoeksmontages voor facetting, synoniemen, vraagregels, etc. te vormen en verleent toegang tot read-only GraphQL playground om vragen van te testen *Beheerder*. |
+| `module-live-search-adapter` | Routes onderzoeksverzoeken van de winkel aan [!DNL Live Search] en geeft de resultaten weer in de winkel. <br />- Rubriekbrowse - Routaanvragen van de winkel [topnavigatie](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/navigation/navigation-top) aan de zoekdienst.<br />- Globale zoekactie - Routverzoeken van de [snel zoeken](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) in de rechterbovenhoek van de winkel [!DNL Live Search] service. |
 | `module-live-search-storefront-popover` | De pop-up &#39;&#39;Zoeken terwijl u typt&#39;&#39; vervangt de standaard snelle zoekopdracht en retourneert gegevens en miniaturen van de bovenste zoekresultaten. |
 
 ## [!DNL Live Search] afhankelijkheden {#dependencies}
