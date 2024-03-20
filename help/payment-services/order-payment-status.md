@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 feature: Payments, Checkout, Orders
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: 0dc370409ace6ac6b0a56511cd0071cf525620f1
 workflow-type: tm+mt
-source-wordcount: '1864'
+source-wordcount: '2045'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ In de weergave Betalingsstatus bestellen kunt u het tijdpad voor de betalingssta
 
 ### Statusinformatie
 
-De betalingsstatussen voor een geselecteerd datumbereik worden links van de weergave voor betalingsstatus van bestelling weergegeven. De datums voor het geselecteerde datumbereik worden onder aan de weergave weergegeven. Als er op een bepaalde datum geen bestellingen zijn gedaan, wordt die datum niet weergegeven.
+De betalingsstatussen voor een geselecteerd datumbereik worden links van de weergave voor betalingsstatus van bestelling weergegeven. De datums voor het geselecteerde datumbereik worden onder aan de weergave weergegeven. Als er op een bepaalde datum geen orders waren, wordt die datum niet weergegeven.
 
 De weergave voor de visualisatie van betalingsstatusgegevens voor bestellingen bevat de volgende informatie.
 
@@ -83,9 +83,36 @@ U kunt [uitbetalingstransacties downloaden](#download-order-payment-statuses) in
 >
 >De gegevens in deze tabel worden in aflopende volgorde gesorteerd (`DESC`) standaard gebruikt de `TRANS DATE`. De `TRANS DATE` Dit is de datum en het tijdstip waarop de transactie werd geïnitieerd.
 
+### Updates van de betalingsstatus
+
+Bepaalde betalingsmethoden vereisen een periode om de betaling af te vangen. [!DNL Payment Services] detecteert nu de hangende status van een betalingstransactie in een bestelling door:
+
+* Synchroon detecteren `pending capture` transacties
+* Asynchrone bewaking `pending capture` transacties
+
+>[!NOTE]
+>
+>Als de status van betalingstransacties in behandeling in een bestelling wordt vastgesteld, worden per ongeluk verzendopdrachten voorkomen als de betaling nog niet is ontvangen. Dit kan gebeuren bij e-check- en PayPal-transacties.
+
+#### Synchrone detectie van opnametransacties in behandeling
+
+Vastlegverrichtingen automatisch detecteren in een `Pending` status en voorkomen dat orders een `Processing` status wanneer een dergelijke transactie wordt gedetecteerd.
+
+Tijdens de afhandeling door de klant of wanneer een beheerder een factuur aanmaakt voor een eerder geautoriseerde betaling, [!DNL Payment Services] detecteert automatisch vastgelegde transacties in een `Pending` status en verplaatst corresponderende orders naar `Payment Review` status.
+
+#### Asynchrone bewaking van opnametransacties in behandeling
+
+Detecteren wanneer een vastlegtransactie in behandeling een `Completed` status, zodat handelaren de verwerking van de desbetreffende order kunnen hervatten.
+
+Om ervoor te zorgen dat dit proces naar behoren werkt, moeten handelaren een nieuwe uitsnijdtaak configureren. Zodra de baan wordt gevormd om automatisch te lopen, worden geen andere interventies verwacht van de handelaar.
+
+Zie [Cron-taken configureren](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html). Zodra gevormd, de nieuwe baanlooppas om de 30 minuten om updates voor orden te halen die in a zijn `Payment Review` status.
+
+Verkopers kunnen de bijgewerkte betalingsstatus controleren via de rapportweergave voor betalingsstatus van bestelling.
+
 ### In het rapport gebruikte gegevens
 
-De [!DNL Payment Services] -module gebruikt bestelgegevens en combineert deze met geaggregeerde betalingsgegevens uit andere bronnen (waaronder PayPal) voor zinvolle en zeer nuttige rapporten.
+[!DNL Payment Services] maakt gebruik van ordergegevens en combineert deze met geaggregeerde betalingsgegevens uit andere bronnen (waaronder PayPal) om zinvolle en zeer bruikbare rapporten te maken.
 
 Bestelgegevens worden geëxporteerd en blijven in de betalingsservice staan. Wanneer u [orderstatussen wijzigen of toevoegen](https://docs.magento.com/user-guide/sales/order-status-custom.html) of [een winkelweergave bewerken](https://docs.magento.com/user-guide/stores/stores-all-view-edit.html), [winkel](https://docs.magento.com/user-guide/stores/store-information.html), of de naam van de website, die gegevens worden gecombineerd met betalingsgegevens en het rapport over de betalingsstatus van de bestelling wordt gevuld met de gecombineerde informatie.
 
@@ -132,9 +159,9 @@ Om de gegevensbron voor uw te selecteren [!UICONTROL Order Payment Status] rappo
 
    De rapportresultaten regenereren op basis van de geselecteerde gegevensbron.
 
-### Tijdskader voor datums aanpassen
+### Tijdschema voor datums van bestellingen aanpassen
 
-In de weergave van het rapport Betalingsstatus bestellen kunt u de tijdsperiode van de statussen die u wilt weergeven aanpassen door specifieke datums te selecteren. Standaard worden de betalingsstatussen van 30 dagen voor bestellingen weergegeven in het raster.
+In de weergave van het rapport Betalingsstatus bestellen kunt u de tijdlijn aanpassen van de statusresultaten die u wilt bekijken door specifieke datums te selecteren. Standaard worden de betalingsstatussen van 30 dagen voor bestellingen weergegeven in het raster.
 
 1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. Klik op de knop _[!UICONTROL Order dates]_Kalenderkiezerfilter.
@@ -148,7 +175,7 @@ In de weergave Betalingsstatusrapport bestellen kunt u de resultaten filteren di
 1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. Klik op de knop **[!UICONTROL Filter]** kiezer.
 1. Schakelen tussen _Betalingsstatus_ opties om de rapportresultaten voor slechts geselecteerde status van de ordebetaling te zien.
-1. Voer een _Min. orderbedrag_ of _Max. aantal bestellingen_ om rapportresultaten binnen die waaier van het ordebedrag te zien.
+1. De rapportresultaten van de mening binnen een waaier van het ordebedrag door een _[!UICONTROL Min Order Amount]_of _[!UICONTROL Max Order Amount_].
 1. Klikken **[!UICONTROL Hide filters]** om het filter te verbergen.
 
 ### Kolommen tonen en verbergen
@@ -159,7 +186,7 @@ Het rapport Betalingsstatus bestelling toont standaard alle beschikbare kolommen
 1. Klik op de knop _Kolominstellingen_ icon (![pictogram kolominstellingen](assets/column-settings.png){width="20" zoomable="yes"}).
 1. Als u wilt aanpassen welke kolommen u in het rapport ziet, schakelt u de kolommen in de lijst in of uit.
 
-   In het rapport Betalingsstatus bestellen worden direct alle wijzigingen weergegeven die u hebt aangebracht in het menu Kolominstellingen. De kolomvoorkeuren worden opgeslagen en blijven van kracht als u niet in de rapportweergave navigeert.
+   Het rapport Betalingsstatus bestellen toont direct alle wijzigingen die u hebt aangebracht in het menu Kolominstellingen. De kolomvoorkeuren worden opgeslagen en blijven van kracht als u niet in de rapportweergave navigeert.
 
 ### Statussen weergeven
 
@@ -197,10 +224,10 @@ Je kunt geschillen over bestellingen van je winkel bekijken en naar het PayPal R
 1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. Ga naar de **[!UICONTROL Disputes column]**.
 1. Geschillen voor een bepaalde bestelling bekijken en bekijken [de status van het geschil](#order-payment-status-information).
-1. Klik op de link voor het geschil-ID (beginnen met _PP-D-_) om naar de [PayPal-afwikkelingscentrum](https://www.paypal.com/us/smarthelp/article/what-is-the-resolution-center-faq3327).
+1. Geschillendetails van de [PayPal-afwikkelingscentrum](https://www.paypal.com/us/cshelp/article/what-is-the-resolution-center-help246) door te klikken op de link voor je geschil-ID die begint met _PP-D-_.
 1. Indien nodig passende maatregelen nemen voor het geschil.
 
-   Klik op de kolomkop Geschillen oplossen als u geschillen wilt sorteren op status.
+   Klik op de knop [!UICONTROL Disputes] kolomkop.
 
 ### Betalingsstatus van bestellingen downloaden
 

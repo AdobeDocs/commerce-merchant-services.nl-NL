@@ -3,9 +3,9 @@ title: Betalingsopties
 description: Stel de betalingsopties in om de beschikbare methoden voor uw winkelklanten aan te passen.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 8dd4f629fa60959588cee4ea22f9fb577f338716
+source-git-commit: 0dc370409ace6ac6b0a56511cd0071cf525620f1
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '1150'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Zie [Inschakelen [!DNL Payment Services] voor productie](../payment-services/pro
 
 ## [!UICONTROL Credit Card Fields]
 
-[!UICONTROL Credit Card Fields] een eenvoudige en veilige afhandeling van betalingsmethoden voor creditcard of bankpas aanbieden. Wanneer een winkelier uitcheckt met gebruik van creditcardvelden, voert hij zijn naam, factuuradres en creditcardgegevens in om zijn bestelling te plaatsen. De klantgegevens worden tijdens de aankoopsessie veilig gebruikt om ze naadloos door de afrekenstroom te begeleiden.
+[!UICONTROL Credit Card Fields] een eenvoudige en veilige afhandeling van betalingsmethoden voor creditcard of bankpas aanbieden. Wanneer een winkelier uitcheckt met gebruik van creditcardvelden, geeft hij zijn naam, factuuradres en creditcardgegevens op om zijn bestelling te plaatsen. De klantgegevens worden tijdens de aankoopsessie veilig gebruikt om ze naadloos door de afrekenstroom te begeleiden.
 
 ![Creditcardvelden in afhandeling](assets/credit-card-fields.png){width="500" zoomable="yes"}
 
@@ -50,7 +50,7 @@ U kunt ook de lay-out, breedte, hoogte en buitenstijl van de creditcardvelden wi
 
 ## [!DNL Apple Pay] knop
 
-Klanten kunnen [[!DNL Apple Pay]](https://www.apple.com/apple-pay/), die gebruik maakt van betalingsgegevens van creditcard en bankpas die op een iOS- of macOS-apparaat zijn opgeslagen, voor aankopen.
+Klanten kunnen [[!DNL Apple Pay]](https://www.apple.com/apple-pay/), die gebruik maakt van betalingsgegevens van creditcard en bankpas die op een iOS- of macOS-apparaat zijn opgeslagen, om aankopen te doen.
 
 [!DNL Apple Pay] is alleen beschikbaar in de Safari-browser. Merchants kunnen maximaal 99 domeinen per zakelijke account toevoegen.
 
@@ -64,15 +64,31 @@ De [!DNL Apple Pay] Deze knop is zichtbaar vanaf de pagina met producten, de min
 
 U kunt [!UICONTROL Apple Pay] in de winkelconfiguratie of de startpagina van de betalingsservices. Zie [Instellingen](settings.md#apple-pay) voor meer informatie .
 
+## [!DNL Google Pay] knop
+
+Klanten kunnen [[!DNL Google Pay]](https://pay.google.com/about/) door betalingsgegevens toe te voegen aan hun Google-account, waar ze veilig zijn opgeslagen voor een naadloze afhandeling.
+
+[!DNL Google Pay] alleen beschikbaar is in bepaalde landen of regio&#39;s en op bepaalde apparaten. Zie [[!DNL Google Pay] documentatie](https://developer.paypal.com/docs/checkout/apm/google-pay/#link-googlepayintegration) voor meer informatie .
+
+![Google Pay button in het afrekenen](assets/google-pay-button.png){width="500" zoomable="yes"}
+
+De [!DNL Google Pay] Deze knop is zichtbaar vanaf de pagina met producten, de miniwinkelwagentje, de winkelwagentje en de afrekenweergave.
+
+U kunt [!UICONTROL Google Pay] in de winkelconfiguratie of de startpagina van de betalingsservices. Zie [Instellingen](settings.md) voor meer informatie .
+
+>[!NOTE]
+>
+> De [!DNL Google Pay] API kan alleen worden gebruikt op websites in een veilige context. Zie [Problemen oplossen](https://developers.google.com/pay/api/web/support/troubleshooting) documentatie voor meer informatie.
+
 ## [!DNL PayPal Payment Buttons]
 
 [!DNL PayPal payment buttons], die PayPal gebruiken om een aankoop te voltooien, slaat het verzendadres, het factuuradres en de betalingsgegevens van je winkel op voor later gebruik. Kopers kunnen elke betalingsmethode gebruiken die eerder door PayPal is opgeslagen of aangeboden.
 
 ![PayPal-knop](assets/paypal-button.png){width="350" zoomable="yes"}
 
-U kunt [!UICONTROL PayPal payment buttons] in de opslagconfiguratie of de [!DNL Payment Services] Home.  Zie [Instellingen](settings.md#payment-buttons) voor meer informatie .
+U kunt [!UICONTROL PayPal payment buttons] in de opslagconfiguratie of de [!DNL Payment Services] Home. Zie [Instellingen](settings.md#payment-buttons) voor meer informatie .
 
-Zie PayPal&#39;s [Documentatie over betalingsmethoden](https://developer.paypal.com/docs/checkout/payment-methods/) om te leren in welke landen elke betalingsmethode momenteel beschikbaar is.
+Meer informatie over de beschikbaarheid van betalingsmethoden per land in PayPal&#39;s [Documentatie over betalingsmethoden](https://developer.paypal.com/docs/checkout/payment-methods/).
 
 ### [!DNL PayPal] knop
 
@@ -102,17 +118,17 @@ De [!DNL Pay Later] Deze knop is zichtbaar vanaf de pagina met producten, de min
 
 Meer informatie over de aanbiedingen voor Later betalen vindt u in [Later PayPal biedt documentatie](https://developer.paypal.com/docs/checkout/pay-later/us/). Gebruik de **Land of regio** vervolgkeuzelijst om een interessegebied te selecteren.
 
-Zie [Instellingen](settings.md#payment-buttons) leren hoe u de [!DNL Pay Later] berichten.
+Leer hoe u de [!DNL Pay Later] berichten door het bijwerken van [Instellingen](settings.md#payment-buttons) configuratie.
 
 ## Alleen PayPal-betalingsknoppen gebruiken
 
-Om uw opslag snel in productiemodus te krijgen kunt u _alleen_ PayPal-betalingsknoppen (Venmo, PayPal, enz.)—in plaats van ook de optie PayPal-creditcardbetaling te gebruiken.
+Om uw opslag in productiemodus snel te krijgen, kunt u _alleen_ PayPal-betalingsknoppen (Venmo, PayPal enzovoort.)—in plaats van ook de optie PayPal-creditcardbetaling te gebruiken.
 
 Zo kunt u:
 
-* Geef uw klanten diverse betalingsopties, waaronder de betaalknoppen Venmo en PayPal, met de optie om door PayPal gehoste kaartvelden uit te schakelen en een bestaande creditcardprovider te gebruiken.
-* Gebruik de bestaande creditcardprovider voor creditcardbetalingen en gebruik daarbij ook de andere betalingsopties van PayPal.
-* Gebruik de betalingsknoppen van PayPal in een regio waarin PayPal geen creditcards als betalingsoptie ondersteunt.
+* Geef uw klanten verschillende betalingsopties, waaronder de betaalknoppen Venmo en PayPal, met de optie om door PayPal gehoste kaartvelden uit te schakelen en een bestaande creditcardprovider te gebruiken.
+* Gebruik de bestaande creditcardprovider voor creditcardbetalingen en gebruik ook de andere betalingsopties van PayPal.
+* Gebruik de betalingsknoppen van PayPal in regio&#39;s waar PayPal geen creditcards als betalingsoptie ondersteunt.
 
 Naar **betalingen vastleggen met _alleen_ PayPal-betalingsknoppen (_niet_ (de optie PayPal-creditcardbetaling)**:
 
