@@ -4,9 +4,9 @@ description: Leer hoe u uw Adobe Commerce- of Magento Open Source-instantie inte
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 4a5877d6e1a5c7d840e36f4913306b0c440bbac5
+source-git-commit: 2d6b80b5133eb00ac42a5f2b64c5846ad30e56c4
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '866'
 ht-degree: 0%
 
 ---
@@ -105,7 +105,7 @@ Alle SaaS-projecten die aan uw sleutels zijn gekoppeld, worden weergegeven in de
 >
 > Als u nieuwe sleutels in de sectie van het Portaal API van Mijn Rekening produceert, werk onmiddellijk de API sleutels in de configuratie Admin bij. Als u nieuwe sleutels produceert en niet hen in Admin bijwerkt, werken uw uitbreidingen SaaS niet meer en u verliest waardevolle gegevens.
 
-Als u de naam van een SaaS-project of gegevensruimte wilt wijzigen, klikt u op **Naam wijzigen**.
+Als u de namen van uw SaaS-project of gegevensruimte wilt wijzigen, klikt u op **Naam wijzigen** naast een van beide. Het veranderen van de naam beïnvloedt niet uw dienst omdat de naam slechts een etiket is om u te helpen tussen projecten en gegevensruimten identificeren en onderscheiden.
 
 ## IMS-organisatie (optioneel) {#organizationid}
 
