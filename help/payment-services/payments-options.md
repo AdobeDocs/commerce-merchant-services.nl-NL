@@ -3,7 +3,7 @@ title: Betalingsopties
 description: Stel de betalingsopties in om de beschikbare methoden voor uw winkelklanten aan te passen.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 0dc370409ace6ac6b0a56511cd0071cf525620f1
+source-git-commit: 978340c03e05d29bae6ee872ae9c7332edcd7251
 workflow-type: tm+mt
 source-wordcount: '1150'
 ht-degree: 0%
@@ -74,7 +74,7 @@ Klanten kunnen [[!DNL Google Pay]](https://pay.google.com/about/) door betalings
 
 De [!DNL Google Pay] Deze knop is zichtbaar vanaf de pagina met producten, de miniwinkelwagentje, de winkelwagentje en de afrekenweergave.
 
-U kunt [!UICONTROL Google Pay] in de winkelconfiguratie of de startpagina van de betalingsservices. Zie [Instellingen](settings.md) voor meer informatie .
+U kunt [!UICONTROL Google Pay] in de winkelconfiguratie of de startpagina van de betalingsservices. Zie [Instellingen](configure-admin.md) voor meer informatie .
 
 >[!NOTE]
 >

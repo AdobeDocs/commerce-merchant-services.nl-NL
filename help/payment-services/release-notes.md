@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Opmerkingen bij de release"
 description: Lees de opmerkingen bij de release voor meer informatie over alle [!DNL Payment Services] lozingen.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 0c7bbe78100a323b19b59422a97e6eed83cbc22c
+source-git-commit: 978340c03e05d29bae6ee872ae9c7332edcd7251
 workflow-type: tm+mt
-source-wordcount: '2379'
+source-wordcount: '2434'
 ht-degree: 0%
 
 ---
@@ -77,6 +77,16 @@ _28 juni 2021_
 ![Nieuw](../assets/new.svg)<!-- Issue PAY-2761 --> U kunt de gegevens die worden weergegeven in het dialoogvenster [Betalingsstatusrapport bestellen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) en de [Uitbetalingsrapport](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) door kolommen te tonen of te verbergen gebruikend de de montagecontrole van de Kolom.
 
 +++
+
+## v2.4.1
+
+5 april 2024_
+
+[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+
+![Repareren](../assets/fix.svg)<!-- PAY-5322 --> Oplossing voor een PCI-compatibiliteitsprobleem met nieuwere Adobe Commerce-releases. Nu is de betalingsservice aangepast aan de betalingsvereisten in Adobe Commerce.
+
+![Repareren](../assets/fix.svg)<!-- PAY-5323 --> PayPal en Venmo worden correct weergegeven in Adobe Commerce. Probleem verholpen waarbij de optie voor het in- en uitschakelen van PayLater en Venmo niet werd toegestaan voor de beheerder.
 
 ## v2.4.0
 
