@@ -3,9 +3,9 @@ title: Aanvullende informatie
 description: De meest recente releasegegevens voor de [!DNL Data Connection] uit Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: c95b1fc9393c507dd757c74c30473590760d47a6
+source-git-commit: 2b168c0ef07324c7fc7b3cfd464742b257d073ec
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '826'
 ht-degree: 0%
 
 ---
@@ -71,6 +71,15 @@ _12 oktober 2022_
 ![Nieuw](../assets/new.svg) - Toegevoegde ondersteuning voor een [AEM storefront](overview.md#aem-support).
 
 +++
+
+## 3.1.1
+
+[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+
+_4 april 2024_
+
+![Nieuw](../assets/new.svg) - Toegevoegde ondersteuning voor PHP 8.3 voor iedereen [!DNL Data Connection] extensies.
+![Nieuw](../assets/new.svg) - Toegevoegd artikel over hoe [integreren](mobile-sdk-epc.md) de Adobe Experience Platform Mobile SDK met Commerce.
 
 ## 3.2.0-bèta2
 

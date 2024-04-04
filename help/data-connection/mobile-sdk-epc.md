@@ -4,9 +4,9 @@ description: Leer hoe u de Adobe Experience Platform Mobile SDK kunt gebruiken m
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: d1340b15-e7de-42b5-ad64-d4c31f0db029
-source-git-commit: 2afe6d36ada662500f5a4a08779664d6591271e8
+source-git-commit: 593e92ebf890bd7d9bfef1cd13be727ca6be172b
 workflow-type: tm+mt
-source-wordcount: '480'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
@@ -157,4 +157,10 @@ Nadat u de configuratie van SDK voor het platform van de Ervaring voltooit, voeg
 
    U hebt nu de Adobe Experience Platform Mobile SDK geïntegreerd met uw mobiele app Commerce. Gebeurtenisgegevens lopen van uw app naar de rand van het Experience Platform.
 
-Als u wilt weten hoe u het Real-Time CDP-publiek kunt ophalen van uw app voor mobiele handel om de regels voor de prijs van winkelwagentjes en dynamische blokken te informeren, raadpleegt u [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html#retrieve-audiences-using-the-adobe-experience-platform-mobile-sdk).
+## Hoe te om de gebeurtenissen van de Handel te onderscheiden die van mobiele toepassingen worden geproduceerd
+
+Alles [gebeurtenissen](events.md) bevat een veld met de naam `channel`. De `channel` field contains `channel._id` en `channel._type` die voor een Luma-archief naamruimtewaarden bevat van `"https://ns.adobe.com/xdm/channels/web"` en `"https://ns.adobe.com/xdm/channel-types/web"` respectievelijk. Voor een mobiele winkel zijn de naamruimtewaarden echter `"https://ns.adobe.com/xdm/channels/mobile-app"` en `"https://ns.adobe.com/xdm/channel-types/mobile"` respectievelijk.
+
+## Volgende stappen
+
+Als u wilt leren hoe u het Real-Time CDP-publiek kunt ophalen uit uw app voor mobiele handel om de regels voor de prijs van winkelwagentjes, dynamische blokken en gerelateerde productregels te informeren, raadpleegt u [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html#retrieve-audiences-using-the-adobe-experience-platform-mobile-sdk).
