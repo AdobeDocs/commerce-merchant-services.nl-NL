@@ -3,9 +3,9 @@ title: "Installeren [!DNL Live Search]"
 description: "Meer informatie over het installeren, bijwerken en verwijderen [!DNL Live Search] uit Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: e8d4215b1f16f1cb34783674cabc046dec135729
+source-git-commit: 8a98e069cd9ec3d2c4fec33485e5c8186d94518f
 workflow-type: tm+mt
-source-wordcount: '1217'
+source-wordcount: '1240'
 ht-degree: 0%
 
 ---
@@ -188,13 +188,15 @@ Als u een API-sleutel en een persoonlijke sleutel wilt genereren, raadpleegt u [
 
 ### Adobe Commerce-ontwikkelaar of SI
 
-De ontwikkelaar of SI vormt de SaaS gegevensruimte zoals die in wordt beschreven *Commerciële diensten* van de configuratie. In de *Beheerder*, wordt de Diensten van de Handel beschikbaar in *Configuratie* zijbalk als een SaaS-module is geïnstalleerd.
+De ontwikkelaar of SI vormt de SaaS gegevensruimte zoals die in wordt beschreven *Commerciële diensten* van de configuratie. In de *Beheerder*, Commerce Services is beschikbaar in de *Configuratie* zijbalk als een SaaS-module is geïnstalleerd.
 
 ## Catalogusgegevens synchroniseren {#synchronize-catalog-data}
 
 [!DNL Live Search] vereist gesynchroniseerde productgegevens voor onderzoeksverrichtingen, en gesynchroniseerde attributengegevens om facetten te vormen. De eerste synchronisatie tussen de productcatalogus en de catalogusservice begint wanneer [!DNL Live Search] is eerst verbonden. Afhankelijk van de installatiemethode en de grootte van de catalogus kan het maximaal 30 minuten duren voordat de gegevens zijn geëxporteerd en geïndexeerd door [!DNL Live Search]. De lijst met gegevens die met de catalogusservice worden gesynchroniseerd en gedeeld, vindt u in het schema, dat wordt gedefinieerd in:
 
 `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
+
+Gebruik de [Gegevensbeheerdashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard) om de synchronisatiestatus te controleren voor productgegevens die van de Commerce-database naar de Commerce SaaS-services worden overgedragen.
 
 ### Exporteren verifiëren {#verify-export}
 

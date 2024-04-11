@@ -2,9 +2,9 @@
 title: Onboarding en installatie
 description: "Leer hoe u kunt installeren [!DNL Catalog Service]"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 6a7efbe0424e35cdec9cb00275d9a953feccaa5b
+source-git-commit: 8a98e069cd9ec3d2c4fec33485e5c8186d94518f
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '629'
 ht-degree: 0%
 
 ---
@@ -45,9 +45,9 @@ Het instapproces voor [!DNL Catalog Service] vereist toegang tot de bevellijn va
 [!DNL Catalog Service] beschikt over twee eindpunten voor instapweigering:
 
 - Sandbox (`https://catalog-service-sandbox.adobe.io/graphql`)—Wordt gebruikt voor testen en valideren voordat u live gaat
-- Productie (`https://catalog-service.adobe.io/graphql`) - gebruikt voor levend verkeer voor handelaars en websites van de Handel
+- Productie (`https://catalog-service.adobe.io/graphql`) - gebruikt voor live verkeer voor Commerce-handelaren en websites
 
-Alle testinstanties van Handel zouden het zandbakeindpunt moeten gebruiken.
+Alle testinstanties van Commerce moeten het Sandbox-eindpunt gebruiken.
 
 Het testen van de lading zou slechts op het zandbakeindpunt moeten worden uitgevoerd. Het wordt aanbevolen om [Ondersteuningsticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) worden geopend wanneer het laden het testen zodat het team van de Diensten het extra serververkeer kan voorzien.
 
@@ -120,7 +120,7 @@ Gebruik deze methode voor het installeren van de [!DNL Catalog Service] uitbreid
 
 Na de installatie [!DNL Catalog Service]moet u de [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#apikey) door de API-sleutels op te geven en een SaaS-gegevensruimte te selecteren.
 
-Nadat de SaaS-configuratie is voltooid, voert u een eerste gegevenssynchronisatie uit door de [Catalogus synchroniseren](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) hulplijn.
+Nadat de SaaS-configuratie is voltooid, voert u een eerste gegevenssynchronisatie uit met de [Gegevensbeheerdashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). U kunt dit dashboard gebruiken om de synchronisatiestatus te controleren voor productgegevens die van het Commerce gegevensbestand aan de diensten van Commerce SaaS worden overgebracht.
 
 Ga als volgt te werk om te controleren of de catalogus correct wordt geëxporteerd:
 
@@ -128,13 +128,13 @@ Ga als volgt te werk om te controleren of de catalogus correct wordt geëxportee
 - Controleer of de indexen worden uitgevoerd.
 - Zorg ervoor dat de `Catalog Attributes Feed, Product Feed, Product Overrides Feed`, en `Product Variant Feed` de indexeerders worden geplaatst aan &quot;Update door Programma&quot;.
 
-De eerste synchronisatie kan enkele minuten tot uren duren, afhankelijk van de grootte van de catalogus. Na de eerste synchronisatie exporteert de Catalogus de productgegevens van de Commerce-server voortdurend naar de Commerce-diensten om de diensten up-to-date te houden. Als u de status van de synchronisatie wilt controleren, raadpleegt u de [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html).
+De eerste synchronisatie kan enkele minuten tot uren duren, afhankelijk van de grootte van de catalogus. Na de eerste synchronisatie worden de productgegevens van de Commerce-server doorlopend naar de Commerce-services geëxporteerd om de services up-to-date te houden. Als u de status van de synchronisatie wilt controleren, raadpleegt u de [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html).
 
 ### Toegang tot de service
 
 De [!DNL Catalog Service] API is toegankelijk via POST-opdrachten via HTTPS.
 
-Om api-sleutel te verkrijgen, ga naar het gebied van de Schakelaar van de Dienst van de Handel in admin en kopieer de openbare API sleutel.
+Als u de api-toets wilt verkrijgen, gaat u naar het gebied Commerce Service Connector in de beheerdersinterface en kopieert u de openbare API-sleutel.
 
 Lees de [GraphQL-documentatie](https://developer.adobe.com/commerce/services/graphql/) om te begrijpen hoe te om de kopballen te vragen en te verzenden die voor het produceren van API verzoeken nodig zijn.
 
