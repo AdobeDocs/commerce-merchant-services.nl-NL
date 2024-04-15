@@ -1,22 +1,22 @@
 ---
-title: '"Commerce Configurations Settings en [!DNL Live Search] '''
+title: 'Commerce Configurations Settings en [!DNL Live Search] '
 description: Beschrijft de de configuratiemontages van Adobe Commerce die [!DNL Live Search] kan lezen.
 exl-id: a4e9e2dd-e912-4ced-a44a-091ac5334e50
 features: Services, Search, Configuration
-source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
+source-git-commit: d1cd70e66e616c052418c719f6da23b010a22241
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '279'
 ht-degree: 0%
 
 ---
 
 # [!DNL Live Search] en Adobe Commerce Configuration Settings
 
-Er zijn de configuratiemontages van de Handel die [!DNL Live Search] ondersteunt. Dit onderwerp maakt een lijst van deze configuratiewaarden.
+Er zijn Commerce-configuratie-instellingen die [!DNL Live Search] ondersteunt. Dit onderwerp maakt een lijst van deze configuratiewaarden.
 
 ## Ondersteunde configuratiewaarden
 
-| Configuratie-instelling voor handel | Ondersteund door Popover | Ondersteund door adapter |
+| Commerce-configuratie-instelling | Ondersteund door Popover | Ondersteund door adapter |
 |---|---|---|
 | Winkels > Configuratie > Catalogus > Catalogus > Cataloguszoekopdracht > Alle producten per paginalengte toestaan | Ja. Maximaal 500 producten | Ja. Maximaal 500 producten |
 | Winkels > Configuratie > Catalogus > Catalogus > Cataloguszoekopdracht > Minimale lengte query | Ja | Ja |
@@ -36,8 +36,9 @@ Prijzen in de aanbiedingspagina van het widgetproduct en in de pop-up worden nu 
 
 [!DNL Live Search] kan niet alle configuratiewaarden lezen. Deze tabel bevat een lijst met waarden die ontwikkelaars wellicht interessanter vinden.
 
-| Configuratie-instelling voor handel | Notities |
+| Commerce-configuratie-instelling | Notities |
 |---|---|
 | Storingen > Configuratie > Catalogus > Storefront > Lijstmodus | Rendering is correct, maar gebeurtenissen worden niet verzonden voor bepaalde paginainteracties |
 | Winkels > Configuratie > Catalogus > Catalogus > Cataloguszoekopdracht > Maximale lengte query | Niet geïmplementeerd; zoekservices accepteren maximaal 255 tekens |
 | Configuration > Sales > Tax > Price Display Settings > Display Product Prices in Catalog |  |
+| Winkels > Configuratie > Catalogus > Storefront > Productaanbieding sorteren op | Is niet van toepassing op [!DNL Live Search] [Widget pagina met productaanbiedingen](plp-styling.md) |
