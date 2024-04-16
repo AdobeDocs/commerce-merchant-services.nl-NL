@@ -2,22 +2,28 @@
 title: Widget pagina met productaanbiedingen
 description: Het inschakelen en opmaken van de [!DNL Live Search Product Listing Page Widget]
 exl-id: f7346a06-a8c7-4a33-8437-ea4f61d9281f
-source-git-commit: 4c4facab0368bdeef70a5fd2925072e73d765707
+source-git-commit: d4511219a0244dca7db896419daba1e6694d80de
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
 
 # Widget pagina met productaanbiedingen
 
-De [!DNL Live Search Product Listing Page Widget] (PLP) gebruikt het platform van de Diensten van de Handel om een presterende, doorzoekbare, en facet-able pagina van de productlijst te verstrekken. In dit onderwerp wordt beschreven hoe u de PLP-widget kunt inschakelen en opmaken.
+De [!DNL Live Search Product Listing Page Widget] (PLP) gebruikt het Commerce Services-platform om een pagina met producten met een presterende, doorzoekbare en facetbare aanbieding te maken. In dit onderwerp wordt beschreven hoe u de PLP-widget kunt inschakelen en opmaken.
 
 ## De PLP-widget inschakelen
 
 Wanneer de [!DNL Live Search] de dienst wordt geïnstalleerd, wordt de standaardonderzoeksfunctionaliteit omgezet in [!DNL Live Search] automatisch.
 
 De [!DNL Live Search] PLP-widget is standaard ingeschakeld voor nieuwe installaties. Als u een upgrade uitvoert [!DNL Live Search] en de PLP-widget al is uitgeschakeld, zal dit zo blijven.
+
+>[!IMPORTANT]
+>
+>Wanneer de [!DNL Live Search Product Listing Page Widget] is ingeschakeld, kan de richting van de sorteervolgorde op een pagina met productlijsten niet worden gewijzigd.
+
+## De PLP-widget uitschakelen
 
 De PLP-widget uitschakelen:
 
