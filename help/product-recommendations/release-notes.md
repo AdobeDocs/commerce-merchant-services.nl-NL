@@ -3,7 +3,7 @@ title: '''[!DNL Product Recommendations] Opmerkingen bij de release'
 description: De meest recente releasegegevens voor [!DNL Product Recommendations] uit Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: ace61fa579404962a9ca3eb97f61ed50bc43db52
+source-git-commit: c3940c399c0639fe53e23cea96b347c7827ecb42
 workflow-type: tm+mt
 source-wordcount: '1276'
 ht-degree: 0%
@@ -88,7 +88,7 @@ _20 maart 2023_
 
 ![Nieuw](../assets/new.svg) Bijgewerkt [!DNL Product Recommendations] ter ondersteuning van Adobe Commerce 2.4.6.
 ![Nieuw](../assets/new.svg) Dit is een belangrijke versie. [Bewerken](install-configure.md#update) de basis `composer.json` bestand voor uw project.
-![Nieuw](../assets/new.svg) [!DNL Product Recommendations] ondersteunt nu volledig [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) De mogelijkheden in Handel (vroeger kent als Multisource Inventory, of MSI). Om volledige steun toe te laten, moet u [update](install-configure.md#update) de afhankelijkheidsmodule `commerce-data-export` naar versie 102.2.0+.
+![Nieuw](../assets/new.svg) [!DNL Product Recommendations] ondersteunt nu volledig [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) Mogelijkheden in Commerce (voorheen bekend als Multi-Source Inventory of MSI). Om volledige steun toe te laten, moet u [update](install-configure.md#update) de afhankelijkheidsmodule `commerce-data-export` naar versie 102.2.0+.
 
 ### 4.0.1 van magento/productaanbevelingen
 
@@ -125,7 +125,7 @@ _20 maart 2023_
 [!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
 
 ![Nieuw](../assets/new.svg) Toegevoegd [B2B-ondersteuning](onboarding.md#b2bsupport) in [!DNL Product Recommendations]
-![Nieuw](../assets/new.svg) Nieuwe feeds toegevoegd aan [catalogusgegevens synchroniseren](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/data-services/catalog-sync) aan Commerce Services via de opdrachtregel
+![Nieuw](../assets/new.svg) Nieuwe feeds toegevoegd aan [catalogusgegevens synchroniseren](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/data-services/catalog-sync) naar Commerce Services via de opdrachtregel
 
 ### 3.3.3 van de aanbevelingen inzake magento/product
 
