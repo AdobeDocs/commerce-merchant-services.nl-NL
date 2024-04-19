@@ -3,7 +3,7 @@ title: Betalingsopties
 description: Stel de betalingsopties in om de beschikbare methoden voor uw winkelklanten aan te passen.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 978340c03e05d29bae6ee872ae9c7332edcd7251
+source-git-commit: 5c4fe370507e4154d4495d4c09e2ff8705e53191
 workflow-type: tm+mt
 source-wordcount: '1150'
 ht-degree: 0%
@@ -54,7 +54,7 @@ Klanten kunnen [[!DNL Apple Pay]](https://www.apple.com/apple-pay/), die gebruik
 
 [!DNL Apple Pay] is alleen beschikbaar in de Safari-browser. Merchants kunnen maximaal 99 domeinen per zakelijke account toevoegen.
 
-![Apple Pay button in minicart](assets/apple-pay-button.png){width="500" zoomable="yes"}
+![Apple Pay button in minicart](assets/applepay-button.png){width="500" zoomable="yes"}
 
 De [!DNL Apple Pay] Deze knop is zichtbaar vanaf de pagina met producten, de miniwinkelwagentje, de winkelwagentje en de afrekenweergave.
 

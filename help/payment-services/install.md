@@ -4,14 +4,20 @@ description: Installeer de uitbreiding van de Diensten van Betalingen.
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
 role: Admin
 feature: Payments, Checkout, Install, Upgrade
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: 5c4fe370507e4154d4495d4c09e2ff8705e53191
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '451'
 ht-degree: 0%
 
 ---
 
 # Installeren [!DNL Payment Services]
+
+Als je aan de slag wilt met Betalingsservices voor [!DNL Adobe Commerce] en [!DNL Magento Open Source], moet u een aantal instapkaartstappen uitvoeren.
+
+>[!INFO]
+>
+> Zie onze [Configureren [!DNL Payment Services] voor Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-payment-services) video voor aanvullende informatie.
 
 Het downloaden en installeren van [!DNL Payment Services] verlenging voor [!DNL Adobe Commerce] en [!DNL Magento Open Source] is een eerste vereiste voor het gebruik [!DNL Payment Services].
 
@@ -29,7 +35,8 @@ U moet de extensie eerst downloaden van [Commerce Marketplace](https://experienc
 
 ## De extensie installeren
 
-U kunt de [!DNL Payment Services] extensie voor beide [!DNL Adobe Commerce] op cloudinfrastructuur en op bedrijfslocaties, die zijn gekoppeld aan uw Commerce-account [mageid](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions) die in het ondertekeningsproces worden verstrekt. [!DNL Magento Open Source] de klanten gebruiken de instructies ter plaatse.
+U kunt de [!DNL Payment Services] extensie voor beide [!DNL Adobe Commerce] op cloudinfrastructuur en op locaties die zijn gekoppeld aan uw Commerce-account [mageid](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/#access-keys) die in het ondertekeningsproces worden verstrekt.
+[!DNL Magento Open Source] de klanten gebruiken de instructies ter plaatse.
 
 Composer gebruikt deze toetsen tijdens de eerste installatie van [!DNL Adobe Commerce]of in situaties waarin de Composer-sleutels niet eerder zijn opgeslagen op de `auth.json` bestand.
 
@@ -132,7 +139,7 @@ Om te zien welke Composer sleutels worden gevormd:
    cat /path/to/auth.json
    ```
 
-1. Zie [welke sleutels aan uw rekening van de Handel worden geassocieerd `MageID`](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html).
+1. Zie [welke sleutels zijn gekoppeld aan uw Commerce-account `MageID`](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html).
 
 ### Onvoldoende geheugen voor PHP
 
