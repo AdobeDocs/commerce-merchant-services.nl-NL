@@ -3,9 +3,9 @@ title: '''[!DNL Catalog Service] Opmerkingen bij de release'
 description: De meest recente releasegegevens voor [!DNL Catalog Service] voor Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: a439df188f72d17a6a41fa248aa9957aaabd9e02
+source-git-commit: 0c4bd1aa58dced3d21edae529da367426c973034
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '605'
 ht-degree: 0%
 
 ---
@@ -22,9 +22,19 @@ Updates zijn:
 
 ## Huidige hoofdversie
 
+### V1.18 Release
+
+_11 april 2023_
+
+[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+
+![Nieuw](../assets/new.svg) Toegevoegde ondersteuning voor PHP 8.3.
+
+![Nieuw](../assets/new.svg) De [`products`](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/) De vraag keert nu klantgerichte optiesgegevens voor zowel eenvoudige als complexe producten terug.<!--DATA-5538-->
+
 ### V1.17 Release
 
-_22 feb. 2023_
+_22 februari 2023_
 
 [!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
 
@@ -36,7 +46,7 @@ _22 feb. 2023_
 
 ### V1.16 Release
 
-_13 feb. 2023_
+_13 februari 2023_
 
 [!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
 
@@ -49,10 +59,10 @@ _13 feb. 2023_
 Deze functies worden nog niet ondersteund:
 
 * Maximale grootte voor dynamische attributen lading is 9 MB.
-* Productprijs per groep. Kan worden berekend met eenvoudige productprijzen.
+* Productprijs per groep. Deze waarde kan worden berekend aan de hand van eenvoudige productprijzen.
 * In een afbeeldingsarray bevat alleen de eerste afbeelding rollen.
 
-De volgende beperkingen kunnen worden opgelost met behulp van het API-net en de Core GraphQL API:
+De volgende beperkingen kunnen worden opgelost door gebruik te maken van API Mesh en de Core GraphQL API:
 
 * Minimale geadverteerde prijs
 * [Tier-prijsstelling](mesh.md)
@@ -64,7 +74,7 @@ _12 oktober 2023_
 [!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
 
 ![Nieuw](../assets/new.svg) Catalogusservice ondersteunt de `inStock` markering voor productvarianten.
-![Nieuw](../assets/new.svg) `urlKey` en `externalId` zijn toegevoegd aan het GraphQL-schema.
+![Nieuw](../assets/new.svg) De `urlKey` en `externalId` er zijn velden toegevoegd aan het GraphQL-schema.
 ![Nieuw](../assets/new.svg) Downloadbare producten en cadeaukaarten worden nu ondersteund.
 
 ### V1.12 Release
@@ -90,7 +100,7 @@ _27 juni 2023_
 
 [!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) De API voor catalogusservice ondersteunt nu &quot;verwante producten&quot;.
+![Nieuw](../assets/new.svg) De API voor catalogusservice ondersteunt nu `related products`.
 
 ### V1.7-release
 
@@ -184,5 +194,3 @@ _9 augustus 2022_
 * Een specifieke prijs voor eenvoudige producten en prijsbereiken voor configureerbare producten.
 * Prijzen en prijsbereiken van de klantengroep. Ze retourneren een fallback-standaardprijs voor kopers zonder een klantengroep.
 * Producttypen die gebruikmaken van klantspecifieke B2B-prijzen.
-
-+++
