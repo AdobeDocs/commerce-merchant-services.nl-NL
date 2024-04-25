@@ -3,9 +3,9 @@ title: '''[!DNL Catalog Service] Opmerkingen bij de release'
 description: De meest recente releasegegevens voor [!DNL Catalog Service] voor Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 0c4bd1aa58dced3d21edae529da367426c973034
+source-git-commit: 8b0640064168303f48b34af7bb3f1ce1f43b2470
 workflow-type: tm+mt
-source-wordcount: '605'
+source-wordcount: '607'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ _11 april 2023_
 
 ![Nieuw](../assets/new.svg) Toegevoegde ondersteuning voor PHP 8.3.
 
-![Nieuw](../assets/new.svg) De [`products`](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/) De vraag keert nu klantgerichte optiesgegevens voor zowel eenvoudige als complexe producten terug.<!--DATA-5538-->
+![Nieuw](../assets/new.svg) De [`products`](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/) en [`refineProduct`](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/) query &#39; s retourneren nu aanpasbare optiegegevens voor zowel eenvoudige als complexe producten .<!--DATA-5538-->
 
 ### V1.17 Release
 
