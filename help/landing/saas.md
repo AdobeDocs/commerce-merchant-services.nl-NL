@@ -4,9 +4,9 @@ description: Leer hoe u uw Adobe Commerce- of Magento Open Source-instantie inte
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: b86464ac65aeb260930fa2f6fed0a4aedbd7eddf
+source-git-commit: e5d9576f0c326dd3a97eeaf9831db0d89b85caff
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '875'
 ht-degree: 0%
 
 ---
@@ -77,13 +77,11 @@ Voor [!DNL Product Recommendations], bevat de SaaS-gegevensruimte catalogus- en 
 
 ### Een SaaS-project selecteren of maken {#createsaasenv}
 
->[!NOTE]
->
-> Als u het geneesmiddel niet ziet **[!UICONTROL Commerce Services Connector]** in de [!DNL Commerce] configuratie, moet u installeren [!DNL Commerce] modules naar wens [[!DNL Commerce] service](#availableservices).
-
 Om een SaaS- project te selecteren of te creëren, verzoek [!DNL Commerce] API-sleutel uit de [!DNL Commerce] licentiehouder voor uw winkel.
 
 1. Op de _Beheerder_ zijbalk, ga naar **Systeem** > Services > **Commerce Services Connector**.
+
+   Als u het geneesmiddel niet ziet **[!UICONTROL Commerce Services Connector]** in de [!DNL Commerce] configuratie, installeer de [!DNL Commerce] modules naar wens [[!DNL Commerce] service](#availableservices). Zorg er ook voor dat `magento/module-services-id` pakket is geïnstalleerd.
 
 1. In de _Sandbox API-sleutels_ en _API-sleutels voor productie_ secties, plakt u de hoofdwaarden.
 
