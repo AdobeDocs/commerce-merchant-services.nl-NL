@@ -4,9 +4,9 @@ description: Leer hoe u uw Adobe Commerce- of Magento Open Source-instantie inte
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 2d6b80b5133eb00ac42a5f2b64c5846ad30e56c4
+source-git-commit: b86464ac65aeb260930fa2f6fed0a4aedbd7eddf
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '869'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ De volgende lijst bevat de [!DNL Commerce] functies die u kunt openen via de [!D
 
 Op hoog niveau [!DNL Commerce Services Connector] bestaat uit de volgende kernelementen:
 
-![Connectorarchitectuur voor handelsdiensten](assets/saas-config-sync-workflow.png)
+![Commerce Services Connector Architectuur](assets/saas-config-sync-workflow.png)
 
 In de volgende secties wordt elk van deze elementen nader besproken.
 
@@ -63,7 +63,7 @@ De API-sleutels voor productie en sandbox worden gegenereerd op basis van de [!D
 
 1. Herhaal bovenstaande stappen voor elke omgeving (productie en sandbox).
 
-   De **API-toetsen** geeft nu uw API-sleutels weer. Wanneer u [een SaaS-project selecteren of maken](#createsaasenv).
+   De **API-toetsen** geeft nu uw API-toetsen (Public) weer. Wanneer u werkt, hebt u zowel de productietoetsen als de sandboxsleutels nodig (Public+Private) [een SaaS-project selecteren of maken](#createsaasenv).
 
 ## SaaS-configuratie {#saasenv}
 
