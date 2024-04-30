@@ -1,59 +1,77 @@
 ---
-title: Inleiding tot [!DNL Live Search]
+title: Wat is [!DNL Live Search]?
 description: "[!DNL Live Search] van Adobe Commerce biedt een snelle, relevante en intuïtieve zoekervaring."
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 51ff52eba117fe438d592ca886dbca25304a0d15
+source-git-commit: 8aca09aba13e32afb191169729dfc1fbd0087262
 workflow-type: tm+mt
-source-wordcount: '722'
+source-wordcount: '678'
 ht-degree: 0%
 
 ---
 
-# Inleiding tot [!DNL Live Search]
+# Wat is [!DNL Live Search]?
 
-[!DNL Live Search] is een service voor Adobe Commerce die de standaardzoekmogelijkheden vervangt. De [!DNL Live Search] wordt geïnstalleerd met Composer en maakt verbinding met uw [!DNL Commerce] installatie aan de [!DNL Live Search] [service](../landing/saas.md). Wanneer het wordt gevormd, wordt het standaardonderzoekstekstgebied vervangen met [!DNL Live Search] tekstveld. [!DNL Live Search] Hiermee installeert u ook de widget PLOP (Product Listing Page), die bij het bladeren in zoekresultaten robuuste filtermogelijkheden biedt.
+[!DNL Live Search] is een extensie die de standaardzoekmogelijkheden in Adobe Commerce vervangt. De [!DNL Live Search] is geïnstalleerd met Composer en maakt verbinding met uw [!DNL Commerce] installatie aan de [!DNL Live Search] [service](../landing/saas.md). Wanneer het wordt gevormd, wordt het standaardonderzoekstekstgebied vervangen met [!DNL Live Search] tekstveld. [!DNL Live Search] Hiermee installeert u ook de widget PLOP (Product Listing Page), die bij het bladeren in zoekresultaten robuuste filtermogelijkheden biedt.
 
-[!DNL Live Search] verschijnt op de *Marketing* menu onder *SEO &amp; Search* in de [!DNL Commerce] *Beheerder*.
+Met [!DNL Live Search]kunt u:
+
+- Creëer zinvolle zoekervaringen om kopers te helpen bij het vinden van wat ze willen, zo weinig mogelijk.
+- Profiteer van dynamische facettering op basis van AI en herrangschikking van zoekresultaten als reactie op winkelgedrag tijdens een sessie.
+- Gebruik een eenvoudige SaaS-gebaseerde service die eenvoudige updates biedt en in uw licentie is opgenomen, waardoor de totale eigendomskosten dalen.
+- Krijg technisch door graphQL API, headless flexibiliteit, API zandbakmilieu&#39;s, en ultrasnelle SaaS toe te laten.
+
+>[!IMPORTANT]
+>
+>Adobe Commerce biedt opties voor het zoeken naar sites. Zorg ervoor dat u het document [Grenzen en grenzen](boundaries-limits.md) vóór de uitvoering [!DNL Live Search] is geschikt voor uw bedrijfsbehoeften.
+
+## Architectuur
 
 De Adobe Commerce-zijde van de architectuur bevat hosting van de zoekopdracht *Beheerder*, catalogusgegevens synchroniseren en de queryservice uitvoeren. Na [!DNL Live Search] is geïnstalleerd en geconfigureerd, begint Adobe Commerce met het delen van zoek- en catalogusgegevens met SaaS-services. Op dit moment kunnen Admin-gebruikers de zoekopdracht instellen, aanpassen en beheren [facetten](facets.md), [synoniemen](synonyms.md), en [handelsregels](category-merch.md).
 
+![Live Search Data Flow](assets/ls-cs-data-flow.png)
+
+## Snelle rondleiding
+
+Met de nadruk op snelheid, relevantie en gebruiksgemak, [!DNL Live Search] is een spelwisselaar voor zowel winkeliers als handelaren . Volg de rondleiding van [!DNL Live Search] van de opslagplaats.
+
+### Zoeken terwijl u typt
+
+[!DNL Live Search] reageert met voorgestelde producten en een miniatuurafbeelding van de bovenste zoekresultaten in een [popup](storefront-popover.md) als type query&#39;s voor kopers in de [Zoeken](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) doos. De [productdetails](https://experienceleague.adobe.com/docs/commerce-admin/start/storefront/storefront.html#product-page) wordt weergegeven wanneer kopers op een voorgesteld of aanbevolen product klikken. A _Alles weergeven_ de koppeling in de voettekst van de pop-up geeft de pagina met zoekresultaten weer.
+
+[!DNL Live Search] retourneert de resultaten &quot;search as you type&quot; voor een query van twee of meer tekens. Voor een gedeeltelijke overeenkomst, is het maximumaantal karakters per woord 20. Het aantal karakters in de vraag is niet configureerbaar. De popover bevat de`name`, `sku`, en `category_ids` velden.
+
+![Voorbeeld van winkel - zoeken terwijl u typt](assets/storefront-search-as-you-type.png)
+
+### Alle zoekresultaten weergeven
+
+Als u alle producten wilt weergeven die door de query &quot;search as you type&quot; worden geretourneerd, klikt u op _Alles weergeven_ in de voettekst van de pop-up.
+
+![Voorbeeld van een winkel - prijsfactoren](assets/storefront-view-all-search-results.png)
+
+### Gefilterde zoekopdracht met facetten
+
+Bij gefilterde zoekopdracht worden meerdere afmetingen van kenmerkwaarden gebruikt, of [facetten](facets.md), als zoekcriteria. De selectie van filters wordt gedefinieerd door de handelaar en verandert afhankelijk van de geretourneerde producten, waarbij de meest gebruikte facetten boven aan de lijst worden vastgezet.
+
+Facetten gebruiken als URL-parameters:`http://yourwebsite.com?color=red`en de resultaten van de filters Live Search op basis van deze kenmerkwaarden.
+
+### Synoniemen
+
+[Synoniemen](synonyms.md) breid het bereik uit en verscherp de focus van query&#39;s door woorden op te nemen die anders zijn dan die in de catalogus. U kunt het synoniem woordenboek perfectioneren om consumenten betrokken te houden en op de weg aan aankoop.
+
+### Handelsregels
+
+Merchandising [regels](rules.md) Vorm de het winkelen ervaring met als-dan verklaringen die logica en gebeurtenissen toevoegen aan onderzoek. U kunt producten eenvoudig verhogen of begraven voor een promotie, seizoen, of een andere periode.
+
+### Ondersteuning voor zoektermen
+
+[!DNL Live Search] supports Commerce [heroriëntering van zoektermen](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html). Gebruikers kunnen bijvoorbeeld zoeken naar een term zoals &quot;Verzendkosten&quot; en deze rechtstreeks doorsturen naar de pagina Verzendkosten.
+
 ## Componenten Live zoeken
 
-* [!DNL Live Search] [widget pop-up](storefront-popover.md) Dit is het vak dat wordt geopend onder het zoekveld dat de zoekresultaten bevat.
-* [Widget pagina met productaanbiedingen](plp-styling.md) biedt ondersteuning voor zoekbare productlijsten met facetten en synoniemen.
-* AEM CIF componenten: [Pop-overwidget](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/live-search-popover.html?lang=en) en de [PLP-widget](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/live-search-plp.html) AEM sites laten profiteren van [!DNL Live Search].
-* [[!DNL Live Search] Beheerder](workspace.md) Hier worden regels, facetten en synoniemen geconfigureerd.
-
-## Workflowoverzicht
-
-[!DNL Live Search] werkt door catalogusgegevens naar de Adobe Commerce SaaS-infrastructuur te verplaatsen en indexen samen te stellen die worden gebruikt voor het snel leveren van zoekresultaten als gebruikerstype.
-
-### 1. Installatie
-
-[!DNL Live Search] is [geïnstalleerd](install.md) in je Adobe Commerce-exemplaar via [Composer](https://getcomposer.org/). Dit installeert de vereiste modules die met de dienst verbinden en vormt de instantie van de Handel om het standaardonderzoeksgebied met voeten te treden. Het installeert ook de opties van Admin van de Handel voor het vormen van de dienst.
-
-### 2. Gegevens synchroniseren
-
-[!DNL Live Search] Hiermee verplaatst u catalogusgegevens naar de SaaS-infrastructuur van de Adobe. De gegevens worden geïndexeerd en de zoekresultaten worden vanuit deze index rechtstreeks aan de winkel geleverd. Afhankelijk van de grootte en complexiteit kan het indexeren 30 minuten tot een paar uur duren.
-
-### 3. Gegevens configureren
-
-Als u uw productgegevens correct configureert, bent u verzekerd van goede zoekresultaten voor uw klanten. Er zijn een paar vereiste opstellingsstappen: het toewijzen van categorieën en het vormen van attributen.
-
-#### Categorieën toewijzen
-
-Product geretourneerd in [!DNL Live Search] moet een [categorie](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/categories.html). In Luma worden producten bijvoorbeeld ingedeeld in categorieën zoals &quot;Mannen&quot;, &quot;Vrouwen&quot; en &quot;Luma&quot;. Subcategorieën worden ook ingesteld voor Tops, Bottoms en Watches. Hierdoor wordt de korreligheid bij het filteren verbeterd.
-
-#### Doorzoekbare en filterbare velden
-
-Producten worden toegewezen [attributes](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) die kunnen worden gebruikt voor zoeken en filteren. Kenmerken zijn dingen als &quot;Kleur&quot;, &quot;Grootte&quot; en &quot;Materiaaltype&quot;. Met deze kenmerken kunnen gebruikers zoeken naar &quot;groene toppen&quot;. Elk product kan vele eigenschappen hebben die in Commerce admin worden bepaald.
-
-Elk van deze kenmerken kan worden gedefinieerd als [&quot;doorzoekbaar&quot;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html) in de beheerder. Wanneer deze worden ingesteld als &quot;doorzoekbaar&quot;, kunnen deze kenmerken worden doorzocht door [!DNL Live Search].
-
-[Facetten](facets.md) zijn productkenmerken die worden gedefinieerd in [!DNL Live Search] filterbaar zijn. Elk filterbaar kenmerk kan als een facet worden ingesteld in [!DNL Live Search] maar er zijn grenzen aan het aantal facetten dat tegelijk kan worden doorzocht .
-
-[Synoniemen](synonyms.md) Dit zijn termen die u kunt definiëren om gebruikers te helpen bij het vinden van het juiste product. Gebruikers die op zoek zijn naar een broek kunnen &#39;broek&#39; of &#39;slacks&#39; typen. U kunt synoniemen zodanig instellen dat deze zoektermen gebruikers naar de resultaten van de &#39;&#39;broek&#39;&#39; brengen.
+- [!DNL Live Search] [widget pop-up](storefront-popover.md) Dit is het vak dat wordt geopend onder het zoekveld dat de zoekresultaten bevat.
+- [Widget pagina met productaanbiedingen](plp-styling.md) biedt ondersteuning voor zoekbare productlijsten met facetten en synoniemen.
+- [[!DNL Live Search] Beheerder](workspace.md) Hier worden regels, facetten en synoniemen geconfigureerd.
 
 ## [!DNL Live Search] werkruimte
 
@@ -62,20 +80,6 @@ De [!DNL Live Search] [werkruimte](workspace.md) is het gebied in Admin waar u v
 ## Gebeurtenissen
 
 [!DNL Live Search] gebruik [gebeurtenissen](events.md) om te berekenen [Intelligente handel](category-merch.md) en [prestaties](performance.md) dashboards. Eventing wordt voorzien van standaardimplementaties. Eventing voor hoofdloze winkelcentra moet handmatig worden ingeschakeld.
-
-## Widgets aanpassen
-
-De meeste winkeleigenaars willen ervoor zorgen dat de [!DNL Live Search] widgets passen zich aan hun winkeluiterlijk aan.
-
-De popover- en PLP-widgets kunnen zo nodig worden vormgegeven door aangepaste CSS-regels te definiëren. Zie [Popup-elementen opmaken](storefront-popover-styling.md) en [Widget pagina met productaanbiedingen](plp-styling.md).
-
-Als u de functionaliteit van de widgets wilt uitbreiden, is de broncode voor elke widget beschikbaar in een openbare reactie.
-In dit scenario, kunt u JavaScript voor uw eigen behoeften aanpassen en dan uw douanecode op uw CDN ontvangen. Dit aangepaste script communiceert met het [!DNL Live Search] De dienst en keert de resultaten als normaal terug, toestaand u om de functionaliteit van widget te controleren.
-
-* [PLP-widgetreactie](https://github.com/adobe/storefront-product-listing-page)
-* [Reactie op zoekbalk](https://github.com/adobe/storefront-search-as-you-type)
-
-Meer informatie over [!DNL Live Search] in de [Technisch overzicht](technical-overview.md).
 
 ## [!DNL Live Search] demo
 

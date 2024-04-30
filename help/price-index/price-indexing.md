@@ -4,7 +4,7 @@ description: De SaaS Price Indexing gebruiken om prestaties te verbeteren
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 5b92d6ea-cfd6-4976-a430-1a3aeaed51fd
-source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
+source-git-commit: 7d62f8d5539cd744e98d8d6c072d77a2a7c5a256
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 SaaS-prijsindexering versnelt de tijd die nodig is om prijswijzigingen door te voeren [Commerciële diensten](../landing/saas.md) nadat zij zijn ingediend. Op deze manier kunnen handelaren met grote, complexe catalogi of met meerdere websites of klantengroepen doorlopend prijswijzigingen verwerken.
 Als u een koploze winkel hebt of de [catalogusadapter](./catalog-adapter.md) klanten kunnen de Adobe Commerce-indexfunctie voor de basisprijs uitschakelen.
 
-Computationele zware processen zoals indexering en prijsberekening zijn verplaatst van de commercescore naar de cloudinfrastructuur van de Adobe. Op deze manier kunnen handelaren snel hun resources vergroten om de indexatietijden van de prijzen te verhogen en deze wijzigingen sneller te laten doorwerken.
+Computationele zware processen zoals indexering en prijsberekening zijn verplaatst van de Commerce-kern naar de Cloud-infrastructuur van Adobe. Op deze manier kunnen handelaren snel hun resources vergroten om de indexatietijden van de prijzen te verhogen en deze wijzigingen sneller te laten doorwerken.
 
 De de indexerende gegevensstroom van de Kern aan de diensten van SaaS ziet als:
 
@@ -39,10 +39,10 @@ In deze handleiding wordt beschreven hoe SaaS-prijsindexering werkt en hoe deze 
 ## Vereisten
 
 * Adobe Commerce 2.4.4+
-* Minstens één van de volgende Diensten van de Handel met de recentste versie van de uitbreiding van Adobe Commerce:
+* Ten minste een van de volgende Commerce Services met de nieuwste versie van de Adobe Commerce-extensie:
 
    * [Catalogusservice](../catalog-service/overview.md)
-   * [Live zoeken](../live-search/guide-overview.md)
+   * [Live zoeken](../live-search/overview.md)
    * [Product Recommendations](../product-recommendations/guide-overview.md)
 
 Gebruikers van Luma en Adobe Commerce Core GraphQL kunnen de [`catalog-adapter`](catalog-adapter.md) extensie die Luma en Core GraphQl-compatibiliteit biedt en de Adobe Commerce Product Price-index uitschakelt.

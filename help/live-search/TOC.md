@@ -4,28 +4,25 @@ user-guide-description: "Deze handleiding bevat gedetailleerde instructies voor 
 breadcrumb-title: "[!DNL Live Search] Handleiding"
 role: Admin
 feature: Services, Search
-source-git-commit: 06e06f8d8ee747f4bbe7a064af0dabc01efc31d2
+source-git-commit: 4fd8c313c27756f6da42dd01e01506847d2b6975
 workflow-type: tm+mt
-source-wordcount: '84'
-ht-degree: 7%
+source-wordcount: '78'
+ht-degree: 5%
 
 ---
 
-# [!DNL Live Search] voor handel {#live-search}
+# [!DNL Live Search] voor Commerce {#live-search}
 
-- [Overzicht van de handleiding](guide-overview.md)
-- [Inleiding tot [!DNL Live Search]](overview.md)
+- [Wat is [!DNL Live Search]?](overview.md)
+- [Installeren](install.md)
+- [Grenzen en grenzen](boundaries-limits.md)
 - [Aanvullende informatie](release-notes.md)
-- Live zoeken aan boord {#onboard}
-   - [Technisch overzicht](technical-overview.md)
-   - [Installeren [!DNL Live Search]](install.md)
 - [!DNL Live Search] Storefront {#live-search-storefront}
    - [Widget pagina met productaanbiedingen](plp-styling.md)
-   - [Snelle rondleiding](quick-tour.md)
    - [Storefront [!DNL Popover]](storefront-popover.md)
    - [Stijlen [!DNL Popover] Elementen](storefront-popover-styling.md)
 - [!DNL Live Search] Beheerder{#live-search-admin}
-   - [Instellingen voor handelsconfiguratie](configuration.md)
+   - [Commerce-configuratie-instellingen](configuration.md)
    - Facetten {#facets}
       - [Overzicht](facets.md)
       - [Werkruimte naast elkaar](faceting-workspace.md)

@@ -3,7 +3,7 @@ title: "[!DNL Live Search] Opmerkingen bij de release"
 description: "De meest recente releasegegevens voor [!DNL Live Search] uit Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 20b4fc2dc0f6cba325e4bc79778ce4852eb189c2
+source-git-commit: 471bee273a82304ac35b0ca384a2161d7a3399d6
 workflow-type: tm+mt
 source-wordcount: '1925'
 ht-degree: 0%
@@ -53,8 +53,8 @@ _19 mrt. 2024_
 
 ### Nieuwe functies
 
-![Nieuw](../assets/new.svg) Extra taalondersteuning voor [Pools](technical-overview.md#language-support).
-![Nieuw](../assets/new.svg) [!DNL Live Search] ondersteunt nu PHP 8.3 voor installaties met Adobe Commerce 2.4.7.
+![Nieuw](../assets/new.svg) Meer taalondersteuning voor het Pools.
+![Nieuw](../assets/new.svg) [!DNL Live Search] ondersteunt nu PHP 8.3 voor installaties met Adobe Commerce 2.4.4.
 
 ## [!DNL Live Search] 4.1.0. {#410}
 
@@ -262,7 +262,7 @@ Bestaande [!DNL Live Search] de installaties moeten worden aangepast aan [!DNL L
 
 ![Nieuw](../assets/new.svg) [!DNL Live Search] ondersteunt nu PHP 8.1 voor installaties met Adobe Commerce 2.4.4.
 ![Nieuw](../assets/new.svg) De `Magento_ElasticsearchCatalogPermissionsGraphQl` wordt toegevoegd aan de lijst met modules die tijdens de installatie zijn uitgeschakeld.
-![Nieuw](../assets/new.svg) Het aantal beschikbare regels in de [[!DNL storefront popover]](quick-tour.md) kan van worden gevormd *Beheerder*.
+![Nieuw](../assets/new.svg) Het aantal beschikbare regels in de [[!DNL storefront popover]](overview.md) kan van worden gevormd *Beheerder*.
 ![Nieuw](../assets/new.svg) Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) ondersteund voor [!DNL Live Search].
 ![Nieuw](../assets/new.svg) De [!DNL Live Search] Het installatieproces wordt bijgewerkt met geavanceerde proceswijzigingen.
 ![Repareren](../assets/fix.svg) [Geavanceerd zoeken](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) koppeling verwijderd uit de voettekst van de winkel.

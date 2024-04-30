@@ -1,15 +1,15 @@
 ---
 title: Extensie Catalogusadapter
-description: Het gebruiken van de Adapter van de Catalogus om prijzen van de Diensten van de Handel terug te geven
+description: Catalogusadapter gebruiken om prijzen te renderen van Commerce Services
 seo-title: Catalog Adapter Extension
 seo-description: Using Catalog Adapter to render prices from Commerce Services
-source-git-commit: a637ece6e806771dfc6359dacececf8ccf05b983
+exl-id: 2c9120eb-aa51-48e9-b6a4-fffe25fc31f2
+source-git-commit: 7d62f8d5539cd744e98d8d6c072d77a2a7c5a256
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '332'
 ht-degree: 0%
 
 ---
-
 
 # Catalogusadapter
 
@@ -19,10 +19,10 @@ De Adobe Commerce Product Price-index is uitgeschakeld en kan niet worden ingesc
 ## Vereisten
 
 * Adobe Commerce 2.4.4+
-* beide volgende handelsdiensten hebben geïnstalleerd:
+* Beide van de volgende Commerce Services hebben geïnstalleerd:
 
    * [Catalogusservice](../catalog-service/overview.md)
-   * [Live zoeken](../live-search/guide-overview.md)
+   * [Live zoeken](../live-search/overview.md)
 
 ## Installatie
 
@@ -47,7 +47,7 @@ bin/magento index:reindex catalog_product_price
 
 ## De indexator van de Prijs van het Product voor Hoofdloze scenario onbruikbaar maken
 
-Als je een instantie zonder kop Commerce hebt, moet je mogelijk de Adobe Commerce Product Price-index uitschakelen om de belasting op je Adobe Commerce-exemplaar te verminderen.
+Als u een Commerce-instantie zonder kop hebt, moet u mogelijk de Adobe Commerce Product Price-index uitschakelen om de belasting van uw Adobe Commerce-exemplaar te verminderen.
 Dit wordt gedaan door te installeren `magento/module-price-indexer-disabler` module:
 
 ```bash
@@ -73,9 +73,9 @@ Hier volgen enkele voorbeelden `Catalog Adapter` scenario&#39;s.
 1. Installeer de catalogusadapter.
 1. Schakel de standaard Adobe Commerce-productprijsindex opnieuw in.
 
-### Koploze handel-instanties
+### Headless Commerce-instanties
 
-* Een handelaar met een headless instantie van de Handel met de vereiste geïnstalleerde diensten (Levend Onderzoek, Product Recommendations, de Dienst van de Catalogus)
+* Een bedrijf met een Commerce-exemplaar zonder kop waarop de vereiste services zijn geïnstalleerd (Live Search, Product Recommendations, Catalog Service)
 * Geen vertrouwen op de standaard Adobe Commerce Product Price Index
 
 1. Installeer de `magento/module-price-indexer-disabler` uit het pakket voor de catalogusadapter.
