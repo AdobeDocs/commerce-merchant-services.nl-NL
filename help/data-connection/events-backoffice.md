@@ -4,16 +4,16 @@ description: Leer welke gegevens elke achterkantoorgebeurtenis vangt.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: a5a4f04b-89ac-4020-95ce-984f9f2d8385
-source-git-commit: 0ab1b4b23d25bee722b35fbc8b9717ad6d1c299e
+source-git-commit: 813be62b366b1c76a2b909079cfba31ef8000617
 workflow-type: tm+mt
-source-wordcount: '3571'
+source-wordcount: '3611'
 ht-degree: 0%
 
 ---
 
 # [!DNL Data Connection] Back Office-gebeurtenissen
 
-De volgende lijst maakt een lijst van de Van de Handel achterkantoor beschikbare gebeurtenissen wanneer u installeert [!DNL Data Connection] extensie. De gegevens die deze gebeurtenissen verzamelen, worden naar de Adobe Experience Platform verzonden. U kunt ook [aangepaste gebeurtenissen](custom-events.md) om aanvullende gegevens te verzamelen die niet uit het vak zijn verstrekt.
+De volgende lijst bevat de Commerce-gebeurtenissen voor het back-office die beschikbaar zijn wanneer u de [!DNL Data Connection] extensie. De gegevens die deze gebeurtenissen verzamelen, worden naar de Adobe Experience Platform verzonden. U kunt ook [aangepaste gebeurtenissen](custom-events.md) om aanvullende gegevens te verzamelen die niet uit het vak zijn verstrekt.
 
 Naast de gegevens die door de volgende gebeurtenissen worden verzameld, wordt ook [overige gegevens](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) verstrekt door de Adobe Experience Platform Web SDK.
 
@@ -404,7 +404,15 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 
 ## Klantprofielgebeurtenissen
 
+>[!IMPORTANT]
+>
+>Deze functie is in bèta.
+
 Profielgebeurtenissen die vanaf de server zijn vastgelegd, bevatten accountgegevens, zoals `accountCreated`, `accountUpdated`, en `accountDeleted`. Deze gegevens worden gebruikt om belangrijke klantendetails te bevolken die nodig zijn om segmenten beter te bepalen of marketing campagnes, zoals het verzenden van aanbiedingen van de inschrijvingskorting, bevestigingen van de rekeningsverandering, etc. uitvoeren. Er zijn vergelijkbare profielgebeurtenissen vastgelegd van de [storefront](events.md#customer-profile-events).
+
+>[!NOTE]
+>
+>Elke gebeurtenis van het klantenprofiel omvat ook [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) veld, waarin de door het systeem gegenereerde Commerce-klant-id als primaire id voor het profiel en een e-mailid die als secundaire id wordt gebruikt, zijn opgenomen.
 
 ### accountCreated
 
