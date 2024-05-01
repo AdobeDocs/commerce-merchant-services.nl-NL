@@ -3,9 +3,9 @@ title: Aanvullende informatie
 description: De meest recente releasegegevens voor de [!DNL Data Connection] uit Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 2b168c0ef07324c7fc7b3cfd464742b257d073ec
+source-git-commit: 84094f4249eeb9f98a85e582c52e2c48e0dd9316
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '838'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Voor functiewijzigingen en correcties die betrekking hebben op extensies die wor
 
 Zie [Volgende releases](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) om over versieschema&#39;s en steun te leren.
 
-Zie de documentatie voor ontwikkelaars op [leren welke versies van de Handel deze module steunen](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
+Zie de documentatie voor ontwikkelaars op [te weten welke Commerce-versies deze module ondersteunen](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 ## Ondersteunde service-updates
 
@@ -57,7 +57,7 @@ _10 oktober 2023_
 
 _10 juni 2023_
 
-![Repareren](../assets/fix.svg) - Probleem verholpen waarbij `orderId` niet in de context is geslaagd wegens voorvoegsels in de handels-ordeaanduiding.
+![Repareren](../assets/fix.svg) - Probleem verholpen waarbij `orderId` is niet in de context geslaagd vanwege voorvoegsels in de Commerce-orderid.
 ![Repareren](../assets/fix.svg) - Bijgewerkte configuraties voor inhoudsbeveiligingsbeleid.
 
 _30 maart 2023_
@@ -87,7 +87,7 @@ _4 maart 2024_
 
 [!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
 
-![Nieuw](../assets/new.svg) - Als u deelneemt aan de bètaversie, zorg er dan voor dat u `composer.json` bestand heeft het volgende op hoofdniveau: ` "minimum-stability": "beta"`.
+![Nieuw](../assets/new.svg) - Als u deelneemt aan de bètaversie, zorg er dan voor dat u `composer.json` bestand heeft het volgende op hoofdniveau: ` "minimum-stability": "beta"`. Ook toevoegen `composer require "magento/customers-connector: ^1.2.0"` om klantprofielen van uw Commerce-exemplaar naar SaaS te verzenden.
 ![Nieuw](../assets/new.svg) - Toegevoegde mogelijkheden tot [Aangepaste kenmerken toevoegen](update-xdm.md#update-schema-with-time-series-behavioral-and-back-office-event-data).
 ![Nieuw](../assets/new.svg) - Toegevoegde mogelijkheden tot [profielrecords verzamelen en verzenden](connect-data.md#send-customer-profile-data) en gegevens naar Experience Platform.
 
@@ -121,7 +121,7 @@ _27 juni 2023_
 
 ![Nieuw](../assets/new.svg) - Toegevoegde mogelijkheden tot [verzenden van storefront-gebeurtenissen uitschakelen](connect-data.md#data-collection) aan het Experience Platform.
 ![Repareren](../assets/fix.svg) - Bijgewerkte configuraties voor inhoudsbeveiligingsbeleid.
-![Repareren](../assets/fix.svg) - Vaste ondersteuning voor back office evenementen op de versie Commerce 2.4.7.
+![Repareren](../assets/fix.svg) - Vaste ondersteuning voor backoffice-gebeurtenissen op Commerce 2.4.7-versie.
 ![Nieuw](../assets/new.svg) - Een meldingsbericht toegevoegd over cachevalidatie wanneer u wijzigingen opslaat in het dialoogvenster [!DNL Data Connection] extensievorm.
 
 
