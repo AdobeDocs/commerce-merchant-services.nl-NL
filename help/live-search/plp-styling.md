@@ -2,9 +2,9 @@
 title: Widget pagina met productaanbiedingen
 description: Het inschakelen en opmaken van de [!DNL Live Search Product Listing Page Widget]
 exl-id: f7346a06-a8c7-4a33-8437-ea4f61d9281f
-source-git-commit: d4511219a0244dca7db896419daba1e6694d80de
+source-git-commit: 1e0baa20defe4e50bd9e45c03ff7c5f758b24e5d
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '346'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,8 @@ De PLP-widget biedt een aantal functies die op een doorzoekbare productpagina wo
 * Toevoegen aan winkelwagentje
 * Ondersteuning voor meerdere talen
 * Prijsschuifregelaars
+
+Zie voor informatie over hoe u de PLP-widget kunt aanpassen aan de bovenstaande functies `storefront-product-listing-page` Lees mij in het volgende [repo](https://github.com/adobe/storefront-product-listing-page/).
 
 ## Voorbeeld van stijlen
 

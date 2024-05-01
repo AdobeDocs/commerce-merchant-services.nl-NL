@@ -3,16 +3,16 @@ title: "Aan de slag met [!DNL Live Search]"
 description: "Leer de systeemvereisten en installatiestappen voor [!DNL Live Search] uit Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: a55e3304d590c2bd6a591bdc78a4765ffed46cd1
+source-git-commit: eb9835c7681041abbcc6d1ece91e74bafe343d82
 workflow-type: tm+mt
-source-wordcount: '2397'
+source-wordcount: '2396'
 ht-degree: 0%
 
 ---
 
-# Opzetten voor succes met [!DNL Live Search] en [!DNL Catalog Service]
+# Opzetten voor succes met [!DNL Live Search]
 
-Adobe Commerce [!DNL Live Search] en [!DNL Catalog Service] samen te werken om een krachtige, relevante en intuïtieve zoekoplossing te bieden waarmee uw klanten snel precies kunnen vinden wat ze nodig hebben. Specifiek: [!DNL Catalog Service] oppervlakken van uw catalogusgegevens voor SaaS-services, zoals [!DNL Live Search] te gebruiken.
+Adobe Commerce [!DNL Live Search] en [[!DNL Catalog Service]](../catalog-service/guide-overview.md) samen te werken om een krachtige, relevante en intuïtieve zoekoplossing te bieden waarmee uw klanten snel precies kunnen vinden wat ze nodig hebben. Specifiek: [!DNL Catalog Service] oppervlakken van uw catalogusgegevens voor SaaS-services, zoals [!DNL Live Search] te gebruiken.
 
 Dit artikel bevat stapsgewijze instructies voor de implementatie [!DNL Live Search] with [!DNL Catalog Service].
 
