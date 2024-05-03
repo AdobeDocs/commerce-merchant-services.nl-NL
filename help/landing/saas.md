@@ -4,9 +4,9 @@ description: Leer hoe u uw Adobe Commerce- of Magento Open Source-instantie inte
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: e5d9576f0c326dd3a97eeaf9831db0d89b85caff
+source-git-commit: b6775b196ca36448f50a6fed283ef0626e03d286
 workflow-type: tm+mt
-source-wordcount: '875'
+source-wordcount: '907'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,11 @@ In de volgende secties wordt elk van deze elementen nader besproken.
 
 ## Credentials {#apikey}
 
-De API-sleutels voor productie en sandbox worden gegenereerd op basis van de [!DNL Commerce] rekening van de vergunninghouder, die wordt aangeduid met een unieke [!DNL Commerce] ID (MageID). Machtigingsvalidatie doorgeven voor services zoals [!DNL Product Recommendations] of [!DNL Live Search]kan de licentiehouder van de organisatie van de handelaar de set API-sleutels genereren zolang de account zich in goede staat bevindt. De sleutels kunnen op een &quot;behoefte om&quot;basis met het systeem worden gedeeld integrator of ontwikkelingsteam dat projecten en milieu&#39;s namens de vergunninghouder beheert. Daarnaast hebben integrators van oplossingen ook het recht om te gebruiken [!DNL Commerce Services]. Als u een oplossingsintegrator bent, de ondertekenaar van [!DNL Commerce] het partnercontract zou de API sleutels moeten produceren.
+De API-sleutels voor productie en sandbox worden gegenereerd op basis van de [!DNL Commerce] de [licentiehouder](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/onboarding) die door een uniek [!DNL Commerce] ID (MageID). Machtigingsvalidatie doorgeven voor services zoals [!DNL Product Recommendations] of [!DNL Live Search]kan de eigenaar van de licentie voor de organisatie van de handelaar de set met API-sleutels genereren zolang de account zich in goede staat bevindt. De sleutels kunnen op een &quot;behoefte om&quot;basis met het systeem worden gedeeld integrator of ontwikkelingsteam dat projecten en milieu&#39;s namens de vergunninghouder beheert. Daarnaast hebben integrators van oplossingen ook het recht om te gebruiken [!DNL Commerce Services]. Als u een oplossingsintegrator bent, de ondertekenaar van [!DNL Commerce] het partnercontract zou de API sleutels moeten produceren.
+
+>[!NOTE]
+>
+>De eigenaar van de licentie is doorgaans de primaire contactpersoon op de Adobe Commerce-account en is niet altijd dezelfde als de projecteigenaar van de Adobe Commerce voor het infrastructuurproject in de cloud.
 
 ### De API-sleutels voor productie en sandbox genereren {#genapikey}
 
