@@ -1,18 +1,18 @@
 ---
-title: 'Commerce Configurations Settings en [!DNL Live Search] '
-description: Beschrijft de de configuratiemontages van Adobe Commerce die [!DNL Live Search] kan lezen.
+title: 'Commerce Configurations Settings'
+description: Beschrijft de de configuratiemontages van Commerce die [!DNL Live Search] kan lezen.
 exl-id: a4e9e2dd-e912-4ced-a44a-091ac5334e50
 features: Services, Search, Configuration
-source-git-commit: d1cd70e66e616c052418c719f6da23b010a22241
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '275'
 ht-degree: 0%
 
 ---
 
-# [!DNL Live Search] en Adobe Commerce Configuration Settings
+# Commerce-configuratie-instellingen
 
-Er zijn Commerce-configuratie-instellingen die [!DNL Live Search] ondersteunt. Dit onderwerp maakt een lijst van deze configuratiewaarden.
+Er zijn Commerce-configuratie-instellingen die [!DNL Live Search] ondersteunt. In dit artikel worden deze configuratiewaarden weergegeven.
 
 ## Ondersteunde configuratiewaarden
 

@@ -1,19 +1,19 @@
 ---
-title: '[!DNL Live Search] Werkruimte'
+title: 'Werkruimte'
 description: De [!DNL Live Search] de werkruimte wordt gebruikt om onderzoeksprestaties te vormen, te beheren en te controleren.
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
-source-git-commit: c77b2f9cb55d3eb339dcc900ce606b94c592f559
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
-source-wordcount: '236'
+source-wordcount: '218'
 ht-degree: 0%
 
 ---
 
-# [!DNL Live Search] Werkruimte
+# Werkruimte
 
 In de werkruimte kunt u de prestaties van [!DNL Live Search]. Het menu boven biedt toegang tot de gereedschappen in elk functioneel gebied.  De beschikbare functies weerspiegelen de huidige menuselectie.
 
-![Werkruimte naast elkaar](assets/workspace.png)
+![Werkruimte](assets/workspace.png)
 
 ## Bereik instellen
 

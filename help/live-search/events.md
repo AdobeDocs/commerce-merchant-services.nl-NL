@@ -3,9 +3,9 @@ title: '[!DNL Live Search] Gebeurtenissen'
 description: Meer informatie over hoe gebeurtenissen gegevens verzamelen voor [!DNL Live Search].
 feature: Services, Eventing
 exl-id: b0c72212-9be0-432d-bb8d-e4c639225df3
-source-git-commit: 8d669cf6042340659574c86a43836a02954f24ce
+source-git-commit: 0d966c8dbd788563fa453912961fdc62a5a6c23e
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
@@ -15,8 +15,6 @@ ht-degree: 0%
 [!DNL Live Search] gebruikt gebeurtenissen om zoekalgoritmen zoals &quot;Meest bekeken&quot; en &quot;Dit bekeken, heeft dat bekeken&quot; van stroom te voorzien. Terwijl de gebruikers van LUMA uit de doos verhinderen, moeten de headless en andere douaneimplementaties het voorkomen voor hun eigen behoeften uitvoeren.
 
 Sinds [!DNL Live Search] en [!DNL Product Recommendations] Gebruik het zelfde backend algoritme, sommige gebeurtenissen worden gedeeld door beide diensten. Sommige Product Recommendations-gebeurtenissen zijn vereist om het Recommendations-dashboard te vullen.
-
-## Gebeurtenissen
 
 In deze tabel worden de gebeurtenissen beschreven die door [!DNL Live Search] strategieën.
 

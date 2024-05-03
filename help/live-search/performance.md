@@ -1,17 +1,17 @@
 ---
-title: "Prestatiedashboard"
-description: "De [!DNL Live Search] Het prestatiedashboard biedt inzicht in de zoektermen die kopers gebruiken."
+title: "Prestaties"
+description: "De [!DNL Live Search] De werkruimte van prestaties biedt inzicht in de zoektermen die kopers gebruiken."
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
-source-git-commit: 289ac6ac464955f18f3a2448099ad459e6264941
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '479'
 ht-degree: 0%
 
 ---
 
-# Prestatiedashboard
+# Prestaties
 
-De [!DNL Live Search] Het prestatiedashboard biedt inzicht in de zoektermen die kopers gebruiken. De informatie kan worden gebruikt om tendensen te identificeren, klik-door te verhogen, en de omzettingspercentage te verbeteren. Het dashboard van Prestaties verstrekt een momentopname van onderzoeksmetriek voor een specifieke datumwaaier en omvat de volgende rapporten:
+De *Prestaties* biedt inzicht in de zoektermen die kopers gebruiken. De informatie kan worden gebruikt om tendensen te identificeren, klik-door te verhogen, en de omzettingspercentage te verbeteren. De werkruimte van Prestaties verstrekt een momentopname van onderzoeksmetriek voor een specifieke datumwaaier en omvat de volgende rapporten:
 
 * Unieke zoekopdrachten
 * Resultaten nul
@@ -30,7 +30,7 @@ U kunt ook verwijzen naar de [Gegevensbeheerdashboard](https://experienceleague.
 
 >[!NOTE]
 >
->Het prestatiedashboard wordt elke 12 uur bijgewerkt.
+>De werkruimte voor prestaties wordt elke 12 uur bijgewerkt.
 
 ## Veldomschrijvingen
 

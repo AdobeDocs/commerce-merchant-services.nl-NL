@@ -2,9 +2,9 @@
 title: "Facetten toevoegen"
 description: "Leer hoe u filterbare productkenmerken kunt toevoegen als [!DNL Live Search] facetten."
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
-source-git-commit: 10edbb6127405d45c06d4c8ffc89d92a6ca061c3
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '597'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Alle filterbare productkenmerken kunnen als facet worden gebruikt. De *Elementen toevoegen* in dit deelvenster worden de huidige facetten weergegeven en kunt u gemakkelijk aanvullende productkenmerken als facetten toewijzen. Tijdens dit proces in drie stappen wordt een kenmerk gekozen om als facet te worden gebruikt, worden eigenschappen indien nodig bewerkt en worden de wijzigingen in het winkelcentrum gepubliceerd.
 
-![Werkruimte naast elkaar](assets/facets-add.png)
+![Facetten toevoegen](assets/facets-add.png)
 
 ## Stap 1: Een facet toevoegen
 
@@ -48,7 +48,7 @@ Het facet wordt onder aan het dialoogvenster *Dynamische factoren* en de *Wijzig
 
 1. Klik op **Opslaan**.
 
-   ![Werkruimte naast elkaar](assets/facet-edit.png)
+   ![Facturen bewerken](assets/facet-edit.png)
 
 1. Het facet vastzetten op de bovenkant van het *Filters* lijst, klikt u op het grijze drukknop (![Vastzetten, kiezer](assets/btn-pin-gray.png)).
 1. Als u de volgorde van het vastgezette facet wilt wijzigen, klikt u op de knop **Verplaatsen** (![Selector verplaatsen](assets/btn-move.png)) en sleep de rij naar een nieuwe positie in het deelvenster *Vastgezette gezichten* sectie.

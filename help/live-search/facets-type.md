@@ -2,9 +2,9 @@
 title: "Typen factoren"
 description: "[!DNL Live Search] De facetten zijn dynamisch, en verschijnen in de lijst van Filters wanneer relevant."
 exl-id: 49fb7609-64b3-4ae8-928d-54c99032d919
-source-git-commit: 995f528abc0011c6ae7c4c524982c301072ec2eb
+source-git-commit: f96f94a16e1926b7dd2f1ee94f124ac0c823a9e0
 workflow-type: tm+mt
-source-wordcount: '389'
+source-wordcount: '374'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 * Vastgezette facetten - De meest gebruikte facetten kunnen aan de bovenkant van de lijst worden vastgezet. De resterende facetten worden vermeld in *Tekst sorteren* volgorde na de vastgezette facetten.
 * Dynamische facetten - Productkenmerken die [Adobe Sensei](https://www.adobe.com/sensei.html) vindt het meest relevant voor een productreeks en vraag. De berekening houdt rekening met de attributenmeta-gegevens van de volledige catalogus en bepaalt bij vraagtijd de meest relevante facetten voor de vraag.
 * Populaire facetten - Productkenmerken die het vaakst in onderzoeksresultaten aanwezig zijn.
-* Prijsfactoren - Retourproducten per prijsklasse. U kunt het aantal selecties en het prijsinterval opgeven op het tabblad [*Instellingen*](settings.md) tab.
+* Prijsfactoren - Retourproducten per prijsklasse. U kunt het aantal selecties en het prijsinterval opgeven op het tabblad [*Instellingen*](settings.md) werkruimte.
 
 Tijdens het opvragen [!DNL Live Search] Hiermee genereert u de zoekresultaten in groepen van dynamische en populaire facetten.
 

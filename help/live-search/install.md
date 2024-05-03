@@ -3,9 +3,9 @@ title: "Aan de slag met [!DNL Live Search]"
 description: "Leer de systeemvereisten en installatiestappen voor [!DNL Live Search] uit Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: eb9835c7681041abbcc6d1ece91e74bafe343d82
+source-git-commit: 4138cda03e30bdeafe6e39862e8a6c99dae5da43
 workflow-type: tm+mt
-source-wordcount: '2396'
+source-wordcount: '2370'
 ht-degree: 0%
 
 ---
@@ -38,14 +38,6 @@ Dit artikel is bedoeld voor de ontwikkelaar of systeemintegrator in uw team die 
 ## Workflowoverzicht
 
 Op een hoog niveau [!DNL Live Search] vereist dat u:
-
-- De extensie installeren
-- API-sleutels configureren
-- De catalogusgegevens synchroniseren
-- Controleren of de gegevens zijn geëxporteerd
-- Uw gegevens configureren
-- De verbinding testen
-- Aanpassen voor je winkel
 
 ![Live zoekworkflow](assets/livesearch-workflow.png)
 

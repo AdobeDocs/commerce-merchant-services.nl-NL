@@ -1,17 +1,17 @@
 ---
-title: "[!DNL Live Search] Instellingen"
+title: "Instellingen"
 description: "Configureer instellingen voor de [!DNL Live Search] service."
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
-source-git-commit: 5e3cdae0e7362b921c51dc6edb12f4b58ffeb31e
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '453'
 ht-degree: 0%
 
 ---
 
 # Instellingen
 
-Gebruik de *Instellingen* om de prijsfacetwaaiers en intervallen en de standaardtaal voor de index te vormen.
+Gebruik de *Instellingen* werkruimte om de prijsfacetbereiken en intervallen en de standaardtaal voor de index te vormen.
 
 Prijsfacetten geven het aantal prijsgroepen aan en de verdeling van de prijswaarden tussen deze groepen.
 
@@ -24,7 +24,7 @@ De instelling Taal vertelt de [!DNL Live Search] de dienst die taal om te verwac
 U kunt het aantal groepen voor het prijsbereik opgeven en aangeven hoe de prijswaarden eronder worden verdeeld. Elke prijsklasse overlapt de vorige groep met één. Vijf groepen met een interval van 20 maken bijvoorbeeld de volgende prijsbereiken: 0-20, 20-40, 40-60, 60-80 en >80. Als de catalogus niet genoeg producten bevat om alle gedefinieerde bereiken te vullen, wordt de weergave van de beschikbare groepen dienovereenkomstig aangepast. Bijvoorbeeld: 0-20, 60-80, >80.
 
 1. Ga in Beheer naar **Marketing** > *SEO &amp; Search* > **[!DNL Live Search]**.
-1. Op de **Instellingen** tab onder *Prijsbeperking* Ga als volgt te werk:
+1. Op de **Instellingen** werkruimte onder *Prijsbeperking* Ga als volgt te werk:
    * Voer de **Aantal selecties**, of prijsgroepen die beschikbaar moeten zijn. Er kunnen maximaal 50 prijsgroepen worden gedefinieerd.
    * Voer de **Interval, waarde**, of prijsbereik voor elke groep. De maximumwaarde is 10.000.
 1. Klikken **Opslaan**.

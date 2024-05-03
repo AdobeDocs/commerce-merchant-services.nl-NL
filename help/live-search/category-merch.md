@@ -3,7 +3,7 @@ title: Categorieverhandeling
 description: Gebruiken [!DNL Live Search] Rubriekhandel voor een snellere winkelervaring.
 gourl: ls_catalog_merchandising
 exl-id: 24f159c1-b175-47c1-aca1-8bada118b4b4
-source-git-commit: 109a4e79a7faac62a4d7c48cadcada1ec28f3c94
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 0%
@@ -22,7 +22,7 @@ De functie is toegankelijk via de beheerfunctie op **Marketing** > SEO &amp; Sea
 
 >[!NOTE]
 >
->Rubriekhandel is beschikbaar via [!DNL Live Search] [3.0.0 of hoger](release-notes.md). Als u het lusje van de Verkoop van de Categorie ziet maar het niet met gegevens bevolkt, werk bij [!DNL Live Search] -module.
+>Rubriekhandel is beschikbaar via [!DNL Live Search] [3.0.0 of hoger](release-notes.md). Als u de werkruimte voor het verhandelen van categorieën ziet maar er geen gegevens in staan, werkt u de [!DNL Live Search] -module.
 
 ![Categoriemerking](assets/category_workspace.png)
 

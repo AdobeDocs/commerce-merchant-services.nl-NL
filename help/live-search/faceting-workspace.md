@@ -2,16 +2,16 @@
 title: "Faceting Workspace"
 description: "Leer je weg door [!DNL Live Search] facetwerkruimte."
 exl-id: b47b5c19-59bb-41e4-9599-3b90cbc44b70
-source-git-commit: e166c8cb9d715dce573195a188b5335c02d8fd0c
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '219'
 ht-degree: 0%
 
 ---
 
 # Werkruimte naast elkaar
 
-De [!DNL Live Search] De werkruimte bevat een lijst met alle facetten die momenteel beschikbaar zijn en biedt toegang tot de gereedschappen die u nodig hebt voor het instellen en beheren van facetten. Vastgezette facetten worden als eerste weergegeven in de lijst met bestaande facetten, gevolgd door dynamische facetten. De lijst kan worden gefilterd om alle facetten, of slechts die te tonen die worden vastgezet of dynamisch.
+De *Faceting* De werkruimte bevat een lijst met alle facetten die momenteel beschikbaar zijn en biedt toegang tot de gereedschappen die u nodig hebt voor het instellen en beheren van facetten. Vastgezette facetten worden als eerste weergegeven in de lijst met bestaande facetten, gevolgd door dynamische facetten. De lijst kan worden gefilterd om alle facetten, of slechts die te tonen die worden vastgezet of dynamisch.
 
 ![Werkruimte naast elkaar](assets/faceting-workspace.png)
 

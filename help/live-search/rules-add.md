@@ -2,7 +2,7 @@
 title: "Regels toevoegen"
 description: "Leer hoe u regels voor het wijzigen van zoekopdrachten maakt."
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 4ce37b03937cf5a8413831c720d05387031a6094
+source-git-commit: 52be82fa080474d6df81fd16d1655a421771e5e2
 workflow-type: tm+mt
 source-wordcount: '1536'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Om een regel te bouwen, moet de eerste stap de regelredacteur gebruiken om de vo
 
 1. Ga in Beheer naar **Marketing** > SEO &amp; Search > **[!DNL Live Search]**.
 1. Stel de **Toepassingsgebied** om de [winkelweergave](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) wanneer de regel van toepassing is.
-1. Klik op de knop **Merchandising zoeken** tab.
+1. Klik op de knop **Merchandising zoeken** werkruimte.
 1. Klikken **Regel toevoegen** om de regeleditor te starten.
 
 ## Type regel
@@ -142,7 +142,7 @@ De hier ingevoerde informatie wordt weergegeven in het dialoogvenster [Regeldeta
 1. Als de regel veelvoudige vragen heeft, test elk die door de regel zou kunnen worden beïnvloed.
 1. Klik op **Opslaan en publiceren**.
 
-   De regel wordt toegevoegd aan de lijst in de regelwerkruimte.
+   De regel wordt toegevoegd aan de lijst in de *Regels* werkruimte.
 
 1. Hoewel de actieve regels onmiddellijk in werking treden, zou u tot 15 minuten kunnen moeten wachten op de caching vraagresultaten in de storefront om worden verfrist.
 

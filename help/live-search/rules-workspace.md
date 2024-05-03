@@ -2,16 +2,16 @@
 title: "Werkruimte voor zoeken en wijzigen"
 description: "Leer je weg rond de werkruimte Zoeken en verwisselen."
 exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
-source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
+source-git-commit: 52be82fa080474d6df81fd16d1655a421771e5e2
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '573'
 ht-degree: 0%
 
 ---
 
 # Werkruimte voor zoeken en wijzigen
 
-In de werkruimte Zoeken/Merchandising worden de huidige selectie van regels en hun status weergegeven en hebt u toegang tot gereedschappen die u nodig hebt om regels te maken en te beheren. Vanuit de werkruimte kunt u:
+De *Merchandising zoeken* De werkruimte geeft een overzicht van de huidige selectie van regels en hun status en biedt toegang tot gereedschappen die u nodig hebt om regels te maken en te beheren. Vanuit de werkruimte kunt u:
 
 * Zoeken naar regels
 * Regeldetails weergeven
@@ -19,7 +19,7 @@ In de werkruimte Zoeken/Merchandising worden de huidige selectie van regels en h
 * Regels verwijderen
 * Toegang tot de regeleditor
 
-![De werkruimte Zoeken/Wijzigen](assets/rules-workspace.png)
+![Werkruimte voor zoeken en wijzigen](assets/rules-workspace.png)
 
 ## Bereik instellen
 
@@ -57,7 +57,7 @@ Met Zoeken zoekt u de overeenkomende regel(s) terwijl u typt. De tekenreeks met 
 
 In het deelvenster Details worden de naam, de status, de voorwaarden en gebeurtenissen van de regel, de begin- en einddatum, de beschrijving en de datum die het laatst is bewerkt weergegeven. Regels kunnen worden ingeschakeld, bewerkt en verwijderd in het deelvenster Details.
 
-1. Op de *Merchandising zoeken* tabblad, zoekt u de regel in het raster die u wilt weergeven en klikt u op **Meer** (...).
+1. Op de *Merchandising zoeken* werkruimte, zoekt u de regel in het raster die u wilt weergeven en klikt u op **Meer** (...).
 1. Klikken **Details weergeven**.
 U kunt een van de volgende handelingen uitvoeren in het deelvenster Details weergeven:
 
