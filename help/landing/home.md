@@ -6,24 +6,24 @@ seo-description: Access the product documentation for hosted services that help 
 breadcrumb-title: Documentatie
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
 recommendations: noCatalog
-source-git-commit: 9558367bb80e04af1d55be63fcf4f7382e662436
+source-git-commit: 6368f95bc56cc0bd82f6bfb1d7ba47fa83bd85cb
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '371'
 ht-degree: 0%
 
 ---
 
 # Adobe Commerce Services-hulplijnen
 
-De Adobe verstrekt een inzameling van de Handel, de integratie, en de gegevensdiensten om handelaren te helpen zeer belangrijke componenten van hun zaken steunen.
+De Adobe verstrekt een inzameling van Commerce, integratie, en gegevensdiensten om handelaren te helpen zeer belangrijke componenten van hun zaken steunen.
 
 >[!BEGINSHADEBOX &quot;Release-informatie&quot;]
 
-Zie [nieuwe functies in onze documentatie](whats-new.md) of [releaseopmerkingen](release-notes-all.md) voor elke dienst van de Handel.
+Zie [nieuwe functies in onze documentatie](whats-new.md) of [releaseopmerkingen](release-notes-all.md) voor elke Commerce-service.
 
 >[!ENDSHADEBOX]
 
-## Commerciële diensten
+## Commerce-services
 
 <table>
 <tr>
@@ -56,13 +56,6 @@ Zie [nieuwe functies in onze documentatie](whats-new.md) of [releaseopmerkingen]
   </td>
     </tr>
 <tr>
-  <td valign="top" width="200px">
-    <img alt="Snelle afhandeling" src="assets/quick-checkout.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/overview.html"><strong>Snelle afhandeling</strong></a>  <br><em>(Beschikbaar voor Magento Open Source)</em>
-    <div>Eenmalige klanten converteren naar loyale rekeninghouders met een snelle en intuïtieve boodschapervaring.</div>
-  </td>
-    </tr>
-<tr>
     <td valign="top" width="200px">
        <img alt="Afhandeling van winkel" src="assets/store-fulfillment-landing-graphic.png" width="170px"/></td>
    <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html"> <strong>Afhandeling van winkel</strong></a></br>
@@ -80,7 +73,7 @@ Zie [nieuwe functies in onze documentatie](whats-new.md) of [releaseopmerkingen]
     <td valign="top">
        <img alt="[!DNL Channel Manager]" src="assets/channel-manager.png" width="170px"></td>
    <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html"> <strong>Kanaalbeheer</strong></a> <br><em>(Beschikbaar voor Magento Open Source)</em>
-    <div>Verhoog de omzet, bereikt nieuwe klanten, stroomlijnt verrichtingen, en bespaar tijd door met de Marketplace van de Markt van de Markeren te integreren. Laat personeel toe om de verkoop, de inventaris, en de prijs van de Marketplace van de Markt van de Walmart foutloos-allen in Handel te beheren.</div>
+    <div>Verhoog de omzet, bereikt nieuwe klanten, stroomlijnt verrichtingen, en bespaar tijd door met de Marketplace van de Markt van de Markeren te integreren. Laat het personeel toe om de verkoop, de inventaris, en de prijs van de Marketplace van de Markt van de Walmart foutloos-allen in Commerce te beheren.</div>
   </td>
    </tr>
 </table>
@@ -92,7 +85,7 @@ Zie [nieuwe functies in onze documentatie](whats-new.md) of [releaseopmerkingen]
   <td valign="top" width="200">
       <img alt="[!DNL Data Connection]" src="assets/live-search.png" width="170px"/></td>
    <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html"><strong>[!DNL Data Connection]</strong></a>  
-    <div>Gebruik de verbinding tussen Adobe Commerce en Adobe Experience Platform edge om de gegevens van de Handel voor andere producten van Adobe Experience Cloud, zoals Adobe Analytics en Adobe Target te gebruiken.</div>
+    <div>Gebruik de verbinding tussen Adobe Commerce en Adobe Experience Platform edge om Commerce-gegevens te gebruiken voor andere Adobe Experience Cloud-producten, zoals Adobe Analytics en Adobe Target.</div>
   </td>
    </tr>
 <tr>
@@ -112,7 +105,7 @@ Zie [nieuwe functies in onze documentatie](whats-new.md) of [releaseopmerkingen]
    <td valign="top" width="200">
       <img alt="[!DNL Catalog Sync]" src="assets/live-search.png" width="170px"/></td>
    <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html"><strong>[!DNL Catalog Sync]</strong></a>  
-    <div>Met catalogussynchronisatie worden productgegevens van de Commerce-server naar de Commerce-services geëxporteerd om de services up-to-date te houden. Indexers, die worden geactiveerd door gebeurtenissen zoals een wijziging van de productprijs of het voorraadniveau, compileren catalogusgegevens. U kunt dit proces waarnemen en beheren via het *Catalog Sync* dashboard of de bevel-lijn interface.</div>
+    <div>Met Catalogussynchronisatie worden productgegevens van de Commerce-server naar Commerce-services geëxporteerd om de services up-to-date te houden. Indexers, die worden geactiveerd door gebeurtenissen zoals een wijziging van de productprijs of het voorraadniveau, compileren catalogusgegevens. U kunt dit proces waarnemen en beheren via het *Catalog Sync* dashboard of de bevel-lijn interface.</div>
   </td>
 </tr>
 </table>
