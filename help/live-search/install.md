@@ -3,9 +3,9 @@ title: "Aan de slag met [!DNL Live Search]"
 description: "Leer de systeemvereisten en installatiestappen voor [!DNL Live Search] uit Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 4138cda03e30bdeafe6e39862e8a6c99dae5da43
+source-git-commit: c66eab4ae0dda9a447a17f357ee0bb7364dc46ba
 workflow-type: tm+mt
-source-wordcount: '2370'
+source-wordcount: '2405'
 ht-degree: 0%
 
 ---
@@ -419,9 +419,23 @@ Kijk naar [API-net](../catalog-service/mesh.md) voor complexere prijsberekeninge
 
 De prijsindeling ondersteunt de landinstellingsinstelling in de instantie Commerce: *Winkels* > Instellingen > *Configuratie* > Algemeen > *Algemeen* > Lokale opties > Landinstelling.
 
+### Ondersteuning voor headless Storefront
+
+Mogelijk moet u het dialoogvenster `module-data-services-graphql` die de bestaande GraphQL-dekking van de toepassing uitbreidt en velden opneemt die vereist zijn voor het verzamelen van gedragsgegevens van de winkel.
+
+```bash
+composer require magento/module-data-services-graphql
+```
+
+Deze module voegt extra contexten aan de vragen van GraphQL toe:
+
+- `dataServicesStorefrontInstanceContext`
+- `dataServicesMagentoExtensionContext`
+- `dataServicesStoreConfigurationContext`
+
 ### PWA-ondersteuning
 
-[!DNL Live Search] werkt met PWA Studio, maar gebruikers kunnen kleine verschillen zien ten opzichte van andere Commerce-implementaties. De basisfunctionaliteit zoals zoeken en pagina met productlijsten werkt in Venia, maar sommige permutaties van Graphql werken mogelijk niet correct. Er kunnen ook prestatieverschillen zijn.
+[!DNL Live Search] werkt met PWA Studio, maar gebruikers zien mogelijk kleine verschillen ten opzichte van andere Commerce-implementaties. De basisfunctionaliteit zoals zoeken en pagina met productlijsten werkt in Venia, maar sommige permutaties van Graphql werken mogelijk niet correct. Er kunnen ook prestatieverschillen zijn.
 
 - De huidige PWA-uitvoering van [!DNL Live Search] vereist meer verwerkingstijd om zoekresultaten te retourneren dan [!DNL Live Search] met de native Commerce storefront.
 - [!DNL Live Search] in PWA ondersteunt niet [gebeurtenisafhandeling](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). Zodoende zullen zoekverslagen en intelligente koophandel werken.
