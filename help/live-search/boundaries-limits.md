@@ -3,9 +3,9 @@ title: "Grens en grenzen"
 description: Meer informatie over de grenzen en grenzen van [!DNL Live Search] om ervoor te zorgen dat het voldoet aan de behoeften van uw bedrijf.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
+source-git-commit: 589475cfc695cefb727176ee772c8d0d07e8e0a2
 workflow-type: tm+mt
-source-wordcount: '566'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,6 @@ Adobe Commerce biedt opties voor het zoeken naar sites. Controleer de volgende g
 
 - De [Geavanceerd zoeken](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) module is uitgeschakeld wanneer [!DNL Live Search] wordt geïnstalleerd en wordt de koppeling Geavanceerd zoeken in de voettekst van de winkel verwijderd.
 - [Prijsniveau](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier) en [Speciale prijzen](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) worden niet ondersteund in de [!DNL Live Search] veld- en pagina met productaanbiedingen.
-- [!DNL Live Search] kan geen inventarisgegevens uit meerdere bronnen samenvoegen.
 - De productprijzen omvatten geen btw.
 - Zoeken naar inhoud wordt niet ondersteund.
 - Er is een limiet van 10.000 producten die gepagineerd kunnen worden.
