@@ -3,9 +3,9 @@ title: Wat is [!DNL Live Search]?
 description: "[!DNL Live Search] van Adobe Commerce biedt een snelle, relevante en intuïtieve zoekervaring."
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
+source-git-commit: 362592eae354b43a3bf98e2839ffe90c21fd3593
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '726'
 ht-degree: 0%
 
 ---
@@ -18,12 +18,12 @@ Met [!DNL Live Search]kunt u:
 
 - Creëer zinvolle zoekervaringen om kopers te helpen bij het vinden van wat ze willen, zo weinig mogelijk.
 - Profiteer van dynamische facettering op basis van AI en herrangschikking van zoekresultaten als reactie op winkelgedrag tijdens een sessie.
-- Gebruik een eenvoudige SaaS-gebaseerde service die eenvoudige updates biedt en in uw licentie is opgenomen, waardoor de totale eigendomskosten dalen.
+- Gebruik een eenvoudige SaaS-service die eenvoudige updates biedt en in uw licentie is opgenomen, waardoor de totale eigendomskosten dalen.
 - Krijg technisch door graphQL API, headless flexibiliteit, API zandbakmilieu&#39;s, en ultrasnelle SaaS toe te laten.
 
 >[!IMPORTANT]
 >
->Adobe Commerce biedt opties voor het zoeken naar sites. Zorg ervoor dat u het document [Grenzen en grenzen](boundaries-limits.md) vóór de uitvoering [!DNL Live Search] is geschikt voor uw bedrijfsbehoeften.
+>Adobe Commerce biedt opties voor het zoeken naar sites. Controleer vóór de implementatie de [Grenzen en grenzen](boundaries-limits.md) informatie om ervoor te zorgen dat [!DNL Live Search] is geschikt voor uw bedrijfsbehoeften.
 
 ## Architectuur
 
@@ -37,11 +37,11 @@ Met de nadruk op snelheid, relevantie en gebruiksgemak, [!DNL Live Search] is ee
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418679?quality=12&learn=on)
 
-Voor een meer diepgaande video over het gebruiken en vormen van Levend Onderzoek, zie [Volledige demonstratie op [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration.html) onderwerp.
+Voor een meer diepgaande video over het gebruiken van en het vormen van Levend Onderzoek, zie [Volledige demonstratie op [!DNL Live Search]](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration) onderwerp.
 
 ### Zoeken terwijl u typt
 
-[!DNL Live Search] reageert met voorgestelde producten en een miniatuurafbeelding van de bovenste zoekresultaten in een [popup](storefront-popover.md) als type query&#39;s voor kopers in de [Zoeken](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) doos. De [productdetails](https://experienceleague.adobe.com/docs/commerce-admin/start/storefront/storefront.html#product-page) wordt weergegeven wanneer kopers op een voorgesteld of aanbevolen product klikken. A _Alles weergeven_ de koppeling in de voettekst van de pop-up geeft de pagina met zoekresultaten weer.
+[!DNL Live Search] reageert met voorgestelde producten en een miniatuurafbeelding van de bovenste zoekresultaten in een [popup](storefront-popover.md) als type query&#39;s voor kopers in de [Zoeken](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) doos. De [productdetails](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) wordt weergegeven wanneer kopers op een voorgesteld of aanbevolen product klikken. A _Alles weergeven_ de koppeling in de voettekst van de pop-up geeft de pagina met zoekresultaten weer.
 
 [!DNL Live Search] retourneert de resultaten &quot;search as you type&quot; voor een query van twee of meer tekens. Voor een gedeeltelijke overeenkomst, is het maximumaantal karakters per woord 20. Het aantal karakters in de vraag is niet configureerbaar. De popover bevat de`name`, `sku`, en `category_ids` velden.
 
@@ -69,12 +69,13 @@ Merchandising [regels](rules.md) Vorm de het winkelen ervaring met als-dan verkl
 
 ### Ondersteuning voor zoektermen
 
-[!DNL Live Search] supports Commerce [heroriëntering van zoektermen](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html). Gebruikers kunnen bijvoorbeeld zoeken naar een term zoals &quot;Verzendkosten&quot; en deze rechtstreeks doorsturen naar de pagina Verzendkosten.
+[!DNL Live Search] supports Commerce [heroriëntering van zoektermen](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms). Gebruikers kunnen bijvoorbeeld zoeken naar een term zoals &quot;Verzendkosten&quot; en deze rechtstreeks doorsturen naar de pagina Verzendkosten.
 
 ## Componenten Live zoeken
 
 - [!DNL Live Search] [widget pop-up](storefront-popover.md) Dit is het vak dat wordt geopend onder het zoekveld dat de zoekresultaten bevat.
-- [Widget pagina met productaanbiedingen](plp-styling.md) biedt ondersteuning voor zoekbare productlijsten met facetten en synoniemen.
+- [Widget pagina met productaanbiedingen](plp-styling.md) (PLP) biedt ondersteuning voor facetten en synoniemen en biedt een pagina met doorzoekbare producten. De widget wordt geïnstalleerd en ingeschakeld in Live zoeken 4.0.0+.
+- (**Vervangen**) Zoekadapter was de voorloper van de PLP-widget en is geïnstalleerd met Live Search &lt; 4.0.0. Als u een versie van Live zoeken gebruikt die ouder is dan 4.0.0, raadt Commerce u aan een upgrade uit te voeren om de voordelen van de functies van de PLP-widget en toekomstige verbeteringen te kunnen genieten.
 
 ## [!DNL Live Search] werkruimte
 

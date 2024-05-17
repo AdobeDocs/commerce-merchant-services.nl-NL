@@ -3,9 +3,9 @@ title: "Grens en grenzen"
 description: Meer informatie over de grenzen en grenzen van [!DNL Live Search] om ervoor te zorgen dat het voldoet aan de behoeften van uw bedrijf.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 589475cfc695cefb727176ee772c8d0d07e8e0a2
+source-git-commit: b7e81acf3b3c4904f96e5e3b8cfbb49e5b3dddac
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '591'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,7 @@ Adobe Commerce biedt opties voor het zoeken naar sites. Controleer de volgende g
 - De productprijzen omvatten geen btw.
 - Zoeken naar inhoud wordt niet ondersteund.
 - Er is een limiet van 10.000 producten die gepagineerd kunnen worden.
+- De zoekadapter ondersteunt geen productkenmerken die zijn gemaakt met een aangepast bronmodel en die als facetten worden gebruikt. Om deze functionaliteit te ondersteunen, moet u de [Widget pagina met productaanbiedingen](plp-styling.md).
 
 ## Indexeren
 
