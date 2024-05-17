@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Inleiding tot [!DNL Payment Services]
 
-[!DNL Payment Services] for [!DNL Adobe Commerce] en [!DNL Magento Open Source] is uw kant-en-klare oplossing voor zelfbediening, inclusief het testen van sandboxen en een eenvoudige configuratie, voor een robuuste en veilige betalingsverwerking voor uw commerciële websites.
+[!DNL Payment Services] for [!DNL Adobe Commerce] en [!DNL Magento Open Source] is uw kant-en-klare oplossing voor zelfbediening, inclusief het testen van sandboxen en een eenvoudige configuratie, voor een robuuste en veilige betalingsverwerking voor uw Commerce-websites.
 
 ![[!DNL Payment Services] extensiebeheerweergave](assets/admin-view.png){width="300" zoomable="yes"}
 
@@ -71,7 +71,7 @@ Als u wilt weten welke betalingsmethoden door PayPal worden ondersteund, raadple
 Aan boord nemen en instellen [!DNL Payment Services] wordt in slechts een paar stappen voltooid:
 
 1. Krijg de [[!DNL Payment Services] extension](install.md).
-1. Verbind uw instantie van de Handel met de Diensten van de Handel.
+1. Sluit uw Commerce-exemplaar aan op Commerce Services.
 1. Aan boord en stel de sandboxservice in.
 1. Inschakelen [!DNL Payment Services] als betalingsmethode en begin met het verwerken van testbetalingen.
 1. Volledige merchant on boarding om live betalingen voor uw websites in te schakelen.
