@@ -3,7 +3,7 @@ title: "Grens en grenzen"
 description: Meer informatie over de grenzen en grenzen van [!DNL Live Search] om ervoor te zorgen dat het voldoet aan de behoeften van uw bedrijf.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: b7e81acf3b3c4904f96e5e3b8cfbb49e5b3dddac
+source-git-commit: 0f4860afa38dc188c19ee8bcbd386d3fb5d0907f
 workflow-type: tm+mt
 source-wordcount: '591'
 ht-degree: 0%
@@ -43,7 +43,7 @@ Adobe Commerce biedt opties voor het zoeken naar sites. Controleer de volgende g
 
 - [!DNL Live Search] heeft geen toegang tot de volledige taxonomie van de categorieboom, waardoor sommige gelaagde navigatie onderzoeksscenario&#39;s voorbij zijn bereik maken.
 - [!DNL Live Search] gebruikt een unieke [GraphQL-eindpunt](https://developer.adobe.com/commerce/services/graphql/live-search/) voor vragen om eigenschappen zoals dynamische facetting en onderzoek-als-u-type te steunen. Hoewel vergelijkbaar met de [GRAPHQL API](https://developer.adobe.com/commerce/webapi/graphql/)Er zijn echter enkele verschillen en sommige gebieden zijn mogelijk niet volledig compatibel.
-- Het maximumaantal resultaten dat in een onderzoeksvraag kan worden herhaald is 10.000.
+- Het maximumaantal resultaten dat in een onderzoeksvraag kan worden teruggekeerd is 10.000.
 
 ## Regels
 
