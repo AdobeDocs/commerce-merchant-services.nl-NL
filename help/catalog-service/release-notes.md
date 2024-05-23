@@ -3,9 +3,9 @@ title: '''[!DNL Catalog Service] Opmerkingen bij de release'
 description: De meest recente releasegegevens voor [!DNL Catalog Service] voor Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 187c3841a1682c53bb0f0e9c3f16cb43df146a58
+source-git-commit: a2841b809cfc52798dc3f1bdcc033a77333bf0e5
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '627'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,12 @@ Updates zijn:
 ![Bug](../assets/bug.svg) Bekende problemen
 
 ## Huidige hoofdversie
+
+### V1.19 Release
+
+_23 mei 2024_
+
+![Repareren](../assets/fix.svg) De `InStock` markering voor optiewaarden houdt nu rekening met het bereik `enabled` status van de productvariant.
 
 ### V1.18 Release
 

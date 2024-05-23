@@ -2,39 +2,35 @@
 title: Onboarding en installatie
 description: "Leer hoe u kunt installeren [!DNL Catalog Service]"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: c33ec5a10f9f2570e971e968efd1524e0d384ecd
+source-git-commit: a2841b809cfc52798dc3f1bdcc033a77333bf0e5
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '797'
 ht-degree: 0%
 
 ---
 
 # Onboarding en installatie
 
-Installeer de Catalogusservice om productgegevens van een Commerce-instantie aan te vragen en te ontvangen met de functie [GraphQL-API voor catalogusservice](https://developer.adobe.com/commerce/services/graphql/catalog-service/).
+Installeer de Catalogusservice om productgegevens van een Commerce-instantie aan te vragen en te ontvangen met de functie [GraphQL-API voor catalogusservice](https://developer.adobe.com/commerce/services/graphql/catalog-service/). De Catalog Service wordt geleverd als een composer-pakket van de repo.magento.com-opslagplaats.
 
 >[!NOTE]
 >
 >Als uw Commerce-exemplaar gebruikmaakt van Live Search of Product Recommendations, wordt de Catalogusservice automatisch geïnstalleerd of bijgewerkt wanneer u aan boord bent of een upgrade uitvoert van deze services. Zie de installatie-instructies voor meer informatie [Live zoeken](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/install) en [Product Recommendations](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/getting-started/install-configure).
 
->[!BEGINSHADEBOX]
 
-## Vereisten
 
-Het instapproces voor [!DNL Catalog Service] vereist toegang tot de bevellijn van de server. Als u niet bekend bent met het werken vanaf de opdrachtregel, vraagt u een ontwikkelaar of systeemintegrator om hulp.
+## Systeemvereisten
 
 **Softwarevereisten**
 
 - Adobe Commerce 2.4.4+
-- PHP 8.1, 8.2
+- PHP 8.1, 8.2, 8.3
 - Composer: 2.x
 
 **Ondersteunde platforms**
 
 - Adobe Commerce op cloudinfrastructuur: 2.4.4+
 - Adobe Commerce in bedrijven: 2.4.4+
-
->[!ENDSHADEBOX]
 
 ## Eindpunten
 
@@ -51,19 +47,23 @@ Voer alle tests van de Lading op het zandbakeindpunt uit. Voordat u begint met h
 
 Aan de slag met [!DNL Catalog Service] voor Adobe Commerce zijn de volgende stappen vereist:
 
-- Extensies voor gegevensexport installeren
+- De extensie Catalog Service installeren (`magento/catalog-service`)
 - De service- en gegevensexport configureren
 - Toegang tot de service
 
-### Extensies voor gegevensexport installeren
+### De extensie Catalog Service installeren
 
-U moet toegang hebben tot de opdrachtregel van de server om de [!DNL Catalog Service] aan boord nemen.
+>[!BEGINSHADEBOX]
 
-De [!DNL Catalog Service] wordt geïnstalleerd met Composer-sleutels die zijn gekoppeld aan de Commerce-account [`mageid`](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/) verstrekt tijdens het ondertekeningsproces. Composer gebruikt deze toetsen tijdens de eerste installatie van Adobe Commerce of in situaties waarin de Composer-toetsen niet eerder zijn opgeslagen naar een externe toepassing `auth.json` bestand.
+**Vereiste**
 
-Zie [Uw verificatietoetsen ophalen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html) voor meer informatie over het verkrijgen van Composer-sleutels.
+- Toegang [repo.magento.com](https://repo.magento.com) om de extensie te installeren. Voor sleutelgeneratie en het verkrijgen van de nodige rechten, zie [Uw verificatietoetsen ophalen](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys). Zie voor installatie in de cloud de [Handleiding voor handel in Cloud-infrastructuur](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)
 
-De [!DNL Catalog Service] kan worden geïnstalleerd op de cloudinfrastructuur van Adobe Commerce en op het terrein.
+- Toegang tot de opdrachtregel van de Adobe Commerce-toepassingsserver.
+
+>[!ENDSHADEBOX]
+
+De nieuwste versie van de extensie Catalog Services installeren (`magento/catalog-service`) op een Adobe Commerce-instantie waarop Adobe Commerce versie 2.4.4 of hoger wordt uitgevoerd. De Catalogusservice wordt geleverd als een composer-pakket van de [repo.magento.com](https://repo.magento.com) opslagplaats.
 
 >[!BEGINTABS]
 
