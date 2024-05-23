@@ -3,9 +3,9 @@ title: "Grens en grenzen"
 description: Meer informatie over de grenzen en grenzen van [!DNL Live Search] om ervoor te zorgen dat het voldoet aan de behoeften van uw bedrijf.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 0f4860afa38dc188c19ee8bcbd386d3fb5d0907f
+source-git-commit: 29983ec083a49859b99c9c906710ce0a01054a50
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '626'
 ht-degree: 0%
 
 ---
@@ -31,6 +31,7 @@ Adobe Commerce biedt opties voor het zoeken naar sites. Controleer de volgende g
    - 200 doorzoekbare kenmerken
 - [!DNL Live Search] indexeert alleen producten uit de Adobe Commerce-database.
 - CMS-pagina&#39;s worden niet geïndexeerd.
+- SKU-, naam- en categoriekenmerken kunnen standaard worden doorzocht en kunnen niet worden uitgesloten van de zoekopdracht. Zorg ervoor dat u de toewijzing van de producten uit de categorieën ongedaan maakt als ze niet in die categorieën mogen voorkomen.
 
 ## Facetten
 
