@@ -4,7 +4,7 @@ description: Leer hoe u uw Adobe Commerce- of Magento Open Source-instantie inte
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: b6775b196ca36448f50a6fed283ef0626e03d286
+source-git-commit: 5d3a89b2ef06b2c67ec715ce4f31f22249b336e0
 workflow-type: tm+mt
 source-wordcount: '907'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # [!DNL Commerce Services Connector]
 
-Sommige Adobe Commerce- en Magento Open Source-functies worden aangedreven door [!DNL Commerce Services]  en geïmplementeerd als SaaS (software als service). Als u deze services wilt gebruiken, moet u verbinding maken met uw [!DNL Commerce] -instantie die de API-sleutels voor productie en sandbox gebruikt, en geeft u de gegevensruimte op in het dialoogvenster [configuratie](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html). U hoeft dit maar één keer in te stellen.
+Sommige Adobe Commerce- en Magento Open Source-functies worden aangedreven door [!DNL Commerce Services] en geïmplementeerd als SaaS (software als service). Als u deze services wilt gebruiken, moet u verbinding maken met uw [!DNL Commerce] -instantie die de API-sleutels voor productie en sandbox gebruikt, en geeft u de gegevensruimte op in het dialoogvenster [configuratie](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html). U hoeft dit maar één keer in te stellen.
 
 ## Beschikbare services {#availableservices}
 

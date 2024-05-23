@@ -3,9 +3,9 @@ title: Uw instantie verbinden
 description: Sluit uw Commerce-instantie aan met behulp van een API-sleutel en een persoonlijke sleutel en geef de gegevensruimte op in de configuratie.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 feature: Payments, Checkout, Configuration, Saas
-source-git-commit: 5c4fe370507e4154d4495d4c09e2ff8705e53191
+source-git-commit: 5d3a89b2ef06b2c67ec715ce4f31f22249b336e0
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '636'
 ht-degree: 0%
 
 ---
@@ -70,3 +70,10 @@ Nu u uw geloofsbrieven hebt verkregen, kunt u uw project SaaS en de Ruimte van G
    >[!INFO]
    >
    > Zie onze [[!DNL Adobe Commerce] Services Connector](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector.html?lang=en#configuration-faqs) video voor aanvullende informatie.
+
+## Endpoint
+
+[!DNL Payment Services] gebruikt de [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html) om verbinding te maken met Commerce Services en te implementeren als SaaS. Dit [!DNL Commerce Services Connector] communiceert door het eindpunt bij:
+
+* `commerce-beta.adobe.io` voor sandboxomgevingen.
+* `commerce.adobe.io for` voor live omgevingen.
