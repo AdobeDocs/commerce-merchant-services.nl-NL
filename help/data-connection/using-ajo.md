@@ -4,9 +4,9 @@ description: Leer hoe u Adobe Journey Optimizer kunt gebruiken om een verlaten w
 role: Admin, Developer
 feature: Personalization, Integration
 exl-id: 5e4e7c0a-c00b-4278-bd73-6b6f2fcbe770
-source-git-commit: ee84525a9146123d80c303e40acdc6baba098cdd
+source-git-commit: 6500aaa373d8e9abf88d1ca45dc2742c83bfeca3
 workflow-type: tm+mt
-source-wordcount: '1412'
+source-wordcount: '1262'
 ht-degree: 0%
 
 ---
@@ -23,20 +23,6 @@ Bouw een verlaten karretje, doorblader e-mail, of bericht gebruikend gegevens va
 |---|---|---|
 | **Definitie** | Klik of acties die klanten op uw site uitvoeren. | Informatie over de levenscyclus en details van elke bestelling (verleden en huidig). |
 | **Gebeurtenissen vastgelegd door Adobe Commerce** | [pageView](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#pageview)<br>[productPageView](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events)<br>[addToCart](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#addtocart)<br>[openCart](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#opencart)<br>[startCheckout](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#startcheckout)<br>[completeCheckout](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#completecheckout) | [orderPlaced](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events-backoffice#orderplaced)<br>[Orderhistorie](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/fundamentals/connect-data#send-historical-order-data) |
-
-### Wat kan ik doen met alleen Adobe Commerce?
-
-Adobe gebruiken [!DNL Commerce] om op regels gebaseerde e-mailherinneringen in te stellen, die kunnen dienen als winkelwagentje of door geannuleerde e-mails kunnen bladeren. Leer hier hoe.
-
-### Wat kan ik doen met Adobe [!DNL Commerce] en Experience Cloud?
-
-- **Adobe [!DNL Commerce] met Adobe Journey Optimizer** - Gebruik van Adobe [!DNL Commerce] met Adobe Journey Optimizer kunt u gebruiken [!DNL Commerce] gegevens als aanleiding voor een reis in omniekanaal verlaten. U kunt die reis personaliseren die op klantenattributen, punten wordt gebaseerd die zij, ander het winkelgedrag, en verleden aankoopgedrag verlieten.
-
-- **Adobe Commerce, Adobe Journey Optimizer en Adobe Real-Time CDP** - Als u Real-Time CDP toevoegt, kunt u de beëindigingscampagnes verder verfijnen op basis van uniforme klantprofielen en centraal beheerde, op regels gebaseerde of door AI aangedreven doelgroepen. U kunt bijvoorbeeld het volgende maken:
-
-   - Een &quot;sterke omzetters&quot;publiek dat een laag verlaten tarief heeft
-   - Een publiek met een &quot;grote overweging&quot; dat bepaalde categorieën meerdere keren heeft herzien
-   - Een publiek met een &quot;hoog potentieel&quot; dat veel geld en loyaliteit heeft, maar dat onlangs is afgestapt
 
 ### Wat hebben andere klanten bereikt?
 
