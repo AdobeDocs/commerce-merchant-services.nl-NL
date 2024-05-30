@@ -4,9 +4,9 @@ description: Leer hoe u Adobe Journey Optimizer kunt gebruiken om een verlaten w
 role: Admin, Developer
 feature: Personalization, Integration
 exl-id: 5e4e7c0a-c00b-4278-bd73-6b6f2fcbe770
-source-git-commit: a94f75dfab1f88f02e217b0e021cc2dfc94244c7
+source-git-commit: ee84525a9146123d80c303e40acdc6baba098cdd
 workflow-type: tm+mt
-source-wordcount: '1429'
+source-wordcount: '1412'
 ht-degree: 0%
 
 ---
@@ -108,17 +108,17 @@ In uw [!DNL Commerce] sandbox-omgeving, activeer gebeurtenissen op uw winkel doo
 
    Zoek naar `commerce.checkouts` -gebeurtenis en controleer de payload van de gebeurtenis:
 
-       &quot;json
-       &quot;personID&quot;: &quot;84281643067178465783746543501073369488&quot;,
-       &quot;eventType&quot;: &quot;commerce.checkouts&quot;,
-       &quot;_id&quot;: &quot;4b41703f-e42e-485b-8d63-7001e3580856-0&quot;,
-       &quot;commerce&quot;: {
-       &quot;kar&quot;: {},
-       &quot;checkouts&quot;: {
-       &quot;value&quot;: 1
-       }
-       &quot;
-   
+   ```json
+   "personID": "84281643067178465783746543501073369488", 
+   "eventType": "commerce.checkouts", 
+   "_id": "4b41703f-e42e-485b-8d63-7001e3580856-0", 
+   "commerce": { 
+       "cart": {}, 
+       "checkouts": { 
+           "value": 1 
+       } 
+   ```
+
    Zoals u kunt zien, bevat de volledige gebeurtenislading rijke gebeurtenisgegevens. In de volgende sectie configureert u gebeurtenissen in Journey Optimizer om te luisteren naar en te reageren op de `commerce.checkouts` gebeurtenis die is gegenereerd door uw [!DNL Commerce] storefront.
 
 ## Stap 3: gebeurtenissen configureren in Journey Optimizer
