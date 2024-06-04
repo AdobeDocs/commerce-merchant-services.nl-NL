@@ -6,15 +6,15 @@ index: true
 role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
-source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
+source-git-commit: d1379bb108f2259051641a7bf77cd8b459fd9cbf
 workflow-type: tm+mt
-source-wordcount: '85'
-ht-degree: 3%
+source-wordcount: '91'
+ht-degree: 2%
 
 ---
 
 
-# [!DNL Payment Services] voor handel {#payment-services}
+# [!DNL Payment Services] voor Commerce {#payment-services}
 
 - [Overzicht van hulplijnen](guide-overview.md)
 - [Inleiding tot [!DNL Payment Services]](overview.md)
@@ -41,6 +41,7 @@ ht-degree: 3%
    - [Betalingsstatusrapport bestellen](order-payment-status.md)
    - [Uitbetalingsrapport](payouts.md)
    - [Beschikbare gegevens](data.md)
+   - [Verwerking van niveau 2 en niveau 3](levels-card-payment-transactions.md)
 - Betalingen beheren {#manage}
    - [Restituties](refunds.md)
    - [Void](voids.md)

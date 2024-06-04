@@ -3,9 +3,9 @@ title: Inschakelen [!DNL Payment Services] voor productie
 description: Voltooi het instapproces door [!DNL Payment Services] voor de productie.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
+source-git-commit: d1379bb108f2259051641a7bf77cd8b459fd9cbf
 workflow-type: tm+mt
-source-wordcount: '1006'
+source-wordcount: '1019'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ U kunt de dienst in productie zetten en voltooien [onboarding](onboard.md), volg
 
 ## Set [!DNL Payment Services] als betalingsmethode
 
-Na u [Configureer uw Commerce Services](connect.md#configure-commerce-services) en [sandbox testen](sandbox.md#enable-sandbox-testing) of [rechtstreekse betalingen](#enable-live-payments), moet u instellen [!DNL Payment Services] als betalingsmethode.
+Na u [Commerce Services configureren](connect.md#configure-commerce-services) en [sandbox testen](sandbox.md#enable-sandbox-testing) of [rechtstreekse betalingen](#enable-live-payments), moet u instellen [!DNL Payment Services] als betalingsmethode.
 
 1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Klik op **[!UICONTROL Enable Payment Services]**.
@@ -144,6 +144,8 @@ Uw [!DNL Payment Services] _Merchant ID_:
 1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Klik in de weergave Home op **[!UICONTROL Settings]**. Zie [Home](payments-home.md) voor meer informatie .
 1. Selecteer de vereiste _Merchant ID_ en dient deze in bij uw verkoper, die de juiste prijsopgave zal configureren.
+
+Zie [Verwerking van niveau 2 en niveau 3](levels-card-payment-transactions.md) voor meer informatie over betalingstransacties.
 
 ## Live betalingen inschakelen
 

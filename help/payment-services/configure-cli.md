@@ -5,9 +5,9 @@ role: Admin, Developer
 level: Intermediate
 exl-id: 265ab1be-fe52-41f3-85cb-addbc2ddfb17
 feature: Payments, Checkout, Configuration, Integration
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: d1379bb108f2259051641a7bf77cd8b459fd9cbf
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '548'
 ht-degree: 0%
 
 ---
@@ -48,11 +48,11 @@ bin/magento indexer:set-mode schedule sales_order_data_exporter sales_order_stat
 >
 >Als u geen indexeerders in uw bevel specificeert, worden alle indexeerders bijgewerkt aan de zelfde waarde. Als u een specifieke indexeerder wilt veranderen, moet u het in uw bevel een lijst maken.
 
-Voor meer informatie over het manueel veranderen van de wijze van een indexeerder, zie [Indexeerders configureren](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#configure-indexers){target="_blank"} in the developer documentation. To learn how to change it in the Admin, see [Index management](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target="_blank"} in de basisgebruikershandleiding.
+Voor meer informatie over het manueel veranderen van de wijze van een indexeerder, zie [Indexeerders configureren](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#configure-indexers){target="_blank"} in de ontwikkelaarsdocumentatie. Zie voor meer informatie over het wijzigen van de [Indexbeheer](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target="_blank"} in de basisgebruikershandleiding.
 
 ### Gegevens handmatig opnieuw indexeren
 
-U kunt gegevens handmatig opnieuw indexeren in plaats van te wachten tot dit automatisch gebeurt. Zie [Opnieuw indexeren](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#reindex){target="_blank"} in [Manage the Indexers](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html){target="_blank"} voor meer informatie .
+U kunt gegevens handmatig opnieuw indexeren in plaats van te wachten tot dit automatisch gebeurt. Zie [Opnieuw indexeren](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#reindex){target="_blank"} in [De indexen beheren](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html){target="_blank"} voor meer informatie .
 
 Wanneer `BY SCHEDULE` wordt ingesteld, worden entiteiten gewijzigd in de systeemtracks en wordt de index voor deze entiteiten bijgewerkt op basis van een ingestelde planning. Zie [Uitsnijden uitvoeren vanaf de opdrachtregel](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html#config-cli-cron-group-run) in [Uitsnede configureren en uitvoeren](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html)) om te leren hoe u indexatie handmatig kunt activeren met behulp van uitsnijdtaken.
 
@@ -89,3 +89,15 @@ bin/magento cron:run --group payment_services_data_export
 ```
 
 Als u meer wilt weten over omvormen en indexeren, raadpleegt u de [De indexen beheren](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html) onderwerp in de ontwikkelaarsdocumentatie.
+
+## L2/L3-verwerking configureren
+
+[!DNL Payment Services] gegevens van niveau 2 en niveau 3 van kaartbetalingstransacties kunnen verwerken om aanvullende informatie voor handelaren te verstrekken.
+
+>[!WARNING]
+>
+> De integratie met de verwerking van Niveau 2 en Niveau 3 met PayPal is beschikbaar voor de verkopers van de V.S. slechts. Zie [betalingsverwerking](https://developer.paypal.com/docs/checkout/advanced/processing/){target=_blank} in de documentatie voor ontwikkelaars van PayPal voor meer informatie.
+
+Als u L2/L3 verwerkingsgegevens wilt gebruiken voor [!DNL Payment Services], of als u vragen hebt, kunt u [!DNL Payment Services] accountmanager.
+
+Meer informatie over L2- en L3-verwerking in [!DNL Payment Services], zie [Verwerking van niveau 2 en niveau 3](levels-card-payment-transactions.md).
