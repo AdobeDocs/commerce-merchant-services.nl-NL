@@ -3,9 +3,9 @@ title: '[!DNL Catalog Service]'
 description: '''[!DNL Catalog Service] voor Adobe Commerce biedt een manier om de inhoud van de pagina''s met productweergaven en de pagina''s met productlijsten veel sneller op te halen dan de GraphQL-zoekopdrachten van de native Adobe Commerce.'''
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
 recommendations: noCatalog
-source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
+source-git-commit: 7293914fab34381deb5bc841d147371f9f3470a5
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '918'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ In het volgende diagram worden de twee GraphQL-systemen weergegeven:
 
 ![Catalogusarchitectuurdiagram](assets/catalog-service-architecture.png)
 
-In het kernGraphQL systeem, verzendt de PWA een verzoek naar de toepassing van de Handel, die elk verzoek ontvangt, verwerkt het, misschien verzendend een verzoek door veelvoudige subsystems, dan keert een antwoord op de opslag terug. Deze ronde trip kan leiden tot een trage laadtijd voor de pagina, wat kan leiden tot lagere conversiesnelheden.
+In het kernGraphQL systeem, verzendt de PWA een verzoek naar de toepassing van Commerce, die elk verzoek ontvangt, verwerkt het, misschien verzendend een verzoek door veelvoudige subsystems, dan keert een antwoord op storefront terug. Deze ronde trip kan leiden tot een trage laadtijd voor de pagina, wat kan leiden tot lagere conversiesnelheden.
 
 [!DNL Catalog Service] is een Gateway van de Diensten Storefront. De dienst heeft toegang tot een afzonderlijk gegevensbestand dat productdetails en verwante informatie, zoals productattributen, varianten, prijzen, en categorieën bevat. De service houdt de database via indexering synchroon met de Adobe Commerce.
 Omdat de dienst directe communicatie met de toepassing overslaat, kan het de latentie van de verzoek en reactiecyclus verminderen.
@@ -48,7 +48,7 @@ In de volgende secties worden enkele verschillen tussen de twee GraphQL-systemen
 
 ### Schema-beheer
 
-Aangezien de Catalogusdienst als dienst werkt, hoeven integrators zich niet bezorgd te maken over de onderliggende versie van Handel. De syntaxis van de query&#39;s is voor alle versies hetzelfde. Bovendien is het schema verenigbaar voor alle handelaren. Deze consistentie maakt het gemakkelijker om beste praktijken te vestigen, en verhoogt opnieuw gebruik van storefront widgets beduidend.
+Aangezien Catalog Service als service werkt, hoeven integrators zich niet zorgen te maken over de onderliggende versie van Commerce. De syntaxis van de query&#39;s is voor alle versies hetzelfde. Bovendien is het schema verenigbaar voor alle handelaren. Deze consistentie maakt het gemakkelijker om beste praktijken te vestigen, en verhoogt opnieuw gebruik van storefront widgets beduidend.
 
 ### Vereenvoudiging van productsoorten
 
@@ -66,9 +66,11 @@ Eenvoudige producten vertegenwoordigen de basisverkoopeenheid die een prijs heef
 
 Een complex product heeft geen vaste prijs. In plaats daarvan retourneert de Catalogusservice de prijzen van gekoppelde voorbeelden. Een handelaar kan bijvoorbeeld in eerste instantie dezelfde prijzen toewijzen aan alle varianten van een configureerbaar product. Als bepaalde grootten of kleuren niet populair zijn, kan de handelaar de prijzen van die varianten verlagen. De prijs van het complexe (configureerbare) product vertoont dus eerst een prijsbereik, dat de prijs van zowel standaard- als niet-populaire varianten weerspiegelt. Nadat de winkelier een waarde voor alle beschikbare opties heeft geselecteerd, toont de winkel één enkele prijs.
 
+De Catalogusdienst verzekert nauwkeurige prijsupdates en berekeningen door prijzen met grote waarden (tot 16 cijfers) en hoge decimale precisie (tot 4 decimalen) te steunen.
+
 >[!NOTE]
 >
-> Koophandel met afnemers [!DNL Catalog Service] kan profiteren van snellere prijswijzigingen en synchronisatietijd op hun websites met de [SaaS-prijsindexer](../price-index/price-indexing.md).
+> Commerce-klanten met [!DNL Catalog Service] kan profiteren van snellere prijswijzigingen en synchronisatietijd op hun websites met de [SaaS-prijsindexer](../price-index/price-indexing.md).
 
 ## Implementatie
 

@@ -3,9 +3,9 @@ title: '''[!DNL Catalog Service] Opmerkingen bij de release'
 description: De meest recente releasegegevens voor [!DNL Catalog Service] voor Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: a2841b809cfc52798dc3f1bdcc033a77333bf0e5
+source-git-commit: 7293914fab34381deb5bc841d147371f9f3470a5
 workflow-type: tm+mt
-source-wordcount: '627'
+source-wordcount: '677'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,13 @@ Updates zijn:
 
 _23 mei 2024_
 
-![Repareren](../assets/fix.svg) De `InStock` markering voor optiewaarden houdt nu rekening met het bereik `enabled` status van de productvariant.
+![Repareren](../assets/fix.svg) <!--DATA-5033-->De `InStock` markering voor optiewaarden houdt nu rekening met het bereik `enabled` status van de productvariant.
+
+![Repareren](../assets/fix.svg) <!--DATA-5888-->Voeg ondersteuning toe voor productprijzen waarvoor grote getallen (maximaal 16 cijfers) en een grotere decimale precisie (maximaal 4 cijfers achter de komma) vereist zijn. Als u de prijsconfiguratie-updates wilt toepassen op uw bestaande catalogus, synchroniseert u de catalogusgegevens opnieuw vanuit de [Gegevensbeheerdashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard)of door de [Adobe Commerce opdrachtregelinterface](../landing/catalog-sync.md#command-line-interface).
+
+## Vorige versies
+
++++ Vorige versies
 
 ### V1.18 Release
 
@@ -37,10 +43,6 @@ _11 april 2024_
 ![Nieuw](../assets/new.svg) Toegevoegde ondersteuning voor PHP 8.3.
 
 ![Nieuw](../assets/new.svg) De [`products`](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/) en [`refineProduct`](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/) query &#39; s retourneren nu aanpasbare optiegegevens voor zowel eenvoudige als complexe producten .<!--DATA-5538-->
-
-## Vorige versies
-
-+++ Vorige versies
 
 ### V1.17 Release
 
