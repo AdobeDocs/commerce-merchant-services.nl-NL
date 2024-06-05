@@ -3,9 +3,9 @@ title: "[!DNL Live Search] Opmerkingen bij de release"
 description: "De meest recente releasegegevens voor [!DNL Live Search] uit Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 228ce5f3df3cc020a260fdd710eac02433d7bf0a
+source-git-commit: fe261bfaf5a64c9501bc5523d29f9b6a9fc1a6a2
 workflow-type: tm+mt
-source-wordcount: '1946'
+source-wordcount: '1966'
 ht-degree: 0%
 
 ---
@@ -28,10 +28,6 @@ _13 februari 2024_
 
 ![Nieuw](../assets/new.svg) [!DNL Live Search] ondersteunt nu het instellen van een standaardregel voor [Merchandising zoeken](rules.md).
 
-_27 oktober 2023_
-
-![Nieuw](../assets/new.svg) De [!DNL Live Search] De PLP-widget ondersteunt nu kleurstalen.
-
 _12 oktober 2023_
 
 ![Nieuw](../assets/new.svg) Commerce-beheerders kunnen nu de taal van de index voor [!DNL Live Search]. Zie [Instellingen](settings.md).
@@ -44,6 +40,28 @@ _13 juni 2023_
 _25 april 2023_
 
 ![Nieuw](../assets/new.svg) [!DNL Live Search] klanten kunnen nu profiteren van de nieuwe [SaaS-prijsindexer](../price-index/price-indexing.md).
+
+### PLP-widget
+
+_31 mei 2024_
+
+![Nieuw](../assets/new.svg) Uitgebrachte versie 2.0.0 van de PLP-widget, die ondersteuning biedt voor de volgende functies:
+
+- Toevoegen aan winkelwagentjes - Alleen beschikbaar voor eenvoudige producten.
+- Meerdere afbeeldingen per product - de afbeelding kan veranderen wanneer een andere kleur wordt gekozen voor een configureerbaar product.
+
+_27 oktober 2023_
+
+![Nieuw](../assets/new.svg) De [!DNL Live Search] De PLP-widget ondersteunt nu kleurstalen.
+
+
+## [!DNL Live Search] 4.2.0. {#420}
+
+_31 mei 2024_
+
+[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+
+![Nieuw](../assets/new.svg) De extensie Live zoeken is bijgewerkt om PLP-widgets versie 2.0.0 te gebruiken.
 
 ## [!DNL Live Search] 4.1.2. {#412}
 
@@ -75,16 +93,6 @@ _22 feb. 2024_
 ### Nieuwe functies
 
 ![Nieuw](../assets/new.svg) De [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard) is nu beschikbaar. Dit vernieuwde dashboard biedt inzichten in gegevensstromen voor [!DNL Product Recommendations], [!DNL Live Search], en [!DNL Catalog Service].
-![Nieuw](../assets/new.svg) Er zijn meerdere nieuwe functies toegevoegd aan de [PLP-widget](plp-styling.md):
-
-* Schakelen tussen lijst-/rasterweergave
-* Toevoegen aan winkelwagentjes
-* Staalondersteuning
-* Meerdere afbeeldingen per product
-* Prijsschuifregelaars
-* Taalondersteuning
-
-Handelaren moeten de [!DNL Live Search] extensie >= 4.1.0 voor toegang tot deze functies.
 
 ### Updates
 
@@ -114,9 +122,9 @@ _13 nov. 2023_
 
 Nadat u versie 3.1.1 of hoger hebt geïnstalleerd, schakelt u de nieuwe indexen in:
 
-* Diervoeders productprijzen
-* Websitegegevensinvoer
-* Scopes klant groepeert gegevenstoevoer
+- Diervoeders productprijzen
+- Websitegegevensinvoer
+- Scopes klant groepeert gegevenstoevoer
 
 Na bevordering, test de bijgewerkte configuratie in QA of het Opvoeren alvorens de veranderingen in productie te duwen.
 
@@ -145,7 +153,7 @@ _15 sep. 2023_
 
 ![Repareren](../assets/fix.svg) De tabelgrootte van de producten en de prijsvoeding is sterk afgenomen. Tabellen `catalog_data_exporter_products` en `catalog_data_exporter_product_prices` moet een aanzienlijke vermindering van de omvang zien.
 ![Repareren](../assets/fix.svg) Het tabblad &#39;Regels&#39; krijgt een andere naam dan &#39;Zoekregels&#39;
-![Repareren](../assets/fix.svg) Wanneer u op &#39;trending&#39; rangschikt, kunt u nu kiezen tussen: * 3 dagen (standaardwaarde) * 14 dagen * 30 dagen
+![Repareren](../assets/fix.svg) Wanneer u op &#39;trending&#39; rangschikt, kunt u nu kiezen tussen: - 3 dagen (standaardwaarde) - 14 dagen - 30 dagen
 ![Repareren](../assets/fix.svg) &#39;Gebeurtenissen&#39; (Boost/Pin/Bury/Hide) is hernoemd naar &#39;Handmatige volgorde&#39;
 ![Repareren](../assets/fix.svg) &#39;Type classificatie&#39; is hernoemd naar &#39;Intelligente classificatie&#39;
 ![Repareren](../assets/fix.svg) Kleine oplossingen voor problemen
@@ -170,11 +178,11 @@ _7 augustus 2023_
 
 ![Nieuw](../assets/new.svg) De volgende waarden zijn toegevoegd aan de `storeDetails` object:
 
-* &quot;Alle producten per pagina toestaan&quot;
-* Valuta
-* &quot;Producten per pagina op raster Toegestane waarden&quot;
-* &quot;Producten per pagina op standaardwaarde van raster&quot;
-* Winkeltaal
+- &quot;Alle producten per pagina toestaan&quot;
+- Valuta
+- &quot;Producten per pagina op raster Toegestane waarden&quot;
+- &quot;Producten per pagina op standaardwaarde van raster&quot;
+- Winkeltaal
 
 ### Updates
 
@@ -201,7 +209,7 @@ _14 maart 2023_
 ![Nieuw](../assets/new.svg) [Widget pagina met productaanbiedingen](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-storefront/plp-styling)
 ![Nieuw](../assets/new.svg) [Categoriefilteropties](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#facets)
 ![Nieuw](../assets/new.svg) Mogelijkheid toegevoegd om pengebeurtenissen te maken door slepen en neerzetten
-![Nieuw](../assets/new.svg) Nieuwe vastzetacties: * Vastzetten op steun - De knop Vastzetten om een vastpingebeurtenis te maken met één klik * Aan de bovenkant vastzetten - Het product wordt op de eerste positie geplaatst * Aan de onderkant vastzetten - Het product wordt onder aan de resultaten geplaatst * Een gebeurtenis vrijmaken met één klik
+![Nieuw](../assets/new.svg) Nieuwe vastzetacties: - Vastzetten op steun - De knop Vastzetten om een vastpingebeurtenis te maken met één klik - Aan de bovenkant vastzetten - Het product op de eerste positie plaatsen - Aan de onderkant vastzetten - Het product op de onderkant van de resultaten plaatsen - Een gebeurtenis vrijmaken met één klik
 ![Nieuw](../assets/new.svg) [Intelligente classificatie voor regels](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add)
 ![Nieuw](../assets/new.svg) [!DNL Live Search] ondersteunt nu volledig [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) Mogelijkheden in Commerce (voorheen bekend als Multi-Source Inventory of MSI). Om volledige steun toe te laten, moet u [update](install.md#update) de afhankelijkheidsmodule `commerce-data-export` naar versie 102.2.0+.
 
@@ -326,6 +334,6 @@ Bestaande [!DNL Live Search] de installaties moeten worden aangepast aan [!DNL L
 
 Meer informatie:
 
-* [Adobe Commerce Developer Documentation](https://developer.adobe.com/commerce/docs)
-* [Adobe Commerce-gebruikershandleiding](https://experienceleague.adobe.com/en/docs/commerce)
-* [[!DNL Live Search] op Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html)
+- [Adobe Commerce Developer Documentation](https://developer.adobe.com/commerce/docs)
+- [Adobe Commerce-gebruikershandleiding](https://experienceleague.adobe.com/en/docs/commerce)
+- [[!DNL Live Search] op Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html)
