@@ -1,13 +1,13 @@
 ---
 title: Beschikbare gegevens
-description: Gebruik gegevens over financiële verslaglegging om rapportage te combineren met systemen voor niet-handel.
+description: Gebruik gegevens over financiële verslaggeving om rapportage te combineren met niet-Commerce-systemen.
 role: User
 level: Intermediate
 exl-id: dbf41ce9-01f9-45d0-b651-e4c499e83822
 feature: Payments, Checkout, Data Import/Export
-source-git-commit: c4068d71eba45ea45b1c1eefc324bf830479e0e3
+source-git-commit: 9a933d41bffc2af453eed00caeb941eb18b23852
 workflow-type: tm+mt
-source-wordcount: '172'
+source-wordcount: '152'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ U beschikt over bepaalde bestellingen en uitbetalingsgegevens, zodat u de financ
 
 U kunt de financiële rapportage van Adobe Commerce afstemmen op uw ERP-systeem (Enterprise Resource Planning) dat niet van de Adobe is, met de verhogende id die aan een specifieke bestelling is gekoppeld.
 
-Wanneer de betalingsservices de handelsorder naar PayPal verzendt, wordt de verhogingsid opgenomen als de `custom_id` _en_ in de `invoice_id` (die ook een willekeurige tekenreeks na de `increment_id`).
+Wanneer betalingsservices de Commerce-bestelling naar PayPal sturen, wordt de verhogingsid opgenomen als de `custom_id` _en_ in de `invoice_id` (die ook een willekeurige tekenreeks na de `increment_id`).
 
 De id&#39;s zijn gemakkelijk toegankelijk in zowel de zakelijke activiteitengegevens voor een betaling als in de PayPal-website.
 
@@ -79,5 +79,5 @@ De `invoice_id` en `custom_id` worden onder aan de detailhandel weergegeven voor
 
 Zie de REST APIs-documentatie van PayPal voor meer informatie:
 
-* [`purchase_unit`, waarin `custom_id` en `invoice_id` woonachtig](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit:~:text=Read%20only.-,purchase_unit,-Collapse)
+* [`purchase_unit`, waarin `custom_id` en `invoice_id` woonachtig](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit)
 * [Bestellingsgegevens tonen](https://developer.paypal.com/docs/api/orders/v2/#orders_get)
