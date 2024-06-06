@@ -3,9 +3,9 @@ title: Aanvullende informatie
 description: De meest recente releasegegevens voor de [!DNL Data Connection] uit Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 84094f4249eeb9f98a85e582c52e2c48e0dd9316
+source-git-commit: a2d5e695b3f6491d051da77bfc0fb596f5411c92
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '877'
 ht-degree: 0%
 
 ---
@@ -71,6 +71,15 @@ _12 oktober 2022_
 ![Nieuw](../assets/new.svg) - Toegevoegde ondersteuning voor een [AEM storefront](overview.md#aem-support).
 
 +++
+
+## 3.1.2.
+
+[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+
+_5 juni 2024_
+
+![Repareren](../assets/new.svg) - Probleem verholpen waarbij de verkeerde datumnotatie werd gebruikt bij het starten van een [historische synchronisatie](connect-data.md#specify-order-history-date-range).
+![Repareren](../assets/new.svg) - Probleem verholpen waarbij de [startCheckout](events.md#startcheckout) De gebeurtenis werd niet verzonden op Adobe Commerce 2.4.7.
 
 ## 3.1.1
 
