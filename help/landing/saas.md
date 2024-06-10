@@ -4,9 +4,9 @@ description: Leer hoe u uw Adobe Commerce- of Magento Open Source-instantie inte
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 5d3a89b2ef06b2c67ec715ce4f31f22249b336e0
+source-git-commit: 448cfcc1297aba21383cdba3284aeb95095360b2
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '934'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,11 @@ In de volgende secties wordt elk van deze elementen nader besproken.
 
 ## Credentials {#apikey}
 
-De API-sleutels voor productie en sandbox worden gegenereerd op basis van de [!DNL Commerce] de [licentiehouder](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/onboarding) die door een uniek [!DNL Commerce] ID (MageID). Machtigingsvalidatie doorgeven voor services zoals [!DNL Product Recommendations] of [!DNL Live Search]kan de eigenaar van de licentie voor de organisatie van de handelaar de set met API-sleutels genereren zolang de account zich in goede staat bevindt. De sleutels kunnen op een &quot;behoefte om&quot;basis met het systeem worden gedeeld integrator of ontwikkelingsteam dat projecten en milieu&#39;s namens de vergunninghouder beheert. Daarnaast hebben integrators van oplossingen ook het recht om te gebruiken [!DNL Commerce Services]. Als u een oplossingsintegrator bent, de ondertekenaar van [!DNL Commerce] het partnercontract zou de API sleutels moeten produceren.
+De API-sleutels voor productie en sandbox worden gegenereerd op basis van de [!DNL Commerce] de [licentiehouder](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/onboarding) die door een uniek [!DNL Commerce] ID (MageID). Machtigingsvalidatie doorgeven voor services zoals [!DNL Product Recommendations] of [!DNL Live Search]kan de eigenaar van de licentie voor de organisatie van de handelaar de set met API-sleutels genereren, zolang de account zich in goede staat bevindt.
+
+De sleutels kunnen op een &quot;behoefte-aan-weet&quot;basis met het systeemintegrator of ontwikkelingsteam worden gedeeld dat projecten en milieu&#39;s namens de vergunninghouder beheert. Ontwikkelaars die zijn toegekend [!DNL Shared Access] door de eigenaar van de licentie de sleutels niet namens hem kunnen genereren, zelfs niet als de organisatie van de handelaar aanwezig is in de [!DNL Switch Accounts] vervolgkeuzelijst op hun account.
+
+Daarnaast hebben integrators van oplossingen ook het recht om te gebruiken [!DNL Commerce Services]. Als u een oplossingsintegrator bent, de ondertekenaar van [!DNL Commerce] het partnercontract zou de API sleutels moeten produceren.
 
 >[!NOTE]
 >
