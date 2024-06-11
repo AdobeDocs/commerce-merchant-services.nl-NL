@@ -4,9 +4,9 @@ description: Leer hoe u uw Adobe Commerce- of Magento Open Source-instantie inte
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 448cfcc1297aba21383cdba3284aeb95095360b2
+source-git-commit: 84238910d58e0635ae38a0ebe54903b2a2d9d666
 workflow-type: tm+mt
-source-wordcount: '934'
+source-wordcount: '1034'
 ht-degree: 0%
 
 ---
@@ -85,7 +85,11 @@ Voor [!DNL Product Recommendations], bevat de SaaS-gegevensruimte catalogus- en 
 
 ### Een SaaS-project selecteren of maken {#createsaasenv}
 
-Om een SaaS- project te selecteren of te creëren, verzoek [!DNL Commerce] API-sleutel uit de [!DNL Commerce] licentiehouder voor uw winkel.
+Om een SaaS- project te selecteren of te creëren, verzoek [!DNL Commerce] API-sleutel uit de [!DNL Commerce] licentiehouder voor je winkel:
+
+>[!NOTE]
+>
+> Als u het geneesmiddel niet ziet **[!UICONTROL Commerce Services Connector]** in de [!DNL Commerce] configuratie, moet u installeren [!DNL Commerce] modules naar wens [[!DNL Commerce] service](#availableservices).
 
 1. Op de _Beheerder_ zijbalk, ga naar **Systeem** > Services > **Commerce Services Connector**.
 
@@ -102,10 +106,14 @@ Alle SaaS-projecten die aan uw sleutels zijn gekoppeld, worden weergegeven in de
 1. Als er geen SaaS-projecten bestaan, klikt u op **Project maken**. Dan in **Project** van gebied, ga een naam voor uw project SaaS in.
 
    Wanneer u een project SaaS creeert, [!DNL Commerce] genereert een of meer SaaS-gegevensruimten afhankelijk van uw [!DNL Commerce] licentie:
-   - Adobe Commerce - Eén productiedeswitruimte; twee testgegevensruimten
+   - Adobe Commerce - Eén gegevensruimte voor de productie; alleen twee gegevensruimten voor tests. Voor Cloud Pro-projecten met meerdere testomgevingen kunt u aanvullende testgegevensruimten aanvragen voor elke testomgeving door [een supportverzoek indienen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
    - Magento Open Source - Eén gegevensruimte voor productie; geen gegevensruimten voor tests
 
 1. Selecteer de **Gegevensruimte** voor de huidige configuratie van uw [!DNL Commerce] opslaan.
+
+>[!NOTE]
+>
+>Als u verschillende instanties hebt om met de Diensten van Commerce te integreren, [een ondersteuningsticket indienen](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) om een nieuw Project te verzoeken SaaS voor elke extra instantie. Nadat de steun het Project SaaS heeft gecreeerd, vorm de integratie van de Diensten van Commerce voor de instantie gebruikend de zelfde API sleutel en selecterend het nieuwe project SaaS voor de gegevensruimte.
 
 >[!WARNING]
 >
