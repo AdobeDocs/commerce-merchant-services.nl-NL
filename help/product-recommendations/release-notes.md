@@ -3,9 +3,9 @@ title: '''[!DNL Product Recommendations] Opmerkingen bij de release'
 description: De meest recente releasegegevens voor [!DNL Product Recommendations] uit Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 316059288ace6ebaf3748a294d8fe7351fc63bbd
+source-git-commit: 76fb723c2269cfc2af197e7facc588099be8a39f
 workflow-type: tm+mt
-source-wordcount: '1315'
+source-wordcount: '1329'
 ht-degree: 0%
 
 ---
@@ -52,6 +52,7 @@ _9 mei 2024_
 [!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
 
 ![Repareren](../assets/fix.svg) Probleem verholpen waarbij werd geklikt op de knop **[!DNL Add to Cart]** op een eenvoudig product in een Product Recommendations-eenheid werd de winkelner omgeleid naar de homepage in plaats van op de huidige pagina te blijven.
+![Bug](../assets/bug.svg) Er is een validatiefout veroorzaakt door de `referenceBlock` in het `ProductRecommendations Layout` XML-bestand
 
 ### Vorige versies
 
@@ -173,7 +174,7 @@ _20 maart 2023_
 
 [!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) De naam van services voor Magento&#39;s wijzigen in [Commerciële diensten](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas) en verbeterde bruikbaarheid in de beheerder
+![Nieuw](../assets/new.svg) De naam van services voor Magento&#39;s wijzigen in [Commerce Services](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas) en verbeterde bruikbaarheid in de beheerder
 
 ### 3.2.4 van de aanbevelingen inzake magento/product
 

@@ -3,9 +3,9 @@ title: "Grens en grenzen"
 description: Meer informatie over de grenzen en grenzen van [!DNL Live Search] om ervoor te zorgen dat het voldoet aan de behoeften van uw bedrijf.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 63c90d4ef0e14c0baaf8c79569a01e5dffa5b450
+source-git-commit: 099a4b9ce3ab71bc3c7ae181be242863a55d0ca9
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '644'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,6 @@ Adobe Commerce biedt opties voor het zoeken naar sites. Controleer de volgende g
 
 ## Query
 
-- [!DNL Live Search] heeft geen toegang tot de volledige taxonomie van de categorieboom, waardoor sommige gelaagde navigatie onderzoeksscenario&#39;s voorbij zijn bereik maken.
 - [!DNL Live Search] gebruikt een unieke [GraphQL-eindpunt](https://developer.adobe.com/commerce/services/graphql/live-search/) voor vragen om eigenschappen zoals dynamische facetting en onderzoek-als-u-type te steunen. Hoewel vergelijkbaar met de [GRAPHQL API](https://developer.adobe.com/commerce/webapi/graphql/)Er zijn echter enkele verschillen en sommige gebieden zijn mogelijk niet volledig compatibel.
 - Het maximumaantal resultaten dat in een onderzoeksvraag kan worden teruggekeerd is 10.000.
 - Het is niet mogelijk om resultaten te filteren met behulp van een datumtype-kenmerk.
@@ -74,3 +73,4 @@ Adobe Commerce biedt opties voor het zoeken naar sites. Controleer de volgende g
    - Aan de klantengroep &quot;Niet aangemeld&quot; moeten de machtigingen &quot;Toestaan&quot; worden toegekend.
    - Om producten tot de &quot;niet Gelogde&quot;klantengroep te beperken, ga naar elke categorie en plaats toestemming voor elke klantengroep.
 - Ondersteuning voor B2B met Live Search for PWA Studio wordt momenteel niet ondersteund.
+- Categoriefacetten in [!DNL Live Search] zou categorieën kunnen tonen die niet aan een specifieke klantengroep kunnen tonen.

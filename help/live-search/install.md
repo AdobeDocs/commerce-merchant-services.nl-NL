@@ -3,9 +3,9 @@ title: "Aan de slag met [!DNL Live Search]"
 description: "Leer de systeemvereisten en installatiestappen voor [!DNL Live Search] uit Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: c66eab4ae0dda9a447a17f357ee0bb7364dc46ba
+source-git-commit: 099a4b9ce3ab71bc3c7ae181be242863a55d0ca9
 workflow-type: tm+mt
-source-wordcount: '2405'
+source-wordcount: '2266'
 ht-degree: 0%
 
 ---
@@ -169,7 +169,7 @@ Zie voor meer informatie [[!DNL Live Search] catalogus niet gesynchroniseerd](ht
 
 ## 5. Vorm de gegevens
 
-Als u uw productgegevens correct configureert, bent u verzekerd van goede zoekresultaten voor uw klanten. In deze sectie schakelt u de widgets voor productlijsten in en wijst u categorieën en kenmerken toe.
+Als u uw productgegevens correct configureert, bent u verzekerd van goede zoekresultaten voor uw klanten. In deze sectie schakelt u de widgets voor productlijsten in en wijst u categorieën toe.
 
 ### Widgets productlijst inschakelen
 
@@ -197,16 +197,6 @@ Wanneer u deze configuratie wijzigt, verschijnt het bericht `Page cache is inval
 ### Categorieën toewijzen
 
 Producten geretourneerd in [!DNL Live Search] moet worden toegewezen aan een [categorie](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/categories). In Luma worden producten bijvoorbeeld ingedeeld in categorieën zoals &quot;Mannen&quot;, &quot;Vrouwen&quot; en &quot;Luma&quot;. Subcategorieën worden ook ingesteld voor Tops, Bottoms en Watches. Hierdoor wordt de korreligheid bij het filteren verbeterd.
-
-### Doorzoekbare en filterbare velden
-
-Producten worden toegewezen [attributes](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) die kunnen worden gebruikt voor zoeken en filteren. Kenmerken zijn dingen als &quot;Kleur&quot;, &quot;Grootte&quot; en &quot;Materiaaltype&quot;. Met deze kenmerken kunnen gebruikers zoeken naar &quot;groene toppen&quot;. Elk product kan vele eigenschappen hebben die in [!DNL Commerce] Admin.
-
-Elk van deze kenmerken kan worden gedefinieerd als [&quot;doorzoekbaar&quot;](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) in de Admin. Wanneer deze worden ingesteld als &quot;doorzoekbaar&quot;, kunnen deze kenmerken worden doorzocht door [!DNL Live Search].
-
-[Facetten](facets.md) zijn productkenmerken die worden gedefinieerd in [!DNL Live Search] filterbaar zijn. Elk filterbaar kenmerk kan als een facet worden ingesteld in [!DNL Live Search] maar er zijn grenzen aan het aantal facetten dat tegelijk kan worden doorzocht .
-
-[Synoniemen](synonyms.md) Dit zijn termen die u kunt definiëren om gebruikers te helpen bij het vinden van het juiste product. Gebruikers die op zoek zijn naar een broek kunnen &#39;broek&#39; of &#39;slacks&#39; typen. U kunt synoniemen zodanig instellen dat deze zoektermen gebruikers naar de resultaten van de &#39;&#39;broek&#39;&#39; brengen.
 
 ## 6. Test de verbinding {#test-connection}
 
@@ -417,7 +407,7 @@ Momenteel worden de basisprijzen ondersteund. Geavanceerde prijzen die niet word
 
 Kijk naar [API-net](../catalog-service/mesh.md) voor complexere prijsberekeningen.
 
-De prijsindeling ondersteunt de landinstellingsinstelling in de instantie Commerce: *Winkels* > Instellingen > *Configuratie* > Algemeen > *Algemeen* > Lokale opties > Landinstelling.
+De prijsindeling ondersteunt de landinstellingsinstelling in de Commerce-instantie: *Winkels* > Instellingen > *Configuratie* > Algemeen > *Algemeen* > Lokale opties > Landinstelling.
 
 ### Ondersteuning voor headless Storefront
 
@@ -432,6 +422,10 @@ Deze module voegt extra contexten aan de vragen van GraphQL toe:
 - `dataServicesStorefrontInstanceContext`
 - `dataServicesMagentoExtensionContext`
 - `dataServicesStoreConfigurationContext`
+
+### B2B-ondersteuning
+
+[!DNL Live Search] supports [B2B-functionaliteit](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/guide-overview) met extra [beperkingen](boundaries-limits.md#b2b-and-category-permissions).
 
 ### PWA-ondersteuning
 
