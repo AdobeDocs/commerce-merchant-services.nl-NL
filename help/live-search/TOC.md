@@ -4,9 +4,9 @@ user-guide-description: "Deze handleiding bevat gedetailleerde instructies voor 
 breadcrumb-title: "[!DNL Live Search] Handleiding"
 role: Admin
 feature: Services, Search
-source-git-commit: 5df5eef652212c095a8f46a8736e1e97426f631e
+source-git-commit: a1d3e87f71a19df355009a7ae5d736b5d2dc7b15
 workflow-type: tm+mt
-source-wordcount: '72'
+source-wordcount: '74'
 ht-degree: 5%
 
 ---
@@ -15,14 +15,14 @@ ht-degree: 5%
 
 - [Wat is [!DNL Live Search]?](overview.md)
 - [Installeren](install.md)
+- [Live zoeken instellen](workspace.md)
 - [Grenzen en grenzen](boundaries-limits.md)
 - [Aanvullende informatie](release-notes.md)
 - Storefront {#live-search-storefront}
-   - [Widget pagina met productaanbiedingen](plp-styling.md)
+   - [Storefront-widgets](storefront-widgets.md)
+   - [Pagina met productaanbiedingen](plp-styling.md)
    - [Storefront [!DNL Popover]](storefront-popover.md)
-   - [Stijlen [!DNL Popover] Elementen](storefront-popover-styling.md)
 - Beheerder {#live-search-admin}
-   - [Werkruimte](workspace.md)
    - [Prestaties](performance.md)
    - Facetten {#facets}
       - [Overzicht](facets.md)

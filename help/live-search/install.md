@@ -3,9 +3,9 @@ title: "Aan de slag met [!DNL Live Search]"
 description: "Leer de systeemvereisten en installatiestappen voor [!DNL Live Search] uit Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 099a4b9ce3ab71bc3c7ae181be242863a55d0ca9
+source-git-commit: aba1f41965e6c430f569adcf9d940cf399b50b73
 workflow-type: tm+mt
-source-wordcount: '2266'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -216,7 +216,7 @@ Toestaan [!DNL Live Search] via een firewall toevoegen `commerce.adobe.io` op de
 
 U hebt de [!DNL Live Search] extensie, gesynchroniseerd, gevalideerd en geconfigureerd. Nu wilt u ervoor zorgen dat de [!DNL Live Search] widgets zijn in overeenstemming met het uiterlijk van uw winkel.
 
-U kunt de popover- en PLP-widgets opmaken door desgewenst aangepaste CSS-regels te definiëren. Zie [Popup-elementen opmaken](storefront-popover-styling.md) en [Widget pagina met productaanbiedingen](plp-styling.md).
+U kunt de popover- en PLP-widgets opmaken door desgewenst aangepaste CSS-regels te definiëren. Zie [Popup-elementen opmaken](storefront-popover.md#styling-popover-example) en [Widget pagina met productaanbiedingen](plp-styling.md#styling-example).
 
 Als u de functionaliteit van de widgets wilt uitbreiden, is de broncode voor elke widget beschikbaar in een openbare reactie.
 In dit scenario, kunt u JavaScript voor uw eigen behoeften aanpassen en dan uw douanecode op uw CDN ontvangen. Dit aangepaste script communiceert met het [!DNL Live Search] De dienst en keert de resultaten als normaal terug, toestaand u om de functionaliteit van widget te controleren.

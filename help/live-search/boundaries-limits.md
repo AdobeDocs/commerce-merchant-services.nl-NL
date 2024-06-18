@@ -3,9 +3,9 @@ title: "Grens en grenzen"
 description: Meer informatie over de grenzen en grenzen van [!DNL Live Search] om ervoor te zorgen dat het voldoet aan de behoeften van uw bedrijf.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 099a4b9ce3ab71bc3c7ae181be242863a55d0ca9
+source-git-commit: 0a54c1715b076a7dea70632fcffeacc7de517760
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '698'
 ht-degree: 0%
 
 ---
@@ -74,3 +74,10 @@ Adobe Commerce biedt opties voor het zoeken naar sites. Controleer de volgende g
    - Om producten tot de &quot;niet Gelogde&quot;klantengroep te beperken, ga naar elke categorie en plaats toestemming voor elke klantengroep.
 - Ondersteuning voor B2B met Live Search for PWA Studio wordt momenteel niet ondersteund.
 - Categoriefacetten in [!DNL Live Search] zou categorieën kunnen tonen die niet aan een specifieke klantengroep kunnen tonen.
+
+## [!DNL Storefront popover]
+
+- De [[!DNL popover]](storefront-popover.md) is alleen beschikbaar voor winkels die de *Luminantie* thema of een aangepast thema dat is gebaseerd op *Luminantie*. Broodkruimels op de pagina met zoekresultaten hebben geen *Luminantie* stijlen.
+- De [!DNL popover] ondersteunt de *Leeg* thema.
+- De [!DNL popover] wordt niet ondersteund op het formulier Snelle volgorde.
+- Schijflijsten en productvergelijkingen worden niet ondersteund.
