@@ -3,9 +3,9 @@ title: "Grens en grenzen"
 description: Meer informatie over de grenzen en grenzen van [!DNL Live Search] om ervoor te zorgen dat het voldoet aan de behoeften van uw bedrijf.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 0a54c1715b076a7dea70632fcffeacc7de517760
+source-git-commit: ba7e92d5b3aaabe6a8c71f86b0e4eab38aec9adf
 workflow-type: tm+mt
-source-wordcount: '698'
+source-wordcount: '710'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ Adobe Commerce biedt opties voor het zoeken naar sites. Controleer de volgende g
    - De producten moeten aan de categorie van de Wortel worden toegewezen.
    - Aan de klantengroep &quot;Niet aangemeld&quot; moeten de machtigingen &quot;Toestaan&quot; worden toegekend.
    - Om producten tot de &quot;niet Gelogde&quot;klantengroep te beperken, ga naar elke categorie en plaats toestemming voor elke klantengroep.
-- Ondersteuning voor B2B met Live Search for PWA Studio wordt momenteel niet ondersteund.
+- Ondersteuning voor de functie Out-of-box voor B2B met de PLP-widget op PWA Studio wordt momenteel niet ondersteund. U kunt echter [de API gebruiken](install.md#pwa-support) om deze functionaliteit te implementeren.
 - Categoriefacetten in [!DNL Live Search] zou categorieën kunnen tonen die niet aan een specifieke klantengroep kunnen tonen.
 
 ## [!DNL Storefront popover]

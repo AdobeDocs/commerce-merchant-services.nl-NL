@@ -2,9 +2,9 @@
 title: "Instellingen"
 description: "Configureer instellingen voor de [!DNL Live Search] service."
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
-source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
+source-git-commit: ba7e92d5b3aaabe6a8c71f86b0e4eab38aec9adf
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '454'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ Stel de taalinstelling in op de primaire taal van de catalogus. Wanneer u de taa
 | Indonesische | id |
 | Iers | ga |
 | Italiaans | het |
-| Japans | ja |
+| Japans (Katakana) | ja |
 | Koreaans | ko |
 | Lets | lv |
 | Litouws | lt |
