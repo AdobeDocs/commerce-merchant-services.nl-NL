@@ -1,14 +1,15 @@
 ---
-title: Typen widgets
+title: Storefront-widgets
 description: Meer informatie over de popover van de winkel en de pagina-widgets voor productaanbiedingen.
-source-git-commit: 39f742f6db725f69ee86446e54891bed43bac9ce
+exl-id: 689f0faa-8b0e-4945-9889-503e1eed5960
+source-git-commit: 9f5990309dc952b2e9d8545532487d990d40b0ad
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '195'
 ht-degree: 0%
 
 ---
 
-# Typen widgets
+# Storefront-widgets
 
 Wanneer u installeert [!DNL Live Search] Er staan twee nieuwe widgets in uw winkel:
 
