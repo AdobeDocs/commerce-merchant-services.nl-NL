@@ -1,19 +1,21 @@
 ---
-user-guide-title: "SaaS price indexer Guide"
+user-guide-title: "SaaS Price Indexing Guide"
 user-guide-description: "Deze handleiding bevat gedetailleerde instructies voor het gebruik van de SaaS-prijsindex."
 breadcrumb-title: "Saas price indexer Guide"
 hide: true
 role: Admin
 feature: Services, Price Indexer
-source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
+source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
 workflow-type: tm+mt
-source-wordcount: '26'
-ht-degree: 7%
+source-wordcount: '33'
+ht-degree: 0%
 
 ---
 
 # Saas Price Index {#price-indexer}
 
-- [Overzicht van de handleiding](price-indexing.md)
+- [Overzicht van prijsindexering voor SaaS](price-indexing.md)
 - [Catalogusadapter](catalog-adapter.md)
+- [Terug naar Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
+
 

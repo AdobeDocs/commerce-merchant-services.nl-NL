@@ -2,9 +2,9 @@
 title: Onboarding en installatie
 description: "Leer hoe u kunt installeren [!DNL Catalog Service]"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: a2841b809cfc52798dc3f1bdcc033a77333bf0e5
+source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '799'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ De nieuwste versie van de extensie Catalog Services installeren (`magento/catalo
 
 >[!TAB Cloud-infrastructuur]
 
-Gebruik deze methode om de [!DNL Catalog Service] extensie voor een Commerce Cloud-instantie.
+Gebruik deze methode om de [!DNL Catalog Adapter] voor een Commerce Cloud-instantie.
 
 1. Schakel op uw lokale werkstation de projectmap voor uw Adobe Commerce over het infrastructuurproject voor de cloud in.
 
@@ -83,16 +83,16 @@ Gebruik deze methode om de [!DNL Catalog Service] extensie voor een Commerce Clo
    magento-cloud environment:checkout <environment-id>
    ```
 
-1. Voeg de module Catalogusservice toe.
+1. Voeg de module Catalogusadapter toe.
 
    ```bash
-   composer require "magento/catalog-service" "^3.0.1" --no-update
+   composer require magento/catalog-adapter --no-update
    ```
 
 1. Pakketafhankelijkheden bijwerken.
 
    ```bash
-   composer update "magento/catalog-service"
+   composer update "magento/catalog-adapter"
    ```
 
 1. Wijzigingen in de code vastleggen en doorvoeren voor de `composer.json` en `composer.lock` bestanden.
@@ -105,22 +105,22 @@ Gebruik deze methode om de [!DNL Catalog Service] extensie voor een Commerce Clo
    git push origin <branch-name>
    ```
 
-   Als u op de updates drukt, wordt het dialoogvenster [Commerce-implementatieproces voor cloud](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process) om de wijzigingen toe te passen. Controleer de implementatiestatus via de [logboek implementeren](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
+   Als u de updates naar de cloudomgeving doorvoert, wordt het [Commerce-implementatieproces voor cloud](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process) om de wijzigingen toe te passen. Controleer de implementatiestatus via de [logboek implementeren](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
 
 >[!TAB In de bedrijfsruimten]
 
-Gebruik deze methode om de [!DNL Catalog Service] uitbreiding voor een instantie ter plaatse.
+Gebruik deze methode om de [!DNL Catalog Adapter] voor een instantie ter plaatse.
 
 1. Composer van het gebruik om de module van de Dienst van de Catalogus aan uw project toe te voegen:
 
    ```bash
-   composer require "magento/catalog-service" "^3.0.1"  --no-update
+   composer require magento/catalog-adapter --no-update
    ```
 
 1. Afhankelijkheden bijwerken en de extensie installeren:
 
    ```bash
-   composer update  "magento/catalog-service"
+   composer update  "magento/catalog-adapter"
    ```
 
 1. Upgrade Adobe Commerce:

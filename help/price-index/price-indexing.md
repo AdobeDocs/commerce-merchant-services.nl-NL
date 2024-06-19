@@ -4,53 +4,55 @@ description: De SaaS Price Indexing gebruiken om prestaties te verbeteren
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 5b92d6ea-cfd6-4976-a430-1a3aeaed51fd
-source-git-commit: 7293914fab34381deb5bc841d147371f9f3470a5
+source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '391'
 ht-degree: 0%
 
 ---
 
 # Prijsindexering SaaS
 
-SaaS-prijsindexering versnelt de tijd die nodig is om prijswijzigingen door te voeren [Commerce Services](../landing/saas.md) nadat zij zijn ingediend. Op deze manier kunnen handelaren met grote, complexe catalogi of met meerdere websites of klantengroepen doorlopend prijswijzigingen verwerken.
+SaaS-indexering verbetert de prestaties van de site doordat zware computerprocessen, zoals indexering en prijsberekening, van de Commerce-toepassing naar de cloudinfrastructuur van de Adobe worden verplaatst. Op deze manier kunnen handelaren hun resources snel vergroten om de indexatietijden van de prijzen te versnellen en zo de prijswijzigingen sneller te weerspiegelen wanneer ze gegevens naar de winkel en de verbonden Commerce-services verzenden.
 
-Als u een koploze winkel hebt of de [catalogusadapter](./catalog-adapter.md) klanten kunnen SaaS Price Indexing gebruiken door de Adobe Commerce core price indexer uit te schakelen.
-
-Computationele zware processen zoals indexering en prijsberekening zijn verplaatst van de Commerce-kern naar de Cloud-infrastructuur van Adobe. Op deze manier kunnen handelaren snel hun resources vergroten om de indexatietijden van de prijzen te verhogen en deze wijzigingen sneller te laten doorwerken.
-
-De de indexerende gegevensstroom van de Kern aan de diensten van SaaS ziet als:
+Het volgende diagram toont de indexerende gegevensstroom aan de diensten SaaS wanneer Commerce het [prijsindexering](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) proces dat is opgenomen in de Commerce-toepassing:
 
 ![Standaardgegevensstroom](assets/old_way.png)
 
-Met SaaS-prijsindexering is de stroom:
+Als SaaS-prijsindexering is ingeschakeld, verandert de gegevensstroom. De indexering van de prijs wordt uitgevoerd gebruikend [Commerce SaaS-gegevens exporteren](../data-export/data-synchronization.md).
 
 ![Prijsindexeringsgegevensstroom SaaS](assets/new_way.png)
 
-Alle handelaren kunnen van deze verbeteringen profiteren, maar zij die de grootste winst zullen zien zijn klanten met:
+Alle handelaren kunnen van het gebruiken van prijsindexeren SaaS profiteren, maar de handelaren die projecten met de volgende kenmerken hebben kunnen de grootste winst realiseren:
 
-* Constante prijswijzigingen: handelaren die herhaalde prijswijzigingen nodig hebben om strategische doelstellingen te bereiken, zoals veelvuldige promoties, seizoenskortingen of voorraadafwaarderingen.
-* Meerdere websites en/of klantgroepen: verkopers met gedeelde productcatalogi op meerdere websites (domeinen/merken) en/of klantgroepen.
-* Groot aantal unieke prijzen voor websites of klantgroepen: verkopers met uitgebreide gedeelde productcatalogi die unieke prijzen bevatten voor websites of klantgroepen, zoals B2B-verkopers met vooraf overeengekomen prijzen, merken met verschillende prijsstrategieën.
+* **Constante prijswijzigingen**- Merchants die herhaalde prijswijzigingen nodig hebben om strategische doelstellingen te bereiken, zoals veelvuldige promoties, seizoenskortingen of voorraadafwaarderingen.
+* **Meerdere websites en/of klantengroepen**-Merchants met gedeelde productcatalogi voor meerdere websites (domeinen/merken) en/of klantgroepen.
+* **Veel unieke prijzen voor websites of klantgroepen**-Merchants met uitgebreide gedeelde productcatalogi die unieke prijzen bevatten voor websites of klantgroepen. Voorbeelden zijn B2B-handelaren met vooraf onderhandelde prijzen of merken met verschillende prijsstrategieën.
 
-De prijsindexering van SaaS is gratis beschikbaar voor klanten die de diensten van Adobe Commerce gebruiken en steunt prijsberekening voor alle ingebouwde productsoorten van Adobe Commerce.
+## Prijsindexering SaaS gebruiken
 
-In deze handleiding wordt beschreven hoe SaaS-prijsindexering werkt en hoe deze kan worden ingeschakeld.
+De prijsindexering van SaaS wordt automatisch toegelaten wanneer u de Diensten van Adobe Commerce installeert. Het ondersteunt prijsberekening voor alle ingebouwde Adobe Commerce-producttypen.
 
-## Vereisten
+### Vereisten
 
 * Adobe Commerce 2.4.4+
-* Ten minste een van de volgende Commerce Services met de nieuwste versie van de Adobe Commerce-extensie:
+
+### Vereisten
+
+* Een van de volgende Commerce Services moet worden geïnstalleerd met de nieuwste versie van de Commerce-extensie:
 
    * [Catalogusservice](../catalog-service/overview.md)
    * [Live zoeken](../live-search/overview.md)
    * [Product Recommendations](../product-recommendations/guide-overview.md)
 
-Gebruikers van Luma en Adobe Commerce Core GraphQL kunnen de [`catalog-adapter`](catalog-adapter.md) extensie die Luma en Core GraphQl-compatibiliteit biedt en de Adobe Commerce Product Price-index uitschakelt.
 
-## Gebruik
+>[!NOTE]
+>
+>Indien nodig kan de standaardprijsindexer in de Commerce-toepassing worden uitgeschakeld met de optie [Catalogusadapter](catalog-adapter.md).
 
-Nadat u uw Adobe Commerce-exemplaar hebt geüpgraded met SaaS-ondersteuning voor prijsindexering, synchroniseert u de nieuwe feeds:
+## Prijzen synchroniseren met prijsindexering in SaaS
+
+Nadat het toelaten van de prijsindexering van SaaS voor Adobe Commerce, werk prijzen op Storefront en in de Diensten van Commerce door de nieuwe voer te synchroniseren bij:
 
 ```bash
 bin/magento saas:resync --feed=scopesCustomerGroup
@@ -58,9 +60,9 @@ bin/magento saas:resync --feed=scopesWebsite
 bin/magento saas:resync --feed=prices
 ```
 
-## Prijzen voor aangepaste productsoorten
+### Prijzen voor aangepaste productsoorten
 
-Prijsberekeningen worden ondersteund voor aangepaste productsoorten zoals basisprijs, speciale prijs, groepsprijs, catalogusregelprijs enz.
+Prijsberekeningen worden ondersteund voor aangepaste producttypen zoals basisprijs, speciale prijs, groepsprijs, catalogusregelprijs enzovoort.
 
 Als u een aangepast producttype hebt dat een specifieke formule gebruikt om de uiteindelijke prijs te berekenen, kunt u het gedrag van de feed van de productprijs uitbreiden.
 
@@ -94,3 +96,4 @@ Als u een aangepast producttype hebt dat een specifieke formule gebruikt om de u
        }
    }
    ```
+

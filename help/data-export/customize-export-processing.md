@@ -1,0 +1,89 @@
+---
+title: De exportprestaties van SaaS-gegevens verbeteren
+description: "Leer hoe te om de prestaties van de gegevensuitvoer van SaaS voor de Diensten van Commerce te verbeteren door multithread gegevens te gebruiken de uitvoerwijze."
+role: Admin, Developer
+recommendations: noCatalog
+source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+workflow-type: tm+mt
+source-wordcount: '652'
+ht-degree: 0%
+
+---
+
+# De exportprestaties van SaaS-gegevens verbeteren
+
+**Gegevens exporteren met meerdere verbindingen, modus** versnelt het exportproces door voedergegevens in partijen te splitsen en parallel te verwerken.
+
+De ontwikkelaars of systeemintegrators kunnen prestaties verbeteren door de multi-draadgegevens te gebruiken uitvoeren wijze in plaats van de standaard single-thread wijze. In single-thread wijze, is er geen parallellisatie van het proces van de voedervoorlegging. Bovendien, wegens de vastgestelde standaardgrenzen, zijn alle cliënten beperkt tot het gebruiken van slechts één draad. In de meeste gevallen is het niet nodig de configuratie aan te passen.
+
+## Overwegingen voor het gebruiken van multi-draadwijze
+
+Wanneer u werkt met services voor het exporteren van gegevens, wilt u de prestaties optimaliseren en een nauwkeurige synchronisatie garanderen.
+Adobe raadt aan de standaardconfiguratie voor gegevensinvoer te gebruiken, die doorgaans voldoet aan de synchronisatievereisten voor Commerce-handelaren. Er zijn echter scenario&#39;s waarin aanpassing de verwerkingstijd kan versnellen.
+
+Houd rekening met de volgende belangrijke factoren wanneer u besluit of u de configuratie voor het exporteren van gegevens wilt aanpassen:
+
+- **Eerste synchronisatie**-Evalueer het aantal producten en [raming van het gegevensvolume en de transmissietijd](estimate-data-volume-sync-time.md) op basis van de standaardconfiguratie. Vraag uzelf: Kan u wachten op deze eerste gegevenssynchronisatie na het instappen van een Commerce-service?
+
+- **Nieuwe winkelweergaven of websites toevoegen**- Als u van plan bent om winkelmeningen of websites met de zelfde producttelling toe te voegen nadat het gaan leven, schat het gegevensvolume en transmissietijd. Bepaal of de synchronisatietijd met de standaardconfiguratie aanvaardbaar is of als multi-draadverwerking noodzakelijk is.
+
+- **Gewone invoer**- Anticiperen op reguliere invoer, zoals prijsupdates of wijzigingen in de voorraadstatus. Bepaal of deze updates binnen een aanvaardbare tijd kunnen worden toegepast of als snellere verwerking nodig is.
+
+- **Productgewicht**- Overweeg of uw producten licht of zwaar zijn. Pas de grootte van de batch aan als de productbeschrijving of -kenmerken de productgrootte opblazen.
+
+Herinner dat de doordachte planning, met inbegrip van het schatten van gegevensvolume en synchronisatietijd, vaak de behoefte aan aanpassing kan elimineren. Plan op basis van deze schattingen de inname van diervoeders om optimale resultaten te bereiken.
+
+>[!NOTE]
+>
+>Adobe raadt u aan voorzichtig te zijn wanneer u multithread-verwerking gebruikt. Dit vermogen is een vroege toegangseigenschap die nog wordt verbeterd. Als u multi-threading configureert voor snellere prestaties, kunt u de meegeleverde Adobe Commerce Services-instructies activeren om misbruik van het systeem tijdens het invoeren van gegevens te voorkomen. Deze instructies beperken gebruikers ook van het activeren van synchronisatiewijzigingen die het systeem kunnen overladen. Wanneer de instructies worden geactiveerd, worden aanvragen geblokkeerd en retourneert het systeem 429 fouten. Als u deze fouten ontmoet, pas uw configuratie aan, en voorleg een steunkaartje voor hulp.
+
+## Multithreading configureren
+
+Modus met meerdere verbindingen wordt ondersteund voor alle [synchronisatiemethoden](data-synchronization.md#synchronization-process)—volledige synchronisatie, gedeeltelijke synchronisatie en mislukte items synchroniseren. Om multi-threading te vormen, specificeert u het aantal draden en partijgrootte om tijdens synchronisatie te gebruiken.
+
+- `threadCount` is het aantal draden die aan procesentiteiten worden geactiveerd. De standaardwaarde `threadCount` is `1`.
+- `batchSize` is het aantal entiteiten dat in één herhaling wordt verwerkt. De standaardwaarde `batchSize` is `100` gegevens over alle diervoeders, met uitzondering van de prijsvoeding. Voor de prijsfeed is de standaardwaarde: `500` records.
+
+U kunt multi-threading als tijdelijke optie vormen wanneer het runnen van een resync bevel, of door de multi-draadconfiguratie aan de de toepassingsconfiguratie van Adobe Commerce toe te voegen.
+
+>[!NOTE]
+>
+>Zorg ervoor dat u de prestaties van SaaS-gegevensexport aanpast aan de tarieflimiet die voor een client aan de zijde van de consument is gedefinieerd.
+
+### Multithreading tijdens runtime configureren
+
+Wanneer u een volledige synchronisatieopdracht uitvoert vanaf de opdrachtregel, geeft u de verwerking met meerdere verbindingen op door de opdracht `threadCount` en `batchSize` opties aan het CLI bevel.
+
+```
+bin/magento saas:resync --feed=products --threadCount=2 --batchSize=200
+```
+
+De opties op de opdrachtregel overschrijven de configuratie voor gegevensexport die is opgegeven in de Adobe Commerce-toepassing `config.php` bestand.
+
+### Multithread toevoegen aan de Commerce-configuratie
+
+Als u alle bewerkingen voor het exporteren van gegevens wilt verwerken met multithreading, kunnen systeemintegrators of ontwikkelaars het aantal threads en de batch-grootte voor elke feed in de Commerce-toepassingsconfiguratie wijzigen.
+
+Deze wijzigingen kunnen worden toegepast door aangepaste waarden aan de [systeemsectie](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system) van het configuratiebestand, `app/etc/config.php`.
+
+**Voorbeeld: Multithreading configureren voor producten en prijzen**
+
+```php
+<?php
+return [
+    'system' => [
+        'default' => [
+            'commerce_data_export' => [
+                'feeds' => [
+                    'products' => [
+                        'batch_size' => 100,
+                        'thread_count' => 2,
+                    ],
+                    'prices' => [
+                        'batch_size' => 400,
+                        'thread_count' => 4,
+                    ]
+                ]
+            ],
+//   ...
+```
