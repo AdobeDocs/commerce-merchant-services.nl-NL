@@ -1,10 +1,11 @@
 ---
 title: Opdrachtregelinterface SaaS-gegevens exporteren
-description: "Leer hoe te om de bevel-lijn interfacebevelen te gebruiken om voer en processen voor te beheren [!DNL data export extension] voor Adobe Commerce SaaS services."
+description: Leer hoe te om de bevel-lijn interfacebevelen te gebruiken om voer en processen voor te beheren [!DNL data export extension] voor Adobe Commerce SaaS-diensten.
 recommendations: noCatalog
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+exl-id: f360d920-7d02-4317-8c56-c7d4c4ed2ff2
+source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '574'
 ht-degree: 0%
 
 ---
@@ -21,10 +22,24 @@ Adobe raadt u niet aan de `saas:resync` regelmatig gebruiken. De typische scenar
 
 ## Beginsynchronisatie
 
+>[!NOTE]
+>Als u Live zoeken of Product Recommendations gebruikt, hoeft u de eerste synchronisatie niet uit te voeren. Het proces wordt automatisch gestart nadat u de service hebt verbonden met uw Commerce-instantie.
+
 Wanneer u een `saas:resync` op de opdrachtregel, afhankelijk van de grootte van de catalogus, kan het enkele minuten tot enkele uren duren voordat de gegevens zijn bijgewerkt.
 
->[!NOTE]
->Als u Live Search of Product Recommendations gebruikt, hoeft u de synchronisatie niet te starten. Het proces wordt automatisch gestart nadat u de service hebt verbonden met uw Commerce-instantie.
+Voor de eerste synchronisatie raadt Adobe aan de opdrachten in de volgende volgorde uit te voeren:
+
+```bash
+bin/magento saas:resync --feed productattributes
+bin/magento saas:resync --feed products
+bin/magento saas:resync --feed scopesCustomerGroup
+bin/magento saas:resync --feed scopesWebsite
+bin/magento saas:resync --feed prices
+bin/magento saas:resync --feed productoverrides
+bin/magento saas:resync --feed variants
+bin/magento saas:resync --feed categories
+bin/magento saas:resync --feed categoryPermissions
+```
 
 ## Voorbeelden van opdrachten
 

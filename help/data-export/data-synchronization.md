@@ -1,18 +1,23 @@
 ---
 title: Gegevens synchroniseren met SaaS-gegevensexport
-description: "Leer hoe u [!DNL SaaS Data Export] verzamelt en synchroniseert gegevens tussen Adobe Commerce-instanties en verbonden SaaS-services."
+description: Meer informatie over [!DNL SaaS Data Export] verzamelt en synchroniseert gegevens tussen Adobe Commerce-instanties en verbonden SaaS-services.
 role: Admin, Developer
 recommendations: noCatalog
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+exl-id: 530a6ed7-46ec-45fc-94e9-c850168e8aed
+source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '770'
 ht-degree: 0%
 
 ---
 
 # Gegevens synchroniseren met SaaS-gegevensexport
 
-Wanneer u een Commerce-service installeert waarvoor gegevens moeten worden geëxporteerd, zoals Catalog Service, Live Search of Product Recommendations, wordt een verzameling Saas-modules voor gegevensexport geïnstalleerd om het proces voor gegevensverzameling en -synchronisatie te beheren. Het volgende diagram toont de de gegevensuitvoerstroom van SaaS.
+Wanneer u een Commerce-service installeert waarvoor gegevens moeten worden geëxporteerd, zoals Catalog Service, Live Search of Product Recommendations, wordt een verzameling Saas-modules voor gegevensexport geïnstalleerd om het proces voor gegevensverzameling en -synchronisatie te beheren.
+
+Bij het exporteren van SaaS-gegevens worden productgegevens doorlopend van een Adobe Commerce-instantie naar het Commerce Services-platform verplaatst om de gegevens up-to-date te houden. Product Recommendations vereist bijvoorbeeld de huidige catalogusinformatie om aanbevelingen met juiste namen, prijzen en beschikbaarheid correct te kunnen retourneren. Gebruik de [Gegevensbeheerdashboard](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/data-services/catalog-sync) observeren en beheren van het synchronisatieproces, of de bevel-lijn interface om een synchronisatie teweeg te brengen en productgegevens voor gebruik door Commerce Services te herindexeren.
+
+Het volgende diagram toont de de gegevensuitvoerstroom van SaaS.
 
 ![Verzamel- en synchronisatiestroom voor SaaS-gegevensexport voor Adobe Commerce](assets/data-export-flow.png){width="900" zoomable="yes"}
 

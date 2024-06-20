@@ -2,9 +2,9 @@
 title: Onboarding en installatie
 description: "Leer hoe u kunt installeren [!DNL Catalog Service]"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
 workflow-type: tm+mt
-source-wordcount: '799'
+source-wordcount: '823'
 ht-degree: 0%
 
 ---
@@ -152,6 +152,10 @@ Nadat u de [!DNL Catalog Service], voert u de volgende taken uit om de Catalogus
 1. Voer een eerste gegevenssynchronisatie uit vanuit de [Gegevensbeheerdashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard).
 
    De eerste synchronisatie kan enkele minuten tot uren duren, afhankelijk van de grootte van de catalogus. U kunt de synchronisatiestatus controleren via het dashboard voor gegevensbeheer. Na de eerste synchronisatie worden de productgegevens van de Catalogus doorlopend geëxporteerd om de services up-to-date te houden.
+
+   >[!NOTE]
+   >
+   >U kunt de eerste synchronisatie ook starten vanaf de opdrachtregel met behulp van de Commerce CLI. Zie [Eerste synchronisatie](../data-export/data-export-cli-commands.md#initial-sync) in de _Handleiding voor het exporteren van SaaS-gegevens_.
 
 Ga als volgt te werk om te controleren of de catalogus correct wordt geëxporteerd:
 

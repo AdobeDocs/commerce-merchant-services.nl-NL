@@ -1,15 +1,15 @@
 ---
 title: Logboeken controleren en problemen oplossen
-description: "Leer hoe u problemen kunt oplossen [!DNL data export] fouten bij het gebruik van de logbestanden voor het exporteren van gegevens en het exporteren van bestanden."
+description: Leer hoe u problemen kunt oplossen [!DNL data export] fouten bij het gebruik van de logbestanden voor het exporteren van gegevens en het exporteren van bestanden.
 feature: Services
 recommendations: noCatalog
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+exl-id: 55903c19-af3a-4115-a7be-9d1efaed8140
+source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '1071'
 ht-degree: 0%
 
 ---
-
 
 # Logbestanden controleren en problemen oplossen
 
@@ -26,9 +26,7 @@ Logbestanden zijn beschikbaar in het dialoogvenster `var/log` op de Commerce-toe
 | SaaS-exportlogboek | `saas-export.log` | Verstrekt informatie over de gegevens die naar de diensten van Commerce SaaS worden verzonden. |
 | Logbestand van SaaS-exportfout | `saas-export-errors.log` | Verstrekt informatie over fouten die voorkomen wanneer het verzenden van gegevens naar de diensten van Commerce SaaS. |
 
-Als u de verwachte gegevens voor een dienst van Adobe Commerce niet ziet, gebruik de foutenlogboeken voor de uitbreiding van de gegevensuitvoer om te bepalen waar het probleem voorkwam.
-
-U kunt logboeken met extra gegevens voor het volgen en het oplossen van problemen uitbreiden. Zie [Uitgebreide logboekregistratie](#extended-logging).
+Als u de verwachte gegevens voor een dienst van Adobe Commerce niet ziet, gebruik de foutenlogboeken voor de uitbreiding van de gegevensuitvoer om te bepalen waar het probleem voorkwam. Ook, kunt u logboeken met extra gegevens voor het volgen en het oplossen van problemen uitbreiden. Zie [Uitgebreide logboekregistratie](#extended-logging).
 
 ### Logbestandsindeling
 
@@ -85,7 +83,7 @@ In dit voorbeeld wordt `status` waarden geven informatie over de synchronisatieb
    - **`"synced" < "processed"`** betekent dat de voederlijst geen veranderingen in het punt, in vergelijking met de eerder gesynchroniseerde versie ontdekte. Dergelijke items worden genegeerd tijdens de synchronisatiebewerking.
    - **`"synced" > "processed"`** dezelfde entiteitskaart (bijvoorbeeld `Product ID`) kan meerdere waarden in verschillende bereiken hebben. Eén product kan bijvoorbeeld worden toegewezen aan vijf websites. In dit geval kun je 1 verwerkt object en 5 gesynchroniseerde objecten hebben.
 
-+++ Voorbeeld: log met volledige resync voor de prijsfeed
++++ **Voorbeeld: log met volledige resync voor de prijsfeed**
 
 ```
 Price feed full resync:
@@ -125,7 +123,42 @@ In dit voorbeeld wordt een regel toegevoegd waarmee u New Relic-logbestanden kun
 
 **Voorbeeldquerytekenreeks**—`feed.feed:"products" and feed.status:"Complete"`
 
+## Problemen oplossen
+
+Als er gegevens ontbreken of onjuist zijn in Commerence Services, controleert u de logboeken om te zien of er een probleem is opgetreden tijdens de synchronisatie van de Adobe Commerce-instantie naar het Commerce Service-platform. Indien nodig, gebruik uitgebreide registreren om extra informatie aan logboeken voor het oplossen van problemen toe te voegen.
+
+- commerce-data-export-errors.log - als er een fout is opgetreden tijdens de verzamelfase
+- saas-export-errors.log - als een fout tijdens het overbrengen van fase gebeurde
+
+Als u fouten ziet die niet te maken hebben met configuratie of extensies van derden, dient u een [ondersteuningsticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) met zoveel mogelijk informatie.
+
+### Synchronisatieproblemen met catalogi oplossen {#resolvesync}
+
+Wanneer u een gegevensresync teweegbrengt, kan het tot een uur voor de gegevens duren om bij te werken en in UI componenten zoals levende onderzoek en aanbeveling eenheden worden weerspiegeld. Raadpleeg het volgende als u nog steeds discrepanties ziet tussen uw catalogus en de gegevens in de Commerce-winkel of als de catalogussynchronisatie is mislukt:
+
+#### Gegevensafwijking
+
+1. Geef de gedetailleerde weergave van het desbetreffende product weer in de zoekresultaten.
+1. Kopieer de JSON-uitvoer en controleer of de inhoud overeenkomt met de inhoud in het dialoogvenster [!DNL Commerce] catalogus.
+1. Als de inhoud niet overeenkomt, brengt u een kleine wijziging aan in het product in de catalogus, zoals het toevoegen van een spatie of een punt.
+1. Wacht op resync of [een handmatige resync activeren](#resync).
+
+#### Synchronisatie wordt niet uitgevoerd
+
+Als de synchronisatie niet volgens een schema wordt uitgevoerd of er niets wordt gesynchroniseerd, raadpleegt u deze [KnowledgeBase](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html) artikel.
+
+#### Synchronisatie is mislukt
+
+Als de catalogussync de status **Mislukt**, een [ondersteuningsticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+
 ## Uitgebreide logboekregistratie
+
+Voor extra logboekinformatie, kunt u milieuvariabelen gebruiken om logboeken met extra gegevens voor het volgen en het oplossen van problemen uit te breiden.
+
+Er zijn twee logbestanden in het dialoogvenster `var/log/` map:
+
+- commerce-data-export-errors.log - als er een fout is opgetreden tijdens de verzamelfase
+- saas-export-errors.log - als een fout tijdens het overbrengen van fase gebeurde
 
 U kunt omgevingsvariabelen gebruiken om logbestanden uit te breiden met extra gegevens voor het bijhouden en oplossen van problemen.
 
@@ -164,7 +197,3 @@ Profilergegevens worden opgeslagen in het logboek voor gegevensexport (`var/log/
 ```
 <Provider class name>, <# of processed entities>, <execution time im ms>, <memory consumption in Mb>
 ```
-
-
-
-
