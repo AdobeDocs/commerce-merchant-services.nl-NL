@@ -2,9 +2,9 @@
 title: 'Live zoeken instellen'
 description: De [!DNL Live Search] de werkruimte wordt gebruikt om onderzoeksprestaties te vormen, te beheren en te controleren.
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
-source-git-commit: 099a4b9ce3ab71bc3c7ae181be242863a55d0ca9
+source-git-commit: 5e79bb43449b95b4c6aa0e234a0dbc999c312e59
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '921'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,20 @@ ht-degree: 0%
 
 In de werkruimte kunt u de prestaties van [!DNL Live Search]. Het menu boven biedt toegang tot de gereedschappen in elk functioneel gebied. De beschikbare functies weerspiegelen de huidige menuselectie.
 
-![Werkruimte](assets/workspace.png)
+![Workspace](assets/workspace.png)
+
+## Gegevensverzameling
+
+Om ervoor te zorgen dat elk functioneel gebied op de werkruimte de correcte gegevens bevat, moet u gegevensinzameling vormen die op de geselecteerde storefront implementatie wordt gebaseerd:
+
+1. Luma - Gegevensverzameling is offline beschikbaar.
+1. Headless - De inzameling van Gegevens moet manueel, afhankelijk van storefront implementatie worden gevormd.
+
+Als u een koploze winkel gebruikt, raadpleegt u de volgende documentatie voor meer informatie over de vereiste gebeurtenissen die u moet toevoegen:
+
+- [Vereiste gebeurtenissen](events.md) voor het dashboard voor Live zoeken.
+- [Storefront-gebeurtenisverzamelaar](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) dat moet als voorwaarde worden toegevoegd .
+- [Voorbeelden](https://github.com/adobe/commerce-events/tree/main/examples) van de gebeurtenisstructuur.
 
 ## Bereik instellen
 
@@ -41,15 +54,15 @@ Voer de volgende stappen uit om te zorgen dat kenmerken doorzoekbaar zijn:
 1. Selecteer het kenmerk dat u wilt doorzoeken, bijvoorbeeld `color`.
 1. Selecteren **Eigenschappen van Storefront** en instellen **Gebruiken in Zoeken** tot `yes`.
 
-   ![Werkruimte](assets/attribute-searchable.png)
+   ![Workspace](assets/attribute-searchable.png)
 
 [!DNL Live Search] eerbiedigt tevens de [gewicht](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search) van een productkenmerk, zoals ingesteld in Adobe Commerce. Kenmerken met een hogere dikte worden hoger weergegeven in de zoekresultaten.
 
 De volgende kenmerken kunnen altijd worden doorzocht:
 
-* `sku`
-* `name`
-* `categories`
+- `sku`
+- `name`
+- `categories`
 
 [Facetten](facets.md) zijn productkenmerken die worden gedefinieerd in [!DNL Live Search] filterbaar zijn. U kunt elk filterbaar kenmerk als facet instellen in [!DNL Live Search], maar er zijn [limieten](boundaries-limits.md) aan hoeveel facetten u naar in één keer kunt zoeken.
 
