@@ -4,9 +4,9 @@ description: Leer hoe u uw Adobe Commerce- of Magento Open Source-instantie inte
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 84238910d58e0635ae38a0ebe54903b2a2d9d666
+source-git-commit: 3eb873c84edb56d2fc399c72296f2b545a78064e
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '1051'
 ht-degree: 0%
 
 ---
@@ -125,6 +125,6 @@ Als u de namen van uw SaaS-project of gegevensruimte wilt wijzigen, klikt u op *
 
 Als u uw Adobe Commerce-exemplaar wilt verbinden met de Adobe Experience Platform, meldt u zich aan bij uw Adobe-account met uw Adobe ID. Nadat u zich hebt aangemeld, wordt de IMS-organisatie die is gekoppeld aan uw Adobe-account in deze sectie weergegeven.
 
-## Catalogus synchroniseren
+## SaaS-gegevens exporteren
 
-Wanneer uw [!DNL Commerce] instantie maakt verbinding met [!DNL Commerce Services], exporteert het catalogussynchronisatieproces productgegevens uit uw [!DNL Commerce] server naar [!DNL Commerce Services]. Momenteel gebruikt alleen Product Recommendations de catalogussynchronisatieservice. [Meer informatie](catalog-sync.md) over het synchronisatieproces van de catalogus.
+Wanneer uw [!DNL Commerce] instantie maakt verbinding met [!DNL Commerce Services]En het SaaS-gegevensexportproces exporteert Commerce-gegevens van uw [!DNL Commerce] server naar [!DNL Commerce SaaS Services] zodat deze kan worden gesynchroniseerd met verbonden Commerce Services. In de beheerder kunt u de synchronisatiestatus controleren met de opdracht [Gegevensbeheerdashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). Zie voor meer informatie de [Handleiding voor het exporteren van SaaS-gegevens](../data-export/overview.md).
