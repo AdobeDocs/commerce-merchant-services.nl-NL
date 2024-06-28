@@ -3,9 +3,9 @@ title: '''[!DNL Product Recommendations] Opmerkingen bij de release'
 description: De meest recente releasegegevens voor [!DNL Product Recommendations] uit Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 76fb723c2269cfc2af197e7facc588099be8a39f
+source-git-commit: 6f31361e95b17ee3fa19ff3c2f4a7e2d6d9bc091
 workflow-type: tm+mt
-source-wordcount: '1329'
+source-wordcount: '1376'
 ht-degree: 0%
 
 ---
@@ -29,9 +29,12 @@ Zie de documentatie voor ontwikkelaars op [informatie over productondersteuning]
 
 ## Gehoste service-updates
 
-Deze nota&#39;s beschrijven updates die buiten een versioned versie of verbeteringen aan de ontvangen dienst werden gepubliceerd.
+Deze nota&#39;s beschrijven updates of bekende kwesties die buiten een versioned versie of verbeteringen aan de ontvangen dienst werden gepubliceerd of ontdekt.
 
-+++Hosted service-updates
+_28 juni 2024_
+
+![Bug](../assets/bug.svg) Aan de kar toegevoegde producten van een [!DNL Product Recommendations] -eenheid op de winkelwagentje niet worden verwijderd uit de lijst met aanbevolen producten wanneer de winkelwagentje opnieuw wordt geladen.
+![Bug](../assets/bug.svg) Producten die uit het winkelwagentje worden verwijderd, blijven in het `cartSkus` -array tot de winkelwagentje opnieuw wordt geladen.
 
 _18 juli 2023_
 
@@ -40,8 +43,6 @@ _18 juli 2023_
 _25 april 2023_
 
 ![Nieuw](../assets/new.svg) [!DNL Product Recommendations] klanten kunnen nu profiteren van [Prijsindexering SaaS](../price-index/price-indexing.md).
-
-+++
 
 ## Huidige hoofdversie
 
@@ -97,7 +98,7 @@ _20 maart 2023_
 
 ![Nieuw](../assets/new.svg) Bijgewerkt [!DNL Product Recommendations] ter ondersteuning van Adobe Commerce 2.4.6.
 ![Nieuw](../assets/new.svg) Dit is een belangrijke versie. [Bewerken](install-configure.md#update) de basis `composer.json` bestand voor uw project.
-![Nieuw](../assets/new.svg) [!DNL Product Recommendations] ondersteunt nu volledig [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) Mogelijkheden in Commerce (voorheen bekend als Multi-Source Inventory of MSI). Om volledige steun toe te laten, moet u [update](install-configure.md#update) de afhankelijkheidsmodule `commerce-data-export` naar versie 102.2.0+.
+![Nieuw](../assets/new.svg) [!DNL Product Recommendations] ondersteunt nu volledig [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) Mogelijkheden in Commerce (voorheen bekend als Multi-Source Inventory, of MSI). Om volledige steun toe te laten, moet u [update](install-configure.md#update) de afhankelijkheidsmodule `commerce-data-export` naar versie 102.2.0+.
 
 ### 4.0.1 van magento/productaanbevelingen
 
@@ -223,13 +224,13 @@ _20 maart 2023_
 
 [!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) **(bèta)** Inclusief ondersteuning voor nieuwe [Visuele gelijkenis](type.md#visualsim) soort aanbeveling.
+![Nieuw](../assets/new.svg) **(Beta)** Inclusief ondersteuning voor nieuwe [Visuele gelijkenis](type.md#visualsim) soort aanbeveling.
 
 ### 1.0.0 van magento/module-visual-product-recommendations
 
 [!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) **(bèta)** [Visuele gelijkenis](type.md#visualsim). Met de _Visuele gelijkenis_ met aanbevelingen kunt u een aanbevolen eenheid op de pagina met productdetails plaatsen waarop producten worden weergegeven die visueel lijken op het product dat wordt weergegeven.
+![Nieuw](../assets/new.svg) **(Beta)** [Visuele gelijkenis](type.md#visualsim). Met de _Visuele gelijkenis_ met aanbevelingen kunt u een aanbevolen eenheid op de pagina met productdetails plaatsen waarop producten worden weergegeven die visueel lijken op het product dat wordt weergegeven.
 
 ### 3.0.5 van magento/productaanbevelingen
 
