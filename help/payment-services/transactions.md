@@ -4,9 +4,9 @@ description: Gebruik het rapport Transacties om de snelheid van de transactiever
 role: User
 level: Intermediate
 exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
-source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
+source-git-commit: 9f0381546a98a8a5d72394adbd3ddd49daf539cb
 workflow-type: tm+mt
-source-wordcount: '1240'
+source-wordcount: '1264'
 ht-degree: 0%
 
 ---
@@ -35,15 +35,19 @@ De weergave van het Transactierapport is beschikbaar in de weergave Transacties 
 
 Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**om de gedetailleerde het rapportmening van Transacties in tabelvorm te zien.
 
-![Transactierapportweergave](assets/transactions-report-detail.png){width="600" zoomable="yes"}
+![Transactierapportweergave](assets/transactions-report-view.png){width="600" zoomable="yes"}
 
 U kunt deze mening, per de secties in dit onderwerp vormen, om de gegevens het best voor te stellen u wenst te zien.
 
-Zie gekoppelde orders van de Handel en de identiteitskaart van de leverancierstransactie, transactiebedragen, betalingsmethode per transactie, en meer, allen binnen dit rapport.
+Zie gekoppelde Commerce-transactie- en providertransactie-id&#39;s, transactiebedragen, betalingsmethode per transactie en meer in dit rapport.
 
 Niet alle betalingsmethoden bieden dezelfde mate van informatie. Met creditcardtransacties worden bijvoorbeeld reacties, AVS- en CCV-codes en de laatste vier cijfers van de kaart in het Transactierapport verschaft. PayPal-betalingsknoppen doen dat niet.
 
 U kunt [downloadtransacties](#download-transactions) in een .csv-bestandsindeling voor gebruik in bestaande software voor boekhouding of orderbeheer.
+
+>[!WARNING]
+>
+> Het transactiemelding bevat geen gegevens die buiten [!DNL Payment Services].
 
 ### Gegevensbron selecteren
 
@@ -127,8 +131,9 @@ Transactierapporten bevatten de volgende informatie.
 
 | Kolom | Beschrijving |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | Handelsorder-id (bevat alleen waarden voor geslaagde transacties en is leeg voor geweigerde transacties)<br> <br>Verwante items weergeven [orderinfo](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}, klikt u op de id. |
+| [!UICONTROL Order ID] | Commerce-orderid (bevat alleen waarden voor geslaagde transacties en is leeg voor geweigerde transacties)<br> <br>Verwante items weergeven [orderinfo](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}, klikt u op de id. |
 | [!UICONTROL Provider Transaction ID] | Transactie-id verstrekt door de betalingsaanbieder; bevat alleen waarden voor geslaagde transacties en bevat een streepje voor geweigerde transacties. |
+| [!UICONTROL Customer ID] | Commerce-klant-id van een bestelling<br> <br>Zie [klantgegevens](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/account-create){target="_blank"} voor meer informatie. |
 | [!UICONTROL Transaction Date] | Tijdstempel van transactiedatum |
 | [!UICONTROL Payment Method] | Betalingsmethode van transactie met gedetailleerde informatie over merk en type kaart. Zie [kaarttypen](https://developer.paypal.com/docs/api/orders/v2/#definition-card_type) voor meer informatie; beschikbaar voor Payment Services versie 1.6.0 en hoger |
 | [!UICONTROL Card Last Four Digits] | Laatste vier cijfers van de voor de transactie gebruikte krediet- of debetkaarten |

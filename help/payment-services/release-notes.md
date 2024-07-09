@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Opmerkingen bij de release"
 description: Lees de opmerkingen bij de release voor meer informatie over alle [!DNL Payment Services] lozingen.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 9b4ce379728b126390177d64c10d57b2c587619c
+source-git-commit: 9f0381546a98a8a5d72394adbd3ddd49daf539cb
 workflow-type: tm+mt
-source-wordcount: '2502'
+source-wordcount: '2547'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,10 @@ Meer informatie over komende releases, productondersteuning en welke Adobe Comme
 Deze versienota&#39;s beschrijven eigenschapveranderingen en moeilijke situaties die voorkwamen en buiten de regelmatige eigenschapversies voor de ontvangen dienst werden vrijgegeven.
 
 +++Hosted service-updates
+
+_9 juli 2024_
+
+![Nieuwe uitgave](../assets/new.svg)<!-- Issue PAY-5488 --> Handelaren kunnen nu de Commerce-klant-id als een kolom in het dialoogvenster [transactierapport](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html) helpen bij het identificeren van transacties die een bepaalde klant heeft geplaatst. Bovendien kunnen verkopers het transactierapport door deze klant-id van Commerce voor bijbehorende orders filteren.
 
 _5 maart 2024_
 
@@ -130,7 +134,7 @@ _20 maart 2024_
 
 ![Nieuw](../assets/new.svg)<!-- PAY-4868 --> Handelaars kunnen [Google Pay gedurende de hele aankoop configureren](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html), vergelijkbaar met andere betalingsknoppen in[!DNL Payment Services] via de beheerder.
 
-![Nieuw](../assets/new.svg)<!-- PAY-4381 --> [Betalingsservices ondersteunen Google Pay via GraphQL](https://developer.adobe.com/commerce/webapi/graphql/payment-services/) verkopers toestaan een headless Commerce-ervaring te hebben met de betalingsmethode Google Pay.
+![Nieuw](../assets/new.svg)<!-- PAY-4381 --> [Betalingsservices ondersteunen Google Pay via GraphQL](https://developer.adobe.com/commerce/webapi/graphql/payment-services/) verkopers toestaan een Commerce-ervaring zonder kop te hebben met de betalingsmethode Google Pay.
 
 ![Nieuw](../assets/new.svg)<!-- PAY-4878 --> Nu, [!DNL Payment Services] de basisfunctie voor afrekenen is gebundeld voor Adobe Commerce en Magento Open Source handelaren.[!DNL Payment Services] kan nu handelaren met bedrijven in om het even welke 200 geographies wereldwijd steunen.[!DNL Payment Services] standaardafhandeling biedt opties voor debiteren/crediteren, PayPal, Venmo (indien beschikbaar) en PayLater (indien beschikbaar) in een systeem voor automatische inboeking.
 
@@ -171,9 +175,10 @@ _7 december 2023_
 [!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
 
 ![Nieuw](../assets/new.svg)<!-- PAY-5047 --> Het type creditcard/bankpas of betalingsmethode is nu beschikbaar op de volgende locaties:
+
 - de pagina van de klantenorde op de winkel
 - het bevestigingsbericht voor bestelling dat naar de klant is verzonden
-- van de [weergave orderdetails](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-processing.html#view-an-order) in de Commerce Admin.
+- van de [weergave orderdetails](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-processing.html#view-an-order) in Commerce Admin.
 
 ## v2.3.0
 
