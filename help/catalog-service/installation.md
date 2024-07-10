@@ -2,7 +2,7 @@
 title: Onboarding en installatie
 description: "Leer hoe u kunt installeren [!DNL Catalog Service]"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
+source-git-commit: 6ca91feefbfc2fbc4d5851040b9f1ca3de6a6560
 workflow-type: tm+mt
 source-wordcount: '823'
 ht-degree: 0%
@@ -57,7 +57,7 @@ Aan de slag met [!DNL Catalog Service] voor Adobe Commerce zijn de volgende stap
 
 **Vereiste**
 
-- Toegang [repo.magento.com](https://repo.magento.com) om de extensie te installeren. Voor sleutelgeneratie en het verkrijgen van de nodige rechten, zie [Uw verificatietoetsen ophalen](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys). Zie voor installatie in de cloud de [Handleiding voor handel in Cloud-infrastructuur](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)
+- Toegang [repo.magento.com](https://repo.magento.com) om de extensie te installeren. Voor sleutelgeneratie en het verkrijgen van de nodige rechten, zie [Uw verificatietoetsen ophalen](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys). Zie voor installatie in de cloud de [Commerce on Cloud Infrastructure Guide](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/authentication-keys)
 
 - Toegang tot de opdrachtregel van de Adobe Commerce-toepassingsserver.
 
@@ -69,7 +69,7 @@ De nieuwste versie van de extensie Catalog Services installeren (`magento/catalo
 
 >[!TAB Cloud-infrastructuur]
 
-Gebruik deze methode om de [!DNL Catalog Adapter] voor een Commerce Cloud-instantie.
+Gebruik deze methode om de [!DNL Catalog Service] voor een Commerce Cloud-instantie.
 
 1. Schakel op uw lokale werkstation de projectmap voor uw Adobe Commerce over het infrastructuurproject voor de cloud in.
 
@@ -83,16 +83,16 @@ Gebruik deze methode om de [!DNL Catalog Adapter] voor een Commerce Cloud-instan
    magento-cloud environment:checkout <environment-id>
    ```
 
-1. Voeg de module Catalogusadapter toe.
+1. Voeg de module Catalogusservice toe.
 
    ```bash
-   composer require magento/catalog-adapter --no-update
+   composer require magento/catalog-service --no-update
    ```
 
 1. Pakketafhankelijkheden bijwerken.
 
    ```bash
-   composer update "magento/catalog-adapter"
+   composer update "magento/catalog-service"
    ```
 
 1. Wijzigingen in de code vastleggen en doorvoeren voor de `composer.json` en `composer.lock` bestanden.
@@ -109,18 +109,18 @@ Gebruik deze methode om de [!DNL Catalog Adapter] voor een Commerce Cloud-instan
 
 >[!TAB In de bedrijfsruimten]
 
-Gebruik deze methode om de [!DNL Catalog Adapter] voor een instantie ter plaatse.
+Gebruik deze methode om de [!DNL Catalog Service] voor een instantie ter plaatse.
 
 1. Composer van het gebruik om de module van de Dienst van de Catalogus aan uw project toe te voegen:
 
    ```bash
-   composer require magento/catalog-adapter --no-update
+   composer require magento/catalog-service --no-update
    ```
 
 1. Afhankelijkheden bijwerken en de extensie installeren:
 
    ```bash
-   composer update  "magento/catalog-adapter"
+   composer update  "magento/catalog-service"
    ```
 
 1. Upgrade Adobe Commerce:

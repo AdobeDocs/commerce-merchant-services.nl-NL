@@ -3,9 +3,9 @@ title: '''[!DNL Catalog Service] Opmerkingen bij de release'
 description: De meest recente releasegegevens voor [!DNL Catalog Service] voor Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 7293914fab34381deb5bc841d147371f9f3470a5
+source-git-commit: 6ca91feefbfc2fbc4d5851040b9f1ca3de6a6560
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '741'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,22 @@ _23 mei 2024_
 ![Repareren](../assets/fix.svg) <!--DATA-5033-->De `InStock` markering voor optiewaarden houdt nu rekening met het bereik `enabled` status van de productvariant.
 
 ![Repareren](../assets/fix.svg) <!--DATA-5888-->Voeg ondersteuning toe voor productprijzen waarvoor grote getallen (maximaal 16 cijfers) en een grotere decimale precisie (maximaal 4 cijfers achter de komma) vereist zijn. Als u de prijsconfiguratie-updates wilt toepassen op uw bestaande catalogus, synchroniseert u de catalogusgegevens opnieuw vanuit de [Gegevensbeheerdashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard)of door de [Adobe Commerce opdrachtregelinterface](../landing/catalog-sync.md#command-line-interface).
+
+#### Bekende beperkingen
+
+De volgende functies worden nog niet ondersteund:
+
+* De maximumgrootte voor dynamische kenmerklading is 9 MB.
+* De productprijs van de groep kan worden berekend aan de hand van eenvoudige productprijzen.
+* In een afbeeldingsarray bevat alleen de eerste afbeelding rollen.
+
+Los de volgende beperkingen op met behulp van API Mesh en de Core GraphQL API:
+
+* Minimale geadverteerde prijs
+* Tier-prijsstelling
+* Bundel van producten tegen vaste prijzen
+
+Zie voor meer informatie en voorbeelden [Catalogusservice en API-net](mesh.md)
 
 ## Vorige versies
 
@@ -59,14 +75,13 @@ _13 februari 2024_
 [!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
 
 ![Nieuw](../assets/new.svg) Productvideo&#39;s worden nu ondersteund door de API voor catalogusservice.
-![Repareren](../assets/fix.svg) Er wordt nu steun verleend voor bundelproducten met vaste prijzen.
 ![Repareren](../assets/fix.svg) Opties buiten de voorraad worden nu weergegeven in de PDP-widget.
 
 #### Bekende beperkingen
 
 Deze functies worden nog niet ondersteund:
 
-* Maximale grootte voor dynamische attributen lading is 9 MB.
+* De maximumgrootte voor dynamische kenmerklading is 9 MB.
 * Productprijs per groep. Deze waarde kan worden berekend aan de hand van eenvoudige productprijzen.
 * In een afbeeldingsarray bevat alleen de eerste afbeelding rollen.
 
@@ -134,7 +149,7 @@ _6 maart 2023_
 
 [!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) Toegevoegd [`categories`](https://developer.adobe.com/commerce/services/graphql/schema/catalog-service/categories/) GraphQL-functionaliteit
+![Nieuw](../assets/new.svg) Toegevoegd [`categories`](https://developer.adobe.com/commerce/services/graphql/catalog-service/categories/) GraphQL-functionaliteit
 ![Repareren](../assets/fix.svg) Verbeterde prestaties en API-schaalbaarheid.
 
 ### V1.4 Release
@@ -176,7 +191,7 @@ _4 oktober 2022_
 ![Nieuw](../assets/new.svg) Extra B2B-zichtbaarheidsoverschrijvingen. De producten zijn nu doorzoekbaar en kunnen aan de kar voor specifieke klantengroepen worden toegevoegd.
 ![Repareren](../assets/fix.svg) De service is nu stabieler en de prestaties zijn verbeterd.
 
-### 0.3 Release - bèta+
+### 0.3 Release - Beta+
 
 _12 september 2022_
 
@@ -187,7 +202,7 @@ _12 september 2022_
 ![Repareren](../assets/fix.svg) Verbeterde stabiliteit en prestaties van de dienst
 ![Nieuw](../assets/new.svg) Updates worden ontvangen wanneer producten uit de catalogus worden verwijderd
 
-### Bètaversie
+### Beta Release
 
 _9 augustus 2022_
 
