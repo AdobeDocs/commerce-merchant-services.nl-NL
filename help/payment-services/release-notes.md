@@ -1,26 +1,26 @@
 ---
 title: "[!DNL Payment Services] Opmerkingen bij de release"
-description: Lees de opmerkingen bij de release voor meer informatie over alle [!DNL Payment Services] lozingen.
+description: Herzie de versienota's voor informatie over alle  [!DNL Payment Services]  versies.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 9f0381546a98a8a5d72394adbd3ddd49daf539cb
+source-git-commit: 0800b4a0f9a3297a3490fa11f32e6af0abe67e2a
 workflow-type: tm+mt
-source-wordcount: '2547'
+source-wordcount: '2576'
 ht-degree: 0%
 
 ---
 
 # Aanvullende informatie
 
-In deze releaseopmerkingen wordt de eerste release van [!DNL Payment Services] en omvatten:
+Deze releaseopmerkingen beschrijven de eerste versie van [!DNL Payment Services] en bevatten:
 
-![Nieuw](../assets/new.svg) Nieuwe functies
-![Probleem opgelost](../assets/fix.svg) Oplossingen en verbeteringen
-![Bekend probleem](../assets/bug.svg) Bekende problemen
+![ Nieuwe ](../assets/new.svg) Nieuwe eigenschappen
+![ Vaste kwestie ](../assets/fix.svg) Oplossingen en verbeteringen
+![ Bekende kwestie ](../assets/bug.svg) Bekende kwesties
 
-Voor functieveranderingen en moeilijke situaties die buiten de regelmatige versie van de eigenschapversie worden vrijgegeven, herzie _Gehoste service-updates_ secties.
+Voor eigenschapveranderingen en moeilijke situaties die buiten de regelmatige versie van de eigenschapversie worden vrijgegeven, herzie de _Gehoste de dienstupdates_ secties.
 
-Meer informatie over komende releases, productondersteuning en welke Adobe Commerce-versies ondersteuning bieden voor de [!DNL Payment Services] -extensie, zie de Adobe Commerce [Releaseplanning](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) en [Beschikbaarheid van producten](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) onderwerpen.
+Leer meer over aanstaande versies, productsteun, en welke versies van Adobe Commerce de [!DNL Payment Services] uitbreiding steunen, zie het programma van de Versie van Adobe Commerce [ ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) en [ de onderwerpen van de Beschikbaarheid van het Product ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
 
 ## Gehoste service-updates
 
@@ -28,392 +28,396 @@ Deze versienota&#39;s beschrijven eigenschapveranderingen en moeilijke situaties
 
 +++Hosted service-updates
 
-_9 juli 2024_
+_15 juli 2024_
 
-![Nieuwe uitgave](../assets/new.svg)<!-- Issue PAY-5488 --> Handelaren kunnen nu de Commerce-klant-id als een kolom in het dialoogvenster [transactierapport](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html) helpen bij het identificeren van transacties die een bepaalde klant heeft geplaatst. Bovendien kunnen verkopers het transactierapport door deze klant-id van Commerce voor bijbehorende orders filteren.
+![ Nieuwe kwestie ](../assets/new.svg)<!-- Issue PAY-5571 --> nu, kunnen de handelaren transacties door de klant-e-mail van Commerce in het [ transactierapport ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html) filtreren. Voer de e-mail van de klant in om transacties voor die specifieke e-mail te filteren.
 
-_5 maart 2024_
+_9 Juli, 2024_
 
-![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-5252 --> Handelaars kunnen nu gegevens uit de dashboardrasters kopiëren door de inhoud van één cel te selecteren.
+![ Nieuwe kwestie ](../assets/new.svg)<!-- Issue PAY-5488 --> nu, kunnen de handelaren Commerce klantenidentiteitskaart als kolom in het [ transactierapport ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html) bekijken helpen transacties identificeren die een bepaalde klant heeft geplaatst. Bovendien kunnen verkopers het transactierapport door deze klant-id van Commerce voor bijbehorende orders filteren.
 
-_10 oktober 2023_
+_Maart 5, 2024_
 
-![Nieuwe uitgave](../assets/fix.svg)<!-- Issue PAY-4888 --> Handelaren kunnen nu creditcardtransacties filteren met de laatste vier cijfers van het kaartnummer in de [Transactierapport](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html).
+![ Vaste kwestie ](../assets/fix.svg)<!-- Issue PAY-5252 --> nu, kunnen de handelaren gegevens van de netwerken kopiëren Dashboard door de inhoud van één enkele cel te selecteren.
+
+_10 oktober, 2023_
+
+![ Nieuwe kwestie ](../assets/fix.svg)<!-- Issue PAY-4888 --> nu, kunnen de handelaren krediet en debetkaarttransacties door de laatste vier cijfers van het kaartaantal in het [ rapport van Transacties ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html) filtreren.
 
 _12 juli 2023_
 
-![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-4587 --> Een onderwerp dat in het [!DNL Payment Services] 2.1.0-release die verhinderde dat autorisatiewachtwoorden werden geplaatst door eerdere extensieversies, is nu opgelost. Handelaren die elke versie van [!DNL Payment Services] kan autorisaties voorkomen.
+![ Vaste kwestie ](../assets/fix.svg)<!-- Issue PAY-4587 --> Een kwestie die in [!DNL Payment Services] 2.1.0 wordt geïntroduceerd versie die vergunningslege die door vorige uitbreidingsversies wordt geplaatst verhindert wordt nu opgelost. Handelaars die een willekeurige versie van [!DNL Payment Services] gebruiken, kunnen autorisaties annuleren.
 
-_9 juni 2023_
+_9 Juni, 2023_
 
-![Nieuw](../assets/new.svg)<!-- Issue PAY-4288 --> Handelaren kunnen [vormen _alleen_ PayPal-betalingsknoppen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#use-only-paypal-payment-buttons)—en _niet_ gebruik de betalingsoptie PayPal-creditcard. Op deze manier kunnen verkopers verschillende betalingsopties aanbieden, zoals de betalingsknoppen Venmo en PayPal, en een bestaande creditcardprovider gebruiken in plaats van de optie PayPal-creditcardbetaling.
+![ Nieuw ](../assets/new.svg)<!-- Issue PAY-4288 --> nu, kunnen de handelaren [ _slechts_ PayPal betaalknopen ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#use-only-paypal-payment-buttons) vormen - en _gebruiken_ niet de optie van de creditcardbetaling van PayPal. Op deze manier kunnen verkopers verschillende betalingsopties aanbieden, zoals de betalingsknoppen Venmo en PayPal, en een bestaande creditcardprovider gebruiken in plaats van de optie PayPal-creditcardbetaling.
 
-![Nieuw](../assets/new.svg)<!-- Issue PAY-4050 --> Toegevoegde [gegevensvisualisatieweergave](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#order-payment-status-data-visualization-view), die wordt weergegeven op de startpagina van de betalingsservice, voor het rapport over de betalingsstatus van de bestelling.
+![ Nieuw ](../assets/new.svg)<!-- Issue PAY-4050 --> Toegevoegde a [ mening van de gegevensvisualisatie ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#order-payment-status-data-visualization-view), die op het Huis van de Dienst van de Betaling, voor het rapport van de de betalingsstatus van de Orde verschijnt.
 
-![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-4486--> Eerder werd de button PayPal PayPal Later niet weergegeven bij de afhandeling voor Britse handelaren. Dat probleem is opgelost.
+![ Vaste kwestie ](../assets/fix.svg)<!-- Issue PAY-4486--> Eerder, verscheen de PayPal knoop PayLater niet in controle voor Britse handelaren. Dat probleem is opgelost.
 
-![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-4485--> Weergaven voor de visualisatie van rapportgegevens worden nu weergegeven op [!DNL Payment Services] Home wanneer[!DNL Payment Services] is uitgeschakeld.
+![ Vaste de gegevensvisualisatiemeningen van het 1} Rapport van de kwestie {verschijnen nu op [!DNL Payment Services] Huis wanneer [!DNL Payment Services] gehandicapt is.](../assets/fix.svg)<!-- Issue PAY-4485-->
 
-_25 januari 2023_
+_Januari 25, 2023_
 
-![Bekend probleem](../assets/bug.svg)<!-- Issue PAY-4102 --> Nieuwe installaties van [!DNL Payment Services] kunnen Commerce Services niet configureren, renderen [!DNL Payment Services] onwerkbaar. Werk uw [!DNL Payment Services] uitbreiding tot versie 1.5.3.
+![ Bekende kwestie ](../assets/bug.svg)<!-- Issue PAY-4102 --> Nieuwe installaties van [!DNL Payment Services] kunnen de Diensten van Commerce niet vormen, die [!DNL Payment Services] inoperable teruggeven. U kunt dit probleem verhelpen door de extensie [!DNL Payment Services] bij te werken naar versie 1.5.3.
 
-_12 september 2022_
+_12 September, 2022_
 
-![Nieuw](../assets/new.svg)<!-- Issue PAY-3705 --> De `increment_id` is nu beschikbaar voor gebruik bij het in overeenstemming brengen van uitbetalingen in externe ERP-systemen. Het wordt doorgegeven aan de [`custom_id` _en_ `invoice_id`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/data.html#reconcile-with-erp-system), zichtbaar in zowel de PayPal-website als de zakelijke activiteitengegevens voor een uitbetaling.
+![ Nieuw ](../assets/new.svg)<!-- Issue PAY-3705 --> `increment_id` is nu beschikbaar voor gebruik in het in overeenstemming brengen van uitbetalingen in externe systemen ERP. Het wordt verspreid aan [`custom_id` _en_ `invoice_id` ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/data.html#reconcile-with-erp-system), zichtbaar in zowel de PayPal webhaak als het handelaarsactiviteitendetail voor een uitbetaling.
 
-_31 augustus 2022_
+_Augustus 31, 2022_
 
-![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-3629 --> Wanneer een nieuwe handelaar tot [!DNL Payment Services] Voor het eerst wordt de pagina nu meteen geladen om de inhoud weer te geven in plaats van dat een pagina moet worden vernieuwd.
+![ Vaste kwestie ](../assets/fix.svg)<!-- Issue PAY-3629 --> wanneer een nieuwe handelaar tot het [!DNL Payment Services] Huis voor het eerst toegang heeft, laadt de pagina nu onmiddellijk om de inhoud te tonen in plaats van te vereisen verfrist zich een pagina.
 
-_9 augustus 2021_
+_9 augustus, 2021_
 
-![Nieuw](../assets/new.svg)<!-- Issue PAY-3420 --> Apple Pay is nu beschikbaar als een slimme PayPal-knop. Dit [betalingsoptie](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-options.html#apple-pay-button) kunnen klanten de functie Touch ID op hun iOS- of macOS-apparaat gebruiken om Apple Pay te selecteren. Apple Pay verwerkt de betaling met de betalingsgegevens van de creditcard en de bankpas die op het apparaat zijn opgeslagen.
+![ Nieuwe ](../assets/new.svg)<!-- Issue PAY-3420 --> Pay van Apple is nu beschikbaar als Slimme Knoop van PayPal. Deze [ betalingsoptie ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-options.html#apple-pay-button) laat klanten toe om de eigenschap van identiteitskaart van de Aanraking op hun iOS of apparaat van macOS te gebruiken om Apple te selecteren betaalt. Apple Pay verwerkt de betaling met de betalingsgegevens van de creditcard en de bankpas die op het apparaat zijn opgeslagen.
 
-_28 juni 2021_
+_Juni 28, 2021_
 
-![Nieuw](../assets/new.svg)<!-- Issue PAY-1720 --> Geschillen met betrekking tot winkelbestellingen zijn nu beschikbaar in [het rapport betreffende de betalingsstatus van de opdracht](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#view-disputes). Je kunt geschillen oplossen door rechtstreeks naar het PayPal Resolution Center te navigeren vanuit [!DNL Payment Services].
+![ Nieuwe ](../assets/new.svg)<!-- Issue PAY-1720 --> Geschillen voor opslagorden zijn nu beschikbaar in [ het rapport van de de betalingsstatus van de Orde ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#view-disputes). U kunt geschillen oplossen door rechtstreeks vanuit [!DNL Payment Services] naar het PayPal Resolution Center te navigeren.
 
-![Nieuw](../assets/new.svg)<!-- Issue PAY-2854 --> Verbeteringen in gebruikerservaring van [!DNL Payment Services] Het huis omvat de capaciteit om een configuratie op het huidige overervingsniveau en verbeteringen aan de vertoning van de kopbal en de navigatie te wijzigen.
+![ Nieuwe ](../assets/new.svg)<!-- Issue PAY-2854 --> de ervaringsverbeteringen van de Gebruiker van [!DNL Payment Services] Huis omvatten de capaciteit om een configuratie op het huidige overervingsniveau en verbeteringen aan de vertoning van de kopbal en de navigatie te wijzigen.
 
-![Nieuw](../assets/new.svg)<!-- Issue PAY-2854 --> U kunt nu waarschuwingen zien wanneer u overschakelt van de sandboxmodus naar de productiemodus en wanneer u probeert weg te navigeren van een weergave met updates die niet zijn opgeslagen.
+![ Nieuw ](../assets/new.svg)<!-- Issue PAY-2854 --> u kunt waarschuwingen nu zien wanneer u van zandbakwijze aan productiemodus overschakelt en wanneer u probeert weg van een mening met updates te navigeren die niet zijn bewaard.
 
-![Nieuw](../assets/new.svg)<!-- Issue PAY-2761 --> U kunt de gegevens die worden weergegeven in het dialoogvenster [Betalingsstatusrapport bestellen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) en de [Uitbetalingsrapport](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) door kolommen te tonen of te verbergen gebruikend de de montagecontrole van de Kolom.
+![ Nieuw ](../assets/new.svg)<!-- Issue PAY-2761 --> U kunt de gegevens nu aanpassen die in het [ rapport van de de betalingsstatus van de Orde ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) en het [ rapport van Uitbetalingen ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) door kolommen te tonen of te verbergen gebruikend de de montagecontrole van de Kolom tonen.
 
 +++
 
 ## v2.6.0
 
-_4 juni 2024_
+_4 Juni, 2024_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg)<!-- PAY-4877 --> Nu, [!DNL Payment Services] supports [Prijsmogelijkheden L2/L3](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/levels-card-payment-transactions.html). Deze functie is alleen beschikbaar voor [!DNL Payment Services] klanten met IC++ toegelaten tarifering. Als u L2/L3 verwerkingsgegevens wilt gebruiken voor [!DNL Payment Services], neemt u contact op met uw [!DNL Payment Services] accountmanager.
+![ Nieuw ](../assets/new.svg)<!-- PAY-4877 --> nu, [!DNL Payment Services] steunt [ L2/L3 tariferingsmogelijkheden ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/levels-card-payment-transactions.html). Deze functie is alleen beschikbaar voor [!DNL Payment Services] klanten met IC++-prijzen ingeschakeld. Neem contact op met uw [!DNL Payment Services] -accountmanager als u L2/L3-verwerkingsgegevens wilt gebruiken voor [!DNL Payment Services] .
 
-![Repareren](../assets/fix.svg)<!-- PAY-5455 -->[!DNL Payment Services] staat u toe om Apple Pay direct van de uitbreiding toe te laten zonder het downloaden en het ontvangen van [domeinkoppelingsbestand](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain).
+![ Repareren ](../assets/fix.svg)<!-- PAY-5455 -->[!DNL Payment Services] staat u toe om Apple direct van de uitbreiding toe te laten zonder het [ dossier van de domeinvereniging te downloaden en te ontvangen ](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain).
 
 ## v2.5.0
 
-_23 april 2024_
+_23 April, 2024_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Repareren](../assets/fix.svg)<!-- Issue PAY-5396 -->[!DNL Payment Services] now supports [Adobe Commerce-richtsnoeren voor de `--db-prefix` parameter](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/advanced#install-from-the-command-line) voor Adobe Commerce versie 2.4.7 en hoger.
+](../assets/fix.svg)<!-- Issue PAY-5396 -->[!DNL Payment Services] Repareren ![ steunt nu [ richtlijnen van Adobe Commerce voor de `--db-prefix` parameter ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/advanced#install-from-the-command-line) voor versies 2.4.7 van Adobe Commerce en nieuwer.
 
 ## v2.4.3
 
 _16 april 2024_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Repareren](../assets/fix.svg)<!-- Issue PAY-5106 --> Probleem verholpen waarbij het totaal van de bestellingen onjuist werd ingevuld tijdens het afrekenen tussen PayPal en Adobe Commerce. Handelaars kunnen er nu voor zorgen dat de totalen van het orderbedrag correct zijn wanneer ze een bestelling plaatsen.
+![ beval ](../assets/fix.svg)<!-- Issue PAY-5106 --> een kwestie die verkeerd de totalen van het ordebedrag tijdens controle tussen PayPal en Adobe Commerce bevolkte. Handelaars kunnen er nu voor zorgen dat de totalen van het orderbedrag correct zijn wanneer ze een bestelling plaatsen.
 
 ## v2.4.2
 
 _11 april 2024_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg)<!-- Issue xxx --> Extra ondersteuning voor Adobe Commerce 2.4.7.
+![ Nieuwe ](../assets/new.svg)<!-- Issue xxx --> Toegevoegde steun voor Adobe Commerce 2.4.7.
 
 ## v2.4.1
 
-_4 april 2024_
+_4 April, 2024_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Repareren](../assets/fix.svg)<!-- PAY-5322 --> Oplossing voor een PCI-compatibiliteitsprobleem met nieuwere Adobe Commerce-releases. Nu, [!DNL Payment Services] is aangepast aan de betalingsvereisten in Adobe Commerce als betalingsoptie.
+![ bevestig ](../assets/fix.svg)<!-- PAY-5322 --> een PCI compatibiliteitskwestie met de nieuwere versies van Adobe Commerce. Nu is [!DNL Payment Services] aangepast aan de betalingsvereisten in Adobe Commerce.
 
-![Repareren](../assets/fix.svg)<!-- PAY-5323 --> PayPal en Venmo worden correct weergegeven in Adobe Commerce. Probleem verholpen waarbij de optie voor het in- en uitschakelen van PayLater en Venmo niet werd toegestaan voor de beheerder.
+![ Fix ](../assets/fix.svg)<!-- PAY-5323 --> PayLater en Venmo worden correct getoond in Adobe Commerce. Probleem verholpen waarbij de optie voor het in- en uitschakelen van PayLater en Venmo niet werd toegestaan voor de beheerder.
 
 ## v2.4.0
 
-_20 maart 2024_
+_Maart 20, 2024_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg)<!-- PAY-4868 --> Handelaars kunnen [Google Pay gedurende de hele aankoop configureren](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html), vergelijkbaar met andere betalingsknoppen in[!DNL Payment Services] via de beheerder.
+![ Nieuwe ](../assets/new.svg)<!-- PAY-4868 --> Merchants kunnen met succes [ vormen Google betalen door de koopervaring ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html), gelijkend op andere betalingsknopen in [!DNL Payment Services] door Admin.
 
-![Nieuw](../assets/new.svg)<!-- PAY-4381 --> [Betalingsservices ondersteunen Google Pay via GraphQL](https://developer.adobe.com/commerce/webapi/graphql/payment-services/) verkopers toestaan een Commerce-ervaring zonder kop te hebben met de betalingsmethode Google Pay.
+![ Nieuw ](../assets/new.svg)<!-- PAY-4381 --> [ de Diensten van de Betaling steunt Google betalen door GraphQL ](https://developer.adobe.com/commerce/webapi/graphql/payment-services/) toestaand verkopers om een koploze ervaring van Commerce met de betalingsmethode van Google te hebben.
 
-![Nieuw](../assets/new.svg)<!-- PAY-4878 --> Nu, [!DNL Payment Services] de basisfunctie voor afrekenen is gebundeld voor Adobe Commerce en Magento Open Source handelaren.[!DNL Payment Services] kan nu handelaren met bedrijven in om het even welke 200 geographies wereldwijd steunen.[!DNL Payment Services] standaardafhandeling biedt opties voor debiteren/crediteren, PayPal, Venmo (indien beschikbaar) en PayLater (indien beschikbaar) in een systeem voor automatische inboeking.
+![ Nieuw ](../assets/new.svg)<!-- PAY-4878 --> nu, wordt de [!DNL Payment Services] basiscontroleeigenschap gebundeld voor Adobe Commerce en Magento Open Source handelaren.[!DNL Payment Services] kan nu handelaren met bedrijven in 200 geografische gebieden wereldwijd ondersteunen.[!DNL Payment Services] standaardafhandeling biedt opties voor debiteren/crediteren, PayPal, Venmo (indien beschikbaar) en PayLater (indien beschikbaar) in een systeem voor automatische inboeking.
 
-![Repareren](../assets/fix.svg)<!-- PAY-5291 --> Het ontvangen van een betalingsbevestiging voor bepaalde transacties kan worden uitgesteld. In dat geval kunnen verkopers nu een bijgewerkte betalingsstatus voor een bestelling krijgen. [Betalingsdiensten detecteren de hangende status van een betalingstransactie](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html) in een order door in behandeling zijnde transacties op te sporen en deze transacties proactief te controleren en bij te werken wanneer de status in behandeling is vastgelegd.
+![ verbeter ](../assets/fix.svg)<!-- PAY-5291 --> Ontvangend betalingsbevestiging voor sommige transacties kan worden vertraagd. In dat geval kunnen verkopers nu een bijgewerkte betalingsstatus voor een bestelling krijgen. [ de diensten van de Betaling ontdekt de hangende status van een betalingstransactie ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html) in een orde door hangende transacties te ontdekken en deze transacties proactief te controleren en bij te werken wanneer de hangende status is gevangen.
 
 ## v2.3.4
 
-_1 maart 2024_
+_Maart 1, 2024_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg)<!-- PAY-5244 --> Compatibiliteit met asynchrone uitchecken is hersteld.
+![ Nieuwe ](../assets/new.svg)<!-- PAY-5244 --> Vaste async controleverenigbaarheid.
 
-![Repareren](../assets/fix.svg)<!-- PAY-5253 --> Correctie van een fout waarbij een vault-token niet tot [!DNL Payment Services] kan niet worden verwijderd.
+![ bevestig ](../assets/fix.svg)<!-- PAY-5253 --> een fout waar een kluisteken dat niet tot [!DNL Payment Services] behoort niet kon worden geschrapt.
 
 ## v2.3.3
 
-_14 februari 2024_
+_14 Februari, 2024_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg)<!-- PAY-5048 --> Extra ondersteuning voor PHP 8.3
+![ Nieuwe ](../assets/new.svg)<!-- PAY-5048 --> Toegevoegde steun voor PHP 8.3
 
-![Repareren](../assets/fix.svg)<!-- PAY-5048 --> Oplossing voor een fout met de `is_deleted` markering. Bestellingen mislukken nu niet vanwege de `Rejected` status die vanuit de extensie is verzonden.
+![ bevestig ](../assets/fix.svg)<!-- PAY-5048 --> een fout met de `is_deleted` vlag. Bestellingen mislukken nu niet omdat de status `Rejected` is verzonden vanuit de extensie.
 
 ## v2.3.2
 
-_26 januari 2024_
+_Januari 26, 2024_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Repareren](../assets/fix.svg)<!-- PAY-5183 --> Problemen met REST/GraphQL-prestaties opgelost. De creditcardknop wordt nu weergegeven wanneer deze via de API wordt opgehaald.
+![ bevestig ](../assets/fix.svg)<!-- PAY-5183 --> Vaste REST/GraphQL prestatieskwesties. De creditcardknop wordt nu weergegeven wanneer deze via de API wordt opgehaald.
 
 ## v2.3.1
 
-_7 december 2023_
+_7 December, 2023_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg)<!-- PAY-5047 --> Het type creditcard/bankpas of betalingsmethode is nu beschikbaar op de volgende locaties:
+![ Nieuw ](../assets/new.svg)<!-- PAY-5047 --> Het merk van de krediet/debetkaart of het type van betalingsmethode is nu beschikbaar bij de volgende plaatsen:
 
 - de pagina van de klantenorde op de winkel
 - het bevestigingsbericht voor bestelling dat naar de klant is verzonden
-- van de [weergave orderdetails](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-processing.html#view-an-order) in Commerce Admin.
+- van de [ mening van de orde details ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-processing.html#view-an-order) in Commerce Admin.
 
 ## v2.3.0
 
-_1 december 2023_
+_December 1, 2023_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg)<!-- PAY-4381 --> [Betalingsservices bieden nu ondersteuning voor GraphQL-integratie](https://developer.adobe.com/commerce/webapi/graphql/payment-services/). Met GraphQL-ondersteuning voor PayPal-betalingsknoppen, gehoste velden en Apple Pay,[!DNL Payment Services] ondersteunt nu een Commerce-installatie zonder kop.
+![ Nieuw ](../assets/new.svg)<!-- PAY-4381 --> [ de Diensten van de Betaling steunt nu de integratie van GraphQL ](https://developer.adobe.com/commerce/webapi/graphql/payment-services/). Met GraphQL-ondersteuning voor PayPal-betalingsknoppen, gehoste velden en Apple Pay, biedt [!DNL Payment Services] nu ondersteuning voor Commerce-instellingen zonder kop.
 
 ## v2.2.1
 
-_27 september 2023_
+_27 September, 2023_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-4870 --> Probleem verholpen waarbij het nieuwe headerkenmerk onjuist werd ingevuld in Storefront bij het verzenden van de extensie-versie met de laatste release. Voorheen, met de `1.3.0` release van de Commerce Services-connector, kon u de `User-Agent header` van de [!DNL Payment Services] extensie.
+![ Vaste kwestie ](../assets/fix.svg)<!-- Issue PAY-4870 --> Vaste een kwestie die correct het nieuwe kopbalattribuut in Storefront bevolkte toen het verzenden van de uitbreidingsversie met de recentste versie. Eerder, met de `1.3.0` release van de Commerce Services-connector, kon u de `User-Agent header` niet uitbreiden vanuit de [!DNL Payment Services] -extensie.
 
 ## v2.2.0
 
-_30 augustus 2023_
+_Augustus 30, 2023_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg)<!-- PAY-4638 --> Toegevoegde [integratie met handtekening](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security-compliance/fraud-protection.html), die geautomatiseerde diensten ter bescherming van fraude verleent.
+![ Nieuw ](../assets/new.svg)<!-- PAY-4638 --> voegde een [ integratie met het Ondertekenen ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security-compliance/fraud-protection.html) toe, die de geautomatiseerde diensten van de fraudebescherming verleent.
 
-![Nieuw](../assets/new.svg)<!-- PAY-3981 --> [Betalen met Apple voor speciale betaling](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html?lang=en#apple-pay-button)buiten de PayPal-betalingsknoppen om de zichtbaarheid van de betalingsoptie voor winkeliers te vergroten en verkopers in staat te stellen de plaatsing en opmaak van Apple Pay te bepalen.
+![ Nieuw ](../assets/new.svg)<!-- PAY-3981 --> [ Bevorderde Apple Betalen aan een afzonderlijke betalingsoptie ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html?lang=en#apple-pay-button), buiten de PayPal betaalknopen, om winkelzichtbaarheid van de betalingsoptie te verhogen en handelaars toe te staan om de plaatsing en het stileren van het Betaal van Apple te controleren.
 
-![Nieuw](../assets/new.svg)<!-- PAY-4002 --> Verbeterde gebruikerservaring bij het uitchecken van creditcardvelden, inclusief stijlverbeteringen zoals het toevoegen van betaalpictogrammen, om de cognitieve belasting van winkels te verlagen en conversies te verhogen.
+![ Nieuw ](../assets/new.svg)<!-- PAY-4002 --> verbeterde de gebruikerservaring van de controle van creditcardgebieden, met inbegrip van het stileren verhogingen zoals het toevoegen van betalingspictogrammen, aan lagere van de winkelcognitieve lading en verhogingsomzettingen.
 
-![Nieuw](../assets/new.svg)<!-- PAY-4002 --> Toegevoegde functionaliteit om handelaren toe te staan [de volgorde van hun betalingsopties sorteren](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#payment-buttons) bepaalde betalingsopties voorrang te geven. Deze functionaliteit moedigt een hoger tarief van het controlegesprek aan.
+![ Nieuwe ](../assets/new.svg)<!-- PAY-4002 --> Toegevoegde functionaliteit om handelaren toe te staan om de orde van hun betalingsopties ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#payment-buttons) te sorteren om bepaalde betalingsopties voorrang te geven. [ Deze functionaliteit moedigt een hoger tarief van het controlegesprek aan.
 
-![Nieuw](../assets/new.svg)<!-- PAY-4035 --> De handelaren kunnen nu efficiënt de gezondheid van hun opslag controleren en om het even welke transactiekwesties identificeren gebruikend de nieuwe [Transactierapport](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html) beschikbaar via[!DNL Payment Services] Admin-startpagina. In het verslag worden ook gegevens gepresenteerd over de percentages van de transactievergunning en de negatieve tendensen in de transacties.
+![ Nieuwe ](../assets/new.svg)<!-- PAY-4035 --> Merchants kunnen nu efficiënt de gezondheid van hun opslag controleren en om het even welke transactiekwesties identificeren gebruikend het nieuwe [ rapport van Transacties ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html) beschikbaar bij de [!DNL Payment Services] Admin homepage. In het verslag worden ook gegevens gepresenteerd over de percentages van de transactievergunning en de negatieve tendensen in de transacties.
 
 ## v2.1.0
 
-_9 juni 2023_
+_9 Juni, 2023_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg)<!-- Issue xxx --> Extra ondersteuning voor Adobe Commerce 2.4.7-bèta1.
+![ Nieuwe ](../assets/new.svg)<!-- Issue xxx --> Toegevoegde steun voor Adobe Commerce 2.4.7-bèta1.
 
-![Nieuw](../assets/new.svg)<!-- Issue xxx --> Toegevoegd [beschikbaarheid in de volgende landen en geassocieerde valuta&#39;s](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html#availability): Australië, Frankrijk, Verenigd Koninkrijk.
+![ Nieuwe ](../assets/new.svg)<!-- Issue xxx --> toegevoegde [ beschikbaarheid in de volgende landen en bijbehorende valuta ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html#availability): Australië, Frankrijk, Verenigd Koninkrijk.
 
-![Nieuw](../assets/new.svg)<!-- Issue PAY-4296 --> Toegevoegd [uitgebreide bronnen voor beheerdersrollen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-roles) om ervoor te zorgen dat Admin-gebruikers orders voor klanten kunnen maken en beheren en dat ze[!DNL Payment Services] in het menu Verkoop.
+](../assets/new.svg)<!-- Issue PAY-4296 --> Nieuwe [ Toegevoegde ![ uitgebreide middelen voor rollen Admin ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-roles) om Admin gebruikers te verzekeren kunnen orden voor klanten tot stand brengen en beheren en kunnen [!DNL Payment Services] in het menu van de Verkoop zien.
 
-![Nieuw](../assets/new.svg)<!-- Issue PAY-4236 --> Toegevoegd [automatisch ongeldig maken voor orders die fouten veroorzaken tijdens het uitchecken](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/checkout.html#order-auto-voided-if-error).
+![ Nieuw ](../assets/new.svg)<!-- Issue PAY-4236 --> Toegevoegde [ auto-voiding voor orden die fouten tijdens controle ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/checkout.html#order-auto-voided-if-error) veroorzaken.
 
-![Nieuw](../assets/new.svg)<!-- Issue PAY-4183 --> Functionaliteit gemaakt op [de knop voor de optie voor betaling via creditcard/bankpas weergeven](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#debit-or-credit-card-button) op de uitcheckpagina.
+![ Nieuwe ](../assets/new.svg)<!-- Issue PAY-4183 --> Gemaakt functionaliteit aan [ toont de knoop van de de optietoewijzing van de creditcard/debetkaart ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#debit-or-credit-card-button) op de controlepagina.
 
 ## v2.0.0
 
-_10 maart 2023_
+_Maart 10, 2023_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg)<!-- Issue PAY-4152 --> Extra ondersteuning voor PHP 8.2 en Adobe Commerce 2.4.6. Niet compatibel met PHP 7.x.
+![ Nieuwe ](../assets/new.svg)<!-- Issue PAY-4152 --> Toegevoegde steun voor PHP 8.2 en Adobe Commerce 2.4.6. Niet compatibel met PHP 7.x.
 
 ## v1.6.1
 
-_10 maart 2023_
+_Maart 10, 2023_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Repareren](../assets/fix.svg)<!-- Issue PAY-4226 --> Probleem verholpen waardoor nieuwe problemen werden voorkomen [!DNL Payment Services] verkopers kunnen het afrekenen in Admin gebruiken.[!DNL Payment Services] gebruikte voorheen de Commerce-klant-id, die niet bestaat voor nieuwe klanten.
+![ bevestig ](../assets/fix.svg)<!-- Issue PAY-4226 --> een kwestie die nieuwe [!DNL Payment Services] verkopers verhinderde controle in Admin te gebruiken.[!DNL Payment Services] gebruikte eerder de Commerce-klant-id, die niet bestaat voor nieuwe klanten.
 
-![Repareren](../assets/fix.svg)<!-- Issue PAY-4205 --> Probleem opgelost waarbij de opgegeven staat van het verzendadres tijdens het afrekenen werd vervangen door de status in de standaard belastinginstellingen via de optie [PayPal-optie](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#paypal-smart-buttons). Nu kunnen klanten hun bestellingen naar een andere staat laten verzenden dan die welke in de belastinginstellingen van de handelaar als standaard is geconfigureerd.
+![ bevestig ](../assets/fix.svg)<!-- Issue PAY-4205 --> een kwestie die de gespecificeerde het verschepen adresstaat veroorzaakte om door de staat in de standaard belastingmontages tijdens controle worden vervangen gebruikend de [ optie PayPal ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#paypal-smart-buttons). Nu kunnen klanten hun bestellingen naar een andere staat laten verzenden dan die welke in de belastinginstellingen van de handelaar als standaard is geconfigureerd.
 
-![Repareren](../assets/fix.svg)<!-- Issue PAY-4202 --> Probleem verholpen waarbij werd voorkomen dat klanten met een creditcard een aankoop konden voltooien of een geldige betalingsmethode voor een winkel konden verwijderen. Dit probleem is nu opgelost. [met de `Authorize and Capture` betalingsactie](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method). Eerder werd een fout met betrekking tot de &quot;Provider Vault ID not found&quot; weergegeven toen de klant probeerde de gefactureerde creditcards te gebruiken of te wijzigen.
+![ beval ](../assets/fix.svg)<!-- Issue PAY-4202 --> een kwestie Vast die klanten verhindert kaartvaulting te gebruiken om een aankoop te voltooien of een in gebreke gebleven betalingsmethode voor een opslag te schrappen [ gebruikend de `Authorize and Capture` betalingsactie ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method). Eerder werd een fout met betrekking tot de &quot;Provider Vault ID not found&quot; weergegeven toen de klant probeerde de gefactureerde creditcards te gebruiken of te wijzigen.
 
 ## v1.6.0
 
-_17 februari 2023_
+_17 Februari, 2023_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg)<!-- Issue PAY-3540 --> Toegevoegd [PGB 3DS-compatibiliteitskenmerk voor handelaren die handelen in de Europese Unie (EU) en Groot-Brittannië](security.md#3ds). Deze extra beveiligingslaag, die vereist dat kopers zich verifiëren bij hun creditcardmaatschappij, helpt internetfraude te voorkomen en is vereist in het kader van de EU-regelgeving inzake naleving.
+![ Nieuwe ](../assets/new.svg)<!-- Issue PAY-3540 --> Toegevoegde [ 3DS nalevingseigenschap voor handelaren die in de Europese Unie (EU) en Groot-Brittannië overdragen ](security.md#3ds). Deze extra beveiligingslaag, die vereist dat kopers zich verifiëren bij hun creditcardmaatschappij, helpt internetfraude te voorkomen en is vereist in het kader van de EU-regelgeving inzake naleving.
 
-![Nieuw](../assets/new.svg)<!-- Issue PAY-3609 --> De mogelijkheid toegevoegd om [kaartvaulatie inschakelen in de beheerder](vaulting.md#use-vaulting-in-the-admin). Op deze manier kunnen handelaren via hun gefactureerde betalingsmethoden een bestelling voor klanten in de beheerder maken.
+![ Nieuw ](../assets/new.svg)<!-- Issue PAY-3609 --> voegde de capaciteit toe om [ kaartvaulting in Admin ](vaulting.md#use-vaulting-in-the-admin) toe te laten. Op deze manier kunnen handelaren via hun gefactureerde betalingsmethoden een bestelling voor klanten in de beheerder maken.
 
 ## v1.5.4
 
-_29 januari 2023_
+_Januari 29, 2023_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-4110 --> Probleem verholpen waarbij kopers een bestelling niet konden plaatsen met behulp van betalingsknoppen op de productpagina, miniwinkelwagentje en winkelwagentje. Kopers kunnen nu bestellingen voltooien.
+![ Vaste kwestie ](../assets/fix.svg)<!-- Issue PAY-4110 --> een kwestie die kopers verhinderde om een orde te plaatsen gebruikend betalingsknopen op de productpagina, de minikaart, en de kar. Kopers kunnen nu bestellingen voltooien.
 
 ## v1.5.3
 
-_25 januari 2023_
+_Januari 25, 2023_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-4102 --> Een oplossing vrijgegeven voor een incompatibel probleem. Met deze release wordt de extensie van de service-id vergrendeld op de nieuwste stabiele versie, waardoor nieuwe [!DNL Payment Services] installaties voor het configureren van Commerce Services.
+![ Vaste kwestie ](../assets/fix.svg)<!-- Issue PAY-4102 --> gaf een moeilijke situatie aan een achteruit onverenigbare bekende kwestie vrij. Deze release vergrendelt de extensie van de service-id naar de nieuwste stabiele versie, die nieuwe [!DNL Payment Services] -installaties opnieuw inschakelt om Commerce Services te configureren.
 
 ## v1.5.2
 
-_22 december 2022_
+_December 22, 2022_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-3992 --> Betere facturering in [!DNL Payment Services] wanneer een betalingsmethode wordt afgewezen.
+![ Vaste kwestie ](../assets/fix.svg)<!-- Issue PAY-3992 --> Verbeterde facturering in [!DNL Payment Services] wanneer een betalingsmethode wordt verworpen.
 
-![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-3999 -->[!DNL Payment Services] geeft nu correct PayPal-betalingsknoppen voor verkopers weer met [Brandcontrole](https://commercemarketplace.adobe.com/swissup-firecheckout.html){target=_blank} aangepaste sjabloon voor de uitcheckpagina. Eerder werden de knoppen periodiek weergegeven door de minicart.
+![ Vaste kwestie ](../assets/fix.svg)<!-- Issue PAY-3999 -->[!DNL Payment Services] toont nu correct PayPal betaalknopen voor handelaren gebruikend ](https://commercemarketplace.adobe.com/swissup-firecheckout.html) {target=_blank} douanemalplaatje van de Afhandeling van de Vuur [ {voor de controlepagina. Eerder werden de knoppen periodiek weergegeven door de minicart.
 
 ## v1.5.1
 
-_23 november 2022_
+_23 November, 2022_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg)<!-- Issue PAY-3923 -->[!DNL Payment Services] omvat nu het versieaantal in de kopbal van de gebruikersagent zodat de verzoeken, ongebruikte eindpunten kunnen volgen, filtreren of verwerpen.
+![ Nieuw ](../assets/new.svg)<!-- Issue PAY-3923 -->[!DNL Payment Services] omvat nu het versieaantal in de kopbal van de gebruikersagent zodat de verzoeken, ongebruikte eindpunten kunnen volgen, filtreren of verwerpen.
 
-![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-3968 -->[!DNL Payment Services] geeft nu correct de ordergegevens weer wanneer een bestelling van de productpagina wordt geplaatst met behulp van betalingsknoppen.
+![ Vaste kwestie ](../assets/fix.svg)<!-- Issue PAY-3968 -->[!DNL Payment Services] toont nu correct ordegegevens wanneer een orde van de productpagina gebruikend betalingsknopen wordt geplaatst.
 
 ## v1.5.0
 
-_18 november 2022_
+_18 November, 2022_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg)<!-- Issue PAY-3880 --> Een winkelier kan nu [hun creditcardgegevens opslaan tijdens het afrekenen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) gebruiken in een latere aankoop voor dezelfde of een andere winkel binnen dezelfde zakelijke account.
+![ Nieuwe ](../assets/new.svg)<!-- Issue PAY-3880 --> een verkoopster kan nu [ kluis (sparen) hun creditcardinformatie tijdens controle ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) aan gebruik in een recentere aankoop voor het zelfde of een andere opslag binnen de zelfde handelaarrekening.
 
-![Nieuw](../assets/new.svg)<!-- Issue PAY-3950 --> Handelaren kunnen nu de [Direct kopen, Commerce-functie](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) voor hun winkels, zodat de koper het kan (gebruiken [gefactureerde creditcardgegevens](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html)) om het afrekenen te versnellen.
+![ Nieuwe ](../assets/new.svg)<!-- Issue PAY-3950 --> Merchants kunnen de [ Onmiddellijke eigenschap van Commerce van de Aankoop ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) voor hun opslag nu toelaten zodat de winkels (gebruik [ in kluis informatie van de creditcard ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html)) kunnen (gebruiken) om controle te versnellen.
 
 ## v1.4.1
 
 _14 oktober 2022_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Repareren](../assets/fix.svg)<!-- Issue PAY-3766 --> Wanneer de betalingsmethode van een klant wordt afgewezen, is het zichtbare foutbericht beschrijverender. Het adviseert de klant om betalingsinformatie opnieuw in te voeren en opnieuw te proberen, een andere betalingsmethode te proberen, of hun bank over de geweigerde transactie te contacteren.
+![ bevestigen ](../assets/fix.svg)<!-- Issue PAY-3766 --> wanneer de betalingsmethode van een klant wordt verworpen, is het zichtbare foutenbericht beschrijvelijker. Het adviseert de klant om betalingsinformatie opnieuw in te voeren en opnieuw te proberen, een andere betalingsmethode te proberen, of hun bank over de geweigerde transactie te contacteren.
 
 ## v1.4.0
 
-_30 september 2022_
+_30 September, 2022_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg)<!-- Issue PAY-784 -->[!DNL Payment Services] omvat nu de mogelijkheid om een zakelijke account in te stellen op [meerdere PayPal-zakelijke accounts gebruiken](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#use-multiple-paypal-accounts). Hierdoor kan de handelaar in meerdere landen uw winkels bedienen met verschillende valuta&#39;s, of Adobe Commerce gebruiken voor een deel van uw bedrijf.
+![ Nieuw ](../assets/new.svg)<!-- Issue PAY-784 -->[!DNL Payment Services] omvat nu de capaciteit aan opstelling een handelaarrekening aan [ gebruiks veelvoudige PayPal bedrijfsrekeningen ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#use-multiple-paypal-accounts). Hierdoor kan de handelaar in meerdere landen uw winkels bedienen met verschillende valuta&#39;s, of Adobe Commerce gebruiken voor een deel van uw bedrijf.
 
-![Nieuw](../assets/new.svg)<!-- Issue PAY-3231 --> Handelaren kunnen [toevoegen [!UICONTROL Soft Descriptor]](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#add-soft-descriptor) op websites of in afzonderlijke winkelweergaven wordt de configuratie weergegeven die op de bankafschriften van klanttransacties wordt getoond om merken, winkels of productlijnen te omlijnen.
+![ Nieuwe ](../assets/new.svg)<!-- Issue PAY-3231 --> Merchants kunnen [ a [!UICONTROL Soft Descriptor] ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#add-soft-descriptor) aan websites of individuele configuratie van de opslagmeningen toevoegen die op de verklaringen van de de bank van de klantentransactie tonen om merken, opslag, of productlijnen te afbakenen.
 
-![Nieuw](../assets/new.svg)<!-- Issue PAY-3707 --> [De creditcardvelden en PayPal-betalingsknoppen in- of uitschakelen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-payment-options) voor afhandeling binnen[!DNL Payment Services] instellingen.
+![ Nieuw ](../assets/new.svg)<!-- Issue PAY-3707 --> [ laat of maak creditcardgebieden en PayPal betaalknopen ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-payment-options) voor controle in [!DNL Payment Services] montages toe onbruikbaar.
 
-![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-3546 --> Wanneer een klant klikt **[!UICONTROL Edit cart]**, wordt de pagina omgeleid naar de winkelwagentje en worden de bijgewerkte items weergegeven in plaats van dat er een leeg winkelwagentje wordt weergegeven.
+![ Vaste kwestie ](../assets/fix.svg)<!-- Issue PAY-3546 --> wanneer een klant **[!UICONTROL Edit cart]** klikt, richt de pagina aan de wortelpagina opnieuw en toont de bijgewerkte punten in plaats van het tonen van een leeg karretje.
 
 ## v1.3.1
 
-_6 september 2022_
+_6 September, 2022_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-3663 --> Wanneer de winkel van een handelaar een bestelling vastlegt die is geautoriseerd met een niet-globale valuta, wordt het vastlegproces voltooid en wordt geen fout weergegeven.
+![ Vaste kwestie ](../assets/fix.svg)<!-- Issue PAY-3663 --> nu, wanneer de opslag van een handelaar een orde vastlegt die met een niet globale munt wordt gemachtigd, voltooit het vangstproces en geen fout wordt getoond.
 
 ## v1.3.0
 
-_9 augustus 2022_
+_9 augustus, 2022_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg)<!-- Issue PAY-XX --> Algemene beschikbaarheidsrelease—[!DNL Payment Services] is nu [ondersteund door [!DNL Adobe Commerce] en [!DNL Magento Open Source] versies 2.4.0 tot en met 2.4.5](https://devdocs.magento.com/release/availability.html#compatibility).
+![ Nieuwe ](../assets/new.svg)<!-- Issue PAY-XX --> Algemene beschikbaarheidsversie - [!DNL Payment Services] wordt nu gesteund door [  [!DNL Adobe Commerce]  en  [!DNL Magento Open Source]  versies 2.4.0 aan 2.4.5 ](https://devdocs.magento.com/release/availability.html#compatibility).
 
-![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-x --> Apple Pay is nu compatibel met Safari browser v15.5 op mobiele apparaten en desktops.
+![ Vaste kwestie ](../assets/fix.svg)<!-- Issue PAY-x --> Apple Pay is nu compatibel met browser Safari v15.5 op mobiel en Desktop.
 
 ## v1.2.0
 
-_29 juni 2022_
+_Juni 29, 2022_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Bekend probleem](../assets/bug.svg)<!-- Issue PAY-x --> Apple Pay is niet compatibel met Safari browser v15.5 op mobiele apparaten en desktops. Als je Safari versie 15.5 gebruikt, kun je het afrekenen met Apple Pay niet voltooien.
+![ Bekende kwestie ](../assets/bug.svg)<!-- Issue PAY-x --> het Betalen van Apple is onverenigbaar met browser Safari v15.5 op mobiel en Desktop. Als je Safari versie 15.5 gebruikt, kun je het afrekenen met Apple Pay niet voltooien.
 
-![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-3264 --> Als een aangemelde gebruiker eerder een ander facturerings-/verzendadres dan het standaardadres voor zijn account had geselecteerd, is het afrekenen mislukt. Het geselecteerde facturerings-/verzendadres wordt nu verzonden (in plaats van het standaard opgeslagen adres) en de afhandeling is voltooid.
+![ Vaste kwestie ](../assets/fix.svg)<!-- Issue PAY-3264 --> eerder, toen een het programma geopende gebruiker een het factureren/verschepen adres buiten het standaardadres voor hun rekening selecteerde, ontbrak het afrekenen. Het geselecteerde facturerings-/verzendadres wordt nu verzonden (in plaats van het standaard opgeslagen adres) en de afhandeling is voltooid.
 
-![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-3314 --> Als u PayPal-betalingsknoppen uitschakelt voor afhandeling, worden geen fouten weergegeven.
+![ Vaste kwestie ](../assets/fix.svg)<!-- Issue PAY-3314 --> als u PayPal betalingsknopen voor controle onbruikbaar maakt, worden geen fouten getoond.
 
-![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-3330 --> Betalingen mislukken niet meer tijdens het afrekenen wanneer een gastgebruiker een telefoonnummer invoert dat streepjes bevat.
+![ Vaste kwestie ](../assets/fix.svg)<!-- Issue PAY-3330 --> Betalingen ontbreken niet meer tijdens controle wanneer een gastgebruiker een telefoonaantal ingaat dat streepjes omvat.
 
-![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-3338 PAY-2502 --> Als de gebruikersgegevens van Commerce Services ongeldig zijn,[!DNL Payment Services] meldt u nu door een aanmeldingsfout van het dialoogvenster [!DNL Payment Services] Start in de Admin.
+![ Vaste kwestie ](../assets/fix.svg)<!-- Issue PAY-3338 PAY-2502 --> wanneer de geloofsbrieven van de Diensten van Commerce ongeldig zijn, [!DNL Payment Services] alarm nu u door een geloofsbrieven van het [!DNL Payment Services] Huis in Admin te tonen.
 
-![Bekend probleem](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] is onverenigbaar met `commerce-data-export` v101.20 en hoger, waardoor deze niet verenigbaar is met de [[!DNL Channel manager] extension](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html).
+![ Bekende kwestie ](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] is onverenigbaar met `commerce-data-export` v101.20 en hoger, die het onverenigbaar met de [[!DNL Channel manager]  uitbreiding ](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html) teruggeeft.
 
 ## v1.1.0
 
-_31 maart 2022_
+_Maart 31, 2022_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg)<!-- Issue PAY-2127 --> Algemene beschikbaarheidsrelease—[!DNL Payment Services] is nu [ondersteund door [!DNL Adobe Commerce] en [!DNL Magento Open Source] versies 2.4.0 tot en met 2.4.4](https://devdocs.magento.com/release/availability.html#compatibility).
+![ Nieuwe ](../assets/new.svg)<!-- Issue PAY-2127 --> Algemene beschikbaarheidsversie - [!DNL Payment Services] wordt nu gesteund door [  [!DNL Adobe Commerce]  en  [!DNL Magento Open Source]  versies 2.4.0 aan 2.4.4 ](https://devdocs.magento.com/release/availability.html#compatibility).
 
-![Nieuw](../assets/new.svg)<!-- Issue PAY-2682 --> De [!DNL Payment Services] verlenging voor [!DNL Adobe Commerce] en [!DNL Magento Open Source] is nu beschikbaar voor Canadese handelaren. Handelaren kunnen de configuratie van betalingen in of bekijken [Frans](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html?lang=fr#carte-de-cr%C3%A9dit-et-devises-accept%C3%A9es) of [Engels](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html#accepted-credit-cards-and-currencies).
+![ Nieuw ](../assets/new.svg)<!-- Issue PAY-2682 --> De [!DNL Payment Services] uitbreiding voor [!DNL Adobe Commerce] en [!DNL Magento Open Source] is nu beschikbaar voor Canadese handelaren. De handelaren kunnen betalingsconfiguratie in of [ Frans ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html?lang=fr#carte-de-cr%C3%A9dit-et-devises-accept%C3%A9es) of [ Engels ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html#accepted-credit-cards-and-currencies) bekijken.
 
-![Nieuw](../assets/new.svg)<!-- Issue PAY-2681 --> [!DNL Payment Services] supports [Canadese dollars (CAD)](overview.md#accepted-credit-cards-and-currencies) voor creditcards en PayPal-transacties.
+![ Nieuw ](../assets/new.svg)<!-- Issue PAY-2681 --> [!DNL Payment Services] steunt [ Canadese dollars (CAD) ](overview.md#accepted-credit-cards-and-currencies) voor creditcards en transacties PayPal.
 
-![Nieuw](../assets/new.svg)<!-- Issue PAY-2680 --> Handelaren kunnen [aan boord [!DNL Payment Services]](onboard.md) uitbreiding in de Engelse of Franse taal.
+![ Nieuwe ](../assets/new.svg)<!-- Issue PAY-2680 --> Merchants kunnen [ aan boord  [!DNL Payment Services]](onboard.md) uitbreiding in Engelse of Franse talen.
 
-![Nieuw](../assets/new.svg)<!-- Issue PAY-2678 --> Handelaren kunnen nu financiële rapporten bekijken, beide [Betalingsstatus bestellen](order-payment-status.md) en [Uitbetalingsrapporten](payouts.md), in Canadese dollars (CAD).
+![ Nieuwe ](../assets/new.svg)<!-- Issue PAY-2678 --> Merchants kunnen financiële rapporten nu bekijken, zowel de [ betalingsstatus van de Orde ](order-payment-status.md) als [ uitbetalingsrapporten ](payouts.md), in Canadese dollars (CAD).
 
-![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-2710 -->[!DNL Payment Services] is nu compatibel met [PHP 8.1](https://www.php.net/releases/8.1/en.php).
+![ Vaste kwestie ](../assets/fix.svg)<!-- Issue PAY-2710 -->[!DNL Payment Services] is nu compatibel met [ PHP 8.1 ](https://www.php.net/releases/8.1/en.php).
 
-![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-3017 --> De verbeterde wijze van Sandbox alarm om juiste alarm met veelvoudige opslag te tonen.
+![ Vaste kwestie ](../assets/fix.svg)<!-- Issue PAY-3017 --> Verbeterde zandbakwijze alarm om juiste alarm met veelvoudige opslag te tonen.
 
-![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-2742 --> U kunt nu beschikbare betalingsmethoden, zoals Venmo, in- en uitschakelen op het weergaveniveau van de winkel. Eerder kon u alleen betalingsmethoden per website configureren.
+![ Vaste kwestie ](../assets/fix.svg)<!-- Issue PAY-2742 --> U kunt beschikbare betalingsmethodes, zoals Venmo, op het niveau van de archiefmening nu toelaten en onbruikbaar maken. Eerder kon u alleen betalingsmethoden per website configureren.
 
-![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-2277 --> U kunt nu selectief [afzonderlijke PayPal-betalingsknoppen in- of uitschakelen](settings.md#payment-buttons).
+![ Vaste kwestie ](../assets/fix.svg)<!-- Issue PAY-2277 --> U kunt nu selectief [ toelaten of individuele PayPal betalingsknopen onbruikbaar maken ](settings.md#payment-buttons).
 
-![Probleem opgelost](../assets/fix.svg)<!-- Issue PAY-2561 --> Eerder verwijderde producten komen niet voor in het winkelwagentje op de _Revisievolgorde_ pagina.
+![ Vaste kwestie ](../assets/fix.svg)<!-- Issue PAY-2561 --> Eerder verwijderde producten verschijnen niet in de kar op de _3} pagina van de Orde van het Overzicht {._
 
-![Bekend probleem](../assets/bug.svg)<!-- Issue PAY-2842 --> Creditcardtransacties testen [kan mislukken met PayPal](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html) bij het verwerken van betalingen in een sandbox-omgeving.
+![ Bekende kwestie ](../assets/bug.svg)<!-- Issue PAY-2842 --> de creditcardtransacties van de Test [ kan met PayPal ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html) ontbreken wanneer het verwerken van betalingen in een zandbakmilieu.
 
 ## v1.0.0
 
-_29 november 2021_
+_November 29, 2021_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg)<!-- Issue PAY-2127 --> Algemene beschikbaarheidsrelease—[[!DNL Payment Services]](https://commercemarketplace.adobe.com/magento-payment-services.html) wordt nu ondersteund door [!DNL Adobe Commerce] en [!DNL Magento Open Source] versies 2.4.0 tot 2.4.3-p1.
+![ Nieuwe ](../assets/new.svg)<!-- Issue PAY-2127 --> Algemene beschikbaarheidsversie - [[!DNL Payment Services] ](https://commercemarketplace.adobe.com/magento-payment-services.html) wordt nu gesteund door [!DNL Adobe Commerce] en [!DNL Magento Open Source] versies 2.4.0 tot 2.4.3-p1.
 
-![Nieuw](../assets/new.svg)<!-- Issue PAY-124 --> De [!DNL Payment Services] verlenging voor [!DNL Adobe Commerce] en [!DNL Magento Open Source] kan worden geïnstalleerd voor [[!DNL Adobe Commerce] over cloudinfrastructuur](install.md#adobe-commerce-on-cloud-infrastructure) of [In de bedrijfsruimten](install.md#on-premises) instanties. Deze methoden vereisen het gebruik van een opdrachtregelinterface.
+![ Nieuw ](../assets/new.svg)<!-- Issue PAY-124 --> de [!DNL Payment Services] uitbreiding voor [!DNL Adobe Commerce] en [!DNL Magento Open Source] kan of voor [[!DNL Adobe Commerce]  op wolkeninfrastructuur ](install.md#adobe-commerce-on-cloud-infrastructure) of [ op-gebouw ](install.md#on-premises) instanties worden geïnstalleerd. Deze methoden vereisen het gebruik van een opdrachtregelinterface.
 
-![Nieuw](../assets/new.svg)<!-- Issue PAY-1986 --> [!DNL Payment Services] ondersteunt een [sandboxaccount](sandbox.md) die handelaren in staat stelt de uitbreiding in testmodus te beoordelen.
+![ Nieuw ](../assets/new.svg)<!-- Issue PAY-1986 --> [!DNL Payment Services] steunt de rekening van de a [ zandbak ](sandbox.md) die verkopers toestaat om de uitbreiding op testwijze te beoordelen.
 
-![Nieuw](../assets/new.svg)<!-- Issue PAY-666 --> Handelaren kunnen [betalingsservices configureren](settings.md) uitbreiding met elementair betalingsgedrag, zoals [`Authorize and Capture`](production.md#set-payment-services-as-payment-method) schakelen tussen sandbox- of productieomgevingen.
+![ Nieuwe ](../assets/new.svg)<!-- Issue PAY-666 --> Merchants kunnen [ de uitbreiding van de Diensten van de Betaling ](settings.md) met basisbetalingsgedrag, zoals het gebruiken van [`Authorize and Capture`](production.md#set-payment-services-as-payment-method) omschakeling tussen zandbak of productiemilieu&#39;s vormen.
 
-![Nieuw](../assets/new.svg)<!-- Issue PAY-780 --> Je kopers kunnen uitchecken met [!DNL Payment Services] of via [handbestelling maken](create-order.md).
+![ Nieuw ](../assets/new.svg)<!-- Issue PAY-780 --> Uw klanten kunnen uit controleren met [!DNL Payment Services] of via [ handordeverwezenlijking ](create-order.md).
 
-![Nieuw](../assets/new.svg)<!-- Issue PAY-1856 --> Uitgebreide rapportage, via [Betalingsstatus bestellen](order-payment-status.md) en [Uitbetalingsrapporten](payouts.md), zijn beschikbaar voor [!DNL Payment Services] om je een duidelijk beeld te geven van de bestellingen en daarmee samenhangende betalingen van je winkel.
+![ Nieuwe ](../assets/new.svg)<!-- Issue PAY-1856 --> Uitgebreide rapportering, via [ de betalingsstatus van de Orde ](order-payment-status.md) en [ de rapporten van Uitbetalingen ](payouts.md), zijn beschikbaar voor [!DNL Payment Services] om u een duidelijke mening van de orden van uw opslag en verwante betalingen te geven.
 
-![Nieuw](../assets/new.svg)<!-- Issue PAY-311 --> [!DNL Payment Services] ondersteunt flexibele, gedifferentieerde prijzen, gebaseerd op het totale verwerkingsvolume, aangepast aan elke handelaar.
+![ Nieuw ](../assets/new.svg)<!-- Issue PAY-311 --> [!DNL Payment Services] biedt ondersteuning voor flexibele, gedifferentieerde prijzen op basis van het totale verwerkingsvolume, aangepast aan elke handelaar.
 
-![Nieuw](../assets/new.svg)<!-- Issue PAY-1443 --> U kunt gemakkelijk [de vormgeving aanpassen](payments-options.md) van PayPal-betalingsknoppen en creditcardvelden voor de [!DNL Payment Services] extensie.
+![ Nieuw ](../assets/new.svg)<!-- Issue PAY-1443 --> U kunt gemakkelijk [ de blik en het gevoel ](payments-options.md) van PayPal betaalknopen en creditcardgebieden voor de [!DNL Payment Services] uitbreiding aanpassen.
 
-![Bekend probleem](../assets/bug.svg)<!-- Issue PAY-2473 --> Gebruiken [onjuiste Composer-sleutels](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html) tijdens de installatie van de extensie voorkomt dat de gebruiker [verifiëren](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) met de juiste `MAGEID`.
+![ Bekende kwestie ](../assets/bug.svg)<!-- Issue PAY-2473 --> Gebruikend [ onjuiste Composer sleutels ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html) tijdens installatie van de uitbreiding verhindert de gebruiker [ ](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) voor authentiek verklaren met het correcte `MAGEID`.
 
-![Bekend probleem](../assets/bug.svg)<!-- Issue PAY-2474 --> [!DNL Payment Services] rapporten [kan niet meteen synchroniseren](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html).
+![ Bekende kwestie ](../assets/bug.svg)<!-- Issue PAY-2474 --> [!DNL Payment Services] rapporten [ kunnen niet onmiddellijk ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html) synchroniseren.
 
-![Bekend probleem](../assets/bug.svg)<!-- Issue PAY-2475 --> Uw [PayPal-sandboxaccount](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html) for [!DNL Payment Services] kan niet worden geverifieerd als u dat account maakt tijdens het instappen.
+![ Bekende kwestie ](../assets/bug.svg)<!-- Issue PAY-2475 --> Uw [ PayPal zandbakrekening ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html) voor [!DNL Payment Services] kan niet worden geverifieerd als u dat rekening tijdens het in- en uitstappen creeert.
