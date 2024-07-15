@@ -1,41 +1,42 @@
 ---
-title: Soorten handelsgegevens
+title: Typen Commerce-gegevens
 description: Leer de typen gegevens die u kunt verzamelen en naar het Experience Platform verzenden.
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
+exl-id: 1cdf3fcb-fb16-47ef-be5c-0ebbf1feaff4
+source-git-commit: d5d5741442973d86a2d403edc940d18333defd67
 workflow-type: tm+mt
 source-wordcount: '312'
 ht-degree: 0%
 
 ---
 
-# Soorten handelsgegevens
+# Typen Commerce-gegevens
 
-De [Gegevensverbinding, extensie](overview.md) Verbindt uw gegevens van de Handel met het Experience Platform. Gegevens die bestemd zijn voor gebruik in het Experience Platform, worden gegroepeerd in twee gedragstypen: gegevens uit de tijdreeks, die tot de **Experience Event** klasse, en recordgegevens, die tot **Individueel profiel** klasse.
+De [ uitbreiding van de Verbinding van Gegevens ](overview.md) verbindt uw gegevens van Commerce met het Experience Platform. De gegevens voorgenomen voor gebruik in het Experience Platform worden gegroepeerd in twee gedragstypes: tijdreeksgegevens, die tot de **klasse van de Gebeurtenis van de 1} van de Ervaring behoren**, en verslaggegevens, die tot de **Individuele klasse van het Profiel** behoren.
 
-Meer informatie over [gegevensgedrag](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#data-behaviors) en [klassen](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#class) in Experience Platform.
+Leer meer over [ gegevensgedrag ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#data-behaviors) en [ klassen ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#class) in Experience Platform.
 
 ## Gegevens uit tijdreeksen
 
-De gegevens van de tijdreeksen verstrekken een momentopname van het systeem op het tijdstip dat een actie of direct of indirect door een verslagonderwerp werd genomen. Als een winkelier bijvoorbeeld door een product op uw site bladert, voegt u een product toe aan de winkelwagentje, plaatst u een bestelling enzovoort. Gegevens uit tijdreeksen worden in het Experience Platform opgenomen met een schema waarvoor de klasse is ingesteld op **Experience Event**.
+De gegevens van de tijdreeksen verstrekken een momentopname van het systeem op het tijdstip dat een actie of direct of indirect door een verslagonderwerp werd genomen. Als een winkelier bijvoorbeeld door een product op uw site bladert, voegt u een product toe aan de winkelwagentje, plaatst u een bestelling enzovoort. De reeksgegevens van de tijd worden opgenomen in het Experience Platform gebruikend een schema dat de klasse heeft die aan **de Gebeurtenis van de Ervaring** wordt geplaatst.
 
 ### Vastgelegde tijdreeksgegevens
 
-Zie [gedragsgebeurtenissen](events.md) en [back office-gebeurtenissen](events-backoffice.md) om te leren welke gegevens worden vastgelegd wanneer een tijdreeksgebeurtenis wordt gegenereerd.
+Zie [ gedragsgebeurtenissen ](events.md) en [ achterkantoorgebeurtenissen ](events-backoffice.md) om te leren welke gegevens worden gevangen wanneer een gebeurtenis van de tijdreeks wordt geproduceerd.
 
 ### Schema nodig om gebeurtenisgegevens voor tijdreeksen in te voeren
 
-Leer hoe u [een schema maken](update-xdm.md) die gedrags- en back-office tijdreeksgebeurtenisgegevens kunnen invoeren.
+Leer hoe te om [ een schema ](update-xdm.md) tot stand te brengen dat gedrags en de gegevens van de de tijdreeksgebeurtenis van het achterkantoor kan opnemen.
 
 ## Gegevens opnemen
 
-De gegevens van het verslag verstrekken informatie over de attributen van een onderwerp. Een onderwerp kan een organisatie of een individu zijn. Een winkelier op uw site maakt bijvoorbeeld een account en genereert recordgegevens. Dit gegeven wordt opgenomen in het Experience Platform gebruikend een schema dat de klasse heeft die aan wordt geplaatst **Individueel profiel**. U kunt die recordgegevens naar de profielbeheer en segmentatieservice van de Adobe verzenden: [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html).
+De gegevens van het verslag verstrekken informatie over de attributen van een onderwerp. Een onderwerp kan een organisatie of een individu zijn. Een winkelier op uw site maakt bijvoorbeeld een account en genereert recordgegevens. Dit gegeven wordt opgenomen in het Experience Platform gebruikend een schema dat de klasse heeft die aan **wordt geplaatst Individueel Profiel**. U kunt die recordgegevens naar het profielbeheer en de segmenteringsdienst van de Adobe verzenden: [ Real-Time CDP ](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html).
 
 ### Vastgelegde profielrecordgegevens
 
-Zie [klantprofielrecordgegevens](events-profilerecord.md) om te zien welke gegevens worden vastgelegd wanneer een profielrecord wordt gegenereerd.
+Zie [ gegevens van het het profielverslag van de klant ](events-profilerecord.md) leren welke gegevens worden gevangen wanneer een profielverslag wordt geproduceerd.
 
 ### Schema nodig voor het invoeren van profielrecordgegevens
 
-Leer hoe u [een schema maken](profile-data.md) die recordgegevens voor profielen kunnen invoeren.
+Leer hoe te om [ een schema ](profile-data.md) tot stand te brengen dat de gegevens van het profielverslag kan opnemen.

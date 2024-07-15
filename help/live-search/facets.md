@@ -1,6 +1,6 @@
 ---
 title: "Facets"
-description: "[!DNL Live Search] facetten gebruiken meerdere afmetingen van kenmerkwaarden als zoekcriteria."
+description: "[!DNL Live Search] facetten gebruiken veelvoudige afmetingen van attributenwaarden als onderzoekscriteria."
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
 source-git-commit: 460065ecf6478e4313bd31ea848e04c7e8e192a3
 workflow-type: tm+mt
@@ -11,13 +11,13 @@ ht-degree: 0%
 
 # Facetten
 
-Faceting is een methode voor het filteren van hoge prestaties waarbij meerdere dimensies van kenmerkwaarden worden gebruikt als zoekcriteria. Gefactureerde zoekopdracht is vergelijkbaar, maar aanzienlijk &quot;slimmer&quot; dan de standaard [gelaagde navigatie](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html). De lijst met beschikbare filters wordt bepaald door de [filterbare kenmerken](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#filterable-attributes) van producten die in de zoekresultaten worden geretourneerd.
+Faceting is een methode voor het filteren van hoge prestaties waarbij meerdere dimensies van kenmerkwaarden worden gebruikt als zoekcriteria. Het gefactureerde onderzoek is gelijkaardig, maar aanzienlijk &quot;slimmer&quot;dan de standaard [ gelaagde navigatie ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html). De lijst van beschikbare filters wordt bepaald door de [ filtreerbare attributen ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#filterable-attributes) van producten die in de onderzoeksresultaten zijn teruggekeerd.
 
-[!DNL Live Search] gebruikt de `productSearch` query, die faceting en andere gegevens retourneert die specifiek zijn voor [!DNL Live Search]. Zie [`productSearch` query](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/) in de ontwikkelaarsdocumentatie voor codevoorbeelden.
+[!DNL Live Search] gebruikt de query `productSearch` , die faceting en andere gegevens retourneert die specifiek zijn voor [!DNL Live Search] . Zie [`productSearch` query ](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/) in de ontwikkelaarsdocumentatie voor codevoorbeelden.
 
-![Gefilterde zoekresultaten](assets/storefront-search-results-run.png)
+![ Gefilterde onderzoeksresultaten ](assets/storefront-search-results-run.png)
 
-Elke gedefinieerde facet kan als een URL-parameter worden gebruikt en de resultaten worden gefilterd op basis van de parameterwaarden: `http://yourstore.com?brand=acme&color=red`.
+Elke gedefinieerde facet kan worden gebruikt als een URL-parameter en de resultaten worden gefilterd op basis van de parameterwaarden: `http://yourstore.com?brand=acme&color=red` .
 
 ## Faciliteitseisen
 
@@ -38,21 +38,21 @@ Als u een groot aantal kenmerken hebt om mee te werken, kunt u overwegen kenmerk
 
 | Instelling | Beschrijving |
 |--- |--- |
-| [Weergave-instellingen voor categorie](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html) | Anker - `Yes` |
-| [Eigenschappen van kenmerk](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) | [Invoertype catalogus](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price`, `Visual swatch` (alleen widget), `Text swatch` (alleen widget) |
+| [ de vertoningsmontages van de Categorie ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html) | Anker - `Yes` |
+| [ eigenschappen van Attributen ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) | [ het type van Invoer van de Catalogus ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price`, `Visual swatch` (widget slechts), `Text swatch` (widget slechts) |
 | Eigenschappen van kenmerkarchief | Gebruiken in gelaagde navigatie met zoekresultaten - `Yes` |
 
 ## Facetaggregatie
 
-Facetsamenvoeging wordt als volgt uitgevoerd: als de winkel drie facetten (categorieën, kleur en prijs) heeft en de verkoopfilters op alle drie (kleur = blauw, de prijs is van $10.00-50.00, categorieën = `promotions`).
+Facetsamenvoeging wordt als volgt uitgevoerd: als de winkel drie facetten (categorieën, kleur en prijs) heeft en de winkelfilters op alle drie (kleur = blauw, de prijs is van $10.00-50.00, categorieën = `promotions`).
 
-* `categories` aggregatie - aggregaten `categories`past vervolgens de `color` en `price` , maar niet de `categories` filter.
-* `color` aggregatie - aggregaten `color`past vervolgens de`price` en `categories` , maar niet de `color` filter.
-* `price` aggregatie - aggregaten `price`past vervolgens de `color` en `categories` , maar niet de `price` filter.
+* `categories` aggregatie - aggregeert `categories` en past vervolgens de filters `color` en `price` toe, maar niet het filter `categories` .
+* `color` samenvoeging - aggregeert `color` en past vervolgens de filters `price` en `categories` toe, maar niet het filter `color` .
+* `price` aggregatie - aggregeert `price` en past vervolgens de filters `color` en `categories` toe, maar niet het filter `price` .
 
 ## Standaardkenmerkwaarden
 
-De volgende productkenmerken hebben [storefront, eigenschappen](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) die door [!DNL Live Search] en standaard ingeschakeld.
+De volgende productkenmerken hebben [ storefront eigenschappen ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) die door [!DNL Live Search] worden gebruikt en door gebrek worden toegelaten.
 
 | Eigenschap | Storefront, eigenschap | Kenmerk |
 |---|---|---|
@@ -62,7 +62,7 @@ De volgende productkenmerken hebben [storefront, eigenschappen](https://experien
 
 ## Standaardeigenschappen van niet-systeemkenmerken
 
-In de volgende tabel worden de standaardzoekeigenschappen en filterbare eigenschappen van niet-systeemkenmerken weergegeven, inclusief de eigenschappen die specifiek zijn voor de Luminantiemonsteringsgegevens. De instelling van *Gebruiken in Zoeken* eigenschap attribute to `Yes` maakt het kenmerk doorzoekbaar in beide [!DNL Live Search] en native Adobe Commerce.
+In de volgende tabel worden de standaardzoekeigenschappen en filterbare eigenschappen van niet-systeemkenmerken weergegeven, inclusief de eigenschappen die specifiek zijn voor de Luminantiemonsteringsgegevens. Het plaatsen van het *Gebruik in het 1} attributenbezit van het Onderzoek {aan `Yes` maakt de attributen doorzoekbaar in zowel [!DNL Live Search] als inheemse Adobe Commerce.*
 
 | Kenmerkcode | Doorzoekbaar | Gebruiken in gelaagde navigatie |
 |--- |--- |--- |

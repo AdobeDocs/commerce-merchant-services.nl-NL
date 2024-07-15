@@ -1,9 +1,10 @@
 ---
-title: "[!DNL SaaS Data Export Extension] Opmerkingen bij de release"
-description: De meest recente releasegegevens voor [!DNL Data Export Extension] voor Adobe Commerce.
+title: '[!DNL SaaS Data Export Extension] Opmerkingen bij de release'
+description: De recentste versieinformatie voor  [!DNL Data Export Extension]  voor Adobe Commerce.
 feature: Services, Release Notes
 recommendations: noCatalog
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+exl-id: 0c7aeeda-e8a6-4740-b466-0661a6d2df07
+source-git-commit: 42a9ea0f62f35db451cd3e780adf530d0699a638
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 0%
@@ -12,13 +13,13 @@ ht-degree: 0%
 
 # [!DNL SaaS Data Export] Opmerkingen bij de release Extension
 
-In deze releaseopmerkingen worden de meest recente versies van de [!DNL SaaS data export] extensie. Er wordt ondersteuning geboden voor de belangrijkste uitgebrachte versie. Opmerkingen bij de release voor oudere versies worden ter referentie verschaft.
+In deze releaseopmerkingen worden de nieuwste versies van de extensie [!DNL SaaS data export] beschreven. Er wordt ondersteuning geboden voor de belangrijkste uitgebrachte versie. Opmerkingen bij de release voor oudere versies worden ter referentie verschaft.
 
 Updates zijn:
 
-![Nieuw](../assets/new.svg) Nieuwe functies
-![Repareren](../assets/fix.svg) Oplossingen en verbeteringen
-![Bug](../assets/bug.svg) Bekende problemen
+![ Nieuwe ](../assets/new.svg) Nieuwe eigenschappen
+![ bevestig ](../assets/fix.svg) Bevestigingen en verbeteringen
+![ Bug ](../assets/bug.svg) Bekende kwesties
 
 
 >[!NOTE]
@@ -29,68 +30,68 @@ Updates zijn:
 
 ## 103.3.5 Release
 
-![Repareren](../assets/fix.svg) Vastgestelde gebiedsdeel voor recentste compatibele versie van de gegevensuitvoer voor de gemeenschappelijke module SaaS.
+![ bevestig ](../assets/fix.svg) Vastgestelde gebiedsdeel voor recentste compatibele versie van de gegevensuitvoer voor de gemeenschappelijke module SaaS.
 
-![Repareren](../assets/fix.svg) Vervangen `ScopeConfig` instantie met `ServiceConfigInterface` om verschillende de dienstconfiguraties te steunen.
+![ verbeter ](../assets/fix.svg) Vervangen `ScopeConfig` instantie met `ServiceConfigInterface` om verschillende de dienstconfiguraties te steunen.
 
 ## 103.3.4 Release
 
-![Repareren](../assets/fix.svg) Verbeter Commerce SaaS gegevens het uitvoerregistreren door meer details over het opnieuw indexeren proces toe te voegen.
+](../assets/fix.svg) verbeter Commerce SaaS gegevens het uitvoerregistreren door meer details over het opnieuw indexeren proces toe te voegen.![
 
 ## 103.3.3 Release
 
-![Nieuw](../assets/new.svg) Bij het exporteren van SaaS-gegevens worden nu EAV-kenmerken (Identity-Attribute-Value) voor de metagegevensquery voor kenmerken in het cachegeheugen opgeslagen.
+![ Nieuwe ](../assets/new.svg) de gegevensuitvoer SaaS nu caches Entiteit-Attributen-Waarde (EAV) attributen voor de vraag van attributenmeta-gegevens.
 
-![Repareren](../assets/fix.svg) Het probleem waarbij de `InventoryStockStatus` feed is niet opgeslagen bij opnieuw proberen als het product is verwijderd.
+![ bevestig ](../assets/fix.svg) een kwestie waar het `InventoryStockStatus` voer niet werd bewaard bij opnieuw proberen als het product werd geschrapt.
 
 ## 103.3.2 Release
 
-![Repareren](../assets/fix.svg) Het probleem waarbij de `modifiedAt` veld ontbreekt in verwijderde entiteitsfeeds.
+![ bevestig ](../assets/fix.svg) een kwestie waar het `modifiedAt` gebied van verwijderde entiteitsvoer mist.
 
 ## 103.3.1 Release
 
-![Repareren](../assets/fix.svg) Probleem verholpen dat een `Invalid Template File` bericht dat tijdens productfeed wordt weergegeven wanneer de Page Builder wordt geïnstalleerd.
+![ bevestig ](../assets/fix.svg) een kwestie die een `Invalid Template File` bericht veroorzaakte om tijdens productvoer te verschijnen die opnieuw indexeert wanneer de Bouwer van de Pagina wordt geïnstalleerd.
 
 ## 103.3.0 Release
 
-![Nieuw](../assets/new.svg) Gegigreerde directe de voederlijsten van de uitvoer aan de verenigde structuur:
-`id`, `source_entity_id`, `feed_id`, `modified_at`, `is_deleted`, `status`, `feed_data`, `feed_hash`, `errors`
+![ Nieuwe ](../assets/new.svg) Gemigreerde directe de voederlijsten van de uitvoer aan de verenigde structuur:
+`id` , `source_entity_id` , `feed_id` , `modified_at` , `is_deleted` , `status` , `feed_data` , `feed_hash` , `errors`
 
-![Nieuw](../assets/new.svg) De gemigreerde catalogus en inventarisvoer naar de directe exportoplossing.
+![ Nieuwe ](../assets/new.svg) Gemigreerde catalogus en inventarisvoer aan de directe uitvoeroplossing.
 
-![Nieuw](../assets/new.svg) Naam van directe exportfeed is gewijzigd in snijtaken naar `*_feed_resend_failed_items`.
+![ Nieuw ](../assets/new.svg) anders genoemd directe voer voer voer schaafbanen aan `*_feed_resend_failed_items`.
 
-![Nieuw](../assets/new.svg) Naam van directe exportfeed is gewijzigd en logtabellen worden gewijzigd.
+![ Nieuw ](../assets/new.svg) hernoemde directe de uitvoervoer en veranderingslogboeklijsten.
 
-![Repareren](../assets/fix.svg) Set `modified_at` veld in voedergegevens alleen voor diervoeders die dit vereisen.
+](../assets/fix.svg) Repareer `modified_at` gebied van de Reeks ![ {in voedergegevens slechts voor voer dat het vereist.
 
-![Repareren](../assets/fix.svg) Wijzig de `productAttributes` query om alleen productkenmerken op te halen.
+![ verbeter ](../assets/fix.svg) wijzig de `productAttributes` vraag om slechts productattributen terug te winnen.
 
 ## 103.2.6 Release
 
-![Repareren](../assets/fix.svg) Probleem verholpen waarbij feeds niet opnieuw konden worden genummerd wanneer tabellen een voorvoegsel hadden.
+![ bevestig ](../assets/fix.svg) een kwestie die voer verhinderde opnieuw te worden gefixeerd wanneer de lijsten een prefix hebben.
 
 ## 103.2.5 Release
 
-![Repareren](../assets/fix.svg) De query voor Prijs is geoptimaliseerd.
+![ bevestig ](../assets/fix.svg) optimaliseerde de vraag van de Prijs.
 
 ## 103.2.4 Release
 
-![Repareren](../assets/fix.svg) Correctie van onjuiste voorraadstatus die werd weergegeven voor een product wanneer Commerce Inventory management werd ingeschakeld.
+![ bevestig ](../assets/fix.svg) onjuiste status van de Voorraad die voor een product werd getoond wanneer Commerce Inventory management wordt toegelaten.
 
 ## 103.2.3 Release
 
-![Repareren](../assets/fix.svg) Speciale prijzen op websiteniveau vastgesteld.
-![Repareren](../assets/fix.svg) Mutex toegevoegd voor alle feeds die worden verwerkt.
+![ bevestig ](../assets/fix.svg) Vaste prijs van websiteniveau.
+](../assets/fix.svg) Toegevoegde mutex van 0} herstellen {voor alle voer dat wordt verwerkt.![
 
 
 ## 103.2.2 Release
 
-![Repareren](../assets/fix.svg) Verbeterde batchstrategie voor feeds voor grote catalogi. De batchtabel is nu gevuld met een beperkt aantal id&#39;s om het geheugengebruik te verminderen.
+![ verbeter ](../assets/fix.svg) Verbeterde feeds batchstrategie voor grote catalogi. De batchtabel is nu gevuld met een beperkt aantal id&#39;s om het geheugengebruik te verminderen.
 
-![Repareren](../assets/fix.svg) Elimineerde harde afhankelijkheid van CommerceInventoryDataExporter aan modules MSI.
+](../assets/fix.svg) Elimineerde harde gebiedsdeel van CommerceInventoryDataExporter aan modules MSI.![
 
-![Repareren](../assets/fix.svg) Verbeterd `commerce-data-exporter` logboeken om meer informatie te verzamelen en te organiseren door verschillende exportstadia.
+](../assets/fix.svg) Verbeterde `commerce-data-exporter` logboeken van 0} herstellen {om meer informatie te verzamelen en door verschillende het uitvoeren stadia te organiseren.![
 
 ## 103.2.1 Release
 
@@ -99,4 +100,3 @@ Updates zijn:
 ## 103.2.0 Release
 
 - Multithread-gegevenssync voor producten en prijzen toegevoegd.
-

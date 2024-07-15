@@ -18,6 +18,6 @@ De volgende punten zijn recente opmerkelijke veranderingen in de documentatie:
 
 | Service | Wijzigen | Type |
 | -- | -- | -- |
-| [**Catalogusservice**](../live-search/overview.md) | De [Belastingen weergeven met Catalog Service en API-net](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/taxes.html) onderwerp. | Nieuw onderwerp |
+| [**de Dienst van de Catalogus**](../live-search/overview.md) | Toegevoegd de [ Belastingen van de Vertoning met de Dienst van de Catalogus en het 1} onderwerp van het Netwerk API.](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/taxes.html) | Nieuw onderwerp |
 
 Deze tabel wordt bijgewerkt op de eerste maandag van elke maand.

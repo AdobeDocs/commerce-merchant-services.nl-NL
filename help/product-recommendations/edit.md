@@ -4,7 +4,7 @@ description: Leer hoe u een productaanbeveling kunt bewerken.
 exl-id: 36fd6d3a-74f8-4510-a187-a2a91742cd1a
 source-git-commit: e7c3d1ab49ee9469e3312321f6d96446840d0778
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '428'
 ht-degree: 0%
 
 ---
@@ -19,37 +19,37 @@ Op de pagina Aanbeveling bewerken kunt u de afzonderlijke instellingen van de aa
 - [Plaatsing en positie](#placement)
 - [Filterproducten](#filters)
 
-In de voorvertoning aan de rechterkant van de pagina ziet u hoe de aanbeveling met de huidige instellingen in de winkel kan worden weergegeven. De _Voorvertoning van aanbevolen producten_ blijft ter referentie zichtbaar wanneer u omlaag schuift op de pagina. In de voorvertoning worden voor elk geretourneerd product een miniatuurafbeelding, de productnaam, SKU, de prijs en het resultaattype weergegeven. Het resultaattype geeft aan of er voldoende primaire gedragsgegevens zijn om de aanbeveling te genereren, of dat er back-upgedragsgegevens worden gebruikt.
+In de voorvertoning aan de rechterkant van de pagina ziet u hoe de aanbeveling met de huidige instellingen in de winkel kan worden weergegeven. De _geadviseerde productvoorproef_ blijft zichtbaar voor verwijzing aangezien u neer de pagina scrolt. In de voorvertoning worden voor elk geretourneerd product een miniatuurafbeelding, de productnaam, SKU, de prijs en het resultaattype weergegeven. Het resultaattype geeft aan of er voldoende primaire gedragsgegevens zijn om de aanbeveling te genereren, of dat er back-upgedragsgegevens worden gebruikt.
 
-![Recommendations bewerken](assets/edit-recommendation.png)
+![ geef Recommendations ](assets/edit-recommendation.png) uit
 
 ## Een aanbeveling bewerken
 
-1. Op de _Beheerder_ zijbalk, ga naar **Marketing** > _Aanbiedingen_ > **Product Recommendations**.
+1. Op _Admin_ sidebar, ga **Marketing** > _Bevorderingen_ > **Recommendations van het Product**.
 
 1. Selecteer de aanbeveling die u wilt bewerken.
 
-1. Klikken **Bewerken**. Volg vervolgens de onderstaande instructies om de gewenste wijzigingen aan te brengen.
+1. Klik **uitgeven**. Volg vervolgens de onderstaande instructies om de gewenste wijzigingen aan te brengen.
 
-1. Klik op **Wijzigingen opslaan**.
+1. Wanneer volledig, klik **sparen Veranderingen**.
 
 ### Naam van aanbeveling {#name}
 
 Kies een beschrijvende naam die het doel van de aanbeveling aangeeft. De naam is bedoeld voor interne referentie en wordt niet weergegeven in de winkelruimte.
 
-![Naam bewerken](assets/edit-name.png)
+![ geef naam ](assets/edit-name.png) uit
 
 ### Label voor Storefront {#label}
 
 Voer in de winkel de tekst in die u als label voor de aanbevolen eenheid wilt gebruiken.
 
-![Label bewerken](assets/edit-storefront-label.png)
+![ geef etiket ](assets/edit-storefront-label.png) uit
 
 ### Aantal producten {#number}
 
 Pas de schuifregelaar aan om maximaal 20 producten weer te geven in de aanbevolen eenheid.
 
-![Aantal producten bewerken](assets/edit-number-of-products.png)
+![ geef aantal producten ](assets/edit-number-of-products.png) uit
 
 ### Plaatsing en positie {#placement}
 
@@ -58,23 +58,23 @@ Pas de schuifregelaar aan om maximaal 20 producten weer te geven in de aanbevole
    - Onderaan de hoofdinhoud
    - Bovenaan de hoofdinhoud
 
-   ![Plaatsing bewerken](assets/edit-placement.png)
+   ![ geef plaatsing ](assets/edit-placement.png) uit
 
-1. Als u de volgorde van de aanbevelingen in de eenheid wilt wijzigen, gebruikt u de opdracht **Verplaatsen** ![Selector verplaatsen](assets/icon-move.png) besturingselement om de aanbevelingen naar de gewenste positie te slepen.
+1. Om de orde van de aanbevelingen te veranderen die in de eenheid inbegrepen zijn, gebruik de **Beweging** ![ de selecteur van de Beweging ](assets/icon-move.png) controle om de aanbevelingen in positie te slepen.
 
-   ![Positie bewerken](assets/edit-position.png)
+   ![ geeft positie ](assets/edit-position.png) uit
 
 ### Filterproducten {#filters}
 
-Wijzigingen in het product [filters](filters.md) worden weergegeven in de _Voorvertoning van aanbevolen producten_. Alleen producten die overeenkomen met inclusiefilters mogen worden aanbevolen. Producten die overeenkomen met uitsluitingsfilters worden niet aanbevolen.
+Om het even welke veranderingen die aan product [ filters ](filters.md) worden aangebracht worden weerspiegeld in de _geadviseerde productvoorproef_. Alleen producten die overeenkomen met inclusiefilters mogen worden aanbevolen. Producten die overeenkomen met uitsluitingsfilters worden niet aanbevolen.
 
-De _Inclusies_ en _Uitsluitingen_ tabs bevatten de beschikbare filters van elk type. In de lijst wordt elk actief filter gemarkeerd met een blauwe stip.
+De _3} lusjes van de Uitbreidingen_ en _van de Uitsluitingen {maken een lijst van de beschikbare filters van elk type._ In de lijst wordt elk actief filter gemarkeerd met een blauwe stip.
 
 - Klik op de filternaam om de details van elk filter weer te geven.
-- Als u de filterstatus wilt wijzigen, stelt u de **Filter inschakelen** schakelen naar de `on` of `off` positie.
+- Om de filterstatus te veranderen, plaats **filter** knevel aan de `on` of `off` positie toelaten.
 
-![Filters bewerken](assets/edit-filters.png)
+![ geeft filters ](assets/edit-filters.png) uit
 
-De filterinstellingen beschrijven de producten die in de aanbevolen eenheid moeten worden opgenomen of uitgesloten. Bijvoorbeeld de _Categorie_ Met instellingen voor filteropname wordt het systeem verteld dat alleen producten uit de geselecteerde categorieën moeten worden opgenomen.
+De filterinstellingen beschrijven de producten die in de aanbevolen eenheid moeten worden opgenomen of uitgesloten. Bijvoorbeeld, vertellen de _montages van de de filteropneming van de Categorie_ het systeem om producten slechts van de geselecteerde categorieën te omvatten.
 
-![Categoriefilter bewerken](assets/edit-filter-category.png)
+![ geef categoriefilter ](assets/edit-filter-category.png) uit

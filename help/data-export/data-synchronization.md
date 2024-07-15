@@ -1,6 +1,6 @@
 ---
 title: Gegevens synchroniseren met SaaS-gegevensexport
-description: Meer informatie over [!DNL SaaS Data Export] verzamelt en synchroniseert gegevens tussen Adobe Commerce-instanties en verbonden SaaS-services.
+description: Leer hoe  [!DNL SaaS Data Export]  gegevens tussen de instanties van Adobe Commerce en de verbonden diensten verzamelt en synchroniseert SaaS.
 role: Admin, Developer
 recommendations: noCatalog
 exl-id: 530a6ed7-46ec-45fc-94e9-c850168e8aed
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 Wanneer u een Commerce-service installeert waarvoor gegevens moeten worden geëxporteerd, zoals Catalog Service, Live Search of Product Recommendations, wordt een verzameling Saas-modules voor gegevensexport geïnstalleerd om het proces voor gegevensverzameling en -synchronisatie te beheren.
 
-Bij het exporteren van SaaS-gegevens worden productgegevens doorlopend van een Adobe Commerce-instantie naar het Commerce Services-platform verplaatst om de gegevens up-to-date te houden. Product Recommendations vereist bijvoorbeeld de huidige catalogusinformatie om aanbevelingen met juiste namen, prijzen en beschikbaarheid correct te kunnen retourneren. Gebruik de [Gegevensbeheerdashboard](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/data-services/catalog-sync) observeren en beheren van het synchronisatieproces, of de bevel-lijn interface om een synchronisatie teweeg te brengen en productgegevens voor gebruik door Commerce Services te herindexeren.
+Bij het exporteren van SaaS-gegevens worden productgegevens doorlopend van een Adobe Commerce-instantie naar het Commerce Services-platform verplaatst om de gegevens up-to-date te houden. Product Recommendations vereist bijvoorbeeld de huidige catalogusinformatie om aanbevelingen met juiste namen, prijzen en beschikbaarheid correct te kunnen retourneren. Gebruik het [ dashboard van het Beheer van Gegevens ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/data-services/catalog-sync) om het synchronisatieproces waar te nemen en te beheren, of de bevel-lijn interface om een synchronisatie teweeg te brengen en productgegevens voor consumptie door de Diensten van Commerce opnieuw te indexeren.
 
 Het volgende diagram toont de de gegevensuitvoerstroom van SaaS.
 
-![Verzamel- en synchronisatiestroom voor SaaS-gegevensexport voor Adobe Commerce](assets/data-export-flow.png){width="900" zoomable="yes"}
+![ de gegevensuitvoerinzameling en synchronisatiestroom van SaaS voor Adobe Commerce ](assets/data-export-flow.png){width="900" zoomable="yes"}
 
 De belangrijkste onderdelen van de SaaS-gegevensexportstroom zijn:
 
@@ -31,9 +31,9 @@ De belangrijkste onderdelen van de SaaS-gegevensexportstroom zijn:
 
 De gegevensuitvoer van SaaS heeft twee wijzen om entiteitsvoer te verwerken:
 
-- **Modus Direct exporteren**—In deze modus worden gegevens verzameld en onmiddellijk naar de Commerce Service verzonden in één iteratie. Deze modus versnelt de levering van entiteitsupdates aan de Commerce Service en verkleint de opslaggrootte van de voedertabellen.
+- **Onmiddellijke de uitvoerwijze** - op deze wijze, wordt het gegeven verzameld en onmiddellijk verzonden naar de Dienst van Commerce in één enkele herhaling. Deze modus versnelt de levering van entiteitsupdates aan de Commerce Service en verkleint de opslaggrootte van de voedertabellen.
 
-- **Oudere exportmodus**—In deze modus worden gegevens verzameld in één proces. Dan, verzendt een kroonbaan de verzamelde gegevens naar de verbonden handelsdiensten. In de ingangen van het gegevensuitvoerlogboek, de voer die de erfeniswijze gebruiken wordt geëtiketteerd `(legacy)`.
+- **Verouderde de uitvoerwijze** - op deze wijze, wordt het gegeven verzameld in één enkel proces. Dan, verzendt een kroonbaan de verzamelde gegevens naar de verbonden handelsdiensten. In gegevensexportlogitems worden feeds die de oude modus gebruiken, aangeduid met `(legacy)` .
 
 ## Synchronisatietypen
 
@@ -54,41 +54,41 @@ Met gedeeltelijke synchronisatie, verzendt de gegevensuitvoer van SaaS automatis
 Bij het exporteren van gegevens worden de volgende uitsnijdtaken gebruikt om de gedeeltelijke synchronisatie te automatiseren.
 
 - &quot;index&quot; voor taken van de structuurgroep:
-   - De `indexer_reindex_all_invalid` taak wijzigt alle ongeldige feeds opnieuw. Het is een standaard Adobe Commerce-bouwtaak.
-   - De `saas_data_exporter` taak is voor verouderde exportfeeds.
-   - De `sales_data_exporter` Deze taak is specifiek voor de exportfeed van verkoopgegevens.
+   - De `indexer_reindex_all_invalid` -taak wijzigt alle ongeldige feeds opnieuw. Het is een standaard Adobe Commerce-bouwtaak.
+   - De `saas_data_exporter` -taak is bedoeld voor verouderde exportfeeds.
+   - De `sales_data_exporter` -taak is specifiek voor de exporteerfeed met verkoopgegevens.
 
 Deze banen lopen elke minuut.
 
 Voor gedeeltelijke synchronisatie is de volgende configuratie vereist voor de Commerce-toepassing:
 
-- [Taakplanning is ingeschakeld via uitsnijdtaken](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html)
+- [ Taak het plannen wordt toegelaten via cron banen ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html)
 
-- Alle SaaS gegevens de uitvoerindexen worden gevormd binnen `Update by Schedule` -modus.
+- Alle SaaS-indexen voor gegevensexport worden geconfigureerd in de `Update by Schedule` -modus.
 
-  In SaaS-gegevensexportversie 103.1.0 en hoger: `Update by Schedule` De modus is standaard ingeschakeld. U kunt indexconfiguratie op de server verifiëren gebruikend het bevel van Commerce CLI, `bin/magento indexer:show-mode | grep -i feed`
+  In SaaS-gegevensexportversie 103.1.0 en hoger is de `Update by Schedule` -modus standaard ingeschakeld. U kunt de indexconfiguratie op de server verifiëren met de Commerce CLI-opdracht, `bin/magento indexer:show-mode | grep -i feed`
 
 ### Opnieuw Mislukte items synchroniseren
 
 Bij Opnieuw proberen mislukte items synchroniseren wordt een afzonderlijk proces gebruikt om items opnieuw te verzenden die niet konden worden gesynchroniseerd vanwege fouten tijdens het synchronisatieproces, bijvoorbeeld een toepassingsfout, netwerkverstoring of SaaS-servicefout. De implementatie voor deze synchronisatie is ook gebaseerd op uitsnijdtaken.
 
-- `resync_failed_feeds_data_exporter` banen voor de cron-groep:
-   - De `<feed name>_feed_resend_failed_feeds_items` taak herstelt items die niet gesynchroniseerd zijn, bijvoorbeeld `products_feed_resend_failed_items`.
+- `resync_failed_feeds_data_exporter` taken voor de uitsnijdgroep:
+   - De `<feed name>_feed_resend_failed_feeds_items` -taak herstelt items die niet konden worden gesynchroniseerd, bijvoorbeeld `products_feed_resend_failed_items` .
 
 ### Het synchronisatieproces weergeven en beheren
 
 De meeste synchronisatieactiviteiten worden automatisch verwerkt op basis van de toepassingsconfiguratie. De SaaS-gegevensexport biedt echter ook tools om het proces te beheren.
 
-- Admin-gebruikers kunnen de voortgang van de synchronisatie weergeven en volgen en informatie over de gegevens ophalen via het [Gegevensbeheerdashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard).
+- De gebruikers Admin kunnen synchronisatievooruitgang bekijken en volgen en informatie over de gegevens van het [ dashboard van het Beheer van Gegevens ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard) krijgen.
 
-- Ontwikkelaars, systeemintegrators of beheerders met toegang tot de Commerce-toepassingsserver kunnen het synchronisatieproces en de gegevensinvoer beheren met behulp van het opdrachtregelprogramma van Adobe Commerce (CLI). Zie [Opdrachtverwijzing gegevens exporteren](data-export-cli-commands.md).
+- Ontwikkelaars, systeemintegrators of beheerders met toegang tot de Commerce-toepassingsserver kunnen het synchronisatieproces en de gegevensinvoer beheren met behulp van het opdrachtregelprogramma van Adobe Commerce (CLI). Zie {de Verwijzing van het Bevel van de Uitvoer van 0} Gegevens ](data-export-cli-commands.md).[
 
 ### Configuratie Commerce-toepassing controleren
 
 Gedeeltelijke synchronisatie en Opnieuw mislukte items synchroniseren werken alleen als het Commerce-exemplaar correct is geconfigureerd. De configuratie wordt meestal voltooid wanneer u de Commerce Service instelt. Controleer de volgende configuratie als de gegevensexport niet correct werkt.
 
-- [Bevestig dat Cron-taken worden uitgevoerd](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues).
+- [ Bevestig dat de bouwbanen ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues) lopen.
 
-- Controleer of de indexen worden uitgevoerd vanaf de [Beheerder](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) of door het Commerce CLI bevel te gebruiken `bin/magento indexer:info`.
+- Verifieer dat de indexen van [ Admin ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) lopen of door het bevel van Commerce CLI te gebruiken `bin/magento indexer:info`.
 
-- Controleer of de indexeerprogramma&#39;s voor de volgende feeds zijn ingesteld op `Update by Schedule`: Cataloguskenmerken, Product, Productoverschrijvingen en Productvariabele. U kunt de indexen controleren vanuit [Indexbeheer](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) in de Admin of met gebruik van de CLI (`bin/magento indexer:show-mode | grep -i feed`).
+- Controleer of de indexeerders voor de volgende feeds zijn ingesteld op `Update by Schedule` : Cataloguskenmerken, Product, Productoverschrijvingen en Productvariabele. U kunt de indexen van [ Beheer van de Index ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) in Admin controleren of CLI gebruiken (`bin/magento indexer:show-mode | grep -i feed`).

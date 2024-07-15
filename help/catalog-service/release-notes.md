@@ -1,6 +1,6 @@
 ---
-title: '''[!DNL Catalog Service] Opmerkingen bij de release'
-description: De meest recente releasegegevens voor [!DNL Catalog Service] voor Adobe Commerce.
+title: '[!DNL Catalog Service] Opmerkingen bij de release'
+description: De recentste versieinformatie voor  [!DNL Catalog Service]  voor Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
 source-git-commit: 6ca91feefbfc2fbc4d5851040b9f1ca3de6a6560
@@ -12,23 +12,23 @@ ht-degree: 0%
 
 # [!DNL Catalog Service] Opmerkingen bij de release
 
-In deze releaseopmerkingen worden de meest recente versies van [!DNL Catalog Service].
+In deze releaseopmerkingen worden de meest recente versies van [!DNL Catalog Service] beschreven.
 Er wordt ondersteuning geboden voor de belangrijkste uitgebrachte versie. Opmerkingen bij de release voor oudere versies worden ter referentie verschaft.
 Updates zijn:
 
-![Nieuw](../assets/new.svg) Nieuwe functies
-![Repareren](../assets/fix.svg) Oplossingen en verbeteringen
-![Bug](../assets/bug.svg) Bekende problemen
+![ Nieuwe ](../assets/new.svg) Nieuwe eigenschappen
+![ bevestig ](../assets/fix.svg) Bevestigingen en verbeteringen
+![ Bug ](../assets/bug.svg) Bekende kwesties
 
 ## Huidige hoofdversie
 
 ### V1.19 Release
 
-_23 mei 2024_
+_Mei 23, 2024_
 
-![Repareren](../assets/fix.svg) <!--DATA-5033-->De `InStock` markering voor optiewaarden houdt nu rekening met het bereik `enabled` status van de productvariant.
+![ Repareren ](../assets/fix.svg) <!--DATA-5033--> De `InStock` vlag voor optiewaarden neemt nu rekening met het scoped `enabled` status van de productvariant.
 
-![Repareren](../assets/fix.svg) <!--DATA-5888-->Voeg ondersteuning toe voor productprijzen waarvoor grote getallen (maximaal 16 cijfers) en een grotere decimale precisie (maximaal 4 cijfers achter de komma) vereist zijn. Als u de prijsconfiguratie-updates wilt toepassen op uw bestaande catalogus, synchroniseert u de catalogusgegevens opnieuw vanuit de [Gegevensbeheerdashboard](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard)of door de [Adobe Commerce opdrachtregelinterface](../landing/catalog-sync.md#command-line-interface).
+![ Repareren ](../assets/fix.svg) <!--DATA-5888--> voegt steun voor productprijzen toe die grote aantallen (tot 16 cijfers) en grotere decimale precisie (tot 4 decimalen) vereisen. Om de updates van de prijsconfiguratie op uw bestaande catalogus toe te passen, hersynchroniseer catalogusgegevens van het [ dashboard van het Beheer van Gegevens ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard), of door het [ bevel-lijn van Adobe Commerce interface ](../landing/catalog-sync.md#command-line-interface) te gebruiken.
 
 #### Bekende beperkingen
 
@@ -44,7 +44,7 @@ Los de volgende beperkingen op met behulp van API Mesh en de Core GraphQL API:
 * Tier-prijsstelling
 * Bundel van producten tegen vaste prijzen
 
-Zie voor meer informatie en voorbeelden [Catalogusservice en API-net](mesh.md)
+Voor details en voorbeelden, zie [ de Dienst van de Catalogus en API Net ](mesh.md)
 
 ## Vorige versies
 
@@ -54,28 +54,28 @@ Zie voor meer informatie en voorbeelden [Catalogusservice en API-net](mesh.md)
 
 _11 april 2024_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) Toegevoegde ondersteuning voor PHP 8.3.
+![ Nieuwe ](../assets/new.svg) Toegevoegde steun voor PHP 8.3.
 
-![Nieuw](../assets/new.svg) De [`products`](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/) en [`refineProduct`](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/) query &#39; s retourneren nu aanpasbare optiegegevens voor zowel eenvoudige als complexe producten .<!--DATA-5538-->
+![ Nieuw ](../assets/new.svg) de [`products` ](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/) en [`refineProduct` ](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/) vragen keren nu klantgerichte optiesgegevens voor zowel eenvoudige als complexe producten terug.<!--DATA-5538-->
 
 ### V1.17 Release
 
-_22 februari 2024_
+_22 Februari, 2024_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) De [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) is nu beschikbaar. Dit vernieuwde dashboard biedt inzichten in gegevensstromen voor [!DNL Product Recommendations], [!DNL Live Search], en [!DNL Catalog Service]. Ondersteuning voor deze functie is geïntroduceerd in versie 3.1.0 van het dialoogvenster `catalog-service` metapakket.
+![ Nieuw ](../assets/new.svg) [[!DNL Data Management Dashboard] ](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) is nu beschikbaar. Dit vernieuwde dashboard biedt inzichten in gegevensstromen voor [!DNL Product Recommendations] , [!DNL Live Search] en [!DNL Catalog Service] . Ondersteuning voor deze functie is geïntroduceerd in v3.1.0 van het `catalog-service` -pakket.
 
 ### V1.16 Release
 
-_13 februari 2024_
+_13 Februari, 2024_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) Productvideo&#39;s worden nu ondersteund door de API voor catalogusservice.
-![Repareren](../assets/fix.svg) Opties buiten de voorraad worden nu weergegeven in de PDP-widget.
+![ de Nieuwe ](../assets/new.svg) video&#39;s van het Product worden nu gesteund door de Dienst API van de Catalogus.
+](../assets/fix.svg) de uit-van-voorraad opties van 0} herstellen {worden nu getoond in PDP widget.![
 
 #### Bekende beperkingen
 
@@ -94,121 +94,122 @@ De volgende beperkingen kunnen worden opgelost door gebruik te maken van API Mes
 
 _12 oktober 2023_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) Catalogusservice ondersteunt de `inStock` markering voor productvarianten.
-![Nieuw](../assets/new.svg) De `urlKey` en `externalId` er zijn velden toegevoegd aan het GraphQL-schema.
-![Nieuw](../assets/new.svg) Downloadbare producten en cadeaukaarten worden nu ondersteund.
+![ Nieuwe ](../assets/new.svg) Dienst van de Catalogus steunt de `inStock` vlag voor productvarianten.
+![ Nieuw ](../assets/new.svg) de `urlKey` en `externalId` gebieden zijn toegevoegd aan het schema van GraphQL.
+![ Nieuwe ](../assets/new.svg) Downloadbare producten en geschenkkaarten worden nu gesteund.
 
 ### V1.12 Release
 
-_19 september 2023_
+_19 september, 2023_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) Catalogusservice gebruikt nu [Prijsindexering SaaS](../price-index/price-indexing.md).
-![Repareren](../assets/fix.svg) Deze versie bevat insectenmoeilijke situaties en verbeteringen aan de de dienstkant.
+![ Nieuwe ](../assets/new.svg) Dienst van de Catalogus gebruikt nu [ Prijs het indexeren SaaS ](../price-index/price-indexing.md).
+![ Repareren ](../assets/fix.svg) Deze versie bevat insectenmoeilijke situaties en verbeteringen op de de dienstkant.
 
 ### V1.11 Release
 
 _18 juli 2023_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) Catalogusservice biedt nu ondersteuning voor de [`recommendations`](https://developer.adobe.com/commerce/services/graphql/recommendations/recommendations/) GraphQL-query voor Product Recommendations.
+![ Nieuwe ](../assets/new.svg) Dienst van de Catalogus steunt nu de [`recommendations` ](https://developer.adobe.com/commerce/services/graphql/recommendations/recommendations/) vraag van GraphQL voor Product Recommendations.
 
 ### V1.10 Release
 
-_27 juni 2023_
+_Juni 27, 2023_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) De API voor catalogusservice ondersteunt nu `related products`.
+![ Nieuw ](../assets/new.svg) De dienst API van de Catalogus steunt nu `related products`.
 
 ### V1.7-release
 
 _12 april 2023_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) De Catalogusservice schoont verwijderde productvarianten op.
-![Repareren](../assets/fix.svg) Verbeterde schaalbaarheid en prestaties van de infrastructuur.
+![ Nieuwe ](../assets/new.svg) Dienst van de Catalogus ontruimt nu geschrapte productvarianten.
+![ verbeter ](../assets/fix.svg) scalability van de Infrastructuur en prestatiesverbeteringen.
 
 ### V1.6-release
 
-_28 maart 2023_
+_Maart 28, 2023_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) Stalen toegevoegd aan de [`products`](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/) query.
-![Nieuw](../assets/new.svg) De mogelijkheid om te worden toegevoegd `entityId` gebruiken [API-net](mesh.md).
+![ Nieuwe ](../assets/new.svg) Toegevoegde stalen aan de [`products` ](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/) vraag.
+![ Nieuw ](../assets/new.svg) voegde de capaciteit toe om `entityId` te krijgen gebruikend [ API Net ](mesh.md).
 
 ### V1.5-release
 
-_6 maart 2023_
+_Maart 6, 2023_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) Toegevoegd [`categories`](https://developer.adobe.com/commerce/services/graphql/catalog-service/categories/) GraphQL-functionaliteit
-![Repareren](../assets/fix.svg) Verbeterde prestaties en API-schaalbaarheid.
+![ Nieuwe ](../assets/new.svg) Toegevoegde [`categories` ](https://developer.adobe.com/commerce/services/graphql/catalog-service/categories/) functionaliteit van GraphQL.
+![ verbeter ](../assets/fix.svg) Verbeterde prestaties en API scalability.
 
 ### V1.4 Release
 
-_7 februari 2023_
+_7 Februari, 2023_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) Gepubliceerde metapakket voor catalogusservices om installatiestappen te vereenvoudigen.
-![Repareren](../assets/fix.svg) Schaalbaarheid van API&#39;s en prestatieverbeteringen.
+![ Nieuwe ](../assets/new.svg) Gepubliceerde catalogus-dienst metapakket om installatiestappen te vereenvoudigen.
+![ bevestig ](../assets/fix.svg) API scalability en prestatiesverbeteringen.
 
 ### V1.3 Release
 
-_17 januari 2023_
+_Januari 17, 2023_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) Vereenvoudigde en verbeterde ervaring bij het instappen.
-![Nieuw](../assets/new.svg) Er zijn nieuwe eindpunten van de sandbox van de klant beschikbaar voor preproductietests.
-![Nieuw](../assets/new.svg) Ondersteuning toegevoegd voor virtuele producten.
-![Repareren](../assets/fix.svg) Schaalbaarheid van API&#39;s en prestatieverbeteringen.
+![ Nieuw ](../assets/new.svg) Vereenvoudigde en verbeterde de onboarding ervaring.
+![ Nieuwe ](../assets/new.svg) de nieuwe eindpunten van de klantenzandbak zijn beschikbaar voor preproductie het testen.
+![ Nieuwe ](../assets/new.svg) Steun die voor virtuele producten wordt toegevoegd.
+![ bevestig ](../assets/fix.svg) API scalability en prestatiesverbeteringen.
 
 ### V1.1-release
 
-_18 november 2022_
+_18 November, 2022_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) Catalogusservice biedt nu ondersteuning voor de Adobe [API-net](https://developer.adobe.com/graphql-mesh-gateway/).
-![Repareren](../assets/fix.svg) Verbeterde API-schaalbaarheid en algemene prestaties.
+![ Nieuwe ](../assets/new.svg) Dienst van de Catalogus steunt nu het 2} API Net van de Adobe ](https://developer.adobe.com/graphql-mesh-gateway/).
+[
+![ bevestig ](../assets/fix.svg) Verbeterde API scalability en algemene prestaties.
 
 ### V1.0-release
 
-_4 oktober 2022_
+_4 Oktober, 2022_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) Ondersteuning voor gebundelde en gegroepeerde producten.
-![Nieuw](../assets/new.svg) Extra B2B-zichtbaarheidsoverschrijvingen. De producten zijn nu doorzoekbaar en kunnen aan de kar voor specifieke klantengroepen worden toegevoegd.
-![Repareren](../assets/fix.svg) De service is nu stabieler en de prestaties zijn verbeterd.
+![ Nieuwe ](../assets/new.svg) steun nu gebundelde en gegroepeerde producten.
+![ Nieuwe ](../assets/new.svg) Toegevoegde B2B zichtoverschrijvingen. De producten zijn nu doorzoekbaar en kunnen aan de kar voor specifieke klantengroepen worden toegevoegd.
+](../assets/fix.svg) de Dienst van 0} Repareren {is nu stabieler en heeft betere prestaties.![
 
 ### 0.3 Release - Beta+
 
-_12 september 2022_
+_12 September, 2022_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) Afbeeldingen voor ondersteuning door varianten: productafbeeldingen worden geretourneerd op basis van de geselecteerde opties
-![Nieuw](../assets/new.svg) Rollen voor prijsondersteuning: alleen leden van specifieke klantengroepen de prijs van producten laten zien
-![Repareren](../assets/fix.svg) Verbeterde stabiliteit en prestaties van de dienst
-![Nieuw](../assets/new.svg) Updates worden ontvangen wanneer producten uit de catalogus worden verwijderd
+![ Nieuwe ](../assets/new.svg) Beelden voor variantsteun: de productbeelden zijn teruggekeerd gebaseerd op de geselecteerde opties
+![ Nieuwe ](../assets/new.svg) Rollen voor prijssteun: sta slechts leden van specifieke klantengroepen toe om de prijs van producten te zien
+![ bevestig ](../assets/fix.svg) Verbeterde stabiliteit en prestaties van de dienst
+![ Nieuwe ](../assets/new.svg) Updates worden ontvangen wanneer de producten van de catalogus worden geschrapt
 
 ### Beta Release
 
-_9 augustus 2022_
+_9 augustus, 2022_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) De `products` en `refineProduct` query&#39;s retourneren de volgende gegevens:
+![ Nieuw ](../assets/new.svg) de vragen `products` en `refineProduct` keren de volgende gegevens terug:
 
 * Vooraf gedefinieerde (systeem)productkenmerken.
 * Dynamische productkenmerken en filter deze op rol (pagina met productweergave/productlijst).

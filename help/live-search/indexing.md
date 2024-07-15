@@ -1,6 +1,6 @@
 ---
 title: "Indexing"
-description: "Meer informatie [!DNL Live Search] indexes product attribute properties."
+description: "Leer hoe  [!DNL Live Search]  de eigenschappen van het productattribuut van indexen."
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
 source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Indexeren
 
-De [!DNL Live Search] het indexeren proces leest door de catalogus voor productattributen en bouwt een index zodat de producten kunnen worden gezocht, worden gefiltreerd en snel worden voorgesteld.
+Het [!DNL Live Search] indexeringsproces leest door de catalogus voor productattributen en bouwt een index zodat de producten kunnen worden gezocht, worden gefiltreerd en snel worden voorgesteld.
 
 Eigenschappen van productkenmerken (metagegevens) bepalen:
 
@@ -19,40 +19,40 @@ Eigenschappen van productkenmerken (metagegevens) bepalen:
 * De vormgeving en het gedrag van de winkel
 * De gegevens die zijn opgenomen in gegevensoverdrachtsbewerkingen
 
-Het bereik van kenmerkmetagegevens is `website/store/store view`.
+Het bereik van kenmerkmetagegevens is `website/store/store view` .
 
-De [!DNL Live Search] API staat een cliënt toe om op om het even welk productattribuut te sorteren dat heeft [storefront, eigenschap](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) `Use in Search` instellen op `Yes` in Adobe Commerce Admin. Indien ingeschakeld, `Search Weight` en `Visible in Advanced Search` kan worden ingesteld voor het kenmerk.
+[!DNL Live Search] API staat een cliënt toe om door om het even welk productattribuut te sorteren dat het [ storefront bezit ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) `Use in Search` heeft die aan `Yes` in Adobe Commerce Admin wordt geplaatst. Indien ingeschakeld, kunnen `Search Weight` en `Visible in Advanced Search` worden ingesteld voor het kenmerk.
 
-[!DNL Live Search] geen verwijderde producten indexeert of producten die zijn ingesteld op `Not Visible Individually`.
+[!DNL Live Search] indexeert geen verwijderde producten of producten die zijn ingesteld op `Not Visible Individually` .
 
 >[!NOTE]
 >
-> Commerce-klanten met [!DNL Live Search] kan profiteren van snellere prijswijzigingen en synchronisatietijd op hun websites met de [SaaS-prijsindexer](../price-index/price-indexing.md).
+> De klanten van Commerce met [!DNL Live Search] kunnen uit snellere prijsveranderingen en synchronisatietijd op hun websites met [ SaaS prijsindexer ](../price-index/price-indexing.md) voordeel halen.
 
 ## Indexeringsleiding
 
-De client roept de zoekservice van de storefront aan om (filterbare, sorteerbare) indexmetagegevens op te halen. Alleen doorzoekbare productkenmerken met *Gebruiken in gelaagde navigatie* eigenschap ingesteld op `Filterable (with results)` en *Gebruiken voor sorteren in productaanbieding* instellen op `Yes` kan door de onderzoeksdienst worden geroepen.
-Om een dynamische vraag te construeren, moet de onderzoeksdienst weten welke attributen doorzoekbaar zijn en hun [gewicht](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search). [!DNL Live Search] geeft Adobe Commerce-zoekgewichten weer (1-10, waarbij 10 de hoogste prioriteit heeft). De lijst met gegevens die met de catalogusservice worden gesynchroniseerd en gedeeld, vindt u in het schema, dat wordt gedefinieerd in:
+De client roept de zoekservice van de storefront aan om (filterbare, sorteerbare) indexmetagegevens op te halen. Slechts doorzoekbare productattributen met het *Gebruik in Gelaagd die bezit van de Navigatie* aan `Filterable (with results)` wordt geplaatst en *Gebruik voor het Sorteren in het Lijst van het Product* aan `Yes` wordt geplaatst kan door de onderzoeksdienst worden geroepen.
+Om een dynamische vraag te construeren, moet de onderzoeksdienst weten welke attributen doorzoekbaar en hun [ gewicht ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search) zijn. [!DNL Live Search] geeft Adobe Commerce-zoekdikten (1-10, waarbij 10 de hoogste prioriteit heeft). De lijst met gegevens die met de catalogusservice worden gesynchroniseerd en gedeeld, vindt u in het schema, dat wordt gedefinieerd in:
 
 `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
 
-![[!DNL Live Search] indexeren, clientzoekdiagram](assets/indexing-pipeline.svg)
+![[!DNL Live Search] het indexeren diagram van het cliëntonderzoek ](assets/indexing-pipeline.svg)
 
-1. Handelaar controleren op [!DNL Live Search] machtiging.
+1. Controleer de handelaar op [!DNL Live Search] machtiging.
 1. Winkelweergaven ophalen met wijzigingen in kenmerkmetagegevens.
 1. Kenmerken voor indexering opslaan.
 1. Zoekindex opnieuw indexeren.
 
 ### Volledige index
 
-Wanneer [!DNL Live Search] is geconfigureerd en gesynchroniseerd tijdens het instappen, kan het tot 60 minuten duren om de eerste index te genereren. De index van grote catalogi kan langer duren. Het proces begint na `cron` verzendt het diervoeder en eindigt het lopen.
+Wanneer [!DNL Live Search] tijdens het instappen wordt gevormd en gesynchroniseerd, kan het tot 60 minuten duren om de aanvankelijke index te bouwen. De index van grote catalogi kan langer duren. Het proces begint nadat `cron` de feed heeft verzonden en de bewerking heeft voltooid.
 
 De volgende gebeurtenissen activeren een volledige synchronisatie en de opbouw van de index:
 
-* Onboarding [catalogusgegevenssync](install.md#synchronize-catalog-data)
+* Onboarding [ synchronisatie van catalogusgegevens ](install.md#synchronize-catalog-data)
 * Wijzigingen in metagegevens voor kenmerken
 
-Als u bijvoorbeeld het dialoogvenster `Use in Search` eigendom van de `color` kenmerk van `No` tot `Yes` wijzigt de metagegevens van het kenmerk in `searchable=true`en wordt een volledige synchronisatie en herindex geactiveerd. De volgende kenmerkmetagegevens activeren een volledige synchronisatie en worden opnieuw geordend wanneer ze worden gewijzigd:
+Als u bijvoorbeeld de eigenschap `Use in Search` van het kenmerk `color` wijzigt van `No` in `Yes` , worden de metagegevens van het kenmerk gewijzigd in `searchable=true` en wordt een volledige synchronisatie en herindex geactiveerd. De volgende kenmerkmetagegevens activeren een volledige synchronisatie en worden opnieuw geordend wanneer ze worden gewijzigd:
 
 * `filterableInSearch`
 * `searchable`
@@ -61,12 +61,12 @@ Als u bijvoorbeeld het dialoogvenster `Use in Search` eigendom van de `color` ke
 
 ### Streaming productupdates
 
-Nadat de eerste index is samengesteld tijdens [onboarding](install.md#synchronize-catalog-data), worden de volgende incrementele productupdates voortdurend gesynchroniseerd en opnieuw geïndexeerd:
+Nadat de aanvankelijke index tijdens [ onboarding ](install.md#synchronize-catalog-data) wordt gebouwd, worden de volgende stijgende productupdates onophoudelijk gesynchroniseerd en opnieuw bepaald:
 
 * Nieuwe producten toegevoegd aan de catalogus
 * Wijzigingen in productkenmerkwaarden
 
-U kunt bijvoorbeeld een nieuwe staalwaarde toevoegen aan de opdracht `color` -kenmerk wordt afgehandeld als een streaming product-update.
+Het toevoegen van een nieuwe staalwaarde aan het kenmerk `color` wordt bijvoorbeeld verwerkt als een streaming productupdate.
 Workflow voor gestreamde updates:
 
 1. Bijgewerkte producten worden gesynchroniseerd van de Adobe Commerce-instantie naar de catalogusservice.
@@ -75,10 +75,10 @@ Workflow voor gestreamde updates:
 
 ## Clientzoekopdracht
 
-De [!DNL Live Search] Met API kan een client op elk sorteerbaar productkenmerk sorteren door het instellen van de [storefront, eigenschap](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html), *Wordt gebruikt voor sorteren in productaanbiedingen* tot `Yes`. Afhankelijk van het thema zorgt deze instelling ervoor dat het kenmerk als optie wordt opgenomen in het dialoogvenster [Sorteren op](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation.html) Pagineringsbesturingselement op cataloguspagina&#39;s. Maximaal 200 productkenmerken kunnen worden geïndexeerd door [!DNL Live Search], met [storefront, eigenschappen](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) die doorzoekbaar en filterbaar zijn.
+[!DNL Live Search] API staat een cliënt toe om door om het even welk sorteerbaar productattribuut te sorteren door het [ storefront bezit ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) te plaatsen, *Gebruikt voor het sorteren in productlijsten* aan `Yes`. Afhankelijk van het thema, veroorzaakt dit het plaatsen de attributen om als optie in de [ Soort door ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation.html) pagineringscontrole op cataloguspagina&#39;s worden omvat. Tot 200 productattributen kunnen door [!DNL Live Search] worden geïndexeerd, met [ storefront eigenschappen ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) die doorzoekbaar en filterbaar zijn.
 De indexmeta-gegevens worden opgeslagen in de indexerende pijpleiding en door de onderzoeksdienst toegankelijk.
 
-![[!DNL Live Search] API-diagram voor indexmetagegevens](assets/index-metadata-api.svg)
+![[!DNL Live Search] API-diagram voor indexmetagegevens ](assets/index-metadata-api.svg)
 
 ### Workflow voor sorteerbare kenmerken
 

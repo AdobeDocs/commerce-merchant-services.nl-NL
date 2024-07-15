@@ -1,6 +1,6 @@
 ---
 title: Home
-description: Inleiding tot de [!DNL Payment Services] Home.
+description: Inleiding aan het  [!DNL Payment Services]  Huis.
 role: Admin, User
 level: Intermediate
 exl-id: d7a4c87f-33cb-446a-b442-3cdf05b518a2
@@ -12,15 +12,15 @@ ht-degree: 0%
 
 ---
 
-# Inleiding tot de [!DNL Payment Services] Home
+# Inleiding tot de [!DNL Payment Services] startpagina
 
-[!DNL Payment Services] for [!DNL Adobe Commerce] en [!DNL Magento Open Source] verschaft een weergave Home met alle benodigde informatie om de extensie in te stellen en te gebruiken.
+[!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Source] biedt een weergave Home met alle benodigde informatie om het instellen en gebruiken van de extensie te starten.
 
-1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**:
+1. Voor _Admin_ sidebar, ga **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**:
 
-   ![Startweergave](assets/home-view.png){width="700" zoomable="yes"}
+   ![ mening van het Huis ](assets/home-view.png){width="700" zoomable="yes"}
 
-1. In deze weergave Home hebt u toegang tot _Home_ weergave, _Meer informatie_ info [!DNL Payment Services], de extensie configureren _Instellingen_, of get _Help_.
+1. In deze mening van het Huis, kunt u tot _mening toegang hebben van het Huis_, __ leren over [!DNL Payment Services], de uitbreiding _Montages_ vormen, of _Hulp_ krijgen.
 
 ## Home
 
@@ -33,17 +33,17 @@ ht-degree: 0%
 
 | Veld | Beschrijving |
 |---|---|
-| [!UICONTROL Read documentation] | Raadpleeg de nieuwste documentatie voor gebruikers en ontwikkelaars voor [!DNL Payment Services]. |
-| [!UICONTROL How to onboard] | Zoek alles wat u nodig hebt voor installatie en gebruik de [!DNL Payment Services] gebruiken. |
-| [!UICONTROL Understand financial reports] | Uitgebreide uitleg van de rapportage van het kasstroombeheer in [!DNL Payment Services]. |
+| [!UICONTROL Read documentation] | Raadpleeg de nieuwste document voor gebruikers en ontwikkelaars voor [!DNL Payment Services] . |
+| [!UICONTROL How to onboard] | Zoek alles wat u nodig hebt voor installatie en gebruik de functie [!DNL Payment Services] . |
+| [!UICONTROL Understand financial reports] | Uitgebreide uitleg van de rapportage voor kasstroombeheer in [!DNL Payment Services] . |
 
 ## Help
 
 | Veld | Beschrijving |
 |---|---|
-| [!UICONTROL Visit help center] | De [!DNL Adobe Commerce] Help Center bevat artikelen over kennisbronnen over [!DNL Payment Services]. |
-| [!UICONTROL Get support] | Ga naar [!DNL Adobe Commerce] ondersteuningsportaal voor ondersteuning met [!DNL Payment Services.] |
+| [!UICONTROL Visit help center] | Het Help Center van [!DNL Adobe Commerce] heeft basisartikelen van kennis over [!DNL Payment Services]. |
+| [!UICONTROL Get support] | Ga naar de [!DNL Adobe Commerce] -portal voor ondersteuning met [!DNL Payment Services.] |
 
 ## Instellingen
 
-Klik in de weergave Home op **[!UICONTROL Settings]**. Zie [Instellingen](settings.md) voor meer informatie .
+Klik in de weergave Home op **[!UICONTROL Settings]** . Zie [ Montages ](settings.md) voor meer informatie.

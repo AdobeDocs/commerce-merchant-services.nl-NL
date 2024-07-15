@@ -1,116 +1,116 @@
 ---
-title: '[!DNL Store Fulfillment by Walmart Commerce Technologies] Aanvullende informatie'
-description: "Controleer de opmerkingen bij de release voor informatie over alle [!DNL Store Fulfillment by Walmart Commerce Technologies] releases."
+title: '[!DNL Store Fulfillment by Walmart Commerce Technologies] Opmerkingen bij de release'
+description: "Herzie de versienota's voor informatie over alle  [!DNL Store Fulfillment by Walmart Commerce Technologies]  versies."
 role: Admin, User, Leader
 feature: Shipping/Delivery, Release Notes
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
 source-git-commit: db1d5523f48f5686c2a28c7dfb7b1175238b37cf
 workflow-type: tm+mt
-source-wordcount: '514'
-ht-degree: 1%
+source-wordcount: '488'
+ht-degree: 0%
 
 ---
 
 # Aanvullende informatie
 
-In deze releaseopmerkingen wordt de eerste release van [!DNL Store Fulfillment Services by Walmart Commerce Technologies] en omvatten:
+Deze releaseopmerkingen beschrijven de eerste versie van [!DNL Store Fulfillment Services by Walmart Commerce Technologies] en bevatten:
 
-![Nieuw](../assets/new.svg) Nieuwe functies
-![Probleem opgelost](../assets/fix.svg) Oplossingen en verbeteringen
-![Bekend probleem](../assets/bug.svg) Bekende problemen
+![ Nieuwe ](../assets/new.svg) Nieuwe eigenschappen
+![ Vaste kwestie ](../assets/fix.svg) Oplossingen en verbeteringen
+![ Bekende kwestie ](../assets/bug.svg) Bekende kwesties
 
-Zie [Volgende releases](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) om over versieschema&#39;s en steun te leren.
+Zie [ Komende Versies ](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) om over versieschema&#39;s en steun te leren.
 
-Zie [Beschikbaarheid van producten](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html) voor meer informatie over de Adobe Commerce-versies die deze extensie ondersteunen.
+Zie [ Beschikbaarheid van het Product ](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html) om te leren welke versies van Adobe Commerce deze uitbreiding steunen.
 
 ## v1.5.0
 
-*3 augustus 2023*
+*3 Augustus, 2023*
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}[Adobe Commerce 2.4.4 tot en met 2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html), inclusief de beveiligingspatchreleases 2.4.6-p1, 2.4.5-p3 en 2.4.4-p4
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}[ Adobe Commerce 2.4.4 aan 2.4.6 ](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html), met inbegrip van 2.4.6-p1, 2.4.5-p3, en 2.4.4-p4 de veiligheidsflardversies
 
 Deze release bevat de volgende updates:
 
-![Nieuw](../assets/fix.svg) De extensie is bijgewerkt voor ondersteuning [Adobe Commerce Security patch releases](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/overview.html) 2.4.6-p1, 2.4.5-p3, en 2.4.4-p4.
+![ Nieuw ](../assets/fix.svg) werkte de uitbreiding bij om [ de veiligheidsflardversies van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/overview.html) 2.4.6-p1, 2.4.5-p3, en 2.4.4-p4 te steunen.
 
-![Nieuw](../assets/new.svg)<!-- WMTP-918 --> Extra ondersteuning voor de [Asynchroon verzenden](sales-emails.md) configuratieoptie voor verkoopberichten. Handelaars die een upgrade naar versie 1.5.0 uitvoeren, kunnen e-mailberichten direct (standaard) of asynchroon verzenden.
+![ Nieuwe ](../assets/new.svg)<!-- WMTP-918 --> Toegevoegde steun voor de [ Asynchrone verzendende ](sales-emails.md) configuratieoptie voor Verkoop E-mail. Handelaars die een upgrade naar versie 1.5.0 uitvoeren, kunnen e-mailberichten direct (standaard) of asynchroon verzenden.
 
-![Nieuw](../assets/new.svg)<!-- WMTP-916--> De [Bronconfiguratie](merchant-store-configuration.md) ter ondersteuning van internationale telefoonnummerformaten.
+![ Nieuw ](../assets/new.svg)<!-- WMTP-916--> werkte de [ Bronconfiguratie ](merchant-store-configuration.md) bij om internationale formaten van het telefoonaantal te steunen.
 
-![Nieuw](../assets/new.svg) Toegevoegde logica om te voorkomen dat terugbetalingsbedragen het resterende of gefactureerde bedrag overschrijden.
+![ Nieuwe ](../assets/new.svg) Toegevoegde logica om restitutiebedragen te verhinderen het resterende of gefactureerde bedrag te overschrijden.
 
-![Nieuw](../assets/new.svg)<!-- WMTP-882 --> Vervangen `google.map.LatLng` object met JSON-literals ter ondersteuning van compatibiliteit met oudere versies van [!DNL Google Maps].
+![ Nieuw ](../assets/new.svg)<!-- WMTP-882 --> Vervangen `google.map.LatLng` voorwerp met literals JSON om verenigbaarheid met oudere versies van [!DNL Google Maps] te steunen.
 
-![Probleem opgelost](../assets/fix.svg)<!-- WMTP- --> Het script waarmee het `[!DNL Available for Store Pickup]` en `[!DNL Available for Home Delivery]` productkenmerken om conflicten met kenmerkcategorieën te voorkomen.
+![ Vaste kwestie ](../assets/fix.svg)<!-- WMTP- --> werkte het manuscript bij dat tot de `[!DNL Available for Store Pickup]` en `[!DNL Available for Home Delivery]` productattributen leidt om attributencategorieconflict te verhinderen.
 
-![Probleem opgelost](../assets/fix.svg)<!-- WMTP-915 --> Probleem met compatibiliteit verholpen waarbij een oneindige lus werd veroorzaakt bij het laden en opslaan van bepaalde entiteiten.
+![ Vaste kwestie ](../assets/fix.svg)<!-- WMTP-915 --> een verenigbaarheidskwestie die een eindeloze lijn veroorzaakte toen het laden van en het opslaan van sommige entiteiten.
 
-![Probleem opgelost](../assets/fix.svg)<!-- WMTP-921 --> Probleem verholpen dat was voorkomen [!DNL Ship to Store] De bevestiging van citaten van het teweegbrengen wanneer een punt aan het karretje van een productdetailpagina (PDP) wordt toegevoegd.
+![ Vaste kwestie ](../assets/fix.svg)<!-- WMTP-921 --> Vaste een kwestie die [!DNL Ship to Store] citaatbevestiging verhinderde teweegbrengen wanneer een punt aan de kar van een productdetailpagina (PDP) wordt toegevoegd.
 
-![Probleem opgelost](../assets/fix.svg)<!-- WMTP- 932 --> Probleem met uitchecken waarbij klanten de methode voor thuislevering konden selecteren voor items die niet in aanmerking kwamen voor thuislevering, is opgelost.
+![ Vaste kwestie ](../assets/fix.svg)<!-- WMTP- 932 --> Vaste een controlekwestie die klanten toestond om de methode van de huislevering voor punten te selecteren die niet geschikt voor huislevering zijn.
 
-![Probleem opgelost](../assets/fix.svg) Installatie-updates:
+![ de updates van de 1} Installatie van de Vaste kwestie ](../assets/fix.svg):
 
-- <!-- WMTP-880--> Probleem verholpen waarbij een onjuiste websitecode werd geretourneerd tijdens de installatie van de [!DNL Store Fulfillment] extensie.
+- <!-- WMTP-880--> Probleem verholpen waarbij een onjuiste websitecode werd geretourneerd tijdens de installatie van de extensie [!DNL Store Fulfillment] .
 
 - <!-- WMTP-878--> Probleem verholpen met betrekking tot SKU-gehele getallen waarbij het gegevenstype tijdens de installatie naar tekenreekstype moest worden gecast.
 
-![Probleem opgelost](../assets/fix.svg)<!-- WMTP-915--> Probleem verholpen die werd veroorzaakt door een ontbrekende code voor een incheckfout.
+![ Vaste kwestie ](../assets/fix.svg)<!-- WMTP-915--> een mislukking die door ontbrekende Check-in foutencode wordt veroorzaakt.
 
-![Probleem opgelost](../assets/fix.svg)<!-- WMTP-932 --> Oplossing voor een probleem met betrekking tot gedeeltelijke afwijzing tijdens dispensatiebewerkingen.
+![ Vaste kwestie ](../assets/fix.svg)<!-- WMTP-932 --> Vaste een insect met betrekking tot gedeeltelijke verwerping tijdens afstotingsverrichtingen.
 
-![Nieuw](../assets/new.svg)<!-- WMTP-953 --> Het eindpunt van de API voor annuleren is bijgewerkt zodat de statusparameter als een optioneel object kan worden gebruikt.
+![ Nieuw ](../assets/new.svg)<!-- WMTP-953 --> werkte het Cancel API eindpunt bij om de statusparameter als facultatief voorwerp te verbruiken.
 
-![Nieuw](../assets/new.svg)<!-- WMTP-960 --> Verbeterde logboekdetails voor het eindpunt van Dispense API.
+![ Nieuwe ](../assets/new.svg)<!-- WMTP-960 --> Verbeterde registrerendetails voor het punt van de Verkoop API.
 
 ## v1.4.0
 
 *13 april 2023*
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/fix.svg) [!DNL Store Fulfillment] is nu [compatibel met [!DNL Adobe Commerce] 2.4.4 tot en met 2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
+![ Nieuw ](../assets/fix.svg) [!DNL Store Fulfillment] is nu [ compatibel met  [!DNL Adobe Commerce]  2.4.4 aan 2.4.6 ](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 
 ## v1.3.0
 
-*27 februari 2023*
+*27 Februari, 2023*
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
 Deze release bevat de volgende update:
 
-![Nieuw](../assets/fix.svg)<!-- WMTP-795 --> De mogelijkheid toegevoegd om de oplossing Opslaglimiet voor een specifieke site uit te schakelen door het standaardbereik voor de instelling Systeemconfiguratie te wijzigen van de website in global.
+![ Nieuw ](../assets/fix.svg)<!-- WMTP-795 --> voegde het vermogen toe om de oplossing van de Afhandeling van de Opslag voor een specifieke plaats onbruikbaar te maken door het standaardwerkingsgebied voor het plaatsen van de Configuratie van het Systeem van website aan globaal te veranderen.
 
 ## v1.2.0
 
-*27 september 2022*
+*27 September, 2022*
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
 Deze release bevat de volgende update:
 
-![Nieuw](../assets/fix.svg) [!DNL Store Fulfillment] is nu [compatibel met [!DNL Adobe Commerce] 2.4.4 t/m 2.4.5](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
+![ Nieuw ](../assets/fix.svg) [!DNL Store Fulfillment] is nu [ compatibel met  [!DNL Adobe Commerce]  2.4.4 aan 2.4.5 ](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 
 ## v1.1.0
 
 *15 juli 2022*
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
 Stabiliteit: algemene beschikbaarheid
 
-![Nieuw](../assets/fix.svg)<!-- WMTP-731 --> Vereenvoudigd [Configuratie voor inchecken van ervaringen](check-in-experience-setup.md) voor de app Winkelassistentie door standaardselecties voor auto&#39;s en modellen toe te voegen. In de vorige versie moesten handelaren de selecties van het merk en het model van de auto handmatig configureren.
+![ Nieuw ](../assets/fix.svg)<!-- WMTP-731 --> Vereenvoudigde de [ Controle-in ervaringsconfiguratie ](check-in-experience-setup.md) voor de Winkel bijstaat app door standaardauto toe te voegen maakt en modelselecties. In de vorige versie moesten handelaren de selecties van het merk en het model van de auto handmatig configureren.
 
 ## v1.0.0
 
-*4 maart 2022*
+*Maart 4, 2022*
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
 Stabiliteit: algemene beschikbaarheid
 
 ## App Winkelassistentie
 
-Voor informatie over nieuwe releases van de app Store Assist raadpleegt u de toepassingsinformatie in het gedeelte [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id1609281539){target="_blank"} or [Google Play store](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target="_blank"}.
+Voor informatie over nieuwe versies van de Winkel bijstaat app, zie de toepassingsinformatie in [ Apple App Store ](https://apps.apple.com/us/app/store-assist-by-walmart/id1609281539) {target="_blank"} of [ de opslag van Google Play ](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist) {target="_blank"}.

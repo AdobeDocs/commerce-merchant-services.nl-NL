@@ -20,15 +20,15 @@ U beschikt over bepaalde bestellingen en uitbetalingsgegevens, zodat u de financ
 
 U kunt de financiële rapportage van Adobe Commerce afstemmen op uw ERP-systeem (Enterprise Resource Planning) dat niet van de Adobe is, met de verhogende id die aan een specifieke bestelling is gekoppeld.
 
-Wanneer betalingsservices de Commerce-bestelling naar PayPal sturen, wordt de verhogingsid opgenomen als de `custom_id` _en_ in de `invoice_id` (die ook een willekeurige tekenreeks na de `increment_id`).
+Wanneer de Diensten van de Betaling de orde van Commerce naar PayPal verzendt, is verhogingsidentiteitskaart inbegrepen als `custom_id` _en_ in `invoice_id` (die ook een willekeurig koord na `increment_id` bevat).
 
 De id&#39;s zijn gemakkelijk toegankelijk in zowel de zakelijke activiteitengegevens voor een betaling als in de PayPal-website.
 
-De `invoice_id` en `custom_id` worden onder aan de detailhandel weergegeven voor een uitbetaling:
+De `invoice_id` en `custom_id` worden onder aan de details van de zakelijke activiteit weergegeven voor een uitbetaling:
 
-![`custom_id` in detail van de handelsactiviteit](assets/merchant-activity-ids.png){width="600" zoomable="yes"}
+![`custom_id` in details met betrekking tot handelsactiviteit ](assets/merchant-activity-ids.png){width="600" zoomable="yes"}
 
-`custom_id` en `invoice_id` in de details op de website van PayPal:
+`custom_id` en `invoice_id` in de details in de website van PayPal:
 
 ```json
    ...
@@ -79,5 +79,5 @@ De `invoice_id` en `custom_id` worden onder aan de detailhandel weergegeven voor
 
 Zie de REST APIs-documentatie van PayPal voor meer informatie:
 
-* [`purchase_unit`, waarin `custom_id` en `invoice_id` woonachtig](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit)
-* [Bestellingsgegevens tonen](https://developer.paypal.com/docs/api/orders/v2/#orders_get)
+* [`purchase_unit` , waarin `custom_id` en `invoice_id` zich bevinden ](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit)
+* [ toon orderdetails ](https://developer.paypal.com/docs/api/orders/v2/#orders_get)

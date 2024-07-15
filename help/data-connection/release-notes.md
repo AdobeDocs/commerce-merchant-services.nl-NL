@@ -1,6 +1,6 @@
 ---
 title: Aanvullende informatie
-description: De meest recente releasegegevens voor de [!DNL Data Connection] uit Adobe Commerce.
+description: De recentste versieinformatie voor de  [!DNL Data Connection]  uitbreiding van Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
 source-git-commit: a2d5e695b3f6491d051da77bfc0fb596f5411c92
@@ -14,181 +14,181 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->De naam van de Experience Platform-aansluiting is gewijzigd in [!DNL Data Connection].
+>De naam van de aansluiting van het Experience Platform is gewijzigd in [!DNL Data Connection] .
 
-Deze releaseopmerkingen bevatten updates voor de [!DNL Data Connection] en omvat:
+Deze releaseopmerkingen bevatten updates van de extensie [!DNL Data Connection] en bevatten:
 
-![Nieuw](../assets/new.svg) - Nieuwe functies
-![Repareren](../assets/fix.svg) - Oplossingen en verbeteringen
-![Bug](../assets/bug.svg) - Bekende problemen
+![ Nieuw ](../assets/new.svg) - Nieuwe eigenschappen
+![ Repareren ](../assets/fix.svg) - Oplossingen en verbeteringen
+![ Bug ](../assets/bug.svg) - Bekende kwesties
 
-Voor functiewijzigingen en correcties die betrekking hebben op extensies die worden gebruikt door de [!DNL Data Connection] extensie, zie **Ondersteunde service-updates**.
+Voor eigenschapveranderingen en moeilijke situaties met betrekking tot uitbreidingen die door de [!DNL Data Connection] uitbreiding worden gebruikt, zie **Ondersteunde de dienstupdates**.
 
-Zie [Volgende releases](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) om over versieschema&#39;s en steun te leren.
+Zie [ Komende Versies ](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) om over versieschema&#39;s en steun te leren.
 
-Zie de documentatie voor ontwikkelaars op [te weten welke Commerce-versies deze module ondersteunen](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
+Zie de ontwikkelaardocumentatie aan [ leren welke versies van Commerce deze module ](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html) steunen.
 
 ## Ondersteunde service-updates
 
-In deze releaseopmerkingen worden wijzigingen in functies en correcties beschreven die betrekking hebben op extensies die door de [!DNL Data Connection] extensie.
+In deze releaseopmerkingen worden wijzigingen in de functies beschreven en oplossingen gevonden voor extensies die worden gebruikt door de extensie [!DNL Data Connection] .
 
 +++Ondersteunde service-updates
 
-_24 januari 2024_
+_Januari 24, 2024_
 
-![Nieuw](../assets/new.svg) - De `data-services-b2b` extensie om een nieuwe aanvraaggebeurtenis op te nemen, genaamd [deleteRequisitionList](events.md#deleterequisitionlist) voor B2B-handelaren.
+![ Nieuw ](../assets/new.svg) - werkte de `data-services-b2b` uitbreiding bij om een nieuwe vraaggebeurtenis te omvatten genoemd [ deleteRequisitionList ](events.md#deleterequisitionlist) voor B2B handelaren.
 
 _16 november 2023_
 
-![Repareren](../assets/fix.svg) - Probleem verholpen waarbij een foutbericht ten onrechte werd weergegeven wanneer u een bestelling met meerdere verzendadressen plaatste.
-![Repareren](../assets/fix.svg) - Probleem verholpen in het dialoogvenster [productPageView](events.md#productpageview) gebeurtenis waarbij `productListItems.priceTotal` in het gebeurtenisveld werd de prijs niet geconverteerd nadat de valuta in de winkelweergave was gewijzigd.
-![Repareren](../assets/fix.svg) - Probleem verholpen in het dialoogvenster `productListItems` gebeurtenisveld waarin de valutacode niet werd bijgewerkt toen de handelaar van mening veranderde over de winkel.
+![ bevestig ](../assets/fix.svg) - Vloeiende een kwestie waar een foutenmelding verkeerd verscheen wanneer u een orde plaatste die veelvoudige verschepende adressen had.
+![ Bevestig ](../assets/fix.svg) - Vaste een kwestie in de [ productPageView ](events.md#productpageview) gebeurtenis waar het `productListItems.priceTotal` gebeurtenisgebied niet de prijs na omschakeling van de munt op de archiefmening omzet.
+![ bevestig ](../assets/fix.svg) - een kwestie in het `productListItems` gebeurtenisgebied waar de muntcode niet bijwerkte toen handelaars de archiefmening veranderde.
 
-_10 oktober 2023_
+_10 oktober, 2023_
 
-![Nieuw](../assets/new.svg) - Toegevoegde statusgebeurtenissen voor nieuwe bestellingen: [Facturering van bestelling](events-backoffice.md#orderinvoiced), [Terugsturen van bestelling-item gestart](events-backoffice.md#orderitemsreturninitiated), en [Terugsturen van bestelling van object voltooid](events-backoffice.md#orderitemreturncompleted).
-![Repareren](../assets/fix.svg) - Probleem verholpen waarbij wijzigingen in de valutaconfiguratie niet werden doorgevoerd in de gebeurtenissen na het vernieuwen van de cache.
-![Repareren](../assets/fix.svg) - Correctie van fout wanneer het bevestigingsbericht van de orde niet verschijnt als de asynchrone plaatsing van de orde wordt toegelaten.
-![Nieuw](../assets/new.svg) - Gegevens toegevoegd aan [addToRequisitionList](events.md#addtorequisitionlist) gebeurtenis voor eenvoudige producten op de pagina van de categorieweergave.
-![Repareren](../assets/fix.svg) - Probleem verholpen in het dialoogvenster `selectedOptions` gegevens in de [addToRequisitionList](events.md#addtorequisitionlist) gebeurtenis wanneer de producten van de de bevestigingspagina van de Orde worden toegevoegd.
-![Nieuw](../assets/new.svg) - Toegevoegde productgegevens aan [addToRequisitionList](events.md#addtorequisitionlist) gebeurtenis wanneer de producten aan de vraaglijst van de de meningspagina van de Categorie worden toegevoegd.
-![Nieuw](../assets/new.svg) - Toegevoegd [addToRequisitionList](events.md#addtorequisitionlist) gebeurtenis wanneer configureerbare producten aan de verzoeklijst van de de meningspagina van het Product worden toegevoegd.
-![Nieuw](../assets/new.svg) - Toegevoegd [addToRequisitionList](events.md#addtorequisitionlist) en [removeFromRequisitionList](events.md#removefromrequisitionlist) voorvallen waarbij de hoeveelheid product wordt verhoogd en/of afgenomen van een aanvraaglijst.
+![ Nieuw ](../assets/new.svg) - Toegevoegde nieuwe gebeurtenissen van de ordestatus: [ Gecodeerde orde ](events-backoffice.md#orderinvoiced), [ Terugkeer van het Punt van de Orde die ](events-backoffice.md#orderitemsreturninitiated) wordt geïnitieerd, en [ Terugkeer van het Punt van de Orde voltooide ](events-backoffice.md#orderitemreturncompleted).
+![ Bevestig ](../assets/fix.svg) - Vaste een kwestie waar de veranderingen van de muntconfiguratie niet in de gebeurtenissen na het verfrissen van het geheime voorgeheugen werden weerspiegeld.
+![ Repareren ](../assets/fix.svg) - Vaste fout wanneer het bericht van de ordesbevestiging niet verschijnt als de asynchrone ordeplaatsing wordt toegelaten.
+![ Nieuw ](../assets/new.svg) - Toegevoegde gegevens aan [ addToRequisitionList ](events.md#addtorequisitionlist) gebeurtenis voor eenvoudige producten op de pagina van de categoriemening.
+![ Bevestig ](../assets/fix.svg) - Vaste een kwestie in de `selectedOptions` gegevens in de [ addToRequisitionList ](events.md#addtorequisitionlist) gebeurtenis wanneer de producten van de bevestigingspagina van de Orde worden toegevoegd.
+![ Nieuw ](../assets/new.svg) - Toegevoegde productgegevens aan [ addToRequisitionList ](events.md#addtorequisitionlist) gebeurtenis wanneer de producten aan de vraaglijst van de de meningspagina van de Categorie worden toegevoegd.
+![ Nieuw ](../assets/new.svg) - Toegevoegde [ addToRequisitionList ](events.md#addtorequisitionlist) gebeurtenis wanneer de configureerbare producten aan de vraaglijst van de de meningspagina van het Product worden toegevoegd.
+![ Nieuw ](../assets/new.svg) - Toegevoegde [ addToRequisitionList ](events.md#addtorequisitionlist) en [ removeFromRequisitionList ](events.md#removefromrequisitionlist) gebeurtenissen wanneer het productaantal wordt verhoogd en/of van een vraaglijst verminderd.
 
-_10 juni 2023_
+_10 Juni, 2023_
 
-![Repareren](../assets/fix.svg) - Probleem verholpen waarbij `orderId` is niet in de context geslaagd vanwege voorvoegsels in de Commerce-orderid.
-![Repareren](../assets/fix.svg) - Bijgewerkte configuraties voor inhoudsbeveiligingsbeleid.
+![ bevestig ](../assets/fix.svg) - een kwestie opgelost toen `orderId` niet in de context wegens prefixen in het de ordeherkenningsteken van Commerce overging.
+![ bevestig ](../assets/fix.svg) - de bijgewerkte configuraties van het Beleid van de Veiligheid van de Inhoud.
 
-_30 maart 2023_
+_Maart 30, 2023_
 
-![Nieuw](../assets/new.svg) - Een extensie met de naam `data-services-b2b` die [gebeurtenissen in aanvraaglijst](events.md#b2b-events) voor B2B-handelaren.
-![Nieuw](../assets/new.svg) - Toegevoegde `uniqueIdentifier` veld naar [zoeken](events.md#search-events) gebeurtenissen. Met dit nieuwe veld kunnen verkopers zoekopdrachten en zoekreacties doorzoeken.
+![ Nieuw ](../assets/new.svg) - Toegevoegde een uitbreiding riep `data-services-b2b` die [ gebeurtenissen van de verzoeklijst ](events.md#b2b-events) voor B2B handelaren omvat.
+![ Nieuw ](../assets/new.svg) - voegde het `uniqueIdentifier` gebied aan [ onderzoek ](events.md#search-events) gebeurtenissen toe. Met dit nieuwe veld kunnen verkopers zoekopdrachten en zoekreacties doorzoeken.
 
 _12 oktober 2022_
 
-![Nieuw](../assets/new.svg) - Twee toegevoegd [storefront, gebeurtenissen](events.md), `openCart` en `removeFromCart`, naar de Adobe Commerce Storefront Events SDK en Collector.
-![Nieuw](../assets/new.svg) - Toegevoegde ondersteuning voor een [AEM storefront](overview.md#aem-support).
+![ Nieuw ](../assets/new.svg) - voegde twee [ storefront gebeurtenissen ](events.md) toe, `openCart` en `removeFromCart`, aan de Gebeurtenissen SDK en de Collector van Adobe Commerce Storefront.
+![ Nieuw ](../assets/new.svg) - toegevoegde steun voor een [ AEM storefront ](overview.md#aem-support).
 
 +++
 
 ## 3.1.2.
 
-[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+[!BADGE  Verenigbaarheid ]{type=Informative tooltip="Compatibiliteit"}
 
-_5 juni 2024_
+_5 Juni, 2024_
 
-![Repareren](../assets/new.svg) - Probleem verholpen waarbij de verkeerde datumnotatie werd gebruikt bij het starten van een [historische synchronisatie](connect-data.md#specify-order-history-date-range).
-![Repareren](../assets/new.svg) - Probleem verholpen waarbij de [startCheckout](events.md#startcheckout) De gebeurtenis werd niet verzonden op Adobe Commerce 2.4.7.
+![ Bevestig ](../assets/new.svg) - Vaste een kwestie waar het verkeerde datumformaat werd gebruikt toen het in werking stellen van a [ historische synchronisatie ](connect-data.md#specify-order-history-date-range).
+![ Bevestig ](../assets/new.svg) - Vaste een kwestie waar de [ startCheckout ](events.md#startcheckout) gebeurtenis niet op Adobe Commerce 2.4.7 werd verzonden.
 
 ## 3.1.1
 
-[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+[!BADGE  Verenigbaarheid ]{type=Informative tooltip="Compatibiliteit"}
 
-_4 april 2024_
+_4 April, 2024_
 
-![Nieuw](../assets/new.svg) - Toegevoegde ondersteuning voor PHP 8.3 voor iedereen [!DNL Data Connection] extensies.
-![Nieuw](../assets/new.svg) - Toegevoegd artikel over hoe [integreren](mobile-sdk-epc.md) de Adobe Experience Platform Mobile SDK met Commerce.
+![ Nieuw ](../assets/new.svg) - Toegevoegde steun voor PHP 8.3 voor alle [!DNL Data Connection] uitbreidingen.
+![ Nieuw ](../assets/new.svg) - toegevoegd artikel over hoe te [ ](mobile-sdk-epc.md) de Mobiele SDK van Adobe Experience Platform met Commerce integreren.
 
 ## 3.2.0-bèta2
 
-_4 maart 2024_
+_Maart 4, 2024_
 
-[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+[!BADGE  Verenigbaarheid ]{type=Informative tooltip="Compatibiliteit"}
 
-![Nieuw](../assets/new.svg) - Als u deelneemt aan de bètaversie, zorg er dan voor dat u `composer.json` bestand heeft het volgende op hoofdniveau: ` "minimum-stability": "beta"`. Ook toevoegen `composer require "magento/customers-connector: ^1.2.0"` om klantprofielen van uw Commerce-exemplaar naar SaaS te verzenden.
-![Nieuw](../assets/new.svg) - Toegevoegde mogelijkheden tot [Aangepaste kenmerken toevoegen](update-xdm.md#update-schema-with-time-series-behavioral-and-back-office-event-data).
-![Nieuw](../assets/new.svg) - Toegevoegde mogelijkheden tot [profielrecords verzamelen en verzenden](connect-data.md#send-customer-profile-data) en gegevens naar Experience Platform.
+![ Nieuw ](../assets/new.svg) - als u aan bèta deelneemt, zorg ervoor uw `composer.json` dossier het volgende op het wortelniveau heeft: ` "minimum-stability": "beta"`. Voeg ook `composer require "magento/customers-connector: ^1.2.0"` toe om klantprofielen van uw Commerce-exemplaar naar SaaS te verzenden.
+![ Nieuw ](../assets/new.svg) - Toegevoegde capaciteit om [ douanekenmerken ](update-xdm.md#update-schema-with-time-series-behavioral-and-back-office-event-data) toe te voegen.
+![ Nieuw ](../assets/new.svg) - Toegevoegde capaciteit om [ profielverslagen ](connect-data.md#send-customer-profile-data) en gegevens te verzamelen en te verzenden naar Experience Platform.
 
 ## 3.1.0.
 
 _16 november 2023_
 
-[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+[!BADGE  Verenigbaarheid ]{type=Informative tooltip="Compatibiliteit"}
 
-![Nieuw](../assets/new.svg) - De naam van de aansluiting op het Experience Platform is gewijzigd in [!DNL Data Connection].
-![Repareren](../assets/new.svg) - Mogelijkheid toegevoegd om de foutreactie te registreren als Adobe IMS het toegangstoken niet kan genereren.
-![Repareren](../assets/new.svg) - Er is een meldingsbericht toegevoegd als u probeert Historische bestellingen te synchroniseren, maar geen accountgegevens hebt opgegeven.
+![ Nieuw ](../assets/new.svg) - de schakelaar van het Experience Platform is anders genoemd aan [!DNL Data Connection].
+![ Repareren ](../assets/new.svg) - Toegevoegde capaciteit om foutenreactie te registreren als IMS van Adobe niet het toegangstoken kan produceren.
+![ Repareren ](../assets/new.svg) - voegde een berichtbericht toe als u probeert om Historische Orden te synchroniseren maar geen rekeningsgeloofsbrieven hebben gespecificeerd.
 
 ## 3.0.0.
 
-_10 oktober 2023_
+_10 oktober, 2023_
 
-[!BADGE Compatibiliteit]{type=Informative tooltip="Compatibiliteit"}
+[!BADGE  Verenigbaarheid ]{type=Informative tooltip="Compatibiliteit"}
 
-Dit is een belangrijke versie. [Bewerken](install.md#update-the-data-connection) het hoofdbestand composer.json van uw project.
+Dit is een belangrijke versie. [ geeft ](install.md#update-the-data-connection) het wortel composer.json- dossier van uw project uit.
 
-![Nieuw](../assets/new.svg) - Algemene beschikbaarheid voor [historische order verzenden](connect-data.md#send-historical-order-data) gegevens en status aan het Experience Platform.
-![Nieuw](../assets/new.svg) - Toegevoegde ondersteuning voor OAuth 2.0 wanneer u [vormen](connect-data.md#connect-commerce-data-to-adobe-experience-platform) de [!DNL Data Connection] extensie.
-![Nieuw](../assets/new.svg) - Afgelopen ondersteuning voor Adobe Commerce 2.4.3.
+![ Nieuw ](../assets/new.svg) - Algemene beschikbaarheid om [ historische orde ](connect-data.md#send-historical-order-data) gegevens en status naar het Experience Platform te verzenden.
+![ Nieuw ](../assets/new.svg) - Toegevoegde steun voor OAuth 2.0 wanneer u [ ](connect-data.md#connect-commerce-data-to-adobe-experience-platform) de [!DNL Data Connection] uitbreiding vormt.
+![ Nieuw ](../assets/new.svg) - Eind steun voor Adobe Commerce 2.4.3.
 
 ## 2.3.0.
 
-_27 juni 2023_
+_Juni 27, 2023_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) - Toegevoegde mogelijkheden tot [verzenden van storefront-gebeurtenissen uitschakelen](connect-data.md#data-collection) aan het Experience Platform.
-![Repareren](../assets/fix.svg) - Bijgewerkte configuraties voor inhoudsbeveiligingsbeleid.
-![Repareren](../assets/fix.svg) - Vaste ondersteuning voor backoffice-gebeurtenissen op Commerce 2.4.7-versie.
-![Nieuw](../assets/new.svg) - Een meldingsbericht toegevoegd over cachevalidatie wanneer u wijzigingen opslaat in het dialoogvenster [!DNL Data Connection] extensievorm.
+![ Nieuw ](../assets/new.svg) - Toegevoegde capaciteit aan [ draai van het verzenden van storefront gebeurtenissen ](connect-data.md#data-collection) aan het Experience Platform.
+![ bevestig ](../assets/fix.svg) - de bijgewerkte configuraties van het Beleid van de Veiligheid van de Inhoud.
+![ Repareren ](../assets/fix.svg) - Vaste steun voor achterbureaugebeurtenissen op Commerce 2.4.7 versie.
+![ Nieuw ](../assets/new.svg) - voegde een berichtbericht over geheim voorgeheugenongeldigheid toe wanneer u veranderingen in de [!DNL Data Connection] uitbreidingsvorm opslaat.
 
 
 ## 3.0.0-bèta1 (alleen intern)
 
-_13 juni 2023_
+_13 Juni, 2023_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) - (Beta) Toegevoegde mogelijkheid tot [historische order verzenden](connect-data.md#beta-send-historical-order-data) gegevens en status aan het Experience Platform.
+![ Nieuw ](../assets/new.svg) - (Beta) Toegevoegde capaciteit om [ historische orde ](connect-data.md#beta-send-historical-order-data) gegevens en status naar het Experience Platform te verzenden.
 
 ## 2.2.0.
 
-_30 maart 2023_
+_Maart 30, 2023_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) - Gebundelde `commerce-data-export` en `saas-export` afhankelijkheid van de `experience-platform-connector` extensie. Eerder, moest u deze gebiedsdelen afzonderlijk installeren. Deze gebiedsdelen, samen met bedrijfsmatige configuratie, laten server-zijverwerking van toe [back office-gebeurtenissen](events-backoffice.md).
-![Nieuw](../assets/new.svg) - Nieuwe back office-gebeurtenis toegevoegd [`orderShipmentCompleted`](events-backoffice.md#ordershipmentcompleted).
+![ Nieuw ](../assets/new.svg) - Bundelde `commerce-data-export` en `saas-export` gebiedsdelen met de `experience-platform-connector` uitbreiding. Eerder, moest u deze gebiedsdelen afzonderlijk installeren. Deze gebiedsdelen, samen met handelaarconfiguratie, laten server-zijverwerking van [ achterbureaugebeurtenissen ](events-backoffice.md) toe.
+![ Nieuw ](../assets/new.svg) - Toegevoegde nieuwe geroepen backoffice gebeurtenis [`orderShipmentCompleted`](events-backoffice.md#ordershipmentcompleted).
 
 ## 2.1.1.
 
-_28 februari 2023_
+_28 februari, 2023_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) - Toegevoegde ondersteuning voor PHP 8.2 voor iedereen [!DNL Data Connection] extensies.
+![ Nieuw ](../assets/new.svg) - Toegevoegde steun voor PHP 8.2 voor alle [!DNL Data Connection] uitbreidingen.
 
 ## 2.1.0.
 
-_17 januari 2023_
+_Januari 17, 2023_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) - De [[!DNL Data Connection] extensiebeheer](connect-data.md) zodat kunt u uw eigen AEP Web SDK (legering) specificeren.
-![Repareren](../assets/fix.svg) Gewijzigd in gebruik `identityMap` in plaats van `personID` wanneer u de primaire identiteit instelt voor gegevens die naar de rand worden verplaatst.
+![ Nieuw ](../assets/new.svg) - Bijgewerkt [[!DNL Data Connection]  uitbreiding Admin ](connect-data.md) zodat kunt u uw eigen AEP Web SDK (legering) specificeren.
+![ Repareren ](../assets/fix.svg) Veranderde in het gebruiken `identityMap` in plaats van `personID` toen het plaatsen van de primaire identiteit voor om het even welke gegevens die aan de rand worden geduwd.
 
 ## 2.0.1.
 
-_10 november 2022_
+_10 November, 2022_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Repareren](../assets/fix.svg) - Nu wordt de Adobe Experience Platform-context alleen ingesteld nadat de Storageront Event Collector en de Storefront Event SDK zijn geladen.
+![ Repareren ](../assets/fix.svg) - nu wordt de context van Adobe Experience Platform geplaatst slechts nadat de Collector van de Gebeurtenis Storefront en de Gebeurtenis SDK van de Gebeurtenis met succes worden geladen.
 
 ## 2.0.0.
 
 _12 oktober 2022_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) - Toegevoegde mogelijkheid om uw eigen AEP Web SDK op te geven wanneer [verbinden](connect-data.md) uw Adobe Commerce-exemplaar naar het Experience Platform.
-![Repareren](../assets/fix.svg) - Vereisten voor een bijgewerkt gegevensstroombereik, zodat de gegevensstroom-id&#39;s binnen het bereik van de website moeten worden geplaatst in plaats van dat ze moeten worden opgeslagen.
+![ Nieuw ](../assets/new.svg) - Toegevoegde capaciteit om uw eigen AEP Web SDK te specificeren wanneer [ verbindend ](connect-data.md) uw instantie van Adobe Commerce met het Experience Platform.
+![ Repareren ](../assets/fix.svg) - de bijgewerkte vereisten van het gegevensstroomwerkingsgebied zodat datastream IDs aan de website eerder dan storeview moet worden behandeld.
 
 ## 1.0.0.
 
-_9 augustus 2022_
+_9 augustus, 2022_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) - Algemene beschikbaarheidsrelease.
+![ Nieuw ](../assets/new.svg) - Algemene beschikbaarheidsversie.

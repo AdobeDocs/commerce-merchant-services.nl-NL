@@ -15,19 +15,19 @@ ht-degree: 0%
 
 SaaS-indexering verbetert de prestaties van de site doordat zware computerprocessen, zoals indexering en prijsberekening, van de Commerce-toepassing naar de cloudinfrastructuur van de Adobe worden verplaatst. Op deze manier kunnen handelaren hun resources snel vergroten om de indexatietijden van de prijzen te versnellen en zo de prijswijzigingen sneller te weerspiegelen wanneer ze gegevens naar de winkel en de verbonden Commerce-services verzenden.
 
-Het volgende diagram toont de indexerende gegevensstroom aan de diensten SaaS wanneer Commerce het [prijsindexering](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) proces dat is opgenomen in de Commerce-toepassing:
+Het volgende diagram toont de indexerende gegevensstroom aan de diensten SaaS wanneer Commerce het [ prijs indexerende ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) proces inbegrepen in de toepassing van Commerce gebruikt:
 
-![Standaardgegevensstroom](assets/old_way.png)
+![ Standaardgegevensstroom ](assets/old_way.png)
 
-Als SaaS-prijsindexering is ingeschakeld, verandert de gegevensstroom. De indexering van de prijs wordt uitgevoerd gebruikend [Commerce SaaS-gegevens exporteren](../data-export/data-synchronization.md).
+Als SaaS-prijsindexering is ingeschakeld, verandert de gegevensstroom. Het indexeren van de prijs wordt uitgevoerd gebruikend [ de gegevensuitvoer van Commerce SaaS ](../data-export/data-synchronization.md).
 
-![Prijsindexeringsgegevensstroom SaaS](assets/new_way.png)
+![ SaaS prijs indexerende gegevensstroom ](assets/new_way.png)
 
 Alle handelaren kunnen van het gebruiken van prijsindexeren SaaS profiteren, maar de handelaren die projecten met de volgende kenmerken hebben kunnen de grootste winst realiseren:
 
-* **Constante prijswijzigingen**- Merchants die herhaalde prijswijzigingen nodig hebben om strategische doelstellingen te bereiken, zoals veelvuldige promoties, seizoenskortingen of voorraadafwaarderingen.
-* **Meerdere websites en/of klantengroepen**-Merchants met gedeelde productcatalogi voor meerdere websites (domeinen/merken) en/of klantgroepen.
-* **Veel unieke prijzen voor websites of klantgroepen**-Merchants met uitgebreide gedeelde productcatalogi die unieke prijzen bevatten voor websites of klantgroepen. Voorbeelden zijn B2B-handelaren met vooraf onderhandelde prijzen of merken met verschillende prijsstrategieën.
+* **Constante prijsveranderingen** - Merchants die herhaalde veranderingen in hun prijzen vereisen om strategische doelstellingen zoals frequente bevorderingen, seizoensgebonden kortingen, of inventarisdalingen te ontmoeten.
+* **Veelvoudige websites en/of klantengroepen** - Merchants met gedeelde productcatalogi over veelvoudige websites (domeinen/brands) en/of klantengroepen.
+* **Vele unieke prijzen over websites of klantengroepen** - Merchants met uitgebreide gedeelde productcatalogi die unieke prijzen over websites of klantengroepen bevatten. Voorbeelden zijn B2B-handelaren met vooraf onderhandelde prijzen of merken met verschillende prijsstrategieën.
 
 ## Prijsindexering SaaS gebruiken
 
@@ -48,7 +48,7 @@ De prijsindexering van SaaS wordt automatisch toegelaten wanneer u de Diensten v
 
 >[!NOTE]
 >
->Indien nodig kan de standaardprijsindexer in de Commerce-toepassing worden uitgeschakeld met de optie [Catalogusadapter](catalog-adapter.md).
+>Indien nodig, kan de standaardprijsindex in de toepassing van Commerce worden onbruikbaar gemaakt gebruikend de [ Adapter van de Catalogus ](catalog-adapter.md).
 
 ## Prijzen synchroniseren met prijsindexering in SaaS
 
@@ -66,7 +66,7 @@ Prijsberekeningen worden ondersteund voor aangepaste producttypen zoals basispri
 
 Als u een aangepast producttype hebt dat een specifieke formule gebruikt om de uiteindelijke prijs te berekenen, kunt u het gedrag van de feed van de productprijs uitbreiden.
 
-1. Een plug-in maken op het tabblad `Magento\ProductPriceDataExporter\Model\Provider\ProductPrice` klasse.
+1. Maak een plug-in voor de klasse `Magento\ProductPriceDataExporter\Model\Provider\ProductPrice` .
 
    ```xml
    <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"

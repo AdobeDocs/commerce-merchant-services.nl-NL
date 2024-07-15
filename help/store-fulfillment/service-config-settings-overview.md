@@ -14,36 +14,36 @@ ht-degree: 0%
 
 # Overzicht van configuratie voor winkeluitvoering
 
-In Adobe Commerce Admin, zijn de configuratiemontages voor de Diensten van de Afhandeling van de Opslag door de Technologieën van de Handel van de Mara gecategoriseerd door type.
+In Adobe Commerce Admin, zijn de configuratiemontages voor de Diensten van de Afhandeling van de Opslag door de Technologieën van het Spoor Commerce gecategoriseerd door type.
 
-**Instellingen voor uitvoeringsconfiguratie opslaan op type**
+**de configuratiemontages van de Afhandeling van de opslag door type**
 
-| **Type** | **Beschrijving** | **API configureerbaar** |
+| **Type** | **Beschrijving** | **configureerbare API** |
 |--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------|
-| [Algemene configuratie](enable-general.md) | Algemene integratie die is ingesteld voor de oplossing Store Fulfillment, de actieve functies en aanmeldingsgegevens om verbinding te maken met uitvoeringsservices. | Nee |
-| [E-mailconfiguratie voor verkoop](sales-emails.md) | Stel aanvullende e-mailsjablonen in voor klantmeldingen die tijdens het inchecken worden verzonden. | Nee |
-| [Configuratie van Merchant Store](merchant-store-configuration.md) | Uitgebreide Inventory management-bronnen instellen als winkels. | Ja |
-| [Productvoorraadbeheer](product-stock.md) | Vorm het commerciële voorraadoverseinen en de eigenschappen beschikbaar aan klanten. | Ja |
-| [Inventory management-bronoverdracht](inventory-stock-transfer.md) | Stel een nieuwe voorraad in en breng een voorraad over. | Ja |
-| [Configuratie van meerdere websites/bereik](multi-site-and-scope-config.md) | Configureer voorraden en leveringsmethoden voor meerdere websites/winkelbereiken. | Nee |
-| [Configuratie achtergrondprocessysteem](background-processes.md) | Vorm de programma&#39;s voor achtergrondprocessen die in het synchroniseren van gegevens met de uitvoeringsdiensten worden gebruikt. | Nee |
-| [Opslaglocatie en Toewijzing instellen](store-location-map-provider-setup.md) | Vorm de capaciteit om een afstandsleverancier te gebruiken om naar kleinhandelszaken te zoeken en deze informatie in de kaart van SLS te tonen | Ja |
-| [Inchecken van ervaring instellen](check-in-experience-setup.md) | De kleur van de auto en de auto maken opties die tijdens het controleproces beschikbaar zullen zijn | Ja |
-| [Gebruikersinstelling](user-setup.md) | Gebruikersaccounts, rollen en machtigingen beheren voor winkelpartners die de app Winkelassistentie gebruiken. bereik. | Ja |
-| [App-instelling](app-setup.md) | Bekijk de beschikbare configuraties voor de Store Assist App die vereist zijn om het instapproces te voltooien. Deze instellingen kunnen niet worden geconfigureerd via de Adobe Commerce-beheerder. | Ja |
+| [ Algemene Configuratie ](enable-general.md) | Algemene integratie die is ingesteld voor de oplossing Store Fulfillment, de actieve functies en aanmeldingsgegevens om verbinding te maken met uitvoeringsservices. | Nee |
+| [ de Configuratie van e-mail van de Verkoop ](sales-emails.md) | Stel aanvullende e-mailsjablonen in voor klantmeldingen die tijdens het inchecken worden verzonden. | Nee |
+| [ Merchant Store Configuratie ](merchant-store-configuration.md) | Uitgebreide Inventory management-bronnen instellen als winkels. | Ja |
+| [ Beheer van de Voorraad van het Product ](product-stock.md) | Vorm het commerciële voorraadoverseinen en de eigenschappen beschikbaar aan klanten. | Ja |
+| [ Source van Inventory management Overdracht ](inventory-stock-transfer.md) | Stel een nieuwe voorraad in en breng een voorraad over. | Ja |
+| [ Veelvoudige Configuratie van de Website/van het Toepassingsgebied ](multi-site-and-scope-config.md) | Configureer voorraden en leveringsmethoden voor meerdere websites/winkelbereiken. | Nee |
+| [ Configuratie van het Systeem van het AchtergrondProces ](background-processes.md) | Vorm de programma&#39;s voor achtergrondprocessen die in het synchroniseren van gegevens met de uitvoeringsdiensten worden gebruikt. | Nee |
+| [ Plaats van de Opslag en de Opstelling van de Afbeelding ](store-location-map-provider-setup.md) | Vorm de capaciteit om een afstandsleverancier te gebruiken om naar kleinhandelszaken te zoeken en deze informatie in de kaart van SLS te tonen | Ja |
+| [ Controle-binnen de Opstelling van de Ervaring ](check-in-experience-setup.md) | De kleur van de auto en de auto maken opties die tijdens het controleproces beschikbaar zullen zijn | Ja |
+| [ Opstelling van de Gebruiker ](user-setup.md) | Gebruikersaccounts, rollen en machtigingen beheren voor winkelpartners die de app Winkelassistentie gebruiken. bereik. | Ja |
+| [ Opstelling van de Toepassing ](app-setup.md) | Bekijk de beschikbare configuraties voor de Store Assist App die vereist zijn om het instapproces te voltooien. Deze instellingen kunnen niet worden geconfigureerd via de Adobe Commerce-beheerder. | Ja |
 
 ## De configuratieverwijzing gebruiken
 
-Bekijk de configuratieverwijzing voor elk plaatsingstype door de typenaam in te selecteren _Instellingen voor uitvoeringsconfiguratie opslaan op type_ tabel.
+Bekijk de configuratieverwijzing voor elk plaatsend type door de typenaam in de _de configuratiemontages van de Afhandeling van de Opslag door type_ lijst te selecteren.
 
 In de configuratieverwijzing voor elk type, worden de configuratiedetails getoond in een lijst met de volgende kolomkopballen:
 
-- **Veld** verwijst naar de naam van het veld dat moet worden geconfigureerd
+- **Gebied** verwijst naar de naam van het gebied te vormen
 
-- **Beschrijving** bevat belangrijke details over het doel en het gedrag van het veld.
+- **Beschrijving** verstrekt belangrijke details over het doel en het gedrag van het gebied
 
-- **Toepassingsgebied** Hiermee wordt het Adobe Commerce-configuratiebereik voor de instelling aangegeven (algemeen, website, winkel)
+- **Reikwijdte** wijst op het de configuratiewerkingsgebied van Adobe Commerce voor het plaatsen (globaal, website, opslag)
 
-- **Vereist** waarde geeft aan of een waarde in het veld moet worden ingesteld
+- **Vereiste** waarde wijst erop of een waarde op het gebied moet worden geplaatst
 
 Voor technische verwijzing, kunt u de interne configuratiepad voor elk gebied ook vinden.

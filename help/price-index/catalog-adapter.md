@@ -13,16 +13,16 @@ ht-degree: 0%
 
 # Catalogusadapter
 
-De `[!DNL Catalog Adapter]` met de extensie wordt de standaardproductprijsindexer in de Commerce-toepassing uitgeschakeld en worden de prijzen gebruikt die door de [Catalogusservice](../catalog-service/overview.md) in plaats daarvan.
+De `[!DNL Catalog Adapter]` uitbreiding maakt de indexator van de standaardproductprijs inbegrepen in de toepassing van Commerce onbruikbaar en gebruikt prijzen die door de [ Dienst van de Catalogus ](../catalog-service/overview.md) in plaats daarvan worden verstrekt.
 
-De adapter is ontworpen voor gebruik met de [SaaS-gegevens exporteren](../data-export/overview.md) en de Adobe Commerce Service. De SaaS-gegevensexport is verantwoordelijk voor het indienen van de prijzen en de [!DNL Catalog Adapter] wint alle prijzen van de Dienst van Adobe Commerce terug.
+De adapter wordt ontworpen om met de [ SaaS gegevensuitvoer ](../data-export/overview.md) en de Dienst van Adobe Commerce te werken. De SaaS-gegevensuitvoer is verantwoordelijk voor het indienen van de prijzen en de [!DNL Catalog Adapter] haalt alle prijzen op van de Adobe Commerce Service.
 
-Wanneer u de optie [!DNL Catalog Adapter]De indexering van de prijzen en de transacties worden op de volgende manieren beïnvloed:
+Wanneer u de optie [!DNL Catalog Adapter] inschakelt, worden prijsindexering en bewerkingen op de volgende manieren beïnvloed:
 
 - De prijsindex die in de Adobe Commerce-toepassing is opgenomen, is uitgeschakeld.
-- Prijzen worden beheerd met behulp van de SaaS-gegevensexport en de [SaaS-prijsindexer](price-indexing.md).
+- De prijzen worden beheerd gebruikend de SaaS gegevensuitvoer en de [ prijsindexeerder SaaS ](price-indexing.md).
 - Wanneer een klant een product, categorie of andere pagina opent waarop de productprijzen worden weergegeven, worden de prijzen opgehaald van de Adobe Commerce Service.
-- Prijzen worden naar de Adobe Commerce Service verzonden door gegevens van de [SaaS-gegevens exporteren](../data-export/overview.md).
+- De prijzen worden verzonden naar de Dienst van Adobe Commerce door gegevens van de [ gegevens te synchroniseren SaaS uitvoeren ](../data-export/overview.md).
 - Met Afhandeling worden de prijzen dynamisch opnieuw berekend.
 
 U kunt prijsindexering in de toepassing van Commerce opnieuw toelaten door de uitbreiding van de Adapter van de Catalogus te verwijderen of onbruikbaar te maken.
@@ -40,23 +40,23 @@ U kunt prijsindexering in de toepassing van Commerce opnieuw toelaten door de ui
 
 De uitbreiding van de Adapter van de Catalogus is een metapakket Composer dat de volgende modules installeert:
 
-- **Prijsindexering uitgeschakeld**- Deze module schakelt de prijsindex in de Commerce-toepassing uit, zodat prijzen worden geleverd via prijsindexering in SaaS. De indexeerfunctie van de productprijs in de Commerce-toepassing kan niet worden ingeschakeld wanneer de extensie voor indexering van de SaaS-prijs is geïnstalleerd.
-- **Prijsprovider**- Deze module biedt prijzen voor producten van de Adobe Commerce Service. Het vormt de onderzoeksvraag en verkrijgt de prijzen voor de producten op het front.
-- **Zoekadapter voor catalogusservice**- Deze module brengt de prijzen van de Adobe Commerce-toepassing over naar een Adobe Commerce-service in reactie op een aanvraag voor het zoeken van producten.
+- **Indexer van de Prijs gehandicapt** - Deze module maakt de prijsindex in de toepassing van Commerce onbruikbaar zodat de prijzen via prijsindexering SaaS worden geleverd. De indexeerfunctie van de productprijs in de Commerce-toepassing kan niet worden ingeschakeld wanneer de extensie voor indexering van de SaaS-prijs is geïnstalleerd.
+- **de Leverancier van Prijzen** - Deze module verstrekt prijzen voor producten van de Dienst van Adobe Commerce. Het vormt de onderzoeksvraag en verkrijgt de prijzen voor de producten op het front.
+- **Adapter van het Onderzoek van de Dienst van de Catalogus** - Deze module brengt prijzen van de toepassing van Adobe Commerce aan de Dienst van Adobe Commerce in antwoord op een verzoek van het productonderzoek over.
 
 ## Installatiestappen
 
 >[!BEGINTABS]
 
->[!TAB Cloud-infrastructuur]
+>[!TAB  de infrastructuur van de Wolk ]
 
-Gebruik deze methode om de [!DNL Catalog Adapter] voor een Commerce Cloud-instantie.
+Gebruik deze methode om [!DNL Catalog Adapter] voor een instantie van de Commerce Cloud te installeren.
 
 1. Schakel op uw lokale werkstation de projectmap voor uw Adobe Commerce over het infrastructuurproject voor de cloud in.
 
    >[!NOTE]
    >
-   >Voor informatie over het lokale beheer van Commerce-projectomgevingen raadpleegt u [Het leiden van takken met CLI](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches) in de _Gebruikershandleiding Adobe Commerce on Cloud Infrastructure_.
+   >Voor informatie over het beheren van het projectmilieu&#39;s van Commerce plaatselijk, zie [ het Leiden takken met CLI ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches) in _Adobe Commerce op de Gids van de Gebruiker van de Infrastructuur van de Wolk_.
 
 1. Bekijk de omgevingsvertakking die u wilt bijwerken met de Adobe Commerce Cloud CLI.
 
@@ -76,9 +76,9 @@ Gebruik deze methode om de [!DNL Catalog Adapter] voor een Commerce Cloud-instan
    composer update "magento/catalog-adapter"
    ```
 
-1. Wijzigingen in de code vastleggen en doorvoeren voor de `composer.json` en `composer.lock` bestanden.
+1. Wijzigingen in de code voor de bestanden `composer.json` en `composer.lock` doorvoeren en uitvoeren.
 
-1. De codewijzigingen toevoegen, toewijzen en doorvoeren voor de `composer.json` en `composer.lock` bestanden naar de cloud-omgeving.
+1. Voeg de codewijzigingen voor de `composer.json` - en `composer.lock` -bestanden toe, wijs deze toe en duw ze naar de cloudomgeving.
 
    ```shell
    git add -A
@@ -86,11 +86,11 @@ Gebruik deze methode om de [!DNL Catalog Adapter] voor een Commerce Cloud-instan
    git push origin <branch-name>
    ```
 
-   Als u de updates naar de cloudomgeving doorvoert, wordt het [Commerce-implementatieproces voor cloud](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process) om de wijzigingen toe te passen. Controleer de implementatiestatus via de [logboek implementeren](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
+   Het duwen van de updates aan het wolkenmilieu stelt het [ proces van de wolkenplaatsing van Commerce ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process) in werking om de veranderingen toe te passen. Controleer de plaatsingsstatus van [ opstellen logboek ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
 
->[!TAB In de bedrijfsruimten]
+>[!TAB  op-gebouw ]
 
-Gebruik deze methode om de [!DNL Catalog Adapter] voor een instantie ter plaatse.
+Gebruik deze methode om [!DNL Catalog Adapter] voor een instantie op locatie te installeren.
 
 1. Voeg de Adapter van de Catalogus aan uw project toe gebruikend Composer:
 
@@ -136,7 +136,7 @@ bin/magento index:reindex catalog_product_price
 
 ## De indexator van de Prijs van het Product voor Hoofdloze scenario onbruikbaar maken
 
-Als u een Commerce-instantie zonder kop hebt, moet u mogelijk de Adobe Commerce-productprijsindexer uitschakelen om de belasting op uw Adobe Commerce-exemplaar te verminderen. U kunt deze taak uitvoeren door het `magento/module-price-indexer-disabler` module:
+Als u een Commerce-instantie zonder kop hebt, moet u mogelijk de Adobe Commerce-productprijsindexer uitschakelen om de belasting op uw Adobe Commerce-exemplaar te verminderen. U kunt deze taak voltooien door de module `magento/module-price-indexer-disabler` te installeren:
 
 ```bash
 composer require magento/module-price-indexer-disabler
@@ -144,21 +144,21 @@ composer require magento/module-price-indexer-disabler
 
 ## Gebruiksscenario&#39;s
 
-Hier volgen enkele voorbeelden `[!DNL Catalog Adapter]` scenario&#39;s.
+Hier volgen enkele veelvoorkomende `[!DNL Catalog Adapter]` scenario&#39;s.
 
 ### Geen afhankelijkheid van Adobe Commerce-productprijsindexator
 
 - U bent een Luma- of Adobe Commerce Core GraphQL-handelaar die een vereiste service heeft geïnstalleerd (Live Search, Product Recommendations, Catalog Service)
 - Geen integratie met extensies van derden die afhankelijk zijn van de Adobe Commerce-productprijsindexer
 
-1. Installeer de [!DNL Catalog Adapter].
+1. Installeer de [!DNL Catalog Adapter] .
 
 ### Met afhankelijkheid van Adobe Commerce product price indexer
 
 - U bent een Luma- of Adobe Commerce Core GraphQL-handelaar die een ondersteunde service heeft geïnstalleerd (Live Search, Product Recommendations, Catalog Service)
 - U gebruikt een extensie van derden die afhankelijk is van de Adobe Commerce-productprijsindexer
 
-1. Installeer de [!DNL Catalog Adapter].
+1. Installeer de [!DNL Catalog Adapter] .
 1. Schakel de standaardindexeerfunctie voor Adobe Commerce-productprijzen opnieuw in.
 
 ### Headless Commerce-instanties
@@ -166,5 +166,5 @@ Hier volgen enkele voorbeelden `[!DNL Catalog Adapter]` scenario&#39;s.
 - Een bedrijf met een Commerce-exemplaar zonder kop waarop de vereiste services zijn geïnstalleerd (Live Search, Product Recommendations, Catalog Service)
 - Geen beroep op de standaard Adobe Commerce-productprijsindexer
 
-1. Installeer de `magento/module-price-indexer-disabler` van de [!DNL Catalog Adapter] pakket.
+1. Installeer de module `magento/module-price-indexer-disabler` vanuit het [!DNL Catalog Adapter] -pakket.
 

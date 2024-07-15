@@ -7,37 +7,37 @@ feature: Shipping/Delivery, Integration, Tools and External Services, Configurat
 exl-id: d09c4652-e2eb-49dc-8c42-2aa9b6be5d6b
 source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '167'
 ht-degree: 1%
 
 ---
 
 # Opslaglocatie en Toewijzing instellen
 
-Schakel de locatie en toewijzingsmogelijkheden van de winkel in voor de uitvoering van de winkel door een [afstandsprovider](https://docs.magento.com/user-guide/catalog/inventory-configure-distance-priority.html) om naar winkellocaties te zoeken.
+Laat de opslagplaats en de afbeeldingsmogelijkheden voor de Afhandeling van de Opslag toe door a [ afstandsleverancier ](https://docs.magento.com/user-guide/catalog/inventory-configure-distance-priority.html) te vormen om naar kleinhandelsopslagplaatsen te zoeken.
 
 **Vereisten**
 
-Tijdens het configuratieproces geeft u een Google API-sleutel op voor het Google Maps-platform. Als u er geen hebt, [genereren op het Google Maps-platform](https://docs.magento.com/user-guide/catalog/inventory-configure-distance-priority.html#configure-google-maps).
+Tijdens het configuratieproces geeft u een Google API-sleutel op voor het Google Maps-platform. Als u geen hebt, [ produceert één van het platform van Kaarten van Google ](https://docs.magento.com/user-guide/catalog/inventory-configure-distance-priority.html#configure-google-maps).
 
 Om de afstandsleverancier te vormen:
 
-1. Van de **[!UICONTROL Stores > General]** Voeg in de beheerfunctie de integratie Google Maps toe voor het inhoudstype Kaart.
+1. Voeg in de configuratie **[!UICONTROL Stores > General]** in Beheer de integratie Google Maps toe voor het inhoudstype Kaart.
 
-   - Ga naar **[!UICONTROL Stores > Configuration  > General > Content Management]**.
+   - Ga naar **[!UICONTROL Stores > Configuration  > General > Content Management]** .
 
-   - Google API-sleutel toevoegen aan **[!UICONTROL Google Maps API Key]** veld.
+   - Voeg uw Google API-sleutel toe aan het veld **[!UICONTROL Google Maps API Key]** .
 
-1. Van de **[!UICONTROL Stores > Inventory]** Selecteer in de beheerdersinterface de afstandprovider voor Afhandeling opslaan.
+1. Selecteer in de configuratie **[!UICONTROL Stores > Inventory]** in de beheerfunctie de afstandprovider voor Afhandeling opslaan.
 
-   - Ga naar **[!UICONTROL Stores > Configuration > Catalog > Inventory]**.
+   - Ga naar **[!UICONTROL Stores > Configuration > Catalog > Inventory]** .
 
    - Vouw de sectie **[!UICONTROL Distance Provider for Distance Based SSA]** uit.
 
-   - Stel de **Provider** tot **Google Map**.
+   - Plaats de **Leverancier** aan **Kaart van Google**.
 
-1. Configureer instellingen voor de **[!UICONTROL Google Distance Provider]**.
+1. Configureer instellingen voor de **[!UICONTROL Google Distance Provider]** .
 
-   - Voeg uw **Google API-sleutel**.
+   - Voeg uw **sleutel van Google API** toe.
 
-   - Set **[!UICONTROL Computation Mode]** tot `Driving` en **[!UICONTROL Value]** tot `Distance`
+   - Stel **[!UICONTROL Computation Mode]** in op `Driving` en **[!UICONTROL Value]** op `Distance`

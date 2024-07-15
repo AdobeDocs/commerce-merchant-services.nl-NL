@@ -1,20 +1,20 @@
 ---
-title: '[!DNL Product Recommendations] Overzicht van de handleiding'
-description: Uitgebreide informatie over [!DNL Product Recommendations] voor Adobe Commerce-beheerders, inclusief installatie en instapsysteem
+title: '[!DNL Product Recommendations] Overzicht van hulplijnen'
+description: Uitgebreide informatie over  [!DNL Product Recommendations]  voor de beheerders van Adobe Commerce, met inbegrip van installatie en onboarding
 seo-title: Adobe Commerce [!DNL Product Recommendations] Guide
 seo-description: Describes how to use [!DNL Product Recommendations] with Adobe Commerce.
 exl-id: 7f5105ba-e764-4cb5-9b95-75810e934b47
 feature: Services, Recommendations
 source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 2%
+source-wordcount: '196'
+ht-degree: 0%
 
 ---
 
-# [!DNL Product Recommendations] Overzicht van de handleiding
+# [!DNL Product Recommendations] Overzicht van hulplijnen
 
-Deze handleiding is bedoeld voor beheerders van Adobe Commerce. Het bevat gedetailleerde informatie over de installatie en het aan boord nemen van [!DNL Product Recommendations], alsmede configuratie en beheer van de diensten. Het veronderstelt een basisbegrip van de kern [!DNL Commerce] configuratie en functionaliteit.
+Deze handleiding is bedoeld voor beheerders van Adobe Commerce. Het omvat gedetailleerde informatie over installatie en het aan boord gaan van [!DNL Product Recommendations], evenals configuratie en beheer van de diensten. Hierbij wordt uitgegaan van een basisbegrip van de basisconfiguratie en -functionaliteit van [!DNL Commerce] .
 
 [!DNL Product Recommendations] heeft twee gebieden voor beheerders:
 
@@ -23,21 +23,21 @@ Deze handleiding is bedoeld voor beheerders van Adobe Commerce. Het bevat gedeta
 
 Deze handleiding is van toepassing op:
 
-* Alles [!DNL Product Recommendations]-specifieke taken die in Admin worden uitgevoerd.
-* Alles [!DNL Product Recommendations]-specifieke taken die worden gedaan gebruikend [!DNL Commerce] opdrachtregel
+* Alle [!DNL Product Recommendations] -specifieke taken die in Admin worden uitgevoerd.
+* Alle [!DNL Product Recommendations] -specifieke taken die zijn uitgevoerd met de opdrachtregel [!DNL Commerce]
 
 Deze handleiding heeft geen betrekking op de kernmogelijkheden van Adobe Commerce en Magento Open Source.
 
 ## Aanvullende documentatie
 
-| Handleiding | Beschrijving |
+| Hulplijn | Beschrijving |
 |------ | ----------- |
-| [Adobe Commerce 2.4 Handboek](https://experienceleague.adobe.com/docs/commerce.html) | Bedrijfsgerichte documentatie voor zowel Adobe Commerce als Magento Open Source |
-| [Adobe Commerce 2.4-handleiding voor ontwikkelaars](https://developer.adobe.com/commerce/docs) | Documentatie gericht op ontwikkelaars die wordt gebruikt om Adobe Commerce of Magento Open Source te bouwen en aan te passen |
+| [ Adobe Commerce 2.4 Gids van de Gebruiker ](https://experienceleague.adobe.com/docs/commerce.html) | Bedrijfsgerichte documentatie voor zowel Adobe Commerce als Magento Open Source |
+| [ Adobe Commerce 2.4 de Gids van de Ontwikkelaar ](https://developer.adobe.com/commerce/docs) | Documentatie gericht op ontwikkelaars die wordt gebruikt om Adobe Commerce of Magento Open Source te bouwen en aan te passen |
 
 ## Ondersteuning
 
 Gebruik de volgende bronnen als u informatie nodig hebt of vragen hebt die niet in deze handleiding worden behandeld:
 
-* [Help Center](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-tickets){target="_blank"}—Zie de [!DNL Product Recommendations]gerelateerde artikelen voor probleemoplossing.
-* [Ondersteuningstickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"}—Verstuur een ticket om extra hulp te ontvangen.
+* [ het centrum van de Hulp ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-tickets) {target="_blank"} - zie de [!DNL Product Recommendations] verwante het oplossen van problemenartikelen.
+* [ kaartjes van de Steun ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) {target="_blank"} - leg een kaartje voor om extra hulp te ontvangen.

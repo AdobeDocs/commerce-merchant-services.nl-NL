@@ -2,39 +2,39 @@
 title: Afhandeling
 description: Afhandeling aanpassen aan de behoeften van uw klant.
 feature: Payments, Checkout
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+exl-id: 47df165f-2145-4e0e-b272-54b8e768cf19
+source-git-commit: 4a534f2f9844173b4ec878976595159c2c47c561
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '322'
 ht-degree: 0%
 
 ---
 
-
 # Afhandeling
 
-U kunt het afrekenen voor Adobe Commerce configureren [!DNL Payment Services] voor optimaal gebruik van de winkels. Functionaliteit zoals [automatisch ongeldig maken bestellen](#order-auto-voided-if-error) en [creditcard vauleren](#credit-card-vaulting) zorgt ervoor dat de gebruikers een vloeiende gebruikerservaring hebben.
+U kunt de afhandeling voor Adobe Commerce [!DNL Payment Services] zo configureren dat deze het beste aansluit bij uw klanten. De functionaliteit zoals [ orde auto-ongeldig maakt ](#order-auto-voided-if-error) en [ creditcardhet vaulteren ](#credit-card-vaulting) zorgt ervoor uw klanten een vlotte gebruikerservaring hebben.
 
 ## Volgorde automatisch ongeldig maken als er een fout optreedt
 
-Als tijdens het uitchecken een fout optreedt, [!DNL Payment Services] Hiermee wordt de bestelling automatisch gewist of geannuleerd.
+Als tijdens het uitchecken een fout optreedt, wordt de volgorde door [!DNL Payment Services] automatisch gewist of geannuleerd.
 
 Er wordt een foutbericht weergegeven op de uitcheckpagina voor de winkelier. Het bericht kan variëren.
 
-![Fout tijdens controleren](assets/user-checkout-error.png "Fout tijdens uitchecken"){width="600" zoomable="yes"}
+![ Fout terwijl het controleren ](assets/user-checkout-error.png " Fout terwijl het controleren "){width="600" zoomable="yes"}
 
-Een opmerking over de geannuleerde volgorde wordt ook weergegeven in Beheer voor een specifieke [bestellen](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/orders.html?lang=en).
+Een commentaar betreffende de geannuleerde orde toont ook in Admin voor een specifieke [ orde ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/orders.html?lang=en).
 
-![Opmerking voor geannuleerde bestelling in Admin](assets/admin-checkout-error.png "Opmerking voor geannuleerde bestelling in Admin"){width="600" zoomable="yes"}
+![ Geannuleerde ordecommentaar in Admin voor orde ](assets/admin-checkout-error.png " Geannuleerde ordecommentaar in Admin voor orde "){width="600" zoomable="yes"}
 
-Als een klant toestemming voor een bestelling krijgt, maar de bestelling niet is gemaakt en omgezet in een `Capture`, de volgorde is automatisch ongeldig. Dit proces zorgt ervoor dat er geen krediet op de creditcard van de winkels wordt gereserveerd en vermijdt de provisie voor de betalingsaanbieder die ontstaat wanneer de machtiging aan het einde van de standaardperiode van 29 dagen wordt ingetrokken.
+Als een winkelier autorisatie voor een bestelling krijgt, maar de bestelling niet is gemaakt en omgezet in een `Capture` , wordt de bestelling automatisch ongeldig gemaakt. Dit proces zorgt ervoor dat er geen krediet op de creditcard van de winkels wordt gereserveerd en vermijdt de provisie voor de betalingsaanbieder die ontstaat wanneer de machtiging aan het einde van de standaardperiode van 29 dagen wordt ingetrokken.
 
 >[!NOTE]
 >
->Automatisch intrekken van bestellingen wordt alleen uitgevoerd wanneer de klant een betalingsmethode gebruikt die is ingesteld op `Authorize` modus, niet `Authorize and Capture` -modus.
+>Volgorde automatisch intrekken vindt alleen plaats wanneer de klant een betalingsmethode gebruikt die is ingesteld op `Authorize` mode, niet op `Authorize and Capture` mode.
 
 ## Afhandeling vanaf productpagina
 
-Wanneer een klant rechtstreeks vanaf de productpagina uitcheckt via PayPal of [!DNL Pay Later] knoppen, alleen het item dat op de huidige productpagina wordt weergegeven, wordt aangeschaft. Objecten die al in de winkelwagentje van de klant staan, worden niet aan de afrekenstroom toegevoegd en niet aangeschaft.
+Wanneer een klant rechtstreeks vanaf de productpagina uitcheckt met de PayPal- of [!DNL Pay Later] -knoppen, wordt alleen het object op de huidige productpagina aangeschaft. Objecten die al in de winkelwagentje van de klant staan, worden niet aan de afrekenstroom toegevoegd en niet aangeschaft.
 
 Met deze functie kan de klant snel het object kopen dat hij of zij momenteel bekijkt, terwijl de eerder aan zijn of haar winkelwagentje toegevoegde items behouden blijven.
 Als de klant de bestelling annuleert, wordt het item op de huidige productpagina toegevoegd aan de winkelwagentje van de klant.
@@ -45,4 +45,4 @@ Wanneer een klant de afrekenstroom op de productpagina invoert, wordt de afhande
 
 Klanten kunnen hun creditcardgegevens voor toekomstige aankopen op websiteniveau (elke winkel binnen dezelfde zakelijke account) invullen (of &quot;opslaan&quot;).
 
-Zie [Creditcard vaulting](vaulting.md) voor meer informatie
+Zie [ Kredietkaart het vauleren ](vaulting.md) voor meer informatie

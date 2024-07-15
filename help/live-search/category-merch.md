@@ -1,6 +1,6 @@
 ---
 title: Categorieverhandeling
-description: Gebruiken [!DNL Live Search] Rubriekhandel voor een snellere winkelervaring.
+description: Het Verkopen van de Categorie van het gebruik  [!DNL Live Search]  voor een snellere het winkelen ervaring.
 gourl: ls_catalog_merchandising
 exl-id: 24f159c1-b175-47c1-aca1-8bada118b4b4
 source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
@@ -12,19 +12,19 @@ ht-degree: 0%
 
 # Categorieverhandeling
 
-Bij het verhandelen van categorieën kunnen eigenaars van winkels het volgende toepassen: [!DNL Live Search] Intelligente classificatie [regels](rules.md) naar productcategorieën en subcategorieën.
+De categorie het Merchandising staat opslageigenaars toe om [!DNL Live Search] Intelligente het rangschikken [ regels ](rules.md) op productcategorieën en subcategorieën toe te passen.
 
 Deze video is een inleiding op Categorie Merchandising.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424617)
 
-De functie is toegankelijk via de beheerfunctie op **Marketing** > SEO &amp; Search > **[!DNL Live Search]** > **Categorieverhandeling**.
+De eigenschap wordt betreden in Admin bij **Marketing** > SEO &amp; Onderzoek > **[!DNL Live Search]** > **Categorie die** verhandelen.
 
 >[!NOTE]
 >
->Rubriekhandel is beschikbaar via [!DNL Live Search] [3.0.0 of hoger](release-notes.md). Als u de werkruimte voor het verhandelen van categorieën ziet maar er geen gegevens in staan, werkt u de [!DNL Live Search] -module.
+>De categorie die is het verwisselen beschikbaar met [!DNL Live Search] [ 3.0.0 of hoger ](release-notes.md). Werk de module [!DNL Live Search] bij als u de werkruimte Categorie-omzetting ziet, maar deze niet met gegevens wordt gevuld.
 
-![Categoriemerking](assets/category_workspace.png)
+![ het Merchandising van de Categorie ](assets/category_workspace.png)
 
 De mening van de Verkoop van de Categorie toont bepaalde categorieregels, met kolommen voor:
 
@@ -38,10 +38,10 @@ U kunt een categorie of subcategorie zoeken in het veld Zoeken op categorie.
 
 ## Rangorde van strategieën
 
-Bij het verwisselen van categorieën worden dezelfde rangschikkingstypen gebruikt als bij [afzonderlijke producten](rules-workspace.md).
+Het Merchandising van de categorie gebruikt de zelfde rangschikkende types zoals met [ individuele producten ](rules-workspace.md).
 Er zijn twee soorten rangschikkingen: Intelligent en Handmatig.
 
-**Intelligente classificatie** hefboomwerkingen storefront gedragsgegevensanalyse door [Adobe Sensei](https://www.adobe.com/sensei.html) alle producten binnen gekozen categorieën te sorteren op een bepaald algoritme. Zodra een intelligente rangschikking wordt gekozen, zal de specifieke volgorde van de producten naar verwachting in de loop der tijd veranderen naarmate de onderliggende gegevens doorlopend opnieuw door Adobe Sensei worden geanalyseerd. De bovenste trendproducten veranderen bijvoorbeeld automatisch in de loop van de tijd wanneer de winkelvoorkeuren veranderen.
+**Intelligente het rangschikken** hefboomwerkingen storefront gedragsgegevensanalyse door [ Adobe Sensei ](https://www.adobe.com/sensei.html) om alle producten binnen gekozen categorieën door een bepaald algoritme te sorteren. Zodra een intelligente rangschikking wordt gekozen, zal de specifieke volgorde van de producten naar verwachting in de loop der tijd veranderen naarmate de onderliggende gegevens doorlopend opnieuw door Adobe Sensei worden geanalyseerd. De bovenste trendproducten veranderen bijvoorbeeld automatisch in de loop van de tijd wanneer de winkelvoorkeuren veranderen.
 Intelligente classificatiemethoden zijn:
 
 * De meeste aankopen: producten worden gerangschikt op basis van de frequentie waarmee ze in de afgelopen zeven dagen door kopers zijn gekocht.
@@ -51,25 +51,25 @@ Intelligente classificatiemethoden zijn:
 * Trending: rangschikt producten op basis van weergaven op basis van recente opwaartse bewegingen in populariteit.
 * Geen: producten worden in de standaardvolgorde gerangschikt.
 
-**Handmatige classificatie** Hiermee kunnen gebruikers de automatische sorteervolgorde van de producten overschrijven door handmatig spelden, boost, bury en hide in te stellen.
+**het Handmatig rangschikken** staat gebruikers toe om de automatische orde van de productsoort met voeten te treden door handspeld te bepalen, stoot, begraving, en verberg regels.
 
 ## Overgenomen classificatie
 
 Als handelaar zou u alle slijtcategorieën van vrouwen kunnen selecteren die door &quot;trending&quot; worden gesorteerd. Hieronder vallen de subcategorieën &quot;Vrouwenbroek&quot;, &quot;Vrouwenhemden&quot; en &quot;Vrouwenaccessoires&quot;. Dit mag geen invloed hebben op de categorieën mannen. Hiervoor kunt u overerfde classificaties gebruiken.
 
-Als u een intelligente waarderingsmethode selecteert voor een categorie of subcategorie met subcategorieën, kunt u de optie **Intelligente classificaties toepassen op subcategorieën** -optie. Hiermee past u de waarderingsmethode toe op alle subcategorieën.
+Wanneer het selecteren van een Intelligente het rangschikken methode voor een categorie of een subcategorie die subcategorieën heeft, kunt u **gebruiken pas intelligente classificaties op subcategorieën** optie toe. Hiermee past u de waarderingsmethode toe op alle subcategorieën.
 
-Deze subcategorieën erven nu die regel van de oudercategorie (&quot;ja&quot;in de Geërfde kolom van de Rangschikking). In de kolom Actie zijn de enige beschikbare opties: **Regel bewerken**, en **Details weergeven**. De **Verwijderen** Deze optie is uitgeschakeld voor overerfde regels voor subcategorieën. Als u overerving van subcategorieën verwijdert, moet overerving van de bovenliggende categorie ongedaan worden gemaakt.
+Deze subcategorieën erven nu die regel van de oudercategorie (&quot;ja&quot;in de Geërfde kolom van de Rangschikking). In de kolom van de Actie, zijn de enige beschikbare opties **uitgeven Regel**, en **Details van de Mening**. De **schrapping** optie wordt onbruikbaar gemaakt voor geërfte regels op subcategorieën. Als u overerving van subcategorieën verwijdert, moet overerving van de bovenliggende categorie ongedaan worden gemaakt.
 
 Voor elke categorie of subcategorie kan slechts één intelligente classificatie tegelijk worden toegepast. Ze kunnen ook extra handmatige classificaties hebben toegepast.
 
-Als u een Intelligente classificatie toepast op een categorie en de optie **Intelligente classificatie toepassen op subcategorieën** , worden alle Intelligente classificaties die al op de subcategorieën zijn toegepast, overschreven.
+Als u een Intelligente rangschikking op een categorie toepast en **aanzet pas intelligente rangschikking op subcategorieën** optie toe, wordt om het even welke Intelligente die rangschikking reeds op subcategorieën wordt toegepast beschreven.
 
-![Overschreven subcategorielijst](assets/category_overwite_subs.png){width="700"}
+![ Geboekte subcategorielijst ](assets/category_overwite_subs.png){width="700"}
 
-Als u op **Alles weergeven**, wordt een dialoog geopend met bijzonderheden over de voorgestelde wijzigingen.
+Als u **Mening allen** klikt, opent een dialoog met details van de voorgestelde veranderingen.
 
-![Gegevens voor wijzigingen in volgorde](assets/category_overwrite.png)
+![ het Rangschikken verandert details ](assets/category_overwrite.png)
 
 Wanneer u een Intelligent ranking rechtstreeks toevoegt aan een categorie met een overgeërfde Intelligent ranking, wordt de overerving overschreven door de nieuwe Intelligent ranking.
 
@@ -80,42 +80,42 @@ Als u een Intelligente rangschikking uit een categorie verwijdert en de subcateg
 
 Er wordt een dialoogvenster weergegeven waarin wordt uitgelegd welke overgeërfde subcategorieën worden beïnvloed door wijzigingen die u aanbrengt in een categorie op een hoger niveau.
 
-![Het modaal dialoogvenster Wijzigingen rangschikken](assets/category_overwrite_modal.png){width="1200"}
+![ het Rangschikken verandert modale dialoog ](assets/category_overwrite_modal.png){width="1200"}
 
 ## Een categorieregel maken
 
 Een categorieregel maken:
 
-1. Klik op de knop **Regel toevoegen** knop.
-1. In de _Categorie selecteren_ Klik op de categorieën en subcategorieën.
+1. Klik **toevoegen de knoop van de Regel**.
+1. In de _Uitgezochte mening van de Categorie_, klik door de categorieën en subcategorieën.
 1. Schakel het selectievakje in om de categorie te selecteren die u wilt rangschikken.
-1. Klikken **Toepassen**.
+1. Klik **toepassen**.
 
-   ![Selecteer een categorie](assets/category_select.png)
+   ![ selecteer een categorie ](assets/category_select.png)
 
-1. In de _Categorieregel toevoegen_ Selecteer de methode voor intelligente classificaties die u op de categorie wilt toepassen.
+1. In _voeg de regel van de Categorie_ mening toe, selecteer de Intelligente het rangschikken methode u wenst om op de categorie van toepassing te zijn.
 Op de pagina Voorvertoning categorie worden de werkelijke resultaten van de geselecteerde positie weergegeven met behulp van uw Live zoeken-gegevens.
-1. Klikken **Opslaan en publiceren** om de regel op te slaan.
+1. Klik **sparen en Publish** om de regel te bewaren.
 
-![Selecteer de methode voor intelligente classificaties](assets/category_ranking.png)
+![ selecteer de Intelligente het rangschikken methode ](assets/category_ranking.png)
 
-De [!DNL Live Search] de dienst verwerkt de regel en activeert het op de opslag wanneer gebeëindigd.
+De service [!DNL Live Search] verwerkt de regel en activeert deze in de winkel wanneer u klaar bent.
 
 ## Categorieregels wijzigen
 
 Een bestaande regel wijzigen:
 
-1. Klik op de knop **...** in de kolom Actie en kies **Bewerken**.
-1. Breng in de regelweergave Categorie bewerken de vereiste wijzigingen aan en klik op **Opslaan en publiceren**.
+1. Klik **...** in de kolom van de Actie en kies **uitgeven**.
+1. In de Edit mening van de Categorieregel, breng om het even welke vereiste veranderingen aan en klik **sparen en Publish**.
 
-De wijzigingen worden weerspiegeld in de winkel wanneer [!DNL Live Search] heeft de wijziging verwerkt.
+De wijzigingen worden weerspiegeld in de winkel wanneer [!DNL Live Search] de wijziging heeft verwerkt.
 
 ## Categorieregels verwijderen
 
 Een categorieregel verwijderen:
 
-1. Klik op de knop **...** in de kolom Actie en kies **Verwijderen**.
-1. In de _Regel verwijderen_ modal, selecteer **Verwijderen** om de regel te verwijderen of **Annuleren** om de handeling te annuleren.
+1. Klik **...** in de kolom van de Actie en kies **Schrapping**.
+1. In _schrap regel_ modaal, uitgezochte **Schrapping** om de regel te verwijderen of **annuleert** om de actie te annuleren.
 
 ## Handmatige classificatie
 
@@ -138,6 +138,6 @@ U kunt ook op het speldpictogram klikken om een product op de huidige locatie va
 
 Een gebeurtenis handmatig toevoegen:
 
-1. Klik onder Handmatige volgorde op de knop **Een gebeurtenis selecteren** en kiest u een gebeurtenis die moet plaatsvinden wanneer aan de bijbehorende voorwaarden wordt voldaan.
+1. Onder het Handmatig Rangschikken, klik **Uitgezocht een gebeurtenis** menu en kies een gebeurtenis om te plaatsvinden wanneer de bijbehorende voorwaarden worden voldaan aan.
 1. Voer de naam in van het product waarop u de bewerking wilt toepassen. Producten worden voorgesteld terwijl u typt.
 1. Voor meerdere gebeurtenissen kiest u andere gebeurtenissen die u wilt activeren als aan de voorwaarden is voldaan.

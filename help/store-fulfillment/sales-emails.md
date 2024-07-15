@@ -19,7 +19,7 @@ Store Fulfillment biedt een uitgebreide reeks transactie-e-mailsjablonen aan ter
 
 E-mailsjablonen voor afhandeling van opslagruimte worden geconfigureerd met standaardberichten en -instellingen. Merchant beheerders in Adobe Commerce kunnen configuraties beheren en wijzigen, en de e-mailmalplaatjes selecteren om met klanten in verschillende scenario&#39;s te communiceren. Beheerders kunnen sjablonen ook configureren en aanpassen.
 
-Configureer de e-mailsjablonen voor verkoop van de beheerder: **[!UICONTROL Stores > Configuration > Sales > Sales Emails]**.
+Configureer de e-mailsjablonen voor verkoop via de beheerfunctie: **[!UICONTROL Stores > Configuration > Sales > Sales Emails]** .
 
 ## E-mails - Algemene instellingen
 
@@ -34,7 +34,7 @@ Configureer de e-mailsjablonen voor verkoop van de beheerder: **[!UICONTROL Stor
 </thead>
 <tbody><tr>
 <td><strong>Asynchroon verzenden</strong></td>
-<td>Hiermee bepaalt u of e-mails over verkopen asynchroon worden verzonden. Opties: <br/>**" Uitschakelen"* - (Standaard) Verkoop-e-mails worden verzonden wanneer deze door een gebeurtenis worden geactiveerd. Gebruik de standaardinstelling voor de snelste communicatie en reactietijd voor Ophalen. <br/>**'Enable`** - Als u deze optie inschakelt, worden processen die het uitchecken van e-mailmeldingen afhandelen en de verwerking ervan naar de achtergrond verplaatst en worden deze op vooraf bepaalde, regelmatige intervallen verzonden.</td>
+<td>Hiermee bepaalt u of e-mails over verkopen asynchroon worden verzonden. Opties: <br/>**'Disable`** - (Standaard) Verkoop-e-mails worden verzonden wanneer deze door een gebeurtenis worden geactiveerd. Gebruik de standaardinstelling voor de snelste communicatie en reactietijd voor Ophalen. <br/>**'Enable`** - Als u deze optie inschakelt, worden processen die het uitchecken van e-mailberichten afhandelen en de verwerking ervan naar de achtergrond verplaatst en worden deze op vooraf bepaalde, regelmatige intervallen verzonden.</td>
 <td>Winkelweergave</td>
 <td>Nee</td>
 </tr>
@@ -207,7 +207,7 @@ Configureer de e-mailsjablonen voor verkoop van de beheerder: **[!UICONTROL Stor
 </thead>
 <tbody><tr>
 <td><strong>Ingeschakeld</strong></td>
-<td>Dit e-mailbericht wordt naar de klant verzonden om deze te laten weten dat zijn bestelling in de winkel is geannuleerd. Instellen op <code>No</code> om de e-mailmelding uit te schakelen. Als de e-mailsjabloon is uitgeschakeld, voorkomt deze functie niet dat een bestelling wordt geannuleerd.</td>
+<td>Dit e-mailbericht wordt naar de klant verzonden om deze te laten weten dat zijn bestelling in de winkel is geannuleerd. Stel in op <code>No</code> om de e-mailmelding uit te schakelen. Als de e-mailsjabloon is uitgeschakeld, voorkomt deze functie niet dat een bestelling wordt geannuleerd.</td>
 <td>Winkelweergave</td>
 <td>Nee</td>
 </tr>
@@ -257,7 +257,7 @@ Configureer de e-mailsjablonen voor verkoop van de beheerder: **[!UICONTROL Stor
 </thead>
 <tbody><tr>
 <td><strong>Ingeschakeld</strong></td>
-<td>Dit e-mailbericht wordt naar de klant verzonden om deze te laten weten dat een deel van zijn bestelling in de winkel is geannuleerd. Instellen op <code>No</code> om de e-mailmelding uit te schakelen. Als de e-mailsjabloon is uitgeschakeld, kan een bestelling niet gedeeltelijk worden geannuleerd.</td>
+<td>Dit e-mailbericht wordt naar de klant verzonden om deze te laten weten dat een deel van zijn bestelling in de winkel is geannuleerd. Stel in op <code>No</code> om de e-mailmelding uit te schakelen. Als de e-mailsjabloon is uitgeschakeld, kan een bestelling niet gedeeltelijk worden geannuleerd.</td>
 <td>Winkelweergave</td>
 <td>Nee</td>
 </tr>
@@ -312,8 +312,8 @@ Configureer de e-mailsjablonen voor verkoop van de beheerder: **[!UICONTROL Stor
 </thead>
 <tbody><tr>
 <td><strong>De bestelling is verzonden om e-mailafzender van producten op te slaan</strong></td>
-<td>De e-mail die naar het opgegeven bedrijfspersoneel is verzonden als een geaggregeerd rapport van alle open bestellingen die pas in een handelswinkel kunnen worden uitgepakt als hun inventaris beschikbaar is. </br></br> Handelaars kunnen dit rapport gebruiken om voorraadoverdrachten of aanvulling te initiëren en te beheren. </br></br>Deze melding is alleen van toepassing wanneer de [!DNL Ship-to-Store] functies zijn ingeschakeld.
-</br></br>Dit label heeft geen invloed op de geselecteerde verzendmaatschappij of op de labels van de verzendmethode.</td>
+<td>De e-mail die naar het opgegeven bedrijfspersoneel is verzonden als een geaggregeerd rapport van alle open bestellingen die pas in een handelswinkel kunnen worden uitgepakt als hun inventaris beschikbaar is. </br></br> Handelaars kunnen dit rapport gebruiken om voorraadoverdrachten of aanvulling te initiëren en te beheren. </br></br> Dit bericht is slechts van toepassing wanneer de [!DNL Ship-to-Store] eigenschappen worden toegelaten.
+</br></br> Dit etiket beïnvloedt niet de geselecteerde verschepende drager of hun beschikbare het verschepen methodeetiketten.</td>
 <td>Winkelweergave</td>
 <td>Nee</td>
 </tr>
@@ -333,7 +333,7 @@ Configureer de e-mailsjablonen voor verkoop van de beheerder: **[!UICONTROL Stor
 
 >[!NOTE]
 >
->Als u backorders toestaat, moet u een beheerder e-mailadres verstrekken om berichten over deze orden te ontvangen. Voeg het adres aan de volgende configuratiemontages toe: **[!UICONTROL Send Order Delayed Email Copy To]** in de [Opdrachtvertraging](#order-delayed) sjabloon, en [!UICONTROL Ship To Store Email Recipients] in de [Verzenden naar winkel](#ship-to-store) sjabloon.
+>Als u backorders toestaat, moet u een beheerder e-mailadres verstrekken om berichten over deze orden te ontvangen. Voeg het adres aan de volgende configuratiemontages toe: **[!UICONTROL Send Order Delayed Email Copy To]** in het [ malplaatje van de Vertraging van de Orde ](#order-delayed), en [!UICONTROL Ship To Store Email Recipients] in het [ Schip om ](#ship-to-store) malplaatje op te slaan.
 
 
 

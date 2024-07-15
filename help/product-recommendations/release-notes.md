@@ -1,6 +1,6 @@
 ---
-title: '''[!DNL Product Recommendations] Opmerkingen bij de release'
-description: De meest recente releasegegevens voor [!DNL Product Recommendations] uit Adobe Commerce.
+title: '[!DNL Product Recommendations] Opmerkingen bij de release'
+description: De recentste versieinformatie voor  [!DNL Product Recommendations]  van Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
 source-git-commit: 6f31361e95b17ee3fa19ff3c2f4a7e2d6d9bc091
@@ -12,280 +12,281 @@ ht-degree: 0%
 
 # [!DNL Product Recommendations] Opmerkingen bij de release
 
-De releaseopmerkingen bevatten updates voor het volgende [!DNL Product Recommendations] modules:
+De releaseopmerkingen bevatten updates voor de volgende [!DNL Product Recommendations] -modules:
 
-* [!DNL Product Recommendations] pakket: `magento/product-recommendations`
-* Ondersteuning voor Page Builder in [!DNL Product Recommendations] (optioneel) module: `magento/module-page-builder-product-recommendations`
-* Visuele steun van het type van gelijkheidsaanbeveling voor [!DNL Product Recommendations] (optioneel) module: `magento/module-visual-product-recommendations`
+* [!DNL Product Recommendations] metapack: `magento/product-recommendations`
+* Ondersteuning voor Page Builder in de module [!DNL Product Recommendations] (optioneel): `magento/module-page-builder-product-recommendations`
+* Ondersteuning voor het aanbevolen type visuele gelijkenis voor de module [!DNL Product Recommendations] (optioneel): `magento/module-visual-product-recommendations`
 
 Er wordt ondersteuning geboden voor de belangrijkste uitgebrachte versie. Opmerkingen bij de release voor oudere versies worden ter referentie verschaft.
 De opmerkingen bij de release omvatten:
 
-![Nieuw](../assets/new.svg) Nieuwe functies
-![Repareren](../assets/fix.svg) Oplossingen en verbeteringen
-![Bug](../assets/bug.svg) Bekende problemen
+![ Nieuwe ](../assets/new.svg) Nieuwe eigenschappen
+![ bevestig ](../assets/fix.svg) Bevestigingen en verbeteringen
+![ Bug ](../assets/bug.svg) Bekende kwesties
 
-Zie de documentatie voor ontwikkelaars op [informatie over productondersteuning](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
+Zie de ontwikkelaardocumentatie [ over productsteun ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) leren.
 
 ## Gehoste service-updates
 
 Deze nota&#39;s beschrijven updates of bekende kwesties die buiten een versioned versie of verbeteringen aan de ontvangen dienst werden gepubliceerd of ontdekt.
 
-_28 juni 2024_
+_Juni 28, 2024_
 
-![Bug](../assets/bug.svg) Aan de kar toegevoegde producten van een [!DNL Product Recommendations] -eenheid op de winkelwagentje niet worden verwijderd uit de lijst met aanbevolen producten wanneer de winkelwagentje opnieuw wordt geladen.
-![Bug](../assets/bug.svg) Producten die uit het winkelwagentje worden verwijderd, blijven in het `cartSkus` -array tot de winkelwagentje opnieuw wordt geladen.
+![ Bug ](../assets/bug.svg) Producten die aan het karretje van a [!DNL Product Recommendations] eenheid op de kartpagina worden toegevoegd worden niet verwijderd uit de lijst van geadviseerde producten wanneer de kartpagina opnieuw laadt.
+![ de Producten van de Bug ](../assets/bug.svg) die van het karretje worden verwijderd blijven in de `cartSkus` serie bestaan tot de kartpagina herlaadt.
 
 _18 juli 2023_
 
-![Nieuw](../assets/new.svg) [!DNL Product Recommendations] heeft nu een GraphQL [`recommendations`](https://developer.adobe.com/commerce/services/graphql/recommendations/recommendations/) query.
+![ Nieuw ](../assets/new.svg) [!DNL Product Recommendations] heeft nu een GraphQL [`recommendations` ](https://developer.adobe.com/commerce/services/graphql/recommendations/recommendations/) vraag.
 
-_25 april 2023_
+_25 April, 2023_
 
-![Nieuw](../assets/new.svg) [!DNL Product Recommendations] klanten kunnen nu profiteren van [Prijsindexering SaaS](../price-index/price-indexing.md).
+![ Nieuwe ](../assets/new.svg) [!DNL Product Recommendations] klanten kunnen uit [ prijs nu voordeel halen SaaS indexerend ](../price-index/price-indexing.md).
 
 ## Huidige hoofdversie
 
 ### 6.0.2 van magento/productaanbevelingen
 
-_9 mei 2024_
+_Mei 9, 2024_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Repareren](../assets/fix.svg) Probleem verholpen waarbij werd geklikt op de knop **[!DNL Add to Cart]** op een eenvoudig product in een Product Recommendations-eenheid werd de winkelner omgeleid naar de homepage in plaats van op de huidige pagina te blijven.
-![Bug](../assets/bug.svg) Er is een validatiefout veroorzaakt door de `referenceBlock` in het `ProductRecommendations Layout` XML-bestand
+![ beval ](../assets/fix.svg) een kwestie waar het klikken van de **[!DNL Add to Cart]** knoop op een eenvoudig product binnen een eenheid van Recommendations van het Product de verkoopster aan de homepage eerder dan het blijven op de huidige pagina opnieuw richtte.
+![ Bug ](../assets/bug.svg) Er is een bevestigingsfout die door het `referenceBlock` element in het `ProductRecommendations Layout` dossier van XML wordt veroorzaakt.
 
 ### Vorige versies
 
 ### 6.0.1 van magento/productaanbevelingen
 
-_19 maart 2024_
+_Maart 19, 2024_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) Ondersteuning voor PHP 8.3 toegevoegd.
+![ Nieuwe ](../assets/new.svg) Toegevoegde PHP 8.3 steun.
 
 ### 6.0.0 van magento/product-recommendations
 
-_22 februari 2024_
+_22 Februari, 2024_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) De [!DNL Catalog Sync Dashboard] is nu [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). Dit vernieuwde dashboard biedt inzichten in gegevensstromen voor [!DNL Product Recommendations], [!DNL Live Search], en [!DNL Catalog Service].
-![Repareren](../assets/fix.svg) Probleem verholpen waarbij afrekenfouten werden veroorzaakt voor [!DNL Product Recommendations].
+![ Nieuw ](../assets/new.svg) [!DNL Catalog Sync Dashboard] is nu [[!DNL Data Management Dashboard] ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). Dit vernieuwde dashboard biedt inzichten in gegevensstromen voor [!DNL Product Recommendations] , [!DNL Live Search] en [!DNL Catalog Service] .
+![ bevestig ](../assets/fix.svg) een kwestie die controlefouten voor [!DNL Product Recommendations] veroorzaakte.
 
 +++5.0.0 en eerder
 
 ### 5.0.1 van magento/productaanbevelingen
 
-_15 september 2023_
+_15 September, 2023_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) Nieuwe modules toegevoegd ter ondersteuning van de [Saas Price Index](../price-index/price-indexing.md).
-![Nieuw](../assets/new.svg) Er zijn nieuwe gegevensexportmodules toegevoegd ter ondersteuning van het exporteren van meer producttypen, waaronder gebundelde producten en cadeaukaarten.
-![Repareren](../assets/fix.svg) De tabelgrootte van de producten en de prijsvoeding is sterk afgenomen. Tabellen `catalog_data_exporter_products` en `catalog_data_exporter_product_prices` moet een aanzienlijke vermindering van de omvang zien.
+![ Nieuwe ](../assets/new.svg) Toegevoegde nieuwe modules om de [ Indexer van de Prijs van de Zas ](../price-index/price-indexing.md) te steunen.
+![ Nieuwe ](../assets/new.svg) Toegevoegde nieuwe modules van de gegevensuitvoer om het uitvoeren van meer producttypes met inbegrip van gebundelde producten en giftekaarten te steunen.
+![ Repareer ](../assets/fix.svg) de lijstgrootte van de Producten en de feeds van de Prijs zijn zeer verminderd. Tabellen `catalog_data_exporter_products` en `catalog_data_exporter_product_prices` moeten aanzienlijk worden verkleind.
 
 #### Bekende beperkingen
 
-* De `websiteCode` value is incorrect teruggekeerd als het een onderstrepingsteken (_) bevat.
+* De waarde `websiteCode` wordt onjuist geretourneerd als deze een onderstrepingsteken (_) bevat.
 
 ### 5.0.0 van magento/productaanbevelingen
 
-_20 maart 2023_
+_Maart 20.2023_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) Bijgewerkt [!DNL Product Recommendations] ter ondersteuning van Adobe Commerce 2.4.6.
-![Nieuw](../assets/new.svg) Dit is een belangrijke versie. [Bewerken](install-configure.md#update) de basis `composer.json` bestand voor uw project.
-![Nieuw](../assets/new.svg) [!DNL Product Recommendations] ondersteunt nu volledig [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) Mogelijkheden in Commerce (voorheen bekend als Multi-Source Inventory, of MSI). Om volledige steun toe te laten, moet u [update](install-configure.md#update) de afhankelijkheidsmodule `commerce-data-export` naar versie 102.2.0+.
+![ Nieuw ](../assets/new.svg) Bijgewerkt [!DNL Product Recommendations] om Adobe Commerce 2.4.6 te steunen.
+![ Nieuw ](../assets/new.svg) Dit is een belangrijke versieversie. [ geeft ](install-configure.md#update) het wortel `composer.json` dossier voor uw project uit.
+![ Nieuw ](../assets/new.svg) [!DNL Product Recommendations] steunt nu volledige [ Inventory management ](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) mogelijkheden in Commerce (vroeger weet als Voorraad Multi-Source, of MSI). Om volledige steun toe te laten, moet u ](install-configure.md#update) de gebiedsdeelmodule `commerce-data-export` aan versie 102.2.0+ bijwerken.[
 
 ### 4.0.1 van magento/productaanbevelingen
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Repareren](../assets/fix.svg) Eerder [!DNL Product Recommendations] zou een fout tonen wanneer de weergavetunt werd overgeschakeld naar een niet-standaardvaluta. Wisselen naar andere valuta werkt nu goed.
+![ Repareren ](../assets/fix.svg) vroeger, [!DNL Product Recommendations] zou een fout tonen wanneer de vertoningsmunt aan een niet-standaardmunt werd geschakeld. Wisselen naar andere valuta werkt nu goed.
 
 ### 4.0.0 van magento/product-recommendations
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) Toegevoegd [gereedheidsindicatoren](create.md) om u te helpen de opleidingsvooruitgang van elk aanbevelingstype visualiseren.
-![Nieuw](../assets/new.svg) Dit is een belangrijke versie. [Bewerken](install-configure.md#update) de basis `composer.json` bestand voor uw project. Voor deze release moet u ook twee API-sleutels opgeven bij de installatie en configuratie [!DNL Product Recommendations]: [een productiesleutel en een sandboxsleutel](../landing/saas.md).
+![ Nieuwe ](../assets/new.svg) Toegevoegde [ gereedheidsindicatoren ](create.md) om u te helpen de opleidingsvooruitgang van elk aanbevelingstype visualiseren.
+![ Nieuw ](../assets/new.svg) Dit is een belangrijke versieversie. [ geeft ](install-configure.md#update) het wortel `composer.json` dossier voor uw project uit. Deze versie vereist u ook om twee API sleutels te verstrekken wanneer het installeren en het vormen [!DNL Product Recommendations]: [ een productiesleutel en een zandbaksleutel ](../landing/saas.md).
 
 #### Bekende beperkingen
 
-* De `websiteCode` value is incorrect teruggekeerd als het een onderstrepingsteken (_) bevat.
+* De waarde `websiteCode` wordt onjuist geretourneerd als deze een onderstrepingsteken (_) bevat.
 
 ### 3.3.7 van de aanbevelingen van magento/product
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) Ondersteuning voor PHP 8.1 toegevoegd
-![Nieuw](../assets/new.svg) Verbeterde afbeeldingsgrootte wordt aangepast, zodat de afbeeldingsgrootte in de referentiesjabloon consistenter wordt verwerkt
+![ Nieuwe ](../assets/new.svg) Toegevoegde PHP 8.1 steun
+![ Nieuw ](../assets/new.svg) Verbeterde beeldresizing zodat het rangschikken van beelden consistenter in het malplaatje van de verwijzingsvertoning wordt behandeld
 
 ### 3.3.6 van de aanbevelingen inzake magento/product
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) Geoptimaliseerd [!DNL Product Recommendations] metapakket door de gebiedsdelen uitdrukkelijk te vermelden
+![ Nieuwe ](../assets/new.svg) Geoptimaliseerde [!DNL Product Recommendations] metapakket door de gebiedsdelen uitdrukkelijk op te geven
 
 ### 3.3.5 van de aanbevelingen van magento/product
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) Toegevoegd [B2B-ondersteuning](onboarding.md#b2bsupport) in [!DNL Product Recommendations]
-![Nieuw](../assets/new.svg) Nieuwe feeds toegevoegd aan [catalogusgegevens synchroniseren](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/data-services/catalog-sync) naar Commerce Services via de opdrachtregel
+![ Nieuwe ](../assets/new.svg) Toegevoegde [ B2B steun ](onboarding.md#b2bsupport) in [!DNL Product Recommendations]
+![ Nieuw ](../assets/new.svg) Toegevoegde nieuwe voer aan [ gegevens van de synchronisatiecatalogus ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/data-services/catalog-sync) aan de Diensten van Commerce via de bevellijn
 
 ### 3.3.3 van de aanbevelingen inzake magento/product
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) Nieuw toegevoegd [typen aanbevelingen](type.md): Conversie (weergave naar winkelwagentje), Conversie (weergave voor aankoop) en Recent weergegeven. Deze nieuwe aanbevelingen zijn beschikbaar in het dialoogvenster `magento/product-recommendations` module 3.2.2 en hoger.
-![Repareren](../assets/fix.svg) Probleem verholpen waarbij Fastly&#39;s Web Application Firewall (WAF) een cookie onjuist blokkeerde
-![Repareren](../assets/fix.svg) Producten die waren toegewezen aan de niet-standaardwinkelweergave werden niet weergegeven in het dialoogvenster _Recommendations-productvoorvertoning_ wanneer u een aanbeveling voor die specifieke winkelweergave maakt
-![Repareren](../assets/fix.svg) Bepaalde namen van aanbevelingen in de Page Builder stonden de aanbeveling-eenheid niet in de winkel. Dit probleem is nu opgelost.
+![ Nieuw ](../assets/new.svg) Toegevoegde nieuwe [ aanbevelingen types ](type.md): Omzetting (mening aan kar), Omzetting (mening aan aankoop), en onlangs bekeken. Deze nieuwe aanbevelingen zijn beschikbaar in `magento/product-recommendations` module 3.2.2 en later.
+![ bevestig ](../assets/fix.svg) een kwestie waar de Firewall van de Toepassing van het Web van Fastly (WAF) verkeerd een koekje blokkeerde
+![ Repareren ](../assets/fix.svg) Vaste kwestie waar de producten die aan de niet standaardMening van de Opslag werden toegewezen niet in het _paneel van de Voorproef van het Product van Recommendations_ werden getoond wanneer het creëren van een aanbeveling voor die specifieke Mening van de Opslag
+![ bevestig ](../assets/fix.svg) Vaste kwestie waar bepaalde namen van de aanbeveling eenheid in de Bouwer van de Pagina de aanbeveling eenheid om op de storefront te tonen verhinderden
 
 ### 3.3.2. van magento/productaanbevelingen
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Repareren](../assets/fix.svg) Oplossing voor ontbrekende afhankelijkheid voor B2B-ondersteuning
+](../assets/fix.svg) Vaste ontbrekende gebiedsdeel van 0} herstellen {voor B2B steun![
 
 ### 3.3.1. van magento/productaanbevelingen
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) Extra ondersteuning voor B2B-klantgroepprijzen. Wanneer u een [prijsfilter](filters.md) op een aanbeveling-eenheid zien B2B-klanten die zijn aangemeld de prijsstelling voor de klantengroep die voor de weergegeven producten is ingesteld.
+![ Nieuwe ](../assets/new.svg) Toegevoegde steun voor de prijsstelling van de klantengroep B2B. Wanneer u a [ prijsfilter ](filters.md) op een aanbevelingseenheid plaatst, zien de klanten B2B die het programma worden geopend de prijsstelling van de klantengroep die voor de getoonde producten wordt geplaatst.
 
 ### 3.3.0 van magento/productaanbevelingen
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) Toegevoegde steun voor de Laag van Gegevens van de Cliënt van de Adobe om gedragsgegevensinzameling over eigenschappen en de diensten van Adobe Commerce te standaardiseren. Zie de [readme](https://github.com/adobe/commerce-events/blob/main/packages/storefront-events-collector/README.md) voor meer informatie.
+![ Nieuwe ](../assets/new.svg) Toegevoegde steun voor de Laag van Gegevens van de Cliënt van de Adobe om gedragsgegevensinzameling over de eigenschappen en de diensten van Adobe Commerce te standaardiseren. Zie [ readme ](https://github.com/adobe/commerce-events/blob/main/packages/storefront-events-collector/README.md) om meer te leren.
 
 ### 3.2.6 van de aanbevelingen inzake magento/product
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Repareren](../assets/fix.svg) Modaal JavaScript-fout opgelost
-![Repareren](../assets/fix.svg) Probleem verholpen waarbij Fastly&#39;s Web Application Firewall (WAF) een cookie onjuist blokkeerde
+![ bevestig ](../assets/fix.svg) een modale fout van JavaScript
+![ bevestig ](../assets/fix.svg) een kwestie waar de Firewall van de Toepassing van het Web van Fastly (WAF) verkeerd een koekje blokkeerde
 
 ### 3.2.5 van de aanbevelingen inzake magento/product
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) De naam van services voor Magento&#39;s wijzigen in [Commerce Services](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas) en verbeterde bruikbaarheid in de beheerder
+![ Nieuwe ](../assets/new.svg) anders genoemde Diensten van het Magento aan [ de Diensten van Commerce ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas) en betere bruikbaarheid in Admin
 
 ### 3.2.4 van de aanbevelingen inzake magento/product
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Repareren](../assets/fix.svg) Oplossing voor de fout &#39;&#39;Kan configureerbare gegevens voor productopties niet ophalen&#39;&#39; bij het indexeren van productkenmerken
+![ bevestig ](../assets/fix.svg) &quot;Onbekwaam om configureerbare gegevens van productopties&quot;fout terug te winnen wanneer het indexeren van productkenmerken
 
 ### 3.2.3 van de aanbevelingen inzake magento/product
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Repareren](../assets/fix.svg) Correctie van de fout &#39;&#39;Kan configureerbare gegevens voor productopties niet ophalen&#39;&#39; tijdens synchroniseren van catalogus.
-![Repareren](../assets/fix.svg) Probleem verholpen waarbij de opslagcode niet correct werd ingesteld toen u de configuratie &quot;Winkelcode toevoegen aan URL&quot; inschakelde. Dit probleem is nu opgelost.
-![Repareren](../assets/fix.svg) Verbeterde detectie van wijzigingen in de configuratie van het deelvenster Admin om ervoor te zorgen dat deze wijzigingen worden weerspiegeld in de gegevens van Catalog Sync
+![ bevestig ](../assets/fix.svg) &quot;Onbekwaam om configureerbare gegevens van productopties&quot;fout tijdens de Synchronisatie van de Catalogus terug te winnen
+![ bevestig ](../assets/fix.svg) een kwestie waar de opslagcode niet correct werd geplaatst wanneer u &quot;toevoegde opslagcode aan URL&quot;configuratie
+![ Repareren ](../assets/fix.svg) Verbeterde opsporing van de configuratieveranderingen van het Comité Admin om ervoor te zorgen dat deze veranderingen in de gegevens van de Synchronisatie van de Catalogus worden weerspiegeld
 
 ### 3.2.2. van magento/productaanbevelingen
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) De mogelijkheid toegevoegd om [voorvertoning van aanbevelingen](create.md) tijdens het maken. Hiervoor moet u mogelijk de module bijwerken naar de meest recente versie.
-![Nieuw](../assets/new.svg) De mogelijkheid toegevoegd om [bewaken en beheren](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/data-services/catalog-sync) het synchronisatieproces van de catalogus door de beheerder.
-![Nieuw](../assets/new.svg) Toegevoegd [filters](filters.md) om te controleren welke producten in aanbevelingen worden getoond.
-![Nieuw](../assets/new.svg) De [Visuele gelijkenis](type.md#visualsim) soort aanbeveling.
+![ Nieuw ](../assets/new.svg) voegde de capaciteit toe aan [ resultaten van de voorproefaanbeveling ](create.md) in aanmaaktijd. Hiervoor moet u mogelijk de module bijwerken naar de meest recente versie.
+![ Nieuw ](../assets/new.svg) voegde de capaciteit toe om [ ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/data-services/catalog-sync) het proces van de catalogussynchronisatie van Admin te controleren en te beheren.
+](../assets/new.svg) Nieuwe [ toegevoegde filters ](filters.md) om te controleren welke producten in aanbevelingen worden getoond.
+![
+![ Nieuw ](../assets/new.svg) voegde het [ Visuele gelijkenis ](type.md#visualsim) aanbevelingen type toe.
 
 ### 1.2.1 van magento/module-page-builder-product-recommendations for Page Builder
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) Toegevoegde ondersteuning voor de 3.2.0+-versie van de `magento/product-recommendations` module
+![ Nieuwe ](../assets/new.svg) Toegevoegde steun voor 3.2.0+ versie van de `magento/product-recommendations` module
 
 ### 3.1.0 van magento/productaanbevelingen
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) De mogelijkheid toegevoegd om [resync](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/data-services/catalog-sync) uw catalogus naar SaaS-services via de opdrachtregel.
-![Nieuw](../assets/new.svg) Extra ondersteuning voor voorvoegsels van databasetabellen
-![Repareren](../assets/fix.svg) Ondersteuning voor PHP 7.1 is verwijderd
+![ Nieuw ](../assets/new.svg) voegde de capaciteit aan [ opnieuw toe ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/data-services/catalog-sync) uw catalogus aan diensten SaaS via bevellijn.
+![ Nieuwe ](../assets/new.svg) Toegevoegde steun voor prefixen van de gegevensbestandlijst
+![ Repareren ](../assets/fix.svg) Verwijderde PHP 7.1 steun
 
 ### 3.0.8 van magento/productaanbevelingen
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Repareren](../assets/fix.svg) Probleem verholpen waarbij gebeurtenissen werden verzonden voor gegevensverzameling voordat de module werd geconfigureerd, wat ongeldig verkeer veroorzaakte. Dit probleem is nu opgelost.
+![ Repareren ](../assets/fix.svg) Vaste een kwestie waar de gebeurtenissen voor gegevensinzameling werden verzonden alvorens de module werd gevormd, veroorzakend ongeldig verkeer
 
 ### 3.0.6 van de aanbevelingen inzake magento/product
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) **(Beta)** Inclusief ondersteuning voor nieuwe [Visuele gelijkenis](type.md#visualsim) soort aanbeveling.
+![ Nieuw ](../assets/new.svg) **(Beta)** omvat steun voor nieuw [ Visuele gelijkenis ](type.md#visualsim) type van aanbeveling.
 
 ### 1.0.0 van magento/module-visual-product-recommendations
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) **(Beta)** [Visuele gelijkenis](type.md#visualsim). Met de _Visuele gelijkenis_ met aanbevelingen kunt u een aanbevolen eenheid op de pagina met productdetails plaatsen waarop producten worden weergegeven die visueel lijken op het product dat wordt weergegeven.
+![ Nieuwe ](../assets/new.svg) **(Beta)** [ Visuele gelijkenis ](type.md#visualsim). Met het _Visuele gelijkenis_ aanbevelingen type, kunt u een aanbeveling eenheid aan uw pagina van het productdetail opstellen die producten toont die visueel gelijkaardig aan het product zijn dat wordt bekeken.
 
 ### 3.0.5 van magento/productaanbevelingen
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Repareren](../assets/fix.svg) Correctie van de fout &#39;&#39;Kan gegevens over productopties niet ophalen&#39;&#39; die tijdens het exporteren van de catalogus kon optreden.
-![Repareren](../assets/fix.svg) Het valutasymbool in het dialoogvenster _Ontvangsten_ kolom op de _[!DNL Product Recommendations]_het dashboard geeft nu correct de geconfigureerde basisvaluta weer .
+![ bevestig ](../assets/fix.svg) &quot;Onbekwaam om de gegevens van productopties&quot;fout terug te winnen die tijdens catalogusuitvoer kon voorkomen.
+![ bevestig ](../assets/fix.svg) het muntsymbool in de _3} kolom van de Opbrengst {op het_[!DNL Product Recommendations]_ dashboard wijst nu correct op de gevormde basismunt._
 
 ### 3.0.4 van de aanbevelingen inzake magento/product
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Repareren](../assets/fix.svg) Extra ondersteuning voor Adobe Commerce 2.4.0
+](../assets/fix.svg) Toegevoegde steun van 0} Repareren voor Adobe Commerce 2.4.0![
 
 ### 3.0.3 van de aanbevelingen van magento/product
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Repareren](../assets/fix.svg) Verbeterde symboolimplementatie in storefront sjabloon
+![ bevestig ](../assets/fix.svg) Verbeterde symboolimplementatie in storefront malplaatje
 
 ### 1.0.4 van magento/module-page-builder-product-recommendations for Page Builder
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) Naam van toegevoegde productaanbeveling bij het bewerken van het inhoudstype van de Page Builder
+![ Nieuwe ](../assets/new.svg) Toegevoegde naam van de Aanbeveling van het Product wanneer het uitgeven van het inhoudstype van de Bouwer van de Pagina
 
 ### 3.0.2 magento/productaanbevelingen
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) Een statuskolom toegevoegd aan het raster wanneer u Aanbeveling-eenheden selecteert in Page Builder
-![Repareren](../assets/fix.svg) Probleem verholpen met onjuiste http/https-protocollen in product- en afbeeldings-URL&#39;s
+![ Nieuw ](../assets/new.svg) voegde een statuskolom op het net toe wanneer het selecteren van de eenheden van de Aanbeveling in de Bouwer van de Pagina
+![ bevestig ](../assets/fix.svg) een kwestie met onjuiste protocollen http/https in product en beeld URLs
 
 ### 3.0.1 van magento/productaanbevelingen
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-Dit is een belangrijke versie. [Bewerken](install-configure.md#update) het hoofdbestand composer.json van uw project.
+Dit is een belangrijke versie. [ geeft ](install-configure.md#update) het wortel composer.json- dossier van uw project uit.
 
-![Nieuw](../assets/new.svg) Ophalen [!DNL Product Recommendations] van alternatieve SaaS-gegevensruimten. Hierdoor kunt u [!DNL Product Recommendations] berekend in uw productomgeving op andere, niet-productieomgevingen. [Schakelen tussen SaaS-gegevensruimten](settings.md) Deze functie wordt verder beschreven.
+![ Nieuwe ](../assets/new.svg) Vetch [!DNL Product Recommendations] van afwisselende Gegevensruimten SaaS. Hierdoor kunt u [!DNL Product Recommendations] die in uw productomgeving is berekend, gebruiken in andere, niet-productieomgevingen. [ het schakelen van de Spaties van Gegevens SaaS ](settings.md) beschrijft verder deze eigenschap.
 
-![Repareren](../assets/fix.svg) Probleem verholpen waarbij afhandeling werd geblokkeerd voor kopers die de Blokoorsprong gebruikten
-![Repareren](../assets/fix.svg) Probleem opgelost waarbij externe add-to-cart-gebeurtenissen werden verzonden
+![ bevestig ](../assets/fix.svg) een kwestie waar de controle voor shoppers werd belemmerd gebruikend de Oorsprong van het Blok
+![ bevestig ](../assets/fix.svg) een kwestie die externe toe:voegen-aan-kart gebeurtenissen verzendt
 
 ### 1.0.3 van magento/module-page-builder-product-recommendations for Page Builder
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) Ondersteuning voor Page Builder. Met de integratie van de Bouwer van de Pagina, kunt u de eenheden van de Aanbeveling nauwkeurig en korrelig in om het even welke willekeurige plaats op de Bouwer van de Pagina-geschreven inhoud plaatsen. U kunt ook zelf de koppen en aanbevelingen opmaken. Ga naar [Page Builder](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations) voor meer informatie .
+![ Nieuwe ](../assets/new.svg) steun van de Bouwer van de Pagina. Met de integratie van de Bouwer van de Pagina, kunt u de eenheden van de Aanbeveling nauwkeurig en korrelig in om het even welke willekeurige plaats op de Bouwer van de Pagina-geschreven inhoud plaatsen. U kunt ook zelf de koppen en aanbevelingen opmaken. Ga naar [ Bouwer van de Pagina ](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations) voor meer informatie.
 
 ### 2.0.0 van magento/productaanbevelingen
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) Algemene beschikbaarheidsrelease!
+![ Nieuwe ](../assets/new.svg) Algemene beschikbaarheidsversie!
 
 +++
 
@@ -294,4 +295,4 @@ Dit is een belangrijke versie. [Bewerken](install-configure.md#update) het hoofd
 Meer informatie over [!DNL Product Recommendations] en [!DNL Product Recommendations] ontwikkeling:
 
 * [Gebruikershandleiding](overview.md)
-* [Documentatie voor ontwikkelaars](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/developer/development-overview)
+* [ Documentatie van de Ontwikkelaar ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/developer/development-overview)

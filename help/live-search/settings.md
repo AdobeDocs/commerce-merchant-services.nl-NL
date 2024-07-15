@@ -1,6 +1,6 @@
 ---
 title: "Instellingen"
-description: "Configureer instellingen voor de [!DNL Live Search] service."
+description: "Vorm montages voor de  [!DNL Live Search]  dienst."
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
 source-git-commit: ba7e92d5b3aaabe6a8c71f86b0e4eab38aec9adf
 workflow-type: tm+mt
@@ -11,23 +11,23 @@ ht-degree: 0%
 
 # Instellingen
 
-Gebruik de *Instellingen* werkruimte om de prijsfacetbereiken en intervallen en de standaardtaal voor de index te vormen.
+Gebruik de *werkruimte van Montages* om de waaiers en de intervallen van het prijsfacet en de standaardtaal voor de index te vormen.
 
 Prijsfacetten geven het aantal prijsgroepen aan en de verdeling van de prijswaarden tussen deze groepen.
 
-De instelling Taal vertelt de [!DNL Live Search] de dienst die taal om te verwachten wanneer het schrijven van de index.
+De taalinstelling vertelt de [!DNL Live Search] -service welke taal moet worden verwacht bij het schrijven van de index.
 
-![Instellingen](assets/settings.png)
+![ Montages ](assets/settings.png)
 
 ## Prijsbeperking
 
 U kunt het aantal groepen voor het prijsbereik opgeven en aangeven hoe de prijswaarden eronder worden verdeeld. Elke prijsklasse overlapt de vorige groep met één. Vijf groepen met een interval van 20 maken bijvoorbeeld de volgende prijsbereiken: 0-20, 20-40, 40-60, 60-80 en >80. Als de catalogus niet genoeg producten bevat om alle gedefinieerde bereiken te vullen, wordt de weergave van de beschikbare groepen dienovereenkomstig aangepast. Bijvoorbeeld: 0-20, 60-80, >80.
 
-1. Ga in Beheer naar **Marketing** > *SEO &amp; Search* > **[!DNL Live Search]**.
-1. Op de **Instellingen** werkruimte onder *Prijsbeperking* Ga als volgt te werk:
-   * Voer de **Aantal selecties**, of prijsgroepen die beschikbaar moeten zijn. Er kunnen maximaal 50 prijsgroepen worden gedefinieerd.
-   * Voer de **Interval, waarde**, of prijsbereik voor elke groep. De maximumwaarde is 10.000.
-1. Klikken **Opslaan**.
+1. In Admin, ga **Marketing** > *SEO &amp; Onderzoek* > **[!DNL Live Search]**.
+1. Op de **1} werkruimte van Montages {onder *Vergemakkelijking van de Prijs*, doe het volgende:**
+   * Ga het **Aantal selecties** in, of prijsgroeperingen om beschikbaar te zijn. Er kunnen maximaal 50 prijsgroepen worden gedefinieerd.
+   * Ga de **waarde van het Interval**, of prijswaaier voor elke groep in. De maximumwaarde is 10.000.
+1. Klik **sparen**.
 
    Het duurt ongeveer 15 minuten voordat de bijgewerkte instellingen beschikbaar zijn in de winkel.
 
@@ -40,7 +40,7 @@ U kunt het aantal groepen voor het prijsbereik opgeven en aangeven hoe de prijsw
 
 ## Taal
 
-De taalinstelling vertelt [!DNL Live Search] welke taal moet worden verwacht bij het lezen van de catalogus en het schrijven van de index.
+Met de taalinstelling weet [!DNL Live Search] welke taal moet worden verwacht bij het lezen van de catalogus en het schrijven van de index.
 
 Talen hebben verschillende sets regels voor grammatica: hoe woorden worden gescheiden, werkwoordtactieken en woordformulieren, bijvoorbeeld.
 Het plaatsen van de Taal zorgt ervoor dat de correcte reeks regels op het indexerende mechanisme worden toegepast.

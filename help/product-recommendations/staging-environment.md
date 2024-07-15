@@ -1,11 +1,11 @@
 ---
 title: Testen in testomgeving
-description: Leren gebruiken [!DNL Product Recommendations] vanuit uw productieomgeving in uw testomgeving voor testdoeleinden.
+description: Leer hoe te om  [!DNL Product Recommendations]  van uw productiemilieu in uw het opvoeren milieu voor testende doeleinden te gebruiken.
 exl-id: 178ff2aa-7821-45f7-85f1-d490d8182817
 feature: Services, Recommendations, Staging
 source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '423'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Alvorens u aanbevelingen aan uw productiemilieu opstelt, zou u op een niet productiemilieu moeten testen om ervoor te zorgen dat alles zoals verwacht werkt.
 
-[!DNL Product Recommendations] retourproducten op basis van [gegevens over verkoopgedrag](behavioral-data.md) verzameld bij je winkel. In een niet-productieomgeving is het echter waarschijnlijk dat u geen gedragsgegevens van kopers hebt. Het enige soort aanbevelingen dat u zonder gedragsgegevens kunt testen, is `More like this`. Voor dit soort aanbevelingen zijn geen invoergegevens vereist, omdat er een gelijksoortige directe inhoud wordt gebruikt.
+[!DNL Product Recommendations] terugkeerproducten die op [ worden gebaseerd verkoopsgedrag gegevens ](behavioral-data.md) van uw storefront worden verzameld. In een niet-productieomgeving is het echter waarschijnlijk dat u geen gedragsgegevens van kopers hebt. Het enige type aanbevelingen dat u zonder gedragsgegevens kunt testen, is `More like this` . Voor dit soort aanbevelingen zijn geen invoergegevens vereist, omdat er een gelijksoortige directe inhoud wordt gebruikt.
 
 De volgende aanbevelingen vereisen gedragsgegevens:
 
@@ -26,20 +26,20 @@ Hoe kunt u uw aanbevelingen testen in een niet-productieomgeving met behulp van 
 
 ## Aanbevelingen inzake het ophalen uit de productieomgeving (aanbevolen)
 
-Met Adobe Commerce kunt u aanbevelingen ophalen uit uw productieomgeving en deze voorvertonen in uw niet-productieomgeving door [schakelen](settings.md) de SaaS-gegevensruimte.
+Adobe Commerce staat u toe om aanbevelingen van uw productiemilieu en voorproef hen in uw niet-productiemilieu door [ omschakeling ](settings.md) te halen SaaS gegevensruimte.
 
 Om aanbevelingen van uw productiemilieu te halen, moet u ervoor zorgen dat:
 
-- De gegevensinzameling van de Storefront is [geconfigureerd en ingeschakeld](install-configure.md) op productie.
+- De gegevensinzameling van de opslag wordt [ gevormd en toegelaten ](install-configure.md) op productie.
 - Uw niet-productieomgevingscatalogus is grotendeels hetzelfde als de catalogus die u in productie hebt. Het gebruik van vergelijkbare catalogi zorgt ervoor dat de producten die in de aanbevolen eenheden worden geretourneerd, de producten op de productie nauwkeurig na houden.
 
 ## Gedragsgegevens genereren over een andere omgeving dan de productieomgeving
 
-1. Implementeer de `magento/product-recommendations` in een niet-productieomgeving waar de catalogusgegevens overeenkomen met uw productiecatalogus.
+1. Implementeer de module `magento/product-recommendations` in een niet-productieomgeving waarin de catalogusgegevens overeenkomen met de productiecatalogus.
 
-1. Gebruik een van de niet-productie-ID&#39;s voor gegevensruimte [configuratie](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) in de Admin.
+1. Gebruik één van niet-productie van de Ruimte IDs van Gegevens voor [ configuratie ](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) in Admin.
 
-1. Genereer de gegevens zelf door rond de winkelpagina te klikken om het gedrag van echte kopers na te bootsen (of een automatiseringsscript te maken). Door het testen genereert u gedragsgebeurtenissen in uw niet-productieomgeving. Deze gebeurtenissen worden gebruikt om de productaffiniteiten te produceren die aanbevelingen van de macht voorzien. Voor het testen [!DNL Commerce] stelt voor dat u met de volgende aanbevelingen werkt:
+1. Genereer de gegevens zelf door rond de winkelpagina te klikken om het gedrag van echte kopers na te bootsen (of een automatiseringsscript te maken). Door het testen genereert u gedragsgebeurtenissen in uw niet-productieomgeving. Deze gebeurtenissen worden gebruikt om de productaffiniteiten te produceren die aanbevelingen van de macht voorzien. Voor het testen, [!DNL Commerce] adviseert dat u met de volgende aanbevelingstypes in wisselwerking staat:
 
    - Meest bekeken - vereist minimale invoergegevens. Gebruikers moeten producten weergeven.
    - Bekeken dit, bekeken die - veelvoudige gebruikers vereist om veelvoudige producten te bekijken.

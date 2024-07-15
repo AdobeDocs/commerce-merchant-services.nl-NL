@@ -1,6 +1,6 @@
 ---
 user-guide-title: "[!DNL Product Recommendations] Handleiding"
-user-guide-description: Deze handleiding bevat gedetailleerde instructies voor het gebruik van [!DNL Product Recommendations] uit Adobe Commerce.
+user-guide-description: Deze gids verstrekt gedetailleerde instructies om  [!DNL Product Recommendations]  van Adobe Commerce te gebruiken.
 breadcrumb-title: "[!DNL Product Recommendations] Handleiding"
 role: Admin
 feature: Services, Recommendations
@@ -11,10 +11,10 @@ ht-degree: 11%
 
 ---
 
-# [!DNL Product Recommendations] voor handel {#product-recommendations}
+# [!DNL Product Recommendations] voor Commerce {#product-recommendations}
 
 - [Overzicht van de handleiding](guide-overview.md)
-- [Inleiding tot [!DNL Product Recommendations]](overview.md)
+- [Inleiding tot  [!DNL Product Recommendations]](overview.md)
 - [Aanvullende informatie](release-notes.md)
 - Aan de slag {#getting-started}
    - [Onboarding](onboarding.md)
@@ -26,8 +26,8 @@ ht-degree: 11%
    - [Verifiëren](verify.md)
    - [Stationele omgeving](staging-environment.md)
    - [Integratie van Page Builder](page-builder.md)
-- [!DNL Product Recommendations] Beheerder {#admin}
-   - [Werkruimte](workspace.md)
+- [!DNL Product Recommendations] Admin {#admin}
+   - [Workspace](workspace.md)
    - [Maken](create.md)
    - [Bewerken](edit.md)
    - [Typen aanbevelingen](type.md)

@@ -1,33 +1,33 @@
 ---
 title: '[!DNL Catalog Service and API Mesh]'
-description: '''[!DNL API Mesh] voor Adobe Commerce biedt een manier om meerdere gegevensbronnen te integreren via een gemeenschappelijk GraphQL-eindpunt. "'
+description: '[!DNL API Mesh] voor Adobe Commerce verstrekt een manier om veelvoudige gegevensbronnen door een gemeenschappelijk eindpunt van GraphQL te integreren.'
 exl-id: cdda4a83-3c5f-4a69-8279-b90464e16c0e
 role: Admin, Developer
 feature: Services, API Mesh, Catalog Service
 source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '241'
 ht-degree: 0%
 
 ---
 
 # [!DNL Catalog Service and API Mesh]
 
-De [API-net voor Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) kunnen ontwikkelaars API&#39;s van particulieren of derden en andere interfaces met Adobe producten integreren met behulp van Adobe I/O Runtime.
+Het [ API Net voor Adobe Developer App Builder ](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) laat ontwikkelaars toe om privé of derde APIs en andere interfaces met de producten van de Adobe te integreren gebruikend Adobe I/O Runtime.
 
-![Catalogusarchitectuurdiagram](assets/catalog-service-architecture-mesh.png)
+![ diagram van de architectuur van de Catalogus ](assets/catalog-service-architecture-mesh.png)
 
-De eerste stap voor het gebruik van het API-net met de Catalogusservice is het aansluiten van het API-net op uw instantie. Zie gedetailleerde instructies in [Een net maken](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
+De eerste stap voor het gebruik van het API-net met de Catalogusservice is het aansluiten van het API-net op uw instantie. Zie gedetailleerde instructies in [ een Net ](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/) creëren.
 
-Als u de installatie wilt voltooien, installeert u de [Adobe Developer CLI-pakket](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
+Om de opstelling te voltooien, installeer het [ pakket van Adobe Developer CLI ](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
 
-Zodra het Net op Adobe I/O Runtime wordt gevormd, stel het volgende bevel in werking dat toevoegt `CommerceCatalogServiceGraph` bron van het net.
+Als Net is geconfigureerd op Adobe I/O Runtime, voert u de volgende opdracht uit die een `CommerceCatalogServiceGraph` -bron aan het net toevoegt.
 
 ```bash
 aio api-mesh:source:install "CommerceCatalogServiceGraph" -f variables.json
 ```
 
-Wanneer `variables.json` is een afzonderlijk bestand waarin veelgebruikte waarden voor Adobe I/O Runtime worden opgeslagen.
+Waar `variables.json` een afzonderlijk bestand is waarin veelgebruikte waarden voor Adobe I/O Runtime worden opgeslagen.
 De API-sleutel kan bijvoorbeeld in het bestand worden opgeslagen:
 
 ```json
@@ -36,16 +36,16 @@ De API-sleutel kan bijvoorbeeld in het bestand worden opgeslagen:
 }
 ```
 
-Nadat u deze opdracht hebt uitgevoerd, moet de Catalogusservice via het API-net worden uitgevoerd. U kunt de `aio api-mesh:get` bevel om de configuratie van uw bijgewerkt netwerk te bekijken.
+Nadat u deze opdracht hebt uitgevoerd, moet de Catalogusservice via het API-net worden uitgevoerd. U kunt de opdracht `aio api-mesh:get` uitvoeren om de configuratie van het bijgewerkte net weer te geven.
 
 ## Voorbeelden van API-net
 
-Met het API-net kunnen gebruikers externe gegevensbronnen gebruiken om uw Adobe Commerce-instantie te verbeteren. Het kan ook worden gebruikt om bestaande gegevens van de Handel te vormen om nieuwe functionaliteit toe te laten.
+Met het API-net kunnen gebruikers externe gegevensbronnen gebruiken om uw Adobe Commerce-instantie te verbeteren. Het kan ook worden gebruikt om bestaande gegevens van Commerce te vormen om nieuwe functionaliteit toe te laten.
 
 ### Laagprijzen inschakelen
 
 In dit voorbeeld wordt het API-net gebruikt om laagprijzen in Adobe Commerce in te schakelen.
-Vervang de `name `, `endpoint`, en `x-api-key` waarden.
+Vervang de waarden `name ` , `endpoint` en `x-api-key` .
 
 ```json
 {
@@ -160,7 +160,7 @@ query {
 
 ### Entiteits-id ophalen
 
-Met dit net voegt u de `entityId` aan de interface ProductView. Vervang de `name `, `endpoint`, en `x-api-key` waarden.
+Dit net voegt `entityId` aan de interface ProductView toe. Vervang de waarden `name ` , `endpoint` en `x-api-key` .
 
 ```json
 {
@@ -237,7 +237,7 @@ Met dit net voegt u de `entityId` aan de interface ProductView. Vervang de `name
   }
 ```
 
-`entityId` kan nu worden gevraagd :
+U kunt nu een query uitvoeren op `entityId` :
 
 ```graphql
 query {

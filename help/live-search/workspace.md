@@ -1,6 +1,6 @@
 ---
 title: 'Live zoeken instellen'
-description: De [!DNL Live Search] de werkruimte wordt gebruikt om onderzoeksprestaties te vormen, te beheren en te controleren.
+description: De  [!DNL Live Search]  werkruimte wordt gebruikt om, onderzoeksprestaties te vormen te beheren en te controleren.
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
 source-git-commit: 5e79bb43449b95b4c6aa0e234a0dbc999c312e59
 workflow-type: tm+mt
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 # Live zoeken instellen
 
-In de werkruimte kunt u de prestaties van [!DNL Live Search]. Het menu boven biedt toegang tot de gereedschappen in elk functioneel gebied. De beschikbare functies weerspiegelen de huidige menuselectie.
+In de werkruimte kunt u de prestaties van [!DNL Live Search] configureren, beheren en controleren. Het menu boven biedt toegang tot de gereedschappen in elk functioneel gebied. De beschikbare functies weerspiegelen de huidige menuselectie.
 
-![Workspace](assets/workspace.png)
+![ Workspace ](assets/workspace.png)
 
 ## Gegevensverzameling
 
@@ -24,39 +24,39 @@ Om ervoor te zorgen dat elk functioneel gebied op de werkruimte de correcte gege
 
 Als u een koploze winkel gebruikt, raadpleegt u de volgende documentatie voor meer informatie over de vereiste gebeurtenissen die u moet toevoegen:
 
-- [Vereiste gebeurtenissen](events.md) voor het dashboard voor Live zoeken.
-- [Storefront-gebeurtenisverzamelaar](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) dat moet als voorwaarde worden toegevoegd .
-- [Voorbeelden](https://github.com/adobe/commerce-events/tree/main/examples) van de gebeurtenisstructuur.
+- [ Vereiste gebeurtenissen ](events.md) voor Levend dashboard van het Onderzoek.
+- [ de gebeurtenisinzamelaar van de Storefront ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) die als voorwaarde moet worden toegevoegd.
+- [ Voorbeelden ](https://github.com/adobe/commerce-events/tree/main/examples) van de gebeurtenisstructuur.
 
 ## Bereik instellen
 
-In eerste instantie [bereik](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) van alle [!DNL Live Search] instellingen zijn ingesteld op `Default Store View`. Als uw [!DNL Commerce] installatie bevat meerdere winkelweergaven, set **Toepassingsgebied** aan de [winkelweergave](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) waar uw facetinstellingen van toepassing zijn.
+Aanvankelijk wordt het [ werkingsgebied ](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) van alle [!DNL Live Search] montages geplaatst aan `Default Store View`. Als uw [!DNL Commerce] installatie veelvoudige opslagmeningen omvat, plaats **Reikwijdte** aan de [ opslagmening ](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) waar uw facetmontages van toepassing zijn.
 
 ## Menuopties
 
 | Optie | Beschrijving |
 |--- |--- |
-| [Prestaties](performance.md) | Het dashboard biedt inzicht in de zoekprestaties van producten. |
-| [Faceting](facets.md) | Krachtig filteren waarbij meerdere dimensies van kenmerkwaarden worden gebruikt om zoekcriteria te verfijnen. |
-| [Synoniemen](synonyms.md) | Breid het bereik van de zoekopdracht uit tot woorden die kopers kunnen gebruiken om producten te zoeken die afwijken van de producten in uw catalogus. |
-| [Merchandising zoeken](rules.md) | Vorm de onderzoekservaring met logische regels die geplande acties teweegbrengen. Verhoog, bury, speld, of verberg producten om onderzoeksresultaten te kalibreren om uw bedrijfsdoelstellingen te steunen. |
-| [Categorieverhandeling](category-merch.md) | Pas regels en Intelligent Merchandising op het niveau van de Categorie toe. |
-| [GraphQL](graphql.md) | Ontwikkelaars die zijn aangemeld bij de beheerder van uw winkel, kunnen query&#39;s samenstellen en testen met werkelijke catalogusgegevens. Ga voor meer informatie naar [GraphQL - Overzicht](https://developer.adobe.com/commerce/webapi/graphql/) in de [!DNL Live Search] ontwikkelaarsdocumentatie. |
-| [Instellingen](settings.md) | Bepaal hoe prijsfacetwaarden worden gegroepeerd op prijsbereik in de winkel en stel de indextaal in. |
+| [ Prestaties ](performance.md) | Het dashboard biedt inzicht in de zoekprestaties van producten. |
+| [ Faceting ](facets.md) | Krachtig filteren waarbij meerdere dimensies van kenmerkwaarden worden gebruikt om zoekcriteria te verfijnen. |
+| [ Synoniemen ](synonyms.md) | Breid het bereik van de zoekopdracht uit tot woorden die kopers kunnen gebruiken om producten te zoeken die afwijken van de producten in uw catalogus. |
+| [ Merchandising van het Onderzoek ](rules.md) | Vorm de onderzoekservaring met logische regels die geplande acties teweegbrengen. Verhoog, bury, speld, of verberg producten om onderzoeksresultaten te kalibreren om uw bedrijfsdoelstellingen te steunen. |
+| [ Merchandising van de Categorie ](category-merch.md) | Pas regels en Intelligent Merchandising op het niveau van de Categorie toe. |
+| [ GraphQL ](graphql.md) | Ontwikkelaars die zijn aangemeld bij de beheerder van uw winkel, kunnen query&#39;s samenstellen en testen met werkelijke catalogusgegevens. Meer leren, ga naar [ het Overzicht van GraphQL ](https://developer.adobe.com/commerce/webapi/graphql/) in de [!DNL Live Search] ontwikkelaarsdocumentatie. |
+| [ Montages ](settings.md) | Bepaal hoe prijsfacetwaarden worden gegroepeerd op prijsbereik in de winkel en stel de indextaal in. |
 
 ## Kenmerken instellen als doorzoekbaar
 
-Als u gerichte resultaten wilt bereiken, kunt u de set [doorzoekbaar](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) (`searchable=true`) productkenmerken. Om relevantie te verzekeren, maak attributen doorzoekbaar slechts als zij inhoud bevatten die een duidelijke en beknopte betekenis heeft. Gebruik geen kenmerken die minder nauwkeurige, lange tekst bevatten, zoals `description`Deze optie is standaard ingeschakeld, maar hierdoor kan de precisie van zoekresultaten afnemen. Als iemand bijvoorbeeld zoekt naar &quot;korte broeken&quot; en er overhemden zijn met een beschrijving die de term &quot;korte mouwen&quot; bevat, worden de overhemden opgenomen in de zoekresultaten.
+Om hoogst-gerichte resultaten te veroorzaken, herzie de reeks [ doorzoekbare ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) (`searchable=true`) productattributen. Om relevantie te verzekeren, maak attributen doorzoekbaar slechts als zij inhoud bevatten die een duidelijke en beknopte betekenis heeft. Vermijd het gebruik van kenmerken die minder nauwkeurige, lange tekst bevatten, zoals `description` . Deze tekst kan de precisie van zoekresultaten verminderen, hoewel deze functie standaard is ingeschakeld. Als iemand bijvoorbeeld zoekt naar &quot;korte broeken&quot; en er overhemden zijn met een beschrijving die de term &quot;korte mouwen&quot; bevat, worden de overhemden opgenomen in de zoekresultaten.
 
 Voer de volgende stappen uit om te zorgen dat kenmerken doorzoekbaar zijn:
 
-1. Ga in Beheer naar **Winkels** > *Kenmerk* > **Product**.
-1. Selecteer het kenmerk dat u wilt doorzoeken, bijvoorbeeld `color`.
-1. Selecteren **Eigenschappen van Storefront** en instellen **Gebruiken in Zoeken** tot `yes`.
+1. In Admin, ga **> *Attribuut* >** Product **.**
+1. Selecteer het kenmerk dat u wilt doorzoeken, bijvoorbeeld `color` .
+1. Selecteer **Eigenschappen van 0} Storefront en plaats** Gebruik in Onderzoek **aan `yes`.**
 
-   ![Workspace](assets/attribute-searchable.png)
+   ![ Workspace ](assets/attribute-searchable.png)
 
-[!DNL Live Search] eerbiedigt tevens de [gewicht](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search) van een productkenmerk, zoals ingesteld in Adobe Commerce. Kenmerken met een hogere dikte worden hoger weergegeven in de zoekresultaten.
+[!DNL Live Search] respecteert ook het [ gewicht ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search) van een productattribuut, zoals die binnen Adobe Commerce wordt geplaatst. Kenmerken met een hogere dikte worden hoger weergegeven in de zoekresultaten.
 
 De volgende kenmerken kunnen altijd worden doorzocht:
 
@@ -64,19 +64,19 @@ De volgende kenmerken kunnen altijd worden doorzocht:
 - `name`
 - `categories`
 
-[Facetten](facets.md) zijn productkenmerken die worden gedefinieerd in [!DNL Live Search] filterbaar zijn. U kunt elk filterbaar kenmerk als facet instellen in [!DNL Live Search], maar er zijn [limieten](boundaries-limits.md) aan hoeveel facetten u naar in één keer kunt zoeken.
+[ Facets ](facets.md) zijn productattributen die in [!DNL Live Search] worden bepaald om filtreerbaar te zijn. U kunt om het even welk filtrable attribuut als facet in [!DNL Live Search] plaatsen, maar er zijn [ grenzen ](boundaries-limits.md) aan hoeveel facetten u in één keer kunt zoeken.
 
-[Synoniemen](synonyms.md) Dit zijn termen die u kunt definiëren om gebruikers te helpen bij het vinden van het juiste product. Gebruikers die op zoek zijn naar een broek kunnen &#39;broek&#39; of &#39;slacks&#39; typen. U kunt synoniemen zodanig instellen dat deze zoektermen gebruikers naar de resultaten van de &#39;&#39;broek&#39;&#39; brengen.
+[ Synoniemen ](synonyms.md) zijn termijnen die u kunt bepalen helpen gebruikers aan het correcte product begeleiden. Gebruikers die op zoek zijn naar een broek kunnen &#39;broek&#39; of &#39;slacks&#39; typen. U kunt synoniemen zodanig instellen dat deze zoektermen gebruikers naar de resultaten van de &#39;&#39;broek&#39;&#39; brengen.
 
 ## Commerce-configuratie-instellingen
 
-In de volgende sectie worden de ondersteunde en niet-ondersteunde Commerce-configuratie-instellingen beschreven voor [!DNL Live Search].
+In de volgende sectie worden de ondersteunde en niet-ondersteunde Commerce-configuratie-instellingen voor [!DNL Live Search] beschreven.
 
 ### Ondersteunde configuratiewaarden
 
 | Commerce-configuratie-instelling | Beschrijving | Ondersteund door Popover | Ondersteund door adapter |
 |---|---|---|---|
-| Winkels > Configuratie > Catalogus > Catalogus > Cataloguszoekopdracht > Alle producten per pagina toestaan | Indien ingesteld op `Yes`, inclusief de `ALL` in het besturingselement &#39;Tonen per pagina&#39;. | Ja. Maximaal 500 producten | Ja. Maximaal 500 producten |
+| Winkels > Configuratie > Catalogus > Catalogus > Cataloguszoekopdracht > Alle producten per pagina toestaan | Indien ingesteld op `Yes` , neemt u de optie `ALL` op in het besturingselement &#39;Tonen per pagina&#39;. | Ja. Maximaal 500 producten | Ja. Maximaal 500 producten |
 | Winkels > Configuratie > Catalogus > Catalogus > Cataloguszoekopdracht > Minimale lengte query | Het minimale aantal tekens dat is toegestaan in een cataloguszoekopdracht. | Ja | Ja |
 | Winkels > Configuratie > Catalogus > Catalogus > Cataloguszoekopdracht > Producten per pagina op toegestane rasterwaarden | Hiermee bepaalt u het aantal producten dat wordt weergegeven in de rasterweergave. | Ja | Ja |
 | Winkels > Configuratie > Catalogus > Catalogus > Cataloguszoekopdracht > Producten per pagina op standaardrasterwaarde | Hiermee bepaalt u het aantal producten dat standaard per pagina wordt weergegeven in de rasterweergave. | Ja. Maximaal 500 producten | Ja. Maximaal 500 producten |
@@ -93,8 +93,8 @@ Prijzen in de aanbiedingspagina van het widgetproduct en in de pop-upmenu&#39;s 
 | Storingen > Configuratie > Catalogus > Storefront > Lijstmodus | Bepaalt de indeling van de lijst met zoekresultaten. | Rendering is correct, maar gebeurtenissen worden niet verzonden voor bepaalde paginainteracties |
 | Winkels > Configuratie > Catalogus > Catalogus > Cataloguszoekopdracht > Maximale lengte query | Het maximum aantal tekens dat is toegestaan in een cataloguszoekopdracht. | Niet geïmplementeerd; zoekservices accepteren maximaal 255 tekens |
 | Configuration > Sales > Tax > Price Display Settings > Display Product Prices in Catalog | Bepaalt of de productprijzen die in de catalogus worden gepubliceerd belasting omvatten of uitsluiten, of twee versies van de prijs tonen; één met, en andere zonder belasting |  |
-| Winkels > Configuratie > Catalogus > Storefront > Productaanbieding sorteren op | Hiermee bepaalt u de sorteervolgorde van de lijst met zoekresultaten. | Is niet van toepassing op [!DNL Live Search] [Widget pagina met productaanbiedingen](plp-styling.md) |
+| Winkels > Configuratie > Catalogus > Storefront > Productaanbieding sorteren op | Hiermee bepaalt u de sorteervolgorde van de lijst met zoekresultaten. | Is niet op [!DNL Live Search] van toepassing [ Product het Van een lijst weergeven Widget van de Pagina ](plp-styling.md) |
 
 ### Zoektermen
 
-[!DNL Live Search] supports [heroriëntering van zoektermen](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html) op implementaties waar Adobe Commerce het verpletteren behandelt, zoals op Luma en andere op php gebaseerde thema&#39;s.
+[!DNL Live Search] steunt [ herleidt van de onderzoekstermijn ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html) op implementaties waar Adobe Commerce het verpletteren, zoals op Luma en andere op php-Gebaseerde thema&#39;s behandelt.

@@ -1,6 +1,6 @@
 ---
 title: "Search Merchandising"
-description: "[!DNL Live Search] merchandising-regels combineren logica met acties om de winkelervaring vorm te geven."
+description: "[!DNL Live Search] de koopwaar regels combineren logica met acties om de het winkelen ervaring te vormen."
 exl-id: d06a3040-6987-4813-90ae-2f7b3ad0b232
 source-git-commit: 2b0ca3f5a68e75ef4b4e71ac7705b17534e16845
 workflow-type: tm+mt
@@ -36,14 +36,14 @@ Zoektekst kan het volgende bevatten:
 
 ## Logische operatoren
 
-Logische operatoren `AND` en `OR` twee voorwaarden samenvoegen en verschillende resultaten retourneren. Alle logische operatoren die in een regel met meerdere voorwaarden worden gebruikt, zijn hetzelfde. Het is niet mogelijk beide `AND` en `OR` in dezelfde regel.
+De logische operatoren `AND` en `OR` voegen twee voorwaarden samen en retourneren verschillende resultaten. Alle logische operatoren die in een regel met meerdere voorwaarden worden gebruikt, zijn hetzelfde. Het is niet mogelijk om zowel `AND` als `OR` in dezelfde regel te gebruiken.
 
 ### Operatoren afstemmen
 
-De operatoren Afstemmen `All` en `Any` Bepaal de logische exploitant die wordt gebruikt om veelvoudige voorwaarden in de regel samen te voegen, en kan worden gebruikt om de bestaande exploitant te veranderen.
+De operatoren Match `All` en `Any` bepalen de logische operator die wordt gebruikt om meerdere voorwaarden in de regel samen te voegen en kunnen worden gebruikt om de bestaande operator te wijzigen.
 
-* `All` - Gebruikt de `AND` logische operator om meerdere voorwaarden samen te voegen. Een regel die de `All` Identieke operator kan slechts één hebben `Search query is` voorwaarde.
-* `Any` - Gebruikt de `OR` logische operator om meerdere voorwaarden samen te voegen.
+* `All` - Gebruikt de logische operator `AND` om meerdere voorwaarden te verbinden. Een regel die de operator `All` Match gebruikt, kan slechts één voorwaarde `Search query is` hebben.
+* `Any` - Gebruikt de logische operator `OR` om meerdere voorwaarden te verbinden.
 
 Wanneer het samenstellen van een complexe regel, kan het helpen om het met inspringing uit te schrijven om de voorwaarden, bijbehorende gebeurtenissen, en productnamen of SKUs te beschrijven die nodig zijn om de resultaten terug te keren u wilt bereiken. Vervolgens bouwt u de regel en test u het resultaat.
 
@@ -54,25 +54,25 @@ U kunt een standaardregel instellen die wordt toegepast wanneer geen zoekterm wo
 ## Volgorde van prioriteit met meerdere regels
 
 Er wordt slechts één zoekregel tegelijk toegepast op een zoekterm.
-Als meerdere regels van toepassing blijken te zijn op een zoekfrase, worden al deze regels toegepast. Als er een botsing is tussen twee regels—`rule 1` dat sku1 versterkt , maar `rule 2` verbergt zelfde SKU-toen de onlangs toegepaste regel (`rule 2`) heeft voorrang.
+Als meerdere regels van toepassing blijken te zijn op een zoekfrase, worden al deze regels toegepast. Als er een botsing tussen twee regels is— `rule 1` die sku1 opvoert maar `rule 2` het zelfde SKU-toen verbergt de onlangs toegepaste regel (`rule 2`) neemt belangrijkheid.
 
 * Regels worden geordend met de tijdstempel &#39;Laatst gewijzigd&#39;. De regel die het laatst is gewijzigd, wordt eerst toegepast en daarna oudere regels in tijdstempelvolgorde.
-* De `query is` voorwaarde heeft voorrang op andere voorwaarden. Als een nieuwere regel een `query contains` voorwaarde, maar een oudere regel heeft een `query is` voorwaarde, `query is` wordt toegepast.
+* De voorwaarde `query is` heeft voorrang op andere voorwaarden. Als een nieuwere regel een voorwaarde `query contains` bevat, maar een oudere regel een voorwaarde `query is` heeft, wordt de regel `query is` toegepast.
 
 ### Storefront-aanvragen
 
-Als een actieve regel een `query is` voorwaarde komt overeen met de zoekfrase. Deze wordt toegepast. Als er meerdere overeenkomende regels zijn met een `query is` voorwaarde, wordt de onlangs bijgewerkte actieve regel toegepast.
+Als een actieve regel met een voorwaarde `query is` overeenkomt met de zoekuitdrukking, wordt deze toegepast. Als er meerdere overeenkomende regels met een voorwaarde `query is` zijn, wordt de laatst bijgewerkte actieve regel toegepast.
 Anders wordt de laatst bijgewerkte actieve regel toegepast.
 
 ### Voorvertoningsverzoeken
 
 Aanvraag in de beheerder werkt iets anders. Wanneer u een voorvertoning weergeeft in de beheertoepassing, worden alle regels toegepast, inclusief de regels die zijn verlopen en gepland.
 
-* Als de regel die wordt voorvertoond een `query is` voorwaarde wordt toegepast.
-* Als de regel die wordt voorvertoond geen `query is` voorwaarde, en een volgende actieve, passende regel met een `query is` voorwaarde wordt gevonden, de `query is` wordt toegepast.
-* Als de regel die wordt voorvertoond geen `query is` voorwaarde, en geen andere regel met een `query is` wordt gevonden, wordt de regel toegepast die wordt voorvertoond.
+* Als de regel waarvan een voorvertoning wordt weergegeven een voorwaarde `query is` heeft, wordt deze toegepast.
+* Als de regel waarvan een voorvertoning wordt weergegeven geen voorwaarde `query is` heeft en er een volgende actieve, overeenkomende regel met een voorwaarde `query is` wordt gevonden, wordt de regel `query is` toegepast.
+* Als de regel waarvan een voorvertoning wordt weergegeven geen voorwaarde `query is` heeft en er geen andere regel met een voorwaarde `query is` wordt gevonden, wordt de regel toegepast die wordt voorvertoond.
 
 ## Rubriekhandel en producttoewijzingen van categorieën
 
-[!DNL Live Search] kunt u filteren op Categorieën. Zie [Categorieverhandeling](category-merch.md) voor meer informatie .
-In Adobe Commerce kunt u echter een virtuele categorie maken met [Toewijzingen van producten in categorie](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html). Dit type categorie is gemaakt bij uitvoering en komt niet voor in de categoriedatabase. Daarom [!DNL Live Search] kan dit rubriektype niet lezen of gebruiken.
+Met [!DNL Live Search] kunt u filteren op categorieën. Zie [ het Merchandising van de Categorie ](category-merch.md) voor meer informatie.
+Nochtans, in Adobe Commerce kunt u een virtuele categorie met [ het producttaken van de Categorie ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/products-in-category/categories-product-assignments.html) tot stand brengen. Dit type categorie is gemaakt bij uitvoering en komt niet voor in de categoriedatabase. Daarom kan [!DNL Live Search] dit categorietype niet lezen of gebruiken.

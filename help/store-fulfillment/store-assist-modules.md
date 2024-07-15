@@ -16,17 +16,17 @@ ht-degree: 0%
 
 De app Store Assist biedt Store Associates vier modules voor het beheer van het afhandeling in de winkel voor online aankopen en het ophalen van bestellingen in de winkel:
 
-- **[Selecteren](#pick-module)**—U krijgt volledige zichtbaarheid in alle geordende items en de gereedschappen om ervoor te zorgen dat de juiste items en juiste hoeveelheden worden gekozen. Winkelpartners kunnen een of meerdere bestellingen tegelijk selecteren voor meer efficiëntie.
+- **[Keuze](#pick-module)** - krijg volledige zicht in alle bevolen punten en de hulpmiddelen om ervoor te zorgen dat de juiste punten en de juiste hoeveelheden worden geplukt. Winkelpartners kunnen een of meerdere bestellingen tegelijk selecteren voor meer efficiëntie.
 
-- **[Werkgebied](#stage-module)**—Voer de locatie in waar de bestellingen worden geplaatst terwijl klanten naar de winkel gaan, zodat Store Associates bestellingen sneller kan vinden en afleveren.
+- **[Stadium](#stage-module)** - ga de plaats in waar de orden worden geplaatst terwijl de klanten naar de opslag reizen zodat de Vennoten van de Opslag sneller orden kunnen vinden en afhandelen.
 
-- **[Handje uit](#hand-off-module)**—Krijg real-time berichten nadat klanten bij de opslag aankomen om hun wachttijd te minimaliseren en bestellingen naadloos af te handelen.
+- **[Handje van](#hand-off-module)** - krijg berichten in real time nadat de klanten bij de opslag aankomen om hun wachttijd en handoff bevelen foutloos te minimaliseren.
 
-- **[Orders](#orders-module)**—Bekijk een lijst van alle orden die voor een opslag worden geplaatst zodat iedereen het aantal orden en de status van elke orde kent.
+- **[orden](#orders-module)** - bekijk een lijst van alle orden die voor een opslag worden geplaatst zodat iedereen het aantal orden en status van elke orde kent.
 
 >[!NOTE]
 >
->Voordat Store Associates de app Store Assist kan gebruiken, moet een beheerder de opdracht [installatieproces van app](app-setup.md).
+>Alvorens de Vennoten van de Opslag kunnen gebruiken bijstaat app, moet een Beheerder het [ proces van de app opstelling ](app-setup.md) voltooien.
 
 ## Module kiezen
 
@@ -53,7 +53,7 @@ U kunt de testlocatie in de app ook gemakkelijk bijwerken als uw partners deze o
 
 ## Handje uit
 
-De [!UICONTROL Hand Off] toont welke klanten hebben aangemeld om hun bestellingen op te halen, en waar hun bestellingen worden gefaseerd en op hen wachten. Klanten kunnen bestellingen ophalen in de winkel of op de parkeerplaats buiten/aan de rand. De informatie over hun nauwkeurige plaats wordt voorgesteld in deze module zodra zij hebben gecontroleerd.
+In de module [!UICONTROL Hand Off] ziet u welke klanten hebben aangemeld om hun bestellingen op te halen, waar hun bestellingen worden gefaseerd en op hen wachten. Klanten kunnen bestellingen ophalen in de winkel of op de parkeerplaats buiten/aan de rand. De informatie over hun nauwkeurige plaats wordt voorgesteld in deze module zodra zij hebben gecontroleerd.
 
 Zodra u op een orde selecteert die klaar voor klantenoverdracht is. Iedereen kan de ordeinformatie met inbegrip van om het even welke punten zien die niet werden gevonden, klant wachtende plaats, wacht tijd, waar de orde, en het aantal van de klantentelefoon indien beschikbaar wordt gefaseerd.
 

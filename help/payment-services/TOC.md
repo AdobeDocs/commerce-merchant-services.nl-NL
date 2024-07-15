@@ -1,6 +1,6 @@
 ---
 user-guide-title: "[!DNL Payment Services] Handleiding"
-user-guide-description: "Deze gids verstrekt gedetailleerde informatie over het installeren en het vormen [!DNL Payment Services] voor uw [!DNL Adobe Commerce] of [!DNL Magento Open Source] store."
+user-guide-description: "Deze gids verstrekt gedetailleerde informatie over het installeren van en het vormen  [!DNL Payment Services]  voor uw  [!DNL Adobe Commerce]  of  [!DNL Magento Open Source]  opslag."
 breadcrumb-title: "[!DNL Payment Services] Handleiding"
 index: true
 role: Admin, Leader, User
@@ -17,15 +17,15 @@ ht-degree: 2%
 # [!DNL Payment Services] voor Commerce {#payment-services}
 
 - [Overzicht van hulplijnen](guide-overview.md)
-- [Inleiding tot [!DNL Payment Services]](overview.md)
+- [Inleiding tot  [!DNL Payment Services]](overview.md)
 - [Opmerkingen bij de release](release-notes.md)
-- Betalingen en afrekening {#payments-checkout}
+- Betalingen en uitchecken {#payments-checkout}
    - [Betalingsopties](payments-options.md)
    - [Creditcard vaulting](vaulting.md)
    - [Afhandeling](checkout.md)
 - Aan boord [!DNL Payment Services] {#get-started}
    - [Overzicht van onboarding](onboard.md)
-   - [Installeer de [!DNL Payment Services] extension](install.md)
+   - [Installeer de  [!DNL Payment Services]  uitbreiding](install.md)
    - [Sluit uw exemplaar aan](connect.md)
    - [Testsandbox instellen](sandbox.md)
    - [Productie inschakelen](production.md)
@@ -36,7 +36,7 @@ ht-degree: 2%
    - [Oudere configuratie](configure-admin.md)
 - [Testen en valideren](test-validate.md)
 - [Een bestelling maken](create-order.md)
-- Financiële verslaggeving {#reporting}
+- Financiële rapportage {#reporting}
    - [Transactierapport](transactions.md)
    - [Betalingsstatusrapport bestellen](order-payment-status.md)
    - [Uitbetalingsrapport](payouts.md)

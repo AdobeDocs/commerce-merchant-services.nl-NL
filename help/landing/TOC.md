@@ -26,12 +26,12 @@ ht-degree: 38%
    - [[!DNL Store Fulfillment]](https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html)
    - [[!DNL Amazon Sales Channel]](https://experienceleague.adobe.com/docs/commerce-channels/amazon/guide-overview.html)
    - [[!DNL Channel Manager]](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html)
-- Integratiediensten {#integration-services}
+- Integratieservices {#integration-services}
    - [[!DNL Data Connection]](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html)
    - [Services Connector](/help/landing/saas.md)
-- Gegevensgereedschappen {#data-services}
-   - [SaaS-gegevens exporteren](https://experienceleague.adobe.com/docs/commerce-merchant-services/saas-data-export/overview.html)
-   - [Prijsindexering SaaS](https://experienceleague.adobe.com/docs/commerce-merchant-services/price-indexer/price-indexing.html)
+- Gereedschappen voor gegevens {#data-services}
+   - [ de Uitvoer van Gegevens SaaS ](https://experienceleague.adobe.com/docs/commerce-merchant-services/saas-data-export/overview.html)
+   - [ Prijs die SaaS ](https://experienceleague.adobe.com/docs/commerce-merchant-services/price-indexer/price-indexing.html) indexeert
    - [Catalogus synchroniseren](/help/landing/catalog-sync.md)
 
 

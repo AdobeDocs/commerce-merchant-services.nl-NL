@@ -17,31 +17,31 @@ ht-degree: 0%
 >
 >De Adobe Experience Platform Mobile SDK voor iOS ondersteunt iOS 11 of hoger.
 
-De [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/home/) met de mobiele app Commerce kunnen handelaren Commerce verzenden  [gebeurtenisgegevens](events.md) naar de rand van het Experience Platform.
+Het integreren van [ Adobe Experience Platform Mobiele SDK ](https://developer.adobe.com/client-sdks/home/) met de mobiele app van Commerce staat verkopers toe om de gebeurtenisgegevens van Commerce [ ](events.md) naar de rand van het Experience Platform te verzenden.
 
-Wanneer de de gebeurtenisgegevens van de Handel bij de rand beschikbaar zijn, kan het door andere toepassingen van Adobe Experience Cloud worden betreden. U kunt de gegevens bijvoorbeeld gebruiken om een publiek op te bouwen in Real-Time CDP en vervolgens [die doelgroepen gebruiken](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) om uw mobiele app van de Handel te personaliseren.
+Wanneer Commerce-gebeurtenisgegevens aan de rand beschikbaar zijn, kunnen deze door andere Adobe Experience Cloud-toepassingen worden geopend. Bijvoorbeeld, kunt u de gegevens gebruiken om publiek in Real-Time CDP toen [ te bouwen die publiek ](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) gebruiken om uw mobiele app van Commerce te personaliseren.
 
 ## Configuratie
 
-Installeer en configureer de SDK in het Experience Platform om de Adobe Experience Platform Mobile SDK met Commerce te gaan gebruiken. Dan, voltooi uw configuratie in Handel.
+Installeer en configureer de SDK in het Experience Platform om de Adobe Experience Platform Mobile SDK met Commerce te gaan gebruiken. Voltooi vervolgens de configuratie in Commerce.
 
 ### Experience Platform
 
-1. Meer informatie over de mogelijkheden van mobiele apps vindt u in de [Zelfstudie over Adobe Experience Cloud in mobiele apps](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html).
+1. Leer over mobiele toepassingsmogelijkheden door [ Adobe Experience Cloud in mobiele apps te herzien leerprogramma ](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html).
 
-1. [Installeren en configureren](https://developer.adobe.com/client-sdks/documentation/getting-started/) de SDK in Experience Platform.
+1. [ installeer en vorm ](https://developer.adobe.com/client-sdks/documentation/getting-started/) SDK in Experience Platform.
 
    >[!NOTE]
    >
-   >Het schema dat u in het Experience Platform maakt en configureert, is hetzelfde schema als dat u in de toepassingscode in de mobiele app Commerce gebruikt.
+   >Het schema dat u maakt en configureert in het Experience Platform is hetzelfde schema als dat u gebruikt in de toepassingscode in uw mobiele Commerce-app.
 
-### Handel
+### Commerce
 
-Nadat u de configuratie van SDK voor het platform van de Ervaring voltooit, voeg de configuratie van SDK aan Handel toe.
+Nadat u de SDK-configuratie voor het Experience-platform hebt voltooid, voegt u de SDK-configuratie toe aan Commerce.
 
-1. Om de gebeurtenisgegevens van de Handel naar het Experience Platform via SDK te verzenden, moet u een schema XDM in de toepassingscode verstrekken. Dit schema moet overeenkomen met het schema [geconfigureerd](https://developer.adobe.com/client-sdks/home/getting-started/set-up-schemas-and-datasets/) voor de SDK in het Experience Platform.
+1. Als u Commerce-gebeurtenisgegevens naar het Experience Platform wilt verzenden via de SDK, moet u een XDM-schema opgeven in de toepassingscode. Dit schema moet het schema [ aanpassen dat ](https://developer.adobe.com/client-sdks/home/getting-started/set-up-schemas-and-datasets/) voor SDK in het Experience Platform wordt gevormd.
 
-   In het volgende voorbeeld wordt getoond hoe u de `web.webpagedetails.pageViews` en stelt de `identityMap` het e-mailveld gebruiken.
+   In het volgende voorbeeld ziet u hoe u de gebeurtenis `web.webpagedetails.pageViews` bijhoudt en de gebeurtenis `identityMap` instelt met behulp van het e-mailveld.
 
    ```swift
    let stateName = "luma: content: ios: us: en: home"
@@ -71,20 +71,20 @@ Nadat u de configuratie van SDK voor het platform van de Ervaring voltooit, voeg
 
 1. Maak verbinding met de omgeving van de Commerce Cloud.
 
-   In de bouwstijlmontages van uw project, voeg URL aan het eindpunt van GraphQL van de Handel toe. Bijvoorbeeld:
+   In de bouwstijlmontages van uw project, voeg URL aan het eindpunt van Commerce GraphQL toe. Bijvoorbeeld:
 
-   - Foutopsporing: http://_foutopsporing_.commercesite.cloud/graphql/
-   - Release: http://_vrijgeven_.commercesite.cloud/graphql/
+   - Zuiver: http://_zuivert_.commercesite.cloud/graphql/
+   - Versie: http://_versie_.commercesite.cloud/graphql/
 
-1. Om gegevens van de Eindpunten van GraphQL van de Handel terug te winnen, produceer eerst de noodzakelijke dossiers en de folders in uw project gebruikend [Apollo Code Generator](https://www.apollographql.com/docs/ios/).
+1. Om gegevens van de eindpunten van Commerce GraphQL terug te winnen, produceer eerst de noodzakelijke dossiers en de folders in uw project gebruikend de [ Generator van de Code van Apollo ](https://www.apollographql.com/docs/ios/).
 
-   1. Van uw projectfolder, [installeren](https://www.apollographql.com/docs/ios/get-started#1-install-the-apollo-frameworks) Apollo iOS.
+   1. Van uw projectfolder, [ installeert ](https://www.apollographql.com/docs/ios/get-started#1-install-the-apollo-frameworks) Apollo iOS.
 
-   1. [Initialiseren](https://www.apollographql.com/docs/ios/code-generation/codegen-cli/#initialize) de Apollo Codegen CLI.
+   1. [ initialiseert ](https://www.apollographql.com/docs/ios/code-generation/codegen-cli/#initialize) de Codegen CLI van Apollo.
 
-      Hiermee maakt u een `apollo-codegen-configuration.json` bestand.
+      Hiermee maakt u een `apollo-codegen-configuration.json` -bestand.
 
-   1. Genereer de benodigde GraphQL-bestanden en -mappen in uw project door de inhoud van de `apollo-codegen-configuration.json` bestand met het volgende:
+   1. Genereer de benodigde GraphQL-bestanden en -mappen in uw project door de inhoud van het `apollo-codegen-configuration.json` -bestand te vervangen door:
 
       ```json
       {
@@ -132,15 +132,15 @@ Nadat u de configuratie van SDK voor het platform van de Ervaring voltooit, voeg
       }
       ```
 
-   1. [Ophalen](https://www.apollographql.com/docs/ios/code-generation/codegen-cli/#fetch-schema) het schema Commerce GraphQL.
+   1. [ Vetch ](https://www.apollographql.com/docs/ios/code-generation/codegen-cli/#fetch-schema) het schema van GraphQL van Commerce.
 
-      Zorg ervoor dat het pad naar de `./apollo-codegen-config.json` bestand, dat de verwijzing naar het schema Commerce GraphQL bevat.
+      Zorg ervoor dat het pad naar het `./apollo-codegen-config.json` -bestand is, dat de verwijzing naar het Commerce GraphQL-schema bevat.
 
-   1. [Genereren](https://www.apollographql.com/docs/ios/code-generation/codegen-cli/#generate) de broncode.
+   1. [ produceer ](https://www.apollographql.com/docs/ios/code-generation/codegen-cli/#generate) de broncode.
 
-      Zorg ervoor dat het pad naar de `./apollo-codegen-config.json` bestand, dat de configuratiegegevens bevat om de benodigde bestanden en mappen te genereren.
+      Zorg ervoor dat het pad naar het `./apollo-codegen-config.json` -bestand is, dat de configuratiegegevens bevat om de benodigde bestanden en mappen te genereren.
 
-   1. Binnen het nieuwe ontwerp **GraphQLGenerated** GraphQL-typen toevoegen of bewerken. U kunt bijvoorbeeld een `DynamicBlocks.graphql` typen met de volgende inhoud:
+   1. Binnen de pas gecreëerde **GraphQLGenerated** omslag, voeg of geef de types van GraphQL toe uit. U kunt bijvoorbeeld een `DynamicBlocks.graphql` -type met de volgende inhoud toevoegen:
 
       ```graphql
       query dynamicBlocks($input: DynamicBlocksFilterInput){
@@ -155,12 +155,12 @@ Nadat u de configuratie van SDK voor het platform van de Ervaring voltooit, voeg
       }
       ```
 
-   U hebt nu de Adobe Experience Platform Mobile SDK geïntegreerd met uw mobiele app Commerce. Gebeurtenisgegevens lopen van uw app naar de rand van het Experience Platform.
+   U hebt de Adobe Experience Platform Mobile SDK nu geïntegreerd met uw mobiele Commerce-app. Gebeurtenisgegevens lopen van uw app naar de rand van het Experience Platform.
 
-## Hoe te om de gebeurtenissen van de Handel te onderscheiden die van mobiele toepassingen worden geproduceerd
+## Commerce-gebeurtenissen die zijn gegenereerd vanuit mobiele toepassingen onderscheiden
 
-Alles [gebeurtenissen](events.md) bevat een veld met de naam `channel`. De `channel` field contains `channel._id` en `channel._type` die voor een Luma-archief naamruimtewaarden bevat van `"https://ns.adobe.com/xdm/channels/web"` en `"https://ns.adobe.com/xdm/channel-types/web"` respectievelijk. Voor een mobiele winkel zijn de naamruimtewaarden echter `"https://ns.adobe.com/xdm/channels/mobile-app"` en `"https://ns.adobe.com/xdm/channel-types/mobile"` respectievelijk.
+Alle [ gebeurtenissen ](events.md) bevatten een geroepen gebied `channel`. Het veld `channel` bevat `channel._id` en `channel._type` , die voor een Luma-storefront naamruimtewaarden `"https://ns.adobe.com/xdm/channels/web"` en `"https://ns.adobe.com/xdm/channel-types/web"` hebben. Voor een mobiele winkel zijn de naamruimtewaarden echter respectievelijk `"https://ns.adobe.com/xdm/channels/mobile-app"` en `"https://ns.adobe.com/xdm/channel-types/mobile"` .
 
 ## Volgende stappen
 
-Als u wilt leren hoe u het Real-Time CDP-publiek kunt ophalen uit uw app voor mobiele handel om de regels voor de prijs van winkelwagentjes, dynamische blokken en gerelateerde productregels te informeren, raadpleegt u [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html#retrieve-audiences-using-the-adobe-experience-platform-mobile-sdk).
+Om te leren hoe te om het publiek van Real-Time CDP van uw mobiele app van Commerce terug te winnen om de regels van de kartprijs, dynamische blokken, en verwante productregels te informeren, zie [ Audience Activation ](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html#retrieve-audiences-using-the-adobe-experience-platform-mobile-sdk).

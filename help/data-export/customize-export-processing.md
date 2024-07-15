@@ -1,9 +1,10 @@
 ---
 title: De exportprestaties van SaaS-gegevens verbeteren
-description: "Leer hoe te om de prestaties van de gegevensuitvoer van SaaS voor de Diensten van Commerce te verbeteren door multithread gegevens te gebruiken de uitvoerwijze."
+description: Leer hoe te om de prestaties van de gegevensuitvoer van SaaS voor de Diensten van Commerce te verbeteren door de multi-thread wijze van de gegevensuitvoer te gebruiken.
 role: Admin, Developer
 recommendations: noCatalog
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+exl-id: 20c81ef4-5a97-45cd-9401-e82910a2ccc3
+source-git-commit: 42a9ea0f62f35db451cd3e780adf530d0699a638
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 0%
@@ -12,7 +13,7 @@ ht-degree: 0%
 
 # De exportprestaties van SaaS-gegevens verbeteren
 
-**Gegevens exporteren met meerdere verbindingen, modus** versnelt het exportproces door voedergegevens in partijen te splitsen en parallel te verwerken.
+**Multithread gegevens de uitvoerwijze** versnelt het uitvoerproces door voedergegevens in partijen te verdelen en hen parallel te verwerken.
 
 De ontwikkelaars of systeemintegrators kunnen prestaties verbeteren door de multi-draadgegevens te gebruiken uitvoeren wijze in plaats van de standaard single-thread wijze. In single-thread wijze, is er geen parallellisatie van het proces van de voedervoorlegging. Bovendien, wegens de vastgestelde standaardgrenzen, zijn alle cliënten beperkt tot het gebruiken van slechts één draad. In de meeste gevallen is het niet nodig de configuratie aan te passen.
 
@@ -23,13 +24,13 @@ Adobe raadt aan de standaardconfiguratie voor gegevensinvoer te gebruiken, die d
 
 Houd rekening met de volgende belangrijke factoren wanneer u besluit of u de configuratie voor het exporteren van gegevens wilt aanpassen:
 
-- **Eerste synchronisatie**-Evalueer het aantal producten en [raming van het gegevensvolume en de transmissietijd](estimate-data-volume-sync-time.md) op basis van de standaardconfiguratie. Vraag uzelf: Kan u wachten op deze eerste gegevenssynchronisatie na het instappen van een Commerce-service?
+- **Aanvankelijke Synchronisatie** - evalueert het aantal producten en [ schat het gegevensvolume en de transmissietijd ](estimate-data-volume-sync-time.md) die op de standaardconfiguratie wordt gebaseerd. Vraag uzelf: Kan u wachten op deze eerste gegevenssynchronisatie na het instappen van een Commerce-service?
 
-- **Nieuwe winkelweergaven of websites toevoegen**- Als u van plan bent om winkelmeningen of websites met de zelfde producttelling toe te voegen nadat het gaan leven, schat het gegevensvolume en transmissietijd. Bepaal of de synchronisatietijd met de standaardconfiguratie aanvaardbaar is of als multi-draadverwerking noodzakelijk is.
+- **Toevoegend de Nieuwe Mening van de Opslag of Websites** - als u van plan bent om opslagmeningen of websites met de zelfde producttelling toe te voegen na het gaan levende, schat het gegevensvolume en transmissietijd. Bepaal of de synchronisatietijd met de standaardconfiguratie aanvaardbaar is of als multi-draadverwerking noodzakelijk is.
 
-- **Gewone invoer**- Anticiperen op reguliere invoer, zoals prijsupdates of wijzigingen in de voorraadstatus. Bepaal of deze updates binnen een aanvaardbare tijd kunnen worden toegepast of als snellere verwerking nodig is.
+- **Reguliere Invoer** - Anticipate regelmatige invoer, zoals prijsupdates of veranderingen van de voorraadstatus. Bepaal of deze updates binnen een aanvaardbare tijd kunnen worden toegepast of als snellere verwerking nodig is.
 
-- **Productgewicht**- Overweeg of uw producten licht of zwaar zijn. Pas de grootte van de batch aan als de productbeschrijving of -kenmerken de productgrootte opblazen.
+- **Gewicht van het Product** - overweeg of uw producten lichtgewichtof zwaar zijn. Pas de grootte van de batch aan als de productbeschrijving of -kenmerken de productgrootte opblazen.
 
 Herinner dat de doordachte planning, met inbegrip van het schatten van gegevensvolume en synchronisatietijd, vaak de behoefte aan aanpassing kan elimineren. Plan op basis van deze schattingen de inname van diervoeders om optimale resultaten te bereiken.
 
@@ -39,10 +40,10 @@ Herinner dat de doordachte planning, met inbegrip van het schatten van gegevensv
 
 ## Multithreading configureren
 
-Modus met meerdere verbindingen wordt ondersteund voor alle [synchronisatiemethoden](data-synchronization.md#synchronization-process)—volledige synchronisatie, gedeeltelijke synchronisatie en mislukte items synchroniseren. Om multi-threading te vormen, specificeert u het aantal draden en partijgrootte om tijdens synchronisatie te gebruiken.
+De multithread wijze wordt gesteund voor al [ synchronisatiemethodes ](data-synchronization.md#synchronization-process) - volledige synchronisatie, gedeeltelijke synchronisatie, en ontbroken puntensynchronisatie. Om multi-threading te vormen, specificeert u het aantal draden en partijgrootte om tijdens synchronisatie te gebruiken.
 
-- `threadCount` is het aantal draden die aan procesentiteiten worden geactiveerd. De standaardwaarde `threadCount` is `1`.
-- `batchSize` is het aantal entiteiten dat in één herhaling wordt verwerkt. De standaardwaarde `batchSize` is `100` gegevens over alle diervoeders, met uitzondering van de prijsvoeding. Voor de prijsfeed is de standaardwaarde: `500` records.
+- `threadCount` is het aantal threads dat is geactiveerd om entiteiten te verwerken. De standaardwaarde `threadCount` is `1` .
+- `batchSize` is het aantal entiteiten dat in één herhaling wordt verwerkt. De standaardwaarde `batchSize` is `100` records voor alle feeds behalve de prijsfeed. De standaardwaarde voor de prijsfeed is `500` records.
 
 U kunt multi-threading als tijdelijke optie vormen wanneer het runnen van een resync bevel, of door de multi-draadconfiguratie aan de de toepassingsconfiguratie van Adobe Commerce toe te voegen.
 
@@ -52,21 +53,21 @@ U kunt multi-threading als tijdelijke optie vormen wanneer het runnen van een re
 
 ### Multithreading tijdens runtime configureren
 
-Wanneer u een volledige synchronisatieopdracht uitvoert vanaf de opdrachtregel, geeft u de verwerking met meerdere verbindingen op door de opdracht `threadCount` en `batchSize` opties aan het CLI bevel.
+Wanneer u een volledige synchronisatieopdracht uitvoert vanaf de opdrachtregel, geeft u de verwerking met meerdere verbindingen op door de opties `threadCount` en `batchSize` toe te voegen aan de CLI-opdracht.
 
 ```
 bin/magento saas:resync --feed=products --threadCount=2 --batchSize=200
 ```
 
-De opties op de opdrachtregel overschrijven de configuratie voor gegevensexport die is opgegeven in de Adobe Commerce-toepassing `config.php` bestand.
+De opties op de opdrachtregel overschrijven de configuratie voor gegevensexport die is opgegeven in het Adobe Commerce-toepassingsbestand `config.php` .
 
 ### Multithread toevoegen aan de Commerce-configuratie
 
 Als u alle bewerkingen voor het exporteren van gegevens wilt verwerken met multithreading, kunnen systeemintegrators of ontwikkelaars het aantal threads en de batch-grootte voor elke feed in de Commerce-toepassingsconfiguratie wijzigen.
 
-Deze wijzigingen kunnen worden toegepast door aangepaste waarden aan de [systeemsectie](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system) van het configuratiebestand, `app/etc/config.php`.
+Deze veranderingen kunnen worden toegepast door douanewaarden aan de [ systeemsectie ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system) van het configuratiedossier toe te voegen, `app/etc/config.php`.
 
-**Voorbeeld: Multithreading configureren voor producten en prijzen**
+**Voorbeeld: Het vormen multithreading voor producten en prijzen**
 
 ```php
 <?php

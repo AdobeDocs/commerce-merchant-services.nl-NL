@@ -1,6 +1,6 @@
 ---
-title: "[!DNL Payment Services] Overzicht van hulplijnen"
-description: Uitgebreide informatie over [!DNL Payment Services] for [!DNL Adobe Commerce] en [!DNL Magento Open Source] beheerders, inclusief installatie en instapweigering
+title: "[!DNL Payment Services] Overzicht van de gids"
+description: Uitgebreide informatie over  [!DNL Payment Services]  voor  [!DNL Adobe Commerce]  en  [!DNL Magento Open Source]  beheerders, met inbegrip van installatie en onboarding
 seo-title: Adobe Commerce Payments Services Guide
 seo-description: Describes how to use [!DNL Payment Services] with Adobe Commerce or [!DNL Magento Open Source].
 exl-id: 30b23f26-9aac-4a24-a607-2431455fc935
@@ -8,18 +8,18 @@ feature: Payments, Checkout
 recommendations: noCatalog
 source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '196'
 ht-degree: 0%
 
 ---
 
-# [!DNL Payment Services] Overzicht van hulplijnen
+# Overzicht van [!DNL Payment Services] hulplijnen
 
-Deze handleiding is bedoeld voor beheerders van [!DNL Adobe Commerce] en [!DNL Magento Open Source]. Het bevat gedetailleerde informatie over de installatie en het aan boord nemen van [!DNL Payment Services], alsmede configuratie en beheer van de diensten. Het veronderstelt een basisbegrip van de kernconfiguratie en de functionaliteit van de Handel.
+Deze handleiding is bedoeld voor beheerders van [!DNL Adobe Commerce] en [!DNL Magento Open Source] . Het omvat gedetailleerde informatie over installatie en het aan boord gaan van [!DNL Payment Services], evenals configuratie en beheer van de diensten. Hierbij wordt uitgegaan van een basiskennis van de basisconfiguratie en -functionaliteit van Commerce.
 
 >[!TIP]
 >
->Voor hulp bij betalingsservices raadpleegt u [Ondersteuning](#support).
+>Om hulp met de Diensten van de Betaling te krijgen, zie [ Steun ](#support).
 
 [!DNL Payment Services] heeft twee gebieden voor beheerders:
 
@@ -28,23 +28,23 @@ Deze handleiding is bedoeld voor beheerders van [!DNL Adobe Commerce] en [!DNL M
 
 Deze handleiding is van toepassing op:
 
-* Alles [!DNL Payment Services]-specifieke taken die in Admin worden uitgevoerd.
-* Alles [!DNL Payment Services]- specifieke taken die het gebruiken van de het bevellijn van de Handel worden gedaan
+* Alle [!DNL Payment Services] -specifieke taken die in Admin worden uitgevoerd.
+* Alle [!DNL Payment Services] -specifieke taken die zijn uitgevoerd via de Commerce-opdrachtregel
 
-Deze handleiding heeft geen betrekking op de kernmogelijkheden van [!DNL Adobe Commerce] en [!DNL Magento Open Source].
+Deze handleiding heeft geen betrekking op de kernmogelijkheden van [!DNL Adobe Commerce] en [!DNL Magento Open Source] .
 
 ## Aanvullende documentatie
 
-| Handleiding | Beschrijving |
+| Hulplijn | Beschrijving |
 |------ | ----------- |
-| [[!DNL Adobe Commerce] 2.4 Handboek](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html) | Bedrijfsgerichte documentatie voor beide [!DNL Adobe Commerce] en [!DNL Magento Open Source] |
-| [[!DNL Adobe Commerce] 2.4 Handleiding voor ontwikkelaars](https://developer.adobe.com/commerce/docs) | Documentatie gericht op ontwikkelaars die wordt gebruikt om te bouwen en aan te passen [!DNL Adobe Commerce] of [!DNL Magento Open Source] |
+| [[!DNL Adobe Commerce]  2.4 Gids van de Gebruiker ](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html) | Bedrijfsgerichte documentatie voor zowel [!DNL Adobe Commerce] als [!DNL Magento Open Source] |
+| [[!DNL Adobe Commerce]  2.4 Gids van de Ontwikkelaar ](https://developer.adobe.com/commerce/docs) | Op ontwikkelaars gerichte documentatie gebruikt om [!DNL Adobe Commerce] of [!DNL Magento Open Source] samen te stellen en aan te passen |
 
 ## Ondersteuning
 
 Als u informatie nodig hebt of vragen hebt die niet in deze handleiding worden behandeld, gebruikt u de volgende bronnen op uw startpagina:
 
-![Help-bronnen](assets/help-resources.png){width="600" zoomable="yes"}
+![ middelen van de Hulp ](assets/help-resources.png){width="600" zoomable="yes"}
 
-* [Help Center](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html)—Zoeken naar [!DNL Payment Services]gerelateerde artikelen voor probleemoplossing in de knowledgebase.
-* [Ondersteuningstickets](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket)—Verstuur een ticket om extra hulp te ontvangen.
+* [ centrum van de Hulp ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html) - onderzoek naar [!DNL Payment Services] verwante het oplossen van problemenartikelen in knowledgebase.
+* [ kaartjes van de Steun ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) - leg een kaartje voor om extra hulp te ontvangen.

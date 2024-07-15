@@ -1,29 +1,29 @@
 ---
 title: Verwerking van niveau 2 en niveau 3
-description: Verwerkingsniveaus voor kaartbetalingen binnen [!DNL Payment Services] transacties.
+description: De verwerkingsniveaus van de betaling van de kaart binnen  [!DNL Payment Services]  transacties.
 role: Admin
 feature: Payments
-source-git-commit: d1379bb108f2259051641a7bf77cd8b459fd9cbf
+exl-id: db8993fe-dd6f-48b5-9e7b-69a0f2e08552
+source-git-commit: 496817ecd0be3bffe53d8f596d922ff366212966
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 0%
 
 ---
 
-
 # Verwerking van niveau 2 en niveau 3
 
-Er zijn drie niveaus van kaartverwerking beschikbaar via [!DNL Payment Services]:
+Er zijn drie niveaus van kaartverwerking beschikbaar door [!DNL Payment Services]:
 
 * Niveau 1 is de meest voorkomende, vereist minder informatie en brengt daarom in het algemeen hogere afwikkelingsvergoedingen met zich mee dan transacties die worden verwerkt met gegevens van niveau 2 of niveau 3, die doorgaans verband houden met zakelijke en aankoopkredietkaarten.
 
-* Met niveau 2 en niveau 3 [!DNL Payment Services] klanten met een interchange plus (IC++)-prijs die een groot deel van de aankoop- of bedrijfskaarttransacties accepteren, kunnen mogelijk een lagere verwerkingssnelheid ontvangen door [!DNL Payment Services] om meer informatie over een transactie te verzenden. Als de transactie in aanmerking komt, volgens de vereisten van het kaartnetwerk, kan de handelaar een lagere verwerkingstarief voor een bepaalde transactie ontvangen.
+* Met niveau 2 en niveau 3 kunnen [!DNL Payment Services] klanten met een interchange-plus-prijs (IC++) die een groot deel van de aanschafkaart- of bedrijfskaarttransacties accepteren, een lagere verwerkingssnelheid krijgen doordat [!DNL Payment Services] meer informatie over een transactie kan verzenden. Als de transactie in aanmerking komt, volgens de vereisten van het kaartnetwerk, kan de handelaar een lagere verwerkingstarief voor een bepaalde transactie ontvangen.
 
 >[!NOTE]
 >
->Prijzen van niveau 2 en niveau 3 gelden alleen voor Visa- en MasterCard-transacties. American Express biedt alleen prijsniveau 2. Detectie biedt geen prijzen van niveau 2 of 3. Zie [betalingsverwerking](https://developer.paypal.com/docs/checkout/advanced/processing/){target=_blank} in de documentatie voor ontwikkelaars van PayPal voor meer informatie.
+>Prijzen van niveau 2 en niveau 3 gelden alleen voor Visa- en MasterCard-transacties. American Express biedt alleen prijsniveau 2. Detectie biedt geen prijzen van niveau 2 of 3. Zie [ betalingsverwerking ](https://developer.paypal.com/docs/checkout/advanced/processing/) {target=_blank} in de documentatie van de Ontwikkelaar van PayPal voor meer informatie.
 
-Zie [Wat is IC++?](https://www.paypal.com/us/brc/article/what-is-interchange-plus-plus){target=_blank} in de documentatie voor ontwikkelaars van PayPal voor meer informatie.
+Zie [ wat IC++ is?](https://www.paypal.com/us/brc/article/what-is-interchange-plus-plus) {target=_blank} in de documentatie voor ontwikkelaars van PayPal voor meer informatie.
 
 De verwerkingsgegevens van niveau 2 en niveau 3 stellen handelaren in staat hun IC++-prijzen te verlagen als zij aanvullende informatie verstrekken over de aankoop die het processorrisico vermindert en nuttige aspecten biedt:
 
@@ -37,18 +37,18 @@ Nochtans, bepalen de kaartnetwerken, zoals Visa en Mastercard, uiteindelijk of e
 
 * Gegevens van niveau 3 zijn gedetailleerdere informatie over de verkoop, die helpt in aanmerking te komen voor nog lagere wisselkoersen dan niveau 2. Gegevens van niveau 3 bevatten informatie zoals een beschrijving van het gekochte item, de aangekochte hoeveelheid eenheden, de maateenheid voor de bestelde items en andere specifieke details.
 
-[!DNL Payment Services] Deze gegevens worden verzameld en er wordt een gedetailleerde rapportage van uw betalingstransacties gegeven.
+[!DNL Payment Services] verzamelt deze gegevens en geeft een gedetailleerde rapportage van uw betalingstransacties.
 
 ## Betalingstransacties met kaart van niveau 2 en niveau 3 in [!DNL Payment Services]
 
 Om in aanmerking te komen voor verwerking op niveau 2 of niveau 3, moeten handelaren de vorige informatie verzenden, hoewel het de kaartnetwerken zijn die uiteindelijk bepalen welk niveau een transactie in aanmerking komt bij de verwerking ervan.
 
-Zie de [Veelgestelde vragen over betalingsverwerking](https://www.paypal.com/us/cshelp/article/ts2278?_ga=1.131773126.875104296.1712843492){target=_blank} in de documentatie voor ontwikkelaars van PayPal voor meer informatie.
+Zie [ Veelgestelde vragen over de verwerking van de Betaling ](https://www.paypal.com/us/cshelp/article/ts2278?_ga=1.131773126.875104296.1712843492) {target=_blank} in de ontwikkelaarsdocumentatie van PayPal voor meer informatie.
 
-De verwerking van niveau 2 en niveau 3 is standaard uitgeschakeld voor [!DNL Payment Services] winkels.
+Verwerking op niveau 2 en niveau 3 is standaard uitgeschakeld voor [!DNL Payment Services] -handelaren op archiefniveau.
 
-De verwerking van niveau 2 en niveau 3 zijn beschikbaar als u reeds IC++ tarifering gebruikt. Als u deze functie wilt inschakelen, kunt u dit doen via de [Command-line Interface (CLI)](configure-cli.md).
+De verwerking van niveau 2 en niveau 3 zijn beschikbaar als u reeds IC++ tarifering gebruikt. Om deze eigenschap toe te laten kunt u dit via de [ bevel-lijn Interface (CLI ](configure-cli.md) doen.
 
 >[!IMPORTANT]
 >
->Als u vragen hebt, kunt u deze raadplegen [!DNL Payment Services] accountmanager.
+>Neem contact op met uw accountmanager van [!DNL Payment Services] als u vragen hebt.

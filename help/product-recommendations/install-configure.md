@@ -1,18 +1,18 @@
 ---
 title: Installeren en configureren
-description: Leer installeren, bijwerken en verwijderen [!DNL Product Recommendations].
+description: Leer om te installeren, bij te werken, en te desinstalleren  [!DNL Product Recommendations].
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
 role: Admin, Developer
 source-git-commit: 96a5791c5716f612f473540f27bd3f99b1bfe7c8
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '486'
 ht-degree: 0%
 
 ---
 
 # Installeren en configureren
 
-Implementeren [!DNL Product Recommendations] aan uw winkel en Admin vereist dat u de module installeert en vormt [Commerce Services Connector](../landing/saas.md). Wanneer updates worden uitgebracht, kunt u de installatie eenvoudig bijwerken met de nieuwste versie.
+Het opstellen van [!DNL Product Recommendations] aan uw opslag en Admin vereist dat u de module installeert en de [ Schakelaar van de Diensten van Commerce ](../landing/saas.md) vormt. Wanneer updates worden uitgebracht, kunt u de installatie eenvoudig bijwerken met de nieuwste versie.
 
 - [Installeren](#install)
 - [Configureren](#configure)
@@ -21,9 +21,9 @@ Implementeren [!DNL Product Recommendations] aan uw winkel en Admin vereist dat 
 
 ## Installeren [!DNL Product Recommendations] {#install}
 
-Omdat de [!DNL Product Recommendations] -module is een zelfstandig metapakket. Updates worden vaker uitgebracht dan Adobe Commerce. Als u wilt controleren of u de nieuwste oplossingen en functies voor problemen hebt, raadpleegt u de [releaseopmerkingen](release-notes.md).
+Aangezien de module [!DNL Product Recommendations] een zelfstandig metapakket is, worden updates vaker uitgebracht dan Adobe Commerce. Om ervoor te zorgen u met de recentste insectenmoeilijke situaties en de eigenschappen bijgewerkt bent, verwijs naar de [ versienota&#39;s ](release-notes.md).
 
-Installeer de `magento/product-recommendations` module met Composer:
+Installeer de module `magento/product-recommendations` met Composer:
 
 ```bash
 composer require magento/product-recommendations
@@ -31,19 +31,19 @@ composer require magento/product-recommendations
 
 ### Ondersteuning voor Page Builder toevoegen {#pbsupport}
 
-[!DNL Product Recommendations] voor Page Builder is een optionele module en wordt apart geïnstalleerd. Te gebruiken [!DNL Product Recommendations] met de Bouwer van de Pagina, installeer de module door het volgende bevel in werking te stellen:
+[!DNL Product Recommendations] voor Page Builder is een optionele module en wordt apart geïnstalleerd. Als u [!DNL Product Recommendations] wilt gebruiken met Page Builder, installeert u de module met de volgende opdracht:
 
 ```bash
 composer require magento/module-page-builder-product-recommendations
 ```
 
-Door [!DNL Product Recommendations] in Page Builder kunt u een bestaande, actieve [aanbeveling-eenheid](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) op alle inhoud die in Page Builder is gemaakt, zoals pagina&#39;s, blokken en dynamische blokken.
+Door [!DNL Product Recommendations] in de Bouwer van de Pagina toe te laten, kunt u een bestaande, actieve [ aanbeveling eenheid ](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) aan om het even welke inhoud toevoegen die in de Bouwer van de Pagina, zoals pagina&#39;s, blokken, en dynamische blokken wordt gecreeerd.
 
-Zie [Gebruiken [!DNL Product Recommendations] met Page Builder-inhoud](page-builder.md) voor verdere instructies.
+Zie [ Gebruikend  [!DNL Product Recommendations]  met de Inhoud van de Bouwer van de Pagina ](page-builder.md) voor verdere instructies.
 
 ### Het aanbevolen type Visuele gelijkenis toevoegen {#vissimsupport}
 
-De _Visuele gelijkenis_ het aanbevelingen type staat u toe om een aanbeveling eenheid aan uw productdetailpagina op te stellen die producten toont die [visueel vergelijkbaar](type.md#visualsim) op het product dat wordt bekeken. Dit soort aanbevelingen is vooral handig wanneer afbeeldingen en visuele aspecten van de producten belangrijke onderdelen zijn van de boodschappenervaring. Installeer de _Visuele gelijkenis_ het type van aanbeveling door het volgende bevel in werking te stellen:
+Het _Visuele gelijkenis_ aanbevelingen type staat u toe om een aanbeveling eenheid aan uw productdetailpagina op te stellen die producten toont die [ visueel gelijkaardig ](type.md#visualsim) aan het product zijn dat wordt bekeken. Dit soort aanbevelingen is vooral handig wanneer afbeeldingen en visuele aspecten van de producten belangrijke onderdelen zijn van de boodschappenervaring. Installeer het _Visuele gelijkenis_ aanbevelingstype door het volgende bevel in werking te stellen:
 
 ```bash
 composer require magento/module-visual-product-recommendations
@@ -51,21 +51,21 @@ composer require magento/module-visual-product-recommendations
 
 ## Configureren [!DNL Product Recommendations] {#configure}
 
-Nadat u de `magento/product-recommendations` module, moet u vormen [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) door API-sleutels op te geven en een SaaS-gegevensruimte te selecteren.
+Nadat u de `magento/product-recommendations` module installeert, moet u de [ Verbinding van de Diensten van Commerce ](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) vormen door API Sleutels te specificeren en een Ruimte van Gegevens te selecteren SaaS.
 
-Om ervoor te zorgen dat de catalogusexport correct wordt uitgevoerd, moet u bevestigen dat de [kraan](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) en de [indexeerders](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) en de `Product Feed` indexer is ingesteld op `Update by Schedule`.
+Om ervoor te zorgen dat de catalogusuitvoer correct loopt, bevestig dat de [ bebouwde ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) banen en [ indexeerders ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) lopen en `Product Feed` indexeerder wordt geplaatst aan `Update by Schedule`.
 
-Wanneer u via de API-sleutels een koppeling naar de Commerce-services hebt gemaakt en de SaaS-gegevensruimte hebt opgegeven, wordt de catalogussynchronisatie gestart. U kunt vervolgens [verifiëren](verify.md) dat gedragsgegevens naar uw winkel worden verzonden.
+Wanneer u een koppeling naar Commerce Services tot stand brengt via API-sleutels en de SaaS-gegevensruimte opgeeft, wordt de catalogussynchronisatie gestart. U kunt [ dan verifiëren ](verify.md) dat het gedragsgegeven wordt verzonden naar uw storefront.
 
-## Werk uw [!DNL Product Recommendations] installatie {#update}
+## De installatie van [!DNL Product Recommendations] bijwerken {#update}
 
-Zoals alle Adobe Commerce, [!DNL Product Recommendations] gebruikt Composer voor installatie en updates. Als u het dialoogvenster `magento/product-recommendations` voert u de volgende handelingen uit:
+Net als in alle Adobe Commerce gebruikt [!DNL Product Recommendations] Composer voor installatie en updates. Voer de volgende handelingen uit om de module `magento/product-recommendations` bij te werken:
 
 ```bash
 composer update magento/product-recommendations --with-dependencies
 ```
 
-Als u wilt bijwerken naar een hoofdversie, bijvoorbeeld van 3.0 tot 4.0, moet u de hoofdmap bewerken `composer.json` bestand voor uw project. (Zie de [releaseopmerkingen](release-notes.md) voor informatie over de meest recente versie.) Laten we bijvoorbeeld de hoofdmap openen `composer.json` bestand en zoek naar `magento/product-recommendations` module:
+Als u wilt bijwerken naar een hoofdversie, bijvoorbeeld van 3.0 tot 4.0, moet u het hoofdbestand `composer.json` voor uw project bewerken. (Zie de [ versienota&#39;s ](release-notes.md) voor informatie over de recentste versie.) Laten we bijvoorbeeld het hoofdbestand van `composer.json` openen en zoeken naar de module `magento/product-recommendations` :
 
 ```json
 "require": {
@@ -75,7 +75,7 @@ Als u wilt bijwerken naar een hoofdversie, bijvoorbeeld van 3.0 tot 4.0, moet u 
 }
 ```
 
-Laten we de belangrijkste versie van `3.0` tot `4.0`:
+Laten we de hoofdversie van `3.0` naar `4.0` verplaatsen:
 
 ```json
 "require": {
@@ -85,13 +85,13 @@ Laten we de belangrijkste versie van `3.0` tot `4.0`:
 }
 ```
 
-Sla de `composer.json` bestand en uitvoeren:
+Sla het `composer.json` -bestand op en voer de bewerking uit:
 
 ```bash
 composer update magento/product-recommendations --with-dependencies
 ```
 
-Of als u de `magento/module-visual-product-recommendations` en `magento/module-page-builder-product-recommendations` modules:
+Of als u de modules `magento/module-visual-product-recommendations` en `magento/module-page-builder-product-recommendations` hebt geïnstalleerd:
 
 ```bash
 composer update --with-dependencies magento/product-recommendations magento/module-visual-product-recommendations magento/module-page-builder-product-recommendations
@@ -103,8 +103,8 @@ composer update --with-dependencies magento/product-recommendations magento/modu
 
 ## Firewalls
 
-Als u Product Recommendations via een firewall wilt laten gebruiken, voegt u `commerce.adobe.io` aan de lijst van gewenste personen.
+Voeg `commerce.adobe.io` toe aan de lijst van gewenste personen om Product Recommendations door een firewall te laten bewegen.
 
 ## Verwijderen [!DNL Product Recommendations] {#uninstall}
 
-Indien nodig kunt u [verwijderen](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html) de productaanbevelingen module.
+Indien noodzakelijk, kunt u ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html) de product-aanbevelingen module [ desinstalleren.

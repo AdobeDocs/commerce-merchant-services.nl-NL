@@ -16,9 +16,9 @@ ht-degree: 0%
 
 Connect Store Fulfillment Services met Adobe Commerce door de vereiste verificatiereferenties en verbindingsgegevens toe te voegen aan Adobe Commerce Admin.
 
-- **[Configureren [!DNL Commerce integration settings]](#create-an-adobe-commerce-integration)**- Maak een Adobe Commerce-integratie voor de services van Store Fulfillment en genereer de toegangstokens om binnenkomende aanvragen van de servers van Store Fulfillment te verifiëren.
+- **[vorm [!DNL Commerce integration settings]](#create-an-adobe-commerce-integration)** - creeer een integratie van Adobe Commerce voor de diensten van de Afhandeling van de Opslag en produceer de toegangstokens om inkomende verzoeken van de servers van de Afhandeling van de Opslag voor authentiek te verklaren.
 
-- **[Accountgegevens configureren voor services voor winkeluitvoering](#configure-store-fulfillment-account-credentials)**-Voeg je gegevens toe om Adobe Commerce te verbinden met je account voor winkelvervulling.
+- **[vormt rekeningsgeloofsbrieven voor de Diensten van de Afhandeling van de Opslag](#configure-store-fulfillment-account-credentials)** - voeg uw geloofsbrieven toe om Adobe Commerce met uw rekening van de Afhandeling van de Opslag te verbinden.
 
 >[!NOTE]
 >
@@ -26,7 +26,7 @@ Connect Store Fulfillment Services met Adobe Commerce door de vereiste verificat
 
 ## Een Adobe Commerce-integratie maken
 
-Om Adobe Commerce met de diensten van de Afhandeling van de Opslag te integreren, creeert u een integratie van de Handel en produceert toegangstokens die kunnen worden gebruikt om verzoeken van de servers van de Afhandeling van de Opslag voor authentiek te verklaren. U moet ook de Adobe Commerce bijwerken [!UICONTROL Consumer Settings] opties om `The consumer isn't authorized to access %resources.` Antwoordfouten op verzoeken van Adobe Commerce aan [!DNL Store Fulfillment] diensten.
+Als u Adobe Commerce wilt integreren met de service Afhandeling van winkel, maakt u een integratie met Commerce en genereert u toegangstokens die kunnen worden gebruikt voor het verifiëren van aanvragen van de servers van Store Fulfillment. U moet ook de Adobe Commerce [!UICONTROL Consumer Settings] -opties bijwerken om `The consumer isn't authorized to access %resources.` -responsfouten te voorkomen bij aanvragen van Adobe Commerce naar [!DNL Store Fulfillment] -services.
 
 1. Creëer in de beheerfunctie de integratie voor winkeluitvoering.
 
@@ -45,15 +45,15 @@ Om Adobe Commerce met de diensten van de Afhandeling van de Opslag te integreren
 
 1. Werk samen met uw accountmanager om de configuratie aan de kant Opslaan van tegoeden te voltooien en de integratie te autoriseren.
 
-1. Adobe Commerce inschakelen [!UICONTROL Consumer Settings] optie voor [!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens].
+1. Schakel de optie Adobe Commerce [!UICONTROL Consumer Settings] in op [!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens] .
 
-   - Ga vanuit de beheerder naar **[!UICONTROL Stores]** >  [!UICONTROL Configuration] > **[!UICONTROL Services]** >  **[!UICONTROL OAuth]** > **[!UICONTROL Consumer Settings]**
+   - Ga vanuit de beheerfunctie naar **[!UICONTROL Stores]** > [!UICONTROL Configuration] > **[!UICONTROL Services]** > **[!UICONTROL OAuth]** > **[!UICONTROL Consumer Settings]**
 
-   - Stel de [!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens] optie voor **[!UICONTROL Yes]**.
+   - Stel de optie [!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens] in op **[!UICONTROL Yes]** .
 
 >[!IMPORTANT]
 >
-> Het integratietoken is specifiek voor de omgeving. Als u het gegevensbestand voor een milieu met de brongegevens van een verschillende milieu-voor bijvoorbeeld het herstellen van productiegegevens van een het opvoeren milieu-sluit uit `oauth_token` lijst van de gegevensbestanduitvoer zodat de details van het integratietoken niet tijdens terugzetverrichting worden beschreven.
+> Het integratietoken is specifiek voor de omgeving. Als u de database voor een omgeving herstelt met de brongegevens uit een andere omgeving (bijvoorbeeld het herstellen van productiegegevens uit een testomgeving), sluit u de tabel `oauth_token` uit van de databaseexport, zodat de details van het integratietoken tijdens de terugzetbewerking niet worden overschreven.
 
 
 ## Geef de gegevens van de opslagaccount op
@@ -70,19 +70,19 @@ Deze geloofsbrieven worden vereist om de Afhandeling van de Opslag te vormen en 
 
 >[!NOTE]
 >
->Het maken van een account kan enige tijd duren. Tijdens het wachten op referenties [Andere instellingen voor de oplossing Afhandeling opslaan bekijken en configureren](service-config-settings-overview.md).
+>Het maken van een account kan enige tijd duren. Terwijl u op geloofsbrieven wacht, [ overzicht en vorm andere montages voor de oplossing van de Afhandeling van de Opslag ](service-config-settings-overview.md).
 
 ### Referenties toevoegen om verbinding te maken met Afhandeling van winkel
 
-1. Configureren [accountgegevens](enable-general.md) voor de productie- en sandboxomgevingen.
+1. Vorm [ rekeningsgeloofsbrieven ](enable-general.md) voor de milieu&#39;s van de Productie en van Sandbox.
 
-1. Ga vanuit de beheerder naar **[!UICONTROL Stores > Configuration > Services > Store Fulfillment by Walmart Commerce Technologies]**
+1. Ga vanuit Beheer naar **[!UICONTROL Stores > Configuration > Services > Store Fulfillment by Walmart Commerce Technologies]**
 
-1. Voer de accountgegevens in die zijn opgegeven voor de **[!UICONTROL Production environment]**. Alle velden zijn verplicht.
+1. Voer de accountgegevens in die voor de **[!UICONTROL Production environment]** zijn opgegeven. Alle velden zijn verplicht.
 
-1. Selecteren **[!UICONTROL Save Config]**.
+1. Selecteer **[!UICONTROL Save Config]** .
 
-1. De verbinding testen door **[!UICONTROL Validate Credentials]**.
+1. Test de verbinding door **[!UICONTROL Validate Credentials]** te selecteren.
 
 >[!NOTE]
 >

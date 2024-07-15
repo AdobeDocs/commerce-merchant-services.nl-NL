@@ -15,10 +15,10 @@ Om een regel te bouwen, moet de eerste stap de regelredacteur gebruiken om de vo
 
 ## Een regel toevoegen
 
-1. Ga in Beheer naar **Marketing** > SEO &amp; Search > **[!DNL Live Search]**.
-1. Stel de **Toepassingsgebied** om de [winkelweergave](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) wanneer de regel van toepassing is.
-1. Klik op de knop **Merchandising zoeken** werkruimte.
-1. Klikken **Regel toevoegen** om de regeleditor te starten.
+1. In Admin, ga naar **Marketing** > SEO &amp; Onderzoek > **[!DNL Live Search]**.
+1. Plaats het **Reikwijdte** om de [ opslagmening ](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) te identificeren waar de regel van toepassing is.
+1. Klik de **Merchandising van het Onderzoek** werkruimte.
+1. Klik **toevoegen regel** om de regelredacteur te lanceren.
 
 ## Type regel
 
@@ -31,7 +31,7 @@ Kies het standaard Intelligente classificatietype en eventuele handmatige classi
 
 Voorwaarden zijn de vereisten om een gebeurtenis te activeren. Een regel kan tot tien voorwaarden en 25 gebeurtenissen hebben. Een standaardregel kan geen voorwaarden hebben.
 
-![Regel - Bouw uw regel](assets/rules-add-workspace.png)
+![ Regel - Bouw uw regel ](assets/rules-add-workspace.png)
 
 >[!NOTE]
 >
@@ -39,53 +39,53 @@ Voorwaarden zijn de vereisten om een gebeurtenis te activeren. Een regel kan tot
 
 ### Eén voorwaarde
 
-1. Onder *Uw regel samenstellen*, selecteert u de **Voorwaarde** en volgt u de instructies om de instructie te voltooien.
+1. Onder *bouwt uw regel*, selecteer de **Voorwaarde** om te ontmoeten, en volg de instructies om de verklaring te voltooien.
 
-   * Zoekquery bevat - Voer de tekenreeks in die in de query van de winkels moet staan. De instelling Afstemmen bepaalt de mate waarin de query van de winkels overeenkomt met de catalogus. Opties:<br /> Willekeurig - Elk deel van de querytekst van de winkels kan overeenkomen met de voorwaarde.<br />Alles - Alle query&#39;s van de klant moeten overeenkomen met de voorwaarde.
-   * Zoekquery is - Voer een tekenreeks in die exact overeenkomt met de query van de verkoper. Bijvoorbeeld: &quot;yoga broek&quot;. Regels met `Search query is` en Overeenkomst `All` kan slechts één voorwaarde hebben.
+   * Zoekquery bevat - Voer de tekenreeks in die in de query van de winkels moet staan. De instelling Afstemmen bepaalt de mate waarin de query van de winkels overeenkomt met de catalogus. Opties:<br /> om het even welk - om het even welk deel van de vraagtekst van de verkoopster kan de voorwaarde aanpassen.<br /> allen - allen van de vraag van de verkoopster moet de voorwaarde aanpassen.
+   * Zoekquery is - Voer een tekenreeks in die exact overeenkomt met de query van de verkoper. Bijvoorbeeld: &quot;yoga broek&quot;. Regels met `Search query is` en overeenkomsten `All` kunnen slechts één voorwaarde hebben.
    * Zoekopdracht begint met - Voer een teken of tekenreeks in die aan het begin van de zoekopdracht van de gebruiker moet staan.
    * Zoekopdracht eindigt met - Voer een teken of tekenreeks in die aan het einde van de zoekopdracht van de gebruiker moet staan.
 
-   De resultaten worden direct weergegeven in het dialoogvenster *Uw regel testen* en worden genummerd op prioriteit. U kunt de *Resultaten per rij* schuifregelaar rechtsboven om het aantal producten in elke rij te wijzigen.
+   De resultaten verschijnen onmiddellijk in *Test uw regel* ruit en genummerd door prioriteit. U kunt de *Resultaten per rij* schuif in de hogere gebruiken    het recht om het aantal producten in elke rij te wijzigen.
 
-   ![Regel - eenvoudig](assets/rule-simple-test.png)
+   ![ Regel - eenvoudig ](assets/rule-simple-test.png)
 
-1. Om andere vragen te testen, verander de vraagtekst in *Uw regel testen* zoekvak en drukken op **Retourneren**.
+1. Om andere vragen te testen, verander de vraagtekst in de *Test uw doos van het regel* onderzoek en druk **Terugkeer**.
 Aanvankelijk, geeft de testruit de vraag van het de onderzoeksvakje van de Voorwaarden terug. Maar nu geeft het de vraag van de doos van de testvraag terug. De testruit geeft slechts één vraag tegelijkertijd terug.
-1. Als het resultaat u bevalt, werkt u de tekst in het dialoogvenster *Voorwaarden* zoekvak. Klik vervolgens ergens op de pagina om de resultaten in het testvenster bij te werken.
-1. Ga naar Stap 3 om een eenvoudige regel met één voorwaarde te bouwen: [Gebeurtenissen toevoegen](#events).
+1. Als u van het resultaat houdt, werk de tekst in het *Voorwaarden* onderzoeksvakje bij. Klik vervolgens ergens op de pagina om de resultaten in het testvenster bij te werken.
+1. Om een eenvoudige regel met één voorwaarde te bouwen, ga naar Stap 3: [ voegt gebeurtenissen ](#events) toe.
 
 ### Meerdere voorwaarden
 
-1. Om een regel met veelvoudige voorwaarden te bouwen, klik **Voorwaarde toevoegen**.
-Een regel kan tot tien voorwaarden hebben. De logische operator die zich bij twee voorwaarden aansluit, is gebaseerd op de huidige *Overeenkomst* instellen. Standaard, *Overeenkomst* is `All` en de logische operator `AND`.
+1. Om een regel met veelvoudige voorwaarden te bouwen, klik **toevoegt voorwaarde**.
+Een regel kan tot tien voorwaarden hebben. De logische exploitant die zich bij twee voorwaarden aansluit is gebaseerd op het huidige *plaatsen van de Gelijke*. Door gebrek, *Gelijke* is `All` en de logische exploitant is `AND`.
 
 1. Selecteer de tweede voorwaarde en voer de vereiste querytekst in.
 
-1. Als u de logica van de regel wilt wijzigen, wijzigt u de **Overeenkomst** het plaatsen om te bepalen hoe dicht de het onderzoekscriteria van de klant de vraagvoorwaarde moeten aanpassen. Set **Overeenkomst** op een van de volgende wijzen:
+1. Om de logica van de regel te veranderen, verander **Gelijke** het plaatsen om te bepalen hoe dicht de het onderzoekscriteria van de verkoopster de vraagvoorwaarde moeten aanpassen. Plaats **Gelijke** aan één van het volgende:
 
-   * Willekeurige - (Standaard) Alle logische operatoren in de regel zijn ingesteld op `OR` en de resultaten worden weergegeven in het testvenster.
+   * Alle - (standaard) Alle logische operatoren in de regel zijn ingesteld op `OR` en de resultaten worden weergegeven in het testvenster.
    * Alles - Alle logische operatoren in de regel zijn ingesteld op `AND` en de resultaten worden weergegeven in het testvenster.
 
-   De *Overeenkomst* value bepaalt de logische operator die wordt gebruikt om meerdere voorwaarden samen te voegen. Het wijzigen van *Overeenkomst* bij het instellen worden alle logische operatoren in de regel gewijzigd. Het is niet mogelijk om `AND` en `OR` in dezelfde regel.
+   De *gelijke* waarde bepaalt de logische exploitant die wordt gebruikt om zich bij veelvoudige voorwaarden aan te sluiten. Het veranderen van *Gelijke* het plaatsen verandert alle logische exploitanten in de regel. Het is niet mogelijk `AND` en `OR` in dezelfde regel te combineren.
 
    In dit voorbeeld zijn er twee aparte query&#39;s die zoeken naar &#39;yoga&#39; of &#39;broek&#39; in plaats van naar &#39;yoga-broek&#39; te zoeken. Deze regel is minder specifiek en wordt vaker geactiveerd in de winkel dan in de andere.
 
-   ![Regels - Overeenkomst](assets/rules-match.png)
+   ![ Regels - Gelijke ](assets/rules-match.png)
 
-1. Als u nog een voorwaarde wilt toevoegen, klikt u op **Voorwaarde toevoegen** en herhaal het proces.
+1. Om een andere voorwaarde toe te voegen, **voegt voorwaarde** toe en herhaalt het proces.
 
 ## Intelligente classificatie
 
 De intelligente rangschikking combineert gebruikersgedrag en plaatsstatistieken om productrangschikking te bepalen.
 Winkeleigenaars kunnen de volgende typen classificatiestrategieën instellen:
 
-![Regels - Overeenkomst](assets/rules-ranking-type.png)
+![ Regels - Gelijke ](assets/rules-ranking-type.png)
 
 * Meest aangeschaft: dit rangschikt de producten op basis van de totale aankopen per SKU in de afgelopen 7 dagen.
 * Meestal toegevoegd aan winkelwagentjes in volgorde van de totale &quot;Add to Cart&quot;-activiteiten in de afgelopen 7 dagen.
 * Meest bekeken: hiermee wordt mijn totale weergaven per SKU in de afgelopen 7 dagen opnieuw weergegeven.
-* Aanbevolen voor u - Gebruikt de `viewed-viewed` gegevenspunt - Kopers die deze SKU bekeken, keken ook naar deze andere SKU&#39;s
+* Aanbevolen voor u - Gebruikt het `viewed-viewed` gegevenspunt - Kopers die deze SKU hebben bekeken, keken ook naar deze andere SKU&#39;s
 * Trending: kijkt terug naar de gebeurtenissen van de paginaweergave in de afgelopen 72 uur voor achtergrondgebeurtenissen en 24 uur voor voorgrondgebeurtenissen
 * Geen: de producten worden bevolen door Relevantie
 
@@ -108,7 +108,7 @@ De eenvoudigste manier om een product vast te zetten is door te slepen en neer t
 
 1. Klik en sleep een product in het deelvenster Testen. Sleep de aanwijzer naar de gewenste positie. De velden Product en Positie worden automatisch ingevuld in het deelvenster Gebeurtenissen.
 
-   ![Regels - Overeenkomst](assets/rule-event-pin-product.png)
+   ![ Regels - Gelijke ](assets/rule-event-pin-product.png)
 
 U kunt ook op het speldpictogram klikken om een product op de huidige locatie vast te zetten. Gebruik het contextmenu voor ovalen om &#39;Aan de bovenkant vastzetten&#39; of &#39;Aan de onderkant vastzetten&#39;.
 
@@ -118,31 +118,31 @@ U kunt ook op het speldpictogram klikken om een product op de huidige locatie va
 
 Of gebeurtenissen kunnen handmatig worden ingesteld:
 
-1. Onder *Gebeurtenissen*, kiest u de **Gebeurtenis** plaatsvinden wanneer aan de desbetreffende voorwaarden is voldaan.
+1. Onder *Gebeurtenissen*, kies de **Gebeurtenis** om te gebeuren wanneer de bijbehorende voorwaarden worden voldaan.
 
-   Kies bijvoorbeeld `Hide a product`. Voer vervolgens de naam in van het product dat u wilt verbergen. Producten worden voorgesteld terwijl u typt.
+   Kies bijvoorbeeld `Hide a product` . Voer vervolgens de naam in van het product dat u wilt verbergen. Producten worden voorgesteld terwijl u typt.
 
 1. Voor meerdere gebeurtenissen kiest u andere gebeurtenissen die u wilt activeren als aan de voorwaarden is voldaan.
 
 ## Aanvullende gegevens
 
-De hier ingevoerde informatie wordt weergegeven in het dialoogvenster [Regeldetails](rules-workspace.md) deelvenster.
+De informatie die hier is ingegaan verschijnt in het [ paneel van de Details van de Regel ](rules-workspace.md).
 
-1. Onder *Details*, voert u een **Naam** voor de regel. Alle regelnamen moeten uniek zijn.
-1. Voer een korte beschrijving in **Beschrijving** van de regel.
-1. Voer de **Begindatum** en **Einddatum** om de regel actief te maken of de datums in de kalender te kiezen.
+1. Onder *Details*, ga a **Naam** voor de regel in. Alle regelnamen moeten uniek zijn.
+1. Ga een korte **Beschrijving** van de regel in.
+1. Ga de **Datum van het Begin** en **Datum van het Eind** voor de regel in om actief te zijn of de data van de kalender te kiezen.
 
    Als u een datumbereik wilt selecteren, klikt u op de eerste datum en sleept u om het bereik te selecteren.
 
-   ![Regel - volledig](assets/rule-add-details.png)
+   ![ Regel - Volledig ](assets/rule-add-details.png)
 
 ## De regel voltooien
 
 1. Onderzoek de resultaten van de regel in de testruit.
 1. Als de regel veelvoudige vragen heeft, test elk die door de regel zou kunnen worden beïnvloed.
-1. Klik op **Opslaan en publiceren**.
+1. Wanneer volledig, klik **sparen en publiceer**.
 
-   De regel wordt toegevoegd aan de lijst in de *Regels* werkruimte.
+   De regel wordt toegevoegd aan de lijst in de *1} werkruimte van Regels {.*
 
 1. Hoewel de actieve regels onmiddellijk in werking treden, zou u tot 15 minuten kunnen moeten wachten op de caching vraagresultaten in de storefront om worden verfrist.
 
@@ -162,14 +162,14 @@ De hier ingevoerde informatie wordt weergegeven in het dialoogvenster [Regeldeta
 | Operator | Beschrijving |
 |--- |--- |
 | OF | (Standaard) De logische operator `OR` vergelijkt twee voorwaarden en voldoet aan de vereisten om een gebeurtenis te activeren als minstens één voorwaarde waar is. |
-| EN | De logische operator `AND` vergelijkt twee voorwaarden en voldoet aan de vereisten om een gebeurtenis te activeren als beide voorwaarden waar zijn. |
+| EN | De logische operator `AND` vergelijkt twee voorwaarden en voldoet aan de vereisten om een gebeurtenis te activeren als beide voorwaarden true zijn. |
 
 ### Operatoren afstemmen
 
 | Operator | Beschrijving |
 |--- |--- |
-| Alle | Hiermee wijzigt u alle logische operatoren in de regel in `OR` en retourneert de set van overeenkomende producten. |
-| Alles | Hiermee wijzigt u alle logische operatoren in de regel in `AND` en retourneert de set van overeenkomende producten. |
+| Alle | Wijzigt alle logische operatoren in de regel in `OR` en retourneert de set overeenkomende producten. |
+| Alles | Wijzigt alle logische operatoren in de regel in `AND` en retourneert de set overeenkomende producten. |
 
 ### Handmatige classificatie
 

@@ -1,6 +1,6 @@
 ---
 title: "[!DNL Live Search] Opmerkingen bij de release"
-description: "De meest recente releasegegevens voor [!DNL Live Search] uit Adobe Commerce."
+description: "De recentste versieinformatie voor  [!DNL Live Search]  van Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
 source-git-commit: fe261bfaf5a64c9501bc5523d29f9b6a9fc1a6a2
@@ -12,113 +12,113 @@ ht-degree: 0%
 
 # [!DNL Live Search] Opmerkingen bij de release
 
-In deze releaseopmerkingen worden de meest recente versies van [!DNL Live Search].
+In deze releaseopmerkingen worden de meest recente versies van [!DNL Live Search] beschreven.
 Er wordt ondersteuning geboden voor de belangrijkste uitgebrachte versie. Opmerkingen bij de release voor oudere versies worden ter referentie verschaft.
 Updates zijn:
 
-![Nieuw](../assets/new.svg) Nieuwe functies
-![Repareren](../assets/fix.svg) Oplossingen en verbeteringen
-![Bug](../assets/bug.svg) Bekende problemen
+![ Nieuwe ](../assets/new.svg) Nieuwe eigenschappen
+![ bevestig ](../assets/fix.svg) Bevestigingen en verbeteringen
+![ Bug ](../assets/bug.svg) Bekende kwesties
 
 ## Gehoste service-updates
 
 Deze nota&#39;s beschrijven updates die buiten een versioned versie of verbeteringen aan de ontvangen dienst werden gepubliceerd.
 
-_13 februari 2024_
+_13 Februari, 2024_
 
-![Nieuw](../assets/new.svg) [!DNL Live Search] ondersteunt nu het instellen van een standaardregel voor [Merchandising zoeken](rules.md).
+![ Nieuw ](../assets/new.svg) [!DNL Live Search] steunt nu het plaatsen van een standaardregel voor [ Merchandising van het Onderzoek ](rules.md).
 
 _12 oktober 2023_
 
-![Nieuw](../assets/new.svg) Commerce-beheerders kunnen nu de taal van de index voor [!DNL Live Search]. Zie [Instellingen](settings.md).
-![Repareren](../assets/fix.svg) Het tabblad Zoekregels is hernoemd naar &#39;Zoeken in wijzigingen&#39;.
+![ de Nieuwe ](../assets/new.svg) beheerders van Commerce kunnen de taal van de index voor [!DNL Live Search] nu specificeren. Zie [ Montages ](settings.md).
+![ Repareer ](../assets/fix.svg) het lusje van &quot;Regels van het Onderzoek&quot;is anders genoemd aan &quot;Verkoop van het Onderzoek&quot;.
 
-_13 juni 2023_
+_13 Juni, 2023_
 
-![Repareren](../assets/fix.svg) Probleem verholpen waarbij bepaalde tekens, zoals aanhalingstekens of apostroffen, klasseringsproblemen veroorzaakten. Deze problemen worden opgelost door opnieuw te indexeren.
+![ bevestig ](../assets/fix.svg) een kwestie waar sommige karakters zoals citaten of apostroffen rangschikkende kwesties veroorzaakten. Deze problemen worden opgelost door opnieuw te indexeren.
 
-_25 april 2023_
+_25 April, 2023_
 
-![Nieuw](../assets/new.svg) [!DNL Live Search] klanten kunnen nu profiteren van de nieuwe [SaaS-prijsindexer](../price-index/price-indexing.md).
+![ Nieuwe ](../assets/new.svg) [!DNL Live Search] klanten kunnen uit de nieuwe [ SaaS prijsindexeerder ](../price-index/price-indexing.md) nu voordeel halen.
 
 ### PLP-widget
 
-_31 mei 2024_
+_31 Mei, 2024_
 
-![Nieuw](../assets/new.svg) Uitgebrachte versie 2.0.0 van de PLP-widget, die ondersteuning biedt voor de volgende functies:
+![ Nieuwe ](../assets/new.svg) Vrijgegeven versie 2.0.0 van PLP widget, die steun voor de volgende eigenschappen toevoegt:
 
 - Toevoegen aan winkelwagentjes - Alleen beschikbaar voor eenvoudige producten.
 - Meerdere afbeeldingen per product - de afbeelding kan veranderen wanneer een andere kleur wordt gekozen voor een configureerbaar product.
 
-_27 oktober 2023_
+_27 oktober, 2023_
 
-![Nieuw](../assets/new.svg) De [!DNL Live Search] De PLP-widget ondersteunt nu kleurstalen.
+![ Nieuw ](../assets/new.svg) de [!DNL Live Search] PLP widget steunt nu kleurenstalen.
 
 
-## [!DNL Live Search] 4.2.0. {#420}
+## [!DNL Live Search] 4.2.0 {#420}
 
-_31 mei 2024_
+_31 Mei, 2024_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) De extensie Live zoeken is bijgewerkt om PLP-widgets versie 2.0.0 te gebruiken.
+![ Nieuwe ](../assets/new.svg) Bijgewerkte Levende uitbreiding van het Onderzoek om PLP widgets versie 2.0.0 te gebruiken.
 
-## [!DNL Live Search] 4.1.2. {#412}
+## [!DNL Live Search] 4.1.2 {#412}
 
-_16 mei 2024_
+_Mei 16, 2024_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
-
-### Updates
-
-![Repareren](../assets/fix.svg) Vaste het [`productSearch`](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-by-categories) GraphQL-query voor correct filteren op basis van de `categoryPath` en `categoryList` voor categorieën.
-
-## [!DNL Live Search] 4.1.1. {#411}
-
-_19 mrt. 2024_
-
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
-
-### Nieuwe functies
-
-![Nieuw](../assets/new.svg) Meer taalondersteuning voor het Pools.
-![Nieuw](../assets/new.svg) [!DNL Live Search] ondersteunt nu PHP 8.3 voor installaties met Adobe Commerce 2.4.4.
-
-## [!DNL Live Search] 4.1.0. {#410}
-
-_22 feb. 2024_
-
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
-
-### Nieuwe functies
-
-![Nieuw](../assets/new.svg) De [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard) is nu beschikbaar. Dit vernieuwde dashboard biedt inzichten in gegevensstromen voor [!DNL Product Recommendations], [!DNL Live Search], en [!DNL Catalog Service].
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
 ### Updates
 
-![Repareren](../assets/fix.svg) Probleem verholpen waarbij een fout optrad wanneer gastgebruikers producten aan een winkelwagentje toevoegden in niet-standaardwinkelweergaven.
-![Repareren](../assets/fix.svg) Probleem verholpen waarbij het zoekpopover altijd het valutasymbool weergaf vóór de prijswaarde, ongeacht de landinstellingen.
-![Repareren](../assets/fix.svg) Overbodige typedefinities voor uitgeschakelde kernplug-ins zijn verwijderd om compatibiliteitsproblemen bij de installatie te verhelpen.
+![ bevestig ](../assets/fix.svg) de [`productSearch` ](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-by-categories) vraag van GraphQL aan correct filter dat op `categoryPath` en `categoryList` voor categorieën wordt gebaseerd.
 
-## [!DNL Live Search] 4.0.0. {#400}
+## [!DNL Live Search] 4.1.1 {#411}
 
-_13 nov. 2023_
+_Maart 19, 2024_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
 ### Nieuwe functies
 
-![Nieuw](../assets/new.svg) [!DNL Live Search] ondersteunt nu kleurstalen in de PLP-widget.
-![Nieuw](../assets/new.svg) [!DNL Live Search] geeft nu de categorienaam weer in plaats van de categorie-id.
-![Nieuw](../assets/new.svg) [!DNL Live Search] ondersteunt nu doorhaalprijzen in de PLP-widget.
-![Nieuw](../assets/new.svg) Introduceerde de knop &quot;Filters verbergen&quot; om het deelvenster Filters te verbergen.
+![ Nieuwe ](../assets/new.svg) Toegevoegde taalsteun voor Pools.
+![ Nieuw ](../assets/new.svg) [!DNL Live Search] steunt nu PHP 8.3 voor installaties die Adobe Commerce 2.4.4 in werking stellen.
+
+## [!DNL Live Search] 4.1.0 {#410}
+
+_feb 22, 2024_
+
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
+
+### Nieuwe functies
+
+![ Nieuw ](../assets/new.svg) [[!DNL Data Management Dashboard] ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard) is nu beschikbaar. Dit vernieuwde dashboard biedt inzichten in gegevensstromen voor [!DNL Product Recommendations] , [!DNL Live Search] en [!DNL Catalog Service] .
+
+### Updates
+
+![ bevestig ](../assets/fix.svg) een kwestie die een fout veroorzaakte wanneer de gastgebruikers producten aan een kar in niet-gebrek opslagmeningen toevoegden.
+![ beval ](../assets/fix.svg) een kwestie die onderzoekspopover veroorzaakte om het muntsymbool altijd vóór de prijswaarde ongeacht scènemontages te tonen.
+![ bevestig ](../assets/fix.svg) Verwijderde onnodige typedefinities voor gehandicapte kernstoppen om verenigbaarheidskwesties op installatie te bevestigen.
+
+## [!DNL Live Search] 4.0.0 {#400}
+
+_nov 13, 2023_
+
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
+
+### Nieuwe functies
+
+![ Nieuw ](../assets/new.svg) [!DNL Live Search] steunt nu kleurenstalen in PLP widget.
+![ Nieuw ](../assets/new.svg) [!DNL Live Search] toont nu de categorienaam eerder dan categorieId.
+![ Nieuw ](../assets/new.svg) [!DNL Live Search] steunt nu strikethrough prijzen in PLOP widget.
+![ Nieuw ](../assets/new.svg) introduceerde de &quot;knoop van de Filters van de Huid&quot;om het filterenpaneel te verbergen.
 
 
 ### Updates
 
-![Repareren](../assets/fix.svg) De [!DNL Live Search] PLP-widget is nu standaard ingeschakeld voor nieuwe installaties.
-![Repareren](../assets/fix.svg) CSS-stijlen opnieuw geconfigureerd om widgetklassen beter te isoleren.
-![Repareren](../assets/fix.svg) Kleine oplossingen voor problemen
+![ bevestig ](../assets/fix.svg) De [!DNL Live Search] PLP widget wordt nu toegelaten door gebrek voor nieuwe installaties.
+![ bevestig ](../assets/fix.svg) opnieuw gevormde CSS stijlen om widgetklassen beter te isoleren.
+](../assets/fix.svg) Kleine insectenmoeilijke situaties van 0} herstellen![
 
 Nadat u versie 3.1.1 of hoger hebt geïnstalleerd, schakelt u de nieuwe indexen in:
 
@@ -134,49 +134,52 @@ Na bevordering, test de bijgewerkte configuratie in QA of het Opvoeren alvorens 
 
 ## [!DNL Live Search] 3.1.1 {#311}
 
-_15 sep. 2023_
+_sep 15, 2023_
 
-[!BADGE Ondersteund]{type=Informative tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) Het nieuwe tabblad Categorieomzetting is toegevoegd. Gebruikers kunnen nu intelligente waarderingen en handmatige waarderingen (speld, boost, bury, hide) per categorie toevoegen
-![Nieuw](../assets/new.svg) Gebruikers kunnen één categorieregel toevoegen met een intelligente of handmatige classificatie
-![Nieuw](../assets/new.svg) Gebruikers kunnen nu intelligente volgregels toevoegen aan subcategorieën
-![Nieuw](../assets/new.svg) Gedetailleerde informatie wordt gegeven wanneer het schrappen van subcategorieën met intelligente rangschikking
-![Nieuw](../assets/new.svg) De mogelijkheid toegevoegd om regels voor overgeërfde classificatiestrategieën te verwijderen
-![Nieuw](../assets/new.svg) De mogelijkheid toegevoegd om regels voor één categorie te verwijderen
-![Nieuw](../assets/new.svg) Gebruikers kunnen nu op categorienaam zoeken wanneer zij een regel toevoegen
-![Nieuw](../assets/new.svg) In de weergave Categoriestructuur kunnen gebruikers nu zien welke categorie regels heeft toegepast.
-![Nieuw](../assets/new.svg) In Voorvertoning categorie wordt alleen de geselecteerde categorie weergegeven.
-![Nieuw](../assets/new.svg) AEM CIF [Pop-overwidget](https://github.com/adobe/aem-cif-guides-venia/pull/319) en [PLP-widget](https://github.com/adobe/aem-cif-guides-venia/pull/320) de componenten staan AEM plaatsen toe om voordeel te halen uit [!DNL Live Search].
-
-### Updates
-
-![Repareren](../assets/fix.svg) De tabelgrootte van de producten en de prijsvoeding is sterk afgenomen. Tabellen `catalog_data_exporter_products` en `catalog_data_exporter_product_prices` moet een aanzienlijke vermindering van de omvang zien.
-![Repareren](../assets/fix.svg) Het tabblad &#39;Regels&#39; krijgt een andere naam dan &#39;Zoekregels&#39;
-![Repareren](../assets/fix.svg) Wanneer u op &#39;trending&#39; rangschikt, kunt u nu kiezen tussen: - 3 dagen (standaardwaarde) - 14 dagen - 30 dagen
-![Repareren](../assets/fix.svg) &#39;Gebeurtenissen&#39; (Boost/Pin/Bury/Hide) is hernoemd naar &#39;Handmatige volgorde&#39;
-![Repareren](../assets/fix.svg) &#39;Type classificatie&#39; is hernoemd naar &#39;Intelligente classificatie&#39;
-![Repareren](../assets/fix.svg) Kleine oplossingen voor problemen
-
-## [!DNL Live Search] 3.1.0. {#310}
-
-_1 sep. 2023_
-
-[!BADGE Ondersteund]{type="Informatief" tooltip="Ondersteund"}
+![ Nieuwe ](../assets/new.svg) Nieuwe het Merchandising tabel van de Categorie is toegevoegd. Gebruikers kunnen nu intelligente waarderingen en handmatige waarderingen (speld, boost, bury, hide) per categorie toevoegen
+![ Nieuwe ](../assets/new.svg) Gebruikers kunnen één enkele categorieregel met intelligente of handboek toevoegen rangschikking
+![ Nieuwe ](../assets/new.svg) Gebruikers kunnen Intelligente het Rangschikken regels aan subcategorieën nu toevoegen
+![ Nieuwe ](../assets/new.svg) Gedetailleerde informatie wordt verstrekt wanneer het schrappen van subcategorieën met intelligente rangschikking
+![ Nieuw ](../assets/new.svg) voegde de capaciteit toe om regels voor geërfte het rangschikken strategieën te schrappen
+![ Nieuw ](../assets/new.svg) voegde de capaciteit toe om regels voor één enkele categorie te schrappen
+![ Nieuwe ](../assets/new.svg) Gebruikers kunnen nu op categorienaam zoeken wanneer het toevoegen van een regel
+![ Nieuw ](../assets/new.svg) met de Mening van de Boom van de Categorie, kunnen de gebruikers nu bekijken welke categorie toegepaste regels heeft.
+![ Nieuwe ](../assets/new.svg) Voorproef van de Categorie toont slechts de geselecteerde categorie.
+![ Nieuwe ](../assets/new.svg) AEM CIF [ Popover widget ](https://github.com/adobe/aem-cif-guides-venia/pull/319) en [ PLP widget ](https://github.com/adobe/aem-cif-guides-venia/pull/320) componenten staan AEM plaatsen toe om uit [!DNL Live Search] voordeel te halen.
 
 ### Updates
 
-![Repareren](../assets/fix.svg) De widget voor productaanbiedingen is bijgewerkt om de [Catalogusservice-API](https://developer.adobe.com/commerce/services/graphql/catalog-service/product-search/).
+![ Repareer ](../assets/fix.svg) de lijstgrootte van de Producten en de feeds van de Prijs zijn zeer verminderd. Tabellen `catalog_data_exporter_products` en `catalog_data_exporter_product_prices` moeten aanzienlijk worden verkleind.
+![ Repareren ](../assets/fix.svg) het lusje van &quot;Regels&quot;wordt anders genoemd in &quot;de Regels van het Onderzoek&quot;
+![ Repareren ](../assets/fix.svg) wanneer het rangschikken door &quot;trending&quot;, kunt u nu tussen kiezen:
+- 3 dagen (standaard)
+- 14 dagen
+- 30 dagen
+![ bevestig ](../assets/fix.svg) &quot;Gebeurtenissen&quot;(Bost/Pijn/Doordrukken/Verbergen) is anders genoemd aan &quot;Handmatige Rangschikking&quot;
+![ Repareren ](../assets/fix.svg) &quot;het Rangschikken Type&quot;is anders genoemd aan &quot;Intelligente rangschikking&quot;
+![ bevestig ](../assets/fix.svg) kleine insectenmoeilijke situaties
 
-## [!DNL Live Search] 3.0.2. {#302}
+## [!DNL Live Search] 3.1.0 {#310}
 
-_7 augustus 2023_
+_september 1, 2023_
 
-[!BADGE Ondersteund]{type="Informatief" tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type="Informatief" tooltip="Ondersteund"}
+
+### Updates
+
+![ Repareer ](../assets/fix.svg) het Product van de Lijst widget is bijgewerkt om de [ Dienst API van de Catalogus te gebruiken ](https://developer.adobe.com/commerce/services/graphql/catalog-service/product-search/).
+
+## [!DNL Live Search] 3.0.2 {#302}
+
+_7 Augustus, 2023_
+
+[!BADGE  Gesteund ]{type="Informatief" tooltip="Ondersteund"}
 
 ### Nieuwe functies
 
-![Nieuw](../assets/new.svg) De volgende waarden zijn toegevoegd aan de `storeDetails` object:
+![ Nieuw ](../assets/new.svg) De volgende waarden zijn toegevoegd aan het `storeDetails` voorwerp:
 
 - &quot;Alle producten per pagina toestaan&quot;
 - Valuta
@@ -186,10 +189,11 @@ _7 augustus 2023_
 
 ### Updates
 
-![Repareren](../assets/fix.svg) De modules van de Dienst van de Catalogus zijn toegevoegd aan het metapakket om geavanceerde gegevensherwinning te steunen.
-![Repareren](../assets/fix.svg) De **Mijn account** paginanavigatie verdwijnt niet meer wanneer u de widget pagina met productaanbiedingen gebruikt.
+](../assets/fix.svg) de modules van de Dienst van de Catalogus van 0} herstellen {zijn toegevoegd aan het metapakket om geavanceerde gegevensherwinning te steunen.
+![
+![ bevestig ](../assets/fix.svg) **Mijn de paginanavigatie van de Rekening** niet meer verdwijnt wanneer het gebruiken van de Van de lijst van het Product widget van de Pagina.
 
-Handelaren moeten de [!DNL Live Search] extensie versie >= 3.0.2 gebruiken om deze functies te openen.
+Handelaars moeten de extensieversie van [!DNL Live Search] >= 3.0.2 upgraden om toegang te krijgen tot deze functies.
 
 U wordt aangeraden een upgrade uit te voeren en te testen voordat u naar de productie gaat. Overweeg om de productieomgeving tijdens niet-piekuren te upgraden nadat de resultaten van de testomgeving zijn gecontroleerd.
 
@@ -197,136 +201,142 @@ U wordt aangeraden een upgrade uit te voeren en te testen voordat u naar de prod
 
 Google Tag Manager mislukt als u de widget pagina met aanbiedingen van producten voor live zoeken gebruikt. Gebruik de standaardzoekadapter als Google-tagbeheer nodig is.
 
-## [!DNL Live Search] 3.0.1. {#301}
+## [!DNL Live Search] 3.0.1 {#301}
 
-_14 maart 2023_
+_Maart 14, 2023_
 
-[!BADGE Ondersteund]{type="Informatief" tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type="Informatief" tooltip="Ondersteund"}
 
 ### Nieuwe functies
 
-![Nieuw](../assets/new.svg) Productitemkaart in voorbeeld met regels
-![Nieuw](../assets/new.svg) [Widget pagina met productaanbiedingen](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-storefront/plp-styling)
-![Nieuw](../assets/new.svg) [Categoriefilteropties](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#facets)
-![Nieuw](../assets/new.svg) Mogelijkheid toegevoegd om pengebeurtenissen te maken door slepen en neerzetten
-![Nieuw](../assets/new.svg) Nieuwe vastzetacties: - Vastzetten op steun - De knop Vastzetten om een vastpingebeurtenis te maken met één klik - Aan de bovenkant vastzetten - Het product op de eerste positie plaatsen - Aan de onderkant vastzetten - Het product op de onderkant van de resultaten plaatsen - Een gebeurtenis vrijmaken met één klik
-![Nieuw](../assets/new.svg) [Intelligente classificatie voor regels](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add)
-![Nieuw](../assets/new.svg) [!DNL Live Search] ondersteunt nu volledig [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) Mogelijkheden in Commerce (voorheen bekend als Multi-Source Inventory of MSI). Om volledige steun toe te laten, moet u [update](install.md#update) de afhankelijkheidsmodule `commerce-data-export` naar versie 102.2.0+.
+![ Nieuwe ](../assets/new.svg) Kaart van het Punt van het Product in de voorproef van Regels
+![ Nieuwe ](../assets/new.svg) [ Van het Product het Van een lijst weergeven widget van de Pagina ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-storefront/plp-styling)
+![ Nieuwe ](../assets/new.svg) [ Categorie het filtreren opties ](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#facets)
+![ Nieuw ](../assets/new.svg) voegde de capaciteit toe om te slepen en te laten vallen om de gebeurtenissen van de Speld tot stand te brengen
+![ Nieuwe ](../assets/new.svg) Nieuwe Vastzetten acties:
+- Vastzetten op steunpunt - Knop Vastzetten om met één klik een vastpingebeurtenis te maken
+- Aan bovenkant vastzetten - Plaatst product op de eerste positie
+- Vastzetten aan onderzijde - Plaatst het product onder aan de resultaten
+- Een gebeurtenis met één klik vrijmaken
+![ Nieuw ](../assets/new.svg) [ Intelligente Rangschikking voor regels ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add)
+![ Nieuw ](../assets/new.svg) [!DNL Live Search] steunt nu volledige [ mogelijkheden van Inventory management {in Commerce (vroeger weet als Voorraad Multi-Source, of MSI). ](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) Om volledige steun toe te laten, moet u ](install.md#update) de gebiedsdeelmodule `commerce-data-export` aan versie 102.2.0+ bijwerken.[
 
 ### Updates
 
-![Repareren](../assets/fix.svg) Regels configureren sorteert posities nu automatisch uniek
-![Repareren](../assets/fix.svg) Een bestaande gebeurtenis verwijderen werkt nu de voorvertoning bij
-![Repareren](../assets/fix.svg) Regels zonder gebeurtenissen kunnen worden opgeslagen
-![Repareren](../assets/fix.svg) Selector Type selecteren verwijderen
-![Repareren](../assets/fix.svg) Nieuwe bewerkingsstatus toegevoegd voor niet-opgeslagen regels
+![ Repareren ](../assets/fix.svg) vormt nu automatisch Regels sorteert posities uniek
+![ Repareren ](../assets/fix.svg) Het schrappen van een bestaande gebeurtenis werkt nu voorproef bij
+![ bevestig ](../assets/fix.svg) Regels met geen gebeurtenissen kunnen worden bewaard
+![ Bevestig ](../assets/fix.svg) verwijdert facetfactor &quot;Uitgezochte Type&quot;selecteur
+![ Repareren ](../assets/fix.svg) Toegevoegde nieuwe &quot;het Uitgeven&quot;status voor niet bewaarde regels
 
 ### Oplossingen
 
-![Repareren](../assets/fix.svg) Fout met vaste server als er een onvoltooide gebeurtenis is opgetreden tijdens opslaan
-![Repareren](../assets/fix.svg) Correcte verwijdering van specifieke gebeurtenis bij meerdere gebeurtenissen opgelost
-![Repareren](../assets/fix.svg) Gebeurtenis met bestaande regel is niet bijgewerkt wanneer een nieuwe gebeurtenis is toegevoegd. Dit probleem is nu opgelost.
-![Repareren](../assets/fix.svg) Correctie voor tweede klik op Bewerken uit details. [!DNL Live Search] pagina die opnieuw moet worden geladen
-![Repareren](../assets/fix.svg) Synoniemen: Probleem verholpen waarbij een gebruiker buiten invoer klikte en de focus niet naar het veld kon terugzetten
-![Repareren](../assets/fix.svg) Andere kleine insectenmoeilijke situaties en prestatiesupdates
+![ bevestig ](../assets/fix.svg) Vaste serverfout wanneer er een onvoltooide gebeurtenis tijdens sparen is
+![ Vaste correctie ](../assets/fix.svg) correct schrappend specifieke gebeurtenis wanneer er veelvoudige gebeurtenissen zijn
+![ Vaste ](../assets/fix.svg) bestaande regelgebeurtenis niet bijwerken wanneer de nieuwe gebeurtenis is toegevoegd
+![ Vaste Reparatie ](../assets/fix.svg) op tweede &quot;geef&quot;klik van details uit, [!DNL Live Search] pagina die herladen vereist
+![ bevestig ](../assets/fix.svg) Synoniemen: Vaste een kwestie wanneer een gebruiker uit input klikte, konden zij niet de nadruk op het gebied terugkeren
+![ bevestig ](../assets/fix.svg) Andere minder belangrijke insectenmoeilijke situaties en prestatiesupdates
 
 
-![Bug](../assets/bug.svg) - Rangschikken op &quot;Aanbevolen voor u&quot; wordt alleen ondersteund in de widgets Live zoeken. Deze functie wordt niet ondersteund met de standaardzoekfunctie voor Luma en PWA.
-![Bug](../assets/bug.svg) - Aangepaste facetten van prijskenmerken worden niet correct weergegeven in Luma, maar de API filtert er op.
+![ Bug ](../assets/bug.svg) - het Rangschikken door &quot;Aanbevolen voor u&quot;wordt slechts gesteund binnen Levende widgets van het Onderzoek. Deze functie wordt niet ondersteund met de standaardzoekfunctie voor Luma en PWA.
+![ Bug ](../assets/bug.svg) - de facetten van de prijsattributen van de Douane geven niet correct in Luma terug, maar API behoorlijk filters op hen.
 
-Handelaren moeten de [!DNL Live Search] extensie >= 3.0.1 gebruiken om deze functies te openen.
+Handelaars moeten de extensieversie van [!DNL Live Search] >= 3.0.1 upgraden om toegang te krijgen tot deze functies.
 
 U wordt aangeraden een upgrade uit te voeren en te testen voordat u naar de productie gaat. Overweeg om de productieomgeving tijdens niet-piekuren te upgraden nadat de resultaten van de testomgeving zijn gecontroleerd.
 
-## [!DNL Live Search] 2.0.5. {#205}
+## [!DNL Live Search] 2.0.5 {#205}
 
-[!BADGE Ondersteund]{type="Informatief" tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type="Informatief" tooltip="Ondersteund"}
 
-![Repareren](../assets/fix.svg) - Live zoeken zou een fout veroorzaken als SDK-bronnen niet beschikbaar waren vanwege netwerkproblemen. Deze fout is opgelost.
+![ Repareren ](../assets/fix.svg) - Levend Onderzoek zou een fout werpen wanneer de middelen van SDK niet beschikbaar wegens netwerkkwesties waren. Deze fout is opgelost.
 
 Handelaars moeten de Live Search extensie versie >= 2.0.5 bevorderen om tot deze eigenschappen toegang te hebben.
 
 U wordt aangeraden een upgrade uit te voeren en te testen voordat u naar de productie gaat. Overweeg om de productieomgeving tijdens niet-piekuren te upgraden nadat de resultaten van de testomgeving zijn gecontroleerd.
 
-### [!DNL Live Search] 2.0.4. {#204}
+### [!DNL Live Search] 2.0.4 {#204}
 
-[!BADGE Ondersteund]{type="Informatief" tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type="Informatief" tooltip="Ondersteund"}
 
-![Nieuw](../assets/new.svg) Live zoeken ondersteunt nu filteren met de instelling &#39;Producten uit voorraad weergeven&#39; in de beheerder. Als &#39;Display Out of Stock Products&#39; is ingesteld op false, `inStock = true` wordt toegevoegd aan het filter.
-![Repareren](../assets/fix.svg) Om de prestaties te verbeteren, is het blok &#39;Suggestions&#39; verwijderd uit het pop-upmenu Live zoeken. De gegevens worden nog steeds doorgegeven via GraphQL, voor het geval u de functie wilt vervangen.
-![Repareren](../assets/fix.svg) `categories` en `categoryPath` vervangen `categoryIds` voor filteren van categorieën. Lees meer in de [productSearch](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/) onderwerp.
-![Repareren](../assets/fix.svg) Eerder, zou een gebruiker verbonden aan een bedrijf B2B een onjuiste Code van de Groep van de Klant ontvangen wanneer het doen van onderzoeken. Live zoeken retourneert nu de juiste waarde.
-![Repareren](../assets/fix.svg) Als u een term zoekt die niet bestaat, wordt een fout geretourneerd door Live zoeken. Die bug is nu opgelost.
+![ Nieuw ](../assets/new.svg) Levend Onderzoek steunt nu het filtreren door de &quot;Vertoning uit Producten van het Voorraad&quot;het plaatsen in admin. Als &#39;Weergave van producten uit voorraad&#39; is ingesteld op false, wordt `inStock = true` toegevoegd aan het filter.
+![ Repareren ](../assets/fix.svg) om prestaties te verbeteren, is het &quot;Suggestions&quot;blok verwijderd uit Live Onderzoek popup. De gegevens worden nog steeds doorgegeven via GraphQL, voor het geval u de functie wilt vervangen.
+![ Repareren ](../assets/fix.svg) `categories` en `categoryPath` hebben `categoryIds` voor categorie het filtreren vervangen. Lees meer in het [ productSearch ](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/) onderwerp.
+![ Repareren ](../assets/fix.svg) eerder, een gebruiker verbonden aan een bedrijf B2B zou een onjuiste Code van de Groep van de Klant ontvangen wanneer het doen van onderzoeken. Live zoeken retourneert nu de juiste waarde.
+![ Repareren ](../assets/fix.svg) eerder, wanneer het zoeken naar een termijn die niet bestaat, zou Levende Onderzoek een fout terugkeren. Die bug is nu opgelost.
 
-Handelaren moeten de [!DNL Live Search] extensie >= 2.0.4 om toegang te krijgen tot deze functies.
-
-De gebruikers worden geadviseerd om te bevorderen en te testen alvorens aan productie te duwen. Overweeg om de productieomgeving tijdens niet-piekuren te upgraden nadat de resultaten van de testomgeving zijn gecontroleerd.
-
-### [!DNL Live Search] 2.0.3. {#203}
-
-[!BADGE Ondersteund]{type="Informatief" tooltip="Ondersteund"}
-
-![Nieuw](../assets/new.svg) Live zoeken ondersteunt nu B2B-functies door categorietoestemmingen, gedeelde catalogi en klantspecifieke prijzen te respecteren.
-
-Handelaren moeten de [!DNL Live Search] extensie >= 2.0.3 gebruiken om deze functies te openen.
+Handelaars moeten de extensieversie van [!DNL Live Search] >= 2.0.4 upgraden om toegang te krijgen tot deze functies.
 
 De gebruikers worden geadviseerd om te bevorderen en te testen alvorens aan productie te duwen. Overweeg om de productieomgeving tijdens niet-piekuren te upgraden nadat de resultaten van de testomgeving zijn gecontroleerd.
 
-### [!DNL Live Search] 2,0 {#20}
+### [!DNL Live Search] 2.0.3 {#203}
 
-[!BADGE Ondersteund]{type="Informatief" tooltip="Ondersteund"}
+[!BADGE  Gesteund ]{type="Informatief" tooltip="Ondersteund"}
 
-Bestaande [!DNL Live Search] de installaties moeten worden aangepast aan [!DNL Live Search] 2.0.0 om voordeel te halen uit de volgende nieuwe eigenschappen, moeilijke situaties, en verbeteringen:
+![ Nieuw ](../assets/new.svg) Levend Onderzoek steunt nu eigenschappen B2B door categorietoestemmingen, gedeelde catalogi, en klantgroep-specifieke tarifering te erkennen.
 
-![Nieuw](../assets/new.svg) [!DNL Live Search] ondersteunt nu PHP 8.1 voor installaties met Adobe Commerce 2.4.4.
-![Nieuw](../assets/new.svg) De `Magento_ElasticsearchCatalogPermissionsGraphQl` wordt toegevoegd aan de lijst met modules die tijdens de installatie zijn uitgeschakeld.
-![Nieuw](../assets/new.svg) Het aantal beschikbare regels in de [[!DNL storefront popover]](overview.md) kan van worden gevormd *Beheerder*.
-![Nieuw](../assets/new.svg) Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) ondersteund voor [!DNL Live Search].
-![Nieuw](../assets/new.svg) De [!DNL Live Search] Het installatieproces wordt bijgewerkt met geavanceerde proceswijzigingen.
-![Repareren](../assets/fix.svg) [Geavanceerd zoeken](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) koppeling verwijderd uit de voettekst van de winkel.
-![Bug](../assets/bug.svg) De volgende productkenmerken worden niet ondersteund door [COMMERCE GRAPHQL API](https://developer.adobe.com/commerce/services/graphql/live-search/) bij gebruik in verband met de bètaversie van PWA: `description`, `name`, `short_description`
-![Bug](../assets/bug.svg) De bètaversie van PWA voor [!DNL Live Search] ondersteunt niet [gebeurtenisafhandeling](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/).
+Handelaars moeten de extensieversie van [!DNL Live Search] >= 2.0.3 upgraden om toegang te krijgen tot deze functies.
 
-### [!DNL Live Search] 1. {#131}
+De gebruikers worden geadviseerd om te bevorderen en te testen alvorens aan productie te duwen. Overweeg om de productieomgeving tijdens niet-piekuren te upgraden nadat de resultaten van de testomgeving zijn gecontroleerd.
 
-[!BADGE Ondersteund]{type="Informatief" tooltip="Ondersteund"}
+### [!DNL Live Search] 2.0 {#20}
 
-![Repareren](../assets/fix.svg) [Aangepast prijskenmerk](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types) keert niet meer een fout terug wanneer gevormd als a [facet]({% koppeling live-search/facets-add.md %}).
-![Repareren](../assets/fix.svg) Er heeft zich een fout voorgedaan als er geen fout was opgetreden. Dit probleem is nu opgelost. [valutasymbool](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration(optional)) (`data-currency-symbol`) is beschikbaar.
-![Repareren](../assets/fix.svg) [[!DNL Storefront popover]](storefront-popover.md) toont nu [Speciale prijs](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) (minimumverkoopprijs), indien beschikbaar.
+[!BADGE  Gesteund ]{type="Informatief" tooltip="Ondersteund"}
 
-### [!DNL Live Search] 1.3.0. {#130}
+Bestaande [!DNL Live Search] -installaties moeten worden bijgewerkt naar [!DNL Live Search] 2.0.0 om te kunnen profiteren van de volgende nieuwe functies, oplossingen en verbeteringen:
 
-[!BADGE Ondersteund]{type="Informatief" tooltip="Ondersteund"}
+![ Nieuw ](../assets/new.svg) [!DNL Live Search] steunt nu PHP 8.1 voor installaties die Adobe Commerce 2.4.4 in werking stellen.
+![ Nieuw ](../assets/new.svg) de `Magento_ElasticsearchCatalogPermissionsGraphQl` module wordt toegevoegd aan de lijst van modules die tijdens de installatie worden onbruikbaar gemaakt.
+![ Nieuw ](../assets/new.svg) Het aantal beschikbare lijnen in [[!DNL storefront popover]](overview.md) kan van *Admin* worden gevormd.
+![ Nieuwe ](../assets/new.svg) Beta [ PWA ](https://developer.adobe.com/commerce/pwa-studio/) gesteund voor [!DNL Live Search].
+![ Nieuw ](../assets/new.svg) het [!DNL Live Search] installatieproces wordt bijgewerkt met geavanceerde procesveranderingen.
+](../assets/fix.svg) herstellen [ ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) verwijderde verbinding van het Geavanceerd Onderzoek ![ {van storefront footer.
+![ Bug ](../assets/bug.svg) de volgende productattributen worden niet gesteund door [ Commerce GraphQL API ](https://developer.adobe.com/commerce/services/graphql/live-search/) wanneer gebruikt met betrekking tot de bètaversie van PWA: `description`, `name`, `short_description`
+![ Bug ](../assets/bug.svg) De bètaversie van PWA voor [!DNL Live Search] steunt [ gebeurtenis behandeling ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) niet.
 
-![Nieuw](../assets/new.svg) [Prestaties](performance.md) het rapporteringsdashboard geeft inzicht in zoektermen die kopers gebruiken.
-![Nieuw](../assets/new.svg) [!DNL Live Search] [Storefront Events SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) verleent toegang tot een gemeenschappelijke gegevenslaag van gebeurtenis het publiceren en de abonnementendiensten, en metriek.
-![Repareren](../assets/fix.svg) De [[!DNL Storefront popover]](storefront-popover.md) heeft een nieuwe `active` klasse voor de `.search-autocomplete` container die de zichtbaarheid bepaalt.
-![Repareren](../assets/fix.svg) In de winkel [Zoekvoorwaarden](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms) voettekstkoppeling wordt verwijderd en de bijbehorende cache wordt uitgeschakeld voor [!DNL Live Search] installaties.
-![Bug](../assets/bug.svg) Patch for Search adapter verwerkt dubbele producten.
-![Bug](../assets/bug.svg) [!DNL Live Search] supports [uit één bron](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/sources/sources-manage) (fysieke) inventarislocaties met meerdere (virtuele) [voorraden](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-manage). Meerdere inventarisbronnen worden nu niet ondersteund.
+### [!DNL Live Search] 1.3.1 {#131}
 
-### [!DNL Live Search] 1.2.0. {#120}
+[!BADGE  Gesteund ]{type="Informatief" tooltip="Ondersteund"}
 
-[!BADGE Ondersteund]{type="Informatief" tooltip="Ondersteund"}
+](../assets/fix.svg) herstellen [ ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types) keert de prijsattributen van de Douane niet meer een fout terug wanneer gevormd als a [ facet ] ({% verbinding live-search/facets-add.md %).
+![
+![ bevestig ](../assets/fix.svg) Vaste kwestie die een fout veroorzaakte om voor te komen wanneer geen [ muntsymbool ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration(optional)) (`data-currency-symbol`) beschikbaar is.
+![ Repareren ](../assets/fix.svg) [[!DNL Storefront popover]](storefront-popover.md) toont nu de [ Speciale Prijs ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) (minimumdefinitieve prijs) wanneer beschikbaar.
 
-![Nieuw](../assets/new.svg) [[!DNL Storefront popover]](storefront-popover.md) Hiermee geeft u voorgestelde producten en miniatuurafbeeldingen van de zoekresultaten van het hoogste niveau weer als kopers vragen typen in het vak Zoeken.
-![Nieuw](../assets/new.svg) Handel *Beheerder* sessie blijft geopend tijdens lange perioden van inactiviteit op het toetsenbord
-![Nieuw](../assets/new.svg) [!DNL Live Search] wordt automatisch ingeschakeld na het instappen
-![Repareren](../assets/fix.svg) De aanvankelijke indexeertijd is minder dan een uur
-![Repareren](../assets/fix.svg) Incrementele productupdates bijna realtime (na installatie en installatie)
-![Repareren](../assets/fix.svg) Sorteerbare kolommen in Synoniemeditor
-![Repareren](../assets/fix.svg) [!DNL Live Search] genereert niet langer een fout als zoekcriteria een lege sorteervolgordewaarde bevatten
-![Repareren](../assets/fix.svg) Het filtreren van de waaier breekt niet meer als de attributencodes koorden &quot;aan&quot;of &quot;van&quot;bevatten
+### [!DNL Live Search] 1.3.0 {#130}
 
-### [!DNL Live Search] 1.1.0. {#110}
+[!BADGE  Gesteund ]{type="Informatief" tooltip="Ondersteund"}
 
-[!BADGE Ondersteund]{type="Informatief" tooltip="Ondersteund"}
+![ Nieuwe ](../assets/new.svg) [ Prestaties ](performance.md) rapporterend dashboard verstrekt inzicht in onderzoekstermijnen die de kopers gebruiken.
+![ Nieuwe ](../assets/new.svg) [!DNL Live Search] [ Storefront Gebeurtenissen SDK ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) verleent toegang tot een gemeenschappelijke gegevenslaag met gebeurtenis het publiceren en de abonnementsdiensten, en metriek.
+![ Repareren ](../assets/fix.svg) [[!DNL Storefront popover]](storefront-popover.md) heeft een nieuwe `active` klasse voor de `.search-autocomplete` container die zicht controleert.
+![ Repareren ](../assets/fix.svg) in de storefront, wordt de [ 3} voettekstverbinding van de Termen van het Onderzoek {verwijderd en zijn geheim voorgeheugen onbruikbaar gemaakt voor [!DNL Live Search] installaties.
+](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms)
+![ Bug ](../assets/bug.svg) Reparatie voor de adapterhandvatten van het Onderzoek dubbele producten.
+![ Bug ](../assets/bug.svg) [!DNL Live Search] steunt [ enig-bron ](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/sources/sources-manage) (fysieke) inventarisplaatsen met veelvoudige (virtuele) [ voorraden ](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-manage). Meerdere inventarisbronnen worden nu niet ondersteund.
 
-![Bug](../assets/bug.svg) De [!DNL Live Search] de dienst steunt slechts de [basisvaluta](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration) van de Adobe Commerce-installatie.
-![Bug](../assets/bug.svg) Wanneer u een facet toevoegt, wordt de feed Productkenmerken niet correct bijgewerkt wanneer deze is ingesteld op `Update on Save`. Ga om dit probleem te voorkomen naar [Indexbeheer](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) en stel Productkenmerken in op Feed `Update by Schedule`.
-![Bug](../assets/bug.svg) [!DNL Live Search] synoniemen worden gedefinieerd per winkelweergave, maar worden momenteel opgeslagen per website en geïdentificeerd met een combinatie van `environmentId` en `storeViewCode`. Dit heeft tot gevolg dat alle websites en winkelweergaven in de Adobe Commerce-installatie synoniemen delen. De meest recente reeks synoniemen voor de archiefmening krijgt belangrijkheid.
-![Bug](../assets/bug.svg) Als een synoniem term meerdere woorden bevat, wordt elk woord behandeld als een afzonderlijk synoniem. Als u bijvoorbeeld &#39;tijdstuk&#39; definieert als een synoniem van &#39;watch&#39;, worden zowel &#39;time&#39; als &#39;piece&#39; beschouwd als synoniemen van &#39;watch&#39;.
+### [!DNL Live Search] 1.2.0 {#120}
+
+[!BADGE  Gesteund ]{type="Informatief" tooltip="Ondersteund"}
+
+![ Nieuwe ](../assets/new.svg) [[!DNL Storefront popover]](storefront-popover.md) vertoningen gesuggereerde producten en duimnagelbeelden van hoogste onderzoeksresultaten als kopers typekeuringen in het vakje van het Onderzoek.
+![ Nieuwe ](../assets/new.svg) Commerce *Admin* zittingsverblijven open tijdens uitgebreide periodes van toetsenbordinactiviteit
+![ Nieuw ](../assets/new.svg) [!DNL Live Search] wordt automatisch toegelaten na onboarding
+![ Repareren ](../assets/fix.svg) Aanvankelijke het indexeren tijd is minder dan een uur
+![ herstellen ](../assets/fix.svg) Incrementele productupdates dichtbij echt - tijd (na installatie en opstelling)
+![ bevestig ](../assets/fix.svg) Geschikte kolommen in Synonym redacteur
+![ Bevestigen ](../assets/fix.svg) [!DNL Live Search] werpt niet meer een fout als de onderzoekscriteria lege waarde van de soortorde bevatten
+![ Repareren ](../assets/fix.svg) het filtreren van de Waaier breekt niet meer als de attributencodes koorden &quot;aan&quot;of &quot;van&quot;bevatten
+
+### [!DNL Live Search] 1.1.0 {#110}
+
+[!BADGE  Gesteund ]{type="Informatief" tooltip="Ondersteund"}
+
+![ Bug ](../assets/bug.svg) de [!DNL Live Search] dienst steunt slechts de [ basismunt ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration) van de installatie van Adobe Commerce.
+![ Bug ](../assets/bug.svg) wanneer het toevoegen van een facet, werkt het Diervoer van de Attributen van het Product niet correct bij wanneer reeks aan `Update on Save`. Om dit probleem te vermijden, ga naar [ het Beheer van de Index ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) en plaats de Diersoort van de Attributen van het Product aan `Update by Schedule`.
+![ Bug ](../assets/bug.svg) [!DNL Live Search] synoniemen worden bepaald per opslagmening, maar momenteel opgeslagen per website en geïdentificeerd met een combinatie van `environmentId` en `storeViewCode`. Dit heeft tot gevolg dat alle websites en winkelweergaven in de Adobe Commerce-installatie synoniemen delen. De meest recente reeks synoniemen voor de archiefmening krijgt belangrijkheid.
+![ Bug ](../assets/bug.svg) als een synoniem termijn veelvoudige woorden bevat, wordt elk woord behandeld als afzonderlijk synoniem. Als u bijvoorbeeld &#39;tijdstuk&#39; definieert als een synoniem van &#39;watch&#39;, worden zowel &#39;time&#39; als &#39;piece&#39; beschouwd als synoniemen van &#39;watch&#39;.
 
 +++
 
@@ -334,6 +344,6 @@ Bestaande [!DNL Live Search] de installaties moeten worden aangepast aan [!DNL L
 
 Meer informatie:
 
-- [Adobe Commerce Developer Documentation](https://developer.adobe.com/commerce/docs)
-- [Adobe Commerce-gebruikershandleiding](https://experienceleague.adobe.com/en/docs/commerce)
-- [[!DNL Live Search] op Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html)
+- [ de Documentatie van de Ontwikkelaar van Adobe Commerce ](https://developer.adobe.com/commerce/docs)
+- [ de Gids van de Gebruiker van Adobe Commerce ](https://experienceleague.adobe.com/en/docs/commerce)
+- [[!DNL Live Search]  op Marketplace ](https://commercemarketplace.adobe.com/magento-live-search.html)

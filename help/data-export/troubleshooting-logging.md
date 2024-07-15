@@ -1,6 +1,6 @@
 ---
 title: Logboeken controleren en problemen oplossen
-description: Leer hoe u problemen kunt oplossen [!DNL data export] fouten bij het gebruik van de logbestanden voor het exporteren van gegevens en het exporteren van bestanden.
+description: Leer hoe te om  [!DNL data export]  fouten problemen op te lossen gebruikend de gegeven-uitvoer en saas-export logboeken.
 feature: Services
 recommendations: noCatalog
 exl-id: 55903c19-af3a-4115-a7be-9d1efaed8140
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Logbestanden controleren en problemen oplossen
 
-De [!DNL data export] de uitbreiding verstrekt logboeken om gegevensinzameling en synchronisatieprocessen te volgen.
+De extensie [!DNL data export] biedt logbestanden voor het bijhouden van gegevensvergaring- en synchronisatieprocessen.
 
 ## Logboeken
 
-Logbestanden zijn beschikbaar in het dialoogvenster `var/log` op de Commerce-toepassingsserver.
+Logbestanden zijn beschikbaar in de map `var/log` op de Commerce-toepassingsserver.
 
 | lognaam | filename | beschrijving |
 |-----------------| ----------| -------------|
@@ -26,7 +26,7 @@ Logbestanden zijn beschikbaar in het dialoogvenster `var/log` op de Commerce-toe
 | SaaS-exportlogboek | `saas-export.log` | Verstrekt informatie over de gegevens die naar de diensten van Commerce SaaS worden verzonden. |
 | Logbestand van SaaS-exportfout | `saas-export-errors.log` | Verstrekt informatie over fouten die voorkomen wanneer het verzenden van gegevens naar de diensten van Commerce SaaS. |
 
-Als u de verwachte gegevens voor een dienst van Adobe Commerce niet ziet, gebruik de foutenlogboeken voor de uitbreiding van de gegevensuitvoer om te bepalen waar het probleem voorkwam. Ook, kunt u logboeken met extra gegevens voor het volgen en het oplossen van problemen uitbreiden. Zie [Uitgebreide logboekregistratie](#extended-logging).
+Als u de verwachte gegevens voor een dienst van Adobe Commerce niet ziet, gebruik de foutenlogboeken voor de uitbreiding van de gegevensuitvoer om te bepalen waar het probleem voorkwam. Ook, kunt u logboeken met extra gegevens voor het volgen en het oplossen van problemen uitbreiden. Zie [ Uitgebreid registreren ](#extended-logging).
 
 ### Logbestandsindeling
 
@@ -54,10 +54,10 @@ De volgende lijst beschrijft de verrichtingstypes die in de logboeken kunnen wor
 |----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
 | volledige synchronisatie | Met Volledige synchronisatie worden alle gegevens voor een bepaalde feed verzameld en naar SaaS verzonden. | `bin/magento saas:resync --feed=products` |
 | gedeeltelijke reïndex | Gedeeltelijke synchronisatie verzamelt gegevens en verzendt deze naar SaaS voor alleen bijgewerkte entiteiten in een bepaalde feed. Dit logboek is alleen aanwezig als er bijgewerkte entiteiten zijn. | `bin/magento cron:run --group=index` |
-| mislukte items opnieuw proberen | Hiermee worden items voor een bepaalde feed opnieuw verzonden naar SaaS als de vorige synchronisatiebewerking is mislukt als gevolg van een Commerce-toepassing of serverfout. Dit logbestand is alleen aanwezig als mislukte items bestaan. | `bin/magento cron:run --group=saas_data_exporter`  (om het even welke &quot;*_data_exporter&quot;kron groep) |
+| mislukte items opnieuw proberen | Hiermee worden items voor een bepaalde feed opnieuw verzonden naar SaaS als de vorige synchronisatiebewerking is mislukt als gevolg van een Commerce-toepassing of serverfout. Dit logbestand is alleen aanwezig als mislukte items bestaan. | `bin/magento cron:run --group=saas_data_exporter` (elke &quot;*_data_exporter&quot;-structuurgroep) |
 | volledige synchronisatie (verouderd) | Volledige synchronisatie voor een bepaalde feed in de oudere exportmodus. | `bin/magento saas:resync --feed=categories` |
 | gedeeltelijke redex (verouderd) | Verzendt bijgewerkte entiteiten naar SaaS voor een bepaalde feed in de oudere exportmodus. Dit logboek is alleen aanwezig als er bijgewerkte entiteiten zijn. | `bin/magento cron:run --group=index` |
-| gedeeltelijke synchronisatie (verouderd) | Verzendt bijgewerkte entiteiten naar SaaS voor een bepaalde feed in de oudere exportmodus. Dit logboek is alleen aanwezig als er bijgewerkte entiteiten zijn. | `bin/magento cron:run --group=saas_data_exporter` (om het even welke &quot;*_data_exporter&quot;kron groep) |
+| gedeeltelijke synchronisatie (verouderd) | Verzendt bijgewerkte entiteiten naar SaaS voor een bepaalde feed in de oudere exportmodus. Dit logboek is alleen aanwezig als er bijgewerkte entiteiten zijn. | `bin/magento cron:run --group=saas_data_exporter` (elke &quot;*_data_exporter&quot;-structuurgroep) |
 
 
 ### Voorbeelden van logboekregistratie
@@ -75,15 +75,15 @@ Tijdens een volledige resync, wordt de vooruitgang gevolgd en geregistreerd elke
 }
 ```
 
-In dit voorbeeld wordt `status` waarden geven informatie over de synchronisatiebewerking:
+In dit voorbeeld bieden de `status` -waarden informatie over de synchronisatiebewerking:
 
 - **`"Progress 2/5"`** geeft aan dat 2 van 5 herhalingen zijn voltooid. Het aantal herhalingen is afhankelijk van het aantal geëxporteerde entiteiten.
-- **`"processed: 200"`** geeft aan dat 200 objecten zijn verwerkt.
-- **`"synced: 100"`** geeft aan dat 100 items naar SaaS zijn verzonden. Het is te verwachten dat `"synced"` is niet gelijk aan `"processed"`. Hier volgt een voorbeeld:
+- **`"processed: 200"`** geeft aan dat 200 items zijn verwerkt.
+- **`"synced: 100"`** geeft aan dat 100 items naar SaaS zijn verzonden. `"synced"` is niet gelijk aan `"processed"` . Hier volgt een voorbeeld:
    - **`"synced" < "processed"`** betekent dat de voederlijst geen veranderingen in het punt, in vergelijking met de eerder gesynchroniseerde versie ontdekte. Dergelijke items worden genegeerd tijdens de synchronisatiebewerking.
-   - **`"synced" > "processed"`** dezelfde entiteitskaart (bijvoorbeeld `Product ID`) kan meerdere waarden in verschillende bereiken hebben. Eén product kan bijvoorbeeld worden toegewezen aan vijf websites. In dit geval kun je 1 verwerkt object en 5 gesynchroniseerde objecten hebben.
+   - **`"synced" > "processed"`** dezelfde entiteit-id (bijvoorbeeld `Product ID` ) kan meerdere waarden in verschillende bereiken hebben. Eén product kan bijvoorbeeld worden toegewezen aan vijf websites. In dit geval kun je 1 verwerkt object en 5 gesynchroniseerde objecten hebben.
 
-+++ **Voorbeeld: log met volledige resync voor de prijsfeed**
++++ **Voorbeeld: Volledig resync logboek voor het prijsvoer**
 
 ```
 Price feed full resync:
@@ -105,23 +105,23 @@ Als u Adobe Commerce-logbestanden opslaat in de New Relic, kunt u parseringsrege
 
 1. Meld u aan bij New Relic.
 
-1. Ga naar `Logs => Parsing`.
+1. Ga naar `Logs => Parsing` .
 
 1. Klik op `Create parsing rule`.
 
 1. Vorm de het ontleden regel door de volgende waarden toe te voegen.
 
-   - **Filterlogboeken op basis van NRQL**
+   - **Logboeken van de Filter die op NRQL** worden gebaseerd
 
      `filePath LIKE '%commerce-data-export%.log'`
 
-   - **Parseerregel**
+   - **het Ontwerpen regel**
 
      `\[%{DATA:timestamp}\] report.%{DATA:logLevel} %{GREEDYDATA:feed:json}`
 
 In dit voorbeeld wordt een regel toegevoegd waarmee u New Relic-logbestanden kunt opvragen op basis van een bepaald type feed, bewerking, enzovoort.
 
-**Voorbeeldquerytekenreeks**—`feed.feed:"products" and feed.status:"Complete"`
+**koord van de de vraagvraag van het Voorbeeld** - `feed.feed:"products" and feed.status:"Complete"`
 
 ## Problemen oplossen
 
@@ -130,7 +130,7 @@ Als er gegevens ontbreken of onjuist zijn in Commerence Services, controleert u 
 - commerce-data-export-errors.log - als er een fout is opgetreden tijdens de verzamelfase
 - saas-export-errors.log - als een fout tijdens het overbrengen van fase gebeurde
 
-Als u fouten ziet die niet te maken hebben met configuratie of extensies van derden, dient u een [ondersteuningsticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) met zoveel mogelijk informatie.
+Als u fouten niet verwant met configuratie of derdeuitbreidingen ziet, leg a [ steunkaartje ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) met zoveel mogelijk informatie voor.
 
 ### Synchronisatieproblemen met catalogi oplossen {#resolvesync}
 
@@ -139,23 +139,23 @@ Wanneer u een gegevensresync teweegbrengt, kan het tot een uur voor de gegevens 
 #### Gegevensafwijking
 
 1. Geef de gedetailleerde weergave van het desbetreffende product weer in de zoekresultaten.
-1. Kopieer de JSON-uitvoer en controleer of de inhoud overeenkomt met de inhoud in het dialoogvenster [!DNL Commerce] catalogus.
+1. Kopieer de JSON-uitvoer en controleer of de inhoud overeenkomt met de inhoud in de catalogus van [!DNL Commerce] .
 1. Als de inhoud niet overeenkomt, brengt u een kleine wijziging aan in het product in de catalogus, zoals het toevoegen van een spatie of een punt.
-1. Wacht op resync of [een handmatige resync activeren](#resync).
+1. Wacht op een resync of [ teweegbrengen een hand opnieuw ](#resync).
 
 #### Synchronisatie wordt niet uitgevoerd
 
-Als de synchronisatie niet volgens een schema wordt uitgevoerd of er niets wordt gesynchroniseerd, raadpleegt u deze [KnowledgeBase](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html) artikel.
+Als de synchronisatie niet op een programma loopt of niets wordt gesynchroniseerd, zie dit ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html) artikel 0} KnowledgeBase {.[
 
 #### Synchronisatie is mislukt
 
-Als de catalogussync de status **Mislukt**, een [ondersteuningsticket](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+Als de catalogussynchronisatie een status van **Ontbroken** heeft, leg a [ steunkaartje ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) voor.
 
 ## Uitgebreide logboekregistratie
 
 Voor extra logboekinformatie, kunt u milieuvariabelen gebruiken om logboeken met extra gegevens voor het volgen en het oplossen van problemen uit te breiden.
 
-Er zijn twee logbestanden in het dialoogvenster `var/log/` map:
+De map `var/log/` bevat twee logbestanden:
 
 - commerce-data-export-errors.log - als er een fout is opgetreden tijdens de verzamelfase
 - saas-export-errors.log - als een fout tijdens het overbrengen van fase gebeurde
@@ -164,19 +164,19 @@ U kunt omgevingsvariabelen gebruiken om logbestanden uit te breiden met extra ge
 
 ### Controleer de lading van de voer
 
-Neem de payload van de feed op in het SaaS-exportlogboek door het volgende toe te voegen `EXPORTER_EXTENDED_LOG=1` omgevingsvariabele wanneer u de feed opnieuw synchroniseert.
+Neem de payload van de feed op in het SaaS-exportlogboek door de omgevingsvariabele `EXPORTER_EXTENDED_LOG=1` toe te voegen wanneer u de feed opnieuw synchroniseert.
 
 ```shell script
 EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed=products
 ```
 
-Nadat de bewerking is voltooid, is de lading van de feed beschikbaar voor revisie in het SaaS-exportlogboek (`var/.log/saas-export.log`).
+Nadat de verrichting voltooit, is de voederlading beschikbaar voor overzicht in het de uitvoerlogboek van SaaS (`var/.log/saas-export.log`).
 
 ### Payload behouden in voederindextabel
 
-Voor de Commerce SaaS-extensie voor gegevensexport (`magento/module-data-exporter`) 103.3.0 en hoger, houden de directe uitvoervoer slechts de minimaal vereiste gegevens in de indexlijst. De feeds bevatten alle statusfeeds voor catalogi en voorraden.
+Voor de Commerce SaaS-extensie voor gegevensuitvoer (`magento/module-data-exporter`) 103.3.0 en hoger, behouden directe exportfeeds alleen de minimaal vereiste gegevens in de indextabel. De feeds bevatten alle statusfeeds voor catalogi en voorraden.
 
-Het behouden van ladingsgegevens in de indexlijst wordt niet geadviseerd in productiemilieu&#39;s, maar het kan in een ontwikkelaarmilieu nuttig zijn. Neem de payload van de feed op in de index door de `PERSIST_EXPORTED_FEED=1` omgevingsvariabele wanneer u de feed opnieuw synchroniseert.
+Het behouden van ladingsgegevens in de indexlijst wordt niet geadviseerd in productiemilieu&#39;s, maar het kan in een ontwikkelaarmilieu nuttig zijn. Neem de payload van de feed op in de index door de omgevingsvariabele `PERSIST_EXPORTED_FEED=1` toe te voegen wanneer u de feed opnieuw synchroniseert.
 
 ```shell script
 PERSIST_EXPORTED_FEED=1 bin/magento saas:resync --feed=products
@@ -186,13 +186,13 @@ PERSIST_EXPORTED_FEED=1 bin/magento saas:resync --feed=products
 
 Als het opnieuw indexproces van een specifieke voer een onredelijke hoeveelheid tijd vergt, stel profiler in werking om extra gegevens te verzamelen die voor het Team van de Steun nuttig zouden kunnen zijn.
 
-Voer de analyse uit door de `EXPORTER_PROFILER=1` omgevingsvariabele wanneer u de opdracht voor opnieuw indexeren uitvoert.
+Voer de analyse uit door de omgevingsvariabele `EXPORTER_PROFILER=1` toe te voegen wanneer u de opdracht Opnieuw indexeren uitvoert.
 
 ```
 EXPORTER_PROFILER=1 bin/magento indexer:reindex catalog_data_exporter_products
 ```
 
-Profilergegevens worden opgeslagen in het logboek voor gegevensexport (`var/log/commerce-data-export.log`) in de volgende notatie:
+Profilergegevens worden opgeslagen in het logboek voor gegevensexport (`var/log/commerce-data-export.log`) in de volgende indeling:
 
 ```
 <Provider class name>, <# of processed entities>, <execution time im ms>, <memory consumption in Mb>

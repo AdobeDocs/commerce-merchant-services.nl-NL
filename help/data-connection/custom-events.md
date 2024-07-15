@@ -6,24 +6,24 @@ role: Admin, Developer
 feature: Personalization, Integration, Eventing
 source-git-commit: 4a5877d6e1a5c7d840e36f4913306b0c440bbac5
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
 
 # Aangepaste gebeurtenissen maken
 
-U kunt de [uitvalplatform](events.md) door uw eigen winkelgebeurtenissen te maken om gegevens te verzamelen die uniek zijn voor uw branche. Wanneer u een douanegebeurtenis creeert en vormt, wordt het verzonden naar [Adobe Commerce Events Collector](https://github.com/adobe/commerce-events/tree/main/packages/storefront-events-collector).
+U kunt het [ gebeurtenisplatform ](events.md) uitbreiden door uw eigen storefront gebeurtenissen te creëren om gegevens te verzamelen uniek aan uw industrie. Wanneer u creeert en een douanegebeurtenis vormt, wordt het verzonden naar de [ Collector van de Gebeurtenissen van Adobe Commerce ](https://github.com/adobe/commerce-events/tree/main/packages/storefront-events-collector).
 
 ## Aangepaste gebeurtenissen afhandelen
 
 Aangepaste gebeurtenissen worden alleen ondersteund voor de Adobe Experience Platform. Aangepaste gegevens worden niet doorgestuurd naar Adobe Commerce-dashboards en metrieke trackers.
 
-Voor alle `custom` gebeurtenis, de verzamelaar:
+Voor elke `custom` -gebeurtenis:
 
-- Toevoegingen `identityMap` with `ECID` als primaire identiteit
-- Inclusief `email` in `identityMap` als secundaire identiteit _indien_ `personalEmail.address` is ingesteld in de gebeurtenis
-- Hiermee plaatst u de volledige gebeurtenis in een `xdm` object voordat het naar Edge wordt doorgestuurd
+- Voegt `identityMap` met `ECID` toe als primaire identiteit
+- Omvat `email` in `identityMap` als secundaire identiteit _als_ `personalEmail.address` in de gebeurtenis wordt geplaatst
+- Hiermee wordt de volledige gebeurtenis binnen een `xdm` -object geprononceerd voordat deze naar de Edge wordt doorgestuurd
 
 Voorbeeld:
 
@@ -39,7 +39,7 @@ mse.publish.custom({
 });
 ```
 
-In Experience Platform rand:
+In Experience Platform Edge:
 
 ```javascript
 {
@@ -73,9 +73,9 @@ In Experience Platform rand:
 
 ## Overschrijvingen van gebeurtenissen afhandelen (aangepaste kenmerken)
 
-Overschrijvingen van kenmerken voor standaardgebeurtenissen worden alleen ondersteund voor het Experience Platform. De gegevens van de douane worden niet doorgestuurd aan de dashboards van de Handel en metrieke Trackers.
+Overschrijvingen van kenmerken voor standaardgebeurtenissen worden alleen ondersteund voor het Experience Platform. Aangepaste gegevens worden niet doorgestuurd naar Commerce-dashboards en metrieke trackers.
 
-Voor elke gebeurtenis met `customContext`, treedt de inzamelaar met voeten treedt treedt verbindingen in de relevante contexten met gebieden in `customContext`. Het gebruik van overschrijvingen is mogelijk wanneer een ontwikkelaar contexten die door andere delen van de pagina zijn ingesteld, opnieuw wil gebruiken en uitbreiden in gebeurtenissen die al worden ondersteund.
+Voor elke gebeurtenis met `customContext` overschrijft de verzamelaar de samenvoegingsvelden die in de relevante context zijn ingesteld met velden in `customContext` . Het gebruik van overschrijvingen is mogelijk wanneer een ontwikkelaar contexten die door andere delen van de pagina zijn ingesteld, opnieuw wil gebruiken en uitbreiden in gebeurtenissen die al worden ondersteund.
 
 >[!NOTE]
 >
@@ -101,7 +101,7 @@ mse.publish.productPageView({
 });
 ```
 
-In Experience Platform rand:
+In Experience Platform Edge:
 
 ```javascript
 {

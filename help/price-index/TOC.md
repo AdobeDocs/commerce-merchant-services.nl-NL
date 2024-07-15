@@ -16,6 +16,6 @@ ht-degree: 0%
 
 - [Overzicht van prijsindexering voor SaaS](price-indexing.md)
 - [Catalogusadapter](catalog-adapter.md)
-- [Terug naar Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
+- [ Terugkeer aan de Diensten van Commerce ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
 
 

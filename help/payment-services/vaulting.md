@@ -5,7 +5,7 @@ exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
 feature: Payments, Checkout
 source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '292'
 ht-degree: 0%
 
 ---
@@ -14,15 +14,15 @@ ht-degree: 0%
 
 Eenmalige klanten converteren naar loyale klanten met een creditcardkluis. Klanten kunnen hun creditcardgegevens tijdens het afrekenen opslaan (of &#39;vault&#39;) en deze gebruiken in een latere aankoop voor dezelfde of een andere winkel binnen dezelfde zakelijke account.
 
-![hun creditcard voor later gebruik uitvullen](assets/save-card-for-later.png){width="400" zoomable="yes"}
+![ Uitgebreide hun creditcard voor later gebruik ](assets/save-card-for-later.png){width="400" zoomable="yes"}
 
 Winkelaars gebruiken het opgeslagen token om een toekomstige afhandeling met hun opgeslagen creditcardgegevens te voltooien.
 
-![Opgeslagen referenties gebruiken voor toekomstige aankoop](assets/use-stored-card.png){width="400" zoomable="yes"}
+![ Opgeslagen geloofsbrieven van het Gebruik voor toekomstige aankoop ](assets/use-stored-card.png){width="400" zoomable="yes"}
 
-Ze kunnen ook gemakkelijk hun gefactureerde creditcards verwijderen van [Opgeslagen betalingsmethoden](https://docs.magento.com/user-guide/customers/account-dashboard-stored-payment-methods.html) in hun Mijn account.
+Zij kunnen hun gefactureerde creditcards van [ Opgeslagen Methoden van de Betaling ](https://docs.magento.com/user-guide/customers/account-dashboard-stored-payment-methods.html) in hun Mijn Rekening ook gemakkelijk schrappen.
 
-![Opgeslagen betalingsmethoden in Mijn account](assets/stored-payment-methods.png){width="400" zoomable="yes"}
+![ Opgeslagen Methoden van de Betaling in Mijn Rekening ](assets/stored-payment-methods.png){width="400" zoomable="yes"}
 
 >[!WARNING]
 >
@@ -30,7 +30,7 @@ Ze kunnen ook gemakkelijk hun gefactureerde creditcards verwijderen van [Opgesla
 
 ## Vulling inschakelen
 
-U kunt creditcardarchivering inschakelen—voor klanten _en_ handelaren in de Admin-voor uw winkels in [!DNL Payment Services] [Instellingen](settings.md#card-vaulting).
+U kunt creditcard het in dienst nemen-voor klanten _en_ verkopers in Admin-voor uw opslag in [!DNL Payment Services] [ Montages ](settings.md#card-vaulting) toelaten.
 
 ## Vullingen gebruiken in de Admin
 
@@ -40,13 +40,13 @@ U kunt alleen in Admin gearchiveerde kaarten gebruiken als de klant zowel een be
 
 U kunt als volgt een bestelling voor een klant maken in de Admin met de gefactureerde creditcard:
 
-1. [Een bestelling maken en producten toevoegen](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html).
-1. In _[!UICONTROL Payment & Shipping Information]_, selecteert u **[!UICONTROL Stored Cards]**als betalingsmethode.
+1. [ creeer een orde en voeg producten ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html) toe.
+1. Selecteer **[!UICONTROL Stored Cards]** als betalingsmethode in _[!UICONTROL Payment & Shipping Information]_.
 1. Selecteer de gewenste betalingsmethode voor creditcard.
-1. Na het uitvoeren van alle andere noodzakelijke stappen voor de bestelling, [verzenden](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=en#step-3%3A-submit-the-order).
+1. Na de voltooiing van andere noodzakelijke stappen voor de orde, [ voorlegt het ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=en#step-3%3A-submit-the-order).
 
-   ![Gekwalificeerde creditcard gebruiken in Admin voor klant](assets/admin-vaultedcard.png){width="600" zoomable="yes"}
+   ![ Van het gebruik in kaart gebrachte kredietkaart in Admin voor klant ](assets/admin-vaultedcard.png){width="600" zoomable="yes"}
 
 ## Beveiliging
 
-Minimale creditcardgegevens worden met de klant gedeeld; deze ziet alleen de laatste vier cijfers, de vervaldatum en het merk van de gefactureerde creditcard. Creditcardgegevens worden bij de betalingsaanbieder opgeslagen om te voldoen aan [PCI](security.md#PCI-compliance) nalevingsnormen.
+Minimale creditcardgegevens worden met de klant gedeeld; deze ziet alleen de laatste vier cijfers, de vervaldatum en het merk van de gefactureerde creditcard. De informatie van de creditcard wordt opgeslagen met de betalingsleverancier om [ te voldoen PCI ](security.md#PCI-compliance) nalevingsnormen.

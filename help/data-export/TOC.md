@@ -1,6 +1,6 @@
 ---
 user-guide-title: "[!DNL Data Export] Guide for SaaS Services"
-user-guide-description: "Deze handleiding bevat gedetailleerde instructies voor het gebruik van de [!DNL Data Export] extensie voor Adobe Commerce SaaS-services."
+user-guide-description: "Deze gids verstrekt gedetailleerde instructies voor het gebruiken van de  [!DNL Data Export]  uitbreiding voor de diensten van Adobe Commerce SaaS."
 breadcrumb-title: "[!DNL Data Export] Guide for SaaS Services"
 hide: true
 role: Admin
@@ -16,11 +16,11 @@ ht-degree: 6%
 
 - [Overzicht van de handleiding](overview.md)
 - [Gegevenssynchronisatie](data-synchronization.md)
-- Planning en prestaties exporteren {#performance}
+- Exportplanning en -prestaties {#performance}
    - [Gegevensvolume en verzendingstijd schatten](estimate-data-volume-sync-time.md)
    - [Exportprestaties verbeteren](customize-export-processing.md)
 - [CLI Command reference](data-export-cli-commands.md)
 - [Logboeken controleren en problemen oplossen](troubleshooting-logging.md)
 - [De exportextensie voor SaaS-gegevens beheren](manage-extension.md)
 - [Aanvullende informatie](release-notes.md)
-- [Terug naar Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
+- [ Terugkeer aan de Diensten van Commerce ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)

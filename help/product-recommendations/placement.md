@@ -4,7 +4,7 @@ description: Leer waar u aanbevelingen op verschillende pagina's op uw plaats en
 exl-id: e1025138-49dc-4833-92bb-27e8e415d724
 source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '551'
 ht-degree: 0%
 
 ---
@@ -19,34 +19,34 @@ Met zoveel soorten aanbevelingen waaruit u kunt kiezen, wat moet u op elke pagin
 | Productpagina | `Viewed this, viewed that` |
 | Kar | `Bought this, bought that` |
 
-U kunt de [cijfers](workspace.md) en pas indien nodig aan. Denk eraan dat experimenteren de sleutel is.
+U kunt de [ metriek ](workspace.md) volgen en aanpassen indien nodig. Denk eraan dat experimenteren de sleutel is.
 
 Sommige storefront pagina&#39;s beperken waar u de aanbevelingen kunt plaatsen. U kunt de aanbevelingen op een van de volgende paginalocaties plaatsen. Raadpleeg de onderstaande tabel voor meer informatie.
 
 - Bovenaan de hoofdinhoud - Recommendations wordt boven het hoofdinhoudsgebied net onder de bovenste navigatiebalk weergegeven.
-- Onder aan de hoofdinhoud (standaardinstelling) wordt Recommendations weergegeven onder het hoofdinhoudsgebied en vóór andere inhoudsblokken op de pagina, zoals _Verwante producten_.
+- Bij de bodem van belangrijkste inhoud (gebrek) - Recommendations verschijnt onder het belangrijkste inhoudsgebied en vóór om het even welke andere inhoudsblokken op de pagina, zoals _Verwante Producten_.
 
-![Aanbevolen plaatsing](assets/storefront-home-page-top.png)
-_Aanbeveling boven aan homepage_
+![ plaatsing van de Aanbeveling ](assets/storefront-home-page-top.png)
+_Aanbeveling bij bovenkant van homepage_
 
 ## Aanbevelingslabels
 
 Het label dat is toegewezen aan een aanbeveling in de winkel, bepaalt hoe kopers de relevantie ervan voor hen interpreteren. De volgende labels worden vaak gebruikt voor elk type aanbeveling.
 
-![Aanbevolen plaatsing](assets/storefront-search-results-top.png)
-_Aanbeveling boven op zoekresultaten_
+![ plaatsing van de Aanbeveling ](assets/storefront-search-results-top.png)
+_Aanbeveling bij bovenkant van onderzoeksresultaten_
 
 | Type aanbeveling | Aanbevolen labels |
 |---|---|
-| Meest bekeken<br> Meest toegevoegd aan winkelwagentje<br>Meest aangeschaft<br>Omzetting (weergave naar winkelwagentje)<br>Conversie (weergave voor aankoop) | Meest populair<br>Populaire items<br>Trend<br>Populair op dit moment<br>Recent populair<br>Populaire items geïnspireerd door dit item (PDP)<br>Topverkopers<br>Misschien bent u geïnteresseerd in |
-| Aanbevolen voor u | Alleen voor jou<br>Aanbevolen voor u<br>Geïnspireerd door uw winkeltrends |
-| Bekeken van het volgende: | Klanten die dit object hebben bekeken, hebben het ook bekeken<br>Ook bekeken klanten<br>Verwante objecten |
-| Dit bekeken, maar er werd op gewezen dat | Klanten die dit bekeken, kochten dit uiteindelijk<br>Klanten die uiteindelijk zijn gekocht<br>Wat kopen anderen na het bekijken van dit object? |
-| Dit is de reden dat | Alles ophalen wat u nodig hebt<br>Vergeet deze niet<br>Vaak samen gekocht |
-| Meer als dit | Meer objecten zoals deze<br>Vergelijkbaar met dit |
-| Algemeen | U kunt ook<br>Ook winkeliers gehouden<br>Vergelijkbare opties<br>Verwante objecten |
-| Trend | Trend<br>Trend nu<br>Recent trend<br>Hot items<br>Trending related products (PDP) |
-| Onlangs bekeken | Onlangs bekeken<br>Nog een blik werpen |
+| Meest bekeken <br> het meest toegevoegd aan kar <br> het Meest gekochte <br> Omzetting (mening aan kar) <br> Omzetting (mening aan aankoop) | De populairste <br> Populaire punten <br> Trend <br> Populair nu <br> onlangs populaire <br> Populaire punten die door dit punt (PDP) worden geïnspireerd <br> Belangrijkste verkopers <br> zouden u in geinteresseerd kunnen zijn |
+| Aanbevolen voor u | Enkel voor u <br> geadviseerd voor u <br> Geïnspireerd door uw het winkelen tendensen |
+| Bekeken van het volgende: | Klanten die dit punt ook bekeken <br> Klanten <br> Verwante punten ook bekeken |
+| Dit bekeken, maar er werd op gewezen dat | De klanten die dit uiteindelijk bekeken <br> Klanten kochten uiteindelijk <br> wat anderen na het bekijken van dit punt kopen? |
+| Dit is de reden dat | Krijg alles u <br> nodig hebt vergeten niet deze <br> vaak samen gekocht |
+| Meer als dit | Meer punten als dit <br> Gelijkaardig aan dit |
+| Algemeen | U kunt <br> ook houden van de Kopers ook <br> Vergelijkbare opties <br> Verwante punten |
+| Trend | Het trending <br> trending nu <br> onlangs trending <br> hete punten <br> het Trending verwante producten (PDP) |
+| Onlangs bekeken | Onlangs bekeken <br> neem een andere blik |
 
 ## Ondersteunde aanbevelingen per pagina
 
@@ -54,9 +54,9 @@ De volgende tabel bevat een lijst met de winkelpagina&#39;s waarop u aanbeveling
 
 | Pagina | Placement Recommendations |
 |---|---|
-| Homepage | Bovenaan de hoofdinhoud<br>Onderaan de hoofdinhoud (standaard) | Meest bekeken<br>Meest aangeschaft<br>Meest toegevoegd aan winkelwagentje<br>Aanbevolen voor u<br>Trend |
-| Categorie | Bovenaan de hoofdinhoud<br>Onderaan de hoofdinhoud (standaard) | Meest bekeken<br>Meest aangeschaft<br>Meest toegevoegd aan winkelwagentje<br>Aanbevolen voor u<br>Trend |
-| Productgegevens | Onderaan de hoofdinhoud (standaard) | Meest bekeken<br>Meest aangeschaft<br>Meest toegevoegd aan winkelwagentje<br>Bekeken dit, gezien dat<br>Bekijk dit, kocht dat<br>Dit gekocht<br>Meer als dit<br>Trend<br>Visuele gelijkenis |
-| Kar | Onderaan de hoofdinhoud (standaard) | Meest bekeken<br>Meest aangeschaft<br>Meest toegevoegd aan winkelwagentje<br>Bekeken dit, gezien dat<br>Bekijk dit, kocht dat<br>Dit gekocht<br>Meer als dit<br>Trend |
-| Bevestiging | Onderaan de hoofdinhoud (standaard) | Meest bekeken<br>Meest aangeschaft<br>Meest toegevoegd aan winkelwagentje<br>Bekeken dit, gezien dat<br>Bekijk dit, kocht dat<br>Dit gekocht<br>Meer als dit<br>Trend |
-| Page Builder | [Slepen en slepen](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) naar positie van inhoudstype | Meest bekeken<br>Meest aangeschaft<br>Meest toegevoegd aan winkelwagentje<br>Aanbevolen voor u<br>Trend |
+| Homepage | Bij de bovenkant van belangrijkste inhoud <br> bij de bodem van belangrijkste inhoud (gebrek) | Meest bekeken <br> het meest gekochte <br> Meest toegevoegd aan kar <br> geadviseerd voor u <br> Trend |
+| Categorie | Bij de bovenkant van belangrijkste inhoud <br> bij de bodem van belangrijkste inhoud (gebrek) | Meest bekeken <br> het meest gekochte <br> Meest toegevoegd aan kar <br> geadviseerd voor u <br> Trend |
+| Productgegevens | Onderaan de hoofdinhoud (standaard) | Meest bekeken <br> het meest gekochte <br> Meest toegevoegd aan wortel <br> dit bekeken, bekeken dat <br> dit bekeken, kocht dat <br> dit kocht, dat <br> meer als dit <br> Trending <br> Visuele gelijkenis 5} kocht |
+| Kar | Onderaan de hoofdinhoud (standaard) | Meest bekeken <br> het meest gekochte <br> aan wortel {het meest toegevoegd <br> Bekeken dit, bekeken dat <br> dit kocht, kocht dat <br> meer als dit <br> Trend<br> |
+| Bevestiging | Onderaan de hoofdinhoud (standaard) | Meest bekeken <br> het meest gekochte <br> aan wortel {het meest toegevoegd <br> Bekeken dit, bekeken dat <br> dit kocht, kocht dat <br> meer als dit <br> Trend<br> |
+| Page Builder | [ belemmering en daling ](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) aan het type van positieinhoud | Meest bekeken <br> het meest gekochte <br> Meest toegevoegd aan kar <br> geadviseerd voor u <br> Trend |

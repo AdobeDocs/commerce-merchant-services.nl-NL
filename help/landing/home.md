@@ -17,9 +17,9 @@ ht-degree: 0%
 
 De Adobe verstrekt een inzameling van Commerce, integratie, en gegevensdiensten om handelaren te helpen zeer belangrijke componenten van hun zaken steunen.
 
->[!BEGINSHADEBOX &quot;Release-informatie&quot;]
+>[!BEGINSHADEBOX  &quot;De informatie van de Versie&quot;]
 
-Zie [nieuwe functies in onze documentatie](whats-new.md) of [releaseopmerkingen](release-notes-all.md) voor elke Commerce-service.
+Zie [ wat in onze documentatie ](whats-new.md) of [ versienota&#39;s ](release-notes-all.md) voor elke dienst van Commerce nieuw is.
 
 >[!ENDSHADEBOX]
 
@@ -44,35 +44,35 @@ Zie [nieuwe functies in onze documentatie](whats-new.md) of [releaseopmerkingen]
 <tr>
     <td valign="top" width="200px">
        <img alt="Catalogusservice" src="assets/catalog-service.png" width="170px"></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/catalog-service/guide-overview"> <strong>Catalogusservice</strong></a> <br>
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/catalog-service/guide-overview"> <strong> de Dienst van de Catalogus </strong> </a> <br>
     <div>Geef uw klanten een geoptimaliseerde productervaring terwijl het verhogen van prestaties, het verbeteren van scalability, en het verhogen van omzettingen.</div>
   </td>
    </tr>
 <tr>
   <td valign="top" width="200px">
     <img alt="Betalingsdiensten" src="assets/payment-services.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/guide-overview"><strong>Betalingsdiensten</strong></a>  <br><em>(Beschikbaar voor Magento Open Source)</em>
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/guide-overview"><strong> de Diensten van de Betaling </strong></a> <br><em> (Beschikbaar voor Magento Open Source) </em>
     <div>De tevredenheid van de klant vergroten door eenvoudig verschillende betalingsmethoden aan te bieden, waaronder renteloze betalingstermijnen, en één overzicht van betalingsverwerking, bestellingen en facturen.</div>
   </td>
     </tr>
 <tr>
     <td valign="top" width="200px">
        <img alt="Afhandeling van winkel" src="assets/store-fulfillment-landing-graphic.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/store-fulfillment/guide-overview"> <strong>Afhandeling van winkel</strong></a></br>
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/store-fulfillment/guide-overview"> <strong> de Afhandeling van de Opslag </strong> </a></br>
     <div>Lever een superieure aankoop online, haal in-store (BOPIS) klantenervaring op en maximaliseer werknemersproductiviteit door een uitvoerige uitvoeringswerkschema te verstrekken die door een mobiel apparaat wordt toegelaten.</div>
   </td>
    </tr>
 <tr>
     <td valign="top" width="200px">
        <img alt="Amazon Sales Channel" src="assets/amazon-channel.png" width="170px"></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-channels/amazon/guide-overview"> <strong>Amazon-verkoopkanaal</strong></a> <br><em>(Beschikbaar voor Magento Open Source)</em>
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-channels/amazon/guide-overview"> <strong> Amazon verkoopkanaal </strong> </a> <br><em> (Beschikbaar voor Magento Open Source) </em>
     <div>Integreer met 's werelds grootste online winkelbestemming om verkoop in Amazon mogelijk te maken, gegevensautomatisering en -synchronisatie te bieden, aanbiedingen in Amazon te beheren en meer via één dashboard.</div>
   </td>
    </tr>
 <tr>
     <td valign="top">
        <img alt="[!DNL Channel Manager]" src="assets/channel-manager.png" width="170px"></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-channels/channel-manager/guide-overview"> <strong>Kanaalbeheer</strong></a> <br><em>(Beschikbaar voor Magento Open Source)</em>
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-channels/channel-manager/guide-overview"> <strong> de Manager van het Kanaal </strong> </a> <br><em> (Beschikbaar voor Magento Open Source) </em>
     <div>Verhoog de omzet, bereikt nieuwe klanten, stroomlijnt verrichtingen, en bespaar tijd door met de Marketplace van de Markt van de Markeren te integreren. Laat het personeel toe om de verkoop, de inventaris, en de prijs van de Marketplace van de Markt van de Walmart foutloos-allen in Commerce te beheren.</div>
   </td>
    </tr>

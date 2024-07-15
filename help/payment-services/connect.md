@@ -12,15 +12,15 @@ ht-degree: 0%
 
 # Uw instantie verbinden
 
-[!DNL Payment Services] wordt aangedreven door Commerce Services en als SaaS (software als dienst) opgesteld. U maakt verbinding met uw Commerce-instantie door een API-sleutel en een persoonlijke sleutel te gebruiken en de gegevensruimte in de configuratie op te geven met de [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html). **U stelt deze verbinding slechts eenmaal in.**
+[!DNL Payment Services] wordt aangedreven door Commerce Services en geïmplementeerd als SaaS (software als service). U verbindt uw instantie van Commerce gebruikend een API sleutel en een privé sleutel, en specificeert de gegevensruimte in de configuratie gebruikend de [ Schakelaar van de Diensten van Commerce ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html). **u opstelling deze verbinding slechts eenmaal.**
 
 >[!INFO]
 >
-> Zie onze [[!DNL Adobe Commerce] Services Connector](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector.html?lang=en) video voor aanvullende informatie.
+> Zie onze ](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector.html?lang=en) video van de Schakelaar van de Diensten 0} {voor extra informatie.[[!DNL Adobe Commerce] 
 
-* Als u *heeft uw instantie al aangesloten* door uw API-referenties te verkrijgen en te gebruiken en Commerce Services te configureren, kunt u doorgaan naar [testsandbox instellen](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/sandbox.html).
-* Als u nog *moet uw instantie verbinden*, zie de informatie in dit onderwerp over [verkrijgen van API-referenties](#obtain-api-credentials) en [configureren, Commerce Services](#configure-commerce-services).
-* Als u *onzeker of uw instantie wordt aangesloten*, navigeer naar **Systeem** > Services > **Commerce Services Connector** en bekijk de waarden voor de openbare en persoonlijke API-sleutel in het dialoogvenster [!UICONTROL Sandbox Keys] en [!UICONTROL Production Keys] en de *Project* en *Gegevensruimte* in de [!UICONTROL SaaS Identifier] sectie. Als deze waarden aanwezig zijn, wordt de instantie verbonden.
+* Als u *reeds uw instantie* hebt verbonden, door uw API geloofsbrieven te verkrijgen en te gebruiken en de Diensten van Commerce te vormen, kunt u aan [ vestiging uw het testen zandbak ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/sandbox.html) te werk gaan.
+* Als u nog *uw instantie* moet verbinden, zie de informatie in dit onderwerp over [ het verkrijgen API geloofsbrieven ](#obtain-api-credentials) en [ het vormen de Diensten van Commerce ](#configure-commerce-services).
+* Als u *onzeker bent of uw instantie* wordt aangesloten, navigeer aan **Systeem** > de Diensten > **Verbinding van de Diensten van Commerce** en bekijk de openbare en privé API zeer belangrijke waarden in de [!UICONTROL Sandbox Keys] en [!UICONTROL Production Keys] secties, en *Project* en *gebieden van de Ruimte van 10} Gegevens in de [!UICONTROL SaaS Identifier] sectie.* Als deze waarden aanwezig zijn, wordt de instantie verbonden.
 
 >[!NOTE]
 >
@@ -28,29 +28,29 @@ ht-degree: 0%
 
 ## API-referenties verkrijgen
 
-Als u een Commerce SaaS-service wilt gebruiken, moet u de API-sleutels van uw instantie (Commerce, openbare API-sleutel en een persoonlijke sleutel) gebruiken voor zowel de sandbox als de productie, die in uw [Mijn accountdashboard](https://account.magento.com/customer/account/login). [Het sleutelpaar](https://docs.magento.com/user-guide/configuration/services/saas.html) kan worden gemaakt voor een Commerce-account—een voor een sandbox en een voor productie—maar er kan slechts één paar tegelijk actief worden gebruikt.
+Om de dienst van Commerce te verbruiken SaaS, moet u API van uw instantie (de openbare sleutel van Commerce API en een privé sleutel) voor zowel zandbak als productie gebruiken, die worden gecreeerd en in uw [ Mijn Dashboard van de Rekening ](https://account.magento.com/customer/account/login) beheerd. [ het zeer belangrijke paar ](https://docs.magento.com/user-guide/configuration/services/saas.html) kan voor een rekening-voor zandbak van Commerce en voor productie-hoewel slechts één paar actief kunnen tegelijkertijd worden gebruikt.
 
 >[!NOTE]
 >
->Hebt u hulp nodig bij het openen van uw [!UICONTROL My Account] dashboard? Zie [Een Commerce-account maken](https://docs.magento.com/user-guide/magento/magento-account-create.html).
+>Hebt u hulp nodig bij het openen van uw [!UICONTROL My Account] dashboard? Zie [ een rekening van Commerce ](https://docs.magento.com/user-guide/magento/magento-account-create.html) creëren.
 
 Een openbare API-sleutel is altijd beschikbaar op het dashboard voor Mijn account nadat deze is gemaakt. Het kan worden gekopieerd of worden geschrapt zoals nodig. De persoonlijke API-sleutel wordt zichtbaar wanneer u een openbare API-sleutel maakt voor de sandbox of productie. Deze sleutel kan alleen worden gekopieerd of opgeslagen vanuit het dialoogvenster dat verschijnt en kan later niet worden geopend.
 
 Een gegeven API zeer belangrijk paar is geldig voor alle Diensten van Commerce in een milieu, zodat als u reeds de Diensten van Commerce voor uw geval hebt gevormd, is uw API zeer belangrijk paar reeds aanwezig in de Schakelaar van de Diensten van Commerce.
 
-Als uw API-sleutel verloren gaat, moet er een nieuw API-sleutelpaar zijn [gegenereerd](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#generate-an-api-key-and-private-key) en [toegepast](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#configure-saas-project) naar de Commerce Services Connector-configuratie in de Admin. Als de verkeerde sleutels worden gevormd of niets in config bestaat, verschijnt een de foutendialoog van de rekeningscontrole in de Diensten die van de Betaling u op de hoogte brengen dat de rekening niet werd geverifieerd.
+Als uw API sleutel wordt verloren, moet een nieuw API zeer belangrijk paar [ worden geproduceerd ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#generate-an-api-key-and-private-key) en [ worden toegepast ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#configure-saas-project) op de Configuratie van de Verbinding van de Diensten van Commerce in Admin. Als de verkeerde sleutels worden gevormd of niets in config bestaat, verschijnt een de foutendialoog van de rekeningscontrole in de Diensten die van de Betaling u op de hoogte brengen dat de rekening niet werd geverifieerd.
 
-Zie een [lijst met beschikbare Commerce Services die de API gebruiken](https://docs.magento.com/user-guide/system/saas.html#available-services).
+Zie a [ lijst van de beschikbare Diensten van Commerce die API ](https://docs.magento.com/user-guide/system/saas.html#available-services) gebruiken.
 
-Zie voor meer informatie over het genereren van een API-sleutel voor sandbox- of productieomgevingen [Credentials](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html#apikey).
+Leren hoe te om een API sleutel voor of zandbak of productiemilieu&#39;s te produceren, zie [ Geloofsbrieven ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html#apikey).
 
 >[!IMPORTANT]
 >
->Het wordt aanbevolen geen API-sleutelpaar opnieuw te genereren *en* de SaaS-id en/of gegevensruimte wijzigen op een actieve productie-instantie. U verliest gegevens voor uw instantie als deze worden gewijzigd.
+>Het wordt geadviseerd dat u geen API zeer belangrijk paar *regenereert en* verandert het herkenningsteken SaaS en/of gegevensruimte op een actieve productiemilitie. U verliest gegevens voor uw instantie als deze worden gewijzigd.
 
 ## Commerce Services configureren
 
-Dezelfde API-sleutel kan in alle instanties worden gebruikt, maar elke instantie moet een eigen sleutel hebben [SaaS-gegevensruimte](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html#saasenv).
+De zelfde API sleutel kan over instanties worden gebruikt, maar elke instantie moet zijn eigen [ Ruimte van Gegevens SaaS ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html#saasenv) hebben.
 
 >[!NOTE]
 >
@@ -58,22 +58,22 @@ Dezelfde API-sleutel kan in alle instanties worden gebruikt, maar elke instantie
 
 Nu u uw geloofsbrieven hebt verkregen, kunt u uw project SaaS en de Ruimte van Gegevens van het Saas vormen.
 
-1. Op de _Beheerder_ zijbalk, ga naar **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]**.
+1. Voor _Admin_ sidebar, ga **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]**.
 1. Klik op **[!UICONTROL Configure Commerce Services]**.
 
    Deze optie is zichtbaar als u nog geen Commerce Services voor uw account hebt geconfigureerd.
 
-   U wordt geleid aan het configuratiegebied in Admin, **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**>**[!UICONTROL Commerce Services Connector]**, om uw Commerce Services-connector te configureren.
+   U wordt verwezen naar het configuratiegebied in Admin, **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**>**[!UICONTROL Commerce Services Connector]**, om uw Commerce Services-connector te configureren.
 
-1. Volg de stappen in [SaaS-configuratie](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#saasenv).
+1. Om uw diensten van Commerce te vormen, volg de stappen die in [ configuratie SaaS ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#saasenv) worden beschreven.
 
    >[!INFO]
    >
-   > Zie onze [[!DNL Adobe Commerce] Services Connector](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector.html?lang=en#configuration-faqs) video voor aanvullende informatie.
+   > Zie onze ](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector.html?lang=en#configuration-faqs) video van de Schakelaar van de Diensten 0} {voor extra informatie.[[!DNL Adobe Commerce] 
 
 ## Endpoint
 
-[!DNL Payment Services] gebruikt de [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html) om verbinding te maken met Commerce Services en te implementeren als SaaS. Dit [!DNL Commerce Services Connector] communiceert door het eindpunt bij:
+[!DNL Payment Services] gebruikt de [ Schakelaar van de Diensten van Commerce ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html) om met de Diensten van Commerce te verbinden en als SaaS op te stellen. Deze [!DNL Commerce Services Connector] communiceert door het eindpunt bij:
 
 * `commerce-beta.adobe.io` voor sandboxomgevingen.
 * `commerce.adobe.io for` voor live omgevingen.

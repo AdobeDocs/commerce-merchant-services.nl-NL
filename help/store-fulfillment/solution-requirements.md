@@ -1,13 +1,13 @@
 ---
 title: Vereisten voor winkelvervulling
-description: Eisen inzake levering en instapweigering [!DNL Store Fulfillment solution].
+description: Vereisten voor levering en aan boord gaan  [!DNL Store Fulfillment solution].
 role: Leader, Admin, Developer
 level: Intermediate
 feature: Shipping/Delivery, Install
 exl-id: f9e05049-5904-4f6c-b45d-9f81fbc76b69
 source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '306'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ In de volgende secties worden de technische en zakelijke vereisten beschreven vo
 
 ## Vereisten voor platform- en softwareversies
 
-De [!DNL Store Fulfillment] Adobe Commerce-klanten kunnen op de volgende platforms een oplossing kiezen.
+De [!DNL Store Fulfillment] -oplossing is beschikbaar voor Adobe Commerce-klanten op de volgende platforms.
 
 - Adobe Commerce over wolkeninfrastructuur (ECE)
 - Adobe Commerce in bedrijven (EE)
@@ -27,18 +27,18 @@ Voordat u een upgrade uitvoert of installeert, controleert u de opmerkingen bij 
 
 - [Opmerkingen bij de release Afhandeling opslaan](release-notes.md)
 
-- [Opmerkingen bij de release van Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html) in de *Adobe Commerce Release-gegevens*.
+- [ de Nota&#39;s van de Versie van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html) in de *Informatie van de Versie van Adobe Commerce*.
 
-- [Adobe Commerce-systeemvereisten](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) in de *Adobe Commerce-installatiehandleiding*.
+- [ de Vereisten van het Systeem van Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) in de *Gids van de Installatie van Adobe Commerce*.
 
 
 ## Toepassingsvereisten voor Winkelassistentie
 
 Het volledige proces voor het beheren van bestellingen voor het ophalen van winkels wordt beheerd via de app Store Assist die op mobiele apparaten is geïnstalleerd. Deze apparaten-verstrekt door de detailhandelaar of door opslagwerknemers die hun persoonlijke slimme telefoons gebruiken-moeten aan de volgende vereisten voldoen:
 
-**Minimumvereisten voor besturingssystemen**
+**Minimale werkend systeemvereisten**
 
-- Android 6
+- ANDROID 6
 - iOS 12
 
 **Minimale hardwarevereisten**
@@ -62,6 +62,6 @@ Uw bedrijf moet aan de volgende minimumcriteria voldoen om de oplossing van de A
 
 - De beschikbaarheid van WiFi van de opslag bij alle plaatsen die de oplossing van de Afhandeling van de Opslag steunen: minimaal 3 Mbps Internet
 
-- Associateurs van winkels en pakhuizen hebben toegang tot mobiele apparaten van iOS of Android tijdens hun verhuizing, persoonlijk of verstrekt door de handelaar
+- Associaten van opslag- en magazijnen hebben toegang tot mobiele apparaten van iOS of Android tijdens hun verhuizing, persoonlijk of door de handelaar geleverd
 
 - Producten die door de oplossing van de Afhandeling van de Opslag worden beheerd moeten productattributen hebben die of SKU of UPC productcode omvatten

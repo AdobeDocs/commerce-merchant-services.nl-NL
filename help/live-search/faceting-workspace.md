@@ -1,6 +1,6 @@
 ---
 title: "Faceting Workspace"
-description: "Leer je weg door [!DNL Live Search] facetwerkruimte."
+description: "Leer uw manier rond de  [!DNL Live Search]  facetende werkruimte."
 exl-id: b47b5c19-59bb-41e4-9599-3b90cbc44b70
 source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
@@ -9,19 +9,19 @@ ht-degree: 0%
 
 ---
 
-# Werkruimte naast elkaar
+# Workspace naast elkaar
 
-De *Faceting* De werkruimte bevat een lijst met alle facetten die momenteel beschikbaar zijn en biedt toegang tot de gereedschappen die u nodig hebt voor het instellen en beheren van facetten. Vastgezette facetten worden als eerste weergegeven in de lijst met bestaande facetten, gevolgd door dynamische facetten. De lijst kan worden gefilterd om alle facetten, of slechts die te tonen die worden vastgezet of dynamisch.
+De *Faceting* werkruimte maakt een lijst van alle facetten die momenteel beschikbaar zijn en verleent toegang tot de hulpmiddelen u aan opstelling en beheert facetten nodig hebt. Vastgezette facetten worden als eerste weergegeven in de lijst met bestaande facetten, gevolgd door dynamische facetten. De lijst kan worden gefilterd om alle facetten, of slechts die te tonen die worden vastgezet of dynamisch.
 
-![Werkruimte naast elkaar](assets/faceting-workspace.png)
+![ Facetend werkruimte ](assets/faceting-workspace.png)
 
 ## Bereik instellen
 
-Als uw Adobe Commerce-installatie meerdere winkelweergaven bevat, stelt u **Toepassingsgebied** aan de [winkelweergave](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) waar uw facetinstellingen van toepassing zijn.
+Als uw installatie van Adobe Commerce veelvoudige opslagmeningen omvat, plaats **Reikwijdte** aan de [ opslagmening ](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) waar uw facetmontages van toepassing zijn.
 
 ## De lijst filteren
 
-1. Klik op de knop **Filteren op** controle.
+1. Klik de **Filter door** controle.
 1. Kies een van de volgende opties:
 
    * Alle filters
@@ -30,20 +30,20 @@ Als uw Adobe Commerce-installatie meerdere winkelweergaven bevat, stelt u **Toep
 
 ## Een facet toevoegen
 
-1. Klikken **Elementen toevoegen**.
-1. Zie [Facetten toevoegen](facets-add.md) voor gedetailleerde instructies.
+1. Klik **toevoegen facetten**.
+1. Zie [ Facetten ](facets-add.md) voor gedetailleerde instructies toevoegen.
 
 ## Kolombeschrijvingen
 
 | Kolom | Beschrijving |
 |--- |--- |
-| (eerste kolom) | Lijsten vastgezet en dynamische facetten door [label](facets-type.md) die zichtbaar is voor de verkoopster. |
-| Tekst sorteren | De [sorteervolgorde](facets-type.md) van facetwaarden. Facetten worden alfabetisch gesorteerd voor alle [!DNL Commerce] opslagronten. Voor [krankzinnig] implementaties, kunnen de facetten of alfabetisch of door telling worden gesorteerd. Opties: Alfabetisch, Aantal (alleen zonder kop) |
+| (eerste kolom) | Lijsten vastgezette en dynamische facetten door het [ etiket ](facets-type.md) dat aan de verkoopster zichtbaar is. |
+| Tekst sorteren | De [ sorterende orde ](facets-type.md) van facetwaarden. Facetten worden alfabetisch gesorteerd voor alle [!DNL Commerce] storefronts. Voor [ hoofdloze ] implementaties, kunnen de facetten of alfabetisch of door telling worden gesorteerd. Opties: Alfabetisch, Aantal (alleen zonder kop) |
 | Max. waarde | Het aantal facetwaarden dat in de opslagruimte als filters beschikbaar is, met een maximum van 10. |
 
 ## Besturingselementen
 
 | Besturing | Beschrijving |
 |--- |--- |
-| Elementen toevoegen | Hiermee opent u de [facetredacteur](facets-add.md). |
-| Filteren op | Hiermee bepaalt u de [type facetten](facets-type.md) in de lijst. Opties: Alles, Vastgezet, Dynamisch |
+| Elementen toevoegen | Opent de [ facetredacteur ](facets-add.md). |
+| Filteren op | Bepaalt het [ type van facetten ](facets-type.md) die in de lijst verschijnen. Opties: Alles, Vastgezet, Dynamisch |

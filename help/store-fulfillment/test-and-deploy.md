@@ -7,7 +7,7 @@ feature: Shipping/Delivery, User Account, Roles/Permissions
 exl-id: 77285a66-5161-407b-94cd-b3f412d7949d
 source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
-source-wordcount: '2660'
+source-wordcount: '2661'
 ht-degree: 0%
 
 ---
@@ -16,15 +16,15 @@ ht-degree: 0%
 
 Nadat u het instapproces in uw ontwikkelingsmilieu hebt voltooid, kunt u het proces beginnen om de oplossing van de Vervulling van de Opslag aan uw productiemilieu te testen en op te stellen.
 
-**Vereisten**
+**Eerste vereisten**
 
 Voordat u gegevens, opslaggegevens of bestellingen gaat testen of synchroniseren, controleert u of u de volgende taken hebt uitgevoerd:
 
-- Voltooid de [Algemene configuratie](enable-general.md) voor Store Fulfillment Services.
+- Voltooide de [ Algemene Configuratie ](enable-general.md) voor de diensten van de Afhandeling van de Opslag.
 
 - [De accountgegevens en verbindingsgegevens voor uw sandbox- en productieomgeving toevoegen en valideren](connect-set-up-service.md#configure-store-fulfillment-account-credentials)
 
-- Bevestig dat de [Adobe Commerce-integratie](connect-set-up-service.md#configure-store-fulfillment-account-credentials) voor de oplossing van Afhandeling bewaren is beschikbaar en geautoriseerd.
+- Bevestig dat de [ Integratie van Adobe Commerce ](connect-set-up-service.md#configure-store-fulfillment-account-credentials) voor de oplossing van de Afhandeling van de Opslag beschikbaar en geautoriseerd is.
 
 ## Voorbereiden op testen
 
@@ -32,11 +32,11 @@ De verbindingsconfiguratie moet worden voltooid alvorens u om het even welke tes
 
 1. De bronnen van de Afhandeling van de Opslag synchroniseren.
 
-   - Ga naar **[!UICONTROL Stores > Sources]**.
+   - Ga naar **[!UICONTROL Stores > Sources]** .
 
-   - Selecteren **[!UICONTROL Synchronize Store Fulfillment Sources]**.
+   - Selecteer **[!UICONTROL Synchronize Store Fulfillment Sources]** .
 
-1. Van het opslagnet, verifieer dat de opslag zoals gemerkt wordt `Synced` voordat u testorders maakt.
+1. Controleer in het opslagraster of opslagruimten zijn gemarkeerd als `Synced` voordat u testorders maakt.
 
 ## Monstertestplan
 
@@ -48,27 +48,27 @@ De detailhandelaars bevestigen de basisfunctionaliteit van de oplossing van de A
 
 Dit steekproeftestplan bestrijkt de volgende functionele gebieden:
 
-| Functioneel gebied | -functie | Rol |
+| Functioneel gebied | Functie | Rol |
 |-------------------------------------|------------------------------------------|----------------------------------|
 | Synchronisatie van inventarisatie en bestelling | API-inventarisatie | Adobe Commerce Admin |
 | End-to-end | Workflows voor annulering van bestellingen | Klant, Admin, Store Associated |
 | Beheerder | Machtigingen voor App-uitvoering opslaan | Beheerder |
 | Adobe Commerce Frontend | Producttypen | Klant, beheerder |
-| Afhandeling aan voorzijde</br>Formulier inchecken | Inchecken | Klant, beheerder |
-| App Winkelassistentie | Volgorde</br>Selecteren</br>Werkgebied</br>en Handoff | Winkelkoppeling |
+| Frontend Controle </br> controle-binnen Vorm | Inchecken | Klant, beheerder |
+| App Winkelassistentie | Het Stadium van de Bestelling </br> van de Beweging {</br> en Handoff</br> | Winkelkoppeling |
 
 ### API-inventarisatie
 
 Deze sectie van het testplan behandelt inventaris en ordesynchronisatie om te verifiëren dat de updates aan bestelbronnen en de voorraden correct tussen Adobe Commerce en de oplossing van de Behandeling van de Opslag worden gesynchroniseerd.
 
-**Functioneel gebied**: Overzicht en volgorde synchroniseren</br>
-**Rol:** Beheerder</br>
-**Type test:** Alles positief
+**Functioneel Gebied**: Overzicht en de Synchronisatie van de Orde </br>
+**Rol:** Admin </br>
+**Type van Test:** Alle Positief
 
 <table>
 <thead>
 <tr>
-<th>-functie</th>
+<th>Functie</th>
 <th>Scenario testen</th>
 <th>Verwachte resultaten</th>
 </tr>
@@ -85,9 +85,9 @@ Deze sectie van het testplan behandelt inventaris en ordesynchronisatie om te ve
 <td>De synchrone verrichting in real time verzendt de details naar het GIF van het Smarm binnen 5 minuten</td>
 </tr>
 <tr>
-<td><strong>Ophaalvoorraadbron</br><code>Is Synced</code> status</strong></td>
+<td><strong>Status van voorraadbron voor ophaalservice </br><code>Is Synced</code></strong></td>
 <td>Sla updates op naar een bestaande bron van ophaalvoorraad.</td>
-<td>Na een geslaagde bewerking <code>Is Synced</code> kolom van de pagina Bronupdates beheren vanuit <code>No</code> tot <code>Yes</code>.</td>
+<td>Na een geslaagde bewerking wordt de kolom <code>Is Synced</code> op de pagina Source beheren bijgewerkt van <code>No</code> naar <code>Yes</code> .</td>
 </tr>
 <tr>
 <td><strong>Gewijzigde voorraadreserveringsprocedure</strong></td>
@@ -97,12 +97,12 @@ Deze sectie van het testplan behandelt inventaris en ordesynchronisatie om te ve
 <tr>
 <td><strong>Nieuwe order-push, API-synchronisatie—Klantenvolgorde</strong></td>
 <td>De klant dient een bestelling in voor het ophalen van de winkel.</td>
-<td><ul><li>In de weergave Admin-volgorde kunt u een <strong>Adobe Commerce Admin-gebruiker</strong> ziet u dat de status van Order Sync is bijgewerkt naar <code>Sent</code></li><li>Het logboek met de orderdetails bevat het bericht <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
+<td><ul><li>In de Admin mening van de Orde, ziet een <strong> gebruiker Admin van Adobe Commerce </strong> dat de status van de Synchronisatie van de Orde aan wordt bijgewerkt <code>Sent</code></li><li>Het logboek met de orderdetails bevat het bericht <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
 </tr>
 <tr>
 <td><strong>New Order Push, API Sync—Admin verzendt order</strong></td>
-<td>An Adobe Commerce <strong>Beheerder</strong> verzendt een bestelvolgorde.</td>
-<td><ul><li>In de weergave Bestelling beheren wordt de status Synchronisatie van bestellingen bijgewerkt naar <code>Sent</code>.</li><li>Het logboek met de orderdetails bevat het bericht <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
+<td>Een Adobe Commerce <strong> Admin </strong> legt een bestelorde voor.</td>
+<td><ul><li>In de weergave Admin Order wordt de status van Order Sync bijgewerkt naar <code>Sent</code> .</li><li>Het logboek met de orderdetails bevat het bericht <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
 </tr>
 <tr>
 <td><strong>New Order Push, Exception Queue<strong></td>
@@ -116,13 +116,13 @@ Deze sectie van het testplan behandelt inventaris en ordesynchronisatie om te ve
 
 Deze sectie van het testplan omvat scenario&#39;s om het werkschema van begin tot eind voor orden te testen die door Adobe Commerce worden geannuleerd.
 
-**Functioneel gebied:** Adobe Commerce Admin</br>
-**Rol:** End-to-end (Admin, Store Associate, Customer)</br>
-**Type testresultaat:** Positief voor alle scenario&#39;s
+**Functioneel gebied:** Admin van Adobe Commerce </br>
+**Rol:** Eind-aan-Eind (Admin, de Associatie van de Opslag, Klant) </br>
+**Resultaattype van de Test:** Positief voor alle scenario&#39;s
 
 <table style="table-layout:fixed">
 <tr>
-<th>-functie</th>
+<th>Functie</th>
 <th>Scenario</th>
 <th>Verwachte resultaten</th>
 </tr>
@@ -137,12 +137,12 @@ Deze sectie van het testplan omvat scenario&#39;s om het werkschema van begin to
 </td>
 <td>
 <ul>
-<li>Orderhistorie bijgewerkt met <code>We refunded $X online. Transaction ID: transactionID</code> en <code>Received Cancel acknowledgment from the BOPIS solution.</code></li>
-<li>Status van bestelling is <code>Closed</code>. (We hebben nu een BETALINGSREVISIE ingesteld.)</li>
+<li>Ordergeschiedenis bijgewerkt met <code>We refunded $X online. Transaction ID: transactionID</code> en <code>Received Cancel acknowledgment from the BOPIS solution.</code></li>
+<li>Status van bestelling is <code>Closed</code> . (We hebben nu een BETALINGSREVISIE ingesteld.)</li>
 <li>Creditnota gemaakt in Adobe Commerce. (Wacht tot het uitsnijden werkt.)</li>
-<li>Als alle items zijn opgenomen, kunt u het e-mailbericht ophalen <code>DISPLAY COMMENT HISTORY</code> shows <code>Order is ready for pickup</code> (<code>CUSTOMER NOTIFIED</code> markering is <code>true</code>.)</li>
+<li>Als alle items zijn opgepakt, verschijnt de markering <code>Order is ready for pickup</code> (<code>CUSTOMER NOTIFIED</code> is <code>true</code> .) en verschijnt deze e-mail vervolgens.<code>DISPLAY COMMENT HISTORY</code></li>
 <li>Als alle items niet zijn gekozen, wordt het e-mailbericht geannuleerd en wordt de HISTORIE VOOR OPMERKINGEN WEERGEGEVEN <code>Order has been canceled - all items were not available</code></li>
-<li><code>CUSTOMER NOTIFIED</code> markering is <code>true</code>.)</li>
+<li><code>CUSTOMER NOTIFIED</code> markering is <code>true</code> .)</li>
 </ul>
 </td>
 </tr>
@@ -160,26 +160,26 @@ Deze sectie van het testplan omvat scenario&#39;s om het werkschema van begin to
 <li>Update voor ordergeschiedenis: <code>We refunded $X online. Transaction ID: transactionID</code></li>
 <li>Update voor ordergeschiedenis: <code>Order notified as partly canceled at: Date and Hour</code></li>
 <li>E-mailbericht voor terugbetaling van bestelling: <code>$x amount was refunded</code></li>
-<li>Status van bestelling is <code>Processing</code>.</li>
+<li>Status van bestelling is <code>Processing</code> .</li>
 <li>Creditnota gemaakt in Adobe Commerce (wacht tot de afbouw werkt).</li>
-<li>Als sommige items niet zijn gekozen, bevestigt u dat de optie [!UICONTROL Ready for Pickup] Het e-mailbericht met de sectie Geen keuze of Terugbetaling wordt weergegeven. <code>DISPLAY COMMENT HISTORY</code> shows <code>Order is ready for pickup, but some items not available.</code>.</li>
-<li><code>CUSTOMER NOTIFIED</code> markering is <code>true</code>.</li>
+<li>Als sommige items niet zijn gekozen, controleert u of het e-mailbericht van [!UICONTROL Ready for Pickup] met de sectie Geen keuze of Geen terugbetaling wordt weergegeven. <code>DISPLAY COMMENT HISTORY</code> toont <code>Order is ready for pickup, but some items not available.</code> .</li>
+<li><code>CUSTOMER NOTIFIED</code> markering is <code>true</code> .</li>
 </ul>
 </td>
 </tr>
-<td><strong>Gereed voor ophalen</br></br>Volledige annulering</br>(alle producten worden ingesteld op 0 qty)</strong></td>
+<td><strong>Klaar voor Bestelwagen </br></br> Volledige annulering </br> (alle producten worden geplaatst zoals opgenomen met 0 qty)</strong></td>
 <td>
 <ol>
 <li>Plaats de bestelling.</li>
 <li>Wacht tot de volgorde is gesynchroniseerd.</li>
 <li>Controleer of de factuur is gemaakt (indien geautoriseerd en vastgelegd) en of de factuur per e-mail is ontvangen.</li>
-<li>Ga naar de Postman en voer het "Ready for Pickup"-verzoek uit met alle producten ingesteld als <code>picked</code> with <code>0 qty</code>.</li>
+<li>Ga naar de Postman en voer de aanvraag Ready for Pickup uit met alle producten ingesteld als <code>picked</code> met <code>0 qty</code> .</li>
 </ol>
 </td>
 <td>
 <ul>
 <li>Orderhistorie bijgewerkt: <code>We refunded $X offline</code></li>
-<li>De orderstatus is <code>CLOSED</code>.
+<li>De orderstatus is <code>CLOSED</code> .
 <li>Het creditmemo wordt gemaakt. (Wacht tot het uitsnijden werkt.)</li>
 <li>E-mailadres voor terugbetaling ontvangen: <code>$x amount was refunded</code></li>
 <li>E-mailbericht voor annulering van bestelling verzonden.</li>
@@ -187,7 +187,7 @@ Deze sectie van het testplan omvat scenario&#39;s om het werkschema van begin to
 </td>
 </tr>
 <tr>
-<td><strong>Gereed voor afhalen - gedeeltelijke annulering</strong></br></br><strong>(Sommige producten worden geplukt en andere worden met <code>0 qty</code>)</strong>
+<td><strong> Klaar voor Bestelwagen - Gedeeltelijke annulering </strong></br></br> <strong> (Sommige producten worden geplukt, en sommige worden genomen met <code>0 qty</code>) </strong>
 </td>
 <td>
 <ol>
@@ -199,7 +199,7 @@ Deze sectie van het testplan omvat scenario&#39;s om het werkschema van begin to
 </td>
 <td>
 <ul>
-<li><code>Your order is ready for pickup</code> with [!UICONTROL Ready for Pickup Items] en [!UICONTROL Canceled Items] tabellen. </li>
+<li><code>Your order is ready for pickup</code> met [!UICONTROL Ready for Pickup Items] en [!UICONTROL Canceled Items] tabellen. </li>
 <li>De status van de bestelling is READY FOR PICKUP. </li>
 <li>Orderhistorie bijgewerkt: <code>We refunded $X offline.</code>
 <li>Orderhistorie bijgewerkt: <code>Order notified as partly canceled at: Date and hour</code>
@@ -209,7 +209,7 @@ Deze sectie van het testplan omvat scenario&#39;s om het werkschema van begin to
 </td>
 </tr>
 <tr>
-<td><strong>Gereed voor afhalen - gedeeltelijke annulering</br></br>Sommige producten worden geplukt en sommige worden met <code>0 qty</code>)</strong>
+<td><strong> Klaar voor Bestelwagen - Gedeeltelijke Annulering </br></br> Sommige producten worden geplukt, en sommige worden genomen met <code>0 qty</code>) </strong>
 </td>
 <td><ol>
 <li>Plaats de bestelling.</li>
@@ -219,7 +219,7 @@ Deze sectie van het testplan omvat scenario&#39;s om het werkschema van begin to
 </ol>
 </td>
 <td><ul>
-<li><code>Your order is ready for pickup</code> with [!UICONTROL Ready for Pickup Items] en [!UICONTROL Canceled Items] tabellen. </li>
+<li><code>Your order is ready for pickup</code> met [!UICONTROL Ready for Pickup Items] en [!UICONTROL Canceled Items] tabellen. </li>
 <li>De status van de bestelling is READY FOR PICKUP. </li>
 <li>Orderhistorie bijgewerkt: <code>We refunded $X offline.</code>
 <li>Orderhistorie bijgewerkt: <code>Order notified as partly canceled at: Date and hour</code>
@@ -229,7 +229,7 @@ Deze sectie van het testplan omvat scenario&#39;s om het werkschema van begin to
 </td>
 </tr>
 <tr>
-<td><strong>Verzonden (tijdens dispensatie) </br></br>Volledige annulering (alle producten worden ingesteld als afgewezen)</strong>
+<td><strong> Verworpen (tijdens dispensatie) </br></br> Volledige annulering (alle producten worden geplaatst zoals verworpen) </strong>
 </td>
 <td>
 <ol>
@@ -244,13 +244,13 @@ Deze sectie van het testplan omvat scenario&#39;s om het werkschema van begin to
 <td><ul>
 <li>Orderhistorie bijgewerkt: <code>We refunded $X offline.</code></li>
 <li>E-mailadres voor terugbetaling ontvangen: <code>$x amount was refunded</code></li>
-<li>Status ingesteld op <code>CLOSED</code>.</li>
+<li>Status ingesteld op <code>CLOSED</code> .</li>
 <li>Creditmemo gemaakt. (Wacht tot het uitsnijden werkt.)</li>
 </ul>
 </td>
 </tr>
 <tr>
-<td><strong>Verzonden (tijdens dispensatie)</br></br>Gedeeltelijke annulering</br>(Sommige producten zijn niet beschikbaar; sommige zijn geweigerd.)</strong>
+<td><strong> Verzonden (tijdens dispensatie) </br></br> Gedeeltelijke Annulering </br> (Sommige producten worden weggelaten; sommige worden verworpen.) </strong>
 </td>
 <td>
 <ol>
@@ -258,7 +258,7 @@ Deze sectie van het testplan omvat scenario&#39;s om het werkschema van begin to
 <li>Wacht tot de volgorde is gesynchroniseerd.</li>
 <li>Controleer of de factuur is gemaakt (indien geautoriseerd en vastgelegd) en of de factuur per e-mail is ontvangen.</li>
 <li>Ga naar Postman en voer het "Ready for Pickup"-verzoek uit met alle producten die zijn ingesteld als gekozen.</li>
-<li>Open uw postvak. Zoek het e-mailbericht Gereed voor afhalen en selecteer <code>Confirm Arrival</code>.</li>
+<li>Open uw postvak. Zoek de e-mail Ready for Pickup en selecteer <code>Confirm Arrival</code> .</li>
 <li>Inchecken.</li>
 <li>Ga naar de Postman en voer het verzonden verzoek uit met bepaalde producten die zijn opgegeven en waarvan sommige zijn afgewezen</li>
 </ol>
@@ -267,12 +267,12 @@ Deze sectie van het testplan omvat scenario&#39;s om het werkschema van begin to
 <li>Orderhistorie bijgewerkt: <code>We refunded $X offline</code></li>
 <li><code>Order notified as partly canceled at: Date and Hour</code>
 <li>E-mailadres voor terugbetaling ontvangen: <code>$x amount was refunded</code>
-<li>Orderstatus ingesteld op <code>Ready for pickup Dispensed</code>
+<li>Status van bestelling ingesteld op <code>Ready for pickup Dispensed</code>
 <li>Creditmemo gemaakt. (Wacht tot het uitsnijden werkt.)</li>
 </td>
 </tr>
 <tr>
-<td> <strong>Nieuwe RMA na terugkeer (volledig)</strong>
+<td> <strong> Nieuwe RMA na terugkeer (volledig) </strong>
 </td>
 <td>
 <ol>
@@ -282,19 +282,19 @@ Deze sectie van het testplan omvat scenario&#39;s om het werkschema van begin to
 <li>Kies alle producten met Postman.</li>
 <li>Inchecken.</li>
 <li>Maak een dispensatie.</li>
-<li>Ga naar bestelling en selecteer<strong>[!UICONTROL Create returns]=
+<li>Ga naar orde, en selecteer <strong>[!UICONTROL Create returns]=
 <li>Maak de RMA.</li>
 </ol>
 </td>
 <td>
 <ul>
-<li>De RMA is gemaakt en wordt weergegeven onder de <strong>[!UICONTROL Returns]</b> in de weergave Volgorde.</li>
+<li>De RMA is gemaakt en wordt weergegeven onder het tabblad <strong>[!UICONTROL Returns]</b> in de weergave Volgorde.</li>
 <li>De klant heeft een bevestigingsbericht van RMA ontvangen.</li>
 </ul>
 </td>
 </tr>
 <tr>
-<td><strong>Nieuwe RMA na terugkeer — Gedeeltelijk</strong>
+<td><strong> Nieuwe RMA na terugkeer - Gedeeltelijk </strong>
 </td>
 <td>
 <ol>
@@ -309,9 +309,9 @@ Deze sectie van het testplan omvat scenario&#39;s om het werkschema van begin to
 </ol>
 <td>
 <ul>
-<li>RMA gemaakt en weergegeven onder de <strong>[!UICONTROL Returns]</strong> in de weergave Volgorde.</li>
+<li>RMA gemaakt en weergegeven onder het tabblad <strong>[!UICONTROL Returns]</strong> in de weergave Volgorde.</li>
 <li>De klant heeft het bevestigingsbericht van RMA ontvangen.</li>
-<li>Nadat u RMA hebt gemaakt, krijgt u de RMA-autorisatie: Ga vanuit de beheerder naar <strong>[!UICONTROL Sales > Returns]</strong>. Selecteer de RMA die u hebt gemaakt en autoriseer deze.</li>
+<li>Nadat u RMA hebt gemaakt, haalt u de RMA-autorisatie op: Ga vanuit de beheerfunctie naar <strong>[!UICONTROL Sales > Returns]</strong> . Selecteer de RMA die u hebt gemaakt en autoriseer deze.</li>
 <li>Controleer of de klant het bevestigingsbericht voor de RMA-autorisatie heeft ontvangen.</li>
 <li>Controleer of de restitutie is toegevoegd aan de transacties en de ordergeschiedenis.</li>
 </ul>
@@ -327,47 +327,47 @@ In dit gedeelte van het testplan wordt het accountbeheer voor App Users-gebruike
 - Bevestig dat een Winkelgeassocieerde kan verifiëren met een nieuwe gebruikersaccount die is gemaakt met Adobe Commerce Admin.
 - Bevestig dat updates van bestaande accounts correct zijn toegepast.
 
-**Functioneel gebied:** Adobe Commerce Admin</br>
-**Rol:** Admin, Store Associate</br>
-**Type test:** Alle positieve
+**Functioneel gebied:** Admin van Adobe Commerce </br>
+**Rol:** Admin, Geassocieerde Opslag </br>
+**Type van Test:** Alle positief
 
 <table style="table-layout:auto">
 <tr>
-<th>-functie</th>
+<th>Functie</th>
 <th>Scenario</th>
 <th>Verwachte resultaten</th>
 </tr>
 <tr>
-<td><strong>Gebruikersaccountbeheer - Account maken</strong></br></br>
+<td><strong> Beheer van de Rekening van de Gebruiker - creeer Rekening </strong></br></br>
 </td>
 <td>
 <ol>
-<li><strong>Beheerder</strong> — Aanmelden bij de Adobe Commerce Admin</li>
-<li>Ga naar <strong>[!UICONTROL System] &gt; Enable Fulfillment App &gt; All Store Fulfillment App Users</strong></li>
+<li><strong> Admin </strong> — Logboek in Admin van Adobe Commerce</li>
+<li>Ga naar <strong>[!UICONTROL System] &gt; Enable Fulfillment App &gt; All Store Fulfillment App Users </strong></li>
 <li><strong>Nieuwe gebruiker toevoegen.</strong></li>
 </ol>
 <td>
 <ul>
 <li>Account is gemaakt.</li>
-<li>Het nieuwe gebruikersaccount wordt weergegeven op het tabblad [!UICONTROL Store Fulfillment Users] dashboard.</li>
-<li><strong>Winkelkoppeling</strong> Meld u aan bij de app Winkelassistentie met een nieuwe gebruikersaccount.</li>
+<li>De nieuwe rekening van de Gebruiker wordt getoond op het [!UICONTROL Store Fulfillment Users] dashboard.</li>
+<li><strong> Geassocieerde van de Opslag </strong> login aan Winkel bijstaat app met nieuwe gebruikersrekening.</li>
 </ul>
 </td>
 </tr>
 <tr>
-<td><strong>Gebruikersaccountbeheer - Bestaande gebruikersaccount bijwerken</strong>
+<td><strong> Beheer van de Rekening van de Gebruiker - werk bestaande gebruikersrekening </strong> bij
 </td>
 <td>
 <ol>
 <li>Meld u aan bij de Adobe Commerce Admin-gebruikersaccount.</li>
-<li>Ga naar <strong>[!UICONTROL System] &gt; Enable Fulfillment App &gt; All Store Fulfillment App Users</strong>.</li>
-<li>Open in de lijst Gebruikersaccount een bestaande actieve gebruikersaccount door <strong>[!UICONTROL Edit]</strong>.
-<li>Schakel het account uit door het wijzigen <strong>[!UICONTROL Is Active]</strong> tot <strong>Nee</strong>.</li>
+<li>Ga naar <strong>[!UICONTROL System] &gt; Enable Fulfillment App &gt; All Store Fulfillment App Users </strong>.</li>
+<li>Open in de lijst Gebruikersaccount een bestaande actieve gebruikersaccount door <strong>[!UICONTROL Edit]</strong> te selecteren.
+<li>Maak de rekening onbruikbaar door <strong>[!UICONTROL Is Active]</strong> in <strong> Nr </strong> te veranderen.</li>
 </ol>
 </td>
 <td>
 <ul>
-<li>Op de <strong>[!UICONTROL Store Fulfillment App Users]</strong> dashboard, de status voor de bijgewerkte account is gewijzigd in <strong>[!UICONTROL Inactive]</strong>.</li>
+<li>Op het dashboard van <strong>[!UICONTROL Store Fulfillment App Users]</strong> is de status voor de bijgewerkte account gewijzigd in <strong>[!UICONTROL Inactive]</strong> .</li>
 <li>Store Associate kan zich niet aanmelden bij de app Store Assist met de inactieve accountgegevens.</li>
 </ul>
 </td>
@@ -381,20 +381,20 @@ De testscenario&#39;s voor de Types van Product van Adobe Commerce verifiëren d
 - [!UICONTROL Configurable]
 - [!UICONTROL Grouped]
 - [!UICONTROL Virtual]
-- [!UICONTROL Bundle products] in de Adobe Commerce storefront.
+- [!UICONTROL Bundle products] in de Adobe Commerce-winkel.
 
-**Functioneel gebied:** Adobe Commerce Frontend</br>
-**Rol:** App-gebruiker voor hulp bij winkel (link naar winkel)</br>
-**Type test:** Alle positieve
+**Functioneel gebied:** Voorste van Adobe Commerce </br>
+**Rol:** de Hulp van de opslag App Gebruiker (Geassocieerde Opslag) </br>
+**Type van Test:** Alle positief
 
 <table style="table-layout:auto">
 <tr>
-<th>-functie</th>
+<th>Functie</th>
 <th>Scenario</th>
 <th>Opmerkingen</th>
 </tr>
 <tr>
-<td><strong>Configureerbare producten</strong>
+<td><strong> Configureerbare producten </strong>
 </td>
 <td>
 <ul>
@@ -408,34 +408,35 @@ De testscenario&#39;s voor de Types van Product van Adobe Commerce verifiëren d
 </td>
 </tr>
 <tr>
-<td><strong>Gegroepeerde producten</strong>
+<td><strong> Gegroepeerde producten </strong>
 </td>
 <td>
 <ul>
-<li>Controleren of de leveringsmethoden en [!UICONTROL Add to cart] de knop is uitgeschakeld voor de klant wanneer alle onderliggende producten
-<code>qty</code> instellen op <code>0</code>.</li>
-<li>Controleren of de leveringsmethoden zijn ingeschakeld voor de klant wanneer ten minste een van de onderliggende producten <code>qty</code> instellen op <code>0.</code></li>
-<li>Controleren of [!UICONTROL Store Pickup Delivery] Deze methode is alleen zichtbaar en actief voor producten die [!UICONTROL Available for Store Pickup] ingeschakeld. (Controleer het onderliggende product.)</li>
+<li>Controleren of de leveringsmethoden en de knop [!UICONTROL Add to cart] zijn uitgeschakeld voor de klant wanneer alle onderliggende producten
+<code>qty</code> ingesteld op <code>0</code> .</li>
+<li>Controleren of de leveringsmethoden zijn ingeschakeld voor de klant wanneer ten minste een van de onderliggende producten is ingesteld op <code>qty</code> <code>0.</code></li>
+<li>Controleer of de methode [!UICONTROL Store Pickup Delivery] alleen zichtbaar en actief is voor de producten waarvoor [!UICONTROL Available for Store Pickup] is ingeschakeld. (Controleer het onderliggende product.)</li>
 </ul>
 </td>
 <td></td>
 </tr>
 <tr>
-<td><strong>Virtuele producten</strong>
+<td><strong> Virtuele producten </strong>
 </td>
 <td>
-Controleren of virtuele producten de  [!UICONTROL In-store Pickup] leveringsmethode.
+Controleer of virtuele producten de leveringsmethode [!UICONTROL In-store Pickup] niet bieden.
 <td></td>
 </td>
 </tr>
 <tr>
-<td><strong>Bundelproducten</strong>
+<td><strong> Bundel producten </strong>
 </td>
 <td>
 <ul>
-<li>Controleren of ten minste één onderliggend product [!UICONTROL Available for Store Pickup] Uitgeschakeld, is de optie Ophalen van de Ophaalservice niet beschikbaar voor de klant.</li>
-<li>Controleren of ten minste één onderliggend product [!UICONTROL Available for Home Delivery] uitgeschakeld, is de optie Home Delivery niet beschikbaar voor de klant.</li>
-<li>Controleren of ten minste een van de onderliggende producten in een bundel uit voorraad is, wordt de bundel (het bovenliggende product) ook weergegeven als [!UICONTROL Out of stock].</li>
+<li>Controleer of als [!UICONTROL Available for Store Pickup] ten minste één onderliggend product is uitgeschakeld, de optie Ophalen bij opslaan niet beschikbaar is voor de klant.</li>
+<li>Controleer of de optie Home Delivery niet beschikbaar is voor de klant als ten minste één onderliggend product [!UICONTROL Available for Home Delivery] is uitgeschakeld.</li>
+<li>Controleren of ten minste een van de onderliggende producten in een bundel uit voorraad is, wordt de bundel (het bovenliggende product) ook weergegeven
+als [!UICONTROL Out of stock] .</li>
 </ul>
 </td>
 <td></td>
@@ -447,65 +448,65 @@ Controleren of virtuele producten de  [!UICONTROL In-store Pickup] leveringsmeth
 
 Deze sectie van het testplan behandelt de Controle-In Ervaring voor de Bestellingen van de Bestelwagen van de Opslag voor de volgende mogelijkheden:
 
-- Afwisselend oppikken contact-verifieer het werkschema voor het toevoegen van een [!UICONTROL Alternate Pickup Contact] en een [!UICONTROL Preferred Contact] op bestellingen voor ophaalservice van winkel.
+- Contact opnemen met andere gebruikers - Controleer de workflow voor het toevoegen van een [!UICONTROL Alternate Pickup Contact] en het selecteren van een [!UICONTROL Preferred Contact] op bestellingen voor ophaalbewerkingen in de winkel.
 
 - Inchecken formulier—Controleer de workflow voor het indienen van een incheckaanvraag voor bestellingen voor winkelbestellingen.
 
-**Functionele gebieden:** Afhandeling van winkelwagentje, inchecken van formulier voor bestellingen voor het ophalen van winkels</br>
-**Rol:** Beheerder, Klant, Winkelgeassocieerd</br>
-**Type test:** Alle positieve
+**Functionele gebieden:** Controle van de Kar, Controle-binnen Vorm voor de orden van de archiefbestelwagen </br>
+**Rol:** Admin, Klant, Geassocieerde Opslag </br>
+**Type van Test:** Alle positief
 
 ### Contactpersoon voor afhalen alternatief
 
 
-**Functioneel gebied:** Afhandeling van winkelwagentje</br>
-**Rol:** Klant</br>
-**Type test:** Alle positieve
+**Functioneel gebied:** Uitchecken van winkelwagentje </br>
+**Rol:** Klant </br>
+**Type van Test:** Alle positief
 
 <table style="table-layout:auto">
 <tr>
-<th>-functie</th>
+<th>Functie</th>
 <th>Scenario</th>
 <th>Verwachte resultaten</th>
 </tr>
 <tr>
-<td><strong>Contactpersoon voor afhalen alternatief</br>
+<td><strong>De Afwisselende Contact van de Bestelwagen </br>
 Inchecken<strong>
 </td>
 <td>
 Een klant verzendt een bestelling met de optie Ophalen in de winkel.</td>
-<td>Tijdens het uitcheckproces ziet de klant [!UICONTROL Alternate Pickup Contact] de optie in de stap Verzending.
+<td>Tijdens het afrekenen ziet de klant de optie [!UICONTROL Alternate Pickup Contact] op de stap Verzenden.
 </td>
 </tr>
 <tr>
-<td><strong>Alternatieve voorkeurscontactpersoon voor afhalen, aanmelden</strong>
+<td><strong> Afwisselende Gewenste Contact van de Bestelwagen, Controle binnen </strong>
 <td>
-Een klant verzendt een bestelling met de optie Ophalen in de winkel. Tijdens het afrekenen voegt de klant een [!UICONTROL Alternate Pickup Contact].</td>
-<td>Tijdens het uitcheckproces ziet de klant [!UICONTROL Preferred Contact] in de verzendstap.</td>
+Een klant verzendt een bestelling met de optie Ophalen in de winkel. Tijdens het uitchecken voegt de klant een [!UICONTROL Alternate Pickup Contact] toe.</td>
+<td>Tijdens het afrekenproces ziet de klant de optie [!UICONTROL Preferred Contact] voor de verzending.</td>
 </td>
 </tr>
 <tr>
-<td><strong>Contactgegevens voor alternatief ophalen, inchecken</strong>
+<td><strong> Afwisselende Details van het Contact van de Bestelwagen, Controle binnen </strong>
 </td>
 <td>
-Een klant verzendt een bestelling met de optie Ophalen in de winkel. Tijdens het afrekenen selecteert de klant [!UICONTROL Alternate Pickup Contact] op de verzendstap.
+Een klant verzendt een bestelling met de optie Ophalen in de winkel. Tijdens het afrekenen selecteert de klant [!UICONTROL Alternate Pickup Contact] bij de verzendstap.
 </td>
-<td>De klant ziet invoeropties om contactgegevens in te voeren: [!UICONTROL First name], [!UICONTROL Last name], [!UICONTROL Phone], en [!UICONTROL Email].</td>
+<td>De klant ziet invoeropties voor het invoeren van contactgegevens: [!UICONTROL First name] , [!UICONTROL Last name] , [!UICONTROL Phone] en [!UICONTROL Email] .</td>
 </tr>
 <tr>
-<td><strong>Alternatieve ophaalservice, inchecken via e-mail</strong>
+<td><strong> Afwisselende Bestelwagen, Controle in E-mail </strong>
 </td>
-<td>Een klant verzendt een bestelling met de optie Ophalen in de winkel. Tijdens het afrekenen selecteert de klant [!UICONTROL Alternate Pickup Contact] voegt de contactgegevens toe aan de verzendstap en verzendt de bestelling.</td>
+<td>Een klant verzendt een bestelling met de optie Ophalen in de winkel. Tijdens het afrekenen selecteert de klant [!UICONTROL Alternate Pickup Contact] bij de verzendstap, voegt de contactgegevens toe en verzendt de bestelling.</td>
 <td>Zowel de klant als de andere contactpersoon ontvangen een incheckbericht voor de bestelling.</td>
 </tr>
 <td><strong>Alternatieve ophaling, orderdetails</strong></td>
-<td>Een klant verzendt een bestelling met de optie Ophalen in de winkel. Tijdens het afrekenen selecteert de klant [!UICONTROL Alternate Pickup Contact] voegt de contactgegevens toe aan de verzendstap en verzendt de bestelling.</td>
+<td>Een klant verzendt een bestelling met de optie Ophalen in de winkel. Tijdens het afrekenen selecteert de klant [!UICONTROL Alternate Pickup Contact] bij de verzendstap, voegt de contactgegevens toe en verzendt de bestelling.</td>
 <td>De beheerder ziet de extra contactinformatie over de bewaarde orde.</td>
 </tr>
 <tr>
-<td><strong>Alternatieve contactpersoon voor afhalen, weergave voor aan een winkel gekoppelde bestelling</strong>
+<td><strong> Afwisselend Contact van de Bestelwagen, de Geassocieerde de ordemening van de Opslag </strong>
 </td>
-<td>Een klant verzendt een bestelling met de optie Ophalen in de winkel. Tijdens het afrekenen selecteert de klant [!UICONTROL Alternate Pickup Contact] voegt de contactgegevens toe aan de verzendstap en verzendt de bestelling.</td>
+<td>Een klant verzendt een bestelling met de optie Ophalen in de winkel. Tijdens het afrekenen selecteert de klant [!UICONTROL Alternate Pickup Contact] bij de verzendstap, voegt de contactgegevens toe en verzendt de bestelling.</td>
 <td>De Store Associate kan de extra contactinformatie over de orde in FaaS/ChaaS zien.</td>
 </td>
 </tr>
@@ -515,18 +516,18 @@ Een klant verzendt een bestelling met de optie Ophalen in de winkel. Tijdens het
 ### Formulier inchecken
 
 
-**Functioneel gebied:** Formulier inchecken</br>
-**Rol:** Klant</br>
-**Type test:** Alle positieve
+**Functioneel gebied:** Controle-binnen Vorm </br>
+**Rol:** Klant </br>
+**Type van Test:** Alle positief
 
 <table style="table-layout:auto">
 <tr>
-<th>-functie</th>
+<th>Functie</th>
 <th>Scenario</th>
 <th>Verwachte resultaten</th>
 </tr>
 <tr>
-<td><strong>Inchecken - Verzoek verzenden</strong>
+<td><strong> Controle in actie-voorlegt verzoek </strong>
 </td>
 <td>Op het incheckformulier vult een klant alle vereiste velden in en verzendt de aanvraag.</td>
 <td>De klant ontvangt een succesantwoord.</td>
@@ -544,7 +545,7 @@ Een klant verzendt een bestelling met de optie Ophalen in de winkel. Tijdens het
 </tr>
 <tr>
 <td><strong>Inchecken - Arrival bevestigen</strong></td>
-<td>Een ophaalvolgorde in de winkel is gemarkeerd en kan worden opgehaald in de FaaS. De klant ontvangt een e-mailbericht "Gereed voor afhalen" en selecteert [!UICONTROL Confirm Arrival].</td>
+<td>Een ophaalvolgorde in de winkel is gemarkeerd en kan worden opgehaald in de FaaS. De klant ontvangt een e-mailbericht Ready for Pickup en selecteert [!UICONTROL Confirm Arrival] .</td>
 <td>De klant ziet het incheckformulier voor de bestelling.</td>
 </tr>
 </tbody>
@@ -554,19 +555,19 @@ Een klant verzendt een bestelling met de optie Ophalen in de winkel. Tijdens het
 
 Deze sectie van het testplan behandelt scenario&#39;s voor het testen van orde, selecteren, en afleveringswerkschema&#39;s in de App van de Hulp van de Opslag.
 
-**Functioneel gebied:** App Winkelassistentie</br>
-**Rol:** Winkelkoppeling</br>
-**Type test:** Alle positieve
+**Functioneel gebied:** De opslag staat App </br> bij
+**Rol:** Geassocieerde opslag </br>
+**Type van Test:** Alle positief
 
 <table style="table-layout:auto">
 <tr>
-<th>-functie</th>
+<th>Functie</th>
 <th>Scenario</th>
 <th>Verwachte resultaten</th>
 </tr>
 <tr>
 <td>
-<strong>Ophalen van één bestelling—gelukkig pad, ophalen van rand</strong></td>
+<strong> Enige orde het plukken-gelukkig weg, curbside oppikken </strong></td>
 <td>Selecteer objecten van één en meerdere aantallen. Geen gelijke plukken, en curbside oppeling (met het opvoeren).
 </td>
 <td>
@@ -644,4 +645,4 @@ De implementatie en het testen zijn afhankelijk van uw infrastructuur en mogelij
 
 >[!TIP]
 >
->Raadpleeg voor implementatierichtlijnen, checklists en best practices voor Adobe Commerce over infrastructuurprojecten in de cloud de [Je winkel implementeren](https://devdocs.magento.com/cloud/live/stage-prod-live.html) in de documentatie van Adobe Commerce Developer.
+>Voor plaatsingsrichtlijnen, checklists, en beste praktijken voor Adobe Commerce op de projecten van de wolkeninfrastructuur, zie [ uw opslag ](https://devdocs.magento.com/cloud/live/stage-prod-live.html) in de documentatie van de Ontwikkelaar van Adobe Commerce opstellen.

@@ -1,6 +1,6 @@
 ---
 title: "Typen synoniemen"
-description: "Eenrichtings- en tweerichtingsverkeer [!DNL Live Search] synoniemen breiden de definitie van trefwoorden uit."
+description: De synoniemen van "Één en van twee richtingen  [!DNL Live Search]  breiden de definitie van sleutelwoorden uit."
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
 source-git-commit: cb5db979828eb0b678d19c926de2823829717c02
 workflow-type: tm+mt
@@ -17,23 +17,23 @@ Met synoniemen in één en twee richtingen wordt de definitie van trefwoorden ui
 
 Synoniemen in twee richtingen hebben dezelfde betekenis en retourneren dezelfde zoekresultaten. In het volgende voorbeeld is het eerste woord dat vet wordt weergegeven, het trefwoord dat wordt gebruikt in de catalogus, gevolgd door woorden met dezelfde betekenis als het oorspronkelijke trefwoord. U kunt een eenvoudig paar synoniemen in twee richtingen, of een ketting van veelvoudige synoniemen in twee richtingen voor het zelfde sleutelwoord tot stand brengen.
 
-**jasje** ![Selector met twee richtingen](assets/btn-two-way.png) jas
-**broek** ![Selector met twee richtingen](assets/btn-two-way.png) slangen ![Selector met twee richtingen](assets/btn-two-way.png) broek
+**jasje** ![ bidirectionele selecteur ](assets/btn-two-way.png) jas
+**broek** ![ 2-wegenkiezer ](assets/btn-two-way.png) stapels ![ 2-wegenkiezer ](assets/btn-two-way.png) brousers
 
 ## Eenweg
 
 Een eenrichtingssynoniem is een subset van een trefwoord, maar heeft een specifiekere betekenis. Capris en shorts zijn bijvoorbeeld broeken, maar niet alle planten zijn capris of korts. Een zoekopdracht naar broek omvat capris en korte broeken. Een zoekopdracht naar korte berichten retourneert echter geen capris.
 
-**zweet** ![Eenvoudige kiezer](assets/btn-one-way.png) hooi
-**broek** ![Eenvoudige kiezer](assets/btn-one-way.png) capris ![Meerdere eenrichtingskiezers](assets/btn-multiple-one-way.png) kalfsnuitje ![Meerdere eenrichtingskiezers](assets/btn-multiple-one-way.png) pedaalduwbakken
+**sweatshirt** ![ Één-weg selecteur ](assets/btn-one-way.png) hoodie
+**broek** ![ Eenwegs selecteur ](assets/btn-one-way.png) capris ![ Veelvoudige unidirectionele selecteur ](assets/btn-multiple-one-way.png) calf-length-broek ![ Veelvoudige unidirectionele selecteur ](assets/btn-multiple-one-way.png) peddle handdupers
 
 ## Aanbevolen procedures
 
-Houd rekening met de volgende aanbevolen procedures om optimaal van [!DNL Live Search] synoniemen.
+Houd rekening met de volgende aanbevolen procedures om de meeste van de synoniemen van [!DNL Live Search] te halen.
 
 ### &quot;Stop woorden&quot; vermijden
 
-[!DNL Live Search] Hiermee worden algemene &#39;stopwoorden&#39; in het Engels gefilterd op synoniemen, zoals:
+[!DNL Live Search] filtert algemene Engelse &#39;stop words&#39; uit synoniemen, zoals:
 
 a, an, and, are, as, at, be, but, by, for, if, in, is, it, no, not, of, dusdanig, dat, hun, toen, daar, deze, zij, dit, aan, was,
 

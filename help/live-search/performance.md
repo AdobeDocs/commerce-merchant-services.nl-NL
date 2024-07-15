@@ -1,6 +1,6 @@
 ---
 title: "Prestaties"
-description: "De [!DNL Live Search] De werkruimte van prestaties biedt inzicht in de zoektermen die kopers gebruiken."
+description: "De  [!DNL Live Search]  werkruimte van Prestaties verstrekt inzicht in de onderzoekstermijnen die de kopers gebruiken."
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
 source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
@@ -11,19 +11,19 @@ ht-degree: 0%
 
 # Prestaties
 
-De *Prestaties* biedt inzicht in de zoektermen die kopers gebruiken. De informatie kan worden gebruikt om tendensen te identificeren, klik-door te verhogen, en de omzettingspercentage te verbeteren. De werkruimte van Prestaties verstrekt een momentopname van onderzoeksmetriek voor een specifieke datumwaaier en omvat de volgende rapporten:
+De *werkruimte van Prestaties* verstrekt inzicht in de onderzoekstermijnen die de kopers gebruiken. De informatie kan worden gebruikt om tendensen te identificeren, klik-door te verhogen, en de omzettingspercentage te verbeteren. De werkruimte van Prestaties verstrekt een momentopname van onderzoeksmetriek voor een specifieke datumwaaier en omvat de volgende rapporten:
 
 * Unieke zoekopdrachten
 * Resultaten nul
 * Populaire resultaten
 
-![Prestaties](assets/performance-unique-searches.png)
+![ Prestaties ](assets/performance-unique-searches.png)
 
-U kunt ook verwijzen naar de [Gegevensbeheerdashboard](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) voor meer gegevens over gegevenssynchronisatie.
+U kunt ook naar het [ dashboard van het Beheer van Gegevens ](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) voor meer gegevens over gegevens het synchroniseren verwijzen.
 
 ## Een rapport weergeven
 
-1. Als u de **Datumbereik**, klikt u op de kalender (![Kalender](assets/btn-calendar.png)) en voer een van de volgende handelingen uit:
+1. Om de **waaier van de Datum** in te gaan, klik de kalender (![ Kalender ](assets/btn-calendar.png)) en doe één van het volgende:
 
    * Als u één datum wilt opgeven, dubbelklikt u op de datum in de kalender.
    * Als u een datumbereik wilt opgeven, klikt u op de eerste en laatste datum in de kalender.
@@ -38,7 +38,7 @@ U kunt ook verwijzen naar de [Gegevensbeheerdashboard](https://experienceleague.
 |--- |--- |
 | Unieke zoekopdrachten | Het totale aantal unieke zoekopdrachten voor het opgegeven datumbereik. De veelvoudige onderzoeken door de zelfde verkoopster, zelfs als voor de zelfde vraag, worden beschouwd als uniek als voorgelegd meer dan één uur uit elkaar. |
 | Doorklikfrequentie | Het percentage zoekopdrachten dat wordt afgesloten met het klikken op een product door de verkoper. De doorklikfrequentie is bijvoorbeeld 50% als de winkel op &quot;broek&quot; en &quot;shirt&quot; zoekt en vervolgens op één resultaat klikt in de &quot;shirt&quot;-zoekopdracht. |
-| Omrekeningskoers | Het percentage producten de winkelaankopen tegenover het aantal producten de verkoopster voor de gespecificeerde datumwaaier klikt. De conversiesnelheid van de interactie is bijvoorbeeld 100% als de klant zes producten in de popover weergeeft, op een product klikt en een aankoop doet. <br /><br />De omrekeningskoers wordt niet beïnvloed door het aantal weergaven van een bepaald product. De omrekeningskoers blijft bijvoorbeeld hetzelfde als de gebruiker van de zoekopdracht op een product klikt. |
+| Omrekeningskoers | Het percentage producten de winkelaankopen tegenover het aantal producten de verkoopster voor de gespecificeerde datumwaaier klikt. De conversiesnelheid van de interactie is bijvoorbeeld 100% als de klant zes producten in de popover weergeeft, op een product klikt en een aankoop doet. <br /><br /> de omzettingssnelheid wordt niet beïnvloed door het aantal meningen van een bepaald product. De omrekeningskoers blijft bijvoorbeeld hetzelfde als de gebruiker van de zoekopdracht op een product klikt. |
 | Resultaatsnelheid nul | Het percentage unieke zoekopdrachten dat geen resultaten retourneert voor het opgegeven datumbereik. De nulresultatenfrequentie is bijvoorbeeld 66,67% als de winkel tweemaal zoekt naar &quot;fjjajfjfjf&quot; (zonder resultaten) en naar &quot;broek&quot; (met resultaten). |
 | Gem. klikpositie | De relatieve positie van de gemiddelde doorkliksnelheid op basis van unieke zoekopdrachten voor het opgegeven datumbereik. |
 

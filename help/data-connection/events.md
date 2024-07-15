@@ -13,19 +13,19 @@ ht-degree: 0%
 
 # [!DNL Data Connection] Gedragsgebeurtenissen
 
-De volgende lijst bevat de gedragsgebeurtenissen van de Handel die beschikbaar zijn wanneer u de [!DNL Data Connection] extensie. De gegevens die deze gebeurtenissen verzamelen, worden naar de Adobe Experience Platform verzonden. U kunt ook [aangepaste gebeurtenissen](custom-events.md) om aanvullende gegevens te verzamelen die niet uit het vak zijn verstrekt.
+In het volgende voorbeeld worden de Commerce-gedragsgebeurtenissen weergegeven die beschikbaar zijn wanneer u de extensie [!DNL Data Connection] installeert. De gegevens die deze gebeurtenissen verzamelen, worden naar de Adobe Experience Platform verzonden. U kunt [ douanegebeurtenissen ](custom-events.md) ook tot stand brengen om extra gegevens te verzamelen die niet uit de doos worden verstrekt.
 
-Naast de gegevens die door de volgende gebeurtenissen worden verzameld, wordt ook [overige gegevens](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) verstrekt door de Adobe Experience Platform Web SDK.
+Naast de gegevens verzamelen de volgende gebeurtenissen zich, krijgt u ook [ andere gegevens ](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/automatic-information.html) die door het Web SDK van Adobe Experience Platform worden verstrekt.
 
 De gedragsgebeurtenissen verzamelen geanonimiseerde gedragsgegevens van uw kopers wanneer ze door uw site bladeren. U kunt de gegevens die deze gebeurtenissen verzamelen gebruiken om promoties en campagnes te maken voor een specifieke groep kopers.
 
 >[!NOTE]
 >
->Alle gedragsgebeurtenissen omvatten de [`identityMap`](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) veld, dat het e-mailadres van de verkoper, indien beschikbaar, en de ECID bevat.
+>Alle gedragsgebeurtenissen omvatten het [`identityMap` ](https://experienceleague.adobe.com/docs/experience-platform/xdm/field-groups/profile/identitymap.html) gebied, dat het e-mailadres van de verkoopster, indien beschikbaar, en ECID omvat.
 
 ## Gebeurtenissen van Storefront
 
-De gebeurtenissen van Storefront vangen gegevens van de interactie van kopers op de plaats en omvatten gebeurtenissen zoals [`addToCart`](#addtocart), [`pageView`](#pageview), [`createAccount`](#createaccount), [`editAccount`](#editaccount), [`startCheckout`](#startcheckout), [`completeCheckout`](#completecheckout), [`signIn`](#signin), [`signOut`](#signout), enzovoort. De gebeurtenissen van het winkelfront zijn op eenvoudige en configureerbare slechts producten van toepassing.
+Storefront-gebeurtenissen leggen gegevens vast van de interacties van kopers op de site en bevatten gebeurtenissen zoals [`addToCart`](#addtocart) , [`pageView`](#pageview) , [`createAccount`](#createaccount) , [`editAccount`](#editaccount) , [`startCheckout`](#startcheckout) , [`completeCheckout`](#completecheckout) , [`signIn`](#signin) , [`signOut`](#signout) , enzovoort. De gebeurtenissen van het winkelfront zijn op eenvoudige en configureerbare slechts producten van toepassing.
 
 ### addToCart
 
@@ -39,10 +39,10 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 
 | Veld | Beschrijving |
 |---|---|
-| `channel` | Bevat informatie over de bron van de gegevens. Beide `_id` en `_type` bevatten [naamruimte waarden](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
-| `channel._id` | De unieke id van het kanaal, zoals `"https://ns.adobe.com/xdm/channels/web"`. |
-| `channel._type` | Hiermee wordt de bron van de kanaalgegevens geïdentificeerd, zoals `"https://ns.adobe.com/xdm/channel-types/web"`. |
-| `commerce.productListAdds` | Geeft aan of een product aan een winkelwagentje is toegevoegd. Een waarde van `1` geeft aan dat een product is toegevoegd. |
+| `channel` | Bevat informatie over de bron van de gegevens. Zowel `_id` als `_type` bevatten [ namespaced waarden ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel._id` | De unieke id van het kanaal, zoals `"https://ns.adobe.com/xdm/channels/web"` . |
+| `channel._type` | Identificeert de bron van de kanaalgegevens, zoals `"https://ns.adobe.com/xdm/channel-types/web"` . |
+| `commerce.productListAdds` | Geeft aan of een product aan een winkelwagentje is toegevoegd. De waarde `1` geeft aan dat een product is toegevoegd. |
 | `commerce.cart.cartID` | De unieke id die het winkelwagentje van de klant identificeert. |
 | `commerce.commerceScope` | Hiermee geeft u aan waar een gebeurtenis heeft plaatsgevonden (weergave, winkel, website, enzovoort). |
 | `commerce.commerceScope.environmentID` | De milieu-id. Een alfanumerieke id van 32 cijfers, gescheiden door afbreekstreepjes. |
@@ -55,11 +55,11 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `productListItems.priceTotal` | De totale prijs voor het item van de productlijn. |
 | `productListItems.quantity` | Het aantal eenheden van het product in de kar. |
 | `productListItems.discountAmount` | Geeft de toegepaste disconteringswaarde aan. |
-| `productListItems.currencyCode` | De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) gebruikte valutacode, zoals `USD` of `EUR`. |
+| `productListItems.currencyCode` | De [ ISO 4217 ](https://en.wikipedia.org/wiki/ISO_4217) gebruikte muntcode, zoals `USD` of `EUR`. |
 | `productListItems.productImageUrl` | URL van hoofdafbeelding van het product. |
 | `productListItems.selectedOptions` | Veld voor een configureerbaar product. |
-| `productListItems.selectedOptions.attribute` | Identificeert een attribuut van het configureerbare product, zoals `size` of `color`. |
-| `productListItems.selectedOptions.value` | Hiermee wordt de waarde van het kenmerk geïdentificeerd, zoals `small` of `black`. |
+| `productListItems.selectedOptions.attribute` | Identificeert een kenmerk van het configureerbare product, zoals `size` of `color` . |
+| `productListItems.selectedOptions.value` | Hiermee wordt de waarde van het kenmerk aangegeven, zoals `small` of `black` . |
 
 ### openCart
 
@@ -73,10 +73,10 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 
 | Veld | Beschrijving |
 |---|---|
-| `channel` | Bevat informatie over de bron van de gegevens. Beide `_id` en `_type` bevatten [naamruimte waarden](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
-| `channel._id` | De unieke id van het kanaal, zoals `"https://ns.adobe.com/xdm/channels/web"`. |
-| `channel._type` | Hiermee wordt de bron van de kanaalgegevens geïdentificeerd, zoals `"https://ns.adobe.com/xdm/channel-types/web"`. |
-| `commerce.productListOpens` | Geeft aan of een winkelwagentje is gemaakt. Een waarde van `1` geeft aan dat er een winkelwagentje is gemaakt. |
+| `channel` | Bevat informatie over de bron van de gegevens. Zowel `_id` als `_type` bevatten [ namespaced waarden ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel._id` | De unieke id van het kanaal, zoals `"https://ns.adobe.com/xdm/channels/web"` . |
+| `channel._type` | Identificeert de bron van de kanaalgegevens, zoals `"https://ns.adobe.com/xdm/channel-types/web"` . |
+| `commerce.productListOpens` | Geeft aan of een winkelwagentje is gemaakt. De waarde `1` geeft aan dat een winkelwagentje is gemaakt. |
 | `commerce.cart.cartID` | De unieke id die het winkelwagentje van de klant identificeert. |
 | `commerce.commerceScope` | Hiermee geeft u aan waar een gebeurtenis heeft plaatsgevonden (weergave, winkel, website, enzovoort). |
 | `commerce.commerceScope.environmentID` | De milieu-id. Een alfanumerieke id van 32 cijfers, gescheiden door afbreekstreepjes. |
@@ -89,11 +89,11 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `productListItems.priceTotal` | De totale prijs voor het item van de productlijn. |
 | `productListItems.quantity` | Het aantal eenheden van het product in de kar. |
 | `productListItems.discountAmount` | Geeft de toegepaste disconteringswaarde aan. |
-| `productListItems.currencyCode` | De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) gebruikte valutacode, zoals `USD` of `EUR`. |
+| `productListItems.currencyCode` | De [ ISO 4217 ](https://en.wikipedia.org/wiki/ISO_4217) gebruikte muntcode, zoals `USD` of `EUR`. |
 | `productListItems.productImageUrl` | URL van hoofdafbeelding van het product. |
 | `productListItems.selectedOptions` | Veld voor een configureerbaar product. |
-| `productListItems.selectedOptions.attribute` | Identificeert een attribuut van het configureerbare product, zoals `size` of `color`. |
-| `productListItems.selectedOptions.value` | Hiermee wordt de waarde van het kenmerk geïdentificeerd, zoals `small` of `black`. |
+| `productListItems.selectedOptions.attribute` | Identificeert een kenmerk van het configureerbare product, zoals `size` of `color` . |
+| `productListItems.selectedOptions.value` | Hiermee wordt de waarde van het kenmerk aangegeven, zoals `small` of `black` . |
 
 ### removeFromCart
 
@@ -107,10 +107,10 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 
 | Veld | Beschrijving |
 |---|---|
-| `channel` | Bevat informatie over de bron van de gegevens. Beide `_id` en `_type` bevatten [naamruimte waarden](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
-| `channel._id` | De unieke id van het kanaal, zoals `"https://ns.adobe.com/xdm/channels/web"`. |
-| `channel._type` | Hiermee wordt de bron van de kanaalgegevens geïdentificeerd, zoals `"https://ns.adobe.com/xdm/channel-types/web"`. |
-| `commerce.productListRemovals` | Geeft aan of een product uit het winkelwagentje is verwijderd. Een waarde van `1` geeft aan dat een product uit het winkelwagentje is verwijderd. |
+| `channel` | Bevat informatie over de bron van de gegevens. Zowel `_id` als `_type` bevatten [ namespaced waarden ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel._id` | De unieke id van het kanaal, zoals `"https://ns.adobe.com/xdm/channels/web"` . |
+| `channel._type` | Identificeert de bron van de kanaalgegevens, zoals `"https://ns.adobe.com/xdm/channel-types/web"` . |
+| `commerce.productListRemovals` | Geeft aan of een product uit het winkelwagentje is verwijderd. De waarde `1` geeft aan dat een product uit het winkelwagentje is verwijderd. |
 | `commerce.cart.cartID` | De unieke id die het winkelwagentje van de klant identificeert. |
 | `commerce.commerceScope` | Hiermee geeft u aan waar een gebeurtenis heeft plaatsgevonden (weergave, winkel, website, enzovoort). |
 | `commerce.commerceScope.environmentID` | De milieu-id. Een alfanumerieke id van 32 cijfers, gescheiden door afbreekstreepjes. |
@@ -123,11 +123,11 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `productListItems.priceTotal` | De totale prijs voor het item van de productlijn. |
 | `productListItems.quantity` | Het aantal eenheden van het product in de kar. |
 | `productListItems.discountAmount` | Geeft de toegepaste disconteringswaarde aan. |
-| `productListItems.currencyCode` | De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) gebruikte valutacode, zoals `USD` of `EUR`. |
+| `productListItems.currencyCode` | De [ ISO 4217 ](https://en.wikipedia.org/wiki/ISO_4217) gebruikte muntcode, zoals `USD` of `EUR`. |
 | `productListItems.productImageUrl` | URL van hoofdafbeelding van het product. |
 | `productListItems.selectedOptions` | Veld voor een configureerbaar product. |
-| `productListItems.selectedOptions.attribute` | Identificeert een attribuut van het configureerbare product, zoals `size` of `color`. |
-| `productListItems.selectedOptions.value` | Hiermee wordt de waarde van het kenmerk geïdentificeerd, zoals `small` of `black`. |
+| `productListItems.selectedOptions.attribute` | Identificeert een kenmerk van het configureerbare product, zoals `size` of `color` . |
+| `productListItems.selectedOptions.value` | Hiermee wordt de waarde van het kenmerk aangegeven, zoals `small` of `black` . |
 
 ### shoppingCartView
 
@@ -141,9 +141,9 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 
 | Veld | Beschrijving |
 |---|---|
-| `channel` | Bevat informatie over de bron van de gegevens. Beide `_id` en `_type` bevatten [naamruimte waarden](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
-| `channel._id` | De unieke id van het kanaal, zoals `"https://ns.adobe.com/xdm/channels/web"`. |
-| `channel._type` | Hiermee wordt de bron van de kanaalgegevens geïdentificeerd, zoals `"https://ns.adobe.com/xdm/channel-types/web"`. |
+| `channel` | Bevat informatie over de bron van de gegevens. Zowel `_id` als `_type` bevatten [ namespaced waarden ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel._id` | De unieke id van het kanaal, zoals `"https://ns.adobe.com/xdm/channels/web"` . |
+| `channel._type` | Identificeert de bron van de kanaalgegevens, zoals `"https://ns.adobe.com/xdm/channel-types/web"` . |
 | `commerce.productListViews` | Geeft aan of een productlijst is weergegeven. |
 | `commerce.cart.cartID` | De unieke id die het winkelwagentje van de klant identificeert. |
 | `commerce.commerceScope` | Hiermee geeft u aan waar een gebeurtenis heeft plaatsgevonden (weergave, winkel, website, enzovoort). |
@@ -159,11 +159,11 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `productListItems.priceTotal` | De totale prijs voor het item van de productlijn. |
 | `productListItems.quantity` | Het aantal eenheden van het product in de kar. |
 | `productListItems.discountAmount` | Geeft de toegepaste disconteringswaarde aan. |
-| `productListItems.currencyCode` | De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) gebruikte valutacode, zoals `USD` of `EUR`. |
+| `productListItems.currencyCode` | De [ ISO 4217 ](https://en.wikipedia.org/wiki/ISO_4217) gebruikte muntcode, zoals `USD` of `EUR`. |
 | `productListItems.productImageUrl` | URL van hoofdafbeelding van het product. |
 | `productListItems.selectedOptions` | Veld voor een configureerbaar product. |
-| `productListItems.selectedOptions.attribute` | Identificeert een attribuut van het configureerbare product, zoals `size` of `color`. |
-| `productListItems.selectedOptions.value` | Hiermee wordt de waarde van het kenmerk geïdentificeerd, zoals `small` of `black`. |
+| `productListItems.selectedOptions.attribute` | Identificeert een kenmerk van het configureerbare product, zoals `size` of `color` . |
+| `productListItems.selectedOptions.value` | Hiermee wordt de waarde van het kenmerk aangegeven, zoals `small` of `black` . |
 
 ### pageView
 
@@ -177,11 +177,11 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 
 | Veld | Beschrijving |
 |---|---|
-| `channel` | Bevat informatie over de bron van de gegevens. Beide `_id` en `_type` bevatten [naamruimte waarden](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
-| `channel._id` | De unieke id van het kanaal, zoals `"https://ns.adobe.com/xdm/channels/web"`. |
-| `channel._type` | Hiermee wordt de bron van de kanaalgegevens geïdentificeerd, zoals `"https://ns.adobe.com/xdm/channel-types/web"`. |
-| `web.webPageDetails.pageViews` | Geeft aan of een pagina is geladen. A `value` van `1` Hiermee wordt aangegeven dat de pagina is geladen. |
-| `web.webPageDetails.URL` | De normatieve of gebruikelijke URL van de webpagina. Dit kan de daadwerkelijke URL zijn die wordt gebruikt om de pagina te bereiken, die zou worden geregistreerd gebruikend `Web Link`. |
+| `channel` | Bevat informatie over de bron van de gegevens. Zowel `_id` als `_type` bevatten [ namespaced waarden ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel._id` | De unieke id van het kanaal, zoals `"https://ns.adobe.com/xdm/channels/web"` . |
+| `channel._type` | Identificeert de bron van de kanaalgegevens, zoals `"https://ns.adobe.com/xdm/channel-types/web"` . |
+| `web.webPageDetails.pageViews` | Geeft aan of een pagina is geladen. Een `value` van `1` geeft aan dat de pagina is geladen. |
+| `web.webPageDetails.URL` | De normatieve of gebruikelijke URL van de webpagina. Dit kan de werkelijke URL zijn die wordt gebruikt om de pagina te bereiken. Deze URL wordt opgenomen met `Web Link` . |
 | `web.webPageDetails.name` | De normatieve naam van de webpagina. Deze naam is niet noodzakelijkerwijs de paginatitel of is rechtstreeks gekoppeld aan pagina-inhoud, maar wordt gebruikt om de pagina&#39;s van een site te ordenen voor classificatiedoeleinden. |
 | `web.webReferrer.URL` | De URL van de webpagina die een winkel heeft bezocht voordat deze op een koppeling naar uw site heeft geklikt. |
 | `commerce.commerceScope` | Hiermee geeft u aan waar een gebeurtenis heeft plaatsgevonden (weergave, winkel, website, enzovoort). |
@@ -202,9 +202,9 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 
 | Veld | Beschrijving |
 |---|---|
-| `channel` | Bevat informatie over de bron van de gegevens. Beide `_id` en `_type` bevatten [naamruimte waarden](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
-| `channel._id` | De unieke id van het kanaal, zoals `"https://ns.adobe.com/xdm/channels/web"`. |
-| `channel._type` | Hiermee wordt de bron van de kanaalgegevens geïdentificeerd, zoals `"https://ns.adobe.com/xdm/channel-types/web"`. |
+| `channel` | Bevat informatie over de bron van de gegevens. Zowel `_id` als `_type` bevatten [ namespaced waarden ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel._id` | De unieke id van het kanaal, zoals `"https://ns.adobe.com/xdm/channels/web"` . |
+| `channel._type` | Identificeert de bron van de kanaalgegevens, zoals `"https://ns.adobe.com/xdm/channel-types/web"` . |
 | `commerce.productViews` | Geeft aan of het product is weergegeven. |
 | `commerce.commerceScope` | Hiermee geeft u aan waar een gebeurtenis heeft plaatsgevonden (weergave, winkel, website, enzovoort). |
 | `commerce.commerceScope.environmentID` | De milieu-id. Een alfanumerieke id van 32 cijfers, gescheiden door afbreekstreepjes. |
@@ -217,11 +217,11 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `productListItems.priceTotal` | De totale prijs voor het item van de productlijn. |
 | `productListItems.quantity` | Het aantal eenheden van het product in de kar. |
 | `productListItems.discountAmount` | Geeft de toegepaste disconteringswaarde aan. |
-| `productListItems.currencyCode` | De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) gebruikte valutacode, zoals `USD` of `EUR`. |
+| `productListItems.currencyCode` | De [ ISO 4217 ](https://en.wikipedia.org/wiki/ISO_4217) gebruikte muntcode, zoals `USD` of `EUR`. |
 | `productListItems.productImageUrl` | URL van hoofdafbeelding van het product. |
 | `productListItems.selectedOptions` | Veld voor een configureerbaar product. |
-| `productListItems.selectedOptions.attribute` | Identificeert een attribuut van het configureerbare product, zoals `size` of `color`. |
-| `productListItems.selectedOptions.value` | Hiermee wordt de waarde van het kenmerk geïdentificeerd, zoals `small` of `black`. |
+| `productListItems.selectedOptions.attribute` | Identificeert een kenmerk van het configureerbare product, zoals `size` of `color` . |
+| `productListItems.selectedOptions.value` | Hiermee wordt de waarde van het kenmerk aangegeven, zoals `small` of `black` . |
 
 ### startCheckout
 
@@ -235,9 +235,9 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 
 | Veld | Beschrijving |
 |---|---|
-| `channel` | Bevat informatie over de bron van de gegevens. Beide `_id` en `_type` bevatten [naamruimte waarden](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
-| `channel._id` | De unieke id van het kanaal, zoals `"https://ns.adobe.com/xdm/channels/web"`. |
-| `channel._type` | Hiermee wordt de bron van de kanaalgegevens geïdentificeerd, zoals `"https://ns.adobe.com/xdm/channel-types/web"`. |
+| `channel` | Bevat informatie over de bron van de gegevens. Zowel `_id` als `_type` bevatten [ namespaced waarden ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel._id` | De unieke id van het kanaal, zoals `"https://ns.adobe.com/xdm/channels/web"` . |
+| `channel._type` | Identificeert de bron van de kanaalgegevens, zoals `"https://ns.adobe.com/xdm/channel-types/web"` . |
 | `commerce.checkouts` | Hiermee wordt aangegeven of een actie is uitgevoerd tijdens het uitcheckproces. |
 | `commerce.cart.cartID` | De unieke id die het winkelwagentje van de klant identificeert. |
 | `commerce.commerceScope` | Hiermee geeft u aan waar een gebeurtenis heeft plaatsgevonden (weergave, winkel, website, enzovoort). |
@@ -251,11 +251,11 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `productListItems.priceTotal` | De totale prijs voor het item van de productlijn. |
 | `productListItems.quantity` | Het aantal eenheden van het product in de kar. |
 | `productListItems.discountAmount` | Geeft de toegepaste disconteringswaarde aan. |
-| `productListItems.currencyCode` | De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) gebruikte valutacode, zoals `USD` of `EUR`. |
+| `productListItems.currencyCode` | De [ ISO 4217 ](https://en.wikipedia.org/wiki/ISO_4217) gebruikte muntcode, zoals `USD` of `EUR`. |
 | `productListItems.productImageUrl` | URL van hoofdafbeelding van het product. |
 | `productListItems.selectedOptions` | Veld voor een configureerbaar product. |
-| `productListItems.selectedOptions.attribute` | Identificeert een attribuut van het configureerbare product, zoals `size` of `color`. |
-| `productListItems.selectedOptions.value` | Hiermee wordt de waarde van het kenmerk geïdentificeerd, zoals `small` of `black`. |
+| `productListItems.selectedOptions.attribute` | Identificeert een kenmerk van het configureerbare product, zoals `size` of `color` . |
+| `productListItems.selectedOptions.value` | Hiermee wordt de waarde van het kenmerk aangegeven, zoals `small` of `black` . |
 
 ### completeCheckout
 
@@ -269,31 +269,31 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 
 | Veld | Beschrijving |
 |---|---|
-| `channel` | Bevat informatie over de bron van de gegevens. Beide `_id` en `_type` bevatten [naamruimte waarden](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
-| `channel._id` | De unieke id van het kanaal, zoals `"https://ns.adobe.com/xdm/channels/web"`. |
-| `channel._type` | Hiermee wordt de bron van de kanaalgegevens geïdentificeerd, zoals `"https://ns.adobe.com/xdm/channel-types/web"`. |
+| `channel` | Bevat informatie over de bron van de gegevens. Zowel `_id` als `_type` bevatten [ namespaced waarden ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel._id` | De unieke id van het kanaal, zoals `"https://ns.adobe.com/xdm/channels/web"` . |
+| `channel._type` | Identificeert de bron van de kanaalgegevens, zoals `"https://ns.adobe.com/xdm/channel-types/web"` . |
 | `commerce.purchases` | Geeft aan of een bestelling is geaccepteerd. |
 | `commerce.order` | Bevat informatie over de geplaatste order voor een of meer producten. |
 | `commerce.order.purchaseID` | De unieke id die door de verkoper is toegewezen voor deze aankoop of dit contract. Er is geen garantie dat de id uniek is. |
 | `commerce.order.payments` | De lijst met betalingen voor deze bestelling. |
 | `commerce.order.payments.paymentTransactionID` | Unieke identificatiecode voor deze betalingstransactie. |
 | `commerce.order.payments.paymentAmount` | De waarde van de betaling. |
-| `commerce.order.payments.paymentType` | De betalingsmethode voor deze bestelling. De opties zijn: `cash`, `credit_card`, `debit_card`, `gift_card`, `check`, `paypal`, `wire_transfer`, `credit_card_reference`, `other`. |
-| `commerce.order.payments.currencyCode` | De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) gebruikte valutacode, zoals `USD` of `EUR`. |
+| `commerce.order.payments.paymentType` | De betalingsmethode voor deze bestelling. De volgende opties zijn beschikbaar: `cash`, `credit_card`, `debit_card`, `gift_card`, `check`, `paypal`, `wire_transfer`, `credit_card_reference`, `other` . |
+| `commerce.order.payments.currencyCode` | De [ ISO 4217 ](https://en.wikipedia.org/wiki/ISO_4217) gebruikte muntcode, zoals `USD` of `EUR`. |
 | `commerce.order.taxAmount` | Het belastingbedrag dat de koper in het kader van de eindbetaling heeft betaald. |
 | `commerce.order.discountAmount` | Geeft het kortingsbedrag aan dat op de hele volgorde wordt toegepast. |
-| `commerce.order.createdDate` | De tijd en de datum waarop een nieuwe orde in het handelssysteem wordt gecreeerd. Bijvoorbeeld: `2022-10-15T20:20:39+00:00`. |
+| `commerce.order.createdDate` | De tijd en de datum waarop een nieuwe orde in het handelssysteem wordt gecreeerd. Bijvoorbeeld `2022-10-15T20:20:39+00:00` . |
 | `commerce.shipping` | Verzendgegevens voor een of meer producten. |
 | `commerce.shipping.shippingMethod` | De door de klant gekozen verzendmethode, zoals standaardlevering, versnelde levering, ophaalservice, enzovoort. |
 | `commerce.shipping.shippingAmount` | Het bedrag dat de klant voor de verzending moest betalen. |  | `shipping` | Verzendgegevens voor een of meer producten. |
-| `commerce.shipping.currencyCode` | De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) gebruikte valutacode, zoals `USD` of `EUR`. |
+| `commerce.shipping.currencyCode` | De [ ISO 4217 ](https://en.wikipedia.org/wiki/ISO_4217) gebruikte muntcode, zoals `USD` of `EUR`. |
 | `commerce.commerceScope` | Hiermee geeft u aan waar een gebeurtenis heeft plaatsgevonden (weergave, winkel, website, enzovoort). |
 | `commerce.commerceScope.environmentID` | De milieu-id. Een alfanumerieke id van 32 cijfers, gescheiden door afbreekstreepjes. |
 | `commerce.commerceScope.storeCode` | De unieke opslagcode. U kunt veel winkels per website hebben. |
 | `commerce.commerceScope.storeViewCode` | De unieke code van de archiefmening. U kunt per winkel veel weergaven van uw winkel bekijken. |
 | `commerce.commerceScope.websiteCode` | De unieke websitecode. U kunt veel websites in een omgeving hebben. |
 | `personalEmail` | Een persoonlijk e-mailadres. |
-| `personalEmail.address` | Het technische adres, bijvoorbeeld `name@domain.com` zoals algemeen gedefinieerd in RFC2822 en volgende normen. |
+| `personalEmail.address` | Het technische adres, bijvoorbeeld, `name@domain.com` zoals algemeen bepaald in RFC2822 en verdere normen. |
 | `productListItems` | Een reeks producten die aan het winkelwagentje zijn toegevoegd. |
 | `productListItems.SKU` | Stock Keeping Unit. De unieke id voor het product. |
 | `productListItems.name` | De weergavenaam of leesbare naam van het product. |
@@ -302,12 +302,12 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `productListItems.discountAmount` | Geeft de toegepaste disconteringswaarde aan. |
 | `productListItems.productImageUrl` | URL van hoofdafbeelding van het product. |
 | `productListItems.selectedOptions` | Veld voor een configureerbaar product. |
-| `productListItems.selectedOptions.attribute` | Identificeert een attribuut van het configureerbare product, zoals `size` of `color`. |
-| `productListItems.selectedOptions.value` | Hiermee wordt de waarde van het kenmerk geïdentificeerd, zoals `small` of `black`. |
+| `productListItems.selectedOptions.attribute` | Identificeert een kenmerk van het configureerbare product, zoals `size` of `color` . |
+| `productListItems.selectedOptions.value` | Hiermee wordt de waarde van het kenmerk aangegeven, zoals `small` of `black` . |
 
 ## Klantprofielgebeurtenissen
 
-Profielgebeurtenissen die zijn vastgelegd vanuit de opslagruimte, bevatten accountgegevens, zoals `signIn`, `signOut`, `createAccount`, en `editAccount`. Deze gegevens worden gebruikt om belangrijke klantendetails te bevolken die nodig zijn om segmenten beter te bepalen of marketing campagnes, zoals het verzenden van aanbiedingen van de inschrijvingskorting, bevestigingen van de rekeningsverandering, etc. uitvoeren. Er zijn vergelijkbare profielgebeurtenissen vastgelegd van de [server-kant](events-backoffice.md#customer-profile-events).
+Profielgebeurtenissen die zijn vastgelegd vanuit de storefront, bevatten accountinformatie, zoals `signIn` , `signOut` , `createAccount` en `editAccount` . Deze gegevens worden gebruikt om belangrijke klantendetails te bevolken die nodig zijn om segmenten beter te bepalen of marketing campagnes, zoals het verzenden van aanbiedingen van de inschrijvingskorting, bevestigingen van de rekeningsverandering, etc. uitvoeren. Er zijn gelijkaardige profielgebeurtenissen die van [ server-kant ](events-backoffice.md#customer-profile-events) worden gevangen.
 
 ### signIn
 
@@ -325,15 +325,15 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 
 | Veld | Beschrijving |
 |---|---|
-| `channel` | Bevat informatie over de bron van de gegevens. Beide `_id` en `_type` bevatten [naamruimte waarden](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
-| `channel._id` | De unieke id van het kanaal, zoals `"https://ns.adobe.com/xdm/channels/web"`. |
-| `channel._type` | Hiermee wordt de bron van de kanaalgegevens geïdentificeerd, zoals `"https://ns.adobe.com/xdm/channel-types/web"`. |
+| `channel` | Bevat informatie over de bron van de gegevens. Zowel `_id` als `_type` bevatten [ namespaced waarden ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel._id` | De unieke id van het kanaal, zoals `"https://ns.adobe.com/xdm/channels/web"` . |
+| `channel._type` | Identificeert de bron van de kanaalgegevens, zoals `"https://ns.adobe.com/xdm/channel-types/web"` . |
 | `person` | Een individuele actor, contactpersoon of eigenaar. |
 | `person.accountID` | Hiermee legt u de gebruikersnaam van de gebruikersaccount vast. |
-| `person.accountType` | Hiermee legt u het type gebruikersaccount vast, zoals `Personal` of `Company`, indien van toepassing. |
-| `person.personalEmailID` | Het technische adres, bijvoorbeeld `name@domain.com` zoals algemeen gedefinieerd in RFC2822 en volgende normen. |
+| `person.accountType` | Hiermee legt u het type gebruikersaccount vast, bijvoorbeeld `Personal` of `Company` , indien van toepassing. |
+| `person.personalEmailID` | Het technische adres, bijvoorbeeld, `name@domain.com` zoals algemeen bepaald in RFC2822 en verdere normen. |
 | `personalEmail` | Leg contactgegevens vast - een e-mail en bijbehorende informatie. |
-| `personalEmail.address` | Het technische adres, bijvoorbeeld `name@domain.com` zoals algemeen gedefinieerd in RFC2822 en volgende normen. |
+| `personalEmail.address` | Het technische adres, bijvoorbeeld, `name@domain.com` zoals algemeen bepaald in RFC2822 en verdere normen. |
 | `userAccount` | Hiermee geeft u eventuele loyaliteitsdetails, voorkeuren, aanmeldingsprocessen en andere accountvoorkeuren aan. |
 | `userAccount.login` | Geeft aan of een bezoeker zich heeft aangemeld. |
 | `commerce.commerceScope` | Hiermee geeft u aan waar een gebeurtenis heeft plaatsgevonden (weergave, winkel, website, enzovoort). |
@@ -358,9 +358,9 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 
 | Veld | Beschrijving |
 |---|---|
-| `channel` | Bevat informatie over de bron van de gegevens. Beide `_id` en `_type` bevatten [naamruimte waarden](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
-| `channel._id` | De unieke id van het kanaal, zoals `"https://ns.adobe.com/xdm/channels/web"`. |
-| `channel._type` | Hiermee wordt de bron van de kanaalgegevens geïdentificeerd, zoals `"https://ns.adobe.com/xdm/channel-types/web"`. |
+| `channel` | Bevat informatie over de bron van de gegevens. Zowel `_id` als `_type` bevatten [ namespaced waarden ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel._id` | De unieke id van het kanaal, zoals `"https://ns.adobe.com/xdm/channels/web"` . |
+| `channel._type` | Identificeert de bron van de kanaalgegevens, zoals `"https://ns.adobe.com/xdm/channel-types/web"` . |
 | `userAccount` | Hiermee geeft u eventuele loyaliteitsdetails, voorkeuren, aanmeldingsprocessen en andere accountvoorkeuren aan. |
 | `userAccount.logout` | Geeft aan of een bezoeker zich heeft afgemeld. |
 | `commerce.commerceScope` | Hiermee geeft u aan waar een gebeurtenis heeft plaatsgevonden (weergave, winkel, website, enzovoort). |
@@ -385,15 +385,15 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 
 | Veld | Beschrijving |
 |---|---|
-| `channel` | Bevat informatie over de bron van de gegevens. Beide `_id` en `_type` bevatten [naamruimte waarden](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
-| `channel._id` | De unieke id van het kanaal, zoals `"https://ns.adobe.com/xdm/channels/web"`. |
-| `channel._type` | Hiermee wordt de bron van de kanaalgegevens geïdentificeerd, zoals `"https://ns.adobe.com/xdm/channel-types/web"`. |
+| `channel` | Bevat informatie over de bron van de gegevens. Zowel `_id` als `_type` bevatten [ namespaced waarden ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel._id` | De unieke id van het kanaal, zoals `"https://ns.adobe.com/xdm/channels/web"` . |
+| `channel._type` | Identificeert de bron van de kanaalgegevens, zoals `"https://ns.adobe.com/xdm/channel-types/web"` . |
 | `person` | Een individuele actor, contactpersoon of eigenaar. |
 | `person.accountID` | Hiermee legt u de gebruikersnaam van de gebruikersaccount vast. |
-| `person.accountType` | Hiermee legt u het type gebruikersaccount vast, zoals `Personal` of `Company`, indien van toepassing. |
-| `person.personalEmailID` | Het technische adres, bijvoorbeeld `name@domain.com` zoals algemeen gedefinieerd in RFC2822 en volgende normen. |
+| `person.accountType` | Hiermee legt u het type gebruikersaccount vast, bijvoorbeeld `Personal` of `Company` , indien van toepassing. |
+| `person.personalEmailID` | Het technische adres, bijvoorbeeld, `name@domain.com` zoals algemeen bepaald in RFC2822 en verdere normen. |
 | `personalEmail` | Leg contactgegevens vast - een e-mail en bijbehorende informatie. |
-| `personalEmail.address` | Het technische adres, bijvoorbeeld `name@domain.com` zoals algemeen gedefinieerd in RFC2822 en volgende normen. |
+| `personalEmail.address` | Het technische adres, bijvoorbeeld, `name@domain.com` zoals algemeen bepaald in RFC2822 en verdere normen. |
 | `userAccount` | Hiermee geeft u eventuele loyaliteitsdetails, voorkeuren, aanmeldingsprocessen en andere accountvoorkeuren aan. |
 | `userAccount.updateProfile` | Hiermee geeft u aan of een gebruiker zijn accountprofiel heeft bijgewerkt. |
 | `commerce.commerceScope` | Hiermee geeft u aan waar een gebeurtenis heeft plaatsgevonden (weergave, winkel, website, enzovoort). |
@@ -418,15 +418,15 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 
 | Veld | Beschrijving |
 |---|---|
-| `channel` | Bevat informatie over de bron van de gegevens. Beide `_id` en `_type` bevatten [naamruimte waarden](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
-| `channel._id` | De unieke id van het kanaal, zoals `"https://ns.adobe.com/xdm/channels/web"`. |
-| `channel._type` | Hiermee wordt de bron van de kanaalgegevens geïdentificeerd, zoals `"https://ns.adobe.com/xdm/channel-types/web"`. |
+| `channel` | Bevat informatie over de bron van de gegevens. Zowel `_id` als `_type` bevatten [ namespaced waarden ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel._id` | De unieke id van het kanaal, zoals `"https://ns.adobe.com/xdm/channels/web"` . |
+| `channel._type` | Identificeert de bron van de kanaalgegevens, zoals `"https://ns.adobe.com/xdm/channel-types/web"` . |
 | `person` | Een individuele actor, contactpersoon of eigenaar. |
 | `person.accountID` | Hiermee legt u de gebruikersnaam van de gebruikersaccount vast. |
-| `person.accountType` | Hiermee legt u het type gebruikersaccount vast, zoals `Personal` of `Company`, indien van toepassing. |
-| `person.personalEmailID` | Het technische adres, bijvoorbeeld `name@domain.com` zoals algemeen gedefinieerd in RFC2822 en volgende normen. |
+| `person.accountType` | Hiermee legt u het type gebruikersaccount vast, bijvoorbeeld `Personal` of `Company` , indien van toepassing. |
+| `person.personalEmailID` | Het technische adres, bijvoorbeeld, `name@domain.com` zoals algemeen bepaald in RFC2822 en verdere normen. |
 | `personalEmail` | Leg contactgegevens vast - een e-mail en bijbehorende informatie. |
-| `personalEmail.address` | Het technische adres, bijvoorbeeld `name@domain.com` zoals algemeen gedefinieerd in RFC2822 en volgende normen. |
+| `personalEmail.address` | Het technische adres, bijvoorbeeld, `name@domain.com` zoals algemeen bepaald in RFC2822 en verdere normen. |
 | `userAccount` | Hiermee geeft u eventuele loyaliteitsdetails, voorkeuren, aanmeldingsprocessen en andere accountvoorkeuren aan. |
 | `userAccount.updateProfile` | Hiermee geeft u aan of een gebruiker zijn accountprofiel heeft bijgewerkt. |
 | `commerce.commerceScope` | Hiermee geeft u aan waar een gebeurtenis heeft plaatsgevonden (weergave, winkel, website, enzovoort). |
@@ -437,15 +437,15 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 
 ## Zoeken in gebeurtenissen
 
-De zoekgebeurtenissen bevatten gegevens die relevant zijn voor de intentie van de klant. Als winkeliers inzien hoe kopers objecten zoeken, waarop ze klikken en die ze uiteindelijk kopen of opgeven, kunnen ze zien hoe kopers objecten zoeken. Een voorbeeld van hoe u deze gegevens kunt gebruiken is als u bestaande kopers wilt richten die naar uw topproduct zoeken, maar nooit het product kopen. U moet de [[!DNL Live Search]](../live-search/install.md) toegang tot deze gebeurtenissen.
+De zoekgebeurtenissen bevatten gegevens die relevant zijn voor de intentie van de klant. Als winkeliers inzien hoe kopers objecten zoeken, waarop ze klikken en die ze uiteindelijk kopen of opgeven, kunnen ze zien hoe kopers objecten zoeken. Een voorbeeld van hoe u deze gegevens kunt gebruiken is als u bestaande kopers wilt richten die naar uw topproduct zoeken, maar nooit het product kopen. U moet de extensie [[!DNL Live Search]](../live-search/install.md) installeren om toegang te krijgen tot deze gebeurtenissen.
 
-Gebruik de `searchRequest.id` en `searchResponse.id` velden in beide `searchRequestSent` en `searchResponseReceived` gebeurtenissen om een zoekverzoek te doorverwijzen naar de corresponderende zoekreactie.
+Gebruik de velden `searchRequest.id` en `searchResponse.id` in de gebeurtenissen `searchRequestSent` en `searchResponseReceived` om een zoekaanvraag te doorverwijzen naar de corresponderende zoekreactie.
 
 ### searchRequestSent
 
 | Beschrijving | XDM-gebeurtenisnaam |
 |---|---|
-| Wordt geactiveerd door de volgende gebeurtenissen in het pop-upvenster &quot;Zoeken terwijl u typt&quot;:<br><br>Druk op Enter, klik op _Alles weergeven_<br><br> Wordt geactiveerd door de volgende gebeurtenissen op pagina&#39;s met zoekresultaten:<br><br>Selecteer een filter, wijzig de sorteervolgorde (_Sorteren op_), wijzigt u de sorteerrichting (oplopend of aflopend), wijzigt u het aantal resultaten per pagina (_Aantal per pagina tonen_), naar de volgende pagina gaan, naar de vorige pagina navigeren, naar een andere pagina navigeren | `searchRequest` |
+| Teweeggebracht door de volgende gebeurtenissen in het &quot;onderzoek aangezien u&quot;popover typt:<br><br> Pers gaat binnen, klik _Mening allen_<br><br> teweeggebracht door de volgende gebeurtenissen op de pagina&#39;s van onderzoeksresultaten:<br><br> selecteer een filter, verander de soortorde (_Soort door_), verander de soortrichting (het stijgen of aflopend), verander het aantal resultaten per pagina (_toont # per pagina_), navigeer naar de volgende pagina, ga naar de vorige pagina, ga naar een andere pagina | `searchRequest` |
 
 >[!NOTE]
 >
@@ -457,9 +457,9 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 
 | Veld | Beschrijving |
 |---|---|
-| `channel` | Bevat informatie over de bron van de gegevens. Beide `_id` en `_type` bevatten [naamruimte waarden](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
-| `channel._id` | De unieke id van het kanaal, zoals `"https://ns.adobe.com/xdm/channels/web"`. |
-| `channel._type` | Hiermee wordt de bron van de kanaalgegevens geïdentificeerd, zoals `"https://ns.adobe.com/xdm/channel-types/web"`. |
+| `channel` | Bevat informatie over de bron van de gegevens. Zowel `_id` als `_type` bevatten [ namespaced waarden ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel._id` | De unieke id van het kanaal, zoals `"https://ns.adobe.com/xdm/channels/web"` . |
+| `channel._type` | Identificeert de bron van de kanaalgegevens, zoals `"https://ns.adobe.com/xdm/channel-types/web"` . |
 | `searchRequest` | Geeft aan of een zoekaanvraag is verzonden. |
 | `searchRequest.id` | De unieke id voor deze zoekopdracht. |
 | `searchRequest.value` | De kwantificeerbare waarde van het verzoek. |
@@ -494,9 +494,9 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 
 | Veld | Beschrijving |
 |---|---|
-| `channel` | Bevat informatie over de bron van de gegevens. Beide `_id` en `_type` bevatten [naamruimte waarden](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
-| `channel._id` | De unieke id van het kanaal, zoals `"https://ns.adobe.com/xdm/channels/web"`. |
-| `channel._type` | Hiermee wordt de bron van de kanaalgegevens geïdentificeerd, zoals `"https://ns.adobe.com/xdm/channel-types/web"`. |
+| `channel` | Bevat informatie over de bron van de gegevens. Zowel `_id` als `_type` bevatten [ namespaced waarden ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel._id` | De unieke id van het kanaal, zoals `"https://ns.adobe.com/xdm/channels/web"` . |
+| `channel._type` | Identificeert de bron van de kanaalgegevens, zoals `"https://ns.adobe.com/xdm/channel-types/web"` . |
 | `searchResponse` | Geeft aan of een zoekreactie is ontvangen. |
 | `searchResponse.id` | De unieke id voor deze specifieke zoekreactie. |
 | `searchResponse.value` | De kwantificeerbare waarde van de respons. |
@@ -514,9 +514,9 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 
 ## B2B-gebeurtenissen
 
-![B2B voor Adobe Commerce](../assets/b2b.svg) Voor B2B-handelaren moet u [installeren](install.md#install-the-b2b-extension) de `experience-platform-connector-b2b` toegang tot deze gebeurtenissen.
+![ B2B voor Adobe Commerce ](../assets/b2b.svg) voor B2B handelaren, moet u [ ](install.md#install-the-b2b-extension) de `experience-platform-connector-b2b` uitbreiding installeren om tot deze gebeurtenissen toegang te hebben.
 
-De B2B-gebeurtenissen bevatten [aanvraaglijst](https://experienceleague.adobe.com/docs/commerce-admin/b2b/requisition-lists/requisition-lists.html) informatie, zoals of een aanvraaglijst werd gecreeerd, toegevoegd aan, of geschrapt van. Door gebeurtenissen te volgen specifiek voor aanvraaglijsten, kunt u zien welke producten uw klanten vaak kopen en campagnes tot stand brengen die op die gegevens worden gebaseerd.
+De B2B gebeurtenissen bevatten ](https://experienceleague.adobe.com/docs/commerce-admin/b2b/requisition-lists/requisition-lists.html) informatie van de 0} verzoeklijst {, zoals als een verzoeklijst werd gecreeerd, aan, of geschrapt van werd toegevoegd. [ Door gebeurtenissen te volgen specifiek voor aanvraaglijsten, kunt u zien welke producten uw klanten vaak kopen en campagnes tot stand brengen die op die gegevens worden gebaseerd.
 
 ### createRequisitionList
 
@@ -530,9 +530,9 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 
 | Veld | Beschrijving |
 |---|---|
-| `channel` | Bevat informatie over de bron van de gegevens. Beide `_id` en `_type` bevatten [naamruimte waarden](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
-| `channel._id` | De unieke id van het kanaal, zoals `"https://ns.adobe.com/xdm/channels/web"`. |
-| `channel._type` | Hiermee wordt de bron van de kanaalgegevens geïdentificeerd, zoals `"https://ns.adobe.com/xdm/channel-types/web"`. |
+| `channel` | Bevat informatie over de bron van de gegevens. Zowel `_id` als `_type` bevatten [ namespaced waarden ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel._id` | De unieke id van het kanaal, zoals `"https://ns.adobe.com/xdm/channels/web"` . |
+| `channel._type` | Identificeert de bron van de kanaalgegevens, zoals `"https://ns.adobe.com/xdm/channel-types/web"` . |
 | `commerce.requisitionListOpens` | Geeft initialisatie van een nieuwe aanvraaglijst aan. |
 | `commerce.requisitionList` | De eigenschappen van de aanvraaglijst die door de klant is gemaakt. |
 | `commerce.requisitionList.ID` | Unieke id van de aanvraaglijst. |
@@ -556,9 +556,9 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 
 | Veld | Beschrijving |
 |---|---|
-| `channel` | Bevat informatie over de bron van de gegevens. Beide `_id` en `_type` bevatten [naamruimte waarden](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
-| `channel._id` | De unieke id van het kanaal, zoals `"https://ns.adobe.com/xdm/channels/web"`. |
-| `channel._type` | Hiermee wordt de bron van de kanaalgegevens geïdentificeerd, zoals `"https://ns.adobe.com/xdm/channel-types/web"`. |
+| `channel` | Bevat informatie over de bron van de gegevens. Zowel `_id` als `_type` bevatten [ namespaced waarden ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel._id` | De unieke id van het kanaal, zoals `"https://ns.adobe.com/xdm/channels/web"` . |
+| `channel._type` | Identificeert de bron van de kanaalgegevens, zoals `"https://ns.adobe.com/xdm/channel-types/web"` . |
 | `commerce.requisitionListAdds` | Hiermee wordt de toevoeging van een of meer producten aan een aanvraaglijst aangegeven. |
 | `commerce.requisitionList` | De eigenschappen van de aanvraaglijst die door de klant is gemaakt. |
 | `commerce.requisitionList.ID` | Unieke id van de aanvraaglijst. |
@@ -575,10 +575,10 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `productListItems.priceTotal` | De totale prijs voor het item van de productlijn. |
 | `productListItems.quantity` | Het aantal eenheden van het product in de kar. |
 | `productListItems.discountAmount` | Geeft de toegepaste disconteringswaarde aan. |
-| `productListItems.currencyCode` | De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) gebruikte valutacode, zoals `USD` of `EUR`. |
+| `productListItems.currencyCode` | De [ ISO 4217 ](https://en.wikipedia.org/wiki/ISO_4217) gebruikte muntcode, zoals `USD` of `EUR`. |
 | `productListItems.selectedOptions` | Veld voor een configureerbaar product. |
-| `productListItems.selectedOptions.attribute` | Identificeert een attribuut van het configureerbare product, zoals `size` of `color`. |
-| `productListItems.selectedOptions.value` | Hiermee wordt de waarde van het kenmerk geïdentificeerd, zoals `small` of `black`. |
+| `productListItems.selectedOptions.attribute` | Identificeert een kenmerk van het configureerbare product, zoals `size` of `color` . |
+| `productListItems.selectedOptions.value` | Hiermee wordt de waarde van het kenmerk aangegeven, zoals `small` of `black` . |
 
 ### removeFromRequisitionList
 
@@ -592,9 +592,9 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 
 | Veld | Beschrijving |
 |---|---|
-| `channel` | Bevat informatie over de bron van de gegevens. Beide `_id` en `_type` bevatten [naamruimte waarden](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
-| `channel._id` | De unieke id van het kanaal, zoals `"https://ns.adobe.com/xdm/channels/web"`. |
-| `channel._type` | Hiermee wordt de bron van de kanaalgegevens geïdentificeerd, zoals `"https://ns.adobe.com/xdm/channel-types/web"`. |
+| `channel` | Bevat informatie over de bron van de gegevens. Zowel `_id` als `_type` bevatten [ namespaced waarden ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel._id` | De unieke id van het kanaal, zoals `"https://ns.adobe.com/xdm/channels/web"` . |
+| `channel._type` | Identificeert de bron van de kanaalgegevens, zoals `"https://ns.adobe.com/xdm/channel-types/web"` . |
 | `commerce.requsitionListRemovals` | Geeft aan of een of meer producten uit een aanvraaglijst zijn verwijderd. |
 | `commerce.requisitionList` | De eigenschappen van de aanvraaglijst die door de klant is gemaakt. |
 | `commerce.requisitionList.ID` | Unieke id van de aanvraaglijst. |
@@ -611,10 +611,10 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `productListItems.priceTotal` | De totale prijs voor het item van de productlijn. |
 | `productListItems.quantity` | Het aantal eenheden van het product in de kar. |
 | `productListItems.discountAmount` | Geeft de toegepaste disconteringswaarde aan. |
-| `productListItems.currencyCode` | De [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) gebruikte valutacode, zoals `USD` of `EUR`. |
+| `productListItems.currencyCode` | De [ ISO 4217 ](https://en.wikipedia.org/wiki/ISO_4217) gebruikte muntcode, zoals `USD` of `EUR`. |
 | `productListItems.selectedOptions` | Veld voor een configureerbaar product. |
-| `productListItems.selectedOptions.attribute` | Identificeert een attribuut van het configureerbare product, zoals `size` of `color`. |
-| `productListItems.selectedOptions.value` | Hiermee wordt de waarde van het kenmerk geïdentificeerd, zoals `small` of `black`. |
+| `productListItems.selectedOptions.attribute` | Identificeert een kenmerk van het configureerbare product, zoals `size` of `color` . |
+| `productListItems.selectedOptions.value` | Hiermee wordt de waarde van het kenmerk aangegeven, zoals `small` of `black` . |
 
 ### deleteRequisitionList
 
@@ -628,9 +628,9 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 
 | Veld | Beschrijving |
 |---|---|
-| `channel` | Bevat informatie over de bron van de gegevens. Beide `_id` en `_type` bevatten [naamruimte waarden](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
-| `channel._id` | De unieke id van het kanaal, zoals `"https://ns.adobe.com/xdm/channels/web"`. |
-| `channel._type` | Hiermee wordt de bron van de kanaalgegevens geïdentificeerd, zoals `"https://ns.adobe.com/xdm/channel-types/web"`. |
+| `channel` | Bevat informatie over de bron van de gegevens. Zowel `_id` als `_type` bevatten [ namespaced waarden ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/namespaces.html). |
+| `channel._id` | De unieke id van het kanaal, zoals `"https://ns.adobe.com/xdm/channels/web"` . |
+| `channel._type` | Identificeert de bron van de kanaalgegevens, zoals `"https://ns.adobe.com/xdm/channel-types/web"` . |
 | `commerce.requisitionListDeletes` | Geeft aan dat een aanvraaglijst is verwijderd. |
 | `commerce.requisitionList` | De eigenschappen van de aanvraaglijst die door de klant is gemaakt. |
 | `commerce.requisitionList.ID` | Unieke id van de aanvraaglijst. |

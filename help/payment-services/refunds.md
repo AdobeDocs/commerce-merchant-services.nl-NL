@@ -1,20 +1,20 @@
 ---
 title: Restituties
-description: Restituties maken voor [!DNL Payment Services] orders in de beheerder als onderdeel van het kredietmemo-proces.
+description: Creeer restituties voor  [!DNL Payment Services]  orden in Admin als deel van het proces van het creditnota.
 exl-id: 2b3721a1-9c9d-4e3f-ab7d-5bd61573dcb4
 feature: Payments, Checkout
 source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '231'
 ht-degree: 0%
 
 ---
 
 # Restituties
 
-Restituties voor [!DNL Payment Services] orders worden in de beheerder gemaakt als onderdeel van het creditmemo-proces. Een creditnota is een document dat het bedrag toont dat aan de klant, voor een volledige of gedeeltelijke terugbetaling verschuldigd is, die op een aankoop kan worden toegepast of direct aan de klant kan worden teruggegeven. Creditmemo&#39;s kunnen alleen worden uitgegeven voor orders die [gefactureerd](https://docs.magento.com/user-guide/sales/invoice-create.html){target="_blank"}.
+Restituties voor [!DNL Payment Services] -orders worden in de beheerfunctie gemaakt als onderdeel van het creditcardproces. Een creditnota is een document dat het bedrag toont dat aan de klant, voor een volledige of gedeeltelijke terugbetaling verschuldigd is, die op een aankoop kan worden toegepast of direct aan de klant kan worden teruggegeven. De memo&#39;s van het krediet kunnen slechts voor orden worden uitgegeven die [ ](https://docs.magento.com/user-guide/sales/invoice-create.html) {target="_blank"} worden gefactureerd.
 
-Zie [Creditnota&#39;s](https://docs.magento.com/user-guide/sales/credit-memos.html){target="_blank"} in onze basisgebruikershandleiding voor meer informatie en voor meer informatie over het uitgeven en afdrukken van creditnota&#39;s.
+Zie [ Memo&#39;s van het Krediet ](https://docs.magento.com/user-guide/sales/credit-memos.html) {target="_blank"} in onze gids van de kerngebruiker voor meer informatie en om te leren hoe te om creditmemo&#39;s uit te geven en te drukken.
 
 Voor bestellingen die met PayPal of een creditcard worden verwerkt, kunt u:
 
@@ -22,12 +22,12 @@ Voor bestellingen die met PayPal of een creditcard worden verwerkt, kunt u:
 * Een gedeeltelijk bedrag van een bestelling terugbetalen (of meerdere gedeeltelijke bedragen)
 * Een bedrag terugbetalen dat lager is dan de waarde van een specifiek orderitem
 
-Zie [Een creditmemo uitgeven](https://docs.magento.com/user-guide/sales/credit-memo-create.html){target="_blank"} in onze basisgebruikershandleiding voor meer informatie.
+Zie [ Uitgevend een Memo van het Krediet ](https://docs.magento.com/user-guide/sales/credit-memo-create.html) {target="_blank"} in onze gids van de kerngebruiker voor meer informatie.
 
 >[!NOTE]
 >
 >Er treedt een fout op bij bestellingen die met PayPal of een creditcard zijn verwerkt als u probeert een bestelling gedeeltelijk te retourneren voor meer dan het resterende bedrag van de bestelling (oorspronkelijk bedrag minus het totaal van de bestaande terugbetalingen), of als u een terugbetaling geeft voor een bedrag dat groter is dan het volledige bedrag van de bestelling.
 
-De [!UICONTROL Payment Action] instellen in uw [!UICONTROL Payment Settings] configuratie—Willekeurig `Authorize` of `Authorize and Capture`—bepaalt de [basisworkflow voor restitutie](https://docs.magento.com/user-guide/sales/credit-memos.html#refund-workflow){target="_blank"} voor orders.
+[!UICONTROL Payment Action] het plaatsen in uw [!UICONTROL Payment Settings] configuratie-of `Authorize` of `Authorize and Capture` - bepaalt het [ basisterugbetalingswerkschema ](https://docs.magento.com/user-guide/sales/credit-memos.html#refund-workflow) {target="_blank"} voor orden.
 
-Zie de [Sectie voor betalingsactie](https://docs.magento.com/user-guide/sales/credit-memo-create.html#payment-action-setting){target="_blank"} van _Een creditmemo uitgeven_ voor meer informatie .
+Zie de [ actie die sectie ](https://docs.magento.com/user-guide/sales/credit-memo-create.html#payment-action-setting) plaatst {target="_blank"} van _een Memo van het Krediet_ voor meer informatie uitgeven.

@@ -1,10 +1,10 @@
 ---
 title: "Facetten beheren"
-description: "Leer hoe u bestaande [!DNL Live Search] facetten."
+description: "Leer hoe te om bestaande  [!DNL Live Search]  facetten te beheren."
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
 source-git-commit: bce69f952e70e2e8dcb892357dea41e18f61e5f6
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
@@ -15,53 +15,53 @@ Volg deze instructies om de eigenschappen van bestaande facetten bij te werken o
 
 ## Prijsfacetgroepen configureren
 
-Zie [Instellingen](settings.md) om prijsafhankelijke intervallen en groepen te vormen.
+Verwijs naar [ Montages ](settings.md) om prijsfacetintervallen en groeperingen te vormen.
 
 ## facet bewerken
 
 1. Zoek het facet dat u wilt bewerken.
-1. Als de lijst veel facetten bevat, stelt u *Filteren op* op een van de volgende wijzen:
+1. Als er vele facetten in de lijst zijn, plaats *Filter door* aan één van het volgende:
 
    * Vastgezet
    * Dynamisch
 
-   Ga voor meer informatie naar [Typen gezichten](facets-type.md).
+   Meer leren, ga naar [ Types van Facet ](facets-type.md).
 
-   ![Filterfacetten](assets/facets-filter-by-cropped.png)
+   ![ de facetten van de Filter ](assets/facets-filter-by-cropped.png)
 
-1. Klik op **Meer** (...) opties.
-1. Klikken **Bewerken**
+1. Om de faceteigenschappen uit te geven, klik **Meer** (...) opties.
+1. Klik **uitgeven**
 
-   ![Bewerkingsopties](assets/facet-edit-menu.png)
+   ![ geef opties ](assets/facet-edit-menu.png) uit
 
 1. Voer een van de volgende handelingen uit om het label van het facet te bewerken:
 
-   * Voor een [!DNL Commerce] opslaan, bewerkt u de [kenmerklabel](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html).
+   * Voor a [!DNL Commerce] storefront, geef het [ attributenetiket ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) uit.
    * Voor een implementatie zonder kop klikt u op de waarde in de eerste kolom en bewerkt u de tekst naar wens.
 
-   ![Label bewerken](assets/facet-edit-label.png)
+   ![ geef etiket ](assets/facet-edit-label.png) uit
 
-1. (Alleen koptekst) Als u de methode wilt wijzigen waarmee de waarden van facetten worden gesorteerd, klikt u op de waarde in het dialoogvenster *Sorteertype* en kies een van de volgende opties:
+1. (Alleen Headless) Als u de methode wilt wijzigen die wordt gebruikt om de waarden van facetten te sorteren, klikt u op de waarde in de kolom Type sorteren *en kiest u een van de volgende opties:*
 
    * Alfabetisch
    * Aantal
 
-   ![Aantal bewerken](assets/facets-edit-count.png)
+   ![ geef telling ](assets/facets-edit-count.png) uit
 
-1. In de **Max. waarde** , stelt u het maximale aantal (van 0 tot 10) waarden voor het facetfilter in dat in de winkel moet worden weergegeven.
-1. Klik op **Opslaan**.
+1. In de **Max kolom van de Waarde**, plaats het maximumaantal (van 0 - 10) van de waarden van de facetfilter in de storefront te tonen.
+1. Wanneer volledig, klik **sparen**.
 De wijzigingen worden pas na publicatie in de winkelruimte weergegeven.
 
 ## Vastzetten/vastzetten van facet
 
-Wanneer op het punt wordt geklikt, verandert de kleur van het punt. Het punt wordt gebruikt om het facet naar een van de *Vastgezette gezichten* of de *Dynamische factoren* sectie.
+Het speld verandert kleur wanneer geklikt en wordt gebruikt om de facet aan of *vastgezette Facets* of de *Dynamische sectie van Facetten* te bewegen.
 
-1. Een facet vastzetten op de bovenkant van het dialoogvenster *Filters* lijst, zoek het facet in *Dynamische factoren* en klik op het grijze punt (![Vastzetten, kiezer](assets/btn-pin-gray.png)).
-De pin wordt blauw en de facet wordt naar de *Vastgezette gezichten* sectie.
-1. Als u een facet wilt losmaken, zoekt u het facet in het dialoogvenster *Vastgezette gezichten* en klik op het blauwe punt (![Vastzetten, kiezer](assets/btn-pin-blue.png)).
-De pin wordt grijs en het facet wordt naar de *Dynamische factoren* sectie.
+1. Om een facet aan de bovenkant van de *lijst van Filters* vast te zetten, vind de facet in de *Dynamische lijst van Facetten* en klik het grijze speld (![ Vastzetten selecteur ](assets/btn-pin-gray.png)).
+De speld wordt blauw en de facetbewegingen aan de *Vastgezette sectie van Facetten*.
+1. Om een facet los te maken, vind het facet in de *Vastgezette lijst van Facetten* en klik het blauwe speld (![ Vastzetten selecteur ](assets/btn-pin-blue.png)).
+De speld verandert grijs en de facetbewegingen aan de *Dynamische sectie van Facetten*.
 
-   ![Vastgezette en dynamische facetten](assets/facets-pinned-unpinned.png)
+   ![ Vastgezette en dynamische facetten ](assets/facets-pinned-unpinned.png)
 
 >[!NOTE]
 >
@@ -71,22 +71,22 @@ De pin wordt grijs en het facet wordt naar de *Dynamische factoren* sectie.
 
 >[!NOTE]
 >
->De volgorde van vastgezette facetten wordt alleen ondersteund in implementaties zonder kop. Als geordende facetten nodig zijn, gebruikt u de [!DNL Live Search] PLP-widget.
+>De volgorde van vastgezette facetten wordt alleen ondersteund in implementaties zonder kop. Gebruik de [!DNL Live Search] PLP-widget als geordende facetten nodig zijn.
 
-U kunt de volgorde van vastgezette facetten wijzigen door de rij naar een andere positie te verplaatsen. Vastgezette facetten hebben een *Verplaatsen* icon (![Selector verplaatsen](assets/btn-move.png)) aan het begin van de rij. In tegenstelling tot vastgezette facetten kunnen dynamische facetten niet worden verplaatst.
+U kunt de volgorde van vastgezette facetten wijzigen door de rij naar een andere positie te verplaatsen. De vastgezette facetten hebben a *pictogram van de Beweging ![ (](assets/btn-move.png)) aan het begin van de rij.* In tegenstelling tot vastgezette facetten kunnen dynamische facetten niet worden verplaatst.
 
-1. Het facet zoeken in de *Vastgezette gezichten* van de lijst.
-1. Gebruik de **Verplaatsen** (![Selector verplaatsen](assets/btn-move.png)) gebruiken om de rij naar een nieuwe positie in de *Vastgezette gezichten* sectie.
-Nadat de wijzigingen zijn gepubliceerd, worden de opnieuw geordende facetten weergegeven in de winkel *Filters* lijst.
+1. Vind het facet in de *Vastgezette sectie van Facetten* van de lijst.
+1. Gebruik het **pictogram van de Beweging** (![ selecteur van de Beweging ](assets/btn-move.png)) om de rij aan een nieuwe positie in de *Vastgezette sectie van Facetten* te slepen.
+Nadat de veranderingen worden gepubliceerd, verschijnen de opnieuw in orde gebrachte facetten in de opslag *lijst van Filters*.
 
 ## Facet verwijderen
 
 1. Vind het facet in de lijst en klik **Meer** (...) opties.
-1. Klikken **Verwijderen**.
-1. Klik wanneer u wordt gevraagd om te bevestigen **Facet verwijderen**.
+1. Klik **Schrapping**.
+1. Wanneer ertoe aangezet om te bevestigen, klik **Facet van de Schrapping**.
 Het facet wordt verwijderd uit het winkelcentrum nadat de wijzigingen zijn gepubliceerd.
 
-## Wijzigingen publiceren
+## Publish-wijzigingen
 
-1. Als u de winkel wilt bijwerken met uw wijzigingen, klikt u op **Wijzigingen publiceren**.
+1. Om de storefront met uw veranderingen bij te werken, klik **de veranderingen van Publish**.
 1. Wacht ongeveer 15 minuten totdat de updates in uw winkel worden weergegeven.

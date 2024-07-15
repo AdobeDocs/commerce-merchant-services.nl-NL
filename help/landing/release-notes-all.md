@@ -19,7 +19,7 @@ Gebruik de volgende lijst om versienota&#39;s en belangrijke informatie met betr
 <table>
   <tbody>
     <tr>
-      <td><strong>Commerce-services</strong>
+      <td><strong> de diensten van Commerce </strong>
         <p>Meer informatie over de nieuwste verbeteringen voor innovatieve Commerce-services die beschikbaar zijn als extensies.</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html">Amazon-Sales Channel</a></li>
@@ -31,14 +31,14 @@ Gebruik de volgende lijst om versienota&#39;s en belangrijke informatie met betr
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/release-notes.html">[!DNL Store Fulfillment]</a></li>
           </ul>
         </td>
-      <td><strong>Integratiediensten</strong>
+      <td><strong> de diensten van de Integratie </strong>
         <p>Leer over de recentste verbeteringen van de integratieservices die onze Commerce Services in staat stellen om met andere diensten en Adobe uitbreidingen en producten te verbinden.</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/release-notes.html">[!DNL Data Connection]</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html">[!DNL Services Connector]</a></li>
           </ul>
       </td>
-      <td><strong>Gegevensdiensten</strong>
+      <td><strong> de diensten van Gegevens </strong>
         <p>Meer informatie over de nieuwste verbeteringen in de gegevensservice waarmee onze Commerce Services productgegevens kunnen beheren.</p>
           <ul>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html">Catalogus synchroniseren</a></li>

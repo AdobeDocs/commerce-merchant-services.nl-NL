@@ -1,41 +1,41 @@
 ---
 title: Implementatieworkflow
-description: Leer de stappen die u met succes wilt implementeren [!DNL Product Recommendations] op je winkel.
+description: Leer de stappen om  [!DNL Product Recommendations]  op uw storefront met succes uit te voeren.
 exl-id: 766e1191-0330-4515-9331-e45318539dc9
 source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '541'
 ht-degree: 0%
 
 ---
 
 # Implementatieworkflow
 
-[!DNL Product Recommendations] gebruikt zowel gedrags- als catalogusgegevens:
+[!DNL Product Recommendations] gebruikt zowel gedragsgegevens als catalogusgegevens:
 
 - Gedrag - Gegevens uit de betrokkenheid van een winkelier op uw site, zoals productweergaven, aan een winkelwagentje toegevoegde items en aankopen. Adobe Commerce en Adobe Sensei verzamelen geen persoonlijk identificeerbare informatie.
 
 - Catalogus - Productmetagegevens, zoals naam, prijs en beschikbaarheid.
 
-Wanneer u de `magento/product-recommendations module`, voegt Adobe Sensei de gedrags- en catalogusgegevens samen en maakt [!DNL Product Recommendations] voor elk type aanbeveling. De [!DNL Product Recommendations] De dienst stelt dan die aanbevelingen aan uw winkel op. Om u te helpen productaanbevelingen op uw winkel uitvoeren, gebruik het volgende werkschema:
+Wanneer u `magento/product-recommendations module` installeert, aggregeert Adobe Sensei de gedrags- en catalogusgegevens en maakt het [!DNL Product Recommendations] voor elk type aanbeveling. De service [!DNL Product Recommendations] implementeert deze aanbevelingen vervolgens in uw winkel. Om u te helpen productaanbevelingen op uw winkel uitvoeren, gebruik het volgende werkschema:
 
 >[!NOTE]
 >
-> Als uw storefront met PWA Studio wordt uitgevoerd, verwijs naar [PWA-documentatie](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Als u een aangepaste frontend-technologie gebruikt, zoals React of Vue JS, leert u hoe te [integreren](headless.md) [!DNL Product Recommendations] in je eindeloze winkel.
+> Als uw storefront gebruikend PWA Studio wordt uitgevoerd, verwijs naar de [ documentatie van de PWA ](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Als u een douane frontend technologie zoals React of Vue JS gebruikt, leer hoe te [ ](headless.md) integreren [!DNL Product Recommendations] in uw headless opslag.
 
 ## Workflow
 
-1. **Gegevensverzameling implementeren voor productie**
+1. **stelt gegevensinzameling aan productie** op
 
-   Implementeren [!DNL Product Recommendations] vereist twee hoofdlijnen [gegevensbronnen](type.md): catalogus en gedrag. Omdat productie de enige omgeving is waarin de acties van uw klanten worden vastgelegd en geanalyseerd, is het in uw belang om zo snel mogelijk met gegevensverzameling over productie te beginnen. [Meer informatie](behavioral-data.md) hoe Adobe Sensei modellen voor machinetolken leert die leiden tot aanbevelingen van hogere kwaliteit. Als extra voordeel, wanneer u begint gedragsgegevens over productie te verzamelen, kunt u [aanbevelingen ophalen](verify.md) op basis van deze productiegegevens in een niet-productieomgeving. Vervolgens kunt u testen en experimenteren met verschillende aanbevelingen die worden berekend op basis van echte verkoopgegevens die in productie worden verzameld.
+   Het opstellen [!DNL Product Recommendations] vereist twee belangrijkste [ gegevensbronnen ](type.md): catalogus en gedrag. Omdat productie de enige omgeving is waarin de acties van uw klanten worden vastgelegd en geanalyseerd, is het in uw belang om zo snel mogelijk met gegevensverzameling over productie te beginnen. [ Leer ](behavioral-data.md) hoe Adobe Sensei machine het leren modellen tredt die in hogere kwaliteit aanbevelingen resulteren. Als toegevoegd voordeel, wanneer u gedragsgegevens over productie begint te verzamelen, kunt u [ aanbevelingen ](verify.md) halen die op deze productiegegevens worden gebaseerd terwijl het werken in niet-productiemilieu&#39;s. Vervolgens kunt u testen en experimenteren met verschillende aanbevelingen die worden berekend op basis van echte verkoopgegevens die in productie worden verzameld.
 
-   Om gegevensinzameling aan productie op te stellen, moet u [installeren en configureren](install-configure.md) de [!DNL Product Recommendations] door een [API-sleutel](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html).
+   Om gegevensinzameling aan productie op te stellen, moet u ](install-configure.md) installeren en vormen [!DNL Product Recommendations] module door een [ API sleutel ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) te verstrekken.[
 
    >[!TIP]
    >
    > Het implementeren van gegevensverzameling heeft geen invloed op de weergave van de winkel of op de ervaring van kopers. Het creëren van en het opstellen van aanbevelingen veranderen slechts de klantenervaring op uw winkelfront. Zorg ervoor u op uw niet productiemilieu test alvorens aan productie op te stellen. Creëer ook geen aanbevelingen-eenheden totdat u de sjabloon aanpast. Zie de volgende stap.
 
-1. **De sjabloon aanpassen aan uw stijl**
+1. **pas het malplaatje aan om uw stijl aan te passen**
 
    Uw winkel vertegenwoordigt uw merk, dus zorg ervoor u het malplaatje van productaanbevelingen aanpast om uw plaatsthema aan te passen.
 
@@ -43,9 +43,9 @@ Wanneer u de `magento/product-recommendations module`, voegt Adobe Sensei de ged
    >
    > Door het malplaatje aan te passen, kunt u uw stijlblad specificeren, beschrijven waar een aanbevelingseenheid op een pagina, etc. verschijnt.
 
-   Zie [Aanpassen](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/customize.html) in de ontwikkelaarsdocumentatie leren hoe te om deze stap te voltooien.
+   Zie [ ](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/customize.html) aanpassen in de ontwikkelaardocumentatie leren hoe te om deze stap te voltooien.
 
-1. **Testaanbevelingen voor uw niet-productieomgeving**
+1. **aanbevelingen van de Test op uw niet-productiemilieu**
 
    Het is altijd een beste praktijk om een nieuwe technologie op uw niet productiemilieu te testen alvorens u aan productie opstelt. Als u aanbevelingen test voor uw niet-productieomgeving, kunt u met verschillende typen aanbevelingen, positionering en pagina&#39;s spelen. U kunt aanbevelingen trekken die op gedragsgegevens reeds bij productie terwijl het testen in uw niet productieklimaat worden verzameld, zodat de raadsresultaten op het het winkelen gedrag van daadwerkelijke klanten gebaseerd zijn.
 
@@ -53,8 +53,8 @@ Wanneer u de `magento/product-recommendations module`, voegt Adobe Sensei de ged
    >
    > Zorg ervoor dat de niet-productieomgevingscatalogus grotendeels dezelfde is als de catalogus die u in productie hebt. Door vergelijkbare catalogi te gebruiken, zorgt u ervoor dat de producten die in de aanbevolen eenheden worden geretourneerd, de producten op productie nauwkeurig nabootsen.
 
-   Zie [Ophalen](staging-environment.md) gedragsgegevens uit uw productieomgeving om te leren hoe u deze stap kunt voltooien.
+   Zie ](staging-environment.md) gedragsgegevens van 0} Vetsen {van uw productiemilieu leren hoe te om deze stap te voltooien.[
 
-1. **Aanbevelingen voor uw productiewinkel maken en implementeren**
+1. **creeer en stel aanbevelingen aan uw productieopslag op**
 
-   Nu u de verzameling van gedragsgegevens in productie hebt geïmplementeerd, de sjabloon voor productaanbevelingen hebt gewijzigd en aanbevelingen hebt getest met daadwerkelijk verkoopgedrag, bent u klaar om alle code te promoten naar productie en [maken](create.md) aanbevelingen voor levende producten.
+   Nu u de inzameling van gedragsgegevens in productie hebt opgesteld, het malplaatje van productaanbevelingen, en geteste aanbevelingen gebruikend werkelijk verkoopgedrag hebt gewijzigd, bent u bereid om al code aan productie te bevorderen en [ ](create.md) levende productaanbevelingen tot stand te brengen.

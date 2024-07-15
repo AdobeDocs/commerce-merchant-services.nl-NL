@@ -11,25 +11,25 @@ ht-degree: 0%
 
 # Storefront-widgets
 
-Wanneer u installeert [!DNL Live Search] Er staan twee nieuwe widgets in uw winkel:
+Wanneer u [!DNL Live Search] installeert, krijgt u twee nieuwe widgets op uw storefront:
 
-- [!DNL Live Search] [widget pop-up](storefront-popover.md) Dit is het vak dat wordt geopend onder het zoekveld dat de zoekresultaten bevat.
-- [Widget pagina met productaanbiedingen](plp-styling.md) (PLP) biedt ondersteuning voor facetten en synoniemen en biedt een pagina met doorzoekbare producten. De widget wordt geïnstalleerd en ingeschakeld in Live zoeken 4.0.0+.
+- [!DNL Live Search] [ popover widget ](storefront-popover.md) is de doos die onder het onderzoeksgebied opent dat de onderzoeksresultaten bevat.
+- [ Van de Lijst van het Product van de Pagina widget ](plp-styling.md) (PLP) verstrekt een doorzoekbare pagina van de productlijst met facetten en synoniem steun. De widget wordt geïnstalleerd en ingeschakeld in Live zoeken 4.0.0+.
 
 U kunt de vormgeving van deze widgets aanpassen aan de stijl en merkrichtlijnen van uw bedrijf.
 
 ## Pop-upwidget Live zoeken
 
-Wanneer u begint in het zoekvak van de Commerce-winkel te typen, [!DNL Live Search] reageert op voorgestelde producten en een miniatuurafbeelding van de bovenste zoekresultaten in het dialoogvenster [widget pop-up](storefront-popover.md).
+Wanneer u begint in het de opslagonderzoekvakje van Commerce te typen, [!DNL Live Search] antwoordt met voorgestelde producten en een duimnagelbeeld van hoogste onderzoeksresultaten in [ popover widget ](storefront-popover.md).
 
-![Pop-overwidget](assets/ls-search-popover.png)
+![ Popover widget ](assets/ls-search-popover.png)
 
-Ga voor meer informatie over de widget voor pop-ups en over het aanpassen van de widget voor uw winkel naar [[!DNL Storefront Popover]](storefront-popover.md).
+Zie [[!DNL Storefront Popover]](storefront-popover.md) voor meer informatie over de widget voor pop-ups en over het aanpassen van de widget voor uw winkel.
 
 ## Widget pagina met productaanbiedingen
 
 Wanneer u klikt om alle resultaten van de winkelpopover te zien, toont de pagina van de productaanbieding widget eigenschappen u kunt gebruiken om uw onderzoek voortdurend te verfijnen.
 
-![Widget pagina met productaanbiedingen](assets/ls-plp.png)
+![ de lijst van het Product pagina widget ](assets/ls-plp.png)
 
-Ga voor meer informatie over de widget pagina met productaanbiedingen en over het aanpassen van de widget voor uw winkel naar [widget pagina met productaanbiedingen](plp-styling.md).
+Om meer over de product van de productlijst paginagidget en te leren hoe te om widget voor uw winkel aan te passen, zie [ product van de lijst voorzien pagina widget ](plp-styling.md).

@@ -1,9 +1,10 @@
 ---
 title: Gegevensvolume en verzendingstijd schatten
-description: "Leer het gegevensvolume en de transmissietijd te schatten die voor [!DNL data export] -hulpprogramma voor het synchroniseren van feed-gegevens tussen Adobe Commerce en verbonden services."
+description: Leer om het gegevensvolume en de transmissietijd te schatten die voor het  [!DNL data export]  wordt vereist hulpmiddel om voedergegevens tussen Adobe Commerce en de verbonden diensten te synchroniseren.
 role: Admin, Developer
 recommendations: noCatalog
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+exl-id: 51ea98fd-cf90-44bd-a639-992bfc7f3eca
+source-git-commit: 42a9ea0f62f35db451cd3e780adf530d0699a638
 workflow-type: tm+mt
 source-wordcount: '599'
 ht-degree: 0%
@@ -22,7 +23,7 @@ Standaard verwerkt het gereedschap voor het exporteren van gegevens gegevens geg
 Gebaseerd op de standaardconfiguratie, beïnvloeden de volgende factoren de tijd van de gegevenstransmissie tijdens synchronisatie.
 
 - Het aantal threads is ingesteld op 1 (standaard)
-- Batchgrootte is ingesteld op _100_ voor alle feeds, behalve voor de `prices` diervoeder, waar het _500_.
+- De grootte van de partij wordt geplaatst aan _100_ voor alle voer behalve het `prices` voer, waar het aan _500_ wordt geplaatst.
 - De acceptatiesnelheid van het voer is 2 aanvraag per seconde.
 - Alle producten worden toegewezen aan alle bestaande websites
 - Voor de prijsberekeningsscenario&#39;s zijn aan alle producten speciale en gegroepeerde prijzen toegewezen
@@ -49,4 +50,3 @@ Gebruik de waarden en formules in de volgende tabel om het gegevensvolume en de 
 | Categoriemachtigingen | Aantal van alle Toestemmingen van de Categorie + 4 reserveverslagen (CP): 10000 | CP = 10000 | 10000 / Batchgrootte (100) = 100 verzoeken | (100 verzoeken * 0,5 seconden per verzoek) / 60 = 0,8 minuten (50 seconden) |
 | Status voorraad | Producten (P): 10000, Voorraadproducten toegewezen aan (S): 5 (ervan uitgaande dat elk product aan elke voorraad wordt toegewezen) | P * S = 50000 | 50000 / Batchgrootte (100) = 500 verzoeken | (500 verzoeken * 0,5 seconden per aanvraag) / 60 = 4,2 minuten |
 | Verkooporders | Alle transactiebestanden (inclusief facturen, verzendingen, enzovoort) (SO): 10000 | SO = 10000 | 10000 / Batchgrootte (100) = 100 verzoeken | (100 verzoeken * 0,5 seconden per verzoek) / 60 = 0,8 minuten (50 seconden) |
-

@@ -1,22 +1,22 @@
 ---
 title: App-instelling
-description: Stel de [!DNL Store Assist] app voor het beheer van end-to-end workflows voor de afhandeling van winkels en processen voor het online kopen van orders.
+description: Opstelling de  [!DNL Store Assist]  app om de werkschema's en processen van de archiefvervulling van begin tot eind te beheren voor het online kopen, neem in opslagorden op.
 level: Intermediate
 role: Admin
 feature: Shipping/Delivery, Configuration, Tools and External Services
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
 source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '619'
 ht-degree: 0%
 
 ---
 
 # Setup van app
 
-Store Assist is een afhandeling-als-dienst (FaaS) platform app aangedreven door de Technologieën van de Handel van de Marm. De app biedt in-store uitvoeringsmogelijkheden voor verwerking [!DNL buy online, pick up in store] (BOPIS) orders. Met de Hulp van de Opslag, kunnen de opslagvennoten zien welke punten klanten bestelde, de correcte punten sneller plukken, en opstelling vervulde orden voor de ophaallevering in-store of curbside aan klanten.
+Store Assist is een FaaS-platform (fulfillment-as-a-service) dat wordt aangedreven door Walmart Commerce Technologies. De app biedt in-store uitvoeringsmogelijkheden voor het verwerken van [!DNL buy online, pick up in store] (BOPIS)-orders. Met de Hulp van de Opslag, kunnen de opslagvennoten zien welke punten klanten bestelde, de correcte punten sneller plukken, en opstelling vervulde orden voor de ophaallevering in-store of curbside aan klanten.
 
-De app Store Assist ontvangt alle bestelling- en klantgegevens, van bestellingsgegevens tot ophaaltijden en stelt de gegevens beschikbaar voor het online opslaan van partners via mobiele apparaten. De app bevat [!UICONTROL Pick], [!UICONTROL Stage], [!UICONTROL Handoff], en [!UICONTROL Orders] modules om Winkelgeassocieerde leden te helpen bij het uitvoeren van bijvoorbeeld de volgende activiteiten:
+De app Store Assist ontvangt alle bestelling- en klantgegevens, van bestellingsgegevens tot ophaaltijden en stelt de gegevens beschikbaar voor het online opslaan van partners via mobiele apparaten. De app bevat [!UICONTROL Pick] -, [!UICONTROL Stage] -, [!UICONTROL Handoff] - en [!UICONTROL Orders] -modules om Winkelkoppelingen te helpen bij het uitvoeren van bijvoorbeeld de volgende uitvoeringsactiviteiten:
 
 - Wijs leveringsdatums en -tijden voor bestellingen toe.
 - Ontvang meldingen van klanten wanneer ze aankomen voor het ophalen van bestellingen.
@@ -25,52 +25,52 @@ De app Store Assist ontvangt alle bestelling- en klantgegevens, van bestellingsg
 
 >[!NOTE]
 >
->Meer informatie over de app Winkelassistentie vindt u in het dialoogvenster [Workflows voor afhandeling van winkelassistentie](store-assist-modules.md) onderwerp.
+>Leer meer over de Hulp app van de Opslag door het [ bijstaan van de Opslag werkschema&#39;s van de vervulling ](store-assist-modules.md) onderwerp te herzien.
 
 ## De app Store Assist configureren
 
 Voor de app Store Assist zijn twee soorten configuraties vereist:
 
-- Adobe Commerce Admin-systeeminstellingen naar [gebruikersaccounts beheren, gebruikersrollen, bronmachtigingen](user-setup.md), en [het maken en modelleren van selecties van auto&#39;s die tijdens het inchecken beschikbaar zijn voor klanten](check-in-experience-setup.md).
+- Adobe Commerce Admin systeemmontages om [ gebruikersrekeningen, gebruikersrollen, middeltoestemmingen ](user-setup.md) te beheren, en [ de auto maakt en modelselecties beschikbaar aan klanten tijdens het controle-in proces ](check-in-experience-setup.md).
 
 - De configuratie-instellingen aan de voorzijde om de interface van de app Store Assist en andere instellingen aan te passen, zoals:
 
-   - **De app Winkelassistentie plaatsen**—Pas de gebruikersinterface van de app aan met het bedrijfslogo en de kleuren.
+   - **merk de Winkel bijstaat app** - pas het toepassingsgebruikersinterface met uw bedrijfsembleem en kleuren aan.
 
-   - **De standaardinstructies bijwerken**—Pas de instructies in de modules Winkel bijstaan bij keuze, Werkgebied, Afhandeling en Volgorde aan om Winkelgeassocieerde leden door elke stap van de uitvoeringsworkflow voor uw bedrijf te begeleiden.
+   - **werk de standaardinstructies** bij - pas de instructies in de Slag bij Keuze, het Stadium, Handoff, en de modules van de Orde aan om de Vennoten van de Opslag door elke stap van het uitvoeringswerkschema voor uw bedrijf te begeleiden.
 
-   - **Lokalisatie**—Selecteer de beschikbare taal voor de app. Kies de datum- en tijdnotatie en selecteer de standaardmaateenheden en de standaardvaluta.
+   - **Localization** - selecteer de beschikbare taal voor app. Kies de datum- en tijdnotatie en selecteer de standaardmaateenheden en de standaardvaluta.
 
-   - **Inactiviteitstijd**—Geef op hoeveel tijd de toepassing inactief moet zijn voordat deze zich afmeldt.
+   - **tijd van de Inactiviteit** - specificeer de hoeveelheid tijd dat app inactief moet zijn alvorens het zich uitlogt.
 
-   - **Annulering uit de winkel**—Specificeer of de orden van de opslag kunnen annuleren en welke rollen annuleringstoestemmingen hebben
+   - **Annulering van de opslag** - specificeer of de orden van de opslag kunnen worden geannuleerd en welke rollen annuleringstoestemmingen hebben
 
-   - **Opschonen van bestellingen, venster**—Opgeven hoe lang het verleden is [Geschatte levertijd voor afhalen](enable-general.md#delivery-method-title-configuration) dat een geplakte order in ophaling alvorens wordt herbevolkt-bijvoorbeeld, drie dagen blijft. De standaardwaarde is zeven dagen. Als deze configuratie is ingeschakeld, wordt de volgorde automatisch geannuleerd wanneer deze tijd verloopt. De items worden opnieuw opgeslagen en de verkoper ontvangt een annuleringsbericht.
+   - **Opschoonvenster van de Orde** - specificeer hoe lang voorbij de [ Geschatte Tijd van het Lood van de Bestelwagen ](enable-general.md#delivery-method-title-configuration) dat een geplakte orde in het opvoeren alvorens wordt herbevolkt-voor voorbeeld, drie dagen blijft. De standaardwaarde is zeven dagen. Als deze configuratie is ingeschakeld, wordt de volgorde automatisch geannuleerd wanneer deze tijd verloopt. De items worden opnieuw opgeslagen en de verkoper ontvangt een annuleringsbericht.
 
    - Alles aanpassen in app-instructies (kiezen, opvoeren, afleveren).
 
-   - **Pictogrammen**—Specificeer of om een duw bericht te verzenden om het plukken proces te beginnen nadat een klant een orde plaatst.
+   - **het Schrappen berichten** - specificeer of om een duw bericht te verzenden om het plukken proces te beginnen nadat een klant een orde plaatst.
 
-   - **Meldingen inchecken**—Geef op of u een pushmelding wilt verzenden tijdens het inchecken van bestellingen- na inchecken, nadat de wachttijd van de klant een bepaalde periode overschrijdt. Of schakel de melding uit.
+   - **Controle in berichten** - specificeer of om een duw bericht tijdens het controle proces voor orde te verzenden - na controle-binnen, nadat de klant tijd wacht een gespecificeerde tijdspanne overschrijdt. Of schakel de melding uit.
 
-   - **Handje-uit-proces**—Schakel optionele processen in wanneer Store Associate bestelling aan de klant levert, bijvoorbeeld een handtekening van de klant vereisen of de koppeling vragen om de klant-id te controleren.
+   - **Handje van proces** - laat facultatieve processen toe wanneer de Geassocieerde Opslag orde aan klant levert, bijvoorbeeld een klantenhandtekening vereist of de vennoot ertoe aanzet om klantenidentiteitskaart te controleren.
 
-   - **Afkeuring van item inschakelen bij afbreken**—Toestaan dat klanten bestellingen retourneren of annuleren tijdens het afhandelen van bestellingen.
+   - **laat puntafstoting op aflevering** toe - sta klanten toe om orde punten tijdens ordeafhandeling terug te keren of te annuleren.
 
-  Het werk met het team van de Diensten van de Cliënt van de Technologieën van de Handel van de Handel van de Mara om frontend configuratie voor de Hulp App van de Winkel te voltooien.
+  Werk met het Walmart team van de Diensten van de Cliënt van de Technologieën van Commerce om frontend configuratie voor de Hulp App van de Winkel te voltooien.
 
 ## Downloaden en installeren van apps
 
 Nadat de app Store Assist is ingesteld en geconfigureerd, kunnen Store Associates vanaf hun mobiele apparaten de app Store Assist downloaden, installeren en aanmelden bij de app Store Assist.
 
-- Controleren of het mobiele apparaat voldoet aan de [hardware- en softwarevereisten](solution-requirements.md#store-assist-app-requirements) voor de Oplossing van de Behandeling van de Opslag.
+- Verifieer dat het mobiele apparaat aan de [ hardware en softwarevereisten ](solution-requirements.md#store-assist-app-requirements) voor de oplossing van de Afhandeling van de Opslag voldoet.
 
-- Download de app Store Assist vanuit de [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id1609281539){target="_blank"} or the [Google Play store](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target="_blank"}.
+- Download de Opslag bijstaat app van [ Apple App Store ](https://apps.apple.com/us/app/store-assist-by-walmart/id1609281539) {target="_blank"} of de [ opslag van Google Play ](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist) {target="_blank"}.
 
 - Voor het aanmelden bij Store Associates is de volgende informatie vereist:
 
-   - **[!UICONTROL Company name]** gekoppeld aan de account Winkelassistentie
+   - **[!UICONTROL Company name]** die is gekoppeld aan het account Winkelassistentie
 
-   - **Accountgegevens voor Winkelassistentie**—gebruikersnaam en wachtwoord voor hun account.
+   - **- gebruikersbenaming en wachtwoordgeloofsbrieven voor hun rekening van de Bewaarplaats van 0} bijstaat.**
 
-  Een Adobe Commerce-beheerder kan [!DNL Store Assist app] gebruikersaccounts voor alle opslaglocaties die [Ophalen in winkel](merchant-store-configuration.md#pickup-location-configuration) ingeschakeld in de beheerinstellingen voor winkels.
+  Een beheerder van Adobe Commerce kan [!DNL Store Assist app] gebruikersrekeningen voor alle opslagplaatsen tot stand brengen en beheren die [ In-Store Bestelwagen ](merchant-store-configuration.md#pickup-location-configuration) hebben die in de montages van de Bewaarplaatsen wordt toegelaten Admin.

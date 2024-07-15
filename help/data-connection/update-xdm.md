@@ -1,6 +1,6 @@
 ---
-title: Tijdlijngebeurtenisschema's bijwerken voor gegevensverwerking bij handel
-description: Leer hoe te om een schema, dataset, en gegevensstroom tot stand te brengen om tijdreeksgebeurtenisgegevens voor de gegevensopname van de Handel te verzamelen en te verzenden.
+title: Gebeurtenisschema's uit tijdreeks bijwerken voor Commerce-gegevensinsluiting
+description: Leer hoe te om een schema, dataset, en gegevensstroom tot stand te brengen om tijdreeksgebeurtenisgegevens voor de gegevensopname van Commerce te verzamelen en te verzenden.
 exl-id: 4401bbe7-1ccc-4349-a998-9e9ee9db590f
 role: Admin, Developer
 feature: Personalization, Integration
@@ -11,18 +11,18 @@ ht-degree: 0%
 
 ---
 
-# Tijdlijngebeurtenisschema&#39;s bijwerken voor gegevensverwerking bij handel
+# Gebeurtenisschema&#39;s uit tijdreeks bijwerken voor Commerce-gegevensinsluiting
 
-Een van de [onboarding stappen](overview.md#onboarding-steps) voor het gebruik van de [!DNL Data Connection] de extensie heeft toegang tot de werkruimte van de gegevensstroom en [een gegevensstroom maken](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) specifiek voor Adobe Commerce. Wanneer u die gegevensstroom creeert, moet u ook een schema selecteren dat de gegevens beschrijft u van plan bent in te voeren. Dat schema moet handels-specifieke gebiedsgroepen omvatten.
+Één van [ op het instappen stappen ](overview.md#onboarding-steps) voor het gebruiken van de [!DNL Data Connection] uitbreiding moet tot de werkruimte van de gegevensstroom toegang hebben en [ creeert een datastream ](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) die voor Adobe Commerce specifiek is. Wanneer u die gegevensstroom creeert, moet u ook een schema selecteren dat de gegevens beschrijft u van plan bent in te voeren. Dat schema moet handels-specifieke gebiedsgroepen omvatten.
 
 In dit artikel worden de veldgroepen weergegeven die uw schema moet opnemen om de volgende tijdreeksgegevens van de Adobe Commerce-gebeurtenissen te kunnen verzamelen:
 
-- [Gedrag](events.md) - Omvat storefront, profiel, onderzoek, en B2B gebeurtenissen.
-- [Achterkantoor](events-backoffice.md) - Bevat de status van de order en profielgebeurtenissen.
+- [ Gedrag ](events.md) - omvat storefront, profiel, onderzoek, en gebeurtenissen B2B.
+- [ achterbureau ](events-backoffice.md) - omvat ordestatus en profielgebeurtenissen.
 
-Meer informatie over [tijdreeksgegevens](data-ingestion.md).
+Leer meer over [ gegevens van de tijdreeksen ](data-ingestion.md).
 
-Meer informatie over de [grondbeginselen van de schemacompositie](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html).
+Leer meer over de [ grondbeginselen van schemacompositie ](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html).
 
 ## Het schema van de update met het gedrag van de tijdreeks en de gegevens van de achterkantoorgebeurtenis
 
@@ -30,11 +30,11 @@ In deze sectie leert u hoe u uw bestaande schema bijwerkt of een schema maakt om
 
 >[!NOTE]
 >
->Zie [tijdreeksprofielgebeurtenisgegevens](#time-series-profile-event-data) voor meer informatie over het toevoegen van profielspecifieke velden.
+>Zie {de gebeurtenisgegevens van het 0} tijdreeksenprofiel ](#time-series-profile-event-data) leren hoe te om profiel-specifieke gebieden toe te voegen.[
 
-1. Als u nog geen schema hebt, [maken](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#create) met de klasse ingesteld op **Experience Event**.
+1. Als u reeds geen schema hebt, [ creeer ](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#create) met de klasse die aan **wordt geplaatst de Gebeurtenis van de Ervaring**.
 
-1. [Toevoegen](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#add-field-groups) de volgende handel-specifieke gebiedsgroepen (of geef uw bestaand schema uit en voeg deze gebiedsgroepen toe):
+1. [ voeg ](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#add-field-groups) de volgende Commerce-Specifieke gebiedsgroepen toe (of geef uw bestaand schema uit en voeg deze gebiedsgroepen toe):
 
    - Zoeken op site
    - Webpagina bezoeken
@@ -42,36 +42,36 @@ In deze sectie leert u hoe u uw bestaande schema bijwerkt of een schema maakt om
    - Referentietoetsen
    - Persoonlijke contactgegevens
    - Kanaaldetails
-   - Handelsgegevens
+   - Commerce-gegevens
    - Adobe Analytics ExperienceEvent Commerce (als u gegevens naar Adobe Analytics wilt verzenden)
 
    >[!NOTE]
    >
-   > Stel geen specifieke handelsgroepen in als `Primary identity`. Hierbij wordt het veld naar wens geïdentificeerd en het Experience Platform verwacht dat veld in elke gebeurtenis. Als dat veld ontbreekt, mislukt het invoeren van gegevens.
+   > Stel geen Commerce-specifieke veldgroepen in als `Primary identity` . Hierbij wordt het veld naar wens geïdentificeerd en het Experience Platform verwacht dat veld in elke gebeurtenis. Als dat veld ontbreekt, mislukt het invoeren van gegevens.
 
-   Uw schema bevat nu Commerce-specific gebiedsgroepen zodat de tijdreeksgegevens die van de Handel worden verzameld [gedrag](events.md) en [achterkantoor](events-backoffice.md) gebeurtenissen worden weergegeven in het schema.
+   Uw schema bevat nu Commerce-Specifieke gebiedsgroepen zodat de gegevens van de tijdreeksen die van Commerce [ worden verzameld gedrag ](events.md) en [ achterbureau ](events-backoffice.md) gebeurtenissen in het schema worden vertegenwoordigd.
 
-1. [Inschakelen](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#profile) het schema voor Profiel.
+1. [ laat ](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#profile) het schema voor Profiel toe.
 
    Wanneer een schema voor Profiel wordt toegelaten, nemen om het even welke datasets die van dit schema worden gecreeerd aan Real-Time CDP deel, die gegevens uit ongelijksoortige bronnen samenvoegt om een volledige mening van elke klant te construeren.
 
-1. [Een gegevensset maken](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) gebaseerd op het schema dat u hebt gemaakt of bijgewerkt.
+1. [ creeer een dataset ](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) die van het schema wordt gebaseerd u creeerde of bijgewerkt.
 
    Een dataset is een opslag en beheersconstructie voor een inzameling van gegevens, typisch een lijst die een schema (kolommen) en gebieden (rijen) bevat. Datasets bevatten ook metagegevens die verschillende aspecten van de gegevens beschrijven die ze opslaan.
 
-1. [Een gegevensstroom maken](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) en selecteer het schema dat de handel-specifieke gebiedsgroepen en de overeenkomstige dataset bevat.
+1. [ creeer een gegevensstroom ](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) en selecteer het schema dat de Commerce-Specifieke gebiedsgroepen en de overeenkomstige dataset bevat.
 
    De gegevensstroom door:sturen de verzamelde gegevens aan de dataset. De gegevens worden vertegenwoordigd in de dataset die op het geselecteerde schema wordt gebaseerd.
 
-1. **Beta** (Optioneel) U kunt aangepaste kenmerken gebruiken als u aangepaste gegevens van Office-gebeurtenissen van uw instantie Commerce wilt doorgeven aan het Experience Platform. Deze functie is in bèta. Als u wilt deelnemen aan het bètaprogramma, verzendt u een aanvraag naar [dataconnection@adobe.com](mailto:dataconnection@adobe.com). Neem het volgende op in uw verzoek:
+1. **Beta** (Facultatief) u douanekenmerken kunt gebruiken als u de gegevens van de douanebackbureaugebeurtenis van uw instantie van Commerce aan het Experience Platform wilt overgaan. Deze functie is in bèta. Als u zich bij het bètaprogramma zou willen aansluiten, verzend een verzoek aan [ dataconnection@adobe.com ](mailto:dataconnection@adobe.com). Neem het volgende op in uw verzoek:
 
-   - Uw [Adobe-id](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255). Bijvoorbeeld `organization_id@AdobeOrg`.
+   - Uw [ Adobe Org identiteitskaart ](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255). Bijvoorbeeld `organization_id@AdobeOrg` .
    - Lijst met aangepaste kenmerken op bestelniveau.
    - Lijst met kenmerken voor het niveau Volgitem.
 
    Het Adobe Commerce-team zal contact met u opnemen voor meer informatie en volgende stappen.
 
-Met de schema&#39;s, datasets, en gegevensstromen die voor gedrags en achterkantoorgegevens worden gevormd, kunt u [vormen](connect-data.md#data-collection) uw instantie van de Handel om die gegevens te verzamelen en te verzenden naar het Experience Platform.
+Met de schema&#39;s, datasets, en gegevensstromen die voor gedrag en achterbureaugegevens worden gevormd, kunt u [ ](connect-data.md#data-collection) uw instantie van Commerce vormen om die gegevens te verzamelen en te verzenden naar het Experience Platform.
 
 Raadpleeg de volgende sectie voor meer informatie over het profiel van uw klant.
 
@@ -83,11 +83,11 @@ De gebeurtenisgegevens van het tijdreeksprofiel worden gegenereerd uit de volgen
 - [` accountUpdated`](events-backoffice.md#accountupdated)
 - [` accountDelette`](events-backoffice.md#accountdeleted)
 
-Als u de gegevens van de het profielgebeurtenis van uw klant in het Experience Platform wilt opnemen, kunt u uw bestaand schema van de Handel bijwerken en de zelfde reeds gevormde gegevensstroom gebruiken, of u kunt een profiel-specifieke gegevensstroom en schema tot stand brengen. Dat besluit is gebaseerd op het gegevensbeheer van uw bedrijf. De volgende twee secties lopen u door beide gevallen.
+Als u de gegevens van de het profielgebeurtenis van uw klant in het Experience Platform wilt opnemen, kunt u uw bestaand schema van Commerce bijwerken en de reeds gevormde zelfde gegevensstroom gebruiken, of u kunt een profiel-specifieke gegevensstroom en schema tot stand brengen. Dat besluit is gebaseerd op het gegevensbeheer van uw bedrijf. De volgende twee secties lopen u door beide gevallen.
 
 ### Verzend tijdreeksprofielgebeurtenisgegevens naar Experience Platform met behulp van uw bestaande gegevensstroom
 
-Als u een tijdreeks wilt toevoegen [server-side profielgebeurtenisgegevens](events-backoffice.md#customer-profile-events-server-side) aan uw bestaande gegevensstroom van de Handel, voeg toe `Demographic Details` veldgroep aan uw schema. Uw schema bevat nu de volgende handel-specifieke gebiedsgroepen:
+Als u tijdreeks [ server-zijprofielgebeurtenisgegevens ](events-backoffice.md#customer-profile-events-server-side) aan uw bestaande gegevensstroom van Commerce wilt toevoegen, voeg de `Demographic Details` gebiedsgroep aan uw schema toe. Uw schema bevat nu de volgende Commerce-specifieke veldgroepen:
 
 - Zoeken op site
 - Webpagina bezoeken
@@ -95,37 +95,37 @@ Als u een tijdreeks wilt toevoegen [server-side profielgebeurtenisgegevens](even
 - Referentietoetsen
 - Persoonlijke contactgegevens
 - Kanaaldetails
-- Handelsgegevens
+- Commerce-gegevens
 - Adobe Analytics ExperienceEvent Commerce (als u gegevens naar Adobe Analytics wilt verzenden)
-- Nieuw: **Demografische details**
+- Nieuw: **Demografische Details**
 
-Met toevoeging van de `Demographic Details` de gebiedsgroep in uw bestaand schema van de Handel, wordt de dataset en de gegevensstroom reeds verbonden aan uw schema van de Handel gebruikt voor deze gegevens van het tijdreeksprofiel.
+Als u de veldgroep `Demographic Details` toevoegt aan uw bestaande Commerce-schema, worden de gegevensset en de gegevensstroom die al aan uw Commerce-schema zijn gekoppeld, gebruikt voor deze tijdreeksprofielgegevens.
 
 ### Gebeurtenisgegevens van tijdreeksprofiel naar Experience Platform verzenden in een aparte gegevensstroom
 
-Als u wilt toevoegen [server-side profielgebeurtenisgegevens](events-backoffice.md#customer-profile-events-server-side) Voer de volgende stappen uit voor een nieuwe profielspecifieke gegevensstroom en een nieuw schema.
+Als u [ server-zijprofielgebeurtenisgegevens ](events-backoffice.md#customer-profile-events-server-side) aan een nieuwe profiel-specifieke gegevensstroom en schema wilt toevoegen, voltooi de volgende stappen.
 
-1. [Maken](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#create) een schema en stel de klasse in op **Experience Event**.
+1. [ creeer ](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#create) een schema en plaats de klasse aan **Gebeurtenis van de Ervaring**.
 
-1. [Toevoegen](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#add-field-groups) de volgende profielspecifieke veldgroepen:
+1. [ voeg ](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#add-field-groups) de volgende profiel-specifieke gebiedsgroepen toe:
 
    - Demografische details
    - Persoonlijke contactgegevens
    - Kanaaldetails
-   - Handelsgegevens
+   - Commerce-gegevens
 
-1. [Inschakelen](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#profile) het schema voor Profiel.
+1. [ laat ](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html#profile) het schema voor Profiel toe.
 
    Wanneer een schema voor Profiel wordt toegelaten, nemen om het even welke datasets die van dit schema worden gecreeerd aan Real-Time CDP deel, die gegevens uit ongelijksoortige bronnen samenvoegt om een volledige mening van elke klant te construeren.
 
-1. [Een gegevensset maken](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) gebaseerd op het schema dat u hebt gemaakt.
+1. [ creeer een dataset ](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) die van het schema wordt gebaseerd dat u creeerde.
 
    Een dataset is een opslag en beheersconstructie voor een inzameling van gegevens, typisch een lijst die een schema (kolommen) en gebieden (rijen) bevat. Datasets bevatten ook metagegevens die verschillende aspecten van de gegevens beschrijven die ze opslaan.
 
-1. [Een gegevensstroom maken](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) en selecteer het schema XDM dat de handel-specifieke gebiedsgroepen en de overeenkomstige dataset bevat.
+1. [ creeer een gegevensstroom ](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) en selecteer het schema XDM dat de Commerce-Specifieke gebiedsgroepen en de overeenkomstige dataset bevat.
 
    De gegevensstroom door:sturen de verzamelde gegevens aan de dataset. De gegevens worden vertegenwoordigd in de dataset die op het geselecteerde schema wordt gebaseerd.
 
-Met de schema&#39;s, datasets, en gegevensstromen die voor de gegevens van het klantenprofiel worden gevormd, kunt u [vormen](connect-data.md#data-collection) uw instantie van de Handel om die gegevens te verzamelen en te verzenden naar Experience Platform.
+Met de schema&#39;s, datasets, en gegevensstromen die voor de gegevens van het klantenprofiel worden gevormd, kunt u [ ](connect-data.md#data-collection) uw instantie van Commerce vormen om die gegevens te verzamelen en te verzenden naar Experience Platform.
 
-Als u een schema, gegevensset en gegevensstroom voor profielrecordgegevens wilt maken, raadpleegt u [profielrecordgegevens naar het Experience Platform verzenden](profile-data.md).
+Om een schema, dataset, en gegevensstroom voor profielverslaggegevens tot stand te brengen, zie [ profielrecordgegevens naar het Experience Platform ](profile-data.md) verzenden.

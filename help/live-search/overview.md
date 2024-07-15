@@ -1,5 +1,5 @@
 ---
-title: Wat is [!DNL Live Search]?
+title: Wat is  [!DNL Live Search]?
 description: "[!DNL Live Search] van Adobe Commerce biedt een snelle, relevante en intuïtieve zoekervaring."
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
@@ -12,9 +12,9 @@ ht-degree: 0%
 
 # Wat is [!DNL Live Search]?
 
-[!DNL Live Search] is een functie die de standaardzoekmogelijkheden in Adobe Commerce vervangt. De [!DNL Live Search] wordt geïnstalleerd met Composer en maakt verbinding met uw [!DNL Commerce] opslaan naar de [Commerce Services Connector](../landing/saas.md). Wanneer het wordt gevormd, wordt het standaardonderzoekstekstgebied vervangen met [!DNL Live Search] tekstveld. [!DNL Live Search] Hiermee installeert u ook de widget PLOP (Product Listing Page), die bij het bladeren in zoekresultaten robuuste filtermogelijkheden biedt.
+[!DNL Live Search] is een functie die de standaardzoekmogelijkheden in Adobe Commerce vervangt. De [!DNL Live Search] eigenschap wordt geïnstalleerd met Composer en verbindt uw [!DNL Commerce] opslag met de [ Schakelaar van de Diensten van Commerce ](../landing/saas.md). Wanneer dit is geconfigureerd, wordt het standaardtekstveld voor zoekopdrachten vervangen door het tekstveld [!DNL Live Search] . [!DNL Live Search] installeert ook de widget pagina met productlijsten (Product Listing Page, PLP). Deze widget biedt robuuste filtermogelijkheden voor het bladeren in zoekresultaten.
 
-Met [!DNL Live Search]kunt u:
+Met [!DNL Live Search] kunt u:
 
 - Creëer zinvolle zoekervaringen om kopers te helpen bij het vinden van wat ze willen, zo weinig mogelijk.
 - Profiteer van dynamische facettering op basis van AI en herrangschikking van zoekresultaten als reactie op winkelgedrag tijdens een sessie.
@@ -23,64 +23,64 @@ Met [!DNL Live Search]kunt u:
 
 >[!IMPORTANT]
 >
->Adobe Commerce biedt opties voor het zoeken naar sites. Controleer vóór de implementatie de [Grenzen en grenzen](boundaries-limits.md) informatie om ervoor te zorgen dat [!DNL Live Search] is geschikt voor uw bedrijfsbehoeften.
+>Adobe Commerce biedt opties voor het zoeken naar sites. Vóór implementatie, herzie de [ Grenzen en 1} informatie van Grens {om ervoor te zorgen dat [!DNL Live Search] geschikt voor uw bedrijfsbehoeften is.](boundaries-limits.md)
 
 ## Architectuur
 
-De Adobe Commerce-zijde van de architectuur bevat hosting van de zoekopdracht *Beheerder*, catalogusgegevens synchroniseren en de queryservice uitvoeren. Na [!DNL Live Search] is geïnstalleerd en geconfigureerd, begint Adobe Commerce met het delen van zoek- en catalogusgegevens met SaaS-services. Op dit moment kunnen Admin-gebruikers de zoekopdracht instellen, aanpassen en beheren [facetten](facets.md), [synoniemen](synonyms.md), en [handelsregels](category-merch.md).
+De kant van Adobe Commerce van de architectuur omvat het ontvangen van het onderzoek *Admin*, het synchroniseren van catalogusgegevens, en het runnen van de vraagdienst. Nadat [!DNL Live Search] is geïnstalleerd en geconfigureerd, wordt Adobe Commerce gestart met het delen van zoek- en catalogusgegevens met SaaS-services. Op dit punt, kunnen de gebruikers Admin opstelling, aanpassen en onderzoek [ facetten ](facets.md), [ synoniemen ](synonyms.md) beheren, en [ merchandising regels ](category-merch.md).
 
-![Live Search Data Flow](assets/ls-cs-data-flow.png)
+![ de Levende Stroom van Gegevens van het Onderzoek ](assets/ls-cs-data-flow.png)
 
 ## Snelle rondleiding
 
-Met de nadruk op snelheid, relevantie en gebruiksgemak, [!DNL Live Search] is een spelwisselaar voor zowel winkeliers als handelaren . Bekijk de volgende video en bekijk een snelle rondleiding van [!DNL Live Search] van de opslagplaats.
+Met de focus op snelheid, relevantie en gebruiksgemak is [!DNL Live Search] een gamewisselaar voor zowel kopers als handelaren. Bekijk de volgende video en bekijk een snelle rondleiding van [!DNL Live Search] vanuit de winkel.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418679?quality=12&learn=on)
 
-Voor een meer diepgaande video over het gebruiken van en het vormen van Levend Onderzoek, zie [Volledige demonstratie op [!DNL Live Search]](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration) onderwerp.
+Voor een meer diepgaande video over het gebruiken van en het vormen van Levend Onderzoek, zie [ Volledige Demonstratie op  [!DNL Live Search] ](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration) onderwerp.
 
 ### Zoeken terwijl u typt
 
-[!DNL Live Search] reageert met voorgestelde producten en een miniatuurafbeelding van de bovenste zoekresultaten in een [popup](storefront-popover.md) als type query&#39;s voor kopers in de [Zoeken](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) doos. De [productdetails](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) wordt weergegeven wanneer kopers op een voorgesteld of aanbevolen product klikken. A _Alles weergeven_ de koppeling in de voettekst van de pop-up geeft de pagina met zoekresultaten weer.
+[!DNL Live Search] antwoordt met gesuggereerde producten en een duimnagelbeeld van hoogste onderzoeksresultaten in a [ popover ](storefront-popover.md) als het type van kopers vragen in het [ Onderzoek ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) vakje. De ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) paginasvertoningen van het 0} productdetail {wanneer de kopers een gesuggereerd of gekenmerkt product klikken. [ A _Mening alle_ verbinding in footer van popover toont de pagina van onderzoeksresultaten.
 
-[!DNL Live Search] retourneert de resultaten &quot;search as you type&quot; voor een query van twee of meer tekens. Voor een gedeeltelijke overeenkomst, is het maximumaantal karakters per woord 20. Het aantal karakters in de vraag is niet configureerbaar. De popover bevat de`name`, `sku`, en `category_ids` velden.
+[!DNL Live Search] retourneert de resultaten &quot;search as you type&quot; voor een query van twee of meer tekens. Voor een gedeeltelijke overeenkomst, is het maximumaantal karakters per woord 20. Het aantal karakters in de vraag is niet configureerbaar. De popover bevat de velden `name` , `sku` en `category_ids` .
 
-![Voorbeeld van winkel - zoeken terwijl u typt](assets/storefront-search-as-you-type.png)
+![ storefront van het Voorbeeld - onderzoek aangezien u ](assets/storefront-search-as-you-type.png) typt
 
 ### Alle zoekresultaten weergeven
 
-Als u alle producten wilt weergeven die door de query &quot;search as you type&quot; worden geretourneerd, klikt u op _Alles weergeven_ in de voettekst van de pop-up.
+Om van alle producten een lijst te maken die door &quot;onderzoek aangezien u&quot;vraag typt, klik _Mening allen_ in footer van popover.
 
-![Voorbeeld van een winkel - prijsfactoren](assets/storefront-view-all-search-results.png)
+![ de storefront van het Voorbeeld - prijsfacetten ](assets/storefront-view-all-search-results.png)
 
 ### Gefilterde zoekopdracht met facetten
 
-Bij gefilterde zoekopdracht worden meerdere afmetingen van kenmerkwaarden gebruikt, of [facetten](facets.md), als zoekcriteria. De selectie van filters wordt gedefinieerd door de handelaar en verandert afhankelijk van de geretourneerde producten, waarbij de meest gebruikte facetten boven aan de lijst worden vastgezet.
+Het gefiltreerde onderzoek gebruikt veelvoudige afmetingen van attributenwaarden, of [ facetten ](facets.md), als onderzoekscriteria. De selectie van filters wordt gedefinieerd door de handelaar en verandert afhankelijk van de geretourneerde producten, waarbij de meest gebruikte facetten boven aan de lijst worden vastgezet.
 
-Facetten gebruiken als URL-parameters:`http://yourwebsite.com?color=red`en de resultaten van de filters Live Search op basis van deze kenmerkwaarden.
+Facets van het gebruik als parameters URL:`http://yourwebsite.com?color=red`, en Levende de filterresultaten van het Onderzoek die op deze attributenwaarden worden gebaseerd.
 
 ### Synoniemen
 
-[Synoniemen](synonyms.md) breid het bereik uit en verscherp de focus van query&#39;s door woorden op te nemen die anders zijn dan die in de catalogus. U kunt het synoniem woordenboek perfectioneren om consumenten betrokken te houden en op de weg aan aankoop.
+[ Synoniemen ](synonyms.md) breidt het bereik uit en verscherpt de nadruk van vragen door woordshoppers te omvatten zou kunnen gebruiken die van die in de catalogus verschillen. U kunt het synoniem woordenboek perfectioneren om consumenten betrokken te houden en op de weg aan aankoop.
 
 ### Handelsregels
 
-Merchandising [regels](rules.md) Vorm de het winkelen ervaring met als-dan verklaringen die logica en gebeurtenissen toevoegen aan onderzoek. U kunt producten eenvoudig verhogen of begraven voor een promotie, seizoen, of een andere periode.
+Het verhandelen [ regels ](rules.md) vorm de het winkelen ervaring met als-toen verklaringen die logica en gebeurtenissen aan onderzoek toevoegen. U kunt producten eenvoudig verhogen of begraven voor een promotie, seizoen, of een andere periode.
 
 ### Ondersteuning voor zoektermen
 
-[!DNL Live Search] supports Commerce [heroriëntering van zoektermen](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms). Gebruikers kunnen bijvoorbeeld zoeken naar een term zoals &quot;Verzendkosten&quot; en deze rechtstreeks doorsturen naar de pagina Verzendkosten.
+[!DNL Live Search] steunt Commerce [ herleidt van de onderzoekstermijn ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms). Gebruikers kunnen bijvoorbeeld zoeken naar een term zoals &quot;Verzendkosten&quot; en deze rechtstreeks doorsturen naar de pagina Verzendkosten.
 
 ## Componenten Live zoeken
 
-- [!DNL Live Search] [widget pop-up](storefront-popover.md) Dit is het vak dat wordt geopend onder het zoekveld dat de zoekresultaten bevat.
-- [Widget pagina met productaanbiedingen](plp-styling.md) (PLP) biedt ondersteuning voor facetten en synoniemen en biedt een pagina met doorzoekbare producten. De widget wordt geïnstalleerd en ingeschakeld in Live zoeken 4.0.0+.
-- (**Vervangen**) Zoekadapter was de voorloper van de PLP-widget en is geïnstalleerd met Live Search &lt; 4.0.0. Als u een versie van Live zoeken gebruikt die ouder is dan 4.0.0, raadt Commerce u aan een upgrade uit te voeren om de voordelen van de functies van de PLP-widget en toekomstige verbeteringen te kunnen genieten.
+- [!DNL Live Search] [ popover widget ](storefront-popover.md) is de doos die onder het onderzoeksgebied opent dat de onderzoeksresultaten bevat.
+- [ Van de Lijst van het Product van de Pagina widget ](plp-styling.md) (PLP) verstrekt een doorzoekbare pagina van de productlijst met facetten en synoniem steun. De widget wordt geïnstalleerd en ingeschakeld in Live zoeken 4.0.0+.
+- (**Vervangen**) de adapter van het Onderzoek was de voorloper aan PLP widget en geïnstalleerd met Levend Onderzoek &lt; 4.0.0. Als u een versie van Live zoeken gebruikt die ouder is dan 4.0.0, raadt Commerce u aan een upgrade uit te voeren om de voordelen van de functies van de PLP-widget en toekomstige verbeteringen te kunnen genieten.
 
 ## [!DNL Live Search] werkruimte
 
-De [!DNL Live Search] [werkruimte](workspace.md) is het gebied in Admin waar u vormt [!DNL Live Search] functies zoals synoniemen, facetten en Categorie Merchandising.
+[!DNL Live Search] [ werkruimte ](workspace.md) is het gebied in Admin waar u [!DNL Live Search] eigenschappen zoals synoniemen, facetten, en het Merchandising van de Categorie vormt.
 
 ## Gebeurtenissen
 
-[!DNL Live Search] gebruik [gebeurtenissen](events.md) om te berekenen [Intelligente handel](category-merch.md) en [prestaties](performance.md) dashboards. Eventing wordt voorzien van standaardimplementaties. Eventing voor hoofdloze winkelcentra moet handmatig worden ingeschakeld.
+[!DNL Live Search] gebruikt [ gebeurtenissen ](events.md) om [ Intelligente Merchandising ](category-merch.md) en [ prestaties ](performance.md) dashboards te berekenen. Eventing wordt voorzien van standaardimplementaties. Eventing voor hoofdloze winkelcentra moet handmatig worden ingeschakeld.

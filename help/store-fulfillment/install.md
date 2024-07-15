@@ -1,13 +1,13 @@
 ---
 title: Installatie
-description: "Installeer de [!DNL Store Fulfillment solution] voor een Adobe Commerce storefront met Composer for PHP."
+description: "Installeer  [!DNL Store Fulfillment solution]  voor een Adobe Commerce storefront gebruikend Composer voor PHP."
 role: Admin, Developer
 level: Intermediate
 feature: Shipping/Delivery, Install
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
 source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '666'
 ht-degree: 0%
 
 ---
@@ -15,15 +15,15 @@ ht-degree: 0%
 
 # Installatie
 
-Voltooi de eerste installatie van de [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] extensie in een niet-productieomgeving met een beheer van de wachtrij en caching geconfigureerd om uitzonderingsverwerking toe te staan. Zorg ervoor dat uw ontwikkelomgeving ontwikkeltools bevat voor de beste werkwijzen voor het werken en onderhouden van uw Adobe Commerce-instantie.
+Voltooi de eerste installatie van de extensie [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] in een niet-productieomgeving met de uitvoering van de wachtrij en het in cache plaatsen geconfigureerd voor de verwerking van uitzonderingen. Zorg ervoor dat uw ontwikkelomgeving ontwikkeltools bevat voor de beste werkwijzen voor het werken en onderhouden van uw Adobe Commerce-instantie.
 
 >[!TIP]
 >
->Voer een upgrade uit van de extensie Store Fulfillment voor Adobe Commerce op de locatie door het volgende te doen: [upgradeinstructies](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html) in de _Adobe Commerce Upgrade Guide_. Voor Adobe Commerce over cloud-infrastructuur raadpleegt u [Een extensie upgraden](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/extensions.html#upgrade-an-extension) in de *Handleiding voor handel in Cloud-infrastructuur*.
+>Bevorder de uitbreiding van de Afhandeling van de Opslag voor Adobe Commerce op gebouw door de [ verbeteringsinstructies ](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html) in de _Gids van de Verbetering van Adobe Commerce_ te volgen. Voor Adobe Commerce op wolkeninfrastructuur, zie [ bevorderen een uitbreiding ](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/extensions.html#upgrade-an-extension) in *Commerce op de Gids van de Infrastructuur van de Wolk*.
 
 ## Vereisten
 
-Controleer de [vereisten](solution-requirements.md) voor de Opslagoplossing van de Afhandeling van de Opslag en verzamel vereiste informatie alvorens u installeert of bevordert [!DNL Store Fulfillment] voor Adobe Commerce.
+Herzie de [ vereisten ](solution-requirements.md) voor de oplossing van de Afhandeling van de Opslag en verzamel vereiste informatie alvorens u installeert of bevordert de [!DNL Store Fulfillment] uitbreiding voor Adobe Commerce.
 
 Als u een pre-versie of bètaversie van de Store Fulfillment for Adobe Commerce-extensie hebt geïnstalleerd, gebruikt u de volgende opdracht om deze te verwijderen voordat u de huidige versie installeert.
 
@@ -34,19 +34,19 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 ## Installatievereisten
 
-- **Toegang tot de Opslag die door het softwarearchief van de Technologieën van de Handel van de Marm (ZIP) wordt verstrekt**—Tijdens het instapproces en het inschakelen van uw account werkt u samen met uw accountmanager om toegang te krijgen tot het installatiebestand voor de extensie Store Fulfillment.
+- **Toegang tot de Opslag die door het softwarearchief van de Technologieën van Commerce van het Spoor (.zip- dossier)** wordt ontvangen - tijdens het onboarding en enablement proces, werk met uw Manager van de Rekening om toegang tot het installatiedossier voor de uitbreiding van de Afhandeling van de Opslag te krijgen.
 
-- **Adobe Commerce-accountgegevens**-De installatie van de [!DNL Store Fulfillment] oplossing vereist een [[!DNL Commerce] account](https://docs.magento.com/user-guide/magento/magento-account.html){target="_blank"}. U hebt een account-id en gebruikersgegevens nodig met de toegang tot de [!DNL Adobe Commerce] project.
+- **de rekeningsinformatie van Adobe Commerce** - Installerend de [!DNL Store Fulfillment] oplossing vereist a [[!DNL Commerce]  rekening ](https://docs.magento.com/user-guide/magento/magento-account.html) {target="_blank"}. U hebt een account-id en gebruikersgegevens nodig met de toegang tot het [!DNL Adobe Commerce] -project door Eigenaar of Beheerder.
 
-- Voor [!DNL Adobe Commerce] bij cloudinfrastructuurprojecten moeten softwareinstallatieprogramma&#39;s beheerderstoegang tot het Cloud-project hebben. Zie [Gebruikerstoegang beheren](https://devdocs.magento.com/cloud/project/user-admin.html).
+- Voor [!DNL Adobe Commerce] in projecten met cloudinfrastructuur moeten softwareinstallatieprogramma&#39;s beheerderstoegang tot het Cloud-project hebben. Zie [ gebruikerstoegang beheren ](https://devdocs.magento.com/cloud/project/user-admin.html).
 
-- **Ervaring met Composer en de[!DNL Commerce CLI]**—Zie [Algemene installatie van CLI](https://devdocs.magento.com/extensions/install/){target="_blank"} voor informatie over het gebruik van deze gereedschappen om extensies te installeren en te beheren op de [!DNL Adobe Commerce] platform.
+- **Ervaring gebruikend Composer en[!DNL Commerce CLI]** - zie [ Algemene Installatie CLI ](https://devdocs.magento.com/extensions/install/) {target="_blank"} voor informatie over het gebruiken van deze hulpmiddelen om uitbreidingen op het [!DNL Adobe Commerce] platform te installeren en te beheren.
 
-- **Ervaring met het installeren van extensies van derden op Adobe Commerce**—Raadpleeg de documentatie bij Adobe Commerce voor meer informatie.
+- **Ervaring die derdeuitbreidingen op Adobe Commerce** installeert - voor verwijzing, zie de documentatie van Adobe Commerce.
 
-   - [Een extensie installeren voor een Adobe Commerce-instantie in de cloud-infrastructuur](https://devdocs.magento.com/cloud/howtos/install-components.html#install-an-extension).
+   - [ installeer een uitbreiding voor een Adobe Commerce op de instantie van de wolkeninfrastructuur ](https://devdocs.magento.com/cloud/howtos/install-components.html#install-an-extension).
 
-   - [Een extensie installeren voor een Adobe Commerce-exemplaar op locatie](https://devdocs.magento.com/extensions/install/).
+   - [ installeer een uitbreiding voor een Adobe Commerce op-gebouw instantie ](https://devdocs.magento.com/extensions/install/).
 
 ### Stap 1: De extensiesbundel downloaden
 
@@ -60,7 +60,7 @@ Extraheer het archiefdossier dat de integratiebundel bevat om de uitbreiding van
 
    - Ga vanaf de opdrachtregel naar de hoofdmap van het webserverdocument.
 
-   - Een `artifacts` directory.
+   - Maak een map `artifacts` .
 
 1. Extraheer het archiefbestand naar de nieuwe map.
 
@@ -85,7 +85,7 @@ Gebruik Composer om de bronmap voor de installatie te configureren en de extensi
    composer config repositories.artifacts artifact artifacts/
    ```
 
-1. Voeg de uitbreiding van de Diensten van de Afhandeling van de Opslag toe aan `composer.json`.
+1. Voeg de uitbreiding van de Diensten van de Afhandeling van de Opslag aan `composer.json` toe.
 
    ```bash
    composer require walmart/magento-bopis-metapackage:1.0.0
@@ -93,11 +93,11 @@ Gebruik Composer om de bronmap voor de installatie te configureren en de extensi
 
 >[!NOTE]
 >
->Voor betere prestaties op Adobe Commerce-exemplaren op locatie kunt u [de configuratie voor automatisch laden bijwerken](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/deployment-flow.html#update-the-autoloader): `composer dump-autoload --optimize`
+>Voor betere prestaties op Adobe Commerce op-gebouwinstanties, kunt u [ de autoload configuratie ](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/deployment-flow.html#update-the-autoloader) bijwerken: `composer dump-autoload --optimize`
 
 ### Stap 4: Upgrade het databaseschema en de gegevens
 
-Voltooi de installatie met de `bin/magento setup:upgrade` om het gegevensbestandschema en de gegevens met de veranderingen bij te werken om de oplossing van de Afhandeling van de Opslag te steunen.
+Voltooi de installatie met behulp van `bin/magento setup:upgrade` om het databaseschema en de gegevens bij te werken met de wijzigingen ter ondersteuning van de oplossing Store Fulfillment.
 
 >[!NOTE]
 >
@@ -105,13 +105,13 @@ Voltooi de installatie met de `bin/magento setup:upgrade` om het gegevensbestand
 
 ### Stap 5: De installatie voltooien
 
-1. Registreer de extensie met Adobe Commerce via de `setup:upgrade` Magento CLI, opdracht.
+1. Registreer de extensie met Adobe Commerce met de opdracht `setup:upgrade` Magento CLI.
 
    ```terminal
    bin/magento setup:upgrade
    ```
 
-1. Indien gevraagd, compileert u uw [!DNL Commerce] project.
+1. Compileer het [!DNL Commerce] -project opnieuw als daarom wordt gevraagd.
 
    ```bash
    bin/magento setup:di:compile
@@ -135,7 +135,7 @@ Verifieer bij de Adobe Commerce-server of de modules voor de extensie Store Fulf
 
 1. Log in bij de server.
 
-   Voor installaties op Adobe Commerce op cloudinfrastructuur, [gebruik SSH om zich aan te melden bij de verre omgeving](https://devdocs.magento.com/cloud/env/environments-ssh.html#ssh).
+   Voor installaties op Adobe Commerce op wolkeninfrastructuur, [ gebruik SSH aan login aan het verre milieu ](https://devdocs.magento.com/cloud/env/environments-ssh.html#ssh).
 
 1. Verifieer dat de modules van de Diensten van de Afhandeling van de Opslag worden toegelaten.
 
@@ -189,16 +189,16 @@ Verifieer bij de Adobe Commerce-server of de modules voor de extensie Store Fulf
 
 ### Aanvullende stappen
 
-Gebruik indien nodig de [instellen:static-content:inzetten](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html){target="_blank"} CLI bevel om statische meningsdossiers aan uw productiemilieu op te stellen.
+Indien nodig, gebruik de [ opstelling :static-content: ](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html) {target="_blank"} CLI bevel opstelt om statische meningsdossiers aan uw productiemilieu op te stellen.
 
 ```terminal
 php bin/magento setup:static-content:deploy -f
 ```
 
-De `-f` is vereist als u een leeg thema gebruikt.
+De optie `-f` is vereist als u een leeg thema gebruikt.
 
 >[!NOTE]
 >
->Zie de klasse [Statische inhoud implementeert best practices in Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/static-content-deployment.html) artikel in het Adobe Commerce Help Center.
+>Voor meer informatie, zie de [ Statische inhoud beste praktijken in Adobe Commerce ](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/static-content-deployment.html) artikel in het Centrum van de Hulp van Adobe Commerce opstelt.
 
 

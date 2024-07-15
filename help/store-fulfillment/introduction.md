@@ -1,33 +1,33 @@
 ---
-title: "Inleiding tot [!DNL Store Fulfillment]"
-description: "Meer informatie [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] biedt ondersteuning voor online aankopen, winkelen (BOPIS) voor klanten. Gebruik de mobiele versie van Store Assist om BOPIS-uitvoering en bestellingsverwerking te stroomlijnen voor winkelpartners en klanten van Commerce."
+title: "Introductie tot  [!DNL Store Fulfillment]"
+description: "Leer hoe  [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies]  steunen online kopen, oogst in opslag (BOPIS) voor klanten. Gebruik de mobiele versie van Store Assist om BOPIS-uitvoering en bestellingsverwerking te stroomlijnen voor winkelmedewerkers en Commerce-klanten."
 role: Leader, Admin, Developer, User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
 source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
-source-wordcount: '605'
+source-wordcount: '595'
 ht-degree: 0%
 
 ---
 
 # Inleiding tot [!DNL Store Fulfillment]
 
-Winkeltegoed voor Adobe Commerce door Walmart Commerce Technologies is een geavanceerde omnichannel oplossing die kan worden geïntegreerd met uw [!DNL Commerce] Opslag om een superieure online aankoop te leveren, neem in-store (BOPIS)-ervaring op.
+Store Fulfillment for Adobe Commerce door Walmart Commerce Technologies is een geavanceerde omnichannel fulfillment oplossing die met uw [!DNL Commerce] winkel kan worden geïntegreerd om een superieure online aankoop te kunnen aanbieden, de klantenervaring op te halen (BOPIS).
 
-![Adobe Admin-configuratie van  voor opslagoplossing](assets/store-fulfillment-admin-home.png)
+![ de Adobe Admin van de Oplossing van de Oplossing van de Opslag 1}](assets/store-fulfillment-admin-home.png)
 
 Afhandeling van winkel biedt ook een end-to-end uitvoeringsworkflow die handelaren helpt kosten te verlagen en tegelijk de conversietarieven, de gemiddelde orderwaarde en de klanttevredenheid te verhogen. Deze workflow biedt:
 
-* **Omnikanaalflexibiliteit**- Sla- en opslagruimten om in ophaalpunten en afhandelingscentra.
+* **de flexibiliteit van Omnichannel** - draai opslag en pakhuizen in ophaalpunten en uitvoeringscentra.
 
-* **Handige ophaalopties voor klanten**-Bij het selecteren van online aankopen kunnen klanten eenvoudig de beschikbaarheid van het product zien en een winkel selecteren voor het ophalen in de winkel of op de werkplek.
+* **Handige opties van de klantenbestelwagen** - terwijl het selecteren van online aankopen, kunnen de klanten productbeschikbaarheid gemakkelijk zien en een opslag voor of in-store of curbside bestelwagen selecteren.
 
-* **Efficiëntie van implementatie**—Met de mobiele toepassing Winkelassistentie kunnen aan de winkel gekoppelde gebruikers de snelheid en nauwkeurigheid van de bestelling verhogen.
+* **de efficiency van de vervulling** - De opslag staat mobiele toepassing bij helpt opslagassociaties de snelheid en nauwkeurigheid van de ordevervulling verhogen.
 
-* **Mobiel gebruiksgemak**- Klanten ontvangen bij elke stap meldingen van bestellingen. Van orderbevestiging tot bestelling ophalen, kunnen ze de status van de bestelling volgen, incheckinstructies krijgen en communiceren met de partners van de winkel wanneer ze bij de winkel aankomen.
+* **Mobiel gemak** - de Klanten ontvangen orderberichten bij elke stap. Van orderbevestiging tot bestelling ophalen, kunnen ze de status van de bestelling volgen, incheckinstructies krijgen en communiceren met de partners van de winkel wanneer ze bij de winkel aankomen.
 
-* **Operationeel zicht**—Verbeter voorraadtoewijzing op archiefniveau om tijdige lokale uitvoering te bevorderen.
+* **Operationeel zicht** - verbeter opslag-vlakke inventaristoewijzing om geschikte lokale verwezenlijking te drijven.
 
 ## Afhandeling opslaan, extensie
 
@@ -35,7 +35,7 @@ De oplossing Store Fulfillment ondersteunt en verbetert native Adobe Commerce-mo
 
 * Steunt de meeste producttypes-eenvoudig, configureerbaar, gegroepeerd, gebundeld, en virtueel
 
-* Integreert met [[!DNL Adobe Commerce] Inventory management](https://docs.magento.com/user-guide/catalog/inventory-learn-more.html)
+* Integreert met [[!DNL Adobe Commerce]  Inventory management ](https://docs.magento.com/user-guide/catalog/inventory-learn-more.html)
 
 * Integreert met verkooppunten (POS) bedrijfsvoorraadbeheersystemen zoals ERP, OMS en WMS
 
@@ -47,7 +47,7 @@ De oplossing Store Fulfillment ondersteunt en verbetert native Adobe Commerce-mo
 
 ## App Winkelassistentie
 
-De Store Assist App voor iOS- en Android-apparaten communiceert met [!DNL Walmart Commerce Technologies] om de mogelijkheden van omnichannel vervulling aan uw winkels te brengen.
+De Store Assist App voor iOS- en Android-apparaten communiceert met [!DNL Walmart Commerce Technologies] om omnichannel uitvoeringsmogelijkheden te bieden aan uw winkels.
 
 * In-store en krullende bestelopdrachten rechtstreeks verzenden naar mobiele apparaten van de winkel
 
@@ -61,22 +61,22 @@ De Store Assist App voor iOS- en Android-apparaten communiceert met [!DNL Walmar
 
 Door de prestaties van de winkel te verbeteren, verbetert Adobe Commerce door mogelijkheden toe te voegen voor betere winkelervaringen en gestroomlijnde workflows voor afhandeling.
 
-* **Winkellocatieselector (SLS)**- Voegt ophaalopties voor de winkel, beschikbaarheid van voorraden en opslagkiezers toe aan de product- en winkelpagina&#39;s naast de native afhandeling.
+* **de Kiezer van de Plaats van de Opslag (SLS)** - voegt de ophaalopties van de opslagopslag, inventarisbeschikbaarheid, en opslagselecteurs aan het product en de kartpagina&#39;s naast inheemse controle toe.
 
-* **Beschikbaarheid inventariseren**- Voegt extra product en globale configuratieopties aan Adobe Commerce Inventory management toe. Deze opties ondersteunen voorraadtoewijzing op archiefniveau om tijdige lokale uitvoering te stimuleren.
+* **Beschikbaarheid van de Inventaris** - Voegt extra product en globale configuratieopties aan Adobe Commerce Inventory management toe. Deze opties ondersteunen voorraadtoewijzing op archiefniveau om tijdige lokale uitvoering te stimuleren.
 
-* **Verbeteringen voor winkelwagentjes en afhandeling**- Communiceert de snelst beschikbare ophaaltijden, de plaatsen, en de kosten aan klanten tijdens hun online het winkelen zitting.
+* {de Verbeteringen van de Kaart en van de Controle **- communiceert de snelste beschikbare ophaaltijden, de plaatsen, en de kosten aan klanten tijdens hun online het winkelen zitting.**
 
-* **Inchecken van processtroom**- Voegt interfaces toe om het proces van de klantencontrole en de interactie met opslagvennoten te verbeteren wanneer zij voor in-store of curbside bestelwagen aankomen.
+* **Controle-binnen de Stroom van het Proces** - voegt interfaces toe om het proces van de klantencontrole en de interactie met opslagvennoten te verbeteren wanneer zij voor in-opslag of curbside bestelwagen aankomen.
 
-* **Mijn accountgeschiedenis**-Breidt de [!DNL Commerce] de geschiedenis van de account om stappen in de ordergeschiedenis weer te geven.
+* **Mijn Geschiedenis van de Rekening** - breidt de [!DNL Commerce] rekeningsgeschiedenis uit om stappen in de ordegeschiedenis te tonen.
 
-* **Transactionele e-mails**-Breidt de beheerfuncties uit voor [!UICONTROL Sales Emails] Als u e-mailsjablonen wilt toevoegen voor online kopen, neemt u transacties op in de winkel. De malplaatjes steunen communicatie in real time tussen klanten en opslagvennoten tijdens het bestelproces.
+* **Transactionele e-mail** - breidt de mogelijkheden Admin voor [!UICONTROL Sales Emails] uit om e-mailmalplaatjes voor online aankoop toe te voegen, op opslagtransacties op te nemen. De malplaatjes steunen communicatie in real time tussen klanten en opslagvennoten tijdens het bestelproces.
 
-* **Flexibele uitvoering**-Extends [!DNL Commerce] mogelijkheden ter ondersteuning van scenario&#39;s voor het verwerken van achterstanden, kwantiteitsreducties en gedeeltelijke afhandeling van bestellingen, en het faciliteren van annuleringen en kredietmemo&#39;s die nodig zijn om deze scenario&#39;s te ondersteunen.
+* **de Flexibele Vervulling** - breidt [!DNL Commerce] mogelijkheden uit om scenario&#39;s voor verwerkingsachterorden, kwantitatieve verminderingen, en gedeeltelijke ordevervulling te steunen terwijl het vergemakkelijken van om het even welke annuleringen en creditmemo&#39;s die worden vereist om deze scenario&#39;s te steunen.
 
 >[!TIP]
 >
-> Voor een snelle demo van de oplossing van de Bewaren, zie [Overzicht van winkeluitvoering](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/orders/store-fulfillment.html) beschikbaar in _Adobe Commerce-video&#39;s en -Tutorials_.
+> Voor een snelle demo van de oplossing van de Afhandeling van de Opslag, zie het [ Overzicht van de Afhandeling van de Opslag ](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/orders/store-fulfillment.html) beschikbaar in _Video&#39;s en Tutorials van Adobe Commerce_.
 
 
