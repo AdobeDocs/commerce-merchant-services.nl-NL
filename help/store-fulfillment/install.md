@@ -5,7 +5,7 @@ role: Admin, Developer
 level: Intermediate
 feature: Shipping/Delivery, Install
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
+source-git-commit: 8999d63319f627e0b56a0ef5a881d25dbeaf648f
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Herzie de [ vereisten ](solution-requirements.md) voor de oplossing van de Afhan
 
 Als u een pre-versie of bètaversie van de Store Fulfillment for Adobe Commerce-extensie hebt geïnstalleerd, gebruikt u de volgende opdracht om deze te verwijderen voordat u de huidige versie installeert.
 
-```terminal
+```bash
 rm -rf composer.lock vendor/walmart &&
 composer require walmart/magento-bopis-metapackage:1.0.0
 ```
@@ -107,7 +107,7 @@ Voltooi de installatie met behulp van `bin/magento setup:upgrade` om het databas
 
 1. Registreer de extensie met Adobe Commerce met de opdracht `setup:upgrade` Magento CLI.
 
-   ```terminal
+   ```bash
    bin/magento setup:upgrade
    ```
 
@@ -191,7 +191,7 @@ Verifieer bij de Adobe Commerce-server of de modules voor de extensie Store Fulf
 
 Indien nodig, gebruik de [ opstelling :static-content: ](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html) {target="_blank"} CLI bevel opstelt om statische meningsdossiers aan uw productiemilieu op te stellen.
 
-```terminal
+```bash
 php bin/magento setup:static-content:deploy -f
 ```
 
