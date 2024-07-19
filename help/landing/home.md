@@ -6,9 +6,9 @@ seo-description: Access the product documentation for hosted services that help 
 breadcrumb-title: Documentatie
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
 recommendations: noCatalog
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '474'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ De Adobe verstrekt een inzameling van Commerce, integratie, en gegevensdiensten 
 
 >[!BEGINSHADEBOX  &quot;De informatie van de Versie&quot;]
 
-Zie [ wat in onze documentatie ](whats-new.md) of [ versienota&#39;s ](release-notes-all.md) voor elke dienst van Commerce nieuw is.
+Zie de [ versienota&#39;s ](release-notes-all.md) voor elke dienst van Commerce.
 
 >[!ENDSHADEBOX]
 
@@ -98,9 +98,23 @@ Zie [ wat in onze documentatie ](whats-new.md) of [ versienota&#39;s ](release-n
    </tr>
 </table>
 
-## Gegevensdiensten
+## Gegevensgereedschappen
 
 <table>
+<tr>
+   <td valign="top" width="200">
+      <img alt="[!DNL SaaS Data Export]" src="assets/live-search.png" width="170px"/></td>
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/overview"><strong>[!DNL SaaS Data Export]</strong></a>
+    <div>De de uitvoercatalogus, orde, en inventarisgegevens van de Uitvoer van Gegevens van SaaS van de server van Commerce aan de aangesloten diensten van Commerce om de diensten bijgewerkt te houden. Indexers compileren gegevens wanneer deze worden geactiveerd door gebeurtenissen zoals een wijziging van de productprijs of het voorraadniveau. U kunt dit proces waarnemen en beheren via het *Data Management dashboard* of de bevel-lijn interface.</div>
+  </td>
+</tr>
+<tr>
+   <td valign="top" width="200">
+      <img alt="[!DNL SaaS Price Indexer]" src="assets/live-search.png" width="170px"/></td>
+   <td valign="top"><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/price-index/price-indexing.md"><strong>[!DNL SaaS Price Indexer]</strong></a>
+    <div>Met SaaS-indexering worden de prestaties van de site geoptimaliseerd door bronintensieve taken (zoals indexering en prijsberekening) te offloaden van de Commerce-toepassing naar de Cloud-infrastructuur van de Adobe. Deze benadering stelt handelaren in staat snel middelen te schalen om indexatietijden van prijzen te versnellen en prijsupdates sneller aan de winkel en de verbonden diensten van Commerce te leveren.</div>
+  </td>
+</tr>
 <tr>
    <td valign="top" width="200">
       <img alt="[!DNL Catalog Sync]" src="assets/live-search.png" width="170px"/></td>

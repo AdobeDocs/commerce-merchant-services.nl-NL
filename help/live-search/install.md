@@ -3,9 +3,9 @@ title: "Aan de slag met  [!DNL Live Search]"
 description: "Leer de systeemvereisten en installatiestappen voor  [!DNL Live Search]  van Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: aba1f41965e6c430f569adcf9d940cf399b50b73
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
-source-wordcount: '2266'
+source-wordcount: '2357'
 ht-degree: 0%
 
 ---
@@ -146,6 +146,8 @@ Wanneer u deze opdrachten uitvoert, begint de eerste synchronisatie van de catal
 U kunt de gegevens bekijken die worden gesynchroniseerd en worden gedeeld gebruikend het [ Dashboard van het Beheer van Gegevens ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). Dit dashboard biedt waardevolle inzichten in de beschikbaarheid van productgegevens voor uw winkel, zodat deze direct aan uw klanten kunnen worden weergegeven.
 
 ![ Dashboard van het Beheer van Gegevens ](assets/data-management-dashboard.png)
+
+U kunt synchronisatiebevelen ook in werking stellen en het synchronisatieproces problemen oplossen gebruikend [ Commerce CLI ](../data-export/data-export-cli-commands.md#troubleshooting) en de logboeken van de gegevensuitvoer.
 
 #### Updates voor toekomstige producten
 
@@ -386,6 +388,10 @@ Op deze manier kunnen ontwikkelaars de functionaliteit en opmaak volledig aanpas
 - [ PLP widget ](https://github.com/adobe/storefront-product-listing-page)
 - [ bar van het Onderzoek ](https://github.com/adobe/storefront-search-as-you-type)
 
+### Extensie Gegevens
+
+Nadat Live zoeken is ingeschakeld, worden met de extensie Gegevens exporteren Commerce-gegevens gesynchroniseerd tussen de Commerce-toepassing en Live zoeken. Dit proces zorgt ervoor dat de meest recente Commerce-gegevens beschikbaar zijn in de winkel. In Admin, kunt u synchronisatiestatus controleren gebruikend het dashboard van het Beheer van Gegevens. U kunt het gegevensexportproces beheren en problemen oplossen met de Commerce CLI en de logboeken. Voor details, zie de [ Gids van de Uitvoer van Gegevens ](../data-export/overview.md).
+
 ### Inventory management
 
 [!DNL Live Search] steunt [ Inventory management ](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) mogelijkheden in Commerce (weet vroeger als Voorraad Multi-Source, of MSI). Om volledige steun toe te laten, moet u ](install.md#update) de gebiedsdeelmodule `commerce-data-export` aan versie 102.2.0+ bijwerken.[
@@ -394,7 +400,7 @@ Op deze manier kunnen ontwikkelaars de functionaliteit en opmaak volledig aanpas
 
 ### Prijsindexering
 
-De actieve klanten van het Onderzoek kunnen de nieuwe [ prijsindexeerder SaaS ](../price-index/price-indexing.md) gebruiken, die snellere de updates van de prijsverandering en synchronisatietijd verstrekt.
+De actieve klanten van het Onderzoek kunnen [ SaaS prijsindexeerder ](../price-index/price-indexing.md) gebruiken, die snellere de updates van de prijsverandering en synchronisatietijd verstrekt.
 
 ### Prijsondersteuning
 

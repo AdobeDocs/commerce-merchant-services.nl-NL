@@ -3,9 +3,9 @@ title: Installeren en configureren
 description: Leer om te installeren, bij te werken, en te desinstalleren  [!DNL Product Recommendations].
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
 role: Admin, Developer
-source-git-commit: 96a5791c5716f612f473540f27bd3f99b1bfe7c8
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '560'
 ht-degree: 0%
 
 ---
@@ -51,11 +51,19 @@ composer require magento/module-visual-product-recommendations
 
 ## Configureren [!DNL Product Recommendations] {#configure}
 
-Nadat u de `magento/product-recommendations` module installeert, moet u de [ Verbinding van de Diensten van Commerce ](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) vormen door API Sleutels te specificeren en een Ruimte van Gegevens te selecteren SaaS.
+1. Nadat u de `magento/product-recommendations` module installeert, vorm de [ Schakelaar van de Diensten van Commerce ](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) door API Sleutels te specificeren en een Ruimte van Gegevens te selecteren SaaS.
 
-Om ervoor te zorgen dat de catalogusuitvoer correct loopt, bevestig dat de [ bebouwde ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) banen en [ indexeerders ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) lopen en `Product Feed` indexeerder wordt geplaatst aan `Update by Schedule`.
+   Het vormen van deze verbinding laat de gegevenssynchronisatie en de communicatie tussen de instantie van Commerce, de Dienst van de Catalogus, en andere ondersteunende diensten toe. De synchronisatie van gegevens wordt behandeld door de [ uitbreiding van de Uitvoer van Gegevens SaaS ](../data-export/overview.md).
 
-Wanneer u een koppeling naar Commerce Services tot stand brengt via API-sleutels en de SaaS-gegevensruimte opgeeft, wordt de catalogussynchronisatie gestart. U kunt [ dan verifiëren ](verify.md) dat het gedragsgegeven wordt verzonden naar uw storefront.
+1. Om ervoor te zorgen dat de catalogusuitvoer correct kan lopen, bevestig dat de [ bebouwde ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) banen en de [ indexeerders ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) lopen en `Product Feed` indexeerder wordt geplaatst aan `Update by Schedule`.
+
+Nadat u de Commerce-toepassing hebt gekoppeld aan Commerce Services en de SaaS-gegevensruimte hebt opgegeven, wordt de catalogussynchronisatie gestart. U kunt [ dan verifiëren ](verify.md) dat het gedragsgegeven wordt verzonden naar uw storefront.
+
+## Gegevenssynchronisatie controleren en problemen oplossen
+
+Van Commerce Admin, kunt u het synchronisatieproces controleren gebruikend het [ Dashboard van het Beheer van Gegevens ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). Gebruik [ CLI van Commerce ](../data-export/data-export-cli-commands.md#troubleshooting) en logboeken om het proces te beheren en problemen op te lossen.
+
+U kunt [ dan verifiëren ](verify.md) dat het gedragsgegeven wordt verzonden naar uw storefront.
 
 ## De installatie van [!DNL Product Recommendations] bijwerken {#update}
 

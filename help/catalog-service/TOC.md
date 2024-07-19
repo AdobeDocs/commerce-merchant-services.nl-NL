@@ -5,9 +5,9 @@ breadcrumb-title: "[!DNL Catalog Service] Handleiding"
 hide: true
 role: Admin
 feature: Services, Catalog Service
-source-git-commit: 6ca91feefbfc2fbc4d5851040b9f1ca3de6a6560
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
-source-wordcount: '55'
+source-wordcount: '56'
 ht-degree: 10%
 
 ---
@@ -25,4 +25,4 @@ ht-degree: 10%
    - [ productSearch vraag ](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/)
    - [ refineProduct vraag ](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/)
 - [Aanvullende informatie](release-notes.md)
-- [ Terugkeer aan de Diensten van Commerce ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/home)
+- [ Terugkeer aan het Huis van de Diensten van Commerce ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/home)

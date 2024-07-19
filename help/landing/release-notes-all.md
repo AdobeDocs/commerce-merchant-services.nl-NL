@@ -5,9 +5,9 @@ seo-title: Adobe Commerce Services release notes
 seo-description: See a collated list of all release notes for Adobe Commerce Services and related data and integration services.
 exl-id: 2d0d2663-275d-4471-b47c-95a40b328b2b
 feature: Release Notes, Services
-source-git-commit: 6368f95bc56cc0bd82f6bfb1d7ba47fa83bd85cb
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
-source-wordcount: '117'
+source-wordcount: '116'
 ht-degree: 0%
 
 ---
@@ -22,13 +22,10 @@ Gebruik de volgende lijst om versienota&#39;s en belangrijke informatie met betr
       <td><strong> de diensten van Commerce </strong>
         <p>Meer informatie over de nieuwste verbeteringen voor innovatieve Commerce-services die beschikbaar zijn als extensies.</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/release-notes.html">Amazon-Sales Channel</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html">[!DNL Catalog Service]</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/release-notes.html">[!DNL Channel Manager]</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html">[!DNL Live Search]</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/release-notes.html">[!DNL Payment Services]</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/release-notes.html">Product Recommendations</a></li>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/release-notes.html">[!DNL Store Fulfillment]</a></li>
           </ul>
         </td>
       <td><strong> de diensten van de Integratie </strong>
@@ -41,6 +38,7 @@ Gebruik de volgende lijst om versienota&#39;s en belangrijke informatie met betr
       <td><strong> de diensten van Gegevens </strong>
         <p>Meer informatie over de nieuwste verbeteringen in de gegevensservice waarmee onze Commerce Services productgegevens kunnen beheren.</p>
           <ul>
+           <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-export/release-notes.html">SaaS Data Export extension</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html">Catalogus synchroniseren</a></li>
           </ul>
       </td>

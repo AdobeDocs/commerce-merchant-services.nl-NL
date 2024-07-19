@@ -5,9 +5,9 @@ breadcrumb-title: "[!DNL Data Export] Guide for SaaS Services"
 hide: true
 role: Admin
 feature: Services
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
-source-wordcount: '62'
+source-wordcount: '63'
 ht-degree: 6%
 
 ---
@@ -23,4 +23,4 @@ ht-degree: 6%
 - [Logboeken controleren en problemen oplossen](troubleshooting-logging.md)
 - [De exportextensie voor SaaS-gegevens beheren](manage-extension.md)
 - [Aanvullende informatie](release-notes.md)
-- [ Terugkeer aan de Diensten van Commerce ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)
+- [ Terugkeer aan het Huis van de Diensten van Commerce ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)

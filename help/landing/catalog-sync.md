@@ -3,9 +3,9 @@ title: Catalogus synchroniseren
 description: Leer hoe te om productgegevens van de  [!DNL Commerce]  server naar  [!DNL Commerce Services] uit te voeren.
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
 feature: Catalog Management, Data Import/Export, Catalog Service
-source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '541'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> Het dashboard voor catalogussynchronisatie is nu het gegevensbeheerdashboard. Dit vernieuwde dashboard ondersteunt nu [[!DNL Product Recommendations]](../product-recommendations/guide-overview.md) , [[!DNL Live Search]](../live-search/overview.md) en [[!DNL Catalog Service]](../catalog-service/overview.md) . Klanten kunnen het gegevensbeheerdashboard ophalen door de nieuwste versie van een van deze services bij te werken. Lees meer over het in de [ documentatie van het Dashboard van het Beheer van Gegevens ](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html). Dit huidige onderwerp blijft voor die gebruikers die nog moeten bevorderen en nog het dashboard van de Synchronisatie van de Catalogus hebben.
+> Het dashboard voor catalogussynchronisatie is nu het gegevensbeheerdashboard. Dit vernieuwde dashboard ondersteunt nu [[!DNL Product Recommendations]](../product-recommendations/guide-overview.md) v6.0.0+, [[!DNL Live Search]](../live-search/overview.md) v4.1.0+ en [[!DNL Catalog Service]](../catalog-service/overview.md) v1.17+. Klanten kunnen het gegevensbeheerdashboard ophalen door de nieuwste versie van een van deze services bij te werken. Lees meer over het in de [ documentatie van het Dashboard van het Beheer van Gegevens ](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html). Dit huidige onderwerp blijft voor die gebruikers die nog moeten bevorderen en nog het dashboard van de Synchronisatie van de Catalogus hebben.
 
 Adobe Commerce gebruikt indexen om catalogusgegevens in tabellen te compileren. Het proces wordt automatisch teweeggebracht door [ gebeurtenissen ](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing) zoals een verandering in een productprijs of inventarisniveau.
 

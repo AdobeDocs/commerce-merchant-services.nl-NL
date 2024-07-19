@@ -4,7 +4,7 @@ description: Leer over het gebruiken van de  [!DNL data export]  uitbreiding voo
 role: Admin, Developer
 recommendations: noCatalog
 exl-id: c5711fa6-09e2-42b0-a7af-4d7b866c871d
-source-git-commit: 42a9ea0f62f35db451cd3e780adf530d0699a638
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%
@@ -13,16 +13,16 @@ ht-degree: 0%
 
 # [!DNL SaaS Data Export] Handleiding
 
-[!DNL SaaS data export] verbetert de prestaties op de voorgrond door de gegevenssynchronisatie tussen een Adobe Commerce-instantie en aangesloten Commerce Services te optimaliseren. Wanneer u Live zoeken, Product Recommendations of de Catalogusservice toevoegt aan een Adobe Commerce-installatie, wordt de extensie [!DNL Data export] automatisch geïnstalleerd.
+[!DNL SaaS data export] synchroniseert gegevens tussen een Adobe Commerce-instantie en verbonden Commerce Services. Wanneer u Live zoeken, Product Recommendations of de Catalogusservice toevoegt aan een Adobe Commerce-installatie, wordt de extensie [!DNL Data export] automatisch geïnstalleerd.
 
-De SaaS- gegevensuitvoer verzamelt en voert diverse types van gegevens uit, die als _worden bedoeld voer_, die specifieke soorten informatie samenvoegen. Afhankelijk van welke Commerce-services worden geïnstalleerd, bevat de SaaS-gegevensexportfeed het volgende:
+De gegevensuitvoer van SaaS verzamelt en voert diverse types van gegevens uit, die als _worden bedoeld voer_, die specifieke soorten informatie samenvoegen. Afhankelijk van welke Commerce-services worden geïnstalleerd, bevat de SaaS-gegevensexportfeed het volgende:
 
 - **de entiteitvoer van de Catalogus** gezamenlijke productgegevens. Gegevens omvatten producten, productkenmerken, productprijzen, productvariaties, categorieën, categorietoestemmingen en productmachtigingen.
 - De **Scopes voeren** gegevens voor klantengroepen, websites, opslag, en opslagmeningen samen.
 - De **voer van de Orde van de Verkoop** voegt ordergegevens met inbegrip van hun verwante entiteiten zoals facturen, verzendingen, creditmemo&#39;s, etc. samen.
 - De **voer van de multi-Source Inventory** aggregeert gegevens over de punten van de voorraadstatus van de inventaris.
 
-De extensie voor het exporteren van gegevens ondersteunt verschillende methoden voor het initiëren en beheren van het proces voor gegevenssynchronisatie.
+SaaS data export wordt geleverd als een PHP extensie. Deze biedt ondersteuning voor verschillende methoden voor het initiëren en beheren van het proces voor gegevenssynchronisatie.
 
 - **Handmatige synchronisatie van Admin of de bevellijn**
 

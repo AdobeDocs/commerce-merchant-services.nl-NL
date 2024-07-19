@@ -3,16 +3,16 @@ title: '[!DNL Catalog Service]'
 description: "[!DNL Catalog Service] voor Adobe Commerce verstrekt een manier om de inhoud van de Pagina's van de Vertoning van het Product en de Pagina's van de Lijst van het Product veel sneller terug te winnen dan de inheemse GraphQL vragen van Adobe Commerce."
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
 recommendations: noCatalog
-source-git-commit: 7293914fab34381deb5bc841d147371f9f3470a5
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
-source-wordcount: '918'
+source-wordcount: '982'
 ht-degree: 0%
 
 ---
 
 # [!DNL Catalog Service] voor Adobe Commerce
 
-De extensie [!DNL Catalog Service] for Adobe Commerce biedt rijke view-model (alleen-lezen) catalogusgegevens waarmee productgerelateerde winkelervaringen snel en volledig kunnen worden weergegeven, zoals:
+De extensie [!DNL Catalog Service] for Adobe Commerce biedt rijke view-model (alleen-lezen) catalogusgegevens om productgerelateerde winkelervaringen snel en volledig te renderen, waaronder:
 
 * Productdetailpagina&#39;s
 * Productlijst en categoriepagina&#39;s
@@ -21,11 +21,13 @@ De extensie [!DNL Catalog Service] for Adobe Commerce biedt rijke view-model (al
 * Productvergelijkingspagina&#39;s
 * Alle andere pagina&#39;s die productgegevens weergeven, zoals pagina&#39;s met een cart-, volgorde- en wenslijst
 
-[!DNL Catalog Service] gebruikt [ GraphQL ](https://graphql.org/) om productgegevens te verzoeken en te ontvangen. GraphQL is een querytaal die een front-end client gebruikt om te communiceren met de API (Application Programming Interface) die op een back-end zoals Adobe Commerce is gedefinieerd. GraphQL is een veelgebruikte communicatiemethode omdat deze lichtgewichtgericht is en een systeemintegrator de inhoud en volgorde van elke reactie kan opgeven.
+[!DNL Catalog Service] gebruikt [ GraphQL ](https://graphql.org/) om catalogusgegevens met inbegrip van producten, productattributen, inventaris, en prijzen te verzoeken en te ontvangen. GraphQL is een querytaal die een front-end client gebruikt om te communiceren met de API (Application Programming Interface) die op een back-end zoals Adobe Commerce is gedefinieerd. GraphQL is een veelgebruikte communicatiemethode omdat deze lichtgewichtgericht is en een systeemintegrator de inhoud en volgorde van elke reactie kan opgeven.
 
 Adobe Commerce heeft twee GraphQL-systemen. Het kernGraphQL systeem verstrekt een brede waaier van vragen (lees verrichtingen) en mutaties (schrijf verrichtingen) die een verkoopster toestaan om met vele soorten pagina&#39;s, met inbegrip van product, klantenrekening, kar, controle, en meer in wisselwerking te staan. Nochtans, worden de vragen die productinformatie terugkeren niet geoptimaliseerd voor snelheid. Het GraphQL-systeem voor services kan alleen query&#39;s uitvoeren op producten en gerelateerde informatie. Deze query&#39;s leveren meer op dan vergelijkbare core query&#39;s.
 
-[!DNL Catalog Service] klanten kunnen de nieuwe [ SaaS prijsindexeerder ](../price-index/price-indexing.md) gebruiken, die snellere de updates van de prijsverandering en synchronisatietijd verstrekt.
+De gegevens beschikbaar aan de Dienst van de Catalogus worden geleverd door de uitbreiding van de Uitvoer van Gegevens SaaS. Deze extensie synchroniseert gegevens tussen de Commerce-toepassing en de aangesloten Commerce Services om ervoor te zorgen dat query&#39;s naar de services die GraphQL API-eindpunten retourneert, de meest recente catalogusgegevens retourneren. Voor informatie over het beheren van en het oplossen van problemenSaaS gegevens de uitvoerverrichtingen, zie de [ Gids van de Uitvoer van Gegevens SaaS ](../data-export/overview.md).
+
+[!DNL Catalog Service] klanten kunnen [ SaaS prijsindexeerder ](../price-index/price-indexing.md) gebruiken, die snellere prijsupdates en synchronisatietijd verstrekt.
 
 ## Architectuur
 

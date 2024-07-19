@@ -4,10 +4,10 @@ user-guide-description: Deze gids verstrekt gedetailleerde instructies om  [!DNL
 breadcrumb-title: "[!DNL Product Recommendations] Handleiding"
 role: Admin
 feature: Services, Recommendations
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
-source-wordcount: '54'
-ht-degree: 11%
+source-wordcount: '60'
+ht-degree: 10%
 
 ---
 
@@ -38,3 +38,4 @@ ht-degree: 11%
    - [Gegevens verzamelen](events.md)
    - [Aanpassen](customize.md)
    - [Cookie-beperkingen verwerken](setting-cookie.md)
+- [ Terugkeer aan het Huis van de Diensten van Commerce ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)

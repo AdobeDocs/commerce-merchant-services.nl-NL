@@ -2,9 +2,9 @@
 title: Onboarding en installatie
 description: "Leer hoe te om  [!DNL Catalog Service] te installeren"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 6ca91feefbfc2fbc4d5851040b9f1ca3de6a6560
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '867'
 ht-degree: 0%
 
 ---
@@ -143,7 +143,7 @@ Gebruik deze methode om [!DNL Catalog Service] voor een instantie op locatie te 
 
 ### De service- en gegevensexport configureren
 
-Nadat u [!DNL Catalog Service] hebt geïnstalleerd, voert u de volgende taken uit om de catalogusservice te integreren met uw Adobe Commerce-instantie. Deze integratie maakt gegevenssynchronisatie en communicatie mogelijk tussen de Commerce-instantie, de Catalogusservice en andere ondersteunende services.
+Nadat u [!DNL Catalog Service] hebt geïnstalleerd, voert u de volgende taken uit om de catalogusservice te integreren met uw Adobe Commerce-instantie. Deze integratie maakt de gegevenssynchronisatie en communicatie tussen de instantie van Commerce, de Dienst van de Catalogus, en andere ondersteunende diensten mogelijk. De synchronisatie van gegevens wordt behandeld door de [ uitbreiding van de Uitvoer van Gegevens SaaS ](../data-export/overview.md).
 
 1. Opstelling de [ Verbinding van de Diensten van Commerce ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas) door de API sleutels te specificeren en een Ruimte van Gegevens te selecteren SaaS.
 
@@ -162,6 +162,10 @@ Ga als volgt te werk om te controleren of de catalogus correct wordt geëxportee
 - [ Bevestig dat de bouwbanen ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues) lopen.
 - Verifieer dat de indexen van [ Admin ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) lopen of door het bevel van Commerce CLI te gebruiken `bin/magento indexer:info`.
 - Controleer of de indexen `Catalog Attributes Feed, Product Feed, Product Overrides Feed` en `Product Variant Feed` op `Update by Schedule` zijn ingesteld.
+
+### Gegevenssynchronisatie controleren en problemen oplossen
+
+Van Commerce Admin, kunt u het synchronisatieproces controleren gebruikend het [ Dashboard van het Beheer van Gegevens ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). Gebruik [ CLI van Commerce ](../data-export/data-export-cli-commands.md#troubleshooting) en logboeken om het proces te beheren en problemen op te lossen.
 
 ### Toegang tot de service
 
