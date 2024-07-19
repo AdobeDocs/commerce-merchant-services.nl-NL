@@ -4,16 +4,16 @@ description: Leer hoe u uw Adobe Commerce- of Magento Open Source-instantie inte
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 3eb873c84edb56d2fc399c72296f2b545a78064e
+source-git-commit: 391208f63c092f1eebb7330e2445079e09594890
 workflow-type: tm+mt
-source-wordcount: '1051'
+source-wordcount: '1048'
 ht-degree: 0%
 
 ---
 
 # [!DNL Commerce Services Connector]
 
-Sommige Adobe Commerce- en Magento Open Source-functies worden geactiveerd door [!DNL Commerce Services] en geïmplementeerd als SaaS (software als service). Om deze diensten te gebruiken, moet u uw [!DNL Commerce] instantie verbinden gebruikend productie en zandbak API sleutels, en de gegevensruimte in de [ configuratie ](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) specificeren. U hoeft dit maar één keer in te stellen.
+Sommige Adobe Commerce- en Magento Open Source-functies worden geactiveerd door [!DNL Commerce Services] en geïmplementeerd als SaaS (software als service). Om deze diensten te gebruiken, moet u uw [!DNL Commerce] instantie verbinden gebruikend productie en zandbak API sleutels, en de gegevensruimte in de [ configuratie ](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) specificeren. U hoeft de verbinding slechts één keer te configureren voor elke Commerce-instantie.
 
 ## Beschikbare services {#availableservices}
 
@@ -24,7 +24,6 @@ In het volgende voorbeeld worden de [!DNL Commerce] -functies weergegeven waarto
 | [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) aangedreven door Adobe Sensei | Adobe Commerce |
 | [[!DNL Live Search]](/help/live-search/overview.md) aangedreven door Adobe Sensei | Adobe Commerce |
 | [[!DNL Payment Services]](/help/payment-services/overview.md) | Adobe Commerce en Magento Open Source |
-| [[!DNL Channel Manager]](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/intro-to-channel-manager/overview.html) | Adobe Commerce en Magento Open Source |
 | [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html) | Adobe Commerce |
 | [[!DNL Catalog Service]](/help/catalog-service/overview.md) | Adobe Commerce |
 | [[!DNL Data Connection]](/help/data-connection/overview.md) | Adobe Commerce |
@@ -39,7 +38,7 @@ In de volgende secties wordt elk van deze elementen nader besproken.
 
 ## Credentials {#apikey}
 
-De productie en zandbak API sleutels worden geproduceerd van de [!DNL Commerce] rekening van de [ vergunningseigenaar ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/onboarding) die door unieke [!DNL Commerce] identiteitskaart (MageID) wordt geïdentificeerd. Om machtigingsvalidatie voor services zoals [!DNL Product Recommendations] of [!DNL Live Search] door te geven, kan de eigenaar van de licentie voor de organisatie van de handelaar de set met API-sleutels genereren, zolang de account zich in goede staat bevindt.
+De productie en zandbak API sleutels worden geproduceerd van de [!DNL Commerce] rekening van de [ vergunningseigenaar ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/onboarding). Het Commerce-account wordt geïdentificeerd door een unieke [!DNL Commerce] ID (MageID). De eigenaar van de licentie voor de organisatie van de handelaar kan API-sleutels genereren voor services zoals Product Recommendations of Live Search, zolang de account zich in goede staat bevindt.
 
 De sleutels kunnen op een &quot;behoefte-aan-weet&quot;basis met het systeemintegrator of ontwikkelingsteam worden gedeeld dat projecten en milieu&#39;s namens de vergunninghouder beheert. Ontwikkelaars die [!DNL Shared Access] hebben gekregen van de eigenaar van de licentie, kunnen de sleutels niet namens hen genereren, zelfs niet als de organisatie van de handelaar aanwezig is in het vervolgkeuzemenu van [!DNL Switch Accounts] .
 
@@ -57,15 +56,13 @@ Daarnaast hebben integrators van oplossingen ook het recht om [!DNL Commerce Ser
 
 1. Van het _Milieu_ menu, uitgezochte **Productie** of **Sandbox**.
 
-1. Ga een naam in de _API Sleutels_ sectie in en klik **voeg Nieuw** toe.
-
-   Hiermee wordt een dialoogvenster geopend waarin u de nieuwe sleutel kunt downloaden.
+1. Ga een naam in de _API Sleutels_ sectie in, en klik **voeg Nieuw** toe om de dialoog te openen om de nieuwe sleutel te downloaden.
 
    ![ Download privé sleutel ](assets/download-api-private-key.png)
 
    >[!WARNING]
    >
-   > Dit is de enige mogelijkheid om uw toetsen te kopiëren of te downloaden.
+   > Dit dialoogvenster biedt alleen de mogelijkheid om uw toetsen te kopiëren of te downloaden.
 
 1. Klik **Download** dan klikken **annuleert**.
 
@@ -113,7 +110,7 @@ Om het even welke projecten SaaS die met uw sleutels worden geassocieerd verschi
 
 >[!NOTE]
 >
->Als u afzonderlijke instanties hebt om met de Diensten van Commerce te integreren, [ een kaartje van de Steun ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) voorleggen om een nieuw Project te verzoeken SaaS voor elke extra instantie. Nadat de steun het Project SaaS heeft gecreeerd, vorm de integratie van de Diensten van Commerce voor de instantie gebruikend de zelfde API sleutel en selecterend het nieuwe project SaaS voor de gegevensruimte.
+>Als u afzonderlijke instanties hebt om met de Diensten van Commerce te integreren, [ een kaartje van de Steun ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) voorleggen om een nieuw project SaaS voor elke extra instantie te verzoeken. Nadat de steun het project SaaS heeft gecreeerd, vorm de integratie van de Diensten van Commerce voor de instantie gebruikend de zelfde API sleutel en selecterend het nieuwe project SaaS voor de gegevensruimte.
 
 >[!WARNING]
 >
