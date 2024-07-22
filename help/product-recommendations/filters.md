@@ -2,9 +2,9 @@
 title: Filterproducten
 description: Bepaal voorwaarden die of producten van worden gebruikt als aanbevelingen omvatten of uitsluiten.
 exl-id: baab28ff-b529-4cbc-adb7-4fa225e87d4a
-source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
+source-git-commit: aa036228bb4040de5a8d4d159727fa0c4c6d99e1
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '704'
 ht-degree: 0%
 
 ---
@@ -57,6 +57,10 @@ Adobe Commerce raadt u aan de volgende configuratie voor categoriefilters te geb
 ### Product
 
 Productfilters geven aan welke specifieke producten in aanmerking komen of niet in aanmerking komen om in aanbevelingen te worden weergegeven. U kunt geen producten selecteren die gehandicapt of niet individueel zichtbaar zijn omdat die producten nooit in aanbevelingen kunnen verschijnen.
+
+>[!NOTE]
+>
+>De producten van het kind van een configureerbaar product worden niet getoond in een aanbeveling eenheid omdat die kindproducten het zicht van _hebben individueel niet Zichtbaar_.
 
 ### Type
 

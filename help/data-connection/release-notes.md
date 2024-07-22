@@ -3,9 +3,9 @@ title: Aanvullende informatie
 description: De recentste versieinformatie voor de  [!DNL Data Connection]  uitbreiding van Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: a2d5e695b3f6491d051da77bfc0fb596f5411c92
+source-git-commit: c736647fc148a02803bc458b16ff1f3419dc1fe1
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '896'
 ht-degree: 0%
 
 ---
@@ -72,20 +72,28 @@ _12 oktober 2022_
 
 +++
 
-## 3.1.2.
+## 3.1.3
+
+_22 Juli, 2024_
 
 [!BADGE  Verenigbaarheid ]{type=Informative tooltip="Compatibiliteit"}
 
+![ Repareren ](../assets/new.svg) - werkte het metapakket van de Verbinding van het Experience Platform bij om ongebruikte gegevensexporteurs en indexeerders te verwijderen.
+
+## 3.1.2.
+
 _5 Juni, 2024_
+
+[!BADGE  Verenigbaarheid ]{type=Informative tooltip="Compatibiliteit"}
 
 ![ Bevestig ](../assets/new.svg) - Vaste een kwestie waar het verkeerde datumformaat werd gebruikt toen het in werking stellen van a [ historische synchronisatie ](connect-data.md#specify-order-history-date-range).
 ![ Bevestig ](../assets/new.svg) - Vaste een kwestie waar de [ startCheckout ](events.md#startcheckout) gebeurtenis niet op Adobe Commerce 2.4.7 werd verzonden.
 
 ## 3.1.1
 
-[!BADGE  Verenigbaarheid ]{type=Informative tooltip="Compatibiliteit"}
-
 _4 April, 2024_
+
+[!BADGE  Verenigbaarheid ]{type=Informative tooltip="Compatibiliteit"}
 
 ![ Nieuw ](../assets/new.svg) - Toegevoegde steun voor PHP 8.3 voor alle [!DNL Data Connection] uitbreidingen.
 ![ Nieuw ](../assets/new.svg) - toegevoegd artikel over hoe te [ ](mobile-sdk-epc.md) de Mobiele SDK van Adobe Experience Platform met Commerce integreren.
@@ -132,7 +140,6 @@ _Juni 27, 2023_
 ![ bevestig ](../assets/fix.svg) - de bijgewerkte configuraties van het Beleid van de Veiligheid van de Inhoud.
 ![ Repareren ](../assets/fix.svg) - Vaste steun voor achterbureaugebeurtenissen op Commerce 2.4.7 versie.
 ![ Nieuw ](../assets/new.svg) - voegde een berichtbericht over geheim voorgeheugenongeldigheid toe wanneer u veranderingen in de [!DNL Data Connection] uitbreidingsvorm opslaat.
-
 
 ## 3.0.0-bèta1 (alleen intern)
 

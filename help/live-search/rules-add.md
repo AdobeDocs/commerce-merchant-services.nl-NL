@@ -2,9 +2,9 @@
 title: "Regels toevoegen"
 description: "Leer hoe u regels voor het wijzigen van zoekopdrachten maakt."
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 52be82fa080474d6df81fd16d1655a421771e5e2
+source-git-commit: 0b099bf6a306806b5aa24261e6c125d43d528207
 workflow-type: tm+mt
-source-wordcount: '1536'
+source-wordcount: '1604'
 ht-degree: 0%
 
 ---
@@ -84,16 +84,23 @@ Winkeleigenaars kunnen de volgende typen classificatiestrategieën instellen:
 
 * Meest aangeschaft: dit rangschikt de producten op basis van de totale aankopen per SKU in de afgelopen 7 dagen.
 * Meestal toegevoegd aan winkelwagentjes in volgorde van de totale &quot;Add to Cart&quot;-activiteiten in de afgelopen 7 dagen.
-* Meest bekeken: hiermee wordt mijn totale weergaven per SKU in de afgelopen 7 dagen opnieuw weergegeven.
-* Aanbevolen voor u - Gebruikt het `viewed-viewed` gegevenspunt - Kopers die deze SKU hebben bekeken, keken ook naar deze andere SKU&#39;s
-* Trending: kijkt terug naar de gebeurtenissen van de paginaweergave in de afgelopen 72 uur voor achtergrondgebeurtenissen en 24 uur voor voorgrondgebeurtenissen
-* Geen: de producten worden bevolen door Relevantie
+* Meest bekeken: de totale weergaven per SKU zijn in de afgelopen 7 dagen opnieuw weergegeven.
+* Aanbevolen voor u - Gebruikt het `viewed-viewed` gegevenspunt - Kopers die deze SKU bekeken ook naar deze andere SKU&#39;s keken.
+* Trending: kijkt terug naar de gebeurtenissen van de paginaweergave in de afgelopen 72 uur voor achtergrondgebeurtenissen en 24 uur voor voorgrondgebeurtenissen.
+* Geen: de producten worden bevolen door Relevantie.
 
-1. Selecteer het type strategie voor de regel. In het venster Test Your Rule worden de verwachte resultaten weergegeven.
+Selecteer het type strategie voor de regel. De **Test uw regel** venster toont de verwachte resultaten.
 
->[!NOTE]
->
->Apostroffen en aanhalingstekens in query&#39;s kunnen leiden tot enkele kleine problemen met rangschikking en relevantie in sommige talen.
+### Caveats
+
+* Apostroffen en aanhalingstekens in query&#39;s kunnen leiden tot enkele kleine problemen met rangschikking en relevantie in sommige talen.
+* Om het intelligente rangschikken te verzekeren werkt correct, zorg ervoor dat het **Gewicht van het Onderzoek** voor om het even welke productattributen die voor onderzoek of het filtreren (facetten) worden gebruikt `5` of minder is. U vindt deze instelling in [!DNL Commerce] Admin:
+
+   1. Selecteer **Slaat** > _Attributen_ > **Product** op.
+   1. Zoek naar de attributen, zoals &quot;naam&quot;.
+   1. In de **Informatie van Attributen** > **** pagina van Eigenschappen Storefront, plaats het onderzoeksgewicht minder dan of gelijk aan `5`.
+
+      ![ Product - het Gewicht van het Onderzoek ](assets/set-search-weight.png)
 
 ## Handmatige classificatie
 

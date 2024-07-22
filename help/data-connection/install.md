@@ -4,9 +4,9 @@ description: Leer hoe te om, de  [!DNL Data Connection]  uitbreiding van Adobe C
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
-source-git-commit: 9001cd24db0941b7c7edcfd5b10464dc90084fd7
+source-git-commit: e6f1094799826bdc0e4dc45a495df4880a8bc8c9
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---
@@ -33,17 +33,18 @@ De [!DNL Data Connection] uitbreiding is beschikbaar bij de [ Marketplace van de
 
    Dit metapakket bevat de volgende modules en extensies:
 
-   * `module-experience-connector-admin` - Werkt de interface van Admin bij zodat kunt u identiteitskaart DataStream voor een specifieke instantie van Adobe Commerce selecteren.
-   * `module-experience-connector` - Stelt de `Organization ID` en `datastreamId` in de Storefront Events SDK in.
-   * `data-services` - Biedt kenmerkcontext voor storefront-gebeurtenissen. Wanneer bijvoorbeeld een uitcheckgebeurtenis plaatsvindt, wordt informatie over het aantal items in het winkelwagentje en de productkenmerkgegevens voor die items opgenomen.
-   * `services-id` - verbindt uw instantie van Adobe Commerce met [ Adobe Commerce SaaS ](../landing/saas.md) gebruikend zandbak en productie API sleutels en met Adobe Experience Platform om IMS Organisatie identiteitskaart terug te winnen
-   * `orders-connector` - Verbindt de bestelstatusservice met uw Adobe Commerce-instantie.
+   - `magento/orders-connector`
+   - `magento/data-services`
+   - `magento/module-experience-connector`
+   - `magento/module-experience-connector-admin`
+   - `magento/module-experience-connector-admin-graph-ql`
+   - `magento/module-experience-connector-aep-integration`
 
 1. (Facultatief) om [!DNL Live Search] gegevens te omvatten, die [ onderzoeksgebeurtenissen ](events.md#search-events) omvatten, installeer de [[!DNL Live Search]](../live-search/install.md) uitbreiding.
 
 1. (Facultatief) om B2B- gegevens te omvatten, die [ aanvraaggebeurtenissen ](events.md#b2b-events) omvatten, installeer de [ B2B uitbreiding ](#install-the-b2b-extension).
 
-### De Adobe I/O-gebeurtenissen installeren
+### Adobe I/O-gebeurtenissen installeren
 
 Nadat u de extensie `experience-platform-connector` hebt geïnstalleerd, moet u de Adobe I/O Events for Adobe Commerce installeren.
 

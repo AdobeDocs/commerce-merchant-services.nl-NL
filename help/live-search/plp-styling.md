@@ -2,9 +2,9 @@
 title: Widget pagina met productaanbiedingen
 description: Het toelaten van en het stileren van  [!DNL Live Search Product Listing Page Widget]
 exl-id: f7346a06-a8c7-4a33-8437-ea4f61d9281f
-source-git-commit: faf217486d57588d8535c1d605e963c91ec3ee68
+source-git-commit: aa036228bb4040de5a8d4d159727fa0c4c6d99e1
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Naast de functies in de box van de PLP-widget kunt u de widget verder aanpassen 
 - Ondersteuning voor meerdere talen
 - Prijsschuifregelaars
 
-Voor informatie over hoe te om de PLAATS widget aan te passen om de bovengenoemde eigenschappen te behandelen, zie `storefront-product-listing-page` readme in de volgende [ repo ](https://github.com/adobe/storefront-product-listing-page/).
+Voor informatie over hoe te om de widget PLOP aan te passen om de bovengenoemde eigenschappen te behandelen, zie `storefront-product-listing-page` leest in de volgende [ bewaarplaats ](https://github.com/adobe/storefront-product-listing-page/). Het Lees mij-bestand in deze opslagplaats biedt een voorbeeld voor het aanpassen van de PLP-widget en het implementeren van deze aanpassingen op uw site.
 
 >[!WARNING]
 >
