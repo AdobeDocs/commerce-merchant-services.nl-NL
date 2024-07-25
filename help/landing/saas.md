@@ -4,9 +4,9 @@ description: Leer hoe u uw Adobe Commerce- of Magento Open Source-instantie inte
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 391208f63c092f1eebb7330e2445079e09594890
+source-git-commit: 1089ba268866ef3097a909440a06587dc1987fc5
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1026'
 ht-degree: 0%
 
 ---
@@ -102,9 +102,7 @@ Om het even welke projecten SaaS die met uw sleutels worden geassocieerd verschi
 
 1. Als geen projecten SaaS bestaan, leidt de klik **tot Project**. Dan op het **gebied van het Project**, ga een naam voor uw project SaaS in.
 
-   Wanneer u een SaaS-project maakt, genereert [!DNL Commerce] een of meer SaaS-gegevensruimten, afhankelijk van uw [!DNL Commerce] -licentie:
-   - Adobe Commerce - Eén gegevensruimte voor de productie; alleen twee gegevensruimten voor tests. Voor de Pro projecten van de Wolk met veelvoudige het Staging milieu&#39;s, kunt u extra het testen gegevensruimten voor elk het Staging milieu verzoeken door [ een verzoek van de Steun ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) voor te leggen.
-   - Magento Open Source - Eén gegevensruimte voor productie; geen gegevensruimten voor tests
+   Alle handelaren kunnen tot één ruimte van productiegegevens en twee het testen gegevensruimten per project toegang hebben SaaS. Voor de Proprojecten van de Wolk met veelvoudige het opvoeren milieu&#39;s, kunt u extra het testen gegevensruimten voor elk het opvoeren milieu verzoeken door [ een verzoek van de Steun ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/) voor te leggen.
 
 1. Selecteer de **Ruimte van Gegevens** voor de huidige configuratie van uw [!DNL Commerce] opslag te gebruiken.
 
