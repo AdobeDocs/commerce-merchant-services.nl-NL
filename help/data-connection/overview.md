@@ -3,9 +3,9 @@ title: Overzicht van de handleiding
 description: Leer hoe te om de gegevens van Adobe Commerce met Adobe Experience Platform te integreren gebruikend de  [!DNL Data Connection]  uitbreiding.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
 recommendations: noCatalog
-source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
+source-git-commit: 7b9867179a871e4949ea74f9214e9e52ea26bb71
 workflow-type: tm+mt
-source-wordcount: '1731'
+source-wordcount: '1752'
 ht-degree: 0%
 
 ---
@@ -16,13 +16,13 @@ ht-degree: 0%
 >
 >De naam van de aansluiting van het Experience Platform is gewijzigd in [!DNL Data Connection] .
 
-De extensie [!DNL Data Connection] maakt een verbinding tussen uw Adobe Commerce-webinstantie en de Adobe Experience Platform en de Edge Network. Leer hoe te [ ](./mobile-sdk-epc.md) de Mobiele SDK van Adobe Experience Platform met Commerce integreren.
+De extensie [!DNL Data Connection] maakt een verbinding tussen uw Adobe Commerce-webinstantie en de Adobe Experience Platform en de Edge Network. Voor ontwikkelaars van mobiele apps gebruikt u de Adobe Experience Platform Mobile SDK met Commerce om Commerce-gegevens vast te leggen en naar het Experience Platform te verzenden. [ leer meer ](./mobile-sdk-epc.md).
 
 Je Commerce-winkel bevat een schat aan gegevens. Informatie over hoe kopers door de producten op uw site kunnen bladeren, deze kunnen bekijken en uiteindelijk kopen, biedt mogelijkheden om een meer persoonlijke winkelervaring te creëren. Hoewel deze gegevens native Commerce-functies zoals winkelprijzenregels en dynamische blokken kunnen informeren, blijven de gegevens opgeslagen in uw Commerce-exemplaar.
 
 De Adobe Experience Platform biedt een reeks technologieën die, wanneer ze zijn gehydrateerd met gegevens uit uw Commerce-winkel, die gegevens via de Edge Network naar andere DX-producten van de Adobe kunnen distribueren om inzicht te krijgen in het aankoopgedrag van uw klant. Met deze diepgaande inzichten, kunt u een meer gepersonaliseerde het winkelen ervaring over alle kanalen tot stand brengen.
 
-De volgende afbeelding laat zien hoe uw Commerce-gegevens van uw winkel naar andere DX-producten van de Adobe stromen:
+De volgende afbeelding laat zien hoe uw Commerce-gegevens van uw winkel naar andere Adobe DX-producten stromen wanneer de extensie [!DNL Data Connection] is geïnstalleerd en geconfigureerd.
 
 ![ hoe de gegevens aan de rand van het Experience Platform ](assets/commerce-edge.png) stromen
 

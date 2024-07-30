@@ -3,9 +3,9 @@ title: Commerce-gegevens verbinden met Adobe Experience Platform
 description: Leer hoe u Commerce-gegevens koppelt aan de Adobe Experience Platform.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 89607d22ba8e69e0c98fce97e041022e33d01c07
+source-git-commit: c252c2fb614ec74f1bdd11cc482066a7133dd523
 workflow-type: tm+mt
-source-wordcount: '2486'
+source-wordcount: '2532'
 ht-degree: 0%
 
 ---
@@ -182,6 +182,10 @@ Profielgebeurtenissen uit een tijdreeks bevatten gegevens over de profielgegeven
 
 Het kan ongeveer 10 minuten duren voordat een profielrecord beschikbaar is in Real-Time CDP. Profielgebeurtenissen beginnen direct met streamen.
 
+>[!TIP]
+>
+>Als u profielgegevens in het Experience Platform niet ziet, zie [ Commerce KnowledgeBase ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-connection-customer-profiles-not-exported) voor het oplossen van problemensuggesties.
+
 #### Veldomschrijvingen
 
 | Veld | Beschrijving |
@@ -277,6 +281,10 @@ Om te bevestigen dat het gegeven van uw opslag van Commerce wordt verzameld, geb
 In dit voorbeeld ziet u gebeurtenisgegevens van de deelvensters [`commerce.productListAdds`](events.md#addtocart) , [`commerce.productViews`](events.md#productpageview) , [`web.webpagedetails.pageViews`](events.md#pageview) , enzovoort. In deze weergave kunt u controleren of uw Commerce-gegevens zich aan de rand bevinden.
 
 Als de resultaten niet zijn wat u verwacht, open uw dataset en zoek om het even welke ontbroken partijinvoer. Leer meer over [ de invoer van de het oplossen van problemenpartij ](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/troubleshooting.html).
+
+### Controleer of de profielgegevens in het Experience Platform worden weergegeven
+
+Als u profielgegevens in het Experience Platform niet ziet, zie [ Commerce KnowledgeBase ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-connection-customer-profiles-not-exported) voor het oplossen van problemensuggesties.
 
 ## Volgende stappen
 
