@@ -4,16 +4,16 @@ description: Leer hoe u uw Adobe Commerce- of Magento Open Source-instantie inte
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 1089ba268866ef3097a909440a06587dc1987fc5
+source-git-commit: 3a5dec9422aa34eeb204b9fe6f089551e4038f1c
 workflow-type: tm+mt
-source-wordcount: '1026'
+source-wordcount: '1023'
 ht-degree: 0%
 
 ---
 
 # [!DNL Commerce Services Connector]
 
-Sommige Adobe Commerce- en Magento Open Source-functies worden geactiveerd door [!DNL Commerce Services] en geïmplementeerd als SaaS (software als service). Om deze diensten te gebruiken, moet u uw [!DNL Commerce] instantie verbinden gebruikend productie en zandbak API sleutels, en de gegevensruimte in de [ configuratie ](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) specificeren. U hoeft de verbinding slechts één keer te configureren voor elke Commerce-instantie.
+Sommige Adobe Commerce- en Magento Open Source-functies worden geactiveerd door [!DNL Commerce Services] en geïmplementeerd als SaaS (software als service). Om deze diensten te gebruiken, moet u uw [!DNL Commerce] instantie verbinden gebruikend productie en zandbak API sleutels, en de gegevensruimte in de [ configuratie ](#saas-configuration) specificeren. U hoeft de verbinding slechts één keer te configureren voor elke Commerce-instantie.
 
 ## Beschikbare services {#availableservices}
 
@@ -24,7 +24,7 @@ In het volgende voorbeeld worden de [!DNL Commerce] -functies weergegeven waarto
 | [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) aangedreven door Adobe Sensei | Adobe Commerce |
 | [[!DNL Live Search]](/help/live-search/overview.md) aangedreven door Adobe Sensei | Adobe Commerce |
 | [[!DNL Payment Services]](/help/payment-services/overview.md) | Adobe Commerce en Magento Open Source |
-| [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html) | Adobe Commerce |
+| [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/intro) | Adobe Commerce |
 | [[!DNL Catalog Service]](/help/catalog-service/overview.md) | Adobe Commerce |
 | [[!DNL Data Connection]](/help/data-connection/overview.md) | Adobe Commerce |
 
@@ -50,7 +50,7 @@ Daarnaast hebben integrators van oplossingen ook het recht om [!DNL Commerce Ser
 
 ### De API-sleutels voor productie en sandbox genereren {#genapikey}
 
-1. Login aan uw [!DNL Commerce] rekening in [ https://account.magento.com ](https://account.magento.com/) {:target= &quot;_blank&quot;}.
+1. Login aan uw [!DNL Commerce] rekening in [ https://account.magento.com ](https://account.magento.com/customer/account/login) {:target= &quot;_blank&quot;}.
 
 1. Onder het **Magento** lusje, uitgezochte **API Portaal** op sidebar.
 
@@ -72,13 +72,17 @@ Daarnaast hebben integrators van oplossingen ook het recht om [!DNL Commerce Ser
 
 ## SaaS-configuratie {#saasenv}
 
-[!DNL Commerce] -instanties moeten worden geconfigureerd met een SaaS-project en een SaaS-gegevensruimte, zodat [!DNL Commerce Services] gegevens naar de juiste locatie kan verzenden. Een SaaS-project groepeert alle SaaS-gegevensruimten. De SaaS-gegevensruimten worden gebruikt voor het verzamelen en opslaan van gegevens die [!DNL Commerce Services] in staat stellen te werken. Sommige van deze gegevens kunnen worden geëxporteerd uit de [!DNL Commerce] -instantie en sommige kunnen worden verzameld op basis van winkelgedrag in de winkel. Die gegevens blijven vervolgens bewaard om de cloudopslag te beveiligen.
+[!DNL Commerce] -instanties moeten worden geconfigureerd met een SaaS-project en een SaaS-gegevensruimte, zodat [!DNL Commerce Services] gegevens naar de juiste locatie kan verzenden. Een SaaS-project groepeert alle SaaS-gegevensruimten. De SaaS gegevensruimten worden gebruikt om gegevens te verzamelen en op te slaan die [!DNL Commerce Services] toelaat om te werken. Sommige van deze gegevens kunnen worden geëxporteerd uit de [!DNL Commerce] -instantie en sommige kunnen worden verzameld op basis van winkelgedrag in de winkel. Die gegevens blijven vervolgens bewaard om de cloudopslag te beveiligen.
 
 Voor [!DNL Product Recommendations] bevat de SaaS-gegevensruimte catalogus- en gedragsgegevens. U kunt a [!DNL Commerce] instantie aan aSaaS gegevensruimte richten door het [ te selecteren ](https://docs.magento.com/user-guide/configuration/services/saas.html) in de [!DNL Commerce] configuratie.
 
 >[!WARNING]
 >
 > Gebruik uw productieSaaS gegevensruimte slechts op uw productie [!DNL Commerce] installatie om gegevensbotsingen te vermijden. Anders loopt u het risico dat u gegevens van uw productiesite verontreinigt met testgegevens, wat implementatievertragingen veroorzaakt. De gegevens van uw productieproduct kunnen bijvoorbeeld per ongeluk worden overschreven door opvoergegevens, zoals ophalings-URL&#39;s.
+
+### SaaS-gegevensruimteprovisioning
+
+Alle handelaren kunnen tot één ruimte van productiegegevens en twee het testen gegevensruimten per project toegang hebben SaaS. Voor de projecten van Adobe Commerce Cloud Pro met veelvoudige het opvoeren milieu&#39;s, kunt u om extra het testen gegevensruimten voor elk het opvoeren milieu verzoeken door [ een verzoek van de Steun ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) voor te leggen.
 
 ### Een SaaS-project selecteren of maken {#createsaasenv}
 
@@ -92,17 +96,15 @@ Als u een SaaS-project wilt selecteren of maken, vraagt u de API-sleutel [!DNL C
 
    Als u niet de **[!UICONTROL Commerce Services Connector]** sectie in de [!DNL Commerce] configuratie ziet, installeer de [!DNL Commerce] modules voor uw gewenste [[!DNL Commerce]  dienst ](#availableservices). Controleer ook of het pakket `magento/module-services-id` is geïnstalleerd.
 
-1. In de _Sandbox API Sleutels_ en _de Sleutels van productie API van de Sleutels_ secties, kleef uw zeer belangrijke waarden.
+1. Plak de hoofdwaarden in de secties _[!UICONTROL Sandbox API Keys]_en_[!UICONTROL Production API Keys]_ .
 
-   De persoonlijke sleutels moeten `----BEGIN PRIVATE KEY---` aan het begin van de sleutel en `----END PRIVATE KEY----` aan het eind van de privé sleutel omvatten.
+   Persoonlijke sleutels moeten `----BEGIN PRIVATE KEY---` aan het begin van de toets en `----END PRIVATE KEY----` aan het einde van de toets bevatten.
 
 1. Klik **sparen**.
 
 Om het even welke projecten SaaS die met uw sleutels worden geassocieerd verschijnen op het **1} gebied van het Project {in de** **sectie van het Herkenningsteken SaaS.**
 
 1. Als geen projecten SaaS bestaan, leidt de klik **tot Project**. Dan op het **gebied van het Project**, ga een naam voor uw project SaaS in.
-
-   Alle handelaren kunnen tot één ruimte van productiegegevens en twee het testen gegevensruimten per project toegang hebben SaaS. Voor de Proprojecten van de Wolk met veelvoudige het opvoeren milieu&#39;s, kunt u extra het testen gegevensruimten voor elk het opvoeren milieu verzoeken door [ een verzoek van de Steun ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/) voor te leggen.
 
 1. Selecteer de **Ruimte van Gegevens** voor de huidige configuratie van uw [!DNL Commerce] opslag te gebruiken.
 

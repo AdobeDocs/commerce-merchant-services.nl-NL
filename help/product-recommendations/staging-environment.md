@@ -3,16 +3,16 @@ title: Testen in testomgeving
 description: Leer hoe te om  [!DNL Product Recommendations]  van uw productiemilieu in uw het opvoeren milieu voor testende doeleinden te gebruiken.
 exl-id: 178ff2aa-7821-45f7-85f1-d490d8182817
 feature: Services, Recommendations, Staging
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: 3a5dec9422aa34eeb204b9fe6f089551e4038f1c
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '426'
 ht-degree: 0%
 
 ---
 
 # Testen in testomgeving
 
-Alvorens u aanbevelingen aan uw productiemilieu opstelt, zou u op een niet productiemilieu moeten testen om ervoor te zorgen dat alles zoals verwacht werkt.
+Alvorens u aanbevelingen aan uw productiemilieu opstelt, test de dienst in een niet productiemilieu om ervoor te zorgen dat alles zoals verwacht werkt.
 
 [!DNL Product Recommendations] terugkeerproducten die op [ worden gebaseerd verkoopsgedrag gegevens ](behavioral-data.md) van uw storefront worden verzameld. In een niet-productieomgeving is het echter waarschijnlijk dat u geen gedragsgegevens van kopers hebt. Het enige type aanbevelingen dat u zonder gedragsgegevens kunt testen, is `More like this` . Voor dit soort aanbevelingen zijn geen invoergegevens vereist, omdat er een gelijksoortige directe inhoud wordt gebruikt.
 
@@ -30,14 +30,14 @@ Adobe Commerce staat u toe om aanbevelingen van uw productiemilieu en voorproef 
 
 Om aanbevelingen van uw productiemilieu te halen, moet u ervoor zorgen dat:
 
-- De gegevensinzameling van de opslag wordt [ gevormd en toegelaten ](install-configure.md) op productie.
-- Uw niet-productieomgevingscatalogus is grotendeels hetzelfde als de catalogus die u in productie hebt. Het gebruik van vergelijkbare catalogi zorgt ervoor dat de producten die in de aanbevolen eenheden worden geretourneerd, de producten op de productie nauwkeurig na houden.
+- De gegevensinzameling van de opslag wordt [ gevormd en toegelaten ](install-configure.md) in het productiemilieu.
+- De catalogus in uw niet-productieomgeving is grotendeels dezelfde als in de productieomgeving. Het gebruik van vergelijkbare catalogi zorgt ervoor dat de producten die in de aanbevolen eenheden worden geretourneerd, de producten in de productieomgeving op dezelfde manier na benaderen.
 
 ## Gedragsgegevens genereren over een andere omgeving dan de productieomgeving
 
 1. Implementeer de module `magento/product-recommendations` in een niet-productieomgeving waarin de catalogusgegevens overeenkomen met de productiecatalogus.
 
-1. Gebruik één van niet-productie van de Ruimte IDs van Gegevens voor [ configuratie ](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) in Admin.
+1. Gebruik één van niet-productie van de Ruimte IDs van Gegevens voor [ configuratie ](../landing/saas.md#saas-configuration) in Admin.
 
 1. Genereer de gegevens zelf door rond de winkelpagina te klikken om het gedrag van echte kopers na te bootsen (of een automatiseringsscript te maken). Door het testen genereert u gedragsgebeurtenissen in uw niet-productieomgeving. Deze gebeurtenissen worden gebruikt om de productaffiniteiten te produceren die aanbevelingen van de macht voorzien. Voor het testen, [!DNL Commerce] adviseert dat u met de volgende aanbevelingstypes in wisselwerking staat:
 
@@ -47,6 +47,6 @@ Om aanbevelingen van uw productiemilieu te halen, moet u ervoor zorgen dat:
 
 ### Caveats
 
-- De gedragsgegevens en catalogusgegevens van de niet-productie-SaaS-gegevensruimte identificeren een geïsoleerde omgeving waarin de daaruit voortvloeiende productaanbevelingen volledig gebaseerd zijn op de gedragsgegevens die op de bijbehorende opslagruimte worden gegenereerd.
+- De gedrag en catalogusgegevens van de niet-productie [ Ruimte van Gegevens SaaS ](../landing/saas.md#saas-configuration) identificeren een geïsoleerd milieu waarin de resulterende productaanbevelingen volledig op de gedragsgegevens gebaseerd zijn die op de bijbehorende storefront worden geproduceerd.
 
-- Omdat u niet over grote hoeveelheden gedragsgegevens beschikt, zijn de inputgegevens voor de gegevenssamenvoeging van de computer weinig. Deze gegevens worden echter nog steeds naar Sensei verzonden om de modellen voor machinaal leren te berekenen en aanbevelingen te doen op basis van gegevens die u binnen deze omgeving hebt gegenereerd.
+- Omdat u niet over grote hoeveelheden gedragsgegevens beschikt, zijn de inputgegevens voor de gegevenssamenvoeging van de computer weinig. Deze gegevens worden echter nog steeds naar Sensei verzonden om de modellen voor machinaal leren te berekenen en aanbevelingen te doen op basis van gegevens die binnen deze omgeving zijn gegenereerd.

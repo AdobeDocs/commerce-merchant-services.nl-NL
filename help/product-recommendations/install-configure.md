@@ -3,9 +3,9 @@ title: Installeren en configureren
 description: Leer om te installeren, bij te werken, en te desinstalleren  [!DNL Product Recommendations].
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
 role: Admin, Developer
-source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
+source-git-commit: 3a5dec9422aa34eeb204b9fe6f089551e4038f1c
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '554'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ composer require magento/product-recommendations
 composer require magento/module-page-builder-product-recommendations
 ```
 
-Door [!DNL Product Recommendations] in de Bouwer van de Pagina toe te laten, kunt u een bestaande, actieve [ aanbeveling eenheid ](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) aan om het even welke inhoud toevoegen die in de Bouwer van de Pagina, zoals pagina&#39;s, blokken, en dynamische blokken wordt gecreeerd.
+Door [!DNL Product Recommendations] in de Bouwer van de Pagina toe te laten, kunt u een bestaande, actieve [ aanbeveling eenheid ](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations) aan om het even welke inhoud toevoegen die in de Bouwer van de Pagina, zoals pagina&#39;s, blokken, en dynamische blokken wordt gecreeerd.
 
 Zie [ Gebruikend  [!DNL Product Recommendations]  met de Inhoud van de Bouwer van de Pagina ](page-builder.md) voor verdere instructies.
 
@@ -51,13 +51,13 @@ composer require magento/module-visual-product-recommendations
 
 ## Configureren [!DNL Product Recommendations] {#configure}
 
-1. Nadat u de `magento/product-recommendations` module installeert, vorm de [ Schakelaar van de Diensten van Commerce ](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) door API Sleutels te specificeren en een Ruimte van Gegevens te selecteren SaaS.
+1. Nadat u de `magento/product-recommendations` module installeert, vorm de [ Schakelaar van de Diensten van Commerce ](../landing/saas.md) door API Sleutels te specificeren en een Ruimte van Gegevens te selecteren SaaS.
 
    Het vormen van deze verbinding laat de gegevenssynchronisatie en de communicatie tussen de instantie van Commerce, de Dienst van de Catalogus, en andere ondersteunende diensten toe. De synchronisatie van gegevens wordt behandeld door de [ uitbreiding van de Uitvoer van Gegevens SaaS ](../data-export/overview.md).
 
-1. Om ervoor te zorgen dat de catalogusuitvoer correct kan lopen, bevestig dat de [ bebouwde ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) banen en de [ indexeerders ](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) lopen en `Product Feed` indexeerder wordt geplaatst aan `Update by Schedule`.
+1. Om ervoor te zorgen dat de catalogusuitvoer correct kan lopen, bevestig dat de [ bebouwde ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) banen en de [ indexeerders ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) lopen en `Product Feed` indexeerder wordt geplaatst aan `Update by Schedule`.
 
-Nadat u de Commerce-toepassing hebt gekoppeld aan Commerce Services en de SaaS-gegevensruimte hebt opgegeven, wordt de catalogussynchronisatie gestart. U kunt [ dan verifiëren ](verify.md) dat het gedragsgegeven wordt verzonden naar uw storefront.
+Nadat u met succes de toepassing van Commerce aan de Diensten van Commerce verbindt en de [ Ruimte van Gegevens SaaS ](../landing/saas.md#saas-configuration) specificeert, begint de catalogussynchronisatie. U kunt [ dan verifiëren ](verify.md) dat het gedragsgegeven wordt verzonden naar uw storefront.
 
 ## Gegevenssynchronisatie controleren en problemen oplossen
 
@@ -107,7 +107,7 @@ composer update --with-dependencies magento/product-recommendations magento/modu
 
 >[!NOTE]
 >
-> In versies 3.x.x van Product Recommendations had u slechts één API-sleutel nodig. In versies 4.x.x en hoger moet u openbare en persoonlijke API-sleutels voor productie en openbare en persoonlijke API-sleutels voor sandbox opgeven. Als u geen van beide API-sleutels biedt, hebt u geen toegang tot de functie Product Recommendations in Admin. Het verzamelen van gegevens gaat echter door op uw winkel en de bestaande aanbevelingen blijven aan de kopers worden getoond.
+> In versies 3.x.x van Product Recommendations had u slechts één API-sleutel nodig. In versies 4.x.x en hoger moet u openbare en persoonlijke API-sleutels opgeven voor zowel de sandbox- als productieomgeving. Als u geen van beide API-sleutels biedt, hebt u geen toegang tot de functie Product Recommendations in Admin. De gegevensverzameling gaat echter door op uw winkel en de bestaande aanbevelingen worden nog steeds aan de kopers getoond.
 
 ## Firewalls
 
@@ -115,4 +115,4 @@ Voeg `commerce.adobe.io` toe aan de lijst van gewenste personen om Product Recom
 
 ## Verwijderen [!DNL Product Recommendations] {#uninstall}
 
-Indien noodzakelijk, kunt u ](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html) de product-aanbevelingen module [ desinstalleren.
+Indien noodzakelijk, kunt u ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules) de product-aanbevelingen module [ desinstalleren.
