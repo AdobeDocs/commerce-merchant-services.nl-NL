@@ -3,7 +3,7 @@ title: Gegevens verzamelen
 description: Leer hoe gebeurtenissen gegevens verzamelen voor productaanbevelingen.
 exl-id: b827d88c-327f-4986-8239-8f1921d8383c
 feature: Services, Recommendations, Eventing
-source-git-commit: 7ed9321a2f4e58a7476aa91e74611fe896e1a7b1
+source-git-commit: 67296ea42bfddb10b0c86cb1ca47324f5fec7825
 workflow-type: tm+mt
 source-wordcount: '417'
 ht-degree: 0%
@@ -34,15 +34,16 @@ De [ Verzameling van de Gebeurtenis van Adobe Commerce Storefront ](https://deve
 | `view` | De aanbevolen eenheid kan op de pagina worden weergegeven, bijvoorbeeld door naar de pagina te schuiven. | Ja |
 
 De volgende gebeurtenissen zijn vereist om het dashboard correct te vullen.
-| Dashboardkolom | Gebeurtenissen    | Veld samenvoegen  |
-| — | — | — |
-| Impressies      |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render` | unitId  |
-| Weergaven            |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-unit-view` | unitId  |
-| Klikken           |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click`    | unitId  |
-| Ontvangsten          |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click`, `place-order` | unitId, sku |
-| LT-ontvangsten       |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click`, `place-order` | unitId, sku |
-| CTR              |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-item-click`, `recs-add-to-cart-click`  | unitId, sku |
-| vCTR             |`page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-unit-view`, `recs-item-click`, `recs-add-to-cart-click` | unitId, sku |
+
+| Dashboardkolom | Gebeurtenissen | Veld samenvoegen |
+| ---------------- | --------- | ----------- |
+| Impressies | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render` | unitId |
+| Weergaven | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-unit-view` | unitId |
+| Klikken | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click` | unitId |
+| Ontvangsten | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click`, `place-order` | unitId, sku |
+| LT-ontvangsten | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click`, `place-order` | unitId, sku |
+| CTR | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-item-click`, `recs-add-to-cart-click` | unitId, sku |
+| vCTR | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-unit-view`, `recs-item-click`, `recs-add-to-cart-click` | unitId, sku |
 
 Als uw storefront met PWA Studio wordt uitgevoerd, verwijs naar de [ documentatie van de PWA ](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Als u een douane frontend technologie zoals React of Vue JS gebruikt, verwijs naar de gebruikersgids om te leren hoe te om [ Product Recommendations in een headless ](headless.md) milieu te integreren.
 
