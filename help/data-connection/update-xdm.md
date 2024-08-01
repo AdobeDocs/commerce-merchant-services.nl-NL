@@ -4,9 +4,9 @@ description: Leer hoe te om een schema, dataset, en gegevensstroom tot stand te 
 exl-id: 4401bbe7-1ccc-4349-a998-9e9ee9db590f
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
+source-git-commit: 90ddfdd41958b254fc0c2f3e0891385193f1bb9c
 workflow-type: tm+mt
-source-wordcount: '978'
+source-wordcount: '1073'
 ht-degree: 0%
 
 ---
@@ -63,17 +63,36 @@ In deze sectie leert u hoe u uw bestaande schema bijwerkt of een schema maakt om
 
    De gegevensstroom door:sturen de verzamelde gegevens aan de dataset. De gegevens worden vertegenwoordigd in de dataset die op het geselecteerde schema wordt gebaseerd.
 
-1. **Beta** (Facultatief) u douanekenmerken kunt gebruiken als u de gegevens van de douanebackbureaugebeurtenis van uw instantie van Commerce aan het Experience Platform wilt overgaan. Deze functie is in bèta. Als u zich bij het bètaprogramma zou willen aansluiten, verzend een verzoek aan [ dataconnection@adobe.com ](mailto:dataconnection@adobe.com). Neem het volgende op in uw verzoek:
-
-   - Uw [ Adobe Org identiteitskaart ](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html#concept_EA8AEE5B02CF46ACBDAD6A8508646255). Bijvoorbeeld `organization_id@AdobeOrg` .
-   - Lijst met aangepaste kenmerken op bestelniveau.
-   - Lijst met kenmerken voor het niveau Volgitem.
-
-   Het Adobe Commerce-team zal contact met u opnemen voor meer informatie en volgende stappen.
-
 Met de schema&#39;s, datasets, en gegevensstromen die voor gedrag en achterbureaugegevens worden gevormd, kunt u [ ](connect-data.md#data-collection) uw instantie van Commerce vormen om die gegevens te verzamelen en te verzenden naar het Experience Platform.
 
-Raadpleeg de volgende sectie voor meer informatie over het profiel van uw klant.
+Om de het profielinformatie van uw klant te omvatten, zie {de gebeurtenisgegevens van het tijdreeksprofiel van 0} ](#time-series-profile-event-data).[
+
+### Aangepaste kenmerken toevoegen
+
+U kunt aangepaste kenmerken gebruiken als u de aangepaste gegevens van een Office-gebeurtenis van uw Commerce-instantie aan het Experience Platform wilt doorgeven.
+
+Aangepaste kenmerken worden op twee niveaus ondersteund:
+
+- Orderniveau
+- Itemniveau bestellen
+
+>[!NOTE]
+>
+>Adobe Commerce ondersteunt aangepaste kenmerken met een gegevenstype van een tekenreeks of een tekenreeks.
+
+1. Voeg een extra module toe en schakel deze in uw [!DNL Commerce] -toepassing in. Zie het volgende [ voorbeeld ](https://github.com/shiftedreality/beacon-backoffice-custom-events/blob/main/BeaconDemo/Plugin/ModifyOrder.php).
+
+   U moet de voorbeeldcode wijzigen om extra douanekenmerken bloot te stellen. De implementatie varieert op basis van waar deze kenmerken zijn opgeslagen en de logica die is vereist om ze te extraheren.
+
+1. Breid uw bestaand XDM-schema uit. Verwijs naar de volgende [ gids ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) om douanekenmerken voor de orde en van de Orde puntniveaus tot stand te brengen. Het veld Tenant-id wordt dynamisch gegenereerd, maar de veldstructuur moet op het voorbeeld lijken.
+
+   >[!IMPORTANT]
+   >
+   >Aangepaste XDM-kenmerken moeten overeenkomen met de kenmerken die vanuit [!DNL Commerce] worden verzonden.
+
+1. Zorg ervoor dat de gegevensstroom verbonden aan uw schema XDM de zelfde gegevensstroom is die op de [ wordt gespecificeerd Inzameling van Gegevens ](connect-data.md#data-collection) tabel.
+
+1. Klik **[!UICONTROL Save]** op het **lusje van de Inzameling van Gegevens** om het even welke douanekenmerken terug te winnen u hebt gespecificeerd.
 
 ## Gebeurtenisgegevens tijdreeksprofiel
 
