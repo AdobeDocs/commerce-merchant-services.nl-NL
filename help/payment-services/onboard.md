@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: 1ee8c660-0941-4378-a1d7-ae45de3de211
 feature: Payments, Checkout, Integration
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '336'
 ht-degree: 0%
 
 ---
@@ -18,9 +18,13 @@ Als u [!DNL Payment Services] for [!DNL Adobe Commerce] en [!DNL Magento Open So
 
 ## Stroom aan boord
 
+In dit stroomdiagram wordt het algemene proces voor instapweigering [!DNL Payment Services] weergegeven.
+
 ![ on boarding flow ](assets/onboarding-diagram.svg){width="600" zoomable="yes"}
 
-Dit instapkaartstroomdiagram toont het algemene proces voor instapweigering [!DNL Payment Services] .
+>[!NOTE]
+>
+> Voor Adobe Commerce versie 2.4.7 of hoger kunt u de extensiesstap Marketplace overslaan omdat [!DNL Payment Services] offline beschikbaar is.
 
 Nadat u het instappen voor zandbak of levende betalingen hebt voltooid, is de financiële rapportering toegankelijk van [!DNL Payment Services] in Admin.
 
@@ -28,13 +32,15 @@ Als zowel de sandbox als de live betalingen worden gestart en ingeschakeld, kunt
 
 ## Vereisten
 
-Als u [!DNL Payment Services] wilt gebruiken, moet u het volgende beschikbaar hebben voor uw instantie:
+Als u [!DNL Payment Services] wilt gebruiken, moet u alle afhankelijke modules hebben ingeschakeld en moet het volgende beschikbaar zijn voor uw instantie:
 
 * Module Services Connector
 * Services ID-module
 * API-sleutels
 
-De modules van de Verbinding van de Diensten en van identiteitskaart van de Diensten worden automatisch geïnstalleerd tijdens de [ installatie van  [!DNL Payment Services]](install.md). Wanneer de installatie volledig is, kunt u een nieuwe sectie in de configuratiemontages zien (**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**) wanneer u **[!UICONTROL Services]**uitbreidt **[!UICONTROL Commerce Services Connector]**.
+De modules van de Verbinding van de Diensten en van identiteitskaart van de Diensten worden automatisch geïnstalleerd tijdens de [ installatie van  [!DNL Payment Services]](install.md).
+
+Wanneer de installatie volledig is, kunt u een nieuwe sectie in de configuratiemontages (**[!UICONTROL Stores]** zien > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**) als u **[!UICONTROL Services]**uitbreidt **[!UICONTROL Commerce Services Connector]**.
 
 Leren om tot uw API sleutels te leiden of toegang te hebben, zie [ API geloofsbrieven ](#obtain-api-credentials).
 

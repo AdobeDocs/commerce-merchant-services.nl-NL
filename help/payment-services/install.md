@@ -4,9 +4,9 @@ description: Installeer de uitbreiding van de Diensten van Betalingen.
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
 role: Admin
 feature: Payments, Checkout, Install, Upgrade
-source-git-commit: 692a7e55d72b1e2f1a161d508be5e179c4d26bde
+source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '494'
 ht-degree: 0%
 
 ---
@@ -21,8 +21,6 @@ Voer een paar instapstappen uit om te beginnen met het gebruik van Betalingsserv
 
 Het downloaden en installeren van de extensie [!DNL Payment Services] voor [!DNL Adobe Commerce] en [!DNL Magento Open Source] is een eerste vereiste stap voor het gebruik van [!DNL Payment Services] .
 
-![[!DNL Payment Services] de mening van Admin van de uitbreiding ](assets/admin-view.png){width="300" zoomable="yes"}
-
 ## De extensie downloaden
 
 U moet de uitbreiding van [ Commerce Marketplace ](https://experienceleague.adobe.com/docs/commerce-admin/start/resources/commerce-marketplace.html) eerst downloaden alvorens het te installeren.
@@ -32,6 +30,10 @@ U moet de uitbreiding van [ Commerce Marketplace ](https://experienceleague.adob
 1. Klik op **[!UICONTROL Add to Cart]**.
 1. Voltooi het uitchecken en klik op **[!UICONTROL Place Order]** .
 1. Controleer het e-mailadres dat is gekoppeld aan het downloaden van uw Marketplace voor bevestiging van de bestelling en voor meer informatie.
+
+>[!NOTE]
+>
+> Voor Adobe Commerce versie 2.4.7 of hoger is [!DNL Payment Services] offline beschikbaar.
 
 ## De extensie installeren
 
@@ -97,6 +99,10 @@ Deze methode wordt gebruikt voor het installeren van de extensie [!DNL Payment S
 1. Wijzigingen vastleggen.
 1. Om ervoor te zorgen dat de toegewijde code wordt opgesteld, werk uw instantie bij.
 
+>[!NOTE]
+>
+> [!DNL Payment Services] 1.6.1 is compatibel met PHP versie 7.x. Het wordt echter ten zeerste aanbevolen om de nieuwste versie van [!DNL Payment Services] te installeren.
+
 ## De extensie upgraden
 
 Wanneer een nieuwe versie van [!DNL Payment Services] wordt uitgebracht, kunt u uw uitbreiding gemakkelijk bevorderen.
@@ -109,11 +115,21 @@ Wanneer een nieuwe versie van [!DNL Payment Services] wordt uitgebracht, kunt u 
 
    Gebruik de opdracht `composer update` om alle basisafhankelijkheden bij te werken.
 
+1. Voer de volgende handelingen uit nadat de composer is bijgewerkt:
+
+   ```bash
+   bin/magento setup:upgrade
+   ```
+
 1. Leg de wijzigingen vast en duw op deze.
 
 ## Problemen oplossen
 
 Er kunnen fouten optreden wanneer u de extensie [!DNL Payment Services] probeert te installeren. Gebruik de volgende methoden voor het oplossen van problemen om de fouten op te lossen.
+
+### Lijst van gegevensbanken
+
+Controleer of `repo.magento.com` aanwezig is in uw lijst met opslagplaatsen.
 
 ### Onjuiste Composer-sleutels
 

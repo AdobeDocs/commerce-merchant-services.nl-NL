@@ -3,7 +3,7 @@ title: Een bestelling maken met  [!DNL Payment Services]
 description: Admin verstrekt de capaciteit om een orde te vervullen gebruikend  [!DNL Payment Services]  direct van Admin door een handelaar voor hun klanten die hulp nodig hebben.
 exl-id: 1542a33f-9c01-4c36-bbce-bfa3107fbeb8
 feature: Payments, Checkout
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 1%
@@ -18,7 +18,7 @@ Met [!DNL Payment Services] for [!DNL Adobe Commerce] and [!DNL Magento Open Sou
 
 ## Gehoste creditcardvelden
 
-[!DNL Payment Services] zijn beschikbaar als een betalingsmethode bij het maken van een bestelling in de beheerder:
+[!DNL Payment Services] is beschikbaar in Admin als betalingsmethode bij het maken van een bestelling:
 
 1. Voor _Admin_ sidebar, breid **[!UICONTROL Sales]** uit en kies **[!UICONTROL Orders]**.
 1. Klik op **[!UICONTROL Create New Order]**.

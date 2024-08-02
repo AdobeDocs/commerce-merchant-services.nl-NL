@@ -6,10 +6,10 @@ index: true
 role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
-source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
+source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
 workflow-type: tm+mt
-source-wordcount: '97'
-ht-degree: 2%
+source-wordcount: '103'
+ht-degree: 1%
 
 ---
 
@@ -19,10 +19,6 @@ ht-degree: 2%
 - [Overzicht van hulplijnen](guide-overview.md)
 - [Inleiding tot  [!DNL Payment Services]](overview.md)
 - [Opmerkingen bij de release](release-notes.md)
-- Betalingen en uitchecken {#payments-checkout}
-   - [Betalingsopties](payments-options.md)
-   - [Creditcard vaulting](vaulting.md)
-   - [Afhandeling](checkout.md)
 - Aan boord [!DNL Payment Services] {#get-started}
    - [Overzicht van onboarding](onboard.md)
    - [Installeer de  [!DNL Payment Services]  uitbreiding](install.md)
@@ -34,18 +30,23 @@ ht-degree: 2%
    - [[!DNL Payment Services] Instellingen](settings.md)
    - [Configuratie van opdrachtregel](configure-cli.md)
    - [Oudere configuratie](configure-admin.md)
-- [Testen en valideren](test-validate.md)
-- [Een bestelling maken](create-order.md)
+   - [Testen en valideren](test-validate.md)
+- Betalingen en uitchecken {#payments-checkout}
+   - [Betalingsopties](payments-options.md)
+   - [Creditcard vaulting](vaulting.md)
+   - [Afhandeling](checkout.md)
+   - [Een bestelling maken in Beheer](create-order.md)
+   - Betalingen beheren {#manage}
+      - [Regelitems voor  [!DNL Payment Services]](line-items.md)
+      - [Restituties](refunds.md)
+      - [Void](voids.md)
 - Financiële rapportage {#reporting}
    - [Transactierapport](transactions.md)
    - [Betalingsstatusrapport bestellen](order-payment-status.md)
    - [Uitbetalingsrapport](payouts.md)
    - [Beschikbare gegevens](data.md)
    - [Verwerking van niveau 2 en niveau 3](levels-card-payment-transactions.md)
-- Betalingen beheren {#manage}
-   - [Restituties](refunds.md)
-   - [Void](voids.md)
-- Beveiliging {#security-compliance}
-   - [Beveiliging en naleving](security.md)
+- Beveiliging en compatibiliteit {#security-compliance}
+   - [Beveiliging](security.md)
    - [Ondertekening van de fraudebescherming](fraud-protection.md)
 - [ Terugkeer aan het Huis van de Diensten van Commerce ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/home.html)

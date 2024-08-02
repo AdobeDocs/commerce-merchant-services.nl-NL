@@ -3,9 +3,9 @@ title: De testsandbox instellen
 description: Gebruik een Paypal- zandbakrekening om  [!DNL Payment Services]  op testwijze te gebruiken.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: bfb49e3602cc80f97817a8fd8d7c4684a3a3bcd2
+source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
@@ -81,5 +81,7 @@ Deze functie is standaard ingesteld op `off` . Wanneer u het toelaat, kunnen de 
 >Deze instelling is niet van toepassing op andere uitcheckstromen.
 
 ## Testen in sandboxomgeving
+
+Het wordt ten zeerste aanbevolen testgegevensruimten te gebruiken voor integratie- en staging-omgevingen, en Betalingen in productie te testen met echte creditcards en banken, voordat u deze functionaliteit toegankelijk maakt voor klanten.
 
 Zie [ Testen en bevestigen ](test-validate.md) voor meer informatie.
