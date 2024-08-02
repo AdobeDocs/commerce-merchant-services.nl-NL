@@ -3,9 +3,9 @@ title: Aanvullende informatie
 description: De recentste versieinformatie voor de  [!DNL Data Connection]  uitbreiding van Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: c736647fc148a02803bc458b16ff1f3419dc1fe1
+source-git-commit: 8dc6aa5ab2472d1282fbf65605fd511250816af7
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '937'
 ht-degree: 0%
 
 ---
@@ -24,15 +24,21 @@ Deze releaseopmerkingen bevatten updates van de extensie [!DNL Data Connection] 
 
 Voor eigenschapveranderingen en moeilijke situaties met betrekking tot uitbreidingen die door de [!DNL Data Connection] uitbreiding worden gebruikt, zie **Ondersteunde de dienstupdates**.
 
-Zie [ Komende Versies ](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) om over versieschema&#39;s en steun te leren.
+Zie [ Komende Versies ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) om over versieschema&#39;s en steun te leren.
 
-Zie de ontwikkelaardocumentatie aan [ leren welke versies van Commerce deze module ](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html) steunen.
+Zie de ontwikkelaardocumentatie aan [ leren welke versies van Commerce deze module ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability) steunen.
 
 ## Ondersteunde service-updates
 
 In deze releaseopmerkingen worden wijzigingen in de functies beschreven en oplossingen gevonden voor extensies die worden gebruikt door de extensie [!DNL Data Connection] .
 
 +++Ondersteunde service-updates
+
+_Augustus 2, 2024_
+
+![ Bevestig ](../assets/fix.svg) - Vaste het totale bedrag van betalingen wanneer het ordertotaal wordt gevormd om belastingen te omvatten.
+![ Nieuw ](../assets/new.svg) - Toegevoegd a `taxAmount` gebied aan de gebeurtenissen van de ordeaankoop.
+![ Nieuw ](../assets/new.svg) - voegde de capaciteit toe om douanegegevens aan gebeurtenissen toe te voegen. Zie het volgende voor een [ voorbeeld ](https://github.com/adobe/commerce-events/blob/main/examples/events/custom-event-override.md).
 
 _Januari 24, 2024_
 
@@ -78,7 +84,7 @@ _22 Juli, 2024_
 
 [!BADGE  Verenigbaarheid ]{type=Informative tooltip="Compatibiliteit"}
 
-![ Repareren ](../assets/new.svg) - werkte het metapakket van de Verbinding van het Experience Platform bij om ongebruikte gegevensexporteurs en indexeerders te verwijderen.
+![ Repareren ](../assets/fix.svg) - werkte het metapakket van de Verbinding van het Experience Platform bij om ongebruikte gegevensexporteurs en indexeerders te verwijderen.
 
 ## 3.1.2.
 
@@ -86,8 +92,8 @@ _5 Juni, 2024_
 
 [!BADGE  Verenigbaarheid ]{type=Informative tooltip="Compatibiliteit"}
 
-![ Bevestig ](../assets/new.svg) - Vaste een kwestie waar het verkeerde datumformaat werd gebruikt toen het in werking stellen van a [ historische synchronisatie ](connect-data.md#specify-order-history-date-range).
-![ Bevestig ](../assets/new.svg) - Vaste een kwestie waar de [ startCheckout ](events.md#startcheckout) gebeurtenis niet op Adobe Commerce 2.4.7 werd verzonden.
+![ Bevestig ](../assets/fix.svg) - Vaste een kwestie waar het verkeerde datumformaat werd gebruikt toen het in werking stellen van a [ historische synchronisatie ](connect-data.md#specify-order-history-date-range).
+![ Bevestig ](../assets/fix.svg) - Vaste een kwestie waar de [ startCheckout ](events.md#startcheckout) gebeurtenis niet op Adobe Commerce 2.4.7 werd verzonden.
 
 ## 3.1.1
 
@@ -115,8 +121,8 @@ _16 november 2023_
 [!BADGE  Verenigbaarheid ]{type=Informative tooltip="Compatibiliteit"}
 
 ![ Nieuw ](../assets/new.svg) - de schakelaar van het Experience Platform is anders genoemd aan [!DNL Data Connection].
-![ Repareren ](../assets/new.svg) - Toegevoegde capaciteit om foutenreactie te registreren als IMS van Adobe niet het toegangstoken kan produceren.
-![ Repareren ](../assets/new.svg) - voegde een berichtbericht toe als u probeert om Historische Orden te synchroniseren maar geen rekeningsgeloofsbrieven hebben gespecificeerd.
+![ Repareren ](../assets/fix.svg) - Toegevoegde capaciteit om foutenreactie te registreren als IMS van Adobe niet het toegangstoken kan produceren.
+![ Repareren ](../assets/fix.svg) - voegde een berichtbericht toe als u probeert om Historische Orden te synchroniseren maar geen rekeningsgeloofsbrieven hebben gespecificeerd.
 
 ## 3.0.0.
 
