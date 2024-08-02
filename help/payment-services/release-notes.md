@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Opmerkingen bij de release"
 description: Herzie de versienota's voor informatie over alle  [!DNL Payment Services]  versies.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
+source-git-commit: c02c7c8700c9aa2157b296b8995c05805e371941
 workflow-type: tm+mt
-source-wordcount: '2576'
+source-wordcount: '2787'
 ht-degree: 0%
 
 ---
@@ -87,6 +87,26 @@ _Juni 28, 2021_
 
 +++
 
+## v2.7.0
+
+_Augustus 2, 2024_
+
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
+
+![ Nieuw ](../assets/new.svg)<!-- PAY-4844 --> [!DNL Payment Services] steunt nu [ gegevens van het lijnpunt op het ordeniveau ](line-items.md). Met deze functie kunnen handelaren gedetailleerde informatie over de artikelen in een bestelling bekijken, zoals productdetails, hoeveelheid en prijs (inclusief BTW, kortingen en andere relevante informatie).
+
+![ Nieuw ](../assets/new.svg)<!-- PAY-5380 --> [!DNL Payment Services] verbetert de [ Configuratie in de Admin ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/configure/configure-admin#general-configuration) ervaring voor handelaren voor een gemakkelijker en intuïtiever aan boord gaan proces. Met deze functie kunnen verkopers hun [!DNL Payment Services] id&#39;s opnieuw instellen.
+
+![ Nieuw ](../assets/new.svg)<!-- PAY-5255 --> [!DNL Payment Services] omvat a [ bericht van de mislukking van de Betaling ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-payment-failed-emails). Deze functie biedt vrijwel realtime meldingen van betalingsfouten aan handelaren, zodat bestellingen kunnen worden opgeslagen door naar de winkel te gaan en de probleemoplossing mogelijk te verbeteren.
+
+![ bevestig ](../assets/fix.svg)<!-- PAY-5469 --> een kwestie waar **pop-up van de Betaal Google door Safari** werd geblokkeerd. Kopers kunnen nu hun Google Pay-betalingstransacties uitvoeren op Safari.
+
+![ beval ](../assets/fix.svg)<!-- PAY-5492 --> een kwestie vast wanneer een handelaar aangepaste termijnen en voorwaarden aan de controlepagina toevoegt. Tijdens een [ uitdrukkelijke controle ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options#standard-vs-advanced-payments-experience) heeft een verkoopster nu de capaciteit om deze termijnen en voorwaarden goed te keuren om de controle zonder enige kwesties te voltooien.
+
+![ bevestig ](../assets/fix.svg)<!-- PAY-5532 --> Verbeterde functionaliteit In-Store Pickup (ISPU) met **InstantPurchase**. {de methodes van de Levering ISPU **worden niet meer getoond wanneer een verkoopster een orde met** InstantPurchase **plaatst.**
+
+](../assets/fix.svg)<!-- PAY-5606 --> Vaste een kwestie binnen de **het landkiezer van de Pagina van de Configuratie** die voorkwam wanneer het land van de handelaar aan **Duitsland** wordt geplaatst.![
+
 ## v2.6.0
 
 _4 Juni, 2024_
@@ -137,7 +157,7 @@ _Maart 20, 2024_
 
 [!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![ Nieuwe ](../assets/new.svg)<!-- PAY-4868 --> Merchants kunnen met succes [ vormen Google betalen door de koopervaring ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html), gelijkend op andere betalingsknopen in [!DNL Payment Services] door Admin.
+![ Nieuwe ](../assets/new.svg)<!-- PAY-4868 --> Merchants kunnen [ met succes betalen Google door de aankoopervaring ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html) vormen, gelijkend op andere betalingsknopen in [!DNL Payment Services] door Admin.
 
 ![ Nieuw ](../assets/new.svg)<!-- PAY-4381 --> [ de Diensten van de Betaling steunt Google betalen door GraphQL ](https://developer.adobe.com/commerce/webapi/graphql/payment-services/) toestaand verkopers om een koploze ervaring van Commerce met de betalingsmethode van Google te hebben.
 
