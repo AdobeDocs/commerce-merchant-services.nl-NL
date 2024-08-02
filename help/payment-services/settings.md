@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
 feature: Payments, Checkout, Configuration
-source-git-commit: 8dd4f629fa60959588cee4ea22f9fb577f338716
+source-git-commit: 7a886679ad00f9b29e6ffd7d8bc8e2f6fc0082d4
 workflow-type: tm+mt
-source-wordcount: '2372'
+source-wordcount: '2404'
 ht-degree: 0%
 
 ---
@@ -30,9 +30,9 @@ U kunt [!DNL Payment Services] inschakelen voor uw website en tests met sandboxe
 
 1. Voor _Admin_ sidebar, ga **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 
-   ![ mening van het Huis ](assets/payment-services-menu-small.png){width="400" zoomable="yes"}
-
 1. Klik op **[!UICONTROL Settings]**. Zie [ Inleiding aan  [!DNL Payment Services]  Huis ](payments-home.md) voor meer informatie.
+
+   ![ Reageer montagesmening ](assets/react-settings-view.png){width="500" zoomable="yes"}
 
    De sectie _[!UICONTROL General]_bevat instellingen die worden gebruikt om [!DNL Payment Services] in te schakelen als betalingsmethode.
 
@@ -40,9 +40,11 @@ U kunt [!DNL Payment Services] inschakelen voor uw website en tests met sandboxe
 
 1. Als u nog [!DNL Payment Services] voor uw opslag test, plaats **de wijze van de Betaling** aan `Sandbox`. Als u live betalingen wilt inschakelen, stelt u deze in op `Production` .
 
-   >[!NOTE]
+1. Uw **[!UICONTROL Payment Services Sandbox ID]** en **[!UICONTROL Payment Services Production ID]** waarden worden automatisch bevolkt zodra u de [ Schakelaar van de Diensten van Commerce ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas) {target=_blank} opstelde en het [!DNL Payment Services] dashboard voor het eerst bezoekt. Doe dit om het instappen voor uw zandbak en/of productiemilieu&#39;s te beëindigen. Deze waarden koppelen uw SaaS-id aan [!DNL Payment Services] .
+
+   >[!WARNING]
    >
-   >Uw _[!UICONTROL Sandbox Merchant ID]_en_[!UICONTROL Production Merchant ID]_ worden automatisch gegenereerd en worden in de betreffende velden weergegeven wanneer u klaar bent met het instappen voor de sandbox en/of productie.
+   > Als u de id&#39;s van [!DNL Payment Services] opnieuw instelt, moet u opnieuw aan boord gaan.
 
 1. Klik op **[!UICONTROL Save]**.
 
@@ -59,7 +61,7 @@ U kunt een [!UICONTROL Soft Descriptor] toevoegen aan de configuratie van uw web
 1. Voor _Admin_ sidebar, ga **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Klik op **[!UICONTROL Settings]**. Zie [ Inleiding aan  [!DNL Payment Services]  Huis ](payments-home.md) voor meer informatie.
 1. Selecteer in het vervolgkeuzemenu **[!UICONTROL Scope]** de website- of winkelweergave waarvoor u een elektronische descriptor wilt maken. Voor de eerste setup laat u deze waarde als **[!UICONTROL Default]** instellen.
-1. Voeg uw aangepaste tekst (maximaal 22 tekens) toe aan het tekstveld en vervang `Custom descriptor` .
+1. Voeg uw aangepaste tekst (maximaal 22 tekens) toe aan het tekstveld en vervang `Soft descriptor` .
 1. Klik op **[!UICONTROL Save]**.
 1. U kunt als volgt een andere softdescriptor maken dan de geconfigureerde standaardwaarde voor een website- of opslagweergave:
    1. Selecteer in het vervolgkeuzemenu **[!UICONTROL Scope]** de website- of winkelweergave waarvoor u een elektronische descriptor wilt maken.
@@ -79,8 +81,8 @@ U kunt een [!UICONTROL Soft Descriptor] toevoegen aan de configuratie van uw web
 |---|---|---|
 | [!UICONTROL Enable] | website | Schakel [!DNL Payment Services] voor uw website in of uit. Opties: [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Payment mode] | winkelweergave | Plaats de methode, of het milieu, voor uw opslag. Opties: [!UICONTROL Sandbox] / [!UICONTROL Production] |
-| [!UICONTROL Sandbox Merchant ID] | winkelweergave | De bedrijfs-id van de sandbox, die automatisch wordt gegenereerd tijdens het aan boord nemen van de sandbox. |
-| [!UICONTROL Production Merchant ID] | winkelweergave | Uw bedrijfs-id voor productie, die automatisch wordt gegenereerd tijdens het aan boord nemen van sandboxen. |
+| [!UICONTROL Payment Services Sandbox ID] | winkelweergave | De bedrijfs-id van de sandbox, die automatisch wordt gegenereerd tijdens het aan boord nemen van de sandbox. |
+| [!UICONTROL Payment Services Production ID] | winkelweergave | Uw bedrijfs-id voor productie, die automatisch wordt gegenereerd tijdens het aan boord nemen van sandboxen. |
 | [!UICONTROL Soft Descriptor] | website- of winkelweergave | Voeg een elektronische beschrijving toe aan uw website(s) en sla de weergave(en) op om informatie toe te voegen aan klanttransacties die merken, winkels of productlijnen afbakenen. Met de schakeloptie [!UICONTROL Use website] past u elke schermdescriptor toe die op websiteniveau is toegevoegd. Met de schakeloptie [!UICONTROL Use default] past u elke schermdescriptor toe die als standaard is toegevoegd. |
 
 ## Betalingsopties configureren
