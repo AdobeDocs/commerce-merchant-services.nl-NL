@@ -2,9 +2,9 @@
 title: "Indexing"
 description: "Leer hoe  [!DNL Live Search]  de eigenschappen van het productattribuut van indexen."
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
+source-git-commit: 920324dbad62adaee5c7db688e59398557e03663
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '586'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Eigenschappen van productkenmerken (metagegevens) bepalen:
 
 Het bereik van kenmerkmetagegevens is `website/store/store view` .
 
-[!DNL Live Search] API staat een cliënt toe om door om het even welk productattribuut te sorteren dat het [ storefront bezit ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) `Use in Search` heeft die aan `Yes` in Adobe Commerce Admin wordt geplaatst. Indien ingeschakeld, kunnen `Search Weight` en `Visible in Advanced Search` worden ingesteld voor het kenmerk.
+[!DNL Live Search] API staat een cliënt toe om door om het even welk productattribuut te sorteren dat het [ storefront bezit ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) `Use in Search` heeft die aan `Yes` in Adobe Commerce Admin wordt geplaatst. Wanneer deze optie is ingeschakeld, kan `Search Weight` worden ingesteld voor het kenmerk.
 
 [!DNL Live Search] indexeert geen verwijderde producten of producten die zijn ingesteld op `Not Visible Individually` .
 

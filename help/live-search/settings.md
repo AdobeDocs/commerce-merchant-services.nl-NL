@@ -2,7 +2,7 @@
 title: "Instellingen"
 description: "Vorm montages voor de  [!DNL Live Search]  dienst."
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
-source-git-commit: ba7e92d5b3aaabe6a8c71f86b0e4eab38aec9adf
+source-git-commit: 55b90f0025f69137d50fa1cacd80a2b655eb39dc
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 0%
@@ -26,7 +26,7 @@ U kunt het aantal groepen voor het prijsbereik opgeven en aangeven hoe de prijsw
 1. In Admin, ga **Marketing** > *SEO &amp; Onderzoek* > **[!DNL Live Search]**.
 1. Op de **1} werkruimte van Montages {onder *Vergemakkelijking van de Prijs*, doe het volgende:**
    * Ga het **Aantal selecties** in, of prijsgroeperingen om beschikbaar te zijn. Er kunnen maximaal 50 prijsgroepen worden gedefinieerd.
-   * Ga de **waarde van het Interval**, of prijswaaier voor elke groep in. De maximumwaarde is 10.000.
+   * Ga de **waarde van het Interval**, of prijswaaier voor elke groep in. De maximumwaarde is 40.000.000.
 1. Klik **sparen**.
 
    Het duurt ongeveer 15 minuten voordat de bijgewerkte instellingen beschikbaar zijn in de winkel.
