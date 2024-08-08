@@ -3,9 +3,9 @@ title: Aanvullende informatie
 description: De recentste versieinformatie voor de  [!DNL Data Connection]  uitbreiding van Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 8dc6aa5ab2472d1282fbf65605fd511250816af7
+source-git-commit: f894a1a192f648df01e1f869bec9c8a4c66803e1
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '951'
 ht-degree: 0%
 
 ---
@@ -78,13 +78,21 @@ _12 oktober 2022_
 
 +++
 
+## 3.1.4.
+
+_9 augustus, 2024_
+
+[!BADGE  Verenigbaarheid ]{type=Informative tooltip="Compatibiliteit"}
+
+![ Repareren ](../assets/fix.svg) - werkte het `experience-platform-connector` metapakket bij om extra ongebruikte gegevensexporteurs en indexeerders te verwijderen.
+
 ## 3.1.3
 
 _22 Juli, 2024_
 
 [!BADGE  Verenigbaarheid ]{type=Informative tooltip="Compatibiliteit"}
 
-![ Repareren ](../assets/fix.svg) - werkte het metapakket van de Verbinding van het Experience Platform bij om ongebruikte gegevensexporteurs en indexeerders te verwijderen.
+![ Repareren ](../assets/fix.svg) - werkte het `experience-platform-connector` metapakket bij om ongebruikte gegevensexporteurs en indexeerders te verwijderen.
 
 ## 3.1.2.
 
