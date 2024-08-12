@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Opmerkingen bij de release"
 description: Herzie de versienota's voor informatie over alle  [!DNL Payment Services]  versies.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: c02c7c8700c9aa2157b296b8995c05805e371941
+source-git-commit: 73a48822a7df6999ddb597e53cd6b869b1b97222
 workflow-type: tm+mt
-source-wordcount: '2787'
+source-wordcount: '2788'
 ht-degree: 0%
 
 ---
@@ -93,7 +93,7 @@ _Augustus 2, 2024_
 
 [!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![ Nieuw ](../assets/new.svg)<!-- PAY-4844 --> [!DNL Payment Services] steunt nu [ gegevens van het lijnpunt op het ordeniveau ](line-items.md). Met deze functie kunnen handelaren gedetailleerde informatie over de artikelen in een bestelling bekijken, zoals productdetails, hoeveelheid en prijs (inclusief BTW, kortingen en andere relevante informatie).
+![ Nieuw ](../assets/new.svg)<!-- PAY-4844 --> [!DNL Payment Services] steunt nu [ gegevens van het lijnpunt op het ordeniveau ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/payments-checkout/manage/line-items). Met deze functie kunnen handelaren gedetailleerde informatie over de artikelen in een bestelling bekijken, zoals productdetails, hoeveelheid en prijs (inclusief BTW, kortingen en andere relevante informatie).
 
 ![ Nieuw ](../assets/new.svg)<!-- PAY-5380 --> [!DNL Payment Services] verbetert de [ Configuratie in de Admin ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/configure/configure-admin#general-configuration) ervaring voor handelaren voor een gemakkelijker en intuïtiever aan boord gaan proces. Met deze functie kunnen verkopers hun [!DNL Payment Services] id&#39;s opnieuw instellen.
 
