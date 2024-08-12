@@ -3,9 +3,9 @@ title: "Grens en grenzen"
 description: Leer over de grenzen en de grenzen voor  [!DNL Live Search]  om ervoor te zorgen het aan de behoeften van uw zaken voldoet.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 61ebda0015c6d5a7c0bb08f7aae9a4593bca84a4
+source-git-commit: b24b2f79c56d43a20f4e5a3367ac07d00e3aed55
 workflow-type: tm+mt
-source-wordcount: '748'
+source-wordcount: '767'
 ht-degree: 0%
 
 ---
@@ -54,6 +54,7 @@ Adobe Commerce biedt opties voor het zoeken naar sites. Controleer de volgende g
 - Voor het verhandelen van categorieën kan één regel per categorie gelden.
 - Het maximumaantal voorwaarden per regel is 10.
 - Het maximumaantal gebeurtenissen per regel is 25.
+- Om onvoorspelbare resultaten in gepagineerde reacties te voorkomen, zou het aantal vastgezette producten niet de gevraagde paginagrootte moeten overschrijden.
 
 ## Synoniemen
 
