@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
 feature: Payments, Checkout, Configuration
-source-git-commit: 7a886679ad00f9b29e6ffd7d8bc8e2f6fc0082d4
+source-git-commit: 09944ccad182e7f83c722ca6619a414416015ab4
 workflow-type: tm+mt
-source-wordcount: '2404'
+source-wordcount: '2405'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,7 @@ U kunt een [!UICONTROL Soft Descriptor] toevoegen aan de configuratie van uw web
 | [!UICONTROL Enable] | website | Schakel [!DNL Payment Services] voor uw website in of uit. Opties: [!UICONTROL Off] / [!UICONTROL On] |
 | [!UICONTROL Payment mode] | winkelweergave | Plaats de methode, of het milieu, voor uw opslag. Opties: [!UICONTROL Sandbox] / [!UICONTROL Production] |
 | [!UICONTROL Payment Services Sandbox ID] | winkelweergave | De bedrijfs-id van de sandbox, die automatisch wordt gegenereerd tijdens het aan boord nemen van de sandbox. |
-| [!UICONTROL Payment Services Production ID] | winkelweergave | Uw bedrijfs-id voor productie, die automatisch wordt gegenereerd tijdens het aan boord nemen van sandboxen. |
+| [!UICONTROL Payment Services Production ID] | winkelweergave | Uw bedrijfs-id voor productie, die automatisch wordt gegenereerd tijdens productie (live) aan boord. |
 | [!UICONTROL Soft Descriptor] | website- of winkelweergave | Voeg een elektronische beschrijving toe aan uw website(s) en sla de weergave(en) op om informatie toe te voegen aan klanttransacties die merken, winkels of productlijnen afbakenen. Met de schakeloptie [!UICONTROL Use website] past u elke schermdescriptor toe die op websiteniveau is toegevoegd. Met de schakeloptie [!UICONTROL Use default] past u elke schermdescriptor toe die als standaard is toegevoegd. |
 
 ## Betalingsopties configureren
