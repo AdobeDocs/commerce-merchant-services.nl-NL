@@ -2,9 +2,9 @@
 title: '[!DNL Live Search] Aanbevolen werkwijzen'
 description: Leer de beste praktijken voor het uitvoeren van  [!DNL Live Search]  in uw opslag.
 role: Admin, Developer
-source-git-commit: 88be2212f3a992e7a2d18bf1d5c2e8d5d2b64b80
+source-git-commit: 77d12a1294c87089ce806615f92bf89396bfc43b
 workflow-type: tm+mt
-source-wordcount: '2355'
+source-wordcount: '2349'
 ht-degree: 0%
 
 ---
@@ -38,9 +38,9 @@ Met de widget [!DNL Live Search] [[!DNL popover]](storefront-popover.md) kunt u 
 
 Leer meer over [ popover ](storefront-popover.md) widget.
 
-### Synoniemen en spelling
+### Synoniemen en spelfouten
 
-Synoniemen en veelgebruikte spelfouten opnemen voor uitgebreide zoekresultaten. Bovendien kunt u de zoekquery uitbreiden en woorden opnemen die kopers kunnen gebruiken die afwijken van de woorden die in de catalogus zijn opgegeven. Je wilt geen uitverkoop verliezen omdat iemand op zoek is naar een &quot;sofa&quot;, terwijl je product wordt aangeboden als een &quot;bank&quot;. U kunt een brede waaier van onderzoekstermijnen vangen door alle mogelijke woorden in te gaan die de klanten zouden kunnen gebruiken om uw producten te vinden. U kunt synoniemen [ plaatsen als één manier of twee manier ](synonyms-add.md#step-2-define-the-synonym-by-type) om resultaten te verbeteren.
+Live zoeken beheert standaard spelfouten. U kunt synoniemen instellen om woorden op te nemen die mogelijk door kopers worden gebruikt die afwijken van de woorden die in uw catalogus zijn opgegeven. Je wilt geen uitverkoop verliezen omdat iemand op zoek is naar een &quot;sofa&quot;, terwijl je product wordt aangeboden als een &quot;bank&quot;. U kunt een brede waaier van onderzoekstermijnen vangen door alle mogelijke woorden in te gaan die de klanten zouden kunnen gebruiken om uw producten te vinden. U kunt synoniemen [ plaatsen als één manier of twee manier ](synonyms-add.md#step-2-define-the-synonym-by-type) om resultaten te verbeteren.
 
 #### Tips voor het optimaliseren van synoniemen
 

@@ -3,9 +3,9 @@ title: "Grens en grenzen"
 description: Leer over de grenzen en de grenzen voor  [!DNL Live Search]  om ervoor te zorgen het aan de behoeften van uw zaken voldoet.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: b24b2f79c56d43a20f4e5a3367ac07d00e3aed55
+source-git-commit: ffbb41ef2bc940982b4acb33623ef689542617c1
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '777'
 ht-degree: 0%
 
 ---
@@ -70,12 +70,13 @@ Adobe Commerce biedt opties voor het zoeken naar sites. Controleer de volgende g
 ## B2B- en categoriemachtigingen
 
 - Producten worden niet weergegeven als deze niet worden toegevoegd aan een standaard gedeelde catalogus.
-- Om klantengroepen te beperken die de toestemmingen van de Catalogus gebruiken:
-   - De producten moeten aan de categorie van de Wortel worden toegewezen.
+- Om klantengroepen te beperken die [ categorietoestemmingen ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions) gebruiken:
+   - De producten moeten aan de wortelcategorie worden toegewezen.
    - Aan de klantengroep &quot;Niet aangemeld&quot; moeten de machtigingen &quot;Toestaan&quot; worden toegekend.
-   - Om producten tot de &quot;niet Gelogde&quot;klantengroep te beperken, ga naar elke categorie en plaats toestemming voor elke klantengroep.
+   - Om producten tot de &quot;niet Gelogde&quot;klantengroep te beperken, ga naar elke categorie en plaats toestemming voor elke [ klantengroep ](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage).
 - Ondersteuning voor de functie Out-of-box voor B2B met de PLP-widget op PWA Studio wordt momenteel niet ondersteund. Nochtans, kunt u [ gebruiken API ](install.md#pwa-support) om deze functionaliteit uit te voeren.
-- Categoriefacetten in [!DNL Live Search] kunnen categorieën weergeven die niet aan een bepaalde klantengroep kunnen worden weergegeven.
+- De facetten van de categorie in [!DNL Live Search] zouden categorieën kunnen tonen die niet aan een specifieke [ klantengroep ](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared-manage) kunnen tonen.
+- [!DNL Live Search] kan maximaal 1.000 klantengroepen ondersteunen.
 
 ## [!DNL Storefront popover]
 

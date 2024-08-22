@@ -2,7 +2,7 @@
 title: "Instellingen"
 description: "Vorm montages voor de  [!DNL Live Search]  dienst."
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
-source-git-commit: 55b90f0025f69137d50fa1cacd80a2b655eb39dc
+source-git-commit: ffbb41ef2bc940982b4acb33623ef689542617c1
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 0%
@@ -36,7 +36,7 @@ U kunt het aantal groepen voor het prijsbereik opgeven en aangeven hoe de prijsw
 | Veld | Beschrijving |
 |--- |--- |
 | Aantal selecties | Hiermee geeft u het aantal groepen voor prijsbereik op dat als zoekfilters in de winkel kan worden gebruikt. Standaardwaarde: 8, Maximumwaarde: 50 |
-| Interval, waarde | Hiermee geeft u het prijsinterval voor elke groep op. Vijf selecties met een intervalwaarde van 20 maken bijvoorbeeld vijf groepen van 0-20, 20-40, 40-60, 60-80 en >80. Standaardwaarde: 5, Maximumwaarde: 10.000 |
+| Interval, waarde | Hiermee geeft u het prijsinterval voor elke groep op. Vijf selecties met een intervalwaarde van 20 maken bijvoorbeeld vijf groepen van 0-20, 20-40, 40-60, 60-80 en >80. Standaardwaarde: 5, Maximumwaarde: 40.000.000 |
 
 ## Taal
 
