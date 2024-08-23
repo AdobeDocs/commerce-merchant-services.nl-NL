@@ -4,9 +4,9 @@ description: Leer hoe u uw Adobe Commerce- of Magento Open Source-instantie inte
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 34d4fdffbfaf85e28df4500298411258b2dab2c2
+source-git-commit: bfb839c25a378eedd3a20fd01f12f7398c6568b9
 workflow-type: tm+mt
-source-wordcount: '1157'
+source-wordcount: '1213'
 ht-degree: 0%
 
 ---
@@ -105,7 +105,12 @@ Als u een SaaS-project wilt selecteren of maken, vraagt u de API-sleutel [!DNL C
 
 1. Plak de hoofdwaarden in de secties _[!UICONTROL Sandbox API Keys]_en_[!UICONTROL Production API Keys]_ .
 
-   Persoonlijke sleutels moeten `----BEGIN PRIVATE KEY---` aan het begin van de toets en `----END PRIVATE KEY----` aan het einde van de toets bevatten.
+   - Persoonlijke sleutels moeten `----BEGIN PRIVATE KEY---` aan het begin van de toets en `----END PRIVATE KEY----` aan het einde van de toets bevatten.
+   - Als u geen exemplaar van de daadwerkelijke sleutels hebt, vraag de Eigenaar van de Rekening voor hen, dan stop de waarden in de configuratie.
+
+   >[!WARNING]
+   >
+   > Als u sleutelwaarden toevoegt door een gegevensbestandsteun of een momentopname te vragen en de waarden in de configuratie te kleven, wordt een extra laag van encryptie toegepast, en de sleutels zullen niet werken.
 
 1. Klik **sparen**.
 
