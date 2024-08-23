@@ -4,9 +4,9 @@ description: Leer hoe  [!DNL SaaS Data Export]  gegevens tussen de instanties va
 role: Admin, Developer
 recommendations: noCatalog
 exl-id: 530a6ed7-46ec-45fc-94e9-c850168e8aed
-source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
+source-git-commit: 4b579b7ec7698f32b5f2254f20514cedbbb50cdd
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '822'
 ht-degree: 0%
 
 ---
@@ -92,3 +92,22 @@ Gedeeltelijke synchronisatie en Opnieuw mislukte items synchroniseren werken all
 - Verifieer dat de indexen van [ Admin ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) lopen of door het bevel van Commerce CLI te gebruiken `bin/magento indexer:info`.
 
 - Controleer of de indexeerders voor de volgende feeds zijn ingesteld op `Update by Schedule` : Cataloguskenmerken, Product, Productoverschrijvingen en Productvariabele. U kunt de indexen van [ Beheer van de Index ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) in Admin controleren of CLI gebruiken (`bin/magento indexer:show-mode | grep -i feed`).
+
+### Meldingen van gebeurtenismanager voor het registreren van gegevensoverdracht
+
+In versie 103.3.4 en hoger verzendt SaaS Data Export de gebeurtenis `data_sent_outside` wanneer gegevens van de Commerce-instantie naar Adobe Commerce-services worden verzonden.
+
+```php
+$this->eventManager->dispatch(
+   "data_sent_outside",
+   [
+       "timestamp" => time(),
+       "type" => $metadata->getFeedName(),
+       "data" => $data
+   ]
+);
+```
+
+>[!NOTE]
+>
+>Voor informatie over gebeurtenissen en hoe te om aan hen in te tekenen, zie [ Gebeurtenissen en Waarnemers ](https://developer.adobe.com/commerce/php/development/components/events-and-observers) in de documentatie van de Ontwikkelaar van Adobe Commerce.

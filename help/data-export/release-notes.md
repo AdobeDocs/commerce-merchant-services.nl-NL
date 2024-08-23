@@ -4,9 +4,9 @@ description: De recentste versieinformatie voor  [!DNL Data Export Extension]  v
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 0c7aeeda-e8a6-4740-b466-0661a6d2df07
-source-git-commit: 38a4e795200e368e91cd3075c611656e852b73f1
+source-git-commit: 4b579b7ec7698f32b5f2254f20514cedbbb50cdd
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '643'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Updates zijn:
 
 ## 103.3.4 Release
 
-](../assets/fix.svg) verbeter Commerce SaaS gegevens het uitvoerregistreren door meer details over het opnieuw indexeren proces toe te voegen.![
+](../assets/fix.svg) Toegevoegde steun van 0} Repareren voor het controleregistreren van de gegevensoverdracht door een mechanisme toe te voegen om een `data_sent_outside` gebeurtenis te verzenden telkens als het gegeven van de instantie van Commerce aan de dienst van Commerce wordt overgebracht <!--MDEE-785-->![
 
 ## 103.3.3 Release
 
