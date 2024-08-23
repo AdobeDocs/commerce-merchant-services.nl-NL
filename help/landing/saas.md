@@ -4,9 +4,9 @@ description: Leer hoe u uw Adobe Commerce- of Magento Open Source-instantie inte
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 3a5dec9422aa34eeb204b9fe6f089551e4038f1c
+source-git-commit: 34d4fdffbfaf85e28df4500298411258b2dab2c2
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1157'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Daarnaast hebben integrators van oplossingen ook het recht om [!DNL Commerce Ser
 
 ### De API-sleutels voor productie en sandbox genereren {#genapikey}
 
-1. Login aan uw [!DNL Commerce] rekening in [ https://account.magento.com ](https://account.magento.com/customer/account/login) {:target= &quot;_blank&quot;}.
+1. Login aan uw [!DNL Commerce] rekening in [ https://account.magento.com ](https://account.magento.com/customer/account/login) {:target="_blank"}.
 
 1. Onder het **Magento** lusje, uitgezochte **API Portaal** op sidebar.
 
@@ -79,10 +79,17 @@ Voor [!DNL Product Recommendations] bevat de SaaS-gegevensruimte catalogus- en g
 >[!WARNING]
 >
 > Gebruik uw productieSaaS gegevensruimte slechts op uw productie [!DNL Commerce] installatie om gegevensbotsingen te vermijden. Anders loopt u het risico dat u gegevens van uw productiesite verontreinigt met testgegevens, wat implementatievertragingen veroorzaakt. De gegevens van uw productieproduct kunnen bijvoorbeeld per ongeluk worden overschreven door opvoergegevens, zoals ophalings-URL&#39;s.
+> Als dit zou moeten gebeuren, [ voorlegt een verzoek van de Steun ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) om gegevensschoonmaak te verzoeken.
 
 ### SaaS-gegevensruimteprovisioning
 
-Alle handelaren kunnen tot één ruimte van productiegegevens en twee het testen gegevensruimten per project toegang hebben SaaS. Voor de projecten van Adobe Commerce Cloud Pro met veelvoudige het opvoeren milieu&#39;s, kunt u om extra het testen gegevensruimten voor elk het opvoeren milieu verzoeken door [ een verzoek van de Steun ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) voor te leggen.
+Alle Adobe Commerce-handelaren hebben per SaaS-project toegang tot één ruimte voor productiegegevens en twee ruimten voor testgegevens.
+
+U kunt de het testen gegevensruimten in om het even welke niet productiemilieu gebruiken zolang u niet de zelfde gegevensruimte in veelvoudige milieu&#39;s tezelfdertijd gebruikt. Om de ruimte van testgegevens in een verschillende milieu te gebruiken, voer een gegevensschoonmaakbeurt uit alvorens u selecteert en de gegevensruimte in die milieu vormt.
+
+Voor de projecten van Adobe Commerce Cloud Pro met veelvoudige het opvoeren milieu&#39;s, kunt u om extra het testen gegevensruimten voor elk het opvoeren milieu verzoeken door [ een verzoek van de Steun ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) voor te leggen. Als u echter maar één testomgeving hebt en extra testgegevenspaties nodig hebt, hebt u de volgende opties:
+- Neem contact op met het team voor succes van de klant of met de door u aangewezen manager voor succes van de klant om een extra testomgeving aan te vragen. Er zijn extra kosten mee gemoeid.
+- [ leg een verzoek van de Steun ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) voor een extra het testen gegevensruimte voor en wijs op de bedrijfsrechtvaardiging voor het extra datasnelheid. Dit verzoek moet worden goedgekeurd.
 
 ### Een SaaS-project selecteren of maken {#createsaasenv}
 
