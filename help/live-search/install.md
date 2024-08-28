@@ -3,9 +3,9 @@ title: "Aan de slag met  [!DNL Live Search]"
 description: "Leer de systeemvereisten en installatiestappen voor  [!DNL Live Search]  van Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
+source-git-commit: 43e821de9e147508397d45ccd24b5417478b520a
 workflow-type: tm+mt
-source-wordcount: '2357'
+source-wordcount: '2419'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Dit artikel bevat stapsgewijze instructies voor het implementeren van [!DNL Live
 
 >[!IMPORTANT]
 >
->Adobe Commerce biedt opties voor het zoeken naar sites. Ben zeker om [ Grenzen en Grenswaarden ](boundaries-limits.md) te lezen alvorens uit te voeren, om te verzekeren [!DNL Live Search] geschikt voor uw bedrijfsbehoeften is.
+>Adobe Commerce biedt opties voor het zoeken naar sites. Ben zeker om [ Grenzen en Grenswaarden ](boundaries-limits.md) te lezen alvorens uit te voeren, om ervoor te zorgen dat [!DNL Live Search] geschikt voor uw bedrijfsbehoeften is.
 
 ## Publiek
 
@@ -27,7 +27,7 @@ Dit artikel is bedoeld voor de ontwikkelaar of systeemintegrator in uw team die 
 ## Vereisten
 
 - [ Adobe Commerce ](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.4+
-- PHP 8.1 / 8.2 / 8.3
+- PHP versie 8.1, 8.2 of 8.3
 - [!DNL Composer]
 
 ## Ondersteunde platforms
@@ -63,13 +63,13 @@ Op een hoog niveau is het vereist dat u: [!DNL Live Search]
    composer require magento/live-search
    ```
 
-   Als u de [!DNL Live Search] uitbreiding aan a **nieuwe** installatie van Adobe Commerce toevoegt, stel het volgende in werking om [!DNL OpenSearch] en verwante modules onbruikbaar te maken, en te installeren [!DNL Live Search]. Ga vervolgens verder met stap 4.
+   Als u de [!DNL Live Search] uitbreiding aan a **nieuwe** installatie van Adobe Commerce toevoegt, stel het volgende bevel in werking om [!DNL OpenSearch] en verwante modules tijdelijk onbruikbaar te maken, en te installeren [!DNL Live Search]. Ga vervolgens verder met stap 4.
 
    ```bash
       bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch7 Magento_OpenSearch Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch Magento_ElasticsearchCatalogPermissionsGraphQl
    ```
 
-   Als u de [!DNL Live Search] uitbreiding aan een **bestaande** installatie van Adobe Commerce toevoegt, stel het volgende in werking om de [!DNL Live Search] modules tijdelijk onbruikbaar te maken die de resultaten van het storefrontonderzoek dienen. Ga vervolgens verder met stap 4:
+   Als u de [!DNL Live Search] uitbreiding aan een **bestaande** installatie van Adobe Commerce toevoegt, stel het volgende in werking om de [!DNL Live Search] modules onbruikbaar te maken die de resultaten van het storefrontonderzoek dienen. Ga vervolgens verder met stap 4:
 
    ```bash
       bin/magento module:disable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover Magento_LiveSearchProductListing 
@@ -151,16 +151,20 @@ U kunt synchronisatiebevelen ook in werking stellen en het synchronisatieproces 
 
 #### Updates voor toekomstige producten
 
-Na de eerste synchronisatie kan het tot 15 minuten duren voordat de incrementele productupdates beschikbaar komen voor het zoeken naar een winkel. Om meer te leren, zie [ Indexeren - het stromen de Updates van het Product ](indexing.md).
+Na de eerste synchronisatie kan het tot 15 minuten duren voordat de incrementele productupdates beschikbaar komen voor het zoeken naar een winkel. Om meer te leren, zie {de Updates van het Product van 0} Streaming ](indexing.md) in de Indexerende documentatie.[
 
 ## 4. Controleer of de gegevens zijn geëxporteerd {#verify-export}
 
-U hebt een aantal opties om te controleren of de catalogusgegevens uit uw Adobe Commerce-exemplaar zijn geëxporteerd en voor [!DNL Live Search] zijn gesynchroniseerd:
+Als u wilt controleren of uw catalogusgegevens uit Adobe Commerce zijn geëxporteerd en met [!DNL Live Search] zijn gesynchroniseerd, hebt u een aantal opties:
 
 - Zoek naar ingangen in de volgende lijsten:
 
-   - `catalog_data_exporter_products`
-   - `catalog_data_exporter_product_attributes`
+   - `cde_products_feed`
+   - `cde_product_attributes_feed`
+
+  >[!NOTE]
+  >
+  >Als u een `table does not exist` -fout krijgt, zoekt u naar items in de tabellen `catalog_data_exporter_products` en `catalog_data_exporter_product_attributes` . Deze tabelnamen worden gebruikt in eerdere [!DNL Live Search] versies dan 4.2.1.
 
 - Gebruik [ playground van GraphQL ](https://developer.adobe.com/commerce/services/graphql/live-search/) met de standaardvraag om het volgende te verifiëren:
 
@@ -173,9 +177,9 @@ Voor extra hulp, zie [[!DNL Live Search]  niet gesynchroniseerde catalogus ](htt
 
 Als u uw productgegevens correct configureert, bent u verzekerd van goede zoekresultaten voor uw klanten. In deze sectie schakelt u de widgets voor productlijsten in en wijst u categorieën toe.
 
-### Widgets productlijst inschakelen
+### Widgets voor productaanbiedingen inschakelen
 
-Wanneer u [!DNL Live Search] 4.0.0+ installeert, worden de Widgets van de Lijst van het Product door gebrek toegelaten. Wanneer widgets zijn ingeschakeld, wordt een andere UI-component gebruikt voor de pagina met zoekresultaten en voor de pagina met productaanbiedingen in de categorie. Deze component UI doet directe vraag aan de [ Dienst API van de Catalogus ](https://developer.adobe.com/commerce/services/graphql/catalog-service/product-search/), die in snellere reactietijden resulteert.
+Wanneer u [!DNL Live Search] 4.0.0+ installeert, zijn de widgets voor productlijsten standaard ingeschakeld. Wanneer widgets zijn ingeschakeld, wordt een andere UI-component gebruikt voor de pagina met zoekresultaten en de pagina met productlijsten voor categorieën. Deze component UI doet directe vraag aan de [ Dienst API van de Catalogus ](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/), die in snellere reactietijden resulteert.
 
 Als u een [!DNL Live Search] -versie hebt die ouder is dan 4.0.0+, moet u de widget Productaanbieding handmatig inschakelen.
 
@@ -198,7 +202,7 @@ Wanneer u deze configuratie wijzigt, verschijnt het bericht `Page cache is inval
 
 ### Categorieën toewijzen
 
-De producten die in [!DNL Live Search] zijn teruggekeerd moeten aan a [ worden toegewezen categorie ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/categories). In Luma worden producten bijvoorbeeld ingedeeld in categorieën zoals &quot;Mannen&quot;, &quot;Vrouwen&quot; en &quot;Luma&quot;. Subcategorieën worden ook ingesteld voor Tops, Bottoms en Watches. Hierdoor wordt de korreligheid bij het filteren verbeterd.
+De producten die in [!DNL Live Search] zijn teruggekeerd moeten aan a [ worden toegewezen categorie ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/categories). In Luma worden producten bijvoorbeeld ingedeeld in categorieën zoals &quot;Mannen&quot;, &quot;Vrouwen&quot; en &quot;Luma&quot;. Subcategorieën worden ook ingesteld voor Tops, Bottoms en Watches. Deze categorietoewijzingen verbeteren de granulariteit bij het filteren.
 
 ## 6. Test de verbinding {#test-connection}
 
@@ -216,9 +220,9 @@ Als u [!DNL Live Search] wilt toestaan via een firewall, voegt u `commerce.adobe
 
 ## 7. Aanpassen voor je winkel
 
-U hebt de extensie [!DNL Live Search] geïnstalleerd, gesynchroniseerd, gevalideerd en geconfigureerd. Nu wilt u ervoor zorgen dat de [!DNL Live Search] -widgets overeenkomen met de vormgeving van uw winkel.
+U hebt de extensie [!DNL Live Search] geïnstalleerd, gesynchroniseerd, gevalideerd en geconfigureerd. De volgende stap is ervoor te zorgen dat de [!DNL Live Search] widgets in overeenstemming zijn met het uiterlijk van uw winkel.
 
-U kunt de popover- en PLP-widgets opmaken door desgewenst aangepaste CSS-regels te definiëren. Zie [ het Stijlen Popover Elementen ](storefront-popover.md#styling-popover-example) en [ van de Lijst van het Product de Widget van de Pagina ](plp-styling.md#styling-example).
+U kunt de popover- en PLP-widgets opmaken door desgewenst aangepaste CSS-regels te definiëren. Zie [ het Stijlen Popover Elementen ](storefront-popover.md#styling-popover-example) en [ product die pagina widget ](plp-styling.md#styling-example) van de lijst voorzien.
 
 Als u de functionaliteit van de widgets wilt uitbreiden, is de broncode voor elke widget beschikbaar in een openbare reactie.
 In dit scenario, kunt u JavaScript voor uw eigen behoeften aanpassen en dan uw douanecode ontvangen op uw CDN. Dit aangepaste script communiceert met de service [!DNL Live Search] en retourneert de resultaten zoals normaal, zodat u de functionaliteit van de widget kunt beheren.
@@ -288,7 +292,7 @@ De extensie [!DNL Live Search] bestaat uit de volgende pakketten:
 
 ## [!DNL Live Search] afhankelijkheden {#dependencies}
 
-De volgende [!DNL Live Search] afhankelijkheden worden vastgelegd door [!DNL Composer] .
+Het [!DNL Composer] -pakket voor het installeren van de extensie [!DNL Live Search] bevat de volgende moduleafhankelijkheden.
 
 - `magento/module-saas-catalog`
 - `magento/module-saas-category`
@@ -315,9 +319,9 @@ De volgende secties bieden geavanceerdere onderwerpen wanneer u [!DNL Live Searc
 
 [!DNL Live Search] communiceert via het eindpunt op `https://catalog-service.adobe.io/graphql` .
 
-Aangezien [!DNL Live Search] geen toegang heeft tot de volledige productdatabase, hebben [!DNL Live Search] GraphQL en Commerce core GraphQL geen volledige pariteit.
+Aangezien [!DNL Live Search] geen toegang heeft tot de volledige productdatabase, hebben de [!DNL Live Search] GraphQL en Commerce core GraphQL API&#39;s geen volledige pariteit.
 
-Het wordt geadviseerd om SaaS APIs direct te roepen - specifiek het eindpunt van de Dienst van de Catalogus.
+De Adobe adviseert direct roepend SaaS APIs — specifiek het eindpunt van de Dienst van de Catalogus.
 
 - Verhoog de prestaties en verlaag de processorbelasting door het Commerce-database/Graphql-proces te omzeilen
 - Haal voordeel uit de [!DNL Catalog Service] -federatie om [!DNL Live Search] , [!DNL Catalog Service] en [!DNL Product Recommendations] vanaf één eindpunt aan te roepen.
@@ -329,7 +333,7 @@ Als u een aangepaste implementatie zonder kop hebt, checkt u de [!DNL Live Searc
 - [ PLP widget ](https://github.com/adobe/storefront-product-listing-page)
 - [ Levend gebied van het Onderzoek ](https://github.com/adobe/storefront-search-as-you-type)
 
-Als u niet de standaardcomponenten, zoals de Adapter of widgets van het Onderzoek op Luma, of AEM widgets gebruikt, zal de gebeurtenis (klikstroomgegevens die Adobe Sensei voor Intelligente Merchandising en prestatiesmetriek van de voer voorzien) niet uit de doos werken en zal de douaneontwikkeling vereisen om hoofdloze gebeurtenis uit te voeren.
+Als u geen standaardcomponenten gebruikt, zoals Zoekadapter, Luminagewidgets of AEM Widgets, werkt de automatische verzameling van gegevens over gebruikersinteractie niet standaard. Deze verzamelde gegevens worden door Adobe Sensei gebruikt voor intelligent winkelen en het volgen van prestaties. Om deze kwestie op te lossen, moet u een douaneoplossing ontwikkelen om deze gegevensinzameling op een krantenloze manier uit te voeren.
 
 De meest recente versie van [!DNL Live Search] gebruikt [!DNL Catalog Service] al.
 
@@ -375,15 +379,15 @@ De meest recente versie van [!DNL Live Search] gebruikt [!DNL Catalog Service] a
 | Chinees | China | zh_CN | zh_Hans_CN |
 | Chinees | Taiwan | zh_TW | zh_Hant_TW |
 
-Als widget ontdekt dat de taal die van Commerce Admin (_plaatst opslaat_ > Montages > _Configuratie_ > _Algemene_ > de Opties van het Land) een gesteunde taal aanpast, blijft het aan die taal in gebreke. Anders worden de widgets standaard ingesteld op Engels.
+Als de widget detecteert dat de taalinstelling voor Commerce Admin overeenkomt met een ondersteunde taal, wordt deze taal standaard gebruikt. Anders is de widget standaard ingesteld op Engels. In de beheerfunctie wordt de taalinstelling geconfigureerd door te navigeren naar _[!UICONTROL Stores]_> [!UICONTROL Settings] >_[!UICONTROL Configuration]_ > _[!UICONTROL General]_> [!UICONTROL Country Options] .
 
 Admins kan de taal van de [ onderzoeksindex ](settings.md#language) ook plaatsen, helpen betere onderzoeksresultaten verzekeren.
 
 ### Widget-codeopslagplaats
 
-De widget pagina met productlijsten en de widget veld Live zoeken kunnen beide worden gedownload van hun kleine opslagplaats.
+De code voor de pagina van de productlijst widget en het Levende gebied van het Onderzoek widget is beschikbaar voor download van GitHub.
 
-Op deze manier kunnen ontwikkelaars de functionaliteit en opmaak volledig aanpassen. Deze gebruikers hosten de code zelf terwijl het voordeel van de [!DNL Live Search] dienst blijft.
+Ontwikkelaars die toegang hebben tot de code, kunnen de werking en het uiterlijk van de code volledig aanpassen. Ze hosten de code op hun eigen servers, maar gebruiken toch de [!DNL Live Search] -service.
 
 - [ PLP widget ](https://github.com/adobe/storefront-product-listing-page)
 - [ bar van het Onderzoek ](https://github.com/adobe/storefront-search-as-you-type)
@@ -438,8 +442,8 @@ Deze module voegt extra contexten aan de vragen van GraphQL toe:
 [!DNL Live Search] werkt met PWA Studio, maar gebruikers zien mogelijk kleine verschillen ten opzichte van andere Commerce-implementaties. De basisfunctionaliteit zoals zoeken en pagina met productlijsten werkt in Venia, maar sommige permutaties van Graphql werken mogelijk niet correct. Er kunnen ook prestatieverschillen zijn.
 
 - De huidige PWA-implementatie van [!DNL Live Search] vereist meer verwerkingstijd om zoekresultaten te retourneren dan [!DNL Live Search] met de native Commerce-storefront.
-- [!DNL Live Search] in PWA steunt [ gebeurtenis behandeling ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) niet. Zodoende zullen zoekverslagen en intelligente koophandel werken.
-- Het filtreren direct op `description`, `name`, `short_description` wordt niet gesteund door GraphQL wanneer gebruikt met [ PWA ](https://developer.adobe.com/commerce/pwa-studio/), maar zij zijn teruggekeerd met een meer algemene filter.
+- [!DNL Live Search] in PWA steunt [ gebeurtenis behandeling ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) niet. Het resultaat is dat zoekrapporten en intelligente koopwaar niet werken op PWA storefronts.
+- Wanneer het gebruiken van [ PWA Studio ](https://developer.adobe.com/commerce/pwa-studio/), steunt GraphQL niet direct het filtreren op `description`, `name`, `short_description`, maar deze gebieden kunnen met een meer algemene filter zijn teruggekeerd.
 
 Als u [!DNL Live Search] met PWA Studio wilt gebruiken, moeten integrators ook:
 
