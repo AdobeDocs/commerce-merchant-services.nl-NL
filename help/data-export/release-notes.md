@@ -4,9 +4,9 @@ description: De recentste versieinformatie voor  [!DNL Data Export Extension]  v
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 0c7aeeda-e8a6-4740-b466-0661a6d2df07
-source-git-commit: 4b579b7ec7698f32b5f2254f20514cedbbb50cdd
+source-git-commit: 915f6c5580f2976edde6609b8fd1c0ba4b09aade
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '670'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,11 @@ Updates zijn:
 >De gegevensexportuitbreiding SaaS is een inzameling van modules die automatisch met Levend Onderzoek, Product Recommendations, en de Dienst van de Catalogus geïnstalleerd is. U kunt de versie controleren die op uw systeem is geïnstalleerd met behulp van composer. In sommige gevallen kunt u de extensie voor het exporteren van gegevens op uw systeem upgraden om oplossingen of nieuwe mogelijkheden op te halen zonder de Commerce Service-versie bij te werken.
 
 ## Huidige hoofdversie
+
+## 103.3.10 Release
+
+![ herstellen ](../assets/fix.svg) Vaste Veelvoudige opslag filtratie voor het voer van de productdouaneopties. <!--MDEE-842-->
+![ Repareren ](../assets/fix.svg) Ongeldige voer wordt niet opnieuw voorgelegd tot de het hakwaarde van de voer is veranderd.<!--MDEE-848-->
 
 ## 103.3.9 Release
 
