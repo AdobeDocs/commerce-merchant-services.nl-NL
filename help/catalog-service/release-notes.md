@@ -3,9 +3,9 @@ title: '[!DNL Catalog Service] Opmerkingen bij de release'
 description: De recentste versieinformatie voor  [!DNL Catalog Service]  voor Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 6ca91feefbfc2fbc4d5851040b9f1ca3de6a6560
+source-git-commit: 58d5abf84a190b203661606c439beb088b7ee20d
 workflow-type: tm+mt
-source-wordcount: '741'
+source-wordcount: '765'
 ht-degree: 0%
 
 ---
@@ -22,9 +22,25 @@ Updates zijn:
 
 ## Huidige hoofdversie
 
+### V1.22 Release
+
+_Augustus 13, 2024_
+
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
+
+![ Nieuwe ](../assets/new.svg) Toegevoegde steun om alle varianten door productSKU terug te winnen. Zie de [ Verwijzing van de Dienst API van de Catalogus ](https://developer.adobe.com/commerce/services/graphql/catalog-service/). <!--DATA-6067-->
+
+
+## Vorige versies
+
++++ Vorige versies
+
 ### V1.19 Release
 
 _Mei 23, 2024_
+
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
+
 
 ![ Repareren ](../assets/fix.svg) <!--DATA-5033--> De `InStock` vlag voor optiewaarden neemt nu rekening met het scoped `enabled` status van de productvariant.
 
@@ -45,10 +61,6 @@ Los de volgende beperkingen op met behulp van API Mesh en de Core GraphQL API:
 * Bundel van producten tegen vaste prijzen
 
 Voor details en voorbeelden, zie [ de Dienst van de Catalogus en API Net ](mesh.md)
-
-## Vorige versies
-
-+++ Vorige versies
 
 ### V1.18 Release
 
