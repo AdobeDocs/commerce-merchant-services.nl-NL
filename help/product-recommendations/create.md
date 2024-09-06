@@ -2,9 +2,9 @@
 title: Nieuwe aanbeveling maken
 description: Leer hoe u een product aanbevelingseenheid kunt maken.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 51ff52eba117fe438d592ca886dbca25304a0d15
+source-git-commit: 5266ca2766697fc0fd8baf236a5ae83a26528977
 workflow-type: tm+mt
-source-wordcount: '1022'
+source-wordcount: '1438'
 ht-degree: 0%
 
 ---
@@ -20,11 +20,11 @@ Wanneer u de aanbevelingseenheid activeert, begint Adobe Commerce [ gegevens ](w
 
 1. Op _Admin_ sidebar, ga **Marketing** > _Bevorderingen_ > **Recommendations van het Product** om de _werkruimte van Recommendations van het Product_ te tonen.
 
-1. Specificeer de [ Mening van de Opslag ](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) waar u de aanbevelingen aan vertoning wilt.
+1. Specificeer de [ Mening van de Opslag ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views) waar u de aanbevelingen aan vertoning wilt.
 
    >[!NOTE]
    >
-   > De aanbevelingen van de Bouwer van de pagina moeten de eenheden in de standaardarchiefmening worden gecreeerd, maar kunnen dan overal worden gebruikt. Meer leren over het creëren van productaanbevelingen met de Bouwer van de Pagina, zie [ Inhoud toevoegen - Recommendations van het Product ](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html).
+   > De aanbevelingen van de Bouwer van de pagina moeten de eenheden in de standaardarchiefmening worden gecreeerd, maar kunnen dan overal worden gebruikt. Meer leren over het creëren van productaanbevelingen met de Bouwer van de Pagina, zie [ Inhoud toevoegen - Recommendations van het Product ](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations).
 
 1. Klik **creëren Aanbeveling**.
 
@@ -34,14 +34,14 @@ Wanneer u de aanbevelingseenheid activeert, begint Adobe Commerce [ gegevens ](w
 
    >[!NOTE]
    >
-   > Het product Recommendations wordt niet gesteund op de pagina van het Kart wanneer uw opslag aan [ wordt gevormd tonen de het winkelwagentje pagina onmiddellijk na het toevoegen van een product aan de kar ](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration.html#redirect-to-cart).
+   > Het product Recommendations wordt niet gesteund op de pagina van het Kart wanneer uw opslag aan [ wordt gevormd tonen de het winkelwagentje pagina onmiddellijk na het toevoegen van een product aan de kar ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration).
 
    * Startpagina
    * Categorie
    * Productgegevens
    * Kar
    * Bevestiging
-   * [ de Bouwer van de Pagina ](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html)
+   * [ de Bouwer van de Pagina ](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)
 
    U kunt maximaal vijf actieve aanbevelingen maken voor elk paginatype en maximaal 25 voor Page Builder. Het paginatype wordt grijs weergegeven wanneer de limiet is bereikt.
 
@@ -81,37 +81,56 @@ Wanneer u de aanbevelingseenheid activeert, begint Adobe Commerce [ gegevens ](w
 
 ## Gereedheidsindicatoren
 
-Sommige aanbevelingstypes gebruiken gedragsgegevens van uw klanten aan [ machine het leren modellen ](behavioral-data.md) om gepersonaliseerde aanbevelingen te bouwen.
+Gereedheidsindicatoren laten zien welke aanbevolen typen het beste kunnen worden uitgevoerd op basis van de beschikbare catalogus- en gedragsgegevens. U kunt ook gereedheidsindicatoren gebruiken om te bepalen of u problemen hebt met uw gebeurtenis of dat u onvoldoende verkeer hebt om het type aanbeveling te vullen.
 
-Alleen catalogusgegevens zijn vereist. Er zijn geen gedragsgegevens nodig voor deze:
+De indicatoren van de bereidheid worden gecategoriseerd in of [ op statisch-gebaseerd ](#static-based) of [ op dynamisch-gebaseerd ](#dynamic-based). Alleen catalogusgegevens op basis van statische gegevens gebruiken; terwijl bij dynamisch gebaseerd gebruik gedragsgegevens van uw kopers worden gebruikt. Dat gedragsgegevens worden gebruikt aan [ machine het leren modellen ](behavioral-data.md) om gepersonaliseerde aanbevelingen te bouwen en hun bereidheid te berekenen score.
+
+Gereedheidsindicatoren worden berekend op basis van een aantal factoren:
+
+* Voldoende resultaat vastgestelde grootte: Zijn er genoeg resultaten die in de meeste scenario&#39;s worden teruggekeerd om te vermijden gebruikend [ reserveaanbevelingen ](behavioral-data.md#backuprecs)?
+
+* Voldoende variëteit van resultaatsets: vertegenwoordigen de producten die worden geretourneerd een verscheidenheid aan producten uit uw catalogus? Het doel van deze factor is te voorkomen dat een minderheid van producten de enige producten is die op de hele site worden aanbevolen.
+
+Op basis van de bovenstaande factoren wordt de gereedheidswaarde als volgt berekend en weergegeven:
+
+* 75% of hoger betekent dat de aanbevelingen voor dat soort aanbevelingen zeer relevant zullen zijn.
+* Ten minste 50% betekent dat de aanbevelingen die voor dat soort aanbevelingen worden voorgesteld minder relevant zullen zijn.
+* Minder dan 50% betekent dat de aanbevelingen voor dat soort aanbevelingen niet relevant zullen zijn.
+
+Dit zijn algemene richtsnoeren, maar elk individueel geval kan verschillen afhankelijk van de aard van de verzamelde gegevens, zoals hierboven beschreven. Leer meer over [ hoe de gereedheidsindicatoren ](#understand-how-readiness-indicators-are-calculated) worden berekend en [ waarom de gereedheidsindicatoren laag ](#what-to-do-if-the-readiness-indicator-percent-is-low) zouden kunnen zijn.
+
+### Op statisch basis
+
+De volgende aanbevelingen zijn op statisch gebaseerd omdat ze alleen catalogusgegevens vereisen. Er worden geen gedragsgegevens gebruikt.
 
 * _het meest als dit_
-* _onlangs Bekeken_
 * _Visuele Gelijkaardig_
 
-Gebaseerd op de laatste zes maanden van de gedragsgegevens van de storefront:
+### Dynamisch gebaseerd
+
+De volgende aanbevelingen zijn dynamisch-gebaseerd omdat zij storefront gedragsgegevens gebruiken.
+
+Laatste zes maanden van storefront gedragsgegevens:
 
 * _Bekeken dit, bekeken dat_
 * _Bekeken dit, kocht dat_
 * _kocht dit, kocht dat_
 * _geadviseerd voor u_
 
-Op populariteit gebaseerde aanbevelingen gebruiken de laatste zeven dagen van storefront gedragsgegevens:
+Laatste zeven dagen van gedragsgegevens van de storefront:
 
 * Meest bekeken
 * Meest aangekocht
 * Toegevoegd aan winkelwagentje
 * Trend
 
-De waarden van de gereedheidsindicator zullen naar verwachting fluctueren als gevolg van factoren zoals de totale grootte van de catalogus, het volume van productinteractiegebeurtenissen (weergaven, toevoegingen aan winkelwagentje, aankopen) en het percentage skus dat deze gebeurtenissen binnen een bepaald tijdvenster registreert, zoals hierboven vermeld. Zo kunnen de gereedheidsindicatoren tijdens piekvakantieseizoensverkeer hogere waarden laten zien dan in tijden van normaal volume.
+Meest recente gedragsgegevens van winkels (alleen weergaven):
 
-Om u te helpen de opleidingsvooruitgang van elk aanbevelingstype visualiseren, _Uitgezochte het type van Aanbeveling_ sectie toont een maatregel van bereidheid voor elk type. Deze gereedheidsindicatoren worden berekend op basis van een aantal factoren:
+* _onlangs Bekeken_
 
-* Voldoende resultaat vastgestelde grootte: Zijn er genoeg resultaten die in de meeste scenario&#39;s worden teruggekeerd om te vermijden gebruikend [ reserveaanbevelingen ](behavioral-data.md#backuprecs)?
+### Voortgang visualiseren
 
-* Voldoende variëteit van resultaatsets: vertegenwoordigen de producten die worden geretourneerd een verscheidenheid aan producten uit uw catalogus? Het doel van deze factor is te voorkomen dat een minderheid van producten de enige producten is die op de hele site worden aanbevolen.
-
-Op basis van de bovenstaande factoren wordt een gereedheidswaarde berekend en weergegeven. Een aanbevelingstype wordt beschouwd als klaar om op te stellen wanneer zijn gereedheidswaarde 75% of hoger is. Een aanbevolen type wordt gedeeltelijk geschikt geacht wanneer het voor minstens 50% gereed is. Een aanbevelingstype wordt beschouwd als niet klaar om te worden opgesteld wanneer zijn gereedheidswaarde minder dan 50% is. Dit zijn algemene richtsnoeren, maar elk individueel geval kan verschillen afhankelijk van de aard van de verzamelde gegevens, zoals hierboven beschreven.
+Om u te helpen de opleidingsvooruitgang van elk aanbevelingstype visualiseren, _Uitgezochte het type van Aanbeveling_ sectie toont een maatregel van bereidheid voor elk type.
 
 ![ Type van Aanbeveling ](assets/create-recommendation-select-type.png)
 _Type van Aanbeveling_
@@ -119,6 +138,29 @@ _Type van Aanbeveling_
 >[!NOTE]
 >
 >Indicatoren mogen nooit 100% bereiken.
+
+Het percentage van de gereedheidsindicator voor aanbevolen typen die afhankelijk zijn van catalogusgegevens verandert niet veel omdat de catalogus van de handelaar niet vaak verandert. Maar het percentage van de gereedheidsindicator voor aanbevelingen op basis van gedragsgegevens van winkels kan vaak veranderen, afhankelijk van de dagelijkse verkoopactiviteit.
+
+#### Wat moet u doen als het percentage gereedheidsindicator laag is
+
+Een laag gereedheidspercentage geeft aan dat er niet veel producten uit uw catalogus zijn die in aanmerking komen om te worden opgenomen in de aanbevelingen voor dit soort aanbevelingen. Dit betekent dat er een hoge waarschijnlijkheid is dat [ reserveaanbevelingen ](behavioral-data.md#backuprecs) zijn teruggekeerd als u dit aanbevelingstype hoe dan ook opstelt.
+
+In het volgende voorbeeld worden mogelijke redenen en oplossingen voor algemene lage gereedheidsscores weergegeven:
+
+* **op statisch-gebaseerde** - de lage percentages voor deze indicatoren kunnen door ontbrekende catalogusgegevens voor de getoonde producten worden veroorzaakt. Als deze lager zijn dan u had verwacht, kan dit probleem met een volledige synchronisatie worden verholpen.
+* **op dynamisch-Gebaseerd** - de Lage percentages voor op dynamisch-gebaseerde indicatoren kunnen door worden veroorzaakt:
+
+   * Ontbrekende velden in de vereiste storefront-gebeurtenissen voor de respectievelijke aanbevolen typen (requestId, productcontext, enzovoort.)
+   * Het lage verkeer op de opslag zodat is het volume van gedragsgebeurtenissen wij ontvangen laag.
+   * De verscheidenheid aan storefront gedragsgebeurtenissen over verschillende producten in uw opslag is laag. Als bijvoorbeeld slechts tien procent van uw producten meestal wordt bekeken of gekocht, zijn de respectievelijke gereedheidsindicatoren laag.
+
+#### Hoe gereedheidsindicatoren worden berekend
+
+De gereedheidsindicatoren geven aan hoeveel het model is opgeleid. De indicatoren zijn onafhankelijk van de soorten gebeurtenissen die zijn verzameld, de breedte van de producten waarmee interactie is opgetreden en de grootte van de catalogus.
+
+Het percentage van de gereedheidsindicator wordt afgeleid van een berekening die aangeeft hoeveel producten afhankelijk van het type aanbeveling kunnen worden aanbevolen. De statistieken worden toegepast op producten die op de algemene grootte van de catalogus, het volume van interactie (zoals meningen, klikken, toe:voegen-aan-wortels), en het percentage SKUs worden gebaseerd die die gebeurtenissen binnen een bepaald tijdvenster registreren. Zo kunnen de gereedheidsindicatoren tijdens piekvakantieseizoensverkeer hogere waarden laten zien dan in tijden van normaal volume.
+
+Als gevolg van deze variabelen kan het percentage van de gereedheidsindicator fluctueren. Dit verklaart waarom u zou kunnen zien dat de aanbevelingstypes binnen en uit zijn &quot;bereid zijn op te stellen&quot;komen.
 
 ## Voorvertoning Recommendations {#preview}
 

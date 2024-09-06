@@ -3,9 +3,9 @@ title: "Grens en grenzen"
 description: Leer over de grenzen en de grenzen voor  [!DNL Live Search]  om ervoor te zorgen het aan de behoeften van uw zaken voldoet.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 4898d426a3d5fd2ea9059d200ebf8ba45d0d65df
+source-git-commit: 562af9995b49f4c0fddc76c2ae1c53dd928b1daa
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '887'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,10 @@ Adobe Commerce biedt opties voor het zoeken naar sites. Controleer de volgende g
 - [ Rij die ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier) en [ Speciale Prijsverhoging ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) wordt [!DNL Live Search] niet gesteund op het gebied en van de Lijst van het Product van de Pagina Widget.
 - De productprijzen omvatten geen btw.
 - Zoeken naar inhoud wordt niet ondersteund.
-- Er is een limiet van 10.000 producten die gepagineerd kunnen worden.
+- Er is een limiet van 10.000 producten die gepagineerd kunnen worden. Hoewel deze limiet kan worden verhoogd, kan dit van invloed zijn op de prestaties. Zorg ervoor dat u zinvolle manieren biedt om producten te filteren als een categorie of zoekresultaat een groot aantal producten bevat, zodat kopers geen gebruik hoeven te maken van een diepe paginering.
 - Er geldt een harde limiet van 1 MB per kenmerk, inclusief beschrijving en aangepaste kenmerken.
 - De zoekadapter ondersteunt geen productkenmerken die zijn gemaakt met een aangepast bronmodel en die als facetten worden gebruikt. Om deze functionaliteit te steunen, moet u het [ product gebruiken dat van de Pagina Widget ](plp-styling.md) van de Pagina een lijst maakt.
+- Aangepaste producttypen worden niet ondersteund.
 
 ## Indexeren
 
@@ -84,3 +85,15 @@ Adobe Commerce biedt opties voor het zoeken naar sites. Controleer de volgende g
 - [!DNL popover] steunt niet het *Lege* thema.
 - [!DNL popover] wordt niet ondersteund op het formulier Snelle volgorde.
 - Schijflijsten en productvergelijkingen worden niet ondersteund.
+- Het valutasymbool voor de Peruviaanse sol (PEN) wordt niet ondersteund.
+
+## Problemen oplossen
+
+Raadpleeg de volgende artikelen in de knowledgebase voor hulp bij het oplossen van enkele veelvoorkomende problemen in [!DNL Live Search] :
+
+- [[!DNL Live Search]  niet gesynchroniseerde catalogus ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync)
+- [[!DNL Live Search]  dashboard en het rangschikken van het onderzoeksresultaat is onjuist ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-dashboard-ranking-incorrect)
+- [[!DNL Live Search]  vertoningen uit-van-voorraad producten ongeacht de montages van de voorraadstatus in Admin ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-displays-out-of-stock-products)
+- [[!DNL Live Search]  worden de facetten niet alfabetisch gesorteerd ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-facets-not-sorted)
+
+Als u extra hulp nodig hebt, contacteer [ steun ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).

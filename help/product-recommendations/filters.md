@@ -2,9 +2,9 @@
 title: Filterproducten
 description: Bepaal voorwaarden die of producten van worden gebruikt als aanbevelingen omvatten of uitsluiten.
 exl-id: baab28ff-b529-4cbc-adb7-4fa225e87d4a
-source-git-commit: aa036228bb4040de5a8d4d159727fa0c4c6d99e1
+source-git-commit: b602385b956b6af131b008428d1182a586303bc7
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '734'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,11 @@ De logische operatoren `AND` en `OR` worden gebruikt om meerdere voorwaarden sam
 
 ### Categorie
 
-Filters op basis van de categorie van een product maken gebruik van directe categorietoewijzingen en de bijbehorende subcategorieën. Als u bijvoorbeeld een uitsluitingsvoorwaarde inschakelt voor categorie `Gear` , worden producten die zijn toegewezen aan `Gear` en alle bijbehorende subcategorieën, zoals `Gear/Bags` of `Gear/Fitness Equipment` , uitgesloten. Voor kooplieden B2B, blijft het filter van de Categorie aan om het even welke [ klant-specifieke productcategorieën ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html) u hebt gevormd.
+Filters op basis van de categorie van een product maken gebruik van directe categorietoewijzingen en de bijbehorende subcategorieën. Als u bijvoorbeeld een uitsluitingsvoorwaarde inschakelt voor categorie `Gear` , worden producten die zijn toegewezen aan `Gear` en alle bijbehorende subcategorieën, zoals `Gear/Bags` of `Gear/Fitness Equipment` , uitgesloten. Hetzelfde geldt voor een inclusiefilter op een categorie. Als u bijvoorbeeld een inclusievoorwaarde voor categorie `Gear` inschakelt, worden producten opgenomen die zijn toegewezen aan `Gear` en alle bijbehorende subcategorieën, zoals `Gear/Bags` of `Gear/Fitness Equipment` .
+
+>[!NOTE]
+>
+>Voor kooplieden B2B, blijft het filter van de Categorie aan om het even welke [ klant-specifieke productcategorieën ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html) u hebt gevormd.
 
 Adobe Commerce raadt u aan de volgende configuratie voor categoriefilters te gebruiken wanneer u aanbevelingen op uw paginatypen toepast:
 

@@ -2,9 +2,9 @@
 title: 'Live zoeken instellen'
 description: De  [!DNL Live Search]  werkruimte wordt gebruikt om, onderzoeksprestaties te vormen te beheren en te controleren.
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
-source-git-commit: 5e79bb43449b95b4c6aa0e234a0dbc999c312e59
+source-git-commit: cacef0f205729fa4e05ec3c468594e1eaaf8c560
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '949'
 ht-degree: 0%
 
 ---
@@ -74,14 +74,18 @@ In de volgende sectie worden de ondersteunde en niet-ondersteunde Commerce-confi
 
 ### Ondersteunde configuratiewaarden
 
+>[!IMPORTANT]
+>
+>We raden u aan de widgets voor productlijsten te gebruiken. Deze zijn standaard ingeschakeld in Live Search 4.0.0. De widgets zijn bedoeld om de adapterimplementatie in toekomstige versies volledig te vervangen. Zie [ product toelaten lijst widgets ](install.md#enable-product-listing-widgets) om meer te leren.
+
 | Commerce-configuratie-instelling | Beschrijving | Ondersteund door Popover | Ondersteund door adapter |
 |---|---|---|---|
 | Winkels > Configuratie > Catalogus > Catalogus > Cataloguszoekopdracht > Alle producten per pagina toestaan | Indien ingesteld op `Yes` , neemt u de optie `ALL` op in het besturingselement &#39;Tonen per pagina&#39;. | Ja. Maximaal 500 producten | Ja. Maximaal 500 producten |
 | Winkels > Configuratie > Catalogus > Catalogus > Cataloguszoekopdracht > Minimale lengte query | Het minimale aantal tekens dat is toegestaan in een cataloguszoekopdracht. | Ja | Ja |
 | Winkels > Configuratie > Catalogus > Catalogus > Cataloguszoekopdracht > Producten per pagina op toegestane rasterwaarden | Hiermee bepaalt u het aantal producten dat wordt weergegeven in de rasterweergave. | Ja | Ja |
 | Winkels > Configuratie > Catalogus > Catalogus > Cataloguszoekopdracht > Producten per pagina op standaardrasterwaarde | Hiermee bepaalt u het aantal producten dat standaard per pagina wordt weergegeven in de rasterweergave. | Ja. Maximaal 500 producten | Ja. Maximaal 500 producten |
-| Winkels > Configuratie > Catalogus > Inventaris > Producten uit voorraad weergeven | Hiermee geeft u producten weer die uit voorraad zijn. | Ja met v2.0.4+ | Ja met v2.0.4+ |
-| Stores > Configuration > Currency > Default Display Currency | De primaire valuta die wordt gebruikt om prijzen weer te geven. | Ja met 3.1.0+ | Ja met 3.1.0+ |
+| Winkels > Configuratie > Catalogus > Inventaris > Producten uit voorraad weergeven | Hiermee geeft u producten weer die uit voorraad zijn. | Ja | Ja |
+| Stores > Configuration > Currency > Default Display Currency | De primaire valuta die wordt gebruikt om prijzen weer te geven. | Ja | Ja |
 | Storingen > Configuratie > Algemeen > Valuta-instelling > Valuta-opties > Basisvaluta | De primaire valuta die wordt gebruikt voor alle online betalingstransacties. | Ja | Ja |
 
 Prijzen in de aanbiedingspagina van het widgetproduct en in de pop-upmenu&#39;s worden met de geconfigureerde valutakoersen omgezet in de standaardweergavemunt.

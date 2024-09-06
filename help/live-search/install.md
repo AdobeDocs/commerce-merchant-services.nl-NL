@@ -3,9 +3,9 @@ title: "Aan de slag met  [!DNL Live Search]"
 description: "Leer de systeemvereisten en installatiestappen voor  [!DNL Live Search]  van Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 43e821de9e147508397d45ccd24b5417478b520a
+source-git-commit: cacef0f205729fa4e05ec3c468594e1eaaf8c560
 workflow-type: tm+mt
-source-wordcount: '2419'
+source-wordcount: '2417'
 ht-degree: 0%
 
 ---
@@ -333,7 +333,7 @@ Als u een aangepaste implementatie zonder kop hebt, checkt u de [!DNL Live Searc
 - [ PLP widget ](https://github.com/adobe/storefront-product-listing-page)
 - [ Levend gebied van het Onderzoek ](https://github.com/adobe/storefront-search-as-you-type)
 
-Als u geen standaardcomponenten gebruikt, zoals Zoekadapter, Luminagewidgets of AEM Widgets, werkt de automatische verzameling van gegevens over gebruikersinteractie niet standaard. Deze verzamelde gegevens worden door Adobe Sensei gebruikt voor intelligent winkelen en het volgen van prestaties. Om deze kwestie op te lossen, moet u een douaneoplossing ontwikkelen om deze gegevensinzameling op een krantenloze manier uit te voeren.
+De automatische inzameling van de gegevens van de gebruikersinteractie werkt niet door gebrek wanneer u niet de standaardcomponenten zoals de Adapter van het Onderzoek, Luminagewidgets, of AEM widgets CIF gebruikt. Adobe Sensei gebruikt deze verzamelde gegevens voor intelligent winkelen en het volgen van prestaties. Om deze kwestie op te lossen, moet u een douaneoplossing ontwikkelen om deze gegevensinzameling op een krantenloze manier uit te voeren.
 
 De meest recente versie van [!DNL Live Search] gebruikt [!DNL Catalog Service] al.
 
