@@ -2,9 +2,9 @@
 title: Nieuwe aanbeveling maken
 description: Leer hoe u een product aanbevelingseenheid kunt maken.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 5266ca2766697fc0fd8baf236a5ae83a26528977
+source-git-commit: 0940e0049d8fb388b40b828250b7955eabfd583f
 workflow-type: tm+mt
-source-wordcount: '1438'
+source-wordcount: '1428'
 ht-degree: 0%
 
 ---
@@ -81,9 +81,17 @@ Wanneer u de aanbevelingseenheid activeert, begint Adobe Commerce [ gegevens ](w
 
 ## Gereedheidsindicatoren
 
-Gereedheidsindicatoren laten zien welke aanbevolen typen het beste kunnen worden uitgevoerd op basis van de beschikbare catalogus- en gedragsgegevens. U kunt ook gereedheidsindicatoren gebruiken om te bepalen of u problemen hebt met uw gebeurtenis of dat u onvoldoende verkeer hebt om het type aanbeveling te vullen.
+Gereedheidsindicatoren laten zien welke aanbevolen typen het beste kunnen worden uitgevoerd op basis van de beschikbare catalogus- en gedragsgegevens. U kunt gereedheidsindicatoren ook gebruiken om te bepalen als u kwesties met uw [ het verhinderen ](events.md) hebt of als u niet genoeg verkeer hebt om het aanbevelingstype te bevolken.
 
 De indicatoren van de bereidheid worden gecategoriseerd in of [ op statisch-gebaseerd ](#static-based) of [ op dynamisch-gebaseerd ](#dynamic-based). Alleen catalogusgegevens op basis van statische gegevens gebruiken; terwijl bij dynamisch gebaseerd gebruik gedragsgegevens van uw kopers worden gebruikt. Dat gedragsgegevens worden gebruikt aan [ machine het leren modellen ](behavioral-data.md) om gepersonaliseerde aanbevelingen te bouwen en hun bereidheid te berekenen score.
+
+### Hoe gereedheidsindicatoren worden berekend
+
+De gereedheidsindicatoren geven aan hoeveel het model is opgeleid. De indicatoren zijn afhankelijk van de aard van de verzamelde gebeurtenissen, de omvang van de producten waarmee interactie is opgetreden en de omvang van de catalogus.
+
+Het percentage van de gereedheidsindicator wordt afgeleid van een berekening die aangeeft hoeveel producten afhankelijk van het type aanbeveling kunnen worden aanbevolen. De statistieken worden toegepast op producten die op de algemene grootte van de catalogus, het volume van interactie (zoals meningen, klikken, toe:voegen-aan-wortels), en het percentage SKUs worden gebaseerd die die gebeurtenissen binnen een bepaald tijdvenster registreren. Zo kunnen de gereedheidsindicatoren tijdens piekvakantieseizoensverkeer hogere waarden laten zien dan in tijden van normaal volume.
+
+Als gevolg van deze variabelen kan het percentage van de gereedheidsindicator fluctueren. Dit verklaart waarom u zou kunnen zien dat de aanbevelingstypes binnen en uit zijn &quot;bereid zijn op te stellen&quot;komen.
 
 Gereedheidsindicatoren worden berekend op basis van een aantal factoren:
 
@@ -95,15 +103,15 @@ Op basis van de bovenstaande factoren wordt de gereedheidswaarde als volgt berek
 
 * 75% of hoger betekent dat de aanbevelingen voor dat soort aanbevelingen zeer relevant zullen zijn.
 * Ten minste 50% betekent dat de aanbevelingen die voor dat soort aanbevelingen worden voorgesteld minder relevant zullen zijn.
-* Minder dan 50% betekent dat de aanbevelingen voor dat soort aanbevelingen niet relevant zullen zijn.
+* Minder dan 50% betekent dat de aanbevelingen voor dat soort aanbevelingen wellicht niet relevant zijn. In dit geval, [ reserveaanbevelingen ](behavioral-data.md#backuprecs) worden gebruikt.
 
-Dit zijn algemene richtsnoeren, maar elk individueel geval kan verschillen afhankelijk van de aard van de verzamelde gegevens, zoals hierboven beschreven. Leer meer over [ hoe de gereedheidsindicatoren ](#understand-how-readiness-indicators-are-calculated) worden berekend en [ waarom de gereedheidsindicatoren laag ](#what-to-do-if-the-readiness-indicator-percent-is-low) zouden kunnen zijn.
+Leer meer over [ waarom de gereedheidsindicatoren laag ](#what-to-do-if-the-readiness-indicator-percent-is-low) zouden kunnen zijn.
 
 ### Op statisch basis
 
 De volgende aanbevelingen zijn op statisch gebaseerd omdat ze alleen catalogusgegevens vereisen. Er worden geen gedragsgegevens gebruikt.
 
-* _het meest als dit_
+* _meer als dit_
 * _Visuele Gelijkaardig_
 
 ### Dynamisch gebaseerd
@@ -119,10 +127,12 @@ Laatste zes maanden van storefront gedragsgegevens:
 
 Laatste zeven dagen van gedragsgegevens van de storefront:
 
-* Meest bekeken
-* Meest aangekocht
-* Toegevoegd aan winkelwagentje
-* Trend
+* _Meest bekeken_
+* _het meest gekochte_
+* _Meest toegevoegd aan Kar_
+* _Trending_
+* _Mening aan de Omzetting van de Aankoop_
+* _Mening aan de Omzetting van de Kar_
 
 Meest recente gedragsgegevens van winkels (alleen weergaven):
 
@@ -150,17 +160,9 @@ In het volgende voorbeeld worden mogelijke redenen en oplossingen voor algemene 
 * **op statisch-gebaseerde** - de lage percentages voor deze indicatoren kunnen door ontbrekende catalogusgegevens voor de getoonde producten worden veroorzaakt. Als deze lager zijn dan u had verwacht, kan dit probleem met een volledige synchronisatie worden verholpen.
 * **op dynamisch-Gebaseerd** - de Lage percentages voor op dynamisch-gebaseerde indicatoren kunnen door worden veroorzaakt:
 
-   * Ontbrekende velden in de vereiste storefront-gebeurtenissen voor de respectievelijke aanbevolen typen (requestId, productcontext, enzovoort.)
+   * Ontbrekende gebieden in de vereiste [ storefront gebeurtenissen ](events.md) voor de respectieve aanbevelingen types (requestId, productcontext, etc.)
    * Het lage verkeer op de opslag zodat is het volume van gedragsgebeurtenissen wij ontvangen laag.
    * De verscheidenheid aan storefront gedragsgebeurtenissen over verschillende producten in uw opslag is laag. Als bijvoorbeeld slechts tien procent van uw producten meestal wordt bekeken of gekocht, zijn de respectievelijke gereedheidsindicatoren laag.
-
-#### Hoe gereedheidsindicatoren worden berekend
-
-De gereedheidsindicatoren geven aan hoeveel het model is opgeleid. De indicatoren zijn onafhankelijk van de soorten gebeurtenissen die zijn verzameld, de breedte van de producten waarmee interactie is opgetreden en de grootte van de catalogus.
-
-Het percentage van de gereedheidsindicator wordt afgeleid van een berekening die aangeeft hoeveel producten afhankelijk van het type aanbeveling kunnen worden aanbevolen. De statistieken worden toegepast op producten die op de algemene grootte van de catalogus, het volume van interactie (zoals meningen, klikken, toe:voegen-aan-wortels), en het percentage SKUs worden gebaseerd die die gebeurtenissen binnen een bepaald tijdvenster registreren. Zo kunnen de gereedheidsindicatoren tijdens piekvakantieseizoensverkeer hogere waarden laten zien dan in tijden van normaal volume.
-
-Als gevolg van deze variabelen kan het percentage van de gereedheidsindicator fluctueren. Dit verklaart waarom u zou kunnen zien dat de aanbevelingstypes binnen en uit zijn &quot;bereid zijn op te stellen&quot;komen.
 
 ## Voorvertoning Recommendations {#preview}
 
