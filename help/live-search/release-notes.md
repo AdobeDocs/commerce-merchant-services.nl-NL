@@ -3,9 +3,9 @@ title: "[!DNL Live Search] Opmerkingen bij de release"
 description: "De recentste versieinformatie voor  [!DNL Live Search]  van Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 55b90f0025f69137d50fa1cacd80a2b655eb39dc
+source-git-commit: 5e0ab74e73f187213e83ce290abf2bb08571b9d1
 workflow-type: tm+mt
-source-wordcount: '2010'
+source-wordcount: '2027'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ Updates zijn:
 ## Gehoste service-updates
 
 Deze nota&#39;s beschrijven updates die buiten een versioned versie of verbeteringen aan de ontvangen dienst werden gepubliceerd.
+
+_4 September, 2024_
+
+![ bevestig ](../assets/fix.svg) verhoogde het maximumaantal emmers die [ binnen een facet ](boundaries-limits.md#facets) aan 100 kunnen zijn teruggekeerd.
 
 _7 Augustus, 2024_
 

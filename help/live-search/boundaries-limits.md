@@ -3,7 +3,7 @@ title: "Grens en grenzen"
 description: Leer over de grenzen en de grenzen voor  [!DNL Live Search]  om ervoor te zorgen het aan de behoeften van uw zaken voldoet.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 2f28b77691e5b125875f1ce39301bfebd093a922
+source-git-commit: 4898d426a3d5fd2ea9059d200ebf8ba45d0d65df
 workflow-type: tm+mt
 source-wordcount: '777'
 ht-degree: 0%
@@ -37,7 +37,7 @@ Adobe Commerce biedt opties voor het zoeken naar sites. Controleer de volgende g
 ## Facetten
 
 - Een maximum van 100 attributen kan als facetten van de 200 filterbare attributen worden gevormd die kunnen worden geïndexeerd.
-- Binnen een facet kunnen maximaal 30 emmers worden geretourneerd. Als meer dan 30 emmers moeten zijn teruggekeerd, [ creeer een steunkaartje ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) zodat kan de Adobe het prestatieseffect analyseren en bepalen als het haalbaar is om deze grens voor uw milieu te verhogen.
+- Binnen een facet kunnen maximaal 100 emmers worden geretourneerd. Als u meer dan 100 emmers moet terugkeren, [ creeer een steunkaartje ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) zodat kan de Adobe het prestatieseffect analyseren en bepalen als het haalbaar is om deze grens voor uw milieu te verhogen.
 - Dynamische facetten kunnen prestatieproblemen veroorzaken in grote indexen en indexen met hoge rangorde. Als u dynamische facetten hebt gemaakt en u merkt dat de prestaties achteruitgaan of dat de pagina niet wordt geladen met time-outfouten, kunt u proberen uw facetten te wijzigen in vastgezet om te bepalen of dat het prestatieprobleem verhelpt.
 - De voorraadstatus (`quantity_and_stock_status`) wordt niet ondersteund als facet. U kunt `inStock: 'true'` gebruiken om te filteren uit aandelenproducten. Dit wordt vanuit het vak in de module `LiveSearchAdapter` ondersteund wanneer &quot;Display out of stock products&quot; is ingesteld op &quot;True&quot; in [!DNL Commerce] Admin.
 - Datumtypekenmerken worden niet als facet ondersteund.
