@@ -4,9 +4,9 @@ description: De recentste versieinformatie voor  [!DNL Data Export Extension]  v
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 0c7aeeda-e8a6-4740-b466-0661a6d2df07
-source-git-commit: aaa3673154345207a90eaa9fea6384330420bfe5
+source-git-commit: 93be63ca7a4edc2890a37a6460a123e28226301a
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '711'
 ht-degree: 0%
 
 ---
@@ -30,8 +30,8 @@ Updates zijn:
 
 ## 103.3.11 Release
 
-![ Bevestig ](../assets/fix.svg) de dienst van de gegevensuitvoer verzendt nu speciale prijsgegevens voor bundelproducten als percentage, correcterend een vorige kwestie waar het als definitieve prijs werd verzonden.&lt;!-MDEE-854—>
-![ bevestig ](../assets/fix.svg) bijgewerkte monoloog implementatie voor verenigbaarheid met Monolog 3.&lt;!-MDEE-858—>
+![ Bevestig ](../assets/fix.svg) de dienst van de gegevensuitvoer verzendt nu speciale prijsgegevens voor bundelproducten als percentage, correcterend een vorige kwestie waar het als definitieve prijs werd verzonden. <!--MDEE-854-->
+![ bevestig ](../assets/fix.svg) bijgewerkte monoloog implementatie voor verenigbaarheid met Monolog 3. <!--MDEE-858-->
 
 ## 103.3.10 Release
 

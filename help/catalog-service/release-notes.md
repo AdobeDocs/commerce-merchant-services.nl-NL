@@ -3,9 +3,9 @@ title: '[!DNL Catalog Service] Opmerkingen bij de release'
 description: De recentste versieinformatie voor  [!DNL Catalog Service]  voor Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 58d5abf84a190b203661606c439beb088b7ee20d
+source-git-commit: 93be63ca7a4edc2890a37a6460a123e28226301a
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '813'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,15 @@ Updates zijn:
 
 ## Huidige hoofdversie
 
+### V1.23 Release
+
+_Augustus 22, 2024_
+
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
+
+![ Repareren ](../assets/fix.svg) U kunt productinformatie zonder product met voeten treden (prijzen) gegevens nu terugwinnen. In vorige versies, kwamen deze vragen de volgende fout terug:
+`The following sku does not have product override data in the DB: <SKU value>. Make sure data is synced.` <!--DATA-6121-->
+
 ### V1.22 Release
 
 _Augustus 13, 2024_
@@ -34,6 +43,14 @@ _Augustus 13, 2024_
 ## Vorige versies
 
 +++ Vorige versies
+
+### V1.22 Release
+
+_Augustus 13, 2024_
+
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
+
+![ Nieuwe ](../assets/new.svg) Toegevoegde steun om alle varianten door productSKU terug te winnen. Zie de [ Verwijzing van de Dienst API van de Catalogus ](https://developer.adobe.com/commerce/services/graphql/catalog-service/). <!--DATA-6067-->
 
 ### V1.19 Release
 
