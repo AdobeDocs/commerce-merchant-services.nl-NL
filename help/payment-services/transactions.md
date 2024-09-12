@@ -4,9 +4,9 @@ description: Gebruik het rapport Transacties om de snelheid van de transactiever
 role: User
 level: Intermediate
 exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
-source-git-commit: 0800b4a0f9a3297a3490fa11f32e6af0abe67e2a
+source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
 workflow-type: tm+mt
-source-wordcount: '1282'
+source-wordcount: '1272'
 ht-degree: 0%
 
 ---
@@ -35,11 +35,11 @@ De weergave van het Transactierapport is beschikbaar in de weergave Transacties 
 
 Voor _Admin_ sidebar, ga **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**om de gedetailleerde het rapportmening van Transacties in de tabelvorm te zien.
 
-![ het rapportmening van Transacties ](assets/transactions-report-view.png){width="600" zoomable="yes"}
+![ het rapportmening van Transacties ](assets/transactions-report-view.png){width="800" zoomable="yes"}
 
 U kunt deze mening, per de secties in dit onderwerp vormen, om de gegevens het best voor te stellen u wenst te zien.
 
-Zie gekoppelde Commerce-transactie- en providertransactie-id&#39;s, transactiebedragen, betalingsmethode per transactie en meer in dit rapport.
+Zie de gekoppelde Commerce-order en PayPal-transactie-id&#39;s, transactiebedragen, betalingsmethode per transactie en meer in dit rapport.
 
 Niet alle betalingsmethoden bieden dezelfde mate van informatie. Met creditcardtransacties worden bijvoorbeeld reacties, AVS- en CCV-codes en de laatste vier cijfers van de kaart in het Transactierapport verschaft. PayPal-betalingsknoppen doen dat niet.
 
@@ -86,12 +86,11 @@ In de weergave van het Transactierapport kunt u de resultaten filteren die u wil
 1. Voor _Admin_ sidebar, ga **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
 1. Klik op de kiezer **[!UICONTROL Filter]** .
 1. Schakel de optie _[!UICONTROL Transaction Result]_in of uit om alleen de resultaten van geselecteerde ordertransacties te bekijken.
-1. Selecteer _[!UICONTROL Card Type]_om de rapportresultaten voor het geselecteerde kaarttype te zien. Er wordt knopinfo met meer informatie weergegeven wanneer de betalingsverwerker het type kaart niet kan identificeren.
-1. Selecteer _[!UICONTROL Card Brand]_om de rapportresultaten voor het geselecteerde kaartmerk te zien. Er wordt knopinfo met meer informatie weergegeven wanneer de betalingsverwerker het kaartmerk niet kan identificeren.
-1. Schakel de opties voor _[!UICONTROL Payment Method]_in of uit om alleen de geselecteerde betalingsmethoden te bekijken.
+1. Schakel de opties van _[!UICONTROL Payment Method]_in om de rapportresultaten voor het type betaling te bekijken dat voor de transactie wordt gebruikt.
+1. Schakel de _[!UICONTROL Payment Detail]_-opties in of uit om aanvullende informatie weer te geven over het gebruikte type betaling, indien beschikbaar.
 1. Ga het Min van de Orde van de a __ of _Max Bedrag van de Orde_ in om rapportresultaten binnen die waaier van het ordebedrag te zien.
 1. Voer een _[!UICONTROL Order ID]_in om te zoeken naar een specifieke transactie.
-1. Introduceer _[!UICONTROL Card Last Four Digits]_om naar een specifieke creditcard of bankpas te zoeken.
+1. Introduceer _[!UICONTROL Card Last Four]_om naar een specifieke creditcard of bankpas te zoeken.
 1. Voer een _[!UICONTROL Customer ID]_in om alle transacties van een bepaalde klant weer te geven.
 1. Voer _[!UICONTROL Customer Email]_in om transacties voor die e-mail te filteren.
 1. Klik op **[!UICONTROL Hide filters]** om het filter te verbergen.
@@ -134,11 +133,12 @@ Transactierapporten bevatten de volgende informatie.
 | Kolom | Beschrijving |
 | ------------ | -------------------- |
 | [!UICONTROL Order ID] | Commerce orde ID (bevat slechts waarden voor succesvolle transacties en is leeg voor verworpen transacties) <br> <br> om verwante [ orde info ](https://docs.magento.com/user-guide/sales/orders.html) te zien {target="_blank"}, klik identiteitskaart |
-| [!UICONTROL Provider Transaction ID] | Transactie-id verstrekt door de betalingsaanbieder; bevat alleen waarden voor geslaagde transacties en bevat een streepje voor geweigerde transacties. |
+| [!UICONTROL PayPal Transaction ID] | Transactie-id verstrekt door de betalingsaanbieder; bevat alleen waarden voor geslaagde transacties en bevat een streepje voor geweigerde transacties. U kunt op deze id klikken om de pagina met PayPal-transactiegegevens te openen. |
 | [!UICONTROL Customer ID] | Commerce-klant-id van een bestelling <br> <br> zie [ klanteninfo ](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/account-create) {target="_blank"} onderwerp voor meer informatie. |
 | [!UICONTROL Transaction Date] | Tijdstempel van transactiedatum |
-| [!UICONTROL Payment Method] | Betalingsmethode van transactie met gedetailleerde informatie over merk en type kaart. Zie [ kaarttypes ](https://developer.paypal.com/docs/api/orders/v2/#definition-card_type) voor meer informatie; beschikbaar voor versies 1.6.0 van de Diensten van de Betaling en nieuwer |
-| [!UICONTROL Card Last Four Digits] | Laatste vier cijfers van de voor de transactie gebruikte krediet- of debetkaarten |
+| [!UICONTROL Payment Method] | Soort betaling gebruikt voor de transactie met informatie over merk en type kaart. Zie [ kaarttypes ](https://developer.paypal.com/docs/api/orders/v2/#definition-card_type) voor meer informatie; beschikbaar voor versies 1.6.0 van de Diensten van de Betaling en nieuwer |
+| [!UICONTROL Payment Detail] | Bevat aanvullende informatie over het type betaling dat voor de transactie wordt gebruikt, indien beschikbaar. |
+| [!UICONTROL Card Last Four] | Laatste vier cijfers van de voor de transactie gebruikte krediet- of debetkaarten |
 | [!UICONTROL Result] | Het resultaat van de transactie—*[!UICONTROL OK]* (geslaagde transactie), *[!UICONTROL Rejected by Payment Provider]* (geweigerd door PayPal), *[!UICONTROL Rejected by Bank]* (geweigerd door de bank die de kaart heeft uitgegeven) |
 | [!UICONTROL Response Code] | Foutcode die reden voor afwijzing weergeeft van de betalingsaanbieder of de bank. Zie de lijst met mogelijke antwoordcodes en beschrijvingen voor [`Rejected by Bank` status ](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) en [`Rejected by Payment Provider` status ](https://developer.paypal.com/api/rest/reference/orders/v2/errors/) . |
 | [!UICONTROL AVS Code] | Adres Verification Service-code; de responsgegevens van de processor voor betalingsverzoeken. Zie [ lijst van mogelijke codes en beschrijvingen ](https://developer.paypal.com/docs/api/orders/v2/#definition-processor_response) voor meer informatie. |

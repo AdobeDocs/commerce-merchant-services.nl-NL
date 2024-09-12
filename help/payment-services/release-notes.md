@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Opmerkingen bij de release"
 description: Herzie de versienota's voor informatie over alle  [!DNL Payment Services]  versies.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 73a48822a7df6999ddb597e53cd6b869b1b97222
+source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
 workflow-type: tm+mt
-source-wordcount: '2788'
+source-wordcount: '2968'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,10 @@ Leer meer over aanstaande versies, productsteun, en welke versies van Adobe Comm
 Deze versienota&#39;s beschrijven eigenschapveranderingen en moeilijke situaties die voorkwamen en buiten de regelmatige eigenschapversies voor de ontvangen dienst werden vrijgegeven.
 
 +++Hosted service-updates
+
+_Augustus 30, 2024_
+
+![ Nieuwe kwestie ](../assets/new.svg)<!-- Issue PAY-5658 --> nu, kunnen de handelaren transacties door het Detail van de Betaling in het [ transactierapport ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html) voor meer gedetailleerde en nauwkeurige gegevens van betalingsmethodes filtreren.
 
 _15 juli 2024_
 
@@ -86,6 +90,20 @@ _Juni 28, 2021_
 ![ Nieuw ](../assets/new.svg)<!-- Issue PAY-2761 --> U kunt de gegevens nu aanpassen die in het [ rapport van de de betalingsstatus van de Orde ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) en het [ rapport van Uitbetalingen ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) door kolommen te tonen of te verbergen gebruikend de de montagecontrole van de Kolom tonen.
 
 +++
+
+## v2.8.0
+
+_13 September, 2024_
+
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
+
+![ Nieuw ](../assets/new.svg)<!-- PAY-5499 --> [!DNL Payment Services] steunt nu het verzenden van het volgen aantalinformatie naar PayPal wanneer a [ het volgen aantal ](track-shipment.md) in Adobe Commerce is ingegaan.
+
+![ Repareren ](../assets/fix.svg)<!-- PAY-5626 --> [!DNL Payment Services] heeft het aanvraagproces voor het handelsregister geoptimaliseerd wanneer klanten de Commerce-pagina voor afrekenen bezoeken. Er zijn eerder afzonderlijke aanvragen ingediend voor elke betalingsmethode (Gehoste velden, Google Pay, Apple Pay en Smart Buttons). Deze verbetering vermindert het aantal vraag, verbeterend prestaties en efficiency tijdens het controleproces.
+
+![ Repareren ](../assets/fix.svg)<!-- PAY-5645 --> [!DNL Payment Services] voorkomt nu dat het PayPal/Google-pop-upmenu wordt geopend als de verkoper niet heeft ingestemd met aangepaste voorwaarden die door de verkoper zijn gemaakt op de afhandelingspagina.
+
+![ Repareren ](../assets/fix.svg)<!-- PAY-5648 -->  [!DNL Payment Services] heeft een probleem opgelost met betrekking tot de verdeling van de belasting over de line-items op het PayPal-portaal. Als er belasting is gekoppeld aan de verzendkosten van een bestelling, wordt de belasting opgenomen als onderdeel van de verzendkosten en wordt deze belasting weergegeven in de details van de lijstitem die worden weergegeven in het PayPal-portaal.
 
 ## v2.7.0
 

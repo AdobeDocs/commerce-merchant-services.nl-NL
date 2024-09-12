@@ -6,9 +6,9 @@ index: true
 role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
-source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
+source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
 workflow-type: tm+mt
-source-wordcount: '103'
+source-wordcount: '108'
 ht-degree: 1%
 
 ---
@@ -34,12 +34,13 @@ ht-degree: 1%
 - Betalingen en uitchecken {#payments-checkout}
    - [Betalingsopties](payments-options.md)
    - [Creditcard vaulting](vaulting.md)
-   - [Afhandeling](checkout.md)
-   - [Een bestelling maken in Beheer](create-order.md)
+   - [Uitchecken in  [!DNL Payment Services]](checkout.md)
    - Betalingen beheren {#manage}
       - [Regelitems voor  [!DNL Payment Services]](line-items.md)
       - [Restituties](refunds.md)
       - [Void](voids.md)
+   - [Een bestelling maken in Beheer](create-order.md)
+   - [Uw verzendingen bijhouden in  [!DNL Payment Services]](track-shipment.md)
 - Financiële rapportage {#reporting}
    - [Transactierapport](transactions.md)
    - [Betalingsstatusrapport bestellen](order-payment-status.md)

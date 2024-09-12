@@ -1,16 +1,17 @@
 ---
-title: Afhandeling
-description: Afhandeling aanpassen aan de behoeften van uw klant.
+title: Uitchecken in  [!DNL Payment Services]
+description: Pas  [!DNL Payment Services]  controle aan om de behoeften van uw klant te passen.
 feature: Payments, Checkout
 exl-id: 47df165f-2145-4e0e-b272-54b8e768cf19
-source-git-commit: 4a534f2f9844173b4ec878976595159c2c47c561
+source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
 
-# Afhandeling
+
+# Uitchecken in [!DNL Payment Services]
 
 U kunt de afhandeling voor Adobe Commerce [!DNL Payment Services] zo configureren dat deze het beste aansluit bij uw klanten. De functionaliteit zoals [ orde auto-ongeldig maakt ](#order-auto-voided-if-error) en [ creditcardhet vaulteren ](#credit-card-vaulting) zorgt ervoor uw klanten een vlotte gebruikerservaring hebben.
 
