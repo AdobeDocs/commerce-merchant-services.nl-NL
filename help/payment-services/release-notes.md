@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Opmerkingen bij de release"
 description: Herzie de versienota's voor informatie over alle  [!DNL Payment Services]  versies.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
+source-git-commit: a5963055a17b5af0c30f3d5f6236d1524e028b22
 workflow-type: tm+mt
-source-wordcount: '2968'
+source-wordcount: '3017'
 ht-degree: 0%
 
 ---
@@ -90,6 +90,14 @@ _Juni 28, 2021_
 ![ Nieuw ](../assets/new.svg)<!-- Issue PAY-2761 --> U kunt de gegevens nu aanpassen die in het [ rapport van de de betalingsstatus van de Orde ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) en het [ rapport van Uitbetalingen ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) door kolommen te tonen of te verbergen gebruikend de de montagecontrole van de Kolom tonen.
 
 +++
+
+## v2.8.1
+
+_13 September, 2024_
+
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
+
+![ bevestig ](../assets/fix.svg)<!-- PAY-5644 --> een kwestie met het geheime voorgeheugen van de parameters van SDK wanneer het gebruiken van veelvoudige werkingsgebied in [!DNL Payment Services]. SDK-configuratie wordt nu afzonderlijk in de cache geplaatst voor elk bereik in plaats van onder één toets. Dit zorgt ervoor dat het geheime voorgeheugen van elk werkingsgebied onafhankelijk ongeldig wordt gemaakt, verbeterend betrouwbaarheid wanneer het beheren van veelvoudige werkingsgebieden.
 
 ## v2.8.0
 
