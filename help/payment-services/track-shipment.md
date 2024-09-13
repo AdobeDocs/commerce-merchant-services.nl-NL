@@ -2,7 +2,7 @@
 title: Uw verzendingen bijhouden in  [!DNL Payment Services]
 description: Pas  [!DNL Payment Services]  zendingen en het volgen informatie aan die in het PayPal Merchant Dashboard wordt getoond.
 feature: Payments
-source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
+source-git-commit: 2169907d7200a0937ce5a3ddf9634423cc8c2f5f
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 0%
@@ -48,4 +48,4 @@ De volgende instructies doorlopen u het proces voor het maken van een verzending
 
 ### Verenigbaarheid met derden
 
-Om het even welke derdeuitbreiding is compatibel met de functionaliteit wanneer een ladingsentiteit door [ Commerce API ](https://developer.adobe.com/commerce/webapi/rest/attributes/#magentosalesapishipmentrepositoryinterface-shipmentrepositoryinterface) {target=_blank} wordt gecreeerd.
+Om het even welke derdeuitbreiding is compatibel met de functionaliteit wanneer een ladingsentiteit door [ Commerce API ](https://developer.adobe.com/commerce/webapi/rest/attributes/#ShipmentRepositoryInterface) {target=_blank} wordt gecreeerd.
