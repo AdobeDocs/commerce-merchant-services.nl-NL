@@ -3,9 +3,9 @@ title: "Grens en grenzen"
 description: Leer over de grenzen en de grenzen voor  [!DNL Live Search]  om ervoor te zorgen het aan de behoeften van uw zaken voldoet.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 562af9995b49f4c0fddc76c2ae1c53dd928b1daa
+source-git-commit: 2feb97bf6aa41e5b99d3dcbc51ef3c1cdc05d8da
 workflow-type: tm+mt
-source-wordcount: '887'
+source-wordcount: '905'
 ht-degree: 0%
 
 ---
@@ -17,13 +17,14 @@ Adobe Commerce biedt opties voor het zoeken naar sites. Controleer de volgende g
 ## Algemeen
 
 - De [ Geavanceerde module van het Onderzoek ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) wordt onbruikbaar gemaakt wanneer [!DNL Live Search] wordt geïnstalleerd, en de Geavanceerde verbinding van het Onderzoek in storefront wordt verwijderd.
-- [ Rij die ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier) en [ Speciale Prijsverhoging ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) wordt [!DNL Live Search] niet gesteund op het gebied en van de Lijst van het Product van de Pagina Widget.
+- [ het Tarief van de Rij ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier) wordt niet gesteund op het [!DNL Live Search] gebied en de Widget van de Pagina van het Product van de Lijst.
 - De productprijzen omvatten geen btw.
-- Zoeken naar inhoud wordt niet ondersteund.
+- Zoeken naar inhoud (CMS-pagina&#39;s en -blokken) wordt niet ondersteund.
 - Er is een limiet van 10.000 producten die gepagineerd kunnen worden. Hoewel deze limiet kan worden verhoogd, kan dit van invloed zijn op de prestaties. Zorg ervoor dat u zinvolle manieren biedt om producten te filteren als een categorie of zoekresultaat een groot aantal producten bevat, zodat kopers geen gebruik hoeven te maken van een diepe paginering.
 - Er geldt een harde limiet van 1 MB per kenmerk, inclusief beschrijving en aangepaste kenmerken.
 - De zoekadapter ondersteunt geen productkenmerken die zijn gemaakt met een aangepast bronmodel en die als facetten worden gebruikt. Om deze functionaliteit te steunen, moet u het [ product gebruiken dat van de Pagina Widget ](plp-styling.md) van de Pagina een lijst maakt.
 - Aangepaste producttypen worden niet ondersteund.
+- U kunt resultaten filtreren gebruikend &quot;begint met&quot;of &quot;bevat&quot;voorwaarden met sommige beperkingen zoals die [ hier ](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#limitations) worden beschreven.
 
 ## Indexeren
 

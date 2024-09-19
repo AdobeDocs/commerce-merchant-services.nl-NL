@@ -2,7 +2,7 @@
 title: "Facetten toevoegen"
 description: "Leer hoe te om filterbare productattributen als  [!DNL Live Search]  facetten toe te voegen."
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
-source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
+source-git-commit: 2439e9c2b38269e1cf9761d2b662abce76b8304e
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 0%
@@ -44,7 +44,7 @@ Het facet wordt toegevoegd aan de bodem van de *Dynamische lijst van Facetten* e
 
    * Etiket - ([ Koploze ](facets-type.md) slechts) ga het facetetiket in dat u wilt gebruiken.
    * Sorteertype - Facetten worden alfabetisch gesorteerd voor alle [!DNL Commerce] storefronts. Voor implementaties zonder kop kunnen facetten alfabetisch of op aantal worden gesorteerd. Opties: Alfabetisch, Aantal (alleen zonder kop)
-   * Max. waarde - Voer het maximale aantal facetwaarden in dat in de winkelruimte wordt weergegeven. Geldige vermeldingen: 0 - 30; Standaard: 8
+   * Max. waarde - Voer het maximale aantal facetwaarden in dat in de winkelruimte wordt weergegeven. Geldige vermeldingen: 0 - 100; Standaard: 8
 
 1. Wanneer volledig, klik **sparen**.
 
@@ -65,7 +65,7 @@ Als de facet niet beschikbaar na twee uren is, zie [ de uitvoer ](install.md#syn
 |--- |--- |
 | Label | ([ Koploze ](facets-type.md) slechts) het [ facetetiket ](facets-type.md) dat in de storefront zichtbaar is kan voor consistentie met uw merk worden uitgegeven. |
 | Sorteertype | De methode die aan [ wordt gebruikt soort ](facets-type.md) facetten. Alle [!DNL Commerce] storefronts sorteren alleen alfabetische facetten. Implementaties zonder kop kunnen ook worden gesorteerd op `Count` . Opties:<br /> alfabetisch - sorteert facetten alfabetisch.<br /> Telling - (Hoofdloos slechts) sorteert facetten die op het aantal gevonden gelijken worden gebaseerd. |
-| Max. waarde | Het maximumaantal waarden dat in de opslagruimte voor elk facet kan worden getoond. Facetten die een reeks waarden vertegenwoordigen, worden gelijkmatig verdeeld. Geldige vermeldingen: 0 - 30; Standaard: 8 |
+| Max. waarde | Het maximumaantal waarden dat in de opslagruimte voor elk facet kan worden getoond. Facetten die een reeks waarden vertegenwoordigen, worden gelijkmatig verdeeld. Geldige vermeldingen: 0 - 100; Standaard: 8 |
 
 ### Besturingselementen
 

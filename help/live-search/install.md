@@ -3,9 +3,9 @@ title: "Aan de slag met  [!DNL Live Search]"
 description: "Leer de systeemvereisten en installatiestappen voor  [!DNL Live Search]  van Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: cacef0f205729fa4e05ec3c468594e1eaaf8c560
+source-git-commit: 8981dda82dbdf45d1df0257beb8603b22e98aa4b
 workflow-type: tm+mt
-source-wordcount: '2417'
+source-wordcount: '2977'
 ht-degree: 0%
 
 ---
@@ -110,6 +110,58 @@ Op een hoog niveau is het vereist dat u: [!DNL Live Search]
    ```bash
    bin/magento setup:upgrade
    ```
+
+### De bètaversie van [!DNL Live Search] installeren
+
+>[!IMPORTANT]
+>
+>Als u de nieuwe functies van [!DNL Live Search] wilt verkennen, kunt u de bètaversie installeren.
+
+Deze bèta steunt drie nieuwe mogelijkheden in [`productSearch` vraag ](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/):
+
+- **Gelaagd onderzoek** - Onderzoek binnen een andere onderzoekscontext - met dit vermogen, kunt u tot twee lagen van onderzoek naar uw onderzoeksvragen ondernemen. Bijvoorbeeld:
+
+   - **Laag 1 onderzoek** - Onderzoek naar &quot;motor&quot;op &quot;product_attribute_1&quot;.
+   - **Laag 2 onderzoek** - Onderzoek naar &quot;deelaantal 123&quot;op &quot;product_attribute_2&quot;. In dit voorbeeld wordt gezocht naar &quot;part number 123&quot; in de resultaten naar &quot;motor&quot;.
+
+  Gelaagde zoekopdracht is beschikbaar voor zowel `startsWith` zoekindexatie als `contains` zoekindex, zoals hieronder wordt beschreven:
+
+- **startWith onderzoeksindexatie** - Onderzoek gebruikend `startsWith` indexatie. Met deze nieuwe functie is het mogelijk:
+
+   - Zoeken naar producten waarbij de kenmerkwaarde begint met een bepaalde tekenreeks.
+   - Het vormen van &quot;beëindigt met&quot;onderzoek zodat kunnen de kopers naar producten zoeken waar de attributenwaarde met een bepaalde koord beëindigt. Om &quot;beëindigt met&quot;onderzoek toe te laten, moet het productattribuut in omgekeerde worden opgenomen en de API vraag zou ook een omgekeerde koord moeten zijn.
+
+- **bevat onderzoeksindexatie** - Onderzoek een attribuut gebruikend bevat indexatie. Met deze nieuwe functie is het mogelijk:
+
+   - Zoeken naar een query binnen een grotere tekenreeks. Als een winkel bijvoorbeeld het productnummer &quot;PE-123&quot; zoekt in de tekenreeks &quot;HAPE-123&quot;.
+
+      - Nota: Dit onderzoekstype is verschillend van het bestaande [ uitdrukkingsonderzoek ](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#phrase), dat een autocomplete onderzoek uitvoert. Als de waarde van het kenmerk van het product bijvoorbeeld &quot;outdoorbroek&quot; is, retourneert een zoekopdracht met woordgroepen een reactie voor &quot;out pan&quot;, maar wordt geen reactie voor &quot;of ants&quot; geretourneerd. A contains search, echter, retourneert wel een reactie op ‘or ants’.
+
+Deze nieuwe voorwaarden verbeteren het het filtreren van de onderzoeksvraag mechanisme om onderzoeksresultaten te raffineren. Deze nieuwe voorwaarden hebben geen invloed op de hoofdzoekquery.
+
+U kunt deze nieuwe voorwaarden implementeren op de pagina met zoekresultaten. U kunt bijvoorbeeld een nieuwe sectie toevoegen op de pagina waar de gebruiker de zoekresultaten verder kan verfijnen. Je kunt kopers toestaan specifieke productkenmerken te selecteren, zoals &#39;Fabrikant&#39;, &#39;Onderdeelnummer&#39; en &#39;Beschrijving&#39;. Daarna zoeken ze binnen die kenmerken met behulp van de `contains` - of `startsWith` -voorwaarden. Zie de gids Admin voor een lijst van doorzoekbare [ attributen ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types).
+
+1. Voer de volgende handelingen uit vanaf de opdrachtregel om de bètaversie te installeren:
+
+   ```bash
+   composer require magento/module-live-search-search-types:"^1.0-beta"
+   ```
+
+   Deze bètaversie voegt selectievakjes **[!UICONTROL Search types]** voor **[!UICONTROL Autocomplete]** , **[!UICONTROL Contains]** en **[!UICONTROL Starts with]** in Admin toe. De `productSearch` GraphQL API wordt ook bijgewerkt en bevat deze nieuwe zoekmogelijkheden.
+
+1. In Admin, [ plaats een productattribuut ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties) om het onderzoeksvermogen voor dat attribuut te zoeken en te specificeren, zoals **Bevat** (gebrek) of **Begint met**. U kunt een maximum van zes attributen specificeren die voor **worden toegelaten bevat** en zes attributen die voor **worden toegelaten begint met**. Voor bèta moet u er rekening mee houden dat de beheerder deze beperking niet afdwingt, maar dat deze wel wordt afgedwongen in API-zoekopdrachten.
+
+   ![ specificeer onderzoeksvermogen ](./assets/search-filters-admin.png)
+
+1. Zie de [ ontwikkelaardocumentatie ](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability) leren hoe te om uw [!DNL Live Search] API vraag bij te werken gebruikend de nieuwe `contains` en `startsWith` onderzoeksmogelijkheden.
+
+### Veldomschrijvingen
+
+| Veld | Beschrijving |
+|--- |--- |
+| `Autocomplete` | Deze optie is standaard ingeschakeld en kan niet worden gewijzigd. Met `Autocomplete` kunt u `contains` in de [ onderzoeksfilter ](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering) gebruiken. Hier retourneert de zoekquery in `contains` een zoekreactie van het type Automatisch aanvullen. Adobe raadt u aan dit type zoekopdracht te gebruiken voor beschrijvingsvelden, die doorgaans > 50 tekens bevatten. |
+| `Contains` | Hiermee wordt een zoekopdracht met de tekst in een tekenreeks ingeschakeld in plaats van een automatische zoekopdracht. Gebruik `contains` in de [ onderzoeksfilter ](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability). Verwijs naar de [ Beperkingen ](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#limitations) voor meer informatie. |
+| `Starts with` | Hiermee kunt u zoeken naar tekenreeksen die beginnen met een bepaalde waarde. Gebruik `startsWith` in de [ onderzoeksfilter ](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability). |
 
 ## 2. API-sleutels configureren
 
