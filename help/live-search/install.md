@@ -3,7 +3,7 @@ title: "Aan de slag met  [!DNL Live Search]"
 description: "Leer de systeemvereisten en installatiestappen voor  [!DNL Live Search]  van Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 8981dda82dbdf45d1df0257beb8603b22e98aa4b
+source-git-commit: b17cdc61ddbf7e3d1e5782eb079a628a240ea8c0
 workflow-type: tm+mt
 source-wordcount: '2977'
 ht-degree: 0%
@@ -144,7 +144,7 @@ U kunt deze nieuwe voorwaarden implementeren op de pagina met zoekresultaten. U 
 1. Voer de volgende handelingen uit vanaf de opdrachtregel om de bètaversie te installeren:
 
    ```bash
-   composer require magento/module-live-search-search-types:"^1.0-beta"
+   composer require magento/module-live-search-search-types:"^1.0.0-beta1"
    ```
 
    Deze bètaversie voegt selectievakjes **[!UICONTROL Search types]** voor **[!UICONTROL Autocomplete]** , **[!UICONTROL Contains]** en **[!UICONTROL Starts with]** in Admin toe. De `productSearch` GraphQL API wordt ook bijgewerkt en bevat deze nieuwe zoekmogelijkheden.
