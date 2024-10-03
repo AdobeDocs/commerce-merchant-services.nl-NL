@@ -3,9 +3,9 @@ title: "Aan de slag met  [!DNL Live Search]"
 description: "Leer de systeemvereisten en installatiestappen voor  [!DNL Live Search]  van Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: b17cdc61ddbf7e3d1e5782eb079a628a240ea8c0
+source-git-commit: 9a10613db182d0d6bf8dad2bbcd1fd9023804370
 workflow-type: tm+mt
-source-wordcount: '2977'
+source-wordcount: '3000'
 ht-degree: 0%
 
 ---
@@ -115,7 +115,7 @@ Op een hoog niveau is het vereist dat u: [!DNL Live Search]
 
 >[!IMPORTANT]
 >
->Als u de nieuwe functies van [!DNL Live Search] wilt verkennen, kunt u de bètaversie installeren.
+>De volgende functie is in bèta. Om aan bèta deel te nemen, verzend een e-mailverzoek naar [ handel-opslag-diensten ](mailto:commerce-storefront-services@adobe.com).
 
 Deze bèta steunt drie nieuwe mogelijkheden in [`productSearch` vraag ](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/):
 
@@ -141,13 +141,15 @@ Deze nieuwe voorwaarden verbeteren het het filtreren van de onderzoeksvraag mech
 
 U kunt deze nieuwe voorwaarden implementeren op de pagina met zoekresultaten. U kunt bijvoorbeeld een nieuwe sectie toevoegen op de pagina waar de gebruiker de zoekresultaten verder kan verfijnen. Je kunt kopers toestaan specifieke productkenmerken te selecteren, zoals &#39;Fabrikant&#39;, &#39;Onderdeelnummer&#39; en &#39;Beschrijving&#39;. Daarna zoeken ze binnen die kenmerken met behulp van de `contains` - of `startsWith` -voorwaarden. Zie de gids Admin voor een lijst van doorzoekbare [ attributen ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types).
 
-1. Voer de volgende handelingen uit vanaf de opdrachtregel om de bètaversie te installeren:
+1. Om bèta te installeren, voeg de volgende gebiedsdeel aan uw project toe:
 
    ```bash
    composer require magento/module-live-search-search-types:"^1.0.0-beta1"
    ```
 
-   Deze bètaversie voegt selectievakjes **[!UICONTROL Search types]** voor **[!UICONTROL Autocomplete]** , **[!UICONTROL Contains]** en **[!UICONTROL Starts with]** in Admin toe. De `productSearch` GraphQL API wordt ook bijgewerkt en bevat deze nieuwe zoekmogelijkheden.
+1. Leg de wijzigingen in uw `composer.json` - en `composer.lock` -bestanden vast en duw deze in uw cloudproject. [ leer meer ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension).
+
+   Deze bètaversie voegt selectievakjes **[!UICONTROL Search types]** voor **[!UICONTROL Autocomplete]** , **[!UICONTROL Contains]** en **[!UICONTROL Starts with]** in Admin toe. Het werkt ook de [`productSearch` ](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability) GraphQL API bij om deze nieuwe onderzoeksmogelijkheden te omvatten.
 
 1. In Admin, [ plaats een productattribuut ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties) om het onderzoeksvermogen voor dat attribuut te zoeken en te specificeren, zoals **Bevat** (gebrek) of **Begint met**. U kunt een maximum van zes attributen specificeren die voor **worden toegelaten bevat** en zes attributen die voor **worden toegelaten begint met**. Voor bèta moet u er rekening mee houden dat de beheerder deze beperking niet afdwingt, maar dat deze wel wordt afgedwongen in API-zoekopdrachten.
 
@@ -159,7 +161,7 @@ U kunt deze nieuwe voorwaarden implementeren op de pagina met zoekresultaten. U 
 
 | Veld | Beschrijving |
 |--- |--- |
-| `Autocomplete` | Deze optie is standaard ingeschakeld en kan niet worden gewijzigd. Met `Autocomplete` kunt u `contains` in de [ onderzoeksfilter ](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering) gebruiken. Hier retourneert de zoekquery in `contains` een zoekreactie van het type Automatisch aanvullen. Adobe raadt u aan dit type zoekopdracht te gebruiken voor beschrijvingsvelden, die doorgaans > 50 tekens bevatten. |
+| `Autocomplete` | Deze optie is standaard ingeschakeld en kan niet worden gewijzigd. Met `Autocomplete` kunt u `contains` in de [ onderzoeksfilter ](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering) gebruiken. Hier retourneert de zoekquery in `contains` een zoekreactie van het type Automatisch aanvullen. Adobe raadt u aan dit type zoekopdracht te gebruiken voor beschrijvingsvelden die meestal meer dan 50 tekens bevatten. |
 | `Contains` | Hiermee wordt een zoekopdracht met de tekst in een tekenreeks ingeschakeld in plaats van een automatische zoekopdracht. Gebruik `contains` in de [ onderzoeksfilter ](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability). Verwijs naar de [ Beperkingen ](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#limitations) voor meer informatie. |
 | `Starts with` | Hiermee kunt u zoeken naar tekenreeksen die beginnen met een bepaalde waarde. Gebruik `startsWith` in de [ onderzoeksfilter ](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability). |
 

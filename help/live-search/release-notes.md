@@ -3,9 +3,9 @@ title: "[!DNL Live Search] Opmerkingen bij de release"
 description: "De recentste versieinformatie voor  [!DNL Live Search]  van Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 5e0ab74e73f187213e83ce290abf2bb08571b9d1
+source-git-commit: a68fe02be6e207b323d600910cba62992edd6725
 workflow-type: tm+mt
-source-wordcount: '2027'
+source-wordcount: '2046'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ Updates zijn:
 ## Gehoste service-updates
 
 Deze nota&#39;s beschrijven updates die buiten een versioned versie of verbeteringen aan de ontvangen dienst werden gepubliceerd.
+
+_19 september, 2024_
+
+![ Nieuw ](../assets/new.svg) gaf een bètaversie vrij die drie nieuwe onderzoeksmogelijkheden steunt: gelaagd, begint met, en bevat. [ leer meer ](install.md#install-the-live-search-beta).
 
 _4 September, 2024_
 
