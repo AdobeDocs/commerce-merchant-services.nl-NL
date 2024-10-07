@@ -4,14 +4,14 @@ description: Leer hoe u een schema, gegevensset en gegevensstroom maakt voor het
 role: Admin, Developer
 feature: Personalization, Integration
 exl-id: 86a3ba12-7f26-4f7e-98a0-9af0d1d8d881
-source-git-commit: 813be62b366b1c76a2b909079cfba31ef8000617
+source-git-commit: b5727c90737ecfd237dd143801152f25600c3f97
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
 
-# Profielrecordschema bijwerken voor Commerce-gegevensinsluiting (Beta)
+# Profielrecordschema bijwerken voor Commerce-gegevensinsluiting
 
 Wanneer uw klanten een profiel op uw Commerce-site maken, wordt een profielrecord gemaakt en worden gegevens vastgelegd. U moet een schema en een dataset tot stand brengen specifiek voor dat profielverslag alvorens u die profielgegevens aan het Experience Platform kunt stromen.
 

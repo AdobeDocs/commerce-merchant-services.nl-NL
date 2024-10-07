@@ -4,9 +4,9 @@ description: Leer hoe te om een schema, dataset, en gegevensstroom tot stand te 
 exl-id: 4401bbe7-1ccc-4349-a998-9e9ee9db590f
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: 90ddfdd41958b254fc0c2f3e0891385193f1bb9c
+source-git-commit: b5727c90737ecfd237dd143801152f25600c3f97
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '898'
 ht-degree: 0%
 
 ---
@@ -66,33 +66,6 @@ In deze sectie leert u hoe u uw bestaande schema bijwerkt of een schema maakt om
 Met de schema&#39;s, datasets, en gegevensstromen die voor gedrag en achterbureaugegevens worden gevormd, kunt u [ ](connect-data.md#data-collection) uw instantie van Commerce vormen om die gegevens te verzamelen en te verzenden naar het Experience Platform.
 
 Om de het profielinformatie van uw klant te omvatten, zie {de gebeurtenisgegevens van het tijdreeksprofiel van 0} ](#time-series-profile-event-data).[
-
-### Aangepaste kenmerken toevoegen
-
-U kunt aangepaste kenmerken gebruiken als u de aangepaste gegevens van een Office-gebeurtenis van uw Commerce-instantie aan het Experience Platform wilt doorgeven.
-
-Aangepaste kenmerken worden op twee niveaus ondersteund:
-
-- Orderniveau
-- Itemniveau bestellen
-
->[!NOTE]
->
->Adobe Commerce ondersteunt aangepaste kenmerken met een gegevenstype van een tekenreeks of een tekenreeks.
-
-1. Voeg een extra module toe en schakel deze in uw [!DNL Commerce] -toepassing in. Zie het volgende [ voorbeeld ](https://github.com/shiftedreality/beacon-backoffice-custom-events/blob/main/BeaconDemo/Plugin/ModifyOrder.php).
-
-   U moet de voorbeeldcode wijzigen om extra douanekenmerken bloot te stellen. De implementatie varieert op basis van waar deze kenmerken zijn opgeslagen en de logica die is vereist om ze te extraheren.
-
-1. Breid uw bestaand XDM-schema uit. Verwijs naar de volgende [ gids ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) om douanekenmerken voor de orde en van de Orde puntniveaus tot stand te brengen. Het veld Tenant-id wordt dynamisch gegenereerd, maar de veldstructuur moet op het voorbeeld lijken.
-
-   >[!IMPORTANT]
-   >
-   >Aangepaste XDM-kenmerken moeten overeenkomen met de kenmerken die vanuit [!DNL Commerce] worden verzonden.
-
-1. Zorg ervoor dat de gegevensstroom verbonden aan uw schema XDM de zelfde gegevensstroom is die op de [ wordt gespecificeerd Inzameling van Gegevens ](connect-data.md#data-collection) tabel.
-
-1. Klik **[!UICONTROL Save]** op het **lusje van de Inzameling van Gegevens** om het even welke douanekenmerken terug te winnen u hebt gespecificeerd.
 
 ## Gebeurtenisgegevens tijdreeksprofiel
 

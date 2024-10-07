@@ -4,9 +4,9 @@ description: Leer welke gegevens elke achterkantoorgebeurtenis vangt.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: a5a4f04b-89ac-4020-95ce-984f9f2d8385
-source-git-commit: 813be62b366b1c76a2b909079cfba31ef8000617
+source-git-commit: b5727c90737ecfd237dd143801152f25600c3f97
 workflow-type: tm+mt
-source-wordcount: '3611'
+source-wordcount: '3606'
 ht-degree: 0%
 
 ---
@@ -403,10 +403,6 @@ In de volgende tabel worden de gegevens beschreven die voor deze gebeurtenis zij
 | `productListItems.categories.path` | Het pad naar de categorie. |
 
 ## Klantprofielgebeurtenissen
-
->[!IMPORTANT]
->
->Deze functie is in bèta.
 
 Profielgebeurtenissen die vanaf de server zijn vastgelegd, bevatten accountinformatie, zoals `accountCreated` , `accountUpdated` en `accountDeleted` . Deze gegevens worden gebruikt om belangrijke klantendetails te bevolken die nodig zijn om segmenten beter te bepalen of marketing campagnes, zoals het verzenden van aanbiedingen van de inschrijvingskorting, bevestigingen van de rekeningsverandering, etc. uitvoeren. Er zijn gelijkaardige profielgebeurtenissen die van [ worden gevangen storefront ](events.md#customer-profile-events).
 

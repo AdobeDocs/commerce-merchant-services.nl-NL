@@ -4,14 +4,14 @@ description: Leer welke gegevens een profielrecord vastlegt.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: bd04730d-e37a-48a9-822b-0f4aa68a4651
-source-git-commit: c02496fb3f88f4781b79c5e477d5508c3e3d5224
+source-git-commit: b5727c90737ecfd237dd143801152f25600c3f97
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '472'
 ht-degree: 0%
 
 ---
 
-# [!DNL Data Connection] Profielrecords (Beta)
+# [!DNL Data Connection] Profielrecords
 
 Hieronder worden de Commerce-profielrecordgegevens beschreven die beschikbaar zijn wanneer u de extensie [!DNL Data Connection] installeert. De gegevens in profielrecords worden naar de Adobe Experience Platform verzonden.
 

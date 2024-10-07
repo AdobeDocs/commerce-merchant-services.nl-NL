@@ -3,9 +3,9 @@ title: Aanvullende informatie
 description: De recentste versieinformatie voor de  [!DNL Data Connection]  uitbreiding van Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 92140fccc8099979d604c7cb86ed5bd7086be29b
+source-git-commit: 15b1c90cb60094d7f4a4da6435c5262f75cf0081
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1055'
 ht-degree: 0%
 
 ---
@@ -78,6 +78,16 @@ _12 oktober 2022_
 
 +++
 
+## 3.2.0.
+
+_7 Oktober, 2024_
+
+[!BADGE  Verenigbaarheid ]{type=Informative tooltip="Compatibiliteit"}
+
+![ Nieuw ](../assets/new.svg) - Toegevoegde capaciteit om [ attributen van de douaneorde ](custom-attributes.md) aan achterbureaugegevens tot stand te brengen.
+![ Nieuw ](../assets/new.svg) - Toegevoegde nieuwe [ Lijst van de Attributen van de Orde van de Douane ](connect-data.md#data-customization) om u te helpen om het even welke douanekenmerken bekijken die in [!DNL Commerce] worden gevormd en naar Experience Platform worden verzonden.
+![ Nieuw ](../assets/new.svg) - Toegevoegde capaciteit om [ profielverslagen ](connect-data.md#send-customer-profile-data) en gegevens te verzamelen en te verzenden naar Experience Platform.
+
 ## 3.2.0-bèta3
 
 _Augustus 27, 2024_
@@ -128,7 +138,7 @@ _Maart 4, 2024_
 [!BADGE  Verenigbaarheid ]{type=Informative tooltip="Compatibiliteit"}
 
 ![ Nieuw ](../assets/new.svg) - als u aan bèta deelneemt, zorg ervoor uw `composer.json` dossier het volgende op het wortelniveau heeft: ` "minimum-stability": "beta"`. Voeg ook `composer require "magento/customers-connector: ^1.2.0"` toe om klantprofielen van uw Commerce-exemplaar naar SaaS te verzenden.
-![ Nieuw ](../assets/new.svg) - Toegevoegde capaciteit om [ douanekenmerken ](update-xdm.md#update-schema-with-time-series-behavioral-and-back-office-event-data) toe te voegen.
+![ Nieuw ](../assets/new.svg) - Toegevoegde capaciteit om [ douanekenmerken ](custom-attributes.md) toe te voegen.
 ![ Nieuw ](../assets/new.svg) - Toegevoegde capaciteit om [ profielverslagen ](connect-data.md#send-customer-profile-data) en gegevens te verzamelen en te verzenden naar Experience Platform.
 
 ## 3.1.0.

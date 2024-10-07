@@ -3,9 +3,9 @@ title: Commerce-gegevens verbinden met Adobe Experience Platform
 description: Leer hoe u Commerce-gegevens koppelt aan de Adobe Experience Platform.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: c252c2fb614ec74f1bdd11cc482066a7133dd523
+source-git-commit: 15b1c90cb60094d7f4a4da6435c5262f75cf0081
 workflow-type: tm+mt
-source-wordcount: '2532'
+source-wordcount: '2910'
 ht-degree: 0%
 
 ---
@@ -75,9 +75,13 @@ Download het [ dossier van de werkruimteconfiguratie ](https://developer.adobe.c
 
 1. Klik **sparen Config**.
 
+1. Klik op de knop **[!UICONTROL Test connection]** om te controleren of de ingevoerde serviceaccount en referentie-informatie juist zijn.
+
 ### Algemeen
 
 1. In Admin, ga naar **Systeem** > de Diensten > **[!DNL Data Connection]**.
+
+   ![[!DNL Data Connection] Instellingen ](./assets/epc-settings.png){width="700" zoomable="yes"}
 
 1. Op het **lusje van Montages** onder **Algemeen**, verifieer identiteitskaart verbonden aan uw rekening van Adobe Experience Platform, zoals die in de [ Schakelaar van de Diensten van Commerce ](../landing/saas.md#organizationid) wordt gevormd. De organisatie-id is algemeen. Per Adobe Commerce-exemplaar kan slechts één organisatie-id worden gekoppeld.
 
@@ -97,7 +101,7 @@ In deze sectie geeft u het type gegevens op dat u wilt verzamelen en naar de ran
 
 - **het bureau van de rug** (server-zijgegevens) is gegevens die in de servers van Commerce worden gevangen. Dit omvat informatie over de status van een bestelling, zoals of een bestelling is geplaatst, geannuleerd, terugbetaald, verzonden of voltooid. Het omvat ook [ historische ordegegevens ](#send-historical-order-data).
 
-- **Profiel (Beta)** is gegevens met betrekking tot de het profielinformatie van uw verkoopster. Leer [ meer ](#send-customer-profile-data).
+- **Profiel** is gegevens met betrekking tot de het profielinformatie van uw klant. Leer [ meer ](#send-customer-profile-data).
 
 Om ervoor te zorgen dat uw instantie van Adobe Commerce met gegevensinzameling kan beginnen, herzie de [ eerste vereisten ](overview.md#prerequisites).
 
@@ -157,10 +161,6 @@ Zie het gebeurtenisonderwerp om meer over [ storefront ](events.md#storefront-ev
 Na het instappen, beginnen de storefrontgegevens aan de rand van het Experience Platform te stromen. Het duurt ongeveer vijf minuten voordat de gegevens op het achterkantoor aan de rand worden weergegeven. Volgende updates zijn zichtbaar aan de rand op basis van het uitsnijdschema.
 
 ### Klantprofielgegevens verzenden
-
->[!IMPORTANT]
->
->Deze functie is in bèta.
 
 Er zijn twee typen profielgegevens die u naar het Experience Platform kunt verzenden: profielrecords en tijdreeksprofielgebeurtenissen.
 
@@ -240,6 +240,8 @@ Geef het datumbereik op voor de historische orders die u naar het Experience Pla
 
 1. Selecteer de **Geschiedenis van de Orde** tabel.
 
+   ![[!DNL Data Connection] Order History ](./assets/epc-order-history.png){width="700" zoomable="yes"}
+
 1. Onder **de Synchronisatie van de Geschiedenis van de Orde**, wordt identiteitskaart van de Dataset van het Exemplaar van Montages **checkbox reeds toegelaten.** Dit verzekert u de zelfde dataset gebruikt die in de **wordt gespecificeerd Montages** tabel.
 
 1. In **van** en **aan** gebieden, specificeer de datumwaaier voor de historische ordegegevens u wilt verzenden. U kunt geen datumbereik selecteren dat langer is dan vijf jaar.
@@ -255,6 +257,36 @@ Geef het datumbereik op voor de historische orders die u naar het Experience Pla
 | Van | Datum vanaf wanneer u wilt beginnen met het verzamelen van gegevens over de ordergeschiedenis. |
 | Naar | Datum vanaf welke u het verzamelen van de gegevens van de ordegeschiedenis wilt beëindigen. |
 | Synchronisatie starten | Begint het proces om de gegevens van de ordegeschiedenis aan de rand van het Experience Platform te synchroniseren. Deze knop is uitgeschakeld als het veld **[!UICONTROL Dataset ID]** leeg is of als de id van de gegevensset ongeldig is. |
+
+### Aanpassing van gegevens
+
+Op het **lusje van de Aanpassing van Gegevens**, kunt u om het even welke douanekenmerken bekijken die in [!DNL Commerce] worden gevormd en naar Experience Platform worden verzonden.
+
+![[!DNL Data Connection] Gegevens aanpassen ](./assets/epc-data-customization.png){width="700" zoomable="yes"}
+
+>[!IMPORTANT]
+>
+>Zorg ervoor dat gegevensstroomidentiteitskaart u [ ](#data-collection) op het **lusje van de Inzameling van Gegevens** verbonden identiteitskaart met het schema voor het opnemen van douaneattributen specificeerde.
+
+Wanneer u aangepaste kenmerken voor bestellingen maakt en deze naar het Experience Platform verzendt, moeten de kenmerknamen in Commerce overeenkomen met die in het [!DNL Commerce] -schema op het Experience Platform. Als ze niet overeenkomen, kan het moeilijk zijn om de verschillen vast te stellen. Als u namen verkeerd hebt overtroffen, kan de **lijst van de Attributen van de Orde van de Douane** helpen het probleem oplossen.
+
+De **Lijst van de Attributen van de Orde van de Douane** verstrekt zicht in de configuratie en de afbeelding van de attributen van de douaneorde tussen het [!DNL Commerce] achterbureau en het [!DNL Commerce] schema in Experience Platform. In deze tabel kunt u aangepaste kenmerken op orderniveau en orderniveau in verschillende bronnen weergeven, zodat u ontbrekende of onjuist uitgelijnde kenmerken gemakkelijker kunt herkennen. Het toont ook dataset IDs helpen zich tussen levende en historische datasets onderscheiden, aangezien elk zijn eigen douanekenmerken kan hebben.
+
+Als er geen groen vinkje wordt weergegeven naast de naam van een aangepast kenmerk in de tabel, wordt aangegeven dat de kenmerknamen in de bronnen niet overeenkomen. Corrigeer de kenmerknaam in één bron en er verschijnt een groen vinkje om aan te geven dat de namen nu overeenkomen.
+
+- Als de attributennaam in het schema in Experience Platform wordt bijgewerkt, moet u de configuratie op het **lusje van de Aanpassing van Gegevens** bewaren om de verandering van het Experience Platform schema teweeg te brengen. Deze verandering zal in de **Lijst van de Attributen van de Orde van de Douane** worden weerspiegeld wanneer u de **[!UICONTROL Refresh]** knoop klikt.
+- Als de attributennaam in [!DNL Commerce] wordt bijgewerkt, moet een ordegebeurtenis worden geproduceerd om de naam in de **Lijst van de Attributen van de Orde van de Douane bij te werken**. De verandering zal in ongeveer 60 minuten worden weerspiegeld.
+
+Leer meer over hoe te [ de attributen van de opstellingsdouane ](custom-attributes.md).
+
+#### Veldomschrijvingen
+
+| Veld | Beschrijving |
+|--- |--- |
+| Gegevensset | Toont de datasets die de douanekenmerken bevatten. Levende en historische datasets kunnen hun eigen douanekenmerken hebben. |
+| Adobe Commerce | Hiermee geeft u aangepaste kenmerken weer die in het [!DNL Commerce] achterkantoor zijn gemaakt. |
+| Experience Platform | Geeft alle aangepaste kenmerken die in het [!DNL Commerce] -schema zijn opgegeven, in het Experience Platform weer. |
+| Vernieuwen | Haalt namen van aangepaste kenmerken uit het [!DNL Commerce] -schema op in het Experience Platform. |
 
 ## Bevestig dat gebeurtenisgegevens worden verzameld
 
