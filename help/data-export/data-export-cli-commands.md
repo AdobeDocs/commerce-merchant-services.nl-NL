@@ -1,9 +1,8 @@
 ---
 title: Opdrachtregelinterface SaaS-gegevens exporteren
 description: Leer hoe te om bevel-lijn interfacebevelen te gebruiken om voer en processen voor  [!DNL data export extension]  voor de diensten van Adobe Commerce te beheren SaaS.
-recommendations: noCatalog
 exl-id: f360d920-7d02-4317-8c56-c7d4c4ed2ff2
-source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
+source-git-commit: b80bc2867f44e6123adb104eb148ac5e8f80b63d
 workflow-type: tm+mt
 source-wordcount: '574'
 ht-degree: 0%
