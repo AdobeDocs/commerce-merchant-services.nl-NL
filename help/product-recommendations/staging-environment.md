@@ -3,7 +3,7 @@ title: Testen in testomgeving
 description: Leer hoe te om  [!DNL Product Recommendations]  van uw productiemilieu in uw het opvoeren milieu voor testende doeleinden te gebruiken.
 exl-id: 178ff2aa-7821-45f7-85f1-d490d8182817
 feature: Services, Recommendations, Staging
-source-git-commit: 3a5dec9422aa34eeb204b9fe6f089551e4038f1c
+source-git-commit: 4a5c3550b03651279c24de6b6361ffa6dc28776e
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Alvorens u aanbevelingen aan uw productiemilieu opstelt, test de dienst in een niet productiemilieu om ervoor te zorgen dat alles zoals verwacht werkt.
 
-[!DNL Product Recommendations] terugkeerproducten die op [ worden gebaseerd verkoopsgedrag gegevens ](behavioral-data.md) van uw storefront worden verzameld. In een niet-productieomgeving is het echter waarschijnlijk dat u geen gedragsgegevens van kopers hebt. Het enige type aanbevelingen dat u zonder gedragsgegevens kunt testen, is `More like this` . Voor dit soort aanbevelingen zijn geen invoergegevens vereist, omdat er een gelijksoortige directe inhoud wordt gebruikt.
+[!DNL Product Recommendations] terugkeerproducten die op [ worden gebaseerd verkoopsgedrag gegevens ](events.md) van uw storefront worden verzameld. In een niet-productieomgeving is het echter waarschijnlijk dat u geen gedragsgegevens van kopers hebt. Het enige type aanbevelingen dat u zonder gedragsgegevens kunt testen, is `More like this` . Voor dit soort aanbevelingen zijn geen invoergegevens vereist, omdat er een gelijksoortige directe inhoud wordt gebruikt.
 
 De volgende aanbevelingen vereisen gedragsgegevens:
 

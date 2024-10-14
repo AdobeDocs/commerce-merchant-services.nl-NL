@@ -3,34 +3,25 @@ title: '[!DNL Live Search] Gebeurtenissen'
 description: Leer hoe de gebeurtenissen gegevens voor  [!DNL Live Search] verzamelen.
 feature: Services, Eventing
 exl-id: b0c72212-9be0-432d-bb8d-e4c639225df3
-source-git-commit: 0d966c8dbd788563fa453912961fdc62a5a6c23e
+source-git-commit: 45a7d101c28eb9cd1404090c3ea5024652a97913
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '288'
 ht-degree: 0%
 
 ---
 
 # [!DNL Live Search] Gebeurtenissen
 
-In [!DNL Live Search] worden gebeurtenissen gebruikt om zoekalgoritmen zoals &quot;Meest bekeken&quot; en &quot;Dit bekeken, heeft dat bekeken&quot;, van stroom te voorzien. Terwijl de gebruikers van LUMA uit de doos verhinderen, moeten de headless en andere douaneimplementaties het voorkomen voor hun eigen behoeften uitvoeren.
+In [!DNL Live Search] worden gebeurtenissen gebruikt om zoekalgoritmen zoals &quot;Meest bekeken&quot; en &quot;Dit bekeken, heeft dat bekeken&quot;, van stroom te voorzien. Terwijl het [ het thema van de steekproefLuminantie van Commerce ](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/design/themes/themes#the-default-theme) uit de doos uitkomt, moeten de hoofd en andere douaneimplementaties het voorkomen voor hun eigen behoeften uitvoeren.
 
-Aangezien [!DNL Live Search] en [!DNL Product Recommendations] hetzelfde backend-algoritme gebruiken, worden sommige gebeurtenissen door beide services gedeeld. Sommige Product Recommendations-gebeurtenissen zijn vereist om het Recommendations-dashboard te vullen.
+Deze lijst beschrijft de gebeurtenissen die door [!DNL Live Search] [ worden gebruikt rangschikkend strategieën ](rules-add.md#intelligent-ranking).
 
-In deze tabel worden de gebeurtenissen beschreven die door [!DNL Live Search] -strategieën worden gebruikt.
-
-| Strategie | Producten | Gebeurtenissen | Pagina |
+| Rangschikkingsstrategie | Gebeurtenissen | Pagina |
 | --- | --- | --- | ---|
-| Meest bekeken | Levende Onderzoek <br> Recs van het Product | paginamening <br> productmening | Productdetailpagina |
-| Meest aangekocht | Levende Onderzoek <br> Recs van het Product | de mening van de pagina <br> volledige controle | Winkelwagentje/Afhandeling |
-| Meest toegevoegd aan winkelwagentje | Levende Onderzoek <br> Recs van het Product | paginaweergave <br> toevoegen aan winkelwagentje | De detailpagina van het product <br> product die pagina <br> van de Lijst van de Kar <br> van de Wenslijst van het Product |
-| Bekeken dit, gezien dat | Levende Onderzoek <br> Recs van het Product | paginamening <br> productmening | Productdetailpagina |
-| Trend | Levende Onderzoek <br> Recs van het Product | paginamening <br> productmening | Productdetailpagina |
-| Bekijk dit, kocht dat | Recs product | paginamening <br> productmening | De detailpagina van het product <br> Kar/Controle |
-| Dit gekocht | Recs product | paginamening <br> productmening | Productdetailpagina |
-| Conversie: Weergeven voor aankoop | Recs product | paginamening <br> productmening | Productdetailpagina |
-| Conversie: Weergeven voor aankoop | Recs product | de mening van de pagina <br> volledige controle | Winkelwagentje/Afhandeling |
-| Omzetten: Weergeven naar winkelwagentje | Recs product | paginamening <br> productmening | Productdetailpagina |
-| Omzetten: Weergeven naar winkelwagentje | Recs product | paginaweergave <br> toevoegen aan winkelwagentje | De detailpagina van het product <br> van de lijst van het Product pagina <br> Kaart <br> Wislijst |
+| Meest bekeken | `page-view`<br>`product-view` | Productdetailpagina |
+| Meest aangekocht | `page-view`<br>`complete-checkout` | Winkelwagentje/Afhandeling |
+| Meest toegevoegd aan winkelwagentje | `page-view`<br>`add-to-cart` | De detailpagina van het product <br> product die pagina <br> van de Lijst van de Kar <br> van de Wenslijst van het Product |
+| Bekeken dit, gezien dat | `page-view`<br>`product-view` | Productdetailpagina |
 
 >[!NOTE]
 >
@@ -42,13 +33,13 @@ Sommige gebeurtenissen worden vereist om het [ Levende dashboard van het Onderzo
 
 | Dashboardgebied | Gebeurtenissen | Veld samenvoegen |
 | ------------------- | ------------- | ---------- |
-| Unieke zoekopdrachten | `page-view` , `search-request-sent` , | searchRequestId |
-| Zoekopdrachten met nulresultaten | `page-view` , `search-request-sent` , | searchRequestId |
-| Resultaatsnelheid nul | `page-view` , `search-request-sent` , | searchRequestId |
-| Populaire zoekopdrachten | `page-view` , `search-request-sent` , | searchRequestId |
+| Unieke zoekopdrachten | `page-view`, `search-request-sent`, `search-response-received` | `searchRequestId` |
+| Zoekopdrachten met nulresultaten | `page-view`, `search-request-sent`, `search-response-received` | `searchRequestId` |
+| Resultaatsnelheid nul | `page-view`, `search-request-sent`, `search-response-received` | `searchRequestId` |
+| Populaire zoekopdrachten | `page-view`, `search-request-sent`, `search-response-received` | `searchRequestId` |
 | Gem. klikpositie | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click` | searchRequestId |
-| Doorklikfrequentie | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click` | searchRequestId, sku |
-| Omrekeningskoers | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click`, `product-view`, `add-to-cart`, `place-order` | searchRequestId, sku |
+| Doorklikfrequentie | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click` | `searchRequestId`, `sku`, `parentSku` |
+| Omrekeningskoers | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click`, `product-view`, `add-to-cart`, `place-order` | `searchRequestId`, `sku`, `parentSku` |
 
 ### Vereiste contexten
 
@@ -72,11 +63,8 @@ mse.publish.searchRequestSent("search-bar");
 
 ## Caveats
 
-Ad blokkers en privacymontages kunnen gebeurtenissen verhinderen worden gevangen en zouden de overeenkomst en opbrengst [ metriek ](workspace.md) kunnen veroorzaken om worden onderdrukt.
-
-Eventing legt niet elke transactie vast die op de locatie van de handelaar plaatsvindt. Uiteindelijk is het bedoeld om de handelaar een algemeen idee te geven van gebeurtenissen die op de plaats gebeuren.
-
-De draadloze implementaties moeten het verhinderen uitvoeren om het [ dashboard van het Product Recommendations ](../product-recommendations/events.md) te macht.
+- Ad blokkers en privacymontages kunnen gebeurtenissen verhinderen worden gevangen en zouden de overeenkomst en opbrengst [ metriek ](performance.md) kunnen veroorzaken om worden onderdrukt. Bovendien kunnen bepaalde gebeurtenissen niet worden verzonden omdat de gebruiker de pagina of het netwerk heeft verlaten.
+- Bij een ononderbroken implementatie moet de gebeurtenis worden geïmplementeerd om intelligente handel mogelijk te maken.
 
 >[!NOTE]
 >

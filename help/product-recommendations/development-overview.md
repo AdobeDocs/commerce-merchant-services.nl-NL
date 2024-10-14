@@ -2,9 +2,9 @@
 title: Recommendations-beheerprogramma voor producten
 description: Een overzicht van de architectuur en de ontwikkelfuncties van Product Recommendations.
 exl-id: caef5e0c-dd69-4846-8f85-b1c5e1c6a28f
-source-git-commit: a433d970e83792a9f53b2a09afd84c335d980024
+source-git-commit: 4a5c3550b03651279c24de6b6361ffa6dc28776e
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '309'
 ht-degree: 0%
 
 ---
@@ -24,20 +24,6 @@ Op hoog niveau wordt Commerce Product Recommendations geïmplementeerd als SaaS.
 ![ het diagram van de de aanbevelingen van het Product architectuur ](assets/arch-diag-sensei.svg)
 
 Zodra de aanbevelingen modules worden geïnstalleerd en gevormd, zal uw opslag beginnen het verzamelen van gedragsgegevens. Adobe Sensei verwerkt deze gedragsgegevens samen met uw catalogusgegevens en berekent productkoppelingen die worden gebruikt door de service met aanbevelingen. Op dit punt, kan de handelaar, producten tot stand brengen leiden en, eenheden van de aanbeveling aan hun winkel direct van Admin UI opstellen.
-
-## Typen gegevens
-
-Voor product Recommendations zijn de volgende gegevens vereist:
-
-- **Gedrag** - Gegevens van de overeenkomst van een verkoopster op uw plaats, zoals productmeningen, punten die aan een kar worden toegevoegd, en aankopen. Commerce en Adobe Sensei verzamelen geen persoonlijk identificeerbare informatie.
-
-- **Catalogus** - de meta-gegevens van het Product, zoals naam, prijs, beschikbaarheid, etc.
-
-Wanneer u de module `magento/product-recommendations` installeert, aggregeert Adobe Sensei de gedrags- en catalogusgegevens en wordt Product Recommendations voor elk aanbevolen type gemaakt. De dienst van Recommendations van het Product stelt dan die aanbevelingen aan uw winkel op.
-
->[!NOTE]
->
->Voor configureerbare producten gebruikt Product Recommendations de afbeelding van het bovenliggende product in de aanbevolen eenheid. Als voor het configureerbare product geen afbeelding is opgegeven, is de aanbevolen eenheid leeg voor dat specifieke product.
 
 ## Volgende stappen
 

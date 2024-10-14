@@ -2,9 +2,9 @@
 title: '[!DNL Product Recommendations] Workspace'
 description: Leer hoe u de prestaties van productaanbevelingen kunt configureren, beheren en controleren.
 exl-id: 85a06cc3-91b9-484a-96a9-fc85718e6d70
-source-git-commit: 25d5321b6f29bab5d8cf329170f3644f35100438
+source-git-commit: 91e19e30d55259d3287404895d1d893c480743b6
 workflow-type: tm+mt
-source-wordcount: '633'
+source-wordcount: '781'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,10 @@ ht-degree: 0%
 # [!DNL Product Recommendations] Workspace
 
 De werkruimte van [!DNL Product Recommendations] toont een lijst van eerder gevormde aanbevelingen met metriek die u helpen het succes van elke aanbeveling volgen. De lijst kan worden gevormd om metriek voor de laatste dag, de week, of de maand te berekenen. U kunt de metriek gebruiken om actionable inzichten tot stand te brengen die op hoe vaak een aanbeveling wordt bekeken of geklikt, of te analyseren hoe goed uw aanbevelingen presteren.
+
+>[!INFO]
+>
+>Een aanbevelingseenheid is een widget die de geadviseerde product _punten_ bevat.
 
 ![ de werkruimte van Recommendations ](assets/workspace.png)
 _Recommendations Workspace_
@@ -31,6 +35,10 @@ Aanvankelijk wordt het [ werkingsgebied ](https://experienceleague.adobe.com/doc
    - Laatste 30 dagen
 
    De berekende waarden in de kolommen van metriek veranderen om op de huidige datumwaaier te wijzen.
+
+   >[!NOTE]
+   >
+   >Metrische gegevens voor productaanbevelingen zijn geoptimaliseerd voor Luma-winkels. Als uw storefront niet-Luma gebaseerd is, hoe de gegevens van het metriekspoor van hoe afhangen u [ de gebeurtenisinzameling ](events.md) uitvoert.
 
 ## Kolommen tonen/verbergen
 
@@ -95,12 +103,12 @@ Van de pagina van de aanbevelingsdetails, klik **creëren**. Meer leren, ga naar
 | Status | De adviesstatus. Opties: Inactief/actief/concept |
 | Gemaakt | De datum waarop de aanbeveling is opgesteld. |
 | Laatst bewerkt | De datum waarop de aanbeveling voor het laatst is bewerkt. |
-| Impressies | Het aantal keren dat een aanbevolen eenheid op een pagina wordt geladen en weergegeven. Een aanbeveling-eenheid die onder de voud van de viewport van de browser ligt, wordt op de pagina weergegeven, maar niet door de gebruiker weergegeven. In dit geval wordt de weergegeven eenheid geteld als een indruk, maar een weergave wordt alleen geteld als de gebruiker de eenheid in beeld schuift. |
-| vImpressions | (Zichtbare indrukkingen) Het aantal aanbevelingen-eenheden dat ten minste één weergave registreert. |
-| Weergaven | Het aantal aanbevelingen dat wordt weergegeven in de viewport van de browser van de klant. Deze gebeurtenis kan meerdere keren op een pagina worden uitgevoerd. |
+| Impressies | Het aantal keren dat een aanbevolen eenheid op een pagina wordt geladen en weergegeven. Een aanbeveling-eenheid die zich onder de voud van de viewport van de browser bevindt, wordt weergegeven op de pagina, zelfs als de gebruiker deze niet bekijkt. In dit geval wordt de weergegeven eenheid geteld als een indruk, maar een weergave wordt alleen geteld als de gebruiker de eenheid in beeld schuift. |
+| vImpressions | (Zichtbare indrukkingen) Het aantal aanbevelingen-eenheden dat ten minste één weergave registreert. Als de aanbevolen eenheid bijvoorbeeld twee regels heeft, elk met twee producten, en de laatste twee producten niet door de verkoopster worden gezien, maar de eerste twee, dan zal de activiteit nog steeds als een indruk worden beschouwd. |
+| Weergaven | Het aantal aanbevelingen dat wordt weergegeven in de viewport van de browser van de klant. Als de gebruiker de pagina meerdere keren omhoog of omlaag schuift, wordt de gebeurtenis meerdere keren geactiveerd, telkens wanneer de eenheid zichtbaar is. |
 | Klikken | De som van het aantal tijden een verkoopster klikt een punt in de aanbeveling eenheid en het aantal tijden de verkoopster **toevoegt aan wortel** knoop in de aanbeveling eenheid |
 | Ontvangsten | De inkomsten die voortvloeien uit de aanbeveling voor de huidige periode. |
 | LT-inkomsten | (Levensopbrengsten) De levenslange inkomsten die worden voortgebracht door een aanbeveling. |
 | Zichtbaarheid | Het percentage aanbevolen eenheden dat zich registreert voor de weergave. |
-| Ctr | (Doorkliksnelheid) Het percentage eenheidsindrukkingen voor de aanbeveling die een klik registreert. |
-| vCtr | (Zichtbare Doorkliksnelheid) Het percentage zichtbare indrukken voor de aanbevolen eenheid die een klik registreert. |
+| CTR | (Doorkliksnelheid) Het percentage eenheidsindrukkingen voor de aanbeveling die een klik registreert. CTR telt alle indrukken zelfs als de eenheid niet de mening van de verkoopster ingaat. Als de eenheid van de aanbeveling niet wordt bekeken, is het onwaarschijnlijk om te worden geklikt. Deze onzichtbare indrukken tellen echter mee voor de CTR-score en verlagen het totale CTR-percentage. |
+| vCTR | (Zichtbare Doorkliksnelheid) maateenheden die alleen op zichtbare indrukken (aanbevelingen die daadwerkelijk in het zichtbare gedeelte van het scherm van de klant zijn weergegeven) zijn gebaseerd, zodat u een nauwkeurigere schatting van de betrokkenheid van de klant krijgt. |

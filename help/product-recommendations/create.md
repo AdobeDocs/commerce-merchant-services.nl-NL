@@ -2,21 +2,25 @@
 title: Nieuwe aanbeveling maken
 description: Leer hoe u een product aanbevelingseenheid kunt maken.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 0940e0049d8fb388b40b828250b7955eabfd583f
+source-git-commit: 0b651189184a107dec8452d5b0d588f52d689605
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1457'
 ht-degree: 0%
 
 ---
 
 # Nieuwe aanbeveling maken
 
-Wanneer u een aanbeveling creeert, creeert u de eenheid van de a _aanbeveling_ die de geadviseerde product _punten_ bevat.
+Wanneer u een aanbeveling creeert, creeert u de eenheid van de a _aanbeveling_, of widget, die de geadviseerde product _punten_ bevat.
 
 ![ eenheid van de Aanbeveling ](assets/unit.png)
 _eenheid van de Aanbeveling_
 
 Wanneer u de aanbevelingseenheid activeert, begint Adobe Commerce [ gegevens ](workspace.md) te verzamelen om beelden, meningen, klikken, etc. te meten. In de tabel [!DNL Product Recommendations] worden de maatstaven voor elke aanbevolen eenheid weergegeven om u te helpen geïnformeerde zakelijke beslissingen te nemen.
+
+>[!NOTE]
+>
+>Metrische gegevens voor productaanbevelingen zijn geoptimaliseerd voor Luma-winkels. Als uw storefront niet-Luma gebaseerd is, hoe de gegevens van het metriekspoor van hoe afhangen u [ de gebeurtenisinzameling ](events.md) uitvoert.
 
 1. Op _Admin_ sidebar, ga **Marketing** > _Bevorderingen_ > **Recommendations van het Product** om de _werkruimte van Recommendations van het Product_ te tonen.
 
@@ -83,7 +87,7 @@ Wanneer u de aanbevelingseenheid activeert, begint Adobe Commerce [ gegevens ](w
 
 Gereedheidsindicatoren laten zien welke aanbevolen typen het beste kunnen worden uitgevoerd op basis van de beschikbare catalogus- en gedragsgegevens. U kunt gereedheidsindicatoren ook gebruiken om te bepalen als u kwesties met uw [ het verhinderen ](events.md) hebt of als u niet genoeg verkeer hebt om het aanbevelingstype te bevolken.
 
-De indicatoren van de bereidheid worden gecategoriseerd in of [ op statisch-gebaseerd ](#static-based) of [ op dynamisch-gebaseerd ](#dynamic-based). Alleen catalogusgegevens op basis van statische gegevens gebruiken; terwijl bij dynamisch gebaseerd gebruik gedragsgegevens van uw kopers worden gebruikt. Dat gedragsgegevens worden gebruikt aan [ machine het leren modellen ](behavioral-data.md) om gepersonaliseerde aanbevelingen te bouwen en hun bereidheid te berekenen score.
+De indicatoren van de bereidheid worden gecategoriseerd in of [ op statisch-gebaseerd ](#static-based) of [ op dynamisch-gebaseerd ](#dynamic-based). Alleen catalogusgegevens op basis van statische gegevens gebruiken; terwijl bij dynamisch gebaseerd gebruik gedragsgegevens van uw kopers worden gebruikt. Dat gedragsgegevens worden gebruikt aan [ machine het leren modellen ](events.md) om gepersonaliseerde aanbevelingen te bouwen en hun bereidheid te berekenen score.
 
 ### Hoe gereedheidsindicatoren worden berekend
 
@@ -95,7 +99,7 @@ Als gevolg van deze variabelen kan het percentage van de gereedheidsindicator fl
 
 Gereedheidsindicatoren worden berekend op basis van een aantal factoren:
 
-* Voldoende resultaat vastgestelde grootte: Zijn er genoeg resultaten die in de meeste scenario&#39;s worden teruggekeerd om te vermijden gebruikend [ reserveaanbevelingen ](behavioral-data.md#backuprecs)?
+* Voldoende resultaat vastgestelde grootte: Zijn er genoeg resultaten die in de meeste scenario&#39;s worden teruggekeerd om te vermijden gebruikend [ reserveaanbevelingen ](events.md#backuprecs)?
 
 * Voldoende variëteit van resultaatsets: vertegenwoordigen de producten die worden geretourneerd een verscheidenheid aan producten uit uw catalogus? Het doel van deze factor is te voorkomen dat een minderheid van producten de enige producten is die op de hele site worden aanbevolen.
 
@@ -103,7 +107,7 @@ Op basis van de bovenstaande factoren wordt de gereedheidswaarde als volgt berek
 
 * 75% of hoger betekent dat de aanbevelingen voor dat soort aanbevelingen zeer relevant zullen zijn.
 * Ten minste 50% betekent dat de aanbevelingen die voor dat soort aanbevelingen worden voorgesteld minder relevant zullen zijn.
-* Minder dan 50% betekent dat de aanbevelingen voor dat soort aanbevelingen wellicht niet relevant zijn. In dit geval, [ reserveaanbevelingen ](behavioral-data.md#backuprecs) worden gebruikt.
+* Minder dan 50% betekent dat de aanbevelingen voor dat soort aanbevelingen wellicht niet relevant zijn. In dit geval, [ reserveaanbevelingen ](events.md#backuprecs) worden gebruikt.
 
 Leer meer over [ waarom de gereedheidsindicatoren laag ](#what-to-do-if-the-readiness-indicator-percent-is-low) zouden kunnen zijn.
 
@@ -153,7 +157,7 @@ Het percentage van de gereedheidsindicator voor aanbevolen typen die afhankelijk
 
 #### Wat moet u doen als het percentage gereedheidsindicator laag is
 
-Een laag gereedheidspercentage geeft aan dat er niet veel producten uit uw catalogus zijn die in aanmerking komen om te worden opgenomen in de aanbevelingen voor dit soort aanbevelingen. Dit betekent dat er een hoge waarschijnlijkheid is dat [ reserveaanbevelingen ](behavioral-data.md#backuprecs) zijn teruggekeerd als u dit aanbevelingstype hoe dan ook opstelt.
+Een laag gereedheidspercentage geeft aan dat er niet veel producten uit uw catalogus zijn die in aanmerking komen om te worden opgenomen in de aanbevelingen voor dit soort aanbevelingen. Dit betekent dat er een hoge waarschijnlijkheid is dat [ reserveaanbevelingen ](events.md#backuprecs) zijn teruggekeerd als u dit aanbevelingstype hoe dan ook opstelt.
 
 In het volgende voorbeeld worden mogelijke redenen en oplossingen voor algemene lage gereedheidsscores weergegeven:
 
@@ -175,7 +179,7 @@ Om een aanbeveling te testen wanneer het werken in een niet productiemilieu, kun
 | Naam | De naam van het product. |
 | SKU | De voorraadbewaareenheid die aan het product is toegewezen |
 | Prijs | De prijs van het product. |
-| Resultaattype | Primair - geeft aan dat er voldoende trainingsgegevens zijn verzameld om een aanbeveling weer te geven.<br /> Steun - wijst erop dat er niet genoeg opleidingsgegevens worden verzameld zodat wordt een reserveaanbeveling gebruikt om de groef te vullen. Ga naar [ Gegevens van het Gedrag ](behavioral-data.md) om meer over machine het leren modellen en reserveaanbevelingen te leren. |
+| Resultaattype | Primair - geeft aan dat er voldoende trainingsgegevens zijn verzameld om een aanbeveling weer te geven.<br /> Steun - wijst erop dat er niet genoeg opleidingsgegevens worden verzameld zodat wordt een reserveaanbeveling gebruikt om de groef te vullen. Ga naar [ Gegevens van het Gedrag ](events.md) om meer over machine het leren modellen en reserveaanbevelingen te leren. |
 
 Als u een aanbevolen eenheid maakt, experimenteert u met het paginatype, het aanbevolen type en de filters om direct real-time feedback te krijgen over de producten die worden opgenomen. Aangezien u begint te begrijpen welke producten verschijnen, kunt u de aanbeveling eenheid vormen om aan uw bedrijfsbehoeften te voldoen.
 

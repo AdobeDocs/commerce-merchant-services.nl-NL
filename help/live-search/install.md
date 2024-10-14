@@ -3,9 +3,9 @@ title: "Aan de slag met  [!DNL Live Search]"
 description: "Leer de systeemvereisten en installatiestappen voor  [!DNL Live Search]  van Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 9a10613db182d0d6bf8dad2bbcd1fd9023804370
+source-git-commit: 89dd5ae305563e5f6bbcdb80764fd9eeb177b491
 workflow-type: tm+mt
-source-wordcount: '3000'
+source-wordcount: '3093'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,14 @@ Dit artikel is bedoeld voor de ontwikkelaar of systeemintegrator in uw team die 
 
 Op een hoog niveau is het vereist dat u: [!DNL Live Search]
 
-![ Live het Werkschema van het Onderzoek ](assets/livesearch-workflow.png)
+1. [ installeer ](#1-install-the-live-search-extension) de [!DNL Live Search] uitbreiding
+1. [ vorm ](#2-configure-api-keys) de API sleutels
+1. [ Synchroniseer ](#3-sync-your-catalog-data) uw catalogusgegevens
+1. [ verifieer ](#4-verify-that-the-data-was-exported) dat de catalogusgegevens werden uitgevoerd
+1. [ vorm ](#5-configure-the-data) de gegevens
+1. [ Test ](#6-test-the-connection) de verbinding
+1. [ verifieer ](#7-validate-events-are-capturing-data) dat de gebeurtenissen gegevens vangen
+1. [ pas ](#8-customize-for-your-storefront) uw storefront aan
 
 ## 1. Installeer de extensie [!DNL Live Search]
 
@@ -272,7 +279,15 @@ Als u problemen tegenkomt in de winkel, controleert u het bestand `var/log/syste
 
 Als u [!DNL Live Search] wilt toestaan via een firewall, voegt u `commerce.adobe.io` toe aan de lijst van gewenste personen.
 
-## 7. Aanpassen voor je winkel
+## 7. Controleer of gebeurtenissen gegevens vastleggen
+
+Zorg ervoor dat de storefront-gebeurtenissen die op uw site zijn geïmplementeerd, werken. Dit is met name belangrijk voor implementaties zonder kop.
+
+- Herzie de [ gebeurtenissen ](events.md) die voor [!DNL Live Search] worden vereist.
+- Zorg ervoor dat het [ Levende dashboard van het Onderzoek ](performance.md) gegevens van uw niet-productiemilieu(s) toont.
+- [ verifieer gebeurtenisinzameling ](../product-recommendations/verify.md). Terwijl deze pagina in de [!DNL Product Recommendations] -handleiding staat, zijn de verificatiestappen ook op [!DNL Live Search] van toepassing.
+
+## 8. Aanpassen voor je winkel
 
 U hebt de extensie [!DNL Live Search] geïnstalleerd, gesynchroniseerd, gevalideerd en geconfigureerd. De volgende stap is ervoor te zorgen dat de [!DNL Live Search] widgets in overeenstemming zijn met het uiterlijk van uw winkel.
 

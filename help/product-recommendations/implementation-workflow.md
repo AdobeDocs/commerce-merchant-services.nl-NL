@@ -2,9 +2,9 @@
 title: Implementatieworkflow
 description: Leer de stappen om  [!DNL Product Recommendations]  op uw storefront met succes uit te voeren.
 exl-id: 766e1191-0330-4515-9331-e45318539dc9
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 91e19e30d55259d3287404895d1d893c480743b6
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '534'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Wanneer u `magento/product-recommendations module` installeert, aggregeert Adobe
 
 1. **stelt gegevensinzameling aan productie** op
 
-   Het opstellen [!DNL Product Recommendations] vereist twee belangrijkste [ gegevensbronnen ](type.md): catalogus en gedrag. Omdat productie de enige omgeving is waarin de acties van uw klanten worden vastgelegd en geanalyseerd, is het in uw belang om zo snel mogelijk met gegevensverzameling over productie te beginnen. [ Leer ](behavioral-data.md) hoe Adobe Sensei machine het leren modellen tredt die in hogere kwaliteit aanbevelingen resulteren. Als toegevoegd voordeel, wanneer u gedragsgegevens over productie begint te verzamelen, kunt u [ aanbevelingen ](verify.md) halen die op deze productiegegevens worden gebaseerd terwijl het werken in niet-productiemilieu&#39;s. Vervolgens kunt u testen en experimenteren met verschillende aanbevelingen die worden berekend op basis van echte verkoopgegevens die in productie worden verzameld.
+   Het opstellen [!DNL Product Recommendations] vereist twee belangrijkste [ gegevensbronnen ](type.md): catalogus en gedrag. Omdat productie de enige omgeving is waarin de acties van uw klanten worden vastgelegd en geanalyseerd, moet u zo vroeg mogelijk beginnen met het verzamelen van gegevens over productie. [ Leer ](events.md) hoe Adobe Sensei machine het leren modellen tredt die in hogere kwaliteit aanbevelingen resulteren. Als toegevoegd voordeel, wanneer u gedragsgegevens over productie begint te verzamelen, kunt u [ aanbevelingen ](verify.md) halen die op deze productiegegevens worden gebaseerd terwijl het werken in niet-productiemilieu&#39;s. Vervolgens kunt u testen en experimenteren met verschillende aanbevelingen die worden berekend op basis van echte verkoopgegevens die in productie worden verzameld.
 
    Om gegevensinzameling aan productie op te stellen, moet u ](install-configure.md) installeren en vormen [!DNL Product Recommendations] module door een [ API sleutel ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) te verstrekken.[
 
