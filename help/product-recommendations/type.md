@@ -2,9 +2,9 @@
 title: Typen aanbevelingen
 description: Leer meer over de aanbevelingen die u op verschillende pagina's op uw site kunt implementeren.
 exl-id: c3b16307-479b-4736-968b-b6ab38233a48
-source-git-commit: 42cb709f4699fcdd56df7ca02466ab416f01cab2
+source-git-commit: 3d931a0fd40ef488bcdf7d94e71bdabe8a998ed0
 workflow-type: tm+mt
-source-wordcount: '1575'
+source-wordcount: '1596'
 ht-degree: 0%
 
 ---
@@ -41,11 +41,15 @@ Deze aanbevelingen typen producten op basis van de gedragsgeschiedenis van de sp
 
 Deze soorten aanbevelingen zijn sociaal-veilig, zodat kopers kunnen vinden wat anderen leuk vonden of door producten gestuurd om ze te helpen andere, vergelijkbare producten te vinden
 
+>[!NOTE]
+>
+>Het &quot;bekeken dit, bekeken dat&quot;, &quot;dit bekeken, kocht dat&quot;, en &quot;kocht dit, kocht dat&quot;de verwijzingstypes niet op eenvoudig-voorvalmetrisch maar eerder een verfijnd samenwerkings-filtrerend machine-leert algoritme gebaseerd zijn dat *interessante gelijkenissen* zoekt die niet naar populaire producten worden scheefgetrokken.
+
 | Type | Beschrijving |
 |---|---|
 | Bekeken dit, gezien dat | Aanbevolen producten die kopers vaker onevenredig weergeven met het product dat momenteel wordt weergegeven.<br/><br/>**waar gebruikt:**<br/> - het detail van het Product <br/> - Kar <br/> - Bevestiging <br/><br/>**Voorgestelde etiketten:**<br/> - Klanten die dit product ook bekeken (PDP) bekeken |
 | Bekijk dit, kocht dat | Aanbevolen producten die kopers vaker onevenredig kunnen kopen nadat ze het huidige product hebben bekeken. Helpt winkeliers te helpen producten te vinden die ze anders misschien niet hebben opgemerkt.<br/><br/>**waar gebruikt:**<br/> - het detail van het Product <br/> - Kar <br/> - Bevestiging <br/><br/>**Voorgestelde etiketten:**<br/> - Klanten die dit uiteindelijk bekeken <br/> - Klanten kochten <br/> - wat anderen kopen na het bekijken van dit product? |
-| Dit gekocht | Aanbevolen producten die kopers vaker onevenredig veel kopen bij het product dat momenteel wordt weergegeven. Meestal gebruikt op de detailpagina van het winkelwagentje of het product om de blootstelling van het verwante product te verhogen om de gemiddelde orderwaarde te verhogen. Geeft zeer relevante producten weer die kopers aan hun winkelwagen kunnen toevoegen door samen te voegen wat andere kopers met het huidige product hebben gekocht.<br/><br/>**waar gebruikt:**<br/> - het detail van het Product <br/> - Kar <br/> - Bevestiging <br/><br/>**Voorgestelde etiketten:**<br/> - krijg alles dat u nodig hebt <br/> - vergeet niet deze <br/> - vaak samen gekocht |
+| Dit gekocht | Aanbevolen producten die kopers vaker onevenredig veel kopen bij het product dat momenteel wordt weergegeven. Geeft zeer relevante producten weer die kopers aan hun winkelwagen kunnen toevoegen door samen te voegen wat andere kopers met het huidige product hebben gekocht.<br/><br/>**waar gebruikt:**<br/> - het detail van het Product <br/> - Kar <br/> - Bevestiging <br/><br/>**Voorgestelde etiketten:**<br/> - krijg alles dat u nodig hebt <br/> - vergeet niet deze <br/> - vaak samen gekocht |
 | Meer als dit | Aanbevelt producten die op gelijkaardige meta-gegevens zoals naam, beschrijving, categorietoewijzing, en attributen worden gebaseerd. Door de kenmerken van de bekeken producten te evalueren, kunt u vergelijkbare producten in dezelfde categorie aanbevelen. Als een winkelier bijvoorbeeld door yoga-mats bladert, wordt u aangeraden andere producten uit de apparatencategorie te gebruiken. Omdat in dit soort aanbevelingen geen onderscheid wordt gemaakt tussen genders, wordt het niet aanbevolen voor kleding, mode of andere geslachtsspecifieke verticalen.<br/><br/>**waar gebruikt:**<br/> - het detail van het Product <br/> - Kar <br/> - Bevestiging <br/><br/>**Voorgestelde etiketten:**<br/> - Meer producten zoals dit <br/> - Gelijkaardig aan dit |
 | [ Visuele gelijkenis ](#visualsim) | Hiermee kunt u vergelijkbare producten aanbevelen als het product dat u bekijkt. Dit soort aanbevelingen is vooral handig als afbeeldingen en visuele aspecten van producten belangrijk zijn voor de boodschappenervaring. |
 
