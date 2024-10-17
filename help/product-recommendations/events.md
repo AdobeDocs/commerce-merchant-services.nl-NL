@@ -3,7 +3,7 @@ title: Gegevens verzamelen
 description: Leer hoe gebeurtenissen gegevens verzamelen voor productaanbevelingen.
 exl-id: b827d88c-327f-4986-8239-8f1921d8383c
 feature: Services, Recommendations, Eventing
-source-git-commit: 87db52e0c851b56c9a8ceba1bf25c222c6d63cda
+source-git-commit: cd1ce643d7c1ffeec8e9853cfc6ffc5519ce8f7a
 workflow-type: tm+mt
 source-wordcount: '1316'
 ht-degree: 0%
@@ -78,7 +78,7 @@ In het geval van onvoldoende gegevensverzameling worden de volgende aanbevelinge
 De [ Verzameling van de Gebeurtenis van Adobe Commerce Storefront ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start) maakt een lijst van alle gebeurtenissen die aan uw storefront worden opgesteld. Uit die lijst komt echter een subset van gebeurtenissen naar voren die specifiek zijn voor Product Recommendations. Deze gebeurtenissen verzamelen gegevens wanneer de klanten met aanbevelingen op de storefront in wisselwerking staan en macht de metriek die wordt gebruikt om u te helpen analyseren hoe goed uw aanbevelingen presteren.
 
 | Gebeurtenis | Beschrijving |
-| --- | --- | --- |
+| --- | --- |
 | `impression-render` | Verzonden wanneer de aanbeveling-eenheid op de pagina wordt weergegeven. Als een pagina twee aanbevelingen-eenheden heeft (gekocht, weergave-weergave), worden twee `impression-render` -gebeurtenissen verzonden. Deze gebeurtenis wordt gebruikt om metrisch voor beelden te volgen. |
 | `rec-add-to-cart-click` | De verkoopster klikt **toevoegt aan wortel** knoop voor een punt in de aanbeveling eenheid. |
 | `rec-click` | De verkoopster klikt op een product in de aanbevolen eenheid. |
@@ -113,7 +113,7 @@ De volgende gebeurtenissen zijn niet specifiek voor Product Recommendations, maa
 In deze tabel worden de gebeurtenissen beschreven die door elk type aanbeveling worden gebruikt.
 
 | Type aanbeveling | Gebeurtenissen | Pagina |
-| --- | --- | --- | ---|
+| --- | --- | --- |
 | Meest bekeken | `page-view`<br>`product-view` | Productdetailpagina |
 | Meest aangekocht | `page-view`<br>`complete-checkout` | Winkelwagentje/Afhandeling |
 | Meest toegevoegd aan winkelwagentje | `page-view`<br>`add-to-cart` | De detailpagina van het product <br> product die pagina <br> van de Lijst van de Kar <br> van de Wenslijst van het Product |
