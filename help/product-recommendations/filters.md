@@ -2,9 +2,9 @@
 title: Filterproducten
 description: Bepaal voorwaarden die of producten van worden gebruikt als aanbevelingen omvatten of uitsluiten.
 exl-id: baab28ff-b529-4cbc-adb7-4fa225e87d4a
-source-git-commit: b602385b956b6af131b008428d1182a586303bc7
+source-git-commit: e42b9524fb2e8518576935bc0cd378eca9a579c5
 workflow-type: tm+mt
-source-wordcount: '734'
+source-wordcount: '748'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,9 @@ De logische operatoren `AND` en `OR` worden gebruikt om meerdere voorwaarden sam
 
 ### Categorie
 
-Filters op basis van de categorie van een product maken gebruik van directe categorietoewijzingen en de bijbehorende subcategorieën. Als u bijvoorbeeld een uitsluitingsvoorwaarde inschakelt voor categorie `Gear` , worden producten die zijn toegewezen aan `Gear` en alle bijbehorende subcategorieën, zoals `Gear/Bags` of `Gear/Fitness Equipment` , uitgesloten. Hetzelfde geldt voor een inclusiefilter op een categorie. Als u bijvoorbeeld een inclusievoorwaarde voor categorie `Gear` inschakelt, worden producten opgenomen die zijn toegewezen aan `Gear` en alle bijbehorende subcategorieën, zoals `Gear/Bags` of `Gear/Fitness Equipment` .
+Filtert producten op basis van hun categorie. Het categoriefilter gebruikt directe categorietoewijzingen en hun subcategorieën. Als u bijvoorbeeld een uitsluitingsvoorwaarde inschakelt voor categorie `Gear` , worden producten die zijn toegewezen aan `Gear` en alle bijbehorende subcategorieën, zoals `Gear/Bags` of `Gear/Fitness Equipment` , uitgesloten. Hetzelfde geldt voor een inclusiefilter op een categorie. Als u bijvoorbeeld een inclusievoorwaarde voor categorie `Gear` inschakelt, worden producten opgenomen die zijn toegewezen aan `Gear` en alle bijbehorende subcategorieën, zoals `Gear/Bags` of `Gear/Fitness Equipment` .
+
+In het categorieveld worden categorieën weergegeven die bij de huidige voorvertoning horen.
 
 >[!NOTE]
 >
