@@ -6,9 +6,9 @@ seo-description: Describes how to use [!DNL Payment Services] with Adobe Commerc
 exl-id: 30b23f26-9aac-4a24-a607-2431455fc935
 feature: Payments, Checkout
 recommendations: noCatalog
-source-git-commit: ebffb778ddcd699b218071cd3506e62d8155cd46
+source-git-commit: 2bb5cbe2360a82de0dbad73d6beae58a6bc6937e
 workflow-type: tm+mt
-source-wordcount: '196'
+source-wordcount: '199'
 ht-degree: 0%
 
 ---
@@ -45,4 +45,4 @@ Deze handleiding heeft geen betrekking op de kernmogelijkheden van [!DNL Adobe C
 Als u informatie nodig hebt of vragen hebt die niet in deze handleiding worden behandeld, neemt u contact op met uw [!DNL Payment Services] -verkoper of gebruikt u de bronnen in uw [!DNL Payment Services] startpagina:
 
 * [ centrum van de Hulp ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html) - onderzoek naar [!DNL Payment Services] verwante het oplossen van problemenartikelen in knowledgebase.
-* [ kaartjes van de Steun ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) - leg een kaartje voor om extra hulp te ontvangen.
+* [ de kaartjes van de Steun ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) - de klanten van Commerce kunnen een kaartje voorleggen om extra hulp te ontvangen.
