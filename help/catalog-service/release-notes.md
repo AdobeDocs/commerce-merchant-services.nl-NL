@@ -3,9 +3,9 @@ title: '[!DNL Catalog Service] Opmerkingen bij de release'
 description: De recentste versieinformatie voor  [!DNL Catalog Service]  voor Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 93be63ca7a4edc2890a37a6460a123e28226301a
+source-git-commit: 3b440f01c063fd2675be95a645450adc5c696d18
 workflow-type: tm+mt
-source-wordcount: '813'
+source-wordcount: '879'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,18 @@ Updates zijn:
 ![ Bug ](../assets/bug.svg) Bekende kwesties
 
 ## Huidige hoofdversie
+
+### V1.26 Release
+
+_22 oktober, 2024_
+
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
+
+![ Nieuw ](../assets/new.svg) het schema van GraphQL omvat nu het `lastModifiedAt` attribuut in de productinformatie. Deze nauwkeurige tijdstempel helpt klanten ervoor te zorgen dat de sitemaps de meest recente updates aan hun producten nauwkeurig weerspiegelen. Zodoende kunnen zoekprogramma&#39;s zoals Google ook bepalen wanneer opnieuw indexeren nodig is, het crawling-proces optimaliseren en problemen voorkomen die te maken hebben met agressieve datums die het laatst zijn gewijzigd wanneer er geen nauwkeurige informatie beschikbaar is. <!--DATA-6209-->
+
+## Vorige versies
+
++++ Vorige versies
 
 ### V1.23 Release
 
@@ -38,11 +50,6 @@ _Augustus 13, 2024_
 [!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
 ![ Nieuwe ](../assets/new.svg) Toegevoegde steun om alle varianten door productSKU terug te winnen. Zie de [ Verwijzing van de Dienst API van de Catalogus ](https://developer.adobe.com/commerce/services/graphql/catalog-service/). <!--DATA-6067-->
-
-
-## Vorige versies
-
-+++ Vorige versies
 
 ### V1.22 Release
 
