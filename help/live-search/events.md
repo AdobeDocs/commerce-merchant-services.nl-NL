@@ -3,7 +3,7 @@ title: '[!DNL Live Search] Gebeurtenissen'
 description: Leer hoe de gebeurtenissen gegevens voor  [!DNL Live Search] verzamelen.
 feature: Services, Eventing
 exl-id: b0c72212-9be0-432d-bb8d-e4c639225df3
-source-git-commit: 45a7d101c28eb9cd1404090c3ea5024652a97913
+source-git-commit: f771e741d92bf94f46772934edf7a6bc39c75999
 workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 0%
@@ -17,7 +17,7 @@ In [!DNL Live Search] worden gebeurtenissen gebruikt om zoekalgoritmen zoals &qu
 Deze lijst beschrijft de gebeurtenissen die door [!DNL Live Search] [ worden gebruikt rangschikkend strategieën ](rules-add.md#intelligent-ranking).
 
 | Rangschikkingsstrategie | Gebeurtenissen | Pagina |
-| --- | --- | --- | ---|
+| --- | --- | --- |
 | Meest bekeken | `page-view`<br>`product-view` | Productdetailpagina |
 | Meest aangekocht | `page-view`<br>`complete-checkout` | Winkelwagentje/Afhandeling |
 | Meest toegevoegd aan winkelwagentje | `page-view`<br>`add-to-cart` | De detailpagina van het product <br> product die pagina <br> van de Lijst van de Kar <br> van de Wenslijst van het Product |
