@@ -3,9 +3,9 @@ title: Gegevensvolume en verzendingstijd schatten
 description: Leer om het gegevensvolume en de transmissietijd te schatten die voor het  [!DNL data export]  wordt vereist hulpmiddel om voedergegevens tussen Adobe Commerce en de verbonden diensten te synchroniseren.
 role: Admin, Developer
 exl-id: 51ea98fd-cf90-44bd-a639-992bfc7f3eca
-source-git-commit: b80bc2867f44e6123adb104eb148ac5e8f80b63d
+source-git-commit: 7e33b1d5dfc825f8a4d252bcfcbd4f591e337aed
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
@@ -14,12 +14,12 @@ ht-degree: 0%
 
 Adobe raadt aan het gegevensvolume en de synchronisatietijd te schatten voordat u een synchronisatie van de gegevenstoevoer start, zodat de planning soepel verloopt en verstoring van de sitebewerkingen wordt voorkomen. Deze schatting is belangrijk bij de planning voor initiële syncs of grootschalige catalogusupdates, zoals wijzigingen in de massaprijs.
 
-Standaard verwerkt het gereedschap voor het exporteren van gegevens gegevens gegevens in de modus Eén thread met een standaardbatch. Met de standaardconfiguratie, is er geen parallellisatie van het proces van de voedervoorlegging. Bovendien, staat het standaardthrottling beleid Adobe Commerce toe om twee verzoeken per seconde (RPS) goed te keuren die aan het volgende vertaalt:
+Standaard verwerkt het gereedschap voor het exporteren van gegevens gegevens gegevens in de modus Eén thread met een standaardbatch. Met de standaardconfiguratie, is er geen parallellisatie van het proces van de voedervoorlegging. Bovendien accepteert deze component aanvragen per seconde (RPS) die als volgt worden vertaald:
 
 - Tot 10.000 producten per minuut wanneer een product een SKU met eigenschappen in een specifieke opslagvoorproef is
 - Tot 50.000 prijzen per minuut
 
-Gebaseerd op de standaardconfiguratie, beïnvloeden de volgende factoren de tijd van de gegevenstransmissie tijdens synchronisatie.
+De volgende factoren beïnvloeden de tijd van de gegevenstransmissie tijdens synchronisatie.
 
 - Het aantal threads is ingesteld op 1 (standaard)
 - De grootte van de partij wordt geplaatst aan _100_ voor alle voer behalve het `prices` voer, waar het aan _500_ wordt geplaatst.
@@ -27,9 +27,6 @@ Gebaseerd op de standaardconfiguratie, beïnvloeden de volgende factoren de tijd
 - Alle producten worden toegewezen aan alle bestaande websites
 - Voor de prijsberekeningsscenario&#39;s zijn aan alle producten speciale en gegroepeerde prijzen toegewezen
 
->[!NOTE]
->
->Indien nodig kan de limiet voor het vertragingsbeleid worden verhoogd op basis van een analyse van het effect op de prestaties. Neem voor hulp contact op met uw technische accountmanager (TAM) of verzend een ondersteuningsticket.
 
 ## Gegevensoverdracht per feed berekenen
 
