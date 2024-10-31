@@ -4,16 +4,16 @@ description: Leer hoe u uw Adobe Commerce- of Magento Open Source-instantie inte
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: bfb839c25a378eedd3a20fd01f12f7398c6568b9
+source-git-commit: adf5691a1bdfd35ffa7612d732cc149fd7594e9f
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1259'
 ht-degree: 0%
 
 ---
 
 # [!DNL Commerce Services Connector]
 
-Sommige Adobe Commerce- en Magento Open Source-functies worden geactiveerd door [!DNL Commerce Services] en geïmplementeerd als SaaS (software als service). Om deze diensten te gebruiken, moet u uw [!DNL Commerce] instantie verbinden gebruikend productie en zandbak API sleutels, en de gegevensruimte in de [ configuratie ](#saas-configuration) specificeren. U hoeft de verbinding slechts één keer te configureren voor elke Commerce-instantie.
+Sommige Adobe Commerce- en Magento Open Source-functies worden geactiveerd door [!DNL Commerce Services] en geïmplementeerd als SaaS (software als service). Om deze diensten te gebruiken, moet u uw [!DNL Commerce] instantie verbinden gebruikend productie en zandbak API sleutels, en de gegevensruimte in de [ configuratie ](#saas-configuration) specificeren. U hoeft de verbinding slechts één keer voor elke instantie te configureren.
 
 ## Beschikbare services {#availableservices}
 
@@ -45,6 +45,7 @@ De sleutels kunnen op een &quot;behoefte-aan-weet&quot;basis met het systeeminte
 Daarnaast hebben integrators van oplossingen ook het recht om [!DNL Commerce Services] te gebruiken. Als u een integrator van de oplossing bent, zou de ondertekenaar van het [!DNL Commerce] partnercontract de API sleutels moeten produceren.
 
 >[!NOTE]
+>De belangrijkste herkenningstekens *Productie* en *Sandbox* verwijzen niet naar uw milieu. U gebruikt dezelfde set API-sleutels voor elk van uw omgevingen, bijvoorbeeld voor lokale omgevingen, ontwikkelings-, staging- of productieomgevingen.
 >
 >De eigenaar van de licentie is doorgaans de primaire contactpersoon op de Adobe Commerce-account en is niet altijd dezelfde als de projecteigenaar van de Adobe Commerce voor het infrastructuurproject in de cloud.
 
@@ -68,7 +69,7 @@ Daarnaast hebben integrators van oplossingen ook het recht om [!DNL Commerce Ser
 
 1. Herhaal bovenstaande stappen voor elke omgeving (productie en sandbox).
 
-   De **API Sleutels** sectie toont nu uw (Openbare) API sleutels. U hebt zowel de productie als zandbaksleutels (Openbaar+Privé) nodig wanneer u [ selecteert of een project SaaS ](#createsaasenv) creeert.
+   De **API Sleutels** sectie toont nu uw (Openbare) API sleutels. U hebt alle vier sleutels (zowel de productie als zandbaksleutels, Public+Private) nodig wanneer u [ selecteert of een project SaaS ](#createsaasenv) in om het even welke milieu&#39;s/installaties verbonden aan de vergunning creeert.
 
 ## SaaS-configuratie {#saasenv}
 
@@ -78,7 +79,7 @@ Voor [!DNL Product Recommendations] bevat de SaaS-gegevensruimte catalogus- en g
 
 >[!WARNING]
 >
-> Gebruik uw productieSaaS gegevensruimte slechts op uw productie [!DNL Commerce] installatie om gegevensbotsingen te vermijden. Anders loopt u het risico dat u gegevens van uw productiesite verontreinigt met testgegevens, wat implementatievertragingen veroorzaakt. De gegevens van uw productieproduct kunnen bijvoorbeeld per ongeluk worden overschreven door opvoergegevens, zoals ophalings-URL&#39;s.
+> Gebruik uw **gegevens van productieSaaS** slechts op uw productie [!DNL Commerce] installatie om gegevensbotsingen te vermijden. Anders loopt u het risico dat u gegevens van uw productiesite verontreinigt met testgegevens, wat implementatievertragingen veroorzaakt. De gegevens van uw productieproduct kunnen bijvoorbeeld per ongeluk worden overschreven door opvoergegevens, zoals ophalings-URL&#39;s.
 > Als dit zou moeten gebeuren, [ voorlegt een verzoek van de Steun ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) om gegevensschoonmaak te verzoeken.
 
 ### SaaS-gegevensruimteprovisioning
