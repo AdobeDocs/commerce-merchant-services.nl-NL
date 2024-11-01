@@ -3,7 +3,7 @@ title: Laat  [!DNL Payment Services]  voor Productie toe
 description: Voltooi het aan boord gaan proces door  [!DNL Payment Services]  voor productie toe te laten.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: d1379bb108f2259051641a7bf77cd8b459fd9cbf
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '1019'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Nadat u [ uw Diensten van Commerce ](connect.md#configure-commerce-services) vor
 
    Deze optie is zichtbaar als u [!DNL Payment Services] nog niet hebt geconfigureerd als betalingsmethode voor een of meer van uw websites.
 
-   U wordt geleid aan het montagegebied in de mening van het Huis met de relevante uitgevouwen opties (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), waar u de [!DNL Payment Services] opties als uw [ betalingsmethode ](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html) {target="_blank"} kunt toelaten.
+   U wordt geleid aan het montagegebied in de mening van het Huis met de relevante uitgevouwen opties (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), waar u de [!DNL Payment Services] opties als uw [ betalingsmethode ](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods) {target="_blank"} kunt toelaten.
 
 1. Stel **[!UICONTROL Enable]** in op `Yes` in _[!UICONTROL General Configuration]_.
 1. Stel **[!UICONTROL Payment Action]** voor zowel _[!UICONTROL Credit Card Fields]_als_[!UICONTROL PayPal payment buttons]_ in op een van de volgende opties:
@@ -157,7 +157,7 @@ Live betalingen inschakelen:
 1. Klik in het Home op **[!UICONTROL Settings]** rechtsboven op de pagina. Zie [ Huis ](payments-home.md) voor meer informatie.
 1. In de _[!UICONTROL General Configuration]_-sectie ingesteld op **[!UICONTROL Payment mode]**`Production` .
 1. Klik op **[!UICONTROL Save]**.
-1. [ ontruim uw geheime voorgeheugen ](https://docs.magento.com/user-guide/system/cache-management.html) {target="_blank"}.
+1. [ ontruim uw geheime voorgeheugen ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) {target="_blank"}.
 
    >[!IMPORTANT]
    >

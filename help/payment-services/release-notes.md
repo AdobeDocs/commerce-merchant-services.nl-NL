@@ -3,7 +3,7 @@ title: "[!DNL Payment Services] Opmerkingen bij de release"
 description: Herzie de versienota's voor informatie over alle  [!DNL Payment Services]  versies.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: a5963055a17b5af0c30f3d5f6236d1524e028b22
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '3017'
 ht-degree: 0%
@@ -391,7 +391,7 @@ _9 augustus, 2022_
 
 [!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![ Nieuwe ](../assets/new.svg)<!-- Issue PAY-XX --> Algemene beschikbaarheidsversie - [!DNL Payment Services] wordt nu gesteund door [  [!DNL Adobe Commerce]  en  [!DNL Magento Open Source]  versies 2.4.0 aan 2.4.5 ](https://devdocs.magento.com/release/availability.html#compatibility).
+![ Nieuwe ](../assets/new.svg)<!-- Issue PAY-XX --> Algemene beschikbaarheidsversie - [!DNL Payment Services] wordt nu gesteund door [  [!DNL Adobe Commerce]  en  [!DNL Magento Open Source]  versies 2.4.0 aan 2.4.5 ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
 
 ![ Vaste kwestie ](../assets/fix.svg)<!-- Issue PAY-x --> Apple Pay is nu compatibel met browser Safari v15.5 op mobiel en Desktop.
 
@@ -419,7 +419,7 @@ _Maart 31, 2022_
 
 [!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![ Nieuwe ](../assets/new.svg)<!-- Issue PAY-2127 --> Algemene beschikbaarheidsversie - [!DNL Payment Services] wordt nu gesteund door [  [!DNL Adobe Commerce]  en  [!DNL Magento Open Source]  versies 2.4.0 aan 2.4.4 ](https://devdocs.magento.com/release/availability.html#compatibility).
+![ Nieuwe ](../assets/new.svg)<!-- Issue PAY-2127 --> Algemene beschikbaarheidsversie - [!DNL Payment Services] wordt nu gesteund door [  [!DNL Adobe Commerce]  en  [!DNL Magento Open Source]  versies 2.4.0 aan 2.4.4 ](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
 
 ![ Nieuw ](../assets/new.svg)<!-- Issue PAY-2682 --> De [!DNL Payment Services] uitbreiding voor [!DNL Adobe Commerce] en [!DNL Magento Open Source] is nu beschikbaar voor Canadese handelaren. De handelaren kunnen betalingsconfiguratie in of [ Frans ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html?lang=fr#carte-de-cr%C3%A9dit-et-devises-accept%C3%A9es) of [ Engels ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html#accepted-credit-cards-and-currencies) bekijken.
 
@@ -463,7 +463,7 @@ _November 29, 2021_
 
 ![ Nieuw ](../assets/new.svg)<!-- Issue PAY-1443 --> U kunt gemakkelijk [ de blik en het gevoel ](payments-options.md) van PayPal betaalknopen en creditcardgebieden voor de [!DNL Payment Services] uitbreiding aanpassen.
 
-![ Bekende kwestie ](../assets/bug.svg)<!-- Issue PAY-2473 --> Gebruikend [ onjuiste Composer sleutels ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html) tijdens installatie van de uitbreiding verhindert de gebruiker [ ](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) voor authentiek verklaren met het correcte `MAGEID`.
+![ Bekende kwestie ](../assets/bug.svg)<!-- Issue PAY-2473 --> Gebruikend [ onjuiste Composer sleutels ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html) tijdens installatie van de uitbreiding verhindert de gebruiker [ ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) voor authentiek verklaren met het correcte `MAGEID`.
 
 ![ Bekende kwestie ](../assets/bug.svg)<!-- Issue PAY-2474 --> [!DNL Payment Services] rapporten [ kunnen niet onmiddellijk ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html) synchroniseren.
 

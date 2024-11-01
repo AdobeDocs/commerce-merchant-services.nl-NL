@@ -5,7 +5,7 @@ role: Admin, Developer
 level: Intermediate
 exl-id: 265ab1be-fe52-41f3-85cb-addbc2ddfb17
 feature: Payments, Checkout, Configuration, Integration
-source-git-commit: d1379bb108f2259051641a7bf77cd8b459fd9cbf
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Om over de gegevens te leren die in [!DNL Payment Services] rapportering worden 
 
 ### Uitsnede configureren op [!DNL Magento Open Source]
 
-Als u een `BY SCHEDULE` indexmodus wilt gebruiken op [!DNL Magento Open Source] , moet u de uitsnede configureren. Zie [ uitsnede ](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html) vormen en in werking stellen.
+Als u een `BY SCHEDULE` indexmodus wilt gebruiken op [!DNL Magento Open Source] , moet u de uitsnede configureren. Zie [ uitsnede ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) vormen en in werking stellen.
 
 ### Indexeerders instellen
 
@@ -48,13 +48,13 @@ bin/magento indexer:set-mode schedule sales_order_data_exporter sales_order_stat
 >
 >Als u geen indexeerders in uw bevel specificeert, worden alle indexeerders bijgewerkt aan de zelfde waarde. Als u een specifieke indexeerder wilt veranderen, moet u het in uw bevel een lijst maken.
 
-Meer leren over het manueel veranderen van de wijze van een indexeerder, zie [ indexeerders ](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#configure-indexers) {target="_blank"} in de ontwikkelaarsdocumentatie vormen. Leren hoe te om het in Admin te veranderen, zie [ het beheer van de Index ](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode) {target="_blank"} in de gids van de kerngebruiker.
+Meer leren over het manueel veranderen van de wijze van een indexeerder, zie [ indexeerders ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers) {target="_blank"} in de ontwikkelaarsdocumentatie vormen. Leren hoe te om het in Admin te veranderen, zie [ het beheer van de Index ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode) {target="_blank"} in de gids van de kerngebruiker.
 
 ### Gegevens handmatig opnieuw indexeren
 
-U kunt gegevens handmatig opnieuw indexeren in plaats van te wachten tot dit automatisch gebeurt. Zie [ opnieuw indexeren ](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#reindex) {target="_blank"} in [ de Indexen ](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html) {target="_blank"} voor meer informatie beheren.
+U kunt gegevens handmatig opnieuw indexeren in plaats van te wachten tot dit automatisch gebeurt. Zie [ opnieuw indexeren ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#reindex) {target="_blank"} in [ de Indexen ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) {target="_blank"} voor meer informatie beheren.
 
-Wanneer de modus `BY SCHEDULE` is ingesteld, worden entiteiten gewijzigd door de systeemtracks en wordt de index voor entiteiten bijgewerkt door de snijtaak op basis van een setschema. Zie [ de Bron van de Looppas van de bevellijn ](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html#config-cli-cron-group-run) in [ vormen en in werking stellen krun ](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html)) leren hoe te om indexatie manueel teweeg te brengen gebruikend kroonbanen.
+Wanneer de modus `BY SCHEDULE` is ingesteld, worden entiteiten gewijzigd door de systeemtracks en wordt de index voor entiteiten bijgewerkt door de snijtaak op basis van een setschema. Zie [ de Bron van de Looppas van de bevellijn ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs#config-cli-cron-group-run) in [ vormen en in werking stellen krun ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs)) leren hoe te om indexatie manueel teweeg te brengen gebruikend kroonbanen.
 
 ### Geïndexeerde gegevens naar betalingsservice verzenden
 
@@ -88,7 +88,7 @@ Alle gegevens die nodig zijn voor de rapporten worden automatisch naar [!DNL Pay
 bin/magento cron:run --group payment_services_data_export
 ```
 
-Meer over het opnieuw indexeren en indexeerders leren, zie [ het indexeerders ](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html) onderwerp in de ontwikkelaarsdocumentatie beheren.
+Meer over het opnieuw indexeren en indexeerders leren, zie [ het indexeerders ](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) onderwerp in de ontwikkelaarsdocumentatie beheren.
 
 ## L2/L3-verwerking configureren
 

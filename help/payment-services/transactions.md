@@ -4,7 +4,7 @@ description: Gebruik het rapport Transacties om de snelheid van de transactiever
 role: User
 level: Intermediate
 exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
-source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '1272'
 ht-degree: 0%
@@ -132,7 +132,7 @@ Transactierapporten bevatten de volgende informatie.
 
 | Kolom | Beschrijving |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | Commerce orde ID (bevat slechts waarden voor succesvolle transacties en is leeg voor verworpen transacties) <br> <br> om verwante [ orde info ](https://docs.magento.com/user-guide/sales/orders.html) te zien {target="_blank"}, klik identiteitskaart |
+| [!UICONTROL Order ID] | Commerce orde ID (bevat slechts waarden voor succesvolle transacties en is leeg voor verworpen transacties) <br> <br> om verwante [ orde info ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders) te zien {target="_blank"}, klik identiteitskaart |
 | [!UICONTROL PayPal Transaction ID] | Transactie-id verstrekt door de betalingsaanbieder; bevat alleen waarden voor geslaagde transacties en bevat een streepje voor geweigerde transacties. U kunt op deze id klikken om de pagina met PayPal-transactiegegevens te openen. |
 | [!UICONTROL Customer ID] | Commerce-klant-id van een bestelling <br> <br> zie [ klanteninfo ](https://experienceleague.adobe.com/en/docs/commerce-admin/customers/customer-accounts/account-create) {target="_blank"} onderwerp voor meer informatie. |
 | [!UICONTROL Transaction Date] | Tijdstempel van transactiedatum |

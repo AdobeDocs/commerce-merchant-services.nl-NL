@@ -5,7 +5,7 @@ role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 feature: Payments, Checkout, Orders
-source-git-commit: 0dc370409ace6ac6b0a56511cd0071cf525620f1
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '2045'
 ht-degree: 0%
@@ -114,11 +114,11 @@ Verkopers kunnen de bijgewerkte betalingsstatus controleren via de rapportweerga
 
 [!DNL Payment Services] gebruikt bestelgegevens en combineert deze met geaggregeerde betalingsgegevens uit andere bronnen (waaronder PayPal) voor zinvolle en zeer nuttige rapporten.
 
-Bestelgegevens worden geëxporteerd en blijven in de betalingsservice staan. Wanneer u [ verandert of ordestatus ](https://docs.magento.com/user-guide/sales/order-status-custom.html) toevoegt of [ uitgeeft een opslagmening ](https://docs.magento.com/user-guide/stores/stores-all-view-edit.html), [ opslag ](https://docs.magento.com/user-guide/stores/store-information.html), of websitenaam, dat het gegeven met betalingsgegevens wordt gecombineerd en het rapport van de de betalingsstatus van de Orde wordt bevolkt met gecombineerde info.
+Bestelgegevens worden geëxporteerd en blijven in de betalingsservice staan. Wanneer u [ verandert of ordestatus ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-status#custom-order-status) toevoegt of [ uitgeeft een opslagmening ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-views#edit-a-store-view), [ opslag ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/store-details#store-information), of websitenaam, dat het gegeven met betalingsgegevens wordt gecombineerd en het rapport van de de betalingsstatus van de Orde wordt bevolkt met gecombineerde info.
 
 Er zijn twee stappen in dit proces:
 
-1. De index wordt veranderd gegeven of `ON SAVE` (telkens als de ordesinfo of opslaginfo wordt veranderd) of `BY SCHEDULE` (op een pre-gevormde kroonprogramma), afhankelijk van hoe het in [ het Beheer van de Index ](https://docs.magento.com/user-guide/system/index-management.html) in Admin wordt gevormd.
+1. De index wordt veranderd gegeven of `ON SAVE` (telkens als de ordesinfo of opslaginfo wordt veranderd) of `BY SCHEDULE` (op een pre-gevormde kroonprogramma), afhankelijk van hoe het in [ het Beheer van de Index ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) in Admin wordt gevormd.
 
    Standaard vindt gegevensindexatie plaats `ON SAVE` . Dit houdt in dat wanneer iets verandert in de volgorde, de status van de order, de winkelweergave, de winkel of de website, het opnieuw indexeren onmiddellijk plaatsvindt.
 
@@ -134,7 +134,7 @@ De enige gegevens die voor rapportagedoeleinden worden geëxporteerd en gesortee
 
 Hoewel het opnieuw indexeren standaard plaatsvindt in de modus `ON SAVE` , wordt u aangeraden de index in de modus `BY SCHEDULE` uit te voeren. De `BY SCHEDULE` -index wordt uitgevoerd volgens een uitsnijdschema van één minuut en alle gewijzigde gegevens worden binnen twee minuten na elke gegevenswijziging weergegeven in het statusrapport van uw bestelling. Deze geplande herindexering helpt u om het even welke druk op uw opslag te verminderen, vooral als u een groot volume van inkomende orden hebt, omdat het op een programma gebeurt (niet aangezien elke orde wordt geplaatst).
 
-U kunt de indexwijze veranderen— `ON SAVE` of `BY SCHEDULE`— [ in Admin ](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode).
+U kunt de indexwijze veranderen— `ON SAVE` of `BY SCHEDULE`— [ in Admin ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management#change-the-index-mode).
 
 Leren hoe te om de gegevensuitvoer te vormen, zie [ bevel-lijn configuratie ](configure-cli.md#configure-data-export).
 
@@ -245,10 +245,10 @@ Betalingsstatusrapporten voor bestellingen bevatten de volgende informatie.
 
 | Kolom | Beschrijving |
 | ------------ | -------------------- |
-| [!UICONTROL Order ID] | Commerce order ID <br> <br> om verwante [ orde info ](https://docs.magento.com/user-guide/sales/orders.html) te zien {target="_blank"}, klik identiteitskaart |
+| [!UICONTROL Order ID] | Commerce order ID <br> <br> om verwante [ orde info ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders) te zien {target="_blank"}, klik identiteitskaart |
 | [!UICONTROL Order Date] | Tijdstempel van besteldatum |
 | [!UICONTROL Authorized Date] | Tijdstempel van betalingsvergunning |
-| [!UICONTROL Order Status] | Huidige Commerce [ ordestatus ](https://docs.magento.com/user-guide/sales/order-status.html) {target="_blank"} |
+| [!UICONTROL Order Status] | Huidige Commerce [ ordestatus ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-status) {target="_blank"} |
 | [!UICONTROL Invoiced] | Factuurstatus van bestelling—*[!UICONTROL No]*, *[!UICONTROL Partial]* of *[!UICONTROL Yes]* |
 | [!UICONTROL Shipped] | Verzendstatus van bestelling—*[!UICONTROL No]*, *[!UICONTROL Partial]* of *[!UICONTROL Yes]* |
 | [!UICONTROL Order Amt] | Totaalbedrag van de beschikking |

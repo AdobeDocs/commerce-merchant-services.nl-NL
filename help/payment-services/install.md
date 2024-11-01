@@ -4,7 +4,7 @@ description: Installeer de uitbreiding van de Diensten van Betalingen.
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
 role: Admin
 feature: Payments, Checkout, Install, Upgrade
-source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '494'
 ht-degree: 0%
@@ -42,9 +42,9 @@ U kunt de [!DNL Payment Services] uitbreiding voor zowel [!DNL Adobe Commerce] o
 
 Composer gebruikt deze toetsen tijdens de eerste installatie van [!DNL Adobe Commerce] of in situaties waarin de Composer-toetsen niet eerder in het `auth.json` -bestand zijn opgeslagen.
 
-Zie [ uw authentificatietoetsen ](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) voor meer informatie over het verkrijgen van de sleutels van de Samensteller krijgen.
+Zie [ uw authentificatietoetsen ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) voor meer informatie over het verkrijgen van de sleutels van de Samensteller krijgen.
 
-Zie [ installeren een uitbreiding ](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/extensions.html) voor meer informatie over wat te overwegen alvorens een uitbreiding te downloaden en te installeren.
+Zie [ installeren een uitbreiding ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions) voor meer informatie over wat te overwegen alvorens een uitbreiding te downloaden en te installeren.
 
 ### [!DNL Adobe Commerce] op cloudinfrastructuur
 
@@ -155,7 +155,7 @@ Om te zien welke Composer sleutels worden gevormd:
    cat /path/to/auth.json
    ```
 
-1. Zie [ welke sleutels met uw rekening van Commerce `MageID` ](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) worden geassocieerd.
+1. Zie [ welke sleutels met uw rekening van Commerce `MageID` ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) worden geassocieerd.
 
 ### Onvoldoende geheugen voor PHP
 
@@ -165,7 +165,7 @@ Als je de volgende foutmelding ziet, heb je onvoldoende geheugen voor PHP:
 Fatal error: Allowed memory size of 2146435072 bytes exhausted (tried to allocate 4096 bytes) in phar:///usr/local/bin/composer/src/Composer/DependencyResolver/RuleWatchGraph.php on line 52
 ```
 
-[ verhoog de geheugengrens ](https://devdocs.magento.com/cloud/project/magento-app-php-ini.html#increase-php-memory-limit) voor PHP op uw milieu in `php.ini`.
+[ verhoog de geheugengrens ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/php-settings#increase-php-memory-limit) voor PHP op uw milieu in `php.ini`.
 
 U kunt ook de geheugenlimiet opgeven met deze opdracht: `php -d memory_limit=-1 [path to composer]/composer require magento/payment-services` .
 

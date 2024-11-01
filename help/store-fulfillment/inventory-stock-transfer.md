@@ -5,7 +5,7 @@ role: Admin
 level: Intermediate
 feature: Shipping/Delivery, Inventory, Configuration
 exl-id: 669d4dce-4cac-4bde-acc5-26c70a51f7f1
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 0%
@@ -23,27 +23,27 @@ De [!DNL Store Fulfillment] -oplossing gebruikt native Adobe Commerce Inventory 
 
 Deze configuratieveranderingen helpen u drie dingen verwezenlijken:
 
-1. [ voorraad van de Overdracht aan bron ](https://docs.magento.com/user-guide/catalog/inventory-bulk-transfer-inventory.html) om inventaris van het standaardvoorraad/de bron aan het nieuwe voorraad/de bron te bewegen.
+1. [ voorraad van de Overdracht aan bron ](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/quantities/inventory-transfer) om inventaris van het standaardvoorraad/de bron aan het nieuwe voorraad/de bron te bewegen.
 
-1. [ Bulk wijst bronnen ](https://docs.magento.com/user-guide/catalog/inventory-bulk-assign-sources.html) toe om de nieuwe bronnen voor al uw producten toe te voegen.
+1. [ Bulk wijst bronnen ](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/quantities/bulk-assignment) toe om de nieuwe bronnen voor al uw producten toe te voegen.
 
-1. [ Volledige bulkupdates voor productattributen ](https://docs.magento.com/user-guide/stores/bulk-product-attribute-update.html) om de `Allow Store Pickup` en `Allow Home Delivery` attributen aan bestaande producten toe te voegen. Wanneer de oplossing wordt geïnstalleerd, hebben de attributen de optimale *standaard* waarden. Nochtans, worden deze attributen niet toegepast op bestaande producten tot u het bulk updaContes proces voltooit.
+1. [ Volledige bulkupdates voor productattributen ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update) om de `Allow Store Pickup` en `Allow Home Delivery` attributen aan bestaande producten toe te voegen. Wanneer de oplossing wordt geïnstalleerd, hebben de attributen de optimale *standaard* waarden. Nochtans, worden deze attributen niet toegepast op bestaande producten tot u het bulk updaContes proces voltooit.
 
-De voorraad wordt afgetrokken van de geselecteerde bron (detailhandel of e-commerce-entrepot). De bronnen die als e-commerce pakhuizen worden gebruikt moeten aan het zelfde dossier worden toegewezen zoals de opslagbestelplaats en voorrang gegeven vóór de detailhandelsplaatsen. Voor extra informatie, zie [ het Prioriseren van Bronnen voor een Beeld ](https://docs.magento.com/user-guide/catalog/inventory-stock-priority.html).
+De voorraad wordt afgetrokken van de geselecteerde bron (detailhandel of e-commerce-entrepot). De bronnen die als e-commerce pakhuizen worden gebruikt moeten aan het zelfde dossier worden toegewezen zoals de opslagbestelplaats en voorrang gegeven vóór de detailhandelsplaatsen. Voor extra informatie, zie [ het Prioriseren van Bronnen voor een Beeld ](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-prioritize-sources).
 
 Raadpleeg de gebruikersdocumentatie van Adobe Commerce voor meer informatie over het beheer van voorraden, voorraden en bronnen:
 
-- [ het Leiden Inventaris ](https://docs.magento.com/user-guide/catalog/inventory-management.html)
+- [ het Leiden Inventaris ](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction)
 
-- [ het Leiden de Hoeveelheden van de Inventaris ](https://docs.magento.com/user-guide/catalog/inventory-manage-inventory-quantities.html)
+- [ het Leiden de Hoeveelheden van de Inventaris ](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/quantities/quantities-manage)
 
-- [ Beherend Voorraad ](https://docs.magento.com/user-guide/catalog/inventory-stock.html)
+- [ Beherend Voorraad ](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-manage)
 
-- [ het Leiden Bronnen ](https://docs.magento.com/user-guide/catalog/inventory-sources.html)
+- [ het Leiden Bronnen ](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/sources/sources-manage)
 
-- [ Prioritaire Bronnen voor een Voorraad ](https://docs.magento.com/user-guide/catalog/inventory-stock-priority.html)
+- [ Prioritaire Bronnen voor een Voorraad ](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-prioritize-sources)
 
-- [ Bulk Updates voor de Attributen van het Product ](https://docs.magento.com/user-guide/stores/bulk-product-attribute-update.html)
+- [ Bulk Updates voor de Attributen van het Product ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update)
 
 
 >[!IMPORTANT]

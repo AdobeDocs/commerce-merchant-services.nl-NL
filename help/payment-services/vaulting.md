@@ -3,7 +3,7 @@ title: Creditcard vauleren
 description: Klanten kunnen hun creditcardgegevens opslaan voor toekomstige aankopen.
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
 feature: Payments, Checkout
-source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '292'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Winkelaars gebruiken het opgeslagen token om een toekomstige afhandeling met hun
 
 ![ Opgeslagen geloofsbrieven van het Gebruik voor toekomstige aankoop ](assets/use-stored-card.png){width="400" zoomable="yes"}
 
-Zij kunnen hun gefactureerde creditcards van [ Opgeslagen Methoden van de Betaling ](https://docs.magento.com/user-guide/customers/account-dashboard-stored-payment-methods.html) in hun Mijn Rekening ook gemakkelijk schrappen.
+Zij kunnen hun gefactureerde creditcards van [ Opgeslagen Methoden van de Betaling ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/stored-payment-methods) in hun Mijn Rekening ook gemakkelijk schrappen.
 
 ![ Opgeslagen Methoden van de Betaling in Mijn Rekening ](assets/stored-payment-methods.png){width="400" zoomable="yes"}
 

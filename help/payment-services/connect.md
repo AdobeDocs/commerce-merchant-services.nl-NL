@@ -3,7 +3,7 @@ title: Uw instantie verbinden
 description: Sluit uw Commerce-instantie aan met behulp van een API-sleutel en een persoonlijke sleutel en geef de gegevensruimte op in de configuratie.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 feature: Payments, Checkout, Configuration, Saas
-source-git-commit: 5d3a89b2ef06b2c67ec715ce4f31f22249b336e0
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 0%
@@ -28,11 +28,11 @@ ht-degree: 0%
 
 ## API-referenties verkrijgen
 
-Om de dienst van Commerce te verbruiken SaaS, moet u API van uw instantie (de openbare sleutel van Commerce API en een privé sleutel) voor zowel zandbak als productie gebruiken, die worden gecreeerd en in uw [ Mijn Dashboard van de Rekening ](https://account.magento.com/customer/account/login) beheerd. [ het zeer belangrijke paar ](https://docs.magento.com/user-guide/configuration/services/saas.html) kan voor een rekening-voor zandbak van Commerce en voor productie-hoewel slechts één paar actief kunnen tegelijkertijd worden gebruikt.
+Om de dienst van Commerce te verbruiken SaaS, moet u API van uw instantie (de openbare sleutel van Commerce API en een privé sleutel) voor zowel zandbak als productie gebruiken, die worden gecreeerd en in uw [ Mijn Dashboard van de Rekening ](https://account.magento.com/customer/account/login) beheerd. [ het zeer belangrijke paar ](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas) kan voor een rekening-voor zandbak van Commerce en voor productie-hoewel slechts één paar actief kunnen tegelijkertijd worden gebruikt.
 
 >[!NOTE]
 >
->Hebt u hulp nodig bij het openen van uw [!UICONTROL My Account] dashboard? Zie [ een rekening van Commerce ](https://docs.magento.com/user-guide/magento/magento-account-create.html) creëren.
+>Hebt u hulp nodig bij het openen van uw [!UICONTROL My Account] dashboard? Zie [ een rekening van Commerce ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create) creëren.
 
 Een openbare API-sleutel is altijd beschikbaar op het dashboard voor Mijn account nadat deze is gemaakt. Het kan worden gekopieerd of worden geschrapt zoals nodig. De persoonlijke API-sleutel wordt zichtbaar wanneer u een openbare API-sleutel maakt voor de sandbox of productie. Deze sleutel kan alleen worden gekopieerd of opgeslagen vanuit het dialoogvenster dat verschijnt en kan later niet worden geopend.
 
@@ -40,7 +40,7 @@ Een gegeven API zeer belangrijk paar is geldig voor alle Diensten van Commerce i
 
 Als uw API sleutel wordt verloren, moet een nieuw API zeer belangrijk paar [ worden geproduceerd ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#generate-an-api-key-and-private-key) en [ worden toegepast ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#configure-saas-project) op de Configuratie van de Verbinding van de Diensten van Commerce in Admin. Als de verkeerde sleutels worden gevormd of niets in config bestaat, verschijnt een de foutendialoog van de rekeningscontrole in de Diensten die van de Betaling u op de hoogte brengen dat de rekening niet werd geverifieerd.
 
-Zie a [ lijst van de beschikbare Diensten van Commerce die API ](https://docs.magento.com/user-guide/system/saas.html#available-services) gebruiken.
+Zie a [ lijst van de beschikbare Diensten van Commerce die API ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas#availableservices) gebruiken.
 
 Leren hoe te om een API sleutel voor of zandbak of productiemilieu&#39;s te produceren, zie [ Geloofsbrieven ](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html#apikey).
 

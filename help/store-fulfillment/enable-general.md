@@ -4,7 +4,7 @@ description: Vorm algemene montages om  [!DNL Store Fulfillment]  voor uw opslag
 role: Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '2405'
 ht-degree: 0%
@@ -356,7 +356,7 @@ Configureer deze instellingen vanuit de beheerfunctie door <strong>[!UICONTROL S
 
 >[!NOTE]
 >
->Voor extra informatie over het vormen van in-opslag leveringsopties, zie [ In-Store Levering ](https://docs.magento.com/user-guide/shipping/shipping-in-store-delivery.html) in de _Gids van de Gebruiker van Adobe Commerce_.
+>Voor extra informatie over het vormen van in-opslag leveringsopties, zie [ In-Store Levering ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/delivery/basic-methods/shipping-in-store-delivery) in de _Gids van de Gebruiker van Adobe Commerce_.
 
 
 ### Configuratie van leveringsmethoden

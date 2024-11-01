@@ -5,7 +5,7 @@ role: Admin, Developer
 level: Intermediate
 feature: Shipping/Delivery, Install
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: 8999d63319f627e0b56a0ef5a881d25dbeaf648f
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 0%
@@ -36,17 +36,17 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 - **Toegang tot de Opslag die door het softwarearchief van de Technologieën van Commerce van het Spoor (.zip- dossier)** wordt ontvangen - tijdens het onboarding en enablement proces, werk met uw Manager van de Rekening om toegang tot het installatiedossier voor de uitbreiding van de Afhandeling van de Opslag te krijgen.
 
-- **de rekeningsinformatie van Adobe Commerce** - Installerend de [!DNL Store Fulfillment] oplossing vereist a [[!DNL Commerce]  rekening ](https://docs.magento.com/user-guide/magento/magento-account.html) {target="_blank"}. U hebt een account-id en gebruikersgegevens nodig met de toegang tot het [!DNL Adobe Commerce] -project door Eigenaar of Beheerder.
+- **de rekeningsinformatie van Adobe Commerce** - Installerend de [!DNL Store Fulfillment] oplossing vereist a [[!DNL Commerce]  rekening ](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create) {target="_blank"}. U hebt een account-id en gebruikersgegevens nodig met de toegang tot het [!DNL Adobe Commerce] -project door Eigenaar of Beheerder.
 
-- Voor [!DNL Adobe Commerce] in projecten met cloudinfrastructuur moeten softwareinstallatieprogramma&#39;s beheerderstoegang tot het Cloud-project hebben. Zie [ gebruikerstoegang beheren ](https://devdocs.magento.com/cloud/project/user-admin.html).
+- Voor [!DNL Adobe Commerce] in projecten met cloudinfrastructuur moeten softwareinstallatieprogramma&#39;s beheerderstoegang tot het Cloud-project hebben. Zie [ gebruikerstoegang beheren ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/user-access).
 
-- **Ervaring gebruikend Composer en[!DNL Commerce CLI]** - zie [ Algemene Installatie CLI ](https://devdocs.magento.com/extensions/install/) {target="_blank"} voor informatie over het gebruiken van deze hulpmiddelen om uitbreidingen op het [!DNL Adobe Commerce] platform te installeren en te beheren.
+- **Ervaring gebruikend Composer en[!DNL Commerce CLI]** - zie [ Algemene Installatie CLI ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions) {target="_blank"} voor informatie over het gebruiken van deze hulpmiddelen om uitbreidingen op het [!DNL Adobe Commerce] platform te installeren en te beheren.
 
 - **Ervaring die derdeuitbreidingen op Adobe Commerce** installeert - voor verwijzing, zie de documentatie van Adobe Commerce.
 
-   - [ installeer een uitbreiding voor een Adobe Commerce op de instantie van de wolkeninfrastructuur ](https://devdocs.magento.com/cloud/howtos/install-components.html#install-an-extension).
+   - [ installeer een uitbreiding voor een Adobe Commerce op de instantie van de wolkeninfrastructuur ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#install-an-extension).
 
-   - [ installeer een uitbreiding voor een Adobe Commerce op-gebouw instantie ](https://devdocs.magento.com/extensions/install/).
+   - [ installeer een uitbreiding voor een Adobe Commerce op-gebouw instantie ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions).
 
 ### Stap 1: De extensiesbundel downloaden
 
@@ -135,7 +135,7 @@ Verifieer bij de Adobe Commerce-server of de modules voor de extensie Store Fulf
 
 1. Log in bij de server.
 
-   Voor installaties op Adobe Commerce op wolkeninfrastructuur, [ gebruik SSH aan login aan het verre milieu ](https://devdocs.magento.com/cloud/env/environments-ssh.html#ssh).
+   Voor installaties op Adobe Commerce op wolkeninfrastructuur, [ gebruik SSH aan login aan het verre milieu ](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections#ssh).
 
 1. Verifieer dat de modules van de Diensten van de Afhandeling van de Opslag worden toegelaten.
 
