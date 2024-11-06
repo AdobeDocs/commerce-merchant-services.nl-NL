@@ -2,7 +2,7 @@
 title: 'Live zoeken instellen'
 description: De  [!DNL Live Search]  werkruimte wordt gebruikt om, onderzoeksprestaties te vormen te beheren en te controleren.
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
-source-git-commit: cacef0f205729fa4e05ec3c468594e1eaaf8c560
+source-git-commit: 7f536c93ab1c87bf88bc892b2a485067fa8f8110
 workflow-type: tm+mt
 source-wordcount: '949'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Aanvankelijk wordt het [ werkingsgebied ](https://experienceleague.adobe.com/doc
 | [ Synoniemen ](synonyms.md) | Breid het bereik van de zoekopdracht uit tot woorden die kopers kunnen gebruiken om producten te zoeken die afwijken van de producten in uw catalogus. |
 | [ Merchandising van het Onderzoek ](rules.md) | Vorm de onderzoekservaring met logische regels die geplande acties teweegbrengen. Verhoog, bury, speld, of verberg producten om onderzoeksresultaten te kalibreren om uw bedrijfsdoelstellingen te steunen. |
 | [ Merchandising van de Categorie ](category-merch.md) | Pas regels en Intelligent Merchandising op het niveau van de Categorie toe. |
-| [ GraphQL ](graphql.md) | Ontwikkelaars die zijn aangemeld bij de beheerder van uw winkel, kunnen query&#39;s samenstellen en testen met werkelijke catalogusgegevens. Meer leren, ga naar [ het Overzicht van GraphQL ](https://developer.adobe.com/commerce/webapi/graphql/) in de [!DNL Live Search] ontwikkelaarsdocumentatie. |
+| [ GraphQL ](graphql.md) | Ontwikkelaars die zijn aangemeld bij de beheerder van uw winkel, kunnen query&#39;s samenstellen en testen met werkelijke catalogusgegevens. Meer leren, ga naar [ het Overzicht van GraphQL ](https://developer.adobe.com/commerce/services/graphql/live-search/) in de [!DNL Live Search] ontwikkelaarsdocumentatie. |
 | [ Montages ](settings.md) | Bepaal hoe prijsfacetwaarden worden gegroepeerd op prijsbereik in de winkel en stel de indextaal in. |
 
 ## Kenmerken instellen als doorzoekbaar

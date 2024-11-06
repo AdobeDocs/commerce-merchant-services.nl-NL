@@ -3,7 +3,7 @@ title: Wat is  [!DNL Live Search]?
 description: "[!DNL Live Search] van Adobe Commerce biedt een snelle, relevante en intuïtieve zoekervaring."
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: ffbb41ef2bc940982b4acb33623ef689542617c1
+source-git-commit: 7f536c93ab1c87bf88bc892b2a485067fa8f8110
 workflow-type: tm+mt
 source-wordcount: '726'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Met [!DNL Live Search] kunt u:
 - Creëer zinvolle zoekervaringen om kopers te helpen bij het vinden van wat ze willen, zo weinig mogelijk.
 - Profiteer van dynamische facettering op basis van AI en herrangschikking van zoekresultaten als reactie op winkelgedrag tijdens een sessie.
 - Gebruik een eenvoudige SaaS-service die eenvoudige updates biedt en in uw licentie is opgenomen, waardoor de totale eigendomskosten dalen.
-- Krijg technisch door graphQL API, headless flexibiliteit, API zandbakmilieu&#39;s, en ultrasnelle SaaS toe te laten.
+- Zorg voor technische oplossingen door GraphQL API, flexibiliteit zonder kop, API-sandboxomgevingen en ultrasnelle SaaS in te schakelen.
 
 >[!IMPORTANT]
 >

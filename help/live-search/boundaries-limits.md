@@ -3,9 +3,9 @@ title: "Grens en grenzen"
 description: Leer over de grenzen en de grenzen voor  [!DNL Live Search]  om ervoor te zorgen het aan de behoeften van uw zaken voldoet.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: c01c0480d9452e52ebf7e31e6a5d81c26c0a8234
+source-git-commit: 438d6a04cb0044f9e06f8c8b53c8eec79d650170
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '935'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,7 @@ Adobe Commerce biedt opties voor het zoeken naar sites. Controleer de volgende g
 - Dynamische facetten kunnen prestatieproblemen veroorzaken in grote indexen en indexen met hoge rangorde. Als u dynamische facetten hebt gemaakt en u merkt dat de prestaties achteruitgaan of dat de pagina niet wordt geladen met time-outfouten, kunt u proberen uw facetten te wijzigen in vastgezet om te bepalen of dat het prestatieprobleem verhelpt.
 - De voorraadstatus (`quantity_and_stock_status`) wordt niet ondersteund als facet. U kunt `inStock: 'true'` gebruiken om te filteren uit aandelenproducten. Dit wordt vanuit het vak in de module `LiveSearchAdapter` ondersteund wanneer &quot;Display out of stock products&quot; is ingesteld op &quot;True&quot; in [!DNL Commerce] Admin.
 - Datumtypekenmerken worden niet als facet ondersteund.
+- Wijzigingen die worden aangebracht in de metagegevens van het kenmerk nadat dat kenmerk als een facet is toegevoegd, worden niet doorgevoerd in het facet.
 
 ## Query
 

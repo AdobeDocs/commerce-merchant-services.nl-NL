@@ -2,9 +2,9 @@
 title: Filterproducten
 description: Bepaal voorwaarden die of producten van worden gebruikt als aanbevelingen omvatten of uitsluiten.
 exl-id: baab28ff-b529-4cbc-adb7-4fa225e87d4a
-source-git-commit: e42b9524fb2e8518576935bc0cd378eca9a579c5
+source-git-commit: 0d6e935fc5812efd7d3359a4fa242f8d5d85043e
 workflow-type: tm+mt
-source-wordcount: '748'
+source-wordcount: '749'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ Productfilters geven aan welke specifieke producten in aanmerking komen of niet 
 
 ### Type
 
-Een filter op basis van het producttype omvat of sluit alle producten van een specifiek type uit. De gesteunde types omvatten _Eenvoudig_, _Configurable_, _Virtueel_, _Downloadbaar_, of _Cadeaukaart_. _Bundel_ en _Gegroepeerde_ producten worden nog niet gesteund.
+Een filter op basis van het producttype omvat of sluit alle producten van een specifiek type uit. De gesteunde types omvatten _eenvoudig_, _configureerbaar_, _virtueel_, _downloadbaar_, of _geschenkkaart_. _Bundel_, _gegroepeerde_, en de types van douaneproduct worden niet gesteund.
 
 ### Zichtbaarheid
 

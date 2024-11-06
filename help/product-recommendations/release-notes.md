@@ -3,9 +3,9 @@ title: '[!DNL Product Recommendations] Opmerkingen bij de release'
 description: De recentste versieinformatie voor  [!DNL Product Recommendations]  van Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 6f31361e95b17ee3fa19ff3c2f4a7e2d6d9bc091
+source-git-commit: 0e0f67c01c49c8d8c0ac4967eda0bde8685b2980
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1410'
 ht-degree: 0%
 
 ---
@@ -45,6 +45,15 @@ _25 April, 2023_
 ![ Nieuwe ](../assets/new.svg) [!DNL Product Recommendations] klanten kunnen uit [ prijs nu voordeel halen SaaS indexerend ](../price-index/price-indexing.md).
 
 ## Huidige hoofdversie
+
+### 6.0.3 van de aanbevelingen voor magento/product
+
+_6 November, 2024_
+
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
+
+![ beval ](../assets/fix.svg) een kwestie vast waar de [ categoriefilter ](filters.md#category) categorieën omvatte die niet tot de huidige storeview behoorden.
+![ bevestig ](../assets/fix.svg) een gebiedsdeelkwestie in het `magento/product-recommendations` metapakket.
 
 ### 6.0.2 van magento/productaanbevelingen
 

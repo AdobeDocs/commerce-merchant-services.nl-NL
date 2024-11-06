@@ -2,9 +2,9 @@
 title: Nieuwe aanbeveling maken
 description: Leer hoe u een product aanbevelingseenheid kunt maken.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 0b651189184a107dec8452d5b0d588f52d689605
+source-git-commit: 0d6e935fc5812efd7d3359a4fa242f8d5d85043e
 workflow-type: tm+mt
-source-wordcount: '1457'
+source-wordcount: '1497'
 ht-degree: 0%
 
 ---
@@ -158,6 +158,10 @@ Het percentage van de gereedheidsindicator voor aanbevolen typen die afhankelijk
 #### Wat moet u doen als het percentage gereedheidsindicator laag is
 
 Een laag gereedheidspercentage geeft aan dat er niet veel producten uit uw catalogus zijn die in aanmerking komen om te worden opgenomen in de aanbevelingen voor dit soort aanbevelingen. Dit betekent dat er een hoge waarschijnlijkheid is dat [ reserveaanbevelingen ](events.md#backuprecs) zijn teruggekeerd als u dit aanbevelingstype hoe dan ook opstelt.
+
+>[!IMPORTANT]
+>
+>_Bundel_, _gegroepeerde_, en de types van douaneproduct worden niet gesteund. Als uw catalogus een groot aantal van deze producttypen bevat, kunt u een lage gereedheidsscore verwachten. Bovendien, om het even welke SKUs met ruimten kan aanbeveling relevantie verminderen en zou moeten worden vermeden.
 
 In het volgende voorbeeld worden mogelijke redenen en oplossingen voor algemene lage gereedheidsscores weergegeven:
 

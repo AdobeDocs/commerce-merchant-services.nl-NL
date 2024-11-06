@@ -3,9 +3,9 @@ title: "[!DNL Live Search] Opmerkingen bij de release"
 description: "De recentste versieinformatie voor  [!DNL Live Search]  van Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: a68fe02be6e207b323d600910cba62992edd6725
+source-git-commit: 7f536c93ab1c87bf88bc892b2a485067fa8f8110
 workflow-type: tm+mt
-source-wordcount: '2046'
+source-wordcount: '2042'
 ht-degree: 0%
 
 ---
@@ -319,9 +319,9 @@ Bestaande [!DNL Live Search] -installaties moeten worden bijgewerkt naar [!DNL L
 
 [!BADGE  Gesteund ]{type="Informatief" tooltip="Ondersteund"}
 
-](../assets/fix.svg) herstellen [ ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types) keert de prijsattributen van de Douane niet meer een fout terug wanneer gevormd als a [ facet ] ({% verbinding live-search/facets-add.md %).
+](../assets/fix.svg) herstellen [ ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types) keert de prijsattributen van de Douane niet meer een fout terug wanneer gevormd als a [ facet ](facets-add.md).
 ![
-![ bevestig ](../assets/fix.svg) Vaste kwestie die een fout veroorzaakte om voor te komen wanneer geen [ muntsymbool ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration(optional)) (`data-currency-symbol`) beschikbaar is.
+![ bevestig ](../assets/fix.svg) Vaste kwestie die een fout veroorzaakte om voor te komen wanneer geen [ muntsymbool ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration#step-5-customize-currency-symbols-optional) (`data-currency-symbol`) beschikbaar is.
 ![ Repareren ](../assets/fix.svg) [[!DNL Storefront popover]](storefront-popover.md) toont nu de [ Speciale Prijs ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) (minimumdefinitieve prijs) wanneer beschikbaar.
 
 ### [!DNL Live Search] 1.3.0 {#130}

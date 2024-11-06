@@ -3,9 +3,9 @@ title: '[!DNL Live Search] Gebeurtenissen'
 description: Leer hoe de gebeurtenissen gegevens voor  [!DNL Live Search] verzamelen.
 feature: Services, Eventing
 exl-id: b0c72212-9be0-432d-bb8d-e4c639225df3
-source-git-commit: f771e741d92bf94f46772934edf7a6bc39c75999
+source-git-commit: e1bf54b9fde42746a8c2f75253cbb3730821fb8c
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Sommige gebeurtenissen worden vereist om het [ Levende dashboard van het Onderzo
 | Zoekopdrachten met nulresultaten | `page-view`, `search-request-sent`, `search-response-received` | `searchRequestId` |
 | Resultaatsnelheid nul | `page-view`, `search-request-sent`, `search-response-received` | `searchRequestId` |
 | Populaire zoekopdrachten | `page-view`, `search-request-sent`, `search-response-received` | `searchRequestId` |
-| Gem. klikpositie | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click` | searchRequestId |
+| Gem. klikpositie | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click` | `searchRequestId` |
 | Doorklikfrequentie | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click` | `searchRequestId`, `sku`, `parentSku` |
 | Omrekeningskoers | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click`, `product-view`, `add-to-cart`, `place-order` | `searchRequestId`, `sku`, `parentSku` |
 

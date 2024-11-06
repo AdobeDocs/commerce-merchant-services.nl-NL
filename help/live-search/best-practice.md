@@ -2,9 +2,10 @@
 title: '[!DNL Live Search] Aanbevolen werkwijzen'
 description: Leer de beste praktijken voor het uitvoeren van  [!DNL Live Search]  in uw opslag.
 role: Admin, Developer
-source-git-commit: 77d12a1294c87089ce806615f92bf89396bfc43b
+exl-id: 69b2c2a6-c8a9-4640-8d2b-08fcd7a96034
+source-git-commit: 834935abc55e21863c83e82dae8ec79e70e67220
 workflow-type: tm+mt
-source-wordcount: '2349'
+source-wordcount: '2359'
 ht-degree: 0%
 
 ---
@@ -137,7 +138,7 @@ Meer informatie over zoekregels:
 
 ### Productmetagegevens gebruiken
 
-Zorg ervoor dat de nauwkeurige en gedetailleerde productattributen [ opstelling als zoekbaar ](workspace.md#set-attributes-as-searchable) zijn. SKU-, naam- en categoriekenmerken kunnen standaard worden doorzocht en kunnen niet worden uitgesloten van de zoekopdracht. 
+Zorg ervoor dat de nauwkeurige en gedetailleerde productattributen [ opstelling als zoekbaar ](workspace.md#set-attributes-as-searchable) zijn. SKU-, naam- en categoriekenmerken kunnen standaard worden doorzocht en kunnen niet worden uitgesloten van de zoekopdracht. U bereikt de beste resultaten als u geen spaties gebruikt in uw SKU&#39;s.
 
 Om zoekrelevantie te vergroten, wijst u een gewicht toe aan elk doorzoekbaar kenmerk. Kenmerken met een hogere dikte moeten in de zoekresultaten hoger worden weergegeven. Sorteren op relevantie wordt beïnvloed door meerdere criteria, zoals zoekgewicht. Dit betekent dat kenmerken met een lager zoekgewicht soms nog relevanter kunnen zijn dan kenmerken met een hoger zoekgewicht. Andere criteria kunnen het aantal overeenkomsten in een bepaald kenmerk, de positie van de gevonden zoekterm en de algemene tekststructuur vóór en na een zoekterm bevatten.
 
