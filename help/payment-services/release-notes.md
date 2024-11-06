@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Opmerkingen bij de release"
 description: Herzie de versienota's voor informatie over alle  [!DNL Payment Services]  versies.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
+source-git-commit: f48a177f53c88d1794683d08976ca6c88031fb93
 workflow-type: tm+mt
-source-wordcount: '3017'
+source-wordcount: '3174'
 ht-degree: 0%
 
 ---
@@ -90,6 +90,24 @@ _Juni 28, 2021_
 ![ Nieuw ](../assets/new.svg)<!-- Issue PAY-2761 --> U kunt de gegevens nu aanpassen die in het [ rapport van de de betalingsstatus van de Orde ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) en het [ rapport van Uitbetalingen ](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) door kolommen te tonen of te verbergen gebruikend de de montagecontrole van de Kolom tonen.
 
 +++
+
+## v2.9.0
+
+_7 November, 2024_
+
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
+
+![ Nieuw ](../assets/new.svg)<!-- PAY-5629 --> [!DNL Payment Services] steunt nu een **bijgewerkte SDK URL voor Apple Betalen**, die de integratie voor verkopers verbeteren gebruikend Apple Betalen. Deze functie is compatibel met macOS 14 en hoger. Apparaten met eerdere versies van macOS geven deze functionaliteit niet weer.
+
+![ Nieuw ](../assets/new.svg)<!-- PAY-5630 --> werkte de **Controle** bij, **Product**, **Kaart**, en **MiniCart** pagina&#39;s om **promoot SDK URL voor Apple Betalen**, verbeterend de gebruikerservaring voor handelaren die Apple als betalingsoptie aanbieden.
+
+![ Nieuwe ](../assets/new.svg)<!-- PAY-5635 --> Verbeterde verzendingsramingen **die op het adres van het Betalen van Apple** worden gebaseerd, die klanten toestaan om nauwkeurige verzendkosten tijdens controle te bekijken.
+
+](../assets/fix.svg)<!-- PAY-5661 --> Vaste diverse **[!DNL Payment Services]kwesties ![ herstellen bij controle**, die de betrouwbaarheid van het betalingsproces voor handelaren en kopers verbeteren.
+
+![ bevestig ](../assets/fix.svg)<!-- PAY-5692 --> een kwestie waar de **eerste en laatste namen van de klant** niet aan de orde werden toegevoegd wanneer het gebruiken van **slimme knopen voor uitdrukkelijke controle**.
+
+![ bevestig ](../assets/fix.svg)<!-- PAY-5712 --> een kwestie opgelost waar de handelaren **niet uitchecken konden voltooien gebruikend de Nul Subtotal de betalingsoptie van de Uitbetaling** toen het totale bedrag vrij was.
 
 ## v2.8.1
 
