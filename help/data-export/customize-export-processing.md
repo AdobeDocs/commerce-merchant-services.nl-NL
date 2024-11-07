@@ -3,7 +3,7 @@ title: De exportprestaties van SaaS-gegevens verbeteren
 description: Leer hoe te om de prestaties van de gegevensuitvoer van SaaS voor de Diensten van Commerce te verbeteren door de multi-thread wijze van de gegevensuitvoer te gebruiken.
 role: Admin, Developer
 exl-id: 20c81ef4-5a97-45cd-9401-e82910a2ccc3
-source-git-commit: b80bc2867f44e6123adb104eb148ac5e8f80b63d
+source-git-commit: 6f67ea717595fe517d751ae14bf8123c7d05831b
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 0%
@@ -41,8 +41,8 @@ Herinner dat de doordachte planning, met inbegrip van het schatten van gegevensv
 
 De multithread wijze wordt gesteund voor al [ synchronisatiemethodes ](data-synchronization.md#synchronization-process) - volledige synchronisatie, gedeeltelijke synchronisatie, en ontbroken puntensynchronisatie. Om multi-threading te vormen, specificeert u het aantal draden en partijgrootte om tijdens synchronisatie te gebruiken.
 
-- `threadCount` is het aantal threads dat is geactiveerd om entiteiten te verwerken. De standaardwaarde `threadCount` is `1` .
-- `batchSize` is het aantal entiteiten dat in één herhaling wordt verwerkt. De standaardwaarde `batchSize` is `100` records voor alle feeds behalve de prijsfeed. De standaardwaarde voor de prijsfeed is `500` records.
+- `thread-count` is het aantal threads dat is geactiveerd om entiteiten te verwerken. De standaardwaarde `thread-count` is `1` .
+- `batch-size` is het aantal entiteiten dat in één herhaling wordt verwerkt. De standaardwaarde `batch-size` is `100` records voor alle feeds behalve de prijsfeed. De standaardwaarde voor de prijsfeed is `500` records.
 
 U kunt multi-threading als tijdelijke optie vormen wanneer het runnen van een resync bevel, of door de multi-draadconfiguratie aan de de toepassingsconfiguratie van Adobe Commerce toe te voegen.
 
@@ -52,10 +52,10 @@ U kunt multi-threading als tijdelijke optie vormen wanneer het runnen van een re
 
 ### Multithreading tijdens runtime configureren
 
-Wanneer u een volledige synchronisatieopdracht uitvoert vanaf de opdrachtregel, geeft u de verwerking met meerdere verbindingen op door de opties `threadCount` en `batchSize` toe te voegen aan de CLI-opdracht.
+Wanneer u een volledige synchronisatieopdracht uitvoert vanaf de opdrachtregel, geeft u de verwerking met meerdere verbindingen op door de opties `thread-count` en `batch-size` toe te voegen aan de CLI-opdracht.
 
 ```
-bin/magento saas:resync --feed=products --threadCount=2 --batchSize=200
+bin/magento saas:resync --feed=products --thread-count=2 --batch-size=200
 ```
 
 De opties op de opdrachtregel overschrijven de configuratie voor gegevensexport die is opgegeven in het Adobe Commerce-toepassingsbestand `config.php` .
