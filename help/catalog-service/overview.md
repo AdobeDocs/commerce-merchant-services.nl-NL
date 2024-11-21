@@ -2,10 +2,11 @@
 title: '[!DNL Catalog Service]'
 description: "[!DNL Catalog Service] voor Adobe Commerce verstrekt een manier om de inhoud van de Pagina's van de Vertoning van het Product en de Pagina's van de Lijst van het Product veel sneller terug te winnen dan de inheemse GraphQL vragen van Adobe Commerce."
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
+role: Admin, Developer
 recommendations: noCatalog
-source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
+source-git-commit: 06ef294d2670e5d36bbb6cd18deafce2cc751772
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '1078'
 ht-degree: 0%
 
 ---
@@ -61,6 +62,14 @@ Het schema vermindert de diversiteit van producttypen tot twee gebruiksgevallen:
 * Complexe producten bestaan uit meerdere eenvoudige producten. De componenten eenvoudige producten kunnen verschillende prijzen hebben. Een complex product kan ook worden bepaald zodat de verkoopster de hoeveelheid componenten eenvoudige producten kan specificeren. De Catalogusservice wijst de configureerbare, bundel- en gegroepeerde producttypen toe aan `complexProductViews` .
 
 Complexe productopties worden verenigd en onderscheiden door hun gedrag, niet door type. Elke optiewaarde vertegenwoordigt een eenvoudig product. Deze optie heeft toegang tot de eenvoudige productkenmerken, inclusief prijs. Wanneer de verkoper alle opties voor een complex product selecteert, wijst de combinatie geselecteerde opties naar een specifiek eenvoudig product. Het eenvoudige product blijft dubbelzinnig totdat de gebruiker een waarde voor alle beschikbare opties selecteert.
+
+#### Kenmerken van de productweergave
+
+Zowel hebben de eenvoudige als de complexe producten klant-bepaalde attributen die op de winkelfront kunnen worden getoond. Deze attributen zijn teruggekeerd als [ ProductViewAttributes ](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/#productviewattribute-type). In Adobe Commerce worden de beschikbare kenmerken gedefinieerd wanneer het product wordt gemaakt. U kunt aanvullende kenmerken toevoegen vanuit de Adobe Commerce-backend of via programmacode. Zie [ de gegevens van de de uitvoervoer van SaaS uitbreiden en aanpassen ](../data-export/extensibility-and-customizations.md).
+
+>[!TIP]
+>
+>In plaats van het toevoegen van gegevenstypes aan de Commerce achterkant, kunt u [ API Net met de Dienst van de Catalogus gebruiken ](mesh.md) om het schema van GraphQL van de Dienst van de Catalogus uit te breiden om gegevens toe te voegen of bestaande catalogusgegevens te vormen om nieuwe functionaliteit toe te laten.
 
 ### Prijzen
 
