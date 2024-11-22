@@ -4,9 +4,9 @@ description: Leer hoe u uw Adobe Commerce- of Magento Open Source-instantie inte
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
+source-git-commit: daad5bb1ce74126d727207812abebdcf0cbf72c0
 workflow-type: tm+mt
-source-wordcount: '1259'
+source-wordcount: '1304'
 ht-degree: 0%
 
 ---
@@ -118,6 +118,10 @@ Als u een SaaS-project wilt selecteren of maken, vraagt u de API-sleutel [!DNL C
 Om het even welke projecten SaaS die met uw sleutels worden geassocieerd verschijnen op het **1} gebied van het Project {in de** **sectie van het Herkenningsteken SaaS.**
 
 1. Als geen projecten SaaS bestaan, leidt de klik **tot Project**. Dan op het **gebied van het Project**, ga een naam voor uw project SaaS in.
+
+>[!NOTE]
+>
+>Om verwarring te vermijden, gebruik geen specifieke Dienst van Commerce als naam voor uw project, bijvoorbeeld *Levend Onderzoek*, *Recommendations van het Product*, of *Verbinding van Gegevens*.  Tenzij uw vergunning voor veelvoudige projecten SaaS is provisioned, kunt u het zelfde project SaaS voor de veelvoudige diensten gebruiken.
 
 1. Selecteer de **Ruimte van Gegevens** voor de huidige configuratie van uw [!DNL Commerce] opslag te gebruiken.
 
