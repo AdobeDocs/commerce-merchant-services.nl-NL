@@ -1,15 +1,15 @@
 ---
-title: Productkenmerken programmatisch toevoegen aan de Data Exporter-feed
-description: Leer hoe te om de attributen van het douaneproduct aan de  [!DNL SaaS Data Export]  voedergegevens toe te voegen.
+title: Productkenmerken dynamisch toevoegen
+description: Leer hoe u tijdens het synchronisatieproces van gegevens dynamisch aangepaste productkenmerken kunt toevoegen aan de functie voor het exporteren van gegevens.
 role: Admin, Developer
-source-git-commit: 06ef294d2670e5d36bbb6cd18deafce2cc751772
+source-git-commit: e75092e918d06d4d1291784b0498d274ea8396e8
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '281'
 ht-degree: 0%
 
 ---
 
-# Productkenmerken programmatisch toevoegen aan de Data Exporter-feed
+# Productkenmerken dynamisch toevoegen tijdens gegevenssynchronisatie
 
 U kunt productkenmerken uitbreiden zonder ze in Adobe Commerce te registreren door een plug-in te maken om de kenmerken toe te voegen tijdens het proces voor gegevenssynchronisatie.
 
