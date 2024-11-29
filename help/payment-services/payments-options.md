@@ -3,9 +3,9 @@ title: Betalingsopties
 description: Stel de betalingsopties in om de beschikbare methoden voor uw winkelklanten aan te passen.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 5c4fe370507e4154d4495d4c09e2ff8705e53191
+source-git-commit: 17c8d16a2593f7bb6015f5b2968fc4c67be8ed5b
 workflow-type: tm+mt
-source-wordcount: '1150'
+source-wordcount: '1174'
 ht-degree: 0%
 
 ---
@@ -58,9 +58,11 @@ Klanten kunnen [[!DNL Apple Pay] gebruiken ](https://www.apple.com/apple-pay/), 
 
 De knop [!DNL Apple Pay] is zichtbaar vanaf de productpagina, de miniwinkelwagentje, het winkelwagentje en de afrekenweergave.
 
+Om [!DNL Apple Pay] voor uw opslag te gebruiken, volledig [ zelfregistratie met  [!DNL Apple Pay] ](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_registreer uw levende domein_ sectie slechts) en [ vormt het voor uw opslag in  [!DNL Payment Services]](settings.md#payment-buttons).
+
 >[!NOTE]
 >
-> Om [!DNL Apple Pay] voor uw opslag te gebruiken, volledig [ zelfregistratie met  [!DNL Apple Pay] ](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_registreer uw levende domein_ sectie slechts) en [ vormt het voor uw opslag in  [!DNL Payment Services]](settings.md#payment-buttons).
+> Zie [ geavanceerde controle ](https://www.paypal.com/us/cshelp/article/what-is-paypal-advanced-checkout-and-how-do-i-get-started-help953) {target=_blank} in de ontwikkelaarsdocumentatie PayPal om te controleren hoe te om kopers toe te laten om met Apple te betalen op uw plaats te betalen.
 
 U kunt [!UICONTROL Apple Pay] configureren in de winkelconfiguratie of in de startpagina van de betalingsservices. Zie [ Montages ](settings.md#apple-pay) voor meer informatie.
 

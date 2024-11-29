@@ -4,9 +4,9 @@ description: Beoordeel de beveiligings- en compatibiliteitsvereisten voor uw sit
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
 feature: Payments, Checkout, Compliance
 redirect_from: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html
-source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
+source-git-commit: 17c8d16a2593f7bb6015f5b2968fc4c67be8ed5b
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '571'
 ht-degree: 0%
 
 ---
@@ -41,13 +41,16 @@ PCI 3-D Secure (3DS) maakt kopersverificatie mogelijk met hun creditcardmaatscha
 
 Als u een handelaar binnen de EU of Groot-Brittannië bent waar de 3DS naleving wordt vereist, moet u 3DS (het is `Off` door gebrek) manueel aanzetten in [ Montages ](settings.md#credit-card-fields).
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >Het 3DS vereiste is op transacties van toepassing waar de zaken en de bank van kaarthouders in [ Europese Economische Ruimte ](https://www.efta.int/eea) (EEA) en Groot-Brittannië gevestigd zijn. Handelaren in de Verenigde Staten hebben geen 3DS nodig, maar kunnen deze desgewenst inschakelen voor hun transacties.
 
 Orders die door het bedrijfs-/winkelpersoneel voor de koper worden geplaatst, zijn niet geconfigureerd met 3DS-compatibiliteitsmaatregelen.
 
-Zie [ 3DS in Montages ](settings.md#3ds) voor meer informatie.
+>[!MORELIKETHIS]
+>
+> * Zie [ 3DS in montages ](settings.md#3ds) voor meer informatie.
+> * Zie [ testkaarten ](https://developer.paypal.com/docs/checkout/advanced/customize/3d-secure/test/) in de ontwikkelaarsdocumentatie van PayPal voor meer informatie over specifieke creditcards voor het testen 3DS.
 
 ### Kaart vauleren
 
@@ -65,7 +68,9 @@ PayPal heeft ook geïntegreerde fraudebescherming die computerleren gebruikt om 
 
 ## Fraudebescherming
 
-U kunt geautomatiseerde fraudebescherming voor de Diensten van de Betaling met de [ Ondertekenende uitbreiding ](https://commercemarketplace.adobe.com/signifyd-module-connect.html) toelaten.
+U kunt geautomatiseerde fraudebescherming voor de Diensten van de Betaling met de [ Ondertekenende uitbreiding ](https://commercemarketplace.adobe.com/signifyd-module-connect.html) toelaten. Zie [ Ondertekenende fraudebescherming ](fraud-protection.md) voor meer informatie.
 
-Zie [ Ondertekenende fraudebescherming ](fraud-protection.md) voor meer informatie.
+PayPal verstrekt andere opties voor [ fraudebescherming ](https://www.paypal.com/us/cshelp/article/what-is-fraud-protection-help1014) {target=_blank} in hun ontwikkelaarsdocumentatie:
 
+* Zie [ geavanceerde fraudebescherming ](https://www.paypal.com/us/enterprise/fraud-protection-advanced#fraud-protection-advanced) {target=_blank} voor meer informatie.
+* Zie [ de bescherming van de Woordenbelasting ](https://www.paypal.com/us/cshelp/article/what-is-chargeback-protection-help608) {target=_blank} voor meer informatie.
