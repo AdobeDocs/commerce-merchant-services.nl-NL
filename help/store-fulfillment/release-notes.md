@@ -1,6 +1,6 @@
 ---
 title: '[!DNL Store Fulfillment by Walmart Commerce Technologies] Opmerkingen bij de release'
-description: "Herzie de versienota's voor informatie over alle  [!DNL Store Fulfillment by Walmart Commerce Technologies]  versies."
+description: Herzie de versienota's voor informatie over alle  [!DNL Store Fulfillment by Walmart Commerce Technologies]  versies.
 role: Admin, User, Leader
 feature: Shipping/Delivery, Release Notes
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0

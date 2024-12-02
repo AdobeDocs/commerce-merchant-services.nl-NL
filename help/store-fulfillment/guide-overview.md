@@ -1,6 +1,6 @@
 ---
 title: '[!DNL Store Fulfillment] Overzicht van hulplijnen'
-description: "Uitgebreide informatie over  [!DNL Store Fulfillment]  voor de beheerders van Adobe Commerce, met inbegrip van installatie en onboarding."
+description: Uitgebreide informatie over  [!DNL Store Fulfillment]  voor de beheerders van Adobe Commerce, met inbegrip van installatie en onboarding.
 seo-title: Adobe Commerce Store Fulfillment Guide
 seo-description: Describes how to use [!DNL Store Fulfillment by Walmart Commerce Technologies] services with Adobe Commerce.
 recommendations: noDisplay

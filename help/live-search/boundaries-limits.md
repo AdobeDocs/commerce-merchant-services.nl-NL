@@ -1,5 +1,5 @@
 ---
-title: "Grens en grenzen"
+title: Grenzen en grenzen
 description: Leer over de grenzen en de grenzen voor  [!DNL Live Search]  om ervoor te zorgen het aan de behoeften van uw zaken voldoet.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53

@@ -1,6 +1,6 @@
 ---
-title: "Typen factoren"
-description: "[!DNL Live Search] de facetten zijn dynamisch, en verschijnen in de lijst van Filters wanneer relevant."
+title: Typen factoren
+description: '[!DNL Live Search] -facetten zijn dynamisch en verschijnen in de lijst met filters, indien van toepassing.'
 exl-id: 49fb7609-64b3-4ae8-928d-54c99032d919
 source-git-commit: ffbb41ef2bc940982b4acb33623ef689542617c1
 workflow-type: tm+mt

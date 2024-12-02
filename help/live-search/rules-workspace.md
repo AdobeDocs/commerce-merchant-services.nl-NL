@@ -1,6 +1,6 @@
 ---
-title: "Search Merchandising Workspace"
-description: "Leer je weg rond de werkruimte Zoeken en verwisselen."
+title: Zoeken in Merchandising Workspace
+description: Leer hoe u de werkruimte Zoeken/Wijzigen gebruikt.
 exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
 source-git-commit: 52be82fa080474d6df81fd16d1655a421771e5e2
 workflow-type: tm+mt

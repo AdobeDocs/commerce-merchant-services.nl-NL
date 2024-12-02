@@ -1,6 +1,6 @@
 ---
 title: Financiële verslaggeving
-description: "[!DNL Payment Services] biedt uitgebreide rapportering zodat u een duidelijk beeld kunt krijgen van de bestellingen en betalingen van uw winkel."
+description: '[!DNL Payment Services] biedt uitgebreide rapportage zodat u een duidelijk beeld krijgt van de bestellingen en betalingen van uw winkel.'
 role: User
 feature: Payments, Checkout
 level: Intermediate

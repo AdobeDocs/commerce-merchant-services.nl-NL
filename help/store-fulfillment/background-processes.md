@@ -1,6 +1,6 @@
 ---
 title: Configuratie achtergrondproces
-description: "Vorm de programma's voor  [!DNL Store Fulfillment]  achtergrondprocessen die in het synchroniseren van gegevens met de uitvoeringsdiensten worden gebruikt."
+description: Vorm de programma's voor  [!DNL Store Fulfillment]  achtergrondprocessen die in het synchroniseren van gegevens met de uitvoeringsdiensten worden gebruikt.
 role: Admin, Developer
 level: Intermediate
 exl-id: 742ae59e-77a0-4db6-b156-2992d4403be7

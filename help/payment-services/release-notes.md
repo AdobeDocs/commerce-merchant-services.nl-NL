@@ -1,5 +1,5 @@
 ---
-title: "[!DNL Payment Services] Opmerkingen bij de release"
+title: '[!DNL Payment Services] Opmerkingen bij de release'
 description: Herzie de versienota's voor informatie over alle  [!DNL Payment Services]  versies.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes

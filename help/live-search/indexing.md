@@ -1,6 +1,6 @@
 ---
-title: "Indexing"
-description: "Leer hoe  [!DNL Live Search]  de eigenschappen van het productattribuut van indexen."
+title: Indexeren
+description: Leer hoe  [!DNL Live Search]  de eigenschappen van het productattribuut van indexen.
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
 source-git-commit: 2833b723845312fe657b29024b9d715ee07d5a1e
 workflow-type: tm+mt

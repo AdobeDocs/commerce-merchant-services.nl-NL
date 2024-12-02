@@ -1,6 +1,6 @@
 ---
-title: "Search Merchandising"
-description: "[!DNL Live Search] de koopwaar regels combineren logica met acties om de het winkelen ervaring te vormen."
+title: Merchandising zoeken
+description: In [!DNL Live Search] worden logica en acties gecombineerd om de winkelervaring vorm te geven.
 exl-id: d06a3040-6987-4813-90ae-2f7b3ad0b232
 source-git-commit: 2b0ca3f5a68e75ef4b4e71ac7705b17534e16845
 workflow-type: tm+mt

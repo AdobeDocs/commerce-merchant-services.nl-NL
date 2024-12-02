@@ -1,6 +1,6 @@
 ---
-title: "Synoniemen"
-description: "[!DNL Live Search] Synoniemen breiden vragen uit met woorden die van die in uw catalogus verschillen."
+title: Synoniemen
+description: '[!DNL Live Search] Met synoniemen worden query''s uitgevouwen met woorden die afwijken van die in de catalogus.'
 exl-id: f2b7c5fb-f009-4834-baff-06e8ed7be7e5
 source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt

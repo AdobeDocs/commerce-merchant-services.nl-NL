@@ -1,6 +1,6 @@
 ---
-title: "Aan de slag met  [!DNL Live Search]"
-description: "Leer de systeemvereisten en installatiestappen voor  [!DNL Live Search]  van Adobe Commerce."
+title: Aan de slag met  [!DNL Live Search]
+description: Leer de systeemvereisten en installatiestappen voor  [!DNL Live Search]  van Adobe Commerce.
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
 source-git-commit: 89dd5ae305563e5f6bbcdb80764fd9eeb177b491

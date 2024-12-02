@@ -1,7 +1,7 @@
 ---
-user-guide-title: "[!DNL Data Export] Guide for SaaS Services"
-user-guide-description: "Deze gids verstrekt gedetailleerde instructies voor het gebruiken van de  [!DNL Data Export]  uitbreiding voor de diensten van Adobe Commerce SaaS."
-breadcrumb-title: "[!DNL Data Export] Guide for SaaS Services"
+user-guide-title: '[!DNL Data Export] Guide for SaaS Services'
+user-guide-description: Deze gids verstrekt gedetailleerde instructies voor het gebruiken van de  [!DNL Data Export]  uitbreiding voor de diensten van Adobe Commerce SaaS.
+breadcrumb-title: '[!DNL Data Export] Guide for SaaS Services'
 role: Admin
 feature: Services
 source-git-commit: 06ef294d2670e5d36bbb6cd18deafce2cc751772

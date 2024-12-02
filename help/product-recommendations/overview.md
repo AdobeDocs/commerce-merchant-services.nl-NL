@@ -1,6 +1,6 @@
 ---
 title: Inleiding tot  [!DNL Product Recommendations]
-description: "[!DNL Product Recommendations] is een krachtig marketing hulpmiddel dat u kunt gebruiken om omzettingen te verhogen, opbrengst te verhogen, en winkelbetrokkenheid te stimuleren."
+description: '[!DNL Product Recommendations] is een krachtig marketinginstrument dat u kunt gebruiken om conversies te verhogen, de inkomsten te verhogen en de betrokkenheid van klanten te stimuleren.'
 exl-id: 818ac876-58c9-4c68-975e-53da59ed6b52
 recommendations: noCatalog
 source-git-commit: 289ac6ac464955f18f3a2448099ad459e6264941

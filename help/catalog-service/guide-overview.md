@@ -1,6 +1,6 @@
 ---
 title: '[!DNL Catalog Service] Overzicht van hulplijnen'
-description: "[!DNL Catalog Service for Adobe Commerce] verstrekt een manier om de inhoud van de Pagina's van de Vertoning van het Product en de Pagina's van de Lijst van het Product sneller terug te winnen dan de inheemse vragen van Adobe Commerce GraphQL."
+description: '[!DNL Catalog Service for Adobe Commerce] biedt een manier om de inhoud van de pagina''s met productweergaven en de productlijst sneller op te halen dan de native Adobe Commerce GraphQL-query''s.'
 exl-id: d83375b2-0d87-4a0a-baf8-eb7eebe85a80
 recommendations: noCatalog
 source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307

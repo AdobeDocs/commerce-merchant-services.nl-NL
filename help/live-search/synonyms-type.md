@@ -1,6 +1,6 @@
 ---
-title: "Typen synoniemen"
-description: De synoniemen van "Één en van twee richtingen  [!DNL Live Search]  breiden de definitie van sleutelwoorden uit."
+title: Typen synoniemen
+description: Één en 2 manier  [!DNL Live Search]  synoniemen breiden de definitie van sleutelwoorden uit.
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
 source-git-commit: cb5db979828eb0b678d19c926de2823829717c02
 workflow-type: tm+mt

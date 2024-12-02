@@ -1,6 +1,6 @@
 ---
-title: "Zoekhandelregels beheren"
-description: "Leer hoe u bestaande regels voor het wijzigen van zoekopdrachten beheert."
+title: Regels voor het wijzigen van zoekopdrachten beheren
+description: Leer hoe u bestaande regels voor het wijzigen van zoekopdrachten beheert.
 exl-id: 1a2ca9f9-1cf2-446f-809b-03ca5c798b13
 source-git-commit: 52be82fa080474d6df81fd16d1655a421771e5e2
 workflow-type: tm+mt

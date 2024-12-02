@@ -1,6 +1,6 @@
 ---
-title: "Introductie tot  [!DNL Store Fulfillment]"
-description: "Leer hoe  [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies]  steunen online kopen, oogst in opslag (BOPIS) voor klanten. Gebruik de mobiele versie van Store Assist om BOPIS-uitvoering en bestellingsverwerking te stroomlijnen voor winkelmedewerkers en Commerce-klanten."
+title: Inleiding tot  [!DNL Store Fulfillment]
+description: Leer hoe  [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies]  steunen online kopen, oogst in opslag (BOPIS) voor klanten. Met de mobiele versie Winkelassistentie kunt u BOPIS-afhandeling en -verwerking stroomlijnen voor winkelpartners en Commerce-klanten.
 role: Leader, Admin, Developer, User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c

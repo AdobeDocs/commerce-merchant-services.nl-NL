@@ -1,6 +1,6 @@
 ---
-title: "Faceting Workspace"
-description: "Leer uw manier rond de  [!DNL Live Search]  facetende werkruimte."
+title: Workspace naast elkaar
+description: Leer uw manier rond de  [!DNL Live Search]  facetende werkruimte.
 exl-id: b47b5c19-59bb-41e4-9599-3b90cbc44b70
 source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt

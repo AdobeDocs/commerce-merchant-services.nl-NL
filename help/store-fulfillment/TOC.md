@@ -1,5 +1,5 @@
 ---
-user-guide-title: "[!DNL Store FulFillment Guide]"
+user-guide-title: '[!DNL Store FulFillment Guide]'
 user-guide-description: Gedetailleerde informatie over het installeren, configureren en gebruiken van Store Fulfillment voor Adobe Commerce-winkels.
 breadcrumb-title: Store Fulfillment voor Adobe Commerce
 index: true

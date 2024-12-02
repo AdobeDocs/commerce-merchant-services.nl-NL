@@ -1,6 +1,6 @@
 ---
 title: Overzicht van on-boarding-services voor winkeluitvoering
-description: "[!DNL Live Search] op instapkaartstroom, systeemvereisten, grenzen, en beperkingen."
+description: '[!DNL Live Search] aan boord gaan, systeemvereisten, grenzen en beperkingen.'
 role: Admin, Leader
 level: Intermediate
 feature: Shipping/Delivery, Install

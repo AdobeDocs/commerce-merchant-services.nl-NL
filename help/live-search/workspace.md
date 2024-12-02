@@ -1,5 +1,5 @@
 ---
-title: 'Live zoeken instellen'
+title: Live zoeken instellen
 description: De  [!DNL Live Search]  werkruimte wordt gebruikt om, onderzoeksprestaties te vormen te beheren en te controleren.
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
 source-git-commit: 7f536c93ab1c87bf88bc892b2a485067fa8f8110

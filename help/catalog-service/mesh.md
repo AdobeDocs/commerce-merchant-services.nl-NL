@@ -1,6 +1,6 @@
 ---
 title: '[!DNL Catalog Service and API Mesh]'
-description: '[!DNL API Mesh] voor Adobe Commerce verstrekt een manier om veelvoudige gegevensbronnen door een gemeenschappelijk eindpunt van GraphQL te integreren.'
+description: '[!DNL API Mesh] voor Adobe Commerce biedt een manier om meerdere gegevensbronnen te integreren via een gemeenschappelijk GraphQL-eindpunt.'
 exl-id: cdda4a83-3c5f-4a69-8279-b90464e16c0e
 role: Admin, Developer
 feature: Services, API Mesh, Catalog Service

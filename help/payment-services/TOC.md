@@ -1,7 +1,7 @@
 ---
-user-guide-title: "[!DNL Payment Services] Handleiding"
-user-guide-description: "Deze gids verstrekt gedetailleerde informatie over het installeren van en het vormen  [!DNL Payment Services]  voor uw  [!DNL Adobe Commerce]  of  [!DNL Magento Open Source]  opslag."
-breadcrumb-title: "[!DNL Payment Services] Handleiding"
+user-guide-title: '[!DNL Payment Services] Handleiding'
+user-guide-description: Deze gids verstrekt gedetailleerde informatie over het installeren van en het vormen  [!DNL Payment Services]  voor uw  [!DNL Adobe Commerce]  of  [!DNL Magento Open Source]  opslag.
+breadcrumb-title: '[!DNL Payment Services] Handleiding'
 index: true
 role: Admin, Leader, User
 feature: Payments, Checkout

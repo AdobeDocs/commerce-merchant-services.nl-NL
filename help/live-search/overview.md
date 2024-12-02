@@ -1,6 +1,6 @@
 ---
 title: Wat is  [!DNL Live Search]?
-description: "[!DNL Live Search] van Adobe Commerce biedt een snelle, relevante en intuïtieve zoekervaring."
+description: '[!DNL Live Search] van Adobe Commerce biedt een snelle, relevante en intuïtieve zoekervaring.'
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
 source-git-commit: 7f536c93ab1c87bf88bc892b2a485067fa8f8110

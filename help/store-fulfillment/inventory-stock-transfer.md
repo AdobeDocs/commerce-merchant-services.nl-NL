@@ -1,6 +1,6 @@
 ---
 title: Inventory management Source Transfer
-description: "Vorm voorraden voor  [!DNL Store Fulfillment solution]  met Adobe Commerce Inventory management. Stel een nieuwe voorraad- en overdrachtvoorraad in op basis van de standaardvoorraad, zodat u deze kunt toewijzen aan bronnen die zijn geconfigureerd om de opslagcapaciteit die door de oplossing Afhandeling van winkel wordt vereist, in te schakelen."
+description: Vorm voorraden voor  [!DNL Store Fulfillment solution]  met Adobe Commerce Inventory management. Stel een nieuwe voorraad- en overdrachtvoorraad in op basis van de standaardvoorraad, zodat u deze kunt toewijzen aan bronnen die zijn geconfigureerd om de opslagcapaciteit die door de oplossing Afhandeling van winkel wordt vereist, in te schakelen.
 role: Admin
 level: Intermediate
 feature: Shipping/Delivery, Inventory, Configuration

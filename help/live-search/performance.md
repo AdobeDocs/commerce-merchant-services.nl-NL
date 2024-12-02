@@ -1,6 +1,6 @@
 ---
-title: "Prestaties"
-description: "De  [!DNL Live Search]  werkruimte van Prestaties verstrekt inzicht in de onderzoekstermijnen die de kopers gebruiken."
+title: Prestaties
+description: De  [!DNL Live Search]  werkruimte van Prestaties verstrekt inzicht in de onderzoekstermijnen die de kopers gebruiken.
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
 source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt

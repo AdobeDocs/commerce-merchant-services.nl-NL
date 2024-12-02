@@ -1,7 +1,7 @@
 ---
-user-guide-title: "SaaS Price Indexing Guide"
-user-guide-description: "Deze handleiding bevat gedetailleerde instructies voor het gebruik van de SaaS-prijsindex."
-breadcrumb-title: "Saas price indexer Guide"
+user-guide-title: SaaS-gids voor prijsindexering
+user-guide-description: Deze handleiding bevat gedetailleerde instructies voor het gebruik van de SaaS-prijsindexer.
+breadcrumb-title: Handleiding voor de prijsindex
 hide: true
 role: Admin
 feature: Services, Price Indexer
