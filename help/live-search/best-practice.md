@@ -3,9 +3,9 @@ title: '[!DNL Live Search] Aanbevolen werkwijzen'
 description: Leer de beste praktijken voor het uitvoeren van  [!DNL Live Search]  in uw opslag.
 role: Admin, Developer
 exl-id: 69b2c2a6-c8a9-4640-8d2b-08fcd7a96034
-source-git-commit: 834935abc55e21863c83e82dae8ec79e70e67220
+source-git-commit: ba2b798f2e7d5716be0d1686359ac8382f6cf8e4
 workflow-type: tm+mt
-source-wordcount: '2359'
+source-wordcount: '2426'
 ht-degree: 0%
 
 ---
@@ -106,6 +106,14 @@ Leer hoe te [ onderzoeksredirects ](https://experienceleague.adobe.com/en/docs/c
 ## De relevantie van zoekresultaten verbeteren
 
 In deze sectie wordt besproken hoe u de relevantie van zoekresultaten kunt verbeteren door effectieve zoekregels in te voeren en productmetagegevens te gebruiken om ervoor te zorgen dat nauwkeurige en gedetailleerde kenmerken doorzoekbaar zijn.
+
+### Afbeeldingen
+
+Zorg ervoor dat de configureerbare producten van het kindproducten beelden met de correcte rollen hebben. Als u bovenliggende of onderliggende producten hebt, heeft het zoekresultaat mogelijk geen afbeeldingen.
+
+>[!NOTE]
+>
+>Afbeeldingen in zoekresultaten kunnen verschillen, afhankelijk van de zoekterm. Als de zoekterm bepaalt dat een onderliggend product relevanter is, worden afbeeldingen uit het onderliggende product gebruikt in plaats van afbeeldingen uit het bovenliggende product.
 
 ### Zoekregels
 
