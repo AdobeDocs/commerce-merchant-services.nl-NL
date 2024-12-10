@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 feature: Payments, Checkout
-source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
+source-git-commit: 9ccf4707ae46d2df52a5510c774688fe6da1d951
 workflow-type: tm+mt
-source-wordcount: '1301'
+source-wordcount: '1303'
 ht-degree: 0%
 
 ---
@@ -137,7 +137,7 @@ U kunt een CSV-bestand downloaden dat alle transacties bevat die zichtbaar zijn 
 
 1. Voor _Admin_ sidebar, ga **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
 1. [ pas timeframe van de datumwaaier voor uw transacties ](#customize-transactions-timeframe) aan.
-1. Klik het _pictogram van de Download_ (![](assets/icon-download.png){width="20" zoomable="yes"}).
+1. Klik het _pictogram van de Download_ (![ het pictogram van de Download ](assets/icon-download.png){width="20" zoomable="yes"}).
 
 Uw uitbetalingstransacties worden gedownload in de CSV-indeling.
 
