@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 feature: Payments, Checkout, Configuration
-source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
+source-git-commit: feeaed7b7130b3581a1b1f7e3bdd161ce1e7d765
 workflow-type: tm+mt
-source-wordcount: '1703'
+source-wordcount: '1718'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ Zie [ de opties van Betalingen ](payments-options.md#paypal-smart-buttons) voor 
 1. Kies bij **[!UICONTROL Show on checkout page]** de optie `Yes` om creditcardvelden op de uitcheckpagina in te schakelen.
 1. Kies bij **[!UICONTROL Vault Enabled]** de optie `Yes` om het uitchecken van creditcardgegevens in te schakelen.
 1. Kies bij **[!UICONTROL Vault Enabled in Admin]** de optie `Yes` om de handelaar in staat te stellen orders voor klanten te maken met behulp van hun gefactureerde creditcard.
-1. Als u **[!UICONTROL 3DS Secure authentication]** (`Off` standaard) wilt inschakelen, kiest u `Always` of `When required` .
+1. Als u **[!UICONTROL 3D Secure authentication]** (`Off` standaard) wilt inschakelen, kiest u `Always` of `When required` .
 1. Kies bij **[!UICONTROL Debug Mode]** `Yes` om de foutopsporingsmodus in te schakelen of `No` om deze uit te schakelen.
 1. Klik op **[!UICONTROL Save Config]** om de wijzigingen op te slaan.
 1. Navigeer naar **[!UICONTROL System]** > **[!UICONTROL Cache Management]** en klik vervolgens op **[!UICONTROL Flush Cache]** om alle ongeldige cache te vernieuwen.
@@ -82,7 +82,7 @@ Zie [ de opties van Betalingen ](payments-options.md#paypal-smart-buttons) voor 
 | [!UICONTROL Show on checkout page] | website | Schakel creditcardvelden op de afrekenpagina in of uit. Opties: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Vault enabled] | winkelweergave | Laat toe of maak [ creditcard het vaulteren ](vaulting.md) onbruikbaar. Opties: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Vault enabled in Admin] | winkelweergave | Laat of maak capaciteit voor [ merchant toe onbruikbaar om orden voor klanten in Admin ](vaulting.md) te voltooien gebruikend een in gebreke gebleven betalingsmethode. Opties: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL 3DS Secure authentication] | website | Laat of maak [ 3DS Veilige authentificatie ](security.md#3ds) toe onbruikbaar. Opties: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
+| [!UICONTROL 3D Secure authentication] | website | Laat of maak [ 3DS Veilige authentificatie ](security.md#3ds) toe onbruikbaar. Opties: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Debug Mode] | website | De foutopsporingsmodus in- of uitschakelen. Opties: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 
 ## [!UICONTROL Apple Pay]
@@ -136,6 +136,7 @@ Zie [ de opties van Betalingen ](payments-options.md#google-pay-button) voor mee
    * **[!UICONTROL Show Google Pay on product detail page]**
    * **[!UICONTROL Show Google Pay in mini cart preview]**
    * **[!UICONTROL Show Google Pay on cart page]**
+1. Als u **[!UICONTROL 3D Secure authentication]** (`Off` standaard) wilt inschakelen, kiest u `Always` of `When required` .
 1. Als u de foutopsporingsmodus wilt inschakelen, selecteert u `Yes` voor **[!UICONTROL Debug Mode]** (`No` schakelt u deze uit).
 1. Configureer de weergave van de knop _[!UICONTROL Google Pay]_door de knoppen **[!UICONTROL Button Color]**,**[!UICONTROL Button Type]**en **[!UICONTROL Button Style]**naar wens te selecteren.
 1. Als u de hoogte wilt instellen, gebruikt u de standaardwaarde voor de hoogte die is gedefinieerd in **[!UICONTROL Button Style]** .
@@ -153,6 +154,7 @@ Zie [ de opties van Betalingen ](payments-options.md#google-pay-button) voor mee
 | [!UICONTROL Show buttons on product detail page] | winkelweergave | Schakel [!DNL Google Pay] in of uit op de pagina met productdetails. Opties: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show buttons in mini-cart preview] | winkelweergave | Schakel [!DNL Google Pay] in of uit in de voorvertoning van de miniwinkelwagentje. Opties: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show buttons on cart page] | winkelweergave | Schakel [!DNL Google Pay] in of uit op de tekstpagina. Opties: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL 3D Secure authentication] | winkelweergave | Laat of maak [ 3D Veilige authentificatie ](security.md#3ds) toe onbruikbaar. Opties: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Debug Mode] | website | De foutopsporingsmodus in- of uitschakelen. Opties: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Button Color] | Winkelweergave | Definieer de kleur van de knop [!DNL Google Pay] . Opties: `[!UICONTROL Default]` / `[!UICONTROL Black]` / `[!UICONTROL White]` |
 | [!UICONTROL Button Type] | Winkelweergave | Geef het type van de knop [!DNL Google Pay] op. Opties: `[!UICONTROL buy]` / `[!UICONTROL checkout]` / `[!UICONTROL order]` / `[!UICONTROL pay]` / `[!UICONTROL plain]` |

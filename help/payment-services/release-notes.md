@@ -3,9 +3,9 @@ title: '[!DNL Payment Services] Opmerkingen bij de release'
 description: Herzie de versienota's voor informatie over alle  [!DNL Payment Services]  versies.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: f48a177f53c88d1794683d08976ca6c88031fb93
+source-git-commit: feeaed7b7130b3581a1b1f7e3bdd161ce1e7d765
 workflow-type: tm+mt
-source-wordcount: '3174'
+source-wordcount: '3311'
 ht-degree: 0%
 
 ---
@@ -91,13 +91,31 @@ _Juni 28, 2021_
 
 +++
 
+## v2.10.0
+
+_December 13, 2024_
+
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
+
+![ Nieuw ](../assets/new.svg)<!-- PAY-5702 --> [!DNL Payment Services] biedt nu ondersteuning voor GraphQL-eindpunten voor archivering zonder aankoop, zodat klanten hun betalingsmethoden kunnen opslaan zonder een transactie te voltooien.
+
+![ Nieuw ](../assets/fix.svg)<!-- PAY-5789 --> [!DNL Payment Services] steunt nu [ 3D Veilige authentificatie met Google Betalen ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/security-compliance/security#3ds), die veiligheid voor handelaren en klanten tijdens betalingstransacties verbeteren.
+
+![ Repareren ](../assets/fix.svg)<!-- PAY-5703 --> [!DNL Payment Services] voegt de capaciteit voor [ klanten toe om kaarten direct in hun **Mijn Rekening** te bewaren ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting), verbeterend gemak en vereenvoudigend toekomstige controles. `Vault without purchase functionality might not be 100% compatible with Adobe Commerce 2.4.4 due to a known issue with` [`GraphQL authorization mechanisms` ](https://developer.adobe.com/commerce/webapi/graphql/usage/authorization-tokens/).
+
+![ bevestig ](../assets/fix.svg)<!-- PAY-5762 --> een kwestie waar de couponcodes niet werden toegepast op de pagina van het ordeoverzicht toen de orde van de pagina van het productdetail (PDP) in werking werd gesteld.
+
+![ Repareren ](../assets/fix.svg)<!-- PAY-5792 --> [!DNL Payment Services] toont nu beschrijvingen en het facturerings adressen voor [ gefactureerde kaarten op de controlepagina ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting), die klanten meer zicht in hun bewaarde betalingsmethodes geven.
+
+![ Repareren ](../assets/fix.svg)<!-- PAY-5793 --> Met [!DNL Payment Services] kunnen verkopers het factuuradres voor gefactureerde kaarten direct vanaf de afhandelingspagina opslaan, zodat ze nauwkeurige en volledige betalingsgegevens kunnen opslaan.
+
 ## v2.9.0
 
 _7 November, 2024_
 
 [!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![ Nieuw ](../assets/new.svg)<!-- PAY-5629 --> [!DNL Payment Services] steunt nu een **bijgewerkte SDK URL voor Apple Betalen**, die de integratie voor verkopers verbeteren gebruikend Apple Betalen. Deze functie is compatibel met macOS 14 en hoger. Apparaten met eerdere versies van macOS geven deze functionaliteit niet weer.
+![ Nieuw ](../assets/new.svg)<!-- PAY-5629 --> [!DNL Payment Services] steunt nu een **bevorderd SDK URL voor Apple Betalen**, die de integratie voor verkopers verbeteren gebruikend Apple Pay. Deze functie is compatibel met macOS 14 en hoger. Apparaten met eerdere versies van macOS geven deze functionaliteit niet weer.
 
 ![ Nieuw ](../assets/new.svg)<!-- PAY-5630 --> werkte de **Controle** bij, **Product**, **Kaart**, en **MiniCart** pagina&#39;s om **promoot SDK URL voor Apple Betalen**, verbeterend de gebruikerservaring voor handelaren die Apple als betalingsoptie aanbieden.
 
@@ -115,7 +133,7 @@ _13 September, 2024_
 
 [!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![ bevestig ](../assets/fix.svg)<!-- PAY-5644 --> een kwestie met het geheime voorgeheugen van de parameters van SDK wanneer het gebruiken van veelvoudige werkingsgebied in [!DNL Payment Services]. SDK-configuratie wordt nu afzonderlijk in de cache geplaatst voor elk bereik in plaats van onder één toets. Dit zorgt ervoor dat het geheime voorgeheugen van elk werkingsgebied onafhankelijk ongeldig wordt gemaakt, verbeterend betrouwbaarheid wanneer het beheren van veelvoudige werkingsgebieden.
+![ bevestig ](../assets/fix.svg)<!-- PAY-5644 --> een kwestie met het geheime voorgeheugen van de parameters van SDK wanneer het gebruiken van veelvoudige werkingsgebied in [!DNL Payment Services]. De configuratie van SDK wordt nu in het voorgeheugen ondergebracht afzonderlijk voor elk werkingsgebied in plaats van onder één enkele sleutel. Dit zorgt ervoor dat het geheime voorgeheugen van elk werkingsgebied onafhankelijk ongeldig wordt gemaakt, verbeterend betrouwbaarheid wanneer het beheren van veelvoudige werkingsgebieden.
 
 ## v2.8.0
 
