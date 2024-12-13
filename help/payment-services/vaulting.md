@@ -3,38 +3,71 @@ title: Creditcard vauleren
 description: Klanten kunnen hun creditcardgegevens opslaan voor toekomstige aankopen.
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
 feature: Payments, Checkout
-source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
+source-git-commit: 71e3dd6923d767d8149babdb8c0b3b18d6c452c2
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '482'
 ht-degree: 0%
 
 ---
 
 # Creditcard vauleren
 
-Eenmalige klanten converteren naar loyale klanten met een creditcardkluis. Klanten kunnen hun creditcardgegevens tijdens het afrekenen opslaan (of &#39;vault&#39;) en deze gebruiken in een latere aankoop voor dezelfde of een andere winkel binnen dezelfde zakelijke account.
-
-![ Uitgebreide hun creditcard voor later gebruik ](assets/save-card-for-later.png){width="400" zoomable="yes"}
-
-Winkelaars gebruiken het opgeslagen token om een toekomstige afhandeling met hun opgeslagen creditcardgegevens te voltooien.
-
-![ Opgeslagen geloofsbrieven van het Gebruik voor toekomstige aankoop ](assets/use-stored-card.png){width="400" zoomable="yes"}
-
-Zij kunnen hun gefactureerde creditcards van [ Opgeslagen Methoden van de Betaling ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/stored-payment-methods) in hun Mijn Rekening ook gemakkelijk schrappen.
-
-![ Opgeslagen Methoden van de Betaling in Mijn Rekening ](assets/stored-payment-methods.png){width="400" zoomable="yes"}
-
->[!WARNING]
->
->PayPal kan momenteel maximaal vijf in kluizen opslaan.
+Eenmalige klanten converteren naar loyale klanten met een creditcardkluis. Ingeschreven klanten kunnen hun creditcardgegevens opslaan (of &#39;vault&#39;) en deze later gebruiken voor dezelfde of een andere aankoop binnen dezelfde zakelijke account.
 
 ## Vulling inschakelen
 
-U kunt creditcard het in dienst nemen-voor klanten _en_ verkopers in Admin-voor uw opslag in [!DNL Payment Services] [ Montages ](settings.md#card-vaulting) toelaten.
+De handelaren kunnen creditcardkluizen voor hun opslag in de [!DNL Payment Services] [ Montages ](settings.md#card-vaulting) toelaten.
+
+1. Voor _Admin_ sidebar, ga **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+
+1. Klik op **[!UICONTROL Settings]**.
+
+1. Schakel de kiezer van **[!UICONTROL Vault enabled]** in of uit. Zie [ toelaten  [!DNL Payment Services]](settings.md#enable-payment-services) voor meer informatie.
+
+## Wisselen zonder aankoop
+
+Logged-binnen klanten kunnen een betalingsmethode in het **Mijn dashboard van de Rekening** door vault:
+
+1. Het registreren in hun **Mijn Rekening** op de storefront.
+
+1. Navigeer naar **[!UICONTROL Stored Payment Methods]** in de linkernavigatie om alle opgeslagen betalingsmethoden te bekijken.
+
+   Zie [ Opgeslagen Methoden van de Betaling ](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/stored-payment-methods) voor meer informatie.
+
+1. De klant klikt op **[!UICONTROL Add New Card]** om een nieuwe kaart op te slaan.
+
+   ![ voeg Nieuwe Kaart ](assets/add-new-card.png){width="400" zoomable="yes"} toe
+
+   De klant moet alle vereiste gegevens, zoals kaart- en factureringsgegevens, verstrekken om de betalingsmethode te kunnen berekenen.
+Alle gefactureerde betalingsmethoden gebruiken het factuuradres dat is ingesteld terwijl de kaart in de PayPal-rekening van de koper wordt gefactureerd. De klant ziet mogelijk een ander factuuradres dan het adres dat in Commerce wordt weergegeven.
+
+1. Klikken **[!UICONTROL Save New Card]**
+
+   ![ Opgeslagen Methoden van de Betaling in Mijn Rekening ](assets/stored-payment-methods.png){width="400" zoomable="yes"}
+
+Opgeslagen kaarten kunnen worden gebruikt bij het plaatsen van een bestelling:
+
+![ Opgeslagen geloofsbrieven van het Gebruik voor toekomstige aankoop ](assets/use-stored-card.png){width="400" zoomable="yes"}
+
+### Een opgeslagen betalingsmethode verwijderen
+
+De klanten kunnen gefactureerde creditcards van de **Opgeslagen Methoden van de Betaling** in **Mijn Rekening** gemakkelijk schrappen door **Schrapping** voor een specifieke kaart te klikken.
+
+## Een betalingsmethode valideren tijdens het afrekenen
+
+Klanten met aanmelding kunnen tijdens het afrekenen een creditcard bewaren voor latere aankopen in de huidige winkel of in andere winkels binnen dezelfde zakelijke account:
+
+![ Uitgebreide hun creditcard voor later gebruik ](assets/save-card-for-later.png){width="400" zoomable="yes"}
+
+Commerce slaat een token op dat klanten helpt bij het voltooien van toekomstige afrekeningen door hun opgeslagen creditcardgegevens op te halen. Als u een kaart vanaf de klantenrekening of tijdens het afrekenen bewaart, worden verschillende betaaltokens weergegeven.
+
+>[!WARNING]
+>
+> PayPal kan momenteel maximaal vijf in kluizen opslaan.
 
 ## Vullingen gebruiken in de Admin
 
-Als een klant een eerder gearchiveerde creditcard heeft, kan een handelaar een volgende bestelling voor die klant in Admin tot stand brengen gebruikend hun gefactureerde betalingsmethodes.
+Als een klant een eerder gearchiveerde creditcard heeft, kan een handelaar een volgende bestelling voor die klant in Admin tot stand brengen gebruikend om het even welk van deze gefactureerde betalingsmethodes.
 
 U kunt alleen in Admin gearchiveerde kaarten gebruiken als de klant zowel een bestaande account als een geldige token in het systeem heeft opgeslagen vanaf een eerder uitgevoerde betaling.
 
