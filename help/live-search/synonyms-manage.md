@@ -2,9 +2,9 @@
 title: Synoniemen beheren
 description: Leer hoe te om bestaande  [!DNL Live Search]  synoniemen te beheren.
 exl-id: 9f910b3c-ea28-4a50-9d3f-24b4812c0e75
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: b31d2f566dfd5c765c3d12bd2659c89afe7f91e0
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '221'
 ht-degree: 0%
 
 ---
@@ -32,8 +32,6 @@ Om het gemakkelijk te maken om een synoniem te vinden, kunt u de lijst door type
 1. Klik **uitgeven**.
 Het trefwoord is de eerste term in de lijst en elke term wordt gescheiden door een komma. Het sleutelwoord en de uitbreidingstermijnen kunnen worden bijgewerkt, maar het type van synoniem kan niet worden veranderd.
 1. Klik op het item dat u wilt bewerken. Werk vervolgens de tekst naar wens bij.
-
-   ![ geef synoniem in twee richtingen uit ](assets/synonym-two-way-edit.png)
 
 1. Wanneer volledig, klik **sparen**.
 

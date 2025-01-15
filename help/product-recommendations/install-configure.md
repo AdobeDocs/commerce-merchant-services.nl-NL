@@ -3,9 +3,9 @@ title: Installeren en configureren
 description: Leer om te installeren, bij te werken, en te desinstalleren  [!DNL Product Recommendations].
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
 role: Admin, Developer
-source-git-commit: 3a5dec9422aa34eeb204b9fe6f089551e4038f1c
+source-git-commit: b31d2f566dfd5c765c3d12bd2659c89afe7f91e0
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '565'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,10 @@ Het opstellen van [!DNL Product Recommendations] aan uw opslag en Admin vereist 
 ## Installeren [!DNL Product Recommendations] {#install}
 
 Aangezien de module [!DNL Product Recommendations] een zelfstandig metapakket is, worden updates vaker uitgebracht dan Adobe Commerce. Om ervoor te zorgen u met de recentste insectenmoeilijke situaties en de eigenschappen bijgewerkt bent, verwijs naar de [ versienota&#39;s ](release-notes.md).
+
+>[!IMPORTANT]
+>
+>Zorg ervoor u de correcte [ rechten ](../landing/saas.md#credentials) hebt om Product Recommendations te gebruiken.
 
 Installeer de module `magento/product-recommendations` met Composer:
 
