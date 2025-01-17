@@ -5,9 +5,9 @@ breadcrumb-title: '[!DNL Data Connection] -extensie voor Adobe Commerce'
 role: Admin
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: b5727c90737ecfd237dd143801152f25600c3f97
+source-git-commit: 5593f97db030f4cc8daeaa95948a6763fc45eb8f
 workflow-type: tm+mt
-source-wordcount: '118'
+source-wordcount: '129'
 ht-degree: 3%
 
 ---
@@ -15,6 +15,8 @@ ht-degree: 3%
 # [!DNL Data Connection] -extensie voor Adobe Commerce {#data-connection}
 
 - [Overzicht van de handleiding](overview.md)
+- [HIPAA-gereedheid voor Commerce Services](hipaa-readiness.md)
+- [Hoe Commerce Services privacyverzoeken afhandelt](handle-privacy-request.md)
 - [Aanvullende informatie](release-notes.md)
 - Grondbeginselen {#fundamentals}
    - [Installeer de  [!DNL Data Connection]  uitbreiding](install.md)

@@ -3,7 +3,7 @@ title: Aanvullende informatie
 description: De recentste versieinformatie voor de  [!DNL Data Connection]  uitbreiding van Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 4662c9467f750d9a255034feb69f51492c98a0d9
+source-git-commit: 83d801fea806df51b440c11b87cd0de45793a322
 workflow-type: tm+mt
 source-wordcount: '1108'
 ht-degree: 0%
@@ -80,11 +80,11 @@ _12 oktober 2022_
 
 ## 3.2.1.
 
-_December 2, 2024_
+_Januari 17, 2025_
 
 [!BADGE  Verenigbaarheid ]{type=Informative tooltip="Compatibiliteit"}
 
-![ Nieuw ](../assets/new.svg) - voegde de HIPAA-klaar uitbreiding aan [!DNL Data Connection] toe zodat kunnen de handelaren [!DNL Commerce] gegevens van de achterkantoorgebeurtenis met Experience Platform delen en naleving van HIPAA handhaven.
+![ Nieuw ](../assets/new.svg) - voegde de [ HIPAA-klaar uitbreiding ](hipaa-readiness.md) aan [!DNL Data Connection] toe zodat kunnen de handelaren [!DNL Commerce] gegevens van de achterkantoorgebeurtenis met Experience Platform delen en naleving van HIPAA handhaven.
 ![ bevestig ](../assets/fix.svg) - Vloeiende een kwestie waar de [!DNL Data Connection] uitbreiding `eventForwarding` gegevens en het plaatsen van de `HIPAA` vlag voor alle klanten met voeten trad. Nu plaatst de uitbreiding slechts de vlag voor klanten HIPAA.
 
 ## 3.2.0.
@@ -138,7 +138,7 @@ _4 April, 2024_
 [!BADGE  Verenigbaarheid ]{type=Informative tooltip="Compatibiliteit"}
 
 ![ Nieuw ](../assets/new.svg) - Toegevoegde steun voor PHP 8.3 voor alle [!DNL Data Connection] uitbreidingen.
-![ Nieuw ](../assets/new.svg) - toegevoegd artikel over hoe te [ ](mobile-sdk-epc.md) de Mobiele SDK van Adobe Experience Platform met Commerce integreren.
+![ Nieuw ](../assets/new.svg) - toegevoegd artikel over hoe te [ ](mobile-sdk-epc.md) Adobe Experience Platform Mobile SDK met Commerce integreren.
 
 ## 3.2.0-bèta2
 
@@ -214,7 +214,7 @@ _Januari 17, 2023_
 
 [!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![ Nieuw ](../assets/new.svg) - Bijgewerkt [[!DNL Data Connection]  uitbreiding Admin ](connect-data.md) zodat kunt u uw eigen AEP Web SDK (legering) specificeren.
+![ Nieuw ](../assets/new.svg) - Bijgewerkt [[!DNL Data Connection]  uitbreiding Admin ](connect-data.md) zodat kunt u uw eigen SDK van het Web AEP (legering) specificeren.
 ![ Repareren ](../assets/fix.svg) Veranderde in het gebruiken `identityMap` in plaats van `personID` toen het plaatsen van de primaire identiteit voor om het even welke gegevens die aan de rand worden geduwd.
 
 ## 2.0.1.
@@ -223,7 +223,7 @@ _10 November, 2022_
 
 [!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![ Repareren ](../assets/fix.svg) - nu wordt de context van Adobe Experience Platform geplaatst slechts nadat de Collector van de Gebeurtenis Storefront en de Gebeurtenis SDK van de Gebeurtenis met succes worden geladen.
+![ Bevestig ](../assets/fix.svg) - nu wordt de context van Adobe Experience Platform geplaatst slechts nadat de Collector van de Gebeurtenis Storefront en de Gebeurtenis SDK met succes worden geladen.
 
 ## 2.0.0.
 
@@ -231,7 +231,7 @@ _12 oktober 2022_
 
 [!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![ Nieuw ](../assets/new.svg) - Toegevoegde capaciteit om uw eigen AEP Web SDK te specificeren wanneer [ verbindend ](connect-data.md) uw instantie van Adobe Commerce met het Experience Platform.
+![ Nieuw ](../assets/new.svg) - Toegevoegde capaciteit om uw eigen SDK van het Web AEP te specificeren wanneer [ verbindend ](connect-data.md) uw instantie van Adobe Commerce met het Experience Platform.
 ![ Repareren ](../assets/fix.svg) - de bijgewerkte vereisten van het gegevensstroomwerkingsgebied zodat datastream IDs aan de website eerder dan storeview moet worden behandeld.
 
 ## 1.0.0.

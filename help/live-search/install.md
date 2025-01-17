@@ -3,7 +3,7 @@ title: Aan de slag met  [!DNL Live Search]
 description: Leer de systeemvereisten en installatiestappen voor  [!DNL Live Search]  van Adobe Commerce.
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 89dd5ae305563e5f6bbcdb80764fd9eeb177b491
+source-git-commit: 42ad3e05789844a0bcc6cb114a0db067f3d497db
 workflow-type: tm+mt
 source-wordcount: '3093'
 ht-degree: 0%
@@ -178,7 +178,7 @@ De Adobe Commerce API-sleutel en de bijbehorende persoonlijke sleutel zijn verei
 
 Leer hoe te om uw API sleutels in het [ 1} artikel van de Schakelaar van de Diensten van Commerce te vormen.](../landing/saas.md)
 
-## 3. Synchroniseer uw catalogusgegevens {#synchronize-catalog-data}
+## 3. Synchroniseer uw catalogusgegevens
 
 [!DNL Live Search] verplaatst catalogusgegevens naar de SaaS-infrastructuur van de Adobe. De gegevens worden geïndexeerd en de zoekresultaten worden vanuit deze index rechtstreeks aan de winkel geleverd. Afhankelijk van de grootte en complexiteit kan het indexeren 30 minuten tot een paar uur duren.
 
@@ -214,7 +214,7 @@ U kunt synchronisatiebevelen ook in werking stellen en het synchronisatieproces 
 
 Na de eerste synchronisatie kan het tot 15 minuten duren voordat de incrementele productupdates beschikbaar komen voor het zoeken naar een winkel. Om meer te leren, zie {de Updates van het Product van 0} Streaming ](indexing.md) in de Indexerende documentatie.[
 
-## 4. Controleer of de gegevens zijn geëxporteerd {#verify-export}
+## 4. Controleer of de gegevens zijn geëxporteerd
 
 Als u wilt controleren of uw catalogusgegevens uit Adobe Commerce zijn geëxporteerd en met [!DNL Live Search] zijn gesynchroniseerd, hebt u een aantal opties:
 
@@ -265,7 +265,7 @@ Wanneer u deze configuratie wijzigt, verschijnt het bericht `Page cache is inval
 
 De producten die in [!DNL Live Search] zijn teruggekeerd moeten aan a [ worden toegewezen categorie ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/categories). In Luma worden producten bijvoorbeeld ingedeeld in categorieën zoals &quot;Mannen&quot;, &quot;Vrouwen&quot; en &quot;Luma&quot;. Subcategorieën worden ook ingesteld voor Tops, Bottoms en Watches. Deze categorietoewijzingen verbeteren de granulariteit bij het filteren.
 
-## 6. Test de verbinding {#test-connection}
+## 6. Test de verbinding
 
 Met uw catalogusgegevens nu in SaaS, test om ervoor te zorgen de productgegevens in de volgende scenario&#39;s zijn teruggekeerd:
 
@@ -299,7 +299,7 @@ In dit scenario, kunt u JavaScript voor uw eigen behoeften aanpassen en dan uw d
 - [ PLP widget repo ](https://github.com/adobe/storefront-product-listing-page)
 - [ de bar van het Onderzoek repo ](https://github.com/adobe/storefront-search-as-you-type)
 
-## [!DNL Live Search] bijwerken {#update}
+## [!DNL Live Search] bijwerken
 
 Voer voordat u Live zoeken bijwerkt de volgende handelingen uit vanaf de opdrachtregel om de geïnstalleerde versie van Live Search te controleren:
 
@@ -345,11 +345,11 @@ Als u een update wilt uitvoeren naar een belangrijke versie zoals 3.1.1 en 4.0.0
    composer update magento/live-search --with-dependencies
    ```
 
-## [!DNL Live Search] verwijderen {#uninstall}
+## [!DNL Live Search] verwijderen
 
 Om [!DNL Live Search] te desinstalleren, verwijs naar [ modules van de Desinstallatie ](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules).
 
-## [!DNL Live Search] pakketten {#packages}
+## [!DNL Live Search] pakketten
 
 De extensie [!DNL Live Search] bestaat uit de volgende pakketten:
 
@@ -359,7 +359,7 @@ De extensie [!DNL Live Search] bestaat uit de volgende pakketten:
 | `module-live-search-adapter` | Routes onderzoeksverzoeken van de storefront aan de [!DNL Live Search] dienst en geeft de resultaten in de storefront terug. <br /> - de doorblader van de Categorie - Routes verzoekt van de storefront [ hoogste navigatie ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/navigation/navigation-top) aan de onderzoeksdienst.<br /> - Globaal onderzoek - Routes verzoekt van de [ snelle onderzoek ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) doos in het hoger-recht van de storefront aan de [!DNL Live Search] dienst. |
 | `module-live-search-storefront-popover` | De pop-up &#39;&#39;Zoeken terwijl u typt&#39;&#39; vervangt de standaard snelle zoekopdracht en retourneert gegevens en miniaturen van de bovenste zoekresultaten. |
 
-## [!DNL Live Search] afhankelijkheden {#dependencies}
+## [!DNL Live Search] afhankelijkheden
 
 Het [!DNL Composer] -pakket voor het installeren van de extensie [!DNL Live Search] bevat de volgende moduleafhankelijkheden.
 

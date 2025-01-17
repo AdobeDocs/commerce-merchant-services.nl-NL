@@ -3,9 +3,9 @@ title: Overzicht van de handleiding
 description: Leer hoe te om de gegevens van Adobe Commerce met Adobe Experience Platform te integreren gebruikend de  [!DNL Data Connection]  uitbreiding.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
 recommendations: noCatalog
-source-git-commit: b5727c90737ecfd237dd143801152f25600c3f97
+source-git-commit: eb98389cfdd7a0492a4437e9de9412f2d2e5401c
 workflow-type: tm+mt
-source-wordcount: '1752'
+source-wordcount: '1762'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ De volgende afbeelding laat zien hoe uw Commerce-gegevens van uw winkel naar and
 
 ![ hoe de gegevens aan de rand van het Experience Platform ](assets/commerce-edge.png) stromen
 
-In de bovenstaande afbeelding worden uw gedrags-, back office- en klantprofielgegevens naar de rand van het Experience Platform verzonden met behulp van een SDK, API en een bronaansluiting. U hoeft niet volledig te begrijpen hoe deze onderdelen werken als de extensie de complexiteit voor het delen van gegevens voor u behandelt. Wanneer de gebeurtenisgegevens zich aan de rand bevinden, kunt u die gegevens in andere Experience Platforms toepassingen opnemen. Bijvoorbeeld:
+In de bovenstaande afbeelding worden uw gedrags-, back-office- en klantprofielgegevens naar de rand van het Experience Platform verzonden via een SDK-, API- en bronaansluiting. U hoeft niet volledig te begrijpen hoe deze onderdelen werken als de extensie de complexiteit voor het delen van gegevens voor u behandelt. Wanneer de gebeurtenisgegevens zich aan de rand bevinden, kunt u die gegevens in andere Experience Platforms toepassingen opnemen. Bijvoorbeeld:
 
 | Toepassing | Doel | Gevallen gebruiken |
 |---|---|---|
@@ -49,23 +49,23 @@ Nadat u de verbinding tussen Commerce en Experience Platform en Experience Platf
 
 Het delen van gegevens tussen deze twee systemen vereist dat u verschillende concepten begrijpt.
 
-* **Gegevens** - de gegevens die met het Experience Platform worden gedeeld zijn gegevens die van browser gebeurtenissen op uw opslag, achterbureaugebeurtenissen op de server, en profielverslaggegevens worden verzameld. Storefront-gebeurtenissen worden vastgelegd op basis van de interacties van kopers op de site en omvatten gebeurtenissen zoals [`addToCart`](events.md#addtocart) , [`pageView`](events.md#pageview) , [`createAccount`](events.md#createaccount) , [`editAccount`](events.md#editaccount) , [`startCheckout`](events.md#startcheckout) , [`completeCheckout`](events.md#completecheckout) , [`signIn`](events.md#signin) , [`signOut`](events.md#signout) , enzovoort. Zie [ storefront gebeurtenissen ](events.md#storefront-events) voor de volledige lijst van storefront gebeurtenissen. Server-kant, of achterkantoorgebeurtenissen, omvatten [ de status van de orde ](events-backoffice.md#order-status) informatie, zoals [`orderPlaced`](events-backoffice.md#orderplaced), [`orderReturned`](events-backoffice.md#orderitemreturncompleted), [`orderShipped`](events-backoffice.md#ordershipmentcompleted), [`orderCancelled`](events-backoffice.md#ordercancelled), etc. Zie [ achterbureaugebeurtenissen ](events-backoffice.md) voor de volledige lijst van achterbureaugebeurtenissen. Profielrecordgegevens bevatten informatie wanneer een nieuw profiel wordt gemaakt, bijgewerkt of verwijderd. Zie [ gegevens van het profielverslag ](events-profilerecord.md) om meer te leren.
+- **Gegevens** - de gegevens die met het Experience Platform worden gedeeld zijn gegevens die van browser gebeurtenissen op uw opslag, achterbureaugebeurtenissen op de server, en profielverslaggegevens worden verzameld. Storefront-gebeurtenissen worden vastgelegd op basis van de interacties van kopers op de site en omvatten gebeurtenissen zoals [`addToCart`](events.md#addtocart) , [`pageView`](events.md#pageview) , [`createAccount`](events.md#createaccount) , [`editAccount`](events.md#editaccount) , [`startCheckout`](events.md#startcheckout) , [`completeCheckout`](events.md#completecheckout) , [`signIn`](events.md#signin) , [`signOut`](events.md#signout) , enzovoort. Zie [ storefront gebeurtenissen ](events.md#storefront-events) voor de volledige lijst van storefront gebeurtenissen. Server-kant, of achterkantoorgebeurtenissen, omvatten [ de status van de orde ](events-backoffice.md#order-status) informatie, zoals [`orderPlaced`](events-backoffice.md#orderplaced), [`orderReturned`](events-backoffice.md#orderitemreturncompleted), [`orderShipped`](events-backoffice.md#ordershipmentcompleted), [`orderCancelled`](events-backoffice.md#ordercancelled), etc. Zie [ achterbureaugebeurtenissen ](events-backoffice.md) voor de volledige lijst van achterbureaugebeurtenissen. Profielrecordgegevens bevatten informatie wanneer een nieuw profiel wordt gemaakt, bijgewerkt of verwijderd. Zie [ gegevens van het profielverslag ](events-profilerecord.md) om meer te leren.
 
-* **Experience Platform en Edge Network** - het gegevenspakhuis voor de meeste producten van Adobe DX. De gegevens die naar het Experience Platform worden verzonden worden dan verspreid aan de Adobe DX producten door de Edge Network van het Experience Platform. U kunt bijvoorbeeld Journey Optimizer starten, uw specifieke Commerce-gebeurtenisgegevens ophalen van de rand en een verlaten wagente-mail maken in Journey Optimizer. Journey Optimizer kan deze e-mail vervolgens verzenden als er in je Commerce-winkel winkels winkels verlaten winkelwagentjes zijn. Leer meer over het [ Experience Platform en de Edge Network ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html).
+- **Experience Platform en Edge Network** - het gegevenspakhuis voor de meeste producten van Adobe DX. Gegevens die naar het Experience Platform worden verzonden, worden doorgegeven aan Adobe DX-producten via de Edge Network van het Experience Platform. U kunt bijvoorbeeld Journey Optimizer starten, uw specifieke Commerce-gebeurtenisgegevens ophalen van de rand en een verlaten wagente-mail maken in Journey Optimizer. Journey Optimizer kan deze e-mail vervolgens verzenden als er in je Commerce-winkel winkels winkels verlaten winkelwagentjes zijn. Leer meer over het [ Experience Platform en de Edge Network ](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html).
 
-* **Schema** - het schema is wat de structuur van het gegeven beschrijft dat wordt verzonden. Voordat een Experience Platform uw Commerce-gegevens kan invoeren, moet u een schema samenstellen om de gegevensstructuur te beschrijven en beperkingen op te geven aan het type gegevens dat binnen elk veld kan worden opgenomen. De schema&#39;s bestaan uit een basisklasse en nul of meer groepen van het schemagebied. Het schema gebruikt de XDM-structuur, die alle Adobe DX-producten kunnen lezen. Dus wanneer u uw gegevens naar het Experience Platform verzendt, kunt u er zeker van zijn dat uw gegevens worden begrepen in alle DX-producten. Leer meer over [ schema&#39;s ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html).
+- **Schema** - het schema beschrijft de structuur van het gegeven dat wordt verzonden. Voordat Experience Platform uw Commerce-gegevens kan invoeren, moet u een schema samenstellen om de gegevensstructuur te beschrijven en beperkingen opgeven voor het type gegevens dat binnen elk veld kan worden opgenomen. De schema&#39;s bestaan uit een basisklasse en nul of meer groepen van het schemagebied. Het schema gebruikt de XDM-structuur, die alle Adobe DX-producten kunnen lezen. Het schema zorgt ervoor dat de gegevens die naar het Experience Platform worden verzonden over alle producten DX worden begrepen. Leer meer over [ schema&#39;s ](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html).
 
-* **Dataset** - een opslag en beheersconstructie voor een inzameling van gegevens, typisch een lijst die een schema (kolommen) en gebieden (rijen) bevat. Datasets bevatten ook metagegevens die verschillende aspecten van de gegevens beschrijven die ze opslaan. Alle gegevens die met succes in Adobe Experience Platform worden opgenomen, bevinden zich in gegevenssets. Leer meer over [ datasets ](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html).
+- **Dataset** - een opslag en beheersconstructie voor een inzameling van gegevens, typisch een lijst die een schema (kolommen) en gebieden (rijen) bevat. Datasets bevatten ook metagegevens die verschillende aspecten van de gegevens beschrijven die ze opslaan. Alle gegevens die met succes in Adobe Experience Platform worden opgenomen, bevinden zich in gegevenssets. Leer meer over [ datasets ](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html).
 
-* **Datastream** - identiteitskaart die gegevens om van Adobe Experience Platform aan andere producten van Adobe DX toestaat te stromen. Deze id moet zijn gekoppeld aan een specifieke website in uw specifieke Adobe Commerce-exemplaar. Wanneer u deze gegevensstroom creeert, specificeer het XDM schema u hierboven creeerde. Leer meer over [ gegevensstromen ](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html).
+- **Datastream** - identiteitskaart die gegevens om van Adobe Experience Platform aan andere producten van Adobe DX toestaat te stromen. Deze id moet zijn gekoppeld aan een specifieke website in uw specifieke Adobe Commerce-exemplaar. Wanneer u deze gegevensstroom creeert, specificeer het XDM schema u hierboven creeerde. Leer meer over [ gegevensstromen ](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html).
 
 ## Ondersteunde architectuur
 
 De extensie [!DNL Data Connection] is beschikbaar op de volgende architecturen:
 
-* PHP/Luma
-* [ PWA Studio ](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/)
-* [ AEM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/aep.html)
+- PHP/Luma
+- [ PWA Studio ](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/)
+- [ AEM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/aep.html)
 
 >[!BEGINSHADEBOX]
 
@@ -73,10 +73,10 @@ De extensie [!DNL Data Connection] is beschikbaar op de volgende architecturen:
 
 Als u de extensie [!DNL Data Connection] wilt gebruiken, moet u over het volgende beschikken:
 
-* Adobe Commerce 2.4.4 of hoger
-* Adobe ID- en organisatie-id
-* [ de Gegevens van de Cliënt van de Adobe Laag (ACDL) ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html), die wordt vereist om storefront gebeurtenisgegevens te verzamelen
-* Rechten op andere Adobe DX-producten.
+- Adobe Commerce 2.4.4 of hoger
+- Adobe ID- en organisatie-id
+- [ de Gegevens van de Cliënt van de Adobe Laag (ACDL) ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html), die wordt vereist om storefront gebeurtenisgegevens te verzamelen
+- Rechten op andere Adobe DX-producten.
 
 >[!ENDSHADEBOX]
 
@@ -98,7 +98,11 @@ De rest van deze gids begeleidt u door elk van deze stappen meer in detail zodat
 
 >[!NOTE]
 >
->Voor mobiele ontwikkelaars, leer hoe te [ ](./mobile-sdk-epc.md) de Mobiele SDK van Adobe Experience Platform met Commerce integreren.
+>Voor mobiele ontwikkelaars, leer hoe te [ ](./mobile-sdk-epc.md) Adobe Experience Platform Mobile SDK met Commerce integreren.
+
+## HIPAA-gereedheid
+
+Met de extensie [!DNL Data Connection] kunt u [!DNL Commerce] back-office gegevens delen met het Experience Platform en HIPAA-compatibiliteit behouden. [ leer meer ](hipaa-readiness.md).
 
 ## Publiek
 
@@ -108,5 +112,5 @@ Deze gids is ontworpen voor de Adobe Commerce-handelaar die zijn Commerce-winkel
 
 Gebruik de volgende bronnen als u informatie nodig hebt of vragen hebt die niet in deze handleiding worden behandeld:
 
-* [ centrum van de Hulp ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html) {target="_blank"}
-* [ kaartjes van de Steun ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) {target="_blank"} - leg een kaartje voor om extra hulp te ontvangen.
+- [ centrum van de Hulp ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html) {target="_blank"}
+- [ kaartjes van de Steun ](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) {target="_blank"} - leg een kaartje voor om extra hulp te ontvangen.

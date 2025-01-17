@@ -2,9 +2,9 @@
 title: Live zoeken instellen
 description: De  [!DNL Live Search]  werkruimte wordt gebruikt om, onderzoeksprestaties te vormen te beheren en te controleren.
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
-source-git-commit: 7f536c93ab1c87bf88bc892b2a485067fa8f8110
+source-git-commit: eb98389cfdd7a0492a4437e9de9412f2d2e5401c
 workflow-type: tm+mt
-source-wordcount: '949'
+source-wordcount: '1012'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,10 @@ Als u een koploze winkel gebruikt, raadpleegt u de volgende documentatie voor me
 - [ Vereiste gebeurtenissen ](events.md) voor Levend dashboard van het Onderzoek.
 - [ de gebeurtenisinzamelaar van de Storefront ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) die als voorwaarde moet worden toegevoegd.
 - [ Voorbeelden ](https://github.com/adobe/commerce-events/tree/main/examples) van de gebeurtenisstructuur.
+
+### Gezondheidszorgklanten
+
+Als u een gezondheidszorgklant bent en u de [ uitbreiding van HIPAA van de Diensten van Gegevens ](../data-connection/hipaa-readiness.md#installation) installeerde, die deel van de [ uitbreiding van de Verbinding van Gegevens ](../data-connection/overview.md) uitmaakt, worden de gegevens van de storefront gebeurtenis die door [!DNL Live Search] worden gebruikt niet meer gevangen. Dit komt doordat gebeurtenisgegevens voor storefront op de client worden gegenereerd. Als u wilt doorgaan met het vastleggen en verzenden van gegevens over storefront-gebeurtenissen, schakelt u gebeurtenisverzameling opnieuw in voor [!DNL Live Search] . Zie [ algemene configuratie ](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general.html#data-services) om meer te leren.
 
 ## Bereik instellen
 

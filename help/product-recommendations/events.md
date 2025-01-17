@@ -1,22 +1,26 @@
 ---
 title: Gegevens verzamelen
-description: Leer hoe gebeurtenissen gegevens verzamelen voor productaanbevelingen.
+description: Leer hoe de gebeurtenissen gegevens voor  [!DNL Product Recommendations] verzamelen.
 exl-id: b827d88c-327f-4986-8239-8f1921d8383c
 feature: Services, Recommendations, Eventing
-source-git-commit: cd1ce643d7c1ffeec8e9853cfc6ffc5519ce8f7a
+source-git-commit: eb98389cfdd7a0492a4437e9de9412f2d2e5401c
 workflow-type: tm+mt
-source-wordcount: '1316'
+source-wordcount: '1360'
 ht-degree: 0%
 
 ---
 
 # Gegevens verzamelen
 
-Wanneer u installeert en op SaaS-Gebaseerde eigenschappen van Adobe Commerce zoals [ Recommendations van het Product ](install-configure.md) of [ Levend Onderzoek ](../live-search/install.md) vormt, voeren de modules gedragsgegevensinzameling aan uw storefront op. Dit mechanisme verzamelt geanonimiseerde gedragsgegevens van uw kopers en machten productaanbevelingen en [ Levende resultaten van het Onderzoek ](../live-search/overview.md). De gebeurtenis `view` wordt bijvoorbeeld gebruikt om het `Viewed this, viewed that` aanbeveling-type te berekenen en de gebeurtenis `place-order` wordt gebruikt om het `Bought this, bought that` aanbeveling-type te berekenen.
+Wanneer u op SaaS gebaseerde Adobe Commerce-functies zoals [[!DNL Product Recommendations]](install-configure.md) of [[!DNL Live Search]](../live-search/install.md) installeert en configureert, implementeren de modules gedragsgegevensverzameling in uw winkel. Dit mechanisme verzamelt geanonimiseerde gedragsgegevens van uw kopers en machten [!DNL Product Recommendations] . De gebeurtenis `view` wordt bijvoorbeeld gebruikt om het `Viewed this, viewed that` aanbeveling-type te berekenen en de gebeurtenis `place-order` wordt gebruikt om het `Bought this, bought that` aanbeveling-type te berekenen.
 
 >[!NOTE]
 >
->Gegevensverzameling ten behoeve van productaanbevelingen omvat geen persoonlijk identificeerbare informatie (PII). Alle gebruikers-id&#39;s, zoals cookie-id&#39;s en IP-adressen, worden strikt geanonimiseerd. Leer [ meer ](https://www.adobe.com/privacy/experience-cloud.html).
+>Gegevensverzameling ten behoeve van [!DNL Product Recommendations] omvat geen PII (Persoonlijk identificeerbare informatie). Alle gebruikers-id&#39;s, zoals cookie-id&#39;s en IP-adressen, worden strikt geanonimiseerd. Leer [ meer ](https://www.adobe.com/privacy/experience-cloud.html).
+
+## Gezondheidszorgklanten
+
+Als u een gezondheidszorgklant bent en u de [ uitbreiding van HIPAA van de Diensten van Gegevens ](../data-connection/hipaa-readiness.md#installation) installeerde, die deel van de [ uitbreiding van de Verbinding van Gegevens ](../data-connection/overview.md) uitmaakt, worden de gegevens van de storefront gebeurtenis die door [!DNL Product Recommendations] worden gebruikt niet meer gevangen. Dit komt doordat gebeurtenisgegevens voor storefront op de client worden gegenereerd. Als u gegevens over storefront-gebeurtenissen wilt blijven vastleggen en verzenden, schakelt u gebeurtenisverzameling opnieuw in voor [!DNL Product Recommendations] . Zie [ algemene configuratie ](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general.html#data-services) om meer te leren.
 
 ## Gegevenstypen en gebeurtenissen
 
@@ -75,7 +79,7 @@ In het geval van onvoldoende gegevensverzameling worden de volgende aanbevelinge
 
 ### Gebeurtenissen
 
-De [ Verzameling van de Gebeurtenis van Adobe Commerce Storefront ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start) maakt een lijst van alle gebeurtenissen die aan uw storefront worden opgesteld. Uit die lijst komt echter een subset van gebeurtenissen naar voren die specifiek zijn voor Product Recommendations. Deze gebeurtenissen verzamelen gegevens wanneer de klanten met aanbevelingen op de storefront in wisselwerking staan en macht de metriek die wordt gebruikt om u te helpen analyseren hoe goed uw aanbevelingen presteren.
+De [ Verzameling van de Gebeurtenis van Adobe Commerce Storefront ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start) maakt een lijst van alle gebeurtenissen die aan uw storefront worden opgesteld. In die lijst staat een subset van gebeurtenissen die specifiek zijn voor [!DNL Product Recommendations] . Deze gebeurtenissen verzamelen gegevens wanneer de klanten met aanbevelingen op de storefront in wisselwerking staan en macht de metriek om te analyseren hoe goed uw aanbevelingen presteren.
 
 | Gebeurtenis | Beschrijving |
 | --- | --- |

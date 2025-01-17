@@ -4,9 +4,9 @@ description: Leer hoe te om, de  [!DNL Data Connection]  uitbreiding van Adobe C
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
-source-git-commit: 962452b7e3fdfecabe05f5af3d16afd8d24f2740
+source-git-commit: ae8651e3c3e11d1ed4c39f4d989b816a74d2437b
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
@@ -44,6 +44,8 @@ De [!DNL Data Connection] uitbreiding is beschikbaar bij de [ Marketplace van de
 1. (Facultatief) om [!DNL Live Search] gegevens te omvatten, die [ onderzoeksgebeurtenissen ](events.md#search-events) omvatten, installeer de [[!DNL Live Search]](../live-search/install.md) uitbreiding.
 
 1. (Facultatief) om B2B- gegevens te omvatten, die [ aanvraaggebeurtenissen ](events.md#b2b-events) omvatten, installeer de [ B2B uitbreiding ](#install-the-b2b-extension).
+
+1. (Facultatief) als u een gezondheidszorghandelaar bent, installeer de [ uitbreiding van HIPAA van de Diensten van Gegevens ](#install-the-data-services-hipaa-extension) zodat uw [!DNL Commerce] achterkantoorgegevens HIPAA-klaar zijn.
 
 ### Installeer de Gebeurtenissen van Adobe I/O en vorm de klant-schakelaar module
 
@@ -109,6 +111,16 @@ Download de extensie `magento/experience-platform-connector-b2b` door het volgen
 
 ```bash
 composer require magento/experience-platform-connector-b2b
+```
+
+### De HIPAA-extensie voor Data Services installeren
+
+Voor gezondheidszorghandelaren, installeer de volgende uitbreiding om achterkantoorgebeurtenisgegevens te verzekeren is HIPAA-klaar.
+
+Download de extensie `magento/module-data-services-hipaa` door het volgende uit te voeren vanaf de opdrachtregel:
+
+```bash
+composer require magento/module-data-services-hipaa
 ```
 
 ## De extensie [!DNL Data Connection] bijwerken {#update}
