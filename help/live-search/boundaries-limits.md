@@ -3,9 +3,9 @@ title: Grenzen en grenzen
 description: Leer over de grenzen en de grenzen voor  [!DNL Live Search]  om ervoor te zorgen het aan de behoeften van uw zaken voldoet.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 438d6a04cb0044f9e06f8c8b53c8eec79d650170
+source-git-commit: 867d65d0ffd212061524605fd725df1eb75be9eb
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '943'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,7 @@ Adobe Commerce biedt opties voor het zoeken naar sites. Controleer de volgende g
 - Er geldt een harde limiet van 1 MB per kenmerk, inclusief beschrijving en aangepaste kenmerken.
 - De zoekadapter ondersteunt geen productkenmerken die zijn gemaakt met een aangepast bronmodel en die als facetten worden gebruikt. Om deze functionaliteit te steunen, moet u het [ product gebruiken dat van de Pagina Widget ](plp-styling.md) van de Pagina een lijst maakt.
 - Aangepaste producttypen worden niet ondersteund.
+- Aangepaste kenmerken die via programmacode met `"is_user_defined": false` zijn gemaakt, worden niet ondersteund.
 - U kunt resultaten filtreren gebruikend &quot;begint met&quot;of &quot;bevat&quot;voorwaarden met sommige beperkingen zoals die [ hier ](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#limitations) worden beschreven.
 
 ## Indexeren
