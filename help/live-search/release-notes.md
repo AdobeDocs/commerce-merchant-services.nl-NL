@@ -3,9 +3,9 @@ title: '[!DNL Live Search] Opmerkingen bij de release'
 description: De recentste versieinformatie voor  [!DNL Live Search]  van Adobe Commerce.
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 3cd773060e0546026cc4cb1979abaceadd3fcc2c
+source-git-commit: 006b9cc1fe83ecbeb8102984eb3378e0e05df3d2
 workflow-type: tm+mt
-source-wordcount: '2068'
+source-wordcount: '2087'
 ht-degree: 0%
 
 ---
@@ -145,6 +145,7 @@ _nov 13, 2023_
 ### Updates
 
 ![ bevestig ](../assets/fix.svg) De [!DNL Live Search] PLP widget wordt nu toegelaten door gebrek voor nieuwe installaties.
+![ bevestig ](../assets/fix.svg) de Adapter van het Onderzoek wordt afgekeurd. In de toekomst wordt de zoekadapter alleen bijgewerkt om beveiligingsproblemen te verhelpen.
 ![ bevestig ](../assets/fix.svg) opnieuw gevormde CSS stijlen om widgetklassen beter te isoleren.
 ](../assets/fix.svg) Kleine insectenmoeilijke situaties van 0} herstellen![
 

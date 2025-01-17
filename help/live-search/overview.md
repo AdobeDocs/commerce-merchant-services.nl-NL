@@ -3,9 +3,9 @@ title: Wat is  [!DNL Live Search]?
 description: '[!DNL Live Search] van Adobe Commerce biedt een snelle, relevante en intuïtieve zoekervaring.'
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 7f536c93ab1c87bf88bc892b2a485067fa8f8110
+source-git-commit: 006b9cc1fe83ecbeb8102984eb3378e0e05df3d2
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '744'
 ht-degree: 0%
 
 ---
@@ -74,8 +74,8 @@ Het verhandelen [ regels ](rules.md) vorm de het winkelen ervaring met als-toen 
 ## Componenten Live zoeken
 
 - [!DNL Live Search] [ popover widget ](storefront-popover.md) is de doos die onder het onderzoeksgebied opent dat de onderzoeksresultaten bevat.
-- [ Van de Lijst van het Product van de Pagina widget ](plp-styling.md) (PLP) verstrekt een doorzoekbare pagina van de productlijst met facetten en synoniem steun. De widget wordt geïnstalleerd en ingeschakeld in Live zoeken 4.0.0+.
-- (**Vervangen**) de adapter van het Onderzoek was de voorloper aan PLP widget en geïnstalleerd met Levend Onderzoek &lt; 4.0.0. Als u een versie van Live zoeken gebruikt die ouder is dan 4.0.0, raadt Commerce u aan een upgrade uit te voeren om de voordelen van de functies van de PLP-widget en toekomstige verbeteringen te kunnen genieten.
+- [ Van de Lijst van het Product van de Pagina widget ](plp-styling.md) (PLP) verstrekt een doorzoekbare pagina van de productlijst met facetten en synoniem steun. De widget is geïnstalleerd en ingeschakeld in Live Search 4.0.0+ en vervangt de zoekadapter.
+- (**Vervangen**) Adapter van het Onderzoek was de voorloper aan PLP widget en geïnstalleerd met Levend Onderzoek &lt; 4.0.0. Als u een versie van Live zoeken gebruikt die ouder is dan 4.0.0, raadt Commerce u aan een upgrade uit te voeren om de voordelen van de functies van de PLP-widget en toekomstige verbeteringen te kunnen genieten. In de toekomst wordt de zoekadapter alleen bijgewerkt om beveiligingsproblemen te verhelpen.
 
 ## [!DNL Live Search] werkruimte
 
