@@ -2,7 +2,7 @@
 title: Facturen beheren
 description: Leer hoe te om bestaande  [!DNL Live Search]  facetten te beheren.
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
-source-git-commit: bce69f952e70e2e8dcb892357dea41e18f61e5f6
+source-git-commit: e7befb65ef465e98ff35db3046a438835cfd157f
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 0%
@@ -50,16 +50,20 @@ Verwijs naar [ Montages ](settings.md) om prijsfacetintervallen en groeperingen 
 
 1. In de **Max kolom van de Waarde**, plaats het maximumaantal (van 0 - 10) van de waarden van de facetfilter in de storefront te tonen.
 1. Wanneer volledig, klik **sparen**.
-De wijzigingen worden pas na publicatie in de winkelruimte weergegeven.
+
+   De wijzigingen worden pas na publicatie in de winkelruimte weergegeven.
 
 ## Vastzetten/vastzetten van facet
 
 Het speld verandert kleur wanneer geklikt en wordt gebruikt om de facet aan of *vastgezette Facets* of de *Dynamische sectie van Facetten* te bewegen.
 
 1. Om een facet aan de bovenkant van de *lijst van Filters* vast te zetten, vind de facet in de *Dynamische lijst van Facetten* en klik het grijze speld (![ Vastzetten selecteur ](assets/btn-pin-gray.png)).
-De speld wordt blauw en de facetbewegingen aan de *Vastgezette sectie van Facetten*.
+
+   De speld wordt blauw en de facetbewegingen aan de *Vastgezette sectie van Facetten*.
+
 1. Om een facet los te maken, vind het facet in de *Vastgezette lijst van Facetten* en klik het blauwe speld (![ Vastzetten selecteur ](assets/btn-pin-blue.png)).
-De speld verandert grijs en de facetbewegingen aan de *Dynamische sectie van Facetten*.
+
+   De speld verandert grijs en de facetbewegingen aan de *Dynamische sectie van Facetten*.
 
    ![ Vastgezette en dynamische facetten ](assets/facets-pinned-unpinned.png)
 
@@ -77,7 +81,8 @@ U kunt de volgorde van vastgezette facetten wijzigen door de rij naar een andere
 
 1. Vind het facet in de *Vastgezette sectie van Facetten* van de lijst.
 1. Gebruik het **pictogram van de Beweging** (![ selecteur van de Beweging ](assets/btn-move.png)) om de rij aan een nieuwe positie in de *Vastgezette sectie van Facetten* te slepen.
-Nadat de veranderingen worden gepubliceerd, verschijnen de opnieuw in orde gebrachte facetten in de opslag *lijst van Filters*.
+
+   Nadat de veranderingen worden gepubliceerd, verschijnen de opnieuw in orde gebrachte facetten in de opslag *lijst van Filters*.
 
 ## Facet verwijderen
 
