@@ -4,9 +4,9 @@ description: De recentste versieinformatie voor  [!DNL Data Export Extension]  v
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 0c7aeeda-e8a6-4740-b466-0661a6d2df07
-source-git-commit: 5379299cdd10f3a9aab41da56ed0a7b41282b085
+source-git-commit: f222d66ff3fc99c1fb234e1988a760482aadf2ca
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '869'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Updates zijn:
 
 ## 103.3.18 Release
 
-![ verbeter ](../assets/fix.svg) het Staging updates voor product en categorieregelingen wordt nu correct teweeggebracht op de gegevensupdates van de Uitvoer van Gegevens.&lt;!-MDEE-963—>
+](../assets/fix.svg) het Staging updates van 0} herstellen {voor product en categorieentiteiten wordt nu correct teweeggebracht op de gegevensupdates van de Uitvoer van Gegevens.<!--MDEE-963-->![
 
 ## 103.3.17 Release
 
