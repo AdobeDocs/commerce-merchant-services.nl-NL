@@ -4,9 +4,9 @@ description: Leer hoe u uw Adobe Commerce- of Magento Open Source-instantie inte
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: daad5bb1ce74126d727207812abebdcf0cbf72c0
+source-git-commit: 867ce9c218632714d463af5c366dccd792d892ad
 workflow-type: tm+mt
-source-wordcount: '1304'
+source-wordcount: '1338'
 ht-degree: 0%
 
 ---
@@ -88,9 +88,11 @@ Alle Adobe Commerce-handelaren hebben per SaaS-project toegang tot één ruimte 
 
 U kunt de het testen gegevensruimten in om het even welke niet productiemilieu gebruiken zolang u niet de zelfde gegevensruimte in veelvoudige milieu&#39;s tezelfdertijd gebruikt. Om de ruimte van testgegevens in een verschillende milieu te gebruiken, voer een gegevensschoonmaakbeurt uit alvorens u selecteert en de gegevensruimte in die milieu vormt.
 
-Voor de projecten van Adobe Commerce Cloud Pro met veelvoudige het opvoeren milieu&#39;s, kunt u om extra het testen gegevensruimten voor elk het opvoeren milieu verzoeken door [ een verzoek van de Steun ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) voor te leggen. Als u echter maar één testomgeving hebt en extra testgegevenspaties nodig hebt, hebt u de volgende opties:
-- Neem contact op met het team voor succes van de klant of met de door u aangewezen manager voor succes van de klant om een extra testomgeving aan te vragen. Er zijn extra kosten mee gemoeid.
-- [ leg een verzoek van de Steun ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/overview) voor een extra het testen gegevensruimte voor en wijs op de bedrijfsrechtvaardiging voor het extra datasnelheid. Dit verzoek moet worden goedgekeurd.
+Voor de projecten van Adobe Commerce Cloud Pro met veelvoudige het opvoeren milieu&#39;s, kunt u om extra het testen gegevensruimten voor elk het opvoeren milieu verzoeken door [ een verzoek van de Steun ](https://experienceleague.adobe.com/home?support-tab=home#support) voor te leggen. Als u echter maar één testomgeving hebt en extra testgegevenspaties nodig hebt, hebt u de volgende opties:
+- Neem contact op met het team voor succes van de klant of met de door u aangewezen manager voor succes van de klant om een extra testomgeving aan te vragen.
+- [ legt een verzoek van de Steun ](https://experienceleague.adobe.com/home?support-tab=home#support) voor om de extra het testen gegevensruimte te verzoeken en op de bedrijfsrechtvaardiging voor het extra datasnelheid te wijzen. Dit verzoek moet worden goedgekeurd.
+
+Magento Open Source klanten die gebruikmaken van Adobe Payment Services kunnen ook om een extra gegevensruimte vragen. Contacteer het team van Betalingen voor vroegere goedkeuring van de extra gegevensruimten alvorens het verzoek van de a [ Steun ](https://experienceleague.adobe.com/home?support-tab=home#support) voor te leggen om de het testen gegevensruimte te verzoeken.
 
 ### Een SaaS-project selecteren of maken {#createsaasenv}
 
