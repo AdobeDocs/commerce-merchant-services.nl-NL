@@ -4,9 +4,9 @@ description: De recentste versieinformatie voor  [!DNL Data Export Extension]  v
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 0c7aeeda-e8a6-4740-b466-0661a6d2df07
-source-git-commit: 4e40ea6214498f2b1c8bcf86b471d61a74ef561c
+source-git-commit: 7d9f4e362fdb92e404a9293e3e9e6e45bb6bde86
 workflow-type: tm+mt
-source-wordcount: '867'
+source-wordcount: '871'
 ht-degree: 0%
 
 ---
@@ -28,32 +28,36 @@ Updates zijn:
 
 ## Huidige hoofdversie
 
+## 103.3.18 Release
+
+![ verbeter ](../assets/fix.svg) het Staging updates voor product en categorieregelingen wordt nu correct teweeggebracht op de gegevensupdates van de Uitvoer van Gegevens.&lt;!-MDEE-963—>
+
 ## 103.3.17 Release
 
-![ bevestig ](../assets/fix.svg) Toegevoegde verenigbaarheid voor PHP 8.4. &lt;!-MDEE-941—>
+](../assets/fix.svg) Toegevoegde verenigbaarheid voor PHP 8.4 herstellen ![. <!--MDEE-941-->
 
 ## 103.3.16 Release
 
-](../assets/fix.svg) de waarden van de Optie van 0} herstellen {kunnen leeg voor configureerbare producten voor veelvoudige opslagmeningen zijn. ![ &lt;!-MDEE-926—>
+](../assets/fix.svg) de waarden van de Optie van 0} herstellen {kunnen leeg voor configureerbare producten voor veelvoudige opslagmeningen zijn. <!--MDEE-926-->![
 
 ## 103.3.15 Release
 
-![ bevestig ](../assets/fix.svg) verzekerde stabiele verrichting van integratietests op oudere configuraties. &lt;!-MDEE-869—>
-![ verhelpen ](../assets/fix.svg) Einde verspreidend onnodige attributenopties. &lt;!-MDEE-882—>
-![ bevestig ](../assets/fix.svg) het foutenbericht dat naar het logboek van de gegevensuitvoer wordt verzonden wanneer de gegevensrangschikking ontbreekt. &lt;!-MDEE-913—>
-![ bevestig ](../assets/fix.svg) verbeterde de betrouwbaarheid van eenvoudige productupdates met extra testdekking. &lt;!-MDEE-886—>
+![ bevestig ](../assets/fix.svg) verzekerde stabiele verrichting van integratietests op oudere configuraties. <!--MDEE-869-->
+![ herstellen ](../assets/fix.svg) Einde verspreidend onnodige attributenopties. <!--MDEE-882-->
+![ bevestig ](../assets/fix.svg) het foutenbericht dat naar het logboek van de gegevensuitvoer wordt verzonden wanneer de gegevensrangschikking ontbreekt. <!--MDEE-913-->
+![ bevestig ](../assets/fix.svg) verbeterde de betrouwbaarheid van eenvoudige productupdates met extra testdekking. <!--MDEE-886-->
 
 ## 103.3.14 Release
 
-![ bevestig ](../assets/fix.svg) de exporter indexer handhaaft nu de correcte status voor afhankelijke indexen. Eerder, waren deze indexen verkeerd ongeldig en vereiste extra controles en bevestiging die het indexeren prestaties vertraagden. &lt;!-MDEE-866—>
+![ bevestig ](../assets/fix.svg) de exporter indexer handhaaft nu de correcte status voor afhankelijke indexen. Eerder, waren deze indexen verkeerd ongeldig en vereiste extra controles en bevestiging die het indexeren prestaties vertraagden. <!--MDEE-866-->
 
 ## 103.3.13 Release
 
-![ bevestig ](../assets/fix.svg) Verbeterde prestaties van het proces van de gegevenssynchronisatie door een lokaal geheime voorgeheugen voor de gegevens van attributenopties toe te voegen.&lt;!-MDEE-864—>
+![ bevestig ](../assets/fix.svg) Verbeterde prestaties van het proces van de gegevenssynchronisatie door een lokaal geheime voorgeheugen voor de gegevens van attributenopties toe te voegen.<!--MDEE-864-->
 
 ## 103.3.12 Release
 
-![ bevestig ](../assets/fix.svg) een kwestie die synchronisatietijd voor eenvoudige en virtuele producten verhoogde. &lt;!-MDEE-861—>
+![ bevestig ](../assets/fix.svg) een kwestie die synchronisatietijd voor eenvoudige en virtuele producten verhoogde. <!--MDEE-861-->
 
 ## 103.3.11 Release
 
