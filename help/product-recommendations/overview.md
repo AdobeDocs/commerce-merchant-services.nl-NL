@@ -3,9 +3,9 @@ title: Inleiding tot  [!DNL Product Recommendations]
 description: '[!DNL Product Recommendations] is een krachtig marketinginstrument dat u kunt gebruiken om conversies te verhogen, de inkomsten te verhogen en de betrokkenheid van klanten te stimuleren.'
 exl-id: 818ac876-58c9-4c68-975e-53da59ed6b52
 recommendations: noCatalog
-source-git-commit: 289ac6ac464955f18f3a2448099ad459e6264941
+source-git-commit: e446eb06212609dc44d0bf64fe981c7d1489d33c
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '473'
 ht-degree: 0%
 
 ---
@@ -43,3 +43,9 @@ Met productaanbevelingen kunt u:
 Bekijk deze video voor meer informatie over [!DNL Product Recommendations] :
 
 >[!VIDEO](https://video.tv.adobe.com/v/343991?quality=12)
+
+## Beleid voor het bewaren van catalogusgegevens
+
+Als u gedurende 90 opeenvolgende dagen geen query verzendt voor de catalogusgegevens in uw testomgeving, worden de catalogusgegevens ingesteld op de slaapstand en worden er geen gegevens geretourneerd voor een query. Dit beleid heeft geen invloed op catalogusgegevens in uw productieomgeving.
+
+Om de catalogusgegevens in uw het testen milieu opnieuw te activeren, [ voorlegt een steunverzoek ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page) met de titel: &quot;Reactivate [!DNL Product Recommendations]&quot;en omvat milieu IDs. De catalogusgegevens in de testomgeving moeten binnen een paar uur worden hersteld.

@@ -2,9 +2,9 @@
 title: Prestaties
 description: De  [!DNL Live Search]  werkruimte van Prestaties verstrekt inzicht in de onderzoekstermijnen die de kopers gebruiken.
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
-source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
+source-git-commit: 7539c0fe9ebe4b82f42f3a7ff30b03c951980eed
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '487'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,10 @@ De *werkruimte van Prestaties* verstrekt inzicht in de onderzoekstermijnen die d
 
 U kunt ook naar het [ dashboard van het Beheer van Gegevens ](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) voor meer gegevens over gegevens het synchroniseren verwijzen.
 
+>[!NOTE]
+>
+>De werkruimte voor prestaties wordt elke 12 uur bijgewerkt.
+
 ## Een rapport weergeven
 
 1. Om de **waaier van de Datum** in te gaan, klik de kalender (![ Kalender ](assets/btn-calendar.png)) en doe één van het volgende:
@@ -30,7 +34,7 @@ U kunt ook naar het [ dashboard van het Beheer van Gegevens ](https://experience
 
 >[!NOTE]
 >
->De werkruimte voor prestaties wordt elke 12 uur bijgewerkt.
+>Het datumbereik mag niet langer zijn dan één jaar.
 
 ## Veldomschrijvingen
 

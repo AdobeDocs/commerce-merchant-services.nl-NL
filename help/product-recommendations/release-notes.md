@@ -3,9 +3,9 @@ title: '[!DNL Product Recommendations] Opmerkingen bij de release'
 description: De recentste versieinformatie voor  [!DNL Product Recommendations]  van Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 0e0f67c01c49c8d8c0ac4967eda0bde8685b2980
+source-git-commit: e446eb06212609dc44d0bf64fe981c7d1489d33c
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1429'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,10 @@ Zie de ontwikkelaardocumentatie [ over productsteun ](https://experienceleague.a
 ## Gehoste service-updates
 
 Deze nota&#39;s beschrijven updates of bekende kwesties die buiten een versioned versie of verbeteringen aan de ontvangen dienst werden gepubliceerd of ontdekt.
+
+_Januari 31, 2025_
+
+![ Nieuw ](../assets/new.svg) is er een nieuw beleid van het gegevensbehoud voor ongevraagde catalogusgegevens in uw testende milieu. [ leer meer ](overview.md#catalog-data-retention-policy).
 
 _Juni 28, 2024_
 

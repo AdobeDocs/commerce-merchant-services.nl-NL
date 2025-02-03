@@ -3,9 +3,9 @@ title: Wat is  [!DNL Live Search]?
 description: '[!DNL Live Search] van Adobe Commerce biedt een snelle, relevante en intuïtieve zoekervaring.'
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 006b9cc1fe83ecbeb8102984eb3378e0e05df3d2
+source-git-commit: e446eb06212609dc44d0bf64fe981c7d1489d33c
 workflow-type: tm+mt
-source-wordcount: '744'
+source-wordcount: '834'
 ht-degree: 0%
 
 ---
@@ -84,3 +84,9 @@ Het verhandelen [ regels ](rules.md) vorm de het winkelen ervaring met als-toen 
 ## Gebeurtenissen
 
 [!DNL Live Search] gebruikt [ gebeurtenissen ](events.md) om [ Intelligente Merchandising ](category-merch.md) en [ prestaties ](performance.md) dashboards te berekenen. Eventing wordt voorzien van standaardimplementaties. Eventing voor hoofdloze winkelcentra moet handmatig worden ingeschakeld.
+
+## Beleid voor het bewaren van catalogusgegevens
+
+Als u gedurende 90 opeenvolgende dagen geen zoekquery naar de catalogusgegevens in uw testomgeving verzendt, worden de catalogusgegevens ingesteld op de slaapstand en worden er geen gegevens geretourneerd voor zoekopdrachten. Dit beleid heeft geen invloed op catalogusgegevens in uw productieomgeving.
+
+Om de catalogusgegevens in uw het testen milieu opnieuw te activeren, [ voorlegt een steunverzoek ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#experience-league-start-page) met de titel: &quot;Reactivate [!DNL Live Search]&quot;en omvat milieu IDs. De catalogusgegevens in de testomgeving moeten binnen een paar uur worden hersteld.
