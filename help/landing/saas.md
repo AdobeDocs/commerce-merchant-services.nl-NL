@@ -4,9 +4,9 @@ description: Leer hoe u uw Adobe Commerce- of Magento Open Source-instantie inte
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 867ce9c218632714d463af5c366dccd792d892ad
+source-git-commit: c7ba4401d94f14cc66ef7b404e5444e1f2cb1e23
 workflow-type: tm+mt
-source-wordcount: '1338'
+source-wordcount: '1372'
 ht-degree: 0%
 
 ---
@@ -57,6 +57,10 @@ Daarnaast hebben integrators van oplossingen ook het recht om [!DNL Commerce Ser
 
 1. Van het _Milieu_ menu, uitgezochte **Productie** of **Sandbox**.
 
+   >[!NOTE]
+   >
+   >*de Productie* en *Sandbox* verwijzen naar de milieu&#39;s van het gegevensgebied waar het gegeven in Adobe SaaS achtergrondsystemen wordt opgeslagen. Het verwijst niet naar de handelsomgeving(en) waar u de sleutels zult gebruiken.
+
 1. Ga een naam in de _API Sleutels_ sectie in, en klik **voeg Nieuw** toe om de dialoog te openen om de nieuwe sleutel te downloaden.
 
    ![ Download privé sleutel ](assets/download-api-private-key.png)
@@ -69,7 +73,7 @@ Daarnaast hebben integrators van oplossingen ook het recht om [!DNL Commerce Ser
 
 1. Herhaal bovenstaande stappen voor elke omgeving (productie en sandbox).
 
-   De **API Sleutels** sectie toont nu uw (Openbare) API sleutels. U hebt alle vier sleutels (zowel de productie als zandbaksleutels, Public+Private) nodig wanneer u [ selecteert of een project SaaS ](#createsaasenv) in om het even welke milieu&#39;s/installaties verbonden aan de vergunning creeert.
+   De **API Sleutels** sectie toont nu uw (Openbare) API sleutels. U hebt alle vier sleutels (zowel de productie als zandbaksleutels, Public+Private) nodig wanneer u [ selecteert of een project SaaS ](#createsaasenv) in om het even welke milieu&#39;s of installaties verbonden aan de vergunning creeert.
 
 ## SaaS-configuratie {#saasenv}
 
