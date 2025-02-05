@@ -3,9 +3,9 @@ title: '[!DNL Payment Services] Opmerkingen bij de release'
 description: Herzie de versienota's voor informatie over alle  [!DNL Payment Services]  versies.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: feeaed7b7130b3581a1b1f7e3bdd161ce1e7d765
+source-git-commit: 8cf48ade51157a8d2ce51333deb4d142e4a1a011
 workflow-type: tm+mt
-source-wordcount: '3311'
+source-wordcount: '3344'
 ht-degree: 0%
 
 ---
@@ -91,13 +91,23 @@ _Juni 28, 2021_
 
 +++
 
+## v2.10.1
+
+_5 Februari, 2025_
+
+[!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
+
+![ Nieuwe ](../assets/new.svg)<!-- PAY-5813 --> Toegevoegde steun voor Adobe Commerce 2.4.8 en PHP 8.4.
+
 ## v2.10.0
 
 _December 13, 2024_
 
 [!BADGE  Gesteund ]{type=Informative tooltip="Ondersteund"}
 
-![ Nieuw ](../assets/new.svg)<!-- PAY-5702 --> [!DNL Payment Services] biedt nu ondersteuning voor GraphQL-eindpunten voor archivering zonder aankoop, zodat klanten hun betalingsmethoden kunnen opslaan zonder een transactie te voltooien.
+![ Nieuw ](../assets/new.svg)<!-- PAY-5873 --> [!DNL Payment Services] steunt nu a [[!DNL Payment Services]  drop-in component ](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/payment-services/) in de [ Edge Delivery Services opslag voor Adobe Commerce ](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/).
+
+![ Nieuw ](../assets/new.svg)<!-- PAY-5702 --> [!DNL Payment Services] steunt nu [ eindpunten van GraphQL voor het vauleren zonder aankoop ](https://developer.adobe.com/commerce/webapi/graphql/payment-services-extension/queries/get-vault-config/), die klanten toestaan om hun betalingsmethodes te bewaren zonder een transactie te voltooien.
 
 ![ Nieuw ](../assets/fix.svg)<!-- PAY-5789 --> [!DNL Payment Services] steunt nu [ 3D Veilige authentificatie met Google Betalen ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/security-compliance/security#3ds), die veiligheid voor handelaren en klanten tijdens betalingstransacties verbeteren.
 
