@@ -3,9 +3,9 @@ title: Aan de slag met  [!DNL Live Search]
 description: Leer de systeemvereisten en installatiestappen voor  [!DNL Live Search]  van Adobe Commerce.
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 42ad3e05789844a0bcc6cb114a0db067f3d497db
+source-git-commit: 079998ad1390849bc8078f958140e101b95460ca
 workflow-type: tm+mt
-source-wordcount: '3093'
+source-wordcount: '3100'
 ht-degree: 0%
 
 ---
@@ -60,9 +60,9 @@ Op een hoog niveau is het vereist dat u: [!DNL Live Search]
 
    >[!IMPORTANT]
    >
-   >Gezien de Elasticsearch 7 eindeaankondiging voor augustus 2023, wordt aanbevolen dat alle Adobe Commerce-klanten naar de OpenSearch 2.x zoekmachine migreren. Voor informatie over het migreren van uw onderzoeksmotor tijdens een productverbetering, zie [ Migrerend aan OpenSearch ](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration) in de _Gids van de Verbetering_.
+   >Gezien de aankondiging van het einde van Elasticsearch 7 voor augustus 2023 wordt aanbevolen dat alle Adobe Commerce-klanten naar de OpenSearch 2.x zoekmachine migreren. Voor informatie over het migreren van uw onderzoeksmotor tijdens een productverbetering, zie [ Migrerend aan OpenSearch ](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration) in de _Gids van de Verbetering_.
 
-1. Download het `live-search` pakket van de [ Marketplace van de Adobe ](https://commercemarketplace.adobe.com/magento-live-search.html).
+1. Download het `live-search` pakket van de [ Marketplace van Adobe ](https://commercemarketplace.adobe.com/magento-live-search.html).
 
 1. Voer de volgende handelingen uit vanaf de opdrachtregel:
 
@@ -180,7 +180,7 @@ Leer hoe te om uw API sleutels in het [ 1} artikel van de Schakelaar van de Dien
 
 ## 3. Synchroniseer uw catalogusgegevens
 
-[!DNL Live Search] verplaatst catalogusgegevens naar de SaaS-infrastructuur van de Adobe. De gegevens worden geïndexeerd en de zoekresultaten worden vanuit deze index rechtstreeks aan de winkel geleverd. Afhankelijk van de grootte en complexiteit kan het indexeren 30 minuten tot een paar uur duren.
+[!DNL Live Search] verplaatst catalogusgegevens naar de Adobe-SaaS-infrastructuur. De gegevens worden geïndexeerd en de zoekresultaten worden vanuit deze index rechtstreeks aan de winkel geleverd. Afhankelijk van de grootte en complexiteit kan het indexeren 30 minuten tot een paar uur duren.
 
 Voer de volgende opdrachten in deze volgorde uit om te beginnen met de eerste synchronisatie van uw catalogusgegevens naar SaaS-services:
 
@@ -227,7 +227,7 @@ Als u wilt controleren of uw catalogusgegevens uit Adobe Commerce zijn geëxport
   >
   >Als u een `table does not exist` -fout krijgt, zoekt u naar items in de tabellen `catalog_data_exporter_products` en `catalog_data_exporter_product_attributes` . Deze tabelnamen worden gebruikt in eerdere [!DNL Live Search] versies dan 4.2.1.
 
-- Gebruik [ playground van GraphQL ](https://developer.adobe.com/commerce/services/graphql/live-search/) met de standaardvraag om het volgende te verifiëren:
+- Gebruik [ playground van GraphQL ](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-admin/graphql) met de standaardvraag (zie [ verwijzing van GraphQL ](https://developer.adobe.com/commerce/services/graphql/live-search/) voor meer details) om het volgende te verifiëren:
 
    - Het aantal geretourneerde producten ligt dicht bij wat u voor de winkelweergave verwacht.
    - Facetten worden geretourneerd.
@@ -250,7 +250,7 @@ Als u een [!DNL Live Search] -versie hebt die ouder is dan 4.0.0+, moet u de wid
 
    ![ laat het Lijst van het Product toe Widgets ](assets/ls-admin-enable-widget.png)
 
-Wanneer u deze configuratie wijzigt, verschijnt het bericht `Page cache is invalidated` . U moet het Geheime voorgeheugen van het Magento leegmaken om uw verandering te bewaren.
+Wanneer u deze configuratie wijzigt, verschijnt het bericht `Page cache is invalidated` . U moet de Magento Cache leegmaken om de wijziging op te slaan.
 
 1. Heb toegang tot de [ pagina van het Beheer van het Geheime voorgeheugen ](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) door één van het volgende te doen:
 
@@ -390,7 +390,7 @@ De volgende secties bieden geavanceerdere onderwerpen wanneer u [!DNL Live Searc
 
 Aangezien [!DNL Live Search] geen toegang heeft tot de volledige productdatabase, hebben de [!DNL Live Search] GraphQL en Commerce core GraphQL API&#39;s geen volledige pariteit.
 
-De Adobe adviseert direct roepend SaaS APIs — specifiek het eindpunt van de Dienst van de Catalogus.
+Adobe raadt aan de SaaS APIs rechtstreeks aan te roepen — met name het eindpunt van de Catalogusservice.
 
 - Verhoog de prestaties en verlaag de processorbelasting door het Commerce-database/Graphql-proces te omzeilen
 - Haal voordeel uit de [!DNL Catalog Service] -federatie om [!DNL Live Search] , [!DNL Catalog Service] en [!DNL Product Recommendations] vanaf één eindpunt aan te roepen.
@@ -402,7 +402,7 @@ Als u een aangepaste implementatie zonder kop hebt, checkt u de [!DNL Live Searc
 - [ PLP widget ](https://github.com/adobe/storefront-product-listing-page)
 - [ Levend gebied van het Onderzoek ](https://github.com/adobe/storefront-search-as-you-type)
 
-De automatische inzameling van de gegevens van de gebruikersinteractie werkt niet door gebrek wanneer u niet de standaardcomponenten zoals de Adapter van het Onderzoek, Luminagewidgets, of AEM widgets CIF gebruikt. Adobe Sensei gebruikt deze verzamelde gegevens voor intelligent winkelen en het volgen van prestaties. Om deze kwestie op te lossen, moet u een douaneoplossing ontwikkelen om deze gegevensinzameling op een krantenloze manier uit te voeren.
+Automatische verzameling van gegevens over gebruikersinteractie werkt niet standaard wanneer u niet de standaardcomponenten gebruikt, zoals de zoekadapter, de luminantie-widgets of de AEM CIF-widgets. Adobe Sensei gebruikt deze verzamelde gegevens voor intelligent winkelen en het volgen van prestaties. Om deze kwestie op te lossen, moet u een douaneoplossing ontwikkelen om deze gegevensinzameling op een krantenloze manier uit te voeren.
 
 De meest recente versie van [!DNL Live Search] gebruikt [!DNL Catalog Service] al.
 
@@ -412,7 +412,7 @@ De meest recente versie van [!DNL Live Search] gebruikt [!DNL Catalog Service] a
 
 |  |  |  |  |
 |--- |--- |--- |--- |
-| Taal | Regio | Taalcode | Landinstelling Magento |
+| Taal | Regio | Taalcode | Magento-landinstelling |
 | Bulgaars | Bulgarije | bg_BG | bg_BG |
 | Catalaans | Spanje | ca_ES | ca_ES |
 | Tsjechisch | Tsjechië | cs_CZ | cs_CZ |
@@ -510,11 +510,11 @@ Deze module voegt extra contexten aan de vragen van GraphQL toe:
 
 [!DNL Live Search] werkt met PWA Studio, maar gebruikers zien mogelijk kleine verschillen ten opzichte van andere Commerce-implementaties. De basisfunctionaliteit zoals zoeken en pagina met productlijsten werkt in Venia, maar sommige permutaties van Graphql werken mogelijk niet correct. Er kunnen ook prestatieverschillen zijn.
 
-- De huidige PWA-implementatie van [!DNL Live Search] vereist meer verwerkingstijd om zoekresultaten te retourneren dan [!DNL Live Search] met de native Commerce-storefront.
-- [!DNL Live Search] in PWA steunt [ gebeurtenis behandeling ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) niet. Het resultaat is dat zoekrapporten en intelligente koopwaar niet werken op PWA storefronts.
+- De huidige PWA-implementatie van [!DNL Live Search] vereist meer verwerkingstijd om zoekresultaten te retourneren dan [!DNL Live Search] met de native Commerce-winkel.
+- [!DNL Live Search] in PWA steunt [ gebeurtenis behandeling ](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) niet. Het resultaat is dat zoekrapporten en intelligente koopwaar niet werken op PWA-winkelpagina&#39;s.
 - Wanneer het gebruiken van [ PWA Studio ](https://developer.adobe.com/commerce/pwa-studio/), steunt GraphQL niet direct het filtreren op `description`, `name`, `short_description`, maar deze gebieden kunnen met een meer algemene filter zijn teruggekeerd.
 
-Als u [!DNL Live Search] met PWA Studio wilt gebruiken, moeten integrators ook:
+Als u [!DNL Live Search] wilt gebruiken met PWA Studio, moeten integrators ook:
 
 1. Installeer [ livessearch-storefront-utils ](https://www.npmjs.com/package/@magento/ds-livesearch-storefront-utils).
 1. Stel de waarde `environmentId` in het `storeDetails` -object in.
